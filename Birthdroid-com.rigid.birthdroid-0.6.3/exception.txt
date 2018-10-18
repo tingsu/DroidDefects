@@ -1,0 +1,21 @@
+E/AndroidRuntime( 5897): java.lang.RuntimeException: Unable to start service com.rigid.birthdroid.BirthdroidWidget$BirthdroidService@afb6ebb8 with Intent { cmp=com.rigid.birthdroid/.BirthdroidWidget$BirthdroidService }: java.lang.NumberFormatException: Invalid int: "11111111111"
+E/AndroidRuntime( 5897): 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2719)
+E/AndroidRuntime( 5897): 	at android.app.ActivityThread.access$2100(ActivityThread.java:135)
+E/AndroidRuntime( 5897): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1293)
+E/AndroidRuntime( 5897): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 5897): 	at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 5897): 	at android.app.ActivityThread.main(ActivityThread.java:5017)
+E/AndroidRuntime( 5897): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 5897): 	at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 5897): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+E/AndroidRuntime( 5897): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+E/AndroidRuntime( 5897): 	at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 5897): Caused by: java.lang.NumberFormatException: Invalid int: "11111111111"
+E/AndroidRuntime( 5897): 	at java.lang.Integer.invalidInt(Integer.java:137)
+E/AndroidRuntime( 5897): 	at java.lang.Integer.parse(Integer.java:377)
+E/AndroidRuntime( 5897): 	at java.lang.Integer.parseInt(Integer.java:365)
+E/AndroidRuntime( 5897): 	at java.lang.Integer.parseInt(Integer.java:331)
+E/AndroidRuntime( 5897): 	at com.rigid.birthdroid.BirthdroidWidget$BirthdroidService.onStart(BirthdroidWidget.java:162)
+E/AndroidRuntime( 5897): 	at android.app.Service.onStartCommand(Service.java:450)
+E/AndroidRuntime( 5897): 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2702)
+E/AndroidRuntime( 5897): 	... 10 more

@@ -1,0 +1,12 @@
+Faulty files: 
+
+	Birthdroid/src/com/rigid/birthdroid/BirthdroidWidget.java
+
+Faulty lines: 
+
+	https://github.com/rigid/Birthdroid/blob/6484f28b2fdd70a3f2d9b97c83f19eab6c1fbefd/src/com/rigid/birthdroid/BirthdroidWidget.java#L162
+
+
+Root cause:
+
+	Fail to properly check user inputs.
