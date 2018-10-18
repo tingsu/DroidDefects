@@ -1,0 +1,16 @@
+// java.lang.NumberFormatException: Invalid int: ""
+// 	at java.lang.Integer.invalidInt(Integer.java:137)
+// 	at java.lang.Integer.parseInt(Integer.java:358)
+// 	at java.lang.Integer.parseInt(Integer.java:331)
+// 	at java.lang.Integer.valueOf(Integer.java:489)
+// 	at caldwell.ben.bites.MethodList$6.onClick(MethodList.java:288)
+// 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:136)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5017)
+// 	at java.lang.reflect.Method.invokeNative(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:515)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+// 	at dalvik.system.NativeStart.main(Native Method)
+// 

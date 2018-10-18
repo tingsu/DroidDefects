@@ -1,0 +1,12 @@
+Faulty files: 
+
+	bites-android/Bites/src/caldwell/ben/bites/MethodList.java
+
+Faulty lines: 
+
+	https://github.com/karimhamdanali/bites-android/blob/d0aa192060b670f8d276211aaecd2a728a662703/Bites/src/caldwell/ben/bites/MethodList.java#L235
+
+
+Root cause:
+
+	Fail to properly check user inputs.
