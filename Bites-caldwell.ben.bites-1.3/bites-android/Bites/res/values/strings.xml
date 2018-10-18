@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="hello">Hello World, Bites</string>
+<string name="app_name">Bites</string>
+
+<string name="tab_recipes">Recipes</string>
+<string name="recipe_name">Recipe name</string>
+<string name="recipe_author">Recipe author</string>
+<string name="recipe_desc">Recipe description</string>
+<string name="edit_recipe">Edit recipe</string>
+<string name="delete_recipe">Delete recipe</string>
+<string name="dialog_received_title">Recipe received</string>
+<string name="delete_file">Delete File?</string>
+<string name="import_recipe">Import Recipe?</string>
+<string name="key_recipe_sort">Recipe sort order</string>
+
+<string name="tab_ingredients">Ingredients</string>
+<string name="insert_ingredient">Insert ingredient</string>
+<string name="dialog_ingredient_hint">Ingredient</string>
+<string name="delete_ingredient">Delete ingredient</string>
+<string name="no_ingredients">No ingredients</string>
+<string name="edit_ingredient">Edit ingredient</string>
+<string name="dialog_sendshoppinglist">Send shopping list</string>
+<string name="ingredient_prefs">Ingredient Preferences</string>
+<string name="key_ingredient_check">Needed ingredients check state</string>
+
+<string name="tab_method">Method</string>
+<string name="dialog_method_step_hint">Step number</string>
+<string name="dialog_method_text_hint">Method</string>
+<string name="no_methods">No methods</string>
+<string name="edit_method">Edit method</string>
+<string name="insert_method">Insert method</string>
+<string name="delete_method">Delete method</string>
+
+<string name="dialog_ok">OK</string>
+<string name="dialog_cancel">Cancel</string>
+
+<string name="send_recipe_sms">Send SMS Recipe</string>
+<string name="send_recipe_email">Send Email Recipe</string>
+<string name="sd_write_error">Can\'t write to SD card</string>
+<string name="xml_create_error">Can\'t create recipe file</string>
+<string name="preferences">Preferences</string>
+
+<string name="no_shoppinglist_apps">No shopping list apps installed. \nTry installing Trolly</string>
+<string name="no_ingredients_selected">No ingredients selected. \nSelect an ingredient to add to the shopping list</string>
+<string name="database_upgrade_error">Could not upgrade database to new version</string>
+
+</resources>

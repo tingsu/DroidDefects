@@ -1,0 +1,30 @@
+Bites - an organiser for cooks
+Written by Ben Caldwell in 2008
+<benny.caldwell@gmail.com>
+
+Bites is an organiser for cooks. The key feature of Bites is the creation of relationships between ingredients used in recipes and ingredients kept in inventory, allowing automatic generation of a shopping list based on planned meals and items that are low in stock.
+
+Planned features of future releases will include:
+
+	*Peer to peer sharing of recipes over bluetooth
+
+	*A browseable central recipe repository allowing users of Bites to upload and download their recipes
+
+	*A recipe of the day feed
+ 
+For a quickstart guide and detailed usage instructions refer to the wiki at http://code.google.com/p/bites-android
+
+Copyright (C) 2008 Ben Caldwell 
+
+Bites is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Bites is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Bites.  If not, see <http://www.gnu.org/licenses/>.

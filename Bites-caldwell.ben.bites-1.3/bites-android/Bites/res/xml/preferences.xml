@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<ListPreference android:key="@string/key_recipe_sort"
+		android:title="Recipes Sort Order"
+		android:summary="The order recipes are sorted in"
+		android:dialogTitle="Recipes Sort Order"
+		android:entries="@array/sort_order"
+		android:entryValues="@array/recipe_sort_values" />
+	<ListPreference android:key="@string/key_ingredient_check"
+		android:title="Ingredient Check State"
+		android:summary="The check state of ingredients that should be added to the shopping list"
+		android:dialogTitle="Ingredient Check State"
+		android:entries="@array/ingredient_check"
+		android:entryValues="@array/ingredient_check_values" />
+</PreferenceScreen>

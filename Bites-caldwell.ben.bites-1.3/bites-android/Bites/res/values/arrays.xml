@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="sort_order">
+		<item>Alphabetical ascending</item>
+		<item>Alphabetical descending</item>
+		<item>Modified ascending</item>
+		<item>Modified descending</item>
+	</string-array>
+	<string-array name="recipe_sort_values">
+		<item>title ASC</item>
+		<item>title DESC</item>
+		<item>modified ASC</item>
+		<item>modified DESC</item>
+	</string-array>
+	<string-array name="ingredient_check">
+		<item>Needed ingredients are unchecked</item>
+		<item>Needed ingredients are checked</item>
+	</string-array>
+	<string-array name="ingredient_check_values">
+		<item>"unchecked"</item>
+		<item>"checked"</item>
+	</string-array>
+</resources>

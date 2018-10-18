@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recipe name="curry"
+xmlns="http://bites-android.googlecode.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://bites-android.googlecode.com http://bites-android.googlecode.com/svn/trunk/recipe.xsd">
+  <ingredient>
+    <name>fish</name>
+    <quantity>2</quantity>
+    <unit>fillets</unit>
+  </ingredient>
+  <ingredient>
+    <name>lime</name>
+    <quantity>1</quantity>
+    <unit>lime</unit>
+  </ingredient>
+  <method>
+    <step>1</step>
+    <instruction>fry fish</instruction>
+  </method>
+  <method>
+    <step>2</step>
+    <instruction>add lime</instruction>
+  </method>
+</recipe>
