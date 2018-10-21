@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Birthdroid - Android upcoming birthday App/Widget
+ Copyright (C) 2011-2013 Daniel Hiepler <daniel@niftylight.de>
+ 
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <string name="app_name">Annidroid</string>
+    <string name="preferences_name">Préférence de Annidroid</string>
+    <string name="about_name">À propos de Annidroid</string>
+    <string name="upcoming">aura %1$d ans %2$s</string>
+    <string name="upcoming_no_age">fête l\'anniversaire %1$s</string>
+    <string name="days_zero">aujourd\'hui</string>
+    <string name="days_one">demain</string>
+    <string name="days_more">dans %1$d jours</string>
+    <string name="born_today">est né(e) aujourd\'hui</string>
+    <string name="no_leap_year">(Ce n\'est pas une année bissextile, mais fêtera surement de toute façon ;)</string>
+    <string name="no_birthdays">Aucun anniversaire dans les contacts</string>
+    <string name="no_upcoming_birthdays">Pas d\'anniversaire à venir…</string>
+    <string name="menu_settings">Paramètres</string>
+    <string name="menu_about">À propos</string>
+    <string name="prefs_title_general">Général</string>
+    <string name="prefs_title_app">Application</string>
+    <string name="prefs_title_widget">Widget</string>
+    <string name="prefs_title_scan">Fréquence d\'analyse des contacts</string>
+    <string name="prefs_title_avartar">Afficher l\'avatar</string>
+    <string name="prefs_title_sort_method">Trier selon…</string>
+    <string name="prefs_title_days">Anticipation</string>
+    <string name="prefs_title_layout_settings">Paramètres de présentation</string>
+    <string name="prefs_title_flip_interval">Fréquence de changement</string>
+    <string name="prefs_title_widget_clickable">Widget cliquable ?</string>
+    <string name="prefs_summary_scan">Analyser les contacts pour de nouveaux anniversaires toutes les X heures</string>
+    <string name="prefs_summary_avartar">Charger l\'image à partir des contacts et l\'afficher</string>
+    <string name="prefs_summary_sort_method">Comment trier les résultats</string>
+    <string name="prefs_summary_days">Afficher les anniversaires des prochains X jours</string>
+    <string name="prefs_summary_layout_settings">Modifier les paramètres de présentation</string>
+    <string name="prefs_summary_flip_interval">Afficher le contacter suivant toutes les X secondes</string>
+    <string name="prefs_summary_widget_clickable">Ouvrir Annidroid lors du clic sur le widget ?</string>
+    <string name="about_title">Annidroid v0.6.3</string>
+    <string name="about_description">Application simple pour afficher les anniversaires à venir.</string>
+</resources>

@@ -1,0 +1,17 @@
+E/AndroidRuntime( 9026): java.lang.IllegalStateException: Fragment MainActivityFragment{afacb690} not attached to Activity
+E/AndroidRuntime( 9026): 	at android.support.v4.app.Fragment.startActivityForResult(Fragment.java:925)
+E/AndroidRuntime( 9026): 	at org.y20k.transistor.MainActivityFragment.selectFromImagePicker(MainActivityFragment.java:482)
+E/AndroidRuntime( 9026): 	at org.y20k.transistor.MainActivityFragment.access$500(MainActivityFragment.java:58)
+E/AndroidRuntime( 9026): 	at org.y20k.transistor.MainActivityFragment$6.onReceive(MainActivityFragment.java:415)
+E/AndroidRuntime( 9026): 	at android.support.v4.content.LocalBroadcastManager.executePendingBroadcasts(LocalBroadcastManager.java:297)
+E/AndroidRuntime( 9026): 	at android.support.v4.content.LocalBroadcastManager.access$000(LocalBroadcastManager.java:46)
+E/AndroidRuntime( 9026): 	at android.support.v4.content.LocalBroadcastManager$1.handleMessage(LocalBroadcastManager.java:116)
+E/AndroidRuntime( 9026): 	at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 9026): 	at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 9026): 	at android.app.ActivityThread.main(ActivityThread.java:5017)
+E/AndroidRuntime( 9026): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 9026): 	at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 9026): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+E/AndroidRuntime( 9026): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+E/AndroidRuntime( 9026): 	at dalvik.system.NativeStart.main(Native Method)
+

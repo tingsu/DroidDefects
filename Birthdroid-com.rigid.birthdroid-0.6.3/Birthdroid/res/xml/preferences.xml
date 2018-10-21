@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Birthdroid - Android upcoming birthday App/Widget
+ Copyright (C) 2011-2013 Daniel Hiepler <daniel@niftylight.de>
+ 
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <PreferenceCategory
+                android:title="@string/prefs_title_general">
+                
+                <EditTextPreference
+                        android:key="birthdays_scan_interval"
+                        android:summary="@string/prefs_summary_scan"
+                        android:title="@string/prefs_title_scan"
+                        android:inputType="number"
+                        android:defaultValue="24"
+                        android:enabled="false"/>
+                
+        </PreferenceCategory>
+        
+        <PreferenceCategory
+                android:title="@string/prefs_title_app">
+                
+                <PreferenceScreen
+                        android:key="birthdroid_layout_screen"
+                        android:title="@string/prefs_title_layout_settings"
+                        android:summary="@string/prefs_summary_layout_settings">
+                        
+                        <CheckBoxPreference
+                                android:key="birthdroid_avartars" 
+                                android:title="@string/prefs_title_avartar"
+                                android:summary="@string/prefs_summary_avartar"
+                                android:defaultValue="@string/birthdroid_avartars"
+                                android:enabled="false"/>
+                                
+                        <ListPreference
+                                android:key="birthdroid_sort_method"
+                                android:title="@string/prefs_title_sort_method"
+                                android:summary="@string/prefs_summary_sort_method"
+                                android:entries="@array/sort_method_entries"
+                                android:entryValues="@array/sort_method_values"
+                                android:defaultValue="@string/birthdroid_sort_method"/>
+                                
+                </PreferenceScreen>
+                
+        </PreferenceCategory>
+        
+        <PreferenceCategory
+                android:title="@string/prefs_title_widget">
+                                        
+                <EditTextPreference
+                        android:key="widget_future_days" 
+                        android:title="@string/prefs_title_days"
+                        android:summary="@string/prefs_summary_days"
+                        android:defaultValue="@integer/widget_future_days"
+                        android:inputType="number"/>       
+
+                <CheckBoxPreference
+                                android:key="widget_clickable" 
+                                android:title="@string/prefs_title_widget_clickable"
+                                android:summary="@string/prefs_summary_widget_clickable"
+                                android:defaultValue="@string/widget_clickable"/>
+
+                <PreferenceScreen
+                        android:key="widget_layout_screen"
+                        android:title="@string/prefs_title_layout_settings"
+                        android:summary="@string/prefs_summary_layout_settings">
+
+                        <CheckBoxPreference
+                                android:key="widget_avartars" 
+                                android:title="@string/prefs_title_avartar"
+                                android:summary="@string/prefs_summary_avartar"
+                                android:defaultValue="@string/widget_avartars"
+                                android:enabled="false"/>
+                                
+                        <EditTextPreference
+                                android:key="widget_flip_interval" 
+                                android:title="@string/prefs_title_flip_interval"
+                                android:summary="@string/prefs_summary_flip_interval"
+                                android:defaultValue="@integer/widget_flip_interval"
+                                android:inputType="number"/> 
+                                
+                        <ListPreference
+                                android:key="widget_sort_method"
+                                android:title="@string/prefs_title_sort_method"
+                                android:summary="@string/prefs_summary_sort_method"
+                                android:entries="@array/sort_method_entries"
+                                android:entryValues="@array/sort_method_values"
+                                android:defaultValue="@string/widget_sort_method"/>
+                        
+                        <!--<ListPreference
+                                android:title="Flip animation"
+                                android:summary="Choose animation when flipping to next contact"
+                                android:key="widget_flip_anim"
+                                android:defaultValue="1"
+                                android:entries="@array/widget_flip_anim_entries"
+                                android:entryValues="@array/widget_flip_anim_values" />
+                                
+                        <EditTextPreference
+                                android:summary="Fontsize of widget-message"
+                                android:defaultValue="14"
+                                android:title="Fontsize"
+                                android:key="widget_fontsize" 
+                                android:inputType="number"
+                                android:enabled="false"/> -->
+                        
+                </PreferenceScreen>
+                
+        </PreferenceCategory>
+</PreferenceScreen>

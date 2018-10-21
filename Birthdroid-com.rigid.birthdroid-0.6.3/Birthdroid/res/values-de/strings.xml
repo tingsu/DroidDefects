@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Birthdroid - Android upcoming birthday App/Widget
+ Copyright (C) 2011-2013 Daniel Hiepler <daniel@niftylight.de>
+ 
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<resources>
+    <string name="app_name">Birthdroid</string>
+    <string name="preferences_name">Birthdroid Einstellungen</string>
+    <string name="upcoming">wird %2$s %1$d</string>
+    <string name="upcoming_no_age">hat %1$s Geburtstag</string>
+    <string name="days_zero">heute</string>
+    <string name="days_one">morgen</string>
+    <string name="days_more">in %1$d Tagen</string>
+    <string name="born_today">wurde heute geboren</string>
+    <string name="no_leap_year">(Heuer kein Schaltjahr, aber feiert gewiss trotzdem ;)</string>
+    <string name="no_birthdays">Keine Geburtstage in Kontaktdatenbank</string>
+    <string name="no_upcoming_birthdays">Keine anstehenden Geburtstage...</string>
+    <string name="menu_settings">Einstellungen</string>
+    <string name="menu_about">Über...</string>
+    <string name="prefs_title_general">Allgemein</string>
+    <string name="prefs_title_app">Anwendung</string>
+    <string name="prefs_title_widget">Widget</string>
+    <string name="prefs_title_scan">Aktualisierungsintervall</string>
+    <string name="prefs_title_avartar">Zeige Avartar</string>
+    <string name="prefs_title_sort_method">Sortierung...</string>
+    <string name="prefs_title_days">Anzeige Zeitraum</string>
+    <string name="prefs_title_layout_settings">Layout Einstellungen</string>
+    <string name="prefs_title_flip_interval">Anzeigeintervall</string>
+    <string name="prefs_title_widget_clickable">Widget klickbar?</string>
+    <string name="prefs_summary_scan">Durchsuche Kontakte nach neuen Geburtstagen alle n Stunden</string>
+    <string name="prefs_summary_avartar">Lade Bild aus Kontakten und zeige es an</string>
+    <string name="prefs_summary_sort_method">Sortierreihenfolge der angezeigten Einträge</string>
+    <string name="prefs_summary_days">Zeige alle Geburtstage der nächsten n Tage</string>
+    <string name="prefs_summary_layout_settings">Anpassen der Anzeigeeinstellungen</string>
+    <string name="prefs_summary_flip_interval">Zeige nächsten Eintrag nach n Sekunden</string>
+    <string name="prefs_summary_widget_clickable">Öffne Birthdroid bei Klick auf Widget?</string>
+</resources>
