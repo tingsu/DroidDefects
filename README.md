@@ -10,5 +10,5 @@ App | Package | Version | LOC | Category | Exception Category | Root Cause | Exc
 *[budget-envelopes](https://github.com/notriddle/budget-envelopes)* | `com.notriddle.budget` | 3.4 |  | Budget Management App | Framework | Lifecycle Error | IllegalStateException (Can not perform this action after onSaveInstanceState) | - | - | - | -
 *[NewPipe](https://github.com/TeamNewPipe/NewPipe)* | `org.schabi.newpipe` | 0.7.8 |  | Youtube frontend for Android | Framework | Lifecycle Error | IllegalStateException (Content view not yet created) | [issue](https://github.com/TeamNewPipe/NewPipe/issues/269) | - | - | -
 *[WordPress-Android](https://github.com/wordpress-mobile/WordPress-Android)* | `org.wordpress.android` | 3.6 |  | WordPress for Android | Framework | Lifecycle Error | IllegalStateException (Fragment already added) | [issue](https://github.com/wordpress-mobile/WordPress-Android/issues/2265) | - | - | -
-*[adsdroid](https://github.com/dnet/adsdroid)* | `hu.vsza.adsdroid` | 1.6 |  | App for alldatasheet.com | Framework | Lifecycle Error | IllegalStateException (View not attached to window manager) | - | - | - | -
+*[adsdroid](https://github.com/dnet/adsdroid)* | `hu.vsza.adsdroid` | 1.6 |  | App for alldatasheet.com | Framework | Lifecycle Error | IllegalArgumentException (View not attached to window manager) | - | - | - | -
 1 | 2 | 3
