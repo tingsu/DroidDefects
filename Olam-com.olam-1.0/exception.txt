@@ -1,0 +1,27 @@
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: FATAL EXCEPTION: AsyncTask #2
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: Process: com.olam, PID: 6652
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: java.lang.RuntimeException: An error occurred while executing doInBackground()
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at android.os.AsyncTask$3.done(AsyncTask.java:309)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:234)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at java.lang.Thread.run(Thread.java:818)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: Caused by: android.database.sqlite.SQLiteException: near "bug": syntax error (code 1): , while compiling: SELECT word, _id FROM words_en WHERE stems LIKE '%bug' %' OR stems LIKE 'bug'' ORDER BY LENGTH(word) LIMIT 10
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:887)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:498)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at android.database.sqlite.SQLiteQuery.<init>(SQLiteQuery.java:37)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:44)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1316)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at android.database.sqlite.SQLiteDatabase.rawQuery(SQLiteDatabase.java:1255)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at com.olam.DatabaseHelper.getSimilarStems(DatabaseHelper.java:115)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at com.olam.MainSearch$doSearch.doInBackground(MainSearch.java:255)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at com.olam.MainSearch$doSearch.doInBackground(MainSearch.java:228)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at android.os.AsyncTask$2.call(AsyncTask.java:295)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+10-24 08:15:14.298  6652  6668 E AndroidRuntime: 	... 4 more
