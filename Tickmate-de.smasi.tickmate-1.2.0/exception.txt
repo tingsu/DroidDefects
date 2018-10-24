@@ -1,0 +1,24 @@
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: FATAL EXCEPTION: main
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: Process: de.smasi.tickmate, PID: 6075
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=-1, data=Intent { (has extras) }} to activity {de.smasi.tickmate/de.smasi.tickmate.views.EditTracksActivity}: android.database.CursorIndexOutOfBoundsException: Index 0 requested, with a size of 0
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3699)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at android.app.ActivityThread.handleSendResult(ActivityThread.java:3742)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at android.app.ActivityThread.-wrap16(ActivityThread.java)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1393)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: Caused by: android.database.CursorIndexOutOfBoundsException: Index 0 requested, with a size of 0
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at android.database.AbstractCursor.checkPosition(AbstractCursor.java:460)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at android.database.AbstractWindowedCursor.checkPosition(AbstractWindowedCursor.java:136)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at android.database.AbstractWindowedCursor.getString(AbstractWindowedCursor.java:50)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at de.smasi.tickmate.database.TracksDataSource.cursorToTrack(TracksDataSource.java:273)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at de.smasi.tickmate.database.TracksDataSource.getTrack(TracksDataSource.java:88)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at de.smasi.tickmate.views.EditTracksActivity.onActivityResult(EditTracksActivity.java:106)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at android.app.Activity.dispatchActivityResult(Activity.java:6428)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3695)
+10-24 07:37:01.359  6075  6075 E AndroidRuntime: 	... 9 more
+
