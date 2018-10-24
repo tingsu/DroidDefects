@@ -1,0 +1,28 @@
+E/AndroidRuntime( 2729): FATAL EXCEPTION: AsyncTask #1
+E/AndroidRuntime( 2729): Process: com.liato.bankdroid, PID: 2729
+E/AndroidRuntime( 2729): java.lang.RuntimeException: An error occured while executing doInBackground()
+E/AndroidRuntime( 2729): 	at android.os.AsyncTask$3.done(AsyncTask.java:300)
+E/AndroidRuntime( 2729): 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+E/AndroidRuntime( 2729): 	at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+E/AndroidRuntime( 2729): 	at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+E/AndroidRuntime( 2729): 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+E/AndroidRuntime( 2729): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+E/AndroidRuntime( 2729): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+E/AndroidRuntime( 2729): 	at java.lang.Thread.run(Thread.java:841)
+E/AndroidRuntime( 2729): Caused by: java.lang.IllegalArgumentException: Illegal character in query at index 45: http://poker.appeak.se/playerInfo/?username=. iy.
+E/AndroidRuntime( 2729): 	at java.net.URI.create(URI.java:727)
+E/AndroidRuntime( 2729): 	at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:75)
+E/AndroidRuntime( 2729): 	at eu.nullbyte.android.urllib.Urllib.openAsHttpResponse(Urllib.java:211)
+E/AndroidRuntime( 2729): 	at eu.nullbyte.android.urllib.Urllib.openAsHttpResponse(Urllib.java:190)
+E/AndroidRuntime( 2729): 	at eu.nullbyte.android.urllib.Urllib.openAsHttpResponse(Urllib.java:179)
+E/AndroidRuntime( 2729): 	at eu.nullbyte.android.urllib.Urllib.open(Urllib.java:168)
+E/AndroidRuntime( 2729): 	at eu.nullbyte.android.urllib.Urllib.open(Urllib.java:163)
+E/AndroidRuntime( 2729): 	at eu.nullbyte.android.urllib.Urllib.open(Urllib.java:154)
+E/AndroidRuntime( 2729): 	at com.liato.bankdroid.banking.banks.AppeakPoker.login(AppeakPoker.java:89)
+E/AndroidRuntime( 2729): 	at com.liato.bankdroid.banking.banks.AppeakPoker.update(AppeakPoker.java:106)
+E/AndroidRuntime( 2729): 	at com.liato.bankdroid.BankEditActivity$DataRetrieverTask.doInBackground(BankEditActivity.java:312)
+E/AndroidRuntime( 2729): 	at com.liato.bankdroid.BankEditActivity$DataRetrieverTask.doInBackground(BankEditActivity.java:287)
+E/AndroidRuntime( 2729): 	at android.os.AsyncTask$2.call(AsyncTask.java:288)
+E/AndroidRuntime( 2729): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+E/AndroidRuntime( 2729): 	... 4 more
+
