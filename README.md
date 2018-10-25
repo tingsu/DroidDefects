@@ -20,4 +20,5 @@ App | Package | Version | LOC | Category | Exception Category | Root Cause | Exc
 *[Cowsay](https://github.com/rorist/Cowsay-android)* | `com.fixme.cowsay` | 1.3 |  | Development | Framework | UI Update Error | CalledFromWrongThreadException | - | - | - | -
 *[Mitzuli](https://github.com/artetxem/mitzuli)* | `com.mitzuli` | 1.0.7 |  | Reading | Framework | Lifecycle Error | WindowManager$BadToken (unable to add window) | - | - | - | -
 *[xx](xx)* | `xx` | xx |  | xx | Framework | Lifecycle Error | NetworkOnMainThreadException | [issue](xx) | - | - | -
+*[xx](xx)* | `xx` | xx |  | xx | Framework | Lifecycle Error | NetworkOnMainThreadException | [issue](xx) | - | - | -*[tripmobile](https://github.com/TripSit/tripmobile)* | `me.tripsit.mobile` | 1.0 |  | xx | Framework | Constraint Error | RuntimeException (Can't create handler inside thread that has not called Looper.prepare()) | [issue](https://github.com/TripSit/tripmobile/issues/13) | (buggy)[https://github.com/TripSit/tripmobile/commit/793893cfc3a61be734283c8ff5505a45d6c6ad39] | (fixed)[https://github.com/TripSit/tripmobile/commit/da488e4211b33887985a2339cc3026bb96393207] | -
 1 | 2 | 3
