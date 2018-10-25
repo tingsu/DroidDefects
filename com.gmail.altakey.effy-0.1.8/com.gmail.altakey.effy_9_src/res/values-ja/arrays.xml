@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_pen_width">
+        <item>極細</item>
+        <item>細</item>
+        <item>中太</item>
+        <item>太</item>
+        <item>極太</item>
+    </string-array>
+    <string-array name="entries_pen_alpha">
+        <item>0% (透明)</item>
+        <item>12%</item>
+        <item>25%</item>
+        <item>33%</item>
+        <item>50%</item>
+        <item>66%</item>
+        <item>75%</item>
+        <item>83%</item>
+        <item>100% (不透明)</item>
+    </string-array>
+    <string-array name="entries_drop_alpha">
+        <item>0% (透明)</item>
+        <item>12%</item>
+        <item>25%</item>
+        <item>33%</item>
+        <item>50%</item>
+        <item>66%</item>
+        <item>75%</item>
+        <item>83%</item>
+        <item>100% (不透明)</item>
+    </string-array>
+</resources>

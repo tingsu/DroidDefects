@@ -1,0 +1,18 @@
+# view AndroidManifest.xml #generated:34
+-keep class org.passwordmaker.android.EmmaInstrument.EmmaInstrumentation { <init>(...); }
+
+# view AndroidManifest.xml #generated:31
+-keep class org.passwordmaker.android.EmmaInstrument.InstrumentedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:25
+-keep class org.passwordmaker.android.EmmaInstrument.SMSInstrumentedReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class org.passwordmaker.android.PasswordMakerEditFavorites { <init>(...); }
+
+# view AndroidManifest.xml #generated:19
+-keep class org.passwordmaker.android.PasswordMakerEditProfile { <init>(...); }
+
+# view AndroidManifest.xml #generated:7
+-keep class org.passwordmaker.android.PasswordMakerProForAndroidActivity { <init>(...); }
+

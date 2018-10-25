@@ -1,0 +1,18 @@
+# view AndroidManifest.xml #generated:25
+-keep class org.moparisthebest.appbak.AppBak { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class org.moparisthebest.appbak.EmmaInstrument.EmmaInstrumentation { <init>(...); }
+
+# view AndroidManifest.xml #generated:62
+-keep class org.moparisthebest.appbak.EmmaInstrument.InstrumentedActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class org.moparisthebest.appbak.EmmaInstrument.SMSInstrumentedReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class org.moparisthebest.appbak.RestoreList { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class org.moparisthebest.openintents.filemanager.FileManagerActivity { <init>(...); }
+

@@ -1,0 +1,3 @@
+Root cause:
+
+	The app crashes when it tries to read a big file which it assumes the file should contain the apps for restoring.

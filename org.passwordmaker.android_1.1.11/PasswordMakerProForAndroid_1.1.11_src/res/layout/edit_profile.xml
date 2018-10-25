@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+      <ScrollView android:id="@+id/scrollView1" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <LinearLayout android:id="@+id/linearLayout2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="true"  android:orientation="vertical">
+            <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblName" android:text="@string/LblProfileName"></TextView>
+		    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/txtName">
+		        <requestFocus></requestFocus>
+		    </EditText>
+		    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblUrlParts" android:text="@string/LblUseUrlParts"></TextView>
+		    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent">
+		        <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/chkProtocol" android:id="@+id/chkProtocol"></CheckBox>
+		        <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/chkSubdomain" android:id="@+id/chksubdomain"></CheckBox>
+		        <CheckBox android:id="@+id/chkDomain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chkDomain"></CheckBox>
+		    </LinearLayout>
+		    <CheckBox android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="@string/chkOthers" android:id="@+id/chkOthers"></CheckBox>
+		    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblLeetOptions" android:text="@string/LblLeetOptions"></TextView>
+		    <Spinner android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/selectLeet" android:entries="@array/LeetOptions"></Spinner>
+		    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblLeetLevel" android:text="@string/LblLeetLevel"></TextView>
+		    <Spinner android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/spinLeetLevel" android:entries="@array/LeetLevel"></Spinner>
+		    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/TextView01" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/lblHashAlgo"></TextView>
+		    <Spinner android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/selectHashAlgos" android:entries="@array/HashAlgos"></Spinner>
+		    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblPassLen" android:text="@string/PasswordLength"></TextView>
+		    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:numeric="integer" android:id="@+id/txtPasswordLen"></EditText>
+		    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblUsername" android:text="@string/Lblusername"></TextView>
+		    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/txtUsername"></EditText>
+		    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblModifer" android:text="@string/LblModifier"></TextView>
+		    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/txtModifier"></EditText>
+		    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lblCharacterSet" android:text="@string/LblCharSet"></TextView>
+		    <Spinner android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/selectCharacterSet" android:entries="@array/NamedCharSets"></Spinner>
+		    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lblPrefix" android:text="@string/LblPrefix"></TextView>
+		    <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/txtPrefix"></EditText>
+		    <TextView android:textAppearance="?android:attr/textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/lblSuffix" android:text="@string/LblSuffix"></TextView>
+		    <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/txtSuffix"></EditText>
+            <CheckBox android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/chkStorePasswordHash" android:text="@string/chkPasswordHash"></CheckBox>
+            <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/lblPasswordHash" android:text="@string/lblPasswordHash" android:visibility="gone"></TextView>
+            <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:inputType="textPassword" android:id="@+id/txtMasterPasswordForHash" android:visibility="gone"></EditText>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

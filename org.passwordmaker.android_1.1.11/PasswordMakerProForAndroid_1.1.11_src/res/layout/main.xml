@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:textAppearance="?android:attr/textAppearanceSmall"
+        	android:text="@string/LblProfile" android:id="@+id/lblProfileName"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	android:textAppearance="?android:attr/textAppearanceSmall"
+        	android:text="" android:id="@+id/lblCurrentProfile"
+        	android:layout_marginLeft="10dip" android:textStyle="bold"></TextView>
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    	android:textAppearance="?android:attr/textAppearanceSmall"
+    	android:text="@string/Input" android:id="@+id/lblInputText"></TextView>
+    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_width="fill_parent">
+        <EditText android:layout_weight="1" android:id="@+id/txtInput" android:layout_height="wrap_content" android:singleLine="true" android:layout_width="fill_parent">
+            <requestFocus></requestFocus>
+        </EditText>
+        <Button android:layout_height="wrap_content" android:id="@+id/btnFavorites" android:layout_width="wrap_content" android:text="@string/ButtonFavorites"></Button>
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+    	android:textAppearance="?android:attr/textAppearanceSmall" 
+    	android:text="@string/MasterPassword" android:id="@+id/lblMasterPass"></TextView>
+    <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    	android:inputType="textPassword" android:id="@+id/txtMasterPass" android:singleLine="true"></EditText>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+    	android:textAppearance="?android:attr/textAppearanceSmall" 
+    	android:text="@string/MasterPwdVerification" android:id="@+id/lblMasterPwdVerification"></TextView>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+    	android:textAppearance="?android:attr/textAppearanceSmall"
+    	android:text="" android:id="@+id/lblVerificationCode"
+    	android:textStyle="bold"></TextView>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+    	android:textAppearance="?android:attr/textAppearanceSmall" android:text="@string/Password" 
+    	android:id="@+id/lblPassword"></TextView>
+    <EditText android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    	android:id="@+id/txtPassword" android:editable="false" android:singleLine="true"></EditText>
+    <Button android:text="@string/LblCopy" android:layout_height="wrap_content" 
+    	android:layout_width="fill_parent" android:id="@+id/btnCopy"></Button>
+    <CheckBox android:id="@+id/chkSaveInputs" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/SaveInputs" android:checked="true"></CheckBox>
+    <TextView android:layout_height="wrap_content" android:id="@+id/lblSaveForLength" android:layout_width="wrap_content" android:text="@string/SaveInputsForMinutes"></TextView>
+    <EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:inputType="number" android:id="@+id/txtSaveInputTime"></EditText>
+</LinearLayout>

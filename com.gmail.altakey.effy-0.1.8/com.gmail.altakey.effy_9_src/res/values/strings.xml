@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Scribbler</string>
+    <string name="app_version">0.1.8</string>
+    <string name="service_started">Service is ready. You can start scribbling from the Notification bar.</string>
+    <string name="service_stopped">Goodbye.</string>
+    <string name="service_start_button">Start</string>
+    <string name="service_stop_button">Stop</string>
+    <string name="enter_drawing_mode_status">Tap to start scribbling</string>
+</resources>

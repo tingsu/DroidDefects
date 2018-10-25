@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="service_started">起動しました。通知領域から選択して描画できます。</string>
+    <string name="service_stopped">終了しました。</string>
+    <string name="service_start_button">起動</string>
+    <string name="service_stop_button">終了</string>
+    <string name="enter_drawing_mode_status">タップすると描画モードへ入ります</string>
+</resources>

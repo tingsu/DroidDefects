@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="You can scribble over the screen with this application.\n\ne.g. quick scribbling on live application in a presentation session with tablet devices." />
+  
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="14sp"
+      android:text="USAGE" />
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="1. Tap the button below" />
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="2. Enter scribbling mode from the Notification bar" />
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="3. You can change pen color with the option menu (alernatively you call it by long-pressing the Back key.)" />
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="4. Press the Home or Back key when you're done." />
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="5. Select Exit from the menu in scribbling mode, to quit the application." />
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:gravity="bottom">
+    <Button
+	android:id="@+id/button1"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="start/stop" />
+    <TextView
+	android:id="@+id/running"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="14sp"
+	android:layout_marginBottom="14sp"
+	android:text="Service is ready.  Tap the button above or select Exit from the menu in scribbling mode to quit." />
+  </LinearLayout>
+</LinearLayout>

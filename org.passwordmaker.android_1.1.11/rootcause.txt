@@ -1,0 +1,3 @@
+Root cause:
+
+	cannot match any of the cases in the 'switch' clause, and no default case provided, causing a null value.

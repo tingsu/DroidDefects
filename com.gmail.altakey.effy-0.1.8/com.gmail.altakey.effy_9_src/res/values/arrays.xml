@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_pen_width">
+        <item>Extra Light</item>
+        <item>Light</item>
+        <item>Regular</item>
+        <item>Bold</item>
+        <item>Extra Bold</item>
+    </string-array>
+    <string-array name="entry_values_pen_width">
+        <item>2</item>
+        <item>3</item>
+        <item>5</item>
+        <item>8</item>
+        <item>13</item>
+    </string-array>
+    <string-array name="entries_pen_alpha">
+        <item>0% (transparent)</item>
+        <item>12%</item>
+        <item>25%</item>
+        <item>33%</item>
+        <item>50%</item>
+        <item>66%</item>
+        <item>75%</item>
+        <item>83%</item>
+        <item>100% (opaque)</item>
+    </string-array>
+    <string-array name="entry_values_pen_alpha">
+        <item>0</item>
+        <item>30</item>
+        <item>64</item>
+        <item>84</item>
+        <item>128</item>
+        <item>168</item>
+        <item>192</item>
+        <item>212</item>
+        <item>255</item>
+    </string-array>
+    <string-array name="entries_drop_alpha">
+        <item>0% (transparent)</item>
+        <item>12%</item>
+        <item>25%</item>
+        <item>33%</item>
+        <item>50%</item>
+        <item>66%</item>
+        <item>75%</item>
+        <item>83%</item>
+        <item>100% (opaque)</item>
+    </string-array>
+    <string-array name="entry_values_drop_alpha">
+        <item>0</item>
+        <item>30</item>
+        <item>64</item>
+        <item>84</item>
+        <item>128</item>
+        <item>168</item>
+        <item>192</item>
+        <item>212</item>
+        <item>255</item>
+    </string-array>
+</resources>

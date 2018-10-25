@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="画面に落書きをすることができます。\n\nタブレット端末を使用したプレゼンテーションなどで、動作中のアプリなどにちょっと図示したりすることができます。" />
+  
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="14sp"
+      android:text="使い方" />
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="1. まず下のボタンを押して起動します。" />
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="2. 通知バーからScribblerをタップすると描画モードへ入ります。" />
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="3. 描画中にメニューを出して色を変えられます。バックボタンを長押しすることでもメニューを出せます。" />
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="4. 描き終わったらバックキーやホームキーで戻れます。" />
+  <TextView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:text="5. 終了するには描画中のメニューから「アプリの終了」を選んで下さい。" />
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:gravity="bottom">
+    <Button
+	android:id="@+id/button1"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="start/stop" />
+    <TextView
+	android:id="@+id/running"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="14sp"
+	android:layout_marginBottom="14sp"
+	android:text="既に起動しています。終了したい場合には描画中のメニューから「アプリの終了」を選ぶか、上のボタンを押して下さい。" />
+  </LinearLayout>
+</LinearLayout>

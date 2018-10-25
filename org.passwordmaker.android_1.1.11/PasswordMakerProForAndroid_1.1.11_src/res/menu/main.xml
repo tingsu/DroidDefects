@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:titleCondensed="@string/NewProfileCondensed" android:title="@string/NewProfile" android:id="@+id/NewProfile"></item>
+    <item android:titleCondensed="@string/ChangeProfileCondensed" android:title="@string/ChangeProfile" android:id="@+id/ChangeProfile"></item>
+    <item android:title="@string/EditProfile" android:id="@+id/EditProfile" android:titleCondensed="@string/EditProfileCondensed"></item>
+    
+</menu>

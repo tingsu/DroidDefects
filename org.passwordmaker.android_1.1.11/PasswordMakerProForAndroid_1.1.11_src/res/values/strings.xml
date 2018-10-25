@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PasswordMaker Pro</string>
+    <string name="Password">Password</string>
+    <string name="MasterPassword">Master Password</string>
+    <string name="MasterPwdVerification">Master Password Verification Code</string>
+    <string name="Input">Input Text</string>
+    <string name="CharacterSet">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789</string>
+    <string name="LblCharSet">Character Set</string>
+    <string name="LblCopy">Copy</string>
+    <string name="NewProfile">New Profile</string>
+    <string name="NewProfileCondensed">New</string>
+    <string name="ChangeProfile">Change Profile</string>
+    <string name="EditFavorites">Edit Favorites</string>
+    <string name="ChangeProfileCondensed">Change</string>
+    <string name="AddProfile">Create</string>
+    <string name="Cancel">Cancel</string>
+    <string name="chkProtocol">Protocol</string>
+    <string name="chkSubdomain">Subdomain</string>
+    <string name="chkOthers">Port, path, anchor, query parameters</string>
+    <string name="AddFavorite">Add new</string>
+    <string-array name="LeetOptions">
+    	<item>Not At All</item>
+		<item>Before Generating Password</item> 
+		<item>After Generating Password</item>
+		<item>Before And After Generating Password</item>
+    </string-array>
+    <string-array name="HashAlgos">
+		<item>MD4</item>
+		<item>HMAC MD4</item>
+		<item>MD5</item>
+		<item>MD5 V. 0.6</item>
+		<item>HMAC MD5</item>
+		<item>HMAC MD5 V. 0.6</item>
+		<item>SHA 1</item>
+		<item>HMAC SHA 1</item>
+		<item>SHA 256</item>
+		<item>HMAC SHA 256</item>
+		<item>HMAC SHA 256 V 1.5.1</item>
+		<item>RIPEMD 160</item>
+		<item>HMAC RIPEMD 160</item>
+    </string-array>
+    <string-array name="LeetLevel">
+		<item>Level 1</item>
+		<item>Level 2</item>
+		<item>Level 3</item>
+		<item>Level 4</item>
+		<item>Level 5</item>
+		<item>Level 6</item>
+		<item>Level 7</item>
+		<item>Level 8</item>
+		<item>Level 9</item>
+    </string-array>
+	<string name="PasswordLength">Password Length</string>
+	<string-array name="NamedCharSets">
+		<item>Alpha Number Symbols</item>
+		<item>Alpha Num</item>
+		<item>Hex number</item>
+		<item>Number</item>
+		<item>Alpha</item>
+		<item>Symbols</item>
+		<item>Custom (Enter your own)</item>
+	</string-array>
+		<string name="LblPrefix">Prefix</string>
+		<string name="LblSuffix">Suffix</string>
+		<string name="LblProfile">Profile:</string>
+		<string name="LblProfileName">Name</string>
+		<string name="LblUseUrlParts">URL Parts to use</string>
+		<string name="LblLeetOptions">Use leet</string>
+		<string name="LblLeetLevel">Leet Level</string>
+		<string name="Lblusername">Username</string>
+		<string name="LblModifier">Modifier</string>
+		<string name="AlphaNum">Alpha Num</string>
+		<string name="chkDomain">Domain</string>
+		<string name="EditProfile">Edit Profile</string>
+		<string name="EditProfileCondensed">Edit</string>
+		<string name="ButtonFavorites">+</string>
+		<string name="chkPasswordHash">Store Password Hash</string>
+		<string name="lblPasswordHash">Store Password Hash</string>
+		<string name="SaveInputs">Save Input</string>
+		<string name="SaveInputsForMinutes">Save Inputs for (Minutes)</string>
+		<string name="EditFavAdd">Add</string>
+		<string name="EditFavRem">Remove</string>
+		<string name="lblHashAlgo">Hash Algo</string>
+</resources>

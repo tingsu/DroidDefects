@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="first_preferencescreen">
+    <ListPreference
+            android:key="pen_width"
+            android:title="Pen width"
+	    android:defaultValue="5"
+	    android:entries="@array/entries_pen_width"
+	    android:entryValues="@array/entry_values_pen_width" />
+    <ListPreference
+            android:key="pen_alpha"
+            android:title="Pen alpha"
+	    android:defaultValue="255"
+	    android:entries="@array/entries_pen_alpha"
+	    android:entryValues="@array/entry_values_pen_alpha" />
+    <ListPreference
+            android:key="drop_alpha"
+            android:title="Backdrop alpha"
+	    android:defaultValue="192"
+	    android:entries="@array/entries_drop_alpha"
+	    android:entryValues="@array/entry_values_drop_alpha" />
+    <Preference
+	android:title="Scribbler Version"
+	android:summary="@string/app_version" />
+</PreferenceScreen> 
