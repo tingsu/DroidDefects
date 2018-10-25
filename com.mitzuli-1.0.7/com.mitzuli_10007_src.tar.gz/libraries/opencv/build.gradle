@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    sourceSets.main {
+        aidl.srcDirs = ['src/main/java']
+        jniLibs.srcDir "$buildDir/native-libs/lib"
+    }
+
+    // TODO Ugly workaround to support ABI based APK splits; dependency management should definitely be improved
+    task extractNativeLibs(type:Copy){
+        from zipTree('libs/native-libs.jar')
+        into "$buildDir/native-libs"
+    }
+
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn extractNativeLibs
+    }
+
+}

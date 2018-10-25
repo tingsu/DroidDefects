@@ -1,0 +1,3 @@
+Root cause:
+
+	This exception occurs when the app is trying to notify the user from the background thread (new Runnable) by opening a Dialog.  The activity has finished but you are trying to display a dialog with a context of the finished activity. Since there is no window for the dialog to display the android runtime throws this exception. 

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2014 Mikel Artetxe <artetxem@gmail.com>
+  ~
+  ~ This program is free software; you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation; either version 2 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along
+  ~ with this program; if not, write to the Free Software Foundation, Inc.,
+  ~ 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<resources>
+
+    <string name="app_name">Mitzuli</string>
+    <string name="settings">Ajustes</string>
+    <string name="translate_button">TRADUCIR</string>
+    <string name="speak_now">habla ahora</string>
+    <string name="translation_copied">Traducción copiada</string>
+    <string name="share_with">Compartir traducción con</string>
+    
+    <string name="ok_button">Aceptar</string>
+    <string name="cancel_button">Cancelar</string>
+
+    <string name="action_src_audio">Salida de voz</string>
+    <string name="action_mic">Entrada de voz</string>
+    <string name="action_camera">Traducción por cámara</string>
+    <string name="action_keyboard">Entrada por teclado</string>
+    <string name="action_clear">Borrar</string>
+    <string name="action_trg_audio">Salida de voz</string>
+    <string name="action_copy">Copiar</string>
+    <string name="action_share">Compartir</string>
+    
+    <string name="error_dialog_title">Error</string>
+    
+    <string name="update_dialog_title">¿Actualizar ahora?</string>
+    <string name="update_dialog_update_button">Actualizar</string>
+    <string name="update_dialog_packages_to_update">Los siguientes paquetes serán actualizados:</string>
+    
+    <string name="no_update_dialog_message">¡No hay actualizaciones disponibles!</string>
+    
+    <string name="update_progress_dialog_title">Actualizando</string>
+    <string name="update_progress_dialog_message">Actualizando paquetes&#8230;</string>
+
+    <string name="offline_on_install_error_title">Instalación fallida</string>
+    <string name="offline_on_install_error_message">Se requiere acceso a Internet para instalar idiomas.</string>
+    <string name="offline_on_translate_error_title">Traducción fallida</string>
+    <string name="offline_on_translate_error_message">Instala idiomas para poder traducir sin acceso a Internet.</string>
+
+    <string name="toast_unavailable_tts">La salida de voz no está disponible para este idioma</string>
+    <string name="toast_unavailable_tts_offline">La salida de voz no está disponible para este idioma sin acceso a Internet</string>
+    <string name="toast_unavailable_stt">La entrada de voz no está disponible para este idioma</string>
+    <string name="toast_unavailable_stt_offline">La entrada de voz no está disponible sin acceso a Internet</string>
+    <string name="toast_unavailable_ocr">La traducción por cámara no está disponible para este idioma</string>
+    
+    
+    <!-- SETTINGS -->
+    
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_display_language">Idioma de la interfaz</string>
+    <string name="pref_entry_value_default_display_language">Predeterminado del sistema</string>
+    <string name="pref_dialog_title_confirm_display_language">¿Cambiar el idioma?</string>
+    <string name="pref_dialog_message_confirm_display_language">La app se reiniciará para aplicar los cambios.</string>
+    <string name="pref_title_beta_packages">Idiomas beta</string>
+    <string name="pref_description_beta_packages">Habilitar idiomas beta (la calidad de las traducciones puede ser mala)</string>
+    <string name="pref_title_mark_unknown">Marcar palabras desconocidas</string>
+    <string name="pref_description_mark_unknown">Mostrar marcas para palabras desconocidas</string>
+    <string name="pref_title_auto_tts">TTS automático</string>
+    <string name="pref_description_auto_tts">Leer automáticamente el texto traducido en el modo micrófono</string>
+    
+    <string name="pref_header_updates">Actualizaciones</string>
+    <string name="pref_title_autocheck_updates">Actualizar automáticamente</string>
+    <string name="pref_description_autocheck_updates">Comprobar actualizaciones para tus idiomas de manera automática</string>
+    <string name="pref_title_check_updates">Comprobar actualizaciones</string>
+    <string name="pref_description_check_updates">Comprobar actualizaciones para tus idiomas</string>
+
+    <string name="pref_header_advanced">Avanzado</string>
+    <string name="pref_title_external_storage">Usar la memoria externa</string>
+    <string name="pref_description_external_storage">Instalar los paquetes en la memoria externa</string>
+    <string name="pref_dialog_title_confirm_external_storage">¿Cambiar la ubicación de instalación?</string>
+    <string name="pref_dialog_message_confirm_external_storage">Se desinstalarán todos los pares de idiomas descargados.</string>
+    <string name="pref_title_signature_verification">Verificar la firma digital</string>
+    <string name="pref_description_signature_verification">Verificar la firma digital de los paquetes para prevenir ataques de inyección de código</string>
+
+    <string name="pref_header_development">Desarrollo</string>
+    <string name="pref_title_ocr_debugging">Depuración del OCR</string>
+    <string name="pref_description_ocr_debugging">Guardar archivos para la depuración del OCR en la memoria externa</string>
+
+    <string name="pref_header_about">Acerca de</string>
+    <string name="pref_title_licenses">Licencias de software libre</string>
+    <string name="pref_description_licenses">Detalles de la licencia de software de código abierto</string>
+    <string name="pref_title_acknowledgments">Agradecimientos</string>
+    <string name="pref_description_acknowledgments">Detalles sobre las instituciones que han financiado el proyecto</string>
+    <string name="pref_dialog_message_acknowledgments">Proyecto financiado por el Gobierno Vasco dentro de la convocatoria IKT 2014</string>
+
+    <string name="offline_on_update_error_title">Actualización fallida</string>
+    <string name="offline_on_update_error_message">Se requiere acceso a Internet para actualizar idiomas.</string>
+
+
+    <!-- LANGUAGE NAMES -->
+
+    <string name="language_name_afr">Afrikáans</string>
+    <string name="language_name_ara">Árabe</string>
+    <string name="language_name_arg">Aragonés</string>
+    <string name="language_name_ast">Asturiano</string>
+    <string name="language_name_bos">Bosnio</string>
+    <string name="language_name_bre">Bretón</string>
+    <string name="language_name_bul">Búlgaro</string>
+    <string name="language_name_cat">Catalán</string>
+    <string name="language_name_ces">Checo</string>
+    <string name="language_name_cym">Galés</string>
+    <string name="language_name_dan">Danés</string>
+    <string name="language_name_deu">Alemán</string>
+    <string name="language_name_eng">Inglés</string>
+    <string name="language_name_epo">Esperanto</string>
+    <string name="language_name_eus">Vasco</string>
+    <string name="language_name_fra">Francés</string>
+    <string name="language_name_glg">Gallego</string>
+    <string name="language_name_hat">Haitiano</string>
+    <string name="language_name_hbs">Serbocroata</string>
+    <string name="language_name_heb">Hebreo</string>
+    <string name="language_name_hin">Hindi</string>
+    <string name="language_name_hrv">Croata</string>
+    <string name="language_name_isl">Islandés</string>
+    <string name="language_name_ind">Indonesio</string>
+    <string name="language_name_ita">Italiano</string>
+    <string name="language_name_kaz">Kazajo</string>
+    <string name="language_name_mkd">Macedonio</string>
+    <string name="language_name_mlt">Maltés</string>
+    <string name="language_name_msa">Malayo</string>
+    <string name="language_name_nld">Neerlandés</string>
+    <string name="language_name_nno">Noruego Nynorsk</string>
+    <string name="language_name_nob">Noruego Bokmål</string>
+    <string name="language_name_nor">Noruego</string>
+    <string name="language_name_oci">Occitano</string>
+    <string name="language_name_pol">Polaco</string>
+    <string name="language_name_por">Portugués</string>
+    <string name="language_name_ron">Rumano</string>
+    <string name="language_name_slv">Esloveno</string>
+    <string name="language_name_sme">Sami septentrional</string>
+    <string name="language_name_spa">Español</string>
+    <string name="language_name_srd">Sardo</string>
+    <string name="language_name_srp">Serbio</string>
+    <string name="language_name_swe">Sueco</string>
+    <string name="language_name_tat">Tártaro</string>
+    <string name="language_name_tet">Tetún</string>
+    <string name="language_name_urd">Urdu</string>
+
+    <string name="country_name_aran">Arán</string>
+    <string name="country_name_bra">Brasil</string>
+    <string name="country_name_usa">EE.UU.</string>
+    <string name="country_name_valencia">Valencia</string>
+
+</resources>

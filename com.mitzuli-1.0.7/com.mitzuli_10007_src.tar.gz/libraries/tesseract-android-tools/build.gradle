@@ -1,0 +1,43 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    sourceSets.main {
+        jniLibs.srcDir "$buildDir/native/libs"
+    }
+
+    task ndkBuild(type:Exec) {
+        def ndk_build_command = 'ndk-build'
+        if (Os.isFamily(Os.FAMILY_WINDOWS)) {
+            ndk_build_command = 'ndk-build.cmd'
+        }
+        commandLine "$ndkdir/$ndk_build_command", "--directory", "$projectDir/src/main/native", '-j', Runtime.runtime.availableProcessors(),
+                "APP_PLATFORM=android-8",
+                "APP_BUILD_SCRIPT=$projectDir/src/main/native/Android.mk",
+                "NDK_APPLICATION_MK=$projectDir/src/main/native/Application.mk",
+                "NDK_OUT=$buildDir/native/obj",
+                "NDK_APP_DST_DIR=$buildDir/native/libs/\$(TARGET_ARCH_ABI)"
+    }
+
+    tasks.withType(JavaCompile) {
+        compileTask -> compileTask.dependsOn ndkBuild
+    }
+
+}

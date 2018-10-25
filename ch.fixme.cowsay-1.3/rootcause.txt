@@ -1,0 +1,3 @@
+Root cause:
+
+	The view is initialized or changed in the main UI thread, but if another thread update this view, the exception may be thrown.
