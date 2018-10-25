@@ -17,4 +17,7 @@ App | Package | Version | LOC | Category | Exception Category | Root Cause | Exc
 *[Tickmate](https://github.com/lordi/tickmate)* | `de.smasi.tickmate` | 1.2.0 |  | One bit journal | Framework | Index Error | CursorIndexOutOfBoundsException | [issue](https://github.com/lordi/tickmate/issues/38) | [buggy](https://github.com/lordi/tickmate/commit/00486161d89dca9a66164b5705f37853fb66ffa9) | [fixed](https://github.com/lordi/tickmate/commit/ed127c37bf70590374ce3053cd0728120439a723) | -
 *[Olam](https://github.com/vishnus/Olam)* | `com.olam` | 1.0 |  | Olam Malayalam Dictionary  | Application | Index Error | StringIndexOutOfBoundsException | [issue](https://github.com/vishnus/Olam/issues/1) | - | - | -
 *[Anki-Android](https://github.com/ankidroid/Anki-Android)* | `com.ichi2.anki` | 2.8.2beta2 |  | Anki on Android | Framework | Constraint Error | IllegalStateException | [issue](https://github.com/ankidroid/Anki-Android/issues/4589) | - | - | -
+*[xx](xx)* | `xx` | xx |  | xx | Framework | UI Update Error | CalledFromWrongThreadException | [issue](xx) | - | - | -
+*[xx](xx)* | `xx` | xx |  | xx | Framework | Lifecycle Error | WindowManager$BadToken (unable to add window) | [issue](xx) | - | - | -
+*[xx](xx)* | `xx` | xx |  | xx | Framework | Lifecycle Error | NetworkOnMainThreadException | [issue](xx) | - | - | -
 1 | 2 | 3
