@@ -24,6 +24,4 @@ App | Package | Version | LOC | Category | Exception Category | Root Cause | Exc
 *[Password Maker](https://github.com/tasermonkey/android-passwordmaker)* | `org.passwordmaker.android` | 1.1.11 |  | Security | app | Nullpointer | NullPointerException | - | - | - | -
 *[AppBak](https://github.com/moparisthebest/AppBak)* | `org.moparisthebest.appbak` | 1 |  | System | Framework | Hardware | OutOfMempryError | - | - | - | -
 *[Scribbler](https://github.com/taky/effy)* | `com.gmail.altakey.effy` | 0.1.8 |  | Graphics | Framework | Parameter Error | FormatFlagsConversionMismatchException | - | - | - | -
-*[xx](xx)* | `xx` | xx |  | xx | Framework | Lifecycle Error | NetworkOnMainThreadException | [issue](xx) | - | - | -
-*[xx](xx)* | `xx` | xx |  | xx | Framework | Lifecycle Error | NetworkOnMainThreadException | [issue](xx) | - | - | -
 1 | 2 | 3
