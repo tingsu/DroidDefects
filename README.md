@@ -21,4 +21,9 @@ App | Package | Version | LOC | Category | Exception Category | Root Cause | Exc
 *[xx](xx)* | `xx` | xx |  | xx | Framework | Constraint Error | NetworkOnMainThreadException | [issue](xx) | - | - | -
 *[Anki-Android](https://github.com/ankidroid/Anki-Android)* | `com.ichi2.anki` | 2.8.2beta2 |  | Anki on Android | Framework | Constraint Error | IllegalStateException(Fragment null must be a public static class to be  properly recreated from instance state) | [issue](https://github.com/ankidroid/Anki-Android/issues/4589) | - | [fixed](https://github.com/ankidroid/Anki-Android/pull/4591/commits/5c8a30999eba23661d3e3a64072c64438ebf91a8) | -
 *[tripmobile](https://github.com/TripSit/tripmobile)* | `me.tripsit.mobile` | 1.0 |  | Tripsit mobile app | Framework | Constraint Error | RuntimeException (Can't create handler inside thread that has not called Looper.prepare()) | [issue](https://github.com/TripSit/tripmobile/issues/13) | [buggy](https://github.com/TripSit/tripmobile/commit/793893cfc3a61be734283c8ff5505a45d6c6ad39) | [fixed](https://github.com/TripSit/tripmobile/commit/da488e4211b33887985a2339cc3026bb96393207) | -
+*[Password Maker](https://github.com/tasermonkey/android-passwordmaker)* | `org.passwordmaker.android` | 1.1.11 |  | Security | app | Nullpointer | NullPointerException | - | - | - | -
+*[AppBak](https://github.com/moparisthebest/AppBak)* | `org.moparisthebest.appbak` | 1 |  | System | Framework | Hardware | OutOfMempryError | - | - | - | -
+*[Scribbler](https://github.com/taky/effy)* | `com.gmail.altakey.effy` | 0.1.8 |  | Graphics | Framework | Parameter Error | FormatFlagsConversionMismatchException | - | - | - | -
+*[xx](xx)* | `xx` | xx |  | xx | Framework | Lifecycle Error | NetworkOnMainThreadException | [issue](xx) | - | - | -
+*[xx](xx)* | `xx` | xx |  | xx | Framework | Lifecycle Error | NetworkOnMainThreadException | [issue](xx) | - | - | -
 1 | 2 | 3
