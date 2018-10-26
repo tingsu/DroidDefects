@@ -1,0 +1,33 @@
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: FATAL EXCEPTION: main
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: Process: org.wordpress.android, PID: 4928
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{org.wordpress.android/org.wordpress.android.ui.publicize.PublicizeListActivity}: java.lang.ClassCastException: java.util.ArrayList cannot be cast to org.wordpress.android.widgets.WPPrefView$PrefListItems
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: Caused by: java.lang.ClassCastException: java.util.ArrayList cannot be cast to org.wordpress.android.widgets.WPPrefView$PrefListItems
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at org.wordpress.android.widgets.WPPrefView.onRestoreInstanceState(WPPrefView.java:241)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.view.View.dispatchRestoreInstanceState(View.java:14746)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3121)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3127)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3127)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3127)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3127)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.view.View.restoreHierarchyState(View.java:14724)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.Fragment.restoreViewState(Fragment.java:636)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:994)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1148)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1130)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1953)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.FragmentController.dispatchActivityCreated(FragmentController.java:152)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.Activity.performCreateCommon(Activity.java:6232)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6239)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+10-26 03:34:38.959  4928  4928 E AndroidRuntime: 	... 9 more
