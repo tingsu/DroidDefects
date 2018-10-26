@@ -1,4 +1,4 @@
-# defect4android
+# defects4android
 
 App | Package | Version | LOC | Category | Exception Category | Root Cause | Exception Type | Issue | Buggy | Fixed | Comments 
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
