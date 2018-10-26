@@ -1,0 +1,24 @@
+// CRASH: com.addi (pid 30545)
+// Short Msg: android.content.ActivityNotFoundException
+// Long Msg: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=market://details?id=org.openintents.filemanager }
+// Build Label: generic_x86/sdk_x86/generic_x86:4.4.2/KK/3462041:eng/test-keys
+// Build Changelist: 3462041
+// Build Time: 1478741905000
+// android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=market://details?id=org.openintents.filemanager }
+// 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1632)
+// 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1424)
+// 	at android.app.Activity.startActivityForResult(Activity.java:3424)
+// 	at android.app.Activity.startActivityForResult(Activity.java:3385)
+// 	at android.app.Activity.startActivity(Activity.java:3627)
+// 	at android.app.Activity.startActivity(Activity.java:3595)
+// 	at com.addi.Addi$11.onClick(Addi.java:653)
+// 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+// 	at android.os.Handler.dispatchMessage(Handler.java:102)
+// 	at android.os.Looper.loop(Looper.java:136)
+// 	at android.app.ActivityThread.main(ActivityThread.java:5017)
+// 	at java.lang.reflect.Method.invokeNative(Native Method)
+// 	at java.lang.reflect.Method.invoke(Method.java:515)
+// 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+// 	at dalvik.system.NativeStart.main(Native Method)
+// 

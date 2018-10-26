@@ -1,0 +1,3 @@
+Root cause:
+
+	Devices that have no market apps will crash with such exception. A better solution: try-catch
