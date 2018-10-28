@@ -1,0 +1,15 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.ProgressBar.setVisibility(int)' on a null object reference
+	at com.github.yeriomin.yalpstore.fragment.details.ButtonDownload.download(ButtonDownload.java:7095)
+	at com.github.yeriomin.yalpstore.fragment.details.ButtonDownload.onButtonClick$3c7ec8c3(ButtonDownload.java:48)
+	at com.github.yeriomin.yalpstore.fragment.details.Button$1.onClick(Button.java:34)
+	at android.view.View.performClick(View.java:4827)
+	at android.view.View$PerformClick.run(View.java:20235)
+	at android.os.Handler.handleCallback(Handler.java:810)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:209)
+	at android.app.ActivityThread.main(ActivityThread.java:5900)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:372)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1005)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:800)
+
