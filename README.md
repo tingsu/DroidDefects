@@ -29,3 +29,25 @@ App | Package | Version | LOC | Category | Exception Category | Root Cause | Exc
 *[Password Maker](https://github.com/passwordmaker/android-passwordmaker)* | `org.passwordmaker.android` | 1.1.11 |  | Security | Application | NullPointer Error | NullPointerException | - | - | - | -
 *[YalpStore](https://github.com/yeriomin/YalpStore)* | `com.github.yeriomin.yalpstore` | 0.17 |  | Yalp Store  | Application | NullPointer Error | NullPointerException (Attempt to invoke virtual method ... on a null object reference) | [issue](https://github.com/yeriomin/YalpStore/issues/204) | - | [fixed](https://github.com/yeriomin/YalpStore/commit/a36b98672cd0db3d9863f50509b268c273f566d8) | -
 1 | 2 | 3
+
+
+
+Implementation details
+----------------------
+
+The directory structure of defects4android is as follows:
+
+    defects4android
+       |
+       |--- cases:                                Typical exception cases 
+            |
+            | -- adsdroid
+                    |
+                    | --- .apk                    The apk file      
+                    | ---  exception.txt          The exception trace
+                    | ---  README.md              The reproduciable steps
+                    | ---  rootcause.txt          The root cause
+                    | ---  src                    The app source code
+       |
+       |--- dataset:                              The benchmark dataset
+      
