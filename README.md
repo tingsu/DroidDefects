@@ -28,8 +28,6 @@ App | Package | Version | LOC | Category | Exception Category | Root Cause | Exc
 *[WordPress-Android](https://github.com/wordpress-mobile/WordPress-Android)* | `org.wordpress.android` | 8.2 |  | WordPress for Android | Framework | Other Errors | ClassCastException | [issue](https://github.com/wordpress-mobile/WordPress-Android/issues/6661) | [buggy](https://github.com/wordpress-mobile/WordPress-Android/commit/5c09544b03e3f10cd07dc4b9e243dfeae21fc38a) | [fixed](https://github.com/wordpress-mobile/WordPress-Android/commit/827c0fb647435f49948e6bf770ce404965059037) | [discussion](https://github.com/wordpress-mobile/WordPress-Android/pull/6662)
 *[Password Maker](https://github.com/passwordmaker/android-passwordmaker)* | `org.passwordmaker.android` | 1.1.11 |  | Security | Application | NullPointer Error | NullPointerException | - | - | - | -
 *[YalpStore](https://github.com/yeriomin/YalpStore)* | `com.github.yeriomin.yalpstore` | 0.17 |  | Yalp Store  | Application | NullPointer Error | NullPointerException (Attempt to invoke virtual method ... on a null object reference) | [issue](https://github.com/yeriomin/YalpStore/issues/204) | - | [fixed](https://github.com/yeriomin/YalpStore/commit/a36b98672cd0db3d9863f50509b268c273f566d8) | -
-1 | 2 | 3
-
 
 
 Implementation details
