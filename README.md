@@ -29,7 +29,7 @@ App | Package | Version | LOC | Category | Exception Category | Root Cause | Exc
 *[screenrecorder](https://github.com/vijai1996/screenrecorder)* | `com.orpheusdroid.screenrecorder` | 1.8.4 |  | Screen Recorder | Library | Compatibility Error | IllegalStateException (must call onStart before onStop) | [issue](https://github.com/vijai1996/screenrecorder/issues/32) | - | - | Compatibility issue between the app and the library [countly-sdk-android](https://github.com/Countly/countly-sdk-android) it uses to edit video
 *[Password Maker](https://github.com/passwordmaker/android-passwordmaker)* | `org.passwordmaker.android` | 1.1.11 |  | Security | Application | NullPointer Error | NullPointerException | - | - | - | -
 *[YalpStore](https://github.com/yeriomin/YalpStore)* | `com.github.yeriomin.yalpstore` | 0.17 |  | Yalp Store  | Application | NullPointer Error | NullPointerException (Attempt to invoke virtual method ... on a null object reference) | [issue](https://github.com/yeriomin/YalpStore/issues/204) | - | [fixed](https://github.com/yeriomin/YalpStore/commit/a36b98672cd0db3d9863f50509b268c273f566d8) | -
-*[Zom-Android](https://github.com/zom/Zom-Android)* | `im.zom.messenger` | 15.2.0-RC-3 |  | Chat App | Application | NullPointer Error | NullPointerException | Attempt to read from field ... on a null object reference | [issue](https://github.com/zom/Zom-Android/issues/275) | - | - | - 
+*[Zom-Android](https://github.com/zom/Zom-Android)* | `im.zom.messenger` | 15.2.0-RC-3 |  | Chat App | Application | NullPointer Error | NullPointerException (Attempt to read from field ... on a null object reference) | [issue](https://github.com/zom/Zom-Android/issues/275) | - | - | - 
 *[transistor](https://github.com/y20k/transistor)* | `org.y20k.transistor` | 1.2.3 |  | Radio App | Application | NullPointer Error | NullPointerException (Attempt to invoke virtual method ... on a null object reference) | [issue](https://github.com/y20k/transistor/issues/63) | - | - | -
 *[LibreNews](https://github.com/milesmcc/LibreNews-Android)* | `app.librenews.io.librenews` | 1.4 |  | LibreNews client | Application | Index Error | ArrayIndexOutOfBoundsException | [issue](https://github.com/milesmcc/LibreNews-Android/issues/27) | - | - | -
 *[LibreNews](https://github.com/milesmcc/LibreNews-Android)* | `app.librenews.io.librenews` | 1.4 |  | LibreNews client | Application | NullPointer Error | NullPointerException (Attempt to invoke virtual method ... on a null object | [issue](https://github.com/milesmcc/LibreNews-Android/issues/23) | - | - | -
@@ -53,4 +53,7 @@ The directory structure of DroidDefects is as follows:
                     | ---  src                    The app source code
        |
        |--- ground-truth-cases:                  Ground-truth exception cases
+			|
+			| -- fdroid_apks_complexity.csv		  the app complexity metrics (#LOC, #Classes, #Activities, #Methods)
+			| -- Dataset_crashanalysis			  the ground-truth exception traces
       
