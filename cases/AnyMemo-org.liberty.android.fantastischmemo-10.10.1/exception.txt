@@ -1,0 +1,28 @@
+E AndroidRuntime: FATAL EXCEPTION: main
+E AndroidRuntime: Process: org.liberty.android.fantastischmemo, PID: 25565
+E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{org.liberty.android.fantastischmemo/org.liberty.android.fantastischmemo.ui.StudyActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.compareTo(java.lang.String)' on a null object reference
+E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+E AndroidRuntime: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+E AndroidRuntime: 	at android.app.ActivityThread.-wrap11(ActivityThread.java)
+E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.compareTo(java.lang.String)' on a null object reference
+E AndroidRuntime: 	at org.liberty.android.fantastischmemo.common.AnyMemoDBOpenHelperManager$1.compare(AnyMemoDBOpenHelperManager.java:30)
+E AndroidRuntime: 	at org.liberty.android.fantastischmemo.common.AnyMemoDBOpenHelperManager$1.compare(AnyMemoDBOpenHelperManager.java:24)
+E AndroidRuntime: 	at java.util.TreeMap.find(TreeMap.java:279)
+E AndroidRuntime: 	at java.util.TreeMap.findByObject(TreeMap.java:351)
+E AndroidRuntime: 	at java.util.TreeMap.containsKey(TreeMap.java:182)
+E AndroidRuntime: 	at java.util.Collections$SynchronizedMap.containsKey(Collections.java:682)
+E AndroidRuntime: 	at org.liberty.android.fantastischmemo.common.AnyMemoDBOpenHelperManager.getHelper(AnyMemoDBOpenHelperManager.java:54)
+E AndroidRuntime: 	at org.liberty.android.fantastischmemo.ui.QACardActivity.startInit(QACardActivity.java:150)
+E AndroidRuntime: 	at org.liberty.android.fantastischmemo.ui.StudyActivity.onCreate(StudyActivity.java:119)
+E AndroidRuntime: 	at android.app.Activity.performCreate(Activity.java:6237)
+E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+E AndroidRuntime: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+E AndroidRuntime: 	... 9 more
+
