@@ -1,0 +1,23 @@
+FATAL EXCEPTION: main
+E AndroidRuntime: Process: app.librenews.io.librenews, PID: 25038
+E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.Context android.view.View.getContext()' on a null object reference
+E AndroidRuntime: 	at app.librenews.io.librenews.views.SettingsActivityFragment.onSharedPreferenceChanged(SettingsActivityFragment.java:26)
+E AndroidRuntime: 	at android.app.SharedPreferencesImpl$EditorImpl.notifyListeners(SharedPreferencesImpl.java:479)
+E AndroidRuntime: 	at android.app.SharedPreferencesImpl$EditorImpl.apply(SharedPreferencesImpl.java:387)
+E AndroidRuntime: 	at android.preference.Preference.tryCommit(Preference.java:1415)
+E AndroidRuntime: 	at android.preference.Preference.persistBoolean(Preference.java:1681)
+E AndroidRuntime: 	at android.preference.TwoStatePreference.setChecked(TwoStatePreference.java:81)
+E AndroidRuntime: 	at android.preference.TwoStatePreference.onClick(TwoStatePreference.java:66)
+E AndroidRuntime: 	at android.preference.Preference.performClick(Preference.java:994)
+E AndroidRuntime: 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:214)
+E AndroidRuntime: 	at android.widget.AdapterView.performItemClick(AdapterView.java:310)
+E AndroidRuntime: 	at android.widget.AbsListView.performItemClick(AbsListView.java:1145)
+E AndroidRuntime: 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:3042)
+E AndroidRuntime: 	at android.widget.AbsListView$3.run(AbsListView.java:3879)
+E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:739)
+E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

@@ -1,0 +1,17 @@
+FATAL EXCEPTION: main
+E AndroidRuntime: Process: app.librenews.io.librenews, PID: 24989
+E AndroidRuntime: java.lang.ArrayIndexOutOfBoundsException: length=0; index=0
+E AndroidRuntime: 	at app.librenews.io.librenews.controllers.FlashManager.convertFlashesToOutputString(FlashManager.java:184)
+E AndroidRuntime: 	at app.librenews.io.librenews.controllers.FlashManager.writeFlashesToStorage(FlashManager.java:152)
+E AndroidRuntime: 	at app.librenews.io.librenews.controllers.FlashManager.clearPushedFlashes(FlashManager.java:200)
+E AndroidRuntime: 	at app.librenews.io.librenews.controllers.FlashManager.refresh(FlashManager.java:256)
+E AndroidRuntime: 	at app.librenews.io.librenews.views.MainFlashActivity$1.onClick(MainFlashActivity.java:67)
+E AndroidRuntime: 	at android.view.View.performClick(View.java:5198)
+E AndroidRuntime: 	at android.view.View$PerformClick.run(View.java:21147)
+E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:739)
+E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:95)
+E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
