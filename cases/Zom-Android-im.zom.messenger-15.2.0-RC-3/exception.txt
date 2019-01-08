@@ -1,0 +1,15 @@
+FATAL EXCEPTION: main
+E AndroidRuntime: Process: im.zom.messenger, PID: 20836
+E AndroidRuntime: java.lang.NullPointerException: Attempt to read from field 'java.lang.String org.awesomeapp.messenger.ui.onboarding.OnboardingAccount.username' on a null object reference
+E AndroidRuntime: 	at org.awesomeapp.messenger.ui.onboarding.OnboardingActivity$ExistingAccountTask.onPostExecute(OnboardingActivity.java:757)
+E AndroidRuntime: 	at org.awesomeapp.messenger.ui.onboarding.OnboardingActivity$ExistingAccountTask.onPostExecute(OnboardingActivity.java:728)
+E AndroidRuntime: 	at android.os.AsyncTask.finish(AsyncTask.java:651)
+E AndroidRuntime: 	at android.os.AsyncTask.-wrap1(AsyncTask.java)
+E AndroidRuntime: 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:102)
+E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:148)
+E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:5417)
+E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+E AndroidRuntime: 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+
