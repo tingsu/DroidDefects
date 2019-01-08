@@ -38,11 +38,11 @@ App | Package | Version | LOC | Category | Exception Category | Root Cause | Exc
 Implementation details
 ----------------------
 
-The directory structure of defects4android is as follows:
+The directory structure of DroidDefects is as follows:
 
-    defects4android
+    DroidDefects
        |
-       |--- cases:                                Typical exception cases 
+       |--- reproducible-cases:                  Reproducible exception cases 
             |
             | -- adsdroid
                     |
@@ -52,5 +52,5 @@ The directory structure of defects4android is as follows:
                     | ---  rootcause.txt          The root cause
                     | ---  src                    The app source code
        |
-       |--- dataset:                              The benchmark dataset
+       |--- ground-truth-cases:                  Ground-truth exception cases
       
