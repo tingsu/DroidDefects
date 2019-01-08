@@ -1,0 +1,12 @@
+java.util.ConcurrentModificationException
+       at java.util.HashMap$HashIterator.nextEntry(HashMap.java:806)
+       at java.util.HashMap$KeyIterator.next(HashMap.java:833)
+       at com.google.android.apps.muzei.api.MuzeiArtSource.publishCurrentState(MuzeiArtSource.java:683)
+       at com.google.android.apps.muzei.api.MuzeiArtSource.access$000(MuzeiArtSource.java:190)
+       at com.google.android.apps.muzei.api.MuzeiArtSource$1.handleMessage(MuzeiArtSource.java:272)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:136)
+       at android.app.ActivityThread.main(ActivityThread.java:5017)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)

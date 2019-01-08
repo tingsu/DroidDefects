@@ -1,0 +1,8 @@
+java.lang.IllegalStateException
+    at java.nio.charset.CharsetEncoder.flush(CharsetEncoder.java:524)
+    at net.wigle.wigleandroid.background.FileUploaderTask.writeFileWithCursor(FileUploaderTask.java:489)
+    at net.wigle.wigleandroid.background.FileUploaderTask.writeFile(FileUploaderTask.java:353)
+    at net.wigle.wigleandroid.background.FileUploaderTask.doUpload(FileUploaderTask.java:160)
+    at net.wigle.wigleandroid.background.FileUploaderTask.doRun(FileUploaderTask.java:109)
+    at net.wigle.wigleandroid.background.FileUploaderTask.subRun(FileUploaderTask.java:87)
+    at net.wigle.wigleandroid.background.AbstractBackgroundTask.run(AbstractBackgroundTask.java:65)

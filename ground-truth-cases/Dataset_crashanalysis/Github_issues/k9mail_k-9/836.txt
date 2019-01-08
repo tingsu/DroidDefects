@@ -1,0 +1,13 @@
+10-07 15:57:48.501  3754  9300 E k9      : com.fsck.k9.mail.CertificateValidationException: Handshake failed
+10-07 15:57:48.501  3754  9300 E k9      :      at com.fsck.k9.mail.transport.SmtpTransport.open(SmtpTransport.java:414)
+10-07 15:57:48.501  3754  9300 E k9      :      at com.fsck.k9.activity.setup.AccountSetupCheckSettings$1.run(AccountSetupCheckSettings.java:146)
+10-07 15:57:48.501  3754  9300 E k9      : Caused by: javax.net.ssl.SSLHandshakeException: Handshake failed
+10-07 15:57:48.501  3754  9300 E k9      :      at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:396)
+10-07 15:57:48.501  3754  9300 E k9      :      at com.android.org.conscrypt.OpenSSLSocketImpl.waitForHandshake(OpenSSLSocketImpl.java:629)
+10-07 15:57:48.501  3754  9300 E k9      :      at com.android.org.conscrypt.OpenSSLSocketImpl.getInputStream(OpenSSLSocketImpl.java:591)
+10-07 15:57:48.501  3754  9300 E k9      :      at com.fsck.k9.mail.transport.SmtpTransport.open(SmtpTransport.java:284)
+10-07 15:57:48.501  3754  9300 E k9      :      ... 1 more
+10-07 15:57:48.501  3754  9300 E k9      : Caused by: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0x9d596fc0: Failure in SSL library, usually a protocol error
+10-07 15:57:48.501  3754  9300 E k9      : error:100c1069:SSL routines:ssl3_get_server_key_exchange:BAD_DH_P_LENGTH (external/boringssl/src/ssl/s3_clnt.c:1193 0xab21d50f:0x00000000)
+10-07 15:57:48.501  3754  9300 E k9      :      at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+10-07 15:57:48.501  3754  9300 E k9      :      at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)

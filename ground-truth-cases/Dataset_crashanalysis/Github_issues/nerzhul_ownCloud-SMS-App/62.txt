@@ -1,0 +1,10 @@
+07-15 15:56:41.804  17513-17529/fr.unix_experience.owncloud_sms:sync W/dalvikvm? VFY: unable to resolve virtual method 139: Landroid/app/Notification$Builder;.build ()Landroid/app/Notification;
+07-15 15:56:41.804  17513-17529/fr.unix_experience.owncloud_sms:sync D/dalvikvm? VFY: replacing opcode 0x6e at 0x0025
+07-15 15:56:41.814  17513-17529/fr.unix_experience.owncloud_sms:sync W/dalvikvm? threadid=11: thread exiting with uncaught exception (group=0x40ad8228)
+07-15 15:56:41.814  17513-17529/fr.unix_experience.owncloud_sms:sync E/AndroidRuntime? FATAL EXCEPTION: SyncAdapterThread-1
+    java.lang.NoSuchMethodError: android.app.Notification$Builder.build
+            at fr.nrz.androidlib.notifications.NrzNotification.createNotify(NrzNotification.java:56)
+            at fr.unix_experience.owncloud_sms.notifications.OCSMSNotificationManager.createNotificationIfPossible(OCSMSNotificationManager.java:61)
+            at fr.unix_experience.owncloud_sms.notifications.OCSMSNotificationManager.setSyncProcessMsg(OCSMSNotificationManager.java:33)
+            at fr.unix_experience.owncloud_sms.sync_adapters.SmsSyncAdapter.onPerformSync(SmsSyncAdapter.java:56)
+            at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:247)

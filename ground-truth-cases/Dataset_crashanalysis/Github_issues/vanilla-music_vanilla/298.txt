@@ -1,0 +1,23 @@
+java.lang.OutOfMemoryError
+    at android.graphics.Bitmap.nativeCreate(Native Method)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:810)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:787)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:708)
+    at android.graphics.Bitmap.createScaledBitmap(Bitmap.java:595)
+    at ch.blinkenlights.android.vanilla.CoverBitmap.createScaledBitmap(CoverBitmap.java:334)
+    at ch.blinkenlights.android.vanilla.CoverBitmap.createBitmap(CoverBitmap.java:137)
+    at ch.blinkenlights.android.vanilla.CoverView.generateBitmap(CoverView.java:375)
+    at ch.blinkenlights.android.vanilla.CoverView.handleMessage(CoverView.java:462)
+    at android.os.Handler.dispatchMessage(Handler.java:98)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.os.HandlerThread.run(HandlerThread.java:61)
+1. Illegal expectation
+
+java.lang.IllegalStateException
+    at android.media.MediaPlayer.prepare(Native Method)
+    at ch.blinkenlights.android.vanilla.PlaybackService.prepareMediaPlayer(PlaybackService.java:639)
+    at ch.blinkenlights.android.vanilla.PlaybackService.triggerGaplessUpdate(PlaybackService.java:760)
+    at ch.blinkenlights.android.vanilla.PlaybackService.handleMessage(PlaybackService.java:1553)
+    at android.os.Handler.dispatchMessage(Handler.java:98)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.os.HandlerThread.run(HandlerThread.java:61)

@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: org.vono.narau
+//version: 0.8.1
+//appro_time: 7
+ java.lang.IllegalStateException: Expected a string but was BOOLEAN
+ 	at org.vono.narau.utils.JsonReader.nextString(JsonReader.java:402)
+ 	at org.vono.narau.models.history.OnlineResult$MyMemoryTranslation$Match.parse(OnlineResult.java:297)
+ 	at org.vono.narau.models.history.OnlineResult$MyMemoryTranslation$Match.<init>(OnlineResult.java:269)
+ 	at org.vono.narau.models.history.OnlineResult$MyMemoryTranslation.parse(OnlineResult.java:191)
+ 	at org.vono.narau.models.history.OnlineResult$MyMemoryTranslation.<init>(OnlineResult.java:173)
+ 	at org.vono.narau.models.history.OnlineResult.<init>(OnlineResult.java:67)
+ 	at org.vono.narau.dictionary.DictionaryOnlineActivity$GetTranslationTask.onPostExecute(DictionaryOnlineActivity.java:549)
+ 	at org.vono.narau.dictionary.DictionaryOnlineActivity$GetTranslationTask.onPostExecute(DictionaryOnlineActivity.java:423)
+ 	at android.os.AsyncTask.finish(AsyncTask.java:631)
+ 	at android.os.AsyncTask.access$600(AsyncTask.java:177)
+ 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

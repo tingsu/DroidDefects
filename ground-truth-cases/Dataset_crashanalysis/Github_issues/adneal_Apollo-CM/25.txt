@@ -1,0 +1,22 @@
+E/JavaBinder(11008): java.lang.NoSuchMethodError: android.content.ContentResolver.query
+E/JavaBinder(11008):    at com.andrew.apollo.MusicPlaybackService.a(Unknown Source)
+E/JavaBinder(11008):    at com.andrew.apollo.MusicPlaybackService.a(Unknown Source)
+E/JavaBinder(11008):    at com.andrew.apollo.MusicPlaybackService.a(Unknown Source)
+E/JavaBinder(11008):    at com.andrew.apollo.MusicPlaybackService.b(Unknown Source)
+E/JavaBinder(11008):    at com.andrew.apollo.MusicPlaybackService.open(Unknown Source)
+E/JavaBinder(11008):    at com.andrew.apollo.j.open(Unknown Source)
+E/JavaBinder(11008):    at com.andrew.apollo.IApolloService$Stub.onTransact(Unknown Source)
+E/JavaBinder(11008):    at android.os.Binder.execTransact(Binder.java:338)
+E/JavaBinder(11008):    at dalvik.system.NativeStart.run(Native Method)
+W/dalvikvm(11008): threadid=10: thread exiting with uncaught exception (group=0x40a4a1f8)
+E/AndroidRuntime(11008): FATAL EXCEPTION: Binder Thread #2
+E/AndroidRuntime(11008): java.lang.NoSuchMethodError: android.content.ContentResolver.query
+E/AndroidRuntime(11008):    at com.andrew.apollo.MusicPlaybackService.a(Unknown Source)
+E/AndroidRuntime(11008):    at com.andrew.apollo.MusicPlaybackService.a(Unknown Source)
+E/AndroidRuntime(11008):    at com.andrew.apollo.MusicPlaybackService.a(Unknown Source)
+E/AndroidRuntime(11008):    at com.andrew.apollo.MusicPlaybackService.b(Unknown Source)
+E/AndroidRuntime(11008):    at com.andrew.apollo.MusicPlaybackService.open(Unknown Source)
+E/AndroidRuntime(11008):    at com.andrew.apollo.j.open(Unknown Source)
+E/AndroidRuntime(11008):    at com.andrew.apollo.IApolloService$Stub.onTransact(Unknown Source)
+E/AndroidRuntime(11008):    at android.os.Binder.execTransact(Binder.java:338)
+E/AndroidRuntime(11008):    at dalvik.system.NativeStart.run(Native Method)

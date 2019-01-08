@@ -1,0 +1,50 @@
+02-25 14:38:53.004 E/cgeo    (32139): java.net.UnknownHostException: www.geocaching.com
+02-25 14:38:53.004 E/cgeo    (32139):   at java.net.InetAddress.lookupHostByName(InetAddress.java:497)
+02-25 14:38:53.004 E/cgeo    (32139):   at java.net.InetAddress.getAllByNameImpl(InetAddress.java:294)
+02-25 14:38:53.004 E/cgeo    (32139):   at java.net.InetAddress.getAllByName(InetAddress.java:256)
+02-25 14:38:53.004 E/cgeo    (32139):   at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:144)
+02-25 14:38:53.004 E/cgeo    (32139):   at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:164)
+02-25 14:38:53.004 E/cgeo    (32139):   at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:119)
+02-25 14:38:53.004 E/cgeo    (32139):   at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:359)
+02-25 14:38:53.004 E/cgeo    (32139):   at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:580)
+02-25 14:38:53.004 E/cgeo    (32139):   at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:512)
+02-25 14:38:53.004 E/cgeo    (32139):   at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:490)
+02-25 14:38:53.004 E/cgeo    (32139):   at cgeo.geocaching.cgBase.doRequest(cgBase.java:2570)
+02-25 14:38:53.004 E/cgeo    (32139):   at cgeo.geocaching.cgBase.request(cgBase.java:2550)
+02-25 14:38:53.004 E/cgeo    (32139):   at cgeo.geocaching.cgBase.request(cgBase.java:2543)
+02-25 14:38:53.004 E/cgeo    (32139):   at cgeo.geocaching.cgBase.request(cgBase.java:2449)
+02-25 14:38:53.004 E/cgeo    (32139):   at cgeo.geocaching.cgBase.login(cgBase.java:278)
+02-25 14:38:53.004 E/cgeo    (32139):   at cgeo.geocaching.cgeo$firstLogin.run(cgeo.java:771)
+02-25 14:38:53.004 E/cgeo    (32139): cgeoBase.login: Failed to retrieve login page (1st)
+02-25 14:38:53.014 I/cgeo    (32139): Connection to RW database established.
+02-25 14:38:53.014 I/cgeo    (32139): Connection to RO database established.
+02-25 14:38:53.014 D/cgeo    (32139): Database clean: started
+02-25 14:38:53.024 D/cgeo    (32139): Database clean: 5 geocaches remaining for listId=0
+02-25 14:38:53.024 D/cgeo    (32139): Database clean: finished
+02-25 14:38:54.285 I/cgeo    (32139): Direction service started
+02-25 14:38:54.595 D/cgeo    (32139): cgData.loadCaches([GC2K4E7, GCHRFB]) from DB
+02-25 14:38:54.615 D/cgeo    (32139): Loading GC2K4E7 Kastrup Station (Metro #1) (1) from DB
+02-25 14:38:54.635 D/cgeo    (32139): Loading GCHRFB CPH Airport Travel Bug Hotel #2 (1) from DB
+02-25 14:38:54.655 D/cgeo    (32139): GET http://www.geocaching.com/map/default.aspx
+02-25 14:38:54.655 E/cgeo    (32139): Failure 1/5 (java.net.UnknownHostException: www.geocaching.com) (2 ms) - retrying GET http://www.geocaching.com/map/default.aspx
+02-25 14:38:54.675 E/cgeo    (32139): Failure 2/5 (java.net.UnknownHostException: www.geocaching.com) (17 ms) - retrying GET http://www.geocaching.com/map/default.aspx
+02-25 14:38:54.675 E/cgeo    (32139): Failure 3/5 (java.net.UnknownHostException: www.geocaching.com) (2 ms) - retrying GET http://www.geocaching.com/map/default.aspx
+02-25 14:38:54.675 E/cgeo    (32139): Failure 4/5 (java.net.UnknownHostException: www.geocaching.com) (1 ms) - retrying GET http://www.geocaching.com/map/default.aspx
+02-25 14:38:54.685 E/cgeo    (32139): Failure 5/5 (1 ms) GET http://www.geocaching.com/map/default.aspx
+02-25 14:38:54.685 E/cgeo    (32139): java.net.UnknownHostException: www.geocaching.com
+02-25 14:38:54.685 E/cgeo    (32139):   at java.net.InetAddress.lookupHostByName(InetAddress.java:497)
+02-25 14:38:54.685 E/cgeo    (32139):   at java.net.InetAddress.getAllByNameImpl(InetAddress.java:294)
+02-25 14:38:54.685 E/cgeo    (32139):   at java.net.InetAddress.getAllByName(InetAddress.java:256)
+02-25 14:38:54.685 E/cgeo    (32139):   at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:144)
+02-25 14:38:54.685 E/cgeo    (32139):   at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:164)
+02-25 14:38:54.685 E/cgeo    (32139):   at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:119)
+02-25 14:38:54.685 E/cgeo    (32139):   at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:359)
+02-25 14:38:54.685 E/cgeo    (32139):   at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:580)
+02-25 14:38:54.685 E/cgeo    (32139):   at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:512)
+02-25 14:38:54.685 E/cgeo    (32139):   at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:490)
+02-25 14:38:54.685 E/cgeo    (32139):   at cgeo.geocaching.cgBase.doRequest(cgBase.java:2570)
+02-25 14:38:54.685 E/cgeo    (32139):   at cgeo.geocaching.cgBase.request(cgBase.java:2550)
+02-25 14:38:54.685 E/cgeo    (32139):   at cgeo.geocaching.cgBase.request(cgBase.java:2543)
+02-25 14:38:54.685 E/cgeo    (32139):   at cgeo.geocaching.connector.gc.GCBase.getTokens(GCBase.java:360)
+02-25 14:38:54.685 E/cgeo    (32139):   at cgeo.geocaching.maps.CGeoMap$DownloadThread.run(CGeoMap.java:1270)
+02-25 14:38:54.685 E/cgeo    (32139):   at cgeo.geocaching.maps.CGeoMap$LoadThread.run(CGeoMap.java:1221)

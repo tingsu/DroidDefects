@@ -1,0 +1,53 @@
+    java.lang.RuntimeException: An error occured while executing doInBackground()
+            at android.os.AsyncTask$3.done(AsyncTask.java:299)
+            at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+            at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+            at java.lang.Thread.run(Thread.java:838)
+     Caused by: java.lang.NullPointerException
+            at java.lang.String.<init>(String.java:228)
+            at org.thoughtcrime.securesms.util.Util.toIsoString(Util.java:124)
+            at org.thoughtcrime.securesms.mms.PartParser.getMessageText(PartParser.java:19)
+            at org.thoughtcrime.securesms.database.MmsDatabase.insertMediaMessage(MmsDatabase.java:742)
+            at org.thoughtcrime.securesms.database.MmsDatabase.insertMessageOutbox(MmsDatabase.java:724)
+            at org.thoughtcrime.securesms.sms.MessageSender.send(MessageSender.java:102)
+            at org.thoughtcrime.securesms.ConversationActivity$20.doInBackground(ConversationActivity.java:1130)
+            at org.thoughtcrime.securesms.ConversationActivity$20.doInBackground(ConversationActivity.java:1127)
+            at android.os.AsyncTask$2.call(AsyncTask.java:287)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+            at java.lang.Thread.run(Thread.java:838)
+06-21 20:38:33.445      609-620/? W/ActivityManager﹕ Force finishing activity org.thoughtcrime.securesms/.ConversationActivity
+</pre>
+
+
+An similiar problem exists with audio files. They cannot be added, at least TextSecure does not crash here:
+
+<pre>
+06-21 20:44:38.022    5323-5323/? W/ComposeMessageActivity﹕ java.io.IOException: Unable to query content type.
+            at org.thoughtcrime.securesms.mms.AudioSlide.constructPartFromUri(AudioSlide.java:72)
+            at org.thoughtcrime.securesms.mms.AudioSlide.<init>(AudioSlide.java:37)
+            at org.thoughtcrime.securesms.mms.AttachmentManager.setAudio(AttachmentManager.java:82)
+            at org.thoughtcrime.securesms.ConversationActivity.addAttachmentAudio(ConversationActivity.java:893)
+            at org.thoughtcrime.securesms.ConversationActivity.initializeDraft(ConversationActivity.java:632)
+            at org.thoughtcrime.securesms.ConversationActivity.onCreate(ConversationActivity.java:190)
+            at org.thoughtcrime.securesms.PassphraseRequiredActionBarActivity.onCreate(PassphraseRequiredActionBarActivity.java:46)
+            at android.app.Activity.performCreate(Activity.java:5122)
+            at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1081)
+            at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2270)
+            at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2358)
+            at android.app.ActivityThread.access$600(ActivityThread.java:156)
+            at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1340)
+            at android.os.Handler.dispatchMessage(Handler.java:99)
+            at android.os.Looper.loop(Looper.java:153)
+            at android.app.ActivityThread.main(ActivityThread.java:5299)
+            at java.lang.reflect.Method.invokeNative(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:511)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:833)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+            at dalvik.system.NativeStart.main(Native Method)

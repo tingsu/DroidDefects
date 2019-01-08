@@ -1,0 +1,11 @@
+05-20 16:53:42.820: E/ImageLoader(17755): java.io.FileNotFoundException: http://s###############/111
+05-20 16:53:42.820: E/ImageLoader(17755):   at libcore.net.http.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:186)
+05-20 16:53:42.820: E/ImageLoader(17755):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStreamFromNetwork(BaseImageDownloader.java:124)
+05-20 16:53:42.820: E/ImageLoader(17755):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStream(BaseImageDownloader.java:88)
+05-20 16:53:42.820: E/ImageLoader(17755):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.downloadImage(LoadAndDisplayImageTask.java:291)
+05-20 16:53:42.820: E/ImageLoader(17755):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryCacheImageOnDisk(LoadAndDisplayImageTask.java:274)
+05-20 16:53:42.820: E/ImageLoader(17755):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:230)
+05-20 16:53:42.820: E/ImageLoader(17755):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:136)
+05-20 16:53:42.820: E/ImageLoader(17755):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+05-20 16:53:42.820: E/ImageLoader(17755):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+05-20 16:53:42.820: E/ImageLoader(17755):   at java.lang.Thread.run(Thread.java:856)

@@ -1,0 +1,56 @@
+from xml type anim resource ID #0x10c0001
+E/WindowManager(  123):     at android.content.res.Resources.loadXmlResourceParser(Resources.java:1916)
+E/WindowManager(  123):     at android.content.res.Resources.loadXmlResourceParser(Resources.java:1871)
+E/WindowManager(  123):     at android.content.res.Resources.getAnimation(Resources.java:755)
+E/WindowManager(  123):     at android.view.animation.AnimationUtils.loadInterpolator(AnimationUtils.java:254)
+E/WindowManager(  123):     at android.view.animation.Animation.setInterpolator(Animation.java:328)
+E/WindowManager(  123):     at android.view.animation.Animation.<init>(Animation.java:218)
+E/WindowManager(  123):     at android.view.animation.AnimationSet.<init>(AnimationSet.java:62)
+E/WindowManager(  123):     at android.view.animation.AnimationUtils.createAnimationFromXml(AnimationUtils.java:105)
+E/WindowManager(  123):     at android.view.animation.AnimationUtils.createAnimationFromXml(AnimationUtils.java:83)
+E/WindowManager(  123):     at android.view.animation.AnimationUtils.loadAnimation(AnimationUtils.java:64)
+E/WindowManager(  123):     at com.android.server.WindowManagerService.loadAnimation(WindowManagerService.java:2775)
+E/WindowManager(  123):     at com.android.server.WindowManagerService.applyAnimationLocked(WindowManagerService.java:2738)
+E/WindowManager(  123):     at com.android.server.WindowManagerService.applyEnterAnimationLocked(WindowManagerService.java:2701)
+E/WindowManager(  123):     at com.android.server.WindowManagerService.access$1900(WindowManagerService.java:147)
+E/WindowManager(  123):     at com.android.server.WindowManagerService$WindowState.performShowLocked(WindowManagerService.java:7731)
+E/WindowManager(  123):     at com.android.server.WindowManagerService$AppWindowToken.showAllWindowsLocked(WindowManagerService.java:8745)
+E/WindowManager(  123):     at com.android.server.WindowManagerService.performLayoutAndPlaceSurfacesLockedInner(WindowManagerService.java:10131)
+E/WindowManager(  123):     at com.android.server.WindowManagerService.performLayoutAndPlaceSurfacesLocked(WindowManagerService.java:9545)
+E/WindowManager(  123):     at com.android.server.WindowManagerService.finishDrawingWindow(WindowManagerService.java:2652)
+E/WindowManager(  123):     at com.android.server.WindowManagerService$Session.finishDrawing(WindowManagerService.java:6909)
+E/WindowManager(  123):     at android.view.IWindowSession$Stub.onTransact(IWindowSession.java:221)
+E/WindowManager(  123):     at com.android.server.WindowManagerService$Session.onTransact(WindowManagerService.java:6848)
+E/WindowManager(  123):     at android.os.Binder.execTransact(Binder.java:288)
+E/WindowManager(  123):     at dalvik.system.NativeStart.run(Native Method)
+E/WindowManager(  123): Caused by: java.io.FileNotFoundException: Corrupt XML binary
+file
+E/WindowManager(  123):     at android.content.res.AssetManager.openXmlAssetNative(Native
+Method)
+E/WindowManager(  123):     at android.content.res.AssetManager.openXmlBlockAsset(AssetManager.java:485)
+E/WindowManager(  123):     at android.content.res.Resources.loadXmlResourceParser(Resources.java:1898)
+E/WindowManager(  123):     ... 23 more
+I/ActivityManager(  123): Displayed activity com.ichi2.anki2/com.ichi2.anki.DeckPicker:
+57059 ms (total 57059 ms)
+I/AnkiDroid( 3758): doInBackgroundOpenCollection - File exists -> Loading collection...
+I/Gmail   ( 3874): checkLabelsSets changed the label sets to: included([^^out, ^r]),
+partial([^i, ^f, ^iim]), all([userlabel:2914456, userlabel:726064565, ^io_im, userlabel:-41855633,
+userlabel:1312701449, userlabel:651089917, userlabel:1966673270, userlabel:-253673076,
+userlabel:3293953, ^vm, userlabel:93982, userlabel:-1971990306, userlabel:726076111,
+userlabel:-1492276990, userlabel:715602398, userlabel:-1492276991, userlabel:-1492276992,
+userlabel:110351, userlabel:114055, userlabel:3437304, userlabel:-806104728, userlabel:3293948,
+^imi, ^iim, userlabel:3293950, ^all, userlabel:2896756, ^imn, userlabel:3293943, userlabel:-1492276993,
+userlabel:-1492276994, ^i, ^g, ^f, userlabel:-1508083783, ^k, userlabel:109, userlabel:726064750,
+userlabel:93692, ^b, userlabel:3026, userlabel:3025, ^t, userlabel:92692768, ^u, userlabel:843908213,
+^r, userlabel:-1492383895, userlabel:102124180, ^s])
+W/SQLiteCompiledSql( 3758): Releasing statement in a finalizer. Please ensure that
+you explicitly call close() on your cursor: PRAGMA synchronous = 2
+W/SQLiteCompiledSql( 3758): android.database.sqlite.DatabaseObjectNotClosedException:
+Application did not close the cursor or database object that was opened here
+W/SQLiteCompiledSql( 3758):     at android.database.sqlite.SQLiteCompiledSql.<init>(SQLiteCompiledSql.java:62)
+W/SQLiteCompiledSql( 3758):     at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:70)
+W/SQLiteCompiledSql( 3758):     at android.database.sqlite.SQLiteQuery.<init>(SQLiteQuery.java:46)
+W/SQLiteCompiledSql( 3758):     at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:42)
+W/SQLiteCompiledSql( 3758):     at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1345)
+W/SQLiteCompiledSql( 3758):     at android.database.sqlite.SQLiteDatabase.rawQuery(SQLiteDatabase.java:1315)
+W/SQLiteCompiledSql( 3758):     at com.ichi2.anki.AnkiDb.<init>(AnkiDb.java:62)

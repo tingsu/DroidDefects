@@ -1,0 +1,60 @@
+
+Can't reproduce this, but I was in the _**All images**_ view looking at pics, and after I tapped back to return to the conversation Signal crashed. My device was in landscape mode the whole time. Dark theme.
+### Device info
+
+**Model:** Nexus 4
+**Android version:** stock 5.1.1
+**Signal version:** 3.14.1
+### Debug log
+
+https://gist.github.com/anonymous/80a2f30ca44bddf55974 (please ignore the NoSuchAlgorithmExceptions at the start, dunno why they still show up there)
+
+```
+E/AndroidRuntime( 8488): FATAL EXCEPTION: main
+E/AndroidRuntime( 8488): Process: org.thoughtcrime.securesms, PID: 8488
+E/AndroidRuntime( 8488): java.lang.RuntimeException: Unable to destroy activity {org.thoughtcrime.securesms/org.thoughtcrime.securesms.MediaOverviewActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.Integer.intValue()' on a null object reference
+E/AndroidRuntime( 8488):    at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3706)
+E/AndroidRuntime( 8488):    at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:3724)
+E/AndroidRuntime( 8488):    at android.app.ActivityThread.access$1400(ActivityThread.java:151)
+E/AndroidRuntime( 8488):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1357)
+E/AndroidRuntime( 8488):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 8488):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime( 8488):    at android.app.ActivityThread.main(ActivityThread.java:5254)
+E/AndroidRuntime( 8488):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 8488):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime( 8488):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+E/AndroidRuntime( 8488):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+E/AndroidRuntime( 8488): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.Integer.intValue()' on a null object reference
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.bitmap_recycle.SizeConfigStrategy.decrementBitmapOfSize(SizeConfigStrategy.java:108)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.bitmap_recycle.SizeConfigStrategy.removeLast(SizeConfigStrategy.java:100)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.bitmap_recycle.LruBitmapPool.trimToSize(LruBitmapPool.java:175)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.bitmap_recycle.LruBitmapPool.evict(LruBitmapPool.java:109)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.bitmap_recycle.LruBitmapPool.put(LruBitmapPool.java:104)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.resource.bitmap.GlideBitmapDrawableResource.recycle(GlideBitmapDrawableResource.java:25)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.EngineResource.recycle(EngineResource.java:61)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.ResourceRecycler.recycle(ResourceRecycler.java:25)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.Engine.onResourceRemoved(Engine.java:283)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.cache.LruResourceCache.onItemEvicted(LruResourceCache.java:32)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.cache.LruResourceCache.onItemEvicted(LruResourceCache.java:12)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.util.LruCache.trimToSize(LruCache.java:162)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.util.LruCache.evict(LruCache.java:167)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.util.LruCache.put(LruCache.java:124)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.cache.LruResourceCache.put(LruResourceCache.java:12)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.Engine.onResourceReleased(Engine.java:291)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.EngineResource.release(EngineResource.java:100)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.load.engine.Engine.release(Engine.java:249)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.request.GenericRequest.releaseResource(GenericRequest.java:341)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.request.GenericRequest.clear(GenericRequest.java:320)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.manager.RequestTracker.clearRequests(RequestTracker.java:94)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.RequestManager.onDestroy(RequestManager.java:221)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.manager.ActivityFragmentLifecycle.onDestroy(ActivityFragmentLifecycle.java:64)
+E/AndroidRuntime( 8488):    at com.bumptech.glide.manager.SupportRequestManagerFragment.onDestroy(SupportRequestManagerFragment.java:147)
+E/AndroidRuntime( 8488):    at android.support.v4.app.Fragment.performDestroy(Fragment.java:2009)
+E/AndroidRuntime( 8488):    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1088)
+E/AndroidRuntime( 8488):    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+E/AndroidRuntime( 8488):    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1120)
+E/AndroidRuntime( 8488):    at android.support.v4.app.FragmentManagerImpl.dispatchDestroy(FragmentManager.java:1966)
+E/AndroidRuntime( 8488):    at android.support.v4.app.FragmentActivity.onDestroy(FragmentActivity.java:316)
+E/AndroidRuntime( 8488):    at android.support.v7.app.AppCompatActivity.onDestroy(AppCompatActivity.java:158)
+E/AndroidRuntime( 8488):    at org.thoughtcrime.securesms.PassphraseRequiredActionBarActivity.onDestroy(PassphraseRequiredActionBarActivity.java:76)
+E/AndroidRuntime( 8488):    at android.app.Activity.performDestroy(Activity.java:6169)

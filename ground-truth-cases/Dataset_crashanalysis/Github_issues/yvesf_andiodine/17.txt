@@ -1,0 +1,5 @@
+E/Netd    (  406): exec() res=0, status=256 for /system/bin/iptables -t nat -D st_nat_POSTROUTING -o tun0 -m mark --mark 62 -j MASQUERADE
+W/System.err(26702): org.xapek.andiodine.IodineVpnService$IodineVpnException: Error while creating interface, please check issue #9 at https://github.com/yvesf/andiodine/issues/9
+W/System.err(26702):    at org.xapek.andiodine.IodineVpnService.runTunnel(IodineVpnService.java:327)
+W/System.err(26702):    at org.xapek.andiodine.IodineVpnService.run(IodineVpnService.java:229)
+W/System.err(26702):    at java.lang.Thread.run(Thread.java:841)

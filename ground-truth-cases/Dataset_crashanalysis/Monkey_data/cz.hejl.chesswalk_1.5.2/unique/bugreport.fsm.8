@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: cz.hejl.chesswalk
+//version: 1.5.2
+//appro_time: 169
+ java.lang.RuntimeException: Unable to resume activity {cz.hejl.chesswalk/cz.hejl.chesswalk.LobbyActivity}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2790)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2266)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at cz.hejl.chesswalk.ChessClient.write(ChessClient.java:337)
+ 	at cz.hejl.chesswalk.ChessClient.finger(ChessClient.java:131)
+ 	at cz.hejl.chesswalk.LobbyActivity.onResume(LobbyActivity.java:447)
+ 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+ 	at android.app.Activity.performResume(Activity.java:5211)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)

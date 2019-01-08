@@ -1,0 +1,11 @@
+ E/AndroidRuntime(28339): java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+ E/AndroidRuntime(28339): at android.graphics.Bitmap.nativeCreate(Native Method)
+ E/AndroidRuntime(28339): at android.graphics.Bitmap.createBitmap(Bitmap.java:477)
+ E/AndroidRuntime(28339): at android.graphics.Bitmap.createBitmap(Bitmap.java:444)
+ E/AndroidRuntime(28339): at android.graphics.Bitmap.createScaledBitmap(Bitmap.java:349)
+ E/AndroidRuntime(28339): at de.wikilab.android.friendica01.Max.resizeImage(Max.java:58)
+ E/AndroidRuntime(28339): at de.wikilab.android.friendica01.FileUploadService.onHandleIntent(FileUploadService.java:167)
+ E/AndroidRuntime(28339): at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:59)
+ E/AndroidRuntime(28339): at android.os.Handler.dispatchMessage(Handler.java:99)
+ E/AndroidRuntime(28339): at android.os.Looper.loop(Looper.java:130)
+ E/AndroidRuntime(28339): at android.os.HandlerThread.run(HandlerThread.java:60)

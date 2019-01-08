@@ -1,0 +1,30 @@
+//this is an auto-generated bug report
+//package name: com.proch.practicehub
+//version: 1.0
+//appro_time: 101
+ java.lang.UnsatisfiedLinkError: Couldn't load FFT from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.proch.practicehub-1.apk"],nativeLibraryDirectories=[/data/app-lib/com.proch.practicehub-1, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at com.proch.practicehub.Tuner.<clinit>(Tuner.java:10)
+ 	at com.proch.practicehub.TunerScreen.startTuner(TunerScreen.java:48)
+ 	at com.proch.practicehub.TunerScreen.onResume(TunerScreen.java:38)
+ 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+ 	at android.app.Activity.performResume(Activity.java:5211)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)
+ 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:146)
+ 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:347)
+ 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:749)
+ 	at android.widget.TabHost.setCurrentTab(TabHost.java:413)
+ 	at android.widget.TabHost$2.onTabSelectionChanged(TabHost.java:154)
+ 	at android.widget.TabWidget$TabClickListener.onClick(TabWidget.java:546)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

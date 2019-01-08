@@ -1,0 +1,156 @@
+07-30 13:39:47.959 E/DatabaseUtils( 1090): java.lang.SecurityException: No permission to write APN settings: Neither user 10112 nor current process has android.permission.WRITE_APN_SETTINGS.
+07-30 13:39:47.959 E/DatabaseUtils( 1090):  at android.app.ContextImpl.enforce(ContextImpl.java)
+07-30 13:39:47.959 E/DatabaseUtils( 1090):  at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java)
+07-30 13:39:47.959 E/DatabaseUtils( 1090):  at com.android.providers.telephony.TelephonyProvider.checkPermission(TelephonyProvider.java:768)
+07-30 13:39:47.959 E/DatabaseUtils( 1090):  at com.android.providers.telephony.TelephonyProvider.query(TelephonyProvider.java:474)
+07-30 13:39:47.959 E/DatabaseUtils( 1090):  at android.content.ContentProvider.query(ContentProvider.java)
+07-30 13:39:47.959 E/DatabaseUtils( 1090):  at android.content.ContentProvider$Transport.query(ContentProvider.java)
+07-30 13:39:47.959 E/DatabaseUtils( 1090):  at android.content.ContentProviderNative.onTransact(ContentProviderNative.java)
+07-30 13:39:47.959 E/DatabaseUtils( 1090):  at android.os.Binder.execTransact(Binder.java)
+07-30 13:39:47.959 E/DatabaseUtils( 1090):  at dalvik.system.NativeStart.run(Native Method)
+07-30 13:39:47.969 W/MmsCommunication( 3900): java.lang.SecurityException: No permission to write APN settings: Neither user 10112 nor current process has android.permission.WRITE_APN_SETTINGS.
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at android.os.Parcel.readException(Parcel.java)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at android.content.ContentProviderProxy.query(ContentProviderNative.java)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at android.content.ContentResolver.query(ContentResolver.java)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at android.content.ContentResolver.query(ContentResolver.java)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.database.MmsDatabase.getCarrierMmsInformation(MmsDatabase.java:584)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.mms.MmsCommunication.getMmsConnectionParameters(MmsCommunication.java:92)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.mms.MmsSendHelper.hasNecessaryApnDetails(MmsSendHelper.java:119)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:569)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:566)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at android.os.AsyncTask$2.call(AsyncTask.java)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at java.util.concurrent.FutureTask.run(FutureTask.java)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java)
+07-30 13:39:47.969 W/MmsCommunication( 3900):   at java.lang.Thread.run(Thread.java)
+07-30 13:39:48.000 W/MmsSmsDatabase( 3900): Executing query: SELECT _id, body, read, type, address, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+07-30 13:39:48.030 D/dalvikvm( 3900): GC_CONCURRENT freed 1489K, 26% free 8442K/11372K, paused 2ms+10ms, total 52ms
+07-30 13:39:48.030 D/dalvikvm( 3900): WAIT_FOR_CONCURRENT_GC blocked 48ms
+07-30 13:39:48.030 W/ImageSlide( 3900): Got soft reference: java.lang.ref.SoftReference@4166af18
+07-30 13:39:48.030 W/ImageSlide( 3900): Got cached bitmap: android.graphics.Bitmap@41934c08
+07-30 13:39:48.070 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:48.080 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:48.090 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:48.100 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:48.130 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:48.140 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:48.150 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:48.160 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:48.180 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:48.180 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:48.200 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:48.200 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:48.250 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:48.260 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:48.270 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:48.280 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:48.951 W/EncryptingPartDatabase( 3900): Writing part to: /data/data/org.thoughtcrime.securesms/app_parts/part-1772940940.mms
+07-30 13:39:48.951 W/PartDatabase( 3900): Writing part data from buffer
+07-30 13:39:48.961 E/Sensors (  739): accelHandler 0.737666 6.756350 6.897656
+07-30 13:39:49.001 W/PartDatabase( 3900): Wrote part to file: /data/data/org.thoughtcrime.securesms/app_parts/part-1772940940.mms
+07-30 13:39:49.011 W/PartDatabase( 3900): Inserted part at ID: 25
+07-30 13:39:49.021 W/MmsSmsDatabase( 3900): Executing query: SELECT _id, body, type, thread_id, address, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 1) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 1) ORDER BY date_received DESC) LIMIT 1
+07-30 13:39:49.041 W/ThreadDatabase( 3900): Trimming thread: 1 to: 100
+07-30 13:39:49.041 W/MmsSmsDatabase( 3900): Executing query: SELECT _id, body, type, thread_id, address, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 1) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 1) ORDER BY date_received ASC)
+07-30 13:39:49.051 W/ThreadDatabase( 3900): Cursor count is greater than length!
+07-30 13:39:49.051 W/ThreadDatabase( 3900): Cut off tweet date: 1373565764375
+07-30 13:39:49.061 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.071 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:49.071 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:networkInfoCurrent:0
+07-30 13:39:49.071 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.081 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.091 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:49.101 W/MmsDatabase( 3900): Executing trim query: thread_id = ? AND (CASE (msg_box & 255)  WHEN 21 THEN date < 1373565764 WHEN 23 THEN date < 1373565764 WHEN 22 THEN date < 1373565764 WHEN 24 THEN date < 1373565764 ELSE date_received < 1373565764 END)
+07-30 13:39:49.111 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 com.android.server.SystemServer.init1:-2 
+07-30 13:39:49.111 W/EncryptingPartDatabase( 3900): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1772940940.mms
+07-30 13:39:49.111 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:49.121 W/MmsSmsDatabase( 3900): Executing query: SELECT _id, body, type, thread_id, address, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 1) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 1) ORDER BY date_received DESC) LIMIT 1
+07-30 13:39:49.141 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.151 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:49.161 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.171 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:49.181 W/MmsService( 3900): Got network info: NetworkInfo: type: mobile_mms[CDMA - EvDo rev. A], state: UNKNOWN/IDLE, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true
+07-30 13:39:49.181 W/MmsSender( 3900): Sending MMS SendItem...
+07-30 13:39:49.181 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.191 I/PrivacyCDMALTEPhone( 1090): Package: com.android.phone asked for getLine1Number()
+07-30 13:39:49.191 W/MmsSender( 3900): Sending Secure MMS.
+07-30 13:39:49.191 W/PduComposer( 3900): Making send request...
+07-30 13:39:49.191 W/PduComposer( 3900): Making message body...
+07-30 13:39:49.191 W/PduComposer( 3900): Returning: 37315 bytes...
+07-30 13:39:49.191 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:networkInfoCurrent:0
+07-30 13:39:49.191 W/SessionCipher( 3900): Constructing session cipher...
+07-30 13:39:49.191 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.191 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 com.android.server.SystemServer.init1:-2 
+07-30 13:39:49.201 W/LocalKeyRecord( 3900): Loading local key record...
+07-30 13:39:49.201 W/PublicKey( 3900): PublicKey Length: 120
+07-30 13:39:49.201 W/PublicKey( 3900): PublicKey Length: 120
+07-30 13:39:49.201 W/RemoteKeyRecord( 3900): Loading remote key record for recipient: 1-remote
+07-30 13:39:49.201 W/PublicKey( 3900): PublicKey Length: 36
+07-30 13:39:49.201 V/PDroidAlternative( 8411): NotificationHandler: Notification for: com.android.phone:line1Number:0
+07-30 13:39:49.201 W/PublicKey( 3900): PublicKey Length: 36
+07-30 13:39:49.201 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:line1Number:0
+07-30 13:39:49.211 W/SessionCipher( 3900): Encrypting message...
+07-30 13:39:49.211 W/SessionCipher( 3900): Getting session key for local: 3722 remote: 3328
+07-30 13:39:49.221 W/ImageSlide( 3900): Got soft reference: null
+07-30 13:39:49.231 W/ImageSlide( 3900): Got soft reference: null
+07-30 13:39:49.231 W/Slide   ( 3900): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/25
+07-30 13:39:49.231 W/PartDatabase( 3900): Getting part at ID: 25
+07-30 13:39:49.241 W/EncryptingPartDatabase( 3900): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1772940940.mms
+07-30 13:39:49.241 W/Slide   ( 3900): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/25
+07-30 13:39:49.241 W/PartDatabase( 3900): Getting part at ID: 25
+07-30 13:39:49.241 W/EncryptingPartDatabase( 3900): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1772940940.mms
+07-30 13:39:49.251 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.261 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:49.311 D/dalvikvm( 3900): GC_FOR_ALLOC freed 1590K, 24% free 8739K/11372K, paused 43ms, total 43ms
+07-30 13:39:49.311 I/dalvikvm-heap( 3900): Grow heap (frag case) to 11.032MB for 341560-byte allocation
+07-30 13:39:49.321 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:49.321 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.341 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.351 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:49.361 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:contacts:0
+07-30 13:39:49.361 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.401 W/ImageSlide( 3900): Got soft reference: null
+07-30 13:39:49.401 W/ImageSlide( 3900): Got soft reference: java.lang.ref.SoftReference@415cdf08
+07-30 13:39:49.401 W/ImageSlide( 3900): Got cached bitmap: android.graphics.Bitmap@415ce250
+07-30 13:39:49.551 W/Message ( 3900): Constructing Message Version: (1,1)
+07-30 13:39:49.551 W/Message ( 3900): Serializing next key into message...
+07-30 13:39:49.551 W/PublicKey( 3900): Serializing public key point: 02 7a 42 74 5c 23 10 f4 ec 6e dc a8 95 59 36 2d cf d8 11 54 d7 bd 1d 0a 3f 51 67 c7 d0 87 e4 7e d8 
+07-30 13:39:49.571 W/PduComposer( 3900): Making send request...
+07-30 13:39:49.571 W/PduComposer( 3900): Making message body...
+07-30 13:39:49.591 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.601 V/PDroidAlternative( 8411): NotificationHandler: Notification for: com.android.systemui:networkInfoCurrent:0
+07-30 13:39:49.631 D/dalvikvm( 3900): GC_FOR_ALLOC freed 1244K, 21% free 9366K/11708K, paused 59ms, total 61ms
+07-30 13:39:49.631 W/PduComposer( 3900): Returning: 49994 bytes...
+07-30 13:39:49.641 V/PDroidAlternative( 8411): NotificationHandler: Notification for: org.thoughtcrime.securesms:networkInfoCurrent:0
+07-30 13:39:49.641 W/MmsSender( 3900): Sending MMS of length: 49994
+07-30 13:39:49.641 W/ContextImpl(  739): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:-1 android.privacy.PrivacySettingsManagerService.notification:-1 android.privacy.IPrivacySettingsManager$Stub.onTransact:-1 android.os.Binder.execTransact:-1 dalvik.system.NativeStart.run:-2 
+07-30 13:39:49.651 E/DatabaseUtils( 1090): Writing exception to parcel
+07-30 13:39:49.651 E/DatabaseUtils( 1090): java.lang.SecurityException: No permission to write APN settings: Neither user 10112 nor current process has android.permission.WRITE_APN_SETTINGS.
+07-30 13:39:49.651 E/DatabaseUtils( 1090):  at android.app.ContextImpl.enforce(ContextImpl.java)
+07-30 13:39:49.651 E/DatabaseUtils( 1090):  at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java)
+07-30 13:39:49.651 E/DatabaseUtils( 1090):  at com.android.providers.telephony.TelephonyProvider.checkPermission(TelephonyProvider.java:768)
+07-30 13:39:49.651 E/DatabaseUtils( 1090):  at com.android.providers.telephony.TelephonyProvider.query(TelephonyProvider.java:474)
+07-30 13:39:49.651 E/DatabaseUtils( 1090):  at android.content.ContentProvider.query(ContentProvider.java)
+07-30 13:39:49.651 E/DatabaseUtils( 1090):  at android.content.ContentProvider$Transport.query(ContentProvider.java)
+07-30 13:39:49.651 E/DatabaseUtils( 1090):  at android.content.ContentProviderNative.onTransact(ContentProviderNative.java)
+07-30 13:39:49.651 E/DatabaseUtils( 1090):  at android.os.Binder.execTransact(Binder.java)
+07-30 13:39:49.651 E/DatabaseUtils( 1090):  at dalvik.system.NativeStart.run(Native Method)
+07-30 13:39:49.651 W/MmsCommunication( 3900): java.lang.SecurityException: No permission to write APN settings: Neither user 10112 nor current process has android.permission.WRITE_APN_SETTINGS.
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at android.os.Parcel.readException(Parcel.java)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at android.content.ContentProviderProxy.query(ContentProviderNative.java)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at android.content.ContentResolver.query(ContentResolver.java)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at android.content.ContentResolver.query(ContentResolver.java)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.database.MmsDatabase.getCarrierMmsInformation(MmsDatabase.java:584)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.mms.MmsCommunication.getMmsConnectionParameters(MmsCommunication.java:92)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.mms.MmsSendHelper.sendBytes(MmsSendHelper.java:105)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.mms.MmsSendHelper.sendMms(MmsSendHelper.java:90)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.service.MmsSender.sendMmsMessage(MmsSender.java:126)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.service.MmsSender.handleSendMmsAction(MmsSender.java:99)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.service.MmsSender.process(MmsSender.java:74)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:222)
+07-30 13:39:49.651 W/MmsCommunication( 3900):   at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)

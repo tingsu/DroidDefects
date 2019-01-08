@@ -1,0 +1,7 @@
+> java.lang.StringIndexOutOfBoundsException: length=0; index=2
+> at java.lang.String.indexAndLength(String.java:579)
+> at java.lang.String.substring(String.java:1438)
+> at de.tum.in.tumcampus.models.managers.OpenHoursManager.getHoursByIdAsString(OpenHoursManager.java:105)
+> at de.tum.in.tumcampus.fragments.CafeteriaDetailsSectionFragment.showMenu(CafeteriaDetailsSectionFragment.java:66)
+> at de.tum.in.tumcampus.cards.CafeteriaMenuCard.getCardView(CafeteriaMenuCard.java:70)
+> at de.tum.in.tumcampus.adapters.CardsAdapter.getView(CardsAdapter.java:41)

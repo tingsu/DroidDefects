@@ -1,0 +1,11 @@
+java.lang.Error: com.nostra13.universalimageloader.core.LoadAndDisplayImageTask$TaskCancelledException 
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1086) 
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573) 
+      at java.lang.Thread.run(Thread.java:838) 
+Caused by: com.nostra13.universalimageloader.core.LoadAndDisplayImageTask$TaskCancelledException 
+      at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.checkViewCollected(SourceFile:410) 
+      at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.checkTaskNotActual(SourceFile:395) 
+      at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(SourceFile:139) 
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080) 
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573) 
+      at java.lang.Thread.run(Thread.java:838)

@@ -1,0 +1,14 @@
+W/WindowManager(  763): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@42a152a8 does not exist
+W/WindowManager(  763):         at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:9928)
+W/WindowManager(  763):         at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:9919)
+W/WindowManager(  763):         at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1495)
+W/WindowManager(  763):         at android.os.BinderProxy.sendDeathNotice(Binder.java:493)
+W/WindowManager(  763):         at dalvik.system.NativeStart.run(Native Method)
+I/WindowState(  763): WIN DEATH: null
+W/WindowManager(  763): Failed looking up window
+W/WindowManager(  763): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@42ce5b40 does not exist
+W/WindowManager(  763):         at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:9928)
+W/WindowManager(  763):         at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:9919)
+W/WindowManager(  763):         at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1495)
+W/WindowManager(  763):         at android.os.BinderProxy.sendDeathNotice(Binder.java:493)
+W/WindowManager(  763):         at dalvik.system.NativeStart.run(Native Method)

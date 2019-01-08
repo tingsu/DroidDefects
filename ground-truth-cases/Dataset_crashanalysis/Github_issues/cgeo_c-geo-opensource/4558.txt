@@ -1,0 +1,17 @@
+java.lang.RuntimeException: Unable to resume activity {cgeo.geocaching/cgeo.geocaching.TrackableActivity}: java.lang.NullPointerException
+   at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2593)
+   at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2621)
+   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1252)
+   at android.os.Handler.dispatchMessage(Handler.java:99)
+   at android.os.Looper.loop(Looper.java:137)
+   at android.app.ActivityThread.main(ActivityThread.java:4838)
+   at java.lang.reflect.Method.invokeNative(Native Method)
+   at java.lang.reflect.Method.invoke(Method.java:511)
+   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:875)
+   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:642)
+   at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+   at cgeo.geocaching.TrackableActivity.onResume(TrackableActivity.java:615)
+   at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1184)
+   at android.app.Activity.performResume(Activity.java:5084)
+   at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2583)

@@ -1,0 +1,11 @@
+04-14 11:58:08.469 26226-26361/com.rareventure.gps2 A/art: art/runtime/thread.cc:1336] No pending exception expected: java.lang.NoSuchMethodError: no non-static method "Lcom/mapzen/tangram/MapController$LabelPickListener;.onLabelPick(Lcom/mapzen/tangram/LabelPickResult;FF)V"
+04-14 11:58:08.469 26226-26361/com.rareventure.gps2 A/art: art/runtime/thread.cc:1336]   at long com.mapzen.tangram.MapController.nativeInit(com.mapzen.tangram.MapController, android.content.res.AssetManager) (MapController.java:-2)
+04-14 11:58:08.469 26226-26361/com.rareventure.gps2 A/art: art/runtime/thread.cc:1336]   at void com.mapzen.tangram.MapController.init() (MapController.java:211)
+04-14 11:58:08.469 26226-26361/com.rareventure.gps2 A/art: art/runtime/thread.cc:1336]   at java.lang.Boolean com.mapzen.tangram.MapView$1.doInBackground(java.lang.Void[]) (MapView.java:84)
+04-14 11:58:08.469 26226-26361/com.rareventure.gps2 A/art: art/runtime/thread.cc:1336]   at java.lang.Object com.mapzen.tangram.MapView$1.doInBackground(java.lang.Object[]) (MapView.java:79)
+04-14 11:58:08.469 26226-26361/com.rareventure.gps2 A/art: art/runtime/thread.cc:1336]   at java.lang.Object android.os.AsyncTask$2.call() (AsyncTask.java:295)
+04-14 11:58:08.469 26226-26361/com.rareventure.gps2 A/art: art/runtime/thread.cc:1336]   at void java.util.concurrent.FutureTask.run() (FutureTask.java:237)
+04-14 11:58:08.469 26226-26361/com.rareventure.gps2 A/art: art/runtime/thread.cc:1336]   at void android.os.AsyncTask$SerialExecutor$1.run() (AsyncTask.java:234)
+04-14 11:58:08.469 26226-26361/com.rareventure.gps2 A/art: art/runtime/thread.cc:1336]   at void java.util.concurrent.ThreadPoolExecutor.runWorker(java.util.concurrent.ThreadPoolExecutor$Worker) (ThreadPoolExecutor.java:1113)
+04-14 11:58:08.469 26226-26361/com.rareventure.gps2 A/art: art/runtime/thread.cc:1336]   at void java.util.concurrent.ThreadPoolExecutor$Worker.run() (ThreadPoolExecutor.java:588)
+04-14 11:58:08.469 26226-26361/com.rareventure.gps2 A/art: art/runtime/thread.cc:1336]   at void java.lang.Thread.run() (Thread.java:818)

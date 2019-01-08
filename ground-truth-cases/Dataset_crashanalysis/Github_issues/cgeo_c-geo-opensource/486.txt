@@ -1,0 +1,14 @@
+E/AndroidRuntime(  803): java.lang.ExceptionInInitializerError
+E/AndroidRuntime(  803):    at cgeo.geocaching.activity.ActivityMixin.showToast(cgeoapplication.java:89)
+E/AndroidRuntime(  803):    at cgeo.geocaching.activity.AbstractActivity.showToast(AbstractActivity.java:55)
+E/AndroidRuntime(  803):    at cgeo.geocaching.cgeo$3.handleMessage(cgeo.java:135)
+E/AndroidRuntime(  803):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(  803):    at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime(  803):    at android.app.ActivityThread.main(ActivityThread.java:3948)
+E/AndroidRuntime(  803):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(  803):    at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime(  803):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:782)
+E/AndroidRuntime(  803):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:540)
+E/AndroidRuntime(  803):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(  803): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(  803):    at org.apache.commons.lang3.StringUtils.<clinit>(StringUtils.java:708)

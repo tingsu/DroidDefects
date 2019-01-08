@@ -1,0 +1,6 @@
+                 Caused by: java.lang.ArrayIndexOutOfBoundsException: length=0; index=0
+                                                                                       at rabbitescape.ui.android.Dialogs$IntroDialogs.hint(Dialogs.java:95)
+                                                                                       at rabbitescape.ui.android.Dialogs$IntroDialogs.show(Dialogs.java:63)
+                                                                                       at rabbitescape.ui.android.Dialogs.intro(Dialogs.java:168)
+                                                                                       at rabbitescape.ui.android.AndroidGameActivity.onCreate(AndroidGameActivity.java:97)
+                                                                                       at android.app.Activity.performCreate(Activity.java:6251)

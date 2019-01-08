@@ -1,0 +1,5 @@
+        java.lang.NullPointerException
+        at cgeo.geocaching.cgeocaches.replaceCacheListFromSearch(cgeocaches.java:275)
+        at cgeo.geocaching.cgeocaches.access$1500(cgeocaches.java:67)
+        at cgeo.geocaching.cgeocaches$LoadByCoordsThread.runSearch(cgeocaches.java:1316)
+        at cgeo.geocaching.connector.gc.AbstractSearchThread.run(AbstractSearchThread.java:59)

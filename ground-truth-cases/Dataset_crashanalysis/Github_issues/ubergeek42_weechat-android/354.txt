@@ -1,0 +1,11 @@
+    java.lang.IllegalStateException: Fragment BF [irc.foo.bar] not attached to Activity
+        at android.support.v4.app.Fragment.getResources(Fragment.java:642)
+        at android.support.v4.app.Fragment.getString(Fragment.java:664)
+        at com.ubergeek42.WeechatAndroid.fragments.BufferFragment$3.run(BufferFragment.java:315)
+        at android.os.Handler.handleCallback(Handler.java:751)
+        at android.os.Handler.dispatchMessage(Handler.java:95)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6688)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1468)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1358)

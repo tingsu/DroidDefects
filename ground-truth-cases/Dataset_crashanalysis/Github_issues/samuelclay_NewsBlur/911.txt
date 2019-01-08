@@ -1,0 +1,10 @@
+java.lang.ArrayIndexOutOfBoundsException: length=12; index=-1
+  at java.util.ArrayList.get(ArrayList.java:310)
+  at com.newsblur.database.FolderListAdapter.getChild(FolderListAdapter.java:336)
+  at com.newsblur.fragment.FolderListFragment.onContextItemSelected(FolderListFragment.java:273)
+  at android.app.Fragment.performContextItemSelected(Fragment.java:2174)
+  at android.app.FragmentManagerImpl.dispatchContextItemSelected(FragmentManager.java:2002)
+  at android.app.Activity.onMenuItemSelected(Activity.java:2908)
+```
+
+@dosiecki from a quick look at the code are folders no longer handled correctly after the recent refactoring for saved stories?

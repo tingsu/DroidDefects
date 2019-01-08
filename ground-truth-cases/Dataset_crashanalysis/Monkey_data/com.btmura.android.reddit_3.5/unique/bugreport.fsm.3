@@ -1,0 +1,33 @@
+//this is an auto-generated bug report
+//package name: com.btmura.android.reddit
+//version: 3.5
+//appro_time: 103
+ java.lang.IllegalStateException: Can not perform this action inside of onLoadFinished
+ 	at android.support.v4.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1369)
+ 	at android.support.v4.app.FragmentManagerImpl.popBackStackImmediate(FragmentManager.java:500)
+ 	at com.btmura.android.reddit.app.AbstractBrowserActivity.safePopBackStackImmediate(AbstractBrowserActivity.java:492)
+ 	at com.btmura.android.reddit.app.AbstractBrowserActivity.setRightFragmentRemoveLeft(AbstractBrowserActivity.java:470)
+ 	at com.btmura.android.reddit.app.AbstractBrowserActivity.setRightFragment(AbstractBrowserActivity.java:459)
+ 	at com.btmura.android.reddit.app.AbstractBrowserActivity.onNavigationSubredditSelected(AbstractBrowserActivity.java:270)
+ 	at com.btmura.android.reddit.app.BrowserActivity.onNavigationSubredditSelected(BrowserActivity.java:40)
+ 	at com.btmura.android.reddit.app.NavigationFragment.selectPlace(NavigationFragment.java:359)
+ 	at com.btmura.android.reddit.app.NavigationFragment.access$300(NavigationFragment.java:61)
+ 	at com.btmura.android.reddit.app.NavigationFragment$RandomSubredditLoaderCallbacks.onLoadFinished(NavigationFragment.java:678)
+ 	at com.btmura.android.reddit.app.NavigationFragment$RandomSubredditLoaderCallbacks.onLoadFinished(NavigationFragment.java:666)
+ 	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:427)
+ 	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:395)
+ 	at android.support.v4.content.Loader.deliverResult(Loader.java:104)
+ 	at com.btmura.android.reddit.content.BaseAsyncTaskLoader.deliverResult(BaseAsyncTaskLoader.java:83)
+ 	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:223)
+ 	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:61)
+ 	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:461)
+ 	at android.support.v4.content.ModernAsyncTask.access$500(ModernAsyncTask.java:47)
+ 	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:474)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

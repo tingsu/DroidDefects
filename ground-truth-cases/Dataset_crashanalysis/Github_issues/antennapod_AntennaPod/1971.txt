@@ -1,0 +1,15 @@
+java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=-1, data=Intent {  }} to activity {de.danoeh.antennapod/de.danoeh.antennapod.activity.StorageErrorActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.io.File.exists()' on a null object reference
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3733)
+    at android.app.ActivityThread.handleSendResult(ActivityThread.java:3776)
+    at android.app.ActivityThread.-wrap16(ActivityThread.java)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1412)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5461)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.io.File.exists()' on a null object reference
+    at de.danoeh.antennapod.activity.StorageErrorActivity.onActivityResult(StorageErrorActivity.java:193)
+    at android.app.Activity.dispatchActivityResult(Activity.java:6456)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3729)

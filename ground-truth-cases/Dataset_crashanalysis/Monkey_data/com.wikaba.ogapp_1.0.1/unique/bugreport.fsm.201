@@ -1,0 +1,31 @@
+//this is an auto-generated bug report
+//package name: com.wikaba.ogapp
+//version: 1.0.1
+//appro_time: 56
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.support.v4.content.ModernAsyncTask$3.done(ModernAsyncTask.java:137)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalArgumentException: Invalid name: Max-Age
+ 	at java.net.HttpCookie.<init>(HttpCookie.java:448)
+ 	at com.wikaba.ogapp.agent.CustomCookieManager.parseCookies(CustomCookieManager.java:121)
+ 	at com.wikaba.ogapp.agent.CustomCookieManager.put(CustomCookieManager.java:49)
+ 	at libcore.net.http.HttpEngine.readHeaders(HttpEngine.java:633)
+ 	at libcore.net.http.HttpEngine.readResponseHeaders(HttpEngine.java:580)
+ 	at libcore.net.http.HttpEngine.readResponse(HttpEngine.java:827)
+ 	at libcore.net.http.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:283)
+ 	at libcore.net.http.HttpURLConnectionImpl.getResponseCode(HttpURLConnectionImpl.java:497)
+ 	at libcore.net.http.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:134)
+ 	at com.wikaba.ogapp.agent.OgameAgent.login(OgameAgent.java:209)
+ 	at com.wikaba.ogapp.AgentService.loginToAccount(AgentService.java:95)
+ 	at com.wikaba.ogapp.OverviewFragment$FleetEventLoader.loadInBackground(OverviewFragment.java:330)
+ 	at com.wikaba.ogapp.OverviewFragment$FleetEventLoader.loadInBackground(OverviewFragment.java:290)
+ 	at android.support.v4.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:242)
+ 	at android.support.v4.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:51)
+ 	at android.support.v4.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:40)
+ 	at android.support.v4.content.ModernAsyncTask$2.call(ModernAsyncTask.java:123)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

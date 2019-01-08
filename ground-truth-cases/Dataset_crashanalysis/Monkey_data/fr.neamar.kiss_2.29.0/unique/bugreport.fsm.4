@@ -1,0 +1,36 @@
+//this is an auto-generated bug report
+//package name: fr.neamar.kiss
+//version: 2.29.0
+//appro_time: 7
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to create service fr.neamar.kiss.dataprovider.AppProvider: android.database.sqlite.SQLiteDatabaseLockedException: database is locked (code 5)
+ 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2587)
+ 	at android.app.ActivityThread.access$1600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1338)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.database.sqlite.SQLiteDatabaseLockedException: database is locked (code 5)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLong(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLong(SQLiteConnection.java:598)
+ 	at android.database.sqlite.SQLiteSession.executeForLong(SQLiteSession.java:652)
+ 	at android.database.sqlite.SQLiteStatement.simpleQueryForLong(SQLiteStatement.java:107)
+ 	at android.database.DatabaseUtils.longForQuery(DatabaseUtils.java:813)
+ 	at android.database.DatabaseUtils.longForQuery(DatabaseUtils.java:801)
+ 	at android.database.sqlite.SQLiteDatabase.getVersion(SQLiteDatabase.java:862)
+ 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:242)
+ 	at android.database.sqlite.SQLiteOpenHelper.getReadableDatabase(SQLiteOpenHelper.java:188)
+ 	at fr.neamar.kiss.db.DBHelper.getDatabase(DBHelper.java:21)
+ 	at fr.neamar.kiss.db.DBHelper.loadTags(DBHelper.java:266)
+ 	at fr.neamar.kiss.TagsHandler.<init>(TagsHandler.java:30)
+ 	at fr.neamar.kiss.DataHandler.getTagsHandler(DataHandler.java:500)
+ 	at fr.neamar.kiss.loader.LoadAppPojos.<init>(LoadAppPojos.java:28)
+ 	at fr.neamar.kiss.dataprovider.AppProvider.reload(AppProvider.java:16)
+ 	at fr.neamar.kiss.dataprovider.Provider.onCreate(Provider.java:42)
+ 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2577)
+ 	... 10 more

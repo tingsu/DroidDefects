@@ -1,0 +1,18 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{us.shandian.blacklight/us.shandian.blacklight.ui.statuses.UserTimeLineActivity}: java.lang.NullPointerException
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2215)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2264)
+    at android.app.ActivityThread.access$800(ActivityThread.java:136)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1219)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.app.ActivityThread.main(ActivityThread.java:5032)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+    at us.shandian.blacklight.ui.statuses.UserTimeLineActivity.onCreate(UserTimeLineActivity.java:120)
+    at android.app.Activity.performCreate(Activity.java:5310)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1094)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2179)

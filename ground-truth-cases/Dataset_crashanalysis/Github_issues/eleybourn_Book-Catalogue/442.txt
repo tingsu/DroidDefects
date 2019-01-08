@@ -1,0 +1,4 @@
+com.eleybourn.bookcatalogue.ImportThread$ImportException: Le fichier doit contenir au moins une des colonnes suivantes : _id,book_uuid
+    at com.eleybourn.bookcatalogue.ImportThread.requireColumnOr(ImportThread.java:704)
+    at com.eleybourn.bookcatalogue.ImportThread.onRun(ImportThread.java:132)
+    at com.eleybourn.bookcatalogue.ManagedTask.run(ManagedTask.java:117)"

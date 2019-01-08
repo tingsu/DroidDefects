@@ -1,0 +1,16 @@
+java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=-1, data=Intent { (has extras) }} to activity {com.nextgis.mobile/com.nextgis.mobile.activity.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.nextgis.maplib.map.VectorLayer.showFeature(long)' on a null object reference
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3798)
+    at android.app.ActivityThread.handleSendResult(ActivityThread.java:3841)
+    at android.app.ActivityThread.access$1400(ActivityThread.java:154)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1440)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:224)
+    at android.app.ActivityThread.main(ActivityThread.java:5526)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.nextgis.maplib.map.VectorLayer.showFeature(long)' on a null object reference
+    at com.nextgis.mobile.fragment.MapFragment.onActivityResult(MapFragment.java:292)
+    at com.nextgis.mobile.activity.MainActivity.onActivityResult(MainActivity.java:427)
+    at android.app.Activity.dispatchActivityResult(Activity.java:6490)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3794)

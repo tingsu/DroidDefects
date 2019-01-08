@@ -1,0 +1,1110 @@
+> W/PackageManager( 1267): org.xmlpull.v1.XmlPullParserException: No start tag found
+> W/PackageManager( 1267):        at com.android.internal.util.XmlUtils.beginDocument(XmlUtils.java:887)
+> W/PackageManager( 1267):        at com.android.server.pm.PackageManagerService.readPermissionsFromXml(PackageManagerService.java:1658)
+> W/PackageManager( 1267):        at com.android.server.pm.PackageManagerService.readPermissions(PackageManagerService.java:1636)
+> W/PackageManager( 1267):        at com.android.server.pm.PackageManagerService.<init>(PackageManagerService.java:1168)
+> W/PackageManager( 1267):        at com.android.server.pm.PackageManagerService.main(PackageManagerService.java:1067)
+> W/PackageManager( 1267):        at com.android.server.ServerThread.initAndLoop(SystemServer.java:258)
+> W/PackageManager( 1267):        at com.android.server.SystemServer.main(SystemServer.java:1223)
+> W/PackageManager( 1267):        at java.lang.reflect.Method.invokeNative(Native Method)
+> W/PackageManager( 1267):        at java.lang.reflect.Method.invoke(Method.java:515)
+> W/PackageManager( 1267):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:827)
+> W/PackageManager( 1267):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:643)
+> W/PackageManager( 1267):        at dalvik.system.NativeStart.main(Native Method)
+> W/PackageManager( 1267): Got execption parsing permissions.
+> W/PackageManager( 1267): org.xmlpull.v1.XmlPullParserException: No start tag found
+> W/PackageManager( 1267):        at com.android.internal.util.XmlUtils.beginDocument(XmlUtils.java:887)
+> W/PackageManager( 1267):        at com.android.server.pm.PackageManagerService.readPermissionsFromXml(PackageManagerService.java:1658)
+> W/PackageManager( 1267):        at com.android.server.pm.PackageManagerService.readPermissions(PackageManagerService.java:1636)
+> W/PackageManager( 1267):        at com.android.server.pm.PackageManagerService.<init>(PackageManagerService.java:1168)
+> W/PackageManager( 1267):        at com.android.server.pm.PackageManagerService.main(PackageManagerService.java:1067)
+> W/PackageManager( 1267):        at com.android.server.ServerThread.initAndLoop(SystemServer.java:258)
+> W/PackageManager( 1267):        at com.android.server.SystemServer.main(SystemServer.java:1223)
+> W/PackageManager( 1267):        at java.lang.reflect.Method.invokeNative(Native Method)
+> W/PackageManager( 1267):        at java.lang.reflect.Method.invoke(Method.java:515)
+> W/PackageManager( 1267):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:827)
+> W/PackageManager( 1267):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:643)
+> W/PackageManager( 1267):        at dalvik.system.NativeStart.main(Native Method)
+> D/SELinuxMMAC( 1267): Couldn't find install policy /data/security/mac_permissions.xml
+> D/SELinuxMMAC( 1267): Using install policy file /system/etc/security/mac_permissions.xml
+> W/PackageManager( 1267): Library not found: /system/framework/sws.jar
+> W/PackageManager( 1267): Library not found: /system/framework/secimaging.jar
+> W/PackageManager( 1267): Library not found: /system/framework/sechardware.jar
+> W/PackageManager( 1267): Library not found: /system/framework/allshare.jar
+> W/PackageManager( 1267): Library not found: /system/framework/javax.btobex.jar
+> W/PackageManager( 1267): Library not found: /system/framework/sec_edm.jar
+> W/PackageManager( 1267): Library not found: /system/framework/seccamera.jar
+> W/PackageManager( 1267): Library not found: /system/framework/videowall.jar
+> W/PackageManager( 1267): Library not found: /system/framework/secvision.jar
+> W/PackageManager( 1267): Library not found: /system/framework/libvtmanagerjar.jar
+> W/PackageManager( 1267): Library not found: /system/framework/com.dsi.ant.antradio_library.jar
+> W/PackageManager( 1267): Library not found: /system/framework/sec_platform_library.jar
+> W/PackageManager( 1267): Library not found: /system/framework/imsmanager.jar
+> W/PackageManager( 1267): Library not found: /system/framework/secmediarecorder.jar
+> W/PackageManager( 1267): Library not found: /system/framework/com.broadcom.bt.jar
+> W/PackageManager( 1267): Library not found: /system/framework/sstream_lib.jar
+> W/PackageManager( 1267): Library not found: /system/framework/com.gsma.services.nfc.jar
+> W/PackageManager( 1267): Library not found: /system/framework/secsmartcard.jar
+> W/PackageManager( 1267): Library not found: /system/framework/org.simalliance.openmobileapi.jar
+> W/PackageManager( 1267): Library not found: /system/framework/simageis.jar
+> W/PackageManager( 1267): Library not found: /system/framework/svi.jar
+> W/PackageManager( 1267): Library not found: /system/framework/com.android.mediadrm.signer.jar
+> W/PackageManager( 1267): Library not found: /system/framework/smatlib.jar
+> W/PackageManager( 1267): Library not found: /system/framework/com.android.nfc_extras.jar
+> W/PackageManager( 1267): Library not found: /system/framework/smartfaceservice.jar
+> W/PackageManager( 1267): Library not found: /system/framework/sec_feature.jar
+> W/PackageManager( 1267): Library not found: /system/framework/com.broadcom.nfc.jar
+> W/PackageManager( 1267): Library not found: /system/framework/imsmanager-internal.jar
+> W/PackageManager( 1267): Library not found: /system/framework/secvisualeffect.jar
+> W/PackageManager( 1267): Library not found: /system/framework/multiwindow.jar
+> W/PackageManager( 1267): Library not found: /system/framework/minimode.jar
+> W/PackageManager( 1267): Library not found: /system/framework/SLinkNTSManager.jar
+> W/PackageManager( 1267): Library not found: /system/framework/twframework.jar
+> W/PackageManager( 1267): Library not found: /system/framework/com.samsung.device.jar
+> W/PackageManager( 1267): Library not found: /system/framework/sgi.jar
+> W/PackageParser( 1267): No actions in intent filter at /system/priv-app/Dialer.apk Binary XML file line #162
+> W/PackageParser( 1267): No actions in intent filter at /system/priv-app/Contacts.apk Binary XML file line #375
+> W/PackageParser( 1267): Unknown element under <manifest>: receiver at /data/app/com.maxgames.stickwarlegacy-2.apk Binary XML file line #34
+> W/PackageParser( 1267): Unknown element under <manifest>: service at /data/app/com.maxgames.stickwarlegacy-2.apk Binary XML file line #39
+> W/PackageParser( 1267): Unknown element under <manifest>: service at /data/app/com.maxgames.stickwarlegacy-2.apk Binary XML file line #40
+> W/PackageParser( 1267): Unknown element under <manifest>: activity at /data/app/com.maxgames.stickwarlegacy-2.apk Binary XML file line #41
+> W/NativeHelper( 1267): Installing ARM APP(U) libs
+> I/PackageManager( 1267): Package installed with second ABI Library: 10063 com.maxgames.stickwarlegacy
+> I/PackageManager( 1267): Data written:10063
+> I/PackageManager( 1267): Data written into /data/data/.appwithABI2
+> W/PackageParser( 1267): No actions in intent filter at /data/app/com.amazon.venezia-1.apk Binary XML file line #192
+> W/PackageManager( 1267): Package com.amazon.venezia desires unavailable shared library com.amazon.dcp.contracts; ignoring!
+> W/PackageManager( 1267): Package com.amazon.venezia desires unavailable shared library com.amazon.dcp.contracts.framework; ignoring!
+> W/PackageManager( 1267): Package com.amazon.venezia desires unavailable shared library com.amazon.client.metrics.api; ignoring!
+> I/PackageManager( 1267): Package installed with second ABI Library: 10056 com.amazon.venezia
+> I/PackageManager( 1267): Data written:10056
+> I/PackageManager( 1267): Data written:10063
+> I/PackageManager( 1267): Data written into /data/data/.appwithABI2
+> W/PackageManager( 1267): Skipping provider name com.huuuge.casino.slots.upsight (in package com.huuuge.casino.slots): name already used by com.huuuge.casino.slots
+> W/PackageParser( 1267): Unknown element under <manifest>: uses-permission-sdk-m at /data/app/com.facebook.katana-2.apk Binary XML file line #42
+> W/PackageParser( 1267): Unknown element under <manifest>: uses-permission-sdk-m at /data/app/com.facebook.katana-2.apk Binary XML file line #43
+> W/PackageParser( 1267): Unknown element under <manifest>: uses-permission-sdk-m at /data/app/com.facebook.katana-2.apk Binary XML file line #46
+> W/PackageParser( 1267): Unknown element under <manifest>: uses-permission-sdk-m at /data/app/com.facebook.katana-2.apk Binary XML file line #47
+> W/PackageParser( 1267): Unknown element under <manifest>: uses-permission-sdk-m at /data/app/com.facebook.katana-2.apk Binary XML file line #48
+> W/PackageManager( 1267): Package com.facebook.katana desires unavailable shared library com.amazon.device.messaging; ignoring!
+> W/PackageParser( 1267): Problem in package /data/app/com.google.android.apps.photos-2.apk:
+> W/PackageParser( 1267): Unknown element under <activity>: category at /data/app/com.google.android.apps.photos-2.apk Binary XML file line #1064
+> W/PackageParser( 1267): Unknown element under <manifest>: uses-permission-sdk-23 at /data/app/com.google.android.apps.photos-2.apk Binary XML file line #1692
+> W/PackageParser( 1267): Unknown element under <manifest>: uses-permission-sdk-23 at /data/app/com.google.android.apps.photos-2.apk Binary XML file line #1693
+> W/PackageParser( 1267): Unknown element under <manifest>: uses-permission-sdk-23 at /data/app/com.google.android.apps.photos-2.apk Binary XML file line #1694
+> W/PackageParser( 1267): Problem in package /data/app/com.igg.android.lordsmobile-1.apk:
+> W/PackageParser( 1267): Unknown element under <receiver>: category at /data/app/com.igg.android.lordsmobile-1.apk Binary XML file line #89
+> W/PackageManager( 1267): Package com.epicwaronline.ms desires unavailable shared library com.amazon.device.home; ignoring!
+> W/PackageParser( 1267): Unknown element under <manifest>: supports-gl-texture at /data/app/com.instagram.android-1.apk Binary XML file line #64
+> W/PackageParser( 1267): Unknown element under <application>: enable-feature at /data/app/com.instagram.android-1.apk Binary XML file line #246
+> W/PackageManager( 1267): Package com.machinezone.gow desires unavailable shared library com.amazon.device.home; ignoring!
+> W/PackageParser( 1267): Unknown element under <manifest>: supports-gl-texture at /data/app/com.instagram.android-2.apk Binary XML file line #64
+> W/PackageParser( 1267): Unknown element under <application>: enable-feature at /data/app/com.instagram.android-2.apk Binary XML file line #246
+> W/PackageManager( 1267): Application package com.instagram.android already installed.  Skipping duplicate.
+> W/PackageParser( 1267): No actions in intent filter at /data/app/com.icenta.sudoku.ui-1.apk Binary XML file line #140
+> W/PackageParser( 1267): Unknown element under <application>: enable-feature at /data/app/de.motain.iliga-1.apk Binary XML file line #710
+> W/PackageParser( 1267): Unknown element under <manifest>: activity at /data/app/com.miniclip.soccerstars-2.apk Binary XML file line #46
+> I/PackageManager( 1267): Package installed with second ABI Library: 10059 com.miniclip.soccerstars
+> I/PackageManager( 1267): Data written:10056
+> I/PackageManager( 1267): Data written:10059
+> I/PackageManager( 1267): Data written:10063
+> I/PackageManager( 1267): Data written into /data/data/.appwithABI2
+> I/PackageManager( 1267): Package installed with second ABI Library: 10053 air.ru.underair.city2048
+> I/PackageManager( 1267): Data written:10056
+> I/PackageManager( 1267): Data written:10053
+> I/PackageManager( 1267): Data written:10059
+> I/PackageManager( 1267): Data written:10063
+> I/PackageManager( 1267): Data written into /data/data/.appwithABI2
+> W/NativeHelper( 1267): Installing ARM APP(U) libs
+> I/PackageManager( 1267): Package installed with second ABI Library: 10074 com.gamecircus.CoinDozerJackpot
+> I/PackageManager( 1267): Data written:10056
+> I/PackageManager( 1267): Data written:10074
+> I/PackageManager( 1267): Data written:10059
+> I/PackageManager( 1267): Data written:10053
+> I/PackageManager( 1267): Data written:10063
+> I/PackageManager( 1267): Data written into /data/data/.appwithABI2
+> I/PackageManager( 1267): Package installed with second ABI Library: 10024 com.nianticlabs.pokemongo
+> I/PackageManager( 1267): Data written:10056
+> I/PackageManager( 1267): Data written:10074
+> I/PackageManager( 1267): Data written:10059
+> I/PackageManager( 1267): Data written:10053
+> I/PackageManager( 1267): Data written:10024
+> I/PackageManager( 1267): Data written:10063
+> I/PackageManager( 1267): Data written into /data/data/.appwithABI2
+> W/NativeHelper( 1267): Installing ARM APP(U) libs
+> I/PackageManager( 1267): Package installed with second ABI Library: 10072 com.superluckycasino.doubleup.slots.vegas.android.free
+> I/PackageManager( 1267): Data written:10056
+> I/PackageManager( 1267): Data written:10072
+> I/PackageManager( 1267): Data written:10074
+> I/PackageManager( 1267): Data written:10059
+> I/PackageManager( 1267): Data written:10053
+> I/PackageManager( 1267): Data written:10024
+> I/PackageManager( 1267): Data written:10063
+> I/PackageManager( 1267): Data written into /data/data/.appwithABI2
+> W/NativeHelper( 1267): Installing ARM APP(U) libs
+> I/PackageManager( 1267): Package installed with second ABI Library: 10076 com.ketchapp.versusrun
+> I/PackageManager( 1267): Data written:10056
+> I/PackageManager( 1267): Data written:10072
+> I/PackageManager( 1267): Data written:10074
+> I/PackageManager( 1267): Data written:10059
+> I/PackageManager( 1267): Data written:10076
+> I/PackageManager( 1267): Data written:10024
+> I/PackageManager( 1267): Data written:10063
+> I/PackageManager( 1267): Data written:10053
+> I/PackageManager( 1267): Data written into /data/data/.appwithABI2
+> W/NativeHelper( 1267): Installing ARM APP
+> I/PackageManager( 1267): Package installed with second ABI Library: 10077 tv.periscope.android
+> I/PackageManager( 1267): Data written:10056
+> I/PackageManager( 1267): Data written:10072
+> I/PackageManager( 1267): Data written:10074
+> I/PackageManager( 1267): Data written:10059
+> I/PackageManager( 1267): Data written:10077
+> I/PackageManager( 1267): Data written:10076
+> I/PackageManager( 1267): Data written:10024
+> I/PackageManager( 1267): Data written:10063
+> I/PackageManager( 1267): Data written:10053
+> I/PackageManager( 1267): Data written into /data/data/.appwithABI2
+> W/NativeHelper( 1267): Installing ARM APP
+> I/PackageManager( 1267): Package installed with second ABI Library: 10060 com.supercell.clashroyale
+> I/PackageManager( 1267): Data written:10056
+> I/PackageManager( 1267): Data written:10072
+> I/PackageManager( 1267): Data written:10074
+> I/PackageManager( 1267): Data written:10059
+> I/PackageManager( 1267): Data written:10060
+> I/PackageManager( 1267): Data written:10077
+> I/PackageManager( 1267): Data written:10076
+> I/PackageManager( 1267): Data written:10024
+> I/PackageManager( 1267): Data written:10063
+> I/PackageManager( 1267): Data written:10053
+> I/PackageManager( 1267): Data written into /data/data/.appwithABI2
+> W/NativeHelper( 1267): Installing ARM APP
+> I/PackageManager( 1267): Package installed with second ABI Library: 10058 com.supercell.clashofclans
+> I/PackageManager( 1267): Data written:10056
+> I/PackageManager( 1267): Data written:10072
+> I/PackageManager( 1267): Data written:10058
+> I/PackageManager( 1267): Data written:10074
+> I/PackageManager( 1267): Data written:10059
+> I/PackageManager( 1267): Data written:10060
+> I/PackageManager( 1267): Data written:10077
+> I/PackageManager( 1267): Data written:10076
+> I/PackageManager( 1267): Data written:10024
+> I/PackageManager( 1267): Data written:10063
+> I/PackageManager( 1267): Data written:10053
+> I/PackageManager( 1267): Data written into /data/data/.appwithABI2
+> W/PackageParser( 1267): Unknown element under <manifest>: supports-gl-texture at /data/app/es.parrotgames.restaurantcity-2.apk Binary XML file line #7
+> I/PackageManager( 1267): Package installed with second ABI Library: 10073 es.parrotgames.restaurantcity
+> I/PackageManager( 1267): Data written:10073
+> I/PackageManager( 1267): Data written:10056
+> I/PackageManager( 1267): Data written:10072
+> I/PackageManager( 1267): Data written:10058
+> I/PackageManager( 1267): Data written:10074
+> I/PackageManager( 1267): Data written:10059
+> I/PackageManager( 1267): Data written:10060
+> I/PackageManager( 1267): Data written:10077
+> I/PackageManager( 1267): Data written:10076
+> I/PackageManager( 1267): Data written:10024
+> I/PackageManager( 1267): Data written:10063
+> I/PackageManager( 1267): Data written:10053
+> I/PackageManager( 1267): Data written into /data/data/.appwithABI2
+> W/PackageManager( 1267): Package com.machinezone.gow desires unavailable shared library com.amazon.device.home; ignoring!
+> W/PackageManager( 1267): Package com.amazon.venezia desires unavailable shared library com.amazon.dcp.contracts; ignoring!
+> W/PackageManager( 1267): Package com.amazon.venezia desires unavailable shared library com.amazon.dcp.contracts.framework; ignoring!
+> W/PackageManager( 1267): Package com.amazon.venezia desires unavailable shared library com.amazon.client.metrics.api; ignoring!
+> W/PackageManager( 1267): Package com.google.android.gms desires unavailable shared library com.google.android.ble; ignoring!
+> W/PackageManager( 1267): Package com.facebook.katana desires unavailable shared library com.amazon.device.messaging; ignoring!
+> W/PackageManager( 1267): Package com.epicwaronline.ms desires unavailable shared library com.amazon.device.home; ignoring!
+> I/PackageManager( 1267): Time to scan packages: 114.23 seconds
+> W/PackageManager( 1267): Removing dangling permission: com.sec.android.permission.USE_GSCALER from package null
+> W/PackageManager( 1267): Removing dangling permission: android.permission.NET_RAW from package null
+> W/PackageManager( 1267): Removing dangling permission: com.sec.android.SAMSUNG_GET_URL from package null
+> W/PackageManager( 1267): Removing dangling permission: com.sec.android.SAMSUNG_MODIFY_IPTABLES from package null
+> W/PackageManager( 1267): Removing dangling permission: com.sec.android.SAMSUNG_MODIFY_ROUTE from package null
+> W/PackageManager( 1267): Removing dangling permission: com.sec.android.app.sysscope.permission.ACCESS_SYSTEM_INFO_SYSSCOPE_ONLY from package null
+> W/PackageManager( 1267): Removing dangling permission: com.sec.android.SAMSUNG_TUNTAP from package null
+> W/PackageManager( 1267): Not granting permission android.permission.READ_LOGS to package com.bluestacks.home (protectionLevel=50 flags=0x8be45)
+> W/PackageManager( 1267): Not granting permission android.permission.SET_TIME to package com.bluestacks.home (protectionLevel=18 flags=0x8be45)
+> W/PackageManager( 1267): Not granting permission android.permission.FORCE_STOP_PACKAGES to package com.bluestacks.home (protectionLevel=2 flags=0x8be45)
+> W/PackageManager( 1267): Not granting permission android.permission.GLOBAL_SEARCH to package com.android.quicksearchbox (protectionLevel=18 flags=0x8be45)
+> W/PackageManager( 1267): Unknown permission com.android.smspush.WAPPUSH_MANAGER_BIND in package com.android.phone
+> W/PackageManager( 1267): Unknown permission com.android.vending.billing.IBillingAccountService.BIND2 in package com.google.android.gsf.login
+> W/PackageManager( 1267): Unknown permission com.android.chrome.TOS_ACKED in package com.google.android.gsf.login
+> W/PackageManager( 1267): Not granting permission android.permission.ACCESS_DOWNLOAD_MANAGER to package com.android.browser (protectionLevel=18 flags=0x9be45)
+> W/PackageManager( 1267): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x9be45)
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.onetimeinitializer
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.onetimeinitializer
+> W/PackageManager( 1267): Unknown permission .permission.C2D_MESSAGE in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission .permission.RECEIVE_ADM_MESSAGE in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.amazon.device.messaging.permission.RECEIVE in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.READ_SETTINGS in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.UPDATE_SHORTCUT in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.huawei.android.launcher.permission.CHANGE_BADGE in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.sonyericsson.home.permission.BROADCAST_BADGE in package com.instagram.android
+> W/PackageManager( 1267): Not granting permission android.permission.BIND_WALLPAPER to package com.android.camera2 (protectionLevel=18 flags=0x58bc45)
+> W/PackageManager( 1267): Not granting permission android.permission.READ_LOGS to package com.amazon.venezia (protectionLevel=50 flags=0x8be44)
+> W/PackageManager( 1267): Unknown permission android.permission.SEND_SMS_NO_CONFIRMATION in package com.amazon.venezia
+> W/PackageManager( 1267): Not granting permission android.permission.INSTALL_PACKAGES to package com.amazon.venezia (protectionLevel=18 flags=0x8be44)
+> W/PackageManager( 1267): Not granting permission android.permission.DELETE_PACKAGES to package com.amazon.venezia (protectionLevel=18 flags=0x8be44)
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.android.amazon.dcp.ota.permission.INSTALL_PACKAGES in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.metrics.permission.METRICS_PERMISSION in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.identity.permission.GENERIC_IPC in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.sso.permission.MANAGE_COR_PFM in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission amazon.permission.COLLECT_METRICS in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.MANAGE_SOUND_TRIGGER in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.RECOVERY in package com.google.android.gms
+> W/PackageManager( 1267): Not granting permission android.permission.READ_DREAM_STATE to package com.google.android.gms (protectionLevel=2 flags=0x40483e45)
+> W/PackageManager( 1267): Unknown permission android.permission.PROVIDE_TRUST_AGENT in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.apps.enterprise.dmagent.permission.AutoSyncPermission in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.googlequicksearchbox.permission.PAUSE_HOTWORD in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.MANAGE_VOICE_KEYPHRASES in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.TETHER_PRIVILEGED in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.REAL_GET_TASKS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.hangouts.START_HANGOUT in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.READ_OEM_UNLOCK_STATE in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.SCORE_NETWORKS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.OVERRIDE_WIFI_CONFIG in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.CONTROL_INCALL_EXPERIENCE in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.USER_ACTIVITY in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.MODIFY_AUDIO_ROUTING in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.wearable.READ_SETTINGS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.INTENT_FILTER_VERIFICATION_AGENT in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.LOCAL_MAC_ADDRESS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.wh.supervisor.permission.ACCESS_METADATA_SERVICE in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.READ_WIFI_CREDENTIAL in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.BODY_SENSORS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.launcher.permission.RECEIVE_LAUNCH_BROADCASTS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.gm.permission.READ_GMAIL in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.android.voicemail.permission.READ_VOICEMAIL in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.SEND_SMS_NO_CONFIRMATION in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.NOTIFY_PENDING_SYSTEM_UPDATE in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.settings
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.settings
+> W/PackageManager( 1267): Unknown permission com.facebook.orca.provider.ACCESS in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.facebook.pages.app.provider.ACCESS in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission android.permission.REQUEST_INSTALL_PACKAGES in package com.facebook.katana
+> W/PackageManager( 1267): Not granting permission android.permission.BATTERY_STATS to package com.facebook.katana (protectionLevel=18 flags=0x483e44)
+> W/PackageManager( 1267): Unknown permission com.sec.android.provider.badge.permission.READ in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.sec.android.provider.badge.permission.WRITE in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.READ_SETTINGS in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.UPDATE_SHORTCUT in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.sonyericsson.home.permission.BROADCAST_BADGE in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.facebook.home.permission.WRITE_BADGES in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.nokia.pushnotifications.permission.RECEIVE in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.amazon.device.messaging.permission.RECEIVE in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission android.permission.USE_FINGERPRINT in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.sec.android.provider.badge.permission.READ in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.sec.android.provider.badge.permission.WRITE in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.READ_SETTINGS in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.UPDATE_SHORTCUT in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.sonyericsson.home.permission.BROADCAST_BADGE in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.anddoes.launcher.permission.UPDATE_COUNT in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.majeur.launcher.permission.UPDATE_BADGE in package com.revolut.revolut
+> W/PackageManager( 1267): Not granting permission android.permission.DELETE_PACKAGES to package com.svox.pico (protectionLevel=18 flags=0x8be45)
+> W/PackageManager( 1267): Unknown permission com.amazon.device.messaging.permission.RECEIVE in package de.motain.iliga
+> W/PackageManager( 1267): Unknown permission com.google.android.gallery3d.permission.PICASA_STORE in package com.google.android.apps.photos
+> W/PackageManager( 1267): Unknown permission android.permission.STORAGE in package com.tinder
+> W/PackageManager( 1267): Not granting permission android.permission.READ_LOGS to package com.bluestacks.appguidance (protectionLevel=50 flags=0x8be45)
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.PRELOAD_WORKSPACE in package com.google.android.partnersetup
+> W/PackageManager( 1267): Not granting permission android.permission.INSTALL_PACKAGES to package com.bluestacks.gamepophome (protectionLevel=18 flags=0x8be45)
+> W/PackageManager( 1267): Not granting permission android.permission.DELETE_PACKAGES to package com.bluestacks.gamepophome (protectionLevel=18 flags=0x8be45)
+> W/PackageManager( 1267): Unknown permission com.huuuge.casino.permission.C2D_MESSAGE in package com.huuuge.casino.slots
+> W/PackageManager( 1267): Unknown permission android.permission.REAL_GET_TASKS in package com.android.vending
+> W/PackageManager( 1267): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.vending (protectionLevel=2 flags=0x404abe45)
+> W/PackageManager( 1267): Unknown permission android.permission.SEND_SMS_NO_CONFIRMATION in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.USE_FINGERPRINT in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.GET_PACKAGE_IMPORTANCE in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.GET_ACCOUNTS_PRIVILEGED in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.GRANT_RUNTIME_PERMISSIONS in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.REVOKE_RUNTIME_PERMISSIONS in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST in package com.android.vending
+> W/PackageManager( 1267): Not granting permission android.permission.FORCE_STOP_PACKAGES to package com.android.vending (protectionLevel=2 flags=0x404abe45)
+> W/PackageManager( 1267): Unknown permission com.google.android.partnersetup.permission.WRITE_APP_PROVIDER in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.receive_boot_completed in package com.location.provider
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.location.provider
+> W/PackageManager( 1267): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0x48be45)
+> W/PackageManager( 1267): Not granting permission android.permission.READ_DREAM_STATE to package com.google.android.gsf (protectionLevel=2 flags=0x40083e45)
+> W/PackageManager( 1267): Not granting permission android.permission.READ_LOGS to package com.gamecircus.CoinDozerJackpot (protectionLevel=50 flags=0x8be44)
+> I/SystemServer( 1267): Entropy Mixer
+> I/EntropyMixer( 1267): Writing entropy...
+> I/SystemServer( 1267): User Service
+> I/SystemServer( 1267): Account Manager
+> I/SystemServer( 1267): Content Manager
+> I/SystemServer( 1267): System Content Providers
+> I/SystemServer( 1267): Lights Service
+> I/SystemServer( 1267): Battery Service
+> I/SystemServer( 1267): Vibrator Service
+> I/SystemServer( 1267): Consumer IR Service
+> I/SystemServer( 1267): Alarm Manager
+> I/SystemServer( 1267): Init Watchdog
+> I/SystemServer( 1267): BlueStacks Orientation Service
+> I/SystemServer( 1267): Input Manager
+> I/InputManager( 1267): Initializing input manager, mUseDevInputEventForAudioJack=true
+> I/SystemServer( 1267): Window Manager
+> I/WindowManager( 1267): No existing display settings /data/system/display_settings.xml; starting empty
+> I/WindowManager( 1267): No keyguard interface!
+> I/InputManager( 1267): Starting input manager
+> I/SystemServer( 1267): Bluetooth Manager Service
+> I/SystemServer( 1267): Input Method Service
+> W/InputMethodManagerService( 1267): Couldn't create dir.: /data/system/inputmethod
+> I/SystemServer( 1267): Accessibility Manager
+> D/WindowManager( 1267): in computeScreenConfigurationLocked() -- hardKeyboardAvailable :true  mHardKeyboardAvailable :false   mHardKeyboardEnabled :false
+> I/ActivityManager( 1267): Config changes=1df8 {1.0 ?mcc?mnc fr_FR ldltr sw720dp w1280dp h720dp 160dpi xlrg long land ?uimode ?night -touch qwerty/v/v -nav/h s.2}
+> D/WindowManager( 1267): in computeScreenConfigurationLocked() -- hardKeyboardAvailable :true  mHardKeyboardAvailable :true   mHardKeyboardEnabled :true
+> I/ActivityManager( 1267): Config changes=408 {1.0 ?mcc?mnc fr_FR ldltr sw720dp w1280dp h695dp 160dpi xlrg long land ?uimode ?night finger qwerty/v/v -nav/h s.3}
+> D/WindowManager( 1267): in computeScreenConfigurationLocked() -- hardKeyboardAvailable :true  mHardKeyboardAvailable :true   mHardKeyboardEnabled :true
+> I/ProcessStatsService( 1267): Added stats: 2016-07-15-22-20-27, over +30m3s420ms
+> I/ProcessStatsService( 1267): Added stats: 2016-07-15-13-50-43, over +30m0s190ms
+> I/ProcessStatsService( 1267): Added stats: 2016-07-12-15-35-04, over +30m0s10ms
+> I/ProcessStatsService( 1267): Added stats: 2016-06-25-19-26-29, over +1h30m26s890ms
+> I/ProcessStatsService( 1267): Added stats: 2016-06-19-00-36-05, over +1h0m4s360ms
+> I/ProcessStatsService( 1267): Added stats: 2016-06-01-19-05-31, over +30m26s410ms
+> I/ProcessStatsService( 1267): Added stats: 2016-05-27-21-30-30, over +30m0s320ms
+> I/ProcessStatsService( 1267): Added stats: 2016-05-27-00-06-08, over +1h0m7s580ms
+> I/ProcessStatsService( 1267): Added stats: 2016-05-25-20-32-28, over +2h0m19s410ms
+> I/SystemServer( 1267): Mount Service
+> D/MountService( 1267): got storage path: /storage/sdcard description: Carte SD primary: true removable: true emulated: false mtpReserve: 0 allowMassStorage: false maxFileSize: 4294967296
+> D/MountService( 1267): addVolumeLocked() StorageVolume:
+> D/MountService( 1267):     mStorageId=0 mPath=/storage/sdcard mDescriptionId=17040667 mPrimary=true
+> D/MountService( 1267):     mRemovable=true mEmulated=false mMtpReserveSpace=0 mAllowMassStorage=false
+> D/MountService( 1267):     mMaxFileSize=4294967296 mOwner=null mUuid=null mUserLabel=null mState=null
+> I/SystemServer( 1267): LockSettingsService
+> I/SystemServer( 1267): Device Policy
+> I/SystemServer( 1267): Status Bar
+> I/SystemServer( 1267): Clipboard Service
+> I/SystemServer( 1267): NetworkManagement Service
+> I/SystemServer( 1267): Text Service Manager Service
+> I/SystemServer( 1267): NetworkStats Service
+> W/MountService( 1267): Duplicate state transition (unmounted -> unmounted) for /storage/sdcard
+> W/MountService( 1267): getSecureContainerList() called when storage not mounted
+> W/PackageManager( 1267): Not granting permission android.permission.READ_LOGS to package com.bluestacks.home (protectionLevel=50 flags=0x8be45)
+> W/PackageManager( 1267): Not granting permission android.permission.SET_TIME to package com.bluestacks.home (protectionLevel=18 flags=0x8be45)
+> W/PackageManager( 1267): Not granting permission android.permission.FORCE_STOP_PACKAGES to package com.bluestacks.home (protectionLevel=2 flags=0x8be45)
+> W/PackageManager( 1267): Not granting permission android.permission.GLOBAL_SEARCH to package com.android.quicksearchbox (protectionLevel=18 flags=0x88be45)
+> W/PackageManager( 1267): Unknown permission com.android.smspush.WAPPUSH_MANAGER_BIND in package com.android.phone
+> W/PackageManager( 1267): Unknown permission com.android.vending.billing.IBillingAccountService.BIND2 in package com.google.android.gsf.login
+> W/PackageManager( 1267): Unknown permission com.android.chrome.TOS_ACKED in package com.google.android.gsf.login
+> W/PackageManager( 1267): Not granting permission android.permission.ACCESS_DOWNLOAD_MANAGER to package com.android.browser (protectionLevel=18 flags=0x89be45)
+> W/PackageManager( 1267): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x89be45)
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.onetimeinitializer
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.onetimeinitializer
+> W/PackageManager( 1267): Unknown permission .permission.C2D_MESSAGE in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission .permission.RECEIVE_ADM_MESSAGE in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.amazon.device.messaging.permission.RECEIVE in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.READ_SETTINGS in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.UPDATE_SHORTCUT in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.huawei.android.launcher.permission.CHANGE_BADGE in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.sonyericsson.home.permission.BROADCAST_BADGE in package com.instagram.android
+> W/PackageManager( 1267): Not granting permission android.permission.BIND_WALLPAPER to package com.android.camera2 (protectionLevel=18 flags=0xd8bc45)
+> I/SystemServer( 1267): NetworkPolicy Service
+> W/PackageManager( 1267): Not granting permission android.permission.READ_LOGS to package com.amazon.venezia (protectionLevel=50 flags=0x8be44)
+> W/PackageManager( 1267): Unknown permission android.permission.SEND_SMS_NO_CONFIRMATION in package com.amazon.venezia
+> W/PackageManager( 1267): Not granting permission android.permission.INSTALL_PACKAGES to package com.amazon.venezia (protectionLevel=18 flags=0x8be44)
+> W/PackageManager( 1267): Not granting permission android.permission.DELETE_PACKAGES to package com.amazon.venezia (protectionLevel=18 flags=0x8be44)
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.android.amazon.dcp.ota.permission.INSTALL_PACKAGES in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.metrics.permission.METRICS_PERMISSION in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.identity.permission.GENERIC_IPC in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.sso.permission.MANAGE_COR_PFM in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission amazon.permission.COLLECT_METRICS in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.MANAGE_SOUND_TRIGGER in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.RECOVERY in package com.google.android.gms
+> W/PackageManager( 1267): Not granting permission android.permission.READ_DREAM_STATE to package com.google.android.gms (protectionLevel=2 flags=0x40c83e45)
+> W/PackageManager( 1267): Unknown permission android.permission.PROVIDE_TRUST_AGENT in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.apps.enterprise.dmagent.permission.AutoSyncPermission in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.googlequicksearchbox.permission.PAUSE_HOTWORD in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.MANAGE_VOICE_KEYPHRASES in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.TETHER_PRIVILEGED in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.REAL_GET_TASKS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.hangouts.START_HANGOUT in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.READ_OEM_UNLOCK_STATE in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.SCORE_NETWORKS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.OVERRIDE_WIFI_CONFIG in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.CONTROL_INCALL_EXPERIENCE in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.USER_ACTIVITY in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.MODIFY_AUDIO_ROUTING in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.wearable.READ_SETTINGS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.INTENT_FILTER_VERIFICATION_AGENT in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.LOCAL_MAC_ADDRESS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.wh.supervisor.permission.ACCESS_METADATA_SERVICE in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.READ_WIFI_CREDENTIAL in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.BODY_SENSORS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.launcher.permission.RECEIVE_LAUNCH_BROADCASTS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.gm.permission.READ_GMAIL in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.android.voicemail.permission.READ_VOICEMAIL in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.SEND_SMS_NO_CONFIRMATION in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.NOTIFY_PENDING_SYSTEM_UPDATE in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.settings
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.settings
+> W/PackageManager( 1267): Unknown permission com.facebook.orca.provider.ACCESS in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.facebook.pages.app.provider.ACCESS in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission android.permission.REQUEST_INSTALL_PACKAGES in package com.facebook.katana
+> W/PackageManager( 1267): Not granting permission android.permission.BATTERY_STATS to package com.facebook.katana (protectionLevel=18 flags=0xc83e44)
+> W/PackageManager( 1267): Unknown permission com.sec.android.provider.badge.permission.READ in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.sec.android.provider.badge.permission.WRITE in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.READ_SETTINGS in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.UPDATE_SHORTCUT in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.sonyericsson.home.permission.BROADCAST_BADGE in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.facebook.home.permission.WRITE_BADGES in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.nokia.pushnotifications.permission.RECEIVE in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.amazon.device.messaging.permission.RECEIVE in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission android.permission.USE_FINGERPRINT in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.sec.android.provider.badge.permission.READ in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.sec.android.provider.badge.permission.WRITE in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.READ_SETTINGS in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.UPDATE_SHORTCUT in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.sonyericsson.home.permission.BROADCAST_BADGE in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.anddoes.launcher.permission.UPDATE_COUNT in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.majeur.launcher.permission.UPDATE_BADGE in package com.revolut.revolut
+> W/PackageManager( 1267): Not granting permission android.permission.DELETE_PACKAGES to package com.svox.pico (protectionLevel=18 flags=0x88be45)
+> W/PackageManager( 1267): Unknown permission com.amazon.device.messaging.permission.RECEIVE in package de.motain.iliga
+> W/PackageManager( 1267): Unknown permission com.google.android.gallery3d.permission.PICASA_STORE in package com.google.android.apps.photos
+> W/PackageManager( 1267): Unknown permission android.permission.STORAGE in package com.tinder
+> W/PackageManager( 1267): Not granting permission android.permission.READ_LOGS to package com.bluestacks.appguidance (protectionLevel=50 flags=0x8be45)
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.PRELOAD_WORKSPACE in package com.google.android.partnersetup
+> W/PackageManager( 1267): Not granting permission android.permission.INSTALL_PACKAGES to package com.bluestacks.gamepophome (protectionLevel=18 flags=0x8be45)
+> W/PackageManager( 1267): Not granting permission android.permission.DELETE_PACKAGES to package com.bluestacks.gamepophome (protectionLevel=18 flags=0x8be45)
+> W/PackageManager( 1267): Unknown permission com.huuuge.casino.permission.C2D_MESSAGE in package com.huuuge.casino.slots
+> W/PackageManager( 1267): Unknown permission android.permission.REAL_GET_TASKS in package com.android.vending
+> W/PackageManager( 1267): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.vending (protectionLevel=2 flags=0x40cabe45)
+> W/PackageManager( 1267): Unknown permission android.permission.SEND_SMS_NO_CONFIRMATION in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.USE_FINGERPRINT in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.GET_PACKAGE_IMPORTANCE in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.GET_ACCOUNTS_PRIVILEGED in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.GRANT_RUNTIME_PERMISSIONS in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.REVOKE_RUNTIME_PERMISSIONS in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST in package com.android.vending
+> W/PackageManager( 1267): Not granting permission android.permission.FORCE_STOP_PACKAGES to package com.android.vending (protectionLevel=2 flags=0x40cabe45)
+> W/PackageManager( 1267): Unknown permission com.google.android.partnersetup.permission.WRITE_APP_PROVIDER in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.receive_boot_completed in package com.location.provider
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.location.provider
+> W/PackageManager( 1267): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0xc8be45)
+> W/PackageManager( 1267): Not granting permission android.permission.READ_DREAM_STATE to package com.google.android.gsf (protectionLevel=2 flags=0x40883e45)
+> W/PackageManager( 1267): Not granting permission android.permission.READ_LOGS to package com.gamecircus.CoinDozerJackpot (protectionLevel=50 flags=0x8be44)
+> I/SystemServer( 1267): Wi-Fi P2pService
+> I/SystemServer( 1267): Wi-Fi Service
+> I/SystemServer( 1267): Connectivity Service
+> D/ConnectivityService( 1267): ConnectivityService starting up
+> D/ConnectivityService( 1267): wifiOnly=false
+> E/ConnectivityService( 1267): Ignoring protectedNetwork 14
+> E/MobileDataStateTracker( 1267): default: Ignoring feature request because could not acquire PhoneService
+> E/MobileDataStateTracker( 1267): default: Could not enable APN type "default"
+> I/WifiService( 1267): WifiService starting up with Wi-Fi disabled
+> I/SystemServer( 1267): Network Service Discovery Service
+> D/NsdService( 1267): Network service discovery enabled true
+> I/SystemServer( 1267): UpdateLock Service
+> I/SystemServer( 1267): Waiting for mountService before continuing
+> I/SystemServer( 1267): Making Account Manager service ready
+> I/SystemServer( 1267): Making Content Service ready
+> I/SystemServer( 1267): Notification Manager
+> I/SystemServer( 1267): binding Notification Manager
+> I/SystemServer( 1267): Device Storage Monitor
+> I/SystemServer( 1267): Location Manager
+> I/SystemServer( 1267): Country Detector
+> I/SystemServer( 1267): Search Service
+> I/SystemServer( 1267): DropBox Service
+> I/SystemServer( 1267): Wallpaper Service
+> I/SystemServer( 1267): Audio Service
+> I/SystemServer( 1267): Dock Observer
+> W/DockObserver( 1267): This kernel does not have dock station support
+> I/SystemServer( 1267): Wired Accessory Manager
+> W/WiredAccessoryManager( 1267): This kernel does not have usb audio support
+> W/WiredAccessoryManager( 1267): This kernel does not have HDMI audio support
+> I/SystemServer( 1267): USB Service
+> I/SystemServer( 1267): Serial Service
+> I/SystemServer( 1267): Twilight Service
+> I/SystemServer( 1267): UI Mode Manager Service
+> I/SystemServer( 1267): Backup Service
+> V/BackupManagerService( 1267): Initializing package tracking
+> D/ConnectivityService( 1267): ConnectivityChange for ETHERNET: CONNECTED/CONNECTED
+> E/ConnectivityService( 1267): Unexpected mtu value: android.net.EthernetDataTracker@2ea3bab8
+> V/BackupManagerService( 1267): addPackageParticipantsLocked: all
+> I/BackupManagerService( 1267): Scheduling backup for new app com.supercell.clashofclans
+> D/BackupManagerService( 1267): Now staging backup of com.supercell.clashofclans
+> I/BackupManagerService( 1267): Scheduling backup for new app com.android.calendar
+> D/BackupManagerService( 1267): Now staging backup of com.android.calendar
+> I/BackupManagerService( 1267): Scheduling backup for new app com.android.browser
+> D/BackupManagerService( 1267): Now staging backup of com.android.browser
+> I/BackupManagerService( 1267): Scheduling backup for new app com.android.sharedstoragebackup
+> D/BackupManagerService( 1267): Now staging backup of com.android.sharedstoragebackup
+> I/BackupManagerService( 1267): Scheduling backup for new app com.icenta.sudoku.ui
+> D/BackupManagerService( 1267): Now staging backup of com.icenta.sudoku.ui
+> D/Nat464Xlat( 1267): requiresClat: netType=9, hasIPv4Address=true
+> I/BackupManagerService( 1267): Scheduling backup for new app com.android.dialer
+> D/BackupManagerService( 1267): Now staging backup of com.android.dialer
+> I/BackupManagerService( 1267): Scheduling backup for new app com.android.providers.settings
+> D/BackupManagerService( 1267): Now staging backup of com.android.providers.settings
+> I/BackupManagerService( 1267): Scheduling backup for new app com.android.providers.userdictionary
+> D/BackupManagerService( 1267): Now staging backup of com.android.providers.userdictionary
+> I/BackupManagerService( 1267): Scheduling backup for new app com.huuuge.casino.slots
+> D/BackupManagerService( 1267): Now staging backup of com.huuuge.casino.slots
+> I/BackupManagerService( 1267): Scheduling backup for new app android
+> D/BackupManagerService( 1267): Now staging backup of android
+> I/BackupManagerService( 1267): Scheduling backup for new app com.android.vending
+> D/BackupManagerService( 1267): Now staging backup of com.android.vending
+> V/BackupManagerService( 1267): Starting with transport android/com.android.internal.backup.LocalTransport
+> V/BackupManagerService( 1267): Found transports: 2
+> I/BackupManagerService( 1267): Binding to transport host ComponentInfo{android/com.android.internal.backup.LocalTransportService}
+> I/BackupManagerService( 1267): Binding to transport host ComponentInfo{com.google.android.backuptransport/com.google.android.backup.BackupTransportService}
+> I/BackupManagerService( 1267): Found stale backup journal, scheduling
+> I/BackupManagerService( 1267):   com.supercell.clashofclans
+> I/BackupManagerService( 1267):   com.android.calendar
+> I/BackupManagerService( 1267):   com.android.browser
+> I/BackupManagerService( 1267):   com.android.sharedstoragebackup
+> I/BackupManagerService( 1267):   com.icenta.sudoku.ui
+> I/BackupManagerService( 1267):   com.android.dialer
+> I/BackupManagerService( 1267):   com.android.providers.settings
+> I/BackupManagerService( 1267):   com.android.providers.userdictionary
+> I/BackupManagerService( 1267):   com.huuuge.casino.slots
+> I/BackupManagerService( 1267):   android
+> I/BackupManagerService( 1267):   com.android.vending
+> I/BackupManagerService( 1267): Backup enabled => true
+> I/SystemServer( 1267): AppWidget Service
+> I/SystemServer( 1267): Recognition Service
+> I/SystemServer( 1267): DiskStats Service
+> I/SystemServer( 1267): BlueStacks Folder Sharing Service
+> I/SystemServer( 1267): SamplingProfiler Service
+> I/SystemServer( 1267): NetworkTimeUpdateService
+> I/SystemServer( 1267): CommonTimeManagementService
+> I/SystemServer( 1267): CertBlacklister
+> I/SystemServer( 1267): Dreams Service
+> I/SystemServer( 1267): IdleMaintenanceService
+> I/SystemServer( 1267): Media Router Service
+> I/ActivityManager( 1267): Start proc com.android.systemui for service com.android.keyguard/.KeyguardService: pid=3821 uid=10004 gids={50004, 1028, 1015, 1023, 1035, 3002, 3001}
+> D/WindowManager( 1267): in computeScreenConfigurationLocked() -- hardKeyboardAvailable :true  mHardKeyboardAvailable :true   mHardKeyboardEnabled :true
+> I/AppOps  ( 1267): Pruning old package media/1013: new uid=-1
+> I/ActivityManager( 1267): System now ready
+> I/SystemServer( 1267): Making services ready
+> I/Vold    (  582): /dev/block/vold/8:33 being considered for volume sdcard
+> D/Vold    (  582): Volume sdcard state changing 1 (Idle-Unmounted) -> 3 (Checking)
+> D/MountService( 1267): volume state changed for /storage/sdcard (unmounted -> checking)
+> D/MountService( 1267): sendStorageIntent Intent { act=android.intent.action.MEDIA_CHECKING dat=file:///storage/sdcard (has extras) } to UserHandle{-1}
+> W/NetworkStats( 1267): bandwidth controls disabled, unable to track stats
+> W/NetworkPolicy( 1267): bandwidth controls disabled, unable to enforce policy
+> I/ActivityManager( 1267): Config changes=200 {1.0 ?mcc?mnc fr_FR ldltr sw720dp w1280dp h695dp 160dpi xlrg long land finger qwerty/v/v -nav/h s.4}
+> W/BroadcastQueue( 1267): Hung broadcast [foreground] discarded after timeout failure: now=591190 dispatchTime=137010 startTime=137010 intent=Intent { act=android.intent.action.TIME_TICK flg=0x50000014 (has extras) } numReceivers=1 nextReceiver=1 state=3
+> W/BroadcastQueue( 1267): Timeout of broadcast BroadcastRecord{2e8b8090 u-1 android.intent.action.TIME_TICK} - receiver=android.app.LoadedApk$ReceiverDispatcher$InnerReceiver@2e866f64, started 454180ms ago
+> W/BroadcastQueue( 1267): Receiver during timeout: BroadcastFilter{2e8445a0 u0 ReceiverList{2e852818 1267 system/1000/u0 local:2e866f64}}
+> W/RecognitionManagerService( 1267): no available voice recognition services found for user 0
+> W/InputMethodManagerService( 1267): Ignoring setImeWindowStatus of uid 1000 token: null
+> I/StatusBarManagerService( 1267): registerStatusBar bar=com.android.internal.statusbar.IStatusBar$Stub$Proxy@2e911cc0
+> I/ActivityManager( 1267): Start proc android.process.media for broadcast com.android.providers.downloads/.DownloadReceiver: pid=3857 uid=10012 gids={50012, 1028, 1015, 1023, 1024, 2001, 3003, 3007}
+> I/ActivityManager( 1267): Start proc com.android.inputmethod.latin for service com.android.inputmethod.latin/.LatinIME: pid=3861 uid=10041 gids={50041, 1028, 1015, 1023}
+> I/ActivityManager( 1267): Start proc com.google.android.gms.persistent for service com.google.android.gms/com.google.android.location.network.NetworkLocationService: pid=3881 uid=10019 gids={50019, 3003, 1007, 1028, 1015, 1023, 3002, 3001, 3007, 2001, 3006}
+> I/ActivityManager( 1267): Start proc com.android.phone for added application com.android.phone: pid=3893 uid=1001 gids={41001, 3002, 3001, 3003, 1028, 1015, 1023}
+> I/ActivityManager( 1267): Start proc com.bluestacks.bstfolder for added application com.bluestacks.bstfolder: pid=3903 uid=10006 gids={50006, 1028, 1015, 1023}
+> I/ActivityManager( 1267): Start proc com.bluestacks.BstCommandProcessor for added application com.bluestacks.BstCommandProcessor: pid=3917 uid=1000 gids={41000, 1028, 1015, 1023, 3002, 3001, 3003}
+> I/ActivityManager( 1267): Setting mBooting value to true to startup initial activity
+> I/ActivityManager( 1267): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.bluestacks.gamepophome/tv.gamepop.home.GamePopMain_} from pid 0
+> D/ActivityManager( 1267): TopActivityInfo, pkgName: com.bluestacks.gamepophome activityName: tv.gamepop.home.GamePopMain_ callingPackage: null  bstSpecialAppKeyboardHandlingEnabled = false
+> D/ActivityManager( 1267): Showing guidance for pkgName: com.bluestacks.gamepophome
+> I/ActivityManager( 1267): Start proc com.bluestacks.appguidance for service com.bluestacks.appguidance/.GuidanceScreen: pid=3934 uid=10020 gids={50020, 3003, 1028, 1015, 1023}
+> I/ActivityManager( 1267): Start proc com.bluestacks.gamepophome for service com.bluestacks.gamepophome/tv.gamepop.home.utils.GuidanceScreenForAd: pid=3944 uid=10026 gids={50026, 3003, 1028, 1015, 1023, 3002}
+> D/ActivityManager( 1267): TopActivityInfo, pkgName: com.bluestacks.gamepophome activityName: com.bluestacks.gamepophome/tv.gamepop.home.GamePopMain_ callingPackage:   bstSpecialAppKeyboardHandlingEnabled = false
+> D/ActivityManager( 1267): Showing guidance for pkgName: com.bluestacks.gamepophome
+> D/WindowManager( 1267): in computeScreenConfigurationLocked() -- hardKeyboardAvailable :true  mHardKeyboardAvailable :true   mHardKeyboardEnabled :true
+> I/ActivityManager( 1267): Start proc com.google.process.gapps for broadcast com.google.android.gsf/.gtalkservice.ServiceAutoStarter: pid=3967 uid=10019 gids={50019, 3003, 1007, 1028, 1015, 1023, 3002, 3001, 3007, 2001, 3006}
+> I/ActivityManager( 1267): Start proc com.bluestacks.home for service com.bluestacks.home/.SilentInstallMessenger: pid=3992 uid=10021 gids={50021, 3003, 1028, 1015, 1023}
+> I/ActivityManager( 1267): Start proc android.process.acore for content provider com.android.providers.userdictionary/.UserDictionaryProvider: pid=4001 uid=10013 gids={50013, 3003, 1028, 1015, 1023}
+> V/BackupManagerService( 1267): Connected to transport ComponentInfo{android/com.android.internal.backup.LocalTransportService}
+> V/BackupManagerService( 1267): Registering transport android/com.android.internal.backup.LocalTransportService::android/com.android.internal.backup.LocalTransport = com.android.internal.backup.LocalTransport@2e824c00
+> E/WindowManager( 1267): Starting window AppWindowToken{2e9c6b60 token=Token{2ea4c3ec ActivityRecord{2ea4c410 u0 com.bluestacks.gamepophome/tv.gamepop.home.GamePopMain_ t1}}} timed out
+> I/ActivityManager( 1267): Enabling screen and setting mBooted flag to true, currently mBooting = true
+> I/ActivityManager( 1267): Setting mBooting value to false, currently mBooted = true
+> I/ActivityManager( 1267): calling finishBooting()
+> I/ActivityManager( 1267): Start proc com.google.process.location for on-hold: pid=4041 uid=10019 gids={50019, 3003, 1007, 1028, 1015, 1023, 3002, 3001, 3007, 2001, 3006}
+> I/ActivityManager( 1267): Booting finished, setting boot_completed flags
+> D/ActivityManager( 1267): Setting bst.config.screen_enabled
+> D/MobileDataStateTracker( 1267): fota: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=fota
+> D/MobileDataStateTracker( 1267): fota: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): supl: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=supl
+> D/MobileDataStateTracker( 1267): supl: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): hipri: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=hipri
+> D/MobileDataStateTracker( 1267): hipri: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): ims: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=ims
+> D/MobileDataStateTracker( 1267): ims: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): default: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=default
+> D/MobileDataStateTracker( 1267): default: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): mms: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=mms
+> D/MobileDataStateTracker( 1267): mms: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): cbs: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=cbs
+> D/MobileDataStateTracker( 1267): cbs: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): fota: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=fota
+> D/MobileDataStateTracker( 1267): fota: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): supl: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=supl
+> D/MobileDataStateTracker( 1267): supl: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): hipri: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=hipri
+> D/MobileDataStateTracker( 1267): hipri: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): ims: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=ims
+> D/MobileDataStateTracker( 1267): ims: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): default: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=default
+> D/MobileDataStateTracker( 1267): default: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): mms: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=mms
+> D/MobileDataStateTracker( 1267): mms: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): cbs: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=cbs
+> D/MobileDataStateTracker( 1267): cbs: Received state=DISCONNECTED, old=DISCONNECTED, reason=radioTurnedOff
+> D/MobileDataStateTracker( 1267): fota: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=fota
+> D/MobileDataStateTracker( 1267): fota: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataDetached
+> D/MobileDataStateTracker( 1267): supl: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=supl
+> D/MobileDataStateTracker( 1267): supl: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataDetached
+> D/MobileDataStateTracker( 1267): hipri: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=hipri
+> D/MobileDataStateTracker( 1267): hipri: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataDetached
+> D/MobileDataStateTracker( 1267): ims: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=ims
+> D/MobileDataStateTracker( 1267): ims: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataDetached
+> V/BackupManagerService( 1267): Connected to transport ComponentInfo{com.google.android.backuptransport/com.google.android.backup.BackupTransportService}
+> V/BackupManagerService( 1267): Registering transport com.google.android.backuptransport/com.google.android.backup.BackupTransportService::com.google.android.backup/.BackupTransportService = com.android.internal.backup.IBackupTransport$Stub$Proxy@2ea665c4
+> D/MobileDataStateTracker( 1267): default: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=default
+> D/MobileDataStateTracker( 1267): default: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataDetached
+> D/MobileDataStateTracker( 1267): mms: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=mms
+> D/MobileDataStateTracker( 1267): mms: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataDetached
+> D/MobileDataStateTracker( 1267): cbs: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=cbs
+> D/MobileDataStateTracker( 1267): cbs: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataDetached
+> D/MobileDataStateTracker( 1267): fota: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=fota
+> D/MobileDataStateTracker( 1267): fota: Received state=DISCONNECTED, old=DISCONNECTED, reason=roamingOff
+> D/MobileDataStateTracker( 1267): supl: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=supl
+> D/MobileDataStateTracker( 1267): supl: Received state=DISCONNECTED, old=DISCONNECTED, reason=roamingOff
+> D/MobileDataStateTracker( 1267): hipri: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=hipri
+> D/MobileDataStateTracker( 1267): hipri: Received state=DISCONNECTED, old=DISCONNECTED, reason=roamingOff
+> D/MobileDataStateTracker( 1267): ims: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=ims
+> D/MobileDataStateTracker( 1267): ims: Received state=DISCONNECTED, old=DISCONNECTED, reason=roamingOff
+> D/MobileDataStateTracker( 1267): default: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=default
+> D/MobileDataStateTracker( 1267): default: Received state=DISCONNECTED, old=DISCONNECTED, reason=roamingOff
+> D/MobileDataStateTracker( 1267): mms: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=mms
+> D/MobileDataStateTracker( 1267): mms: Received state=DISCONNECTED, old=DISCONNECTED, reason=roamingOff
+> D/MobileDataStateTracker( 1267): cbs: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=cbs
+> D/MobileDataStateTracker( 1267): cbs: Received state=DISCONNECTED, old=DISCONNECTED, reason=roamingOff
+> I/Vold    (  582): Filesystem check completed OK
+> D/Vold    (  582): Volume sdcard state changing 3 (Checking) -> 4 (Mounted)
+> D/MountService( 1267): volume state changed for /storage/sdcard (checking -> mounted)
+> E/VoldConnector( 1267): NDC Command {3 volume mount /storage/sdcard} took too long (26800ms)
+> D/MountService( 1267): sendStorageIntent Intent { act=android.intent.action.MEDIA_MOUNTED dat=file:///storage/sdcard (has extras) } to UserHandle{-1}
+> W/ActivityManager( 1267): Activity pause timeout for ActivityRecord{2ea4c410 u0 com.bluestacks.gamepophome/tv.gamepop.home.GamePopMain_ t1 f}
+> I/ActivityManager( 1267): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.bluestacks.gamepophome/tv.gamepop.home.GamePopMain_} from pid 0
+> D/ActivityManager( 1267): TopActivityInfo, pkgName: com.bluestacks.gamepophome activityName: tv.gamepop.home.GamePopMain_ callingPackage: null  bstSpecialAppKeyboardHandlingEnabled = false
+> D/ActivityManager( 1267): Showing guidance for pkgName: com.bluestacks.gamepophome
+> D/ActivityManager( 1267): TopActivityInfo, pkgName: com.bluestacks.gamepophome activityName: com.bluestacks.gamepophome/tv.gamepop.home.GamePopMain_ callingPackage:   bstSpecialAppKeyboardHandlingEnabled = false
+> D/ActivityManager( 1267): Showing guidance for pkgName: com.bluestacks.gamepophome
+> D/WindowManager( 1267): in computeScreenConfigurationLocked() -- hardKeyboardAvailable :true  mHardKeyboardAvailable :true   mHardKeyboardEnabled :true
+> I/ActivityManager( 1267): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.bluestacks.gamepophome/tv.gamepop.home.GamePopMain_} from pid 3917
+> D/ActivityManager( 1267): TopActivityInfo, pkgName: com.bluestacks.gamepophome activityName: tv.gamepop.home.GamePopMain_ callingPackage: com.bluestacks.BstCommandProcessor  bstSpecialAppKeyboardHandlingEnabled = false
+> D/ActivityManager( 1267): Showing guidance for pkgName: com.bluestacks.gamepophome
+> E/VoldConnector( 1267): NDC Command {4 asec list} took too long (14400ms)
+> W/PackageManager( 1267): Not granting permission android.permission.READ_LOGS to package com.bluestacks.home (protectionLevel=50 flags=0x88be45)
+> W/PackageManager( 1267): Not granting permission android.permission.SET_TIME to package com.bluestacks.home (protectionLevel=18 flags=0x88be45)
+> W/PackageManager( 1267): Not granting permission android.permission.FORCE_STOP_PACKAGES to package com.bluestacks.home (protectionLevel=2 flags=0x88be45)
+> W/PackageManager( 1267): Not granting permission android.permission.GLOBAL_SEARCH to package com.android.quicksearchbox (protectionLevel=18 flags=0x88be45)
+> W/PackageManager( 1267): Unknown permission com.android.smspush.WAPPUSH_MANAGER_BIND in package com.android.phone
+> W/PackageManager( 1267): Unknown permission com.android.vending.billing.IBillingAccountService.BIND2 in package com.google.android.gsf.login
+> W/PackageManager( 1267): Unknown permission com.android.chrome.TOS_ACKED in package com.google.android.gsf.login
+> W/PackageManager( 1267): Not granting permission android.permission.ACCESS_DOWNLOAD_MANAGER to package com.android.browser (protectionLevel=18 flags=0x89be45)
+> W/PackageManager( 1267): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x89be45)
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.onetimeinitializer
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.onetimeinitializer
+> W/PackageManager( 1267): Unknown permission .permission.C2D_MESSAGE in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission .permission.RECEIVE_ADM_MESSAGE in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.amazon.device.messaging.permission.RECEIVE in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.READ_SETTINGS in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.UPDATE_SHORTCUT in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.huawei.android.launcher.permission.CHANGE_BADGE in package com.instagram.android
+> W/PackageManager( 1267): Unknown permission com.sonyericsson.home.permission.BROADCAST_BADGE in package com.instagram.android
+> W/PackageManager( 1267): Not granting permission android.permission.BIND_WALLPAPER to package com.android.camera2 (protectionLevel=18 flags=0xd8bc45)
+> W/PackageManager( 1267): Not granting permission android.permission.READ_LOGS to package com.amazon.venezia (protectionLevel=50 flags=0x8be44)
+> W/PackageManager( 1267): Unknown permission android.permission.SEND_SMS_NO_CONFIRMATION in package com.amazon.venezia
+> W/PackageManager( 1267): Not granting permission android.permission.INSTALL_PACKAGES to package com.amazon.venezia (protectionLevel=18 flags=0x8be44)
+> W/PackageManager( 1267): Not granting permission android.permission.DELETE_PACKAGES to package com.amazon.venezia (protectionLevel=18 flags=0x8be44)
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.android.amazon.dcp.ota.permission.INSTALL_PACKAGES in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.metrics.permission.METRICS_PERMISSION in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.config.permission.DYN_CONFIG_VALUES_UPDATED in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.identity.permission.GENERIC_IPC in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.sso.permission.USE_DEVICE_CREDENTIALS in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.sso.permission.MANAGE_COR_PFM in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission com.amazon.dcp.sso.permission.CUSTOMER_ATTRIBUTE_SERVICE in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission amazon.permission.COLLECT_METRICS in package com.amazon.venezia
+> W/PackageManager( 1267): Unknown permission android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.MANAGE_SOUND_TRIGGER in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.RECOVERY in package com.google.android.gms
+> W/PackageManager( 1267): Not granting permission android.permission.READ_DREAM_STATE to package com.google.android.gms (protectionLevel=2 flags=0x40c83e45)
+> W/PackageManager( 1267): Unknown permission android.permission.PROVIDE_TRUST_AGENT in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.apps.enterprise.dmagent.permission.AutoSyncPermission in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.googlequicksearchbox.permission.PAUSE_HOTWORD in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.MANAGE_VOICE_KEYPHRASES in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.TETHER_PRIVILEGED in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.REAL_GET_TASKS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.hangouts.START_HANGOUT in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.READ_OEM_UNLOCK_STATE in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.SCORE_NETWORKS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.OVERRIDE_WIFI_CONFIG in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.CONTROL_INCALL_EXPERIENCE in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.USER_ACTIVITY in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.MODIFY_AUDIO_ROUTING in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.wearable.READ_SETTINGS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.INTENT_FILTER_VERIFICATION_AGENT in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.LOCAL_MAC_ADDRESS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.wh.supervisor.permission.ACCESS_METADATA_SERVICE in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.READ_WIFI_CREDENTIAL in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.BODY_SENSORS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.launcher.permission.RECEIVE_LAUNCH_BROADCASTS in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.google.android.gm.permission.READ_GMAIL in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.android.voicemail.permission.READ_VOICEMAIL in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.SEND_SMS_NO_CONFIRMATION in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission android.permission.NOTIFY_PENDING_SYSTEM_UPDATE in package com.google.android.gms
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.android.settings
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.WRITE_SETTINGS in package com.android.settings
+> W/PackageManager( 1267): Unknown permission com.facebook.orca.provider.ACCESS in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.facebook.pages.app.provider.ACCESS in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission android.permission.REQUEST_INSTALL_PACKAGES in package com.facebook.katana
+> W/PackageManager( 1267): Not granting permission android.permission.BATTERY_STATS to package com.facebook.katana (protectionLevel=18 flags=0xc83e44)
+> W/PackageManager( 1267): Unknown permission com.sec.android.provider.badge.permission.READ in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.sec.android.provider.badge.permission.WRITE in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.READ_SETTINGS in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.UPDATE_SHORTCUT in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.sonyericsson.home.permission.BROADCAST_BADGE in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.facebook.home.permission.WRITE_BADGES in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.nokia.pushnotifications.permission.RECEIVE in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission com.amazon.device.messaging.permission.RECEIVE in package com.facebook.katana
+> W/PackageManager( 1267): Unknown permission android.permission.USE_FINGERPRINT in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.sec.android.provider.badge.permission.READ in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.sec.android.provider.badge.permission.WRITE in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.READ_SETTINGS in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.htc.launcher.permission.UPDATE_SHORTCUT in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.sonyericsson.home.permission.BROADCAST_BADGE in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.anddoes.launcher.permission.UPDATE_COUNT in package com.revolut.revolut
+> W/PackageManager( 1267): Unknown permission com.majeur.launcher.permission.UPDATE_BADGE in package com.revolut.revolut
+> W/PackageManager( 1267): Not granting permission android.permission.DELETE_PACKAGES to package com.svox.pico (protectionLevel=18 flags=0x88be45)
+> W/PackageManager( 1267): Unknown permission com.amazon.device.messaging.permission.RECEIVE in package de.motain.iliga
+> W/PackageManager( 1267): Unknown permission com.google.android.gallery3d.permission.PICASA_STORE in package com.google.android.apps.photos
+> W/PackageManager( 1267): Unknown permission android.permission.STORAGE in package com.tinder
+> W/PackageManager( 1267): Not granting permission android.permission.READ_LOGS to package com.bluestacks.appguidance (protectionLevel=50 flags=0x88be45)
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.PRELOAD_WORKSPACE in package com.google.android.partnersetup
+> W/PackageManager( 1267): Not granting permission android.permission.INSTALL_PACKAGES to package com.bluestacks.gamepophome (protectionLevel=18 flags=0x88be45)
+> W/PackageManager( 1267): Not granting permission android.permission.DELETE_PACKAGES to package com.bluestacks.gamepophome (protectionLevel=18 flags=0x88be45)
+> W/PackageManager( 1267): Unknown permission com.huuuge.casino.permission.C2D_MESSAGE in package com.huuuge.casino.slots
+> W/PackageManager( 1267): Unknown permission android.permission.REAL_GET_TASKS in package com.android.vending
+> W/PackageManager( 1267): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.vending (protectionLevel=2 flags=0x40cabe45)
+> W/PackageManager( 1267): Unknown permission android.permission.SEND_SMS_NO_CONFIRMATION in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.USE_FINGERPRINT in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.GET_PACKAGE_IMPORTANCE in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.GET_ACCOUNTS_PRIVILEGED in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.GRANT_RUNTIME_PERMISSIONS in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.REVOKE_RUNTIME_PERMISSIONS in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST in package com.android.vending
+> W/PackageManager( 1267): Not granting permission android.permission.FORCE_STOP_PACKAGES to package com.android.vending (protectionLevel=2 flags=0x40cabe45)
+> W/PackageManager( 1267): Unknown permission com.google.android.partnersetup.permission.WRITE_APP_PROVIDER in package com.android.vending
+> W/PackageManager( 1267): Unknown permission android.permission.receive_boot_completed in package com.location.provider
+> W/PackageManager( 1267): Unknown permission com.android.launcher.permission.READ_SETTINGS in package com.location.provider
+> W/PackageManager( 1267): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0xc8be45)
+> W/PackageManager( 1267): Not granting permission android.permission.READ_DREAM_STATE to package com.google.android.gsf (protectionLevel=2 flags=0x40883e45)
+> W/PackageManager( 1267): Not granting permission android.permission.READ_LOGS to package com.gamecircus.CoinDozerJackpot (protectionLevel=50 flags=0x8be44)
+> E/WindowManager( 1267): Starting window AppWindowToken{2e892380 token=Token{2e9064f0 ActivityRecord{2e84dd4c u0 com.bluestacks.gamepophome/tv.gamepop.home.GamePopMain_ t2}}} timed out
+> I/ActivityManager( 1267): Setting mBooting value to false, currently mBooted = true
+> D/BstFilterAppsService( 1267): reading file: /data/data/.settings.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.settings_user.db
+> I/ActivityManager( 1267): Start proc com.google.android.gms for service com.google.android.gms/.ads.identifier.service.AdvertisingIdService: pid=4202 uid=10019 gids={50019, 3003, 1007, 1028, 1015, 1023, 3002, 3001, 3007, 2001, 3006}
+> D/BstFilterAppsService( 1267): reading file: /data/data/.bl.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.bl_user.db
+> D/WindowManager( 1267): topDisplayedActivityInfo, appToken: Token{2e9064f0 ActivityRecord{2e84dd4c u0 com.bluestacks.gamepophome/tv.gamepop.home.GamePopMain_ t2}}
+> D/BstFilterAppsService( 1267): reading file: /data/data/.settings.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.settings_user.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.settings.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.settings_user.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.bl.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.bl_user.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.softkeyboard_activity.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.softkeyboard_activity_user.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.softkeyboard_activity.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.softkeyboard_activity_user.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/qemu_list.txt
+> D/BstFilterAppsService( 1267): reading file: /data/data/qemu_list_user.txt
+> D/BstFilterAppsService( 1267): reading file: /data/data/qemu_list.txt
+> D/BstFilterAppsService( 1267): reading file: /data/data/qemu_list_user.txt
+> D/BstFilterAppsService( 1267): reading file: /data/data/.immersive.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.immersive_user.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.immersive.db
+> D/BstFilterAppsService( 1267): reading file: /data/data/.immersive_user.db
+> I/BstFilterAppsService( 1267): reading file: /data/data/.showrecommendedad.db
+> E/BstFilterAppsService( 1267): Exeption while parsing show recommended ad listjava.io.FileNotFoundException: /data/data/.showrecommendedad.db: open failed: EACCES (Permission denied)
+> I/BstFilterAppsService( 1267): reading file: /data/data/.showrecommendedad_user.db
+> I/BstFilterAppsService( 1267): reading file: /data/data/.showrecommendedad.db
+> D/Sumedh  ( 1267): Adding pkg: com.nianticlabs.pokemongo recommend pkg: comtest.foobar.fre url: market poster url: http://cdn.bluestacks.com/public/appsettings/images/pokemongo.jpg icon: http://cdn.bluestacks.com/public/appsettings/GamePop/com.nianticlabs.pokemongo.png Total no of time to show ad: 3 duration to show ad again: 1 play button url to download from:null
+> I/BstFilterAppsService( 1267): reading file: /data/data/.showrecommendedad_user.db
+> I/BstFilterAppsService( 1267): reading file: /data/data/.showrecommendedad.db
+> D/Sumedh  ( 1267): Adding pkg: com.nianticlabs.pokemongo recommend pkg: comtest.foobar.fre url: market poster url: http://cdn.bluestacks.com/public/appsettings/images/pokemongo.jpg icon: http://cdn.bluestacks.com/public/appsettings/GamePop/com.nianticlabs.pokemongo.png Total no of time to show ad: 3 duration to show ad again: 1 play button url to download from:null
+> I/BstFilterAppsService( 1267): reading file: /data/data/.showrecommendedad_user.db
+> I/ActivityManager( 1267): Setting mBooting value to false, currently mBooted = true
+> W/BroadcastQueue( 1267): Timeout of broadcast BroadcastRecord{2ea81834 u-1 android.net.conn.CONNECTIVITY_CHANGE} - receiver=android.os.BinderProxy@2ea15344, started 60090ms ago
+> W/BroadcastQueue( 1267): Receiver during timeout: ResolveInfo{2ea75ca8 com.google.android.gms/.gcm.ServiceAutoStarter m=0x108000}
+> I/ActivityManager( 1267): Start proc xxx.iku for broadcast xxx.iku/.receivers.NetworkSwitchReceiver: pid=4297 uid=10066 gids={50066, 3003, 1028, 1015, 1023}
+> D/ConnectivityService( 1267): handleInetConditionChange: net=1 != default=9 - ignore
+> D/ConnectivityService( 1267): handleInetConditionChange: net=1 != default=9 - ignore
+> D/ConnectivityService( 1267): handleInetConditionChange: net=1 != default=9 - ignore
+> D/ConnectivityService( 1267): handleInetConditionChange: net=1 != default=9 - ignore
+> D/ConnectivityService( 1267): handleInetConditionChange: net=1 != default=9 - ignore
+> D/ConnectivityService( 1267): handleInetConditionChange: net=1 != default=9 - ignore
+> D/ConnectivityService( 1267): handleInetConditionChange: net=1 != default=9 - ignore
+> D/ConnectivityService( 1267): handleInetConditionChange: net=1 != default=9 - ignore
+> D/ConnectivityService( 1267): handleInetConditionChange: net=1 != default=9 - ignore
+> D/ConnectivityService( 1267): handleInetConditionChange: net=1 != default=9 - ignore
+> D/ConnectivityService( 1267): handleInetConditionChange: net=1 != default=9 - ignore
+> D/ConnectivityService( 1267): handleInetConditionChange: net=1 != default=9 - ignore
+> I/ActivityManager( 1267): Waited long enough for: ServiceRecord{2ea84b8c u0 com.google.android.gms/.auth.setup.devicesignals.LockScreenService}
+> I/ActivityManager( 1267): Start proc com.facebook.katana for content provider com.facebook.katana/com.facebook.platform.common.provider.PlatformProviderBase: pid=4388 uid=10070 gids={50070, 1028, 1015, 1023, 3003}
+> D/NotificationService( 1267): In writeNotificationInfo: pkgName com.google.android.gms
+> W/ActivityThread( 3917): ClassLoader.loadClass: The class loader returned by Thread.getContextClassLoader() may fail for processes that host multiple applications. You should explicitly specify a context class loader. For example: Thread.setContextClassLoader(getClass().getClassLoader());
+> I/ActivityManager( 1267): Waited long enough for: ServiceRecord{2ea5333c u0 com.google.android.gms/.auth.authzen.GcmReceiverService}
+> E/ActivityThread( 4202): Failed to find provider info for com.google.android.wearable.settings
+> I/ActivityManager( 1267): Process com.google.android.gms (pid 4202) has died.
+> I/ActivityManager( 1267): Start proc com.google.android.gms for service com.google.android.gms/.ads.identifier.service.AdvertisingIdService: pid=4435 uid=10019 gids={50019, 3003, 1007, 1028, 1015, 1023, 3002, 3001, 3007, 2001, 3006}
+> W/Watchdog( 1267): **\* WATCHDOG KILLING SYSTEM PROCESS: Blocked in handler on ActivityManager (ActivityManager)
+> W/Watchdog( 1267): ActivityManager stack trace:
+> W/Watchdog( 1267):     at com.android.internal.util.FastPrintWriter.print(FastPrintWriter.java:464)
+> W/Watchdog( 1267):     at com.android.internal.os.ProcessCpuTracker.printCurrentState(ProcessCpuTracker.java:707)
+> W/Watchdog( 1267):     at com.android.server.am.ActivityManagerService.appNotResponding(ActivityManagerService.java:4188)
+> W/Watchdog( 1267):     at com.android.server.am.BroadcastQueue$AppNotResponding.run(BroadcastQueue.java:163)
+> W/Watchdog( 1267):     at android.os.Handler.handleCallback(Handler.java:733)
+> W/Watchdog( 1267):     at android.os.Handler.dispatchMessage(Handler.java:95)
+> W/Watchdog( 1267):     at android.os.Looper.loop(Looper.java:136)
+> W/Watchdog( 1267):     at com.android.server.am.ActivityManagerService$AThread.run(ActivityManagerService.java:1884)
+> W/Watchdog( 1267): **\* GOODBYE!
+> E/AndroidRuntime( 3944): Error: Could not access the bstutilsService.  Is the system running?
+> E/AndroidRuntime( 3944): FATAL EXCEPTION: AsyncTask #1
+> E/AndroidRuntime( 3944): Process: com.bluestacks.gamepophome, PID: 3944
+> E/AndroidRuntime( 3944): java.lang.RuntimeException: An error occured while executing doInBackground()
+> E/AndroidRuntime( 3944):        at android.os.AsyncTask$3.done(AsyncTask.java:300)
+> E/AndroidRuntime( 3944):        at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+> E/AndroidRuntime( 3944):        at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+> E/AndroidRuntime( 3944):        at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+> E/AndroidRuntime( 3944):        at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+> E/AndroidRuntime( 3944):        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+> E/AndroidRuntime( 3944):        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+> E/AndroidRuntime( 3944):        at java.lang.Thread.run(Thread.java:841)
+> E/AndroidRuntime( 3944): Caused by: java.lang.RuntimeException: Package manager has died
+> E/AndroidRuntime( 3944):        at android.app.ApplicationPackageManager.getInstalledApplications(ApplicationPackageManager.java:460)
+> E/AndroidRuntime( 3944):        at tv.gamepop.home.utils.AffiliateHandler$FetchOffers.doInBackground(AffiliateHandler.java:309)
+> E/AndroidRuntime( 3944):        at tv.gamepop.home.utils.AffiliateHandler$FetchOffers.doInBackground(AffiliateHandler.java:218)
+> E/AndroidRuntime( 3944):        at android.os.AsyncTask$2.call(AsyncTask.java:288)
+> E/AndroidRuntime( 3944):        at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+> E/AndroidRuntime( 3944):        ... 4 more
+> E/AndroidRuntime( 3944): Caused by: android.os.DeadObjectException
+> E/AndroidRuntime( 3944):        at android.os.BinderProxy.transact(Native Method)
+> E/AndroidRuntime( 3944):        at android.content.pm.IPackageManager$Stub$Proxy.getInstalledApplications(IPackageManager.java:2400)
+> E/AndroidRuntime( 3944):        at android.app.ApplicationPackageManager.getInstalledApplications(ApplicationPackageManager.java:457)
+> E/AndroidRuntime( 3944):        ... 8 more
+> E/ActivityThread( 4297): Failed to find provider info for com.facebook.katana.provider.PlatformProvider
+> I/SystemServer( 4725): Entered the Android system server!
+> I/SystemServer( 4725): Waiting for installd to be ready.
+> I/Installer( 4725): connecting...
+> I/SystemServer( 4725): Power Manager
+> I/SystemServer( 4725): Activity Manager
+> I/ActivityManager( 4725): Memory class: 144
+> W/ProcessCpuTracker( 4725): Skipping unknown process pid 4882
+> W/ProcessCpuTracker( 4725): Skipping unknown process pid 4885
+> I/IntentFirewall( 4725): Read new rules (A:0 B:0 S:0)
+> I/SystemServer( 4725): BlueStacks FilterApps Service
+> D/BstFilterAppsService( 4725): Trying to initialize whitelist and other custom AppLists
+> D/BstFilterAppsService( 4725): reading file: /data/downloads/whitelist.db
+> D/BstFilterAppsService( 4725): reading file: /data/data/.wl_user.db
+> D/BstFilterAppsService( 4725): reading file: /data/data/.bl.db
+> D/BstFilterAppsService( 4725): reading file: /data/data/.bl_user.db
+> D/BstFilterAppsService( 4725): reading file: /data/data/.softkeyboard_activity.db
+> D/BstFilterAppsService( 4725): reading file: /data/data/.softkeyboard_activity_user.db
+> D/BstFilterAppsService( 4725): reading file: /data/data/.immersive.db
+> D/BstFilterAppsService( 4725): reading file: /data/data/.immersive_user.db
+> D/BstFilterAppsService( 4725): reading file: /data/data/.settings.db
+> D/BstFilterAppsService( 4725): reading file: /data/data/.settings_user.db
+> D/BstFilterAppsService( 4725): reading file: /data/data/qemu_list.txt
+> D/BstFilterAppsService( 4725): reading file: /data/data/qemu_list_user.txt
+> I/BstFilterAppsService( 4725): reading file: /data/data/.showrecommendedad.db
+> D/Sumedh  ( 4725): Adding pkg: com.nianticlabs.pokemongo recommend pkg: comtest.foobar.fre url: market poster url: http://cdn.bluestacks.com/public/appsettings/images/pokemongo.jpg icon: http://cdn.bluestacks.com/public/appsettings/GamePop/com.nianticlabs.pokemongo.png Total no of time to show ad: 3 duration to show ad again: 1 play button url to download from:null
+> I/BstFilterAppsService( 4725): reading file: /data/data/.showrecommendedad_user.db
+> I/SystemServer( 4725): BlueStacks Utils Service
+> D/BstUtilsService( 4725): Setting bstutils context here, context = android.app.ContextImpl@2e6cae90
+> I/SystemServer( 4725): Display Manager
+> I/SystemServer( 4725): Telephony Registry
+> I/DisplayManagerService( 4725): Display device added: DisplayDeviceInfo{"Écran intégré": 1280 x 720, 60.000004 fps, density 160, 160.0 x 160.0 dpi, touch INTERNAL, rotation 0, type BUILT_IN, FLAG_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS}
+> I/SystemServer( 4725): Scheduling Policy
+> I/SystemServer( 4725): Package Manager
+> W/PackageManager( 4725): Got execption parsing permissions.
+> W/PackageManager( 4725): org.xmlpull.v1.XmlPullParserException: No start tag found
+> W/PackageManager( 4725):        at com.android.internal.util.XmlUtils.beginDocument(XmlUtils.java:887)
+> W/PackageManager( 4725):        at com.android.server.pm.PackageManagerService.readPermissionsFromXml(PackageManagerService.java:1658)
+> W/PackageManager( 4725):        at com.android.server.pm.PackageManagerService.readPermissions(PackageManagerService.java:1636)
+> W/PackageManager( 4725):        at com.android.server.pm.PackageManagerService.<init>(PackageManagerService.java:1168)
+> W/PackageManager( 4725):        at com.android.server.pm.PackageManagerService.main(PackageManagerService.java:1067)
+> W/PackageManager( 4725):        at com.android.server.ServerThread.initAndLoop(SystemServer.java:258)
+> W/PackageManager( 4725):        at com.android.server.SystemServer.main(SystemServer.java:1223)
+> W/PackageManager( 4725):        at java.lang.reflect.Method.invokeNative(Native Method)
+> W/PackageManager( 4725):        at java.lang.reflect.Method.invoke(Method.java:515)
+> W/PackageManager( 4725):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:827)
+> W/PackageManager( 4725):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:643)
+> W/PackageManager( 4725):        at dalvik.system.NativeStart.main(Native Method)
+> W/PackageManager( 4725): Got execption parsing permissions.
+> W/PackageManager( 4725): org.xmlpull.v1.XmlPullParserException: No start tag found
+> W/PackageManager( 4725):        at com.android.internal.util.XmlUtils.beginDocument(XmlUtils.java:887)
+> W/PackageManager( 4725):        at com.android.server.pm.PackageManagerService.readPermissionsFromXml(PackageManagerService.java:1658)
+> W/PackageManager( 4725):        at com.android.server.pm.PackageManagerService.readPermissions(PackageManagerService.java:1636)
+> W/PackageManager( 4725):        at com.android.server.pm.PackageManagerService.<init>(PackageManagerService.java:1168)
+> W/PackageManager( 4725):        at com.android.server.pm.PackageManagerService.main(PackageManagerService.java:1067)
+> W/PackageManager( 4725):        at com.android.server.ServerThread.initAndLoop(SystemServer.java:258)
+> W/PackageManager( 4725):        at com.android.server.SystemServer.main(SystemServer.java:1223)
+> W/PackageManager( 4725):        at java.lang.reflect.Method.invokeNative(Native Method)
+> W/PackageManager( 4725):        at java.lang.reflect.Method.invoke(Method.java:515)
+> W/PackageManager( 4725):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:827)
+> W/PackageManager( 4725):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:643)
+> W/PackageManager( 4725):        at dalvik.system.NativeStart.main(Native Method)
+> D/SELinuxMMAC( 4725): Couldn't find install policy /data/security/mac_permissions.xml
+> D/SELinuxMMAC( 4725): Using install policy file /system/etc/security/mac_permissions.xml
+> W/PackageManager( 4725): Library not found: /system/framework/sws.jar
+> W/PackageManager( 4725): Library not found: /system/framework/secimaging.jar
+> W/PackageManager( 4725): Library not found: /system/framework/sechardware.jar
+> W/PackageManager( 4725): Library not found: /system/framework/allshare.jar
+> W/PackageManager( 4725): Library not found: /system/framework/javax.btobex.jar
+> W/PackageManager( 4725): Library not found: /system/framework/sec_edm.jar
+> W/PackageManager( 4725): Library not found: /system/framework/seccamera.jar
+> W/PackageManager( 4725): Library not found: /system/framework/videowall.jar
+> W/PackageManager( 4725): Library not found: /system/framework/secvision.jar
+> W/PackageManager( 4725): Library not found: /system/framework/libvtmanagerjar.jar
+> W/PackageManager( 4725): Library not found: /system/framework/com.dsi.ant.antradio_library.jar
+> W/PackageManager( 4725): Library not found: /system/framework/sec_platform_library.jar
+> W/PackageManager( 4725): Library not found: /system/framework/imsmanager.jar
+> W/PackageManager( 4725): Library not found: /system/framework/secmediarecorder.jar
+> W/PackageManager( 4725): Library not found: /system/framework/com.broadcom.bt.jar
+> W/PackageManager( 4725): Library not found: /system/framework/sstream_lib.jar
+> W/PackageManager( 4725): Library not found: /system/framework/com.gsma.services.nfc.jar
+> W/PackageManager( 4725): Library not found: /system/framework/secsmartcard.jar
+> W/PackageManager( 4725): Library not found: /system/framework/org.simalliance.openmobileapi.jar
+> W/PackageManager( 4725): Library not found: /system/framework/simageis.jar
+> W/PackageManager( 4725): Library not found: /system/framework/svi.jar
+> W/PackageManager( 4725): Library not found: /system/framework/com.android.mediadrm.signer.jar
+> W/PackageManager( 4725): Library not found: /system/framework/smatlib.jar
+> W/PackageManager( 4725): Library not found: /system/framework/com.android.nfc_extras.jar
+> W/PackageManager( 4725): Library not found: /system/framework/smartfaceservice.jar
+> W/PackageManager( 4725): Library not found: /system/framework/sec_feature.jar
+> W/PackageManager( 4725): Library not found: /system/framework/com.broadcom.nfc.jar
+> W/PackageManager( 4725): Library not found: /system/framework/imsmanager-internal.jar
+> W/PackageManager( 4725): Library not found: /system/framework/secvisualeffect.jar
+> W/PackageManager( 4725): Library not found: /system/framework/multiwindow.jar
+> W/PackageManager( 4725): Library not found: /system/framework/minimode.jar
+> W/PackageManager( 4725): Library not found: /system/framework/SLinkNTSManager.jar
+> W/PackageManager( 4725): Library not found: /system/framework/twframework.jar
+> W/PackageManager( 4725): Library not found: /system/framework/com.samsung.device.jar
+> W/PackageManager( 4725): Library not found: /system/framework/sgi.jar
+> W/PackageParser( 4725): No actions in intent filter at /system/priv-app/Dialer.apk Binary XML file line #162
+> W/PackageParser( 4725): No actions in intent filter at /system/priv-app/Contacts.apk Binary XML file line #375
+> W/PackageParser( 4725): Unknown element under <manifest>: receiver at /data/app/com.maxgames.stickwarlegacy-2.apk Binary XML file line #34
+> W/PackageParser( 4725): Unknown element under <manifest>: service at /data/app/com.maxgames.stickwarlegacy-2.apk Binary XML file line #39
+> W/PackageParser( 4725): Unknown element under <manifest>: service at /data/app/com.maxgames.stickwarlegacy-2.apk Binary XML file line #40
+> W/PackageParser( 4725): Unknown element under <manifest>: activity at /data/app/com.maxgames.stickwarlegacy-2.apk Binary XML file line #41
+> W/NativeHelper( 4725): Installing ARM APP(U) libs
+> I/PackageManager( 4725): Package installed with second ABI Library: 10063 com.maxgames.stickwarlegacy
+> I/PackageManager( 4725): Data written:10063
+> I/PackageManager( 4725): Data written into /data/data/.appwithABI2
+> W/PackageParser( 4725): No actions in intent filter at /data/app/com.amazon.venezia-1.apk Binary XML file line #192
+> W/PackageManager( 4725): Package com.amazon.venezia desires unavailable shared library com.amazon.dcp.contracts; ignoring!
+> W/PackageManager( 4725): Package com.amazon.venezia desires unavailable shared library com.amazon.dcp.contracts.framework; ignoring!
+> W/PackageManager( 4725): Package com.amazon.venezia desires unavailable shared library com.amazon.client.metrics.api; ignoring!
+> I/PackageManager( 4725): Package installed with second ABI Library: 10056 com.amazon.venezia
+> I/PackageManager( 4725): Data written:10056
+> I/PackageManager( 4725): Data written:10063
+> I/PackageManager( 4725): Data written into /data/data/.appwithABI2
+> W/PackageManager( 4725): Skipping provider name com.huuuge.casino.slots.upsight (in package com.huuuge.casino.slots): name already used by com.huuuge.casino.slots
+> W/PackageParser( 4725): Unknown element under <manifest>: uses-permission-sdk-m at /data/app/com.facebook.katana-2.apk Binary XML file line #42
+> W/PackageParser( 4725): Unknown element under <manifest>: uses-permission-sdk-m at /data/app/com.facebook.katana-2.apk Binary XML file line #43
+> W/PackageParser( 4725): Unknown element under <manifest>: uses-permission-sdk-m at /data/app/com.facebook.katana-2.apk Binary XML file line #46
+> W/PackageParser( 4725): Unknown element under <manifest>: uses-permission-sdk-m at /data/app/com.facebook.katana-2.apk Binary XML file line #47
+> W/PackageParser( 4725): Unknown element under <manifest>: uses-permission-sdk-m at /data/app/com.facebook.katana-2.apk Binary XML file line #48
+> W/PackageManager( 4725): Package com.facebook.katana desires unavailable shared library com.amazon.device.messaging; ignoring!
+> W/PackageParser( 4725): Problem in package /data/app/com.google.android.apps.photos-2.apk:
+> W/PackageParser( 4725): Unknown element under <activity>: category at /data/app/com.google.android.apps.photos-2.apk Binary XML file line #1064
+> W/PackageParser( 4725): Unknown element under <manifest>: uses-permission-sdk-23 at /data/app/com.google.android.apps.photos-2.apk Binary XML file line #1692
+> W/PackageParser( 4725): Unknown element under <manifest>: uses-permission-sdk-23 at /data/app/com.google.android.apps.photos-2.apk Binary XML file line #1693
+> W/PackageParser( 4725): Unknown element under <manifest>: uses-permission-sdk-23 at /data/app/com.google.android.apps.photos-2.apk Binary XML file line #1694
+> W/PackageParser( 4725): Problem in package /data/app/com.igg.android.lordsmobile-1.apk:
+> W/PackageParser( 4725): Unknown element under <receiver>: category at /data/app/com.igg.android.lordsmobile-1.apk Binary XML file line #89
+> W/PackageManager( 4725): Package com.epicwaronline.ms desires unavailable shared library com.amazon.device.home; ignoring!
+> W/PackageParser( 4725): Unknown element under <manifest>: supports-gl-texture at /data/app/com.instagram.android-1.apk Binary XML file line #64
+> W/PackageParser( 4725): Unknown element under <application>: enable-feature at /data/app/com.instagram.android-1.apk Binary XML file line #246
+> W/PackageManager( 4725): Package com.machinezone.gow desires unavailable shared library com.amazon.device.home; ignoring!
+> W/PackageParser( 4725): Unknown element under <manifest>: supports-gl-texture at /data/app/com.instagram.android-2.apk Binary XML file line #64
+> W/PackageParser( 4725): Unknown element under <application>: enable-feature at /data/app/com.instagram.android-2.apk Binary XML file line #246
+> W/PackageManager( 4725): Application package com.instagram.android already installed.  Skipping duplicate.
+> W/PackageParser( 4725): No actions in intent filter at /data/app/com.icenta.sudoku.ui-1.apk Binary XML file line #140
+> W/PackageParser( 4725): Unknown element under <application>: enable-feature at /data/app/de.motain.iliga-1.apk Binary XML file line #710
+> W/PackageParser( 4725): Unknown element under <manifest>: activity at /data/app/com.miniclip.soccerstars-2.apk Binary XML file line #46
+> I/PackageManager( 4725): Package installed with second ABI Library: 10059 com.miniclip.soccerstars
+> I/PackageManager( 4725): Data written:10056
+> I/PackageManager( 4725): Data written:10059
+> I/PackageManager( 4725): Data written:10063
+> I/PackageManager( 4725): Data written into /data/data/.appwithABI2
+> I/PackageManager( 4725): Package installed with second ABI Library: 10053 air.ru.underair.city2048
+> I/PackageManager( 4725): Data written:10056
+> I/PackageManager( 4725): Data written:10053
+> I/PackageManager( 4725): Data written:10059
+> I/PackageManager( 4725): Data written:10063
+> I/PackageManager( 4725): Data written into /data/data/.appwithABI2
+> W/NativeHelper( 4725): Installing ARM APP(U) libs
+> I/PackageManager( 4725): Package installed with second ABI Library: 10074 com.gamecircus.CoinDozerJackpot
+> I/PackageManager( 4725): Data written:10056
+> I/PackageManager( 4725): Data written:10074
+> I/PackageManager( 4725): Data written:10059
+> I/PackageManager( 4725): Data written:10053
+> I/PackageManager( 4725): Data written:10063
+> I/PackageManager( 4725): Data written into /data/data/.appwithABI2
+> I/PackageManager( 4725): Package installed with second ABI Library: 10024 com.nianticlabs.pokemongo
+> I/PackageManager( 4725): Data written:10056
+> I/PackageManager( 4725): Data written:10074
+> I/PackageManager( 4725): Data written:10059
+> I/PackageManager( 4725): Data written:10053
+> I/PackageManager( 4725): Data written:10024
+> I/PackageManager( 4725): Data written:10063
+> I/PackageManager( 4725): Data written into /data/data/.appwithABI2
+> W/NativeHelper( 4725): Installing ARM APP(U) libs
+> I/PackageManager( 4725): Package installed with second ABI Library: 10072 com.superluckycasino.doubleup.slots.vegas.android.free
+> I/PackageManager( 4725): Data written:10056
+> I/PackageManager( 4725): Data written:10072
+> I/PackageManager( 4725): Data written:10074
+> I/PackageManager( 4725): Data written:10059
+> I/PackageManager( 4725): Data written:10053
+> I/PackageManager( 4725): Data written:10024
+> I/PackageManager( 4725): Data written:10063
+> I/PackageManager( 4725): Data written into /data/data/.appwithABI2
+> W/NativeHelper( 4725): Installing ARM APP(U) libs
+> I/PackageManager( 4725): Package installed with second ABI Library: 10076 com.ketchapp.versusrun
+> I/PackageManager( 4725): Data written:10056
+> I/PackageManager( 4725): Data written:10072
+> I/PackageManager( 4725): Data written:10074
+> I/PackageManager( 4725): Data written:10059
+> I/PackageManager( 4725): Data written:10076
+> I/PackageManager( 4725): Data written:10024
+> I/PackageManager( 4725): Data written:10063
+> I/PackageManager( 4725): Data written:10053
+> I/PackageManager( 4725): Data written into /data/data/.appwithABI2
+> W/NativeHelper( 4725): Installing ARM APP
+> I/PackageManager( 4725): Package installed with second ABI Library: 10077 tv.periscope.android
+> I/PackageManager( 4725): Data written:10056
+> I/PackageManager( 4725): Data written:10072
+> I/PackageManager( 4725): Data written:10074
+> I/PackageManager( 4725): Data written:10059
+> I/PackageManager( 4725): Data written:10077
+> I/PackageManager( 4725): Data written:10076
+> I/PackageManager( 4725): Data written:10024
+> I/PackageManager( 4725): Data written:10063
+> I/PackageManager( 4725): Data written:10053
+> I/PackageManager( 4725): Data written into /data/data/.appwithABI2
+> W/PackageParser( 4725): Unknown element under <manifest>: supports-gl-texture at /data/app/es.parrotgames.restaurantcity-2.apk Binary XML file line #7

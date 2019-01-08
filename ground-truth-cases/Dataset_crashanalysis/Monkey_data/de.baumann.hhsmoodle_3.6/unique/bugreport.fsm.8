@@ -1,0 +1,32 @@
+//this is an auto-generated bug report
+//package name: de.baumann.hhsmoodle
+//version: 3.6
+//appro_time: 80
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to resume activity {de.baumann.hhsmoodle/de.baumann.hhsmoodle.HHS_MainScreen}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2790)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1298)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at de.baumann.hhsmoodle.data_files.Files_Fragment.setFilesList(Files_Fragment.java:170)
+ 	at de.baumann.hhsmoodle.data_files.Files_Fragment.onResume(Files_Fragment.java:147)
+ 	at android.support.v4.app.Fragment.performResume(Fragment.java:2230)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1343)
+ 	at android.support.v4.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1523)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1585)
+ 	at android.support.v4.app.FragmentManagerImpl.dispatchResume(FragmentManager.java:2842)
+ 	at android.support.v4.app.FragmentController.dispatchResume(FragmentController.java:223)
+ 	at android.support.v4.app.FragmentActivity.onResumeFragments(FragmentActivity.java:509)
+ 	at android.support.v4.app.FragmentActivity.onPostResume(FragmentActivity.java:498)
+ 	at android.support.v7.app.AppCompatActivity.onPostResume(AppCompatActivity.java:175)
+ 	at android.app.Activity.performResume(Activity.java:5224)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)
+ 	... 10 more

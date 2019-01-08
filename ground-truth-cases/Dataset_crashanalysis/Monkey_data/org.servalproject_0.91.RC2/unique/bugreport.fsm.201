@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: org.servalproject
+//version: 0.91.RC2
+//appro_time: 20
+ java.lang.UnsatisfiedLinkError: Couldn't load serval from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/org.servalproject-1.apk"],nativeLibraryDirectories=[/data/app-lib/org.servalproject-1, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at org.servalproject.servald.ServalD.<clinit>(ServalD.java:53)
+ 	at org.servalproject.servald.Identity.getIdentities(Identity.java:37)
+ 	at org.servalproject.wizard.SetPhoneNumber.onResume(SetPhoneNumber.java:203)
+ 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+ 	at android.app.Activity.performResume(Activity.java:5211)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2266)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

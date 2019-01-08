@@ -1,0 +1,13 @@
+java.lang.OutOfMemoryError
+    at android.graphics.Bitmap.nativeCreate(Native Method)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:810)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:787)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:708)
+    at android.graphics.Bitmap.createScaledBitmap(Bitmap.java:595)
+    at ch.blinkenlights.android.vanilla.CoverBitmap.createScaledBitmap(CoverBitmap.java:333)
+    at ch.blinkenlights.android.vanilla.CoverBitmap.createBitmap(CoverBitmap.java:136)
+    at ch.blinkenlights.android.vanilla.CoverView.generateBitmap(CoverView.java:375)
+    at ch.blinkenlights.android.vanilla.CoverView.handleMessage(CoverView.java:462)
+    at android.os.Handler.dispatchMessage(Handler.java:98)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.os.HandlerThread.run(HandlerThread.java:61)

@@ -1,0 +1,8 @@
+java.lang.AssertionError: cannot clearsign in non-ascii armored text, this is a bug!
+    at org.sufficientlysecure.keychain.pgp.PgpSignEncryptOperation.execute(PgpSignEncryptOperation.java:501)
+    at org.sufficientlysecure.keychain.remote.OpenPgpService.encryptAndSignImpl(OpenPgpService.java:437)
+    at org.sufficientlysecure.keychain.remote.OpenPgpService.executeInternalWithStreams(OpenPgpService.java:874)
+    at org.sufficientlysecure.keychain.remote.OpenPgpService.executeInternal(OpenPgpService.java:829)
+    at org.sufficientlysecure.keychain.remote.OpenPgpService2$1.execute(OpenPgpService2.java:62)
+    at org.openintents.openpgp.IOpenPgpService2$Stub.onTransact(IOpenPgpService2.java:80)
+    at android.os.Binder.execTransact(Binder.java:446)

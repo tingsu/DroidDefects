@@ -1,0 +1,36 @@
+//this is an auto-generated bug report
+//package name: eu.kanade.tachiyomi
+//version: 0.4.0
+//appro_time: 45
+ java.lang.IllegalStateException: Exception thrown on Scheduler.Worker thread. Add `onError` handling.
+ 	at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:57)
+ 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:390)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:153)
+ 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:267)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: rx.exceptions.OnErrorNotImplementedException
+ 	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:386)
+ 	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:383)
+ 	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+ 	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:153)
+ 	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:115)
+ 	at rx.internal.operators.OperatorSubscribeOn$1$1.onError(OperatorSubscribeOn.java:59)
+ 	at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:216)
+ 	at rx.internal.operators.OnSubscribeFromCallable.call(OnSubscribeFromCallable.java:50)
+ 	at rx.internal.operators.OnSubscribeFromCallable.call(OnSubscribeFromCallable.java:33)
+ 	at rx.Observable.unsafeSubscribe(Observable.java:10142)
+ 	at rx.internal.operators.OperatorSubscribeOn$1.call(OperatorSubscribeOn.java:94)
+ 	at rx.internal.schedulers.CachedThreadScheduler$EventLoopWorker$1.call(CachedThreadScheduler.java:230)
+ 	at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)
+ Caused by: java.lang.IllegalStateException
+ 	at com.jakewharton.disklrucache.DiskLruCache.completeEdit(DiskLruCache.java:511)
+ 	at com.jakewharton.disklrucache.DiskLruCache.access$2200(DiskLruCache.java:88)
+ 	at com.jakewharton.disklrucache.DiskLruCache$Editor.abort(DiskLruCache.java:824)
+ 	at com.jakewharton.disklrucache.DiskLruCache$Editor.abortUnlessCommitted(DiskLruCache.java:830)
+ 	at eu.kanade.tachiyomi.data.cache.ChapterCache.putPageListToCache(ChapterCache.kt:141)
+ 	at eu.kanade.tachiyomi.data.source.online.OnlineSource.savePageList(OnlineSource.kt:452)
+ 	at eu.kanade.tachiyomi.ui.reader.ReaderPresenter$onChapterLeft$1.call(ReaderPresenter.kt:368)
+ 	at rx.internal.operators.OnSubscribeFromCallable.call(OnSubscribeFromCallable.java:48)

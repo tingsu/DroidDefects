@@ -1,0 +1,22 @@
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+    at android.os.Process$1.run(Process.java:424)
+Caused by: java.lang.reflect.InvocationTargetException
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at android.os.Process$1.run(Process.java:417)
+Caused by: java.lang.IllegalStateException: This ViewTreeObserver is not alive, call getViewTreeObserver() again
+    at android.view.ViewTreeObserver.checkIsAlive(ViewTreeObserver.java:720)
+    at android.view.ViewTreeObserver.removeOnPreDrawListener(ViewTreeObserver.java:563)
+    at us.shandian.blacklight.ui.statuses.UserTimeLineActivity$1.onPreDraw(UserTimeLineActivity.java:153)
+    at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:847)
+    at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1861)
+    at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:990)
+    at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5574)
+    at android.view.Choreographer$CallbackRecord.run(Choreographer.java:749)
+    at android.view.Choreographer.doCallbacks(Choreographer.java:562)
+    at android.view.Choreographer.doFrame(Choreographer.java:532)
+    at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:735)
+    at android.os.Handler.handleCallback(Handler.java:733)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:156)
+    at android.app.ActivityThread.main(ActivityThread.java:5078)

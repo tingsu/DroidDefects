@@ -1,0 +1,10 @@
+```
+Fatal Exception: java.lang.RuntimeException: PARAGRAPH span must end at paragraph boundary
+       at android.text.SpannableStringBuilder.setSpan(SpannableStringBuilder.java:693)
+       at android.text.SpannableStringBuilder.<init>(SpannableStringBuilder.java:102)
+       at android.text.SpannableStringBuilder.<init>(SpannableStringBuilder.java:50)
+       at org.wordpress.android.ui.posts.EditPostActivity.updatePostContent(EditPostActivity.java:1610)
+       at org.wordpress.android.ui.posts.EditPostActivity.updatePostObject(EditPostActivity.java:1031)
+       at org.wordpress.android.ui.posts.EditPostActivity.access$900(EditPostActivity.java:148)
+       at org.wordpress.android.ui.posts.EditPostActivity$3$1.run(EditPostActivity.java:418)
+       at java.lang.Thread.run(Thread.java:761)

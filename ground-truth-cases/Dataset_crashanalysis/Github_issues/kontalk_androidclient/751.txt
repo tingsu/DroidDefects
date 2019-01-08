@@ -1,0 +1,13 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.res.Resources android.content.Context.getResources()' on a null object reference
+       at android.widget.Toast.makeText(Toast.java:507)
+       at org.kontalk.ui.ComposeMessageFragment$22.onReceive(ComposeMessageFragment.java:1907)
+       at android.support.v4.content.LocalBroadcastManager.executePendingBroadcasts(LocalBroadcastManager.java:297)
+       at android.support.v4.content.LocalBroadcastManager.access$000(LocalBroadcastManager.java:46)
+       at android.support.v4.content.LocalBroadcastManager$1.handleMessage(LocalBroadcastManager.java:116)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:145)
+       at android.app.ActivityThread.main(ActivityThread.java:6873)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at java.lang.reflect.Method.invoke(Method.java:372)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)

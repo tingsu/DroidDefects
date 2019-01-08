@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: szelok.app.twister
+//version: 1.0
+//appro_time: 82
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalArgumentException: Host name may not be null
+ 	at org.apache.http.HttpHost.<init>(HttpHost.java:83)
+ 	at org.apache.http.impl.client.AbstractHttpClient.determineTarget(AbstractHttpClient.java:497)
+ 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:626)
+ 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:616)
+ 	at android.net.http.AndroidHttpClient.execute(AndroidHttpClient.java:273)
+ 	at szelok.app.twister.DataModel$GetLastHaveTask.doInBackground(DataModel.java:412)
+ 	at szelok.app.twister.DataModel$GetLastHaveTask.doInBackground(DataModel.java:379)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

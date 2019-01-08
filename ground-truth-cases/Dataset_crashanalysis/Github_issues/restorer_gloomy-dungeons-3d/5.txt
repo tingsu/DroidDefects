@@ -1,0 +1,11 @@
+E/AndroidRuntime( 8065): java.lang.UnsatisfiedLinkError: Couldn't load zameJniRenderer from loader dalvik.system.PathClassLoader[dexPath=/data/app/zame.GloomyDungeons.opensource.game-2.apk,libraryPath=/data/app-lib/zame.GloomyDungeons.opensource.game-2]: findLibrary returned null
+E/AndroidRuntime( 8065):    at java.lang.Runtime.loadLibrary(Runtime.java:365)
+E/AndroidRuntime( 8065):    at java.lang.System.loadLibrary(System.java:521)
+E/AndroidRuntime( 8065):    at zame.GloomyDungeons.opensource.game.ZameJniRenderer.<clinit>(ZameJniRenderer.java:6)
+E/AndroidRuntime( 8065):    at zame.GloomyDungeons.opensource.game.Renderer.flush(Renderer.java:76)
+E/AndroidRuntime( 8065):    at zame.GloomyDungeons.opensource.game.Renderer.flush(Renderer.java:55)
+E/AndroidRuntime( 8065):    at zame.GloomyDungeons.opensource.game.LevelRenderer.renderFloor(LevelRenderer.java:669)
+E/AndroidRuntime( 8065):    at zame.GloomyDungeons.opensource.game.LevelRenderer.render(LevelRenderer.java:756)
+E/AndroidRuntime( 8065):    at zame.GloomyDungeons.opensource.game.Game.render(Game.java:1281)
+E/AndroidRuntime( 8065):    at zame.GloomyDungeons.opensource.game.ZameGame.onDrawFrame(ZameGame.java:196)
+E/AndroidRuntime( 8065):    at android.opengl.GLSurfaceView$GLThread.guardedRun(GLSurfaceView.java:1518)`

@@ -1,0 +1,7 @@
+java.lang.NullPointerException: key == null || value == null
+    at com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache.put(LruMemoryCache.java:61)
+    at com.nostra13.universalimageloader.cache.memory.impl.LruMemoryCache.put(LruMemoryCache.java:21)
+    at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:116)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+    at java.lang.Thread.run(Thread.java:1019)

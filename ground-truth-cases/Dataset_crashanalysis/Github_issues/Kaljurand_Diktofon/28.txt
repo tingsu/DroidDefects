@@ -1,0 +1,18 @@
+E/AndroidRuntime(11593): java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=-1, data=Intent { dat=file:///sdcard/.../whatever.wav }} to activity {kaljurand_at_gmail_dot_com.diktofon/kaljurand_at_gmail_dot_com.diktofon.activity.RecordingListActivity}: java.lang.NullPointerException
+E/AndroidRuntime(11593):        at android.app.ActivityThread.deliverResults(ActivityThread.java:3389)
+E/AndroidRuntime(11593):        at android.app.ActivityThread.handleSendResult(ActivityThread.java:3432)
+E/AndroidRuntime(11593):        at android.app.ActivityThread.access$1300(ActivityThread.java:144)
+E/AndroidRuntime(11593):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1253)
+E/AndroidRuntime(11593):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(11593):        at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(11593):        at android.app.ActivityThread.main(ActivityThread.java:5146)
+E/AndroidRuntime(11593):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(11593):        at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime(11593):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+E/AndroidRuntime(11593):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+E/AndroidRuntime(11593):        at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(11593): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(11593):        at kaljurand_at_gmail_dot_com.diktofon.activity.RecordingListActivity.a(Unknown Source)
+E/AndroidRuntime(11593):        at kaljurand_at_gmail_dot_com.diktofon.activity.RecordingListActivity.onActivityResult(Unknown Source)
+E/AndroidRuntime(11593):        at android.app.Activity.dispatchActivityResult(Activity.java:5423)
+E/AndroidRuntime(11593):        at android.app.ActivityThread.deliverResults(ActivityThread.java:3385)

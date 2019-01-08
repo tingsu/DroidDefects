@@ -1,0 +1,11 @@
+STACK_TRACE=java.lang.NullPointerException
+        at de.geeksfactory.opacclient.apis.SISIS.account(SISIS.java:1104)
+        at de.geeksfactory.opacclient.frontend.AccountActivity$LoadTask.doInBackground(AccountActivity.java:489)
+        at de.geeksfactory.opacclient.frontend.AccountActivity$LoadTask.doInBackground(AccountActivity.java:480)
+        at android.os.AsyncTask$2.call(AsyncTask.java:264)
+        at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+        at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:208)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+        at java.lang.Thread.run(Thread.java:856)

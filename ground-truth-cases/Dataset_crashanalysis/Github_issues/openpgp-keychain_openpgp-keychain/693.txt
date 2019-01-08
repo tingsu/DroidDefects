@@ -1,0 +1,9 @@
+    java.lang.NullPointerException: storage == null
+            at java.util.Arrays$ArrayList.<init>(Arrays.java:38)
+            at java.util.Arrays.asList(Arrays.java:155)
+            at org.sufficientlysecure.keychain.provider.KeychainProvider.query(KeychainProvider.java:277)
+            at android.content.ContentProvider.query(ContentProvider.java:857)
+            at android.content.ContentProvider$Transport.query(ContentProvider.java:200)
+            at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:112)
+            at android.os.Binder.execTransact(Binder.java:404)
+            at dalvik.system.NativeStart.run(Native Method)

@@ -1,0 +1,7 @@
+01-02 09:51:33.418: E/AndroidRuntime(3953): java.lang.NullPointerException
+01-02 09:51:33.418: E/AndroidRuntime(3953):     at java.util.regex.Matcher.reset(Matcher.java:181)
+01-02 09:51:33.418: E/AndroidRuntime(3953):     at java.util.regex.Matcher.<init>(Matcher.java:94)
+01-02 09:51:33.418: E/AndroidRuntime(3953):     at java.util.regex.Pattern.matcher(Pattern.java:290)
+01-02 09:51:33.418: E/AndroidRuntime(3953):     at cgeo.geocaching.cgCache.isGuidContainedInPage(cgCache.java:267)
+01-02 09:51:33.418: E/AndroidRuntime(3953):     at cgeo.geocaching.cgBase.removeFromWatchlist(cgBase.java:2258)
+01-02 09:51:33.418: E/AndroidRuntime(3953):     at cgeo.geocaching.CacheDetailActivity$DetailsViewCreator$WatchlistRemoveThread.run(CacheDetailActivity.java:1755)

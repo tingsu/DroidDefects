@@ -1,0 +1,9 @@
+//this is an auto-generated bug report
+//package name: org.sixgun.ponyexpress
+//version: 1.0
+//appro_time: 145
+ java.lang.NullPointerException
+ 	at org.sixgun.ponyexpress.service.DownloaderService.createNoMediaFile(DownloaderService.java:327)
+ 	at org.sixgun.ponyexpress.service.DownloaderService.access$300(DownloaderService.java:49)
+ 	at org.sixgun.ponyexpress.service.DownloaderService$1.run(DownloaderService.java:189)
+ 	at java.lang.Thread.run(Thread.java:841)

@@ -1,0 +1,49 @@
+E/ImageLoader﹕ null 
+            java.lang.NullPointerException at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.resetStream(BaseImageDecoder.java:173)
+            at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:77)
+            at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:264)
+            at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:237)
+            at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:135)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:841)
+```
+
+Configuration:
+
+``` java
+ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(context).memoryCache(new LruMemoryCache(20 * 1024 * 1024))
+                                                                                     .memoryCacheSize(20 * 1024 * 1024)
+                                                                                     .memoryCacheSizePercentage(13)
+                                                                                     .memoryCacheExtraOptions(thumbnailSize,
+                                                                                                              thumbnailSize)
+                                                                                     .defaultDisplayImageOptions(DisplayImageOptions.createSimple())
+                                                                                     .writeDebugLogs()
+                                                                                     .build();
+ImageLoader.getInstance().init(config);
+
+DisplayImageOptions dio = new DisplayImageOptions.Builder().cacheInMemory(true)
+                                             .showImageOnLoading(R.drawable.list_photo_bg)
+                                             .showImageForEmptyUri(R.drawable.list_photo_bg)
+                                             .showImageOnFail(R.drawable.list_photo_bg)
+                                             .resetViewBeforeLoading(true)
+                                             .bitmapConfig(Bitmap.Config.RGB_565)
+                                             .build();
+
+```
+
+I face different exception while using the diskcache:
+
+```
+08-19 10:21:24.419  32245-32365/com.turkcell.bip D/ImageLoader﹕ Cache image on disk [content://com.android.contacts/contacts/340_120x120]
+08-19 10:21:24.569  32245-32365/com.turkcell.bip E/ImageLoader﹕ null
+    java.lang.NullPointerException
+            at com.nostra13.universalimageloader.utils.IoUtils.copyStream(IoUtils.java:67)
+            at com.nostra13.universalimageloader.cache.disc.impl.BaseDiscCache.save(BaseDiscCache.java:109)
+            at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.downloadImage(LoadAndDisplayImageTask.java:291)
+            at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryCacheImageOnDisk(LoadAndDisplayImageTask.java:273)
+            at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:229)
+            at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:135)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:841)

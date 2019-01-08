@@ -1,0 +1,13 @@
+java.lang.NullPointerException
+       at org.kontalk.ui.view.AudioContentView.onClick(AudioContentView.java:143)
+       at android.view.View.performClick(View.java:2533)
+       at android.view.View$PerformClick.run(View.java:9320)
+       at android.os.Handler.handleCallback(Handler.java:587)
+       at android.os.Handler.dispatchMessage(Handler.java:92)
+       at android.os.Looper.loop(Looper.java:150)
+       at android.app.ActivityThread.main(ActivityThread.java:4389)
+       at java.lang.reflect.Method.invokeNative(Method.java)
+       at java.lang.reflect.Method.invoke(Method.java:507)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:849)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:607)
+       at dalvik.system.NativeStart.main(NativeStart.java)

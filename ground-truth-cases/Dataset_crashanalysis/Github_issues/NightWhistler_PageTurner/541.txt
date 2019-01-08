@@ -1,0 +1,13 @@
+> java.lang.StringIndexOutOfBoundsException: length=31; regionStart=432; regionLength=721
+>     at java.lang.String.startEndAndLength(String.java:593)
+>     at java.lang.String.substring(String.java:1474)
+>     at android.text.SpannableStringInternal.<init>(SpannableStringInternal.java:30)
+>     at android.text.SpannableString.<init>(SpannableString.java:34)
+>     at android.text.SpannableString.subSequence(SpannableString.java:54)
+>     at net.nightwhistler.pageturner.view.bookview.FixedPagesStrategy.getTextForPage(FixedPagesStrategy.java:233)
+>     at net.nightwhistler.pageturner.view.bookview.FixedPagesStrategy.updatePosition(FixedPagesStrategy.java:215)
+>     at net.nightwhistler.pageturner.view.bookview.FixedPagesStrategy.pageDown(FixedPagesStrategy.java:346)
+>     at net.nightwhistler.pageturner.view.bookview.BookView.pageDown(BookView.java:499)
+>     at net.nightwhistler.pageturner.activity.ReadingFragment.pageDown(ReadingFragment.java:2177)
+>     at net.nightwhistler.pageturner.activity.ReadingFragment.onTapRightEdge(ReadingFragment.java:2622)
+>     at net.nightwhistler.pageturner.view.NavGestureDetector.onSingleTapUp(NavGestureDetector.java:98)

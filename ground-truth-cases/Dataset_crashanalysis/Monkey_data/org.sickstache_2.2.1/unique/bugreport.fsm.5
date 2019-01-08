@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: org.sickstache
+//version: 2.2.1
+//appro_time: 22
+ java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=0, data=null} to activity {org.sickstache/org.sickstache.HomeActivity}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3367)
+ 	at android.app.ActivityThread.handleSendResult(ActivityThread.java:3410)
+ 	at android.app.ActivityThread.access$1100(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1304)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at org.sickstache.app.LoadingListFragment.setListStatus(LoadingListFragment.java:144)
+ 	at org.sickstache.app.LoadingListFragment.refresh(LoadingListFragment.java:165)
+ 	at org.sickstache.HomeActivity.onActivityResult(HomeActivity.java:163)
+ 	at android.app.Activity.dispatchActivityResult(Activity.java:5322)
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3363)

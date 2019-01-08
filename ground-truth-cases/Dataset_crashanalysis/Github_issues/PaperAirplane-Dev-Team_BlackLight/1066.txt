@@ -1,0 +1,8 @@
+java.lang.NoSuchMethodError: createCacheFromStream
+    at info.papdt.blacklight.cache.file.FileCacheManager.createCacheFromStream(FileCacheManager.java:146)
+    at info.papdt.blacklight.cache.file.FileCacheManager.createLargeCacheFromNetwork(FileCacheManager.java:123)
+    at info.papdt.blacklight.cache.statuses.HomeTimeLineApiCache.getLargePic(HomeTimeLineApiCache.java:197)
+    at info.papdt.blacklight.ui.common.ImageActivity$DownloadTask.doInBackground(ImageActivity.java:237)
+    at info.papdt.blacklight.ui.common.ImageActivity$DownloadTask.doInBackground(ImageActivity.java)
+    at info.papdt.blacklight.support.AsyncTask$100000001.run(AsyncTask.java:73)
+    at java.lang.Thread.run(Thread.java:841)

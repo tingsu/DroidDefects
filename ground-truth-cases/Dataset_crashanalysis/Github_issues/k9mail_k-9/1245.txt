@@ -1,0 +1,11 @@
+            java.lang.AssertionError: getNewNotificationId() called with no free notification ID
+                at com.fsck.k9.notification.NotificationData.getNewNotificationId(NotificationData.java:77)
+                at com.fsck.k9.notification.NotificationData.addNotificationContent(NotificationData.java:46)
+                at com.fsck.k9.notification.NewMailNotifications.addNewMailNotification(NewMailNotifications.java:56)
+                at com.fsck.k9.notification.NotificationController.addNewMailNotification(NotificationController.java:95)
+                at com.fsck.k9.controller.MessagingController.downloadLargeMessages(MessagingController.java:1584)
+                at com.fsck.k9.controller.MessagingController.downloadMessages(MessagingController.java:1218)
+                at com.fsck.k9.controller.MessagingController.synchronizeMailboxSynchronous(MessagingController.java:979)
+                at com.fsck.k9.controller.MessagingController$8.run(MessagingController.java:764)
+                at com.fsck.k9.controller.MessagingController.run(MessagingController.java:267)
+                at java.lang.Thread.run(Thread.java:818)

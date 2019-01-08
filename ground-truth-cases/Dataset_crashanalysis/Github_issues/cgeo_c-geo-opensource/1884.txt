@@ -1,0 +1,60 @@
+E/cgeo    ( 3585): android.database.sqlite.SQLiteException: no such column: reliable_latlon: , while compiling: insert into cg_caches_temp select _id,updated,detailed,detailedupdate,visiteddate,geocode,reason,cacheid,guid,type,name,own,owner,owner_real,hidden,hint,size,difficulty,terrain,latlon,location,direction,distance,latitude,longitude,reliable_latlon,elevation,personal_note,shortdesc,description,favourite_cnt,rating,votes,myvote,disabled,archived,members,found,favourite,inventorycoins,inventorytags,inventoryunknown,onWatchlist from cg_caches
+E/cgeo    ( 3585):  at android.database.sqlite.SQLiteCompiledSql.native_compile(Native Method)
+E/cgeo    ( 3585):  at android.database.sqlite.SQLiteCompiledSql.<init>(SQLiteCompiledSql.java:68)
+E/cgeo    ( 3585):  at android.database.sqlite.SQLiteProgram.compileSql(SQLiteProgram.java:143)
+E/cgeo    ( 3585):  at android.database.sqlite.SQLiteProgram.compileAndbindAllArgs(SQLiteProgram.java:361)
+E/cgeo    ( 3585):  at android.database.sqlite.SQLiteStatement.acquireAndLock(SQLiteStatement.java:260)
+E/cgeo    ( 3585):  at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:84)
+E/cgeo    ( 3585):  at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1899)
+E/cgeo    ( 3585):  at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1839)
+E/cgeo    ( 3585):  at cgeo.geocaching.cgData$DbHelper.onUpgrade(cgData.java:568)
+E/cgeo    ( 3585):  at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:170)
+E/cgeo    ( 3585):  at cgeo.geocaching.cgData.init(cgData.java:258)
+E/cgeo    ( 3585):  at cgeo.geocaching.cgData.clean(cgData.java:2363)
+E/cgeo    ( 3585):  at cgeo.geocaching.cgeoapplication.cleanDatabase(cgeoapplication.java:213)
+E/cgeo    ( 3585):  at cgeo.geocaching.cgeo$cleanDatabase.run(cgeo.java:807)
+E/cgeo    ( 3585): Failed to upgrade to ver. 60
+E/cgeo    ( 3585): java.lang.NullPointerException
+E/cgeo    ( 3585):  at cgeo.geocaching.cgData.access$400(cgData.java:48)
+E/cgeo    ( 3585):  at cgeo.geocaching.cgData$DbHelper.onUpgrade(cgData.java:619)
+E/cgeo    ( 3585):  at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:170)
+E/cgeo    ( 3585):  at cgeo.geocaching.cgData.init(cgData.java:258)
+E/cgeo    ( 3585):  at cgeo.geocaching.cgData.clean(cgData.java:2363)
+E/cgeo    ( 3585):  at cgeo.geocaching.cgeoapplication.cleanDatabase(cgeoapplication.java:213)
+E/cgeo    ( 3585):  at cgeo.geocaching.cgeo$cleanDatabase.run(cgeo.java:807)
+E/cgeo    ( 3585): Failed to upgrade to ver. 63: java.lang.NullPointerException
+I/cgeo    ( 3585): Upgrade database from ver. 49 to ver. 64: completed
+D/cgeo    ( 3585): Database clean: started
+D/cgeo    ( 3585): Database clean: 0 geocaches remaining for listId=0
+D/cgeo    ( 3585): Database clean: finished
+```
+
+And results - logically - in the following error:
+
+```
+D/cgeo    ( 3585): cgData.loadCachesFromGeocodes([GC3H58A]) from DB
+I/SqliteDatabaseCpp( 3585): sqlite returned: error code = 1, msg = no such column: myvote, db=/data/data/cgeo.geocaching/databases/data
+W/dalvikvm( 3585): threadid=11: thread exiting with uncaught exception (group=0x40a401f8)
+E/AndroidRuntime( 3585): FATAL EXCEPTION: Thread-402
+E/AndroidRuntime( 3585): android.database.sqlite.SQLiteException: no such column: myvote: , while compiling: SELECT _id, updated, reason, detailed, detailedupdate, visiteddate, geocode, cacheid, guid, type, name, own, owner, owner_real, hidden, hint, size, difficulty, distance, direction, terrain, latlon, location, latitude, longitude, elevation, shortdesc, favourite_cnt, rating, votes, myvote, disabled, archived, members, found, favourite, inventorycoins, inventorytags, inventoryunknown, onWatchlist, personal_note, reliable_latlon, coordsChanged, finalDefined FROM cg_caches WHERE geocode in ("GC3H58A")
+E/AndroidRuntime( 3585):    at android.database.sqlite.SQLiteCompiledSql.native_compile(Native Method)
+E/AndroidRuntime( 3585):    at android.database.sqlite.SQLiteCompiledSql.<init>(SQLiteCompiledSql.java:68)
+E/AndroidRuntime( 3585):    at android.database.sqlite.SQLiteProgram.compileSql(SQLiteProgram.java:143)
+E/AndroidRuntime( 3585):    at android.database.sqlite.SQLiteProgram.compileAndbindAllArgs(SQLiteProgram.java:361)
+E/AndroidRuntime( 3585):    at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:127)
+E/AndroidRuntime( 3585):    at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:94)
+E/AndroidRuntime( 3585):    at android.database.sqlite.SQLiteQuery.<init>(SQLiteQuery.java:53)
+E/AndroidRuntime( 3585):    at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:47)
+E/AndroidRuntime( 3585):    at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1564)
+E/AndroidRuntime( 3585):    at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1449)
+E/AndroidRuntime( 3585):    at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1405)
+E/AndroidRuntime( 3585):    at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1523)
+E/AndroidRuntime( 3585):    at cgeo.geocaching.cgData.loadCachesFromGeocodes(cgData.java:1470)
+E/AndroidRuntime( 3585):    at cgeo.geocaching.cgData.loadCaches(cgData.java:1430)
+E/AndroidRuntime( 3585):    at cgeo.geocaching.cgData.loadCache(cgData.java:1394)
+E/AndroidRuntime( 3585):    at cgeo.geocaching.cgData.saveCache(cgData.java:975)
+E/AndroidRuntime( 3585):    at cgeo.geocaching.cgeoapplication.saveCache(cgeoapplication.java:480)
+E/AndroidRuntime( 3585):    at cgeo.geocaching.connector.gc.GCParser.parseCache(GCParser.java:324)
+E/AndroidRuntime( 3585):    at cgeo.geocaching.connector.gc.GCConnector.searchByGeocode(GCConnector.java:102)
+E/AndroidRuntime( 3585):    at cgeo.geocaching.cgCache.searchByGeocode(cgCache.java:1543)
+E/AndroidRuntime( 3585):    at cgeo.geocaching.CacheDetailActivity$LoadCacheThread.run(CacheDetailActivity.java:753)

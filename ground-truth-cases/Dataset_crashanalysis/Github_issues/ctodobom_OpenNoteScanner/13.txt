@@ -1,0 +1,18 @@
+java.lang.RuntimeException: Error receiving broadcast Intent { act=android.intent.action.DOWNLOAD_COMPLETE flg=0x10 pkg=com.todobom.opennotescanner (has extras) } in com.todobom.opennotescanner.helpers.CustomOpenCVLoader$MyBroadcastReceiver@ee86aae
+    at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:891)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5417)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=content://downloads/my_downloads/83 typ=application/vnd.android.package-archive flg=0x4000000 }
+    at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1798)
+    at android.app.Instrumentation.execStartActivity(Instrumentation.java:1512)
+    at android.app.Activity.startActivityForResult(Activity.java:3930)
+    at android.app.Activity.startActivityForResult(Activity.java:3890)
+    at android.app.Activity.startActivity(Activity.java:4213)
+    at android.app.Activity.startActivity(Activity.java:4181)
+    at com.todobom.opennotescanner.helpers.CustomOpenCVLoader$MyBroadcastReceiver.onReceive(CustomOpenCVLoader.java:138)
+    at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:881)

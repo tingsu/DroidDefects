@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: fr.tvbarthel.apps.cameracolorpicker
+//version: gp-0.0.7
+//appro_time: 14
+ java.lang.StringIndexOutOfBoundsException: length=1; index=2
+ 	at java.lang.String.indexAndLength(String.java:579)
+ 	at java.lang.String.substring(String.java:1438)
+ 	at fr.tvbarthel.apps.cameracolorpicker.data.ColorItem.makeHexString(ColorItem.java:188)
+ 	at fr.tvbarthel.apps.cameracolorpicker.activities.ColorPickerActivity.applyPreviewColor(ColorPickerActivity.java:460)
+ 	at fr.tvbarthel.apps.cameracolorpicker.activities.ColorPickerActivity$4.onAnimationEnd(ColorPickerActivity.java:401)
+ 	at android.animation.ValueAnimator.endAnimation(ValueAnimator.java:1020)
+ 	at android.animation.ValueAnimator.access$400(ValueAnimator.java:50)
+ 	at android.animation.ValueAnimator$AnimationHandler.doAnimationFrame(ValueAnimator.java:630)
+ 	at android.animation.ValueAnimator$AnimationHandler.run(ValueAnimator.java:646)
+ 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:749)
+ 	at android.view.Choreographer.doCallbacks(Choreographer.java:562)
+ 	at android.view.Choreographer.doFrame(Choreographer.java:531)
+ 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:735)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

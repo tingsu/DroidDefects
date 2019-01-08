@@ -1,0 +1,4 @@
+<pre><code>Caused by: java.lang.NullPointerException
+            at org.wordpress.android.ui.accounts.WelcomeActivity.onActivityResult(WelcomeActivity.java:117)
+            at android.app.Activity.dispatchActivityResult(Activity.java:5322)
+            at android.app.ActivityThread.deliverResults(ActivityThread.java:3363)

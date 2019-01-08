@@ -1,0 +1,7 @@
+java.util.NoSuchElementException: null
+    at java.util.Scanner.next(Scanner.java:1007) ~[na:0.0]
+    at java.util.Scanner.next(Scanner.java:980) ~[na:0.0]
+    at com.mendhak.gpslogger.loggers.customurl.HttpUrlLogHandler.run(HttpUrlLogger.java:134) ~[na:0.0]
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080) ~[na:0.0]
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573) ~[na:0.0]
+    at java.lang.Thread.run(Thread.java:841) ~[na:0.0]

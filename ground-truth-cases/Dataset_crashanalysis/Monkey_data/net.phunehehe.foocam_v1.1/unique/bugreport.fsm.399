@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: net.phunehehe.foocam
+//version: v1.1
+//appro_time: 129
+ java.lang.RuntimeException: takePicture failed
+ 	at android.hardware.Camera.native_takePicture(Native Method)
+ 	at android.hardware.Camera.takePicture(Camera.java:1100)
+ 	at android.hardware.Camera.takePicture(Camera.java:1045)
+ 	at net.phunehehe.foocam.MainActivity.processQueue(MainActivity.java:137)
+ 	at net.phunehehe.foocam.MainActivity.onPictureTaken(MainActivity.java:153)
+ 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:773)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

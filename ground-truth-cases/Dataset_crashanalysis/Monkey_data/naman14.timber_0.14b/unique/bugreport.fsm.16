@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: naman14.timber
+//version: 0.14b
+//appro_time: 88
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.NullPointerException
+ 	at android.preference.PreferenceManager.getDefaultSharedPreferencesName(PreferenceManager.java:374)
+ 	at android.preference.PreferenceManager.getDefaultSharedPreferences(PreferenceManager.java:369)
+ 	at com.naman14.timber.k.b.a(Unknown Source)
+ 	at com.naman14.timber.a.w.<init>(Unknown Source)
+ 	at com.naman14.timber.g.r.a(Unknown Source)
+ 	at com.naman14.timber.g.r.doInBackground(Unknown Source)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

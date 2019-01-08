@@ -1,0 +1,17 @@
+03-19 11:54:54.812 15305 15305 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{net.osmand.plus/net.osmand.plus.activities.MapActivity}: java.lang.ClassCastException: android.app.Application cannot be cast to net.osmand.plus.OsmandApplication
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2547)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2613)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at android.app.ActivityThread.-wrap11(ActivityThread.java)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1469)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:111)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:207)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:5695)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:888)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:749)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime: Caused by: java.lang.ClassCastException: android.app.Application cannot be cast to net.osmand.plus.OsmandApplication
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at net.osmand.plus.activities.MapActivity.getMyApplication(MapActivity.java:796)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at net.osmand.plus.activities.MapActivity.onCreate(MapActivity.java:185)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at android.app.Activity.performCreate(Activity.java:6270)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1113)
+03-19 11:54:54.812 15305 15305 E AndroidRuntime:        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2500)

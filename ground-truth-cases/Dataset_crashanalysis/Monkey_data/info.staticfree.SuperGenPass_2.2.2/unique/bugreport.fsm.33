@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: info.staticfree.SuperGenPass
+//version: 2.2.2
+//appro_time: 148
+ java.lang.StringIndexOutOfBoundsException: length=32; regionStart=0; regionLength=32810
+ 	at java.lang.String.startEndAndLength(String.java:583)
+ 	at java.lang.String.substring(String.java:1464)
+ 	at info.staticfree.SuperGenPass.hashes.PasswordComposer.generate(PasswordComposer.java:67)
+ 	at info.staticfree.SuperGenPass.Super_Gen_Pass.generateAndDisplay(Super_Gen_Pass.java:399)
+ 	at info.staticfree.SuperGenPass.Super_Gen_Pass.generateIfValid(Super_Gen_Pass.java:355)
+ 	at info.staticfree.SuperGenPass.Super_Gen_Pass.access$000(Super_Gen_Pass.java:87)
+ 	at info.staticfree.SuperGenPass.Super_Gen_Pass$1.handleMessage(Super_Gen_Pass.java:127)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

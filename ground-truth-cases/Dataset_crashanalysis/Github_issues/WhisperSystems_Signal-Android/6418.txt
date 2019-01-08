@@ -1,0 +1,27 @@
+W/dalvikvm( 1203): VFY: unable to resolve static method 1780: Landroid/provider/Telephony$Sms;.getDefaultSmsPackage (Landroid/content/Context;)Ljava/lang/String;
+D/dalvikvm( 1203): VFY: replacing opcode 0x71 at 0x000a
+I/dalvikvm( 1203): Could not find method android.app.ActivityManager.isLowRamDevice, referenced from method org.thoughtcrime.securesms.util.Util.isLowMemory
+W/dalvikvm( 1203): VFY: unable to resolve virtual method 114: Landroid/app/ActivityManager;.isLowRamDevice ()Z
+D/dalvikvm( 1203): VFY: replacing opcode 0x6e at 0x000e
+W/PersistentAlarmManagerListener( 1203): class org.thoughtcrime.securesms.service.RotateSignedPreKeyListener scheduling for: 1490206667919
+W/PersistentAlarmManagerListener( 1203): class org.thoughtcrime.securesms.service.DirectoryRefreshListener scheduling for: 1490077067937
+W/PersistentAlarmManagerListener( 1203): class org.thoughtcrime.securesms.service.UpdateApkRefreshListener scheduling for: 1490055467962
+W/dalvikvm( 1203): No implementation found for native Lorg/webrtc/PeerConnectionFactory;.initializeAndroidGlobals:(Ljava/lang/Object;ZZZ)Z
+D/AndroidRuntime( 1203): Shutting down VM
+W/dalvikvm( 1203): threadid=1: thread exiting with uncaught exception (group=0x40aba300)
+E/AndroidRuntime( 1203): FATAL EXCEPTION: main
+E/AndroidRuntime( 1203): java.lang.UnsatisfiedLinkError: Native method not found: org.webrtc.PeerConnectionFactory.initializeAndroidGlobals:(Ljava/lang/Object;ZZZ)Z
+E/AndroidRuntime( 1203):        at org.webrtc.PeerConnectionFactory.initializeAndroidGlobals(Native Method)
+E/AndroidRuntime( 1203):        at org.thoughtcrime.securesms.ApplicationContext.onCreate(ApplicationContext.java:94)
+E/AndroidRuntime( 1203):        at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:999)
+E/AndroidRuntime( 1203):        at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4336)
+E/AndroidRuntime( 1203):        at android.app.ActivityThread.access$1300(ActivityThread.java:142)
+E/AndroidRuntime( 1203):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1268)
+E/AndroidRuntime( 1203):        at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 1203):        at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime( 1203):        at android.app.ActivityThread.main(ActivityThread.java:4931)
+E/AndroidRuntime( 1203):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1203):        at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime( 1203):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:791)
+E/AndroidRuntime( 1203):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:558)
+E/AndroidRuntime( 1203):        at dalvik.system.NativeStart.main(Native Method)

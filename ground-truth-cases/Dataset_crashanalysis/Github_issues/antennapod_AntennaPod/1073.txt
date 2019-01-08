@@ -1,0 +1,38 @@
+I/ActivityManager( 1090): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=de.danoeh.antennapod/.activity.MainActivity bnds=[276,611][540,943] (has extras)} from uid 1000 on display 0
+V/WindowManager( 1090): addAppToken: AppWindowToken{2d1902b5 token=Token{379edeec ActivityRecord{5543d9f u0 de.danoeh.antennapod/.activity.MainActivity t825}}} to stack=1 task=825 at 0
+W/ContextImpl( 4972): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1362 android.content.ContextWrapper.sendBroadcast:382 com.android.launcher3.Stats.recordLaunch:202 com.android.launcher3.Launcher.startAppShortcutOrInfoActivity:2957 com.android.launcher3.Launcher.onClickAppShortcut:2930
+W/BroadcastQueue( 1090): Permission Denial: receiving Intent { act=com.android.launcher3.action.LAUNCH flg=0x10 (has extras) } to com.google.android.googlequicksearchbox/com.google.android.search.core.icingsync.ApplicationLaunchReceiver requires com.android.launcher3.permission.RECEIVE_LAUNCH_BROADCASTS due to sender com.android.launcher3 (uid 1000)
+V/WindowManager( 1090): Adding window Window{22841f84 u0 Starting de.danoeh.antennapod} at 4 of 9 (after Window{5a3ea70 u0 com.android.settings/com.android.settings.Settings})
+I/MSM-irqbalance(  808): Decided to move IRQ51 from CPU1 to CPU0
+W/ActivityManager( 1090): getTasks: caller 10108 does not hold GET_TASKS; limiting output
+W/ActivityManager( 1090): Activity pause timeout for ActivityRecord{3dab9f86 u0 com.android.launcher3/.Launcher t801}
+D/StatusBar.MSimNetworkController( 4212): refreshViews phoneId =0mMSimDataConnected =false
+D/StatusBar.MSimNetworkController( 4212): refreshViews mMSimDataActivity =0
+D/StatusBar.MSimNetworkController( 4212): refreshViews: Data not connected!! Set no data type icon / Roaming for phoneId: 0
+I/ActivityManager( 1090): Start proc 17282:de.danoeh.antennapod/u0a100 for activity de.danoeh.antennapod/.activity.MainActivity
+I/Choreographer( 4972): Skipped 39 frames!  The application may be doing too much work on its main thread.
+D/AppTracker( 4972): AppTracker onEvent: stop
+W/Settings(17282): Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+D/AbstractTracker( 4972): Insert Complete
+D/AndroidRuntime(17282): Shutting down VM
+E/AndroidRuntime(17282): FATAL EXCEPTION: main
+E/AndroidRuntime(17282): Process: de.danoeh.antennapod, PID: 17282
+E/AndroidRuntime(17282): java.lang.RuntimeException: Unable to start activity ComponentInfo{de.danoeh.antennapod/de.danoeh.antennapod.activity.MainActivity}: java.lang.IllegalStateException: This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.
+E/AndroidRuntime(17282):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2354)
+E/AndroidRuntime(17282):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2416)
+E/AndroidRuntime(17282):    at android.app.ActivityThread.access$900(ActivityThread.java:154)
+E/AndroidRuntime(17282):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1322)
+E/AndroidRuntime(17282):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(17282):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(17282):    at android.app.ActivityThread.main(ActivityThread.java:5290)
+E/AndroidRuntime(17282):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(17282):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(17282):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime(17282):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/AndroidRuntime(17282): Caused by: java.lang.IllegalStateException: This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.
+E/AndroidRuntime(17282):    at android.support.v7.app.ActionBarActivityDelegateBase.setSupportActionBar(ActionBarActivityDelegateBase.java:165)
+E/AndroidRuntime(17282):    at android.support.v7.app.ActionBarActivity.setSupportActionBar(ActionBarActivity.java:92)
+E/AndroidRuntime(17282):    at de.danoeh.antennapod.activity.MainActivity.onCreate(MainActivity.java:107)
+E/AndroidRuntime(17282):    at android.app.Activity.performCreate(Activity.java:6084)
+E/AndroidRuntime(17282):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+E/AndroidRuntime(17282):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2307)

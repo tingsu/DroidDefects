@@ -1,0 +1,9 @@
+                                                 java.lang.IllegalStateException: Handler (android.os.Handler) {23d9b8e} sending message to a Handler on a dead thread
+                                                     at android.os.MessageQueue.enqueueMessage(MessageQueue.java:543)
+                                                     at android.os.Handler.enqueueMessage(Handler.java:631)
+                                                     at android.os.Handler.sendMessageAtTime(Handler.java:600)
+                                                     at android.os.Handler.sendMessageDelayed(Handler.java:570)
+                                                     at android.os.Handler.post(Handler.java:326)
+                                                     at android.widget.Toast$TN.hide(Toast.java:393)
+                                                     at android.app.ITransientNotification$Stub.onTransact(ITransientNotification.java:55)
+                                                     at android.os.Binder.execTransact(Binder.java:453)

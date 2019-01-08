@@ -1,0 +1,14 @@
+java.lang.IllegalStateException: Fatal Exception thrown on Scheduler.Worker thread.
+    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:62)
+    at rx.schedulers.ExecutorScheduler$ExecutorSchedulerWorker.run(ExecutorScheduler.java:98)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+    at java.lang.Thread.run(Thread.java:818)
+Caused by: java.lang.IllegalArgumentException: credentials are not valid
+    at cgeo.geocaching.settings.Credentials.guard(Credentials.java:92)
+    at cgeo.geocaching.settings.Credentials.getUsername(Credentials.java:53)
+    at cgeo.geocaching.connector.ec.ECLogin.login(ECLogin.java:48)
+    at cgeo.geocaching.connector.AbstractLogin.login(AbstractLogin.java:78)
+    at cgeo.geocaching.connector.ec.ECConnector.login(ECConnector.java:139)
+    at cgeo.geocaching.MainActivity$4.call(MainActivity.java:271)
+    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)

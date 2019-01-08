@@ -1,0 +1,33 @@
+E/AndroidRuntime(21657): java.lang.RuntimeException: Unable to create service com.concentricsky.android.khanacademy.data.KADataService: java.lang.IllegalStateException: Could not construct instance of helper class class com.concentricsky.android.khanacademy.data.db.DatabaseHelper
+E/AndroidRuntime(21657):    at android.app.ActivityThread.handleCreateService(ActivityThread.java:2587)
+E/AndroidRuntime(21657):    at android.app.ActivityThread.access$1600(ActivityThread.java:141)
+E/AndroidRuntime(21657):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1338)
+E/AndroidRuntime(21657):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(21657):    at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime(21657):    at android.app.ActivityThread.main(ActivityThread.java:5103)
+E/AndroidRuntime(21657):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(21657):    at java.lang.reflect.Method.invoke(Method.java:525)
+E/AndroidRuntime(21657):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+E/AndroidRuntime(21657):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+E/AndroidRuntime(21657):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(21657): Caused by: java.lang.IllegalStateException: Could not construct instance of helper class class com.concentricsky.android.khanacademy.data.db.DatabaseHelper
+E/AndroidRuntime(21657):    at com.j256.ormlite.android.apptools.OpenHelperManager.constructHelper(OpenHelperManager.java:217)
+E/AndroidRuntime(21657):    at com.j256.ormlite.android.apptools.OpenHelperManager.loadHelper(OpenHelperManager.java:165)
+E/AndroidRuntime(21657):    at com.j256.ormlite.android.apptools.OpenHelperManager.getHelper(OpenHelperManager.java:75)
+E/AndroidRuntime(21657):    at com.concentricsky.android.khanacademy.data.KADataService.onCreate(KADataService.java:146)
+E/AndroidRuntime(21657):    at android.app.ActivityThread.handleCreateService(ActivityThread.java:2577)
+E/AndroidRuntime(21657):    ... 10 more
+E/AndroidRuntime(21657): Caused by: java.lang.reflect.InvocationTargetException
+E/AndroidRuntime(21657):    at java.lang.reflect.Constructor.constructNative(Native Method)
+E/AndroidRuntime(21657):    at java.lang.reflect.Constructor.newInstance(Constructor.java:417)
+E/AndroidRuntime(21657):    at com.j256.ormlite.android.apptools.OpenHelperManager.constructHelper(OpenHelperManager.java:215)
+E/AndroidRuntime(21657):    ... 14 more
+E/AndroidRuntime(21657): Caused by: java.lang.IllegalStateException: Could not load object config file
+E/AndroidRuntime(21657):    at com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper.<init>(OrmLiteSqliteOpenHelper.java:87)
+E/AndroidRuntime(21657):    at com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper.<init>(OrmLiteSqliteOpenHelper.java:54)
+E/AndroidRuntime(21657):    at com.concentricsky.android.khanacademy.data.db.DatabaseHelper.<init>(DatabaseHelper.java:104)
+E/AndroidRuntime(21657):    ... 17 more
+E/AndroidRuntime(21657): Caused by: java.sql.SQLException: DatabaseTableConfig reading from stream cannot parse line: {
+E/AndroidRuntime(21657):    at com.j256.ormlite.table.DatabaseTableConfigLoader.fromReader(DatabaseTableConfigLoader.java:74)
+E/AndroidRuntime(21657):    at com.j256.ormlite.table.DatabaseTableConfigLoader.loadDatabaseConfigFromReader(DatabaseTableConfigLoader.java:32)
+E/AndroidRuntime(21657):    at com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper.<init>(OrmLiteSqliteOpenHelper.java:85)

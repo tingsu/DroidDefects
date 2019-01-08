@@ -1,0 +1,8 @@
+02-11 11:03:08.989 10498 10498 E CSPLOIT[core.System.errorLogging]: java.lang.NullPointerException: Attempt to get length of null array
+02-11 11:03:08.989 10498 10498 E CSPLOIT[core.System.errorLogging]:     at org.csploit.android.net.Endpoint.<init>(Endpoint.java:62)
+02-11 11:03:08.989 10498 10498 E CSPLOIT[core.System.errorLogging]:     at org.csploit.android.net.Target.setEndpoint(Target.java:626)
+02-11 11:03:08.989 10498 10498 E CSPLOIT[core.System.errorLogging]:     at org.csploit.android.net.Target.<init>(Target.java:479)
+02-11 11:03:08.989 10498 10498 E CSPLOIT[core.System.errorLogging]:     at org.csploit.android.core.System.reset(System.java:973)
+02-11 11:03:08.989 10498 10498 E CSPLOIT[core.System.errorLogging]:     at org.csploit.android.core.System.uncaughtReloadNetworkMapping(System.java:38
+02-11 11:03:08.989 10498 10498 E CSPLOIT[core.System.errorLogging]:     at org.csploit.android.core.System.init(System.java:199)
+02-11 11:03:08.989 10498 10498 E CSPLOIT[core.System.errorLogging]:     at org.csploit.android.CSploitApplication.onCreate(CSploitApplication.java:72)

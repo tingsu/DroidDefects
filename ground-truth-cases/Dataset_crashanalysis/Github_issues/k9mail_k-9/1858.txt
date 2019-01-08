@@ -1,0 +1,11 @@
+com.fsck.k9.mail.store.imap.NegativeImapResponseException: Command: EXAMINE "INBOX/Drafts"; response: #3# [BAD, User is authenticated but not connected.]
+        at com.fsck.k9.mail.store.imap.ImapResponseParser.readStatusResponse(ImapResponseParser.java:122)
+        at com.fsck.k9.mail.store.imap.ImapConnection.executeSimpleCommand(ImapConnection.java:626)
+        at com.fsck.k9.mail.store.imap.ImapConnection.executeSimpleCommand(ImapConnection.java:612)
+        at com.fsck.k9.mail.store.imap.ImapFolder.executeSimpleCommand(ImapFolder.java:109)
+        at com.fsck.k9.mail.store.imap.ImapFolder.internalOpen(ImapFolder.java:145)
+        at com.fsck.k9.mail.store.imap.ImapFolderPusher$PushRunnable.openConnectionIfNecessary(ImapFolderPusher.java:330)
+        at com.fsck.k9.mail.store.imap.ImapFolderPusher$PushRunnable.run(ImapFolderPusher.java:155)
+        at java.lang.Thread.run(Thread.java:841)
+```
+[Here](https://github.com/mscdex/node-imap/issues/523) a similar problem was reported and a workaround could be to "limit the number of connections" as is discussed there. Would you at K-9 be willing to work on such a workaround? If not, is there anything else I could try to make outlook365 via IMAP work?

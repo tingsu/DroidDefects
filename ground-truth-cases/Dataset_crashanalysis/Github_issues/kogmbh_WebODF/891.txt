@@ -1,0 +1,4 @@
+TypeError: Object #<Object> has no method 'log'
+    at process.eval (eval at inner_run (/Users/emv/src/WebODF/webodf/lib/runtime.js:1840:51), <anonymous>:662:17)
+    at process.emit (events.js:95:17)
+    at process._fatalException (node.js:295:26)

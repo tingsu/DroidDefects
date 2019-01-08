@@ -1,0 +1,11 @@
+Fatal Exception: java.lang.IllegalArgumentException: U_IDNA_LABEL_TOO_LONG_ERROR
+       at libcore.icu.NativeIDN.convertImpl(NativeIDN.java)
+       at libcore.icu.NativeIDN.convert(NativeIDN.java:39)
+       at libcore.icu.NativeIDN.toASCII(NativeIDN.java:21)
+       at java.net.IDN.toASCII(IDN.java:64)
+       at org.wordpress.android.util.UrlUtils.convertUrlToPunycodeIfNeeded(UrlUtils.java:61)
+       at org.wordpress.android.fluxc.network.discovery.SelfHostedEndpointFinder.sanitizeSiteUrl(SelfHostedEndpointFinder.java:347)
+       at org.wordpress.android.fluxc.network.discovery.SelfHostedEndpointFinder.verifyOrDiscoverXMLRPCEndpoint(SelfHostedEndpointFinder.java:129)
+       at org.wordpress.android.fluxc.network.discovery.SelfHostedEndpointFinder.access$100(SelfHostedEndpointFinder.java:40)
+       at org.wordpress.android.fluxc.network.discovery.SelfHostedEndpointFinder$1.run(SelfHostedEndpointFinder.java:108)
+       at java.lang.Thread.run(Thread.java:818)

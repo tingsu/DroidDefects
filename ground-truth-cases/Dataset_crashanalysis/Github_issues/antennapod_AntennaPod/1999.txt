@@ -1,0 +1,16 @@
+java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=-1, data=Intent { flg=0x80000 (has extras) }} to activity {de.danoeh.antennapod/de.danoeh.antennapod.activity.OpmlImportFromPathActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.toString()' on a null object reference
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3659)
+    at android.app.ActivityThread.handleSendResult(ActivityThread.java:3702)
+    at android.app.ActivityThread.access$1300(ActivityThread.java:155)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1366)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5343)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:905)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:700)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.toString()' on a null object reference
+    at de.danoeh.antennapod.activity.OpmlImportFromPathActivity.onActivityResult(OpmlImportFromPathActivity.java:138)
+    at android.app.Activity.dispatchActivityResult(Activity.java:6218)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3655)

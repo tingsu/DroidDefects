@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: eu.devunit.fb_client
+//version: 1.2.1
+//appro_time: 64
+ FATAL EXCEPTION: AsyncTask #1
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalStateException: Target host must not be null, or set in parameters. scheme=null, host=null, path=h,/api/v2.1.0/user/create_apikey
+ 	at org.apache.http.impl.client.DefaultRequestDirector.determineRoute(DefaultRequestDirector.java:591)
+ 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:293)
+ 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+ 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:487)
+ 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:465)
+ 	at eu.devunit.fb_client.filebin.FilebinClient.getFilebinApiAnswer(FilebinClient.java:190)
+ 	at eu.devunit.fb_client.filebin.FilebinClient.generateApikey(FilebinClient.java:99)
+ 	at eu.devunit.fb_client.LoginActivity$UserLoginTask.doInBackground(LoginActivity.java:209)
+ 	at eu.devunit.fb_client.LoginActivity$UserLoginTask.doInBackground(LoginActivity.java:189)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	... 4 more

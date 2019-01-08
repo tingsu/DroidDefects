@@ -1,0 +1,28 @@
+E/AndroidRuntime(17193): java.lang.NullPointerException
+E/AndroidRuntime(17193):    at org.mozilla.mozstumbler.service.sync.UploadReports.getMaxId(UploadReports.java:121)
+E/AndroidRuntime(17193):    at org.mozilla.mozstumbler.service.sync.UploadReports.uploadReports(UploadReports.java:72)
+E/AndroidRuntime(17193):    at org.mozilla.mozstumbler.client.sync.SyncAdapter.onPerformSync(SyncAdapter.java:44)
+E/AndroidRuntime(17193):    at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:257)
+```
+
+```
+W/AccountManagerService( 1057): insertAccountIntoDatabase: Account {name=sync, type=org.mozilla.mozstumbler}, skipping since the account already exists
+I/ElegantRequestDirector(15648): I/O exception (javax.net.ssl.SSLException) caught when processing request: Write error: ssl=0x7636d388: I/O error during system call, Broken pipe
+I/ElegantRequestDirector(15648): Retrying request
+D/org.mozilla.mozstumbler.client.MainApp(11388): Service connected
+W/dalvikvm(11388): threadid=12: thread exiting with uncaught exception (group=0x416727c0)
+E/AndroidRuntime(11388): FATAL EXCEPTION: SyncAdapterThread-1
+E/AndroidRuntime(11388): java.lang.NullPointerException
+E/AndroidRuntime(11388):    at org.mozilla.mozstumbler.service.sync.UploadReports.getMaxId(UploadReports.java:121)
+E/AndroidRuntime(11388):    at org.mozilla.mozstumbler.service.sync.UploadReports.uploadReports(UploadReports.java:72)
+E/AndroidRuntime(11388):    at org.mozilla.mozstumbler.client.sync.SyncAdapter.onPerformSync(SyncAdapter.java:44)
+E/AndroidRuntime(11388):    at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:257)
+```
+
+```
+E/AndroidRuntime(11584): FATAL EXCEPTION: SyncAdapterThread-1
+E/AndroidRuntime(11584): java.lang.NullPointerException
+E/AndroidRuntime(11584):    at org.mozilla.mozstumbler.service.sync.UploadReports.getMaxId(UploadReports.java:121)
+E/AndroidRuntime(11584):    at org.mozilla.mozstumbler.service.sync.UploadReports.uploadReports(UploadReports.java:72)
+E/AndroidRuntime(11584):    at org.mozilla.mozstumbler.client.sync.SyncAdapter.onPerformSync(SyncAdapter.java:44)
+E/AndroidRuntime(11584):    at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:257)

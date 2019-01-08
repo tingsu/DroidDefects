@@ -1,0 +1,5 @@
+W/JobConsumer: java.lang.NullPointerException: Attempt to get length of null array
+  at java.io.ByteArrayInputStream.<init>(ByteArrayInputStream.java:60)
+  at org.thoughtcrime.securesms.jobs.PushGroupUpdateJob.onRun(PushGroupUpdateJob.java:68)
+  at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+  at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

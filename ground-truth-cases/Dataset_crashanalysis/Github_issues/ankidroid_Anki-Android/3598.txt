@@ -1,0 +1,120 @@
+    java.lang.NullPointerException: Attempt to invoke virtual method 'boolean com.ichi2.anki.AnkiDb.getMod()' on a null object reference
+            at com.ichi2.libanki.Collection.save(Collection.java:260)
+            at com.ichi2.libanki.Collection.save(Collection.java:245)
+            at com.ichi2.async.DeckTask.doInBackgroundSaveCollection(DeckTask.java:503)
+            at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:251)
+            at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:74)
+            at android.os.AsyncTask$2.call(AsyncTask.java:292)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:818)
+08-05 16:45:38.703  12965-13319/com.ichi2.anki D/DeckTask﹕ Waiting for 2 to finish before starting 22
+08-05 16:45:38.704  12965-13319/com.ichi2.anki D/DeckTask﹕ Finished waiting for 2 to finish. Status= RUNNING
+08-05 16:45:38.706  12965-13319/com.ichi2.anki D/DeckTask﹕ doInBackgroundLoadDeckCounts
+08-05 16:45:38.707  12965-13319/com.ichi2.anki E/DeckTask﹕ doInBackgroundLoadDeckCounts - error
+    java.lang.NullPointerException: Attempt to invoke virtual method 'boolean com.ichi2.anki.AnkiDb.getMod()' on a null object reference
+            at com.ichi2.libanki.Decks.recoverOrphans(Decks.java:697)
+            at com.ichi2.libanki.Sched.deckDueList(Sched.java:389)
+            at com.ichi2.libanki.Sched.deckDueTree(Sched.java:441)
+            at com.ichi2.async.DeckTask.doInBackgroundLoadDeckCounts(DeckTask.java:490)
+            at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:248)
+            at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:74)
+            at android.os.AsyncTask$2.call(AsyncTask.java:292)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:818)
+08-05 16:45:38.708  12965-13319/com.ichi2.anki D/DeckTask﹕ Waiting for 22 to finish before starting 2
+08-05 16:45:38.708  12965-13319/com.ichi2.anki D/DeckTask﹕ Finished waiting for 22 to finish. Status= RUNNING
+08-05 16:45:38.710  12965-12965/com.ichi2.anki D/UIUtils﹕ saveCollectionInBackground: finished
+08-05 16:45:38.710  12965-12965/com.ichi2.anki D/DeckTask﹕ enabling garbage collection of mPreviousTask...
+08-05 16:45:38.710  12965-13319/com.ichi2.anki D/DeckTask﹕ doInBackgroundSaveCollection
+08-05 16:45:38.711  12965-12965/com.ichi2.anki E/DeckPicker﹕ null result loading deck counts
+08-05 16:45:38.711  12965-12965/com.ichi2.anki D/DeckTask﹕ enabling garbage collection of mPreviousTask...
+08-05 16:45:38.714  12965-12965/com.ichi2.anki D/DialogHandler﹕ Storing persistent message
+08-05 16:45:38.714  12965-13319/com.ichi2.anki E/DeckTask﹕ Error on saving deck in background
+    java.lang.NullPointerException: Attempt to invoke virtual method 'boolean com.ichi2.anki.AnkiDb.getMod()' on a null object reference
+            at com.ichi2.libanki.Collection.save(Collection.java:260)
+            at com.ichi2.libanki.Collection.save(Collection.java:245)
+            at com.ichi2.async.DeckTask.doInBackgroundSaveCollection(DeckTask.java:503)
+            at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:251)
+            at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:74)
+            at android.os.AsyncTask$2.call(AsyncTask.java:292)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:818)
+08-05 16:45:38.714  12965-13319/com.ichi2.anki D/DeckTask﹕ Waiting for 2 to finish before starting 22
+08-05 16:45:38.714  12965-13319/com.ichi2.anki D/DeckTask﹕ Finished waiting for 2 to finish. Status= RUNNING
+08-05 16:45:38.714  12965-12965/com.ichi2.anki D/UIUtils﹕ saveCollectionInBackground: finished
+08-05 16:45:38.714  12965-13319/com.ichi2.anki D/DeckTask﹕ doInBackgroundLoadDeckCounts
+08-05 16:45:38.715  12965-12965/com.ichi2.anki D/DeckTask﹕ enabling garbage collection of mPreviousTask...
+08-05 16:45:38.715  12965-13319/com.ichi2.anki E/DeckTask﹕ doInBackgroundLoadDeckCounts - error
+    java.lang.NullPointerException: Attempt to invoke virtual method 'boolean com.ichi2.anki.AnkiDb.getMod()' on a null object reference
+            at com.ichi2.libanki.Decks.recoverOrphans(Decks.java:697)
+            at com.ichi2.libanki.Sched.deckDueList(Sched.java:389)
+            at com.ichi2.libanki.Sched.deckDueTree(Sched.java:441)
+            at com.ichi2.async.DeckTask.doInBackgroundLoadDeckCounts(DeckTask.java:490)
+            at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:248)
+            at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:74)
+            at android.os.AsyncTask$2.call(AsyncTask.java:292)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:818)
+08-05 16:45:38.716  12965-12965/com.ichi2.anki E/DeckPicker﹕ null result loading deck counts
+08-05 16:45:38.716  12965-12965/com.ichi2.anki D/DeckTask﹕ enabling garbage collection of mPreviousTask...
+08-05 16:45:38.716  12965-12965/com.ichi2.anki D/DialogHandler﹕ Storing persistent message
+08-05 16:45:38.717  12965-13319/com.ichi2.anki D/DeckTask﹕ doInBackgroundSaveCollection
+08-05 16:45:38.718  12965-13319/com.ichi2.anki E/DeckTask﹕ Error on saving deck in background
+    java.lang.NullPointerException: Attempt to invoke virtual method 'boolean com.ichi2.anki.AnkiDb.getMod()' on a null object reference
+            at com.ichi2.libanki.Collection.save(Collection.java:260)
+            at com.ichi2.libanki.Collection.save(Collection.java:245)
+            at com.ichi2.async.DeckTask.doInBackgroundSaveCollection(DeckTask.java:503)
+            at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:251)
+            at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:74)
+            at android.os.AsyncTask$2.call(AsyncTask.java:292)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:818)
+08-05 16:45:38.718  12965-12965/com.ichi2.anki D/UIUtils﹕ saveCollectionInBackground: finished
+08-05 16:45:38.719  12965-12965/com.ichi2.anki D/DeckTask﹕ enabling garbage collection of mPreviousTask...
+08-05 16:45:57.081  12965-12965/com.ichi2.anki D/DeckPicker﹕ onResume()
+08-05 16:45:57.083  12965-12965/com.ichi2.anki D/DialogHandler﹕ Reading persistent message
+08-05 16:45:57.083  12965-12965/com.ichi2.anki D/DeckPicker﹕ Refreshing deck list
+08-05 16:45:57.087  12965-13000/com.ichi2.anki D/DeckTask﹕ doInBackgroundLoadDeckCounts
+08-05 16:45:57.096  12965-13343/com.ichi2.anki D/CollectionLoader﹕ CollectionLoader accessing collection
+08-05 16:45:57.132  12965-12965/com.ichi2.anki W/System.err﹕ java.io.IOException: Error running exec(). Command: [sqlite3, --version] Working Directory: null Environment: null
+08-05 16:45:57.132  12965-12965/com.ichi2.anki W/System.err﹕ at java.lang.ProcessManager.exec(ProcessManager.java:211)
+08-05 16:45:57.132  12965-12965/com.ichi2.anki W/System.err﹕ at java.lang.Runtime.exec(Runtime.java:173)
+08-05 16:45:57.132  12965-12965/com.ichi2.anki W/System.err﹕ at java.lang.Runtime.exec(Runtime.java:246)
+08-05 16:45:57.132  12965-12965/com.ichi2.anki W/System.err﹕ at java.lang.Runtime.exec(Runtime.java:189)
+08-05 16:45:57.132  12965-12965/com.ichi2.anki W/System.err﹕ at com.ichi2.anki.dialogs.DatabaseErrorDialog.onCreateDialog(DatabaseErrorDialog.java:101)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at com.ichi2.anki.dialogs.DatabaseErrorDialog.onCreateDialog(DatabaseErrorDialog.java:24)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at android.support.v4.app.DialogFragment.getLayoutInflater(DialogFragment.java:308)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:955)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:740)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1501)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at android.support.v4.app.FragmentManagerImpl.executePendingTransactions(FragmentManager.java:490)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at com.ichi2.anki.AnkiActivity.showDialogFragment(AnkiActivity.java:313)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at com.ichi2.anki.AnkiActivity.showAsyncDialogFragment(AnkiActivity.java:326)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at com.ichi2.anki.DeckPicker.showDatabaseErrorDialog(DeckPicker.java:951)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at com.ichi2.anki.dialogs.DialogHandler.handleMessage(DialogHandler.java:80)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at android.os.Handler.dispatchMessage(Handler.java:102)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at android.os.Looper.loop(Looper.java:135)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at android.app.ActivityThread.main(ActivityThread.java:5254)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at java.lang.reflect.Method.invoke(Native Method)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at java.lang.reflect.Method.invoke(Method.java:372)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ Caused by: java.io.IOException: Permission denied
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at java.lang.ProcessManager.exec(Native Method)
+08-05 16:45:57.133  12965-12965/com.ichi2.anki W/System.err﹕ at java.lang.ProcessManager.exec(ProcessManager.java:209)

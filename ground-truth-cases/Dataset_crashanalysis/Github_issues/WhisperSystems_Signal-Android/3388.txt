@@ -1,0 +1,10 @@
+E/AndroidRuntime( 4560): java.lang.IllegalArgumentException: byteCount < 0: -26331
+E/AndroidRuntime( 4560):    at okio.RealBufferedSource.read(RealBufferedSource.java:46)
+E/AndroidRuntime( 4560):    at com.squareup.okhttp.internal.ws.WebSocketReader$FramedMessageSource.read(WebSocketReader.java:249)
+E/AndroidRuntime( 4560):    at okio.Buffer.writeAll(Buffer.java:705)
+E/AndroidRuntime( 4560):    at okio.RealBufferedSource.readByteArray(RealBufferedSource.java:92)
+E/AndroidRuntime( 4560):    at org.whispersystems.textsecure.internal.websocket.OkHttpClientWrapper.onMessage(OkHttpClientWrapper.java:102)
+E/AndroidRuntime( 4560):    at com.squareup.okhttp.internal.ws.WebSocketReader.readMessage(WebSocketReader.java:110)
+E/AndroidRuntime( 4560):    at com.squareup.okhttp.internal.ws.WebSocket$ReaderRunnable.execute(WebSocket.java:355)
+E/AndroidRuntime( 4560):    at com.squareup.okhttp.internal.NamedRunnable.run(NamedRunnable.java:33)
+E/AndroidRuntime( 4560):    at java.lang.Thread.run(Thread.java:818)

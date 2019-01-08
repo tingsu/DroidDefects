@@ -1,0 +1,5 @@
+E/AndroidRuntime( 3089): java.lang.NullPointerException
+E/AndroidRuntime( 3089): at org.thoughtcrime.securesms.jobs.AvatarDownloadJob.onRun(AvatarDownloadJob.java:73)
+E/AndroidRuntime( 3089): at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 3089): at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 3089): at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

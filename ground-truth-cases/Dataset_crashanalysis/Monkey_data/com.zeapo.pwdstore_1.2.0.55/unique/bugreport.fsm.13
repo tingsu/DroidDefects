@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: com.zeapo.pwdstore
+//version: 1.2.0.55
+//appro_time: 73
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=403, result=-1, data=null} to activity {com.zeapo.pwdstore/com.zeapo.pwdstore.PasswordStore}: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3367)
+ 	at android.app.ActivityThread.handleSendResult(ActivityThread.java:3410)
+ 	at android.app.ActivityThread.access$1100(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1304)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+ 	at android.support.v4.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1533)
+ 	at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1551)
+ 	at android.support.v4.app.FragmentManagerImpl.popBackStack(FragmentManager.java:610)
+ 	at com.zeapo.pwdstore.PasswordStore.checkLocalRepository(PasswordStore.java:360)
+ 	at com.zeapo.pwdstore.PasswordStore.checkLocalRepository(PasswordStore.java:332)
+ 	at com.zeapo.pwdstore.PasswordStore.onActivityResult(PasswordStore.java:562)
+ 	at android.app.Activity.dispatchActivityResult(Activity.java:5322)
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3363)
+ 	... 11 more

@@ -1,0 +1,16 @@
+//this is an auto-generated bug report
+//package name: zame.GloomyDungeons.opensource.game
+//version: 2013.03.07.0416
+//appro_time: 91
+ java.lang.UnsatisfiedLinkError: Couldn't load zameJniRenderer from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/zame.GloomyDungeons.opensource.game-1.apk"],nativeLibraryDirectories=[/data/app-lib/zame.GloomyDungeons.opensource.game-1, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at zame.GloomyDungeons.opensource.game.ZameJniRenderer.<clinit>(ZameJniRenderer.java:6)
+ 	at zame.GloomyDungeons.opensource.game.Renderer.flush(Renderer.java:76)
+ 	at zame.GloomyDungeons.opensource.game.Renderer.flush(Renderer.java:55)
+ 	at zame.GloomyDungeons.opensource.game.LevelRenderer.renderFloor(LevelRenderer.java:669)
+ 	at zame.GloomyDungeons.opensource.game.LevelRenderer.render(LevelRenderer.java:756)
+ 	at zame.GloomyDungeons.opensource.game.Game.render(Game.java:1281)
+ 	at zame.GloomyDungeons.opensource.game.ZameGame.onDrawFrame(ZameGame.java:196)
+ 	at android.opengl.GLSurfaceView$GLThread.guardedRun(GLSurfaceView.java:1523)
+ 	at android.opengl.GLSurfaceView$GLThread.run(GLSurfaceView.java:1240)

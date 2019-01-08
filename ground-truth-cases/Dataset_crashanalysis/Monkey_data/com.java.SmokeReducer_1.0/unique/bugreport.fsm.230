@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: com.java.SmokeReducer
+//version: 1.0
+//appro_time: 96
+ java.lang.IllegalStateException
+ 	at android.media.MediaPlayer.isPlaying(Native Method)
+ 	at com.java.SmokeReducer.MyGlobals.free(MyGlobals.java:306)
+ 	at com.java.SmokeReducer.SmokeReducer$3.onClick(SmokeReducer.java:208)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

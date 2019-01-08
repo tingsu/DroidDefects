@@ -1,0 +1,16 @@
+    java.lang.RuntimeException: Error receiving broadcast Intent { act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras) } in is.pinterjann.jaws.activities.JAWSActivity$WifiScanReceiver@a1e7c70
+            at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:891)
+            at android.os.Handler.handleCallback(Handler.java:739)
+            at android.os.Handler.dispatchMessage(Handler.java:95)
+            at android.os.Looper.loop(Looper.java:148)
+            at android.app.ActivityThread.main(ActivityThread.java:5417)
+            at java.lang.reflect.Method.invoke(Native Method)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+     Caused by: java.lang.SecurityException: Need ACCESS_COARSE_LOCATION or ACCESS_FINE_LOCATION permission to get scan results
+            at android.os.Parcel.readException(Parcel.java:1599)
+            at android.os.Parcel.readException(Parcel.java:1552)
+            at android.net.wifi.IWifiManager$Stub$Proxy.getScanResults(IWifiManager.java:1066)
+            at android.net.wifi.WifiManager.getScanResults(WifiManager.java:1311)
+            at is.pinterjann.jaws.activities.JAWSActivity$WifiScanReceiver.onReceive(JAWSActivity.java:153)
+            at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:881)

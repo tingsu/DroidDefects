@@ -1,0 +1,14 @@
+`java.lang.OutOfMemoryError: Failed to allocate a 1166412 byte allocation with 16777120 free bytes and 468MB until OOM
+    at dalvik.system.VMRuntime.newNonMovableArray(Native Method)
+    at android.graphics.BitmapFactory.nativeDecodeAsset(Native Method)
+    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:745)
+    at android.graphics.BitmapFactory.decodeResourceStream(BitmapFactory.java:566)
+    at android.graphics.drawable.Drawable.createFromResourceStream(Drawable.java:1014)
+    at android.content.res.Resources.loadDrawableForCookie(Resources.java:3730)
+    at android.content.res.Resources.loadDrawable(Resources.java:3603)
+    at android.content.res.Resources.getDrawable(Resources.java:1852)
+    at android.content.res.Resources.getDrawable(Resources.java:1818)
+    at com.nostra13.universalimageloader.core.DisplayImageOptions.getImageOnLoading(DisplayImageOptions.java:134)
+    at com.nostra13.universalimageloader.core.ImageLoader.displayImage(ImageLoader.java:257)
+    at com.nostra13.universalimageloader.core.ImageLoader.loadImage(ImageLoader.java:483)
+    at com.nostra13.universalimageloader.core.ImageLoader.loadImage(ImageLoader.java:419)`

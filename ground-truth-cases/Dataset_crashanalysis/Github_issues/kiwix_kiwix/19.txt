@@ -1,0 +1,37 @@
+E/ActivityThread(11775): android.app.IntentReceiverLeaked: Activity org.kiwix.kiwixmobile.KiwixMobileActivity has leaked IntentReceiver com.immersion.android.haptics.HapticFeedbackManager$HapticFeedbackBroadcastReceiver@417c33a0 that was originally registered here. Are you missing a call to unregisterReceiver()?
+E/ActivityThread(11775):    at android.app.LoadedApk$ReceiverDispatcher.<init>(LoadedApk.java:800)
+E/ActivityThread(11775):    at android.app.LoadedApk.getReceiverDispatcher(LoadedApk.java:601)
+E/ActivityThread(11775):    at android.app.ContextImpl.registerReceiverInternal(ContextImpl.java:1650)
+E/ActivityThread(11775):    at android.app.ContextImpl.registerReceiver(ContextImpl.java:1630)
+E/ActivityThread(11775):    at android.app.ContextImpl.registerReceiver(ContextImpl.java:1624)
+E/ActivityThread(11775):    at android.content.ContextWrapper.registerReceiver(ContextWrapper.java:430)
+E/ActivityThread(11775):    at com.immersion.android.haptics.HapticFeedbackManager.setupPackageBroadcastReceiver(HapticFeedbackManager.java:564)
+E/ActivityThread(11775):    at com.immersion.android.haptics.HapticFeedbackManager.<init>(HapticFeedbackManager.java:108)
+E/ActivityThread(11775):    at com.immersion.android.HapticFeedbackManagerProxy.initialize(HapticFeedbackManagerProxy.java:90)
+E/ActivityThread(11775):    at com.immersion.android.HapticFeedbackManagerProxy.access$100(HapticFeedbackManagerProxy.java:30)
+E/ActivityThread(11775):    at com.immersion.android.HapticFeedbackManagerProxy$1$1.run(HapticFeedbackManagerProxy.java:71)
+E/ActivityThread(11775):    at java.lang.Thread.run(Thread.java:856)
+E/Watchdog(  507): !@Sync 52332
+E/SurfaceFlinger(  469): #### captureScreenImplLocked
+E/EnterpriseContainerManager(  507): ContainerPolicy Service is not yet ready!!!
+E/SurfaceFlinger(  469): #### captureScreenImplLocked
+E/EnterpriseContainerManager(  507): ContainerPolicy Service is not yet ready!!!
+E/Watchdog(  507): !@Sync 52333
+E/SurfaceFlinger(  469): #### captureScreenImplLocked
+E/EnterpriseContainerManager(  507): ContainerPolicy Service is not yet ready!!!
+E/SurfaceFlinger(  469): #### captureScreenImplLocked
+E/EnterpriseContainerManager(  507): ContainerPolicy Service is not yet ready!!!
+E/AndroidRuntime(11775): FATAL EXCEPTION: main
+E/AndroidRuntime(11775): java.lang.IllegalStateException: Cannot add header view to list -- setAdapter has already been called.
+E/AndroidRuntime(11775):    at android.widget.ListView.addHeaderView(ListView.java:264)
+E/AndroidRuntime(11775):    at android.widget.ListView.addHeaderView(ListView.java:293)
+E/AndroidRuntime(11775):    at org.kiwix.kiwixmobile.utils.HTMLUtils$HTMLinterface$1.run(HTMLUtils.java:68)
+E/AndroidRuntime(11775):    at android.os.Handler.handleCallback(Handler.java:725)
+E/AndroidRuntime(11775):    at android.os.Handler.dispatchMessage(Handler.java:92)
+E/AndroidRuntime(11775):    at android.os.Looper.loop(Looper.java:175)
+E/AndroidRuntime(11775):    at android.app.ActivityThread.main(ActivityThread.java:5279)
+E/AndroidRuntime(11775):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(11775):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime(11775):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1102)
+E/AndroidRuntime(11775):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:869)
+E/AndroidRuntime(11775):    at dalvik.system.NativeStart.main(Native Method)

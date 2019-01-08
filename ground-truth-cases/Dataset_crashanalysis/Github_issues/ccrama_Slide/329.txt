@@ -1,0 +1,17 @@
+```java.lang.RuntimeException: Unable to start activity ComponentInfo{me.ccrama.redditslide/me.ccrama.redditslide.Activities.Settings}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.view.View.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2368)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2430)
+    at android.app.ActivityThread.access$900(ActivityThread.java:153)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1319)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5321)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:375)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.view.View.setOnClickListener(android.view.View$OnClickListener)' on a null object reference
+    at me.ccrama.redditslide.Activities.Settings.onCreate(Settings.java:205)
+    at android.app.Activity.performCreate(Activity.java:6865)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2321)

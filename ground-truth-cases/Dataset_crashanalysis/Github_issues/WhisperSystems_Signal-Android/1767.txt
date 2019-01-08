@@ -1,0 +1,5 @@
+java.lang.NumberFormatException: unable to parse '1f601.png' as integer
+    at java.lang.Integer.parse(Integer.java:383)
+    at java.lang.Integer.parseInt(Integer.java:372)
+    at org.thoughtcrime.securesms.util.Emoji.getRecentlyUsed(Emoji.java:267)
+    at org.thoughtcrime.securesms.components.EmojiDrawer$EmojiGridAdapter.getView(EmojiDrawer.java:226)

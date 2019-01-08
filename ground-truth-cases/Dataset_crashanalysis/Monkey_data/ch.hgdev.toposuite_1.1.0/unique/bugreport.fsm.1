@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: ch.hgdev.toposuite
+//version: 1.1.0
+//appro_time: 148
+ Error inserting id=13 serialized_input_data={"chord_of":9,"radius":5,"arrow":2.8205505282296635,"alpha_angle":142.57348274851748,"tangent":10.32370802417528} type=CIRCCURVESOLVER description=Circular curves solver last_modification=05-02-2017 10:24
+ android.database.sqlite.SQLiteConstraintException: PRIMARY KEY must be unique (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at ch.hgdev.toposuite.dao.CalculationsDataSource.create(CalculationsDataSource.java:124)
+ 	at ch.hgdev.toposuite.dao.collections.DAOMapperArrayList.notifyCreation(DAOMapperArrayList.java:167)
+ 	at ch.hgdev.toposuite.dao.collections.DAOMapperArrayList.add(DAOMapperArrayList.java:61)
+ 	at ch.hgdev.toposuite.calculation.Calculation.createCalculationFromJSON(Calculation.java:238)
+ 	at ch.hgdev.toposuite.jobs.Job.loadJobFromJSON(Job.java:234)
+ 	at ch.hgdev.toposuite.jobs.JobsActivity$4.run(JobsActivity.java:241)
+ 	at java.lang.Thread.run(Thread.java:841)

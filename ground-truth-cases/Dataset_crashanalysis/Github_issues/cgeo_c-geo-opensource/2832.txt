@@ -1,0 +1,5 @@
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: -102
+    at java.lang.String.substring(String.java:1958)
+    at cgeo.support.nightly.MakeNightly.manifestFile(MakeNightly.java:110)
+    at cgeo.support.nightly.MakeNightly.run(MakeNightly.java:47)
+    at cgeo.support.nightly.MakeNightly.main(MakeNightly.java:37)

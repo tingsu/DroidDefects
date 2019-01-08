@@ -1,0 +1,14 @@
+java.lang.NullPointerException: Attempt to read from field 'de.danoeh.antennapod.fragment.ChaptersFragment de.danoeh.antennapod.activity.AudioplayerActivity$AudioplayerPagerAdapter.chaptersFragment' on a null object reference
+    at de.danoeh.antennapod.activity.AudioplayerActivity.onPositionObserverUpdate(AudioplayerActivity.java:2554)
+    at de.danoeh.antennapod.activity.MediaplayerActivity$1.onPositionObserverUpdate(MediaplayerActivity.java:91)
+    at de.danoeh.antennapod.core.util.playback.PlaybackController$MediaPositionObserver$1.run(PlaybackController.java:777)
+    ...
+```
+
+```
+java.lang.RuntimeException: Unable to resume activity {de.danoeh.antennapod/de.danoeh.antennapod.activity.AudioplayerActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'java.util.List de.danoeh.antennapod.core.util.playback.Playable.getChapters()' on a null object reference
+    ...
+Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'java.util.List de.danoeh.antennapod.core.util.playback.Playable.getChapters()' on a null object reference
+    at de.danoeh.antennapod.activity.AudioplayerActivity$AudioplayerPagerAdapter.onMediaChanged(AudioplayerActivity.java:2071)
+    at de.danoeh.antennapod.activity.AudioplayerActivity.onResume(AudioplayerActivity.java:171)
+    at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)

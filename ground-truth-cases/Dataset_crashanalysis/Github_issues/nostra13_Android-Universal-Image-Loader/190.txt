@@ -1,0 +1,12 @@
+03-02 01:17:53.590: E/ImageLoader(8640): java.lang.UnsupportedOperationException: UIL doesn't support scheme [null] by default. You should implement this support byself
+03-02 01:17:53.590: E/ImageLoader(8640):    at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStreamFromOtherSource(BaseImageDownloader.java:187)
+03-02 01:17:53.590: E/ImageLoader(8640):    at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStream(BaseImageDownloader.java:90)
+03-02 01:17:53.590: E/ImageLoader(8640):    at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.saveImageOnDisc(LoadAndDisplayImageTask.java:340)
+03-02 01:17:53.590: E/ImageLoader(8640):    at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:232)
+03-02 01:17:53.590: E/ImageLoader(8640):    at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:148)
+03-02 01:17:53.590: E/ImageLoader(8640):    at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:442)
+03-02 01:17:53.590: E/ImageLoader(8640):    at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+03-02 01:17:53.590: E/ImageLoader(8640):    at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+03-02 01:17:53.590: E/ImageLoader(8640):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+03-02 01:17:53.590: E/ImageLoader(8640):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+03-02 01:17:53.590: E/ImageLoader(8640):    at java.lang.Thread.run(Thread.java:856)

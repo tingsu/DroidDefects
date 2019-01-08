@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: org.torproject.android
+//version: 15.0.1-RC-3-noPIE
+//appro_time: 135
+ java.lang.UnsatisfiedLinkError: Couldn't load tun2socks from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/org.torproject.android-1.apk"],nativeLibraryDirectories=[/data/app-lib/org.torproject.android-1, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at org.torproject.android.vpn.OrbotVpnService.onCreate(OrbotVpnService.java:164)
+ 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2577)
+ 	at android.app.ActivityThread.access$1600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1338)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,12 @@
+02-26 18:56:35.555  6430  6489 W System.err: java.lang.IllegalArgumentException: No configs match configSpec
+02-26 18:56:35.555  6430  6489 W System.err:    at android.opengl.GLSurfaceView$BaseConfigChooser.chooseConfig(GLSurfaceView.java:859)
+02-26 18:56:35.555  6430  6489 W System.err:    at android.opengl.GLSurfaceView$EglHelper.start(GLSurfaceView.java:1024)
+02-26 18:56:35.555  6430  6489 W System.err:    at android.opengl.GLSurfaceView$GLThread.guardedRun(GLSurfaceView.java:1401)
+02-26 18:56:35.555  6430  6489 W System.err:    at android.opengl.GLSurfaceView$GLThread.run(GLSurfaceView.java:1240)
+02-26 18:56:35.555  6430  6489 E AndroidRuntime: FATAL EXCEPTION: GLThread 294
+02-26 18:56:35.555  6430  6489 E AndroidRuntime: Process: org.quantumbadger.redreader, PID: 6430
+02-26 18:56:35.555  6430  6489 E AndroidRuntime: java.lang.IllegalArgumentException: No configs match configSpec
+02-26 18:56:35.555  6430  6489 E AndroidRuntime:    at android.opengl.GLSurfaceView$BaseConfigChooser.chooseConfig(GLSurfaceView.java:859)
+02-26 18:56:35.555  6430  6489 E AndroidRuntime:    at android.opengl.GLSurfaceView$EglHelper.start(GLSurfaceView.java:1024)
+02-26 18:56:35.555  6430  6489 E AndroidRuntime:    at android.opengl.GLSurfaceView$GLThread.guardedRun(GLSurfaceView.java:1401)
+02-26 18:56:35.555  6430  6489 E AndroidRuntime:    at android.opengl.GLSurfaceView$GLThread.run(GLSurfaceView.java:1240)

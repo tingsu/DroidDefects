@@ -1,0 +1,42 @@
+//this is an auto-generated bug report
+//package name: com.github.pires.obd.reader
+//version: 2.0-rc1
+//appro_time: 12
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.github.pires.obd.reader/com.github.pires.obd.reader.activity.MainActivity}: java.lang.IllegalStateException: Unable to use annotation database(s)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalStateException: Unable to use annotation database(s)
+ 	at roboguice.RoboGuice.initializeAnnotationDatabaseFinderAndHierarchyTraversalFilterFactory(RoboGuice.java:292)
+ 	at roboguice.RoboGuice.getOrCreateBaseApplicationInjector(RoboGuice.java:149)
+ 	at roboguice.RoboGuice.getOrCreateBaseApplicationInjector(RoboGuice.java:90)
+ 	at roboguice.RoboGuice.getInjector(RoboGuice.java:197)
+ 	at roboguice.activity.RoboActivity.onCreate(RoboActivity.java:90)
+ 	at com.github.pires.obd.reader.activity.MainActivity.onCreate(MainActivity.java:305)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)
+ Caused by: java.lang.RuntimeException: java.lang.ClassNotFoundException: AnnotationDatabaseImpl
+ 	at com.google.inject.AnnotationDatabaseFinder.<init>(AnnotationDatabaseFinder.java:47)
+ 	at com.google.inject.Guice.setAnnotationDatabasePackageNames(Guice.java:133)
+ 	at roboguice.RoboGuice.initializeAnnotationDatabaseFinderAndHierarchyTraversalFilterFactory(RoboGuice.java:288)
+ Caused by: java.lang.ClassNotFoundException: AnnotationDatabaseImpl
+ 	at java.lang.Class.classForName(Native Method)
+ 	at java.lang.Class.forName(Class.java:204)
+ 	at java.lang.Class.forName(Class.java:169)
+ 	at com.google.inject.AnnotationDatabaseFinder.getAnnotationDatabaseInstance(AnnotationDatabaseFinder.java:73)
+ 	at com.google.inject.AnnotationDatabaseFinder.<init>(AnnotationDatabaseFinder.java:36)
+ Caused by: java.lang.NoClassDefFoundError: AnnotationDatabaseImpl
+ Caused by: java.lang.ClassNotFoundException: Didn't find class "AnnotationDatabaseImpl" on path: DexPathList[[zip file "/data/app/com.github.pires.obd.reader-1.apk"],nativeLibraryDirectories=[/data/app-lib/com.github.pires.obd.reader-1, /system/lib]]
+ 	at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:53)
+ 	at java.lang.ClassLoader.loadClass(ClassLoader.java:501)
+ 	at java.lang.ClassLoader.loadClass(ClassLoader.java:461)

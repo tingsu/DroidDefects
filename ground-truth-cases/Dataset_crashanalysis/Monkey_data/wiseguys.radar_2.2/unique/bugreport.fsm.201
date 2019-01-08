@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: wiseguys.radar
+//version: 2.2
+//appro_time: 76
+ java.lang.NullPointerException
+ 	at wiseguys.radar.ui.RadarFragment.onPause(RadarFragment.java:89)
+ 	at android.app.Fragment.performPause(Fragment.java:1858)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:930)
+ 	at android.app.FragmentManagerImpl.removeFragment(FragmentManager.java:1162)
+ 	at android.app.BackStackRecord.run(BackStackRecord.java:639)
+ 	at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1435)
+ 	at android.app.FragmentManagerImpl$1.run(FragmentManager.java:441)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

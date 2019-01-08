@@ -1,0 +1,6 @@
+E/AndroidRuntime(24006): java.lang.ArrayIndexOutOfBoundsException: length=61; index=-38
+E/AndroidRuntime(24006):    at de.tap.easy_xkcd.fragments.overview.OverviewBaseFragment.goToComic(OverviewBaseFragment.java:107)
+E/AndroidRuntime(24006):    at de.tap.easy_xkcd.fragments.overview.OverviewBaseFragment.showComic(OverviewBaseFragment.java:69)
+E/AndroidRuntime(24006):    at de.tap.easy_xkcd.fragments.overview.OverviewRecyclerBaseFragment$CustomOnClickListener.onClick(OverviewRecyclerBaseFragment.java:103)
+E/AndroidRuntime(24006):    at android.view.View.performClick(View.java:5204)
+E/AndroidRuntime(24006):    at android.view.View$PerformClick.run(View.java:21158)

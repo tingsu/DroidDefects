@@ -1,0 +1,49 @@
+03-14 12:20:29.700 14212 14354 E ConnectivityService: Attempting to register duplicate agent for type 17: NetworkAgentInfo{ ni{[type: VPN[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false]}  network{275}  lp{{InterfaceName: tun0 LinkAddresses: [10.1.10.1/32,fd00:1:fd00:1:fd00:1:fd00:1/128,]  Routes: [0.0.0.0/0 -> 0.0.0.0 tun0,::/0 -> :: tun0,] DnsAddresses: [] Domains:  MTU: 0}}  nc{[ Transports: VPN Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED]}  Score{0}  everValidated{true}  lastValidated{true}  created{true}  explicitlySelected{false} }
+03-14 12:20:32.049 14859 15535 E SQLiteLog: (14) cannot open file at line 31801 of [cf538e2783]
+03-14 12:20:32.049 14859 15535 E SQLiteLog: (14) os_unix.c:31801: (24) open(/data/data/com.android.providers.telephony/databases/mmssms.db-journal) - 
+03-14 12:20:32.049 14859 15535 E SQLiteLog: (14) cannot open file at line 31801 of [cf538e2783]
+03-14 12:20:32.049 14859 15535 E SQLiteLog: (14) os_unix.c:31801: (24) open(/data/data/com.android.providers.telephony/databases/mmssms.db-journal) - 
+03-14 12:20:32.050 14859 15535 E SQLiteLog: (14) statement aborts at 43: [SELECT \* FROM pending_msgs WHERE (proto_type=1) AND err_type < ? AND due_time <= ? ORDER BY due_time] unable to open database file
+03-14 12:20:32.050 14859 15535 E SQLiteQuery: exception: unable to open database file (code 14); query: SELECT \* FROM pending_msgs WHERE (proto_type=1) AND err_type < ? AND due_time <= ? ORDER BY due_time
+03-14 12:20:32.052 14859 15535 E DatabaseUtils: Writing exception to parcel
+03-14 12:20:32.052 14859 15535 E DatabaseUtils: android.database.sqlite.SQLiteCantOpenDatabaseException: unable to open database file (code 14)
+03-14 12:20:32.052 14859 15535 E DatabaseUtils:     at android.database.sqlite.SQLiteConnection.nativeExecuteForCursorWindow(Native Method)
+03-14 12:20:32.052 14859 15535 E DatabaseUtils:     at android.database.sqlite.SQLiteConnection.executeForCursorWindow(SQLiteConnection.java:846)
+03-14 12:20:32.052 14859 15535 E DatabaseUtils:     at android.database.sqlite.SQLiteSession.executeForCursorWindow(SQLiteSession.java:836)
+03-14 12:20:32.052 14859 15535 E DatabaseUtils:     at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:62)
+03-14 12:20:32.052 14859 15535 E DatabaseUtils:     at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:144)
+03-14 12:20:32.052 14859 15535 E DatabaseUtils:     at android.database.sqlite.SQLiteCursor.getCount(SQLiteCursor.java:133)
+03-14 12:20:32.052 14859 15535 E DatabaseUtils:     at android.database.CursorToBulkCursorAdaptor.getBulkCursorDescriptor(CursorToBulkCursorAdaptor.java:145)
+03-14 12:20:32.052 14859 15535 E DatabaseUtils:     at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:122)
+03-14 12:20:32.052 14859 15535 E DatabaseUtils:     at android.os.Binder.execTransact(Binder.java:446)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper: Catch a SQLiteException when query: 
+03-14 12:20:32.054 31502 31535 E SqliteWrapper: android.database.sqlite.SQLiteException: unable to open database file (code 14)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:181)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:137)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at android.content.ContentProviderProxy.query(ContentProviderNative.java:421)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at android.content.ContentResolver.query(ContentResolver.java:478)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at android.content.ContentResolver.query(ContentResolver.java:422)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at com.google.android.mms.util_alt.SqliteWrapper.query(SqliteWrapper.java:71)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at com.google.android.mms.pdu_alt.PduPersister.getPendingMessages(PduPersister.java:1533)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at com.android.mms.transaction.RetryScheduler.setRetryAlarm(RetryScheduler.java:315)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at com.android.mms.transaction.TransactionService.onNewIntent(TransactionService.java:286)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at com.android.mms.transaction.TransactionService$ServiceHandler.handleMessage(TransactionService.java:644)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at android.os.Looper.loop(Looper.java:135)
+03-14 12:20:32.054 31502 31535 E SqliteWrapper:     at android.os.HandlerThread.run(HandlerThread.java:61)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime: FATAL EXCEPTION: TransactionService
+03-14 12:20:32.061 31502 31535 E AndroidRuntime: Process: com.moez.QKSMS, PID: 31502
+03-14 12:20:32.061 31502 31535 E AndroidRuntime: android.database.sqlite.SQLiteException: unable to open database file (code 14)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:181)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:137)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at android.content.ContentProviderProxy.query(ContentProviderNative.java:421)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at android.content.ContentResolver.query(ContentResolver.java:478)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at android.content.ContentResolver.query(ContentResolver.java:422)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at com.google.android.mms.util_alt.SqliteWrapper.query(SqliteWrapper.java:71)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at com.google.android.mms.pdu_alt.PduPersister.getPendingMessages(PduPersister.java:1533)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at com.android.mms.transaction.RetryScheduler.setRetryAlarm(RetryScheduler.java:315)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at com.android.mms.transaction.TransactionService.onNewIntent(TransactionService.java:286)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at com.android.mms.transaction.TransactionService$ServiceHandler.handleMessage(TransactionService.java:644)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at android.os.Handler.dispatchMessage(Handler.java:102)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at android.os.Looper.loop(Looper.java:135)
+03-14 12:20:32.061 31502 31535 E AndroidRuntime:    at android.os.HandlerThread.run(HandlerThread.java:61)

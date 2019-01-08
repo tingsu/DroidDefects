@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: wiseguys.radar
+//version: 2.3.1
+//appro_time: 68
+ java.lang.IllegalStateException: ImageView no longer exists. You should not use this PhotoViewAttacher any more.
+ 	at wiseguys.radar.ui.adapter.PhotoViewAttacher.getImageView(PhotoViewAttacher.java:209)
+ 	at wiseguys.radar.ui.adapter.PhotoViewAttacher$AnimatedZoomRunnable.run(PhotoViewAttacher.java:811)
+ 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:749)
+ 	at android.view.Choreographer.doCallbacks(Choreographer.java:562)
+ 	at android.view.Choreographer.doFrame(Choreographer.java:531)
+ 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:735)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

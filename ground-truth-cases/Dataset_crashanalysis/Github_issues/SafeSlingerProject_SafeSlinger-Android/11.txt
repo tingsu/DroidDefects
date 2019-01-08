@@ -1,0 +1,4 @@
+08-08 15:59:47.191: E/AndroidRuntime(4940): java.lang.NullPointerException
+08-08 15:59:47.191: E/AndroidRuntime(4940):     at edu.cmu.cylab.starslinger.view.SaveActivity.saveSelectedContacts(SaveActivity.java:312)
+08-08 15:59:47.191: E/AndroidRuntime(4940):     at edu.cmu.cylab.starslinger.view.SaveActivity.access$5(SaveActivity.java:287)
+08-08 15:59:47.191: E/AndroidRuntime(4940):     at edu.cmu.cylab.starslinger.view.SaveActivity$6.run(SaveActivity.java:280)

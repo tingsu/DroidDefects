@@ -1,0 +1,8 @@
+java.lang.IllegalStateException
+    at android.media.MediaPlayer.setNextMediaPlayer(Native Method)
+    at ch.blinkenlights.android.vanilla.VanillaMediaPlayer.setNextMediaPlayer(VanillaMediaPlayer.java:91)
+    at ch.blinkenlights.android.vanilla.PlaybackService.triggerGaplessUpdate(PlaybackService.java:754)
+    at ch.blinkenlights.android.vanilla.PlaybackService.handleMessage(PlaybackService.java:1539)
+    at android.os.Handler.dispatchMessage(Handler.java:98)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.os.HandlerThread.run(HandlerThread.java:61)

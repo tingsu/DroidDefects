@@ -1,0 +1,9 @@
+        java.lang.IllegalArgumentException: "cacheDir" argument must be not null
+        at com.nostra13.universalimageloader.cache.disc.BaseDiscCache.<init>(BaseDiscCache.java:45)
+        at com.nostra13.universalimageloader.cache.disc.LimitedDiscCache.<init>(LimitedDiscCache.java:66)
+        at com.nostra13.universalimageloader.cache.disc.impl.TotalSizeLimitedDiscCache.<init>(TotalSizeLimitedDiscCache.java:56)
+        at com.nostra13.universalimageloader.cache.disc.impl.TotalSizeLimitedDiscCache.<init>(TotalSizeLimitedDiscCache.java:45)
+        at com.nostra13.universalimageloader.core.DefaultConfigurationFactory.createReserveDiscCache(DefaultConfigurationFactory.java:85)
+        at com.nostra13.universalimageloader.core.ImageLoaderConfiguration.<init>(ImageLoaderConfiguration.java:109)
+        at com.nostra13.universalimageloader.core.ImageLoaderConfiguration.<init>(ImageLoaderConfiguration.java:50)
+        at com.nostra13.universalimageloader.core.ImageLoaderConfiguration$Builder.build(ImageLoaderConfiguration.java:524)

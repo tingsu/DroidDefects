@@ -1,0 +1,12 @@
+java.lang.NullPointerException: Attempt to read from field 'com.nextgis.maplib.datasource.GeoEnvelope com.nextgis.maplib.datasource.GeometryRTree$Node.mCoords' on a null object reference
+    at com.nextgis.maplib.datasource.GeometryRTree.getRequiredExpansion(GeometryRTree.java:744)
+    at com.nextgis.maplib.datasource.GeometryRTree.splitNode(GeometryRTree.java:495)
+    at com.nextgis.maplib.datasource.GeometryRTree.insert(GeometryRTree.java:429)
+    at com.nextgis.maplib.datasource.GeometryRTree.addItem(GeometryRTree.java:144)
+    at com.nextgis.maplib.map.VectorLayer.cacheGeometryEnvelope(VectorLayer.java:665)
+    at com.nextgis.maplib.map.VectorLayer.createFeatureBatch(VectorLayer.java:519)
+    at com.nextgis.maplib.util.GeoJSONUtil.createLayerFromGeoJSONStream(GeoJSONUtil.java:423)
+    at com.nextgis.maplib.map.VectorLayer.createFromGeoJson(VectorLayer.java:369)
+    at com.nextgis.maplibui.service.LayerFillService$VectorLayerFillTask.execute(LayerFillService.java:385)
+    at com.nextgis.maplibui.service.LayerFillService$2.run(LayerFillService.java:248)
+    at java.lang.Thread.run(Thread.java:818)

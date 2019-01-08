@@ -1,0 +1,26 @@
+E/AndroidRuntime( 8658): java.lang.NoSuchMethodError: android.app.ActionBar.setHomeButtonEnabled
+E/AndroidRuntime( 8658): at org.pyload.android.client.Preferences.onCreate(Unknown Source)
+E/AndroidRuntime( 8658): at android.app.Activity.performCreate(Activity.java:4521)
+E/AndroidRuntime( 8658): at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1072)
+E/AndroidRuntime( 8658): at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1961)
+E/AndroidRuntime( 8658): at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2018)
+E/AndroidRuntime( 8658): at android.app.ActivityThread.access$500(ActivityThread.java:139)
+E/AndroidRuntime( 8658): at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1124)
+E/AndroidRuntime( 8658): at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 8658): at android.os.Looper.loop(Looper.java:152)
+E/AndroidRuntime( 8658): at android.app.ActivityThread.main(ActivityThread.java:4636)
+E/AndroidRuntime( 8658): at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 8658): at java.lang.reflect.Method.invoke(Method.java:491)
+E/AndroidRuntime( 8658): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:841)
+E/AndroidRuntime( 8658): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:599)
+E/AndroidRuntime( 8658): at dalvik.system.NativeStart.main(Native Method)
+E/EmbeddedLogger( 1571): App crashed! Process: org.pyload.android.client
+E/EmbeddedLogger( 1571): App crashed! Package: org.pyload.android.client v17 (0.3.4)
+E/EmbeddedLogger( 1571): Error getting package label: org.pyload.android.client
+E/EmbeddedLogger( 1571): java.lang.NullPointerException
+E/EmbeddedLogger( 1571): at com.htc.embedded.EmbeddedLogger.onHandleApplicationCrash(EmbeddedLogger.java:56)
+E/EmbeddedLogger( 1571): at com.android.server.am.ActivityManagerService.handleApplicationCrash(ActivityManagerService.java:7355)
+E/EmbeddedLogger( 1571): at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1045)
+E/EmbeddedLogger( 1571): at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:1672)
+E/EmbeddedLogger( 1571): at android.os.Binder.execTransact(Binder.java:339)
+E/EmbeddedLogger( 1571): at dalvik.system.NativeStart.run(Native Method)

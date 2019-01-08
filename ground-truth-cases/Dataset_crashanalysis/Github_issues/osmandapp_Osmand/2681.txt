@@ -1,0 +1,8 @@
+java.lang.NullPointerException
+    at net.osmand.data.preparation.address.IndexAddressCreator.postcodesInCityBoundary(IndexAddressCreator.java:984)
+    at net.osmand.data.preparation.address.IndexAddressCreator.writeCityBlockIndex(IndexAddressCreator.java:1221)
+    at net.osmand.data.preparation.address.IndexAddressCreator.writeBinaryAddressIndex(IndexAddressCreator.java:1095)
+    at net.osmand.data.preparation.IndexCreator.generateIndexes(IndexCreator.java:731)
+    at net.osmand.data.preparation.IndexCreator.generateIndexes(IndexCreator.java:578)
+    at net.osmand.MainUtilities.generateObf(MainUtilities.java:107)
+    at net.osmand.MainUtilities.main(MainUtilities.java:64)

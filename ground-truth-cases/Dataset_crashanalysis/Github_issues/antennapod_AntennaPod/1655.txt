@@ -1,0 +1,63 @@
+                                              java.lang.SecurityException: Permission Denial: get/set setting for user asks to run as user -2 but is calling from user 0; this requires android.permission.INTERACT_ACROSS_USERS_FULL
+                                                  at com.android.server.am.ActivityManagerService.handleIncomingUser(ActivityManagerService.java:13101)
+                                                  at android.app.ActivityManager.handleIncomingUser(ActivityManager.java:2038)
+                                                  at com.android.providers.settings.SettingsProvider.callFromPackage(SettingsProvider.java:607)
+                                                  at android.content.ContentProvider$Transport.call(ContentProvider.java:279)
+                                                  at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:273)
+                                                  at android.os.Binder.execTransact(Binder.java:388)
+                                                  at com.android.server.SystemServer.init1(Native Method)
+                                                  at com.android.server.SystemServer.main(SystemServer.java:2043)
+                                                  at java.lang.reflect.Method.invokeNative(Native Method)
+                                                  at java.lang.reflect.Method.invoke(Method.java:525)
+                                                  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1187)
+                                                  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+                                                  at dalvik.system.NativeStart.main(Native Method)
+02-08 20:33:28.106 9452-15145/de.danoeh.antennapod.debug D/DBReader: getNumberOfDownloadedEpisodes() called with: 
+02-08 20:33:28.116 9452-9452/de.danoeh.antennapod.debug D/UserPreferences: Using default data folder
+02-08 20:33:28.126 9452-15145/de.danoeh.antennapod.debug D/DBReader: getDownloadedItems() called with: 
+02-08 20:33:28.126 9452-9452/de.danoeh.antennapod.debug D/DownloadRequester: Requesting download of url http://traffic.libsyn.com/hellointernet/55.mp3
+02-08 20:33:28.246 145-20356/? E/mm-camera: poll type 1 returns 0
+02-08 20:33:28.276 9452-9452/de.danoeh.antennapod.debug D/DownloadService: Service started
+02-08 20:33:28.276 9452-9452/de.danoeh.antennapod.debug D/DownloadService: parallel downloads: 4
+02-08 20:33:28.276 9452-15145/de.danoeh.antennapod.debug D/DBReader: getFavoriteIDList() called
+02-08 20:33:28.286 9452-15148/de.danoeh.antennapod.debug D/downloadCompletionThd: downloadCompletionThread was started
+02-08 20:33:28.296 9452-15145/de.danoeh.antennapod.debug D/DBReader: getQueueIDList() called
+02-08 20:33:28.306 145-20357/? E/mm-camera: poll type 1 returns 0
+02-08 20:33:28.306 145-20358/? E/mm-camera: poll type 1 returns 0
+02-08 20:33:28.306 9452-15145/de.danoeh.antennapod.debug D/DBReader: Extracting Feedlist
+02-08 20:33:28.316 9452-9452/de.danoeh.antennapod.debug D/DownloadService: Notification set up
+02-08 20:33:28.316 9452-9452/de.danoeh.antennapod.debug D/DownloadService: Received enqueue request
+02-08 20:33:28.336 9452-15150/de.danoeh.antennapod.debug D/AntennapodHttpClient: Creating new instance of HTTP client
+02-08 20:33:28.346 9452-9452/de.danoeh.antennapod.debug D/ItemlistFragment: onEventMainThread() called with: event = [DownloadEvent{update=DownloaderUpdate{downloaders=[de.danoeh.antennapod.core.service.download.HttpDownloader@4289cc58], feedIds=[], mediaIds=[42]}}]
+02-08 20:33:28.356 9452-9452/de.danoeh.antennapod.debug D/DownloadService: 1 downloads left
+02-08 20:33:28.356 9452-9452/de.danoeh.antennapod.debug D/DownloadService: Setting up notification updater
+02-08 20:33:28.396 9452-15145/de.danoeh.antennapod.debug I/APQueueCleanupAlgorithm: Auto-delete deleted 0 episodes (0 requested)
+02-08 20:33:28.456 343-636/? D/MAGS: enqueueNotificationInternal
+02-08 20:33:28.466 343-636/? D/STATUSBAR-StatusBarManagerService: sendNotification(1) - 2
+02-08 20:33:28.486 812-812/? W/ResourceType: Attempt to retrieve bag 0x01030068 which is invalid or in a cycle.
+02-08 20:33:28.486 812-812/? W/ResourceType: Attempt to retrieve bag 0x01030067 which is invalid or in a cycle.
+02-08 20:33:28.496 812-812/? D/ProgressBar: setProgressDrawable mProgressDrawable = null, d = android.graphics.drawable.LayerDrawable@4239b920needUpdate = false
+02-08 20:33:28.496 812-812/? D/ProgressBar: setProgressDrawable drawableHeight = 12
+02-08 20:33:28.496 812-812/? D/ProgressBar: setProgress = 0
+02-08 20:33:28.496 812-812/? D/ProgressBar: setProgress = 0, fromUser = false
+02-08 20:33:28.496 812-812/? D/ProgressBar: mProgress = 0mIndeterminate = false, mMin = 0, mMax = 100
+02-08 20:33:28.506 812-812/? W/ResourceType: Attempt to retrieve bag 0x010301fc which is invalid or in a cycle.
+02-08 20:33:28.516 812-812/? D/ProgressBar: setProgressDrawable mProgressDrawable = null, d = android.graphics.drawable.LayerDrawable@4285ad30needUpdate = false
+02-08 20:33:28.516 812-812/? D/ProgressBar: setProgressDrawable drawableHeight = 12
+02-08 20:33:28.516 812-812/? D/ProgressBar: setProgress = 0
+02-08 20:33:28.516 812-812/? D/ProgressBar: setProgress = 0, fromUser = false
+02-08 20:33:28.526 812-812/? D/ProgressBar: mProgress = 0mIndeterminate = false, mMin = 0, mMax = 100
+02-08 20:33:28.546 812-812/? D/STATUSBAR-IconMerger: checkOverflow(288), More:false, Req:false Child:5
+02-08 20:33:28.616 9452-9452/de.danoeh.antennapod.debug D/ProgressBar: setProgress = 0
+02-08 20:33:28.616 9452-9452/de.danoeh.antennapod.debug D/ProgressBar: setProgress = 0, fromUser = false
+02-08 20:33:28.616 9452-9452/de.danoeh.antennapod.debug D/ProgressBar: mProgress = 42mIndeterminate = false, mMin = 0, mMax = 100
+02-08 20:33:28.667 9452-15150/de.danoeh.antennapod.debug W/dalvikvm: VFY: unable to find class referenced in signature (Ljava/nio/file/Path;)
+02-08 20:33:28.667 9452-15150/de.danoeh.antennapod.debug W/dalvikvm: VFY: unable to find class referenced in signature ([Ljava/nio/file/OpenOption;)
+02-08 20:33:28.667 9452-15150/de.danoeh.antennapod.debug I/dalvikvm: Could not find method java.nio.file.Files.newOutputStream, referenced from method okio.Okio.sink
+02-08 20:33:28.667 9452-15150/de.danoeh.antennapod.debug W/dalvikvm: VFY: unable to resolve static method 31304: Ljava/nio/file/Files;.newOutputStream (Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/OutputStream;
+02-08 20:33:28.667 9452-15150/de.danoeh.antennapod.debug D/dalvikvm: VFY: replacing opcode 0x71 at 0x000a
+02-08 20:33:28.677 9452-15150/de.danoeh.antennapod.debug W/dalvikvm: VFY: unable to find class referenced in signature (Ljava/nio/file/Path;)
+02-08 20:33:28.677 9452-15150/de.danoeh.antennapod.debug W/dalvikvm: VFY: unable to find class referenced in signature ([Ljava/nio/file/OpenOption;)
+02-08 20:33:28.677 9452-15150/de.danoeh.antennapod.debug I/dalvikvm: Could not find method java.nio.file.Files.newInputStream, referenced from method okio.Okio.source
+02-08 20:33:28.677 9452-15150/de.danoeh.antennapod.debug W/dalvikvm: VFY: unable to resolve static method 31303: Ljava/nio/file/Files;.newInputStream (Ljava/nio/file/Path;[Ljava/nio/file/OpenOption;)Ljava/io/InputStream;
+02-08 20:33:28.677 9452-15150/de.danoeh.antennapod.debug D/dalvikvm: VFY: replacing opcode 0x71 at 0x000a

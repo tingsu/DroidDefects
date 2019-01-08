@@ -1,0 +1,18 @@
+E/AndroidRuntime(17484): java.lang.IllegalStateException: Could not find a method onClick(View) in the activity class com.nutomic.syncthingandroid.activities.SettingsActivity for onClick handler on view class android.widget.ImageView
+E/AndroidRuntime(17484):        at android.view.View$1.onClick(View.java:3817)
+E/AndroidRuntime(17484):        at android.view.View.performClick(View.java:4445)
+E/AndroidRuntime(17484):        at android.view.View$PerformClick.run(View.java:18446)
+E/AndroidRuntime(17484):        at android.os.Handler.handleCallback(Handler.java:733)
+E/AndroidRuntime(17484):        at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime(17484):        at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(17484):        at android.app.ActivityThread.main(ActivityThread.java:5139)
+E/AndroidRuntime(17484):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(17484):        at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime(17484):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:796)
+E/AndroidRuntime(17484):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:612)
+E/AndroidRuntime(17484):        at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+E/AndroidRuntime(17484):        at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(17484): Caused by: java.lang.NoSuchMethodException: onClick [class android.view.View]
+E/AndroidRuntime(17484):        at java.lang.Class.getConstructorOrMethod(Class.java:472)
+E/AndroidRuntime(17484):        at java.lang.Class.getMethod(Class.java:857)
+E/AndroidRuntime(17484):        at android.view.View$1.onClick(View.java:3810)

@@ -1,0 +1,46 @@
+
+I thought we already fixed this issue at one point in the past, but looks like we somehow re-introduced this bug. So this is a typical case were we _must_ have a unit test.
+
+```
+ 32096               Keychain  D  insert(uri=content://org.sufficientlysecure.keychain.provider/key_rings/8181922323901784706/user_ids, values=is_revoked=false attribute_data=null is_primary=false master_key_id=8181922323901784706 rank=1 type=null user_id=Dominik Schürmann <d.schuermann@tu-bs.de>)
+ 32096              SQLiteLog  E  (787) abort at 24 in [INSERT INTO user_packets(is_revoked,attribute_data,is_primary,master_key_id,rank,type,user_id) VALUES (?,?,?,?,?,?,?)]: FOREIGN KEY constraint failed
+ 32096               Keychain  D  Constraint exception on insert! Entry already existing?
+ 32096               Keychain  D  android.database.sqlite.SQLiteConstraintException: FOREIGN KEY constraint failed (code 787)
+ 32096               Keychain  D  at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 32096               Keychain  D  at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:784)
+ 32096               Keychain  D  at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 32096               Keychain  D  at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 32096               Keychain  D  at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1471)
+ 32096               Keychain  D  at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1367)
+ 32096               Keychain  D  at org.sufficientlysecure.keychain.provider.KeychainProvider.insert(KeychainProvider.java:713)
+ 32096               Keychain  D  at android.content.ContentProviderOperation.apply(ContentProviderOperation.java:245)
+ 32096               Keychain  D  at android.content.ContentProvider.applyBatch(ContentProvider.java:1756)
+ 32096               Keychain  D  at android.content.ContentProvider$Transport.applyBatch(ContentProvider.java:297)
+ 32096               Keychain  D  at android.content.ContentProviderClient.applyBatch(ContentProviderClient.java:377)
+ 32096               Keychain  D  at android.content.ContentResolver.applyBatch(ContentResolver.java:1244)
+ 32096               Keychain  D  at org.sufficientlysecure.keychain.provider.ProviderHelper.saveCanonicalizedPublicKeyRing(ProviderHelper.java:701)
+ 32096               Keychain  D  at org.sufficientlysecure.keychain.provider.ProviderHelper.saveSecretKeyRing(ProviderHelper.java:1042)
+ 32096               Keychain  D  at org.sufficientlysecure.keychain.operations.ImportExportOperation.importKeyRings(ImportExportOperation.java:296)
+ 32096               Keychain  D  at org.sufficientlysecure.keychain.operations.ImportExportOperation.importKeyRings(ImportExportOperation.java:136)
+ 32096               Keychain  D  at org.sufficientlysecure.keychain.service.CloudImportService$2.run(CloudImportService.java:277)
+ 32096               Keychain  D  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+ 32096               Keychain  D  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+ 32096               Keychain  D  at java.lang.Thread.run(Thread.java:818)
+ 32096               Keychain  V  log: LogEntryParcel{mLevel=ERROR, mType=MSG_IP_ERROR_OP_EXC, mParameters=null, mIndent=1}
+ 32096               Keychain  V  log: LogEntryParcel{mLevel=DEBUG, mType=MSG_IP_DELETE_OLD_OK, mParameters=null, mIndent=1}
+ 32096               Keychain  V  log: LogEntryParcel{mLevel=DEBUG, mType=MSG_IP_APPLY_BATCH, mParameters=null, mIndent=1}
+ 32096               Keychain  E  OperationApplicationException during import
+ 32096               Keychain  E  android.content.OperationApplicationException: insert failed
+ 32096               Keychain  E  at android.content.ContentProviderOperation.apply(ContentProviderOperation.java:247)
+ 32096               Keychain  E  at android.content.ContentProvider.applyBatch(ContentProvider.java:1756)
+ 32096               Keychain  E  at android.content.ContentProvider$Transport.applyBatch(ContentProvider.java:297)
+ 32096               Keychain  E  at android.content.ContentProviderClient.applyBatch(ContentProviderClient.java:377)
+ 32096               Keychain  E  at android.content.ContentResolver.applyBatch(ContentResolver.java:1244)
+ 32096               Keychain  E  at org.sufficientlysecure.keychain.provider.ProviderHelper.saveCanonicalizedPublicKeyRing(ProviderHelper.java:701)
+ 32096               Keychain  E  at org.sufficientlysecure.keychain.provider.ProviderHelper.saveSecretKeyRing(ProviderHelper.java:1042)
+ 32096               Keychain  E  at org.sufficientlysecure.keychain.operations.ImportExportOperation.importKeyRings(ImportExportOperation.java:296)
+ 32096               Keychain  E  at org.sufficientlysecure.keychain.operations.ImportExportOperation.importKeyRings(ImportExportOperation.java:136)
+ 32096               Keychain  E  at org.sufficientlysecure.keychain.service.CloudImportService$2.run(CloudImportService.java:277)
+ 32096               Keychain  E  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+ 32096               Keychain  E  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+ 32096               Keychain  E  at java.lang.Thread.run(Thread.java:818)

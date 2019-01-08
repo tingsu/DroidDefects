@@ -1,0 +1,9 @@
+//this is an auto-generated bug report
+//package name: org.adblockplus.android
+//version: 1.1.1
+//appro_time: 10
+ java.lang.UnsatisfiedLinkError: Couldn't load jsEngine from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/org.adblockplus.android-1.apk"],nativeLibraryDirectories=[/data/app-lib/org.adblockplus.android-1, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at org.adblockplus.android.JSEngine.<clinit>(JSEngine.java:103)
+ 	at org.adblockplus.android.AdblockPlus$JSThread.run(AdblockPlus.java:943)

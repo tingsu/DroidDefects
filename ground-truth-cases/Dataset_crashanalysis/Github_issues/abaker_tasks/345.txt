@@ -1,0 +1,43 @@
+12-29 16:55:29.870 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723): com.todoroo.astrid.gtasks.api.GoogleTasksException: Unable to authenticate with Google Tasks. Please check your account password or try again later.
+12-29 16:55:29.870 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.auth.GtasksTokenValidator.validateAuthToken(GtasksTokenValidator.java:77) ~[na:0.0]
+12-29 16:55:29.870 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider.getValidatedAuthToken(GtasksSyncV2Provider.java:218) ~[na:0.0]
+12-29 16:55:29.870 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider.access$100(GtasksSyncV2Provider.java:55) ~[na:0.0]
+12-29 16:55:29.870 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider$1.run(GtasksSyncV2Provider.java:131) ~[na:0.0]
+12-29 16:55:29.870 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at org.tasks.sync.SyncExecutor$1.run(SyncExecutor.java:31) ~[na:0.0]
+12-29 16:55:29.870 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113) ~[na:0.0]
+12-29 16:55:29.870 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588) ~[na:0.0]
+12-29 16:55:29.870 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at java.lang.Thread.run(Thread.java:818) ~[na:0.0]
+12-29 16:55:31.845 W/art     (21723): Long monitor contention event with owner method=java.lang.String com.todoroo.astrid.gtasks.auth.GtasksTokenValidator.validateAuthToken(android.content.Context, java.lang.String) from GtasksTokenValidator.java:50 waiters=0 for 1.491s
+12-29 16:55:31.855 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723): [pool-2-thread-2] ERROR - Unable to authenticate with Google Tasks. Please check your account password or try again later.
+12-29 16:55:31.855 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723): com.todoroo.astrid.gtasks.api.GoogleTasksException: Unable to authenticate with Google Tasks. Please check your account password or try again later.
+12-29 16:55:31.855 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.auth.GtasksTokenValidator.validateAuthToken(GtasksTokenValidator.java:77) ~[na:0.0]
+12-29 16:55:31.855 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider.getValidatedAuthToken(GtasksSyncV2Provider.java:218) ~[na:0.0]
+12-29 16:55:31.855 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider.access$100(GtasksSyncV2Provider.java:55) ~[na:0.0]
+12-29 16:55:31.855 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider$1.run(GtasksSyncV2Provider.java:131) ~[na:0.0]
+12-29 16:55:31.855 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at org.tasks.sync.SyncExecutor$1.run(SyncExecutor.java:31) ~[na:0.0]
+12-29 16:55:31.855 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113) ~[na:0.0]
+12-29 16:55:31.855 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588) ~[na:0.0]
+12-29 16:55:31.855 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at java.lang.Thread.run(Thread.java:818) ~[na:0.0]
+12-29 16:55:33.950 W/art     (21723): Long monitor contention event with owner method=java.lang.String com.todoroo.astrid.gtasks.auth.GtasksTokenValidator.validateAuthToken(android.content.Context, java.lang.String) from GtasksTokenValidator.java:50 waiters=0 for 1.939s
+12-29 16:55:33.955 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723): [pool-2-thread-1] ERROR - gtasks-sync=io: Unable to authenticate with Google Tasks. Please check your account password or try again later.
+12-29 16:55:33.955 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723): com.todoroo.astrid.gtasks.api.GoogleTasksException: Unable to authenticate with Google Tasks. Please check your account password or try again later.
+12-29 16:55:33.955 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.auth.GtasksTokenValidator.validateAuthToken(GtasksTokenValidator.java:77) ~[na:0.0]
+12-29 16:55:33.955 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.api.GtasksInvoker.handleException(GtasksInvoker.java:70) ~[na:0.0]
+12-29 16:55:33.955 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.api.GtasksInvoker.execute(GtasksInvoker.java:159) ~[na:0.0]
+12-29 16:55:33.955 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.api.GtasksInvoker.allGtaskLists(GtasksInvoker.java:102) ~[na:0.0]
+12-29 16:55:33.955 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider$1.run(GtasksSyncV2Provider.java:135) ~[na:0.0]
+12-29 16:55:33.955 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at org.tasks.sync.SyncExecutor$1.run(SyncExecutor.java:31) ~[na:0.0]
+12-29 16:55:33.955 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113) ~[na:0.0]
+12-29 16:55:33.955 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588) ~[na:0.0]
+12-29 16:55:33.955 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at java.lang.Thread.run(Thread.java:818) ~[na:0.0]
+12-29 16:55:35.960 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723): [pool-2-thread-2] ERROR - gtasks-sync=io: Unable to authenticate with Google Tasks. Please check your account password or try again later.
+12-29 16:55:35.960 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723): com.todoroo.astrid.gtasks.api.GoogleTasksException: Unable to authenticate with Google Tasks. Please check your account password or try again later.
+12-29 16:55:35.960 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.auth.GtasksTokenValidator.validateAuthToken(GtasksTokenValidator.java:77) ~[na:0.0]
+12-29 16:55:35.960 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.api.GtasksInvoker.handleException(GtasksInvoker.java:70) ~[na:0.0]
+12-29 16:55:35.960 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.api.GtasksInvoker.execute(GtasksInvoker.java:159) ~[na:0.0]
+12-29 16:55:35.960 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.api.GtasksInvoker.allGtaskLists(GtasksInvoker.java:102) ~[na:0.0]
+12-29 16:55:35.960 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider$1.run(GtasksSyncV2Provider.java:135) ~[na:0.0]
+12-29 16:55:35.960 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at org.tasks.sync.SyncExecutor$1.run(SyncExecutor.java:31) ~[na:0.0]
+12-29 16:55:35.960 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113) ~[na:0.0]
+12-29 16:55:35.960 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588) ~[na:0.0]
+12-29 16:55:35.960 E/com.todoroo.astrid.gtasks.sync.GtasksSyncV2Provider(21723):    at java.lang.Thread.run(Thread.java:818) ~[na:0.0]

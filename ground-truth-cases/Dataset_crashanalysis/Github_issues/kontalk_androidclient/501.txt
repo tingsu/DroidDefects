@@ -1,0 +1,60 @@
+07-12 11:56:47.029 W/NumberValidator(846): org.jivesoftware.smack.SmackException$ConnectionException: The following addresses failed: 'kontalk.halifax.rwth-aachen.de:5222' failed because java.net.ConnectException: kontalk.halifax.rwth-aachen.de/137.226.111.112:5222 - Connection refused
+07-12 11:56:47.029 W/NumberValidator(846):  at org.kontalk.service.XMPPConnectionHelper.connectOnce(XMPPConnectionHelper.java:192)
+07-12 11:56:47.029 W/NumberValidator(846):  at org.kontalk.service.XMPPConnectionHelper.connectOnce(XMPPConnectionHelper.java:141)
+07-12 11:56:47.029 W/NumberValidator(846):  at org.kontalk.client.NumberValidator.initConnection(NumberValidator.java:478)
+07-12 11:56:47.029 W/NumberValidator(846):  at org.kontalk.client.NumberValidator.run(NumberValidator.java:201)
+07-12 11:56:47.029 D/MessageCenterService(846): using server beta.kontalk.net
+07-12 11:56:52.440 D/MessageCenterService(846): using server beta.kontalk.net
+07-12 11:56:54.389 I/ActivityManager(300): Starting: Intent { cmp=org.kontalk/.ui.CodeValidation (has extras) } from pid 846
+07-12 11:56:54.759 I/ActivityManager(300): Displayed org.kontalk/.ui.CodeValidation: +326ms
+07-12 11:57:00.449 I/ActivityManager(300): Starting: Intent { cmp=org.kontalk/.ui.CodeValidation (has extras) } from pid 846
+07-12 11:57:00.789 I/ActivityManager(300): Displayed org.kontalk/.ui.CodeValidation: +281ms
+07-12 11:57:15.359 D/MessageCenterService(846): using server beta.kontalk.net
+07-12 12:01:40.679 I/ActivityManager(300): Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=org.kontalk/.ui.ConversationList } from pid 717
+07-12 12:01:40.919 I/ActivityManager(300): Starting: Intent { cmp=org.kontalk/.ui.NumberValidation (has extras) } from pid 846
+07-12 12:01:40.929 W/ActivityManager(300): Unable to start service Intent { act=org.kontalk.action.RELEASE cmp=org.kontalk/.service.msgcenter.MessageCenterService }: not found
+07-12 12:01:41.269 I/ActivityManager(300): Displayed org.kontalk/.ui.NumberValidation: +339ms (total +571ms)
+07-12 12:01:41.889 I/ActivityManager(300): Starting: Intent { cmp=org.kontalk/.ui.BootstrapPreferences } from pid 846
+07-12 12:01:41.939 I/dalvikvm(846): Could not find method org.kontalk.ui.BootstrapPreferences.getActionBar, referenced from method org.kontalk.ui.BootstrapPreferences.setupActivity
+07-12 12:01:41.939 W/dalvikvm(846): VFY: unable to resolve virtual method 15553: Lorg/kontalk/ui/BootstrapPreferences;.getActionBar ()Landroid/app/ActionBar;
+07-12 12:01:41.939 D/dalvikvm(846): VFY: dead code 0x000a-0010 in Lorg/kontalk/ui/BootstrapPreferences;.setupActivity ()V
+07-12 12:01:41.999 I/dalvikvm(846): Could not find method org.kontalk.ui.PreferencesActivity.getActionBar, referenced from method org.kontalk.ui.PreferencesActivity.setupActivity
+07-12 12:01:41.999 W/dalvikvm(846): VFY: unable to resolve virtual method 16360: Lorg/kontalk/ui/PreferencesActivity;.getActionBar ()Landroid/app/ActionBar;
+07-12 12:01:41.999 D/dalvikvm(846): VFY: dead code 0x000a-0010 in Lorg/kontalk/ui/PreferencesActivity;.setupActivity ()V
+07-12 12:01:42.329 I/ActivityManager(300): Displayed org.kontalk/.ui.BootstrapPreferences: +417ms
+07-12 12:01:45.049 V/KeyPair (846): key pair generated: org.kontalk.crypto.PersonalKey@40ad68d8
+07-12 12:02:28.979 D/MessageCenterService(846): using server kontalk.halifax.rwth-aachen.de|kontalk.halifax.rwth-aachen.de:5222
+07-12 12:02:29.189 W/NumberValidator(846): org.jivesoftware.smack.SmackException$ConnectionException: The following addresses failed: 'kontalk.halifax.rwth-aachen.de:5222' failed because java.net.ConnectException: kontalk.halifax.rwth-aachen.de/137.226.111.112:5222 - Connection refused
+07-12 12:02:29.189 W/NumberValidator(846):  at org.kontalk.service.XMPPConnectionHelper.connectOnce(XMPPConnectionHelper.java:192)
+07-12 12:02:29.189 W/NumberValidator(846):  at org.kontalk.service.XMPPConnectionHelper.connectOnce(XMPPConnectionHelper.java:141)
+07-12 12:02:29.189 W/NumberValidator(846):  at org.kontalk.client.NumberValidator.initConnection(NumberValidator.java:478)
+07-12 12:02:29.189 W/NumberValidator(846):  at org.kontalk.client.NumberValidator.run(NumberValidator.java:201)
+07-12 12:02:29.189 D/MessageCenterService(846): using server beta.kontalk.net
+07-12 12:02:31.629 D/MessageCenterService(846): using server kontalk.halifax.rwth-aachen.de|kontalk.halifax.rwth-aachen.de:5222
+07-12 12:02:31.859 W/NumberValidator(846): org.jivesoftware.smack.SmackException$ConnectionException: The following addresses failed: 'kontalk.halifax.rwth-aachen.de:5222' failed because java.net.ConnectException: kontalk.halifax.rwth-aachen.de/137.226.111.112:5222 - Connection refused
+07-12 12:02:31.859 W/NumberValidator(846):  at org.kontalk.service.XMPPConnectionHelper.connectOnce(XMPPConnectionHelper.java:192)
+07-12 12:02:31.859 W/NumberValidator(846):  at org.kontalk.service.XMPPConnectionHelper.connectOnce(XMPPConnectionHelper.java:141)
+07-12 12:02:31.859 W/NumberValidator(846):  at org.kontalk.client.NumberValidator.initConnection(NumberValidator.java:478)
+07-12 12:02:31.859 W/NumberValidator(846):  at org.kontalk.client.NumberValidator.run(NumberValidator.java:201)
+07-12 12:02:31.859 D/MessageCenterService(846): using server beta.kontalk.net
+07-12 12:02:32.989 I/ActivityManager(300): Starting: Intent { cmp=org.kontalk/.ui.CodeValidation (has extras) } from pid 846
+07-12 12:02:33.379 I/ActivityManager(300): Displayed org.kontalk/.ui.CodeValidation: +300ms
+07-12 12:02:55.129 D/MessageCenterService(846): using server beta.kontalk.net
+07-12 12:12:47.559 I/ActivityManager(300): Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=org.kontalk/.ui.ConversationList } from pid 717
+07-12 12:12:47.829 I/ActivityManager(300): Starting: Intent { cmp=org.kontalk/.ui.NumberValidation (has extras) } from pid 846
+07-12 12:12:47.839 W/ActivityManager(300): Unable to start service Intent { act=org.kontalk.action.RELEASE cmp=org.kontalk/.service.msgcenter.MessageCenterService }: not found
+07-12 12:12:48.119 I/ActivityManager(300): Displayed org.kontalk/.ui.NumberValidation: +278ms (total +523ms)
+07-12 12:12:54.309 V/KeyPair (846): key pair generated: org.kontalk.crypto.PersonalKey@40e62158
+07-12 12:12:55.469 D/MessageCenterService(846): using server kontalk.halifax.rwth-aachen.de|kontalk.halifax.rwth-aachen.de:5222
+07-12 12:12:56.059 W/NumberValidator(846): org.jivesoftware.smack.SmackException$ConnectionException: The following addresses failed: 'kontalk.halifax.rwth-aachen.de:5222' failed because java.net.ConnectException: kontalk.halifax.rwth-aachen.de/137.226.111.112:5222 - Connection refused
+07-12 12:12:56.059 W/NumberValidator(846):  at org.kontalk.service.XMPPConnectionHelper.connectOnce(XMPPConnectionHelper.java:192)
+07-12 12:12:56.059 W/NumberValidator(846):  at org.kontalk.service.XMPPConnectionHelper.connectOnce(XMPPConnectionHelper.java:141)
+07-12 12:12:56.059 W/NumberValidator(846):  at org.kontalk.client.NumberValidator.initConnection(NumberValidator.java:478)
+07-12 12:12:56.059 W/NumberValidator(846):  at org.kontalk.client.NumberValidator.run(NumberValidator.java:201)
+07-12 12:12:56.059 D/MessageCenterService(846): using server beta.kontalk.net
+07-12 12:12:58.279 D/MessageCenterService(846): using server kontalk.halifax.rwth-aachen.de|kontalk.halifax.rwth-aachen.de:5222
+07-12 12:12:58.389 W/NumberValidator(846): org.jivesoftware.smack.SmackException$ConnectionException: The following addresses failed: 'kontalk.halifax.rwth-aachen.de:5222' failed because java.net.ConnectException: kontalk.halifax.rwth-aachen.de/137.226.111.112:5222 - Connection refused
+07-12 12:12:58.389 W/NumberValidator(846):  at org.kontalk.service.XMPPConnectionHelper.connectOnce(XMPPConnectionHelper.java:192)
+07-12 12:12:58.389 W/NumberValidator(846):  at org.kontalk.service.XMPPConnectionHelper.connectOnce(XMPPConnectionHelper.java:141)
+07-12 12:12:58.389 W/NumberValidator(846):  at org.kontalk.client.NumberValidator.initConnection(NumberValidator.java:478)
+07-12 12:12:58.389 W/NumberValidator(846):  at org.kontalk.client.NumberValidator.run(NumberValidator.java:201)

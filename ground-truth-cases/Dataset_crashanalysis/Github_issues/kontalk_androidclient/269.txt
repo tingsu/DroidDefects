@@ -1,0 +1,11 @@
+java.lang.OutOfMemoryError
+    at android.graphics.Bitmap.nativeCreate(Native Method)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:697)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:674)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:596)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:522)
+    at org.kontalk.util.ThumbnailUtils.transform(ThumbnailUtils.java:160)
+    at org.kontalk.util.ThumbnailUtils.extractThumbnail(ThumbnailUtils.java:73)
+    at org.kontalk.util.ThumbnailUtils.extractThumbnail(ThumbnailUtils.java:48)
+    at org.kontalk.util.Preferences.cacheConversationBackground(Preferences.java:276)
+    at org.kontalk.ui.PreferencesActivity.onActivityResult(PreferencesActivity.java:507)

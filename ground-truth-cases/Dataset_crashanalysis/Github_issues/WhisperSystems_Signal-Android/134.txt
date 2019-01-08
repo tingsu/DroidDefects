@@ -1,0 +1,63 @@
+W/SmsMigrator(11031): org.thoughtcrime.securesms.recipients.RecipientFormattingException: Recipient: MobilePass is badly formatted.
+W/SmsMigrator(11031):   at org.thoughtcrime.securesms.recipients.RecipientFactory.parseRecipient(RecipientFactory.java:108)
+W/SmsMigrator(11031):   at org.thoughtcrime.securesms.recipients.RecipientFactory.getRecipientsFromString(RecipientFactory.java:61)
+W/SmsMigrator(11031):   at org.thoughtcrime.securesms.database.SmsMigrator.getOurRecipients(SmsMigrator.java:132)
+W/SmsMigrator(11031):   at org.thoughtcrime.securesms.database.SmsMigrator.migrateDatabase(SmsMigrator.java:199)
+W/SmsMigrator(11031):   at org.thoughtcrime.securesms.service.ApplicationMigrationService$ImportRunnable.run(ApplicationMigrationService.java:158)
+W/SmsMigrator(11031):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+W/SmsMigrator(11031):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+W/SmsMigrator(11031):   at java.lang.Thread.run(Thread.java:856)
+W/RecipientProvider(11031): Cache miss [ASYNC]!
+D/dalvikvm(11031): GC_CONCURRENT freed 439K, 18% free 3854K/4684K, paused 1ms+8ms, total 41ms
+W/MmsSmsDatabase(11031): Executing query: SELECT _id, body, type, address, subject, normalized_date_sent AS date_sent, normalized_date_received AS date_received, m_type, msg_box, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS normalized_date_sent, date \* 1 AS normalized_date_received, _id, body, read, thread_id, type, address, subject, date, NULL AS m_type, NULL AS msg_box, status, 'sms' AS transport_type FROM sms WHERE (thread_id = 6) UNION ALL SELECT DISTINCT date \* 1000 AS normalized_date_sent, date_received \* 1000 AS normalized_date_received, _id, NULL AS body, read, thread_id, NULL AS type, NULL AS address, NULL AS subject, date, m_type, msg_box, NULL AS status, 'mms' AS transport_type FROM mms WHERE (thread_id = 6) ORDER BY normalized_date_received DESC) LIMIT 1
+W/RecipientProvider(11031): Cache miss [ASYNC]!
+D/dalvikvm(11031): GC_CONCURRENT freed 418K, 19% free 3823K/4684K, paused 2ms+1ms, total 40ms
+W/MmsSmsDatabase(11031): Executing query: SELECT _id, body, type, address, subject, normalized_date_sent AS date_sent, normalized_date_received AS date_received, m_type, msg_box, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS normalized_date_sent, date \* 1 AS normalized_date_received, _id, body, read, thread_id, type, address, subject, date, NULL AS m_type, NULL AS msg_box, status, 'sms' AS transport_type FROM sms WHERE (thread_id = 7) UNION ALL SELECT DISTINCT date \* 1000 AS normalized_date_sent, date_received \* 1000 AS normalized_date_received, _id, NULL AS body, read, thread_id, NULL AS type, NULL AS address, NULL AS subject, date, m_type, msg_box, NULL AS status, 'mms' AS transport_type FROM mms WHERE (thread_id = 7) ORDER BY normalized_date_received DESC) LIMIT 1
+W/RecipientProvider(11031): Cache miss [ASYNC]!
+W/RecipientProvider(11031): Cache miss [ASYNC]!
+D/dalvikvm(10203): GC_CONCURRENT freed 706K, 25% free 3108K/4100K, paused 4ms+5ms, total 46ms
+W/MmsSmsDatabase(11031): Executing query: SELECT _id, body, type, address, subject, normalized_date_sent AS date_sent, normalized_date_received AS date_received, m_type, msg_box, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS normalized_date_sent, date \* 1 AS normalized_date_received, _id, body, read, thread_id, type, address, subject, date, NULL AS m_type, NULL AS msg_box, status, 'sms' AS transport_type FROM sms WHERE (thread_id = 8) UNION ALL SELECT DISTINCT date \* 1000 AS normalized_date_sent, date_received \* 1000 AS normalized_date_received, _id, NULL AS body, read, thread_id, NULL AS type, NULL AS address, NULL AS subject, date, m_type, msg_box, NULL AS status, 'mms' AS transport_type FROM mms WHERE (thread_id = 8) ORDER BY normalized_date_received DESC) LIMIT 1
+W/RecipientProvider(11031): Cache miss [ASYNC]!
+D/dalvikvm(11031): GC_CONCURRENT freed 386K, 18% free 3871K/4684K, paused 3ms+5ms, total 28ms
+W/MmsSmsDatabase(11031): Executing query: SELECT _id, body, type, address, subject, normalized_date_sent AS date_sent, normalized_date_received AS date_received, m_type, msg_box, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS normalized_date_sent, date \* 1 AS normalized_date_received, _id, body, read, thread_id, type, address, subject, date, NULL AS m_type, NULL AS msg_box, status, 'sms' AS transport_type FROM sms WHERE (thread_id = 9) UNION ALL SELECT DISTINCT date \* 1000 AS normalized_date_sent, date_received \* 1000 AS normalized_date_received, _id, NULL AS body, read, thread_id, NULL AS type, NULL AS address, NULL AS subject, date, m_type, msg_box, NULL AS status, 'mms' AS transport_type FROM mms WHERE (thread_id = 9) ORDER BY normalized_date_received DESC) LIMIT 1
+W/RecipientProvider(11031): Cache miss [ASYNC]!
+W/MmsSmsDatabase(11031): Executing query: SELECT _id, body, type, address, subject, normalized_date_sent AS date_sent, normalized_date_received AS date_received, m_type, msg_box, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS normalized_date_sent, date \* 1 AS normalized_date_received, _id, body, read, thread_id, type, address, subject, date, NULL AS m_type, NULL AS msg_box, status, 'sms' AS transport_type FROM sms WHERE (thread_id = 10) UNION ALL SELECT DISTINCT date \* 1000 AS normalized_date_sent, date_received \* 1000 AS normalized_date_received, _id, NULL AS body, read, thread_id, NULL AS type, NULL AS address, NULL AS subject, date, m_type, msg_box, NULL AS status, 'mms' AS transport_type FROM mms WHERE (thread_id = 10) ORDER BY normalized_date_received DESC) LIMIT 1
+W/RecipientProvider(11031): Cache miss [ASYNC]!
+D/dalvikvm( 2758): GC_CONCURRENT freed 344K, 19% free 2963K/3652K, paused 3ms+4ms, total 35ms
+W/MmsSmsDatabase(11031): Executing query: SELECT _id, body, type, address, subject, normalized_date_sent AS date_sent, normalized_date_received AS date_received, m_type, msg_box, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS normalized_date_sent, date \* 1 AS normalized_date_received, _id, body, read, thread_id, type, address, subject, date, NULL AS m_type, NULL AS msg_box, status, 'sms' AS transport_type FROM sms WHERE (thread_id = 11) UNION ALL SELECT DISTINCT date \* 1000 AS normalized_date_sent, date_received \* 1000 AS normalized_date_received, _id, NULL AS body, read, thread_id, NULL AS type, NULL AS address, NULL AS subject, date, m_type, msg_box, NULL AS status, 'mms' AS transport_type FROM mms WHERE (thread_id = 11) ORDER BY normalized_date_received DESC) LIMIT 1
+W/RecipientProvider(11031): Cache miss [ASYNC]!
+D/dalvikvm(11031): GC_CONCURRENT freed 434K, 18% free 3867K/4684K, paused 2ms+9ms, total 48ms
+W/MmsSmsDatabase(11031): Executing query: SELECT _id, body, type, address, subject, normalized_date_sent AS date_sent, normalized_date_received AS date_received, m_type, msg_box, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS normalized_date_sent, date \* 1 AS normalized_date_received, _id, body, read, thread_id, type, address, subject, date, NULL AS m_type, NULL AS msg_box, status, 'sms' AS transport_type FROM sms WHERE (thread_id = 12) UNION ALL SELECT DISTINCT date \* 1000 AS normalized_date_sent, date_received \* 1000 AS normalized_date_received, _id, NULL AS body, read, thread_id, NULL AS type, NULL AS address, NULL AS subject, date, m_type, msg_box, NULL AS status, 'mms' AS transport_type FROM mms WHERE (thread_id = 12) ORDER BY normalized_date_received DESC) LIMIT 1
+D/dalvikvm(11031): GC_CONCURRENT freed 416K, 18% free 3841K/4684K, paused 2ms+3ms, total 22ms
+W/RecipientProvider(11031): Cache miss [ASYNC]!
+W/MmsSmsDatabase(11031): Executing query: SELECT _id, body, type, address, subject, normalized_date_sent AS date_sent, normalized_date_received AS date_received, m_type, msg_box, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS normalized_date_sent, date \* 1 AS normalized_date_received, _id, body, read, thread_id, type, address, subject, date, NULL AS m_type, NULL AS msg_box, status, 'sms' AS transport_type FROM sms WHERE (thread_id = 13) UNION ALL SELECT DISTINCT date \* 1000 AS normalized_date_sent, date_received \* 1000 AS normalized_date_received, _id, NULL AS body, read, thread_id, NULL AS type, NULL AS address, NULL AS subject, date, m_type, msg_box, NULL AS status, 'mms' AS transport_type FROM mms WHERE (thread_id = 13) ORDER BY normalized_date_received DESC) LIMIT 1
+W/RecipientProvider(11031): Cache miss [ASYNC]!
+W/MmsSmsDatabase(11031): Executing query: SELECT _id, body, type, address, subject, normalized_date_sent AS date_sent, normalized_date_received AS date_received, m_type, msg_box, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS normalized_date_sent, date \* 1 AS normalized_date_received, _id, body, read, thread_id, type, address, subject, date, NULL AS m_type, NULL AS msg_box, status, 'sms' AS transport_type FROM sms WHERE (thread_id = 14) UNION ALL SELECT DISTINCT date \* 1000 AS normalized_date_sent, date_received \* 1000 AS normalized_date_received, _id, NULL AS body, read, thread_id, NULL AS type, NULL AS address, NULL AS subject, date, m_type, msg_box, NULL AS status, 'mms' AS transport_type FROM mms WHERE (thread_id = 14) ORDER BY normalized_date_received DESC) LIMIT 1
+W/RecipientProvider(11031): Cache miss [ASYNC]!
+D/dalvikvm(11031): GC_CONCURRENT freed 388K, 18% free 3865K/4684K, paused 3ms+4ms, total 36ms
+D/lights  ( 2199): set_light_button on=1
+W/MmsSmsDatabase(11031): Executing query: SELECT _id, body, type, address, subject, normalized_date_sent AS date_sent, normalized_date_received AS date_received, m_type, msg_box, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS normalized_date_sent, date \* 1 AS normalized_date_received, _id, body, read, thread_id, type, address, subject, date, NULL AS m_type, NULL AS msg_box, status, 'sms' AS transport_type FROM sms WHERE (thread_id = 15) UNION ALL SELECT DISTINCT date \* 1000 AS normalized_date_sent, date_received \* 1000 AS normalized_date_received, _id, NULL AS body, read, thread_id, NULL AS type, NULL AS address, NULL AS subject, date, m_type, msg_box, NULL AS status, 'mms' AS transport_type FROM mms WHERE (thread_id = 15) ORDER BY normalized_date_received DESC) LIMIT 1
+E/DatabaseUtils( 2758): Writing exception to parcel
+E/DatabaseUtils( 2758): java.lang.IllegalStateException: Unrecognized URI:content://mms-sms/canonical-address/-576460754450911233
+E/DatabaseUtils( 2758):     at com.android.providers.telephony.MmsSmsProvider.query(MmsSmsProvider.java:465)
+E/DatabaseUtils( 2758):     at android.content.ContentProvider.query(ContentProvider.java:652)
+E/DatabaseUtils( 2758):     at android.content.ContentProvider$Transport.query(ContentProvider.java:189)
+E/DatabaseUtils( 2758):     at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:113)
+E/DatabaseUtils( 2758):     at android.os.Binder.execTransact(Binder.java:351)
+E/DatabaseUtils( 2758):     at dalvik.system.NativeStart.run(Native Method)
+W/dalvikvm(11031): threadid=14: thread exiting with uncaught exception (group=0x40fb4930)
+E/AndroidRuntime(11031): FATAL EXCEPTION: pool-1-thread-1
+E/AndroidRuntime(11031): java.lang.IllegalStateException: Unrecognized URI:content://mms-sms/canonical-address/-576460754450911233
+E/AndroidRuntime(11031):    at android.os.Parcel.readException(Parcel.java:1433)
+E/AndroidRuntime(11031):    at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:185)
+E/AndroidRuntime(11031):    at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:137)
+E/AndroidRuntime(11031):    at android.content.ContentProviderProxy.query(ContentProviderNative.java:366)
+E/AndroidRuntime(11031):    at android.content.ContentResolver.query(ContentResolver.java:372)
+E/AndroidRuntime(11031):    at android.content.ContentResolver.query(ContentResolver.java:315)
+E/AndroidRuntime(11031):    at org.thoughtcrime.securesms.database.SmsMigrator.getTheirCanonicalAddress(SmsMigrator.java:99)
+E/AndroidRuntime(11031):    at org.thoughtcrime.securesms.database.SmsMigrator.getOurRecipients(SmsMigrator.java:119)
+E/AndroidRuntime(11031):    at org.thoughtcrime.securesms.database.SmsMigrator.migrateDatabase(SmsMigrator.java:199)
+E/AndroidRuntime(11031):    at org.thoughtcrime.securesms.service.ApplicationMigrationService$ImportRunnable.run(ApplicationMigrationService.java:158)
+E/AndroidRuntime(11031):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+E/AndroidRuntime(11031):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+E/AndroidRuntime(11031):    at java.lang.Thread.run(Thread.java:856)

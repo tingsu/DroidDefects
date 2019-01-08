@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: org.linphone
+//version: 2.5.1-fdroid
+//appro_time: 95
+ java.lang.NullPointerException
+ 	at org.linphone.ContactsManager.getContactsId(ContactsManager.java:274)
+ 	at org.linphone.ContactsFragment.searchContacts(ContactsFragment.java:184)
+ 	at org.linphone.ContactsFragment.access$100(ContactsFragment.java:54)
+ 	at org.linphone.ContactsFragment$1.afterTextChanged(ContactsFragment.java:128)
+ 	at android.widget.TextView.sendAfterTextChanged(TextView.java:7334)
+ 	at android.widget.TextView$ChangeWatcher.afterTextChanged(TextView.java:9087)
+ 	at android.text.SpannableStringBuilder.sendAfterTextChanged(SpannableStringBuilder.java:970)
+ 	at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:497)
+ 	at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:435)
+ 	at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:30)
+ 	at android.view.inputmethod.BaseInputConnection.replaceText(BaseInputConnection.java:673)
+ 	at android.view.inputmethod.BaseInputConnection.setComposingText(BaseInputConnection.java:436)
+ 	at com.android.internal.view.IInputConnectionWrapper.executeMessage(IInputConnectionWrapper.java:333)
+ 	at com.android.internal.view.IInputConnectionWrapper$MyHandler.handleMessage(IInputConnectionWrapper.java:77)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,29 @@
+`java.lang.RuntimeException: Unable to start activity ComponentInfo{com.horaapps.leafpic/com.horaapps.leafpic.ExcludedAlbumsActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.ArrayList com.horaapps.leafpic.Base.HandlingAlbums.getExcludedFolders()' on a null object reference
+                                                                          at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2450)
+                                                                          at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2510)
+                                                                          at android.app.ActivityThread.-wrap11(ActivityThread.java)
+                                                                          at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1363)
+                                                                          at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                          at android.os.Looper.loop(Looper.java:148)
+                                                                          at android.app.ActivityThread.main(ActivityThread.java:5461)
+                                                                          at java.lang.reflect.Method.invoke(Native Method)
+                                                                          at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+                                                                          at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+                                                                       **Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.ArrayList com.horaapps.leafpic.Base.HandlingAlbums.getExcludedFolders()' on a null object reference**
+                                                                          **at com.horaapps.leafpic.ExcludedAlbumsActivity.onCreate(ExcludedAlbumsActivity.java:37)**
+                                                                          at android.app.Activity.performCreate(Activity.java:6251)
+                                                                          at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1108)
+                                                                          at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2403)
+                                                                          at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2510) 
+                                                                          at android.app.ActivityThread.-wrap11(ActivityThread.java) 
+                                                                          at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1363) 
+                                                                          at android.os.Handler.dispatchMessage(Handler.java:102) 
+                                                                          at android.os.Looper.loop(Looper.java:148) 
+                                                                          at android.app.ActivityThread.main(ActivityThread.java:5461) 
+                                                                          at java.lang.reflect.Method.invoke(Native Method) 
+                                                                          at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726) 
+                                                                          at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616) `
+
+I think this happens cause I have no excluded albums so the array is never initialized probably.
+
+Edit: ok so I think it's not as simple as I initially thought. So when I start LeafPic normally as in I click on the app from the app drawer it takes a long time for it to display anything besides the LeafPic loading splash screen that you see at start up, once LeafPic has loaded normally I won't get a crash, **however I set LeafPic as my default image viewer which means that when I click on a picture LeafPic will show this picture when I then go into the settings from this picture I get a crash when clicking on excluded albums.**

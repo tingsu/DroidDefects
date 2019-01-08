@@ -1,0 +1,4 @@
+java.lang.NullPointerException
+ at cgeo.geocaching.cgeoadvsearch.findByCoordsFn(cgeoadvsearch.java:266)
+ at cgeo.geocaching.cgeoadvsearch.access$1900(cgeoadvsearch.java:28)
+ at cgeo.geocaching.cgeoadvsearch$findByCoordsListener.onClick(cgeoadvsearch.java:255)

@@ -1,0 +1,13 @@
+    java.lang.IllegalArgumentException: Bad position (limit 37): 18437
+     at java.nio.Buffer.positionImpl(Buffer.java:351)
+     at java.nio.Buffer.position(Buffer.java:345)
+     at libcore.io.Posix.maybeUpdateBufferPosition(Posix.java:278)
+     at libcore.io.Posix.sendto(Posix.java:206)
+     at libcore.io.BlockGuardOs.sendto(BlockGuardOs.java:270)
+     at libcore.io.IoBridge.sendto(IoBridge.java:523)
+     at java.nio.SocketChannelImpl.writeImpl(SocketChannelImpl.java:403)
+     at java.nio.SocketChannelImpl.write(SocketChannelImpl.java:361)
+     at org.java_websocket.SSLSocketChannel2.write(SSLSocketChannel2.java:195)
+     at org.java_websocket.SocketChannelIOHelper.writeBlocking(SocketChannelIOHelper.java:76)
+     at org.java_websocket.client.WebSocketClient$WebsocketWriteThread.run(WebSocketClient.java:440)
+     at java.lang.Thread.run(Thread.java:818)

@@ -1,0 +1,12 @@
+//this is an auto-generated bug report
+//package name: de.schildbach.wallet
+//version: 5.14
+//appro_time: 156
+ java.lang.NullPointerException
+ 	at de.schildbach.wallet.camera.CameraManager.getTorchEnabled(CameraManager.java:273)
+ 	at de.schildbach.wallet.camera.CameraManager.setTorch(CameraManager.java:268)
+ 	at de.schildbach.wallet.ui.ScanActivity$1.run(ScanActivity.java:205)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

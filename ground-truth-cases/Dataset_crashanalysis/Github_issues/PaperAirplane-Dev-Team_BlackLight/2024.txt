@@ -1,0 +1,17 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{us.shandian.blacklight/info.papdt.blacklight.ui.statuses.UserTimeLineActivity}: java.lang.NullPointerException: Attempt to read from field 'java.lang.String info.papdt.blacklight.model.UserModel.id' on a null object reference
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2379)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2442)
+    at android.app.ActivityThread.access$800(ActivityThread.java:156)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1351)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:211)
+    at android.app.ActivityThread.main(ActivityThread.java:5373)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1020)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:815)
+Caused by: java.lang.NullPointerException: Attempt to read from field 'java.lang.String info.papdt.blacklight.model.UserModel.id' on a null object reference
+    at info.papdt.blacklight.ui.statuses.UserTimeLineActivity.onCreate(UserTimeLineActivity.java:127)
+    at android.app.Activity.performCreate(Activity.java:5990)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2332)

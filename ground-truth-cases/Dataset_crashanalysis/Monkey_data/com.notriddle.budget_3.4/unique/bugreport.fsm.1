@@ -1,0 +1,37 @@
+//this is an auto-generated bug report
+//package name: com.notriddle.budget
+//version: 3.4
+//appro_time: 136
+ java.lang.RuntimeException: Unable to destroy activity {com.notriddle.budget/com.notriddle.budget.EnvelopesActivity}: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+ 	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3499)
+ 	at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:3517)
+ 	at android.app.ActivityThread.access$1200(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1309)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+ 	at android.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1318)
+ 	at android.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1329)
+ 	at android.app.BackStackRecord.commitInternal(BackStackRecord.java:595)
+ 	at android.app.BackStackRecord.commit(BackStackRecord.java:574)
+ 	at android.app.DialogFragment.dismissInternal(DialogFragment.java:292)
+ 	at android.app.DialogFragment.dismiss(DialogFragment.java:258)
+ 	at com.notriddle.budget.OkFragment.dismiss(OkFragment.java:78)
+ 	at com.notriddle.budget.TransferFragment.onLoaderReset(TransferFragment.java:143)
+ 	at android.app.LoaderManagerImpl$LoaderInfo.destroy(LoaderManager.java:364)
+ 	at android.app.LoaderManagerImpl.doDestroy(LoaderManager.java:834)
+ 	at android.app.Fragment.onDestroy(Fragment.java:1383)
+ 	at android.app.Fragment.performDestroy(Fragment.java:1912)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1008)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1057)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1039)
+ 	at android.app.FragmentManagerImpl.dispatchDestroy(FragmentManager.java:1868)
+ 	at android.app.Activity.performDestroy(Activity.java:5301)
+ 	at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1117)
+ 	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3486)

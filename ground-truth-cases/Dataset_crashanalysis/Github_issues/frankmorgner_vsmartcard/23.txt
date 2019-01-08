@@ -1,0 +1,7 @@
+09-28 21:35:37.490    9653-9762/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ android.nfc.TagLostException: Tag was lost.
+09-28 21:35:37.490    9653-9762/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at android.nfc.TransceiveResult.getResponseOrThrow(TransceiveResult.java:48)
+09-28 21:35:37.490    9653-9762/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at android.nfc.tech.BasicTagTechnology.transceive(BasicTagTechnology.java:151)
+09-28 21:35:37.490    9653-9762/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at android.nfc.tech.IsoDep.transceive(IsoDep.java:172)
+09-28 21:35:37.490    9653-9762/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at com.vsmartcard.remotesmartcardreader.app.screaders.NFCReader.transmit(NFCReader.java:110)
+09-28 21:35:37.495    9653-9762/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at com.vsmartcard.remotesmartcardreader.app.VPCDWorker.run(VPCDWorker.java:106)
+09-28 21:35:37.495    9653-9762/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at java.lang.Thread.run(Thread.java:841)

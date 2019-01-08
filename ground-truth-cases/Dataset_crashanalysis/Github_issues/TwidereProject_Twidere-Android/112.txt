@@ -1,0 +1,12 @@
+    java.lang.RuntimeException: An error occured while executing doInBackground()
+            at android.os.AsyncTask$3.done(AsyncTask.java:304)
+            at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+            at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:818)
+     Caused by: java.lang.ClassCastException: java.lang.Object[] cannot be cast to java.lang.Void[]
+            at org.mariotaku.twidere.activity.support.SignInActivity$SignInTask.doInBackground(SignInActivity.java:613)
+            at android.os.AsyncTask$2.call(AsyncTask.java:292)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:237)

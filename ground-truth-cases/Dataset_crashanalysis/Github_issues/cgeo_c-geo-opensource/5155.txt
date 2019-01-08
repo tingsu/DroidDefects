@@ -1,0 +1,57 @@
+08-27 20:16:24.958    3392-3557/cgeo.geocaching W/System.err﹕ java.io.InterruptedIOException
+08-27 20:16:24.958    3392-3557/cgeo.geocaching W/System.err﹕ at com.android.okio.Deadline.throwIfReached(Deadline.java:56)
+08-27 20:16:24.958    3392-3557/cgeo.geocaching W/System.err﹕ at com.android.okio.Okio$2.read(Okio.java:110)
+08-27 20:16:24.959    3392-3557/cgeo.geocaching W/System.err﹕ at com.android.okio.RealBufferedSource.read(RealBufferedSource.java:48)
+08-27 20:16:24.959    3392-3557/cgeo.geocaching W/System.err﹕ at com.android.okhttp.internal.http.HttpConnection$FixedLengthSource.read(HttpConnection.java:446)
+08-27 20:16:24.959    3392-3557/cgeo.geocaching W/System.err﹕ at com.android.okio.RealBufferedSource$1.read(RealBufferedSource.java:168)
+08-27 20:16:24.959    3392-3557/cgeo.geocaching W/System.err﹕ at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+08-27 20:16:24.959    3392-3557/cgeo.geocaching W/System.err﹕ at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:635)
+08-27 20:16:24.959    3392-3557/cgeo.geocaching W/System.err﹕ at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:611)
+08-27 20:16:24.959    3392-3557/cgeo.geocaching W/System.err﹕ at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:649)
+08-27 20:16:24.959    3392-3557/cgeo.geocaching W/System.err﹕ at org.mapsforge.android.maps.mapgenerator.tiledownloader.TileDownloader.executeJob(TileDownloader.java:60)
+08-27 20:16:24.959    3392-3557/cgeo.geocaching W/System.err﹕ at org.mapsforge.android.maps.mapgenerator.MapWorker.doWork(MapWorker.java:73)
+08-27 20:16:24.959    3392-3557/cgeo.geocaching W/System.err﹕ at org.mapsforge.android.maps.PausableThread.run(PausableThread.java:94)
+08-27 20:16:24.959    3392-3557/cgeo.geocaching D/skia﹕ ---- read threw an exception
+08-27 20:16:24.960    3392-3557/cgeo.geocaching D/skia﹕ --- SkImageDecoder::Factory returned null
+08-27 20:16:28.196    3392-3424/cgeo.geocaching E/cgeo﹕ [RxComputationThreadPool-1] GCMap.searchByViewport: No cache parsed for viewport (N 43° xx.xxx · E 006° xx.xxx,N 43° xx.xxx · E 006° xx.xxx)
+08-27 20:16:32.567    3392-3401/cgeo.geocaching I/art﹕ Thread[5,tid=3401,WaitingInMainSignalCatcherLoop,Thread*=0xb4a37800,peer=0x12c000a0,"Signal Catcher"]: reacting to signal 3
+08-27 20:16:32.567    3392-3401/cgeo.geocaching I/art﹕ [ 08-27 20:16:32.767   791:  836 I/Process  ]
+    Sending signal. PID: 791 SIG: 3
+```
+
+```
+08-27 20:20:27.718    3882-3882/cgeo.geocaching W/ResourcesManager﹕ Asset path '/system/framework/com.google.android.maps.jar' does not exist or contains no resources.
+08-27 20:20:27.837    3882-3882/cgeo.geocaching W/ResourcesManager﹕ Asset path '/system/framework/com.google.android.maps.jar' does not exist or contains no resources.
+08-27 20:20:27.958    3882-3922/cgeo.geocaching D/OpenGLRenderer﹕ Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+08-27 20:20:27.963    3882-3882/cgeo.geocaching D/Atlas﹕ Validating map...
+08-27 20:20:28.019    3882-3922/cgeo.geocaching I/Adreno-EGL﹕ <qeglDrvAPI_eglInitialize:410>: EGL 1.4 QUALCOMM build: AU_LINUX_ANDROID_LA.BF.1.1_RB1.04.04.02.002.022_msm8974_LA.BF.1.1_RB1__release_AU ()
+    OpenGL ES Shader Compiler Version: E031.25.01.03
+    Build Date: 10/30/14 Thu
+    Local Branch: mybranch5388235
+    Remote Branch: quic/LA.BF.1.1_rb1.8
+    Local Patches: NONE
+    Reconstruct Branch: AU_LINUX_ANDROID_LA.BF.1.1_RB1.04.04.02.002.022 +  NOTHING
+08-27 20:20:28.020    3882-3922/cgeo.geocaching I/OpenGLRenderer﹕ Initialized EGL, version 1.4
+08-27 20:20:28.036    3882-3922/cgeo.geocaching D/OpenGLRenderer﹕ Enabling debug mode 0
+08-27 20:20:28.158    3882-3882/cgeo.geocaching D/ShowcaseView﹕ Recalculated
+08-27 20:20:28.234    3882-3882/cgeo.geocaching I/Timeline﹕ Timeline: Activity_idle id: android.os.BinderProxy@1f87483a time:277819180
+08-27 20:20:31.828    3882-3882/cgeo.geocaching W/cgeo﹕ [main] No Google API key available.
+08-27 20:20:31.832    3882-3882/cgeo.geocaching I/Timeline﹕ Timeline: Activity_launch_request id:cgeo.geocaching time:277822779
+08-27 20:20:32.078    3882-3882/cgeo.geocaching I/Timeline﹕ Timeline: Activity_idle id: android.os.BinderProxy@24e51cd4 time:277823024
+08-27 20:20:34.872    3882-3882/cgeo.geocaching I/Timeline﹕ Timeline: Activity_idle id: android.os.BinderProxy@1f87483a time:277825818
+08-27 20:20:35.764    3882-3882/cgeo.geocaching I/Timeline﹕ Timeline: Activity_launch_request id:cgeo.geocaching time:277826710
+08-27 20:20:36.030    3882-3882/cgeo.geocaching I/Timeline﹕ Timeline: Activity_idle id: android.os.BinderProxy@167f3266 time:277826976
+08-27 20:20:37.060    3882-3882/cgeo.geocaching I/Timeline﹕ Timeline: Activity_idle id: android.os.BinderProxy@1f87483a time:277828006
+08-27 20:20:37.381    3882-3999/cgeo.geocaching W/System.err﹕ java.io.InterruptedIOException
+08-27 20:20:37.381    3882-3999/cgeo.geocaching W/System.err﹕ at com.android.okio.Deadline.throwIfReached(Deadline.java:56)
+08-27 20:20:37.381    3882-3999/cgeo.geocaching W/System.err﹕ at com.android.okio.Okio$2.read(Okio.java:110)
+08-27 20:20:37.381    3882-3999/cgeo.geocaching W/System.err﹕ at com.android.okio.RealBufferedSource.read(RealBufferedSource.java:48)
+08-27 20:20:37.381    3882-3999/cgeo.geocaching W/System.err﹕ at com.android.okhttp.internal.http.HttpConnection$FixedLengthSource.read(HttpConnection.java:446)
+08-27 20:20:37.387    3882-3999/cgeo.geocaching W/System.err﹕ at com.android.okio.RealBufferedSource$1.read(RealBufferedSource.java:168)
+08-27 20:20:37.387    3882-3999/cgeo.geocaching W/System.err﹕ at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+08-27 20:20:37.387    3882-3999/cgeo.geocaching W/System.err﹕ at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:635)
+08-27 20:20:37.387    3882-3999/cgeo.geocaching W/System.err﹕ at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:611)
+08-27 20:20:37.387    3882-3999/cgeo.geocaching W/System.err﹕ at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:649)
+08-27 20:20:37.387    3882-3999/cgeo.geocaching W/System.err﹕ at org.mapsforge.android.maps.mapgenerator.tiledownloader.TileDownloader.executeJob(TileDownloader.java:60)
+08-27 20:20:37.387    3882-3999/cgeo.geocaching W/System.err﹕ at org.mapsforge.android.maps.mapgenerator.MapWorker.doWork(MapWorker.java:73)
+08-27 20:20:37.388    3882-3999/cgeo.geocaching W/System.err﹕ at org.mapsforge.android.maps.PausableThread.run(PausableThread.java:94)

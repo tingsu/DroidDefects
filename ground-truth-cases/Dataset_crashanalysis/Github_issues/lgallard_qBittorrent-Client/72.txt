@@ -1,0 +1,11 @@
+Caused by: android.database.CursorIndexOutOfBoundsException: Index 0 requested, with a size of 0
+    at android.database.AbstractCursor.checkPosition(AbstractCursor.java:460)
+    at android.database.AbstractWindowedCursor.checkPosition(AbstractWindowedCursor.java:136)
+    at android.database.AbstractWindowedCursor.getString(AbstractWindowedCursor.java:50)
+    at android.database.CursorWrapper.getString(CursorWrapper.java:142)
+    at com.lgallardo.qbittorrentclient.MainActivity.getFilePathFromUri(MainActivity.java:1127)
+    at com.lgallardo.qbittorrentclient.MainActivity.addTorrentByIntent(MainActivity.java:1142)
+    at com.lgallardo.qbittorrentclient.MainActivity.onCreate(MainActivity.java:450)
+    at android.app.Activity.performCreate(Activity.java:6248)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1125)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2437)

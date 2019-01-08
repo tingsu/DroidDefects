@@ -1,0 +1,5 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.Integer.equals(java.lang.Object)' on a null object reference
+    at de.grobox.liberario.activities.TripDetailActivity.isTheSameTrip(TripDetailActivity.java:212)
+    at de.grobox.liberario.activities.TripDetailActivity.onTripRetrieved(TripDetailActivity.java:146)
+    at de.grobox.liberario.tasks.AsyncQueryTripsTask.onPostExecute(AsyncQueryTripsTask.java:147)
+    at de.grobox.liberario.tasks.AsyncQueryTripsTask.onPostExecute(AsyncQueryTripsTask.java:42)

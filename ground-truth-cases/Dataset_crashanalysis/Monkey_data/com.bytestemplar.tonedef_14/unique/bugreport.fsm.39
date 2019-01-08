@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: com.bytestemplar.tonedef
+//version: 14
+//appro_time: 53
+ FATAL EXCEPTION: main
+ android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@ad1effe8 is not valid; is your activity running?
+ 	at android.view.ViewRootImpl.setView(ViewRootImpl.java:559)
+ 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:269)
+ 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+ 	at android.app.Dialog.show(Dialog.java:281)
+ 	at com.bytestemplar.tonedef.utils.Alert$1.run(Alert.java:92)
+ 	at android.app.Activity.runOnUiThread(Activity.java:4673)
+ 	at com.bytestemplar.tonedef.utils.Alert.show(Alert.java:67)
+ 	at com.bytestemplar.tonedef.gen.ToneSequence$1.run(ToneSequence.java:228)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

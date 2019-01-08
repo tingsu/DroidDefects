@@ -1,0 +1,10 @@
+E/AndroidRuntime(13899): java.lang.IllegalArgumentException: Illegal id 4271409
+E/AndroidRuntime(13899):        at com.iskrembilen.quasseldroid.qtcomm.QMetaTypeRegistry.getTypeForId(QMetaTypeRegistry.java:174)
+E/AndroidRuntime(13899):        at com.iskrembilen.quasseldroid.qtcomm.QVariant$QVariantSerializer.unserialize(QVariant.java:119)
+E/AndroidRuntime(13899):        at com.iskrembilen.quasseldroid.qtcomm.QVariant$QVariantSerializer.unserialize(QVariant.java:67)
+E/AndroidRuntime(13899):        at com.iskrembilen.quasseldroid.qtcomm.QMetaTypeRegistry.unserialize(QMetaTypeRegistry.java:181)
+E/AndroidRuntime(13899):        at com.iskrembilen.quasseldroid.qtcomm.QMetaTypeRegistry.unserialize(QMetaTypeRegistry.java:184)
+E/AndroidRuntime(13899):        at com.iskrembilen.quasseldroid.io.CoreConnection.readQVariantMap(CoreConnection.java:659)
+E/AndroidRuntime(13899):        at com.iskrembilen.quasseldroid.io.CoreConnection.connect(CoreConnection.java:388)
+E/AndroidRuntime(13899):        at com.iskrembilen.quasseldroid.io.CoreConnection$ReadThread.doRun(CoreConnection.java:763)
+E/AndroidRuntime(13899):        at com.iskrembilen.quasseldroid.io.CoreConnection$ReadThread.run(CoreConnection.java:721)

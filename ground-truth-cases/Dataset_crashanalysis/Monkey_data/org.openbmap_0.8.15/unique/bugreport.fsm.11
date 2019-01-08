@@ -1,0 +1,10 @@
+//this is an auto-generated bug report
+//package name: org.openbmap
+//version: 0.8.15
+//appro_time: 129
+ java.lang.NullPointerException
+ 	at org.openbmap.activities.x.b(Unknown Source)
+ 	at org.mapsforge.map.d.a.a.l(Unknown Source)
+ 	at org.mapsforge.map.d.d.a(Unknown Source)
+ 	at org.mapsforge.map.d.f.d(Unknown Source)
+ 	at org.mapsforge.map.h.d.run(Unknown Source)

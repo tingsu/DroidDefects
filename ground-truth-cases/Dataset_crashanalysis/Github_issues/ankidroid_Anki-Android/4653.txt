@@ -1,0 +1,7 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String org.json.JSONObject.getString(java.lang.String)' on a null object reference
+    at com.ichi2.libanki.Decks$override.select(Decks.java:900)
+    at com.ichi2.libanki.Decks$override.access$dispatch(Decks.java)
+    at com.ichi2.libanki.Decks.select(Decks.java:0)
+    at com.ichi2.libanki.Sched.haveBuried(Sched.java:2321)
+    at com.ichi2.anki.dialogs.DeckPickerContextMenu.getListIds(DeckPickerContextMenu.java:110)
+    at com.ichi2.anki.dialogs.DeckPickerContextMenu.onCreateDialog(DeckPickerContextMenu.java:65)

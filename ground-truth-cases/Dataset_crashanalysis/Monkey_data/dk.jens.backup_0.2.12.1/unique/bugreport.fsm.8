@@ -1,0 +1,37 @@
+//this is an auto-generated bug report
+//package name: dk.jens.backup
+//version: 0.2.12.1
+//appro_time: 162
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{dk.jens.backup/dk.jens.backup.OAndBackup}: java.lang.RuntimeException: bad array lengths
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.RuntimeException: bad array lengths
+ 	at android.os.Parcel.readBooleanArray(Parcel.java:717)
+ 	at dk.jens.backup.AppInfo.<init>(AppInfo.java:158)
+ 	at dk.jens.backup.AppInfo$1.createFromParcel(AppInfo.java:140)
+ 	at dk.jens.backup.AppInfo$1.createFromParcel(AppInfo.java:137)
+ 	at android.os.Parcel.readParcelable(Parcel.java:2062)
+ 	at android.os.Parcel.readValue(Parcel.java:1971)
+ 	at android.os.Parcel.readMapInternal(Parcel.java:2255)
+ 	at android.os.Bundle.unparcel(Bundle.java:223)
+ 	at android.os.Bundle.getParcelable(Bundle.java:1170)
+ 	at dk.jens.backup.BackupRestoreDialogFragment.onCreateDialog(BackupRestoreDialogFragment.java:17)
+ 	at android.support.v4.app.DialogFragment.getLayoutInflater(DialogFragment.java:308)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:955)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1120)
+ 	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1929)
+ 	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:547)
+ 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1171)
+ 	at android.app.Activity.performStart(Activity.java:5143)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2184)

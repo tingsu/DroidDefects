@@ -1,0 +1,13 @@
+// java.lang.IllegalStateException: attempt to re-open an already-closed object: SQLiteDatabase: /data/user/0/a2dp.Vol/databases/btdevices.db
+//  at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:55)
+//  at android.database.sqlite.SQLiteDatabase.delete(SQLiteDatabase.java:1494)
+//  at a2dp.Vol.DeviceDB.deleteAll(DeviceDB.java:192)
+//  at a2dp.Vol.main$2.onClick(main.java:127)
+//  at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:163)
+//  at android.os.Handler.dispatchMessage(Handler.java:102)
+//  at android.os.Looper.loop(Looper.java:148)
+//  at android.app.ActivityThread.main(ActivityThread.java:5417)
+//  at java.lang.reflect.Method.invoke(Native Method)
+//  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+//  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+//  at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:102)

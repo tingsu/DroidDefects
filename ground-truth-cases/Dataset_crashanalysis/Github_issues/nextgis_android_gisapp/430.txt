@@ -1,0 +1,6 @@
+java.lang.IllegalStateException: Account is null
+    at com.nextgis.maplib.util.AccountUtil.getAccountData(AccountUtil.java:73)
+    at com.nextgis.maplib.map.NGWVectorLayer.createFromNGW(NGWVectorLayer.java:367)
+    at com.nextgis.maplibui.service.LayerFillService$NGWVectorLayerFillTask.execute(LayerFillService.java:638)
+    at com.nextgis.maplibui.service.LayerFillService$2.run(LayerFillService.java:249)
+    at java.lang.Thread.run(Thread.java:818)

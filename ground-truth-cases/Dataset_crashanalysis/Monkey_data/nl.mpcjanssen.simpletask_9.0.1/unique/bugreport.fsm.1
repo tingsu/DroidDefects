@@ -1,0 +1,14 @@
+//this is an auto-generated bug report
+//package name: nl.mpcjanssen.simpletask
+//version: 9.0.1
+//appro_time: 15
+ nl.mpcjanssen.simpletask.TodoException: Could not create dirs: /storage/sdcard/data
+ 	at nl.mpcjanssen.simpletask.util.Util.createParentDirectory(Util.kt:146)
+ 	at nl.mpcjanssen.simpletask.util.Util.createParentDirectory(Util.kt:142)
+ 	at nl.mpcjanssen.simpletask.util.TaskIo.writeToFile(TaskIo.kt:43)
+ 	at nl.mpcjanssen.simpletask.remote.FileStore$saveTasksToFile$1.run(FileStore.kt:162)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at nl.mpcjanssen.simpletask.remote.FileStore$t$1.run(FileStore.kt:56)
+ 	at java.lang.Thread.run(Thread.java:841)

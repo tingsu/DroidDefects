@@ -1,0 +1,16 @@
+W/JobConsumer(10381): java.lang.IllegalArgumentException: No length specified!
+W/JobConsumer(10381):   at org.whispersystems.textsecure.api.messages.TextSecureAttachment$Builder.build(TextSecureAttachment.java:80)
+W/JobConsumer(10381):   at org.thoughtcrime.securesms.jobs.MultiDeviceGroupUpdateJob.sendUpdate(MultiDeviceGroupUpdateJob.java:101)
+W/JobConsumer(10381):   at org.thoughtcrime.securesms.jobs.MultiDeviceGroupUpdateJob.onRun(MultiDeviceGroupUpdateJob.java:68)
+W/JobConsumer(10381):   at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/JobConsumer(10381):   at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/JobConsumer(10381):   at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(10381): FATAL EXCEPTION: JobConsumer-3
+E/AndroidRuntime(10381): Process: org.thoughtcrime.securesms, PID: 10381
+E/AndroidRuntime(10381): java.lang.IllegalArgumentException: No length specified!
+E/AndroidRuntime(10381):    at org.whispersystems.textsecure.api.messages.TextSecureAttachment$Builder.build(TextSecureAttachment.java:80)
+E/AndroidRuntime(10381):    at org.thoughtcrime.securesms.jobs.MultiDeviceGroupUpdateJob.sendUpdate(MultiDeviceGroupUpdateJob.java:101)
+E/AndroidRuntime(10381):    at org.thoughtcrime.securesms.jobs.MultiDeviceGroupUpdateJob.onRun(MultiDeviceGroupUpdateJob.java:68)
+E/AndroidRuntime(10381):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(10381):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(10381):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

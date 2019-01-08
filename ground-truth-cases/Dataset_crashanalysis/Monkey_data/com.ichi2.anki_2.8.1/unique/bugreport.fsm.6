@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: com.ichi2.anki
+//version: 2.8.1
+//appro_time: 56
+ FATAL EXCEPTION: AsyncTask #4
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.RuntimeException: org.json.JSONException: Index 2 out of range [0..2)
+ 	at com.ichi2.libanki.Card.template(Card.java:342)
+ 	at com.ichi2.libanki.Card._getQA(Card.java:290)
+ 	at com.ichi2.anki.CardBrowser.updateSearchItemQA(CardBrowser.java:931)
+ 	at com.ichi2.async.DeckTask.doInBackgroundSearchCards(DeckTask.java:626)
+ 	at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:253)
+ 	at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:66)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	... 4 more
+ Caused by: org.json.JSONException: Index 2 out of range [0..2)
+ 	at org.json.JSONArray.get(JSONArray.java:263)
+ 	at org.json.JSONArray.getJSONObject(JSONArray.java:480)
+ 	at com.ichi2.libanki.Card.template(Card.java:337)
+ 	... 11 more

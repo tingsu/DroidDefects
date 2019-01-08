@@ -1,0 +1,8 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'android.text.Editable android.widget.EditText.getText()' on a null object reference
+       at org.wordpress.android.ui.posts.EditPostSettingsFragment.updatePostSettings(EditPostSettingsFragment.java:428)
+       at org.wordpress.android.ui.posts.EditPostActivity.updatePostObject(EditPostActivity.java:585)
+       at org.wordpress.android.ui.posts.EditPostActivity.savePost(EditPostActivity.java:595)
+       at org.wordpress.android.ui.posts.EditPostActivity.savePost(EditPostActivity.java:590)
+       at org.wordpress.android.ui.posts.EditPostActivity.access$400(EditPostActivity.java:97)
+       at org.wordpress.android.ui.posts.EditPostActivity$AutoSaveTask.run(EditPostActivity.java:284)
+       at java.util.Timer$TimerImpl.run(Timer.java:284)

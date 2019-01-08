@@ -1,0 +1,11 @@
+java.io.IOException: Connection reset by peer
+        at android.net.LocalSocketImpl.readba_native(Native Method)
+        at android.net.LocalSocketImpl.access$400(LocalSocketImpl.java:33)
+        at android.net.LocalSocketImpl$SocketInputStream.read(LocalSocketImpl.java:101)
+        at android.net.LocalSocketImpl$SocketInputStream.read(LocalSocketImpl.java:87)
+        at de.blinkt.openvpn.core.OpenVpnManagementThread.run(OpenVpnManagementThread.java:137)
+        at java.lang.Thread.run(Thread.java:818)
+
+```
+
+Original issue reported on code.google.com by `thenk...@gmail.com` on 26 Nov 2014 at 12:57

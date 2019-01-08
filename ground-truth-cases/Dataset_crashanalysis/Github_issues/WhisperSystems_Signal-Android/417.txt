@@ -1,0 +1,218 @@
+E/DatabaseUtils( 1403): java.lang.SecurityException: No permission to write APN settings: Neither user 10090 nor current process has android.permission.WRITE_APN_SETTINGS.
+E/DatabaseUtils( 1403): at android.app.ContextImpl.enforce(ContextImpl.java:1575)
+E/DatabaseUtils( 1403): at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1604)
+E/DatabaseUtils( 1403): at com.android.providers.telephony.TelephonyProvider.checkPermission(TelephonyProvider.java:784)
+E/DatabaseUtils( 1403): at com.android.providers.telephony.TelephonyProvider.query(TelephonyProvider.java:511)
+E/DatabaseUtils( 1403): at android.content.ContentProvider.query(ContentProvider.java:744)
+E/DatabaseUtils( 1403): at android.content.ContentProvider$Transport.query(ContentProvider.java:199)
+E/DatabaseUtils( 1403): at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:114)
+E/DatabaseUtils( 1403): at android.os.Binder.execTransact(Binder.java:388)
+E/DatabaseUtils( 1403): at dalvik.system.NativeStart.run(Native Method)
+W/MmsCommunication(15142): java.lang.SecurityException: No permission to write APN settings: Neither user 10090 nor current process has android.permission.WRITE_APN_SETTINGS.
+W/MmsCommunication(15142): at android.os.Parcel.readException(Parcel.java:1431)
+W/MmsCommunication(15142): at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:185)
+W/MmsCommunication(15142): at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:137)
+W/MmsCommunication(15142): at android.content.ContentProviderProxy.query(ContentProviderNative.java:385)
+W/MmsCommunication(15142): at android.content.ContentResolver.query(ContentResolver.java:414)
+W/MmsCommunication(15142): at android.content.ContentResolver.query(ContentResolver.java:357)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.database.MmsDatabase.getCarrierMmsInformation(MmsDatabase.java:598)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.mms.MmsCommunication.getMmsConnectionParameters(MmsCommunication.java:95)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.mms.MmsSendHelper.hasNecessaryApnDetails(MmsSendHelper.java:119)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:591)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:588)
+W/MmsCommunication(15142): at android.os.AsyncTask$2.call(AsyncTask.java:287)
+W/MmsCommunication(15142): at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+W/MmsCommunication(15142): at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+W/MmsCommunication(15142): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+W/MmsCommunication(15142): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+W/MmsCommunication(15142): at java.lang.Thread.run(Thread.java:841)
+W/KeyCachingService(15142): Incrementing activity count...
+D/dalvikvm(15142): GC_CONCURRENT freed 395K, 6% free 11321K/12000K, paused 2ms+9ms, total 32ms
+W/CursorWrapperInner(15142): Cursor finalized without prior close()
+W/MmsSmsDatabase(15142): Executing query: SELECT _id, body, read, type, address, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+D/dalvikvm( 2558): GC_EXPLICIT freed 293K, 5% free 9681K/10140K, paused 1ms+4ms, total 24ms
+I/ActivityManager( 1174): Displayed org.thoughtcrime.securesms/.ConversationActivity: +402ms
+I/SmartKeyboardPro( 1374): Trying to load dictionary: EN
+W/MmsDownloadClickListener(15142): Content location: http://atl2mmsget.msg.eng.t-mobile.com/mms/wapenc?location=15038679461_2j0hjm&rid=064
+W/MmsService(15142): Got network info: NetworkInfo: type: mobile_mms[HSPA+], state: DISCONNECTED/DISCONNECTED, reason: dataDisabled, extra: epc.tmobile.com, roaming: false, failover: false, isAvailable: true
+W/MmsDownloader(15142): Handling MMS download with radio change...
+W/MmscProcessor(15142): startUsingNetworkFeature status: 1
+D/ConnectivityService( 1174): startUsingNetworkFeature reconnecting to 0: enableMMS
+W/MmsService(15142): Dispatching connectivity change...
+W/MmsService(15142): Dispatched...
+D/ConnectivityService( 1174): ConnectivityChange for mobile_mms: CONNECTED/CONNECTED
+D/Nat464Xlat( 1174): requiresClat: netType=2, hasIPv4Address=true
+W/NetworkPolicy( 1174): shared quota unsupported; generating rule for each iface
+W/MmsService(15142): NetworkInfo: NetworkInfo: type: mobile_mms[UMTS], state: CONNECTED/CONNECTED, reason: dataEnabled, extra: epc.tmobile.com, roaming: false, failover: false, isAvailable: true
+W/MmsDownloadService(15142): Handling actual MMS download...
+E/DatabaseUtils( 1403): Writing exception to parcel
+E/DatabaseUtils( 1403): java.lang.SecurityException: No permission to write APN settings: Neither user 10090 nor current process has android.permission.WRITE_APN_SETTINGS.
+E/DatabaseUtils( 1403): at android.app.ContextImpl.enforce(ContextImpl.java:1575)
+E/DatabaseUtils( 1403): at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1604)
+E/DatabaseUtils( 1403): at com.android.providers.telephony.TelephonyProvider.checkPermission(TelephonyProvider.java:784)
+E/DatabaseUtils( 1403): at com.android.providers.telephony.TelephonyProvider.query(TelephonyProvider.java:511)
+E/DatabaseUtils( 1403): at android.content.ContentProvider.query(ContentProvider.java:744)
+E/DatabaseUtils( 1403): at android.content.ContentProvider$Transport.query(ContentProvider.java:199)
+E/DatabaseUtils( 1403): at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:114)
+E/DatabaseUtils( 1403): at android.os.Binder.execTransact(Binder.java:388)
+E/DatabaseUtils( 1403): at dalvik.system.NativeStart.run(Native Method)
+W/MmsCommunication(15142): java.lang.SecurityException: No permission to write APN settings: Neither user 10090 nor current process has android.permission.WRITE_APN_SETTINGS.
+W/MmsCommunication(15142): at android.os.Parcel.readException(Parcel.java:1431)
+W/MmsCommunication(15142): at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:185)
+W/MmsCommunication(15142): at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:137)
+W/MmsCommunication(15142): at android.content.ContentProviderProxy.query(ContentProviderNative.java:385)
+W/MmsCommunication(15142): at android.content.ContentResolver.query(ContentResolver.java:414)
+W/MmsCommunication(15142): at android.content.ContentResolver.query(ContentResolver.java:357)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.database.MmsDatabase.getCarrierMmsInformation(MmsDatabase.java:598)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.mms.MmsCommunication.getMmsConnectionParameters(MmsCommunication.java:95)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.mms.MmsDownloadHelper.retrieveMms(MmsDownloadHelper.java:80)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.service.MmsDownloader.downloadMms(MmsDownloader.java:123)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.service.MmsDownloader.handleConnectivityChange(MmsDownloader.java:206)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.service.MmsDownloader.process(MmsDownloader.java:70)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:227)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsCommunication(15142): Checking route to address: 216.155.165.50 , 216.155.165.50
+D/dalvikvm( 1403): GC_CONCURRENT freed 442K, 7% free 9811K/10444K, paused 3ms+3ms, total 36ms
+D/Tethering( 1174): MasterInitialState.processMessage what=3
+W/MmsService(15142): Dispatching connectivity change...
+W/MmsService(15142): Dispatched...
+E/LocSvc_eng( 1174): E/void loc_eng_agps_ril_update_network_availability(loc_eng_data_s_type&, int, const char*): log_eng state error: instance not initialized
+D/GCM ( 1509): GcmService start Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x8000010 cmp=com.google.android.gms/.gcm.GcmService (has extras) } android.net.conn.CONNECTIVITY_CHANGE
+D/YouTube (13886): apps.youtube.app.prefetch.PrefetchService$DeviceStateReceiver.onReceive:571 Got device state change intent: android.net.conn.CONNECTIVITY_CHANGE
+D/YouTube (13886): apps.youtube.app.prefetch.PrefetchService.onStartCommand:171 PrefetchService started at 8 Nov 2013 02:01:53 GMT
+D/YouTube (13886): apps.youtube.app.prefetch.PrefetchService.B_:252 Download snapshot restored
+D/YouTube (13886): apps.youtube.app.prefetch.PrefetchService.onDestroy:222 PrefetchService destroyed at 8 Nov 2013 02:01:53 GMT
+I/k9 ( 4850): Committing preference changes
+D/ASTROPLAYER(15788): ConnectivityChangeReceiver: canDownloadPodcasts = false
+D/ASTROPLAYER(15788): ConnectivityChangeReceiver: nothing to do as Subscription process is down and no connection
+I/k9 ( 4850): Preferences commit took 7ms
+I/k9 ( 4850): Got exception while idling, but stop is set for [scrubbed]:INBOX/Thread-322
+I/k9 ( 4850): Got exception while idling, but stop is set for [scrubbed]:Drafts/Thread-321
+D/ConnectivityService( 1174): handleInetConditionHoldEnd: net=0, condition=100, published condition=100
+D/dalvikvm( 4850): GC_CONCURRENT freed 881K, 12% free 10007K/11340K, paused 6ms+2ms, total 49ms
+D/dalvikvm( 4850): GC_CONCURRENT freed 378K, 12% free 10016K/11340K, paused 6ms+2ms, total 31ms
+D/dalvikvm( 1403): GC_CONCURRENT freed 456K, 7% free 9800K/10444K, paused 17ms+2ms, total 58ms
+W/MmsDownloader(15142): java.net.SocketTimeoutException
+W/MmsDownloader(15142): at java.net.PlainSocketImpl.read(PlainSocketImpl.java:491)
+W/MmsDownloader(15142): at java.net.PlainSocketImpl.access$000(PlainSocketImpl.java:46)
+W/MmsDownloader(15142): at java.net.PlainSocketImpl$PlainSocketInputStream.read(PlainSocketImpl.java:240)
+W/MmsDownloader(15142): at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:103)
+W/MmsDownloader(15142): at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:191)
+W/MmsDownloader(15142): at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:82)
+W/MmsDownloader(15142): at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:174)
+W/MmsDownloader(15142): at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:180)
+W/MmsDownloader(15142): at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:235)
+W/MmsDownloader(15142): at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:259)
+W/MmsDownloader(15142): at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:279)
+W/MmsDownloader(15142): at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
+W/MmsDownloader(15142): at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:428)
+W/MmsDownloader(15142): at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+W/MmsDownloader(15142): at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:509)
+W/MmsDownloader(15142): at android.net.http.AndroidHttpClient.execute(AndroidHttpClient.java:262)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.mms.MmsDownloadHelper.makeRequest(MmsDownloadHelper.java:51)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.mms.MmsDownloadHelper.retrieveMms(MmsDownloadHelper.java:84)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.service.MmsDownloader.downloadMms(MmsDownloader.java:123)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.service.MmsDownloader.handleConnectivityChange(MmsDownloader.java:206)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.service.MmsDownloader.process(MmsDownloader.java:70)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:227)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsDownloadeR(15142): Falling back to radio mode and proxy...
+W/MmsService(15142): Got network info: NetworkInfo: type: mobile_mms[UMTS], state: CONNECTED/CONNECTED, reason: dataEnabled, extra: epc.tmobile.com, roaming: false, failover: false, isAvailable: true
+W/MmsDownloader(15142): Handling MMS download with radio change...
+W/MmscProcessor(15142): startUsingNetworkFeature status: 0
+W/MmsService(15142): NetworkInfo: NetworkInfo: type: mobile_mms[UMTS], state: CONNECTED/CONNECTED, reason: dataEnabled, extra: epc.tmobile.com, roaming: false, failover: false, isAvailable: true
+W/MmsDownloadService(15142): Handling actual MMS download...
+E/DatabaseUtils( 1403): Writing exception to parcel
+E/DatabaseUtils( 1403): java.lang.SecurityException: No permission to write APN settings: Neither user 10090 nor current process has android.permission.WRITE_APN_SETTINGS.
+E/DatabaseUtils( 1403): at android.app.ContextImpl.enforce(ContextImpl.java:1575)
+E/DatabaseUtils( 1403): at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1604)
+E/DatabaseUtils( 1403): at com.android.providers.telephony.TelephonyProvider.checkPermission(TelephonyProvider.java:784)
+E/DatabaseUtils( 1403): at com.android.providers.telephony.TelephonyProvider.query(TelephonyProvider.java:511)
+E/DatabaseUtils( 1403): at android.content.ContentProvider.query(ContentProvider.java:744)
+E/DatabaseUtils( 1403): at android.content.ContentProvider$Transport.query(ContentProvider.java:199)
+E/DatabaseUtils( 1403): at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:114)
+E/DatabaseUtils( 1403): at android.os.Binder.execTransact(Binder.java:388)
+E/DatabaseUtils( 1403): at dalvik.system.NativeStart.run(Native Method)
+W/MmsCommunication(15142): java.lang.SecurityException: No permission to write APN settings: Neither user 10090 nor current process has android.permission.WRITE_APN_SETTINGS.
+W/MmsCommunication(15142): at android.os.Parcel.readException(Parcel.java:1431)
+W/MmsCommunication(15142): at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:185)
+W/MmsCommunication(15142): at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:137)
+W/MmsCommunication(15142): at android.content.ContentProviderProxy.query(ContentProviderNative.java:385)
+W/MmsCommunication(15142): at android.content.ContentResolver.query(ContentResolver.java:414)
+W/MmsCommunication(15142): at android.content.ContentResolver.query(ContentResolver.java:357)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.database.MmsDatabase.getCarrierMmsInformation(MmsDatabase.java:598)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.mms.MmsCommunication.getMmsConnectionParameters(MmsCommunication.java:95)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.mms.MmsDownloadHelper.retrieveMms(MmsDownloadHelper.java:80)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.service.MmsDownloader.downloadMms(MmsDownloader.java:123)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.service.MmsDownloader.handleConnectivityChange(MmsDownloader.java:206)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.service.MmsDownloader.process(MmsDownloader.java:70)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:227)
+W/MmsCommunication(15142): at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsCommunication(15142): Checking route to address: 216.155.165.50 , 216.155.165.50
+D/dalvikvm(15142): GC_CONCURRENT freed 993K, 9% free 11140K/12232K, paused 3ms+40ms, total 76ms
+D/dalvikvm( 1403): GC_CONCURRENT freed 443K, 7% free 9807K/10444K, paused 36ms+1ms, total 97ms
+W/MmsDownloader(15142): java.net.SocketTimeoutException
+W/MmsDownloader(15142): at java.net.PlainSocketImpl.read(PlainSocketImpl.java:491)
+W/MmsDownloader(15142): at java.net.PlainSocketImpl.access$000(PlainSocketImpl.java:46)
+W/MmsDownloader(15142): at java.net.PlainSocketImpl$PlainSocketInputStream.read(PlainSocketImpl.java:240)
+W/MmsDownloader(15142): at org.apache.http.impl.io.AbstractSessionInputBuffer.fillBuffer(AbstractSessionInputBuffer.java:103)
+W/MmsDownloader(15142): at org.apache.http.impl.io.AbstractSessionInputBuffer.readLine(AbstractSessionInputBuffer.java:191)
+W/MmsDownloader(15142): at org.apache.http.impl.conn.DefaultResponseParser.parseHead(DefaultResponseParser.java:82)
+W/MmsDownloader(15142): at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:174)
+W/MmsDownloader(15142): at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:180)
+W/MmsDownloader(15142): at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:235)
+W/MmsDownloader(15142): at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:259)
+W/MmsDownloader(15142): at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:279)
+W/MmsDownloader(15142): at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:121)
+W/MmsDownloader(15142): at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:428)
+W/MmsDownloader(15142): at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+W/MmsDownloader(15142): at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:509)
+W/MmsDownloader(15142): at android.net.http.AndroidHttpClient.execute(AndroidHttpClient.java:262)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.mms.MmsDownloadHelper.makeRequest(MmsDownloadHelper.java:51)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.mms.MmsDownloadHelper.retrieveMms(MmsDownloadHelper.java:84)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.service.MmsDownloader.downloadMms(MmsDownloader.java:123)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.service.MmsDownloader.handleConnectivityChange(MmsDownloader.java:206)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.service.MmsDownloader.process(MmsDownloader.java:70)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:227)
+W/MmsDownloader(15142): at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsService(15142): Calling stop using network feature!
+D/ConnectivityService( 1174): stopUsingNetworkFeature: teardown net 0: enableMMS
+D/ConnectivityService( 1174): ConnectivityChange for mobile_mms: DISCONNECTED/DISCONNECTED
+W/MmsService(15142): NetworkInfo: NetworkInfo: type: mobile_mms[UMTS], state: DISCONNECTED/DISCONNECTED, reason: dataDisabled, extra: epc.tmobile.com, roaming: false, failover: false, isAvailable: true
+W/MmsService(15142): NetworkInfo: NetworkInfo: type: mobile_mms[UMTS], state: DISCONNECTED/DISCONNECTED, reason: dataDisabled, extra: epc.tmobile.com, roaming: false, failover: false, isAvailable: true
+W/MmsService(15142): Got network info: NetworkInfo: type: mobile_mms[UMTS], state: DISCONNECTED/DISCONNECTED, reason: dataDisabled, extra: epc.tmobile.com, roaming: false, failover: false, isAvailable: true
+D/Nat464Xlat( 1174): requiresClat: netType=2, hasIPv4Address=true
+D/dalvikvm( 1403): GC_CONCURRENT freed 420K, 7% free 9806K/10444K, paused 3ms+9ms, total 53ms
+W/SurfaceFlinger( 845): FB is protected: PERMISSION_DENIED
+W/WindowManager( 1174): Screenshot failure taking screenshot for (328x546) to layer 21050
+W/SurfaceFlinger( 845): FB is protected: PERMISSION_DENIED
+W/WindowManager( 1174): Screenshot failure taking screenshot for (328x546) to layer 21050
+D/dalvikvm( 1275): GC_FOR_ALLOC freed 1586K, 32% free 20909K/30556K, paused 19ms, total 20ms
+I/ActivityManager( 1174): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher} from pid 1174
+W/SurfaceFlinger( 845): FB is protected: PERMISSION_DENIED
+W/WindowManager( 1174): Screenshot failure taking screenshot for (328x546) to layer 21050
+W/KeyCachingService(15142): Decrementing activity count...
+W/KeyCachingService(15142): Starting timeout: 3600000
+I/SmartKeyboardPro( 1374): Trying to load dictionary: EN
+I/SmartKeyboardPro( 1374): Trying to load dictionary: EN
+D/Tethering( 1174): MasterInitialState.processMessage what=3
+D/Tethering( 1174): MasterInitialState.processMessage what=3
+E/LocSvc_eng( 1174): E/void loc_eng_agps_ril_update_network_availability(loc_eng_data_s_type&, int, const char_): log_eng state error: instance not initialized
+E/LocSvc_eng( 1174): E/void loc_eng_agps_ril_update_network_availability(loc_eng_data_s_type&, int, const char_): log_eng state error: instance not initialized
+D/dalvikvm( 1174): GC_CONCURRENT freed 2999K, 20% free 19835K/24536K, paused 6ms+8ms, total 125ms
+D/GCM ( 1509): GcmService start Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x8000010 cmp=com.google.android.gms/.gcm.GcmService (has extras) } android.net.conn.CONNECTIVITY_CHANGE
+D/YouTube (13886): apps.youtube.app.prefetch.PrefetchService$DeviceStateReceiver.onReceive:571 Got device state change intent: android.net.conn.CONNECTIVITY_CHANGE
+D/YouTube (13886): apps.youtube.app.prefetch.PrefetchService.onStartCommand:171 PrefetchService started at 8 Nov 2013 02:02:33 GMT
+D/YouTube (13886): apps.youtube.app.prefetch.PrefetchService.B_:252 Download snapshot restored
+D/YouTube (13886): apps.youtube.app.prefetch.PrefetchService.onDestroy:222 PrefetchService destroyed at 8 Nov 2013 02:02:33 GMT
+I/k9 ( 4850): Committing preference changes
+D/ASTROPLAYER(15788): ConnectivityChangeReceiver: canDownloadPodcasts = false
+D/ASTROPLAYER(15788): ConnectivityChangeReceiver: nothing to do as Subscription process is down and no connection
+I/k9 ( 4850): Preferences commit took 11ms
+I/k9 ( 4850): Got exception while idling, but stop is set for [scrubbed]:INBOX/Thread-325
+I/k9 ( 4850): Got exception while idling, but stop is set for [scrubbed]:Drafts/Thread-324
+D/GCM ( 1509): GcmService start Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x8000010 cmp=com.google.android.gms/.gcm.GcmService (has extras) } android.net.conn.CONNECTIVITY_CHANGE
+D/YouTube (13886): apps.youtube.app.prefetch.PrefetchService$DeviceStateReceiver.onReceive:571 Got device state change intent: android.net.conn.CONNECTIVITY_CHANGE
+D/YouTube (13886): apps.youtube.app.prefetch.PrefetchService.onStartCommand:171 PrefetchService started at 8 Nov 2013 02:02:33 GMT
+D/YouTube (13886): apps.youtube.app.prefetch.PrefetchService.B_:252 Download snapshot restored
+D/YouTube (13886): apps.youtube.app.prefetch.PrefetchService.onDestroy:222 PrefetchService destroyed at 8 Nov 2013 02:02:33 GMT

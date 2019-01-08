@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: com.concentricsky.android.khan
+//version: 1.2.2
+//appro_time: 67
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalStateException
+ 	at com.jakewharton.DiskLruCache.completeEdit(DiskLruCache.java:479)
+ 	at com.jakewharton.DiskLruCache.access$2200(DiskLruCache.java:89)
+ 	at com.jakewharton.DiskLruCache$Editor.abort(DiskLruCache.java:810)
+ 	at com.jakewharton.DiskLruCache$Editor.abortUnlessCommitted(DiskLruCache.java:816)
+ 	at com.concentricsky.android.khanacademy.util.ThumbnailManager.getThumbnailFromDiskCache(ThumbnailManager.java:295)
+ 	at com.concentricsky.android.khanacademy.util.ThumbnailManager.getThumbnail(ThumbnailManager.java:315)
+ 	at com.concentricsky.android.khanacademy.app.TopicListActivity$2$1.doInBackground(TopicListActivity.java:196)
+ 	at com.concentricsky.android.khanacademy.app.TopicListActivity$2$1.doInBackground(TopicListActivity.java:194)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

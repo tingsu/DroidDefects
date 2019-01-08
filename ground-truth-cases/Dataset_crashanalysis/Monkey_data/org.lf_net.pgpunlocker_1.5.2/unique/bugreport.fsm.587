@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: org.lf_net.pgpunlocker
+//version: 1.5.2
+//appro_time: 148
+ java.lang.IllegalStateException: Could not execute method of the activity
+ 	at android.view.View$1.onClick(View.java:3633)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.reflect.InvocationTargetException
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at android.view.View$1.onClick(View.java:3628)
+ Caused by: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=org.thialfihar.android.apg.intent.ENCRYPT_AND_RETURN typ=text/plain (has extras) }
+ 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1632)
+ 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1424)
+ 	at android.app.Activity.startActivityForResult(Activity.java:3390)
+ 	at android.app.Activity.startActivityForResult(Activity.java:3351)
+ 	at org.lf_net.pgpunlocker.MainActivity.makeSignature(MainActivity.java:246)
+ 	at org.lf_net.pgpunlocker.MainActivity.onOpenClicked(MainActivity.java:216)

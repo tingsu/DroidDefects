@@ -1,0 +1,9 @@
+java.io.IOException: Not Found
+    at com.rastating.droidbeard.net.SickbeardAsyncTask.getJson(SickbeardAsyncTask.java:146)
+    at com.rastating.droidbeard.net.FetchShowSummariesTask.doInBackground(FetchShowSummariesTask.java:47)
+    at com.rastating.droidbeard.net.FetchShowSummariesTask.doInBackground(FetchShowSummariesTask.java:36)
+    at android.os.AsyncTask$2.call(AsyncTask.java:287)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:856)

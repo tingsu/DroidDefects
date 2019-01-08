@@ -1,0 +1,13 @@
+11-14 06:38:43.954  1772  1772 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'eu.siacs.conversations.entities.Account eu.siacs.conversations.entities.Contact.getAccount()' on a null object reference
+11-14 06:38:43.954  1772  1772 E AndroidRuntime:    at eu.siacs.conversations.crypto.PgpEngine$1.onReturn(PgpEngine.java:53)
+11-14 06:38:43.954  1772  1772 E AndroidRuntime:    at org.openintents.openpgp.util.OpenPgpApi$OpenPgpAsyncTask.onPostExecute(OpenPgpApi.java:232)
+11-14 06:38:43.954  1772  1772 E AndroidRuntime:    at org.openintents.openpgp.util.OpenPgpApi$OpenPgpAsyncTask.onPostExecute(OpenPgpApi.java:213)
+11-14 06:38:43.954  1772  1772 E AndroidRuntime:    at android.os.AsyncTask.finish(AsyncTask.java:651)
+11-14 06:38:43.954  1772  1772 E AndroidRuntime:    at android.os.AsyncTask.-wrap1(AsyncTask.java)
+11-14 06:38:43.954  1772  1772 E AndroidRuntime:    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+11-14 06:38:43.954  1772  1772 E AndroidRuntime:    at android.os.Handler.dispatchMessage(Handler.java:102)
+11-14 06:38:43.954  1772  1772 E AndroidRuntime:    at android.os.Looper.loop(Looper.java:148)
+11-14 06:38:43.954  1772  1772 E AndroidRuntime:    at android.app.ActivityThread.main(ActivityThread.java:5417)
+11-14 06:38:43.954  1772  1772 E AndroidRuntime:    at java.lang.reflect.Method.invoke(Native Method)
+11-14 06:38:43.954  1772  1772 E AndroidRuntime:    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+11-14 06:38:43.954  1772  1772 E AndroidRuntime:    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

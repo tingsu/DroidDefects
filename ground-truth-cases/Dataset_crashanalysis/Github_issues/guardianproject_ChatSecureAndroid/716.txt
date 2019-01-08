@@ -1,0 +1,31 @@
+
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2240)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2389)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at android.app.ActivityThread.access$900(ActivityThread.java:147)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1296)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at android.os.Handler.dispatchMessage(Handler.java:102)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at android.os.Looper.loop(Looper.java:135)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at android.app.ActivityThread.main(ActivityThread.java:5254)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at java.lang.reflect.Method.invoke(Native Method)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at java.lang.reflect.Method.invoke(Method.java:372)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:898)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:693)
+10-21 16:10:01.260: E/AndroidRuntime(2857): Caused by: java.lang.ClassNotFoundException: Didn't find class "info.guardianproject.otr.app.im.app.WelcomeActivity" on path: DexPathList[[zip file "/data/app/info.guardianproject.otr.app.im-2/base.apk"],nativeLibraryDirectories=[/data/app/info.guardianproject.otr.app.im-2/lib/arm, /vendor/lib, /system/lib]]
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at android.app.Instrumentation.newActivity(Instrumentation.java:1065)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2230)
+10-21 16:10:01.260: E/AndroidRuntime(2857):     ... 10 more
+10-21 16:10:01.260: E/AndroidRuntime(2857):     Suppressed: java.lang.NoClassDefFoundError: info.guardianproject.otr.app.im.app.WelcomeActivity
+10-21 16:10:01.260: E/AndroidRuntime(2857):         at dalvik.system.DexFile.defineClassNative(Native Method)
+10-21 16:10:01.260: E/AndroidRuntime(2857):         at dalvik.system.DexFile.defineClass(DexFile.java:226)
+10-21 16:10:01.260: E/AndroidRuntime(2857):         at dalvik.system.DexFile.loadClassBinaryName(DexFile.java:219)
+10-21 16:10:01.260: E/AndroidRuntime(2857):         at dalvik.system.DexPathList.findClass(DexPathList.java:321)
+10-21 16:10:01.260: E/AndroidRuntime(2857):         at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:54)
+10-21 16:10:01.260: E/AndroidRuntime(2857):         ... 14 more
+10-21 16:10:01.260: E/AndroidRuntime(2857):     Suppressed: java.lang.ClassNotFoundException: info.guardianproject.otr.app.im.app.WelcomeActivity
+10-21 16:10:01.260: E/AndroidRuntime(2857):         at java.lang.Class.classForName(Native Method)
+10-21 16:10:01.260: E/AndroidRuntime(2857):         at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+10-21 16:10:01.260: E/AndroidRuntime(2857):         at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+10-21 16:10:01.260: E/AndroidRuntime(2857):         at java.lang.ClassLoader.loadClass(ClassLoader.java:504)

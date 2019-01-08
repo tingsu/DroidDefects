@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: fr.pssoftware.monescarcelle
+//version: 2.0
+//appro_time: 161
+ java.lang.NumberFormatException: Invalid int: "/b
+ 	at java.lang.Integer.invalidInt(Integer.java:138)
+ 	at java.lang.Integer.parse(Integer.java:375)
+ 	at java.lang.Integer.parseInt(Integer.java:366)
+ 	at java.lang.Integer.parseInt(Integer.java:332)
+ 	at fr.pssoftware.monescarcelle.EcritureListFragment.onCreateLoader(EcritureListFragment.java:215)
+ 	at android.support.v4.app.LoaderManagerImpl.createLoader(LoaderManager.java:490)
+ 	at android.support.v4.app.LoaderManagerImpl.createAndInstallLoader(LoaderManager.java:499)
+ 	at android.support.v4.app.LoaderManagerImpl.initLoader(LoaderManager.java:553)
+ 	at fr.pssoftware.monescarcelle.EcritureListFragment.refresh(EcritureListFragment.java:138)
+ 	at fr.pssoftware.monescarcelle.EcritureListActivity.onNavigationItemSelected(EcritureListActivity.java:144)
+ 	at com.android.internal.widget.ActionBarView$1.onItemSelected(ActionBarView.java:149)
+ 	at android.widget.AdapterView.fireOnSelected(AdapterView.java:892)
+ 	at android.widget.AdapterView.access$200(AdapterView.java:49)
+ 	at android.widget.AdapterView$SelectionNotifier.run(AdapterView.java:860)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

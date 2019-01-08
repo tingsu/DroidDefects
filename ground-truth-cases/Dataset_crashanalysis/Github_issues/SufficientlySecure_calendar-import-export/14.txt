@@ -1,0 +1,17 @@
+ 21825          DatabaseUtils  E  java.lang.IllegalArgumentException: DTEND and DURATION cannot both be null for an event.
+ 21825          DatabaseUtils  E  at com.android.providers.calendar.CalendarProvider2.validateEventData(CalendarProvider2.java:2554)
+ 21825          DatabaseUtils  E  at com.android.providers.calendar.CalendarProvider2.insertInTransaction(CalendarProvider2.java:2111)
+ 21825          DatabaseUtils  E  at com.android.providers.calendar.SQLiteContentProvider.insert(SQLiteContentProvider.java:96)
+ 21825          DatabaseUtils  E  at android.content.ContentProvider$Transport.insert(ContentProvider.java:201)
+ 21825          DatabaseUtils  E  at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:148)
+ 21825          DatabaseUtils  E  at android.os.Binder.execTransact(Binder.java:351)
+ 21825          DatabaseUtils  E  at dalvik.system.NativeStart.run(Native Method)
+ 20907          InsertVEvents  E  InsertVEvents
+ 20907          InsertVEvents  E  java.lang.IllegalArgumentException: DTEND and DURATION cannot both be null for an event.
+ 20907          InsertVEvents  E  at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:167)
+ 20907          InsertVEvents  E  at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:137)
+ 20907          InsertVEvents  E  at android.content.ContentProviderProxy.insert(ContentProviderNative.java:420)
+ 20907          InsertVEvents  E  at android.content.ContentResolver.insert(ContentResolver.java:866)
+ 20907          InsertVEvents  E  at org.sufficientlysecure.ical.InsertVEvents.run(InsertVEvents.java:101)
+ 20907          InsertVEvents  E  at org.sufficientlysecure.ical.ui.dialogs.DialogTools$2.run(DialogTools.java:85)
+ 20907          InsertVEvents  E  at java.lang.Thread.run(Thread.java:856)

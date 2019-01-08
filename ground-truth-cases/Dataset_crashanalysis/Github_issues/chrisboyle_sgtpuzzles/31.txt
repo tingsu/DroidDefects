@@ -1,0 +1,10 @@
+java.lang.IllegalArgumentException: View not attached to window manager
+W System.err:   at android.view.WindowManagerImpl.findViewLocked(WindowManagerImpl.java:355)
+W System.err:   at android.view.WindowManagerImpl.removeView(WindowManagerImpl.java:200)
+W System.err:   at android.view.Window$LocalWindowManager.removeView(Window.java:432)
+W System.err:   at android.app.Dialog.dismissDialog(Dialog.java:278)
+W System.err:   at android.app.Dialog.access$000(Dialog.java:71)
+W System.err:   at android.app.Dialog$1.run(Dialog.java:111)
+W System.err:   at android.app.Dialog.dismiss(Dialog.java:268)
+W System.err:   at name.boyle.chris.sgtpuzzles.SGTPuzzles.dismissProgress(SGTPuzzles.java:180)
+W System.err:   at name.boyle.chris.sgtpuzzles.SGTPuzzles$1.handleMessage(SGTPuzzles.java:146)

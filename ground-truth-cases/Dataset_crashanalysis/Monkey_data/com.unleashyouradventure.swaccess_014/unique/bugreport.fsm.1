@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: com.unleashyouradventure.swaccess
+//version: 014
+//appro_time: 2
+ android.database.sqlite.SQLiteDatabaseLockedException: database is locked (code 5)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at com.unleashyouradventure.swaccess.util.BookOfTheDayHelper$DatabaseHandler.addBook(BookOfTheDayHelper.java:215)
+ 	at com.unleashyouradventure.swaccess.util.BookOfTheDayHelper$StoreBookToDB.doInBackground(BookOfTheDayHelper.java:158)
+ 	at com.unleashyouradventure.swaccess.util.BookOfTheDayHelper$StoreBookToDB.doInBackground(BookOfTheDayHelper.java:141)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

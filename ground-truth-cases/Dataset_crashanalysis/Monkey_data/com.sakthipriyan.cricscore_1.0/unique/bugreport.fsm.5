@@ -1,0 +1,16 @@
+//this is an auto-generated bug report
+//package name: com.sakthipriyan.cricscore
+//version: 1.0
+//appro_time: 86
+ java.lang.IllegalStateException: Adapter is detached.
+ 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.assertAttached(AbstractPooledConnAdapter.java:90)
+ 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.setState(AbstractPooledConnAdapter.java:183)
+ 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:502)
+ 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+ 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:487)
+ 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:465)
+ 	at com.sakthipriyan.cricscore.BackEnd.fetchData(BackEnd.java:72)
+ 	at com.sakthipriyan.cricscore.CricScoreService.updateScores(CricScoreService.java:107)
+ 	at com.sakthipriyan.cricscore.CricScoreService.access$300(CricScoreService.java:25)
+ 	at com.sakthipriyan.cricscore.CricScoreService$2.run(CricScoreService.java:94)
+ 	at java.util.Timer$TimerImpl.run(Timer.java:284)

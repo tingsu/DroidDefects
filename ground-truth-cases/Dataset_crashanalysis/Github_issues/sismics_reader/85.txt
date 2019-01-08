@@ -1,0 +1,6 @@
+javax.persistence.PersistenceException: org.hibernate.exception.SQLGrammarException: user lacks privilege or object not found: T_JOB
+        at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1360)
+        at org.hibernate.ejb.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1288)
+        at org.hibernate.ejb.QueryImpl.getResultList(QueryImpl.java:261)
+        at com.sismics.reader.core.dao.jpa.JobDao.findByCriteria(JobDao.java:108)
+        at com.sismics.reader.rest.resource.UserResource.info(UserResource.java:541)

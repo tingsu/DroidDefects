@@ -1,0 +1,18 @@
+From GooglePlay with our new version 2014.12.09.
+One report at staged release of 20%.
+Android 4.4
+No user comment
+
+```
+java.lang.IllegalStateException: Fatal Exception thrown on Scheduler.Worker thread.
+   at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:54)
+   at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
+   at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+   at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:152)
+   at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:265)
+   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+   at java.lang.Thread.run(Thread.java:841)
+Caused by: java.lang.NullPointerException
+   at cgeo.geocaching.CachePopupFragment$StoreCacheClickListener$2.call(CachePopupFragment.java:149)
+   at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:47)

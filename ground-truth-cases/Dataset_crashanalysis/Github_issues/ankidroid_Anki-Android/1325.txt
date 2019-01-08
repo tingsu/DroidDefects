@@ -1,0 +1,31 @@
+(I)F
+W/dalvikvm( 2946): VFY:  rejecting opcode 0x6e at 0x001e
+W/dalvikvm( 2946): VFY:  rejected Lorg/achartengine/GraphicalView;.handleTouch (Landroid/view/MotionEvent;)V
+W/dalvikvm( 2946): Verifier rejected class Lorg/achartengine/GraphicalView;
+D/AndroidRuntime( 2946): Shutting down VM
+W/dalvikvm( 2946): threadid=3: thread exiting with uncaught exception (group=0x4000fe70)
+I/AnkiDroid( 2946): uncaughtException
+I/AnkiDroid( 2946): collectInformation
+I/AnkiDroid( 2946): collecting information
+I/AnkiDroid( 2946): Information collected
+I/AnkiDroid( 2946): report infomation string created
+I/AnkiDroid( 2946): saveReportFile
+I/AnkiDroid( 2946): No external storage available
+I/AnkiDroid( 2946): report saved
+E/AndroidRuntime( 2946): Uncaught handler: thread main exiting due to uncaught exception
+E/AndroidRuntime( 2946): java.lang.VerifyError: org.achartengine.GraphicalView
+E/AndroidRuntime( 2946):    at org.achartengine.ChartFactory.getBarChartView(ChartFactory.java:144)
+E/AndroidRuntime( 2946):    at com.ichi2.charts.ChartBuilder.onCreate(ChartBuilder.java:230)
+E/AndroidRuntime( 2946):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1123)
+E/AndroidRuntime( 2946):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2231)
+E/AndroidRuntime( 2946):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2284)
+E/AndroidRuntime( 2946):    at android.app.ActivityThread.access$1800(ActivityThread.java:112)
+E/AndroidRuntime( 2946):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1692)
+E/AndroidRuntime( 2946):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 2946):    at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime( 2946):    at android.app.ActivityThread.main(ActivityThread.java:3948)
+E/AndroidRuntime( 2946):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 2946):    at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime( 2946):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:782)
+E/AndroidRuntime( 2946):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:540)
+E/AndroidRuntime( 2946):    at dalvik.system.NativeStart.main(Native Method)

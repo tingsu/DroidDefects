@@ -1,0 +1,104 @@
+09-06 15:03:14.078  5350  5350 E System  : java.lang.RuntimeException: Failed to boot service com.android.server.backup.BackupManagerService$Lifecycle: onBootPhase threw an exception during phase 500
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.SystemServiceManager.startBootPhase(SystemServiceManager.java:137)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.SystemServer.startOtherServices(SystemServer.java:1095)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.SystemServer.run(SystemServer.java:291)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.SystemServer.main(SystemServer.java:176)
+09-06 15:03:14.078  5350  5350 E System  :      at java.lang.reflect.Method.invoke(Native Method)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+09-06 15:03:14.078  5350  5350 E System  : Caused by: java.lang.IllegalArgumentException: No such service ComponentInfo{android/com.android.server.backup.KeyValueBackupJob}
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.job.JobSchedulerService$JobSchedulerStub.enforceValidJobRequest(JobSchedulerService.java:786)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.job.JobSchedulerService$JobSchedulerStub.schedule(JobSchedulerService.java:831)
+09-06 15:03:14.078  5350  5350 E System  :      at android.app.JobSchedulerImpl.schedule(JobSchedulerImpl.java:42)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.backup.KeyValueBackupJob.schedule(KeyValueBackupJob.java:76)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.backup.KeyValueBackupJob.schedule(KeyValueBackupJob.java:57)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.backup.BackupManagerService.dataChangedImpl(BackupManagerService.java:8466)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.backup.BackupManagerService.dataChangedImpl(BackupManagerService.java:8435)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.backup.BackupManagerService.addPackageParticipantsLockedInner(BackupManagerService.java:2058)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.backup.BackupManagerService.addPackageParticipantsLocked(BackupManagerService.java:2035)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.backup.BackupManagerService.<init>(BackupManagerService.java:1086)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.backup.Trampoline.initialize(Trampoline.java:74)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.backup.BackupManagerService$Lifecycle.onBootPhase(BackupManagerService.java:345)
+09-06 15:03:14.078  5350  5350 E System  :      at com.android.server.SystemServiceManager.startBootPhase(SystemServiceManager.java:135)
+09-06 15:03:14.078  5350  5350 E System  :      ... 6 more
+09-06 15:03:14.078  5350  5350 D AndroidRuntime: Shutting down VM
+09-06 15:03:14.078  5350  5350 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: main
+09-06 15:03:14.078  5350  5350 E AndroidRuntime: java.lang.RuntimeException: Failed to boot service com.android.server.backup.BackupManagerService$Lifecycle: onBootPhase threw an exception during phase 500
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.SystemServiceManager.startBootPhase(SystemServiceManager.java:137)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.SystemServer.startOtherServices(SystemServer.java:1095)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.SystemServer.run(SystemServer.java:291)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.SystemServer.main(SystemServer.java:176)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: No such service ComponentInfo{android/com.android.server.backup.KeyValueBackupJob}
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.job.JobSchedulerService$JobSchedulerStub.enforceValidJobRequest(JobSchedulerService.java:786)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.job.JobSchedulerService$JobSchedulerStub.schedule(JobSchedulerService.java:831)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at android.app.JobSchedulerImpl.schedule(JobSchedulerImpl.java:42)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.backup.KeyValueBackupJob.schedule(KeyValueBackupJob.java:76)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.backup.KeyValueBackupJob.schedule(KeyValueBackupJob.java:57)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.backup.BackupManagerService.dataChangedImpl(BackupManagerService.java:8466)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.backup.BackupManagerService.dataChangedImpl(BackupManagerService.java:8435)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.backup.BackupManagerService.addPackageParticipantsLockedInner(BackupManagerService.java:2058)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.backup.BackupManagerService.addPackageParticipantsLocked(BackupManagerService.java:2035)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.backup.BackupManagerService.<init>(BackupManagerService.java:1086)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.backup.Trampoline.initialize(Trampoline.java:74)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.backup.BackupManagerService$Lifecycle.onBootPhase(BackupManagerService.java:345)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        at com.android.server.SystemServiceManager.startBootPhase(SystemServiceManager.java:135)
+09-06 15:03:14.078  5350  5350 E AndroidRuntime:        ... 6 more
+```
+
+Logcat when oandbackup has been removed:
+
+```
+09-06 12:51:29.714  4926  4926 I BackupManagerService: Package dk.jens.backup not installed; dropping from full backup
+09-06 12:51:29.733  4926  4926 V KeyValueBackupJob: Scheduling k/v pass in 248 minutes
+09-06 12:51:29.734  4926  4926 E System  : ******************************************
+09-06 12:51:29.734  4926  4926 E System  : ************ Failure starting system services
+09-06 12:51:29.734  4926  4926 E System  : java.lang.RuntimeException: Failed to boot service com.android.server.backup.BackupManagerService$Lifecycle: onBootPhase threw an exception during phase 500
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.SystemServiceManager.startBootPhase(SystemServiceManager.java:137)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.SystemServer.startOtherServices(SystemServer.java:1095)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.SystemServer.run(SystemServer.java:291)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.SystemServer.main(SystemServer.java:176)
+09-06 12:51:29.734  4926  4926 E System  :      at java.lang.reflect.Method.invoke(Native Method)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+09-06 12:51:29.734  4926  4926 E System  : Caused by: java.lang.IllegalArgumentException: No such service ComponentInfo{android/com.android.server.backup.KeyValueBackupJob}
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.job.JobSchedulerService$JobSchedulerStub.enforceValidJobRequest(JobSchedulerService.java:786)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.job.JobSchedulerService$JobSchedulerStub.schedule(JobSchedulerService.java:831)
+09-06 12:51:29.734  4926  4926 E System  :      at android.app.JobSchedulerImpl.schedule(JobSchedulerImpl.java:42)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.backup.KeyValueBackupJob.schedule(KeyValueBackupJob.java:76)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.backup.KeyValueBackupJob.schedule(KeyValueBackupJob.java:57)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.backup.BackupManagerService.dataChangedImpl(BackupManagerService.java:8466)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.backup.BackupManagerService.dataChangedImpl(BackupManagerService.java:8435)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.backup.BackupManagerService.addPackageParticipantsLockedInner(BackupManagerService.java:2058)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.backup.BackupManagerService.addPackageParticipantsLocked(BackupManagerService.java:2035)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.backup.BackupManagerService.<init>(BackupManagerService.java:1086)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.backup.Trampoline.initialize(Trampoline.java:74)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.backup.BackupManagerService$Lifecycle.onBootPhase(BackupManagerService.java:345)
+09-06 12:51:29.734  4926  4926 E System  :      at com.android.server.SystemServiceManager.startBootPhase(SystemServiceManager.java:135)
+09-06 12:51:29.734  4926  4926 E System  :      ... 6 more
+09-06 12:51:29.734  4926  4926 D AndroidRuntime: Shutting down VM
+09-06 12:51:29.735  4926  4926 E AndroidRuntime: *** FATAL EXCEPTION IN SYSTEM PROCESS: main
+09-06 12:51:29.735  4926  4926 E AndroidRuntime: java.lang.RuntimeException: Failed to boot service com.android.server.backup.BackupManagerService$Lifecycle: onBootPhase threw an exception during phase 500
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.SystemServiceManager.startBootPhase(SystemServiceManager.java:137)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.SystemServer.startOtherServices(SystemServer.java:1095)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.SystemServer.run(SystemServer.java:291)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.SystemServer.main(SystemServer.java:176)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: No such service ComponentInfo{android/com.android.server.backup.KeyValueBackupJob}
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.job.JobSchedulerService$JobSchedulerStub.enforceValidJobRequest(JobSchedulerService.java:786)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.job.JobSchedulerService$JobSchedulerStub.schedule(JobSchedulerService.java:831)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at android.app.JobSchedulerImpl.schedule(JobSchedulerImpl.java:42)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.backup.KeyValueBackupJob.schedule(KeyValueBackupJob.java:76)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.backup.KeyValueBackupJob.schedule(KeyValueBackupJob.java:57)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.backup.BackupManagerService.dataChangedImpl(BackupManagerService.java:8466)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.backup.BackupManagerService.dataChangedImpl(BackupManagerService.java:8435)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.backup.BackupManagerService.addPackageParticipantsLockedInner(BackupManagerService.java:2058)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.backup.BackupManagerService.addPackageParticipantsLocked(BackupManagerService.java:2035)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.backup.BackupManagerService.<init>(BackupManagerService.java:1086)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.backup.Trampoline.initialize(Trampoline.java:74)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.backup.BackupManagerService$Lifecycle.onBootPhase(BackupManagerService.java:345)
+09-06 12:51:29.735  4926  4926 E AndroidRuntime:        at com.android.server.SystemServiceManager.startBootPhase(SystemServiceManager.java:135)

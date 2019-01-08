@@ -1,0 +1,9 @@
+java.lang.NoSuchMethodError: info.papdt.blacklight.ui.common.ImageActivity.isDestroyed
+    at info.papdt.blacklight.ui.common.ImageActivity$MyCallback.shouldContinue(ImageActivity.java:189)
+    at info.papdt.blacklight.cache.file.FileCacheManager.createCacheFromStream(FileCacheManager.java:149)
+    at info.papdt.blacklight.cache.file.FileCacheManager.createLargeCacheFromNetwork(FileCacheManager.java:124)
+    at info.papdt.blacklight.cache.statuses.HomeTimeLineApiCache.getLargePic(HomeTimeLineApiCache.java:197)
+    at info.papdt.blacklight.ui.common.ImageActivity$DownloadTask.doInBackground(ImageActivity.java:243)
+    at info.papdt.blacklight.ui.common.ImageActivity$DownloadTask.doInBackground(ImageActivity.java)
+    at info.papdt.blacklight.support.AsyncTask$100000001.run(AsyncTask.java:73)
+    at java.lang.Thread.run(Thread.java:856)

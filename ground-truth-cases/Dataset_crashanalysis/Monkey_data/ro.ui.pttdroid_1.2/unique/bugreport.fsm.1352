@@ -1,0 +1,7 @@
+//this is an auto-generated bug report
+//package name: ro.ui.pttdroid
+//version: 1.2
+//appro_time: 108
+ java.lang.NoClassDefFoundError: ro/ui/pttdroid/codecs/Speex
+ 	at ro.ui.pttdroid.Recorder.init(Recorder.java:107)
+ 	at ro.ui.pttdroid.Recorder.run(Recorder.java:47)

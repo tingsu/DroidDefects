@@ -1,0 +1,42 @@
+//this is an auto-generated bug report
+//package name: org.daylightingsociety.wherearetheeyes
+//version: 1.2
+//appro_time: 179
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{org.daylightingsociety.wherearetheeyes/org.daylightingsociety.wherearetheeyes.MainActivity}: android.view.InflateException: Binary XML file line #14: Error inflating class com.mapbox.mapboxsdk.maps.MapView
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.view.InflateException: Binary XML file line #14: Error inflating class com.mapbox.mapboxsdk.maps.MapView
+ 	at android.view.LayoutInflater.createView(LayoutInflater.java:620)
+ 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+ 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+ 	at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+ 	at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+ 	at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+ 	at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:267)
+ 	at android.app.Activity.setContentView(Activity.java:1895)
+ 	at org.daylightingsociety.wherearetheeyes.MainActivity.onCreate(MainActivity.java:49)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)
+ 	... 11 more
+ Caused by: java.lang.reflect.InvocationTargetException
+ 	at java.lang.reflect.Constructor.constructNative(Native Method)
+ 	at java.lang.reflect.Constructor.newInstance(Constructor.java:417)
+ 	at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+ 	... 22 more
+ Caused by: java.lang.IllegalArgumentException: totalMemory cannot be negative.
+ 	at com.mapbox.mapboxsdk.maps.NativeMapView.<init>(NativeMapView.java:77)
+ 	at com.mapbox.mapboxsdk.maps.MapView.initialize(MapView.java:207)
+ 	at com.mapbox.mapboxsdk.maps.MapView.<init>(MapView.java:170)
+ 	... 25 more

@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: com.haringeymobile.ukweather
+//version: 1.2.1
+//appro_time: 65
+ FATAL EXCEPTION: main
+ java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+ 	at android.support.v4.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1538)
+ 	at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1556)
+ 	at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:696)
+ 	at android.support.v4.app.BackStackRecord.commit(BackStackRecord.java:662)
+ 	at com.haringeymobile.ukweather.weather.WeatherInfoActivity.addRequiredFragment(WeatherInfoActivity.java:91)
+ 	at com.haringeymobile.ukweather.weather.WeatherInfoActivity.displayRetrievedData(WeatherInfoActivity.java:159)
+ 	at com.haringeymobile.ukweather.RefreshingActivity.onRecentJsonStringRetrieved(RefreshingActivity.java:77)
+ 	at com.haringeymobile.ukweather.weather.WorkerFragmentToRetrieveJsonString$RetrieveWeatherInformationJsonStringTask.onPostExecute(WorkerFragmentToRetrieveJsonString.java:232)
+ 	at com.haringeymobile.ukweather.weather.WorkerFragmentToRetrieveJsonString$RetrieveWeatherInformationJsonStringTask.onPostExecute(WorkerFragmentToRetrieveJsonString.java:137)
+ 	at android.os.AsyncTask.finish(AsyncTask.java:631)
+ 	at android.os.AsyncTask.access$600(AsyncTask.java:177)
+ 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

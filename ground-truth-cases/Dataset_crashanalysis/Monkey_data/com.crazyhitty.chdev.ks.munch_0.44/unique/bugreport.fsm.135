@@ -1,0 +1,15 @@
+//this is an auto-generated bug report
+//package name: com.crazyhitty.chdev.ks.munch
+//version: 0.44
+//appro_time: 158
+ FATAL EXCEPTION: main
+ android.app.RemoteServiceException: Bad notification posted from package com.crazyhitty.chdev.ks.munch: Couldn't create icon: StatusBarIcon(pkg=com.crazyhitty.chdev.ks.munchuser=0 id=0x7f02008e level=0 visible=true num=0 )
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1423)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

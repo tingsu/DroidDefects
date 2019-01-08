@@ -1,0 +1,61 @@
+//this is an auto-generated bug report
+//package name: com.jmstudios.redmoon
+//version: 2.9.1
+//appro_time: 154
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.jmstudios.redmoon/com.jmstudios.redmoon.activity.ShadesActivity}: android.view.InflateException: Binary XML file line #27: Error inflating class <unknown>
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.view.InflateException: Binary XML file line #27: Error inflating class <unknown>
+ 	at android.view.LayoutInflater.createView(LayoutInflater.java:620)
+ 	at com.android.internal.policy.impl.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:56)
+ 	at android.view.LayoutInflater.onCreateView(LayoutInflater.java:669)
+ 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:694)
+ 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+ 	at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+ 	at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+ 	at android.preference.PreferenceFragment.onCreateView(PreferenceFragment.java:162)
+ 	at com.jmstudios.redmoon.fragment.ShadesFragment.onCreateView(ShadesFragment.java:263)
+ 	at android.app.Fragment.performCreateView(Fragment.java:1699)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:885)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1057)
+ 	at android.app.BackStackRecord.run(BackStackRecord.java:682)
+ 	at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1435)
+ 	at android.app.Activity.performStart(Activity.java:5142)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2184)
+ 	... 11 more
+ Caused by: java.lang.reflect.InvocationTargetException
+ 	at java.lang.reflect.Constructor.constructNative(Native Method)
+ 	at java.lang.reflect.Constructor.newInstance(Constructor.java:417)
+ 	at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+ 	... 26 more
+ Caused by: java.lang.OutOfMemoryError
+ 	at android.graphics.BitmapFactory.nativeDecodeAsset(Native Method)
+ 	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:503)
+ 	at android.graphics.BitmapFactory.decodeResourceStream(BitmapFactory.java:356)
+ 	at android.graphics.drawable.Drawable.createFromResourceStream(Drawable.java:800)
+ 	at android.content.res.Resources.loadDrawable(Resources.java:2110)
+ 	at android.content.res.Resources.getDrawable(Resources.java:695)
+ 	at android.support.v7.widget.TintResources.superGetDrawable(TintResources.java:55)
+ 	at android.support.v7.widget.AppCompatDrawableManager.onDrawableLoadedFromResources(AppCompatDrawableManager.java:391)
+ 	at android.support.v7.widget.TintResources.getDrawable(TintResources.java:48)
+ 	at android.widget.EdgeEffect.<init>(EdgeEffect.java:138)
+ 	at android.widget.AbsListView.setOverScrollMode(AbsListView.java:832)
+ 	at android.view.View.<init>(View.java:3265)
+ 	at android.view.View.<init>(View.java:3315)
+ 	at android.view.ViewGroup.<init>(ViewGroup.java:459)
+ 	at android.widget.AdapterView.<init>(AdapterView.java:235)
+ 	at android.widget.AbsListView.<init>(AbsListView.java:766)
+ 	at android.widget.ListView.<init>(ListView.java:144)
+ 	at android.widget.ListView.<init>(ListView.java:140)
+ 	... 29 more

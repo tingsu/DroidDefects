@@ -1,0 +1,12 @@
+    java.lang.IllegalArgumentException: Stickers are only supported with Music objects.
+            at org.a0z.mpd.Sticker.getRating(Sticker.java:299)
+            at com.namelessdev.mpdroid.fragments.NowPlayingFragment.getTrackRating(NowPlayingFragment.java:535)
+            at com.namelessdev.mpdroid.fragments.NowPlayingFragment.stickerChanged(NowPlayingFragment.java:930)
+            at com.namelessdev.mpdroid.helpers.MPDAsyncHelper.handleMessage(MPDAsyncHelper.java:278)
+            at android.os.Handler.dispatchMessage(Handler.java:98)
+            at android.os.Looper.loop(Looper.java:135)
+            at android.app.ActivityThread.main(ActivityThread.java:5221)
+            at java.lang.reflect.Method.invoke(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:372)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)

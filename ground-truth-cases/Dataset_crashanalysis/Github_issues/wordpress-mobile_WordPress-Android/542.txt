@@ -1,0 +1,7 @@
+    java.lang.NullPointerException
+            at org.wordpress.android.GCMIntentService.onMessage(GCMIntentService.java:231)
+            at com.google.android.gcm.GCMBaseIntentService.onHandleIntent(GCMBaseIntentService.java:223)
+            at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+            at android.os.Handler.dispatchMessage(Handler.java:99)
+            at android.os.Looper.loop(Looper.java:137)
+            at android.os.HandlerThread.run(HandlerThread.java:61)</code></pre>

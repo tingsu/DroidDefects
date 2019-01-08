@@ -1,0 +1,36 @@
+
+Sadly I don't know, but it's happened to me twice now. First time I don't have a backtrace of, but this time I caught it in time. There is some similarity with #1272 but that one doesn't happen at startup nor do I see a mention of settings getting lost.
+
+This is the stacktrace, including the second attempt going straight to the welcome screen instead:
+
+```
+06-09 12:49:12.611  5440  6985 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.fsck.k9/.activity.Accounts bnds=[13,242][224,495] (has extras)} from uid 10031 on display 0
+06-09 12:49:12.736  5440  3544 I ActivityManager: Start proc 1674:com.fsck.k9/u0a121 for activity com.fsck.k9/.activity.MessageList
+06-09 12:49:13.057  1674  1674 E AndroidRuntime: FATAL EXCEPTION: main
+06-09 12:49:13.057  1674  1674 E AndroidRuntime: Process: com.fsck.k9, PID: 1674
+06-09 12:49:13.057  1674  1674 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.fsck.k9/com.fsck.k9.activity.MessageList}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.fsck.k9.Account.getUuid()' on a null object reference
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.ActivityThread.-wrap11(ActivityThread.java)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:102)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:148)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:5422)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.fsck.k9.Account.getUuid()' on a null object reference
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at com.fsck.k9.fragment.MessageListFragment.decodeArguments(MessageListFragment.java:957)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at com.fsck.k9.fragment.MessageListFragment.onCreate(MessageListFragment.java:810)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.Fragment.performCreate(Fragment.java:2198)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:942)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1148)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1130)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.FragmentManagerImpl.dispatchCreate(FragmentManager.java:1948)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.FragmentController.dispatchCreate(FragmentController.java:141)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.Activity.onCreate(Activity.java:921)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at com.fsck.k9.activity.K9FragmentActivity.onCreate(K9FragmentActivity.java:19)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at com.fsck.k9.activity.MessageList.onCreate(MessageList.java:194)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.Activity.performCreate(Activity.java:6251)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+06-09 12:49:13.057  1674  1674 E AndroidRuntime:        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)

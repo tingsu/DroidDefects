@@ -1,0 +1,104 @@
+STACK_TRACE=java.lang.RuntimeException: Unable to start activity ComponentInfo{eu.hydrologis.geopaparazzi/com.google.android.apps.markers.MarkersActivity}: java.lang.SecurityException: MODE_WORLD_READABLE no longer supported
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2665)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+Caused by: java.lang.SecurityException: MODE_WORLD_READABLE no longer supported
+        at android.app.ContextImpl.checkMode(ContextImpl.java:2134)
+        at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:354)
+        at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:349)
+        at android.content.ContextWrapper.getSharedPreferences(ContextWrapper.java:164)
+        at com.google.android.apps.markers.PressureCooker.loadStats(PressureCooker.java:61)
+        at com.google.android.apps.markers.PressureCooker.<init>(PressureCooker.java:57)
+        at com.google.android.apps.markers.Slate.init(Slate.java:448)
+        at com.google.android.apps.markers.Slate.<init>(Slate.java:400)
+        at com.google.android.apps.markers.MarkersActivity.onCreate(MarkersActivity.java:239)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        ... 9 more
+java.lang.SecurityException: MODE_WORLD_READABLE no longer supported
+        at android.app.ContextImpl.checkMode(ContextImpl.java:2134)
+        at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:354)
+        at android.app.ContextImpl.getSharedPreferences(ContextImpl.java:349)
+        at android.content.ContextWrapper.getSharedPreferences(ContextWrapper.java:164)
+        at com.google.android.apps.markers.PressureCooker.loadStats(PressureCooker.java:61)
+        at com.google.android.apps.markers.PressureCooker.<init>(PressureCooker.java:57)
+        at com.google.android.apps.markers.Slate.init(Slate.java:448)
+        at com.google.android.apps.markers.Slate.<init>(Slate.java:400)
+        at com.google.android.apps.markers.MarkersActivity.onCreate(MarkersActivity.java:239)
+        at android.app.Activity.performCreate(Activity.java:6679)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1118)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2618)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+
+```
+
+And after that
+
+```
+APP_VERSION_CODE=79
+APP_VERSION_NAME=5.2.0
+ANDROID_VERSION=7.1.1
+PHONE_MODEL=Nexus 6P
+CUSTOM_DATA=
+STACK_TRACE=java.lang.RuntimeException: Unable to resume activity {eu.hydrologis.geopaparazzi/eu.hydrologis.geopaparazzi.ui.activities.AddNotesActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=669, result=0, data=null} to activity {eu.hydrologis.geopaparazzi/eu.hydrologis.geopaparazzi.ui.activities.AddNotesActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.content.Intent.getLongExtra(java.lang.String, long)' on a null object reference
+        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3429)
+        at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3469)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2732)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=669, result=0, data=null} to activity {eu.hydrologis.geopaparazzi/eu.hydrologis.geopaparazzi.ui.activities.AddNotesActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.content.Intent.getLongExtra(java.lang.String, long)' on a null object reference
+        at android.app.ActivityThread.deliverResults(ActivityThread.java:4089)
+        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3403)
+        ... 10 more
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.content.Intent.getLongExtra(java.lang.String, long)' on a null object reference
+        at eu.hydrologis.geopaparazzi.ui.activities.AddNotesActivity.onActivityResult(AddNotesActivity.java:297)
+        at android.app.Activity.dispatchActivityResult(Activity.java:6932)
+        at android.app.ActivityThread.deliverResults(ActivityThread.java:4085)
+        ... 11 more
+java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=669, result=0, data=null} to activity {eu.hydrologis.geopaparazzi/eu.hydrologis.geopaparazzi.ui.activities.AddNotesActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.content.Intent.getLongExtra(java.lang.String, long)' on a null object reference
+        at android.app.ActivityThread.deliverResults(ActivityThread.java:4089)
+        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3403)
+        at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3469)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2732)
+        at android.app.ActivityThread.-wrap12(ActivityThread.java)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1477)
+        at android.os.Handler.dispatchMessage(Handler.java:102)
+        at android.os.Looper.loop(Looper.java:154)
+        at android.app.ActivityThread.main(ActivityThread.java:6119)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long android.content.Intent.getLongExtra(java.lang.String, long)' on a null object reference
+        at eu.hydrologis.geopaparazzi.ui.activities.AddNotesActivity.onActivityResult(AddNotesActivity.java:297)
+        at android.app.Activity.dispatchActivityResult(Activity.java:6932)
+        at android.app.ActivityThread.deliverResults(ActivityThread.java:4085)
+        ... 11 more
+java.lang.NullPointerException: Attempt to invoke virtual method 'long android.content.Intent.getLongExtra(java.lang.String, long)' on a null object reference
+        at eu.hydrologis.geopaparazzi.ui.activities.AddNotesActivity.onActivityResult(AddNotesActivity.java:297)
+        at android.app.Activity.dispatchActivityResult(Activity.java:6932)
+        at android.app.ActivityThread.deliverResults(ActivityThread.java:4085)
+        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3403)
+        at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3469)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2732)

@@ -1,0 +1,31 @@
+//this is an auto-generated bug report
+//package name: me.kuehle.carreport
+//version: 3.11.2
+//appro_time: 99
+ FATAL EXCEPTION: main
+ android.database.CursorIndexOutOfBoundsException: Index 0 requested, with a size of 0
+ 	at android.database.AbstractCursor.checkPosition(AbstractCursor.java:424)
+ 	at android.database.AbstractWindowedCursor.checkPosition(AbstractWindowedCursor.java:136)
+ 	at android.database.AbstractWindowedCursor.isNull(AbstractWindowedCursor.java:92)
+ 	at android.database.CursorWrapper.isNull(CursorWrapper.java:150)
+ 	at android.database.CursorWrapper.isNull(CursorWrapper.java:150)
+ 	at me.kuehle.carreport.provider.base.AbstractCursor.getFloatOrNull(AbstractCursor.java:64)
+ 	at me.kuehle.carreport.provider.othercost.OtherCostCursor.getPrice(OtherCostCursor.java:83)
+ 	at me.kuehle.carreport.gui.DataDetailOtherFragment.isExpenditure(DataDetailOtherFragment.java:344)
+ 	at me.kuehle.carreport.gui.DataDetailOtherFragment.initFields(DataDetailOtherFragment.java:235)
+ 	at me.kuehle.carreport.gui.AbstractDataDetailFragment.onCreateView(AbstractDataDetailFragment.java:126)
+ 	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1974)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1067)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1252)
+ 	at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:742)
+ 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1617)
+ 	at android.support.v4.app.FragmentManagerImpl$1.run(FragmentManager.java:517)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

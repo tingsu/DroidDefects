@@ -1,0 +1,6 @@
+11-10 18:43:57.193: E/AndroidRuntime(24485): java.lang.NullPointerException: Attempt to invoke interface method 'void com.nutomic.syncthingandroid.syncthing.SyncthingService$OnWebGuiAvailableListener.onWebGuiAvailable()' on a null object reference
+11-10 18:43:57.193: E/AndroidRuntime(24485):    at com.nutomic.syncthingandroid.syncthing.SyncthingService$PollWebGuiAvailableTaskImpl.onPostExecute(SyncthingService.java:475)
+11-10 18:43:57.193: E/AndroidRuntime(24485):    at com.nutomic.syncthingandroid.syncthing.SyncthingService$PollWebGuiAvailableTaskImpl.onPostExecute(SyncthingService.java:456)
+11-10 18:43:57.193: E/AndroidRuntime(24485):    at android.os.AsyncTask.finish(AsyncTask.java:636)
+11-10 18:43:57.193: E/AndroidRuntime(24485):    at android.os.AsyncTask.access$500(AsyncTask.java:177)
+11-10 18:43:57.193: E/AndroidRuntime(24485):    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:653)

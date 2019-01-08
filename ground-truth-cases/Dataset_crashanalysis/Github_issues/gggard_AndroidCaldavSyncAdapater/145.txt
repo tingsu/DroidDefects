@@ -1,0 +1,6 @@
+    org.apache.http.client.ClientProtocolException: StatusCode: 503
+            at org.gege.caldavsyncadapter.caldav.CaldavFacade.checkStatus(CaldavFacade.java:597)
+            at org.gege.caldavsyncadapter.caldav.CaldavFacade.getUserPrincipal(CaldavFacade.java:330)
+            at org.gege.caldavsyncadapter.caldav.CaldavFacade.getCalendarList(CaldavFacade.java:441)
+            at org.gege.caldavsyncadapter.syncadapter.SyncAdapter.onPerformSync(SyncAdapter.java:151)
+            at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:259)

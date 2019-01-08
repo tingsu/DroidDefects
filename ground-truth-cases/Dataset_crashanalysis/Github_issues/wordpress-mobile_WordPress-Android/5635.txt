@@ -1,0 +1,13 @@
+Fatal Exception: android.app.RemoteServiceException: Bad notification posted from package org.wordpress.android: Couldn't create icon: StatusBarIcon(pkg=org.wordpress.androiduser=0 id=0x7f020195 level=0 visible=true num=0 )
+       at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1461)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:136)
+       at android.app.ActivityThread.main(ActivityThread.java:5590)
+       at java.lang.reflect.Method.invokeNative(Method.java)
+       at java.lang.reflect.Method.invoke(Method.java:515)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1268)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1084)
+       at dalvik.system.NativeStart.main(NativeStart.java)
+``` 
+
+We know this from before, i.e. look at this: #5497 and this https://github.com/wordpress-mobile/WordPress-Android/issues/4968#issuecomment-269999631

@@ -1,0 +1,8 @@
+`java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.res.Resources android.view.View.getResources()' on a null object reference
+                                                                            at android.support.design.widget.Snackbar.make(Snackbar.java:165)
+                                                                            at org.fossasia.openevent.utils.ShowNotificationSnackBar.showSnackBar(ShowNotificationSnackBar.java:41)
+                                                                            at org.fossasia.openevent.utils.ShowNotificationSnackBar.<init>(ShowNotificationSnackBar.java:35)
+                                                                            at org.fossasia.openevent.fragments.DayScheduleFragment$6$1.<init>(DayScheduleFragment.java:328)
+                                                                            at org.fossasia.openevent.fragments.DayScheduleFragment$6.inactiveConnection(DayScheduleFragment.java:328)
+                                                                            at org.fossasia.openevent.utils.NetworkUtils$4$1.accept(NetworkUtils.java:158)
+                                                                            at org.fossasia.openevent.utils.NetworkUtils$4$1.accept(NetworkUtils.java:152)`

@@ -1,0 +1,20 @@
+04-12 11:17:29.947 8149-8190/org.thoughtcrime.securesms W/JobConsumer: com.google.protobuf.UninitializedMessageException: Message missing required fields: 
+                                                                           at com.google.protobuf.AbstractMessage$Builder.newUninitializedMessageException(AbstractMessage.java:770)
+                                                                           at org.whispersystems.libsignal.state.StorageProtos$SignedPreKeyRecordStructure$Builder.build(StorageProtos.java:7521)
+                                                                           at org.whispersystems.libsignal.state.SignedPreKeyRecord.<init>(SignedPreKeyRecord.java:28)
+                                                                           at org.thoughtcrime.securesms.crypto.PreKeyUtil.generateSignedPreKey(PreKeyUtil.java:76)
+                                                                           at org.thoughtcrime.securesms.jobs.CreateSignedPreKeyJob.onRun(CreateSignedPreKeyJob.java:51)
+                                                                           at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+                                                                           at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+                                                                           at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+04-12 11:17:29.947 8149-8190/org.thoughtcrime.securesms E/AndroidRuntime: FATAL EXCEPTION: JobConsumer-4
+                                                                          Process: org.thoughtcrime.securesms, PID: 8149
+                                                                          com.google.protobuf.UninitializedMessageException: Message missing required fields: 
+                                                                              at com.google.protobuf.AbstractMessage$Builder.newUninitializedMessageException(AbstractMessage.java:770)
+                                                                              at org.whispersystems.libsignal.state.StorageProtos$SignedPreKeyRecordStructure$Builder.build(StorageProtos.java:7521)
+                                                                              at org.whispersystems.libsignal.state.SignedPreKeyRecord.<init>(SignedPreKeyRecord.java:28)
+                                                                              at org.thoughtcrime.securesms.crypto.PreKeyUtil.generateSignedPreKey(PreKeyUtil.java:76)
+                                                                              at org.thoughtcrime.securesms.jobs.CreateSignedPreKeyJob.onRun(CreateSignedPreKeyJob.java:51)
+                                                                              at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+                                                                              at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+                                                                              at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

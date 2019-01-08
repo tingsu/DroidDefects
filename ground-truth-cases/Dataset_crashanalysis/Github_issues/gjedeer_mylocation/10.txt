@@ -1,0 +1,17 @@
+09-18 13:08:38.814  3314  3314 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{net.mypapit.mobile.myposition/net.mypapit.mobile.myposition.MyLocationActivity}: java.lang.NullPointerException
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1702)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1727)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at android.app.ActivityThread.access$1500(ActivityThread.java:124)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:974)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:99)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:130)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:3859)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at java.lang.reflect.Method.invokeNative(Native Method)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Method.java:507)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:889)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:647)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at dalvik.system.NativeStart.main(Native Method)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime: Caused by: java.lang.NullPointerException
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at net.mypapit.mobile.myposition.MyLocationActivity.onCreate(MyLocationActivity.java:95)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+09-18 13:08:38.814  3314  3314 E AndroidRuntime:        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1666)

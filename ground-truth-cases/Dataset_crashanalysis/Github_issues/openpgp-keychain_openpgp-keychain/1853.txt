@@ -1,0 +1,25 @@
+
+I am stuck with a 'broken' Open-Keychain update on my phone. When opening the application it will try to reimport the keys and crashes at around 65%. I have several secret keys and >300 public keys. 
+
+Stacktrace from `logcat`:
+
+```
+E/AndroidRuntime(20571): FATAL EXCEPTION: Thread-48963
+E/AndroidRuntime(20571): Process: org.sufficientlysecure.keychain, PID: 20571
+E/AndroidRuntime(20571): java.lang.AssertionError: Rank 0 user packet must be a user id!
+E/AndroidRuntime(20571):        at org.sufficientlysecure.keychain.provider.KeychainProvider.insert(KeychainProvider.java:810)
+E/AndroidRuntime(20571):        at android.content.ContentProviderOperation.apply(ContentProviderOperation.java:214)
+E/AndroidRuntime(20571):        at android.content.ContentProvider.applyBatch(ContentProvider.java:1617)
+E/AndroidRuntime(20571):        at android.content.ContentProvider$Transport.applyBatch(ContentProvider.java:260)
+E/AndroidRuntime(20571):        at android.content.ContentProviderClient.applyBatch(ContentProviderClient.java:377)
+E/AndroidRuntime(20571):        at android.content.ContentResolver.applyBatch(ContentResolver.java:1233)
+E/AndroidRuntime(20571):        at org.sufficientlysecure.keychain.provider.ProviderHelper.saveCanonicalizedPublicKeyRing(ProviderHelper.java:730)
+E/AndroidRuntime(20571):        at org.sufficientlysecure.keychain.provider.ProviderHelper.savePublicKeyRing(ProviderHelper.java:978)
+E/AndroidRuntime(20571):        at org.sufficientlysecure.keychain.operations.ImportOperation.serialKeyRingImport(ImportOperation.java:321)
+E/AndroidRuntime(20571):        at org.sufficientlysecure.keychain.operations.ImportOperation.serialKeyRingImport(ImportOperation.java:101)
+E/AndroidRuntime(20571):        at org.sufficientlysecure.keychain.provider.ProviderHelper.consolidateDatabaseStep2(ProviderHelper.java:1357)
+E/AndroidRuntime(20571):        at org.sufficientlysecure.keychain.provider.ProviderHelper.consolidateDatabaseStep2(ProviderHelper.java:1259)
+E/AndroidRuntime(20571):        at org.sufficientlysecure.keychain.operations.ConsolidateOperation.execute(ConsolidateOperation.java:43)
+E/AndroidRuntime(20571):        at org.sufficientlysecure.keychain.operations.ConsolidateOperation.execute(ConsolidateOperation.java:31)
+E/AndroidRuntime(20571):        at org.sufficientlysecure.keychain.service.KeychainService$1.run(KeychainService.java:146)
+E/AndroidRuntime(20571):        at java.lang.Thread.run(Thread.java:841)

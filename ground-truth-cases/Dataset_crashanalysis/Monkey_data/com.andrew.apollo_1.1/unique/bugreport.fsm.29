@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: com.andrew.apollo
+//version: 1.1
+//appro_time: 130
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.andrew.apollo/com.andrew.apollo.ui.activities.ProfileActivity}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at com.andrew.apollo.menu.PhotoSelectionDialog.onCreateDialog(PhotoSelectionDialog.java:77)
+ 	at android.support.v4.app.DialogFragment.getLayoutInflater(DialogFragment.java:295)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:911)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1088)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1070)
+ 	at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1861)
+ 	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:547)
+ 	at com.andrew.apollo.ui.activities.BaseActivity.onStart(BaseActivity.java:247)
+ 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1171)
+ 	at android.app.Activity.performStart(Activity.java:5143)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2184)

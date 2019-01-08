@@ -1,0 +1,42 @@
+11-24 16:57:52.474  3558  3930 E AbstractConnection: java.net.SocketException: recvfrom failed: ECONNRESET (Connection reset by peer)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at libcore.io.IoBridge.maybeThrowAfterRecvfrom(IoBridge.java:588)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at libcore.io.IoBridge.recvfrom(IoBridge.java:552)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at java.net.PlainSocketImpl.read(PlainSocketImpl.java:481)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at java.net.PlainSocketImpl.-wrap0(PlainSocketImpl.java)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at java.net.PlainSocketImpl$PlainSocketInputStream.read(PlainSocketImpl.java:237)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at com.ubergeek42.weechat.relay.connection.AbstractConnection.readAll(AbstractConnection.java:164)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at com.ubergeek42.weechat.relay.connection.AbstractConnection.access$300(AbstractConnection.java:2144)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at com.ubergeek42.weechat.relay.connection.AbstractConnection$2.run(AbstractConnection.java:83)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at java.lang.Thread.run(Thread.java:818)
+11-24 16:57:52.474  3558  3930 E AbstractConnection: Caused by: android.system.ErrnoException: recvfrom failed: ECONNRESET (Connection reset by peer)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at libcore.io.Posix.recvfromBytes(Native Method)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at libcore.io.Posix.recvfrom(Posix.java:189)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at libcore.io.BlockGuardOs.recvfrom(BlockGuardOs.java:250)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    at libcore.io.IoBridge.recvfrom(IoBridge.java:549)
+11-24 16:57:52.474  3558  3930 E AbstractConnection:    ... 7 more
+11-24 16:57:52.474  3558  3930 E RelayService: onException(SocketException)
+11-24 16:57:52.474  3558  3930 I Jsch    : Disconnecting from <my_address> port 22
+11-24 16:57:52.475  3558  3928 I Jsch    : Caught an exception, leaving main loop due to Socket closed
+```
+
+Dunno if this is related as well:
+
+```
+11-24 16:57:55.550  3872  3908 W a.a.a.ab: Wait for canceled timed out: DNS: connectsdk [/<ip-address-here>] state: canceling 1 task: null
+11-24 16:57:55.550  3872  3908 W a.a.a.aj: connectsdkrecover() Could not recover we are Down!
+11-24 16:57:58.351   371  1176 D audio_hw_primary: disable_audio_route: reset and update mixer path: low-latency-playback speaker
+11-24 16:57:58.353   371  1176 D audio_hw_primary: disable_snd_device: snd_device(2: speaker)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a: ServiceResolver(connectsdk).run() exception 
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a: java.net.SocketException: sendto failed: EPERM (Operation not permitted)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a:   at libcore.io.IoBridge.maybeThrowAfterSendto(IoBridge.java:542)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a:   at libcore.io.IoBridge.sendto(IoBridge.java:511)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a:   at java.net.PlainDatagramSocketImpl.send(PlainDatagramSocketImpl.java:184)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a:   at java.net.DatagramSocket.send(DatagramSocket.java:305)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a:   at a.a.a.aj.a(SourceFile:1541)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a:   at a.a.a.b.a.a.run(SourceFile:74)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a:   at java.util.Timer$TimerImpl.run(Timer.java:284)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a: Caused by: android.system.ErrnoException: sendto failed: EPERM (Operation not permitted)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a:   at libcore.io.Posix.sendtoBytes(Native Method)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a:   at libcore.io.Posix.sendto(Posix.java:211)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a:   at libcore.io.BlockGuardOs.sendto(BlockGuardOs.java:278)
+11-24 16:58:05.621  3872  3941 W a.a.a.b.a.a:   at libcore.io.IoBridge.sendto(IoBridge.java:509)

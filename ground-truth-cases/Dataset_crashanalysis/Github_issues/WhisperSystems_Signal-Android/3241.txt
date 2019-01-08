@@ -1,0 +1,13 @@
+E/AndroidRuntime(31289): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.getScheme()' on a null object reference
+E/AndroidRuntime(31289):    at android.content.ContentResolver.openAssetFileDescriptor(ContentResolver.java:924)
+E/AndroidRuntime(31289):    at android.content.ContentResolver.openAssetFileDescriptor(ContentResolver.java:868)
+E/AndroidRuntime(31289):    at android.media.MediaPlayer.setDataSource(MediaPlayer.java:989)
+E/AndroidRuntime(31289):    at android.media.MediaPlayer.setDataSource(MediaPlayer.java:957)
+E/AndroidRuntime(31289):    at org.thoughtcrime.securesms.notifications.MessageNotifier.sendInThreadNotification(MessageNotifier.java:309)
+E/AndroidRuntime(31289):    at org.thoughtcrime.securesms.notifications.MessageNotifier.updateNotification(MessageNotifier.java:129)
+E/AndroidRuntime(31289):    at org.thoughtcrime.securesms.jobs.PushDecryptJob.handleTextMessage(PushDecryptJob.java:222)
+E/AndroidRuntime(31289):    at org.thoughtcrime.securesms.jobs.PushDecryptJob.handleMessage(PushDecryptJob.java:111)
+E/AndroidRuntime(31289):    at org.thoughtcrime.securesms.jobs.PushDecryptJob.onRun(PushDecryptJob.java:87)
+E/AndroidRuntime(31289):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(31289):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(31289):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

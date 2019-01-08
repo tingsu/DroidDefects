@@ -1,0 +1,7 @@
+java.lang.NullPointerException
+ at com.plusonelabs.calendar.calendar.CalendarEventVisualizer.getRemoteView(CalendarEventVisualizer.java:54)
+ at com.plusonelabs.calendar.EventRemoteViewsFactory.getViewAt(EventRemoteViewsFactory.java:76)
+ at android.widget.RemoteViewsService$RemoteViewsFactoryAdapter.getViewAt(RemoteViewsService.java:164)
+ at com.android.internal.widget.IRemoteViewsFactory$Stub.onTransact(IRemoteViewsFactory.java:85)
+ at android.os.Binder.execTransact(Binder.java:338)
+ at dalvik.system.NativeStart.run(Native Method)

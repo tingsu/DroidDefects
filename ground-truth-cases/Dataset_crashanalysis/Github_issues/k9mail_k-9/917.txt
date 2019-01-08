@@ -1,0 +1,6 @@
+E/k9 ( 6937): Caused by: javax.net.ssl.SSLHandshakeException: Connection closed by peer
+E/k9 ( 6937): at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+E/k9 ( 6937): at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:302)
+E/k9 ( 6937): at com.android.org.conscrypt.OpenSSLSocketImpl.waitForHandshake(OpenSSLSocketImpl.java:598)
+E/k9 ( 6937): at com.android.org.conscrypt.OpenSSLSocketImpl.getInputStream(OpenSSLSocketImpl.java:560)
+E/k9 ( 6937): at com.fsck.k9.mail.store.ImapStore$ImapConnection.open(ImapStore.java:2459)

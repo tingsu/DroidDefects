@@ -1,0 +1,8 @@
+11-03 22:03:05.620 E/AndroidRuntime( 4034): java.lang.OutOfMemoryError: thread creation failed
+11-03 22:03:05.620 E/AndroidRuntime( 4034):     at java.lang.VMThread.create(Native Method)
+11-03 22:03:05.620 E/AndroidRuntime( 4034):     at java.lang.Thread.start(Thread.java:1050)
+11-03 22:03:05.620 E/AndroidRuntime( 4034):     at java.util.concurrent.ThreadPoolExecutor.addWorker(ThreadPoolExecutor.java:909)
+11-03 22:03:05.620 E/AndroidRuntime( 4034):     at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1291)
+11-03 22:03:05.620 E/AndroidRuntime( 4034):     at java.util.concurrent.Executors$DelegatedExecutorService.execute(Executors.java:600)
+11-03 22:03:05.620 E/AndroidRuntime( 4034):     at de.danoeh.antennapod.core.service.download.DownloadService.access$800(DownloadService.java:13627)
+11-03 22:03:05.620 E/AndroidRuntime( 4034):     at de.danoeh.antennapod.core.service.download.DownloadService$1.run(DownloadService.java:204)

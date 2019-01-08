@@ -1,0 +1,14 @@
+                                                                    java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String free.rm.skytube.businessobjects.YouTubeVideo.getTitle()' on a null object reference
+                                                                        at free.rm.skytube.gui.fragments.YouTubePlayerFragment.showHud(YouTubePlayerFragment.java:248)
+                                                                        at free.rm.skytube.gui.fragments.YouTubePlayerFragment.showOrHideHud(YouTubePlayerFragment.java:237)
+                                                                        at free.rm.skytube.gui.fragments.YouTubePlayerFragment.access$000(YouTubePlayerFragment.java:51)
+                                                                        at free.rm.skytube.gui.fragments.YouTubePlayerFragment$1.onClick(YouTubePlayerFragment.java:109)
+                                                                        at android.view.View.performClick(View.java:5609)
+                                                                        at android.view.View$PerformClick.run(View.java:22259)
+                                                                        at android.os.Handler.handleCallback(Handler.java:751)
+                                                                        at android.os.Handler.dispatchMessage(Handler.java:95)
+                                                                        at android.os.Looper.loop(Looper.java:154)
+                                                                        at android.app.ActivityThread.main(ActivityThread.java:6077)
+                                                                        at java.lang.reflect.Method.invoke(Native Method)
+                                                                        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:865)
+                                                                        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:755)`

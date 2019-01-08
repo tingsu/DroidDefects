@@ -1,0 +1,14 @@
+java.lang.IllegalStateException: java.lang.IllegalArgumentException: is == null
+    at net.osmand.router.RoutingConfiguration.getDefault(RoutingConfiguration.java:171)
+    at net.osmand.plus.AppInitializer.getLazyDefaultRoutingConfig(AppInitializer.java:302)
+    at net.osmand.plus.OsmandApplication.getDefaultRoutingConfig(OsmandApplication.java:649)
+    at net.osmand.plus.CurrentPositionHelper.initCtx(CurrentPositionHelper.java:40)
+    at net.osmand.plus.CurrentPositionHelper.runUpdateInThread(CurrentPositionHelper.java:48)
+    at net.osmand.plus.CurrentPositionHelper.runUpdateInThreadCatch(CurrentPositionHelper.java:92)
+    at net.osmand.plus.CurrentPositionHelper$1.run(CurrentPositionHelper.java:72)
+    at net.osmand.plus.routing.RoutingHelper$4.run(RoutingHelper.java:894)
+    at java.lang.Thread.run(Thread.java:841)
+Caused by: java.lang.IllegalArgumentException: is == null
+    at org.kxml2.io.KXmlParser.setInput(KXmlParser.java:1625)
+    at net.osmand.router.RoutingConfiguration.parseFromInputStream(RoutingConfiguration.java:184)
+    at net.osmand.router.RoutingConfiguration.getDefault(RoutingConfiguration.java:169)

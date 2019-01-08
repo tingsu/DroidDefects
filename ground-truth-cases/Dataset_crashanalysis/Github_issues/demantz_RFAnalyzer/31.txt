@@ -1,0 +1,7 @@
+java.lang.SecurityException: Admin  does not have android.permission.sec.MDM_APP_MGMT
+    at android.os.Parcel.readException(Parcel.java:1546)
+    at android.os.Parcel.readException(Parcel.java:1499)
+    at android.hardware.usb.IUsbManager$Stub$Proxy.requestDevicePermission(IUsbManager.java:653)
+    at android.hardware.usb.UsbManager.requestPermission(UsbManager.java:432)
+    at com.mantz_it.hackrf_android.Hackrf.initHackrf(Hackrf.java:228)
+    at com.mantz_it.rfanalyzer.HackrfSource.open(HackrfSource.java:88)

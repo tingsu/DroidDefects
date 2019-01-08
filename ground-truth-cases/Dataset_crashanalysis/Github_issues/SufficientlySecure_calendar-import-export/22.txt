@@ -1,0 +1,16 @@
+  2038           SaveCalendar  E  net.fortuna.ical4j.model.ValidationException: Parameter [TZID] is not applicable
+  2038           SaveCalendar  E  at net.fortuna.ical4j.util.ParameterValidator.assertNone(ParameterValidator.java:109)
+  2038           SaveCalendar  E  at net.fortuna.ical4j.model.property.DateProperty.validate(DateProperty.java:234)
+  2038           SaveCalendar  E  at net.fortuna.ical4j.model.property.DtStart.validate(DtStart.java:194)
+  2038           SaveCalendar  E  at net.fortuna.ical4j.model.Component.validateProperties(Component.java:219)
+  2038           SaveCalendar  E  at net.fortuna.ical4j.model.component.VEvent.validate(VEvent.java:472)
+  2038           SaveCalendar  E  at net.fortuna.ical4j.model.Component.validate(Component.java:201)
+  2038           SaveCalendar  E  at net.fortuna.ical4j.model.Calendar.validateComponents(Calendar.java:500)
+  2038           SaveCalendar  E  at net.fortuna.ical4j.model.Calendar.validate(Calendar.java:478)
+  2038           SaveCalendar  E  at net.fortuna.ical4j.model.Calendar.validate(Calendar.java:257)
+  2038           SaveCalendar  E  at net.fortuna.ical4j.data.CalendarOutputter.output(CalendarOutputter.java:96)
+  2038           SaveCalendar  E  at net.fortuna.ical4j.data.CalendarOutputter.output(CalendarOutputter.java:83)
+  2038           SaveCalendar  E  at org.sufficientlysecure.ical.SaveCalendar.run(SaveCalendar.java:188)
+  2038           SaveCalendar  E  at org.sufficientlysecure.ical.ui.dialogs.RunnableWithProgress$1.run(RunnableWithProgress.java:49)
+  2038           SaveCalendar  E  at java.lang.Thread.run(Thread.java:818)
+  755           WindowManager  V  not Base app: Adding window Window{513f02c u0 org.sufficientlysecure.ical/org.sufficientlysecure.ical.ui.MainActivity} at 17 of 22

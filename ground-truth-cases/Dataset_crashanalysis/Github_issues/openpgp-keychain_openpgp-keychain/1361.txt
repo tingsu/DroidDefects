@@ -1,0 +1,12 @@
+    com.textuality.keybase.lib.KeybaseException: JSON error in Keybase query
+            at com.textuality.keybase.lib.Match.getBitStrength(Match.java:85)
+            at org.sufficientlysecure.keychain.keyimport.KeybaseKeyserver.makeEntry(KeybaseKeyserver.java:79)
+            at org.sufficientlysecure.keychain.keyimport.KeybaseKeyserver.search(KeybaseKeyserver.java:53)
+            at org.sufficientlysecure.keychain.keyimport.KeybaseKeyserver.search(KeybaseKeyserver.java:32)
+            at org.sufficientlysecure.keychain.keyimport.CloudSearch$1.run(CloudSearch.java:53)
+            at java.lang.Thread.run(Thread.java:856)
+     Caused by: org.json.JSONException: No value for nbits
+            at org.json.JSONObject.get(JSONObject.java:354)
+            at org.json.JSONObject.getInt(JSONObject.java:443)
+            at com.textuality.keybase.lib.JWalk.getInt(JWalk.java:47)
+            at com.textuality.keybase.lib.Match.getBitStrength(Match.java:83)

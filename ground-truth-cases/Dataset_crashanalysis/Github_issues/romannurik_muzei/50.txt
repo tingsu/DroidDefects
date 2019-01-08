@@ -1,0 +1,27 @@
+
+I'm not sure whether Muzei or Lenovo is at fault here (I'm guessing the latter), but I figured it was worth posting here anyway.
+
+I hope the logs below are of some use.
+
+```
+04-05 13:14:14.383  12702-12702/? E/AndroidRuntime﹕ FATAL EXCEPTION: main
+    android.content.res.Resources$NotFoundException: String resource ID #0x0
+            at android.content.res.Resources.getText(Resources.java:750)
+            at android.content.res.Resources.getString(Resources.java:834)
+            at com.android.settings.DisplaySettings.parseString(DisplaySettings.java:663)
+            at com.android.settings.DisplaySettings.onResume(DisplaySettings.java:539)
+            at android.app.Fragment.performResume(Fragment.java:1738)
+            at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:919)
+            at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1057)
+            at android.app.BackStackRecord.run(BackStackRecord.java:694)
+            at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1435)
+            at android.app.FragmentManagerImpl$1.run(FragmentManager.java:441)
+            at android.os.Handler.handleCallback(Handler.java:725)
+            at android.os.Handler.dispatchMessage(Handler.java:92)
+            at android.os.Looper.loop(Looper.java:153)
+            at android.app.ActivityThread.main(ActivityThread.java:5299)
+            at java.lang.reflect.Method.invokeNative(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:511)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:841)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:608)
+            at dalvik.system.NativeStart.main(Native Method)

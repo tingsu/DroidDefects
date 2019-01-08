@@ -1,0 +1,11 @@
+W/MmsDatabase( 2928): org.whispersystems.textsecure.util.InvalidNumberException: No valid characters found.
+W/MmsDatabase( 2928):   at org.whispersystems.textsecure.util.PhoneNumberFormatter.formatNumber(PhoneNumberFormatter.java:64)
+W/MmsDatabase( 2928):   at org.thoughtcrime.securesms.util.Util.canonicalizeNumber(Util.java:134)
+W/MmsDatabase( 2928):   at org.thoughtcrime.securesms.util.Util.canonicalizeNumberOrGroup(Util.java:141)
+W/MmsDatabase( 2928):   at org.thoughtcrime.securesms.database.MmsDatabase.incrementDeliveryReceiptCount(MmsDatabase.java:191)
+W/MmsDatabase( 2928):   at org.thoughtcrime.securesms.database.MmsSmsDatabase.incrementDeliveryReceiptCount(MmsSmsDatabase.java:109)
+W/MmsDatabase( 2928):   at org.thoughtcrime.securesms.service.PushReceiver.handleReceivedReceipt(PushReceiver.java:191)
+W/MmsDatabase( 2928):   at org.thoughtcrime.securesms.service.PushReceiver.handleMessage(PushReceiver.java:102)
+W/MmsDatabase( 2928):   at org.thoughtcrime.securesms.service.PushReceiver.process(PushReceiver.java:70)
+W/MmsDatabase( 2928):   at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:278)
+W/MmsDatabase( 2928):   at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)

@@ -1,0 +1,16 @@
+07-13 21:35:14.943 E/AndroidRuntime(17115): java.lang.NullPointerException
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at com.ichi2.anki1.CardEditor.onCreateOptionsMenu(CardEditor.java:596)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at android.app.Activity.onCreatePanelMenu(Activity.java:2444)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at com.android.internal.policy.impl.PhoneWindow.preparePanel(PhoneWindow.java:388)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at com.android.internal.policy.impl.PhoneWindow.invalidatePanelMenu(PhoneWindow.java:739)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at com.android.internal.policy.impl.PhoneWindow$1.run(PhoneWindow.java:2833)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at android.os.Handler.handleCallback(Handler.java:605)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at android.os.Handler.dispatchMessage(Handler.java:92)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at android.os.Looper.loop(Looper.java:137)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at android.app.ActivityThread.main(ActivityThread.java:4575)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at java.lang.reflect.Method.invokeNative(Native
+Method)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at java.lang.reflect.Method.invoke(Method.java:511)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:789)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:556)
+07-13 21:35:14.943 E/AndroidRuntime(17115):     at dalvik.system.NativeStart.main(Native

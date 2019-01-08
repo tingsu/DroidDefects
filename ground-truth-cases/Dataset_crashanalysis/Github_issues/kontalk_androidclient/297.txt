@@ -1,0 +1,8 @@
+E / AndroidRuntime ( 1499): java.lang.NullPointerException
+E / AndroidRuntime ( 1499):     at java.lang.AbstractStringBuilder.<init>(AbstractStringBuilder.java:86)
+E / AndroidRuntime ( 1499):     at java.lang.StringBuilder.<init>(StringBuilder.java:95)
+E / AndroidRuntime ( 1499):     at com.google.android.gms.gcm.GoogleCloudMessaging.f(Unknown Source)
+E / AndroidRuntime ( 1499):     at com.google.android.gms.gcm.GoogleCloudMessaging.e(Unknown Source)
+E / AndroidRuntime ( 1499):     at com.google.android.gms.gcm.GoogleCloudMessaging.register(Unknown Source)
+E / AndroidRuntime ( 1499):     at org.kontalk.service.gcm.GcmPushService$1.run(GcmPushService.java:96)
+E / AndroidRuntime ( 1499):     at java.lang.Thread.run(Thread.java:856)

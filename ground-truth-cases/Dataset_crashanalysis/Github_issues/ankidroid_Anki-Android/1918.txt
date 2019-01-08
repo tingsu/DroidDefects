@@ -1,0 +1,25 @@
+Since yesterday I often get "force close" when starting AnkiDroid.
+I then launch it again and it always work at the second time.
+
+I/AnkiDroid( 1116): report saved
+E/AndroidRuntime( 1116): FATAL EXCEPTION: main
+E/AndroidRuntime( 1116): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.StudyOptions}:
+java.lang.NullPointerException
+E/AndroidRuntime( 1116):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2663)
+E/AndroidRuntime( 1116):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2679)
+E/AndroidRuntime( 1116):    at android.app.ActivityThread.access$2300(ActivityThread.java:125)
+E/AndroidRuntime( 1116):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2033)
+E/AndroidRuntime( 1116):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 1116):    at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime( 1116):    at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/AndroidRuntime( 1116):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1116):    at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime( 1116):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+E/AndroidRuntime( 1116):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+E/AndroidRuntime( 1116):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 1116): Caused by: java.lang.NullPointerException
+E/AndroidRuntime( 1116):    at android.os.Bundle.putAll(Bundle.java:281)
+E/AndroidRuntime( 1116):    at android.content.Intent.putExtras(Intent.java:4683)
+E/AndroidRuntime( 1116):    at com.ichi2.anki.StudyOptions.onCreate(StudyOptions.java:635)
+E/AndroidRuntime( 1116):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+E/AndroidRuntime( 1116):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2627)

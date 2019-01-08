@@ -1,0 +1,30 @@
+//this is an auto-generated bug report
+//package name: com.tomatodev.timerdroid
+//version: 2.1.2
+//appro_time: 180
+ java.lang.RuntimeException: Adding window failed
+ 	at android.view.ViewRootImpl.setView(ViewRootImpl.java:536)
+ 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:269)
+ 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+ 	at android.widget.PopupWindow.invokePopup(PopupWindow.java:993)
+ 	at android.widget.PopupWindow.showAsDropDown(PopupWindow.java:899)
+ 	at android.widget.ListPopupWindow.show(ListPopupWindow.java:603)
+ 	at com.android.internal.view.menu.MenuPopupHelper.tryShow(MenuPopupHelper.java:127)
+ 	at com.android.internal.view.menu.MenuPopupHelper.show(MenuPopupHelper.java:100)
+ 	at android.widget.PopupMenu.show(PopupMenu.java:108)
+ 	at com.tomatodev.timerdroid.TimerCursorAdapter$1.onClick(TimerCursorAdapter.java:64)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.os.DeadObjectException
+ 	at android.os.BinderProxy.transact(Native Method)
+ 	at android.view.IWindowSession$Stub$Proxy.addToDisplay(IWindowSession.java:683)
+ 	at android.view.ViewRootImpl.setView(ViewRootImpl.java:525)

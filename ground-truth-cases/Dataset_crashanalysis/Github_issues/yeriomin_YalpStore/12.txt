@@ -1,0 +1,70 @@
+                                                                           java.lang.RuntimeException: An error occured while executing doInBackground()
+                                                                               at android.os.AsyncTask$3.done(AsyncTask.java:299)
+                                                                               at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+                                                                               at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+                                                                               at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+                                                                               at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+                                                                               at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+                                                                               at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+                                                                               at java.lang.Thread.run(Thread.java:856)
+                                                                            Caused by: java.lang.NullPointerException
+                                                                               at com.github.yeriomin.yalpstore.model.Version.normalize(Version.java:12)
+                                                                               at com.github.yeriomin.yalpstore.model.Version.<init>(Version.java:8)
+                                                                               at com.github.yeriomin.yalpstore.model.App.setVersionName(App.java:66)
+                                                                               at com.github.yeriomin.yalpstore.model.App.setPackageInfo(App.java:48)
+                                                                               at com.github.yeriomin.yalpstore.model.App.<init>(App.java:35)
+                                                                               at com.github.yeriomin.yalpstore.AppListActivity.getInstalledApps(AppListActivity.java:126)
+                                                                               at com.github.yeriomin.yalpstore.UpdatableAppsActivity$1UpdatableAppsTask.doInBackground(UpdatableAppsActivity.java:50)
+                                                                               at com.github.yeriomin.yalpstore.UpdatableAppsActivity$1UpdatableAppsTask.doInBackground(UpdatableAppsActivity.java:42)
+                                                                               at android.os.AsyncTask$2.call(AsyncTask.java:287)
+                                                                               at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+                                                                               at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230) 
+                                                                               at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080) 
+                                                                               at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573) 
+                                                                               at java.lang.Thread.run(Thread.java:856) 
+01-01 19:24:34.780 2042-2042/system_process W/ActivityManager:   Force finishing activity com.github.yeriomin.yalpstore/.UpdatableAppsActivity
+01-01 19:24:35.000 2042-2576/system_process I/InputReader: Reconfiguring input devices.  changes=0x00000004
+01-01 19:24:35.000 2042-2576/system_process I/InputReader: Device reconfigured: id=1, name='gt9xx', size 1024x768, orientation 0, mode 1, display id 0
+01-01 19:24:35.000 2042-2093/system_process I/ActivityManager: Config changes=1480 {1.15 ?mcc?mnc de_DE ldltr sw768dp w1024dp h695dp 160dpi xlrg land finger -keyb/v/h -nav/h s.64}
+01-01 19:24:35.150 2042-5383/system_process D/dalvikvm: GC_EXPLICIT freed 1170K, 37% free 13855K/21964K, paused 25ms+19ms, total 175ms
+01-01 19:24:35.150 11991-11991/com.android.systemui D/by hero: ro.ddr512m = false
+01-01 19:24:35.190 24061-869/com.google.android.gms D/DropBoxEntryAddedChimeraService: User is not opted-in to Usage & Diagnostics or Lockbox.
+01-01 19:24:35.480 24048-24048/com.android.launcher I/Choreographer: Skipped 33 frames!  The application may be doing too much work on its main thread.
+01-01 19:24:35.750 2042-2850/system_process I/ActivityManager: Activity reported stop, but no longer stopping: ActivityRecord{41340750 u0 com.android.launcher/com.android.launcher2.Launcher}
+01-01 19:24:36.080 24048-32346/com.android.launcher D/dalvikvm: GC_FOR_ALLOC freed 6868K, 29% free 20254K/28360K, paused 37ms, total 37ms
+01-01 19:24:36.160 24048-32346/com.android.launcher D/dalvikvm: GC_FOR_ALLOC freed 677K, 28% free 20430K/28360K, paused 35ms, total 35ms
+01-01 19:24:36.210 24048-32346/com.android.launcher D/dalvikvm: GC_FOR_ALLOC freed 532K, 28% free 20472K/28360K, paused 35ms, total 35ms
+01-01 19:24:36.210 24048-32346/com.android.launcher I/dalvikvm-heap: Grow heap (frag case) to 21.729MB for 1286224-byte allocation
+01-01 19:24:36.250 24048-24048/com.android.launcher D/dalvikvm: GC_FOR_ALLOC freed <1K, 27% free 21728K/29620K, paused 37ms, total 37ms
+01-01 19:24:36.570 24048-32347/com.android.launcher D/dalvikvm: GC_FOR_ALLOC freed 2277K, 29% free 21078K/29620K, paused 30ms, total 30ms
+01-01 19:24:36.580 24048-32347/com.android.launcher I/dalvikvm-heap: Grow heap (frag case) to 23.167MB for 2172688-byte allocation
+01-01 19:24:36.610 24048-24057/com.android.launcher D/dalvikvm: GC_FOR_ALLOC freed 1K, 27% free 23199K/31744K, paused 33ms, total 33ms
+01-01 19:24:36.670 24048-24055/com.android.launcher I/dalvikvm: Jit: resizing JitTable from 8192 to 16384
+01-01 19:24:36.790 792-792/com.github.yeriomin.yalpstore E/WindowManager: Activity com.github.yeriomin.yalpstore.UpdatableAppsActivity has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{40fd9d48 V.E..... R......D 0,0-580,162} that was originally added here
+                                                                          android.view.WindowLeaked: Activity com.github.yeriomin.yalpstore.UpdatableAppsActivity has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{40fd9d48 V.E..... R......D 0,0-580,162} that was originally added here
+                                                                              at android.view.ViewRootImpl.<init>(ViewRootImpl.java:354)
+                                                                              at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:216)
+                                                                              at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+                                                                              at android.app.Dialog.show(Dialog.java:281)
+                                                                              at android.app.ProgressDialog.show(ProgressDialog.java:116)
+                                                                              at android.app.ProgressDialog.show(ProgressDialog.java:99)
+                                                                              at com.github.yeriomin.yalpstore.GoogleApiAsyncTask.onPreExecute(GoogleApiAsyncTask.java:46)
+                                                                              at android.os.AsyncTask.executeOnExecutor(AsyncTask.java:586)
+                                                                              at android.os.AsyncTask.execute(AsyncTask.java:534)
+                                                                              at com.github.yeriomin.yalpstore.UpdatableAppsActivity.loadApps(UpdatableAppsActivity.java:107)
+                                                                              at com.github.yeriomin.yalpstore.AppListActivity.onCreate(AppListActivity.java:60)
+                                                                              at com.github.yeriomin.yalpstore.UpdatableAppsActivity.onCreate(UpdatableAppsActivity.java:18)
+                                                                              at android.app.Activity.performCreate(Activity.java:5104)
+                                                                              at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1080)
+                                                                              at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2144)
+                                                                              at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2230)
+                                                                              at android.app.ActivityThread.access$600(ActivityThread.java:141)
+                                                                              at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1234)
+                                                                              at android.os.Handler.dispatchMessage(Handler.java:99)
+                                                                              at android.os.Looper.loop(Looper.java:137)
+                                                                              at android.app.ActivityThread.main(ActivityThread.java:5041)
+                                                                              at java.lang.reflect.Method.invokeNative(Native Method)
+                                                                              at java.lang.reflect.Method.invoke(Method.java:511)
+                                                                              at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:817)
+                                                                              at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:584)
+                                                                              at dalvik.system.NativeStart.main(Native Method)

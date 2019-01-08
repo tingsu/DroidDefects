@@ -1,0 +1,16 @@
+06-10 13:35:39.883 27730 27730 E AndroidRuntime: java.lang.RuntimeException: Unable to destroy activity {com.cityfreqs.littlesirecho/com.cityfreqs.littlesirecho.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.PowerManager
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3865)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:3883)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at android.app.ActivityThread.-wrap5(ActivityThread.java)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1417)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:102)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:148)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:5461)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.os.PowerManager$WakeLock.isHeld()' on a null object reference
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at com.cityfreqs.littlesirecho.MainActivity.onDestroy(MainActivity.java:170)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at android.app.Activity.performDestroy(Activity.java:6422)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1143)
+06-10 13:35:39.883 27730 27730 E AndroidRuntime:        at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3852)

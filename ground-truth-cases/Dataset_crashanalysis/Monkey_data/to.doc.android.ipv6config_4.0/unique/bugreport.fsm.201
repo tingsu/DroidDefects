@@ -1,0 +1,18 @@
+//this is an auto-generated bug report
+//package name: to.doc.android.ipv6config
+//version: 4.0
+//appro_time: 31
+ java.lang.RuntimeException: Error receiving broadcast Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x8000010 (has extras) } in to.doc.android.ipv6config.StartAtBootService$ConnectivityReceiver@ad2df340
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:773)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at to.doc.android.ipv6config.StartAtBootService$ConnectivityReceiver.onReceive(StartAtBootService.java:37)
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:763)

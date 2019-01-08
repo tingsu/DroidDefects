@@ -1,0 +1,12 @@
+    java.lang.ClassCastException: com.android.okhttp.internal.http.HttpURLConnectionImpl cannot be cast to javax.net.ssl.HttpsURLConnection
+            at org.whispersystems.textsecure.internal.push.PushServiceSocket.getConnection(Unknown Source)
+            at org.whispersystems.textsecure.internal.push.PushServiceSocket.makeBaseRequest(Unknown Source)
+            at org.whispersystems.textsecure.internal.push.PushServiceSocket.makeRequest(Unknown Source)
+            at org.whispersystems.textsecure.internal.push.PushServiceSocket.createAccount(Unknown Source)
+            at org.whispersystems.textsecure.api.TextSecureAccountManager.requestSmsVerificationCode(Unknown Source)
+            at org.thoughtcrime.securesms.service.RegistrationService.handleSmsRegistrationIntent(Unknown Source)
+            at org.thoughtcrime.securesms.service.RegistrationService.access$000(Unknown Source)
+            at org.thoughtcrime.securesms.service.RegistrationService$1.run(Unknown Source)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:841)

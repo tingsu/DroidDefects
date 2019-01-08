@@ -1,0 +1,16 @@
+E/AndroidRuntime(10274): java.lang.RuntimeException: Unable to start receiver de.robv.android.xposed.installer.PackageChangeReceiver: java.lang.NullPointerException
+E/AndroidRuntime(10274):        at android.app.ActivityThread.handleReceiver(ActivityThread.java:2426)
+E/AndroidRuntime(10274):        at android.app.ActivityThread.access$1700(ActivityThread.java:135)
+E/AndroidRuntime(10274):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1272)
+E/AndroidRuntime(10274):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(10274):        at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(10274):        at android.app.ActivityThread.main(ActivityThread.java:5017)
+E/AndroidRuntime(10274):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(10274):        at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime(10274):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+E/AndroidRuntime(10274):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+E/AndroidRuntime(10274):        at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+E/AndroidRuntime(10274):        at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(10274): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(10274):        at de.robv.android.xposed.installer.PackageChangeReceiver.onReceive(PackageChangeReceiver.java:19)
+E/AndroidRuntime(10274):        at android.app.ActivityThread.handleReceiver(ActivityThread.java:2419)

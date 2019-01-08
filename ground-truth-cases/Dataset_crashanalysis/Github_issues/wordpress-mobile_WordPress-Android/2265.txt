@@ -1,0 +1,10 @@
+java.lang.IllegalStateException: Fragment already added: ThemePreviewFragment{422e79e0 #3 id=0x7f0b0283 org.wordpress.android.ui.themes.ThemePreviewFragment}
+       at android.app.FragmentManagerImpl.addFragment(FragmentManager.java:1133)
+       at android.app.BackStackRecord.run(BackStackRecord.java:618)
+       at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1453)
+       at android.app.FragmentManagerImpl$1.run(FragmentManager.java:443)
+       at android.os.Handler.handleCallback(Handler.java:733)
+       at android.os.Handler.dispatchMessage(Handler.java:95)
+       at android.os.Looper.loop(Looper.java:146)
+       at android.app.ActivityThread.main(ActivityThread.java:5511)
+       at java.lang.reflect.Method.invokeNative(Method.java)

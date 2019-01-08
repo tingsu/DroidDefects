@@ -1,0 +1,12 @@
+E/AndroidRuntime( 4217): java.lang.IllegalStateException: Fragment DownloadFragment{3e45a00f} not attached to Activity
+E/AndroidRuntime( 4217):    at android.support.v4.app.Fragment.getResources(Fragment.java:646)
+E/AndroidRuntime( 4217):    at org.kiwix.kiwixmobile.downloader.DownloadFragment$DownloadAdapter.updateProgress(DownloadFragment.java:112)
+E/AndroidRuntime( 4217):    at org.kiwix.kiwixmobile.downloader.DownloadService$1.run(DownloadService.java:170)
+E/AndroidRuntime( 4217):    at android.os.Handler.handleCallback(Handler.java:739)
+E/AndroidRuntime( 4217):    at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime( 4217):    at android.os.Looper.loop(Looper.java:145)
+E/AndroidRuntime( 4217):    at android.app.ActivityThread.main(ActivityThread.java:6117)
+E/AndroidRuntime( 4217):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 4217):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime( 4217):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1399)
+E/AndroidRuntime( 4217):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1194)

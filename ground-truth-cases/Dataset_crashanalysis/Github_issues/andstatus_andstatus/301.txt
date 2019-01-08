@@ -1,0 +1,7 @@
+STACK_TRACE=java.util.concurrent.TimeoutException: com.android.internal.os.BinderInternal$GcWatcher.finalize() timed out after 10 seconds
+        at java.lang.Object.wait(Native Method)
+        at java.lang.Object.wait(Object.java:422)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:101)
+        at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:72)
+        at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:173)
+        at java.lang.Thread.run(Thread.java:818)

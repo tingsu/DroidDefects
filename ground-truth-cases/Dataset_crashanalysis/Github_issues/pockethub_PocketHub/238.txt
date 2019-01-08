@@ -1,0 +1,211 @@
+W/nalizableReferenceQueue( 9201): java.io.FileNotFoundException: com/google/inject/internal/util/$Finalizer.class
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.util.$FinalizableReferenceQueue$DecoupledLoader.getBaseUrl(FinalizableReferenceQueue.java:269)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.util.$FinalizableReferenceQueue$DecoupledLoader.loadFinalizer(FinalizableReferenceQueue.java:253)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.util.$FinalizableReferenceQueue.loadFinalizer(FinalizableReferenceQueue.java:175)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.util.$FinalizableReferenceQueue.<clinit>(FinalizableReferenceQueue.java:100)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.util.$MapMaker$QueueHolder.<clinit>(MapMaker.java:787)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.util.$MapMaker$WeakEntry.<init>(MapMaker.java:946)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.util.$MapMaker$Strength$1.newEntry(MapMaker.java:312)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.util.$MapMaker$StrategyImpl.newEntry(MapMaker.java:498)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.util.$MapMaker$StrategyImpl.newEntry(MapMaker.java:419)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.util.$CustomConcurrentHashMap$ComputingImpl.get(CustomConcurrentHashMap.java:2029)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.Annotations$AnnotationChecker.hasAnnotations(Annotations.java:116)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.Annotations.isBindingAnnotation(Annotations.java:180)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.Key.ensureIsBindingAnnotation(Key.java:366)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.Key.strategyFor(Key.java:338)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.Key.get(Key.java:272)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.AbstractBindingBuilder.annotatedWithInternal(AbstractBindingBuilder.java:82)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.internal.ConstantBindingBuilderImpl.annotatedWith(ConstantBindingBuilderImpl.java:49)
+W/nalizableReferenceQueue( 9201):   at roboguice.config.DefaultRoboModule.configure(DefaultRoboModule.java:117)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.AbstractModule.configure(AbstractModule.java:59)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.spi.Elements$RecordingBinder.install(Elements.java:223)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.spi.Elements.getElements(Elements.java:101)
+W/nalizableReferenceQueue( 9201):   at com.google.inject.spi.Elements.getElements(Elements.java:78)
+W/nalizableReferenceQueue( 9201):   at roboguice.RoboGuice.setBaseApplicationInjector(RoboGuice.java:83)
+W/nalizableReferenceQueue( 9201):   at roboguice.RoboGuice.setBaseApplicationInjector(RoboGuice.java:139)
+W/nalizableReferenceQueue( 9201):   at roboguice.RoboGuice.getBaseApplicationInjector(RoboGuice.java:59)
+W/nalizableReferenceQueue( 9201):   at roboguice.RoboGuice.getInjector(RoboGuice.java:149)
+W/nalizableReferenceQueue( 9201):   at com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity.onCreate(RoboSherlockFragmentActivity.java:31)
+W/nalizableReferenceQueue( 9201):   at com.github.mobile.ui.TabPagerActivity.onCreate(TabPagerActivity.java:210)
+W/nalizableReferenceQueue( 9201):   at com.github.mobile.ui.user.HomeActivity.onCreate(HomeActivity.java:97)
+W/nalizableReferenceQueue( 9201):   at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+W/nalizableReferenceQueue( 9201):   at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2627)
+W/nalizableReferenceQueue( 9201):   at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2679)
+W/nalizableReferenceQueue( 9201):   at android.app.ActivityThread.access$2300(ActivityThread.java:125)
+W/nalizableReferenceQueue( 9201):   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2033)
+W/nalizableReferenceQueue( 9201):   at android.os.Handler.dispatchMessage(Handler.java:99)
+W/nalizableReferenceQueue( 9201):   at android.os.Looper.loop(Looper.java:123)
+W/nalizableReferenceQueue( 9201):   at android.app.ActivityThread.main(ActivityThread.java:4627)
+W/nalizableReferenceQueue( 9201):   at java.lang.reflect.Method.invokeNative(Native Method)
+W/nalizableReferenceQueue( 9201):   at java.lang.reflect.Method.invoke(Method.java:521)
+W/nalizableReferenceQueue( 9201):   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+W/nalizableReferenceQueue( 9201):   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+W/nalizableReferenceQueue( 9201):   at dalvik.system.NativeStart.main(Native Method)
+D/WifiService( 2131): ACTION_BATTERY_CHANGED pluggedType: 1
+D/dalvikvm( 9201): GC_FOR_MALLOC freed 10670 objects / 545000 bytes in 31ms
+D/dalvikvm( 9201): GC_FOR_MALLOC freed 10849 objects / 482976 bytes in 32ms
+D/dalvikvm( 9201): GC_FOR_MALLOC freed 11038 objects / 502440 bytes in 31ms
+D/WifiService( 2131): ACTION_BATTERY_CHANGED pluggedType: 1
+D/dalvikvm( 9201): GC_FOR_MALLOC freed 12781 objects / 567608 bytes in 32ms
+D/dalvikvm( 9201): GC_FOR_MALLOC freed 10935 objects / 463888 bytes in 32ms
+D/dalvikvm( 9201): GC_FOR_MALLOC freed 11914 objects / 482984 bytes in 33ms
+D//Ln.java:218( 9201): main Configuring Logging, minimum log level is INFO
+D/dalvikvm( 9201): GC_FOR_MALLOC freed 13962 objects / 574672 bytes in 34ms
+D/WifiHW  ( 2131): wifi_send_command cmd = STATUS
+D/WifiHW  ( 2131): wifi_send_command cmd = DRIVER RSSI-APPROX
+D/WifiHW  ( 2131): wifi_send_command cmd = DRIVER LINKSPEED
+D/WifiHW  ( 2131): wifi_send_command cmd = LIST_NETWORKS
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 ssid
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 bssid
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 priority
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 scan_ssid
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 wep_tx_keyidx
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 wep_key0
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 wep_key1
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 wep_key2
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 wep_key3
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 psk
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 proto
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 key_mgmt
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 auth_alg
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 pairwise
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 group
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 eap
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 phase2
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 identity
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 anonymous_identity
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 password
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 client_cert
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 private_key
+D/WifiHW  ( 2131): wifi_send_command cmd = GET_NETWORK 0 ca_cert
+D/dalvikvm( 9201): GC_FOR_MALLOC freed 9070 objects / 403608 bytes in 55ms
+I/dalvikvm( 9201): Could not find method com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout.onHoverEvent, referenced from method com.actionbarsherlock.internal.widget.ActionBarContainer.onHoverEvent
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 2710: Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineFrameLayout;.onHoverEvent (Landroid/view/MotionEvent;)Z
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x0000
+D/dalvikvm( 9201): VFY: dead code 0x0003-0004 in Lcom/actionbarsherlock/internal/widget/ActionBarContainer;.onHoverEvent (Landroid/view/MotionEvent;)Z
+I/dalvikvm( 9201): Could not find method android.widget.FrameLayout.getAlpha, referenced from method com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout.getAlpha
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1798: Landroid/widget/FrameLayout;.getAlpha ()F
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000b
+D/dalvikvm( 9201): VFY: dead code 0x000e-000f in Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineFrameLayout;.getAlpha ()F
+I/dalvikvm( 9201): Could not find method android.widget.FrameLayout.getTranslationY, referenced from method com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout.getTranslationY
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1799: Landroid/widget/FrameLayout;.getTranslationY ()F
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000b
+D/dalvikvm( 9201): VFY: dead code 0x000e-000f in Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineFrameLayout;.getTranslationY ()F
+I/dalvikvm( 9201): Could not find method android.widget.FrameLayout.setAlpha, referenced from method com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout.setAlpha
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1801: Landroid/widget/FrameLayout;.setAlpha (F)V
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000a
+D/dalvikvm( 9201): VFY: dead code 0x000d-000d in Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineFrameLayout;.setAlpha (F)V
+I/dalvikvm( 9201): Could not find method android.widget.FrameLayout.setTranslationY, referenced from method com.actionbarsherlock.internal.nineoldandroids.widget.NineFrameLayout.setTranslationY
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1805: Landroid/widget/FrameLayout;.setTranslationY (F)V
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000a
+D/dalvikvm( 9201): VFY: dead code 0x000d-000d in Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineFrameLayout;.setTranslationY (F)V
+D/WifiHW  ( 2131): wifi_send_command cmd = PING
+D/WifiHW  ( 2131): wifi_send_command cmd = STATUS
+D/WifiHW  ( 2131): wifi_send_command cmd = DRIVER RSSI-APPROX
+I/dalvikvm( 9201): Could not find method android.content.pm.PackageManager.getActivityLogo, referenced from method com.actionbarsherlock.internal.widget.ActionBarView.<init>
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 289: Landroid/content/pm/PackageManager;.getActivityLogo (Landroid/content/ComponentName;)Landroid/graphics/drawable/Drawable;
+D/dalvikvm( 9201): VFY: replacing opcode 0x6e at 0x01d3
+I/dalvikvm( 9201): Could not find method android.content.pm.ApplicationInfo.loadLogo, referenced from method com.actionbarsherlock.internal.widget.ActionBarView.<init>
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 287: Landroid/content/pm/ApplicationInfo;.loadLogo (Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
+D/dalvikvm( 9201): VFY: replacing opcode 0x6e at 0x01e1
+D/dalvikvm( 9201): VFY: dead code 0x01d6-01da in Lcom/actionbarsherlock/internal/widget/ActionBarView;.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V
+D/dalvikvm( 9201): VFY: dead code 0x01e4-01ea in Lcom/actionbarsherlock/internal/widget/ActionBarView;.<init> (Landroid/content/Context;Landroid/util/AttributeSet;)V
+D/WifiHW  ( 2131): wifi_send_command cmd = DRIVER LINKSPEED
+I/dalvikvm( 9201): Could not find method android.view.ViewGroup.getAlpha, referenced from method com.actionbarsherlock.internal.nineoldandroids.view.NineViewGroup.getAlpha
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1656: Landroid/view/ViewGroup;.getAlpha ()F
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000b
+D/dalvikvm( 9201): VFY: dead code 0x000e-000f in Lcom/actionbarsherlock/internal/nineoldandroids/view/NineViewGroup;.getAlpha ()F
+I/dalvikvm( 9201): Could not find method android.view.ViewGroup.getTranslationX, referenced from method com.actionbarsherlock.internal.nineoldandroids.view.NineViewGroup.getTranslationX
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1662: Landroid/view/ViewGroup;.getTranslationX ()F
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000b
+D/dalvikvm( 9201): VFY: dead code 0x000e-000f in Lcom/actionbarsherlock/internal/nineoldandroids/view/NineViewGroup;.getTranslationX ()F
+I/dalvikvm( 9201): Could not find method android.view.ViewGroup.getTranslationY, referenced from method com.actionbarsherlock.internal.nineoldandroids.view.NineViewGroup.getTranslationY
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1663: Landroid/view/ViewGroup;.getTranslationY ()F
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000b
+D/dalvikvm( 9201): VFY: dead code 0x000e-000f in Lcom/actionbarsherlock/internal/nineoldandroids/view/NineViewGroup;.getTranslationY ()F
+I/dalvikvm( 9201): Could not find method android.view.ViewGroup.setAlpha, referenced from method com.actionbarsherlock.internal.nineoldandroids.view.NineViewGroup.setAlpha
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1678: Landroid/view/ViewGroup;.setAlpha (F)V
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000a
+D/dalvikvm( 9201): VFY: dead code 0x000d-000d in Lcom/actionbarsherlock/internal/nineoldandroids/view/NineViewGroup;.setAlpha (F)V
+I/dalvikvm( 9201): Could not find method android.view.ViewGroup.setTranslationX, referenced from method com.actionbarsherlock.internal.nineoldandroids.view.NineViewGroup.setTranslationX
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1682: Landroid/view/ViewGroup;.setTranslationX (F)V
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000a
+D/dalvikvm( 9201): VFY: dead code 0x000d-000d in Lcom/actionbarsherlock/internal/nineoldandroids/view/NineViewGroup;.setTranslationX (F)V
+I/dalvikvm( 9201): Could not find method android.view.ViewGroup.setTranslationY, referenced from method com.actionbarsherlock.internal.nineoldandroids.view.NineViewGroup.setTranslationY
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1683: Landroid/view/ViewGroup;.setTranslationY (F)V
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000a
+D/dalvikvm( 9201): VFY: dead code 0x000d-000d in Lcom/actionbarsherlock/internal/nineoldandroids/view/NineViewGroup;.setTranslationY (F)V
+I/dalvikvm( 9201): Could not find method com.actionbarsherlock.internal.widget.ActionBarView$HomeView.onHoverEvent, referenced from method com.actionbarsherlock.internal.widget.ActionBarView$HomeView.dispatchHoverEvent
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 3369: Lcom/actionbarsherlock/internal/widget/ActionBarView$HomeView;.onHoverEvent (Landroid/view/MotionEvent;)Z
+D/dalvikvm( 9201): VFY: replacing opcode 0x6e at 0x0000
+D/dalvikvm( 9201): VFY: dead code 0x0003-0004 in Lcom/actionbarsherlock/internal/widget/ActionBarView$HomeView;.dispatchHoverEvent (Landroid/view/MotionEvent;)Z
+I/dalvikvm( 9201): Could not find method android.widget.FrameLayout.onPopulateAccessibilityEvent, referenced from method com.actionbarsherlock.internal.widget.ActionBarView$HomeView.onPopulateAccessibilityEvent
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1800: Landroid/widget/FrameLayout;.onPopulateAccessibilityEvent (Landroid/view/accessibility/AccessibilityEvent;)V
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x0006
+I/dalvikvm( 9201): Could not find method android.view.View.jumpDrawablesToCurrentState, referenced from method com.actionbarsherlock.internal.view.menu.BaseMenuPresenter.updateMenuView
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1595: Landroid/view/View;.jumpDrawablesToCurrentState ()V
+D/dalvikvm( 9201): VFY: replacing opcode 0x6e at 0x0047
+I/dalvikvm( 9201): Could not find method android.widget.LinearLayout.<init>, referenced from method com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout.<init>
+W/dalvikvm( 9201): VFY: unable to resolve direct method 1848: Landroid/widget/LinearLayout;.<init> (Landroid/content/Context;Landroid/util/AttributeSet;I)V
+D/dalvikvm( 9201): VFY: replacing opcode 0x70 at 0x0000
+D/dalvikvm( 9201): VFY: dead code 0x0003-000f in Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;.<init> (Landroid/content/Context;Landroid/util/AttributeSet;I)V
+I/dalvikvm( 9201): Could not find method android.widget.LinearLayout.getAlpha, referenced from method com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout.getAlpha
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1852: Landroid/widget/LinearLayout;.getAlpha ()F
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000b
+D/dalvikvm( 9201): VFY: dead code 0x000e-000f in Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;.getAlpha ()F
+I/dalvikvm( 9201): Could not find method android.widget.LinearLayout.getTranslationX, referenced from method com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout.getTranslationX
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1857: Landroid/widget/LinearLayout;.getTranslationX ()F
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000b
+D/dalvikvm( 9201): VFY: dead code 0x000e-000f in Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;.getTranslationX ()F
+I/dalvikvm( 9201): Could not find method android.widget.LinearLayout.setAlpha, referenced from method com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout.setAlpha
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1865: Landroid/widget/LinearLayout;.setAlpha (F)V
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000a
+D/dalvikvm( 9201): VFY: dead code 0x000d-000d in Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;.setAlpha (F)V
+I/dalvikvm( 9201): Could not find method android.widget.LinearLayout.setTranslationX, referenced from method com.actionbarsherlock.internal.nineoldandroids.widget.NineLinearLayout.setTranslationX
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1871: Landroid/widget/LinearLayout;.setTranslationX (F)V
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x000a
+D/dalvikvm( 9201): VFY: dead code 0x000d-000d in Lcom/actionbarsherlock/internal/nineoldandroids/widget/NineLinearLayout;.setTranslationX (F)V
+W/KeyCharacterMap( 9201): No keyboard for id -1
+W/KeyCharacterMap( 9201): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+I/dalvikvm( 9201): Could not find method com.actionbarsherlock.internal.view.menu.ActionMenuItemView.onHoverEvent, referenced from method com.actionbarsherlock.internal.view.menu.ActionMenuItemView.dispatchHoverEvent
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 2811: Lcom/actionbarsherlock/internal/view/menu/ActionMenuItemView;.onHoverEvent (Landroid/view/MotionEvent;)Z
+D/dalvikvm( 9201): VFY: replacing opcode 0x6e at 0x0006
+D/dalvikvm( 9201): VFY: dead code 0x0009-0009 in Lcom/actionbarsherlock/internal/view/menu/ActionMenuItemView;.dispatchHoverEvent (Landroid/view/MotionEvent;)Z
+I/ActivityManager( 2131): Starting activity: Intent { cmp=com.github.mobile/.accounts.LoginActivity (has extras) }
+I/dalvikvm( 9201): Could not find method android.widget.LinearLayout.onPopulateAccessibilityEvent, referenced from method com.actionbarsherlock.internal.view.menu.ActionMenuItemView.onPopulateAccessibilityEvent
+W/dalvikvm( 9201): VFY: unable to resolve virtual method 1863: Landroid/widget/LinearLayout;.onPopulateAccessibilityEvent (Landroid/view/accessibility/AccessibilityEvent;)V
+D/dalvikvm( 9201): VFY: replacing opcode 0x6f at 0x0006
+D/dalvikvm( 9201): DexOpt: couldn't find static field
+W/dalvikvm( 9201): VFY: unable to resolve static field 4484 (ROOT) in Ljava/util/Locale;
+D/dalvikvm( 9201): VFY: replacing opcode 0x62 at 0x0012
+D/dalvikvm( 9201): VFY: dead code 0x0014-001a in Lcom/actionbarsherlock/internal/widget/CapitalizingButton;.setTextCompat (Ljava/lang/CharSequence;)V
+D/AndroidRuntime( 9201): Shutting down VM
+W/dalvikvm( 9201): threadid=1: thread exiting with uncaught exception (group=0x4001d7d0)
+D/dalvikvm( 9201): GC_FOR_MALLOC freed 7196 objects / 422240 bytes in 35ms
+E/AndroidRuntime( 9201): FATAL EXCEPTION: main
+E/AndroidRuntime( 9201): java.lang.NoSuchFieldError: java.util.Locale.ROOT
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.widget.CapitalizingButton.setTextCompat(CapitalizingButton.java:32)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.view.menu.ActionMenuItemView.setTitle(ActionMenuItemView.java:204)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.view.menu.ActionMenuItemView.initialize(ActionMenuItemView.java:129)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.view.menu.ActionMenuPresenter.bindItemView(ActionMenuPresenter.java:201)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.view.menu.BaseMenuPresenter.getItemView(BaseMenuPresenter.java:176)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.view.menu.ActionMenuPresenter.getItemView(ActionMenuPresenter.java:187)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.view.menu.ActionMenuPresenter.flagActionItems(ActionMenuPresenter.java:460)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.view.menu.MenuBuilder.flagActionItems(MenuBuilder.java:1048)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.view.menu.BaseMenuPresenter.updateMenuView(BaseMenuPresenter.java:89)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.view.menu.ActionMenuPresenter.updateMenuView(ActionMenuPresenter.java:215)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.view.menu.MenuBuilder.dispatchPresenterUpdate(MenuBuilder.java:247)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.view.menu.MenuBuilder.onItemsChanged(MenuBuilder.java:946)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.view.menu.MenuBuilder.startDispatchingItemsChanged(MenuBuilder.java:969)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.ActionBarSherlockCompat.preparePanel(ActionBarSherlockCompat.java:524)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.ActionBarSherlockCompat.dispatchInvalidateOptionsMenu(ActionBarSherlockCompat.java:273)
+E/AndroidRuntime( 9201):    at com.actionbarsherlock.internal.ActionBarSherlockCompat$1.run(ActionBarSherlockCompat.java:988)
+E/AndroidRuntime( 9201):    at android.os.Handler.handleCallback(Handler.java:587)
+E/AndroidRuntime( 9201):    at android.os.Handler.dispatchMessage(Handler.java:92)
+E/AndroidRuntime( 9201):    at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime( 9201):    at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/AndroidRuntime( 9201):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 9201):    at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime( 9201):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+E/AndroidRuntime( 9201):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+E/AndroidRuntime( 9201):    at dalvik.system.NativeStart.main(Native Method)

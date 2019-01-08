@@ -1,0 +1,13 @@
+                                                                                       java.lang.IndexOutOfBoundsException: Invalid index 2, size is 2
+                                                                                           at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+                                                                                           at java.util.ArrayList.remove(ArrayList.java:403)
+                                                                                           at openfoodfacts.github.scrachx.openfood.fragments.OfflineEditFragment$3$1.onProductSentResponse(OfflineEditFragment.java:156)
+                                                                                           at openfoodfacts.github.scrachx.openfood.network.OpenFoodAPIClient$4.onResponse(OpenFoodAPIClient.java:239)
+                                                                                           at retrofit2.ExecutorCallAdapterFactory$ExecutorCallbackCall$1$1.run(ExecutorCallAdapterFactory.java:66)
+                                                                                           at android.os.Handler.handleCallback(Handler.java:739)
+                                                                                           at android.os.Handler.dispatchMessage(Handler.java:95)
+                                                                                           at android.os.Looper.loop(Looper.java:148)
+                                                                                           at android.app.ActivityThread.main(ActivityThread.java:5461)
+                                                                                           at java.lang.reflect.Method.invoke(Native Method)
+                                                                                           at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+                                                                                           at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

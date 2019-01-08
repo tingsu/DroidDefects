@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: com.rigid.birthdroid
+//version: 0.6.2
+//appro_time: 167
+ java.lang.RuntimeException: Unable to start service com.rigid.birthdroid.BirthdroidWidget$BirthdroidService@ad21abc0 with Intent { cmp=com.rigid.birthdroid/.BirthdroidWidget$BirthdroidService }: java.lang.NumberFormatException: Invalid int: "99606655645"
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2721)
+ 	at android.app.ActivityThread.access$1900(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1353)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NumberFormatException: Invalid int: "99606655645"
+ 	at java.lang.Integer.invalidInt(Integer.java:138)
+ 	at java.lang.Integer.parse(Integer.java:378)
+ 	at java.lang.Integer.parseInt(Integer.java:366)
+ 	at java.lang.Integer.parseInt(Integer.java:332)
+ 	at com.rigid.birthdroid.BirthdroidWidget$BirthdroidService.onStart(BirthdroidWidget.java:173)
+ 	at android.app.Service.onStartCommand(Service.java:450)
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2704)

@@ -1,0 +1,26 @@
+
+There is already at least one pure Java implementation of ed25519, in use for i2p: [ed25519-java](https://github.com/str4d/ed25519-java).
+
+When trying to import a ed255519 private key generated with ssh-keygen I get:
+
+```
+E/CB.PubkeyListActivity( 6801): Problem parsing imported private key
+E/CB.PubkeyListActivity( 6801): java.io.IOException: Invalid PEM structure, '-----BEGIN...' missing
+E/CB.PubkeyListActivity( 6801):     at com.trilead.ssh2.crypto.PEMDecoder.parsePEM(PEMDecoder.java:166)
+E/CB.PubkeyListActivity( 6801):     at org.connectbot.PubkeyListActivity.readKeyFromFile(PubkeyListActivity.java:541)
+E/CB.PubkeyListActivity( 6801):     at org.connectbot.PubkeyListActivity.access$100(PubkeyListActivity.java:81)
+E/CB.PubkeyListActivity( 6801):     at org.connectbot.PubkeyListActivity$12.onClick(PubkeyListActivity.java:599)
+E/CB.PubkeyListActivity( 6801):     at com.android.internal.app.AlertController$AlertParams$3.onItemClick(AlertController.java:941)
+E/CB.PubkeyListActivity( 6801):     at android.widget.AdapterView.performItemClick(AdapterView.java:298)
+E/CB.PubkeyListActivity( 6801):     at android.widget.AbsListView.performItemClick(AbsListView.java:1100)
+E/CB.PubkeyListActivity( 6801):     at android.widget.AbsListView$PerformClick.run(AbsListView.java:2749)
+E/CB.PubkeyListActivity( 6801):     at android.widget.AbsListView$1.run(AbsListView.java:3423)
+E/CB.PubkeyListActivity( 6801):     at android.os.Handler.handleCallback(Handler.java:725)
+E/CB.PubkeyListActivity( 6801):     at android.os.Handler.dispatchMessage(Handler.java:92)
+E/CB.PubkeyListActivity( 6801):     at android.os.Looper.loop(Looper.java:137)
+E/CB.PubkeyListActivity( 6801):     at android.app.ActivityThread.main(ActivityThread.java:5227)
+E/CB.PubkeyListActivity( 6801):     at java.lang.reflect.Method.invokeNative(Native Method)
+E/CB.PubkeyListActivity( 6801):     at java.lang.reflect.Method.invoke(Method.java:511)
+E/CB.PubkeyListActivity( 6801):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+E/CB.PubkeyListActivity( 6801):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:562)
+E/CB.PubkeyListActivity( 6801):     at dalvik.system.NativeStart.main(Native Method)

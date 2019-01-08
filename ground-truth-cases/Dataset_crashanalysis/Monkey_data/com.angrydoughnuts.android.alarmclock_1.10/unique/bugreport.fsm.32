@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: com.angrydoughnuts.android.alarmclock
+//version: 1.10
+//appro_time: 122
+ java.lang.RuntimeException: Unable to start service com.angrydoughnuts.android.alarmclock.NotificationService@ad2a56c8 with Intent { dat=alarm_id:112 cmp=com.angrydoughnuts.android.alarmclock/.NotificationService }: java.lang.IllegalStateException: Wake lock not held for alarm id: 112
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2721)
+ 	at android.app.ActivityThread.access$1900(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1353)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalStateException: Wake lock not held for alarm id: 112
+ 	at com.angrydoughnuts.android.alarmclock.NotificationService.handleStart(NotificationService.java:278)
+ 	at com.angrydoughnuts.android.alarmclock.NotificationService.onStartCommand(NotificationService.java:266)
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2704)

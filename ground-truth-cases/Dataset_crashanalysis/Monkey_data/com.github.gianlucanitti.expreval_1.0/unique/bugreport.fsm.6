@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: com.github.gianlucanitti.expreval
+//version: 1.0
+//appro_time: 137
+ FATAL EXCEPTION: main
+ java.lang.NumberFormatException: Invalid double: ""
+ 	at java.lang.StringToReal.invalidReal(StringToReal.java:63)
+ 	at java.lang.StringToReal.initialParse(StringToReal.java:163)
+ 	at java.lang.StringToReal.parseDouble(StringToReal.java:263)
+ 	at java.lang.Double.parseDouble(Double.java:295)
+ 	at com.github.gianlucanitti.javaexpreval.Expression.parseRange(Expression.java:179)
+ 	at com.github.gianlucanitti.javaexpreval.Expression.parse(Expression.java:145)
+ 	at com.github.gianlucanitti.javaexpreval.InteractiveExpressionContext.update(InteractiveExpressionContext.java:254)
+ 	at com.github.gianlucanitti.expreval.ExprEval.onClick(ExprEval.java:130)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

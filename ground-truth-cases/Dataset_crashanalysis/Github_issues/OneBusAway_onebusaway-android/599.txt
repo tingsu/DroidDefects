@@ -1,0 +1,57 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.joulespersecond.seattlebusbot/org.onebusaway.android.ui.HomeActivity}: java.lang.NullPointerException
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2073)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2098)
+    at android.app.ActivityThread.access$600(ActivityThread.java:138)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:4945)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:511)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:794)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:561)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+    at org.onebusaway.android.map.googlemapsv2.BaseMapFragment.onViewStateRestored(BaseMapFragment.java:345)
+    at android.support.v4.app.Fragment.restoreViewState(Fragment.java:469)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1094)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1252)
+    at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:742)
+    at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1617)
+    at android.support.v4.app.FragmentController.execPendingActions(FragmentController.java:339)
+    at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:601)
+    at org.onebusaway.android.ui.HomeActivity.onStart(HomeActivity.java:330)
+    at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1166)
+    at android.app.Activity.performStart(Activity.java:5212)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2046)
+    ... 11 more
+```
+
+and:
+
+```
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.joulespersecond.seattlebusbot/org.onebusaway.android.ui.HomeActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'void org.onebusaway.android.map.MapModeController.onViewStateRestored(android.os.Bundle)' on a null object reference
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2661)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2726)
+    at android.app.ActivityThread.access$900(ActivityThread.java:172)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1421)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:145)
+    at android.app.ActivityThread.main(ActivityThread.java:5835)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1399)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1194)
+Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'void org.onebusaway.android.map.MapModeController.onViewStateRestored(android.os.Bundle)' on a null object reference
+    at org.onebusaway.android.map.googlemapsv2.BaseMapFragment.onViewStateRestored(BaseMapFragment.java:345)
+    at android.support.v4.app.Fragment.restoreViewState(Fragment.java:469)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1094)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1252)
+    at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:742)
+    at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1617)
+    at android.support.v4.app.FragmentController.execPendingActions(FragmentController.java:339)
+    at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:601)
+    at org.onebusaway.android.ui.HomeActivity.onStart(HomeActivity.java:330)
+    at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1234)
+    at android.app.Activity.performStart(Activity.java:6258)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2624)

@@ -1,0 +1,5 @@
+E/AndroidRuntime(19929): java.lang.NullPointerException: Attempt to invoke virtual method 'boolean android.support.v4.app.FragmentActivity.isFinishing()' on a null object reference
+E/AndroidRuntime(19929):        at com.nutomic.syncthingandroid.fragments.DrawerFragment.updateGui(DrawerFragment.java:128)
+E/AndroidRuntime(19929):        at com.nutomic.syncthingandroid.fragments.DrawerFragment.access$000(DrawerFragment.java:26)
+E/AndroidRuntime(19929):        at com.nutomic.syncthingandroid.fragments.DrawerFragment$1.run(DrawerFragment.java:47)
+E/AndroidRuntime(19929):        at java.util.Timer$TimerImpl.run(Timer.java:284)

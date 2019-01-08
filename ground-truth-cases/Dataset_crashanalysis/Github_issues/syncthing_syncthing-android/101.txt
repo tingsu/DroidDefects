@@ -1,0 +1,407 @@
+W/IMGSRV  ( 2717): :0: gralloc_register_buffer: ID: 731 handle: 0x6b7d3550 size: 513 x 705 fmt: 5 usage: 0xb00
+I/SyncthingService( 2717): Web GUI will be available at http://127.0.0.1:8080
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+I/ActivityManager(  434): Displayed com.nutomic.syncthingandroid/.gui.MainActivity: +662ms
+W/IMGSRV  (  434): :0: gralloc_device_alloc: ID: 732 handle: 0x70c7c150 size: 513 x 168 fmt: 5 usage: 0xb00
+W/IMGSRV  ( 2717): :0: gralloc_register_buffer: ID: 732 handle: 0x6b7d0120 size: 513 x 168 fmt: 5 usage: 0xb00
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+I/SyncthingNativeCode( 2717): sh: <stdin>[1]: /data/data/com.nutomic.syncthingandroid/lib/libsyncthing.so: No such file or directory
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 724 handle: 0x728ceb30 size: 246 x 218 fmt: 1 usage: 0x933
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+W/SyncthingNativeCode( 2717): Syncthing binary crashed with error code 1
+W/PostTask( 2717): Failed to call Rest API at http://127.0.0.1:8080/rest/shutdown
+W/PostTask( 2717): org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:8080 refused
+W/PostTask( 2717):  at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:183)
+W/PostTask( 2717):  at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:164)
+W/PostTask( 2717):  at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:119)
+W/PostTask( 2717):  at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:360)
+W/PostTask( 2717):  at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+W/PostTask( 2717):  at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:487)
+W/PostTask( 2717):  at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:465)
+W/PostTask( 2717):  at com.nutomic.syncthingandroid.syncthing.PostTask.doInBackground(PostTask.java:44)
+W/PostTask( 2717):  at com.nutomic.syncthingandroid.syncthing.PostTask.doInBackground(PostTask.java:17)
+W/PostTask( 2717):  at android.os.AsyncTask$2.call(AsyncTask.java:287)
+W/PostTask( 2717):  at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+W/PostTask( 2717):  at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+W/PostTask( 2717):  at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+W/PostTask( 2717):  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+W/PostTask( 2717):  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+W/PostTask( 2717):  at java.lang.Thread.run(Thread.java:856)
+W/PostTask( 2717): Caused by: java.net.ConnectException: failed to connect to /127.0.0.1 (port 8080): connect failed: ECONNREFUSED (Connection refused)
+W/PostTask( 2717):  at libcore.io.IoBridge.connect(IoBridge.java:114)
+W/PostTask( 2717):  at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+W/PostTask( 2717):  at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:460)
+W/PostTask( 2717):  at java.net.Socket.connect(Socket.java:832)
+W/PostTask( 2717):  at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119)
+W/PostTask( 2717):  at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:144)
+W/PostTask( 2717):  ... 15 more
+W/PostTask( 2717): Caused by: libcore.io.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+W/PostTask( 2717):  at libcore.io.Posix.connect(Native Method)
+W/PostTask( 2717):  at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+W/PostTask( 2717):  at libcore.io.IoBridge.connectErrno(IoBridge.java:127)
+W/PostTask( 2717):  at libcore.io.IoBridge.connect(IoBridge.java:112)
+W/PostTask( 2717):  ... 20 more
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 723 handle: 0x6cb21930 size: 540 x 912 fmt: 1 usage: 0x933
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+W/IMGSRV  (  434): :0: gralloc_device_alloc: ID: 733 handle: 0x6ccbc6c0 size: 513 x 482 fmt: 1 usage: 0x933
+W/IMGSRV  ( 2717): :0: gralloc_register_buffer: ID: 733 handle: 0x6b7f2860 size: 513 x 482 fmt: 1 usage: 0x933
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): releaseWakeLock flags=0x1 tag=ActivityManager-Launch
+D/PowerManagerService(  434): Partial WL []
+D/wpa_supplicant(  531): bgscan learn: BSSes in this ESS have been seen on 2 channels
+D/wpa_supplicant(  531): bgscan learn: Probe new freq 5580
+D/wpa_supplicant(  531): bgscan learn: Scanning frequencies: 2417 2437 5580
+D/wpa_supplicant(  531): bgscan learn: Request a background scan
+I/WifiHW  (  434): EVENT: CTRL-EVENT-BGSCAN-LEARN 
+D/wpa_supplicant(  531): Scan requested (ret=0) - scan timeout 30 seconds
+D/wpa_supplicant(  531): nl80211: Event message available
+D/wpa_supplicant(  531): nl80211: Scan trigger
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/wpa_supplicant(  531): nl80211: Event message available
+D/wpa_supplicant(  531): nl80211: New scan results available
+D/wpa_supplicant(  531): Event 3 received on interface wlan0
+D/wpa_supplicant(  531): nl80211: Associated on 2437 MHz
+D/wpa_supplicant(  531): Received scan results (2 BSSes)
+D/wpa_supplicant(  531): nl80211: Scan results indicate BSS status with 76:39:9c:d2:a8:e0 as associated
+D/wpa_supplicant(  531): BSS: Start scan result update 73
+D/wpa_supplicant(  531): BSS: last_scan_res_used=2/32 last_scan_full=0
+D/wpa_supplicant(  531): New scan results available
+D/wpa_supplicant(  531): bgscan learn: scan result notification
+D/wpa_supplicant(  531): bgscan learn: 2 matching BSSes in scan results
+D/wpa_supplicant(  531): Selecting BSS from priority group 1
+D/wpa_supplicant(  531): 0: 76:39:9c:d2:a8:e0 ssid='wifi01' wpa_ie_len=26 rsn_ie_len=0 caps=0x411 level=-58
+D/wpa_supplicant(  531):    selected based on WPA IE
+D/wpa_supplicant(  531):    selected BSS 76:39:9c:d2:a8:e0 ssid='wifi01'
+D/wpa_supplicant(  531): _wpa_supplicant_event_scan_results: 2 matching BSSes in scan results
+D/wpa_supplicant(  531): Considering within-ESS reassociation
+D/wpa_supplicant(  531): Current BSS: 76:39:9c:d2:a8:e0 level=-58
+D/wpa_supplicant(  531): Selected BSS: 76:39:9c:d2:a8:e0 level=-58
+D/wpa_supplicant(  531): Skip roam - too small difference in signal level
+D/wpa_supplicant(  531): RSN: Ignored PMKID candidate without preauth flag
+D/wpa_supplicant(  531): Checking for other virtual interfaces sharing same radio (phy0) in event_scan_results
+I/WifiHW  (  434): EVENT: CTRL-EVENT-SCAN-RESULTS 
+I/WifiHW  (  434): CMD: AP_SCAN 1
+D/wpa_supplicant(  531): ctrl_iface: AP_SCAN 1
+I/WifiHW  (  434): REPLY: OK
+I/WifiHW  (  434): CMD: SCAN_RESULTS
+D/wpa_supplicant(  531): ctrl_iface: SCAN_RESULTS
+I/WifiHW  (  434): REPLY: bssid / frequency / signal level / flags / ssid
+I/WifiHW  (  434): REPLY: 76:39:9c:d2:a8:e0 2437    -58 [WPA-PSK-TKIP+CCMP][ESS]    wifi01
+I/WifiHW  (  434): REPLY: 00:23:69:25:e6:3f 2417    -71 [WPA-PSK-TKIP+CCMP][WPA2-PSK-TKIP+CCMP][ESS]    wifi01
+D/PowerManagerService(  434): onSensorChanged: light value: 2.0
+W/IMGSRV  (  434): :0: gralloc_device_alloc: ID: 734 handle: 0x6e8c1430 size: 513 x 705 fmt: 5 usage: 0xb00
+W/IMGSRV  ( 2717): :0: gralloc_register_buffer: ID: 734 handle: 0x6b7f1f40 size: 513 x 705 fmt: 5 usage: 0xb00
+W/IMGSRV  (  434): :0: gralloc_device_alloc: ID: 735 handle: 0x6ccb9c60 size: 513 x 482 fmt: 1 usage: 0x933
+W/IMGSRV  ( 2717): :0: gralloc_register_buffer: ID: 735 handle: 0x6b75b210 size: 513 x 482 fmt: 1 usage: 0x933
+W/IMGSRV  (  434): :0: gralloc_device_alloc: ID: 736 handle: 0x6c79cc20 size: 513 x 482 fmt: 1 usage: 0x933
+W/IMGSRV  ( 2717): :0: gralloc_register_buffer: ID: 736 handle: 0x6b75bb20 size: 513 x 482 fmt: 1 usage: 0x933
+D/PowerManagerService(  434): onSensorChanged: light value: 2.0
+I/WifiHW  (  434): CMD: SIGNAL_POLL
+D/wpa_supplicant(  531): ctrl_iface: SIGNAL_POLL
+D/wpa_supplicant(  531): nl80211: survey data missing!
+I/WifiHW  (  434): REPLY: RSSI=-58
+I/WifiHW  (  434): REPLY: LINKSPEED=65
+I/WifiHW  (  434): REPLY: NOISE=-97
+I/WifiHW  (  434): REPLY: FREQUENCY=2437
+D/PowerManagerService(  434): onSensorChanged: light value: 2.0
+D/PowerManagerService(  434): userActivity mLastEventTime=1315224 time=1319159 mUserActivityAllowed=true mUserState=0x3 mWakeLockState=0x0 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  434): reactivateScreenLocksLocked mProxIgnoredBecauseScreenTurnedOff=false
+D/PowerManagerService(  434): setPowerState: mPowerState=0x3 newState=0x3 noChangeLights=false reason=2
+D/PowerManagerService(  434): setTimeoutLocked now=1319159 timeoutOverride=-1 nextState=3 when=1325159
+I/AndroidRuntime( 2717): VM exiting with result code 0, cleanup skipped.
+I/WindowState(  434): WIN DEATH: Window{215f23e8 com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.gui.MainActivity paused=false}
+I/ActivityManager(  434): Process com.nutomic.syncthingandroid (pid 2717) has died.
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 725 handle: 0x701bef30 size: 540 x 912 fmt: 5 usage: 0xb00
+W/ActivityManager(  434): Scheduling restart of crashed service com.nutomic.syncthingandroid/.syncthing.SyncthingService in 5000ms
+W/ActivityManager(  434): Force removing ActivityRecord{215f1798 com.nutomic.syncthingandroid/.gui.MainActivity}: app died, no saved state
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+I/WindowState(  434): WIN DEATH: Window{215382b0 com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.gui.MainActivity paused=false}
+W/InputDispatcher(  434): channel '210756a8 com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.gui.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  434): channel '210756a8 com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.gui.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 729 handle: 0x6c443f70 size: 540 x 912 fmt: 5 usage: 0xb00
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 726 handle: 0x6e8cd290 size: 540 x 912 fmt: 5 usage: 0xb00
+W/InputDispatcher(  434): Attempted to unregister already unregistered input channel '210756a8 com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.gui.MainActivity (server)'
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+I/WindowState(  434): WIN DEATH: Window{210756a8 com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.gui.MainActivity paused=false}
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+I/WindowState(  434): WIN DEATH: Window{21532910  paused=false}
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+I/WindowManager(  434): WINDOW DIED Window{210756a8 com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.gui.MainActivity paused=false}
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setKeyboardVisibility: false
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+W/IMGSRV  (  434): :0: gralloc_device_alloc: ID: 737 handle: 0x6cb21710 size: 540 x 912 fmt: 5 usage: 0xb00
+W/IMGSRV  (  725): :0: gralloc_register_buffer: ID: 737 handle: 0x6c49c030 size: 540 x 912 fmt: 5 usage: 0xb00
+W/InputMethodManagerService(  434): Got RemoteException sending setActive(false) notification to pid 2717 uid 10101
+W/IMGSRV  (  434): :0: gralloc_device_alloc: ID: 738 handle: 0x6cb21810 size: 540 x 912 fmt: 5 usage: 0xb00
+W/IMGSRV  (  725): :0: gralloc_register_buffer: ID: 738 handle: 0x6bd99ed0 size: 540 x 912 fmt: 5 usage: 0xb00
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 730 handle: 0x6c32c1f0 size: 513 x 168 fmt: 5 usage: 0xb00
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 732 handle: 0x70c7c150 size: 513 x 168 fmt: 5 usage: 0xb00
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 728 handle: 0x70c7bf40 size: 513 x 705 fmt: 5 usage: 0xb00
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 734 handle: 0x6e8c1430 size: 513 x 705 fmt: 5 usage: 0xb00
+W/WindowManager(  434): Rebuild removed 12 windows but added 10
+W/WindowManager(  434): This window was lost: Window{215382b0 com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.gui.MainActivity paused=false}
+W/WindowManager(  434): mSession=Session{215d7670 uid 10101} mClient=android.os.BinderProxy@21538168
+W/WindowManager(  434): mAttrs=WM.LayoutParams{(0,0)(wrapxwrap) gr=#11 sim=#120 ty=2 fl=#1820002 pfl=0x8 fmt=-2 wanim=0x1030290}
+W/WindowManager(  434): Requested w=513 h=168 mLayoutSeq=1671
+W/WindowManager(  434): mBaseLayer=21000 mSubLayer=0 mAnimLayer=21055+0=21055 mLastLayer=21055
+W/WindowManager(  434): mToken=AppWindowToken{210d33a0 token=Token{215f1838 ActivityRecord{215f1798 com.nutomic.syncthingandroid/.gui.MainActivity}}}
+W/WindowManager(  434): mRootToken=AppWindowToken{210d33a0 token=Token{215f1838 ActivityRecord{215f1798 com.nutomic.syncthingandroid/.gui.MainActivity}}}
+W/WindowManager(  434): mAppToken=AppWindowToken{210d33a0 token=Token{215f1838 ActivityRecord{215f1798 com.nutomic.syncthingandroid/.gui.MainActivity}}}
+W/WindowManager(  434): mViewVisibility=0x0 mHaveFrame=true mObscured=false
+W/WindowManager(  434): mSeq=0 mSystemUiVisibility=0x0
+W/WindowManager(  434): mGivenContentInsets=[0,0][0,0] mGivenVisibleInsets=[0,0][0,0]
+W/WindowManager(  434): mConfiguration={1.0 208mcc15mnc fr_FR sw360dp w360dp h582dp nrml long port finger -keyb/v/h -nav/h s.5}
+W/WindowManager(  434): mHasSurface=true mShownFrame=[36.872055,398.81775][549.8721,566.81775]
+W/WindowManager(  434): mFrame=[13,391][526,559] last=[13,391][526,559]
+W/WindowManager(  434): mSystemDecorRect=[0,0][513,168] last=[0,0][513,168]
+W/WindowManager(  434): Frames: containing=[0,38][540,912] parent=[0,38][540,912] display=[0,38][540,912]
+W/WindowManager(  434):     content=[13,391][526,559] visible=[13,391][526,559]
+W/WindowManager(  434): Cur insets: content=[0,0][0,0] visible=[0,0][0,0]
+W/WindowManager(  434): Lst insets: content=[0,0][0,0] visible=[0,0][0,0]
+W/WindowManager(  434): mAnimating=true mLocalAnimating=true mAnimationIsEntrance=false mAnimation=android.view.animation.AnimationSet@2132e420
+W/WindowManager(  434): XForm: has=true hasLocal=true {alpha=0.060853004 matrix=[0.9069316, 0.0, 23.872055][0.0, 0.9069316, 7.817749][0.0, 0.0, 1.0]}
+W/WindowManager(  434): mSurface=Surface(name=com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.gui.MainActivity, identity=333)
+W/WindowManager(  434): mDrawState=HAS_DRAWN mLastHidden=false
+W/WindowManager(  434): Surface: shown=true layer=21055 alpha=0.060853004 rect=(36.872055,398.81775) 513.0 x 168.0
+W/WindowManager(  434): mShownAlpha=0.060853004 mAlpha=1.0 mLastAlpha=0.060853004
+W/WindowManager(  434): mGlobalScale=1.0 mDsDx=0.9069316 mDtDx=0.0 mDsDy=0.0 mDtDy=0.9069316
+W/WindowManager(  434): mExiting=true mRemoveOnExit=true mDestroying=false mRemoved=false
+W/WindowManager(  434): This window was lost: Window{210756a8 com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.gui.MainActivity paused=false}
+W/WindowManager(  434): mSession=Session{215d7670 uid 10101} mClient=android.os.BinderProxy@2161eff8
+W/WindowManager(  434): mAttrs=WM.LayoutParams{(0,0)(wrapxwrap) gr=#11 sim=#120 ty=2 fl=#1820002 pfl=0x8 fmt=-2 wanim=0x1030290}
+W/WindowManager(  434): Requested w=513 h=705 mLayoutSeq=1672
+W/WindowManager(  434): mBaseLayer=21000 mSubLayer=0 mAnimLayer=21060+0=21060 mLastLayer=21060
+W/WindowManager(  434): mToken=AppWindowToken{210d33a0 token=Token{215f1838 ActivityRecord{215f1798 com.nutomic.syncthingandroid/.gui.MainActivity}}}
+W/WindowManager(  434): mRootToken=AppWindowToken{210d33a0 token=Token{215f1838 ActivityRecord{215f1798 com.nutomic.syncthingandroid/.gui.MainActivity}}}
+W/WindowManager(  434): mAppToken=AppWindowToken{210d33a0 token=Token{215f1838 ActivityRecord{215f1798 com.nutomic.syncthingandroid/.gui.MainActivity}}}
+W/WindowManager(  434): mViewVisibility=0x0 mHaveFrame=true mObscured=false
+W/WindowManager(  434): mSeq=0 mSystemUiVisibility=0x0
+W/WindowManager(  434): mGivenContentInsets=[0,0][0,0] mGivenVisibleInsets=[0,0][0,0]
+W/WindowManager(  434): mConfiguration={1.0 208mcc15mnc fr_FR sw360dp w360dp h582dp nrml long port finger -keyb/v/h -nav/h s.5}
+W/WindowManager(  434): mHasSurface=true mShownFrame=[36.872055,154.80661][549.8721,859.80664]
+W/WindowManager(  434): mFrame=[13,122][526,827] last=[13,122][526,827]
+W/WindowManager(  434): mSystemDecorRect=[0,0][513,705] last=[0,0][513,705]
+W/WindowManager(  434): Frames: containing=[0,38][540,912] parent=[0,38][540,912] display=[0,38][540,912]
+W/WindowManager(  434):     content=[13,122][526,827] visible=[13,122][526,827]
+W/WindowManager(  434): Cur insets: content=[0,0][0,0] visible=[0,0][0,0]
+W/WindowManager(  434): Lst insets: content=[0,0][0,0] visible=[0,0][0,0]
+W/WindowManager(  434): mAnimating=true mLocalAnimating=true mAnimationIsEntrance=false mAnimation=android.view.animation.AnimationSet@210ef3b0
+W/WindowManager(  434): XForm: has=true hasLocal=true {alpha=0.060853004 matrix=[0.9069316, 0.0, 23.872055][0.0, 0.9069316, 32.80661][0.0, 0.0, 1.0]}
+W/WindowManager(  434): mSurface=Surface(name=com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.gui.MainActivity, identity=334)
+W/WindowManager(  434): mDrawState=HAS_DRAWN mLastHidden=false
+W/WindowManager(  434): Surface: shown=true layer=21060 alpha=0.060853004 rect=(36.872055,154.80661) 513.0 x 705.0
+W/WindowManager(  434): mShownAlpha=0.060853004 mAlpha=1.0 mLastAlpha=0.060853004
+W/WindowManager(  434): mGlobalScale=1.0 mDsDx=0.9069316 mDtDx=0.0 mDsDy=0.0 mDtDy=0.9069316
+W/WindowManager(  434): mExiting=true mRemoveOnExit=true mDestroying=false mRemoved=false
+W/WindowManager(  434): Current app token list:
+V/WindowManager(  434):   #10: Token{21181770 ActivityRecord{211678f8 com.anddoes.launcher/.Launcher}}
+V/WindowManager(  434):   #9: Token{2123b408 ActivityRecord{2123b368 com.android.settings/.SubSettings}}
+V/WindowManager(  434):   #8: Token{212438d8 ActivityRecord{2109d608 com.android.settings/.SubSettings}}
+V/WindowManager(  434):   #7: Token{21502138 ActivityRecord{216970c0 com.android.settings/.Settings}}
+V/WindowManager(  434):   #6: Token{2127e2d8 ActivityRecord{210fdb48 sk.vx.connectbot/.WizardActivity}}
+V/WindowManager(  434):   #5: Token{21288a10 ActivityRecord{210d6178 sk.vx.connectbot/.HostListActivity}}
+V/WindowManager(  434):   #4: Token{21121ed8 ActivityRecord{21137d78 com.fsck.k9/.activity.MessageList}}
+V/WindowManager(  434):   #3: Token{21128e08 ActivityRecord{21128d68 org.fdroid.fdroid/.AppDetails}}
+V/WindowManager(  434):   #2: Token{2150d290 ActivityRecord{21513518 org.fdroid.fdroid/.SearchResults}}
+V/WindowManager(  434):   #1: Token{210750e0 ActivityRecord{21098890 org.fdroid.fdroid/.FDroid}}
+V/WindowManager(  434):   #0: Token{211fd028 ActivityRecord{215a8eb8 com.android.vending/.AssetBrowserActivity}}
+W/WindowManager(  434): Final window list:
+V/WindowManager(  434):   #17: Window{21536050 SearchPanel paused=false}
+V/WindowManager(  434):   #16: Window{211dc700 NavigationBar paused=false}
+V/WindowManager(  434):   #15: Window{2150c638 RecentsPanel paused=false}
+V/WindowManager(  434):   #14: Window{211b0690 StatusBar paused=false}
+V/WindowManager(  434):   #13: Window{21086ba0 Keyguard paused=false}
+V/WindowManager(  434):   #12: Window{21114e70 InputMethod paused=false}
+V/WindowManager(  434):   #11: Window{21532910  paused=false}
+V/WindowManager(  434):   #10: Window{21094dd8 com.anddoes.launcher/com.anddoes.launcher.Launcher paused=false}
+V/WindowManager(  434):   #9: Window{2140ead8 com.android.settings/com.android.settings.SubSettings paused=false}
+V/WindowManager(  434):   #8: Window{21156ae8 com.android.settings/com.android.settings.SubSettings paused=false}
+V/WindowManager(  434):   #7: Window{211c0e80 com.android.settings/com.android.settings.Settings paused=false}
+V/WindowManager(  434):   #6: Window{211440d8 sk.vx.connectbot/sk.vx.connectbot.WizardActivity paused=false}
+V/WindowManager(  434):   #5: Window{211f8b70 com.fsck.k9/com.fsck.k9.activity.MessageList paused=false}
+V/WindowManager(  434):   #4: Window{216bb9a0 org.fdroid.fdroid/org.fdroid.fdroid.AppDetails paused=false}
+V/WindowManager(  434):   #3: Window{214ee118 org.fdroid.fdroid/org.fdroid.fdroid.SearchResults paused=false}
+V/WindowManager(  434):   #2: Window{2115bd98 org.fdroid.fdroid/org.fdroid.fdroid.FDroid paused=false}
+V/WindowManager(  434):   #1: Window{210e1828 com.android.vending/com.android.vending.AssetBrowserActivity paused=false}
+V/WindowManager(  434):   #0: Window{210efc50 com.android.systemui.ImageWallpaper paused=false}
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 727 handle: 0x6c456950 size: 513 x 168 fmt: 5 usage: 0xb00
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 731 handle: 0x72636200 size: 513 x 705 fmt: 5 usage: 0xb00
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): onSensorChanged: light value: 2.0
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 735 handle: 0x6ccb9c60 size: 513 x 482 fmt: 1 usage: 0x933
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 736 handle: 0x6c79cc20 size: 513 x 482 fmt: 1 usage: 0x933
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 733 handle: 0x6ccbc6c0 size: 513 x 482 fmt: 1 usage: 0x933
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+W/IMGSRV  (  434): :0: gralloc_device_alloc: ID: 739 handle: 0x72636200 size: 540 x 912 fmt: 5 usage: 0xb00
+W/IMGSRV  (  725): :0: gralloc_register_buffer: ID: 739 handle: 0x6c48afb0 size: 540 x 912 fmt: 5 usage: 0xb00
+D/PowerManagerService(  434): onSensorChanged: light value: 2.0
+I/WifiHW  (  434): CMD: SIGNAL_POLL
+D/wpa_supplicant(  531): ctrl_iface: SIGNAL_POLL
+D/wpa_supplicant(  531): nl80211: survey data missing!
+I/WifiHW  (  434): REPLY: RSSI=-58
+I/WifiHW  (  434): REPLY: LINKSPEED=65
+I/WifiHW  (  434): REPLY: NOISE=-97
+I/WifiHW  (  434): REPLY: FREQUENCY=2437
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): userActivity mLastEventTime=1319159 time=1321409 mUserActivityAllowed=true mUserState=0x3 mWakeLockState=0x0 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  434): reactivateScreenLocksLocked mProxIgnoredBecauseScreenTurnedOff=false
+D/PowerManagerService(  434): setPowerState: mPowerState=0x3 newState=0x3 noChangeLights=false reason=2
+D/PowerManagerService(  434): setTimeoutLocked now=1321409 timeoutOverride=-1 nextState=3 when=1327409
+D/PowerManagerService(  434): onSensorChanged: light value: 2.0
+D/PowerManagerService(  434): userActivity mLastEventTime=1321409 time=1321913 mUserActivityAllowed=true mUserState=0x3 mWakeLockState=0x0 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  434): reactivateScreenLocksLocked mProxIgnoredBecauseScreenTurnedOff=false
+D/PowerManagerService(  434): setPowerState: mPowerState=0x3 newState=0x3 noChangeLights=false reason=2
+D/PowerManagerService(  434): setTimeoutLocked now=1321913 timeoutOverride=-1 nextState=3 when=1327913
+D/PowerManagerService(  434): onSensorChanged: light value: 2.0
+D/PowerManagerService(  434): userActivity mLastEventTime=1321913 time=1323554 mUserActivityAllowed=true mUserState=0x3 mWakeLockState=0x0 mProximitySensorActive=false timeoutOverride=-1 force=false
+D/PowerManagerService(  434): reactivateScreenLocksLocked mProxIgnoredBecauseScreenTurnedOff=false
+D/PowerManagerService(  434): setPowerState: mPowerState=0x3 newState=0x3 noChangeLights=false reason=2
+D/PowerManagerService(  434): setTimeoutLocked now=1323554 timeoutOverride=-1 nextState=3 when=1329554
+D/PowerManagerService(  434): onSensorChanged: light value: 2.0
+I/ActivityManager(  434): START {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=org.jtb.alogcat/.LogActivity u=0} from pid 725
+D/PowerManagerService(  434): acquireWakeLock flags=0x1 tag=ActivityManager-Launch
+D/PowerManagerService(  434): Partial WL [ActivityManager-Launch,]
+D/ActivityManager(  434): delaying BroadcastIntents
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setKeyboardVisibility: false
+W/IMGSRV  (  434): :0: gralloc_device_alloc: ID: 740 handle: 0x70c7b090 size: 540 x 912 fmt: 2 usage: 0x933
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+I/WifiHW  (  434): CMD: SIGNAL_POLL
+D/wpa_supplicant(  531): ctrl_iface: SIGNAL_POLL
+D/wpa_supplicant(  531): nl80211: survey data missing!
+I/WifiHW  (  434): REPLY: RSSI=-58
+I/WifiHW  (  434): REPLY: LINKSPEED=65
+I/WifiHW  (  434): REPLY: NOISE=-97
+I/WifiHW  (  434): REPLY: FREQUENCY=2437
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): acquireWakeLock flags=0x2000000a tag=KEEP_SCREEN_ON_FLAG
+D/PowerManagerService(  434): here mUserState=0x3 mLocks.gatherState()=0x3 mWakeLockState=0x0
+D/PowerManagerService(  434): setPowerState: mPowerState=0x3 newState=0x3 noChangeLights=false reason=3
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+W/IMGSRV  (  434): :0: gralloc_device_alloc: ID: 741 handle: 0x6f41ddc0 size: 540 x 912 fmt: 2 usage: 0x933
+W/IMGSRV  ( 2671): :0: gralloc_register_buffer: ID: 741 handle: 0x6a484fc0 size: 540 x 912 fmt: 2 usage: 0x933
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+W/IMGSRV  (  434): :0: gralloc_device_alloc: ID: 742 handle: 0x6c507b00 size: 317 x 77 fmt: 1 usage: 0x933
+I/ActivityManager(  434): Displayed org.jtb.alogcat/.LogActivity: +149ms
+W/IMGSRV  ( 2671): :0: gralloc_register_buffer: ID: 742 handle: 0x6a355f10 size: 317 x 77 fmt: 1 usage: 0x933
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+W/IMGSRV  (  434): :0: gralloc_device_alloc: ID: 743 handle: 0x728ce150 size: 540 x 912 fmt: 2 usage: 0x933
+W/IMGSRV  ( 2671): :0: gralloc_register_buffer: ID: 743 handle: 0x6a3560d0 size: 540 x 912 fmt: 2 usage: 0x933
+W/IMGSRV  (  725): :0: gralloc_unregister_buffer: ID: 737 handle: 0x6c49c030 size: 540 x 912 fmt: 5 usage: 0xb00
+W/IMGSRV  (  725): :0: gralloc_unregister_buffer: ID: 738 handle: 0x6bd99ed0 size: 540 x 912 fmt: 5 usage: 0xb00
+W/IMGSRV  (  725): :0: gralloc_unregister_buffer: ID: 739 handle: 0x6c48afb0 size: 540 x 912 fmt: 5 usage: 0xb00
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 737 handle: 0x6cb21710 size: 540 x 912 fmt: 5 usage: 0xb00
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 739 handle: 0x72636200 size: 540 x 912 fmt: 5 usage: 0xb00
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): releaseWakeLock flags=0x1 tag=ActivityManager-Launch
+D/PowerManagerService(  434): Partial WL []
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 740 handle: 0x70c7b090 size: 540 x 912 fmt: 2 usage: 0x933
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+W/IMGSRV  (  434): :0: gralloc_device_free: ID: 738 handle: 0x6cb21810 size: 540 x 912 fmt: 5 usage: 0xb00
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/PowerManagerService(  434): setScreenBrightnessOverride -1
+D/PowerManagerService(  434): setButtonBrightnessOverride -1
+D/dalvikvm( 2747): Try to disable coredump for pid 2747
+I/ActivityManager(  434): Start proc com.nutomic.syncthingandroid for service com.nutomic.syncthingandroid/.syncthing.SyncthingService: pid=2747 uid=10101 gids={1015, 3003, 1028}
+E/Trace   ( 2747): error opening trace file: No such file or directory (2)
+D/PhoneStatusBar(  547): addNotification score=-20
+I/SyncthingService( 2747): App started for the first time. Copying default config, keys will be generated automatically
+I/ConfigXml( 2747): Writing updated config back to file
+I/ConfigXml( 2747): Checking for needed config updates
+I/ConfigXml( 2747): Initializing API key with random string
+I/ConfigXml( 2747): Writing updated config back to file
+I/SyncthingService( 2747): Web GUI will be available at http://127.0.0.1:8080
+I/SyncthingNativeCode( 2747): sh: <stdin>[1]: /data/data/com.nutomic.syncthingandroid/lib/libsyncthing.so: No such file or directory
+W/SyncthingNativeCode( 2747): Syncthing binary crashed with error code 1
+W/PostTask( 2747): Failed to call Rest API at http://127.0.0.1:8080/rest/shutdown
+W/PostTask( 2747): org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:8080 refused
+W/PostTask( 2747):  at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:183)
+W/PostTask( 2747):  at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:164)
+W/PostTask( 2747):  at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:119)
+W/PostTask( 2747):  at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:360)
+W/PostTask( 2747):  at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+W/PostTask( 2747):  at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:487)
+W/PostTask( 2747):  at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:465)
+W/PostTask( 2747):  at com.nutomic.syncthingandroid.syncthing.PostTask.doInBackground(PostTask.java:44)
+W/PostTask( 2747):  at com.nutomic.syncthingandroid.syncthing.PostTask.doInBackground(PostTask.java:17)
+W/PostTask( 2747):  at android.os.AsyncTask$2.call(AsyncTask.java:287)
+W/PostTask( 2747):  at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+W/PostTask( 2747):  at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+W/PostTask( 2747):  at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+W/PostTask( 2747):  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+W/PostTask( 2747):  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+W/PostTask( 2747):  at java.lang.Thread.run(Thread.java:856)
+W/PostTask( 2747): Caused by: java.net.ConnectException: failed to connect to /127.0.0.1 (port 8080): connect failed: ECONNREFUSED (Connection refused)
+W/PostTask( 2747):  at libcore.io.IoBridge.connect(IoBridge.java:114)
+W/PostTask( 2747):  at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+W/PostTask( 2747):  at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:460)
+W/PostTask( 2747):  at java.net.Socket.connect(Socket.java:832)
+W/PostTask( 2747):  at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119)
+W/PostTask( 2747):  at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:144)
+W/PostTask( 2747):  ... 15 more
+W/PostTask( 2747): Caused by: libcore.io.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+W/PostTask( 2747):  at libcore.io.Posix.connect(Native Method)
+W/PostTask( 2747):  at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+W/PostTask( 2747):  at libcore.io.IoBridge.connectErrno(IoBridge.java:127)
+W/PostTask( 2747):  at libcore.io.IoBridge.connect(IoBridge.java:112)

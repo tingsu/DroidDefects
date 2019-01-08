@@ -1,0 +1,7 @@
+java.lang.RuntimeException: cannot install msf gems
+    at org.csploit.android.services.UpdateService.installGems(UpdateService.java:873)
+    at org.csploit.android.services.UpdateService.onHandleIntent(UpdateService.java:953)
+    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:66)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.os.HandlerThread.run(HandlerThread.java:61)

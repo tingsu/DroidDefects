@@ -1,0 +1,7 @@
+04-19 09:15:04.835: E/AndroidRuntime(31820): java.lang.NullPointerException
+04-19 09:15:04.835: E/AndroidRuntime(31820):    at cgeo.geocaching.maps.DistanceDrawer.drawDistance(DistanceDrawer.java:100)
+04-19 09:15:04.835: E/AndroidRuntime(31820):    at cgeo.geocaching.maps.PositionAndScaleOverlay.drawInternal(PositionAndScaleOverlay.java:83)
+04-19 09:15:04.835: E/AndroidRuntime(31820):    at cgeo.geocaching.maps.PositionAndScaleOverlay.drawOverlayBitmap(PositionAndScaleOverlay.java:67)
+04-19 09:15:04.835: E/AndroidRuntime(31820):    at cgeo.geocaching.maps.mapsforge.MapsforgeOverlay.drawOverlayBitmap(MapsforgeOverlay.java:32)
+04-19 09:15:04.835: E/AndroidRuntime(31820):    at org.mapsforge.android.maps.overlay.Overlay.redrawOverlay(Overlay.java:313)
+04-19 09:15:04.835: E/AndroidRuntime(31820):    at org.mapsforge.android.maps.overlay.Overlay.run(Overlay.java:250)

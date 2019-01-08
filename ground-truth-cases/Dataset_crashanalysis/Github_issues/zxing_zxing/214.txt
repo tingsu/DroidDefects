@@ -1,0 +1,10 @@
+java.lang.ArrayIndexOutOfBoundsException: 650
+        at com.google.zxing.common.BitMatrix.get(BitMatrix.java:74)
+        at com.google.zxing.aztec.decoder.Decoder.extractBits(Decoder.java:306)
+        at com.google.zxing.aztec.decoder.Decoder.decode(Decoder.java:76)
+        at com.google.zxing.aztec.AztecReader.decode(AztecReader.java:67)
+        at com.google.zxing.MultiFormatReader.decodeInternal(MultiFormatReader.java:171)
+        at com.google.zxing.MultiFormatReader.decode(MultiFormatReader.java:55)
+        at net.atos.titan.matrixcode.MatrixCode.readMatrixCodeFromBufferedImage(MatrixCode.java:58)
+        at net.atos.titan.matrixcode.MatrixCode.readMatrixCodeFromFile(MatrixCode.java:51)
+        at net.atos.titan.matrixcode.MatrixCodeTest.testLoop(MatrixCodeTest.java:65)

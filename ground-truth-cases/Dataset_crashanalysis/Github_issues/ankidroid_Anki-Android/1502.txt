@@ -1,0 +1,4 @@
+at com.ichi2.anki.WidgetStatus$UpdateDeckStatusAsyncTask.doInBackground(WidgetStatus.java:88)
+ at com.ichi2.anki.WidgetStatus$UpdateDeckStatusAsyncTask.doInBackground(WidgetStatus.java:1)
+ at android.os.AsyncTask$2.call(AsyncTask.java:252)
+ at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)

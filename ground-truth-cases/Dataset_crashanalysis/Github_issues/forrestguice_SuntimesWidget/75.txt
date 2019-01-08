@@ -1,0 +1,6 @@
+java.lang.IllegalArgumentException: current should be >= start and <= end
+            at android.widget.NumberPicker.setCurrent(NumberPicker.java:288)
+            at android.widget.DatePicker.updateDaySpinner(DatePicker.java:397)
+            at android.widget.DatePicker.updateSpinners(DatePicker.java:383)
+            at android.widget.DatePicker.init(DatePicker.java:379)
+            at com.forrestguice.suntimeswidget.TimeDateDialog.initViews(TimeDateDialog.java:126)

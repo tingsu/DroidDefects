@@ -1,0 +1,121 @@
+                  java.lang.RuntimeException: Unable to start activity ComponentInfo{openfoodfacts.github.scrachx.openfood/openfoodfacts.github.scrachx.openfood.views.SplashActivity}: android.content.res.Resources$NotFoundException: File res/drawable/background_splash.xml from drawable resource ID #0x7f020055
+                      at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2237)
+                      at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2286)
+                      at android.app.ActivityThread.access$800(ActivityThread.java:144)
+                      at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1246)
+                      at android.os.Handler.dispatchMessage(Handler.java:102)
+                      at android.os.Looper.loop(Looper.java:212)
+                      at android.app.ActivityThread.main(ActivityThread.java:5135)
+                      at java.lang.reflect.Method.invokeNative(Native Method)
+                      at java.lang.reflect.Method.invoke(Method.java:515)
+                      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:877)
+                      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:693)
+                      at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+                      at dalvik.system.NativeStart.main(Native Method)
+                   Caused by: android.content.res.Resources$NotFoundException: File res/drawable/background_splash.xml from drawable resource ID #0x7f020055
+                      at android.content.res.Resources.loadDrawable(Resources.java:2115)
+                      at android.content.res.Resources.getDrawable(Resources.java:708)
+                      at android.content.res.XResources.getDrawable(XResources.java:521)
+                      at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:374)
+                      at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:202)
+                      at android.support.v7.widget.TintTypedArray.getDrawableIfKnown(TintTypedArray.java:81)
+                      at android.support.v7.app.AppCompatDelegateImplBase.<init>(AppCompatDelegateImplBase.java:131)
+                      at android.support.v7.app.AppCompatDelegateImplV9.<init>(AppCompatDelegateImplV9.java:151)
+                      at android.support.v7.app.AppCompatDelegateImplV11.<init>(AppCompatDelegateImplV11.java:31)
+                      at android.support.v7.app.AppCompatDelegateImplV14.<init>(AppCompatDelegateImplV14.java:55)
+                      at android.support.v7.app.AppCompatDelegate.create(AppCompatDelegate.java:205)
+                      at android.support.v7.app.AppCompatDelegate.create(AppCompatDelegate.java:185)
+                      at android.support.v7.app.AppCompatActivity.getDelegate(AppCompatActivity.java:525)
+                      at android.support.v7.app.AppCompatActivity.onCreate(AppCompatActivity.java:74)
+                      at openfoodfacts.github.scrachx.openfood.views.SplashActivity.onCreate(SplashActivity.java:35)
+                      at android.app.Activity.performCreate(Activity.java:5231)
+                      at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+                      at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2201)
+                      at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2286)†
+                      at android.app.ActivityThread.access$800(ActivityThread.java:144)†
+                      at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1246)†
+                      at android.os.Handler.dispatchMessage(Handler.java:102)†
+                      at android.os.Looper.loop(Looper.java:212)†
+                      at android.app.ActivityThread.main(ActivityThread.java:5135)†
+                      at java.lang.reflect.Method.invokeNative(Native Method)†
+                      at java.lang.reflect.Method.invoke(Method.java:515)†
+                      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:877)†
+                      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:693)†
+                      at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)†
+                      at dalvik.system.NativeStart.main(Native Method)†
+                   Caused by: android.content.res.Resources$NotFoundException: File res/drawable/ic_openfoodfacts_logo_no_tagline.xml from drawable resource ID #0x7f020091
+                      at android.content.res.Resources.loadDrawable(Resources.java:2115)
+                      at android.content.res.Resources.getDrawable(Resources.java:708)
+                      at android.content.res.XResources.getDrawable(XResources.java:521)
+                      at android.graphics.drawable.LayerDrawable.inflate(LayerDrawable.java:159)
+                      at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:963)
+                      at android.graphics.drawable.Drawable.createFromXml(Drawable.java:893)
+                      at android.content.res.Resources.loadDrawable(Resources.java:2111)
+                      at android.content.res.Resources.getDrawable(Resources.java:708)†
+                      at android.content.res.XResources.getDrawable(XResources.java:521)†
+                      at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:374)†
+                      at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:202)†
+                      at android.support.v7.widget.TintTypedArray.getDrawableIfKnown(TintTypedArray.java:81)†
+                      at android.support.v7.app.AppCompatDelegateImplBase.<init>(AppCompatDelegateImplBase.java:131)†
+                      at android.support.v7.app.AppCompatDelegateImplV9.<init>(AppCompatDelegateImplV9.java:151)†
+                      at android.support.v7.app.AppCompatDelegateImplV11.<init>(AppCompatDelegateImplV11.java:31)†
+                      at android.support.v7.app.AppCompatDelegateImplV14.<init>(AppCompatDelegateImplV14.java:55)†
+                      at android.support.v7.app.AppCompatDelegate.create(AppCompatDelegate.java:205)†
+                      at android.support.v7.app.AppCompatDelegate.create(AppCompatDelegate.java:185)†
+                      at android.support.v7.app.AppCompatActivity.getDelegate(AppCompatActivity.java:525)†
+                      at android.support.v7.app.AppCompatActivity.onCreate(AppCompatActivity.java:74)†
+                      at openfoodfacts.github.scrachx.openfood.views.SplashActivity.onCreate(SplashActivity.java:35)†
+                      at android.app.Activity.performCreate(Activity.java:5231)†
+                      at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)†
+                      at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2201)†
+                      at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2286)†
+                      at android.app.ActivityThread.access$800(ActivityThread.java:144)†
+                      at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1246)†
+                      at android.os.Handler.dispatchMessage(Handler.java:102)†
+                      at android.os.Looper.loop(Looper.java:212)†
+                      at android.app.ActivityThread.main(ActivityThread.java:5135)†
+                      at java.lang.reflect.Method.invokeNative(Native Method)†
+                      at java.lang.reflect.Method.invoke(Method.java:515)†
+                      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:877)†
+                      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:693)†
+                      at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)†
+                      at dalvik.system.NativeStart.main(Native Method)†
+                   Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector
+                      at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:958)
+                      at android.graphics.drawable.Drawable.createFromXml(Drawable.java:893)
+                      at android.content.res.Resources.loadDrawable(Resources.java:2111)
+                      at android.content.res.Resources.getDrawable(Resources.java:708)†
+                      at android.content.res.XResources.getDrawable(XResources.java:521)†
+                      at android.graphics.drawable.LayerDrawable.inflate(LayerDrawable.java:159)†
+                      at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:963)†
+                      at android.graphics.drawable.Drawable.createFromXml(Drawable.java:893)†
+                      at android.content.res.Resources.loadDrawable(Resources.java:2111)†
+                      at android.content.res.Resources.getDrawable(Resources.java:708)†
+                      at android.content.res.XResources.getDrawable(XResources.java:521)†
+                      at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:374)†
+                      at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:202)†
+                      at android.support.v7.widget.TintTypedArray.getDrawableIfKnown(TintTypedArray.java:81)†
+                      at android.support.v7.app.AppCompatDelegateImplBase.<init>(AppCompatDelegateImplBase.java:131)†
+                      at android.support.v7.app.AppCompatDelegateImplV9.<init>(AppCompatDelegateImplV9.java:151)†
+                      at android.support.v7.app.AppCompatDelegateImplV11.<init>(AppCompatDelegateImplV11.java:31)†
+                      at android.support.v7.app.AppCompatDelegateImplV14.<init>(AppCompatDelegateImplV14.java:55)†
+                      at android.support.v7.app.AppCompatDelegate.create(AppCompatDelegate.java:205)†
+                      at android.support.v7.app.AppCompatDelegate.create(AppCompatDelegate.java:185)†
+                      at android.support.v7.app.AppCompatActivity.getDelegate(AppCompatActivity.java:525)†
+                      at android.support.v7.app.AppCompatActivity.onCreate(AppCompatActivity.java:74)†
+                      at openfoodfacts.github.scrachx.openfood.views.SplashActivity.onCreate(SplashActivity.java:35)†
+                      at android.app.Activity.performCreate(Activity.java:5231)†
+                      at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)†
+                      at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2201)†
+                      at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2286)†
+                      at android.app.ActivityThread.access$800(ActivityThread.java:144)†
+                      at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1246)†
+                      at android.os.Handler.dispatchMessage(Handler.java:102)†
+                      at android.os.Looper.loop(Looper.java:212)†
+                      at android.app.ActivityThread.main(ActivityThread.java:5135)†
+                      at java.lang.reflect.Method.invokeNative(Native Method)†
+                      at java.lang.reflect.Method.invoke(Method.java:515)†
+                      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:877)†
+                      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:693)†
+                      at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)†
+                      at dalvik.system.NativeStart.main(Native Method)†

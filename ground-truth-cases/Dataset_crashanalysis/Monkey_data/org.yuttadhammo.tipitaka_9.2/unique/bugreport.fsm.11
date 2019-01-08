@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: org.yuttadhammo.tipitaka
+//version: 9.2
+//appro_time: 75
+ java.lang.NullPointerException
+ 	at org.yuttadhammo.tipitaka.ReadBookActivity.prepareBookmark(ReadBookActivity.java:529)
+ 	at org.yuttadhammo.tipitaka.ReadBookActivity.onOptionsItemSelected(ReadBookActivity.java:399)
+ 	at android.support.v4.app.Watson.onMenuItemSelected(Watson.java:118)
+ 	at com.actionbarsherlock.ActionBarSherlock.callbackOptionsItemSelected(ActionBarSherlock.java:604)
+ 	at com.actionbarsherlock.internal.ActionBarSherlockNative.dispatchOptionsItemSelected(ActionBarSherlockNative.java:92)
+ 	at com.actionbarsherlock.app.SherlockFragmentActivity.onMenuItemSelected(SherlockFragmentActivity.java:204)
+ 	at com.android.internal.policy.impl.PhoneWindow.onMenuItemSelected(PhoneWindow.java:986)
+ 	at com.android.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:742)
+ 	at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:152)
+ 	at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:881)
+ 	at com.android.internal.view.menu.MenuPopupHelper.onItemClick(MenuPopupHelper.java:156)
+ 	at android.widget.AdapterView.performItemClick(AdapterView.java:298)
+ 	at android.widget.AbsListView.performItemClick(AbsListView.java:1100)
+ 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:2788)
+ 	at android.widget.AbsListView$1.run(AbsListView.java:3463)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

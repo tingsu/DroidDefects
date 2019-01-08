@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: unisiegen.photographers.activity
+//version: Beta
+//appro_time: 18
+ android.database.sqlite.SQLiteException: unrecognized token: "'''" (code 1): , while compiling: SELECT filmtitle FROM Film WHERE filmtitle = '''
+ 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+ 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:500)
+ 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+ 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+ 	at android.database.sqlite.SQLiteQuery.<init>(SQLiteQuery.java:37)
+ 	at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:44)
+ 	at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1314)
+ 	at android.database.sqlite.SQLiteDatabase.rawQuery(SQLiteDatabase.java:1253)
+ 	at unisiegen.photographers.database.DB.checkIfFilmTitleIsTaken(DB.java:423)
+ 	at unisiegen.photographers.activity.NewFilmActivity$2.onClick(NewFilmActivity.java:99)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

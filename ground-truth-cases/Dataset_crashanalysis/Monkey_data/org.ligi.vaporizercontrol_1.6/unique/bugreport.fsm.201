@@ -1,0 +1,10 @@
+//this is an auto-generated bug report
+//package name: org.ligi.vaporizercontrol
+//version: 1.6
+//appro_time: 12
+ java.lang.NullPointerException
+ 	at org.ligi.vaporizercontrol.model.CraftyCommunicator.startScan(CraftyCommunicator.java:280)
+ 	at org.ligi.vaporizercontrol.model.CraftyCommunicator.connectOrStartScan(CraftyCommunicator.java:200)
+ 	at org.ligi.vaporizercontrol.model.CraftyCommunicator.access$300(CraftyCommunicator.java:25)
+ 	at org.ligi.vaporizercontrol.model.CraftyCommunicator$HeartBeat.run(CraftyCommunicator.java:187)
+ 	at java.lang.Thread.run(Thread.java:841)

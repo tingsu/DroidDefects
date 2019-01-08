@@ -1,0 +1,8 @@
+    java.lang.ArrayIndexOutOfBoundsException: length=0; index=0
+            at org.whispersystems.libaxolotl.protocol.PreKeyWhisperMessage.<init>(PreKeyWhisperMessage.java:48)
+            at org.whispersystems.textsecure.api.crypto.TextSecureCipher.decrypt(TextSecureCipher.java:109)
+            at org.thoughtcrime.securesms.jobs.PushDecryptJob.handleMessage(PushDecryptJob.java:106)
+            at org.thoughtcrime.securesms.jobs.PushDecryptJob.onRun(PushDecryptJob.java:87)
+            at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+            at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+            at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

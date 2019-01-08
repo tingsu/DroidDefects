@@ -1,0 +1,13 @@
+E/AndroidRuntime(15328): java.lang.NumberFormatException: Invalid float: "medium"
+E/AndroidRuntime(15328):    at java.lang.StringToReal.invalidReal(StringToReal.java:63)
+E/AndroidRuntime(15328):    at java.lang.StringToReal.initialParse(StringToReal.java:114)
+E/AndroidRuntime(15328):    at java.lang.StringToReal.parseFloat(StringToReal.java:304)
+E/AndroidRuntime(15328):    at java.lang.Float.parseFloat(Float.java:300)
+E/AndroidRuntime(15328):    at com.plusonelabs.calendar.RemoteViewsUtil.getScaledValue(RemoteViewsUtil.java:59)
+E/AndroidRuntime(15328):    at com.plusonelabs.calendar.RemoteViewsUtil.setTextSize(RemoteViewsUtil.java:36)
+E/AndroidRuntime(15328):    at com.plusonelabs.calendar.EventRemoteViewsFactory.updateDayHeader(EventRemoteViewsFactory.java:71)
+E/AndroidRuntime(15328):    at com.plusonelabs.calendar.EventRemoteViewsFactory.getViewAt(EventRemoteViewsFactory.java:56)
+E/AndroidRuntime(15328):    at android.widget.RemoteViewsService$RemoteViewsFactoryAdapter.getViewAt(RemoteViewsService.java:164)
+E/AndroidRuntime(15328):    at com.android.internal.widget.IRemoteViewsFactory$Stub.onTransact(IRemoteViewsFactory.java:85)
+E/AndroidRuntime(15328):    at android.os.Binder.execTransact(Binder.java:351)
+E/AndroidRuntime(15328):    at dalvik.system.NativeStart.run(Native Method)

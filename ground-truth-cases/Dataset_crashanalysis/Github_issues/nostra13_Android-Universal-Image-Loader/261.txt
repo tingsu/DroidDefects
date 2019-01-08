@@ -1,0 +1,4 @@
+04-23 11:09:05.445: E / ImageLoader (3925): java.lang.NegativeArraySizeException
+04-23 11:09:05.445: E / ImageLoader (3925): at java.lang.AbstractStringBuilder. <init> (AbstractStringBuilder.java: 80)
+04-23 11:09:05.445: E / ImageLoader (3925): at java.lang.StringBuilder. <init> (StringBuilder.java: 67)
+04-23 11:09:05.445: E / ImageLoader (3925): at com.nostra13.universalimageloader.core.assist.ImageSize.toString (ImageSize.java: 66)

@@ -1,0 +1,15 @@
+java.lang.RuntimeException: 
+  at android.app.ActivityThread.handleReceiver(ActivityThread.java:2724)
+  at android.app.ActivityThread.-wrap14(ActivityThread.java:0)
+  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1431)
+  at android.os.Handler.dispatchMessage(Handler.java:102)
+  at android.os.Looper.loop(Looper.java:148)
+  at android.app.ActivityThread.main(ActivityThread.java:5443)
+  at java.lang.reflect.Method.invoke(Native Method:0)
+  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:728)
+  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:618)
+Caused by: java.lang.ClassNotFoundException: 
+  at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+  at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+  at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+  at android.app.ActivityThread.handleReceiver(ActivityThread.java:2719)

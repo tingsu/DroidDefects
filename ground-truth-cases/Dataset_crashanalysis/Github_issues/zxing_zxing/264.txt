@@ -1,0 +1,13 @@
+java.lang.IllegalArgumentException: Both dimensions must be greater than 0
+    at com.google.zxing.common.BitMatrix.<init>(BitMatrix.java:54)
+    at com.google.zxing.common.GlobalHistogramBinarizer.getBlackMatrix(GlobalHistogramBinarizer.java:101)
+    at com.google.zxing.common.HybridBinarizer.getBlackMatrix(HybridBinarizer.java:95)
+    at com.google.zxing.BinaryBitmap.getBlackMatrix(BinaryBitmap.java:92)
+    at com.google.zxing.qrcode.QRCodeReader.decode(QRCodeReader.java:84)
+    at com.google.zxing.MultiFormatReader.decodeInternal(MultiFormatReader.java:195)
+    at com.google.zxing.MultiFormatReader.decodeWithState(MultiFormatReader.java:90)
+    at com.google.zxing.client.android.DecodeHandler.decode(DecodeHandler.java:107)
+    at com.google.zxing.client.android.DecodeHandler.handleMessage(DecodeHandler.java:63)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:146)
+    at com.google.zxing.client.android.DecodeThread.run(DecodeThread.java:102)

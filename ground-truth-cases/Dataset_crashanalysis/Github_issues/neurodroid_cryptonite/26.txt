@@ -1,0 +1,69 @@
+E/AndroidRuntime(  740): java.lang.RuntimeException: Unable to create application csh.cryptonite.CryptoniteApp: java.lang.NullPointerException
+E/AndroidRuntime(  740):    at android.app.ActivityThread.handleBindApplication(ActivityThread.java:3957)
+E/AndroidRuntime(  740):    at android.app.ActivityThread.access$1300(ActivityThread.java:123)
+E/AndroidRuntime(  740):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1185)
+E/AndroidRuntime(  740):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(  740):    at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime(  740):    at android.app.ActivityThread.main(ActivityThread.java:4424)
+E/AndroidRuntime(  740):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(  740):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime(  740):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+E/AndroidRuntime(  740):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+E/AndroidRuntime(  740):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(  740): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(  740):    at csh.cryptonite.CryptoniteApp.onCreate(CryptoniteApp.java:34)
+E/AndroidRuntime(  740):    at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:969)
+E/AndroidRuntime(  740):    at android.app.ActivityThread.handleBindApplication(ActivityThread.java:3954)
+E/AndroidRuntime(  740):    ... 10 more
+W/ActivityManager(   91):   Force finishing activity csh.cryptonite/.Cryptonite
+
+I had tried building the apk using eclipse but it doesn't let me build due to a bunch of "... cannot be resolved to a type" or "... cannot be resolved to a variable" errors. The 'ant debug' command on the other hand built successfully, but the app fails to launch. 
+
+I also looked at CryptoniteApp.java which is where I believe the exception is thrown and I commented out the the init calls and modified it to simply throw a toast in the onCreate to figure out where the failure is occuring. However, even that fails with these errors:
+
+Start proc csh.cryptonite for activity csh.cryptonite/.Cryptonite: pid=565 uid=10034 gids={1015, 3003}
+W/NetworkManagementSocketTagger(   91): setKernelCountSet(10034, 1) failed with errno -2
+I/Process (   91): Sending signal. PID: 565 SIG: 3
+I/dalvikvm(  565): threadid=3: reacting to signal 3
+I/dalvikvm(  565): Wrote stack traces to '/data/anr/traces.txt'
+I/Process (   91): Sending signal. PID: 565 SIG: 3
+I/dalvikvm(  565): threadid=3: reacting to signal 3
+I/dalvikvm(  565): Wrote stack traces to '/data/anr/traces.txt'
+D/AndroidRuntime(  565): Shutting down VM
+W/dalvikvm(  565): threadid=1: thread exiting with uncaught exception (group=0x409821f8)
+E/AndroidRuntime(  565): FATAL EXCEPTION: main
+E/AndroidRuntime(  565): java.lang.Error: Unresolved compilation problems: 
+E/AndroidRuntime(  565):    AccessType cannot be resolved to a type
+E/AndroidRuntime(  565):    AccessType cannot be resolved to a variable
+E/AndroidRuntime(  565):    The method getDBApi() from the type DBInterface refers to the missing type DropboxAPI
+E/AndroidRuntime(  565):    The method getDBApi() from the type DBInterface refers to the missing type DropboxAPI
+E/AndroidRuntime(  565):    The method getDBApi() from the type DBInterface refers to the missing type DropboxAPI
+E/AndroidRuntime(  565):    The method setDBApi(DropboxAPI<AndroidAuthSession>) from the type DBInterface refers to the missing type DropboxAPI
+E/AndroidRuntime(  565):    The method getDBApi() from the type DBInterface refers to the missing type DropboxAPI
+E/AndroidRuntime(  565):    The method getDBApi() from the type DBInterface refers to the missing type DropboxAPI
+E/AndroidRuntime(  565):    AndroidAuthSession cannot be resolved to a type
+E/AndroidRuntime(  565):    The method getDBApi() from the type DBInterface refers to the missing type DropboxAPI
+E/AndroidRuntime(  565):    TokenPair cannot be resolved to a type
+E/AndroidRuntime(  565):    The method getDBApi() from the type DBInterface refers to the missing type DropboxAPI
+E/AndroidRuntime(  565):    The method getDBApi() from the type DBInterface refers to the missing type DropboxAPI
+E/AndroidRuntime(  565):    The method getDBApi() from the type DBInterface refers to the missing type DropboxAPI
+E/AndroidRuntime(  565):    AndroidAuthSession cannot be resolved to a type
+E/AndroidRuntime(  565):    AppKeyPair cannot be resolved to a type
+E/AndroidRuntime(  565):    AccessType cannot be resolved to a type
+E/AndroidRuntime(  565):    AppKeyPair cannot be resolved to a type
+E/AndroidRuntime(  565):    AccessType cannot be resolved to a variable
+E/AndroidRuntime(  565):    AppKeyPair cannot be resolved to a type
+E/AndroidRuntime(  565):    AccessType cannot be resolved to a variable
+E/AndroidRuntime(  565):    AccessTokenPair cannot be resolved to a type
+E/AndroidRuntime(  565):    AccessTokenPair cannot be resolved to a type
+E/AndroidRuntime(  565):    AndroidAuthSession cannot be resolved to a type
+E/AndroidRuntime(  565):    AndroidAuthSession cannot be resolved to a type
+E/AndroidRuntime(  565):    The method setDBApi(DropboxAPI<AndroidAuthSession>) from the type DBInterface refers to the missing type DropboxAPI
+E/AndroidRuntime(  565):    DropboxAPI cannot be resolved to a type
+E/AndroidRuntime(  565):    AndroidAuthSession cannot be resolved to a type
+E/AndroidRuntime(  565):    The method getDBApi() from the type DBInterface refers to the missing type DropboxAPI
+E/AndroidRuntime(  565): 
+E/AndroidRuntime(  565):    at csh.cryptonite.Cryptonite.<init>(Cryptonite.java:131)
+E/AndroidRuntime(  565):    at java.lang.Class.newInstanceImpl(Native Method)
+E/AndroidRuntime(  565):    at java.lang.Class.newInstance(Class.java:1319)
+E/AndroidRuntime(  565):    at android.app.Instrumentation.newActivity(Inst...

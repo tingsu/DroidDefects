@@ -1,0 +1,15 @@
+03-25 14:37:23.742 E/AndroidRuntime(21115): java.lang.RuntimeException: Unable to stop service org.traccar.client.TraccarService@4051b788: java.lang.NullPointerException
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at android.app.ActivityThread.handleStopService(ActivityThread.java:2086)
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at android.app.ActivityThread.access$2900(ActivityThread.java:117)
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1001)
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at android.os.Handler.dispatchMessage(Handler.java:99)
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at android.os.Looper.loop(Looper.java:130)
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at android.app.ActivityThread.main(ActivityThread.java:3687)
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at java.lang.reflect.Method.invokeNative(Native Method)
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at java.lang.reflect.Method.invoke(Method.java:507)
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:867)
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:625)
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at dalvik.system.NativeStart.main(Native Method)
+03-25 14:37:23.742 E/AndroidRuntime(21115): Caused by: java.lang.NullPointerException
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at org.traccar.client.TraccarService.onDestroy(TraccarService.java:83)
+03-25 14:37:23.742 E/AndroidRuntime(21115):     at android.app.ActivityThread.handleStopService(ActivityThread.java:2069)

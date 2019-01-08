@@ -1,0 +1,5 @@
+12-09 13:44:29.204 10978 14731 E AndroidRuntime: java.lang.ArrayIndexOutOfBoundsException: length=0; index=0
+12-09 13:44:29.204 10978 14731 E AndroidRuntime:    at com.btmura.android.reddit.content.ThingSyncAdapter.syncVotes(ThingSyncAdapter.java:294)
+12-09 13:44:29.204 10978 14731 E AndroidRuntime:    at com.btmura.android.reddit.content.ThingSyncAdapter.doSync(ThingSyncAdapter.java:127)
+12-09 13:44:29.204 10978 14731 E AndroidRuntime:    at com.btmura.android.reddit.content.ThingSyncAdapter.onPerformSync(ThingSyncAdapter.java:100)
+12-09 13:44:29.204 10978 14731 E AndroidRuntime:    at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:254)

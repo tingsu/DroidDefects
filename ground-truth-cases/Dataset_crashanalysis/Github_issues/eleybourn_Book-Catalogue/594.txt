@@ -1,0 +1,7 @@
+java.lang.RuntimeException: java.lang.ArrayIndexOutOfBoundsException
+    at com.eleybourn.bookcatalogue.backup.CsvImporter.importBooks(CsvImporter.java:344)
+    at com.eleybourn.bookcatalogue.backup.CsvImporter.importBooks(CsvImporter.java:66)
+    at com.eleybourn.bookcatalogue.ImportThread.onRun(ImportThread.java:132)
+    at com.eleybourn.bookcatalogue.ManagedTask.run(ManagedTask.java:117)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+    at com.eleybourn.bookcatalogue.backup.CsvImporter.importBooks(CsvImporter.java:140)

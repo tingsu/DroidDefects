@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: com.andrew.apollo
+//version: 1.1
+//appro_time: 1
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.NullPointerException
+ 	at com.andrew.apollo.cache.ImageCache.getDiskCacheDir(ImageCache.java:630)
+ 	at com.andrew.apollo.cache.ImageCache.initDiskCache(ImageCache.java:159)
+ 	at com.andrew.apollo.cache.ImageCache$1.doInBackground(ImageCache.java:140)
+ 	at com.andrew.apollo.cache.ImageCache$1.doInBackground(ImageCache.java:135)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

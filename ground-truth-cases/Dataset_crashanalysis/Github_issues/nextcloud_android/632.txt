@@ -1,0 +1,11 @@
+java.lang.IllegalStateException: Apps may not schedule more than 100 distinct jobs
+ at android.os.Parcel.readException(Parcel.java:1691)
+ at android.os.Parcel.readException(Parcel.java:1636)
+ at android.app.job.IJobScheduler$Stub$Proxy.schedule(IJobScheduler.java:158)
+ at android.app.JobSchedulerImpl.schedule(JobSchedulerImpl.java:42)
+ at com.owncloud.android.services.FileAlterationMagicListener.onFileCreate(FileAlterationMagicListener.java:103)
+ at org.apache.commons.io.monitor.FileAlterationObserver.doCreate(FileAlterationObserver.java:379)
+ at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:345)
+ at org.apache.commons.io.monitor.FileAlterationObserver.checkAndNotify(FileAlterationObserver.java:304)
+ at org.apache.commons.io.monitor.FileAlterationMonitor.run(FileAlterationMonitor.java:182)
+ at java.lang.Thread.run(Thread.java:761)

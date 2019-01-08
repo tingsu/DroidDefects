@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: protect.budgetwatch
+//version: 0.10
+//appro_time: 115
+ Error inserting max=5 _id=n
+ android.database.sqlite.SQLiteConstraintException: column _id is not unique (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at protect.budgetwatch.DBHelper.insertBudget(DBHelper.java:141)
+ 	at protect.budgetwatch.CsvDatabaseImporter.importBudget(CsvDatabaseImporter.java:232)
+ 	at protect.budgetwatch.CsvDatabaseImporter.importData(CsvDatabaseImporter.java:44)
+ 	at protect.budgetwatch.MultiFormatImporter.importData(MultiFormatImporter.java:46)
+ 	at protect.budgetwatch.ImportExportTask.performImport(ImportExportTask.java:49)
+ 	at protect.budgetwatch.ImportExportTask.doInBackground(ImportExportTask.java:105)
+ 	at protect.budgetwatch.ImportExportTask.doInBackground(ImportExportTask.java:19)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

@@ -1,0 +1,12 @@
+java.lang.OutOfMemoryError
+   at java.lang.AbstractStringBuilder.enlargeBuffer(AbstractStringBuilder.java:95)
+   at java.lang.AbstractStringBuilder.append0(AbstractStringBuilder.java:140)
+   at java.lang.StringBuilder.append(StringBuilder.java:125)
+   at cgeo.geocaching.DataStore.whereGeocodeIn(DataStore.java:2865)
+   at cgeo.geocaching.DataStore.loadCachesFromGeocodes(DataStore.java:1631)
+   at cgeo.geocaching.DataStore.loadCaches(DataStore.java:1582)
+   at cgeo.geocaching.SearchResult.getCachesFromSearchResult(SearchResult.java:243)
+   at cgeo.geocaching.maps.CGeoMap$LoadRunnable.run(CGeoMap.java:1073)
+   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+   at java.lang.Thread.run(Thread.java:1019)

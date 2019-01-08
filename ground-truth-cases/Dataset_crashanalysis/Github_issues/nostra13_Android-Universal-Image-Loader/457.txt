@@ -1,0 +1,95 @@
+LOGCAT=11-21 15:25:57.154 I/dalvikvm( 4544):   | state=R schedstat=( 0 0 0 ) utm=1267 stm=125 core=0
+11-21 15:25:57.154 I/dalvikvm( 4544):   at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+11-21 15:25:57.154 I/dalvikvm( 4544):   at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:623)
+11-21 15:25:57.154 I/dalvikvm( 4544):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decodeStream(BaseImageDecoder.java:156)
+11-21 15:25:57.154 I/dalvikvm( 4544):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:72)
+11-21 15:25:57.154 I/dalvikvm( 4544):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:305)
+11-21 15:25:57.154 I/dalvikvm( 4544):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:251)
+11-21 15:25:57.154 I/dalvikvm( 4544):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:129)
+11-21 15:25:57.154 I/dalvikvm( 4544):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+11-21 15:25:57.154 I/dalvikvm( 4544):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+11-21 15:25:57.154 I/dalvikvm( 4544):   at java.lang.Thread.run(Thread.java:856)
+11-21 15:25:57.154 I/dalvikvm( 4544): 
+11-21 15:25:57.154 D/skia    ( 4544): --- decoder->decode returned false
+11-21 15:25:57.154 E/ImageLoader( 4544): null
+11-21 15:25:57.154 E/ImageLoader( 4544): java.lang.OutOfMemoryError
+11-21 15:25:57.154 E/ImageLoader( 4544): at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+11-21 15:25:57.154 E/ImageLoader( 4544): at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:623)
+11-21 15:25:57.154 E/ImageLoader( 4544): at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decodeStream(BaseImageDecoder.java:156)
+11-21 15:25:57.154 E/ImageLoader( 4544): at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:72)
+11-21 15:25:57.154 E/ImageLoader( 4544): at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:305)
+11-21 15:25:57.154 E/ImageLoader( 4544): at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:251)
+11-21 15:25:57.154 E/ImageLoader( 4544): at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:129)
+11-21 15:25:57.154 E/ImageLoader( 4544): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+11-21 15:25:57.154 E/ImageLoader( 4544): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+11-21 15:25:57.154 E/ImageLoader( 4544): at java.lang.Thread.run(Thread.java:856)
+11-21 15:25:57.194 W/ResourceType( 4544): getEntry failing because entryIndex 13 is beyond type entryCount 11
+11-21 15:25:57.194 W/ResourceType( 4544): Failure getting entry for 0x7f0b000d (t=10 e=13) in package 0 (error -2147483647)
+11-21 15:25:57.194 E/GooglePlayServicesUtil( 4544): The Google Play services resources were not found. Check your project configuration to ensure that the resources are included.
+11-21 15:25:57.194 E/GmsClient( 4544): Calling connect() while still connected, missing disconnect().
+11-21 15:25:57.254 I/endeffect( 4544): AbsListView.onMeasure(), getWidth()=0, getHeight()=0, this=android.widget.GridView{42253748 V.ED.VC. ......I. 0,0-0,0 #7f060015 app:id/gridView}
+11-21 15:25:57.254 I/endeffect( 4544): AbsListView.onMeasure(), getWidth()=0, getHeight()=0, this=android.widget.GridView{42253748 V.ED.VC. ......I. 0,0-0,0 #7f060015 app:id/gridView}
+11-21 15:25:57.264 I/endeffect( 4544): AbsListView.onMeasure(), getWidth()=0, getHeight()=0, this=android.widget.GridView{42253748 V.ED.VC. ......I. 0,0-0,0 #7f060015 app:id/gridView}
+11-21 15:25:57.264 I/endeffect( 4544): AbsListView.onMeasure(), getWidth()=0, getHeight()=0, this=android.widget.GridView{42253748 V.ED.VC. ......I. 0,0-0,0 #7f060015 app:id/gridView}
+11-21 15:25:57.264 D/AbsListView( 4544): unregisterIRListener() is called 
+11-21 15:25:57.274 I/endeffect( 4544): AbsListView.onLayout(), getWidth()=1080, getHeight()=600, this=android.widget.GridView{42253748 V.ED.VC. ......ID 0,196-1080,796 #7f060015 app:id/gridView}
+11-21 15:25:57.304 I/endeffect( 4544): AbsListView.onMeasure(), getWidth()=1080, getHeight()=600, this=android.widget.GridView{42253748 V.ED.VC. ........ 0,196-1080,796 #7f060015 app:id/gridView}
+11-21 15:25:57.334 I/endeffect( 4544): AbsListView.onMeasure(), getWidth()=1080, getHeight()=600, this=android.widget.GridView{42253748 V.ED.VC. ........ 0,196-1080,796 #7f060015 app:id/gridView}
+11-21 15:25:57.334 I/endeffect( 4544): AbsListView.onMeasure(), getWidth()=1080, getHeight()=600, this=android.widget.GridView{42253748 V.ED.VC. ........ 0,196-1080,796 #7f060015 app:id/gridView}
+11-21 15:25:57.344 I/endeffect( 4544): AbsListView.onMeasure(), getWidth()=1080, getHeight()=600, this=android.widget.GridView{42253748 V.ED.VC. ........ 0,196-1080,796 #7f060015 app:id/gridView}
+11-21 15:25:57.354 D/AbsListView( 4544): unregisterIRListener() is called 
+11-21 15:25:57.354 I/endeffect( 4544): AbsListView.onLayout(), getWidth()=1080, getHeight()=600, this=android.widget.GridView{42253748 V.ED.VC. ......ID 0,196-1080,796 #7f060015 app:id/gridView}
+11-21 15:25:57.554 I/dalvikvm-heap( 4544): Clamp target GC heap from 131.881MB to 128.000MB
+11-21 15:25:57.554 D/dalvikvm( 4544): GC_FOR_ALLOC freed 2228K, 4% free 125772K/130996K, paused 84ms, total 85ms
+11-21 15:25:57.554 I/dalvikvm-heap( 4544): Forcing collection of SoftReferences for 4194320-byte allocation
+11-21 15:25:57.675 I/dalvikvm-heap( 4544): Clamp target GC heap from 131.880MB to 128.000MB
+11-21 15:25:57.675 D/dalvikvm( 4544): GC_BEFORE_OOM freed <1K, 4% free 125772K/130996K, paused 124ms, total 124ms
+11-21 15:25:57.675 E/dalvikvm-heap( 4544): Out of memory on a 4194320-byte allocation.
+11-21 15:25:57.675 I/dalvikvm( 4544): "GLThread 3294" prio=5 tid=39 RUNNABLE
+11-21 15:25:57.675 I/dalvikvm( 4544):   | group="main" sCount=0 dsCount=0 obj=0x425376d0 self=0x76e30c10
+11-21 15:25:57.675 I/dalvikvm( 4544):   | sysTid=8144 nice=1 sched=0/0 cgrp=apps handle=2015081120
+11-21 15:25:57.675 I/dalvikvm( 4544):   | state=R schedstat=( 0 0 0 ) utm=27 stm=3 core=2
+11-21 15:25:57.675 I/dalvikvm( 4544):   at android.graphics.Bitmap.nativeCreate(Native Method)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at android.graphics.Bitmap.createBitmap(Bitmap.java:718)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at android.graphics.Bitmap.createBitmap(Bitmap.java:695)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at android.graphics.Bitmap.createBitmap(Bitmap.java:662)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at maps.r.k.a((null):-1)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at maps.y.b.a((null):-1)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at maps.y.b.a((null):-1)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at maps.y.b.b((null):-1)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at maps.aa.al.a((null):-1)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at maps.aa.at.a((null):-1)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at maps.ao.ap.a((null):-1)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at maps.v.f.a((null):-1)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at maps.v.f.b((null):-1)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at maps.p.y.l((null):-1)
+11-21 15:25:57.675 I/dalvikvm( 4544):   at maps.p.y.run((null):-1)
+11-21 15:25:57.675 I/dalvikvm( 4544): 
+11-21 15:25:57.685 W/System.err( 4544): OutOfMemory
+11-21 15:25:57.805 I/dalvikvm-heap( 4544): Clamp target GC heap from 131.846MB to 128.000MB
+11-21 15:25:57.805 D/dalvikvm( 4544): GC_EXPLICIT freed 115K, 5% free 125737K/130996K, paused 3ms+20ms, total 120ms
+11-21 15:25:58.155 I/dalvikvm-heap( 4544): Clamp target GC heap from 131.841MB to 128.000MB
+11-21 15:25:58.155 D/dalvikvm( 4544): GC_FOR_ALLOC freed 83K, 5% free 125732K/130996K, paused 159ms, total 161ms
+11-21 15:25:58.155 I/dalvikvm-heap( 4544): Forcing collection of SoftReferences for 4194320-byte allocation
+11-21 15:25:58.355 I/dalvikvm-heap( 4544): Clamp target GC heap from 131.839MB to 128.000MB
+11-21 15:25:58.355 D/dalvikvm( 4544): GC_BEFORE_OOM freed 2K, 5% free 125729K/130996K, paused 202ms, total 202ms
+11-21 15:25:58.355 E/dalvikvm-heap( 4544): Out of memory on a 4194320-byte allocation.
+11-21 15:25:58.355 I/dalvikvm( 4544): "GLThread 3294" prio=5 tid=39 RUNNABLE
+11-21 15:25:58.355 I/dalvikvm( 4544):   | group="main" sCount=0 dsCount=0 obj=0x425376d0 self=0x76e30c10
+11-21 15:25:58.355 I/dalvikvm( 4544):   | sysTid=8144 nice=1 sched=0/0 cgrp=apps handle=2015081120
+11-21 15:25:58.355 I/dalvikvm( 4544):   | state=R schedstat=( 0 0 0 ) utm=69 stm=6 core=0
+11-21 15:25:58.355 I/dalvikvm( 4544):   at android.graphics.Bitmap.nativeCreate(Native Method)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at android.graphics.Bitmap.createBitmap(Bitmap.java:718)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at android.graphics.Bitmap.createBitmap(Bitmap.java:695)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at android.graphics.Bitmap.createBitmap(Bitmap.java:662)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at maps.r.k.a((null):-1)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at maps.y.b.a((null):-1)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at maps.y.b.a((null):-1)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at maps.y.b.b((null):-1)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at maps.aa.al.a((null):-1)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at maps.aa.at.a((null):-1)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at maps.ao.ap.a((null):-1)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at maps.v.f.a((null):-1)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at maps.v.f.b((null):-1)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at maps.p.y.l((null):-1)
+11-21 15:25:58.355 I/dalvikvm( 4544):   at maps.p.y.run((null):-1)

@@ -1,0 +1,13 @@
+03-31 18:45:16.218 13396 13470 E AndroidRuntime: java.lang.IllegalArgumentException: Comparison method violates its general contract!
+03-31 18:45:16.218 13396 13470 E AndroidRuntime:        at java.util.ComparableTimSort.mergeLo(ComparableTimSort.java:740)
+03-31 18:45:16.218 13396 13470 E AndroidRuntime:        at java.util.ComparableTimSort.mergeAt(ComparableTimSort.java:477)
+03-31 18:45:16.218 13396 13470 E AndroidRuntime:        at java.util.ComparableTimSort.mergeForceCollapse(ComparableTimSort.java:418)
+03-31 18:45:16.218 13396 13470 E AndroidRuntime:        at java.util.ComparableTimSort.sort(ComparableTimSort.java:218)
+03-31 18:45:16.218 13396 13470 E AndroidRuntime:        at java.util.Arrays.sort(Arrays.java:1325)
+03-31 18:45:16.218 13396 13470 E AndroidRuntime:        at java.util.Collections.sort(Collections.java:169)
+03-31 18:45:16.218 13396 13470 E AndroidRuntime:        at org.gateshipone.malp.mpdservice.mpdprotocol.MPDConnection.parseMPDArtists(MPDConnection.java:864)
+03-31 18:45:16.218 13396 13470 E AndroidRuntime:        at org.gateshipone.malp.mpdservice.mpdprotocol.MPDConnection.getAlbumArtists(MPDConnection.java:1188)
+03-31 18:45:16.218 13396 13470 E AndroidRuntime:        at org.gateshipone.malp.mpdservice.handlers.serverhandler.MPDQueryHandler.handleMessage(MPDQueryHandler.java:201)
+03-31 18:45:16.218 13396 13470 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:102)
+03-31 18:45:16.218 13396 13470 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:154)
+03-31 18:45:16.218 13396 13470 E AndroidRuntime:        at android.os.HandlerThread.run(HandlerThread.java:61)

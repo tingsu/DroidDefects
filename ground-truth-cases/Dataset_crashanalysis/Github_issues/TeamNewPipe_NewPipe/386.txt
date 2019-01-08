@@ -1,0 +1,13 @@
+12-04 11:07:43.719 20419 23161 W System.err: java.io.IOException: java.io.FileNotFoundException: https://www.youtube.com/results?search_query=test&page=0&filters=video
+12-04 11:07:43.720 20419 23161 W System.err:    at org.schabi.newpipe.Downloader.dl(Downloader.java:88)
+12-04 11:07:43.721 20419 23161 W System.err:    at org.schabi.newpipe.Downloader.download(Downloader.java:65)
+12-04 11:07:43.721 20419 23161 W System.err:    at org.schabi.newpipe.Downloader.download(Downloader.java:47)
+12-04 11:07:43.721 20419 23161 W System.err:    at org.schabi.newpipe.extractor.services.youtube.YoutubeSearchEngine.search(YoutubeSearchEngine.java:88)
+12-04 11:07:43.721 20419 23161 W System.err:    at org.schabi.newpipe.extractor.SearchResult.getSearchResult(SearchResult.java:32)
+12-04 11:07:43.721 20419 23161 W System.err:    at org.schabi.newpipe.search_fragment.SearchWorker$SearchRunnable.run(SearchWorker.java:103)
+12-04 11:07:43.721 20419 23161 W System.err:    at java.lang.Thread.run(Thread.java:761)
+12-04 11:07:43.722 20419 23161 W System.err: Caused by: java.io.FileNotFoundException: https://www.youtube.com/results?search_query=test&page=0&filters=video
+12-04 11:07:43.722 20419 23161 W System.err:    at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:250)
+12-04 11:07:43.722 20419 23161 W System.err:    at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getInputStream(DelegatingHttpsURLConnection.java:210)
+12-04 11:07:43.722 20419 23161 W System.err:    at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java)
+12-04 11:07:43.722 20419 23161 W System.err:    at org.schabi.newpipe.Downloader.dl(Downloader.java:78)

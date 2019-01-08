@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: org.ligi.etheremote
+//version: 0.2
+//appro_time: 118
+ java.lang.IndexOutOfBoundsException: setSpan (11 ... 11) ends beyond length 9
+ 	at android.text.SpannableStringBuilder.checkRange(SpannableStringBuilder.java:1016)
+ 	at android.text.SpannableStringBuilder.setSpan(SpannableStringBuilder.java:592)
+ 	at android.text.SpannableStringBuilder.setSpan(SpannableStringBuilder.java:588)
+ 	at android.text.Selection.setSelection(Selection.java:76)
+ 	at android.text.Selection.setSelection(Selection.java:87)
+ 	at android.widget.EditText.setSelection(EditText.java:94)
+ 	at org.ligi.etheremote.BlockListActivity.refresh(BlockListActivity.kt:65)
+ 	at org.ligi.etheremote.BlockListActivity$onCreate$$inlined$verticalLayout$lambda$3.invoke(BlockListActivity.kt:48)
+ 	at org.ligi.etheremote.BlockListActivity$onCreate$$inlined$verticalLayout$lambda$3.invoke(BlockListActivity.kt:11)
+ 	at org.jetbrains.anko.Sdk15ListenersKt__ListenersKt$sam$OnClickListener$6dc65f2d.onClick(Listeners.kt)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

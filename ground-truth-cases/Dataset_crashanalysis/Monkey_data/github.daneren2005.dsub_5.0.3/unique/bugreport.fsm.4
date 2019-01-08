@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: github.daneren2005.dsub
+//version: 5.0.3
+//appro_time: 4
+ Error inserting parent=65 storage_id=65537 format=12289 date_modified=1494088624 _data=/storage/sdcard/Android/data/github.daneren2005.dsub/files/music/Binaerpilot
+ android.database.sqlite.SQLiteConstraintException: column _data is not unique (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at com.android.providers.media.MediaProvider.insertDirectory(MediaProvider.java:2809)
+ 	at com.android.providers.media.MediaProvider.getParent(MediaProvider.java:2837)
+ 	at com.android.providers.media.MediaProvider.insertDirectory(MediaProvider.java:2802)
+ 	at com.android.providers.media.MediaProvider.getParent(MediaProvider.java:2837)
+ 	at com.android.providers.media.MediaProvider.insertFile(MediaProvider.java:3074)
+ 	at com.android.providers.media.MediaProvider.insertInternal(MediaProvider.java:3321)
+ 	at com.android.providers.media.MediaProvider.insert(MediaProvider.java:2742)
+ 	at android.content.ContentProvider$Transport.insert(ContentProvider.java:213)
+ 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:158)
+ 	at android.os.Binder.execTransact(Binder.java:388)
+ 	at dalvik.system.NativeStart.run(Native Method)

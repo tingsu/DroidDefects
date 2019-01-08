@@ -1,0 +1,15 @@
+java.lang.RuntimeException: Unable to start service org.sufficientlysecure.keychain.service.KeyserverSyncAdapterService@21f63140 with null: java.lang.NullPointerException
+    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2759)
+    at android.app.ActivityThread.access$2100(ActivityThread.java:138)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1333)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:149)
+    at android.app.ActivityThread.main(ActivityThread.java:5061)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:788)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:604)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+    at org.sufficientlysecure.keychain.service.KeyserverSyncAdapterService.onStartCommand(KeyserverSyncAdapterService.java:80)
+    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2742)

@@ -1,0 +1,40 @@
+W/SmsSendJob( 6309): java.lang.NullPointerException
+W/SmsSendJob( 6309):    at android.os.Parcel.readException(Parcel.java:1478)
+W/SmsSendJob( 6309):    at android.os.Parcel.readException(Parcel.java:1426)
+W/SmsSendJob( 6309):    at com.android.internal.telephony.ISms$Stub$Proxy.sendText(ISms.java:909)
+W/SmsSendJob( 6309):    at android.telephony.SmsManager.sendTextMessage(SmsManager.java:194)
+W/SmsSendJob( 6309):    at android.telephony.SmsManager.sendMultipartTextMessage(SmsManager.java:399)
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.SmsSendJob.deliver(SmsSendJob.java:99)
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.SmsSendJob.onSend(SmsSendJob.java:55)
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:39)
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/SmsSendJob( 6309):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/SmsSendJob( 6309):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/SmsSendJob( 6309): Recipient: (***) ***-****
+W/SmsSendJob( 6309): Message Parts: 1
+D/[SMS_LD]( 1440): setSmsPriority(), smsPriority = 0
+W/SmsSendJob( 6309): java.lang.NullPointerException
+W/SmsSendJob( 6309):    at android.os.Parcel.readException(Parcel.java:1478)
+W/SmsSendJob( 6309):    at android.os.Parcel.readException(Parcel.java:1426)
+W/SmsSendJob( 6309):    at com.android.internal.telephony.ISms$Stub$Proxy.sendText(ISms.java:909)
+W/SmsSendJob( 6309):    at android.telephony.SmsManager.sendTextMessage(SmsManager.java:194)
+W/SmsSendJob( 6309):    at android.telephony.SmsManager.sendMultipartTextMessage(SmsManager.java:399)
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.SmsSendJob.deliver(SmsSendJob.java:99)
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.SmsSendJob.onSend(SmsSendJob.java:55)
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:39)
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/SmsSendJob( 6309):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/SmsSendJob( 6309):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/SmsSendJob( 6309): org.thoughtcrime.securesms.transport.UndeliverableMessageException: java.lang.NullPointerException
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.SmsSendJob.deliver(SmsSendJob.java:113)
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.SmsSendJob.onSend(SmsSendJob.java:55)
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:39)
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/SmsSendJob( 6309):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/SmsSendJob( 6309):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/SmsSendJob( 6309): Caused by: java.lang.NullPointerException
+W/SmsSendJob( 6309):    at android.os.Parcel.readException(Parcel.java:1478)
+W/SmsSendJob( 6309):    at android.os.Parcel.readException(Parcel.java:1426)
+W/SmsSendJob( 6309):    at com.android.internal.telephony.ISms$Stub$Proxy.sendText(ISms.java:909)
+W/SmsSendJob( 6309):    at android.telephony.SmsManager.sendTextMessage(SmsManager.java:194)
+W/SmsSendJob( 6309):    at org.thoughtcrime.securesms.jobs.SmsSendJob.deliver(SmsSendJob.java:107)

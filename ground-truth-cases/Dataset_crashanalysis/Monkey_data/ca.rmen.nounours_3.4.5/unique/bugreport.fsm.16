@@ -1,0 +1,15 @@
+//this is an auto-generated bug report
+//package name: ca.rmen.nounours
+//version: 3.4.5
+//appro_time: 160
+ java.lang.IllegalArgumentException
+ 	at android.view.Surface.nativeUnlockCanvasAndPost(Native Method)
+ 	at android.view.Surface.unlockCanvasAndPost(Surface.java:255)
+ 	at android.view.SurfaceView$4.unlockCanvasAndPost(SurfaceView.java:844)
+ 	at ca.rmen.nounours.android.common.nounours.AndroidNounours.displayImage(AndroidNounours.java:171)
+ 	at ca.rmen.nounours.Nounours.setImage(Nounours.java:736)
+ 	at ca.rmen.nounours.android.common.nounours.AnimationHandler$AnimationTask.run(AnimationHandler.java:117)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

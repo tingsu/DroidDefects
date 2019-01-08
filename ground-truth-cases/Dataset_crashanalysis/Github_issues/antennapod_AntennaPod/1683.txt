@@ -1,0 +1,11 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+    at de.danoeh.antennapod.activity.MediaplayerActivity$8.access$lambda$1(MediaplayerActivity.java:1836)
+    at de.danoeh.antennapod.activity.MediaplayerActivity$8$$Lambda$2.onClick(Unknown Source)
+    at android.support.v7.app.AlertController$ButtonHandler.handleMessage(AlertController.java:157)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5219)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:898)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:693)

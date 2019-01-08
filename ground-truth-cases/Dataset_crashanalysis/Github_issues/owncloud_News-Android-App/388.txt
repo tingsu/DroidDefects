@@ -1,0 +1,27 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{de.luhmer.owncloudnewsreader/de.luhmer.owncloudnewsreader.NewsDetailActivity}: java.lang.SecurityException: Not allowed to bind to service Intent { act=android.support.customtabs.action.CustomTabsService pkg=com.chrome.beta }
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2212)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2271)
+    at android.app.ActivityThread.access$800(ActivityThread.java:144)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1205)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.app.ActivityThread.main(ActivityThread.java:5146)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.SecurityException: Not allowed to bind to service Intent { act=android.support.customtabs.action.CustomTabsService pkg=com.chrome.beta }
+    at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1644)
+    at android.app.ContextImpl.bindService(ContextImpl.java:1608)
+    at android.content.ContextWrapper.bindService(ContextWrapper.java:517)
+    at android.support.customtabs.CustomTabsClient.bindCustomTabsService(CustomTabsClient.java:60)
+    at de.luhmer.owncloudnewsreader.NewsDetailActivity.bindCustomTabsService(NewsDetailActivity.java:498)
+    at de.luhmer.owncloudnewsreader.NewsDetailActivity.onCreate(NewsDetailActivity.java:184)
+    at android.app.Activity.performCreate(Activity.java:5231)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2169)
+    ... 11 more
+```
+
+The issue is reproducible and makes the app useless at the moment. I'm using a Samsung Galaxy S2 with Cyanogen 11 (Android 4.4.4).

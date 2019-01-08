@@ -1,0 +1,6 @@
+java.lang.NullPointerException
+       at org.kontalk.service.gcm.GcmIntentService.onHandleIntent(GcmIntentService.java:83)
+       at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:136)
+       at android.os.HandlerThread.run(HandlerThread.java:61)

@@ -1,0 +1,7 @@
+Caused by: java.lang.IllegalArgumentException: Divide by 0
+       at com.google.zxing.common.reedsolomon.GenericGFPoly.divide(SourceFile:205)
+       at com.google.zxing.common.reedsolomon.ReedSolomonEncoder.encode(SourceFile:65)
+       at com.google.zxing.qrcode.encoder.Encoder.generateECBytes(SourceFile:436)
+       at com.google.zxing.qrcode.encoder.Encoder.interleaveWithECBytes(SourceFile:391)
+       at com.google.zxing.qrcode.encoder.Encoder.encode(SourceFile:144)
+       at com.google.zxing.qrcode.encoder.Encoder.encode(SourceFile:76)

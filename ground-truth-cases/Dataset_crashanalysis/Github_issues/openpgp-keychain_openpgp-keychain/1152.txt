@@ -1,0 +1,7 @@
+ 21053               Keychain  D  java.lang.NullPointerException: Attempt to invoke virtual method 'long java.lang.Long.longValue()' on a null object reference
+ 21053               Keychain  D  at org.sufficientlysecure.keychain.pgp.PgpSignEncryptOperation.execute(PgpSignEncryptOperation.java:492)
+ 21053               Keychain  D  at org.sufficientlysecure.keychain.remote.OpenPgpService.signImpl(OpenPgpService.java:290)
+ 21053               Keychain  D  at org.sufficientlysecure.keychain.remote.OpenPgpService.access$100(OpenPgpService.java:65)
+ 21053               Keychain  D  at org.sufficientlysecure.keychain.remote.OpenPgpService$1.execute(OpenPgpService.java:795)
+ 21053               Keychain  D  at org.openintents.openpgp.IOpenPgpService$Stub.onTransact(IOpenPgpService.java:69)
+ 21053               Keychain  D  at android.os.Binder.execTransact(Binder.java:446)

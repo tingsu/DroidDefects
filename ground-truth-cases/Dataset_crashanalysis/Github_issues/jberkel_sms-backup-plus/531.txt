@@ -1,0 +1,26 @@
+E/AndroidRuntime( 9429): java.lang.NoClassDefFoundError: Failed resolution of: Lcom/beetstra/jutf7/CharsetProvider;
+E/AndroidRuntime( 9429):    at com.fsck.k9.mail.store.imap.ImapStore.<init>(ImapStore.java:356)
+E/AndroidRuntime( 9429):    at com.zegoggles.smssync.mail.BackupImapStore.<init>(BackupImapStore.java:60)
+E/AndroidRuntime( 9429):    at com.zegoggles.smssync.service.ServiceBase.getBackupImapStore(ServiceBase.java:102)
+E/AndroidRuntime( 9429):    at com.zegoggles.smssync.service.SmsBackupService.backup(SmsBackupService.java:105)
+E/AndroidRuntime( 9429):    at com.zegoggles.smssync.service.SmsBackupService.handleIntent(SmsBackupService.java:87)
+E/AndroidRuntime( 9429):    at com.zegoggles.smssync.service.ServiceBase.onStartCommand(ServiceBase.java:87)
+E/AndroidRuntime( 9429):    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2688)
+E/AndroidRuntime( 9429):    at android.app.ActivityThread.access$2100(ActivityThread.java:135)
+E/AndroidRuntime( 9429):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1293)
+E/AndroidRuntime( 9429):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 9429):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 9429):    at android.app.ActivityThread.main(ActivityThread.java:5001)
+E/AndroidRuntime( 9429):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 9429):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+E/AndroidRuntime( 9429):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+E/AndroidRuntime( 9429): Caused by: java.lang.ClassNotFoundException: Didn't find class "com.beetstra.jutf7.CharsetProvider" on path: DexPathList[[zip file "/data/app/com.zegoggles.smssync-2.apk"],nativeLibraryDirectories=[/data/app-lib/com.zegoggles.smssync-2, /vendor/lib, /system/lib]]
+E/AndroidRuntime( 9429):    at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+E/AndroidRuntime( 9429):    at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+E/AndroidRuntime( 9429):    at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+E/AndroidRuntime( 9429):    ... 15 more
+E/AndroidRuntime( 9429):    Suppressed: java.lang.ClassNotFoundException: com.beetstra.jutf7.CharsetProvider
+E/AndroidRuntime( 9429):        at java.lang.Class.classForName(Native Method)
+E/AndroidRuntime( 9429):        at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+E/AndroidRuntime( 9429):        at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+E/AndroidRuntime( 9429):        at java.lang.ClassLoader.loadClass(ClassLoader.java:504)

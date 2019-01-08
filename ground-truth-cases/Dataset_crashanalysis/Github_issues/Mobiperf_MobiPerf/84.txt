@@ -1,0 +1,12 @@
+08-30 11:32:54.294 25342 25342 E AndroidRuntime: java.lang.IllegalStateException: The content of the adapter has changed but ListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thread. [in ListView(2131361792, class android.widget.ListView) with Adapter(class android.widget.ArrayAdapter)]
+08-30 11:32:54.294 25342 25342 E AndroidRuntime:        at android.widget.ListView.layoutChildren(ListView.java:1538)
+08-30 11:32:54.294 25342 25342 E AndroidRuntime:        at android.widget.AbsListView$CheckForTap.run(AbsListView.java:3069)
+08-30 11:32:54.294 25342 25342 E AndroidRuntime:        at android.os.Handler.handleCallback(Handler.java:615)
+08-30 11:32:54.294 25342 25342 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:92)
+08-30 11:32:54.294 25342 25342 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:137)
+08-30 11:32:54.294 25342 25342 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:4745)
+08-30 11:32:54.294 25342 25342 E AndroidRuntime:        at java.lang.reflect.Method.invokeNative(Native Method)
+08-30 11:32:54.294 25342 25342 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Method.java:511)
+08-30 11:32:54.294 25342 25342 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+08-30 11:32:54.294 25342 25342 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+08-30 11:32:54.294 25342 25342 E AndroidRuntime:        at dalvik.system.NativeStart.main(Native Method)

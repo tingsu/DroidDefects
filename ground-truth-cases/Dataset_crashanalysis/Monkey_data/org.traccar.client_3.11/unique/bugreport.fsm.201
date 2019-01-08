@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: org.traccar.client
+//version: 3.11
+//appro_time: 83
+ java.lang.RuntimeException: Unable to create service org.traccar.client.TrackingService: java.lang.IllegalArgumentException: provider doesn't exisit: null
+ 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2587)
+ 	at android.app.ActivityThread.access$1600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1338)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalArgumentException: provider doesn't exisit: null
+ 	at android.os.Parcel.readException(Parcel.java:1435)
+ 	at android.os.Parcel.readException(Parcel.java:1385)
+ 	at android.location.ILocationManager$Stub$Proxy.requestLocationUpdates(ILocationManager.java:540)
+ 	at android.location.LocationManager.requestLocationUpdates(LocationManager.java:836)
+ 	at android.location.LocationManager.requestLocationUpdates(LocationManager.java:430)
+ 	at org.traccar.client.SimplePositionProvider.startUpdates(SimplePositionProvider.java:34)
+ 	at org.traccar.client.TrackingController.start(TrackingController.java:87)
+ 	at org.traccar.client.TrackingService.onCreate(TrackingService.java:89)
+ 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2577)

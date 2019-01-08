@@ -1,0 +1,11 @@
+java.lang.NullPointerException
+       at org.jivesoftware.smackx.csi.ClientStateIndicationManager.isSupported(ClientStateIndicationManager.java:41)
+       at org.jivesoftware.smackx.csi.ClientStateIndicationManager.throwIaeIfNotSupported(ClientStateIndicationManager.java:45)
+       at org.jivesoftware.smackx.csi.ClientStateIndicationManager.inactive(ClientStateIndicationManager.java:36)
+       at org.kontalk.service.msgcenter.MessageCenterService.inactive(MessageCenterService.java:1400)
+       at org.kontalk.service.msgcenter.MessageCenterService.access$200(MessageCenterService.java:148)
+       at org.kontalk.service.msgcenter.MessageCenterService$IdleConnectionHandler.handleMessage(MessageCenterService.java:440)
+       at org.kontalk.service.msgcenter.MessageCenterService$IdleConnectionHandler.handleMessage(MessageCenterService.java:420)
+       at android.os.Handler.dispatchMessage(Handler.java:99)
+       at android.os.Looper.loop(Looper.java:176)
+       at android.os.HandlerThread.run(HandlerThread.java:60)

@@ -1,0 +1,12 @@
+ 16096         AndroidRuntime  E  java.lang.NullPointerException: Attempt to invoke virtual method 'long java.util.Date.getTime()' on a null object reference
+ 16096         AndroidRuntime  E  at org.spongycastle.bcpg.sig.SignatureCreationTime.timeToBytes(SignatureCreationTime.java:18)
+ 16096         AndroidRuntime  E  at org.spongycastle.bcpg.sig.SignatureCreationTime.<init>(SignatureCreationTime.java:39)
+ 16096         AndroidRuntime  E  at org.spongycastle.openpgp.PGPSignatureSubpacketGenerator.setSignatureCreationTime(PGPSignatureSubpacketGenerator.java:100)
+ 16096         AndroidRuntime  E  at org.sufficientlysecure.keychain.pgp.PgpKeyOperation.generateHashedSelfSigSubpackets(PgpKeyOperation.java:1483)
+ 16096         AndroidRuntime  E  at org.sufficientlysecure.keychain.pgp.PgpKeyOperation.generateUserAttributeSignature(PgpKeyOperation.java:1516)
+ 16096         AndroidRuntime  E  at org.sufficientlysecure.keychain.pgp.PgpKeyOperation.internal(PgpKeyOperation.java:614)
+ 16096         AndroidRuntime  E  at org.sufficientlysecure.keychain.pgp.PgpKeyOperation.modifySecretKeyRing(PgpKeyOperation.java:483)
+ 16096         AndroidRuntime  E  at org.sufficientlysecure.keychain.operations.EditKeyOperation.execute(EditKeyOperation.java:100)
+ 16096         AndroidRuntime  E  at org.sufficientlysecure.keychain.operations.EditKeyOperation.execute(EditKeyOperation.java:59)
+ 16096         AndroidRuntime  E  at org.sufficientlysecure.keychain.service.KeychainService$1.run(KeychainService.java:145)
+ 16096         AndroidRuntime  E  at java.lang.Thread.run(Thread.java:818)

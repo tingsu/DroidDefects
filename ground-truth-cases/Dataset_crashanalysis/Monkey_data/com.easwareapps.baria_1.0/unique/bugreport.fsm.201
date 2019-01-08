@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: com.easwareapps.baria
+//version: 1.0
+//appro_time: 67
+ FATAL EXCEPTION: AsyncTask #2
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.NullPointerException
+ 	at com.easwareapps.baria.fragments.SavedAppsFragment$AppsLoader.getApps(SavedAppsFragment.java:142)
+ 	at com.easwareapps.baria.fragments.SavedAppsFragment$AppsLoader.doInBackground(SavedAppsFragment.java:131)
+ 	at com.easwareapps.baria.fragments.SavedAppsFragment$AppsLoader.doInBackground(SavedAppsFragment.java:125)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	... 4 more

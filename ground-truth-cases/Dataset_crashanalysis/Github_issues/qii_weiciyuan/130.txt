@@ -1,0 +1,6 @@
+07-13 14:38:57.214: E/AndroidRuntime(13223): java.lang.NoSuchMethodError: android.view.ViewPropertyAnimator.withLayer
+07-13 14:38:57.214: E/AndroidRuntime(13223): at org.qii.weiciyuan.support.lib.MyViewPager.onTouchEvent(MyViewPager.java:79)
+07-13 14:38:57.214: E/AndroidRuntime(13223): at android.view.View.dispatchTouchEvent(View.java:5549)
+07-13 14:38:57.214: E/AndroidRuntime(13223): at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:1951)
+07-13 14:38:57.214: E/AndroidRuntime(13223): at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1712)
+07-13 14:38:57.214: E/AndroidRuntime(13223): at org.qii.weiciyuan.support.lib.MyViewPager.dispatchTouchEvent(MyViewPager.java:120)

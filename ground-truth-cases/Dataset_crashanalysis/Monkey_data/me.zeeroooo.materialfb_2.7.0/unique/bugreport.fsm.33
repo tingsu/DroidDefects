@@ -1,0 +1,14 @@
+//this is an auto-generated bug report
+//package name: me.zeeroooo.materialfb
+//version: 2.7.0
+//appro_time: 180
+ FATAL EXCEPTION: IntentService[NotificationsService]
+ java.lang.NullPointerException
+ 	at me.zeeroooo.materialfb.WebView.Helpers.Circle(Helpers.java:75)
+ 	at me.zeeroooo.materialfb.Notifications.NotificationsService.notifier(NotificationsService.java:211)
+ 	at me.zeeroooo.materialfb.Notifications.NotificationsService.SyncMessages(NotificationsService.java:101)
+ 	at me.zeeroooo.materialfb.Notifications.NotificationsService.onHandleIntent(NotificationsService.java:78)
+ 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

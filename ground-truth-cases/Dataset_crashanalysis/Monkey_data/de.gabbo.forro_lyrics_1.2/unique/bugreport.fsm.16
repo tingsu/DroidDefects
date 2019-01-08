@@ -1,0 +1,30 @@
+//this is an auto-generated bug report
+//package name: de.gabbo.forro_lyrics
+//version: 1.2
+//appro_time: 154
+ FATAL EXCEPTION: main
+ java.lang.NullPointerException
+ 	at de.gabbo.forro_lyrics.listindexer.SpecialAlphabetIndexer.getSkippedIndex(SpecialAlphabetIndexer.java:100)
+ 	at de.gabbo.forro_lyrics.listindexer.ForroListListener.onScroll(ForroListListener.java:102)
+ 	at android.widget.AbsListView.invokeOnItemScrollListener(AbsListView.java:1340)
+ 	at android.widget.AbsListView.setOnScrollListener(AbsListView.java:1329)
+ 	at de.gabbo.forro_lyrics.listindexer.ListIndexerActivity.onLoadFinished(ListIndexerActivity.java:146)
+ 	at de.gabbo.forro_lyrics.listindexer.ListIndexerActivity.onLoadFinished(ListIndexerActivity.java:33)
+ 	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:479)
+ 	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:447)
+ 	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+ 	at de.gabbo.forro_lyrics.sql.SimpleCursorLoader.deliverResult(SimpleCursorLoader.java:42)
+ 	at de.gabbo.forro_lyrics.sql.SimpleCursorLoader.deliverResult(SimpleCursorLoader.java:17)
+ 	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:249)
+ 	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:77)
+ 	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:476)
+ 	at android.support.v4.content.ModernAsyncTask.access$400(ModernAsyncTask.java:49)
+ 	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:493)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,8 @@
+11-25 12:33:09.413 E/AndroidRuntime( 9850): java.lang.RuntimeException: Unable to start activity ComponentInfo{itkach.aard2/itkach.aard2.ArticleCollectionActivity}: java.lang.NullPointerException
+11-25 12:33:09.413 E/AndroidRuntime( 9850):     at itkach.aard2.Application.getSlobURI(Application.java:287)
+11-25 12:33:09.413 E/AndroidRuntime( 9850):     at itkach.aard2.BlobDescriptorList.createDescriptor(BlobDescriptorList.java:216)
+11-25 12:33:09.413 E/AndroidRuntime( 9850):     at itkach.aard2.BlobDescriptorList.add(BlobDescriptorList.java:222)
+11-25 12:33:09.413 E/AndroidRuntime( 9850):     at itkach.aard2.ArticleCollectionActivity.updateTitle(ArticleCollectionActivity.java:233)
+11-25 12:33:09.413 E/AndroidRuntime( 9850):     at itkach.aard2.ArticleCollectionActivity.access$000(ArticleCollectionActivity.java:49)
+11-25 12:33:09.413 E/AndroidRuntime( 9850):     at itkach.aard2.ArticleCollectionActivity$2.onPageSelected(ArticleCollectionActivity.java:125)
+11-25 12:33:09.413 E/AndroidRuntime( 9850):     at itkach.aard2.ArticleCollectionActivity.onCreate(ArticleCollectionActivity.java:135)

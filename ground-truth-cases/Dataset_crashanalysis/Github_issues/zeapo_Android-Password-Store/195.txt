@@ -1,0 +1,100 @@
+W/dalvikvm( 1060): VFY: unable to resolve interface method 19253: Landroid/view/Window$Callback;.onSearchRequested (Landroid/view/SearchEvent;)Z
+D/dalvikvm( 1060): VFY: replacing opcode 0x72 at 0x0002
+I/dalvikvm( 1060): Could not find method android.view.Window$Callback.onWindowStartingActionMode, referenced from method android.support.v7.view.WindowCallbackWrapper.onWindowStartingActionMode
+W/dalvikvm( 1060): VFY: unable to resolve interface method 19257: Landroid/view/Window$Callback;.onWindowStartingActionMode (Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
+D/dalvikvm( 1060): VFY: replacing opcode 0x72 at 0x0002
+I/dalvikvm( 1060): Could not find method android.content.res.TypedArray.getChangingConfigurations, referenced from method android.support.v7.widget.TintTypedArray.getChangingConfigurations
+W/dalvikvm( 1060): VFY: unable to resolve virtual method 528: Landroid/content/res/TypedArray;.getChangingConfigurations ()I
+D/dalvikvm( 1060): VFY: replacing opcode 0x6e at 0x0002
+I/dalvikvm( 1060): Could not find method android.content.res.TypedArray.getType, referenced from method android.support.v7.widget.TintTypedArray.getType
+W/dalvikvm( 1060): VFY: unable to resolve virtual method 550: Landroid/content/res/TypedArray;.getType (I)I
+D/dalvikvm( 1060): VFY: replacing opcode 0x6e at 0x0002
+D/REPO    ( 1060): current path: /data/data/com.zeapo.pwdstore/files/store
+I/dalvikvm( 1060): Could not find method org.slf4j.impl.StaticLoggerBinder.getSingleton, referenced from method org.slf4j.LoggerFactory.bind
+W/dalvikvm( 1060): VFY: unable to resolve static method 49864: Lorg/slf4j/impl/StaticLoggerBinder;.getSingleton ()Lorg/slf4j/impl/StaticLoggerBinder;
+D/dalvikvm( 1060): VFY: replacing opcode 0x71 at 0x0007
+I/dalvikvm( 1060): Could not find method org.slf4j.impl.StaticLoggerBinder.getSingleton, referenced from method org.slf4j.LoggerFactory.getILoggerFactory
+W/dalvikvm( 1060): VFY: unable to resolve static method 49864: Lorg/slf4j/impl/StaticLoggerBinder;.getSingleton ()Lorg/slf4j/impl/StaticLoggerBinder;
+D/dalvikvm( 1060): VFY: replacing opcode 0x71 at 0x0017
+I/dalvikvm( 1060): Could not find method org.slf4j.impl.StaticLoggerBinder.getSingleton, referenced from method org.slf4j.LoggerFactory.reportActualBinding
+W/dalvikvm( 1060): VFY: unable to resolve static method 49864: Lorg/slf4j/impl/StaticLoggerBinder;.getSingleton ()Lorg/slf4j/impl/StaticLoggerBinder;
+D/dalvikvm( 1060): VFY: replacing opcode 0x71 at 0x0011
+W/dalvikvm( 1060): VFY: unable to resolve static field 22530 (REQUESTED_API_VERSION) in Lorg/slf4j/impl/StaticLoggerBinder;
+D/dalvikvm( 1060): VFY: replacing opcode 0x62 at 0x0000
+W/System.err( 1060): SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+W/System.err( 1060): SLF4J: Defaulting to no-operation (NOP) logger implementation
+W/System.err( 1060): SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+D/PASS    ( 1060): Check, dir: /data/data/com.zeapo.pwdstore/files/store
+I/dalvikvm( 1060): Could not find method com.zeapo.pwdstore.PasswordStore.getColor, referenced from method com.zeapo.pwdstore.utils.PasswordRecyclerAdapter.onBindViewHolder
+W/dalvikvm( 1060): VFY: unable to resolve virtual method 36782: Lcom/zeapo/pwdstore/PasswordStore;.getColor (I)I
+D/dalvikvm( 1060): VFY: replacing opcode 0x6e at 0x00a6
+D/REPO    ( 1060): current path: /data/data/com.zeapo.pwdstore/files/store
+I/dalvikvm( 1060): Could not find method android.content.res.Resources.getDrawable, referenced from method android.support.v7.widget.ResourcesWrapper.getDrawable
+W/dalvikvm( 1060): VFY: unable to resolve virtual method 491: Landroid/content/res/Resources;.getDrawable (ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+D/dalvikvm( 1060): VFY: replacing opcode 0x6e at 0x0002
+I/dalvikvm( 1060): Could not find method android.content.res.Resources.getDrawableForDensity, referenced from method android.support.v7.widget.ResourcesWrapper.getDrawableForDensity
+W/dalvikvm( 1060): VFY: unable to resolve virtual method 493: Landroid/content/res/Resources;.getDrawableForDensity (IILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+D/dalvikvm( 1060): VFY: replacing opcode 0x6e at 0x0002
+D/AndroidRuntime( 1060): Shutting down VM
+W/dalvikvm( 1060): threadid=1: thread exiting with uncaught exception (group=0x40ad2930)
+E/AndroidRuntime( 1060): FATAL EXCEPTION: main
+E/AndroidRuntime( 1060): java.lang.NoSuchMethodError: com.zeapo.pwdstore.PasswordStore.getColor
+E/AndroidRuntime( 1060):    at com.zeapo.pwdstore.utils.PasswordRecyclerAdapter.onBindViewHolder(PasswordRecyclerAdapter.java:139)
+E/AndroidRuntime( 1060):    at com.zeapo.pwdstore.utils.PasswordRecyclerAdapter.onBindViewHolder(PasswordRecyclerAdapter.java:24)
+E/AndroidRuntime( 1060):    at android.support.v7.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:5471)
+E/AndroidRuntime( 1060):    at android.support.v7.widget.RecyclerView$Adapter.bindViewHolder(RecyclerView.java:5504)
+E/AndroidRuntime( 1060):    at android.support.v7.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:4741)
+E/AndroidRuntime( 1060):    at android.support.v7.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:4617)
+E/AndroidRuntime( 1060):    at android.support.v7.widget.LinearLayoutManager$LayoutState.next(LinearLayoutManager.java:1994)
+E/AndroidRuntime( 1060):    at android.support.v7.widget.LinearLayoutManager.layoutChunk(LinearLayoutManager.java:1390)
+E/AndroidRuntime( 1060):    at android.support.v7.widget.LinearLayoutManager.fill(LinearLayoutManager.java:1353)
+E/AndroidRuntime( 1060):    at android.support.v7.widget.LinearLayoutManager.onLayoutChildren(LinearLayoutManager.java:574)
+E/AndroidRuntime( 1060):    at android.support.v7.widget.RecyclerView.dispatchLayoutStep2(RecyclerView.java:3028)
+E/AndroidRuntime( 1060):    at android.support.v7.widget.RecyclerView.dispatchLayout(RecyclerView.java:2906)
+E/AndroidRuntime( 1060):    at android.support.v7.widget.RecyclerView.onLayout(RecyclerView.java:3283)
+E/AndroidRuntime( 1060):    at android.view.View.layout(View.java:14015)
+E/AndroidRuntime( 1060):    at android.view.ViewGroup.layout(ViewGroup.java:4373)
+E/AndroidRuntime( 1060):    at android.widget.RelativeLayout.onLayout(RelativeLayout.java:1021)
+E/AndroidRuntime( 1060):    at android.view.View.layout(View.java:14015)
+E/AndroidRuntime( 1060):    at android.view.ViewGroup.layout(ViewGroup.java:4373)
+E/AndroidRuntime( 1060):    at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1663)
+E/AndroidRuntime( 1060):    at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1521)
+E/AndroidRuntime( 1060):    at android.widget.LinearLayout.onLayout(LinearLayout.java:1434)
+E/AndroidRuntime( 1060):    at android.view.View.layout(View.java:14015)
+E/AndroidRuntime( 1060):    at android.view.ViewGroup.layout(ViewGroup.java:4373)
+E/AndroidRuntime( 1060):    at android.widget.RelativeLayout.onLayout(RelativeLayout.java:1021)
+E/AndroidRuntime( 1060):    at android.view.View.layout(View.java:14015)
+E/AndroidRuntime( 1060):    at android.view.ViewGroup.layout(ViewGroup.java:4373)
+E/AndroidRuntime( 1060):    at android.widget.FrameLayout.onLayout(FrameLayout.java:448)
+E/AndroidRuntime( 1060):    at android.view.View.layout(View.java:14015)
+E/AndroidRuntime( 1060):    at android.view.ViewGroup.layout(ViewGroup.java:4373)
+E/AndroidRuntime( 1060):    at android.support.v7.widget.ActionBarOverlayLayout.onLayout(ActionBarOverlayLayout.java:435)
+E/AndroidRuntime( 1060):    at android.view.View.layout(View.java:14015)
+E/AndroidRuntime( 1060):    at android.view.ViewGroup.layout(ViewGroup.java:4373)
+E/AndroidRuntime( 1060):    at android.widget.FrameLayout.onLayout(FrameLayout.java:448)
+E/AndroidRuntime( 1060):    at android.view.View.layout(View.java:14015)
+E/AndroidRuntime( 1060):    at android.view.ViewGroup.layout(ViewGroup.java:4373)
+E/AndroidRuntime( 1060):    at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1663)
+E/AndroidRuntime( 1060):    at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1521)
+E/AndroidRuntime( 1060):    at android.widget.LinearLayout.onLayout(LinearLayout.java:1434)
+E/AndroidRuntime( 1060):    at android.view.View.layout(View.java:14015)
+E/AndroidRuntime( 1060):    at android.view.ViewGroup.layout(ViewGroup.java:4373)
+E/AndroidRuntime( 1060):    at android.widget.FrameLayout.onLayout(FrameLayout.java:448)
+E/AndroidRuntime( 1060):    at android.view.View.layout(View.java:14015)
+E/AndroidRuntime( 1060):    at android.view.ViewGroup.layout(ViewGroup.java:4373)
+E/AndroidRuntime( 1060):    at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:1892)
+E/AndroidRuntime( 1060):    at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1711)
+E/AndroidRuntime( 1060):    at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:989)
+E/AndroidRuntime( 1060):    at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:4351)
+E/AndroidRuntime( 1060):    at android.view.Choreographer$CallbackRecord.run(Choreographer.java:749)
+E/AndroidRuntime( 1060):    at android.view.Choreographer.doCallbacks(Choreographer.java:562)
+E/AndroidRuntime( 1060):    at android.view.Choreographer.doFrame(Choreographer.java:532)
+E/AndroidRuntime( 1060):    at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:735)
+E/AndroidRuntime( 1060):    at android.os.Handler.handleCallback(Handler.java:725)
+E/AndroidRuntime( 1060):    at android.os.Handler.dispatchMessage(Handler.java:92)
+E/AndroidRuntime( 1060):    at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime( 1060):    at android.app.ActivityThread.main(ActivityThread.java:5227)
+E/AndroidRuntime( 1060):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1060):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime( 1060):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+E/AndroidRuntime( 1060):    at com.android.internal.os.ZygoteInit.main(Zy

@@ -1,0 +1,16 @@
+```
+java.lang.IllegalArgumentException: the bind value at index 1 is null
+       at android.database.sqlite.SQLiteProgram.bindString(SQLiteProgram.java:164)
+       at android.database.sqlite.SQLiteProgram.bindAllArgsAsStrings(SQLiteProgram.java:200)
+       at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:47)
+       at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1316)
+       at android.database.sqlite.SQLiteQueryBuilder.query(SQLiteQueryBuilder.java:400)
+       at android.database.sqlite.SQLiteQueryBuilder.query(SQLiteQueryBuilder.java:294)
+       at org.kontalk.provider.MessagesProvider.query(MessagesProvider.java:413)
+       at android.content.ContentProvider.query(ContentProvider.java:1000)
+       at android.content.ContentProvider$Transport.query(ContentProvider.java:214)
+       at android.content.ContentResolver.query(ContentResolver.java:482)
+       at android.content.ContentResolver.query(ContentResolver.java:426)
+       at org.kontalk.ui.MessagingNotification.updateMessagesNotification(MessagingNotification.java:208)
+       at org.kontalk.data.Conversation$1.run(Conversation.java:255)
+       at java.lang.Thread.run(Thread.java:818)

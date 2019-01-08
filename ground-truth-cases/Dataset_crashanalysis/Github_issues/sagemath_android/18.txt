@@ -1,0 +1,16 @@
+01-12 11:22:39.659: E/AndroidRuntime(830): java.lang.NullPointerException
+01-12 11:22:39.659: E/AndroidRuntime(830):      at org.sagemath.droid.CellCollection.addCell(CellCollection.java:122)
+01-12 11:22:39.659: E/AndroidRuntime(830):      at org.sagemath.droid.NewCellDialog$1.onClick(NewCellDialog.java:62)
+01-12 11:22:39.659: E/AndroidRuntime(830):      at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+```
+
+and then
+
+```
+01-12 11:22:52.239: E/AndroidRuntime(1131): junit.framework.AssertionFailedError
+01-12 11:22:52.239: E/AndroidRuntime(1131):     at junit.framework.Assert.fail(Assert.java:48)
+01-12 11:22:52.239: E/AndroidRuntime(1131):     at junit.framework.Assert.assertTrue(Assert.java:20)
+01-12 11:22:52.239: E/AndroidRuntime(1131):     at junit.framework.Assert.assertNotNull(Assert.java:218)
+01-12 11:22:52.239: E/AndroidRuntime(1131):     at junit.framework.Assert.assertNotNull(Assert.java:211)
+01-12 11:22:52.239: E/AndroidRuntime(1131):     at org.sagemath.droid.SageActivity.onCreate(SageActivity.java:71)
+01-12 11:22:52.239: E/AndroidRuntime(1131):     at android.app.Activity.performCreate(Activity.java:5231)

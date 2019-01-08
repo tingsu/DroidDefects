@@ -1,0 +1,5 @@
+                                                                               java.io.IOException: read failed, socket might closed or timeout, read ret: -1
+                                                                                   at android.bluetooth.BluetoothSocket.readAll(BluetoothSocket.java:567)
+                                                                                   at android.bluetooth.BluetoothSocket.waitSocketSignal(BluetoothSocket.java:544)
+                                                                                   at android.bluetooth.BluetoothSocket.connect(BluetoothSocket.java:319)
+                                                                                   at net.bluetoothviewer.BluetoothDeviceConnector$ConnectThread.run(BluetoothDeviceConnector.java:258)

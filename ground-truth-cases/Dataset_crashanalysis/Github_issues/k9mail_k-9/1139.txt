@@ -1,0 +1,6 @@
+03-03 11:54:12.420 E/k9      (22700): java.lang.Exception: Message count 0 for folder Drafts
+03-03 11:54:12.420 E/k9      (22700):   at com.fsck.k9.controller.MessagingController.synchronizeMailboxSynchronous(MessagingController.java:931)
+03-03 11:54:12.420 E/k9      (22700):   at com.fsck.k9.controller.MessagingController.access$300(MessagingController.java:99)
+03-03 11:54:12.420 E/k9      (22700):   at com.fsck.k9.controller.MessagingController$8.run(MessagingController.java:754)
+03-03 11:54:12.420 E/k9      (22700):   at com.fsck.k9.controller.MessagingController.run(MessagingController.java:257)
+03-03 11:54:12.420 E/k9      (22700):   at java.lang.Thread.run(Thread.java:833)

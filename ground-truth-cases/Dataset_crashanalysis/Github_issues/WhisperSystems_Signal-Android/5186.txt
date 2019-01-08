@@ -1,0 +1,4 @@
+Failed to create or send message Error
+    at chrome-extension://bikioccmkafdpakkkcpdbppfkghcmihk/js/libtextsecure.js:28:33
+    at chrome-extension://bikioccmkafdpakkkcpdbppfkghcmihk/js/libtextsecure.js:97:3
+    at chrome-extension://bikioccmkafdpakkkcpdbppfkghcmihk/js/libtextsecure.js:37835:3

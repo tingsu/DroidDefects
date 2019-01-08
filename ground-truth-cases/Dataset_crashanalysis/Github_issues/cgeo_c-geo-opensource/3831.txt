@@ -1,0 +1,35 @@
+21:20:20.033 Error DatabaseUtils 3255  java.lang.SecurityException: Permission Denial: get/set setting for user asks to run as user -2 but is calling from user 0; this requires android.permission.INTERACT_ACROSS_USERS_FULL
+21:20:20.033 Error DatabaseUtils 3255   at com.android.server.am.ActivityManagerService.handleIncomingUser(ActivityManagerService.java:13101)
+21:20:20.033 Error DatabaseUtils 3255   at android.app.ActivityManager.handleIncomingUser(ActivityManager.java:2038)
+21:20:20.033 Error DatabaseUtils 3255   at com.android.providers.settings.SettingsProvider.callFromPackage(SettingsProvider.java:607)
+21:20:20.033 Error DatabaseUtils 3255   at android.content.ContentProvider$Transport.call(ContentProvider.java:279)
+21:20:20.033 Error DatabaseUtils 3255   at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:273)
+21:20:20.033 Error DatabaseUtils 3255   at android.os.Binder.execTransact(Binder.java:388)
+21:20:20.033 Error DatabaseUtils 3255   at dalvik.system.NativeStart.run(Native Method)
+21:20:20.033 Warning ActivityManager 3255  Permission Denial: get/set setting for user asks to run as user -2 but is calling from user 0; this requires android.permission.INTERACT_ACROSS_USERS_FULL
+21:20:20.033 Error Parcel 3255  Class not found when unmarshalling: cgeo.geocaching.geopoint.Geopoint
+21:20:20.033 Error Parcel 3255  java.lang.ClassNotFoundException: cgeo.geocaching.geopoint.Geopoint
+21:20:20.033 Error Parcel 3255      at java.lang.Class.classForName(Native Method)
+21:20:20.033 Error Parcel 3255      at java.lang.Class.forName(Class.java:204)
+21:20:20.033 Error Parcel 3255      at java.lang.Class.forName(Class.java:169)
+21:20:20.033 Error Parcel 3255      at android.os.Parcel.readParcelableCreator(Parcel.java:2091)
+21:20:20.033 Error Parcel 3255      at android.os.Parcel.readParcelable(Parcel.java:2055)
+21:20:20.033 Error Parcel 3255      at android.os.Parcel.readValue(Parcel.java:1971)
+21:20:20.033 Error Parcel 3255      at android.os.Parcel.readMapInternal(Parcel.java:2255)
+21:20:20.033 Error Parcel 3255      at android.os.Bundle.unparcel(Bundle.java:223)
+21:20:20.033 Error Parcel 3255      at android.os.Bundle.getString(Bundle.java:1082)
+21:20:20.033 Error Parcel 3255      at android.content.Intent.getStringExtra(Intent.java:4961)
+21:20:20.033 Error Parcel 3255      at com.android.server.am.ActivityStack.startActivityLocked(ActivityStack.java:3761)
+21:20:20.033 Error Parcel 3255      at com.android.server.am.ActivityStack.startActivityMayWait(ActivityStack.java:4981)
+21:20:20.033 Error Parcel 3255      at com.android.server.am.ActivityManagerService.startActivityAsUser(ActivityManagerService.java:3163)
+21:20:20.033 Error Parcel 3255      at com.android.server.am.ActivityManagerService.startActivity(ActivityManagerService.java:3119)
+21:20:20.033 Error Parcel 3255      at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:157)
+21:20:20.033 Error Parcel 3255      at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2115)
+21:20:20.033 Error Parcel 3255      at android.os.Binder.execTransact(Binder.java:388)
+21:20:20.033 Error Parcel 3255      at dalvik.system.NativeStart.run(Native Method)
+21:20:20.033 Error Parcel 3255  Caused by: java.lang.NoClassDefFoundError: cgeo/geocaching/geopoint/Geopoint
+21:20:20.033 Error Parcel 3255      ... 18 more
+21:20:20.033 Error Parcel 3255  Caused by: java.lang.ClassNotFoundException: Didn't find class "cgeo.geocaching.geopoint.Geopoint" on path: .
+21:20:20.033 Error Parcel 3255      at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:64)
+21:20:20.033 Error Parcel 3255      at java.lang.ClassLoader.loadClass(ClassLoader.java:501)
+21:20:20.033 Error Parcel 3255      at java.lang.ClassLoader.loadClass(ClassLoader.java:461)

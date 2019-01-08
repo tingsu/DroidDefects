@@ -1,0 +1,21 @@
+| 8570 | E | AndroidRuntime | java.lang.NullPointerException |
+| 8570 | E | AndroidRuntime | at net.etuldan.sparss.fragment.EntriesListFragment$3.a(SourceFile:145) |
+| 8570 | E | AndroidRuntime | at net.etuldan.sparss.fragment.EntriesListFragment$3.onLoadFinished(SourceFile:122) |
+| 8570 | E | AndroidRuntime | at android.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:483) |
+| 8570 | E | AndroidRuntime | at android.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:451) |
+| 8570 | E | AndroidRuntime | at android.content.Loader.deliverResult(Loader.java:143) |
+| 8570 | E | AndroidRuntime | at android.content.CursorLoader.deliverResult(CursorLoader.java:113) |
+| 8570 | E | AndroidRuntime | at android.content.CursorLoader.deliverResult(CursorLoader.java:43) |
+| 8570 | E | AndroidRuntime | at android.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:254) |
+| 8570 | E | AndroidRuntime | at android.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:91) |
+| 8570 | E | AndroidRuntime | at android.os.AsyncTask.finish(AsyncTask.java:631) |
+| 8570 | E | AndroidRuntime | at android.os.AsyncTask.access$600(AsyncTask.java:177) |
+| 8570 | E | AndroidRuntime | at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644) |
+| 8570 | E | AndroidRuntime | at android.os.Handler.dispatchMessage(Handler.java:99) |
+| 8570 | E | AndroidRuntime | at android.os.Looper.loop(Looper.java:137) |
+| 8570 | E | AndroidRuntime | at android.app.ActivityThread.main(ActivityThread.java:5227) |
+| 8570 | E | AndroidRuntime | at java.lang.reflect.Method.invokeNative(Native Method) |
+| 8570 | E | AndroidRuntime | at java.lang.reflect.Method.invoke(Method.java:511) |
+| 8570 | E | AndroidRuntime | at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795) |
+| 8570 | E | AndroidRuntime | at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:562) |
+| 8570 | E | AndroidRuntime | at dalvik.system.NativeStart.main(Native Method) |

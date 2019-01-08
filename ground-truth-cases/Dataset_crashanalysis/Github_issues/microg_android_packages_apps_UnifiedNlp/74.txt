@@ -1,0 +1,27 @@
+W/dalvikvm( 5335): VFY: unable to resolve virtual method 32796: Lorg/microg/gms/gservices/GServicesProvider;.getCallingPackage ()Ljava/lang/String;
+D/dalvikvm( 5335): VFY: replacing opcode 0x6e at 0x0006
+```
+
+```
+W/ActivityManager( 5145): Permission Denial: Accessing service ComponentInfo{com.google.android.gms/org.microg.gms.gcm.PushRegisterService} from pid=5575, uid=10016 requires com.google.android.c2dm.permission.RECEIVE
+W/dalvikvm( 5575): threadid=10: thread exiting with uncaught exception (group=0x40b61360)
+E/AndroidRuntime( 5575): FATAL EXCEPTION: AsyncTask #1
+E/AndroidRuntime( 5575): java.lang.RuntimeException: An error occured while executing doInBackground()
+E/AndroidRuntime( 5575):    at android.os.AsyncTask$3.done(AsyncTask.java:299)
+E/AndroidRuntime( 5575):    at java.util.concurrent.FutureTask$Sync.innerSetException(FutureTask.java:273)
+E/AndroidRuntime( 5575):    at java.util.concurrent.FutureTask.setException(FutureTask.java:124)
+E/AndroidRuntime( 5575):    at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:307)
+E/AndroidRuntime( 5575):    at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+E/AndroidRuntime( 5575):    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+E/AndroidRuntime( 5575):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+E/AndroidRuntime( 5575):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+E/AndroidRuntime( 5575):    at java.lang.Thread.run(Thread.java:856)
+E/AndroidRuntime( 5575): Caused by: java.lang.SecurityException: Not allowed to start service Intent { act=com.google.android.c2dm.intent.REGISTER pkg=com.google.android.gms (has extras) } without permission com.google.android.c2dm.permission.RECEIVE
+E/AndroidRuntime( 5575):    at android.app.ContextImpl.startService(ContextImpl.java:1167)
+E/AndroidRuntime( 5575):    at android.content.ContextWrapper.startService(ContextWrapper.java:383)
+E/AndroidRuntime( 5575):    at com.google.android.gms.b.a.c(Unknown Source)
+E/AndroidRuntime( 5575):    at com.google.android.gms.b.a.a(Unknown Source)
+E/AndroidRuntime( 5575):    at de.nextbike.b.c.a(Unknown Source)
+E/AndroidRuntime( 5575):    at de.nextbike.b.c.doInBackground(Unknown Source)
+E/AndroidRuntime( 5575):    at android.os.AsyncTask$2.call(AsyncTask.java:287)
+E/AndroidRuntime( 5575):    at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)

@@ -1,0 +1,18 @@
+java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1001, result=-1, data=Intent { dat=file:///storage/sdcard0/MIUI/Gallery/cloud/.thumbnailFile/75ab7048bc944429356d8df703a2e35bf3361868.jpg typ=image/jpeg }} to activity {us.shandian.blacklight/us.shandian.blacklight.ui.statuses.NewPostActivity}: java.lang.NullPointerException
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3515)
+    at android.app.ActivityThread.handleSendResult(ActivityThread.java:3558)
+    at android.app.ActivityThread.access$1100(ActivityThread.java:157)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1389)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:153)
+    at android.app.ActivityThread.main(ActivityThread.java:5349)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:511)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:848)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:615)
+    at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:134)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+    at us.shandian.blacklight.ui.statuses.NewPostActivity.onActivityResult(NewPostActivity.java:266)
+    at android.app.Activity.dispatchActivityResult(Activity.java:5418)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3511)

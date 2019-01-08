@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: com.icechen1.notable.pro
+//version: 1.5.7
+//appro_time: 59
+ java.lang.RuntimeException: Error receiving broadcast Intent { act=com.icechen1.notable.DATABASE_CHANGED flg=0x10 } in com.icechen1.notable.library.b@ad2583e8
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:773)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalStateException: attempt to re-open an already-closed object: SQLiteDatabase: /data/data/com.icechen1.notable.pro/databases/notifs.db
+ 	at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:55)
+ 	at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1156)
+ 	at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1032)
+ 	at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1200)
+ 	at com.icechen1.notable.library.utils.j.d(Unknown Source)
+ 	at com.icechen1.notable.library.b.onReceive(Unknown Source)
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:763)

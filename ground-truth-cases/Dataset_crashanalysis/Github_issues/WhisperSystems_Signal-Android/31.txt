@@ -1,0 +1,31 @@
+W/MmsSmsDatabase(21441): Executing query: SELECT _id, body, type, address, subject, normalized_date AS date, m_type, msg_box, transport_type FROM (SELECT DISTINCT date * 1 AS normalized_date, _id, body, read, thread_id, type, address, subject, date, NULL AS m_type, NULL AS msg_box, 'sms' AS transport_type FROM sms WHERE (thread_id = 31) UNION ALL SELECT DISTINCT date * 1000 AS normalized_date, _id, NULL AS body, read, thread_id, NULL AS type, NULL AS address, NULL AS subject, date, m_type, msg_box, 'mms' AS transport_type FROM mms WHERE (thread_id = 31) ORDER BY normalized_date ASC)
+I/Database(21441): sqlite returned: error code = 8, msg = statement aborts at 27: [UPDATE thread SET read=? WHERE _id = ?] attempt to write a readonly database
+E/Database(21441): Error updating read=1 using UPDATE thread SET read=? WHERE _id = ?
+D/AndroidRuntime(21441): Shutting down VM
+W/dalvikvm(21441): threadid=1: thread exiting with uncaught exception (group=0x4001e578)
+E/AndroidRuntime(21441): FATAL EXCEPTION: main
+E/AndroidRuntime(21441): java.lang.RuntimeException: Unable to start activity ComponentInfo{org.thoughtcrime.securesms/org.thoughtcrime.securesms.ComposeMessageActivity}: android.database.sqlite.SQLiteException: error code 8: attempt to write a readonly database
+E/AndroidRuntime(21441):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1651)
+E/AndroidRuntime(21441):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1667)
+E/AndroidRuntime(21441):    at android.app.ActivityThread.access$1500(ActivityThread.java:117)
+E/AndroidRuntime(21441):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:935)
+E/AndroidRuntime(21441):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(21441):    at android.os.Looper.loop(Looper.java:130)
+E/AndroidRuntime(21441):    at android.app.ActivityThread.main(ActivityThread.java:3691)
+E/AndroidRuntime(21441):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(21441):    at java.lang.reflect.Method.invoke(Method.java:507)
+E/AndroidRuntime(21441):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:907)
+E/AndroidRuntime(21441):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:665)
+E/AndroidRuntime(21441):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(21441): Caused by: android.database.sqlite.SQLiteException: error code 8: attempt to write a readonly database
+E/AndroidRuntime(21441):    at android.database.sqlite.SQLiteStatement.native_execute(Native Method)
+E/AndroidRuntime(21441):    at android.database.sqlite.SQLiteStatement.execute(SQLiteStatement.java:61)
+E/AndroidRuntime(21441):    at android.database.sqlite.SQLiteDatabase.updateWithOnConflict(SQLiteDatabase.java:1868)
+E/AndroidRuntime(21441):    at android.database.sqlite.SQLiteDatabase.update(SQLiteDatabase.java:1797)
+E/AndroidRuntime(21441):    at org.thoughtcrime.securesms.database.ThreadDatabase.setRead(ThreadDatabase.java:148)
+E/AndroidRuntime(21441):    at org.thoughtcrime.securesms.ConversationAdapter.<init>(ConversationAdapter.java:79)
+E/AndroidRuntime(21441):    at org.thoughtcrime.securesms.ComposeMessageActivity.initializeConversationAdapter(ComposeMessageActivity.java:603)
+E/AndroidRuntime(21441):    at org.thoughtcrime.securesms.ComposeMessageActivity.onStart(ComposeMessageActivity.java:169)
+E/AndroidRuntime(21441):    at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1129)
+E/AndroidRuntime(21441):    at android.app.Activity.performStart(Activity.java:3817)
+E/AndroidRuntime(21441):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1624)

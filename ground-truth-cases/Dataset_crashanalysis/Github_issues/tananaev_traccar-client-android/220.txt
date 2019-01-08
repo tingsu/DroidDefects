@@ -1,0 +1,8 @@
+android.app.RemoteServiceException: Bad notification posted from package org.traccar.client: Couldn't expand RemoteViews for: StatusBarNotification(pkg=org.traccar.client user=UserHandle{0} id=1 tag=null score=-20 key=0|org.traccar.client|1|null|10112: Notification(pri=-2 contentView=org.traccar.client/0x1090086 vibrate=null sound=null defaults=0x0 flags=0x62 color=0x00000000 vis=PRIVATE))
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1526)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5461)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

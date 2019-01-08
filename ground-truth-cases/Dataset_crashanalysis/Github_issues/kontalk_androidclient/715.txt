@@ -1,0 +1,11 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'android.support.v4.app.Fragment android.support.v4.app.FragmentManager.findFragmentByTag(java.lang.String)' on a null object reference
+       at org.kontalk.ui.ComposeMessageFragment.findAudioFragment(ComposeMessageFragment.java:1244)
+       at org.kontalk.ui.ComposeMessageFragment.access$4300(ComposeMessageFragment.java:149)
+       at org.kontalk.ui.ComposeMessageFragment$27.onCompletion(ComposeMessageFragment.java:2859)
+       at android.media.MediaPlayer$EventHandler.handleMessage(MediaPlayer.java:2820)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:148)
+       at android.app.ActivityThread.main(ActivityThread.java:5466)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

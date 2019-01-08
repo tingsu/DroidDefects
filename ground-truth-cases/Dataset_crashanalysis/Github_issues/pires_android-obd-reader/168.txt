@@ -1,0 +1,8 @@
+W/System.err: java.lang.StringIndexOutOfBoundsException: length=11; regionStart=9; regionLength=3
+W/System.err:     at java.lang.String.startEndAndLength(String.java:504)
+W/System.err:     at java.lang.String.substring(String.java:1333)
+W/System.err:     at com.github.pires.obd.commands.control.TroubleCodesCommand.performCalculations(TroubleCodesCommand.java:73)
+W/System.err:     at com.github.pires.obd.commands.ObdCommand.readResult(ObdCommand.java:125)
+W/System.err:     at com.github.pires.obd.commands.ObdCommand.run(ObdCommand.java:77)
+W/System.err:     at com.github.pires.obd.reader.io.ObdGatewayService.executeQueue(ObdGatewayService.java:199)
+W/System.err:     at com.github.pires.obd.reader.io.AbstractGatewayService$1.run(AbstractGatewayService.java:39)

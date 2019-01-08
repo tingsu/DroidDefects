@@ -1,0 +1,18 @@
+//this is an auto-generated bug report
+//package name: de.blau.android
+//version: 0.9.8.1.1228-fdroid
+//appro_time: 126
+ android.database.sqlite.SQLiteFullException: database or disk is full (code 13)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at de.blau.android.services.util.MapTileProviderDataBase.insertNewTileInfo(MapTileProviderDataBase.java:249)
+ 	at de.blau.android.services.util.MapTileProviderDataBase.addTileOrIncrement(MapTileProviderDataBase.java:231)
+ 	at de.blau.android.services.util.MapTileFilesystemProvider.saveFile(MapTileFilesystemProvider.java:96)
+ 	at de.blau.android.services.util.MapTileDownloader$TileLoader.run(MapTileDownloader.java:124)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

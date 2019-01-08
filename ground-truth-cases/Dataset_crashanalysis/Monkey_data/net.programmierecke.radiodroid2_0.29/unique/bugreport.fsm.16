@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: net.programmierecke.radiodroid2
+//version: 0.29
+//appro_time: 79
+ FATAL EXCEPTION: main
+ java.lang.IllegalStateException: Fragment FragmentTabs{ad2d8a28} not attached to Activity
+ 	at android.support.v4.app.Fragment.getResources(Fragment.java:636)
+ 	at net.programmierecke.radiodroid2.FragmentTabs$ViewPagerAdapter.getPageTitle(FragmentTabs.java:137)
+ 	at android.support.design.widget.TabLayout.populateFromPagerAdapter(TabLayout.java:773)
+ 	at android.support.design.widget.TabLayout.setPagerAdapter(TabLayout.java:764)
+ 	at android.support.design.widget.TabLayout.setupWithViewPager(TabLayout.java:716)
+ 	at net.programmierecke.radiodroid2.FragmentTabs$1.run(FragmentTabs.java:63)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

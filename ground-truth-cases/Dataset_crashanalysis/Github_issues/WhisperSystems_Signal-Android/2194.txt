@@ -1,0 +1,9 @@
+java.lang.NullPointerException
+       at org.whispersystems.libaxolotl.protocol.WhisperMessage.<init>(WhisperMessage.java:50)
+       at org.thoughtcrime.securesms.crypto.MmsCipher.decrypt(MmsCipher.java:64)
+       at org.thoughtcrime.securesms.jobs.MmsDownloadJob.storeRetrievedMms(MmsDownloadJob.java:215)
+       at org.thoughtcrime.securesms.jobs.MmsDownloadJob.retrieveAndStore(MmsDownloadJob.java:199)
+       at org.thoughtcrime.securesms.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:116)
+       at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+       at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:72)
+       at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

@@ -1,0 +1,10 @@
+02-01 00:24:07.906 E/AndroidRuntime(12243): java.lang.NullPointerException
+02-01 00:24:07.906 E/AndroidRuntime(12243):     at com.ichi2.anki.Reviewer.fillFlashcard(Reviewer.java:2465)
+02-01 00:24:07.906 E/AndroidRuntime(12243):     at com.ichi2.anki.Reviewer.fillFlashcard(Reviewer.java:2534)
+02-01 00:24:07.906 E/AndroidRuntime(12243):     at com.ichi2.anki.Reviewer.setOutAnimation(Reviewer.java:2453)
+02-01 00:24:07.906 E/AndroidRuntime(12243):     at com.ichi2.anki.Reviewer.postAnswerCard(Reviewer.java:1818)
+02-01 00:24:07.906 E/AndroidRuntime(12243):     at com.ichi2.anki.Reviewer.access$3300(Reviewer.java:123)
+02-01 00:24:07.906 E/AndroidRuntime(12243):     at com.ichi2.anki.Reviewer$13.onProgressUpdate(Reviewer.java:753)
+02-01 00:24:07.906 E/AndroidRuntime(12243):     at com.ichi2.anki.DeckTask.onProgressUpdate(DeckTask.java:231)
+02-01 00:24:07.906 E/AndroidRuntime(12243):     at com.ichi2.anki.DeckTask.onProgressUpdate(DeckTask.java:42)
+02-01 00:24:07.906 E/AndroidRuntime(12243):     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:432)

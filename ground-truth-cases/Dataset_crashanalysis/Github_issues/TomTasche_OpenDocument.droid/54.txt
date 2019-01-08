@@ -1,0 +1,10 @@
+08-09 12:31:25.470: W/System.err(1239): java.lang.NullPointerException
+08-09 12:31:25.470: W/System.err(1239):     at at.tomtasche.reader.background.DocumentLoader.loadInBackground(DocumentLoader.java:183)
+08-09 12:31:25.480: W/System.err(1239):     at at.tomtasche.reader.background.DocumentLoader.loadInBackground(DocumentLoader.java:1)
+08-09 12:31:25.480: W/System.err(1239):     at android.support.v4.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:242)
+08-09 12:31:25.480: W/System.err(1239):     at android.support.v4.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:51)
+08-09 12:31:25.480: W/System.err(1239):     at android.support.v4.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:40)
+08-09 12:31:25.480: W/System.err(1239):     at android.support.v4.content.ModernAsyncTask$2.call(ModernAsyncTask.java:123)
+08-09 12:31:25.480: W/System.err(1239):     at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+08-09 12:31:25.480: W/System.err(1239):     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+08-09 12:31:25.480: W/System.err(1239):     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)

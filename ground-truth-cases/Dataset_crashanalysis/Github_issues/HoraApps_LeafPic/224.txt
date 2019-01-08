@@ -1,0 +1,12 @@
+07-10 10:33:45.079 10718 10718 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.horaapps.leafpic.Base.HandlingAlbums.removeCurrentAlbum()' on a null object reference
+07-10 10:33:45.079 10718 10718 E AndroidRuntime:    at com.horaapps.leafpic.MyApplication.removeCurrentAlbum(MyApplication.java:29)
+07-10 10:33:45.079 10718 10718 E AndroidRuntime:    at com.horaapps.leafpic.PhotoPagerActivity.deleteCurrentMedia(PhotoPagerActivity.java:335)
+07-10 10:33:45.079 10718 10718 E AndroidRuntime:    at com.horaapps.leafpic.PhotoPagerActivity.access$1100(PhotoPagerActivity.java:62)
+07-10 10:33:45.079 10718 10718 E AndroidRuntime:    at com.horaapps.leafpic.PhotoPagerActivity$6.onClick(PhotoPagerActivity.java:489)
+07-10 10:33:45.079 10718 10718 E AndroidRuntime:    at android.support.v7.app.AlertController$ButtonHandler.handleMessage(AlertController.java:157)
+07-10 10:33:45.079 10718 10718 E AndroidRuntime:    at android.os.Handler.dispatchMessage(Handler.java:102)
+07-10 10:33:45.079 10718 10718 E AndroidRuntime:    at android.os.Looper.loop(Looper.java:148)
+07-10 10:33:45.079 10718 10718 E AndroidRuntime:    at android.app.ActivityThread.main(ActivityThread.java:5417)
+07-10 10:33:45.079 10718 10718 E AndroidRuntime:    at java.lang.reflect.Method.invoke(Native Method)
+07-10 10:33:45.079 10718 10718 E AndroidRuntime:    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+07-10 10:33:45.079 10718 10718 E AndroidRuntime:    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

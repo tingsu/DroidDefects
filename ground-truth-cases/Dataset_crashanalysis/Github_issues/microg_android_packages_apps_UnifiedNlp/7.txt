@@ -1,0 +1,126 @@
+W/GoogleAnalyticsTracker( 1925): java.net.ConnectException: failed to connect to www.google-analytics.com/127.0.0.1 (port 80): connect failed: ECONNREFUSED (Connection refused)
+W/GoogleAnalyticsTracker( 1925):    at libcore.io.IoBridge.connect(IoBridge.java:114)
+W/GoogleAnalyticsTracker( 1925):    at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+W/GoogleAnalyticsTracker( 1925):    at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:460)
+W/GoogleAnalyticsTracker( 1925):    at java.net.Socket.connect(Socket.java:833)
+W/GoogleAnalyticsTracker( 1925):    at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119)
+W/GoogleAnalyticsTracker( 1925):    at com.google.android.apps.analytics.PipelinedRequester.maybeOpenConnection(Unknown Source)
+W/GoogleAnalyticsTracker( 1925):    at com.google.android.apps.analytics.PipelinedRequester.addRequest(Unknown Source)
+W/GoogleAnalyticsTracker( 1925):    at com.google.android.apps.analytics.NetworkDispatcher$DispatcherThread$AsyncDispatchTask.dispatchSomePendingHits(Unknown Source)
+W/GoogleAnalyticsTracker( 1925):    at com.google.android.apps.analytics.NetworkDispatcher$DispatcherThread$AsyncDispatchTask.run(Unknown Source)
+W/GoogleAnalyticsTracker( 1925):    at android.os.Handler.handleCallback(Handler.java:733)
+W/GoogleAnalyticsTracker( 1925):    at android.os.Handler.dispatchMessage(Handler.java:95)
+W/GoogleAnalyticsTracker( 1925):    at android.os.Looper.loop(Looper.java:136)
+W/GoogleAnalyticsTracker( 1925):    at android.os.HandlerThread.run(HandlerThread.java:61)
+W/GoogleAnalyticsTracker( 1925): Caused by: libcore.io.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+W/GoogleAnalyticsTracker( 1925):    at libcore.io.Posix.connect(Native Method)
+W/GoogleAnalyticsTracker( 1925):    at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+W/GoogleAnalyticsTracker( 1925):    at libcore.io.IoBridge.connectErrno(IoBridge.java:127)
+W/GoogleAnalyticsTracker( 1925):    at libcore.io.IoBridge.connect(IoBridge.java:112)
+W/GoogleAnalyticsTracker( 1925):    ... 12 more
+D/lights  (  423): set_light_buttons: color=0xffffffff, tlc=1.
+W/AudioTrack(  423): AUDIO_OUTPUT_FLAG_FAST denied by client due to mismatching sample rate (48000 vs 44100)
+D/AudioFlinger(  100): start(4101), calling pid 423 session 44
+D/AudioFlinger(  100): ? => ACTIVE (4101) on thread 0x4009f908
+D/AudioHardware(  100): AudioHardware pcm playback is exiting standby.
+D/AudioHardware(  100): openPcmOut_l() mPcmOpenCnt: 0
+I/ActivityManager(  752): Timeline: Activity_launch_request id:de.schildbach.oeffi time:2121741
+--------- beginning of /dev/log/system
+I/ActivityManager(  423): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=de.schildbach.oeffi/.directions.DirectionsActivity} from pid 752
+V/Zygote  ( 2181): Switching descriptor 33 to /dev/null
+V/Zygote  ( 2181): Switching descriptor 9 to /dev/null
+I/ActivityManager(  423): Start proc de.schildbach.oeffi for activity de.schildbach.oeffi/.directions.DirectionsActivity: pid=2181 uid=10088 gids={50088, 3003}
+W/ResourceType( 2181): No package identifier when getting value for resource number 0x00000000
+E/ActivityThread( 2181): Failed to inflate
+E/ActivityThread( 2181): android.view.InflateException: Binary XML file line #21: Error inflating class com.google.android.gms.plus.PlusOneButton
+E/ActivityThread( 2181):    at android.view.LayoutInflater.createView(LayoutInflater.java:620)
+E/ActivityThread( 2181):    at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+E/ActivityThread( 2181):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+E/ActivityThread( 2181):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:758)
+E/ActivityThread( 2181):    at android.view.LayoutInflater.parseInclude(LayoutInflater.java:839)
+E/ActivityThread( 2181):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:745)
+E/ActivityThread( 2181):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:758)
+E/ActivityThread( 2181):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:758)
+E/ActivityThread( 2181):    at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+E/ActivityThread( 2181):    at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+E/ActivityThread( 2181):    at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+E/ActivityThread( 2181):    at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:343)
+E/ActivityThread( 2181):    at android.app.Activity.setContentView(Activity.java:1929)
+E/ActivityThread( 2181):    at de.schildbach.oeffi.directions.DirectionsActivity.onCreate(DirectionsActivity.java:173)
+E/ActivityThread( 2181):    at android.app.Activity.performCreate(Activity.java:5231)
+E/ActivityThread( 2181):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+E/ActivityThread( 2181):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2169)
+E/ActivityThread( 2181):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2265)
+E/ActivityThread( 2181):    at android.app.ActivityThread.access$800(ActivityThread.java:145)
+E/ActivityThread( 2181):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1206)
+E/ActivityThread( 2181):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/ActivityThread( 2181):    at android.os.Looper.loop(Looper.java:136)
+E/ActivityThread( 2181):    at android.app.ActivityThread.main(ActivityThread.java:5081)
+E/ActivityThread( 2181):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/ActivityThread( 2181):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/ActivityThread( 2181):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:791)
+E/ActivityThread( 2181):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:607)
+E/ActivityThread( 2181):    at dalvik.system.NativeStart.main(Native Method)
+E/ActivityThread( 2181): Caused by: java.lang.reflect.InvocationTargetException
+E/ActivityThread( 2181):    at java.lang.reflect.Constructor.constructNative(Native Method)
+E/ActivityThread( 2181):    at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+E/ActivityThread( 2181):    at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+E/ActivityThread( 2181):    ... 27 more
+E/ActivityThread( 2181): Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+E/ActivityThread( 2181):    at android.content.res.Resources.getValue(Resources.java:1123)
+E/ActivityThread( 2181):    at android.content.res.Resources.getDrawable(Resources.java:698)
+E/ActivityThread( 2181):    at com.google.android.gms.plus.PlusOneDummyView$b.getDrawable(Unknown Source)
+E/ActivityThread( 2181):    at com.google.android.gms.plus.PlusOneDummyView.<init>(Unknown Source)
+E/ActivityThread( 2181):    at com.google.android.gms.internal.fm.a(Unknown Source)
+E/ActivityThread( 2181):    at com.google.android.gms.plus.PlusOneButton.p(Unknown Source)
+E/ActivityThread( 2181):    at com.google.android.gms.plus.PlusOneButton.<init>(Unknown Source)
+E/ActivityThread( 2181):    ... 30 more
+D/AndroidRuntime( 2181): Shutting down VM
+W/dalvikvm( 2181): threadid=1: thread exiting with uncaught exception (group=0x416a6ce0)
+E/AndroidRuntime( 2181): FATAL EXCEPTION: main
+E/AndroidRuntime( 2181): Process: de.schildbach.oeffi, PID: 2181
+E/AndroidRuntime( 2181): java.lang.RuntimeException: Unable to start activity ComponentInfo{de.schildbach.oeffi/de.schildbach.oeffi.directions.DirectionsActivity}: android.view.InflateException: Binary XML file line #21: Error inflating class com.google.android.gms.plus.PlusOneButton
+E/AndroidRuntime( 2181):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2215)
+E/AndroidRuntime( 2181):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2265)
+E/AndroidRuntime( 2181):    at android.app.ActivityThread.access$800(ActivityThread.java:145)
+E/AndroidRuntime( 2181):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1206)
+E/AndroidRuntime( 2181):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 2181):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 2181):    at android.app.ActivityThread.main(ActivityThread.java:5081)
+E/AndroidRuntime( 2181):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 2181):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 2181):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:791)
+E/AndroidRuntime( 2181):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:607)
+E/AndroidRuntime( 2181):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 2181): Caused by: android.view.InflateException: Binary XML file line #21: Error inflating class com.google.android.gms.plus.PlusOneButton
+E/AndroidRuntime( 2181):    at android.view.LayoutInflater.createView(LayoutInflater.java:620)
+E/AndroidRuntime( 2181):    at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+E/AndroidRuntime( 2181):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+E/AndroidRuntime( 2181):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:758)
+E/AndroidRuntime( 2181):    at android.view.LayoutInflater.parseInclude(LayoutInflater.java:839)
+E/AndroidRuntime( 2181):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:745)
+E/AndroidRuntime( 2181):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:758)
+E/AndroidRuntime( 2181):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:758)
+E/AndroidRuntime( 2181):    at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+E/AndroidRuntime( 2181):    at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+E/AndroidRuntime( 2181):    at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+E/AndroidRuntime( 2181):    at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:343)
+E/AndroidRuntime( 2181):    at android.app.Activity.setContentView(Activity.java:1929)
+E/AndroidRuntime( 2181):    at de.schildbach.oeffi.directions.DirectionsActivity.onCreate(DirectionsActivity.java:173)
+E/AndroidRuntime( 2181):    at android.app.Activity.performCreate(Activity.java:5231)
+E/AndroidRuntime( 2181):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+E/AndroidRuntime( 2181):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2169)
+E/AndroidRuntime( 2181):    ... 11 more
+E/AndroidRuntime( 2181): Caused by: java.lang.reflect.InvocationTargetException
+E/AndroidRuntime( 2181):    at java.lang.reflect.Constructor.constructNative(Native Method)
+E/AndroidRuntime( 2181):    at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+E/AndroidRuntime( 2181):    at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+E/AndroidRuntime( 2181):    ... 27 more
+E/AndroidRuntime( 2181): Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+E/AndroidRuntime( 2181):    at android.content.res.Resources.getValue(Resources.java:1123)
+E/AndroidRuntime( 2181):    at android.content.res.Resources.getDrawable(Resources.java:698)
+E/AndroidRuntime( 2181):    at com.google.android.gms.plus.PlusOneDummyView$b.getDrawable(Unknown Source)
+E/AndroidRuntime( 2181):    at com.google.android.gms.plus.PlusOneDummyView.<init>(Unknown Source)
+E/AndroidRuntime( 2181):    at com.google.android.gms.internal.fm.a(Unknown Source)
+E/AndroidRuntime( 2181):    at com.google.android.gms.plus.PlusOneButton.p(Unknown Source)
+E/AndroidRuntime( 2181):    at com.google.android.gms.plus.PlusOneButton.<init>(Unknown Source)

@@ -1,0 +1,33 @@
+//this is an auto-generated bug report
+//package name: fr.ybo.transportsbordeaux
+//version: 3.2.1
+//appro_time: 126
+ java.lang.RuntimeException: Unable to destroy activity {fr.ybo.transportsbordeaux/fr.ybo.transportsbordeaux.activity.bus.TabFavoris}: java.lang.IllegalStateException: The specified child already has a parent. You must call removeView() on the child's parent first.
+ 	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3499)
+ 	at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:3517)
+ 	at android.app.ActivityThread.access$1200(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1309)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalStateException: The specified child already has a parent. You must call removeView() on the child's parent first.
+ 	at android.view.ViewGroup.addViewInner(ViewGroup.java:3509)
+ 	at android.view.ViewGroup.addView(ViewGroup.java:3380)
+ 	at android.view.ViewGroup.addView(ViewGroup.java:3325)
+ 	at android.view.ViewGroup.addView(ViewGroup.java:3301)
+ 	at android.support.v4.app.NoSaveStateFrameLayout.wrap(NoSaveStateFrameLayout.java:40)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:874)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1080)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1062)
+ 	at android.support.v4.app.FragmentManagerImpl.dispatchReallyStop(FragmentManager.java:1837)
+ 	at android.support.v4.app.FragmentActivity.onReallyStop(FragmentActivity.java:639)
+ 	at android.support.v4.app.FragmentActivity.doReallyStop(FragmentActivity.java:616)
+ 	at android.support.v4.app.FragmentActivity.onDestroy(FragmentActivity.java:312)
+ 	at android.app.Activity.performDestroy(Activity.java:5302)
+ 	at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1117)
+ 	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3486)

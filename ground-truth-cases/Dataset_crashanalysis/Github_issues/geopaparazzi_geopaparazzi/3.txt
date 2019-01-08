@@ -1,0 +1,10 @@
+08-28 09:56:25.479 E/SQLiteDatabase(26615): android.database.sqlite.SQLiteException: no such table: android_metadata
+08-28 09:56:25.479 E/SQLiteDatabase(26615):     at android.database.sqlite.SQLiteDatabase.native_setLocale(Native Method)
+08-28 09:56:25.479 E/SQLiteDatabase(26615):     at android.database.sqlite.SQLiteDatabase.setLocale(SQLiteDatabase.java:2075)
+08-28 09:56:25.479 E/SQLiteDatabase(26615):     at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:1014)
+08-28 09:56:25.479 E/SQLiteDatabase(26615):     at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:986)
+08-28 09:56:25.479 E/SQLiteDatabase(26615):     at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:962)
+08-28 09:56:25.479 E/SQLiteDatabase(26615):     at eu.geopaparazzi.spatialite.database.spatial.core.mbtiles.MBTilesDroidSpitter.open(MBTilesDroidSpitter.java:31)
+08-28 09:56:25.479 E/SQLiteDatabase(26615):     at eu.geopaparazzi.spatialite.database.spatial.core.MbtilesDatabaseHandler.getSpatialRasterTables(MbtilesDatabaseHandler.java:69)
+08-28 09:56:25.479 E/SQLiteDatabase(26615):     at eu.geopaparazzi.spatialite.database.spatial.SpatialDatabasesManager.getSpatialRasterTables(SpatialDatabasesManager.java:109)
+08-28 09:56:25.479 E/SQLiteDatabase(26615):     at eu.hydrologis.geopaparazzi.GeoPaparazziActivity.onCreate(GeoPaparazziActivity.java:158)

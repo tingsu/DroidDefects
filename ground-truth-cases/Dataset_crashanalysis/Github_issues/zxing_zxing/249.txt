@@ -1,0 +1,35 @@
+11-03 10:28:05.872: I/MonoDroid(3267): Java.Lang.RuntimeException: Exception of type 'Java.Lang.RuntimeException' was thrown.
+11-03 10:28:05.872: I/MonoDroid(3267): at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw () <IL 0x00011, 0x00068>
+11-03 10:28:05.872: I/MonoDroid(3267): at Android.Runtime.JNIEnv.CallVoidMethod (intptr,intptr,Android.Runtime.JValue[]) [0x00063] in /Users/builder/data/lanes/1131/2a7b6821/source/monodroid/src/Mono.Android/src/Runtime/JNIEnv.g.cs:508
+11-03 10:28:05.872: I/MonoDroid(3267): at Android.Hardware.Camera.SetPreviewCallback (Android.Hardware.Camera/IPreviewCallback) [0x0002d] in /Users/builder/data/lanes/1131/2a7b6821/source/monodroid/src/Mono.Android/platforms/android-19/src/generated/Android.Hardware.Camera.cs:4586
+11-03 10:28:05.872: I/MonoDroid(3267): at ZXing.Mobile.ZXingSurfaceView.ShutdownCamera () <IL 0x0001d, 0x00097>
+11-03 10:28:05.872: I/MonoDroid(3267): at ZXing.Mobile.ZXingScannerFragment.OnPause () <IL 0x0000c, 0x00067>
+11-03 10:28:05.872: I/MonoDroid(3267): at Android.Support.V4.App.Fragment.n_OnPause (intptr,intptr) <IL 0x0000a, 0x0009f>
+11-03 10:28:05.872: I/MonoDroid(3267): at (wrapper dynamic-method) object.245fd77c-4520-4477-8d89-546ed1f2a7fc (intptr,intptr) <IL 0x00011, 0x0003b>
+11-03 10:28:05.872: I/MonoDroid(3267):   --- End of managed exception stack trace ---
+11-03 10:28:05.872: I/MonoDroid(3267): java.lang.RuntimeException: Method called after release()
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.hardware.Camera.setHasPreviewCallback(Native Method)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.hardware.Camera.setPreviewCallback(Camera.java:603)
+11-03 10:28:05.872: I/MonoDroid(3267):  at zxing.mobile.ZXingScannerFragment.n_onPause(Native Method)
+11-03 10:28:05.872: I/MonoDroid(3267):  at zxing.mobile.ZXingScannerFragment.onPause(ZXingScannerFragment.java:46)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.support.v4.app.Fragment.performPause(Fragment.java:1661)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:984)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1115)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1097)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.support.v4.app.FragmentManagerImpl.dispatchPause(FragmentManager.java:1909)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.support.v4.app.FragmentActivity.onPause(FragmentActivity.java:412)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.app.Activity.performPause(Activity.java:5335)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.app.Instrumentation.callActivityOnPause(Instrumentation.java:1233)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3034)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3003)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:2981)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.app.ActivityThread.access$1000(ActivityThread.java:135)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1213)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.os.Handler.dispatchMessage(Handler.java:102)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.os.Looper.loop(Looper.java:136)
+11-03 10:28:05.872: I/MonoDroid(3267):  at android.app.ActivityThread.main(ActivityThread.java:5001)
+11-03 10:28:05.882: I/MonoDroid(3267):  at java.lang.reflect.Method.invokeNative(Native Method)
+11-03 10:28:05.882: I/MonoDroid(3267):  at java.lang.reflect.Method.invoke(Method.java:515)
+11-03 10:28:05.882: I/MonoDroid(3267):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+11-03 10:28:05.882: I/MonoDroid(3267):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+11-03 10:28:05.882: I/MonoDroid(3267):  at dalvik.system.NativeStart.main(Native Method)

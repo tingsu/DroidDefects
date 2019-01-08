@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: us.achromaticmetaphor.imcktg
+//version: 0.5
+//appro_time: 96
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalArgumentException: invalid WAVE
+ 	at us.achromaticmetaphor.imcktg.WAVETone.<init>(WAVETone.java:67)
+ 	at us.achromaticmetaphor.imcktg.TTS.writeTone(TTS.java:45)
+ 	at us.achromaticmetaphor.imcktg.Tone.generateTone(Tone.java:92)
+ 	at us.achromaticmetaphor.imcktg.Tone.generateTone(Tone.java:98)
+ 	at us.achromaticmetaphor.imcktg.AsyncGenerateMorseTones$Params.gentone(AsyncGenerateMorseTones.java:36)
+ 	at us.achromaticmetaphor.imcktg.AsyncGenerateMorseTones.doInBackground(AsyncGenerateMorseTones.java:55)
+ 	at us.achromaticmetaphor.imcktg.AsyncGenerateMorseTones.doInBackground(AsyncGenerateMorseTones.java:10)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ Caused by: java.lang.IndexOutOfBoundsException: index=0, limit=0, size of type=4
+ 	at java.nio.Buffer.checkIndex(Buffer.java:165)
+ 	at java.nio.DirectByteBuffer.getInt(DirectByteBuffer.java:217)
+ 	at us.achromaticmetaphor.imcktg.WAVETone.<init>(WAVETone.java:31)

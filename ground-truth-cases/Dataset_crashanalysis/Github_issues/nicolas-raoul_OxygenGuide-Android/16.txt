@@ -1,0 +1,4 @@
+03-04 17:29:04.719 E/AndroidRuntime( 2275): java.lang.NullPointerException
+03-04 17:29:04.719 E/AndroidRuntime( 2275):     at org.github.OxygenGuide.MainActivity$DownloadFile.onPostExecute(MainActivity.java:176)
+03-04 17:29:04.719 E/AndroidRuntime( 2275):     at org.github.OxygenGuide.MainActivity$DownloadFile.onPostExecute(MainActivity.java:1)
+03-04 17:29:04.719 E/AndroidRuntime( 2275):     at android.os.AsyncTask.finish(AsyncTask.java:602)

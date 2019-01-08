@@ -1,0 +1,6 @@
+11-10 12:36:28.811: E/cgeo(12945): java.lang.NullPointerException
+11-10 12:36:28.811: E/cgeo(12945):  at cgeo.geocaching.files.LocalStorage.deleteFilesWithPrefix(LocalStorage.java:350)
+11-10 12:36:28.811: E/cgeo(12945):  at cgeo.geocaching.StaticMapsProvider.downloadMaps(StaticMapsProvider.java:105)
+11-10 12:36:28.811: E/cgeo(12945):  at cgeo.geocaching.StaticMapsProvider.downloadMaps(StaticMapsProvider.java:84)
+11-10 12:36:28.811: E/cgeo(12945):  at cgeo.geocaching.files.GPXImporter$ImportThread.importStaticMaps(GPXImporter.java:179)
+11-10 12:36:28.811: E/cgeo(12945):  at cgeo.geocaching.files.GPXImporter$ImportThread.run(GPXImporter.java:148)

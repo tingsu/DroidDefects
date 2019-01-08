@@ -1,0 +1,34 @@
+
+1) Type a string that has at least 145 characters¹ on the compose field
+An example string (158 chars):
+
+```
+"Bless the Maker and His water," Kynes murmured. "Bless the coming and going of Him. May His passage cleanse the world. May He keep the world for His people."
+```
+
+2) Long-press the send arrow and change to SMS mode
+
+3) TS crashes
+https://gist.github.com/anonymous/0ee1496d68fdd4fc58ff
+
+```
+E/AndroidRuntime( 5058): FATAL EXCEPTION: main
+E/AndroidRuntime( 5058): Process: org.thoughtcrime.securesms, PID: 5058
+E/AndroidRuntime( 5058): java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.ViewTreeObserver android.view.View.getViewTreeObserver()' on a null object reference
+E/AndroidRuntime( 5058):    at org.thoughtcrime.securesms.TransportOptionsPopup$2.onGlobalLayout(TransportOptionsPopup.java:89)
+E/AndroidRuntime( 5058):    at android.view.ViewTreeObserver.dispatchOnGlobalLayout(ViewTreeObserver.java:912)
+E/AndroidRuntime( 5058):    at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1881)
+E/AndroidRuntime( 5058):    at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1061)
+E/AndroidRuntime( 5058):    at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5885)
+E/AndroidRuntime( 5058):    at android.view.Choreographer$CallbackRecord.run(Choreographer.java:767)
+E/AndroidRuntime( 5058):    at android.view.Choreographer.doCallbacks(Choreographer.java:580)
+E/AndroidRuntime( 5058):    at android.view.Choreographer.doFrame(Choreographer.java:550)
+E/AndroidRuntime( 5058):    at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:753)
+E/AndroidRuntime( 5058):    at android.os.Handler.handleCallback(Handler.java:739)
+E/AndroidRuntime( 5058):    at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime( 5058):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime( 5058):    at android.app.ActivityThread.main(ActivityThread.java:5254)
+E/AndroidRuntime( 5058):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 5058):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime( 5058):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+E/AndroidRuntime( 5058):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)

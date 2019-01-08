@@ -1,0 +1,11 @@
+Fatal Exception: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.GET_CONTENT cat=[android.intent.category.OPENABLE] typ=image/* }
+       at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1512)
+       at android.app.Instrumentation.execStartActivity(Instrumentation.java:1384)
+       at android.app.Activity.startActivityForResult(Activity.java:3195)
+       at android.support.v4.app.FragmentActivity.startActivityForResult(FragmentActivity.java:842)
+       at android.support.v4.app.ActivityCompat.startActivityForResult(ActivityCompat.java:164)
+       at android.support.v4.app.FragmentActivity.startActivityFromFragment(FragmentActivity.java:921)
+       at android.support.v4.app.FragmentActivity$HostCallbacks.onStartActivityFromFragment(FragmentActivity.java:1009)
+       at android.support.v4.app.Fragment.startActivityForResult(Fragment.java:940)
+       at android.support.v4.app.Fragment.startActivityForResult(Fragment.java:929)
+       at org.kontalk.ui.prefs.AppearanceFragment$2.onPreferenceClick(AppearanceFragment.java:68)

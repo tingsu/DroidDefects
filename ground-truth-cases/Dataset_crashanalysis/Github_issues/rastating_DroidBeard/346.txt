@@ -1,0 +1,12 @@
+```
+java.lang.IllegalArgumentException: Illegal character in path at index 31: http://192.168.0.105:8081/api/: e9f4e025cb298324d94434890fbbb0de/?cmd=shows
+    at java.net.URI.create(URI.java:733)
+    at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:80)
+    at com.rastating.droidbeard.net.SickbeardAsyncTask.getJson(SickbeardAsyncTask.java:177)
+    at com.rastating.droidbeard.net.FetchShowSummariesTask.doInBackground(FetchShowSummariesTask.java:47)
+    at com.rastating.droidbeard.net.FetchShowSummariesTask.doInBackground(FetchShowSummariesTask.java:38)
+    at android.os.AsyncTask$2.call(AsyncTask.java:292)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+    at java.lang.Thread.run(Thread.java:818)

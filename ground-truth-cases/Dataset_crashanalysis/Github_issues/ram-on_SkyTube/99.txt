@@ -1,0 +1,46 @@
+        "domain": "usageLimits",
+        "message": "Daily Limit Exceeded. The quota will be reset at midnight Pacific Time (PT). You may monitor your quota usage and adjust limits in the API Console: https://console.developers.google.com/apis/api/youtube/quotas?project=102659752285",
+        "reason": "dailyLimitExceeded",
+        "extendedHelp": "https://console.developers.google.com/apis/api/youtube/quotas?project=102659752285"
+      }   
+    ],  
+    "message": "Daily Limit Exceeded. The quota will be reset at midnight Pacific Time (PT). You may monitor your quota usage and adjust limits in the API Console: https://console.developers.google.com/apis/api/youtube/quotas?project=102659752285"
+  }
+      at com.google.api.client.googleapis.services.json.AbstractGoogleJsonClientRequest.newExceptionOnError(AbstractGoogleJsonClientRequest.java:113)
+      at com.google.api.client.googleapis.services.json.AbstractGoogleJsonClientRequest.newExceptionOnError(AbstractGoogleJsonClientRequest.java:40)
+      at com.google.api.client.googleapis.services.AbstractGoogleClientRequest$1.interceptResponse(AbstractGoogleClientRequest.java:321)
+      at com.google.api.client.http.HttpRequest.execute(HttpRequest.java:1065)
+      at com.google.api.client.googleapis.services.AbstractGoogleClientRequest.executeUnparsed(AbstractGoogleClientRequest.java:419)
+      at com.google.api.client.googleapis.services.AbstractGoogleClientRequest.executeUnparsed(AbstractGoogleClientRequest.java:352)
+      at com.google.api.client.googleapis.services.AbstractGoogleClientRequest.execute(AbstractGoogleClientRequest.java:469)
+      at free.rm.skytube.businessobjects.YouTubeChannel.getChannelInfo(YouTubeChannel.java:117)
+      at free.rm.skytube.businessobjects.YouTubeChannel.init(YouTubeChannel.java:89)
+      at free.rm.skytube.businessobjects.db.SubscriptionsDb.getSubscribedChannels(SubscriptionsDb.java:150)
+      at free.rm.skytube.businessobjects.GetSubscriptionVideosTask.doInBackground(GetSubscriptionVideosTask.java:52)
+      at free.rm.skytube.businessobjects.GetSubscriptionVideosTask.doInBackground(GetSubscriptionVideosTask.java:38)
+      at android.os.AsyncTask$2.call(AsyncTask.java:305)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+      at java.lang.Thread.run(Thread.java:761)
+E/AndroidRuntime: FATAL EXCEPTION: AsyncTask #1
+  Process: free.rm.skytube.oss, PID: 21731
+  java.lang.RuntimeException: An error occurred while executing doInBackground()
+      at android.os.AsyncTask$3.done(AsyncTask.java:325)
+      at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+      at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+      at java.lang.Thread.run(Thread.java:761)
+  Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'int java.util.List.size()' on a null object reference
+      at free.rm.skytube.businessobjects.YouTubeChannel.getChannelInfo(YouTubeChannel.java:126)
+      at free.rm.skytube.businessobjects.YouTubeChannel.init(YouTubeChannel.java:89)
+      at free.rm.skytube.businessobjects.db.SubscriptionsDb.getSubscribedChannels(SubscriptionsDb.java:150)
+      at free.rm.skytube.businessobjects.GetSubscriptionVideosTask.doInBackground(GetSubscriptionVideosTask.java:52)
+      at free.rm.skytube.businessobjects.GetSubscriptionVideosTask.doInBackground(GetSubscriptionVideosTask.java:38)
+      at android.os.AsyncTask$2.call(AsyncTask.java:305)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133) 
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607) 
+      at java.lang.Thread.run(Thread.java:761) 

@@ -1,0 +1,7 @@
+                                                                            java.lang.UnsatisfiedLinkError: com.bestvpn.core.NativeUtils
+                                                                                at com.bestvpn.VpnProfile.getConfigFile(VpnProfile.java:277)
+                                                                                at com.bestvpn.VpnProfile.writeConfigFile(VpnProfile.java:660)
+                                                                                at com.bestvpn.core.OpenVPNService.startOpenVPN(OpenVPNService.java:406)
+                                                                                at com.bestvpn.core.OpenVPNService.access$200(OpenVPNService.java:60)
+                                                                                at com.bestvpn.core.OpenVPNService$2.run(OpenVPNService.java:386)
+                                                                                at java.lang.Thread.run(Thread.java:818)

@@ -1,0 +1,19 @@
+```
+V/WindowManager( 1220): Adding window Window{d533295 u0 com.catchingnow.tinyclipboardmanager/com.catchingnow.tinyclipboardmanager.ActivityEditor} at 4 of 9 (before Window{72b9987 u0 Starting com.catchin
+gnow.tinyclipboardmanager})
+I/Choreographer( 2081): Skipped 216 frames!  The application may be doing too much work on its main thread.
+D/AndroidRuntime( 2081): Shutting down VM
+E/AndroidRuntime( 2081): FATAL EXCEPTION: main
+E/AndroidRuntime( 2081): Process: com.catchingnow.tinyclipboardmanager, PID: 2081
+E/AndroidRuntime( 2081): java.lang.NullPointerException: Attempt to invoke interface method 'android.view.MenuItem android.view.MenuItem.setIcon(int)' on a null object reference
+E/AndroidRuntime( 2081):        at com.catchingnow.tinyclipboardmanager.ActivityEditor.setStarredIcon(ActivityEditor.java:141)
+E/AndroidRuntime( 2081):        at com.catchingnow.tinyclipboardmanager.ActivityEditor.access$100(ActivityEditor.java:21)
+E/AndroidRuntime( 2081):        at com.catchingnow.tinyclipboardmanager.ActivityEditor$2.run(ActivityEditor.java:86)
+E/AndroidRuntime( 2081):        at android.os.Handler.handleCallback(Handler.java:739)
+E/AndroidRuntime( 2081):        at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime( 2081):        at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime( 2081):        at android.app.ActivityThread.main(ActivityThread.java:5257)
+E/AndroidRuntime( 2081):        at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 2081):        at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime( 2081):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+E/AndroidRuntime( 2081):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)

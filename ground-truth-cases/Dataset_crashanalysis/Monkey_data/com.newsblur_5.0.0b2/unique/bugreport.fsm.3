@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: com.newsblur
+//version: 5.0.0b2
+//appro_time: 122
+ java.lang.OutOfMemoryError
+ 	at okio.Buffer.readByteArray(Buffer.java:756)
+ 	at okio.Buffer.readByteArray(Buffer.java:744)
+ 	at okio.RealBufferedSource.readByteArray(RealBufferedSource.java:107)
+ 	at okhttp3.ResponseBody.bytes(ResponseBody.java:128)
+ 	at okhttp3.ResponseBody.string(ResponseBody.java:154)
+ 	at com.newsblur.network.APIResponse.<init>(APIResponse.java:66)
+ 	at com.newsblur.network.APIManager.get_single(APIManager.java:608)
+ 	at com.newsblur.network.APIManager.get(APIManager.java:590)
+ 	at com.newsblur.network.APIManager.get(APIManager.java:636)
+ 	at com.newsblur.network.APIManager.getStories(APIManager.java:343)
+ 	at com.newsblur.service.NBSyncService.syncPendingFeedStories(NBSyncService.java:669)
+ 	at com.newsblur.service.NBSyncService.doSync(NBSyncService.java:243)
+ 	at com.newsblur.service.NBSyncService.access$000(NBSyncService.java:67)
+ 	at com.newsblur.service.NBSyncService$1.run(NBSyncService.java:183)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

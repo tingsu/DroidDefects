@@ -1,0 +1,41 @@
+01-09 13:32:46.225: W/ActivityManager(530): android.os.DeadObjectException
+01-09 13:32:46.225: W/ActivityManager(530):     at android.os.BinderProxy.transact(Native Method)
+01-09 13:32:46.225: W/ActivityManager(530):     at android.app.ApplicationThreadProxy.schedulePauseActivity(ApplicationThreadNative.java:635)
+01-09 13:32:46.225: W/ActivityManager(530):     at com.android.server.am.ActivityStack.startPausingLocked(ActivityStack.java:1014)
+01-09 13:32:46.225: W/ActivityManager(530):     at com.android.server.am.ActivityStack.finishActivityLocked(ActivityStack.java:3897)
+01-09 13:32:46.225: W/ActivityManager(530):     at com.android.server.am.ActivityStack.finishActivityLocked(ActivityStack.java:3829)
+01-09 13:32:46.225: W/ActivityManager(530):     at com.android.server.am.ActivityManagerService.handleAppCrashLocked(ActivityManagerService.java:8473)
+01-09 13:32:46.225: W/ActivityManager(530):     at com.android.server.am.ActivityManagerService.makeAppCrashingLocked(ActivityManagerService.java:8350)
+01-09 13:32:46.225: W/ActivityManager(530):     at com.android.server.am.ActivityManagerService.crashApplication(ActivityManagerService.java:9029)
+01-09 13:32:46.225: W/ActivityManager(530):     at com.android.server.am.ActivityManagerService.handleApplicationCrashInner(ActivityManagerService.java:8584)
+01-09 13:32:46.225: W/ActivityManager(530):     at com.android.server.am.NativeCrashListener$NativeCrashReporter.run(NativeCrashListener.java:86)
+01-09 13:32:46.230: I/ActivityManager(530): Restarting because process died: ActivityRecord{41cd47c8 u0 com.nostra13.example.universalimageloader/.MainActivity}
+01-09 13:32:46.250: W/ActivityManager(530): Exception when starting activity com.nostra13.example.universalimageloader/.MainActivity
+01-09 13:32:46.250: W/ActivityManager(530): android.os.DeadObjectException
+01-09 13:32:46.250: W/ActivityManager(530):     at android.os.BinderProxy.transact(Native Method)
+01-09 13:32:46.250: W/ActivityManager(530):     at android.app.ApplicationThreadProxy.scheduleLaunchActivity(ApplicationThreadNative.java:723)
+01-09 13:32:46.250: W/ActivityManager(530):     at com.android.server.am.ActivityStack.realStartActivityLocked(ActivityStack.java:740)
+01-09 13:32:46.250: W/ActivityManager(530):     at com.android.server.am.ActivityStack.startSpecificActivityLocked(ActivityStack.java:847)
+01-09 13:32:46.250: W/ActivityManager(530):     at com.android.server.am.ActivityStack.resumeTopActivityLocked(ActivityStack.java:1809)
+01-09 13:32:46.250: W/ActivityManager(530):     at com.android.server.am.ActivityStack.resumeTopActivityLocked(ActivityStack.java:1461)
+01-09 13:32:46.250: W/ActivityManager(530):     at com.android.server.am.ActivityStack.startPausingLocked(ActivityStack.java:1065)
+01-09 13:32:46.250: W/ActivityManager(530):     at com.android.server.am.ActivityStack.finishActivityLocked(ActivityStack.java:3897)
+01-09 13:32:46.250: W/ActivityManager(530):     at com.android.server.am.ActivityStack.finishActivityLocked(ActivityStack.java:3829)
+01-09 13:32:46.250: W/ActivityManager(530):     at com.android.server.am.ActivityManagerService.handleAppCrashLocked(ActivityManagerService.java:8473)
+01-09 13:32:46.250: W/ActivityManager(530):     at com.android.server.am.ActivityManagerService.makeAppCrashingLocked(ActivityManagerService.java:8350)
+01-09 13:32:46.250: W/ActivityManager(530):     at com.android.server.am.ActivityManagerService.crashApplication(ActivityManagerService.java:9029)
+01-09 13:32:46.250: W/ActivityManager(530):     at com.android.server.am.ActivityManagerService.handleApplicationCrashInner(ActivityManagerService.java:8584)
+01-09 13:32:46.250: W/ActivityManager(530):     at com.android.server.am.NativeCrashListener$NativeCrashReporter.run(NativeCrashListener.java:86)
+01-09 13:32:46.250: W/ActivityManager(530): Force removing ActivityRecord{41cd47c8 u0 com.nostra13.example.universalimageloader/.MainActivity}: app died, no saved state
+01-09 13:32:46.260: D/dalvikvm(27382): Late-enabling CheckJNI
+01-09 13:32:46.260: I/ActivityManager(530): Start proc com.nostra13.example.universalimageloader for activity com.nostra13.example.universalimageloader/.MainActivity: pid=27382 uid=10099 gids={50099, 3003, 1015, 1028}
+01-09 13:32:46.260: I/ActivityManager(530): Process com.nostra13.example.universalimageloader (pid 26596) has died and restarted (pid 27382).
+01-09 13:32:46.260: E/NativeCrashListener(530): Unable to report native crash
+01-09 13:32:46.260: E/NativeCrashListener(530): java.lang.IndexOutOfBoundsException: Invalid index 6, size is 6
+01-09 13:32:46.260: E/NativeCrashListener(530):     at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+01-09 13:32:46.260: E/NativeCrashListener(530):     at java.util.ArrayList.get(ArrayList.java:308)
+01-09 13:32:46.260: E/NativeCrashListener(530):     at com.android.server.am.ActivityManagerService.handleAppCrashLocked(ActivityManagerService.java:8480)
+01-09 13:32:46.260: E/NativeCrashListener(530):     at com.android.server.am.ActivityManagerService.makeAppCrashingLocked(ActivityManagerService.java:8350)
+01-09 13:32:46.260: E/NativeCrashListener(530):     at com.android.server.am.ActivityManagerService.crashApplication(ActivityManagerService.java:9029)
+01-09 13:32:46.260: E/NativeCrashListener(530):     at com.android.server.am.ActivityManagerService.handleApplicationCrashInner(ActivityManagerService.java:8584)
+01-09 13:32:46.260: E/NativeCrashListener(530):     at com.android.server.am.NativeCrashListener$NativeCrashReporter.run(NativeCrashListener.java:86)

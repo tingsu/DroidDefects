@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: org.sensors2.pd
+//version: 0.1.0
+//appro_time: 160
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to pause activity {org.sensors2.pd/org.sensors2.pd.activities.Sensors2PdActivity}: java.lang.IllegalStateException: Call while result is not pending
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3064)
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3019)
+ 	at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:2997)
+ 	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1267)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalStateException: Call while result is not pending
+ 	at android.content.BroadcastReceiver.checkSynchronousHint(BroadcastReceiver.java:772)
+ 	at android.content.BroadcastReceiver.abortBroadcast(BroadcastReceiver.java:689)
+ 	at org.sensors2.pd.wifi.WifiCommunication.onPause(WifiCommunication.java:44)
+ 	at org.sensors2.pd.activities.Sensors2PdActivity.onPause(Sensors2PdActivity.java:76)
+ 	at android.app.Activity.performPause(Activity.java:5235)
+ 	at android.app.Instrumentation.callActivityOnPause(Instrumentation.java:1233)
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3050)
+ 	... 12 more

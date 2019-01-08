@@ -1,0 +1,15 @@
+                                                   java.lang.RuntimeException: Unable to create application com.xxxx.xxxx.xxxxxApplication: java.lang.NullPointerException
+                                                       at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4617)
+                                                       at android.app.ActivityThread.access$1800(ActivityThread.java:139)
+                                                       at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1316)
+                                                       at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                       at android.os.Looper.loop(Looper.java:136)
+                                                       at android.app.ActivityThread.main(ActivityThread.java:5315)
+                                                       at java.lang.reflect.Method.invokeNative(Native Method)
+                                                       at java.lang.reflect.Method.invoke(Method.java:515)
+                                                       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:864)
+                                                       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:680)
+                                                       at dalvik.system.NativeStart.main(Native Method)
+                                                    Caused by: java.lang.NullPointerException
+                                                       at com.nostra13.universalimageloader.core.ImageLoader.stop(SourceFile:718)
+                                                       at com.nostra13.universalimageloader.core.ImageLoader.destroy(SourceFile:728)

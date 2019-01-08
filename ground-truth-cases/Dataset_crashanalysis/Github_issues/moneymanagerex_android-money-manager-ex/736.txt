@@ -1,0 +1,17 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.money.manager.ex/com.money.manager.ex.recurring.transactions.RecurringTransactionEditActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.Integer.intValue()' on a null object reference
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2426)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2490)
+    at android.app.ActivityThread.-wrap11(ActivityThread.java)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1354)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5443)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:728)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:618)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.Integer.intValue()' on a null object reference
+    at com.money.manager.ex.recurring.transactions.RecurringTransactionEditActivity.loadRecurringTransaction(RecurringTransactionEditActivity.java:456)
+    at com.money.manager.ex.recurring.transactions.RecurringTransactionEditActivity.onCreate(RecurringTransactionEditActivity.java:131)
+    at android.app.Activity.performCreate(Activity.java:6245)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1130)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2379)

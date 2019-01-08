@@ -1,0 +1,20 @@
+W/JobConsumer( 2335): java.lang.NegativeArraySizeException: -20
+W/JobConsumer( 2335):   at org.thoughtcrime.securesms.crypto.MasterCipher.verifyMacBody(Unknown Source)
+W/JobConsumer( 2335):   at org.thoughtcrime.securesms.crypto.MasterCipher.decryptBytes(Unknown Source)
+W/JobConsumer( 2335):   at org.thoughtcrime.securesms.jobs.AttachmentDownloadJob.createAttachmentPointer(Unknown Source)
+W/JobConsumer( 2335):   at org.thoughtcrime.securesms.jobs.AttachmentDownloadJob.retrievePart(Unknown Source)
+W/JobConsumer( 2335):   at org.thoughtcrime.securesms.jobs.AttachmentDownloadJob.onRun(Unknown Source)
+W/JobConsumer( 2335):   at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(Unknown Source)
+W/JobConsumer( 2335):   at org.whispersystems.jobqueue.JobConsumer.runJob(Unknown Source)
+W/JobConsumer( 2335):   at org.whispersystems.jobqueue.JobConsumer.run(Unknown Source)
+W/dalvikvm( 2335): threadid=12: thread exiting with uncaught exception (group=0x40cbd2d0)
+E/AndroidRuntime( 2335): FATAL EXCEPTION: JobConsumer-0
+E/AndroidRuntime( 2335): java.lang.NegativeArraySizeException: -20
+E/AndroidRuntime( 2335):    at org.thoughtcrime.securesms.crypto.MasterCipher.verifyMacBody(Unknown Source)
+E/AndroidRuntime( 2335):    at org.thoughtcrime.securesms.crypto.MasterCipher.decryptBytes(Unknown Source)
+E/AndroidRuntime( 2335):    at org.thoughtcrime.securesms.jobs.AttachmentDownloadJob.createAttachmentPointer(Unknown Source)
+E/AndroidRuntime( 2335):    at org.thoughtcrime.securesms.jobs.AttachmentDownloadJob.retrievePart(Unknown Source)
+E/AndroidRuntime( 2335):    at org.thoughtcrime.securesms.jobs.AttachmentDownloadJob.onRun(Unknown Source)
+E/AndroidRuntime( 2335):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(Unknown Source)
+E/AndroidRuntime( 2335):    at org.whispersystems.jobqueue.JobConsumer.runJob(Unknown Source)
+E/AndroidRuntime( 2335):    at org.whispersystems.jobqueue.JobConsumer.run(Unknown Source)

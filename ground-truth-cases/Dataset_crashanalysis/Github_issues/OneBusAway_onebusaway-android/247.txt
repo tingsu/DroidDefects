@@ -1,0 +1,44 @@
+com.android.ddmlib.InstallException
+    at com.android.ddmlib.Device.installPackages(Device.java:927)
+    at com.android.builder.testing.ConnectedDevice.installPackages(ConnectedDevice.java:105)
+    at com.android.builder.internal.testing.SimpleTestCallable.call(SimpleTestCallable.java:125)
+    at com.android.builder.internal.testing.SimpleTestCallable.call(SimpleTestCallable.java:48)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+    at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+    at java.lang.Thread.run(Thread.java:745)
+Caused by: com.android.ddmlib.ShellCommandUnresponsiveException
+    at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:513)
+    at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:390)
+    at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:359)
+    at com.android.ddmlib.Device.executeShellCommand(Device.java:566)
+    at com.android.ddmlib.Device.createMultiInstallSession(Device.java:987)
+    at com.android.ddmlib.Device.installPackages(Device.java:884)
+    ... 9 more
+com.android.builder.testing.ConnectedDevice > runTests[test(AVD) - 5.0.1] FAILED 
+    com.android.builder.testing.api.DeviceException: com.android.ddmlib.InstallException
+        at com.android.builder.testing.ConnectedDevice.installPackages(ConnectedDevice.java:108)
+null
+com.android.builder.testing.api.DeviceException: com.android.ddmlib.InstallException
+    at com.android.builder.testing.ConnectedDevice.installPackages(ConnectedDevice.java:108)
+    at com.android.builder.internal.testing.SimpleTestCallable.call(SimpleTestCallable.java:125)
+    at com.android.builder.internal.testing.SimpleTestCallable.call(SimpleTestCallable.java:48)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+    at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+    at java.lang.Thread.run(Thread.java:745)
+Caused by: com.android.ddmlib.InstallException
+    at com.android.ddmlib.Device.installPackages(Device.java:927)
+    at com.android.builder.testing.ConnectedDevice.installPackages(ConnectedDevice.java:105)
+    ... 8 more
+Caused by: com.android.ddmlib.ShellCommandUnresponsiveException
+    at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:513)
+    at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:390)
+    at com.android.ddmlib.AdbHelper.executeRemoteCommand(AdbHelper.java:359)
+    at com.android.ddmlib.Device.executeShellCommand(Device.java:566)
+    at com.android.ddmlib.Device.createMultiInstallSession(Device.java:987)
+    at com.android.ddmlib.Device.installPackages(Device.java:884)

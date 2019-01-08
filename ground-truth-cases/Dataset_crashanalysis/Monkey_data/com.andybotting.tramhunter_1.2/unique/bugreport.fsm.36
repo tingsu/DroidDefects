@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: com.andybotting.tramhunter
+//version: 1.2
+//appro_time: 81
+ java.lang.RuntimeException: Unable to resume activity {com.andybotting.tramhunter/com.andybotting.tramhunter.activity.StopDetailsActivity}: java.lang.IllegalThreadStateException: Thread already started
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2790)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1298)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalThreadStateException: Thread already started
+ 	at java.lang.Thread.checkNotStarted(Thread.java:871)
+ 	at java.lang.Thread.start(Thread.java:1025)
+ 	at com.andybotting.tramhunter.activity.StopDetailsActivity.onResume(StopDetailsActivity.java:316)
+ 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+ 	at android.app.Activity.performResume(Activity.java:5211)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)

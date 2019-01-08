@@ -1,0 +1,217 @@
+W/MultipartSmsMessageHandler(10694): Constructing new container...
+W/MultipartSmsMessageHandler(10694): Filled buffer at index: 0
+W/SMSListener(10694): Got SMS broadcast...
+W/SMSReceiverService(10694): Intent resultcode: -1
+W/SMSReceiverService(10694): Running sent callback: 287
+W/MessageDatabase(10694): Updating ID: 287 to base type: 23
+W/MmsSmsDatabase(10694): Executing query: SELECT _id, body, type, thread_id, address, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 15) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 15) ORDER BY date_received DESC) LIMIT 1
+W/SmsSender(10694): java.lang.IllegalArgumentException: Receiver not registered: org.thoughtcrime.securesms.service.SystemStateListener@42712140
+W/SmsSender(10694):     at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:662)
+W/SmsSender(10694):     at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:1433)
+W/SmsSender(10694):     at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java:468)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.service.SmsSender.unregisterForRadioChanges(SmsSender.java:133)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.service.SmsSender.handleSentMessage(SmsSender.java:94)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:52)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:220)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/SMSListener(10694): Got SMS broadcast...
+W/org.thoughtcrime.securesms.sms.MultipartSmsTransportMessage(10694): Decoded message with version: 1
+W/MultipartSmsMessageHandler(10694): Processing multipart message...
+W/MultipartSmsMessageHandler(10694): Multipart Count: 2
+W/MultipartSmsMessageHandler(10694): Multipart ID: 4
+W/MultipartSmsMessageHandler(10694): Multipart Key: +4478256359384
+W/MultipartSmsMessageHandler(10694): Found multipart container: [Size: 2, Initialized: 1380066737823, Exipired: false, Complete: false]
+W/MultipartSmsMessageHandler(10694): Filled buffer at index: 1
+W/PublicKey(10694): PublicKey Length: 143
+W/RemoteKeyRecord(10694): Loading remote key record for recipient: 1-remote
+W/RemoteKeyRecord(10694): No remote keys found.
+W/LocalKeyRecord(10694): Loading local key record...
+W/PublicKey(10694): PublicKey Length: 120
+W/PublicKey(10694): PublicKey Length: 120
+W/SessionRecord(10694): No session information found.
+W/PublicKey(10694): Serializing public key point: 02 ab 79 54 5e 39 be 02 ce 0a 6b 3c b6 0a a0 73 d7 25 e6 ff d0 7c cc ed 30 df 07 9a a5 31 21 f3 b5 
+W/SmsReceiver(10694): Received key with fingerprint: a6 a1 10 a1 5c 92 5a fa a0 a9 e9 0e 6c f4 85 7a ca e8 23 d8 
+W/KeyExchangeProcessor(10694): Key Exchange High ID Bits: 0
+W/MasterCipher(10694): Macing: 1AQKxmahLrWNXwqG3rmjAjO+SWHyPtZU2J+wVsHwwh22KQw==
+W/MasterCipher(10694): Our Mac: 21 e4 73 59 8d 7c f5 45 a5 e5 f1 6f df 7a 84 cd 61 a4 94 82 
+W/MasterCipher(10694): Thr Mac: 21 e4 73 59 8d 7c f5 45 a5 e5 f1 6f df 7a 84 cd 61 a4 94 82 
+W/MmsSmsDatabase(10694): Executing query: SELECT _id, body, type, thread_id, address, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 15) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 15) ORDER BY date_received DESC) LIMIT 1
+W/RemoteKeyRecord(10694): Saving remote key record for recipient: 1-remote
+W/RemoteKeyRecord(10694): Opened file of size: 0
+W/PublicKey(10694): Serializing public key point: 02 ab 79 54 5e 39 be 02 ce 0a 6b 3c b6 0a a0 73 d7 25 e6 ff d0 7c cc ed 30 df 07 9a a5 31 21 f3 b5 
+W/RemoteKeyRecord(10694): Serializing remote key bytes: 00 07 92 02 ab 79 54 5e 39 be 02 ce 0a 6b 3c b6 0a a0 73 d7 25 e6 ff d0 7c cc ed 30 df 07 9a a5 31 21 f3 b5 
+W/PublicKey(10694): Serializing public key point: 02 ab 79 54 5e 39 be 02 ce 0a 6b 3c b6 0a a0 73 d7 25 e6 ff d0 7c cc ed 30 df 07 9a a5 31 21 f3 b5 
+W/RemoteKeyRecord(10694): Serializing remote key bytes: 00 07 92 02 ab 79 54 5e 39 be 02 ce 0a 6b 3c b6 0a a0 73 d7 25 e6 ff d0 7c cc ed 30 df 07 9a a5 31 21 f3 b5 
+W/PublicKey(10694): Serializing public key point: 02 ab 79 54 5e 39 be 02 ce 0a 6b 3c b6 0a a0 73 d7 25 e6 ff d0 7c cc ed 30 df 07 9a a5 31 21 f3 b5 
+W/PublicKey(10694): Serializing public key point: 02 ab 79 54 5e 39 be 02 ce 0a 6b 3c b6 0a a0 73 d7 25 e6 ff d0 7c cc ed 30 df 07 9a a5 31 21 f3 b5 
+W/KeyExchangeUtil(10694): Setting session version: 1
+W/MasterCipher(10694): Macing: 1AQKxmahLrWNXwqG3rmjAjO+SWHyPtZU2J+wVsHwwh22KQw==
+W/MmsSmsDatabase(10694): Executing query: SELECT _id, body, read, type, address, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+W/NotificationState(10694): Added thread: 15
+W/NotificationState(10694): Pending array off intent length: 1
+W/SMSListener(10694): Got SMS broadcast...
+D/dalvikvm(10694): GC_CONCURRENT freed 2715K, 47% free 10205K/18964K, paused 6ms+17ms, total 72ms
+W/SMSReceiverService(10694): Intent resultcode: -1
+W/SMSReceiverService(10694): Running sent callback: 287
+W/MessageDatabase(10694): Updating ID: 287 to base type: 23
+W/MmsSmsDatabase(10694): Executing query: SELECT _id, body, type, thread_id, address, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 15) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 15) ORDER BY date_received DESC) LIMIT 1
+W/SmsSender(10694): java.lang.IllegalArgumentException: Receiver not registered: org.thoughtcrime.securesms.service.SystemStateListener@42712140
+W/SmsSender(10694):     at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:662)
+W/SmsSender(10694):     at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:1433)
+W/SmsSender(10694):     at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java:468)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.service.SmsSender.unregisterForRadioChanges(SmsSender.java:133)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.service.SmsSender.handleSentMessage(SmsSender.java:94)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:52)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:220)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+V/PanelView(  772): animationTick called with dtms=0; nothing to do (h=1860.0208 v=0.0)
+V/PanelView(  772): animationTick called with dtms=-2; nothing to do (h=1860.0208 v=0.0)
+V/PanelView(  772): animationTick called with dtms=0; nothing to do (h=363.20734 v=-2081.0718)
+W/InputMethodManagerService(  576): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@42036d08 attribute=null, token = android.os.BinderProxy@41afe530
+W/SurfaceFlinger(  232): FB is protected: PERMISSION_DENIED
+W/WindowManager(  576): Screenshot failure taking screenshot for (492x874) to layer 21045
+W/KeyCachingService(10694): Decrementing activity count...
+W/KeyCachingService(10694): Incrementing activity count...
+W/ConversationListFragment(10694): Batch mode: false
+W/SurfaceFlinger(  232): FB is protected: PERMISSION_DENIED
+I/ActivityManager(  576): START u0 {cmp=org.thoughtcrime.securesms/.ConversationActivity (has extras)} from pid 10694
+W/WindowManager(  576): Screenshot failure taking screenshot for (492x874) to layer 21040
+W/KeyCachingService(10694): Decrementing activity count...
+W/MmsSmsDatabase(10694): Executing query: SELECT _id, body, type, thread_id, address, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 15) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 15) ORDER BY date_received ASC)
+W/KeyUtil (10694): Checking session...
+W/LocalKeyRecord(10694): Checking: 1-local
+W/LocalKeyRecord(10694): Checking: 1-remote
+W/LocalKeyRecord(10694): Checking: 1
+W/KeyUtil (10694): Checking session...
+W/LocalKeyRecord(10694): Checking: 1-local
+W/LocalKeyRecord(10694): Checking: 1-remote
+W/LocalKeyRecord(10694): Checking: 1
+W/KeyCachingService(10694): Incrementing activity count...
+E/DatabaseUtils(  900): Writing exception to parcel
+E/DatabaseUtils(  900): java.lang.SecurityException: No permission to write APN settings: Neither user 10088 nor current process has android.permission.WRITE_APN_SETTINGS.
+E/DatabaseUtils(  900):     at android.app.ContextImpl.enforce(ContextImpl.java:1646)
+E/DatabaseUtils(  900):     at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1675)
+E/DatabaseUtils(  900):     at com.android.providers.telephony.TelephonyProvider.checkPermission(TelephonyProvider.java:829)
+E/DatabaseUtils(  900):     at com.android.providers.telephony.TelephonyProvider.query(TelephonyProvider.java:556)
+E/DatabaseUtils(  900):     at android.content.ContentProvider.query(ContentProvider.java:744)
+E/DatabaseUtils(  900):     at android.content.ContentProvider$Transport.query(ContentProvider.java:199)
+E/DatabaseUtils(  900):     at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:114)
+E/DatabaseUtils(  900):     at android.os.Binder.execTransact(Binder.java:388)
+E/DatabaseUtils(  900):     at dalvik.system.NativeStart.run(Native Method)
+W/MmsCommunication(10694): java.lang.SecurityException: No permission to write APN settings: Neither user 10088 nor current process has android.permission.WRITE_APN_SETTINGS.
+W/MmsCommunication(10694):     at android.os.Parcel.readException(Parcel.java:1431)
+W/MmsCommunication(10694):     at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:185)
+W/MmsCommunication(10694):     at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:137)
+W/MmsCommunication(10694):     at android.content.ContentProviderProxy.query(ContentProviderNative.java:385)
+W/MmsCommunication(10694):     at android.content.ContentResolver.query(ContentResolver.java:414)
+W/MmsCommunication(10694):     at android.content.ContentResolver.query(ContentResolver.java:357)
+W/MmsCommunication(10694):     at org.thoughtcrime.securesms.database.MmsDatabase.getCarrierMmsInformation(MmsDatabase.java:584)
+W/MmsCommunication(10694):     at org.thoughtcrime.securesms.mms.MmsCommunication.getMmsConnectionParameters(MmsCommunication.java:92)
+W/MmsCommunication(10694):     at org.thoughtcrime.securesms.mms.MmsSendHelper.hasNecessaryApnDetails(MmsSendHelper.java:119)
+W/MmsCommunication(10694):     at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:569)
+W/MmsCommunication(10694):     at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:566)
+W/MmsCommunication(10694):     at android.os.AsyncTask$2.call(AsyncTask.java:287)
+W/MmsCommunication(10694):     at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+W/MmsCommunication(10694):     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+W/MmsCommunication(10694):     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+W/MmsCommunication(10694):     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+W/MmsCommunication(10694):     at java.lang.Thread.run(Thread.java:841)
+W/MmsSendHelper(10694): org.thoughtcrime.securesms.mms.ApnUnavailableException: No parameters available from ApnDefaults.
+W/MmsSendHelper(10694):     at org.thoughtcrime.securesms.mms.MmsCommunication.getLocalMmsConnectionParameters(MmsCommunication.java:78)
+W/MmsSendHelper(10694):     at org.thoughtcrime.securesms.mms.MmsCommunication.getMmsConnectionParameters(MmsCommunication.java:118)
+W/MmsSendHelper(10694):     at org.thoughtcrime.securesms.mms.MmsSendHelper.hasNecessaryApnDetails(MmsSendHelper.java:119)
+W/MmsSendHelper(10694):     at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:569)
+W/MmsSendHelper(10694):     at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:566)
+W/MmsSendHelper(10694):     at android.os.AsyncTask$2.call(AsyncTask.java:287)
+W/MmsSendHelper(10694):     at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+W/MmsSendHelper(10694):     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+W/MmsSendHelper(10694):     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+W/MmsSendHelper(10694):     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+W/MmsSendHelper(10694):     at java.lang.Thread.run(Thread.java:841)
+W/MmsSmsDatabase(10694): Executing query: SELECT _id, body, read, type, address, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+I/dalvikvm(10694): Jit: resizing JitTable from 8192 to 16384
+I/ActivityManager(  576): Displayed org.thoughtcrime.securesms/.ConversationActivity: +347ms
+D/dalvikvm(  849): GC_CONCURRENT freed 2147K, 53% free 8948K/18964K, paused 3ms+10ms, total 54ms
+W/ConversationActivity(10694): Sending message...
+W/MmsSmsDatabase(10694): Executing query: SELECT _id, body, type, thread_id, address, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 15) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 15) ORDER BY date_received DESC) LIMIT 1
+W/SMSSender(10694): Got message id for new message: 289
+W/SmsSender(10694): Sending message: 289
+W/MessageDatabase(10694): Updating ID: 289 to base type: 22
+W/MmsSmsDatabase(10694): Executing query: SELECT _id, body, type, thread_id, address, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 15) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 15) ORDER BY date_received DESC) LIMIT 1
+W/SessionCipher(10694): Constructing session cipher...
+W/LocalKeyRecord(10694): Loading local key record...
+W/PublicKey(10694): PublicKey Length: 120
+W/PublicKey(10694): PublicKey Length: 120
+W/RemoteKeyRecord(10694): Loading remote key record for recipient: 1-remote
+W/PublicKey(10694): PublicKey Length: 36
+W/PublicKey(10694): PublicKey Length: 36
+W/SessionCipher(10694): Encrypting message...
+W/SessionCipher(10694): Getting session key for local: 1938 remote: 1938
+D/dalvikvm(  576): GC_CONCURRENT freed 9289K, 45% free 28732K/51412K, paused 3ms+9ms, total 84ms
+D/dalvikvm(10694): GC_CONCURRENT freed 2585K, 47% free 10212K/18964K, paused 3ms+13ms, total 58ms
+D/dalvikvm(10694): WAIT_FOR_CONCURRENT_GC blocked 26ms
+W/CursorWrapperInner(10694): Cursor finalized without prior close()
+W/SessionCipher(10694): Padding message body out to: 60
+W/Message (10694): Constructing Message Version: (1,1)
+W/Message (10694): Serializing next key into message...
+W/PublicKey(10694): Serializing public key point: 03 4e 33 c9 7e b5 f5 4a f7 9b f9 b9 07 ef f1 38 01 11 91 ee a5 1a 5c 51 5f bb be 0f d1 f1 7a 8f d7 
+W/SmsTransportDetails(10694): Encoded Message Length: 155
+W/org.thoughtcrime.securesms.sms.MultipartSmsTransportMessage(10694): Complete fragment size: 160
+W/SmsTransport(10694): Secure divide into message parts: 1
+W/SMSListener(10694): Got SMS broadcast...
+W/org.thoughtcrime.securesms.sms.MultipartSmsTransportMessage(10694): Decoded message with version: 1
+W/MultipartSmsMessageHandler(10694): Processing single part message...
+W/MmsSmsDatabase(10694): Executing query: SELECT _id, body, type, thread_id, address, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 15) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 15) ORDER BY date_received DESC) LIMIT 1
+W/DecryptingQueue(10694): Parsing recipient for originator: +447825635938
+W/DecryptingQueue(10694): Parsed Recipient: +447825635938
+W/KeyUtil (10694): Checking session...
+W/LocalKeyRecord(10694): Checking: 1-local
+W/LocalKeyRecord(10694): Checking: 1-remote
+W/LocalKeyRecord(10694): Checking: 1
+W/SessionCipher(10694): Constructing session cipher...
+W/LocalKeyRecord(10694): Loading local key record...
+W/PublicKey(10694): PublicKey Length: 120
+W/PublicKey(10694): PublicKey Length: 120
+W/RemoteKeyRecord(10694): Loading remote key record for recipient: 1-remote
+W/PublicKey(10694): PublicKey Length: 36
+W/PublicKey(10694): PublicKey Length: 36
+W/SessionCipher(10694): Decrypting message...
+W/Message (10694): Message Version: 1
+W/Message (10694): Supported Version: 1
+W/Message (10694): Parsed current version: 1 supported version: 1
+W/Message (10694): Pulling next key out of message...
+W/PublicKey(10694): PublicKey Length: 36
+W/SessionCipher(10694): Getting session key for local: 1938 remote: 1938
+D/QCUtils (  235): extended extractor not needed, return default
+E/AwesomePlayer(  235): LPAPlayer::Clip duration setting of less than 30sec not supported, defaulting to 60sec
+I/OMXNodeInstance(  235): OMX_FreeBuffer for buffer header 0x419e9df0 successful
+I/OMXNodeInstance(  235): OMX_FreeBuffer for buffer header 0x407bdb68 successful
+I/OMXNodeInstance(  235): OMX_FreeBuffer for buffer header 0x41a884c0 successful
+I/OMXNodeInstance(  235): OMX_FreeBuffer for buffer header 0x436b9de8 successful
+W/mm      (10694): Local Mac: 1e 15 20 a0 29 04 bc 1e e4 5d 
+W/mm      (10694): Remot Mac: 2e c5 31 f9 35 cd a8 8a d6 87 
+W/DecryptionQueue(10694): org.thoughtcrime.securesms.crypto.InvalidMessageException: Bad MAC
+W/DecryptionQueue(10694):     at org.thoughtcrime.securesms.crypto.SessionCipher.decryptMessage(SessionCipher.java:133)
+W/DecryptionQueue(10694):     at org.thoughtcrime.securesms.crypto.DecryptingQueue$DecryptionWorkItem.handleRemoteAsymmetricEncrypt(DecryptingQueue.java:272)
+W/DecryptionQueue(10694):     at org.thoughtcrime.securesms.crypto.DecryptingQueue$DecryptionWorkItem.run(DecryptingQueue.java:339)
+W/DecryptionQueue(10694):     at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/DecryptionQueue(10694): Caused by: org.thoughtcrime.securesms.crypto.InvalidMacException: MAC on message does not match calculated MAC.
+W/DecryptionQueue(10694):     at org.thoughtcrime.securesms.crypto.MessageMac.verifyMac(MessageMac.java:82)
+W/DecryptionQueue(10694):     at org.thoughtcrime.securesms.crypto.SessionCipher.decryptMessage(SessionCipher.java:112)
+W/DecryptionQueue(10694):     ... 3 more
+W/MessageDatabase(10694): Updating ID: 290 to base type: 268435456
+W/MmsSmsDatabase(10694): Executing query: SELECT _id, body, type, thread_id, address, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 15) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 15) ORDER BY date_received DESC) LIMIT 1
+W/SMSListener(10694): Got SMS broadcast...
+W/SMSReceiverService(10694): Intent resultcode: -1
+W/SMSReceiverService(10694): Running sent callback: 289
+W/MessageDatabase(10694): Updating ID: 289 to base type: 23
+W/MmsSmsDatabase(10694): Executing query: SELECT _id, body, type, thread_id, address, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 15) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 15) ORDER BY date_received DESC) LIMIT 1
+W/SmsSender(10694): java.lang.IllegalArgumentException: Receiver not registered: org.thoughtcrime.securesms.service.SystemStateListener@42712140
+W/SmsSender(10694):     at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:662)
+W/SmsSender(10694):     at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:1433)
+W/SmsSender(10694):     at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java:468)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.service.SmsSender.unregisterForRadioChanges(SmsSender.java:133)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.service.SmsSender.handleSentMessage(SmsSender.java:94)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:52)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:220)
+W/SmsSender(10694):     at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)

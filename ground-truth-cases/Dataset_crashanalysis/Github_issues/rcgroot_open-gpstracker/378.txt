@@ -1,0 +1,29 @@
+  1263         AndroidRuntime  E  java.lang.NoClassDefFoundError: android.security.MessageDigest
+  1263         AndroidRuntime  E    at com.google.android.maps.KeyHelper.getSignatureFingerprint(KeyHelper.java:60)
+  1263         AndroidRuntime  E    at com.google.android.maps.MapActivity.createMap(MapActivity.java:513)
+  1263         AndroidRuntime  E    at com.google.android.maps.MapActivity.onCreate(MapActivity.java:409)
+  1263         AndroidRuntime  E    at nl.sogeti.android.gpstracker.viewer.LoggerMap.onCreate(LoggerMap.java:180)
+  1263         AndroidRuntime  E    at android.app.Activity.performCreate(Activity.java:4492)
+  1263         AndroidRuntime  E    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1049)
+  1263         AndroidRuntime  E    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1920)
+  1263         AndroidRuntime  E    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1981)
+  1263         AndroidRuntime  E    at android.app.ActivityThread.access$600(ActivityThread.java:123)
+  1263         AndroidRuntime  E    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1147)
+  1263         AndroidRuntime  E    at android.os.Handler.dispatchMessage(Handler.java:99)
+  1263         AndroidRuntime  E    at android.os.Looper.loop(Looper.java:137)
+  1263         AndroidRuntime  E    at android.app.ActivityThread.main(ActivityThread.java:4424)
+  1263         AndroidRuntime  E    at java.lang.reflect.Method.invokeNative(Native Method)
+  1263         AndroidRuntime  E    at java.lang.reflect.Method.invoke(Method.java:511)
+  1263         AndroidRuntime  E    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+  1263         AndroidRuntime  E    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+  1263         AndroidRuntime  E    at dalvik.system.NativeStart.main(Native Method)
+  149         ActivityManager  W  Process nl.sogeti.android.gpstracker has crashed too many times: killing!
+  149         ActivityManager  W    Force finishing activity nl.sogeti.android.gpstracker/.viewer.LoggerMap
+  149         ActivityManager  I  Killing proc 1263:nl.sogeti.android.gpstracker/10048: crash
+  149     InputManagerService  W  Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@412af1e0
+  457          wpa_supplicant  I  [CTRL_IFACE]SIGNAL_POLL
+
+
+```
+
+Original issue reported on code.google.com by `tobias.preuss` on 29 Mar 2013 at 10:45

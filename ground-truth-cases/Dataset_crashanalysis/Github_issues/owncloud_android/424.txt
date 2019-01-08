@@ -1,0 +1,31 @@
+```
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058): Connection check at https://cloud.mydomain.com/status.php: HTTP violation
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058): org.apache.commons.httpclient.ProtocolException: Unable to parse header: Anarchy webserver
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at org.apache.commons.httpclient.HttpParser.parseHeaders(HttpParser.java:202)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at org.apache.commons.httpclient.HttpMethodBase.readResponseHeaders(HttpMethodBase.java:1935)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1737)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at com.owncloud.android.lib.network.OwnCloudClient.executeMethod(OwnCloudClient.java:177)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at com.owncloud.android.lib.network.OwnCloudClient.executeMethod(OwnCloudClient.java:157)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at com.owncloud.android.lib.operations.remote.OwnCloudServerCheckOperation.tryConnection(OwnCloudServerCheckOperation.java:82)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at com.owncloud.android.lib.operations.remote.OwnCloudServerCheckOperation.run(OwnCloudServerCheckOperation.java:146)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at com.owncloud.android.lib.operations.common.RemoteOperation.run(RemoteOperation.java:222)
+03-08 11:47:26.094 E/OwnCloudServerCheckOperation(5058):    at java.lang.Thread.run(Thread.java:841)
+...
+03-08 11:47:29.147 E/OwnCloudServerCheckOperation(5058):    at java.lang.Thread.run(Thread.java:841)
+03-08 11:47:40.558 E/OwnCloudServerCheckOperation(5058): Connection check at http://cloud.mydomain.com/status.php: Socket timeout exception
+03-08 11:47:40.558 E/OwnCloudServerCheckOperation(5058): java.net.SocketTimeoutException
+03-08 11:47:40.558 E/OwnCloudServerCheckOperation(5058):    at java.net.PlainSocketImpl.read(PlainSocketImpl.java:492)
+03-08 11:47:40.558 E/OwnCloudServerCheckOperation(5058):    at java.net.PlainSocketImpl.access$000(PlainSocketImpl.java:46)
+03-08 11:47:40.558 E/OwnCloudServerCheckOperation(5058):    at java.net.PlainSocketImpl$PlainSocketInputStream.read(PlainSocketImpl.java:241)
+03-08 11:47:40.558 E/OwnCloudServerCheckOperation(5058):    at java.io.InputStream.read(InputStream.java:163)
+03-08 11:47:40.558 E/OwnCloudServerCheckOperation(5058):    at java.io.BufferedInputStream.fillbuf(BufferedInputStream.java:142)
+03-08 11:47:40.558 E/OwnCloudServerCheckOperation(5058):    at java.io.BufferedInputStream.read(BufferedInputStream.java:227)
+03-08 11:47:40.558 E/OwnCloudServerCheckOperation(5058):    at org.apache.commons.httpclient.HttpParser.readRawLine(HttpParser.java:78)
+03-08 11:47:40.558 E/OwnCloudServerCheckOperation(5058):    at org.apache.commons.httpclient.HttpParser.readLine(HttpParser.java:106)
+03-08 11:47:40.558 E/OwnCloudServerCheckOperation(5058):    at org.apache.commons.httpclient.HttpConnection.readLine(HttpConnection.java:1116)
+03-08 11:47:40.558 E/OwnCloudServerCheckOperation(5058):    at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.readLine(MultiThreadedHttpConnectionManager.java:1413)

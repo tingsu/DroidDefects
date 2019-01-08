@@ -1,0 +1,8 @@
+E/AndroidRuntime(22475): java.lang.NullPointerException
+E/AndroidRuntime(22475):    at com.ubergeek42.WeechatAndroid.fragments.BufferFragment.onBufferClosed(BufferFragment.java:234)
+E/AndroidRuntime(22475):    at com.ubergeek42.weechat.Buffer.destroy(Buffer.java:264)
+E/AndroidRuntime(22475):    at com.ubergeek42.weechat.relay.messagehandler.BufferManager.handleMessage(BufferManager.java:202)
+E/AndroidRuntime(22475):    at com.ubergeek42.weechat.relay.RelayConnection.handleMessage(RelayConnection.java:567)
+E/AndroidRuntime(22475):    at com.ubergeek42.weechat.relay.RelayConnection.access$1600(RelayConnection.java:56)
+E/AndroidRuntime(22475):    at com.ubergeek42.weechat.relay.RelayConnection$5.run(RelayConnection.java:507)
+E/AndroidRuntime(22475):    at java.lang.Thread.run(Thread.java:856)

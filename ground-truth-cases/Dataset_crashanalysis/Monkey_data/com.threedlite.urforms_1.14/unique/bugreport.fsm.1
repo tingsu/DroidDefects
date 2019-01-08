@@ -1,0 +1,33 @@
+//this is an auto-generated bug report
+//package name: com.threedlite.urforms
+//version: 1.14
+//appro_time: 79
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.threedlite.urforms/com.threedlite.urforms.SearchResultsActivity}: android.database.sqlite.SQLiteException: near "order": syntax error (code 1): , while compiling: order by i0  limit 100
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.database.sqlite.SQLiteException: near "order": syntax error (code 1): , while compiling: order by i0  limit 100
+ 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+ 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:500)
+ 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+ 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+ 	at android.database.sqlite.SQLiteQuery.<init>(SQLiteQuery.java:37)
+ 	at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:44)
+ 	at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1314)
+ 	at android.database.sqlite.SQLiteDatabase.rawQuery(SQLiteDatabase.java:1253)
+ 	at com.threedlite.urforms.data.DataDao.search(DataDao.java:271)
+ 	at com.threedlite.urforms.SearchResultsActivity.doSearch(SearchResultsActivity.java:105)
+ 	at com.threedlite.urforms.SearchResultsActivity.onCreate(SearchResultsActivity.java:57)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)

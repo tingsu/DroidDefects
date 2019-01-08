@@ -1,0 +1,8 @@
+//this is an auto-generated bug report
+//package name: tk.jordynsmediagroup.simpleirc
+//version: 1.6
+//appro_time: 125
+ java.lang.ExceptionInInitializerError
+ 	at tk.jordynsmediagroup.simpleirc.irc.IRCService$1.run(Unknown Source)
+ Caused by: java.lang.NullPointerException
+ 	at tk.jordynsmediagroup.simpleirc.g.a.<clinit>(Unknown Source)

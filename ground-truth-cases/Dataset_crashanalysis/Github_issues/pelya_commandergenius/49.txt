@@ -1,0 +1,21 @@
+> 
+> I am on said phone at the moment so forgive my bad log posting. Also note that I am rooted (using superuser, not superSU).
+> 
+> I suck at using locgat, so if this is not enough to go on, I've made a backup of my entire logcat output. Let me know when you need more info.
+> 
+> I think it should be enough though, since it clearly looks like an issue with threading. I have threading turned off in the settings, btw.
+
+```
+I/ActivityManager(  807): Start proc org.openmsx.android.openmsx for activity org.openmsx.android.openmsx/.MainActivity: pid=19671 uid=10211 gids={50211, 9997, 1028, 1015} abi=armeabi
+E/AndroidRuntime(19671): FATAL EXCEPTION: Thread-2069
+E/AndroidRuntime(19671): Process: org.openmsx.android.openmsx, PID: 19671
+E/AndroidRuntime(19671): android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
+E/AndroidRuntime(19671):    at android.view.ViewRootImpl.checkThread(ViewRootImpl.java:6247)
+E/AndroidRuntime(19671):    at android.view.ViewRootImpl.recomputeViewAttributes(ViewRootImpl.java:2877)
+E/AndroidRuntime(19671):    at android.view.ViewGroup.recomputeViewAttributes(ViewGroup.java:1292)
+E/AndroidRuntime(19671):    at android.view.ViewGroup.recomputeViewAttributes(ViewGroup.java:1292)
+E/AndroidRuntime(19671):    at android.view.ViewGroup.recomputeViewAttributes(ViewGroup.java:1292)
+E/AndroidRuntime(19671):    at android.view.View.setSystemUiVisibility(View.java:17970)
+E/AndroidRuntime(19671):    at org.openmsx.android.openmsx.DimSystemStatusBar$DimSystemStatusBarHoneycomb.dim(MainActivity.java:1302)
+E/AndroidRuntime(19671):    at org.openmsx.android.openmsx.MainActivity$1.run(MainActivity.java:296)
+E/AndroidRuntime(19671):    at java.lang.Thread.run(Thread.java:818)

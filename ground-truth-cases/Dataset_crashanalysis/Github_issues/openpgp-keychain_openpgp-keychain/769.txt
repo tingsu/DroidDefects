@@ -1,0 +1,12 @@
+ 16051               Keychain  E  encountered pgp error while modifying key
+ 16051               Keychain  E  org.spongycastle.openpgp.PGPException: checksum mismatch at 0 of 20
+ 16051               Keychain  E  at org.spongycastle.openpgp.PGPSecretKey.extractKeyData(PGPSecretKey.java:479)
+ 16051               Keychain  E  at org.spongycastle.openpgp.PGPSecretKey.copyWithNewPassword(PGPSecretKey.java:800)
+ 16051               Keychain  E  at org.spongycastle.openpgp.PGPSecretKeyRing.copyWithNewPassword(PGPSecretKeyRing.java:389)
+ 16051               Keychain  E  at org.sufficientlysecure.keychain.pgp.PgpKeyOperation.internal(PgpKeyOperation.java:728)
+ 16051               Keychain  E  at org.sufficientlysecure.keychain.pgp.PgpKeyOperation.modifySecretKeyRing(PgpKeyOperation.java:327)
+ 16051               Keychain  E  at org.sufficientlysecure.keychain.service.KeychainIntentService.onHandleIntent(KeychainIntentService.java:407)
+ 16051               Keychain  E  at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+ 16051               Keychain  E  at android.os.Handler.dispatchMessage(Handler.java:102)
+ 16051               Keychain  E  at android.os.Looper.loop(Looper.java:136)
+ 16051               Keychain  E  at android.os.HandlerThread.run(HandlerThread.java:61)

@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: de.tui.itlogger
+//version: 1.0.0
+//appro_time: 22
+ android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (code 14): Could not open database
+ 	at android.database.sqlite.SQLiteConnection.nativeOpen(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:209)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+ 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+ 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:804)
+ 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:789)
+ 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:694)
+ 	at android.database.sqlite.SQLiteDatabase.openOrCreateDatabase(SQLiteDatabase.java:709)
+ 	at de.tui.itlogger.SQLite.onCreateDBAndDBTabled(SQLite.java:39)
+ 	at de.tui.itlogger.iTloggerActivity$1.onClick(iTloggerActivity.java:473)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

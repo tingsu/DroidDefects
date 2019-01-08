@@ -1,0 +1,31 @@
+java.lang.RuntimeException: An error occured while executing doInBackground()
+    at android.os.AsyncTask$3.done(AsyncTask.java:200)
+    at java.util.concurrent.FutureTask$Sync.innerSetException(FutureTask.java:273)
+    at java.util.concurrent.FutureTask.setException(FutureTask.java:124)
+    at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:307)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1068)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:561)
+    at java.lang.Thread.run(Thread.java:1096)
+Caused by: java.lang.OutOfMemoryError
+    at java.lang.AbstractStringBuilder.enlargeBuffer(AbstractStringBuilder.java:97)
+    at java.lang.AbstractStringBuilder.append0(AbstractStringBuilder.java:155)
+    at java.lang.StringBuilder.append(StringBuilder.java:216)
+    at java.lang.String.replace(String.java:1564)
+    at org.ttrssreader.net.TTRSSJsonConnector.doRequest(TTRSSJsonConnector.java:126)
+    at org.ttrssreader.net.TTRSSJsonConnector.getJSONResponse(TTRSSJsonConnector.java:192)
+    at org.ttrssreader.net.TTRSSJsonConnector.login(TTRSSJsonConnector.java:217)
+    at org.ttrssreader.net.TTRSSJsonConnector.getCounters(TTRSSJsonConnector.java:504)
+    at org.ttrssreader.controllers.Data.updateCounters(Data.java:133)
+    at org.ttrssreader.model.category.CategoryListAdapter.update(CategoryListAdapter.java:221)
+    at org.ttrssreader.model.Updater.doInBackground(Updater.java:46)
+    at org.ttrssreader.model.Updater.doInBackground(Updater.java:1)
+    at android.os.AsyncTask$2.call(AsyncTask.java:185)
+    at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+    ... 4 more
+
+
+
+```
+
+Original issue reported on code.google.com by `bilkeand...@googlemail.com` on 21 Dec 2010 at 7:55

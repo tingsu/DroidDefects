@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: ru0xdc.rtkgps
+//version: 1.0
+//appro_time: 153
+ java.lang.NoSuchMethodError: no static method with name='getPathInStorageDirectory' signature='(Ljava/lang/String;)Ljava/lang/String;' in class Lru0xdc/rtklib/RtkServer;
+ 	at ru0xdc.rtklib.RtkServer._rtksvrstart(Native Method)
+ 	at ru0xdc.rtklib.RtkServer.start(RtkServer.java:43)
+ 	at ru0xdc.rtkgps.RtkNaviService.processStart(RtkNaviService.java:130)
+ 	at ru0xdc.rtkgps.RtkNaviService.onStartCommand(RtkNaviService.java:64)
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2704)
+ 	at android.app.ActivityThread.access$1900(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1353)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

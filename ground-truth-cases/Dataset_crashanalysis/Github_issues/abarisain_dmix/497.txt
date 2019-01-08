@@ -1,0 +1,11 @@
+    org.a0z.mpd.exception.MPDConnectionException: MPD Connection is not established
+            at org.a0z.mpd.MPD.getStatus(MPD.java:1004)
+            at org.a0z.mpd.MPD.getStatus(MPD.java:992)
+            at com.namelessdev.mpdroid.fragments.NowPlayingSmallFragment$updateTrackInfoAsync.doInBackground(NowPlayingSmallFragment.java:65)
+            at com.namelessdev.mpdroid.fragments.NowPlayingSmallFragment$updateTrackInfoAsync.doInBackground(NowPlayingSmallFragment.java:54)
+            at android.os.AsyncTask$2.call(AsyncTask.java:288)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:841)

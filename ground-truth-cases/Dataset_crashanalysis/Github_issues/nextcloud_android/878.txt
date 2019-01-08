@@ -1,0 +1,14 @@
+` Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+                                                                          at com.owncloud.android.ui.activity.DrawerActivity.updateQuotaLink(DrawerActivity.java:832)
+                                                                          at com.owncloud.android.ui.activity.DrawerActivity.onPostCreate(DrawerActivity.java:1034)
+                                                                          at android.app.Instrumentation.callActivityOnPostCreate(Instrumentation.java:1199)
+                                                                          at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2628)
+                                                                          at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2707) 
+                                                                          at android.app.ActivityThread.-wrap12(ActivityThread.java) 
+                                                                          at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1460) 
+                                                                          at android.os.Handler.dispatchMessage(Handler.java:102) 
+                                                                          at android.os.Looper.loop(Looper.java:154) 
+                                                                          at android.app.ActivityThread.main(ActivityThread.java:6077) 
+                                                                          at java.lang.reflect.Method.invoke(Native Method) 
+                                                                          at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:865) 
+                                                                          at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:755) `

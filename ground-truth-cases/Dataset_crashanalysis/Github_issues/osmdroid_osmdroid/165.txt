@@ -1,0 +1,11 @@
+E/MapTileDownloader(27496): java.lang.SecurityException: ConnectivityService: Neither user 10110 nor current process has android.permission.ACCESS_NETWORK_STATE.
+E/MapTileDownloader(27496):     at android.os.Parcel.readException(Parcel.java:1546) ~[na:0.0]
+E/MapTileDownloader(27496):     at android.os.Parcel.readException(Parcel.java:1499) ~[na:0.0]
+E/MapTileDownloader(27496):     at android.net.IConnectivityManager$Stub$Proxy.getActiveNetworkInfo(IConnectivityManager.java:945) ~[na:0.0]
+E/MapTileDownloader(27496):     at android.net.ConnectivityManager.getActiveNetworkInfo(ConnectivityManager.java:598) ~[na:0.0]
+E/MapTileDownloader(27496):     at org.osmdroid.tileprovider.modules.NetworkAvailabliltyCheck.getNetworkAvailable(NetworkAvailabliltyCheck.java:27) ~[na:0.0]
+E/MapTileDownloader(27496):     at org.osmdroid.tileprovider.modules.MapTileDownloader$TileLoader.loadTile(MapTileDownloader.java:166) ~[na:0.0]
+E/MapTileDownloader(27496):     at org.osmdroid.tileprovider.modules.MapTileModuleProviderBase$TileLoader.run(MapTileModuleProviderBase.java:293) ~[na:0.0]
+E/MapTileDownloader(27496):     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112) ~[na:0.0]
+E/MapTileDownloader(27496):     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587) ~[na:0.0]
+E/MapTileDownloader(27496):     at java.lang.Thread.run(Thread.java:818) ~[na:0.0]

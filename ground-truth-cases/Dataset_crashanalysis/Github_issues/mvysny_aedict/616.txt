@@ -1,0 +1,7 @@
+java.lang.RuntimeException: 出ru is not ichidan
+    at sk.baka.aedict.inflection.VerbInflection$AbstractBaseInflector.getIchidanForm1(VerbInflection.java:323)
+    at sk.baka.aedict.inflection.VerbInflection$Base1Inflector.inflectIchidan(VerbInflection.java:50)
+    at sk.baka.aedict.inflection.VerbInflection$AbstractBaseInflector.inflect(VerbInflection.java:377)
+    at sk.baka.aedict3.dict.VerbInflectionFragment.buildAndSetAdapterVerb(VerbInflectionFragment.java:242)
+    at sk.baka.aedict3.dict.VerbInflectionFragment.buildAndSetAdapter(VerbInflectionFragment.java:142)
+    at sk.baka.aedict3.dict.VerbInflectionFragment.onActivityCreated(VerbInflectionFragment.java:64)

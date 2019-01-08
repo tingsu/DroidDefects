@@ -1,0 +1,5 @@
+java.lang.ArrayIndexOutOfBoundsException: length=4; index=4
+    at org.cyanogenmod.wallpapers.photophase.utils.DispositionUtil.toMatrix(DispositionUtil.java:95)
+    at org.cyanogenmod.wallpapers.photophase.widgets.DispositionView.computeNewDispositions(DispositionView.java:605)
+    at org.cyanogenmod.wallpapers.photophase.widgets.DispositionView.onEndResize(DispositionView.java:473)
+    at org.cyanogenmod.wallpapers.photophase.widgets.ResizeFrame.onTouchEvent(ResizeFrame.java:253)

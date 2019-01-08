@@ -1,0 +1,43 @@
+W/dalvikvm(14541): VFY: unable to resolve static method 109: Landroid/app/ActivityOptions;.makeSceneTransitionAnimation (Landroid/app/Activity;Landroid/view/View;Ljava/lang/String;)Landroid/app/ActivityOptions;
+D/dalvikvm(14541): VFY: replacing opcode 0x71 at 0x0012
+D/ActivityThread(14634): handleBindApplication:org.sufficientlysecure.keychain:sync
+D/ActivityThread(14634): setTargetHeapUtilization:0.75
+D/ActivityThread(14634): setTargetHeapMinFree:2097152
+I/ViewUtils(14541): app:theme is now deprecated. Please move to using android:theme instead.
+I/ViewUtils(14541): app:theme is now deprecated. Please move to using android:theme instead.
+I/dalvikvm(14541): Could not find method android.nfc.NfcAdapter.invokeBeam, referenced from method org.sufficientlysecure.keychain.util.NfcHelper.invokeNfcBeam
+W/dalvikvm(14541): VFY: unable to resolve virtual method 1252: Landroid/nfc/NfcAdapter;.invokeBeam (Landroid/app/Activity;)Z
+D/dalvikvm(14541): VFY: replacing opcode 0x6e at 0x006d
+I/dalvikvm(14541): Could not find method android.view.View.getElevation, referenced from method com.nispok.snackbar.Snackbar.showInternal
+W/dalvikvm(14541): VFY: unable to resolve virtual method 15151: Landroid/view/View;.getElevation ()F
+D/dalvikvm(14541): VFY: replacing opcode 0x6e at 0x0014
+D/NfcDispatcher( 1015): Set Foreground Dispatch
+I/ActivityManager(  589): Displayed org.sufficientlysecure.keychain/.ui.ViewKeyActivity: +310ms
+D/ALSADevice(  229): standby: handle 0xb8adeb10 h 0x0
+D/alsa_ucm(  229): snd_use_case_set(): uc_mgr 0xb8aba3a0 identifier _verb value Inactive
+D/alsa_ucm(  229): Set mixer controls for HiFi Lowlatency enable 0
+D/alsa_ucm(  229): Setting mixer control: SLIMBUS_0_RX Audio Mixer MultiMedia5, value: 0
+D/alsa_ucm(  229): snd_use_case_set(): uc_mgr 0xb8aba3a0 identifier _disdev value Speaker
+D/alsa_ucm(  229): Set mixer controls for Speaker enable 0
+D/alsa_ucm(  229): Setting mixer control: RX5 MIX1 INP1, value: ZERO
+D/alsa_ucm(  229): Setting mixer control: RX5 MIX1 INP2, value: ZERO
+D/alsa_ucm(  229): Setting mixer control: LINEOUT2 Volume, value: 0
+D/alsa_ucm(  229): Setting mixer control: LINEOUT4 Volume, value: 0
+D/alsa_ucm(  229): Setting mixer control: RX5 Digital Volume, value: 0
+D/AudioUsbALSA(  229): exitPlaybackThread, mproxypfdPlayback: -1
+D/AudioUsbALSA(  229): closeDevice handle 0x0
+D/AudioUsbALSA(  229): closeDevice handle 0x0
+I/Timeline(14541): Timeline: Activity_idle id: android.os.BinderProxy@41d4bf38 time:1105157
+I/Timeline(  589): Timeline: Activity_windows_visible id: ActivityRecord{42992690 u0 org.sufficientlysecure.keychain/.ui.ViewKeyActivity t26} time:1105321
+W/dalvikvm(14541): threadid=19: thread exiting with uncaught exception (group=0x41749ce0)
+E/AndroidRuntime(14541): FATAL EXCEPTION: IntentService[KeychainIntentService]
+E/AndroidRuntime(14541): Process: org.sufficientlysecure.keychain, PID: 14541
+E/AndroidRuntime(14541): java.lang.NullPointerException
+E/AndroidRuntime(14541):        at org.spongycastle.openpgp.PGPSecretKeyRing.insertSecretKey(PGPSecretKeyRing.java:337)
+E/AndroidRuntime(14541):        at org.sufficientlysecure.keychain.pgp.CanonicalizedPublicKeyRing.createDivertSecretRing(CanonicalizedPublicKeyRing.java:117)
+E/AndroidRuntime(14541):        at org.sufficientlysecure.keychain.operations.PromoteKeyOperation.execute(PromoteKeyOperation.java:87)
+E/AndroidRuntime(14541):        at org.sufficientlysecure.keychain.service.KeychainIntentService.onHandleIntent(KeychainIntentService.java:484)
+E/AndroidRuntime(14541):        at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+E/AndroidRuntime(14541):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(14541):        at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(14541):        at android.os.HandlerThread.run(HandlerThread.java:61)

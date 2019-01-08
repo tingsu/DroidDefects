@@ -1,0 +1,41 @@
+Example errors (each from a different crash)
+11-08 22:31:24.878: A/libc(13885): Fatal signal 11 (SIGSEGV) at 0x75282000 (code=1), thread 13903 (pool-1-thread-1)
+
+11-08 22:39:48.720: A/libc(20017): Fatal signal 11 (SIGSEGV) at 0x737d5000 (code=1), thread 20048 (pool-1-thread-1)
+
+11-08 22:41:58.737: A/libc(20544): heap corruption detected by dlmalloc
+11-08 22:41:58.737: A/libc(20544): Fatal signal 6 (SIGABRT) at 0x00005040 (code=-6), thread 20636 (AsyncTask #5)
+11-08 22:41:58.737: A/libc(20544): Fatal signal 11 (SIGSEGV) at 0x7ede9000 (code=1), thread 20561 (pool-1-thread-1)
+
+More complete content from LogCat:
+11-08 22:41:58.597: W/MmsCommunication(20544):  at android.os.Parcel.readException(Parcel.java:1461)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:185)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:137)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at android.content.ContentProviderProxy.query(ContentProviderNative.java:413)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at android.content.ContentResolver.query(ContentResolver.java:461)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at android.content.ContentResolver.query(ContentResolver.java:404)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at org.thoughtcrime.securesms.database.MmsDatabase.getCarrierMmsInformation(MmsDatabase.java:598)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at org.thoughtcrime.securesms.mms.MmsCommunication.getMmsConnectionParameters(MmsCommunication.java:95)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at org.thoughtcrime.securesms.mms.MmsSendHelper.hasNecessaryApnDetails(MmsSendHelper.java:119)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:591)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:588)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at android.os.AsyncTask$2.call(AsyncTask.java:288)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+11-08 22:41:58.597: W/MmsCommunication(20544):  at java.lang.Thread.run(Thread.java:841)
+11-08 22:41:58.677: W/ImageSlide(20544): Got soft reference: null
+11-08 22:41:58.677: E/SpannableStringBuilder(20544): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+11-08 22:41:58.677: E/SpannableStringBuilder(20544): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+11-08 22:41:58.687: W/ImageSlide(20544): Got soft reference: null
+11-08 22:41:58.687: W/Slide(20544): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/18
+11-08 22:41:58.687: W/PartDatabase(20544): Getting part at ID: 18
+11-08 22:41:58.707: W/EncryptingPartDatabase(20544): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1763669776.mms
+11-08 22:41:58.717: W/Slide(20544): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/18
+11-08 22:41:58.717: W/PartDatabase(20544): Getting part at ID: 18
+11-08 22:41:58.727: W/EncryptingPartDatabase(20544): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1763669776.mms
+11-08 22:41:58.727: W/MmsSmsDatabase(20544): Executing query: SELECT _id, body, read, type, address, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+11-08 22:41:58.737: A/libc(20544): heap corruption detected by dlmalloc
+11-08 22:41:58.737: A/libc(20544): Fatal signal 6 (SIGABRT) at 0x00005040 (code=-6), thread 20636 (AsyncTask #5)
+11-08 22:41:58.737: A/libc(20544): Fatal signal 11 (SIGSEGV) at 0x7ede9000 (code=1), thread 20561 (pool-1-thread-1)

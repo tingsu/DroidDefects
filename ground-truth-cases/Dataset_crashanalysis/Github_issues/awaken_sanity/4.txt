@@ -1,0 +1,26 @@
+we recently tested your app by an automated Android GUI testing tool developed by our team, and here is the suspicious code snippet:
+![screen shot 2016-04-13 at 2 05 06 pm](https://cloud.githubusercontent.com/assets/14055020/14484201/e54764be-0180-11e6-83a5-b72e27ae507e.png)
+Here is the logcat:
+E/AndroidRuntime( 4012): FATAL EXCEPTION: main
+E/AndroidRuntime( 4012): Process: a3e.process, PID: 4012
+E/AndroidRuntime( 4012): java.lang.RuntimeException: Unable to start activity ComponentInfo{cri.sanity/cri.sanity.screen.VibraActivity}: java.lang.NullPointerException
+E/AndroidRuntime( 4012):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2209)
+E/AndroidRuntime( 4012):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2258)
+E/AndroidRuntime( 4012):    at android.app.ActivityThread.access$800(ActivityThread.java:147)
+E/AndroidRuntime( 4012):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1211)
+E/AndroidRuntime( 4012):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 4012):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 4012):    at android.app.ActivityThread.main(ActivityThread.java:5135)
+E/AndroidRuntime( 4012):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 4012):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 4012):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+E/AndroidRuntime( 4012):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:611)
+E/AndroidRuntime( 4012):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 4012): Caused by: java.lang.NullPointerException
+E/AndroidRuntime( 4012):    at cri.sanity.PrefActivity.on(PrefActivity.java:104)
+E/AndroidRuntime( 4012):    at cri.sanity.PrefActivity.fullOnly(PrefActivity.java:119)
+E/AndroidRuntime( 4012):    at cri.sanity.PrefActivity.fullOnly(PrefActivity.java:113)
+E/AndroidRuntime( 4012):    at cri.sanity.screen.VibraActivity.onCreate(VibraActivity.java:21)
+E/AndroidRuntime( 4012):    at android.app.Activity.performCreate(Activity.java:5361)
+E/AndroidRuntime( 4012):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+E/AndroidRuntime( 4012):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2163)

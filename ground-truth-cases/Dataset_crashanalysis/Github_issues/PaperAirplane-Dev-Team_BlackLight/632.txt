@@ -1,0 +1,13 @@
+java.lang.OutOfMemoryError
+    at pl.droidsonroids.gif.GifDrawable.<init>(GifDrawable.java:179)
+    at us.shandian.blacklight.ui.common.ImageActivity$DownloadTask.onPostExecute(ImageActivity.java:285)
+    at us.shandian.blacklight.ui.common.ImageActivity$DownloadTask.onPostExecute(ImageActivity.java)
+    at us.shandian.blacklight.support.AsyncTask$100000000.handleMessage(AsyncTask.java:56)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.app.ActivityThread.main(ActivityThread.java:5081)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:877)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:693)
+    at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,15 @@
+05-04 11:37:21.084 14674 18179 E SFTPJob : com.jcraft.jsch.JSchException: java.io.IOException: Pipe closed
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at com.jcraft.jsch.ChannelSftp.start(ChannelSftp.java:315) ~[na:0.0]
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at com.jcraft.jsch.Channel.connect(Channel.java:152) ~[na:0.0]
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at com.jcraft.jsch.Channel.connect(Channel.java:145) ~[na:0.0]
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at com.mendhak.gpslogger.senders.sftp.SFTPJob.onRun(SFTPJob.java:77) ~[na:0.0]
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at com.path.android.jobqueue.Job.safeRun(Job.java:145) ~[na:0.0]
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at com.path.android.jobqueue.JobHolder.safeRun(JobHolder.java:90) ~[na:0.0]
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at com.path.android.jobqueue.executor.JobConsumerExecutor$JobConsumer.run(JobConsumerExecutor.java:306) ~[na:0.0]
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at java.lang.Thread.run(Thread.java:761) ~[na:0.0]
+05-04 11:37:21.084 14674 18179 E SFTPJob : Caused by: java.io.IOException: Pipe closed
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at java.io.PipedInputStream.read(PipedInputStream.java:319) ~[na:0.0]
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at java.io.PipedInputStream.read(PipedInputStream.java:394) ~[na:0.0]
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at com.jcraft.jsch.ChannelSftp.fill(ChannelSftp.java:2909) ~[na:0.0]
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at com.jcraft.jsch.ChannelSftp.header(ChannelSftp.java:2935) ~[na:0.0]
+05-04 11:37:21.084 14674 18179 E SFTPJob :      at com.jcraft.jsch.ChannelSftp.start(ChannelSftp.java:262) ~[na:0.0]

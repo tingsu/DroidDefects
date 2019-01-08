@@ -1,0 +1,18 @@
+//this is an auto-generated bug report
+//package name: org.amoradi.syncopoli
+//version: v0.1.1
+//appro_time: 43
+ FATAL EXCEPTION: SyncAdapterThread-35
+ android.database.sqlite.SQLiteException: unrecognized token: ":" (code 1): , while compiling: UPDATE backup_sync SET last_update=?,source=?,type=?,destination=?,name=? WHERE name='':-) t'
+ 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+ 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:500)
+ 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+ 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+ 	at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+ 	at android.database.sqlite.SQLiteDatabase.updateWithOnConflict(SQLiteDatabase.java:1572)
+ 	at android.database.sqlite.SQLiteDatabase.update(SQLiteDatabase.java:1520)
+ 	at org.amoradi.syncopoli.BackupHandler.updateBackupTimestamp(BackupHandler.java:134)
+ 	at org.amoradi.syncopoli.BackupHandler.runBackup(BackupHandler.java:147)
+ 	at org.amoradi.syncopoli.SyncAdapter.onPerformSync(SyncAdapter.java:24)
+ 	at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:254)

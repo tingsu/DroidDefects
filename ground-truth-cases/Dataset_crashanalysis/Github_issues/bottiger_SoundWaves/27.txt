@@ -1,0 +1,15 @@
+STACK_TRACE=java.lang.RuntimeException: Unable to start receiver org.bottiger.podcast.receiver.HeadsetReceiver: java.lang.IllegalStateException: PlayerService is null
+        at android.app.ActivityThread.handleReceiver(ActivityThread.java:2511)
+        at android.app.ActivityThread.access$1500(ActivityThread.java:153)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1323)
+        at android.os.Handler.dispatchMessage(Handler.java:99)
+        at android.os.Looper.loop(Looper.java:137)
+        at android.app.ActivityThread.main(ActivityThread.java:5227)
+        at java.lang.reflect.Method.invokeNative(Native Method)
+        at java.lang.reflect.Method.invoke(Method.java:511)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:562)
+        at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.IllegalStateException: PlayerService is null
+        at org.bottiger.podcast.receiver.HeadsetReceiver.onReceive(HeadsetReceiver.java:28)
+        at android.app.ActivityThread.

@@ -1,0 +1,64 @@
+W/ComposeMessageActivity(19182): java.io.IOException: Unable to query content type.
+W/ComposeMessageActivity(19182): at org.thoughtcrime.securesms.mms.AudioSlide.constructPartFromUri(AudioSlide.java:72)
+W/ComposeMessageActivity(19182): at org.thoughtcrime.securesms.mms.AudioSlide.<init>(AudioSlide.java:40)
+W/ComposeMessageActivity(19182): at org.thoughtcrime.securesms.mms.AttachmentManager.setAudio(AttachmentManager.java:70)
+W/ComposeMessageActivity(19182): at org.thoughtcrime.securesms.ConversationActivity.addAttachmentAudio(ConversationActivity.java:842)
+W/ComposeMessageActivity(19182): at org.thoughtcrime.securesms.ConversationActivity.onActivityResult(ConversationActivity.java:244)
+W/ComposeMessageActivity(19182): at android.app.Activity.dispatchActivityResult(Activity.java:5293)
+W/ComposeMessageActivity(19182): at android.app.ActivityThread.deliverResults(ActivityThread.java:3443)
+W/ComposeMessageActivity(19182): at android.app.ActivityThread.handleSendResult(ActivityThread.java:3490)
+W/ComposeMessageActivity(19182): at android.app.ActivityThread.access$1100(ActivityThread.java:153)
+W/ComposeMessageActivity(19182): at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1295)
+W/ComposeMessageActivity(19182): at android.os.Handler.dispatchMessage(Handler.java:99)
+W/ComposeMessageActivity(19182): at android.os.Looper.loop(Looper.java:137)
+W/ComposeMessageActivity(19182): at android.app.ActivityThread.main(ActivityThread.java:5227)
+W/ComposeMessageActivity(19182): at java.lang.reflect.Method.invokeNative(Native Method)
+W/ComposeMessageActivity(19182): at java.lang.reflect.Method.invoke(Method.java:511)
+W/ComposeMessageActivity(19182): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+W/ComposeMessageActivity(19182): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:562)
+W/ComposeMessageActivity(19182): at dalvik.system.NativeStart.main(Native Method)
+```
+
+LOG B
+
+```
+-----------------------------------------------------------
+W/Slide (19182): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/48
+W/PartDatabase(19182): Getting part at ID: 48
+W/EncryptingPartDatabase(19182): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1114245202.mms
+W/Slide (19182): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/48
+W/PartDatabase(19182): Getting part at ID: 48
+W/EncryptingPartDatabase(19182): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1114245202.mms
+D/dalvikvm(19182): GC_FOR_ALLOC freed 612K, 38% free 6267K/10060K, paused 47ms, total 48ms
+W/BitmapUtil(19182): Scaling to max width and height: 345.0,194.0625
+D/dalvikvm(19182): GC_CONCURRENT freed 179K, 27% free 7395K/10060K, paused 4ms+13ms, total 92ms
+W/ImageSlide(19182): Got soft reference: java.lang.ref.SoftReference@4110bb58
+W/ImageSlide(19182): Got cached bitmap: android.graphics.drawable.BitmapDrawable@40f85f18
+W/ConversationItem(19182): Clicked: content://org.thoughtcrime.provider.securesms/part/50 , audio/x-wav
+D/AndroidRuntime(19182): Shutting down VM
+W/dalvikvm(19182): threadid=1: thread exiting with uncaught exception (group=0x40af9930)
+E/AndroidRuntime(19182): FATAL EXCEPTION: main
+E/AndroidRuntime(19182): android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=content://org.thoughtcrime.provider.securesms/part/50 typ=audio/x-wav flg=0x1 }
+E/AndroidRuntime(19182): at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1622)
+E/AndroidRuntime(19182): at android.app.Instrumentation.execStartActivity(Instrumentation.java:1417)
+E/AndroidRuntime(19182): at android.app.Activity.startActivityForResult(Activity.java:3370)
+E/AndroidRuntime(19182): at android.app.Activity.startActivityForResult(Activity.java:3331)
+E/AndroidRuntime(19182): at android.support.v4.app.FragmentActivity.startActivityForResult(FragmentActivity.java:839)
+E/AndroidRuntime(19182): at android.app.Activity.startActivity(Activity.java:3566)
+E/AndroidRuntime(19182): at android.app.Activity.startActivity(Activity.java:3534)
+E/AndroidRuntime(19182): at org.thoughtcrime.securesms.ConversationItem$ThumbnailClickListener.fireIntent(ConversationItem.java:574)
+E/AndroidRuntime(19182): at org.thoughtcrime.securesms.ConversationItem$ThumbnailClickListener.access$1000(ConversationItem.java:562)
+E/AndroidRuntime(19182): at org.thoughtcrime.securesms.ConversationItem$ThumbnailClickListener$1.onClick(ConversationItem.java:585)
+E/AndroidRuntime(19182): at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+E/AndroidRuntime(19182): at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(19182): at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime(19182): at android.app.ActivityThread.main(ActivityThread.java:5227)
+E/AndroidRuntime(19182): at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(19182): at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime(19182): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+E/AndroidRuntime(19182): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:562)
+E/AndroidRuntime(19182): at dalvik.system.NativeStart.main(Native Method)
+I/Process (19182): Sending signal. PID: 19182 SIG: 9
+I/dalvikvm(19824): Could not find method android.provider.Telephony$Sms.getDefaultSmsPackage, referenced from method org.thoughtcrime.securesms.util.Util.isDefaultSmsProvider
+W/dalvikvm(19824): VFY: unable to resolve static method 975: Landroid/provider/Telephony$Sms;.getDefaultSmsPackage (Landroid/content/Context;)Ljava/lang/String;
+D/dalvikvm(19824): VFY: replacing opcode 0x71 at 0x000a

@@ -1,0 +1,4 @@
+java.lang.ArrayIndexOutOfBoundsException: length=12; index=-1
+   at java.util.ArrayList.get(ArrayList.java:310)
+   at com.newsblur.database.FolderListAdapter.getGroup(FolderListAdapter.java:233)
+   at com.newsblur.fragment.FolderListFragment.onContextItemSelected(FolderListFragment.java:261)

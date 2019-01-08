@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: com.cepmuvakkit.times
+//version: 2.5
+//appro_time: 110
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.cepmuvakkit.times/com.cepmuvakkit.times.SalatTimes}: java.lang.ClassCastException: java.lang.Float cannot be cast to java.lang.Integer
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.ClassCastException: java.lang.Float cannot be cast to java.lang.Integer
+ 	at android.app.SharedPreferencesImpl.getInt(SharedPreferencesImpl.java:240)
+ 	at com.cepmuvakkit.times.Schedule.<init>(Schedule.java:43)
+ 	at com.cepmuvakkit.times.Schedule.today(Schedule.java:111)
+ 	at com.cepmuvakkit.times.SalatTimes.onCreate(SalatTimes.java:81)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)

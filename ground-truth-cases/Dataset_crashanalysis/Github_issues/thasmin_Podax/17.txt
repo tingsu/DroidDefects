@@ -1,0 +1,7 @@
+E/Podax   ( 2574): android.accounts.AuthenticatorException: bind failure
+E/Podax   ( 2574):      at android.accounts.AccountManager.convertErrorToException(AccountManager.java:1455)
+E/Podax   ( 2574):      at android.accounts.AccountManager.access$400(AccountManager.java:138)
+E/Podax   ( 2574):      at android.accounts.AccountManager$BaseFutureTask$Response.onError(AccountManager.java:1360)
+E/Podax   ( 2574):      at android.accounts.IAccountManagerResponse$Stub.onTransact(IAccountManagerResponse.java:69)
+E/Podax   ( 2574):      at android.os.Binder.execTransact(Binder.java:320)
+E/Podax   ( 2574):      at dalvik.system.NativeStart.run(Native Method)

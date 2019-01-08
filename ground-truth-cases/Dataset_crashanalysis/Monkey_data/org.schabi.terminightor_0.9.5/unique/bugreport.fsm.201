@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: org.schabi.terminightor
+//version: 0.9.5
+//appro_time: 80
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to resume activity {org.schabi.terminightor/org.schabi.terminightor.SetTagActivity}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2790)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2266)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at org.schabi.terminightor.SetTagActivity.onResume(SetTagActivity.java:119)
+ 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+ 	at android.app.Activity.performResume(Activity.java:5211)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)
+ 	... 12 more

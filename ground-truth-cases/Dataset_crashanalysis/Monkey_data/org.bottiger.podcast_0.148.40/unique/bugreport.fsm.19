@@ -1,0 +1,13 @@
+//this is an auto-generated bug report
+//package name: org.bottiger.podcast
+//version: 0.148.40
+//appro_time: 174
+ java.lang.ClassCastException: org.bottiger.podcast.provider.SlimImplementations.SlimEpisode cannot be cast to org.bottiger.podcast.provider.FeedItem
+ 	at org.bottiger.podcast.service.Downloader.SoundWavesDownloadManager$DownloadCompleteCallback.downloadCompleted(SoundWavesDownloadManager.java:255)
+ 	at org.bottiger.podcast.service.Downloader.engines.okhttp.OkHttpDownloader.onSucces(OkHttpDownloader.java:227)
+ 	at org.bottiger.podcast.service.Downloader.engines.okhttp.OkHttpDownloader.startDownload(OkHttpDownloader.java:161)
+ 	at org.bottiger.podcast.service.DownloadService.onHandleIntent(DownloadService.java:161)
+ 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

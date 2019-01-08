@@ -1,0 +1,13 @@
+java.lang.IllegalStateException: attempt to re-open an already-closed object: SQLiteDatabase: /data/data/de.danoeh.antennapod/databases/Antennapod.db
+    at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:55)
+    at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1181)
+    at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1057)
+    at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1225)
+    at android.support.design.R.getFeedImages(R.java:51757)
+    at android.support.design.R.extractFeedFromCursorRow(R.java:51473)
+    at android.support.design.R.getFeedList(R.java:51296)
+    at android.support.design.R.getFeedList(R.java:51288)
+    at android.support.design.R.loadAdditionalFeedItemListData(R.java:51331)
+    at android.support.design.R.getFeedItem(R.java:51591)
+    at android.support.design.R.getFeedMedia(R.java:51787)
+    at de.danoeh.antennapod.core.service.download.DownloadService$1.run(DownloadService.java:201)

@@ -1,0 +1,44 @@
+07-10 23:12:01.390 E/AndroidRuntime( 8715): java.lang.RuntimeException: Unable to create application de.danoeh.antennapod.PodcastApp: android.database.sqlite.SQLiteException: unable to close due to unfinalised statements
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at android.app.ActivityThread.handleBindApplication(ActivityThread.java:3279)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at android.app.ActivityThread.access$2200(ActivityThread.java:117)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:973)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at android.os.Handler.dispatchMessage(Handler.java:99)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at android.os.Looper.loop(Looper.java:130)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at android.app.ActivityThread.main(ActivityThread.java:3687)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at java.lang.reflect.Method.invokeNative(Native Method)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at java.lang.reflect.Method.invoke(Method.java:507)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:842)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at dalvik.system.NativeStart.main(Native Method)
+07-10 23:12:01.390 E/AndroidRuntime( 8715): Caused by: android.database.sqlite.SQLiteException: unable to close due to unfinalised statements
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at android.database.sqlite.SQLiteDatabase.dbclose(Native Method)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at android.database.sqlite.SQLiteDatabase.onAllReferencesReleased(SQLiteDatabase.java:323)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at android.database.sqlite.SQLiteDatabase.close(SQLiteDatabase.java:884)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at gn.b(SourceFile:238)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at du.i(SourceFile:1418)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at de.danoeh.antennapod.PodcastApp.onCreate(SourceFile:36)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:969)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     at android.app.ActivityThread.handleBindApplication(ActivityThread.java:3276)
+07-10 23:12:01.390 E/AndroidRuntime( 8715):     ... 10 more
+
+07-10 23:12:01.398 D/dalvikvm( 8715): GC_CONCURRENT freed 381K, 30% free 6652K/9479K, external 1596K/2108K, paused 2ms+4ms
+07-10 23:12:01.398 D/Cursor  ( 8715): 
+07-10 23:12:01.398 D/Cursor  ( 8715): Database path: /data/data/de.danoeh.antennapod/databases/Antennapod.db
+07-10 23:12:01.398 D/Cursor  ( 8715): 
+07-10 23:12:01.398 D/Cursor  ( 8715): Table name   : FeedMedia
+07-10 23:12:01.398 D/Cursor  ( 8715): 
+07-10 23:12:01.398 D/Cursor  ( 8715): SQL          : SQLiteQuery: SELECT \* FROM FeedMedia WHERE id IN (?,?)
+07-10 23:12:01.398 I/dalvikvm( 8715): Uncaught exception thrown by finalizer (will be discarded):
+07-10 23:12:01.398 I/dalvikvm( 8715): Ljava/lang/IllegalStateException;: Finalizing cursor android.database.sqlite.SQLiteCursor@409131d0 on FeedMedia that has not been deactivated or closed
+07-10 23:12:01.398 I/dalvikvm( 8715):   at android.database.sqlite.SQLiteCursor.finalize(SQLiteCursor.java:620)
+07-10 23:12:01.398 I/dalvikvm( 8715):   at dalvik.system.NativeStart.run(Native Method)
+07-10 23:12:01.406 D/Cursor  ( 8715): 
+07-10 23:12:01.406 D/Cursor  ( 8715): Database path: /data/data/de.danoeh.antennapod/databases/Antennapod.db
+07-10 23:12:01.406 D/Cursor  ( 8715): 
+07-10 23:12:01.406 D/Cursor  ( 8715): Table name   : FeedMedia
+07-10 23:12:01.406 D/Cursor  ( 8715): 
+07-10 23:12:01.406 D/Cursor  ( 8715): SQL          : SQLiteQuery: SELECT \* FROM FeedMedia WHERE id IN (?,?)
+07-10 23:12:01.406 I/dalvikvm( 8715): Uncaught exception thrown by finalizer (will be discarded):
+07-10 23:12:01.406 I/dalvikvm( 8715): Ljava/lang/IllegalStateException;: Finalizing cursor android.database.sqlite.SQLiteCursor@4090f9c0 on FeedMedia that has not been deactivated or closed
+07-10 23:12:01.406 I/dalvikvm( 8715):   at android.database.sqlite.SQLiteCursor.finalize(SQLiteCursor.java:620)
+07-10 23:12:01.406 I/dalvikvm( 8715):   at dalvik.system.NativeStart.run(Native Method)

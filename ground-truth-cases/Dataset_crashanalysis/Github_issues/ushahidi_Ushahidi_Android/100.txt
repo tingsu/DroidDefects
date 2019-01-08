@@ -1,0 +1,12 @@
+10-31 14:23:34.227: E/Cursor(1627): android.database.sqlite.DatabaseObjectNotClosedException: Application did not close the cursor or database object that was opened here
+10-31 14:23:34.227: E/Cursor(1627):     at android.database.sqlite.SQLiteCursor.<init>(SQLiteCursor.java:210)
+10-31 14:23:34.227: E/Cursor(1627):     at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:53)
+10-31 14:23:34.227: E/Cursor(1627):     at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1345)
+10-31 14:23:34.227: E/Cursor(1627):     at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1229)
+10-31 14:23:34.227: E/Cursor(1627):     at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1184)
+10-31 14:23:34.227: E/Cursor(1627):     at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1264)
+10-31 14:23:34.227: E/Cursor(1627):     at com.ushahidi.android.app.database.OpenGeoSmsDao.getReportState(OpenGeoSmsDao.java:23)
+10-31 14:23:34.227: E/Cursor(1627):     at com.ushahidi.android.app.adapters.ListPendingReportAdapter.getView(ListPendingReportAdapter.java:179)
+10-31 14:23:34.227: E/Cursor(1627):     at com.ushahidi.android.app.adapters.BaseSectionListAdapter.getView(BaseSectionListAdapter.java:285)
+10-31 14:23:34.227: E/Cursor(1627):     at android.widget.HeaderViewListAdapter.getView(HeaderViewListAdapter.java:220)
+10-31 14:23:34.227: E/Cursor(1627):     at android.widget.AbsListView.obtainView(AbsListView.java:1315)

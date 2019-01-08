@@ -1,0 +1,21 @@
+org.apache.commons.net.ftp.FTPConnectionClosedException: FTP response 421 received.  Server closed connection.
+    at org.apache.commons.net.ftp.FTP.__getReply(FTP.java:346) ~[na:0.0]
+    at org.apache.commons.net.ftp.FTP._connectAction_(FTP.java:364) ~[na:0.0]
+    at org.apache.commons.net.ftp.FTPClient._connectAction_(FTPClient.java:540) ~[na:0.0]
+    at org.apache.commons.net.SocketClient.connect(SocketClient.java:178) ~[na:0.0]
+    at com.mendhak.gpslogger.senders.ftp.Ftp.Upload(Ftp.java:61) ~[na:0.0]
+    at com.mendhak.gpslogger.senders.ftp.FtpUploadHandler.run(FtpHelper.java:128) ~[na:0.0]
+    at java.lang.Thread.run(Thread.java:841) ~[na:0.0]
+14:14:01 DEBUG Ftp.Upload:104 - Logging out of FTP server
+14:14:01 ERROR Ftp.Upload:112 - Could not logout or disconnect
+org.apache.commons.net.MalformedServerReplyException: Could not parse response code.
+Server Reply:  42
+    at org.apache.commons.net.ftp.FTP.__getReply(FTP.java:315) ~[na:0.0]
+    at org.apache.commons.net.ftp.FTP.sendCommand(FTP.java:490) ~[na:0.0]
+    at org.apache.commons.net.ftp.FTP.sendCommand(FTP.java:534) ~[na:0.0]
+    at org.apache.commons.net.ftp.FTP.sendCommand(FTP.java:583) ~[na:0.0]
+    at org.apache.commons.net.ftp.FTP.quit(FTP.java:794) ~[na:0.0]
+    at org.apache.commons.net.ftp.FTPClient.logout(FTPClient.java:697) ~[na:0.0]
+    at com.mendhak.gpslogger.senders.ftp.Ftp.Upload(Ftp.java:105) ~[na:0.0]
+    at com.mendhak.gpslogger.senders.ftp.FtpUploadHandler.run(FtpHelper.java:128) ~[na:0.0]
+    at java.lang.Thread.run(Thread.java:841) ~[na:0.0]

@@ -1,0 +1,12 @@
+java.lang.IllegalArgumentException: width and height must be > 0
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:695)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:674)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:607)
+    at android.graphics.Bitmap.createScaledBitmap(Bitmap.java:487)
+    at ch.blinkenlights.android.vanilla.CoverBitmap.createScaledBitmap(CoverBitmap.java:333)
+    at ch.blinkenlights.android.vanilla.CoverBitmap.createBitmap(CoverBitmap.java:136)
+    at ch.blinkenlights.android.vanilla.CoverView.generateBitmap(CoverView.java:375)
+    at ch.blinkenlights.android.vanilla.CoverView.handleMessage(CoverView.java:462)
+    at android.os.Handler.dispatchMessage(Handler.java:103)
+    at android.os.Looper.loop(Looper.java:194)
+    at android.os.HandlerThread.run(HandlerThread.java:60)

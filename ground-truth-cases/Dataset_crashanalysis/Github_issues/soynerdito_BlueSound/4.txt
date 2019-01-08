@@ -1,0 +1,27 @@
+02-20 20:25:13.998 E/AndroidRuntime(8636): java.lang.IllegalStateException: Could not execute method of the activity
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at android.view.View$1.onClick(View.java:3598)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at android.view.View.performClick(View.java:4091)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at android.view.View$PerformClick.run(View.java:17036)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at android.os.Handler.handleCallback(Handler.java:615)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at android.os.Handler.dispatchMessage(Handler.java:92)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at android.os.Looper.loop(Looper.java:137)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at android.app.ActivityThread.main(ActivityThread.java:5031)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at java.lang.reflect.Method.invokeNative(Native Method)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at java.lang.reflect.Method.invoke(Method.java:511)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:792)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:555)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at dalvik.system.NativeStart.main(Native Method)
+02-20 20:25:13.998 E/AndroidRuntime(8636): Caused by: java.lang.reflect.InvocationTargetException
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at java.lang.reflect.Method.invokeNative(Native Method)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at java.lang.reflect.Method.invoke(Method.java:511)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at android.view.View$1.onClick(View.java:3593)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  ... 11 more
+02-20 20:25:13.998 E/AndroidRuntime(8636): Caused by: java.lang.SecurityException: Permission Denial: broadcastIntent() requesting a sticky broadcast from pid=8636, uid=10188 requires android.permission.BROADCAST_STICKY
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at android.os.Parcel.readException(Parcel.java:1425)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at android.os.Parcel.readException(Parcel.java:1379)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at android.media.IAudioService$Stub$Proxy.startBluetoothSco(IAudioService.java:1722)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at android.media.AudioManager.startBluetoothSco(AudioManager.java:1380)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at com.soyblue.bluesound.BluetoothManager.streamAudioStart(BluetoothManager.java:20)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at com.soyblue.bluesound.MainActivity.startAudio(MainActivity.java:84)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at com.soyblue.bluesound.MainActivity.toggleAudioStatus(MainActivity.java:94)
+02-20 20:25:13.998 E/AndroidRuntime(8636):  at com.soyblue.bluesound.MainActivity.onStreamClick(MainActivity.java:99)

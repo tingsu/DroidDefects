@@ -1,0 +1,11 @@
+ReferenceError: localStorage is not defined
+  at Object.mw.loader.store.clear
+  at Object.mw.loader.store.init
+  at Object.mw.loader.work
+  at request
+  at Object.mw.loader.using
+  at
+  at Function jQuery.extend.map
+  at HTMLDocument.<anonymous>
+  at fire
+  at Object.self.fireWith

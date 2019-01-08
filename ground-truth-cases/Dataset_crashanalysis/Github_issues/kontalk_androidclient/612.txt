@@ -1,0 +1,24 @@
+java.lang.RuntimeException: Unable to start service org.kontalk.service.msgcenter.MessageCenterService@43556160 with Intent { act=org.kontalk.action.PING cmp=org.kontalk/.service.msgcenter.MessageCenterService }: java.lang.NullPointerException: XMPPConnection must not be null
+    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2814)
+    at android.app.ActivityThread.access$2100(ActivityThread.java:157)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:157)
+    at android.app.ActivityThread.main(ActivityThread.java:5293)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1265)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1081)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException: XMPPConnection must not be null
+    at org.jivesoftware.smack.util.Objects.requireNonNull(Objects.java:23)
+    at org.jivesoftware.smack.Manager.<init>(Manager.java:28)
+    at org.jivesoftware.smackx.ping.PingManager.<init>(PingManager.java:119)
+    at org.jivesoftware.smackx.ping.PingManager.getInstanceFor(PingManager.java:86)
+    at org.kontalk.service.msgcenter.MessageCenterService.handleIntent(MessageCenterService.java:895)
+    at org.kontalk.service.msgcenter.MessageCenterService.onStartCommand(MessageCenterService.java:673)
+    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2797)
+    ... 10 more
+```
+
+Weird crash caused by a null connection, but at that point connection should not be null and there shouldn't be any race condition.

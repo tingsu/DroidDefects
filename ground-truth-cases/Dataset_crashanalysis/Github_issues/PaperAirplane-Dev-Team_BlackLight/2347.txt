@@ -1,0 +1,10 @@
+java.lang.OutOfMemoryError
+    at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+    at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:627)
+    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:603)
+    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:641)
+    at info.papdt.blacklight.cache.user.UserApiCache.getCover(UserApiCache.java:278)
+    at info.papdt.blacklight.ui.statuses.UserTimeLineActivity$Downloader.doInBackground(UserTimeLineActivity.java:474)
+    at info.papdt.blacklight.ui.statuses.UserTimeLineActivity$Downloader.doInBackground(UserTimeLineActivity.java:464)
+    at info.papdt.blacklight.support.AsyncTask$2.run(AsyncTask.java:73)
+    at java.lang.Thread.run(Thread.java:841)

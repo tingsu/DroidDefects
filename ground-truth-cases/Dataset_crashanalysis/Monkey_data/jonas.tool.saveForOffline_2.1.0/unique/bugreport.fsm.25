@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: jonas.tool.saveForOffline
+//version: 2.1.0
+//appro_time: 134
+ FATAL EXCEPTION: ServiceStartArguments
+ java.lang.RuntimeException: java.lang.Throwable: Warning: A WebView method was called on thread 'ServiceStartArguments'. All WebView methods must be called on the UI thread. Future versions of WebView may not support use on other threads.
+ 	at android.webkit.WebView.checkThread(WebView.java:1928)
+ 	at android.webkit.WebView.<init>(WebView.java:494)
+ 	at android.webkit.WebView.<init>(WebView.java:465)
+ 	at android.webkit.WebView.<init>(WebView.java:445)
+ 	at android.webkit.WebView.<init>(WebView.java:434)
+ 	at android.webkit.WebView.<init>(WebView.java:424)
+ 	at jonas.tool.saveForOffline.ScreenshotService$ServiceHandler.handleMessage(ScreenshotService.java:35)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)
+ Caused by: java.lang.Throwable: Warning: A WebView method was called on thread 'ServiceStartArguments'. All WebView methods must be called on the UI thread. Future versions of WebView may not support use on other threads.
+ 	at android.webkit.WebView.checkThread(WebView.java:1919)
+ 	... 9 more

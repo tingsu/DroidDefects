@@ -1,0 +1,4 @@
+ Caused by: java.lang.UnsatisfiedLinkError: Couldn't load sonic: findLibrary returned null
+        at java.lang.Runtime.loadLibrary(Runtime.java:365)
+        at java.lang.System.loadLibrary(System.java:535)
+        at org.vinuxproject.sonic.Sonic.<clinit>(Sonic.java:179)

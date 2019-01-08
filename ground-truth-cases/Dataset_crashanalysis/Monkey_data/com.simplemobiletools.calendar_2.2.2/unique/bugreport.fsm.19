@@ -1,0 +1,9 @@
+//this is an auto-generated bug report
+//package name: com.simplemobiletools.calendar
+//version: 2.2.2
+//appro_time: 82
+ java.lang.IllegalStateException: context must not be null
+ 	at com.simplemobiletools.calendar.d.b.a(Unknown Source)
+ 	at com.simplemobiletools.calendar.helpers.c.b(Unknown Source)
+ 	at com.simplemobiletools.calendar.helpers.c$e.run(Unknown Source)
+ 	at java.lang.Thread.run(Thread.java:841)

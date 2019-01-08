@@ -1,0 +1,19 @@
+12-08 10:40:02.897 E/AndroidRuntime(4531): FATAL EXCEPTION: main
+12-08 10:40:02.897 E/AndroidRuntime(4531): java.lang.RuntimeException: Unable to create application de.danoeh.antennapod.PodcastApp: android.database.SQLException: No FeedImage found at index: 34
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4374)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at android.app.ActivityThread.access$1300(ActivityThread.java:144)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1270)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at android.os.Handler.dispatchMessage(Handler.java:99)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at android.os.Looper.loop(Looper.java:137)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at android.app.ActivityThread.main(ActivityThread.java:4966)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at java.lang.reflect.Method.invokeNative(Native Method)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at java.lang.reflect.Method.invoke(Method.java:511)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:791)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:558)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at dalvik.system.NativeStart.main(Native Method)
+12-08 10:40:02.897 E/AndroidRuntime(4531): Caused by: android.database.SQLException: No FeedImage found at index: 34
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at eh.a(SourceFile:642)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at cc.g(SourceFile:1076)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at de.danoeh.antennapod.PodcastApp.onCreate(SourceFile:73)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:999)
+12-08 10:40:02.897 E/AndroidRuntime(4531):  at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4371)

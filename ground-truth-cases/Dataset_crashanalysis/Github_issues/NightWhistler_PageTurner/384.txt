@@ -1,0 +1,13 @@
+> java.lang.NullPointerException
+>     at net.nightwhistler.pageturner.activity.ReadingFragment.playBeep(ReadingFragment.java:571)
+>     at net.nightwhistler.pageturner.activity.ReadingFragment.access$2400(ReadingFragment.java:97)
+>     at net.nightwhistler.pageturner.activity.ReadingFragment$7.run(ReadingFragment.java:686)
+>     at android.os.Handler.handleCallback(Handler.java:615)
+>     at android.os.Handler.dispatchMessage(Handler.java:92)
+>     at android.os.Looper.loop(Looper.java:137)
+>     at android.app.ActivityThread.main(ActivityThread.java:4921)
+>     at java.lang.reflect.Method.invokeNative(Native Method)
+>     at java.lang.reflect.Method.invoke(Method.java:511)
+>     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1038)
+>     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:805)
+>     at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,7 @@
+java.lang.IllegalArgumentException: pointerIndex out of range
+       at android.view.MotionEvent.nativeGetAxisValue(MotionEvent.java)
+       at android.view.MotionEvent.getY(MotionEvent.java:2155)
+       at android.support.v4.view.MotionEventCompatEclair.getY(MotionEventCompatEclair.java:35)
+       at android.support.v4.view.MotionEventCompat$EclairMotionEventVersionImpl.getY(MotionEventCompat.java:95)
+       at android.support.v4.view.MotionEventCompat.getY(MotionEventCompat.java:228)
+       at android.support.v4.widget.SwipeRefreshLayout.onTouchEvent(SwipeRefreshLayout.java:772)

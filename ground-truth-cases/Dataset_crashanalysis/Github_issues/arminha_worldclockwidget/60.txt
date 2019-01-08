@@ -1,0 +1,4 @@
+java.lang.IllegalArgumentException: The datetime zone id 'Arctic/Longyearbyen' is not recognised
+    at org.joda.time.DateTimeZone.forID(DateTimeZone.java:229)
+    at ch.corten.aha.worldclock.AddClockActivity$TimeZoneListFragment$1.bindView(AddClockActivity.java:99)
+    at android.support.v4.widget.CursorAdapter.getView(CursorAdapter.java:256)

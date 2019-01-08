@@ -1,0 +1,8 @@
+java.lang.IllegalArgumentException: 
+  at de.westnordost.streetcomplete.data.osm.changes.StringMapChangesBuilder.add(StringMapChangesBuilder.java:36)
+  at de.westnordost.streetcomplete.quests.sport.AddSport.applyAnswerTo(AddSport.java:46)
+  at de.westnordost.streetcomplete.data.QuestController$3.run(QuestController.java:162)
+  at android.os.Handler.handleCallback(Handler.java:739)
+  at android.os.Handler.dispatchMessage(Handler.java:95)
+  at android.os.Looper.loop(Looper.java:135)
+  at android.os.HandlerThread.run(HandlerThread.java:61)

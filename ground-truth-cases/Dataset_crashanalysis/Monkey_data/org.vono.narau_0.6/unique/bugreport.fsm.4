@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: org.vono.narau
+//version: 0.6
+//appro_time: 99
+ java.lang.RuntimeException: Unable to destroy activity {org.vono.narau/org.vono.narau.learn.reading.KanjiToWordActivity}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3499)
+ 	at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:3517)
+ 	at android.app.ActivityThread.access$1200(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1309)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at org.vono.narau.learn.reading.KanjiToWordActivity.onDestroy(KanjiToWordActivity.java:174)
+ 	at android.app.Activity.performDestroy(Activity.java:5302)
+ 	at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1117)
+ 	at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3486)

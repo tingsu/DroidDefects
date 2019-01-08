@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: me.guillaumin.android.osmtracker
+//version: 0.6.10
+//appro_time: 126
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Error receiving broadcast Intent { act=me.guillaumin.android.osmtracker.intent.STOP_TRACKING flg=0x10 } in me.guillaumin.android.osmtracker.service.gps.GPSLogger$1@ad220150
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:773)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalArgumentException: Unknown URI: content://me.guillaumin.android.osmtracker.provider/track/-1
+ 	at me.guillaumin.android.osmtracker.db.TrackContentProvider.update(TrackContentProvider.java:409)
+ 	at android.content.ContentProvider$Transport.update(ContentProvider.java:260)
+ 	at android.content.ContentResolver.update(ContentResolver.java:1040)
+ 	at me.guillaumin.android.osmtracker.db.DataHelper.stopTracking(DataHelper.java:251)
+ 	at me.guillaumin.android.osmtracker.service.gps.GPSLogger.stopTrackingAndSave(GPSLogger.java:263)
+ 	at me.guillaumin.android.osmtracker.service.gps.GPSLogger.access$700(GPSLogger.java:35)
+ 	at me.guillaumin.android.osmtracker.service.gps.GPSLogger$1.onReceive(GPSLogger.java:143)
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:763)
+ 	... 9 more

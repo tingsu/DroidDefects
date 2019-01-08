@@ -1,0 +1,12 @@
+E/AndroidRuntime( 8273): java.lang.IllegalStateException: Content view not yet created
+E/AndroidRuntime( 8273):    at android.support.v4.app.ListFragment.ensureList(ListFragment.java:328)
+E/AndroidRuntime( 8273):    at android.support.v4.app.ListFragment.getListView(ListFragment.java:222)
+E/AndroidRuntime( 8273):    at org.openintents.filemanager.lists.FileListFragment$FileListMessageHandler.handleMessage(FileListFragment.java:225)
+E/AndroidRuntime( 8273):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 8273):    at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime( 8273):    at android.app.ActivityThread.main(ActivityThread.java:4424)
+E/AndroidRuntime( 8273):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 8273):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime( 8273):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+E/AndroidRuntime( 8273):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+E/AndroidRuntime( 8273):    at dalvik.system.NativeStart.main(Native Method)

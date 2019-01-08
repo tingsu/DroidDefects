@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: ca.mimic.apphangar
+//version: 2.6
+//appro_time: 33
+ Failed to open database '/data/data/ca.mimic.apphangar/databases/tasks.db'.
+ android.database.sqlite.SQLiteDatabaseLockedException: database is locked (code 5): , while compiling: PRAGMA journal_mode
+ 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+ 	at android.database.sqlite.SQLiteConnection.executeForString(SQLiteConnection.java:634)
+ 	at android.database.sqlite.SQLiteConnection.setJournalMode(SQLiteConnection.java:320)
+ 	at android.database.sqlite.SQLiteConnection.setWalModeFromConfiguration(SQLiteConnection.java:294)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:215)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+ 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+ 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:804)
+ 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:789)
+ 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:694)
+ 	at android.app.ContextImpl.openOrCreateDatabase(ContextImpl.java:863)
+ 	at android.content.ContextWrapper.openOrCreateDatabase(ContextWrapper.java:235)
+ 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:224)
+ 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:164)
+ 	at ca.mimic.apphangar.TasksDataSource.open(TasksDataSource.java:62)
+ 	at ca.mimic.apphangar.Settings.createAppTasks(Settings.java:1545)
+ 	at ca.mimic.apphangar.Settings$IconPackUpdate$1.run(Settings.java:860)
+ 	at java.lang.Thread.run(Thread.java:841)

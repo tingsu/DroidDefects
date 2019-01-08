@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: com.reddyetwo.hashmypass.app
+//version: 1.3.5
+//appro_time: 171
+ android.database.sqlite.SQLiteConstraintException: columns name, profile_id are not unique (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insertOrThrow(SQLiteDatabase.java:1365)
+ 	at com.reddyetwo.hashmypass.app.data.TagSettings.insertTag(TagSettings.java:145)
+ 	at com.reddyetwo.hashmypass.app.MainActivity.onDialogDismiss(MainActivity.java:532)
+ 	at com.reddyetwo.hashmypass.app.dialog.GeneratePasswordDialogFragment$DialogButtonClickedListener.onClick(GeneratePasswordDialogFragment.java:320)
+ 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

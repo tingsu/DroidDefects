@@ -1,0 +1,33 @@
+//this is an auto-generated bug report
+//package name: com.murrayc.galaxyzoo.app
+//version: 1.64
+//appro_time: 64
+ FATAL EXCEPTION: main
+ java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+ 	at android.support.v4.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1533)
+ 	at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1551)
+ 	at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:696)
+ 	at android.support.v4.app.BackStackRecord.commit(BackStackRecord.java:662)
+ 	at com.murrayc.galaxyzoo.app.ClassifyFragment.showChildFragments(ClassifyFragment.java:224)
+ 	at com.murrayc.galaxyzoo.app.ClassifyFragment.hideAll(ClassifyFragment.java:184)
+ 	at com.murrayc.galaxyzoo.app.ClassifyFragment.updateFromCursor(ClassifyFragment.java:344)
+ 	at com.murrayc.galaxyzoo.app.ClassifyFragment.onLoadFinished(ClassifyFragment.java:413)
+ 	at com.murrayc.galaxyzoo.app.ClassifyFragment.onLoadFinished(ClassifyFragment.java:49)
+ 	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:479)
+ 	at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:447)
+ 	at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+ 	at android.support.v4.content.CursorLoader.deliverResult(CursorLoader.java:105)
+ 	at android.support.v4.content.CursorLoader.deliverResult(CursorLoader.java:37)
+ 	at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:249)
+ 	at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:77)
+ 	at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:476)
+ 	at android.support.v4.content.ModernAsyncTask.access$400(ModernAsyncTask.java:49)
+ 	at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:493)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,7 @@
+E/Stumbler_CellInfo(16724): java.lang.IllegalArgumentException: Unexpected network type: 0
+E/Stumbler_CellInfo(16724):     at org.mozilla.mozstumbler.service.stumblerthread.scanners.cellscanner.CellInfo.getCellRadioTypeName(CellInfo.java:106)
+E/Stumbler_CellInfo(16724):     at org.mozilla.mozstumbler.service.stumblerthread.scanners.cellscanner.CellInfo.setCellLocation(CellInfo.java:238)
+E/Stumbler_CellInfo(16724):     at org.mozilla.mozstumbler.service.stumblerthread.scanners.cellscanner.SimpleCellScannerImplementation.getCurrentCellInfo(SimpleCellScannerImplementation.java:159)
+E/Stumbler_CellInfo(16724):     at org.mozilla.mozstumbler.service.stumblerthread.scanners.cellscanner.SimpleCellScannerImplementation.getCellInfo(SimpleCellScannerImplementation.java:126)
+E/Stumbler_CellInfo(16724):     at org.mozilla.mozstumbler.service.stumblerthread.scanners.cellscanner.CellScanner$2.run(CellScanner.java:98)
+E/Stumbler_CellInfo(16724):     at java.util.Timer$TimerImpl.run(Timer.java:284)

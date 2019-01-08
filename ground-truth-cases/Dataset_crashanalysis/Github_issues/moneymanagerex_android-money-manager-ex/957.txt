@@ -1,0 +1,22 @@
+08-17 22:19:58.667 22813-26892/com.money.manager.ex E/SyncManager: fetching remote file info
+java.lang.RuntimeException: ServiceCode Error in function standardJSONRequest at 11
+   at com.cloudrail.si.servicecode.Interpreter.run(Interpreter.java:108)
+   at com.cloudrail.si.servicecode.Interpreter.callFunction(Interpreter.java:42)
+   at com.cloudrail.si.services.Dropbox.getMetadata(Dropbox.java:889)
+   at com.money.manager.ex.sync.SyncManager.loadMetadata(SyncManager.java:355)
+   at com.money.manager.ex.sync.SyncService.onHandleIntent(SyncService.java:85)
+   at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+   at android.os.Handler.dispatchMessage(Handler.java:99)
+   at android.os.Looper.loop(Looper.java:137)
+   at android.os.HandlerThread.run(HandlerThread.java:60)
+Caused by: java.lang.NullPointerException
+   at com.cloudrail.si.servicecode.commands.http.RequestCall.execute(RequestCall.java:113)
+   at com.cloudrail.si.servicecode.Interpreter.run(Interpreter.java:84)
+   at com.cloudrail.si.servicecode.Interpreter.callFunction(Interpreter.java:42) 
+   at com.cloudrail.si.services.Dropbox.getMetadata(Dropbox.java:889) 
+   at com.money.manager.ex.sync.SyncManager.loadMetadata(SyncManager.java:355) 
+   at com.money.manager.ex.sync.SyncService.onHandleIntent(SyncService.java:85) 
+   at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65) 
+   at android.os.Handler.dispatchMessage(Handler.java:99) 
+   at android.os.Looper.loop(Looper.java:137) 
+   at android.os.HandlerThread.run(HandlerThread.java:60) 

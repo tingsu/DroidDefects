@@ -1,0 +1,16 @@
+com.fsck.k9.mail.MessagingException: IOException
+ at com.fsck.k9.mail.store.webdav.WebDavStore.doInitialConnection(WebDavStore.java:732)
+ at com.fsck.k9.mail.store.webdav.WebDavStore.authenticate(WebDavStore.java:631)
+ at com.fsck.k9.mail.store.webdav.WebDavStore.sendRequest(WebDavStore.java:999)
+ at com.fsck.k9.mail.store.webdav.WebDavStore.processRequest(WebDavStore.java:1091)
+ at com.fsck.k9.mail.store.webdav.WebDavStore.processRequest(WebDavStore.java:1066)
+ at com.fsck.k9.mail.store.webdav.WebDavFolder.getMessageCount(WebDavFolder.java:159)
+ at com.fsck.k9.mail.store.webdav.WebDavFolder.getMessageCount(WebDavFolder.java:173)
+ at com.fsck.k9.controller.MessagingController.synchronizeMailboxSynchronous(MessagingController.java:855)
+ at com.fsck.k9.controller.MessagingController$9.run(MessagingController.java:739)
+ at com.fsck.k9.controller.MessagingController.runInBackground(MessagingController.java:204)
+ at com.fsck.k9.controller.MessagingController.access$000(MessagingController.java:115)
+ at com.fsck.k9.controller.MessagingController$1.run(MessagingController.java:173)
+ at java.lang.Thread.run(Thread.java:762)
+Caused by: java.io.IOException: Error with code 404 during request processing: HTTP/1.1 404 Not Found
+ at com.fsck.k9.mail.store.webdav.WebDavStore.doInitialConnection(WebDavStore.java:726)

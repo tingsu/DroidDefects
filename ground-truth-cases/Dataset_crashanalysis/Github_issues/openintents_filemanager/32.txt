@@ -1,0 +1,73 @@
+E/WindowManager(16356): android.view.WindowLeaked: Activity org.openintents.filemanager.FileManagerActivity has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView@413fba08 that was originally added here
+E/WindowManager(16356):     at android.view.ViewRootImpl.<init>(ViewRootImpl.java:345)
+E/WindowManager(16356):     at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:268)
+E/WindowManager(16356):     at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:216)
+E/WindowManager(16356):     at android.view.WindowManagerImpl$CompatModeWrapper.addView(WindowManagerImpl.java:141)
+E/WindowManager(16356):     at android.view.Window$LocalWindowManager.addView(Window.java:537)
+E/WindowManager(16356):     at android.app.Dialog.show(Dialog.java:278)
+E/WindowManager(16356):     at org.openintents.filemanager.util.CompressManager$CompressTask.onPreExecute(CompressManager.java:133)
+E/WindowManager(16356):     at android.os.AsyncTask.executeOnExecutor(AsyncTask.java:561)
+E/WindowManager(16356):     at android.os.AsyncTask.execute(AsyncTask.java:511)
+E/WindowManager(16356):     at org.openintents.filemanager.util.CompressManager.compress(CompressManager.java:58)
+E/WindowManager(16356):     at org.openintents.filemanager.util.CompressManager.compress(CompressManager.java:45)
+E/WindowManager(16356):     at org.openintents.filemanager.dialogs.SingleCompressDialog.compress(SingleCompressDialog.java:76)
+E/WindowManager(16356):     at org.openintents.filemanager.dialogs.SingleCompressDialog.access$0(SingleCompressDialog.java:68)
+E/WindowManager(16356):     at org.openintents.filemanager.dialogs.SingleCompressDialog$3.onClick(SingleCompressDialog.java:63)
+E/WindowManager(16356):     at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:172)
+E/WindowManager(16356):     at android.os.Handler.dispatchMessage(Handler.java:99)
+E/WindowManager(16356):     at android.os.Looper.loop(Looper.java:137)
+E/WindowManager(16356):     at android.app.ActivityThread.main(ActivityThread.java:4424)
+E/WindowManager(16356):     at java.lang.reflect.Method.invokeNative(Native Method)
+E/WindowManager(16356):     at java.lang.reflect.Method.invoke(Method.java:511)
+E/WindowManager(16356):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:817)
+E/WindowManager(16356):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:584)
+E/WindowManager(16356):     at dalvik.system.NativeStart.main(Native Method)
+
+---This Error message is shown after sometime and then the application crashes---
+
+E/AndroidRuntime(16356): FATAL EXCEPTION: main
+E/AndroidRuntime(16356): java.lang.IllegalArgumentException: View not attached to window manager
+E/AndroidRuntime(16356):    at android.view.WindowManagerImpl.findViewLocked(WindowManagerImpl.java:594)
+E/AndroidRuntime(16356):    at android.view.WindowManagerImpl.removeView(WindowManagerImpl.java:331)
+E/AndroidRuntime(16356):    at android.view.WindowManagerImpl$CompatModeWrapper.removeView(WindowManagerImpl.java:152)
+E/AndroidRuntime(16356):    at android.app.Dialog.dismissDialog(Dialog.java:321)
+E/AndroidRuntime(16356):    at android.app.Dialog$1.run(Dialog.java:119)
+E/AndroidRuntime(16356):    at android.app.Dialog.dismiss(Dialog.java:306)
+E/AndroidRuntime(16356):    at android.app.Dialog.cancel(Dialog.java:1106)
+E/AndroidRuntime(16356):    at org.openintents.filemanager.util.CompressManager$CompressTask.onPostExecute(CompressManager.java:192)
+E/AndroidRuntime(16356):    at org.openintents.filemanager.util.CompressManager$CompressTask.onPostExecute(CompressManager.java:1)
+E/AndroidRuntime(16356):    at android.os.AsyncTask.finish(AsyncTask.java:602)
+E/AndroidRuntime(16356):    at android.os.AsyncTask.access$600(AsyncTask.java:156)
+E/AndroidRuntime(16356):    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:615)
+E/AndroidRuntime(16356):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(16356):    at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime(16356):    at android.app.ActivityThread.main(ActivityThread.java:4424)
+E/AndroidRuntime(16356):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(16356):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime(16356):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:817)
+E/AndroidRuntime(16356):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:584)
+E/AndroidRuntime(16356):    at dalvik.system.NativeStart.main(Native Method)
+
+-----------------------------------(During Copying)-------------------------------------
+
+---This Error message is shown after sometime when I rotate the screen during copying and then the application crashes.---
+
+E/AndroidRuntime(16537): FATAL EXCEPTION: main
+E/AndroidRuntime(16537): java.lang.NullPointerException
+E/AndroidRuntime(16537):    at org.openintents.filemanager.util.MimeTypes.newInstance(MimeTypes.java:43)
+E/AndroidRuntime(16537):    at org.openintents.filemanager.lists.FileListFragment.renewScanner(FileListFragment.java:198)
+E/AndroidRuntime(16537):    at org.openintents.filemanager.lists.FileListFragment.refresh(FileListFragment.java:156)
+E/AndroidRuntime(16537):    at org.openintents.filemanager.lists.SimpleFileListFragment$2.operationFinished(SimpleFileListFragment.java:234)
+E/AndroidRuntime(16537):    at org.openintents.filemanager.util.CopyHelper$CopyAsync.onPostExecute(CopyHelper.java:209)
+E/AndroidRuntime(16537):    at org.openintents.filemanager.util.CopyHelper$CopyAsync.onPostExecute(CopyHelper.java:1)
+E/AndroidRuntime(16537):    at android.os.AsyncTask.finish(AsyncTask.java:602)
+E/AndroidRuntime(16537):    at android.os.AsyncTask.access$600(AsyncTask.java:156)
+E/AndroidRuntime(16537):    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:615)
+E/AndroidRuntime(16537):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(16537):    at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime(16537):    at android.app.ActivityThread.main(ActivityThread.java:4424)
+E/AndroidRuntime(16537):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(16537):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime(16537):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:817)
+E/AndroidRuntime(16537):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:584)
+E/AndroidRuntime(16537):    at dalvik.system.NativeStart.main(Native Method)

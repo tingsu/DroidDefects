@@ -1,0 +1,36 @@
+```
+08-20 00:28:03.100  11744-12080/dh.newspaper W/System.err﹕ at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:620)
+08-20 00:28:03.100  11744-12080/dh.newspaper W/System.err﹕ at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:596)
+08-20 00:28:03.100  11744-12080/dh.newspaper W/System.err﹕ at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.defineImageSizeAndRotation(BaseImageDecoder.java:100)
+08-20 00:28:03.100  11744-12080/dh.newspaper W/System.err﹕ at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:75)
+08-20 00:28:03.100  11744-12080/dh.newspaper W/System.err﹕ at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:264)
+08-20 00:28:03.100  11744-12080/dh.newspaper W/System.err﹕ at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:237)
+08-20 00:28:03.100  11744-12080/dh.newspaper W/System.err﹕ at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:135)
+08-20 00:28:03.100  11744-12080/dh.newspaper W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+08-20 00:28:03.100  11744-12080/dh.newspaper W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+08-20 00:28:03.100  11744-12080/dh.newspaper W/System.err﹕ at java.lang.Thread.run(Thread.java:841)
+08-20 00:28:03.100  11744-12080/dh.newspaper W/System.err﹕ Caused by: libcore.io.ErrnoException: read failed: ENOENT (No such file or directory)
+```
+
+And in the end it is an error
+
+```
+08-20 00:29:31.580  12301-12360/dh.newspaper E/ImageLoader﹕ /storage/emulated/0/Android/data/dh.newspaper/cache/images/1808773579.0: open failed: ENOENT (No such file or directory)
+    java.io.FileNotFoundException: /storage/emulated/0/Android/data/dh.newspaper/cache/images/1808773579.0: open failed: ENOENT (No such file or directory)
+            at libcore.io.IoBridge.open(IoBridge.java:409)
+            at java.io.FileInputStream.<init>(FileInputStream.java:78)
+            at java.io.FileInputStream.<init>(FileInputStream.java:105)
+            at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStreamFromFile(BaseImageDownloader.java:159)
+            at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStream(BaseImageDownloader.java:87)
+            at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.getImageStream(BaseImageDecoder.java:93)
+            at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:73)
+            at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:264)
+            at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:237)
+            at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:135)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:841)
+     Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+            at libcore.io.Posix.open(Native Method)
+            at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+            at libcore.io.IoBridge.open(IoBridge.java:393)

@@ -1,0 +1,8 @@
+W/RegistrationService(16508): org.thoughtcrime.securesms.service.AccountVerificationTimeoutException
+W/RegistrationService(16508): at org.thoughtcrime.securesms.service.RegistrationService.waitForChallenge(RegistrationService.java:316)
+W/RegistrationService(16508): at org.thoughtcrime.securesms.service.RegistrationService.handleSmsRegistrationIntent(RegistrationService.java:251)
+W/RegistrationService(16508): at org.thoughtcrime.securesms.service.RegistrationService.access$000(RegistrationService.java:55)
+W/RegistrationService(16508): at org.thoughtcrime.securesms.service.RegistrationService$1.run(RegistrationService.java:92)
+W/RegistrationService(16508): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+W/RegistrationService(16508): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+W/RegistrationService(16508): at java.lang.Thread.run(Thread.java:841)

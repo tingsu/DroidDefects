@@ -1,0 +1,32 @@
+F/ActivityManager( 1231): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.String.intern()' on a null object reference
+F/ActivityManager( 1231):   at android.content.Intent.readFromParcel(Intent.java:7222)
+F/ActivityManager( 1231):   at android.content.Intent.<init>(Intent.java:7202)
+F/ActivityManager( 1231):   at android.content.Intent$1.createFromParcel(Intent.java:7193)
+F/ActivityManager( 1231):   at android.content.Intent$1.createFromParcel(Intent.java:7191)
+F/ActivityManager( 1231):   at android.os.Parcel.createTypedArray(Parcel.java:2068)
+F/ActivityManager( 1231):   at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1089)
+F/ActivityManager( 1231):   at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2407)
+F/ActivityManager( 1231):   at android.os.Binder.execTransact(Binder.java:446)
+D/AndroidRuntime( 3503): Shutting down VM
+--------- beginning of crash
+E/AndroidRuntime( 3503): FATAL EXCEPTION: main
+E/AndroidRuntime( 3503): Process: com.nutomic.syncthingandroid.debug, PID: 3503
+E/AndroidRuntime( 3503): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.String.intern()' on a null object reference
+E/AndroidRuntime( 3503):    at android.os.Parcel.readException(Parcel.java:1546)
+E/AndroidRuntime( 3503):    at android.os.Parcel.readException(Parcel.java:1493)
+E/AndroidRuntime( 3503):    at android.app.ActivityManagerProxy.getIntentSender(ActivityManagerNative.java:3730)
+E/AndroidRuntime( 3503):    at android.app.PendingIntent.getActivity(PendingIntent.java:291)
+E/AndroidRuntime( 3503):    at android.app.PendingIntent.getActivity(PendingIntent.java:252)
+E/AndroidRuntime( 3503):    at com.nutomic.syncthingandroid.syncthing.SyncthingService.updateState(SyncthingService.java:203)
+E/AndroidRuntime( 3503):    at com.nutomic.syncthingandroid.syncthing.SyncthingService$StartupTask.onPostExecute(SyncthingService.java:307)
+E/AndroidRuntime( 3503):    at com.nutomic.syncthingandroid.syncthing.SyncthingService$StartupTask.onPostExecute(SyncthingService.java:274)
+E/AndroidRuntime( 3503):    at android.os.AsyncTask.finish(AsyncTask.java:632)
+E/AndroidRuntime( 3503):    at android.os.AsyncTask.access$600(AsyncTask.java:177)
+E/AndroidRuntime( 3503):    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)
+E/AndroidRuntime( 3503):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 3503):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime( 3503):    at android.app.ActivityThread.main(ActivityThread.java:5221)
+E/AndroidRuntime( 3503):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 3503):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime( 3503):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+E/AndroidRuntime( 3503):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)

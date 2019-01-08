@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: gr.ndre.scuttloid
+//version: 1.0
+//appro_time: 42
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalArgumentException: Illegal character in path at index 17: http://www.n.com/[hlj.leapi/posts_add.php
+ 	at java.net.URI.create(URI.java:727)
+ 	at org.apache.http.client.methods.HttpPost.<init>(HttpPost.java:79)
+ 	at gr.ndre.scuttloid.APITask.buildRequest(APITask.java:165)
+ 	at gr.ndre.scuttloid.APITask.doInBackground(APITask.java:98)
+ 	at gr.ndre.scuttloid.APITask.doInBackground(APITask.java:40)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

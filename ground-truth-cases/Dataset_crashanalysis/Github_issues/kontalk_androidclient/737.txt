@@ -1,0 +1,6 @@
+java.lang.NullPointerException
+       at org.kontalk.service.msgcenter.MessageAckListener.processPacket(MessageAckListener.java:89)
+       at org.kontalk.client.XMPPTCPConnection$3.run(XMPPTCPConnection.java:1777)
+       at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+       at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+       at java.lang.Thread.run(Thread.java:856)

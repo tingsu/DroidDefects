@@ -1,0 +1,7 @@
+java.lang.UnsupportedOperationException: Unknown ASTNode child: LambdaExpression
+        at lombok.ast.ecj.EcjTreeVisitor.visitOther(EcjTreeVisitor.java:368)
+        at lombok.ast.ecj.EcjTreeVisitor.visitEcjNode(EcjTreeVisitor.java:364)
+        at lombok.ast.ecj.EcjTreeConverter.visit(EcjTreeConverter.java:295)
+        at lombok.ast.ecj.EcjTreeConverter.toTree(EcjTreeConverter.java:236)
+        at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:282)
+        at lombok.ast.ecj.EcjTreeConverter.fillList(EcjTreeConverter.java:252)

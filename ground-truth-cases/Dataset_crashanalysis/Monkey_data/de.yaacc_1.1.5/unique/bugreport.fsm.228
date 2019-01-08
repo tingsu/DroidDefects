@@ -1,0 +1,36 @@
+//this is an auto-generated bug report
+//package name: de.yaacc
+//version: 1.1.5
+//appro_time: 165
+ java.lang.RuntimeException: Unable to resume activity {de.yaacc/de.yaacc.browser.TabBrowserActivity}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2790)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1298)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at de.yaacc.upnp.UpnpClient.enrichWithCover(UpnpClient.java:683)
+ 	at de.yaacc.upnp.UpnpClient.browseSync(UpnpClient.java:668)
+ 	at de.yaacc.upnp.UpnpClient.browseSync(UpnpClient.java:627)
+ 	at de.yaacc.browser.BrowseItemAdapter.initialize(BrowseItemAdapter.java:76)
+ 	at de.yaacc.browser.BrowseItemAdapter.<init>(BrowseItemAdapter.java:68)
+ 	at de.yaacc.browser.ContentListActivity$1.run(ContentListActivity.java:236)
+ 	at android.app.Activity.runOnUiThread(Activity.java:4673)
+ 	at de.yaacc.browser.ContentListActivity.populateItemList(ContentListActivity.java:229)
+ 	at de.yaacc.browser.ContentListActivity.onRestart(ContentListActivity.java:92)
+ 	at android.app.Instrumentation.callActivityOnRestart(Instrumentation.java:1181)
+ 	at android.app.Activity.performRestart(Activity.java:5192)
+ 	at android.app.ActivityThread.performRestartActivity(ActivityThread.java:3262)
+ 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:168)
+ 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:523)
+ 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+ 	at de.yaacc.browser.TabBrowserActivity.onResume(TabBrowserActivity.java:174)
+ 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+ 	at android.app.Activity.performResume(Activity.java:5211)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)

@@ -1,0 +1,9 @@
+java.lang.OutOfMemoryError
+    at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:663)
+    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:735)
+    at us.shandian.blacklight.cache.user.UserApiCache.getCover(UserApiCache.java:268)
+    at us.shandian.blacklight.ui.statuses.UserTimeLineActivity$Downloader.doInBackground(UserTimeLineActivity.java:412)
+    at us.shandian.blacklight.ui.statuses.UserTimeLineActivity$Downloader.doInBackground(UserTimeLineActivity.java)
+    at us.shandian.blacklight.support.AsyncTask$100000001.run(AsyncTask.java:73)
+    at java.lang.Thread.run(Thread.java:856)

@@ -1,0 +1,4 @@
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.io.InputStream org.sufficientlysecure.keychain.util.InputData.getInputStream()' on a null object reference
+    at org.sufficientlysecure.keychain.ui.adapter.ImportKeysListLoader.generateListOfKeyrings(ImportKeysListLoader.java:111)
+    at org.sufficientlysecure.keychain.ui.adapter.ImportKeysListLoader.loadInBackground(ImportKeysListLoader.java:77)
+    at org.sufficientlysecure.keychain.ui.adapter.ImportKeysListLoader.loadInBackground(ImportKeysListLoader.java:45)

@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: mobi.boilr.boilr
+//version: 0.7.0
+//appro_time: 16
+ java.lang.NumberFormatException: Invalid double: "∞"
+ 	at java.lang.StringToReal.invalidReal(StringToReal.java:63)
+ 	at java.lang.StringToReal.parseDouble(StringToReal.java:269)
+ 	at java.lang.Double.parseDouble(Double.java:295)
+ 	at mobi.boilr.boilr.views.fragments.PriceHitAlarmSettingsFragment$OnPriceHitSettingsPreferenceChangeListener.onPreferenceChange(PriceHitAlarmSettingsFragment.java:25)
+ 	at android.preference.Preference.callChangeListener(Preference.java:895)
+ 	at android.preference.EditTextPreference.onDialogClosed(EditTextPreference.java:141)
+ 	at android.preference.DialogPreference.onDismiss(DialogPreference.java:383)
+ 	at android.app.Dialog$ListenersHandler.handleMessage(Dialog.java:1232)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

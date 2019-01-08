@@ -1,0 +1,14 @@
+com.fsck.k9.mail.CertificateValidationException: SSL handshake aborted: ssl=0x6342a9a8: I/O error during system call, Connection reset by peer
+    at com.fsck.k9.mail.transport.SmtpTransport.open(SmtpTransport.java:414)
+    at com.fsck.k9.mail.transport.SmtpTransport.sendMessageTo(SmtpTransport.java:504)
+    at com.fsck.k9.mail.transport.SmtpTransport.sendMessage(SmtpTransport.java:495)
+    at com.fsck.k9.controller.MessagingController.sendPendingMessagesSynchronous(MessagingController.java:3563)
+    at com.fsck.k9.controller.MessagingController$20.run(MessagingController.java:3314)
+    at com.fsck.k9.controller.MessagingController.run(MessagingController.java:435)
+    at java.lang.Thread.run(Thread.java:841)
+Caused by: javax.net.ssl.SSLException: SSL handshake aborted: ssl=0x6342a9a8: I/O error during system call, Connection reset by peer
+    at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+    at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:406)
+    at com.android.org.conscrypt.OpenSSLSocketImpl$SSLInputStream.<init>(OpenSSLSocketImpl.java:662)
+    at com.android.org.conscrypt.OpenSSLSocketImpl.getInputStream(OpenSSLSocketImpl.java:633)
+    at com.fsck.k9.mail.transport.SmtpTransport.open(SmtpTransport.java:247)

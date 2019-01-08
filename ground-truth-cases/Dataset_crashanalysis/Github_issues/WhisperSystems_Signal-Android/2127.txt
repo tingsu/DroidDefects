@@ -1,0 +1,8 @@
+java.lang.RuntimeException: Can't create handler inside thread that has not called Looper.prepare()
+  at android.os.Handler.<init>(Handler.java: 121)
+  at android.widget.Toast$TN.<init> (Toast:317)
+  at android.widget.Toast.<init>(Toast.java:91)
+  at android.widget.Toast.makeText(Toast.java:233)
+  at org.thoughtcrime.securesms.jobs.GcmRefreshJob.onRun(GcmRefreshJob.java:41)
+  at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:72)
+  at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

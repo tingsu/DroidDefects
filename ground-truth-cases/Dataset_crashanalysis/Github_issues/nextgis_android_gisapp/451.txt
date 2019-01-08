@@ -1,0 +1,11 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'void com.nextgis.maplib.datasource.GeometryRTree$Node.setParent(com.nextgis.maplib.datasource.GeometryRTree$Node)' on a null object reference
+    at com.nextgis.maplib.datasource.GeometryRTree$Node.add(GeometryRTree.java:788)
+    at com.nextgis.maplib.datasource.GeometryRTree.splitNode(GeometryRTree.java:477)
+    at com.nextgis.maplib.datasource.GeometryRTree.insert(GeometryRTree.java:429)
+    at com.nextgis.maplib.datasource.GeometryRTree.addItem(GeometryRTree.java:145)
+    at com.nextgis.maplib.map.VectorLayer.cacheGeometryEnvelope(VectorLayer.java:625)
+    at com.nextgis.maplib.map.VectorLayer.createFeatureBatch(VectorLayer.java:562)
+    at com.nextgis.maplib.map.NGWVectorLayer.createFromNGW(NGWVectorLayer.java:505)
+    at com.nextgis.maplibui.service.LayerFillService$NGWVectorLayerFillTask.execute(LayerFillService.java:673)
+    at com.nextgis.maplibui.service.LayerFillService$2.run(LayerFillService.java:253)
+    at java.lang.Thread.run(Thread.java:818)

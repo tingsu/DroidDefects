@@ -1,0 +1,13 @@
+java.lang.RuntimeException: WakeLock under-locked BBS_WAKELOCK_WHILE_SAVING_REF
+    at android.os.PowerManager$WakeLock.release(PowerManager.java:314)
+    at android.os.PowerManager$WakeLock.release(PowerManager.java:289)
+    at android.os.PowerManager$WakeLock$1.run(PowerManager.java:209)
+    at android.os.Handler.handleCallback(Handler.java:587)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:130)
+    at android.app.ActivityThread.main(ActivityThread.java:3691)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:507)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:912)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:670)
+    at dalvik.system.NativeStart.main(Native Method)

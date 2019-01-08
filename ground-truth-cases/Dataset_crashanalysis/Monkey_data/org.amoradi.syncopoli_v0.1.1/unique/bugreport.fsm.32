@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: org.amoradi.syncopoli
+//version: v0.1.1
+//appro_time: 177
+ FATAL EXCEPTION: main
+ java.lang.IllegalArgumentException: File log_/w/
+ 5 contains a path separator
+ 	at android.app.ContextImpl.makeFilename(ContextImpl.java:2000)
+ 	at android.app.ContextImpl.openFileInput(ContextImpl.java:701)
+ 	at android.content.ContextWrapper.openFileInput(ContextWrapper.java:173)
+ 	at org.amoradi.syncopoli.BackupActivity$BackupLogFragment.getLogString(BackupActivity.java:385)
+ 	at org.amoradi.syncopoli.BackupActivity$BackupLogFragment.onCreateView(BackupActivity.java:354)
+ 	at android.app.Fragment.performCreateView(Fragment.java:1699)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:885)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1057)
+ 	at android.app.BackStackRecord.run(BackStackRecord.java:682)
+ 	at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1435)
+ 	at android.app.FragmentManagerImpl$1.run(FragmentManager.java:441)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

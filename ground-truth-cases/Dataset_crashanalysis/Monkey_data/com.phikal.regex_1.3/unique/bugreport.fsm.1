@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: com.phikal.regex
+//version: 1.3
+//appro_time: 24
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to resume activity {com.phikal.regex/com.phikal.regex.Activities.GameActivity}: java.lang.IndexOutOfBoundsException: setSpan (3 ... 3) ends beyond length 2
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2790)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1298)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IndexOutOfBoundsException: setSpan (3 ... 3) ends beyond length 2
+ 	at android.text.SpannableStringBuilder.checkRange(SpannableStringBuilder.java:1016)
+ 	at android.text.SpannableStringBuilder.setSpan(SpannableStringBuilder.java:592)
+ 	at android.text.SpannableStringBuilder.setSpan(SpannableStringBuilder.java:588)
+ 	at android.text.Selection.setSelection(Selection.java:76)
+ 	at android.widget.EditText.setSelection(EditText.java:87)
+ 	at com.phikal.regex.Activities.GameActivity.onResume(GameActivity.java:228)
+ 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+ 	at android.app.Activity.performResume(Activity.java:5211)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)
+ 	... 10 more

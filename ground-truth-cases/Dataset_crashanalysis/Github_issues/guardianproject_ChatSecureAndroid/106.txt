@@ -1,0 +1,31 @@
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):   -- caused by: java.net.UnknownHostException: Host is unresolved: jabberd.jabber.ccc.de:5222
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at org.jivesoftware.smack.XMPPConnection.connectUsingConfiguration(XMPPConnection.java:560)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at org.jivesoftware.smack.XMPPConnection.connect(XMPPConnection.java:999)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at info.guardianproject.otr.app.im.plugin.xmpp.XmppConnection.reconnect(XmppConnection.java:1557)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at info.guardianproject.otr.app.im.plugin.xmpp.XmppConnection.doHeartbeat(XmppConnection.java:1394)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at info.guardianproject.otr.app.im.plugin.xmpp.XmppConnection$10.run(XmppConnection.java:1369)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1068)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:561)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at java.lang.Thread.run(Thread.java:1096)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463): Nested Exception: 
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463): java.net.UnknownHostException: Host is unresolved: jabberd.jabber.ccc.de:5222
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at java.net.Socket.connect(Socket.java:1038)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at java.net.Socket.connect(Socket.java:997)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at org.jivesoftware.smack.proxy.DirectSocketFactory.createSocket(DirectSocketFactory.java:28)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at org.jivesoftware.smack.XMPPConnection.connectUsingConfiguration(XMPPConnection.java:555)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at org.jivesoftware.smack.XMPPConnection.connect(XMPPConnection.java:999)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at info.guardianproject.otr.app.im.plugin.xmpp.XmppConnection.reconnect(XmppConnection.java:1557)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at info.guardianproject.otr.app.im.plugin.xmpp.XmppConnection.doHeartbeat(XmppConnection.java:1394)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at info.guardianproject.otr.app.im.plugin.xmpp.XmppConnection$10.run(XmppConnection.java:1369)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1068)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:561)
+01-23 11:38:45.069 E/Gibberbot.XmppConnection(2463):    at java.lang.Thread.run(Thread.java:1096)
+01-23 11:38:45.077 D/Gibberbot.XmppConnection(2463): setState to 1
+01-23 11:39:08.889 W/Gibberbot.XmppConnection(2463): dropped packet to XXXXXXXXXXXXXXXXX because socket is disconnected
+01-23 11:39:08.897 E/AndroidRuntime(2463): FATAL EXCEPTION: pool-3-thread-1
+01-23 11:39:08.897 E/AndroidRuntime(2463): java.lang.IllegalStateException: Not connected to server.
+01-23 11:39:08.897 E/AndroidRuntime(2463):  at org.jivesoftware.smack.XMPPConnection.sendPacket(XMPPConnection.java:488)
+01-23 11:39:08.897 E/AndroidRuntime(2463):  at info.guardianproject.otr.app.im.plugin.xmpp.XmppConnection$1.run(XmppConnection.java:180)
+01-23 11:39:08.897 E/AndroidRuntime(2463):  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1068)
+01-23 11:39:08.897 E/AndroidRuntime(2463):  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:561)
+01-23 11:39:08.897 E/AndroidRuntime(2463):  at java.lang.Thread.run(Thread.java:1096)

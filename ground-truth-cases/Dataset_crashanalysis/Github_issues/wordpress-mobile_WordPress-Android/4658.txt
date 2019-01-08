@@ -1,0 +1,11 @@
+                                                 java.lang.IncompatibleClassChangeError: android.support.v4.content.ContextCompat
+                                                     at com.google.android.gms.iid.zzd.zzeb(Unknown Source)
+                                                     at com.google.android.gms.iid.zzd.<init>(Unknown Source)
+                                                     at com.google.android.gms.iid.zzd.<init>(Unknown Source)
+                                                     at com.google.android.gms.iid.InstanceID.zza(Unknown Source)
+                                                     at com.google.android.gms.iid.InstanceID.getInstance(Unknown Source)
+                                                     at org.wordpress.android.GCMRegistrationIntentService.onHandleIntent(GCMRegistrationIntentService.java:30)
+                                                     at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+                                                     at android.os.Handler.dispatchMessage(Handler.java:99)
+                                                     at android.os.Looper.loop(Looper.java:137)
+                                                     at android.os.HandlerThread.run(HandlerThread.java:60)`

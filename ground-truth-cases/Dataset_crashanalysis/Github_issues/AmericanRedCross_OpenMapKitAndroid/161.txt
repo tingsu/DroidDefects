@@ -1,0 +1,4 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.redcross.openmapkit/org.redcross.openmapkit.MapActivity}: android.database.sqlite.SQLiteDatabaseCorruptException: file is encrypted or is not a database (code 26): , while compiling: SELECT value FROM metadata WHERE name = ?
+    at org.redcross.openmapkit.Basemap.selectMBTilesBasemap(Basemap.java:204)
+    at org.redcross.openmapkit.Basemap.<init>(Basemap.java:60)
+    at org.redcross.openmapkit.MapActivity.onCreate(MapActivity.java:152)

@@ -1,0 +1,43 @@
+java.lang.NullPointerException
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2339)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2389)
+        at android.app.ActivityThread.access$600(ActivityThread.java:153)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1269)
+        at android.os.Handler.dispatchMessage(Handler.java:99)
+        at android.os.Looper.loop(Looper.java:137)
+        at android.app.ActivityThread.main(ActivityThread.java:5289)
+        at java.lang.reflect.Method.invokeNative(Native Method)
+        at java.lang.reflect.Method.invoke(Method.java:525)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:739)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:555)
+        at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+        at de.blau.android.Main.onPrepareDialog(Main.java:775)
+        at android.app.Activity.onPrepareDialog(Activity.java:3027)
+        at android.app.Activity.restoreManagedDialogs(Activity.java:968)
+        at android.app.Activity.performRestoreInstanceState(Activity.java:911)
+        at android.app.Instrumentation.callActivityOnRestoreInstanceState(Instrumentation.java:1138)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2307)
+        ... 11 more
+java.lang.NullPointerException
+        at de.blau.android.Main.onPrepareDialog(Main.java:775)
+        at android.app.Activity.onPrepareDialog(Activity.java:3027)
+        at android.app.Activity.restoreManagedDialogs(Activity.java:968)
+        at android.app.Activity.performRestoreInstanceState(Activity.java:911)
+        at android.app.Instrumentation.callActivityOnRestoreInstanceState(Instrumentation.java:1138)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2307)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2389)
+        at android.app.ActivityThread.access$600(ActivityThread.java:153)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1269)
+        at android.os.Handler.dispatchMessage(Handler.java:99)
+        at android.os.Looper.loop(Looper.java:137)
+        at android.app.ActivityThread.main(ActivityThread.java:5289)
+        at java.lang.reflect.Method.invokeNative(Native Method)
+        at java.lang.reflect.Method.invoke(Method.java:525)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:739)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:555)
+        at dalvik.system.NativeStart.main(Native Method)
+
+```
+
+Original issue reported on code.google.com by `sp8...@gmail.com` on 16 Oct 2013 at 7:24

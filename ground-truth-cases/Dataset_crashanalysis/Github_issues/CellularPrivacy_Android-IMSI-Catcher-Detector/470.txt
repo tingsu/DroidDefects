@@ -1,0 +1,149 @@
+    java.lang.NullPointerException
+            at com.SecUpwN.AIMSICD.fragments.DeviceFragment.updateUI(DeviceFragment.java:127)
+            at com.SecUpwN.AIMSICD.fragments.DeviceFragment.access$200(DeviceFragment.java:26)
+            at com.SecUpwN.AIMSICD.fragments.DeviceFragment$1.onServiceConnected(DeviceFragment.java:95)
+            at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1108)
+            at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1125)
+            at android.os.Handler.handleCallback(Handler.java:733)
+            at android.os.Handler.dispatchMessage(Handler.java:95)
+            at android.os.Looper.loop(Looper.java:136)
+            at android.app.ActivityThread.main(ActivityThread.java:5158)
+            at java.lang.reflect.Method.invokeNative(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:515)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+            at dalvik.system.NativeStart.main(Native Method)
+06-16 09:39:23.602  27453-27473/com.SecUpwN.AIMSICD V/SamsungMulticlientRilExecutor﹕ Unsolicited response
+06-16 09:39:29.488  27453-27473/com.SecUpwN.AIMSICD V/SamsungMulticlientRilExecutor﹕ Unsolicited response
+06-16 09:40:32.070  27453-27453/com.SecUpwN.AIMSICD I/Process﹕ Sending signal. PID: 27453 SIG: 9
+06-16 09:40:32.220  28088-28088/com.SecUpwN.AIMSICD D/ActivityThread﹕ handleBindApplication:com.SecUpwN.AIMSICD
+06-16 09:40:32.220  28088-28088/com.SecUpwN.AIMSICD D/ActivityThread﹕ setTargetHeapUtilization:0.75
+06-16 09:40:32.220  28088-28088/com.SecUpwN.AIMSICD D/ActivityThread﹕ setTargetHeapMinFree:2097152
+06-16 09:40:32.290  28088-28088/com.SecUpwN.AIMSICD W/Resources﹕ Converting to string: TypedValue{t=0x10/d=0x1 a=-1}
+06-16 09:40:32.290  28088-28088/com.SecUpwN.AIMSICD W/Resources﹕ Converting to string: TypedValue{t=0x10/d=0x1 a=-1}
+06-16 09:40:32.511  28088-28088/com.SecUpwN.AIMSICD W/Resources﹕ Converting to string: TypedValue{t=0x10/d=0x1 a=-1}
+06-16 09:40:32.511  28088-28088/com.SecUpwN.AIMSICD W/Resources﹕ Converting to string: TypedValue{t=0x10/d=0x1 a=-1}
+06-16 09:40:32.531  28088-28088/com.SecUpwN.AIMSICD D/BaseActivity﹕ StatusWatcher starting watching
+06-16 09:40:32.711  28088-28088/com.SecUpwN.AIMSICD D/BaseActivity﹕ StatusWatcher stopped watching
+06-16 09:40:32.741  28088-28088/com.SecUpwN.AIMSICD D/BaseActivity﹕ StatusWatcher starting watching
+06-16 09:40:32.791  28088-28107/com.SecUpwN.AIMSICD I/SamsungMulticlientRilExecutor﹕ BEGIN LocalSocketThread-Socket
+06-16 09:40:32.881  28088-28088/com.SecUpwN.AIMSICD I/AIMSICD_Service﹕ Service launched successfully.
+06-16 09:40:32.951  28088-28088/com.SecUpwN.AIMSICD D/libEGL﹕ loaded /system/lib/egl/libEGL_mali.so
+06-16 09:40:32.961  28088-28088/com.SecUpwN.AIMSICD D/libEGL﹕ loaded /system/lib/egl/libGLESv1_CM_mali.so
+06-16 09:40:32.961  28088-28088/com.SecUpwN.AIMSICD D/libEGL﹕ loaded /system/lib/egl/libGLESv2_mali.so
+06-16 09:40:32.991  28088-28088/com.SecUpwN.AIMSICD D/OpenGLRenderer﹕ Enabling debug mode 0
+06-16 09:40:33.241  28088-28088/com.SecUpwN.AIMSICD D/BaseActivity﹕ StatusWatcher received status change to NORMAL, updating icon
+06-16 09:40:33.241  28088-28088/com.SecUpwN.AIMSICD I/CellTracker﹕ in checkForNeighbourCount
+06-16 09:40:33.251  28088-28088/com.SecUpwN.AIMSICD D/AIMSICD﹕ CellTracker: NC list not supported by AOS on this device. Nothing to do. CID: 11363
+06-16 09:40:33.251  28088-28088/com.SecUpwN.AIMSICD D/AIMSICD﹕ CellTracker: Setting nc_list_present to: false
+06-16 09:40:33.271  28088-28088/com.SecUpwN.AIMSICD V/AIMSICD﹕ LAC checked - no change on CID:11363 LAC(API): 9493 LAC(DBi): 9493
+06-16 09:40:33.271  28088-28088/com.SecUpwN.AIMSICD I/CellTracker﹕ ALERT: Connected to unknown CID not in DBe_import: 11363
+06-16 09:40:33.291  28088-28088/com.SecUpwN.AIMSICD I/AIMSICD_SignalStrength﹕ Ignored signal strength sample for CID: 11363 as the device is currently moving around, will not accept anything for another 29456 ms.
+06-16 09:40:33.542  28088-28088/com.SecUpwN.AIMSICD D/BaseActivity﹕ StatusWatcher received status change to MEDIUM, updating icon
+06-16 09:40:33.752  28088-28088/com.SecUpwN.AIMSICD I/Timeline﹕ Timeline: Activity_idle id: android.os.BinderProxy@423e0c80 time:30477760
+06-16 09:40:33.752  28088-28088/com.SecUpwN.AIMSICD I/Timeline﹕ Timeline: Activity_idle id: android.os.BinderProxy@423deb00 time:30477769
+06-16 09:40:42.200  28088-28088/com.SecUpwN.AIMSICD I/AIMSICD_SignalStrength﹕ Ignored signal strength sample for CID: 11363 as the device is currently moving around, will not accept anything for another 20544 ms.
+06-16 09:40:56.324  28088-28088/com.SecUpwN.AIMSICD I/AIMSICD_SignalStrength﹕ Ignored signal strength sample for CID: 11363 as the device is currently moving around, will not accept anything for another 6428 ms.
+(redacted)
+06-16 09:41:40.378  28088-28088/com.SecUpwN.AIMSICD D/BaseActivity﹕ StatusWatcher stopped watching
+06-16 09:41:40.438  28088-28088/com.SecUpwN.AIMSICD D/BaseActivity﹕ StatusWatcher starting watching
+06-16 09:41:40.538  28088-28088/com.SecUpwN.AIMSICD I/Timeline﹕ Timeline: Activity_idle id: android.os.BinderProxy@423deb00 time:30544556
+06-16 09:41:49.687  28088-28088/com.SecUpwN.AIMSICD D/BaseActivity﹕ StatusWatcher stopped watching
+06-16 09:41:49.928  28088-28088/com.SecUpwN.AIMSICD I/refreshDetectionDbStrings﹕ {"load_detection_strings":[{"detection_string":"Received short message type 0, Don't display or store it. Send Ack","detection_type":"TYPE0"},{"detection_string":"Received voice mail indicator clear SMS shouldStore=false","detection_type":"SILENTVOICE"},{"detection_string":"SMS TP-PID:0 data coding scheme: 24","detection_type":"FLASH"},{"detection_string":"isTypeZero=true","detection_type":"TYPE0"},{"detection_string":"incoming msg. Mti 0 ProtocolID 0 DCS 0x04 class -1","detection_type":"WAPPUSH"}]}
+06-16 09:41:49.928  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ database opened
+06-16 09:41:49.938  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ Detection String already in Database
+06-16 09:41:49.938  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ database closed
+06-16 09:41:49.948  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ database opened
+06-16 09:41:49.948  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ Detection String already in Database
+06-16 09:41:49.948  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ database closed
+06-16 09:41:49.968  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ database opened
+06-16 09:41:49.968  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ Detection String already in Database
+06-16 09:41:49.978  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ database closed
+06-16 09:41:49.988  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ database opened
+06-16 09:41:49.988  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ Detection String already in Database
+06-16 09:41:49.988  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ database closed
+06-16 09:41:49.998  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ database opened
+06-16 09:41:50.008  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ Detection String already in Database
+06-16 09:41:50.008  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ database closed
+06-16 09:41:50.288  28088-28088/com.SecUpwN.AIMSICD D/AppAIMSICD﹕ BaseTask attach:com.SecUpwN.AIMSICD.AIMSICD
+06-16 09:41:50.298  28088-28088/com.SecUpwN.AIMSICD D/BaseActivity﹕ StatusWatcher starting watching
+(location redacted)
+06-16 09:41:50.798  28088-28088/com.SecUpwN.AIMSICD I/AIMSICD_Service﹕ Sms Detection Thread Started
+06-16 09:41:50.818  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ database opened
+06-16 09:41:50.818  28088-28088/com.SecUpwN.AIMSICD I/System.out﹕ DB LEN = 5
+06-16 09:41:50.828  28088-28088/com.SecUpwN.AIMSICD I/SmsDetectionDbAccess﹕ database closed
+06-16 09:41:50.838  28088-28088/com.SecUpwN.AIMSICD I/SmsDetector﹕ sms detection started
+06-16 09:41:50.838  28088-28088/com.SecUpwN.AIMSICD I/AIMSICD﹕ Sms Detection Thread Started
+06-16 09:41:50.898  28088-28088/com.SecUpwN.AIMSICD V/AIMSICD﹕ DbAdapter: Cell info updated in local db: 11363
+06-16 09:41:50.939  28088-28088/com.SecUpwN.AIMSICD V/AIMSICD﹕ DbAdapter: Cell info updated in local db: 11363
+06-16 09:41:51.129  28088-28088/com.SecUpwN.AIMSICD I/AIMSICD_SignalStrength﹕ Ignored signal strength sample for CID: 11363 as the device is currently moving around, will not accept anything for another 29208 ms.
+06-16 09:41:51.399  28088-28088/com.SecUpwN.AIMSICD I/Timeline﹕ Timeline: Activity_idle id: android.os.BinderProxy@427106f8 time:30555419
+06-16 09:41:54.802  28088-28088/com.SecUpwN.AIMSICD I/AIMSICD_SignalStrength﹕ Ignored signal strength sample for CID: 11363 as the device is currently moving around, will not accept anything for another 25539 ms.
+06-16 09:42:05.594  28088-28088/com.SecUpwN.AIMSICD E/SQLiteLog﹕ (1) no such column: NaN
+06-16 09:42:05.594  28088-28088/com.SecUpwN.AIMSICD D/AndroidRuntime﹕ Shutting down VM
+06-16 09:42:05.594  28088-28088/com.SecUpwN.AIMSICD W/dalvikvm﹕ threadid=1: thread exiting with uncaught exception (group=0x41ed5ce0)
+06-16 09:42:05.604  28088-28088/com.SecUpwN.AIMSICD E/AndroidRuntime﹕ FATAL EXCEPTION: main
+    Process: com.SecUpwN.AIMSICD, PID: 28088
+    android.database.sqlite.SQLiteException: no such column: NaN (code 1): , while compiling: SELECT * FROM locationinfo WHERE CellID = 11363 AND Lat = NaN AND Lng = NaN AND Signal = 6
+            at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+            at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+            at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:500)
+            at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+            at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+            at android.database.sqlite.SQLiteQuery.<init>(SQLiteQuery.java:37)
+            at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:44)
+            at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1314)
+            at android.database.sqlite.SQLiteDatabase.rawQuery(SQLiteDatabase.java:1253)
+            at com.SecUpwN.AIMSICD.adapters.AIMSICDDbAdapter.locationExists(AIMSICDDbAdapter.java:606)
+            at com.SecUpwN.AIMSICD.adapters.AIMSICDDbAdapter.insertLocation(AIMSICDDbAdapter.java:422)
+            at com.SecUpwN.AIMSICD.service.CellTracker.onLocationChanged(CellTracker.java:990)
+            at com.SecUpwN.AIMSICD.service.AimsicdService$5.onLocationChanged(AimsicdService.java:269)
+            at com.SecUpwN.AIMSICD.service.LocationTracker$MyLocationListener.onLocationChanged(LocationTracker.java:152)
+            at android.location.LocationManager$ListenerTransport._handleMessage(LocationManager.java:279)
+            at android.location.LocationManager$ListenerTransport.access$000(LocationManager.java:208)
+            at android.location.LocationManager$ListenerTransport$1.handleMessage(LocationManager.java:224)
+            at android.os.Handler.dispatchMessage(Handler.java:102)
+            at android.os.Looper.loop(Looper.java:136)
+            at android.app.ActivityThread.main(ActivityThread.java:5158)
+            at java.lang.reflect.Method.invokeNative(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:515)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+            at dalvik.system.NativeStart.main(Native Method)
+06-16 09:42:06.665  28088-28097/com.SecUpwN.AIMSICD W/SQLiteConnectionPool﹕ A SQLiteConnection object for database '/data/data/com.SecUpwN.AIMSICD/databases/pk_sms_detection.db' was leaked!  Please fix your application to end transactions in progress properly and to close the database when it is no longer needed.
+06-16 09:42:48.206  28088-28107/com.SecUpwN.AIMSICD V/SamsungMulticlientRilExecutor﹕ Unsolicited response
+06-16 09:42:53.033  28088-28107/com.SecUpwN.AIMSICD V/SamsungMulticlientRilExecutor﹕ Unsolicited response
+```
+
+I think they are related. The first exception is on label with network lac: `content = (TextView) mView.findViewById(R.id.network_lac);` It's pretty wired that android can't find resource which is cleary defined in XML oO
+#469 possibly related to the second exception. I'm using code from the latest commit on master branch.
+
+Also, when I'm on DEVELOPMENT branch I got this exception on start:
+
+```
+06-16 09:50:21.900      877-877/com.SecUpwN.AIMSICD E/AndroidRuntime﹕ FATAL EXCEPTION: main
+    Process: com.SecUpwN.AIMSICD, PID: 877
+    android.database.sqlite.SQLiteException: table cells has no column named Lat (code 1): , while compiling: CREATE INDEX IF NOT EXISTS _idxspatial ON cells (Lat, Lng);
+            at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+            at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+            at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:500)
+            at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+            at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+            at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+            at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1672)
+            at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1603)
+            at com.SecUpwN.AIMSICD.adapters.AIMSICDDbAdapter$DbHelper.onOpen(AIMSICDDbAdapter.java:1420)
+            at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:267)
+            at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:164)
+            at com.SecUpwN.AIMSICD.adapters.AIMSICDDbAdapter.open(AIMSICDDbAdapter.java:181)
+            at com.SecUpwN.AIMSICD.service.CellTracker.compareLac(CellTracker.java:614)
+            at com.SecUpwN.AIMSICD.service.CellTracker$2.onCellLocationChanged(CellTracker.java:751)
+            at android.telephony.PhoneStateListener$2.handleMessage(PhoneStateListener.java:384)
+            at android.os.Handler.dispatchMessage(Handler.java:102)
+            at android.os.Looper.loop(Looper.java:136)
+            at android.app.ActivityThread.main(ActivityThread.java:5158)
+            at java.lang.reflect.Method.invokeNative(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:515)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+            at dalvik.system.NativeStart.main(Native Method)

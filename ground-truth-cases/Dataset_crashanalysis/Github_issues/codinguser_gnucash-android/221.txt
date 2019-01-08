@@ -1,0 +1,21 @@
+    java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.String
+            at android.os.Bundle.getString(Bundle.java:1061)
+            at android.content.Intent.getStringExtra(Intent.java:4163)
+            at org.gnucash.android.ui.transaction.TransactionsActivity.onCreate(TransactionsActivity.java:282)
+            at android.app.Activity.performCreate(Activity.java:5086)
+            at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1079)
+            at com.lbe.security.service.core.client.b.x.callActivityOnCreate(Unknown Source)
+            at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2056)
+            at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2117)
+            at android.app.ActivityThread.access$600(ActivityThread.java:140)
+            at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1213)
+            at android.os.Handler.dispatchMessage(Handler.java:99)
+            at android.os.Looper.loop(Looper.java:137)
+            at android.app.ActivityThread.main(ActivityThread.java:4914)
+            at java.lang.reflect.Method.invokeNative(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:511)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:808)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:575)
+            at dalvik.system.NativeStart.main(Native Method)
+
+It seems that at some time a long is set for account_uid and after that a string is asked. So I search where a long is set for account_uid.

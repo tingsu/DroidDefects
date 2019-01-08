@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: com.vwp.owmap
+//version: 1.28
+//appro_time: 83
+ java.lang.RuntimeException: Unable to stop service com.vwp.owmap.ScanService@ad2cf008: java.lang.IllegalArgumentException: view must not be null
+ 	at android.app.ActivityThread.handleStopService(ActivityThread.java:2751)
+ 	at android.app.ActivityThread.access$2000(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1358)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalArgumentException: view must not be null
+ 	at android.view.WindowManagerGlobal.removeView(WindowManagerGlobal.java:304)
+ 	at android.view.WindowManagerImpl.removeView(WindowManagerImpl.java:79)
+ 	at com.vwp.owmap.ScanService.onDestroy(ScanService.java:144)
+ 	at android.app.ActivityThread.handleStopService(ActivityThread.java:2734)

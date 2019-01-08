@@ -1,0 +1,7 @@
+                                                                         java.lang.ClassCastException: org.jivesoftware.smack.packet.UnparsedIQ cannot be cast to org.jivesoftware.smackx.disco.packet.DiscoverInfo
+                                                                             at org.jivesoftware.smackx.disco.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:535)
+                                                                             at org.jivesoftware.smackx.disco.ServiceDiscoveryManager.discoverInfo(ServiceDiscoveryManager.java:500)
+                                                                             at org.jivesoftware.smackx.disco.ServiceDiscoveryManager.findServices(ServiceDiscoveryManager.java:734)
+                                                                             at com.xabber.android.data.extension.httpfileupload.HttpFileUploadManager.discoverSupport(HttpFileUploadManager.java:203)
+                                                                             at com.xabber.android.data.extension.httpfileupload.HttpFileUploadManager.access$100(HttpFileUploadManager.java:40)
+                                                                             at com.xabber.android.data.extension.httpfileupload.HttpFileUploadManager$3.run(HttpFileUploadManager.java:220)

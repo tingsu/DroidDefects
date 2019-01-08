@@ -1,0 +1,17 @@
+05-10 11:59:53.145: W/cgeo(1807): [ModernAsyncTask #2] GeokretyConnector.searchTrackables
+05-10 11:59:53.145: W/cgeo(1807): java.lang.IllegalArgumentException: Illegal character in query at index 46: http://api.geokretymap.org/export2.php?wpt=DAS ROEMISCHE STADTTOR-ROEMISCHES MAINZ - THE ROMAN MAINZ
+05-10 11:59:53.145: W/cgeo(1807):   at java.net.URI.create(URI.java:733)
+05-10 11:59:53.145: W/cgeo(1807):   at ch.boye.httpclientandroidlib.client.methods.HttpGet.<init>(HttpGet.java:69)
+05-10 11:59:53.145: W/cgeo(1807):   at cgeo.geocaching.network.Network.request(Network.java:184)
+05-10 11:59:53.145: W/cgeo(1807):   at cgeo.geocaching.network.Network.getRequest(Network.java:335)
+05-10 11:59:53.145: W/cgeo(1807):   at cgeo.geocaching.connector.trackable.GeokretyConnector.searchTrackables(GeokretyConnector.java:107)
+05-10 11:59:53.145: W/cgeo(1807):   at cgeo.geocaching.loaders.GeokretyCacheInventoryLoader.loadInBackground(GeokretyCacheInventoryLoader.java:26)
+05-10 11:59:53.145: W/cgeo(1807):   at cgeo.geocaching.loaders.GeokretyCacheInventoryLoader.loadInBackground(GeokretyCacheInventoryLoader.java:1)
+05-10 11:59:53.145: W/cgeo(1807):   at android.support.v4.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:242)
+05-10 11:59:53.145: W/cgeo(1807):   at android.support.v4.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:51)
+05-10 11:59:53.145: W/cgeo(1807):   at android.support.v4.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:40)
+05-10 11:59:53.145: W/cgeo(1807):   at android.support.v4.content.ModernAsyncTask$2.call(ModernAsyncTask.java:123)
+05-10 11:59:53.145: W/cgeo(1807):   at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+05-10 11:59:53.145: W/cgeo(1807):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+05-10 11:59:53.145: W/cgeo(1807):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+05-10 11:59:53.145: W/cgeo(1807):   at java.lang.Thread.run(Thread.java:818)

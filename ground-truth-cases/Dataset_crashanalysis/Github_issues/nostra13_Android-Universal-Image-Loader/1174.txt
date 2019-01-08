@@ -1,0 +1,26 @@
+01-22 12:18:55.775 W/System.err(24466): java.lang.RuntimeException: Unable to create application com.budejie.www.activity.BudejieApplication: java.lang.RuntimeException: Can't initialize disk cache
+01-22 12:18:55.775 W/System.err(24466):     at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4643)
+01-22 12:18:55.776 W/System.err(24466):     at android.app.ActivityThread.access$1300(ActivityThread.java:165)
+01-22 12:18:55.776 W/System.err(24466):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1433)
+01-22 12:18:55.776 W/System.err(24466):     at android.os.Handler.dispatchMessage(Handler.java:107)
+01-22 12:18:55.776 W/System.err(24466):     at android.os.Looper.loop(Looper.java:194)
+01-22 12:18:55.777 W/System.err(24466):     at android.app.ActivityThread.main(ActivityThread.java:5370)
+01-22 12:18:55.777 W/System.err(24466):     at java.lang.reflect.Method.invokeNative(Native Method)
+01-22 12:18:55.777 W/System.err(24466):     at java.lang.reflect.Method.invoke(Method.java:525)
+01-22 12:18:55.777 W/System.err(24466):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:833)
+01-22 12:18:55.778 W/System.err(24466):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+01-22 12:18:55.778 W/System.err(24466):     at dalvik.system.NativeStart.main(Native Method)
+01-22 12:18:55.779 W/System.err(24466): Caused by: java.lang.RuntimeException: Can't initialize disk cache
+01-22 12:18:55.780 W/System.err(24466):     at com.nostra13.universalimageloader.cache.disc.impl.ext.LruDiscCache.initCache(LruDiscCache.java:113)
+01-22 12:18:55.781 W/System.err(24466):     at com.nostra13.universalimageloader.cache.disc.impl.ext.LruDiscCache.<init>(LruDiscCache.java:101)
+01-22 12:18:55.781 W/System.err(24466):     at com.nostra13.universalimageloader.cache.disc.impl.ext.LruDiscCache.<init>(LruDiscCache.java:68)
+01-22 12:18:55.781 W/System.err(24466):     at com.budejie.www.activity.BudejieApplication.initImageLoader(BudejieApplication.java:184)
+01-22 12:18:55.782 W/System.err(24466):     at com.budejie.www.activity.BudejieApplication.onCreate(BudejieApplication.java:126)
+01-22 12:18:55.782 W/System.err(24466):     at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1069)
+01-22 12:18:55.783 W/System.err(24466):     at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4640)
+01-22 12:18:55.783 W/System.err(24466):     ... 10 more
+01-22 12:18:55.783 W/System.err(24466): Caused by: java.io.IOException
+01-22 12:18:55.784 W/System.err(24466):     at com.nostra13.universalimageloader.cache.disc.impl.ext.DiskLruCache.renameTo(DiskLruCache.java:403)
+01-22 12:18:55.785 W/System.err(24466):     at com.nostra13.universalimageloader.cache.disc.impl.ext.DiskLruCache.rebuildJournal(DiskLruCache.java:385)
+01-22 12:18:55.785 W/System.err(24466):     at com.nostra13.universalimageloader.cache.disc.impl.ext.DiskLruCache.open(DiskLruCache.java:250)
+01-22 12:18:55.785 W/System.err(24466):     at com.nostra13.universalimageloader.cache.disc.impl.ext.LruDiscCache.initCache(LruDiscCache.java:106)

@@ -1,0 +1,6 @@
+`Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference
+                                                     at org.json.JSONTokener.nextCleanInternal(JSONTokener.java:116)
+                                                     at org.json.JSONTokener.nextValue(JSONTokener.java:94)
+                                                     at org.json.JSONObject.<init>(JSONObject.java:156)
+                                                     at org.json.JSONObject.<init>(JSONObject.java:173)
+                                                     at org.fossasia.openevent.OpenEventApp.onCreate(OpenEventApp.java:164)`

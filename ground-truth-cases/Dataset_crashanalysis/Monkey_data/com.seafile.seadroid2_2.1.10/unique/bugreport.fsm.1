@@ -1,0 +1,30 @@
+//this is an auto-generated bug report
+//package name: com.seafile.seadroid2
+//version: 2.1.10
+//appro_time: 22
+ java.lang.IndexOutOfBoundsException: setSpan (8 ... 8) ends beyond length 7
+ 	at android.text.SpannableStringBuilder.checkRange(SpannableStringBuilder.java:1016)
+ 	at android.text.SpannableStringBuilder.setSpan(SpannableStringBuilder.java:592)
+ 	at android.text.SpannableStringBuilder.setSpan(SpannableStringBuilder.java:588)
+ 	at android.text.Selection.setSelection(Selection.java:76)
+ 	at android.widget.EditText.setSelection(EditText.java:87)
+ 	at com.seafile.seadroid2.account.ui.AccountDetailActivity$9.afterTextChanged(AccountDetailActivity.java:353)
+ 	at android.widget.TextView.sendAfterTextChanged(TextView.java:7334)
+ 	at android.widget.TextView$ChangeWatcher.afterTextChanged(TextView.java:9087)
+ 	at android.text.SpannableStringBuilder.sendAfterTextChanged(SpannableStringBuilder.java:970)
+ 	at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:497)
+ 	at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:435)
+ 	at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:30)
+ 	at android.view.inputmethod.BaseInputConnection.replaceText(BaseInputConnection.java:673)
+ 	at android.view.inputmethod.BaseInputConnection.commitText(BaseInputConnection.java:197)
+ 	at com.android.internal.widget.EditableInputConnection.commitText(EditableInputConnection.java:183)
+ 	at com.android.internal.view.IInputConnectionWrapper.executeMessage(IInputConnectionWrapper.java:279)
+ 	at com.android.internal.view.IInputConnectionWrapper$MyHandler.handleMessage(IInputConnectionWrapper.java:77)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,6 @@
+java.lang.NullPointerException
+       at java.util.ArrayList$ArrayListIterator.next(ArrayList.java:579)
+       at com.nostra13.universalimageloader.core.ImageLoaderEngine$1.run(ImageLoaderEngine.java:72)
+       at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1081)
+       at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:574)
+       at java.lang.Thread.run(Thread.java:1020)

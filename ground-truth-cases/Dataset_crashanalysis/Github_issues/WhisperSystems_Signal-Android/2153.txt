@@ -1,0 +1,244 @@
+W/IInputConnectionWrapper( 7518): android.os.DeadObjectException
+W/IInputConnectionWrapper( 7518): at android.os.BinderProxy.transact(Native Method)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputContextCallback$Stub$Proxy.setExtractedText(IInputContextCallback.java:200)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputConnectionWrapper.executeMessage(IInputConnectionWrapper.java:266)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputConnectionWrapper$MyHandler.handleMessage(IInputConnectionWrapper.java:77)
+W/IInputConnectionWrapper( 7518): at android.os.Handler.dispatchMessage(Handler.java:102)
+W/IInputConnectionWrapper( 7518): at android.os.Looper.loop(Looper.java:212)
+W/IInputConnectionWrapper( 7518): at android.app.ActivityThread.main(ActivityThread.java:5135)
+W/IInputConnectionWrapper( 7518): at java.lang.reflect.Method.invokeNative(Native Method)
+W/IInputConnectionWrapper( 7518): at java.lang.reflect.Method.invoke(Method.java:515)
+W/IInputConnectionWrapper( 7518): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:878)
+W/IInputConnectionWrapper( 7518): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+W/IInputConnectionWrapper( 7518): at dalvik.system.NativeStart.main(Native Method)
+W/IInputConnectionWrapper( 7518): Got RemoteException calling setTextBeforeCursor
+W/IInputConnectionWrapper( 7518): android.os.DeadObjectException
+W/IInputConnectionWrapper( 7518): at android.os.BinderProxy.transact(Native Method)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputContextCallback$Stub$Proxy.setTextBeforeCursor(IInputContextCallback.java:149)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputConnectionWrapper.executeMessage(IInputConnectionWrapper.java:218)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputConnectionWrapper$MyHandler.handleMessage(IInputConnectionWrapper.java:77)
+W/IInputConnectionWrapper( 7518): at android.os.Handler.dispatchMessage(Handler.java:102)
+W/IInputConnectionWrapper( 7518): at android.os.Looper.loop(Looper.java:212)
+W/IInputConnectionWrapper( 7518): at android.app.ActivityThread.main(ActivityThread.java:5135)
+W/IInputConnectionWrapper( 7518): at java.lang.reflect.Method.invokeNative(Native Method)
+W/IInputConnectionWrapper( 7518): at java.lang.reflect.Method.invoke(Method.java:515)
+W/IInputConnectionWrapper( 7518): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:878)
+W/IInputConnectionWrapper( 7518): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+W/IInputConnectionWrapper( 7518): at dalvik.system.NativeStart.main(Native Method)
+W/IInputConnectionWrapper( 7518): Got RemoteException calling setSelectedText
+W/IInputConnectionWrapper( 7518): android.os.DeadObjectException
+W/IInputConnectionWrapper( 7518): at android.os.BinderProxy.transact(Native Method)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputContextCallback$Stub$Proxy.setSelectedText(IInputContextCallback.java:219)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputConnectionWrapper.executeMessage(IInputConnectionWrapper.java:234)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputConnectionWrapper$MyHandler.handleMessage(IInputConnectionWrapper.java:77)
+W/IInputConnectionWrapper( 7518): at android.os.Handler.dispatchMessage(Handler.java:102)
+W/IInputConnectionWrapper( 7518): at android.os.Looper.loop(Looper.java:212)
+W/IInputConnectionWrapper( 7518): at android.app.ActivityThread.main(ActivityThread.java:5135)
+W/IInputConnectionWrapper( 7518): at java.lang.reflect.Method.invokeNative(Native Method)
+W/IInputConnectionWrapper( 7518): at java.lang.reflect.Method.invoke(Method.java:515)
+W/IInputConnectionWrapper( 7518): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:878)
+W/IInputConnectionWrapper( 7518): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+W/IInputConnectionWrapper( 7518): at dalvik.system.NativeStart.main(Native Method)
+W/GcmBroadcastReceiver( 7518): GCM message...
+W/IInputConnectionWrapper( 7518): Got RemoteException calling setTextAfterCursor
+W/IInputConnectionWrapper( 7518): android.os.DeadObjectException
+W/IInputConnectionWrapper( 7518): at android.os.BinderProxy.transact(Native Method)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputContextCallback$Stub$Proxy.setTextAfterCursor(IInputContextCallback.java:168)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputConnectionWrapper.executeMessage(IInputConnectionWrapper.java:202)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputConnectionWrapper$MyHandler.handleMessage(IInputConnectionWrapper.java:77)
+W/IInputConnectionWrapper( 7518): at android.os.Handler.dispatchMessage(Handler.java:102)
+W/IInputConnectionWrapper( 7518): at android.os.Looper.loop(Looper.java:212)
+W/IInputConnectionWrapper( 7518): at android.app.ActivityThread.main(ActivityThread.java:5135)
+W/IInputConnectionWrapper( 7518): at java.lang.reflect.Method.invokeNative(Native Method)
+W/IInputConnectionWrapper( 7518): at java.lang.reflect.Method.invoke(Method.java:515)
+W/IInputConnectionWrapper( 7518): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:878)
+W/IInputConnectionWrapper( 7518): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+W/IInputConnectionWrapper( 7518): at dalvik.system.NativeStart.main(Native Method)
+W/IInputConnectionWrapper( 7518): Got RemoteException calling setExtractedText
+W/IInputConnectionWrapper( 7518): android.os.DeadObjectException
+W/IInputConnectionWrapper( 7518): at android.os.BinderProxy.transact(Native Method)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputContextCallback$Stub$Proxy.setExtractedText(IInputContextCallback.java:200)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputConnectionWrapper.executeMessage(IInputConnectionWrapper.java:266)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputConnectionWrapper$MyHandler.handleMessage(IInputConnectionWrapper.java:77)
+W/IInputConnectionWrapper( 7518): at android.os.Handler.dispatchMessage(Handler.java:102)
+W/IInputConnectionWrapper( 7518): at android.os.Looper.loop(Looper.java:212)
+W/IInputConnectionWrapper( 7518): at android.app.ActivityThread.main(ActivityThread.java:5135)
+W/IInputConnectionWrapper( 7518): at java.lang.reflect.Method.invokeNative(Native Method)
+W/IInputConnectionWrapper( 7518): at java.lang.reflect.Method.invoke(Method.java:515)
+W/IInputConnectionWrapper( 7518): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:878)
+W/IInputConnectionWrapper( 7518): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+W/IInputConnectionWrapper( 7518): at dalvik.system.NativeStart.main(Native Method)
+W/IInputConnectionWrapper( 7518): Got RemoteException calling setTextBeforeCursor
+W/IInputConnectionWrapper( 7518): android.os.DeadObjectException
+W/IInputConnectionWrapper( 7518): at android.os.BinderProxy.transact(Native Method)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputContextCallback$Stub$Proxy.setTextBeforeCursor(IInputContextCallback.java:149)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputConnectionWrapper.executeMessage(IInputConnectionWrapper.java:218)
+W/IInputConnectionWrapper( 7518): at com.android.internal.view.IInputConnectionWrapper$MyHandler.handleMessage(IInputConnectionWrapper.java:77)
+W/IInputConnectionWrapper( 7518): at android.os.Handler.dispatchMessage(Handler.java:102)
+W/IInputConnectionWrapper( 7518): at android.os.Looper.loop(Looper.java:212)
+W/IInputConnectionWrapper( 7518): at android.app.ActivityThread.main(ActivityThread.java:5135)
+W/IInputConnectionWrapper( 7518): at java.lang.reflect.Method.invokeNative(Native Method)
+W/IInputConnectionWrapper( 7518): at java.lang.reflect.Method.invoke(Method.java:515)
+W/IInputConnectionWrapper( 7518): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:878)
+W/IInputConnectionWrapper( 7518): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+W/IInputConnectionWrapper( 7518): at dalvik.system.NativeStart.main(Native Method)
+W/TextSecureEnvelope( 7518): Our MAC: 35 2e df 96 79 e9 ca b4 8e 53 
+W/TextSecureEnvelope( 7518): Thr MAC: 35 2e df 96 79 e9 ca b4 8e 53 
+W/InputMethodManager( 7518): Ignoring onBind: cur seq=4148, given seq=4147
+W/IInputConnectionWrapper( 7518): getExtractedText on inactive InputConnection
+W/DeliveryReceiptJob( 7518): Sending delivery receipt...
+W/IInputConnectionWrapper( 7518): getTextBeforeCursor on inactive InputConnection
+W/IInputConnectionWrapper( 7518): getSelectedText on inactive InputConnection
+W/PushServiceSocket( 7518): Push service URL: https://textsecure-service.whispersystems.org
+W/PushServiceSocket( 7518): Opening URL: https://textsecure-service.whispersystems.org/v1/receipt/xxx/xyz
+W/IInputConnectionWrapper( 7518): getTextAfterCursor on inactive InputConnection
+W/MmsSmsDatabase( 7518): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (thread_id = 1) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (thread_id = 1) ORDER BY date_received DESC) LIMIT 1
+W/IInputConnectionWrapper( 7518): showStatusIcon on inactive InputConnection
+W/IInputConnectionWrapper( 7518): getExtractedText on inactive InputConnection
+W/IInputConnectionWrapper( 7518): getTextBeforeCursor on inactive InputConnection
+W/IInputConnectionWrapper( 7518): getSelectedText on inactive InputConnection
+W/IInputConnectionWrapper( 7518): getTextAfterCursor on inactive InputConnection
+W/IInputConnectionWrapper( 7518): getExtractedText on inactive InputConnection
+W/IInputConnectionWrapper( 7518): getTextBeforeCursor on inactive InputConnection
+W/IInputConnectionWrapper( 7518): getSelectedText on inactive InputConnection
+W/IInputConnectionWrapper( 7518): getTextAfterCursor on inactive InputConnection
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 7518): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+W/MmsSmsDatabase( 7518): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (thread_id = 1) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (thread_id = 1) ORDER BY date_received DESC) LIMIT 1
+W/PhoneNumberFormatter( 7518): Got local CC: GB
+W/PhoneNumberFormatter( 7518): Got local CC: GB
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/PushTextSendJob( 7518): Sending message: 19568
+W/PhoneNumberFormatter( 7518): Got local CC: GB
+W/TextSecureMessageSender( 7518): No attachments present...
+W/PushServiceSocket( 7518): Push service URL: https://textsecure-service.whispersystems.org
+W/PushServiceSocket( 7518): Opening URL: https://textsecure-service.whispersystems.org/v1/messages/xxx
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/PushServiceSocket( 7518): PUT  --  {"destination":"xxx","messages":[{"body":"MwohBVQQChMnLBsTeS9BnHItMTUdpKtVTQlP6zpm0hFY5cNqEAAYACKgATm1H5qQ5B30lp0Tow+G3KzPAbW4I0lryiq0keBaNe5Ik/BLQxN3H92gWWEe0Y2+YFLl7kuMv9KPjMx28ZhTbhW2rZ3yFPrHoazUZOGvAadAFBnC55hHaxfacfXJUZ5/Vax87sDclD5VOJ7PLGAH4k5e4mzSw1GOrnPQH73Xfmmqo5OQAdWl5brSsv9Ysv03OTJ3naOdBt2jYQ36Z3bOgtPEvKcujn6oJg\u003d\u003d","destinationDeviceId":1,"destinationRegistrationId":14685,"type":1}],"timestamp":1417190833276}
+W/MessageDatabase( 7518): Updating ID: 19568 to base type: 2097152
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/MmsSmsDatabase( 7518): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (thread_id = 1) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (thread_id = 1) ORDER BY date_received DESC) LIMIT 1
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/MessageDatabase( 7518): Updating ID: 19568 to base type: 8388608
+I/Choreographer( 7518): Skipped 315 frames!  The application may be doing too much work on its main thread.
+W/MmsSmsDatabase( 7518): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (thread_id = 1) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (thread_id = 1) ORDER BY date_received DESC) LIMIT 1
+W/MessageDatabase( 7518): Updating ID: 19568 to base type: 23
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/MmsSmsDatabase( 7518): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (thread_id = 1) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (thread_id = 1) ORDER BY date_received DESC) LIMIT 1
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+I/Choreographer( 7518): Skipped 376 frames!  The application may be doing too much work on its main thread.
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+I/Choreographer( 7518): Skipped 332 frames!  The application may be doing too much work on its main thread.
+I/dalvikvm( 7518): threadid=3: reacting to signal 3
+I/dalvikvm( 7518): Wrote stack traces to '/data/anr/traces.txt'
+W/KeyCachingService( 7518): Decrementing activity count...
+W/GcmBroadcastReceiver( 7518): GCM message...
+W/TextSecureEnvelope( 7518): Our MAC: 41 bb 13 38 1e 92 c5 5d fd f3 
+W/TextSecureEnvelope( 7518): Thr MAC: 41 bb 13 38 1e 92 c5 5d fd f3 
+W/PushReceiveJob( 7518): Received receipt: (XXXXX, 1417190833276)
+W/PhoneNumberFormatter( 7518): Got local CC: GB
+W/GcmBroadcastReceiver( 7518): GCM message...
+W/TextSecureEnvelope( 7518): Our MAC: e8 3a b9 1c e9 eb e3 be 5b 17 
+W/TextSecureEnvelope( 7518): Thr MAC: e8 3a b9 1c e9 eb e3 be 5b 17 
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/DeliveryReceiptJob( 7518): Sending delivery receipt...
+W/PushServiceSocket( 7518): Push service URL: https://textsecure-service.whispersystems.org
+W/PushServiceSocket( 7518): Opening URL: https://textsecure-service.whispersystems.org/v1/receipt/xxx/xyz
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/MmsSmsDatabase( 7518): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (thread_id = 1) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (thread_id = 1) ORDER BY date_received DESC) LIMIT 1
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/MmsSmsDatabase( 7518): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+W/CursorWindow( 7518): Window is full: requested allocation 73 bytes, free space 32 bytes, window size 2097152 bytes
+W/PartProvider( 7350): Got master secret: null
+I/ActivityManager( 7350): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:266576153
+W/KeyCachingService( 7350): Incrementing activity count...
+W/KeyCachingService( 7350): Decrementing activity count...
+I/Adreno-EGL( 7350): <qeglDrvAPI_eglInitialize:381>: EGL 1.4 QUALCOMM build: AU_LINUX_ANDROID_KK_2.7_RB1.04.04.04.007.064_msm8960_KK_2.7_RB1__release_AU ()
+I/Adreno-EGL( 7350): OpenGL ES Shader Compiler Version: 17.01.12.SPL
+I/Adreno-EGL( 7350): Build Date: 07/01/14 Tue
+I/Adreno-EGL( 7350): Local Branch: 
+I/Adreno-EGL( 7350): Remote Branch: quic/kk_2.7_rb1.41
+I/Adreno-EGL( 7350): Local Patches: NONE
+I/Adreno-EGL( 7350): Reconstruct Branch: AU_LINUX_ANDROID_KK_2.7_RB1.04.04.04.007.064 +  NOTHING
+D/OpenGLRenderer( 7350): Enabling debug mode 0
+I/ActivityManager( 7350): Timeline: Activity_idle id: android.os.BinderProxy@448cc5a8 time:266576515
+I/ActivityManager( 7350): Timeline: Activity_idle id: android.os.BinderProxy@44756be8 time:266576515
+W/service ( 7350): Broadcasting new secret...
+D/dalvikvm( 7350): GC_EXPLICIT freed 1931K, 12% free 52219K/58868K, paused 5ms+6ms, total 60ms
+W/SendReceiveService( 7350): Got a MasterSecret broadcast...
+W/PartProvider( 7350): Got master secret: org.thoughtcrime.securesms.crypto.MasterSecret@44a9fba0
+I/ActivityManager( 7350): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:266580665
+W/KeyCachingService( 7350): Incrementing activity count...
+W/KeyCachingService( 7350): Decrementing activity count...
+W/MmsSmsDatabase( 7350): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+W/RecipientProvider( 7350): Cache miss [SYNC]!
+W/RecipientProvider( 7350): Cache miss [SYNC]!
+W/DirectoryRefreshListener( 7350): Scheduling for: 1417206075160
+D/dalvikvm( 7350): GC_CONCURRENT freed 169K, 11% free 52571K/58868K, paused 7ms+5ms, total 41ms
+D/dalvikvm( 7350): Trying to load lib /data/app-lib/org.thoughtcrime.securesms-1/libcurve25519.so 0x4475d4e8
+W/KeyCachingService( 7350): Incrementing activity count...
+D/dalvikvm( 7350): Added shared lib /data/app-lib/org.thoughtcrime.securesms-1/libcurve25519.so 0x4475d4e8
+D/dalvikvm( 7350): No JNI_OnLoad found in /data/app-lib/org.thoughtcrime.securesms-1/libcurve25519.so 0x4475d4e8, skipping init
+W/PushDecryptJob( 7350): org.whispersystems.libaxolotl.DuplicateMessageException: Received message with old counter: 1 , 0
+W/PushDecryptJob( 7350): at org.whispersystems.libaxolotl.SessionCipher.getOrCreateMessageKeys(SessionCipher.java:379)
+W/PushDecryptJob( 7350): at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:311)
+W/PushDecryptJob( 7350): at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:268)
+W/PushDecryptJob( 7350): at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:249)
+W/PushDecryptJob( 7350): at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:217)
+W/PushDecryptJob( 7350): at org.whispersystems.textsecure.api.crypto.TextSecureCipher.decrypt(TextSecureCipher.java:71)
+W/PushDecryptJob( 7350): at org.thoughtcrime.securesms.jobs.PushDecryptJob.handleMessage(PushDecryptJob.java:98)
+W/PushDecryptJob( 7350): at org.thoughtcrime.securesms.jobs.PushDecryptJob.onRun(PushDecryptJob.java:76)
+W/PushDecryptJob( 7350): at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/PushDecryptJob( 7350): at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:72)
+W/PushDecryptJob( 7350): at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

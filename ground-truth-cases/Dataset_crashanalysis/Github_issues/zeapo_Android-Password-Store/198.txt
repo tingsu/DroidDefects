@@ -1,0 +1,12 @@
+java.lang.NullPointerException: Attempt to invoke interface method 'void com.zeapo.pwdstore.PasswordFragment$OnFragmentInteractionListener.onFragmentInteraction(com.zeapo.pwdstore.utils.PasswordItem)' on a null object reference
+E/AndroidRuntime(28159):        at com.zeapo.pwdstore.utils.PasswordRecyclerAdapter$1.onClick(PasswordRecyclerAdapter.java:109)
+E/AndroidRuntime(28159):        at android.view.View.performClick(View.java:4764)
+E/AndroidRuntime(28159):        at android.view.View$PerformClick.run(View.java:19844)
+E/AndroidRuntime(28159):        at android.os.Handler.handleCallback(Handler.java:739)
+E/AndroidRuntime(28159):        at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime(28159):        at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(28159):        at android.app.ActivityThread.main(ActivityThread.java:5349)
+E/AndroidRuntime(28159):        at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(28159):        at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(28159):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:908)
+E/AndroidRuntime(28159):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:703)

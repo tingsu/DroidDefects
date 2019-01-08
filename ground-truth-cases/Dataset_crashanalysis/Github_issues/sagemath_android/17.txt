@@ -1,0 +1,6 @@
+    01-11 04:24:49.300: E/AndroidRuntime(857): Caused by: java.util.NoSuchElementException
+    01-11 04:24:49.300: E/AndroidRuntime(857):      at java.util.LinkedList.getFirstImpl(LinkedList.java:538)
+    01-11 04:24:49.300: E/AndroidRuntime(857):      at java.util.LinkedList.getFirst(LinkedList.java:530)
+    01-11 04:24:49.300: E/AndroidRuntime(857):      at org.sagemath.droid.CellCollection.initialize(CellCollection.java:50)
+    01-11 04:24:49.300: E/AndroidRuntime(857):      at org.sagemath.droid.CellActivity.onCreate(CellActivity.java:24)
+    01-11 04:24:49.300: E/AndroidRuntime(857):      at android.app.Activity.performCreate(Activity.java:5231)

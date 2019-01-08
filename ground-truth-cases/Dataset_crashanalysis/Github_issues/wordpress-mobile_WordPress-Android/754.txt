@@ -1,0 +1,7 @@
+    java.lang.ArrayIndexOutOfBoundsException: length=40; index=-1
+            at java.util.ArrayList.get(ArrayList.java:310)
+            at org.wordpress.android.ui.comments.CommentsListFragment$8.onItemClick(CommentsListFragment.java:465)
+            at android.widget.AdapterView.performItemClick(AdapterView.java:299)
+            at android.widget.AbsListView.performItemClick(AbsListView.java:1113)
+            at android.widget.AbsListView$PerformClick.run(AbsListView.java:2904)
+            at android.widget.AbsListView$3.run(AbsListView.java:3638)

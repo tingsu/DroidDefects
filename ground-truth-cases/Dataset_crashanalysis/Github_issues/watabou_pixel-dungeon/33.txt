@@ -1,0 +1,5 @@
+Exception in thread "LWJGL Application" java.lang.NullPointerException
+        at com.watabou.pd.desktop.DesktopInputProcessor.touchUp(DesktopInputProcessor.java:121)
+        at com.badlogic.gdx.backends.lwjgl.LwjglInput.processEvents(LwjglInput.java:326)
+        at com.badlogic.gdx.backends.lwjgl.LwjglApplication.mainLoop(LwjglApplication.java:199)
+        at com.badlogic.gdx.backends.lwjgl.LwjglApplication$1.run(LwjglApplication.java:114)

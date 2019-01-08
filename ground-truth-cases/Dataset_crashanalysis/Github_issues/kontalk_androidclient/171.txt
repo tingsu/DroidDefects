@@ -1,0 +1,5 @@
+E/AndroidRuntime( 1280): java.lang.NullPointerException
+E/AndroidRuntime( 1280):        at org.kontalk.billing.IabHelper.startSetup(IabHelper.java:263)
+E/AndroidRuntime( 1280):        at org.kontalk.ui.DonationFragment.setupGoogle(DonationFragment.java:151)
+E/AndroidRuntime( 1280):        at org.kontalk.ui.DonationFragment.donateGoogle(DonationFragment.java:235)
+E/AndroidRuntime( 1280):        at org.kontalk.ui.DonationFragment.onClick(DonationFragment.java:92)

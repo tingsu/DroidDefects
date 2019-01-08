@@ -1,0 +1,95 @@
+W/dalvikvm(22666): VFY: unable to resolve interface method 11450: Landroid/view/Window$Callback;.onProvideKeyboardShortcuts (Ljava/util/List;Landroid/view/Menu;I)V
+D/dalvikvm(22666): VFY: replacing opcode 0x72 at 0x0002
+W/dalvikvm(22666): VFY: unable to find class referenced in signature (Landroid/view/SearchEvent;)
+I/dalvikvm(22666): Could not find method android.view.Window$Callback.onSearchRequested, referenced from method android.support.v7.view.WindowCallbackWrapper.onSearchRequested
+W/dalvikvm(22666): VFY: unable to resolve interface method 11452: Landroid/view/Window$Callback;.onSearchRequested (Landroid/view/SearchEvent;)Z
+D/dalvikvm(22666): VFY: replacing opcode 0x72 at 0x0002
+I/dalvikvm(22666): Could not find method android.view.Window$Callback.onWindowStartingActionMode, referenced from method android.support.v7.view.WindowCallbackWrapper.onWindowStartingActionMode
+W/dalvikvm(22666): VFY: unable to resolve interface method 11456: Landroid/view/Window$Callback;.onWindowStartingActionMode (Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
+D/dalvikvm(22666): VFY: replacing opcode 0x72 at 0x0002
+I/dalvikvm(22666): Could not find method android.content.Context.getColor, referenced from method com.afollestad.materialdialogs.util.DialogUtils.getColor
+W/dalvikvm(22666): VFY: unable to resolve virtual method 261: Landroid/content/Context;.getColor (I)I
+D/dalvikvm(22666): VFY: replacing opcode 0x6e at 0x000f
+I/dalvikvm(22666): Could not find method android.view.ViewGroup.<init>, referenced from method com.afollestad.materialdialogs.internal.MDRootLayout.<init>
+W/dalvikvm(22666): VFY: unable to resolve direct method 11325: Landroid/view/ViewGroup;.<init> (Landroid/content/Context;Landroid/util/AttributeSet;II)V
+D/dalvikvm(22666): VFY: replacing opcode 0x70 at 0x0001
+I/dalvikvm(22666): Could not find method android.content.res.Resources.getDrawable, referenced from method android.support.v7.widget.ResourcesWrapper.getDrawable
+W/dalvikvm(22666): VFY: unable to resolve virtual method 413: Landroid/content/res/Resources;.getDrawable (ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+D/dalvikvm(22666): VFY: replacing opcode 0x6e at 0x0002
+I/dalvikvm(22666): Could not find method android.content.res.Resources.getDrawableForDensity, referenced from method android.support.v7.widget.ResourcesWrapper.getDrawableForDensity
+W/dalvikvm(22666): VFY: unable to resolve virtual method 415: Landroid/content/res/Resources;.getDrawableForDensity (IILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+D/dalvikvm(22666): VFY: replacing opcode 0x6e at 0x0002
+E/dalvikvm(22666): Could not find class 'android.graphics.drawable.RippleDrawable', referenced from method android.support.v7.widget.AppCompatImageHelper.hasOverlappingRendering
+W/dalvikvm(22666): VFY: unable to resolve instanceof 155 (Landroid/graphics/drawable/RippleDrawable;) in Landroid/support/v7/widget/AppCompatImageHelper;
+D/dalvikvm(22666): VFY: replacing opcode 0x20 at 0x000c
+I/dalvikvm(22666): Could not find method android.content.Context.getColorStateList, referenced from method android.support.v7.content.res.AppCompatResources.getColorStateList
+W/dalvikvm(22666): VFY: unable to resolve virtual method 262: Landroid/content/Context;.getColorStateList (I)Landroid/content/res/ColorStateList;
+D/dalvikvm(22666): VFY: replacing opcode 0x6e at 0x0006
+I/dalvikvm(22666): Could not find method android.widget.TextView.<init>, referenced from method com.afollestad.materialdialogs.internal.MDButton.<init>
+W/dalvikvm(22666): VFY: unable to resolve direct method 12048: Landroid/widget/TextView;.<init> (Landroid/content/Context;Landroid/util/AttributeSet;II)V
+D/dalvikvm(22666): VFY: replacing opcode 0x70 at 0x0000
+E/WVMExtractor(22666): Failed to open libwvm.so
+I/OMXClient(22666): Using client-side OMX mux.
+D/TIOMX_CORE( 1168): Found component OMX.TI.MP3.decode with refCount 0  pHandle (0x2a014c08)
+D/OMX_MP3 ( 1168): OMX_ComponentInit():216 Entering OMX_ComponentInit
+E/WindowManager( 1580): Starting window AppWindowToken{425404a0 token=Token{41f8dab0 ActivityRecord{41d5d458 u0 de.ph1b.audiobook/.features.BookActivity t36}}} timed out
+W/ActivityManager( 1580): Launch timeout has expired, giving up wake lock!
+I/Process ( 1580): Sending signal. PID: 22666 SIG: 3
+I/dalvikvm(22666): threadid=3: reacting to signal 3
+W/ActivityManager( 1580): Timeout executing service: ServiceRecord{424d8ed0 u0 de.ph1b.audiobook/.playback.BookReaderService}
+I/dalvikvm(22666): Wrote stack traces to '/data/anr/traces.txt'
+I/Process ( 1580): Sending signal. PID: 1580 SIG: 3
+I/dalvikvm( 1580): threadid=3: reacting to signal 3
+E/Sensors ( 1580): poll() failed (Interrupted system call)
+I/Process ( 1580): Sending signal. PID: 1859 SIG: 3
+I/dalvikvm( 1859): threadid=3: reacting to signal 3
+I/dalvikvm( 1580): Wrote stack traces to '/data/anr/traces.txt'
+I/Process ( 1580): Sending signal. PID: 1852 SIG: 3
+I/dalvikvm( 1852): threadid=3: reacting to signal 3
+I/dalvikvm( 1852): Wrote stack traces to '/data/anr/traces.txt'
+I/Process ( 1580): Sending signal. PID: 1846 SIG: 3
+I/dalvikvm( 1846): threadid=3: reacting to signal 3
+I/dalvikvm( 1859): Wrote stack traces to '/data/anr/traces.txt'
+I/Process ( 1580): Sending signal. PID: 1700 SIG: 3
+I/dalvikvm( 1700): threadid=3: reacting to signal 3
+I/dalvikvm( 1846): Wrote stack traces to '/data/anr/traces.txt'
+I/dalvikvm( 1700): Wrote stack traces to '/data/anr/traces.txt'
+I/Choreographer( 1700): Skipped 47 frames!  The application may be doing too much work on its main thread.
+I/Process ( 1580): Sending signal. PID: 22666 SIG: 6
+F/libc    (22666): Fatal signal 6 (SIGABRT) at 0x0000062c (code=0), thread 22666 (.ph1b.audiobook)
+E/ActivityManager( 1580): ANR in de.ph1b.audiobook
+E/ActivityManager( 1580): PID: 22666
+E/ActivityManager( 1580): Reason: Executing service de.ph1b.audiobook/.playback.BookReaderService
+E/ActivityManager( 1580): Load: 1.34 / 6.1 / 13.26
+E/ActivityManager( 1580): CPU usage from 5571ms to 540ms ago:
+E/ActivityManager( 1580):   28% 22666/de.ph1b.audiobook: 20% user + 7.7% kernel / faults: 34 minor
+E/ActivityManager( 1580):   6.9% 1700/com.android.systemui: 5.9% user + 0.9% kernel / faults: 129 minor
+E/ActivityManager( 1580):   1.9% 1165/surfaceflinger: 1.1% user + 0.7% kernel
+E/ActivityManager( 1580):   1.1% 1580/system_server: 0.5% user + 0.5% kernel / faults: 13 minor
+E/ActivityManager( 1580):   0.3% 1210/pvr_workqueue: 0% user + 0.3% kernel
+E/ActivityManager( 1580):   0.1% 351/cfinteractive: 0% user + 0.1% kernel
+E/ActivityManager( 1580):   0.1% 678/dsi: 0% user + 0.1% kernel
+E/ActivityManager( 1580):   0.1% 1168/mediaserver: 0% user + 0.1% kernel
+E/ActivityManager( 1580):   0% 1305/omaplfb: 0% user + 0% kernel
+E/ActivityManager( 1580):   0% 1686/phy0: 0% user + 0% kernel
+E/ActivityManager( 1580):   0% 1693/wpa_supplicant: 0% user + 0% kernel / faults: 1 minor
+E/ActivityManager( 1580):   0% 22400/mikado.bizcalpro: 0% user + 0% kernel / faults: 14 minor
+E/ActivityManager( 1580):   0% 22422/com.android.providers.calendar: 0% user + 0% kernel / faults: 13 minor
+E/ActivityManager( 1580): 16% TOTAL: 12% user + 2.9% kernel + 0.1% iowait + 0.7% irq
+E/ActivityManager( 1580): CPU usage from 2552ms to 3082ms later:
+E/ActivityManager( 1580):   24% 22666/de.ph1b.audiobook: 16% user + 7.4% kernel / faults: 1 minor
+E/ActivityManager( 1580):     18% 22689/MediaCodec_loop: 11% user + 7.4% kernel
+E/ActivityManager( 1580):     9.2% 22666/.ph1b.audiobook: 7.4% user + 1.8% kernel
+E/ActivityManager( 1580):   5.6% 1580/system_server: 0% user + 5.6% kernel
+E/ActivityManager( 1580):     3.7% 1597/ActivityManager: 0% user + 3.7% kernel
+E/ActivityManager( 1580): 5.6% TOTAL: 0% user + 5.6% kernel
+E/ActivityManager( 1580): Error reading /data/anr/traces.txt
+E/ActivityManager( 1580): java.io.FileNotFoundException: /data/anr/traces.txt: open failed: ENOENT (No such file or directory)
+E/ActivityManager( 1580):       at libcore.io.IoBridge.open(IoBridge.java:409)
+E/ActivityManager( 1580):       at java.io.FileInputStream.<init>(FileInputStream.java:78)
+E/ActivityManager( 1580):       at android.os.FileUtils.readTextFile(FileUtils.java:236)
+E/ActivityManager( 1580):       at com.android.server.am.ActivityManagerService$19.run(ActivityManagerService.java:10175)
+E/ActivityManager( 1580): Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+E/ActivityManager( 1580):       at libcore.io.Posix.open(Native Method)
+E/ActivityManager( 1580):       at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+E/ActivityManager( 1580):       at libcore.io.IoBridge.open(IoBridge.java:393)

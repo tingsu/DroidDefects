@@ -1,0 +1,25 @@
+java.lang.RuntimeException: Unable to resume activity {com.nextgis.mobile/com.nextgis.mobile.activity.MainActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=0, data=null} to activity {com.nextgis.mobile/com.nextgis.mobile.activity.MainActivity}: java.lang.NullPointerException
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2579)
+    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2607)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2093)
+    at android.app.ActivityThread.handleRelaunchActivity(ActivityThread.java:3516)
+    at android.app.ActivityThread.access$700(ActivityThread.java:134)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1205)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:4744)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:511)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=0, data=null} to activity {com.nextgis.mobile/com.nextgis.mobile.activity.MainActivity}: java.lang.NullPointerException
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3145)
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2566)
+    ... 13 more
+Caused by: java.lang.NullPointerException
+    at com.nextgis.maplibui.overlay.EditLayerOverlay.setHasEdits(EditLayerOverlay.java:334)
+    at com.nextgis.mobile.fragment.MapFragment.onActivityResult(MapFragment.java:284)
+    at com.nextgis.mobile.activity.MainActivity.onActivityResult(MainActivity.java:440)
+    at android.app.Activity.dispatchActivityResult(Activity.java:5192)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3141)

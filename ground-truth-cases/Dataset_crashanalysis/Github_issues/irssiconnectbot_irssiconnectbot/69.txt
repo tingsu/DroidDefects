@@ -1,0 +1,4 @@
+java.io.IOException: Remote end closed connection
+    at org.woltage.irssiconnectbot.transport.SSH.read(SSH.java:588)
+    at org.woltage.irssiconnectbot.service.Relay.run(Relay.java:116)
+    at java.lang.Thread.run(Thread.java:1019)

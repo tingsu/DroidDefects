@@ -1,0 +1,32 @@
+()Z
+W/dalvikvm(12654): VFY:  rejecting opcode 0x6e at 0x00ec
+W/dalvikvm(12654): VFY:  rejected Lcom/ichi2/anki/StudyOptions$24;.onClick (Landroid/content/DialogInterface;I)V
+W/dalvikvm(12654): Verifier rejected class Lcom/ichi2/anki/StudyOptions$24;
+D/AndroidRuntime(12654): Shutting down VM
+W/dalvikvm(12654): threadid=3: thread exiting with uncaught exception (group=0x4000fe70)
+I/AnkiDroid(12654): uncaughtException
+I/AnkiDroid(12654): collectInformation
+I/AnkiDroid(12654): collecting information
+I/AnkiDroid(12654): Information collected
+I/AnkiDroid(12654): report infomation string created
+I/AnkiDroid(12654): saveReportFile
+I/AnkiDroid(12654): No external storage available
+I/AnkiDroid(12654): report saved
+E/AndroidRuntime(12654): Uncaught handler: thread main exiting due to uncaught exception
+E/AndroidRuntime(12654): java.lang.VerifyError: com.ichi2.anki.StudyOptions$24
+E/AndroidRuntime(12654):    at com.ichi2.anki.StudyOptions.createLimitSessionDialog(StudyOptions.java:1084)
+E/AndroidRuntime(12654):    at com.ichi2.anki.StudyOptions.initAllContentViews(StudyOptions.java:732)
+E/AndroidRuntime(12654):    at com.ichi2.anki.StudyOptions.onCreate(StudyOptions.java:476)
+E/AndroidRuntime(12654):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1123)
+E/AndroidRuntime(12654):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2231)
+E/AndroidRuntime(12654):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2284)
+E/AndroidRuntime(12654):    at android.app.ActivityThread.access$1800(ActivityThread.java:112)
+E/AndroidRuntime(12654):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1692)
+E/AndroidRuntime(12654):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(12654):    at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime(12654):    at android.app.ActivityThread.main(ActivityThread.java:3948)
+E/AndroidRuntime(12654):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(12654):    at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime(12654):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:782)
+E/AndroidRuntime(12654):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:540)
+E/AndroidRuntime(12654):    at dalvik.system.NativeStart.main(Native Method)

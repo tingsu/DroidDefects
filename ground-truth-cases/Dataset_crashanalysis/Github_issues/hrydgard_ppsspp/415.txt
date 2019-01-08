@@ -1,0 +1,6 @@
+I/System  ( 2990): libcore.io.ErrnoException: kill failed: ESRCH (No such process)
+I/System  ( 2990):  at libcore.io.Posix.kill(Native Method)
+I/System  ( 2990):  at libcore.io.ForwardingOs.kill(ForwardingOs.java:77)
+I/System  ( 2990):  at java.lang.ProcessManager$ProcessImpl.destroy(ProcessManager.java:260)
+I/System  ( 2990):  at com.dromdev.test.logcat.LogcatProcessor.stopCatter(LogcatProcessor.java:48)
+I/System  ( 2990):  at com.dromdev.test.logcat.LogcatProcessor.run(LogcatProcessor.java:39)

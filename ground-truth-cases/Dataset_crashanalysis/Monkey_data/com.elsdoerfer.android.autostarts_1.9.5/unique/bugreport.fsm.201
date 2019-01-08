@@ -1,0 +1,10 @@
+//this is an auto-generated bug report
+//package name: com.elsdoerfer.android.autostarts
+//version: 1.9.5
+//appro_time: 66
+ java.lang.NullPointerException
+ 	at com.elsdoerfer.android.autostarts.Utils.runRootCommand(Utils.java:86)
+ 	at com.elsdoerfer.android.autostarts.ToggleTool.setADBEnabledState(ToggleTool.java:222)
+ 	at com.elsdoerfer.android.autostarts.ToggleTool.toggleState(ToggleTool.java:132)
+ 	at com.elsdoerfer.android.autostarts.ToggleService$1.run(ToggleService.java:146)
+ 	at java.lang.Thread.run(Thread.java:841)

@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: org.sagemath.droid
+//version: 0.9.3
+//appro_time: 157
+ java.lang.NullPointerException
+ 	at org.sagemath.droid.CellCollection.cleanHistory(CellCollection.java:167)
+ 	at org.sagemath.droid.SageActivity.onOptionsItemSelected(SageActivity.java:219)
+ 	at android.app.Activity.onMenuItemSelected(Activity.java:2566)
+ 	at android.support.v4.app.FragmentActivity.onMenuItemSelected(FragmentActivity.java:345)
+ 	at com.android.internal.policy.impl.PhoneWindow.onMenuItemSelected(PhoneWindow.java:986)
+ 	at com.android.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:742)
+ 	at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:152)
+ 	at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:881)
+ 	at com.android.internal.view.menu.MenuPopupHelper.onItemClick(MenuPopupHelper.java:156)
+ 	at android.widget.AdapterView.performItemClick(AdapterView.java:298)
+ 	at android.widget.AbsListView.performItemClick(AbsListView.java:1100)
+ 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:2788)
+ 	at android.widget.AbsListView$1.run(AbsListView.java:3463)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

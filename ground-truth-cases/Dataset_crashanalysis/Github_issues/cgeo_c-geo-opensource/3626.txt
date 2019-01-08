@@ -1,0 +1,8 @@
+22:44:55.225 Error DatabaseUtils 2392  java.lang.SecurityException: Permission Denial: get/set setting for user asks to run as user -2 but is calling from user 0; this requires android.permission.INTERACT_ACROSS_USERS_FULL
+22:44:55.225 Error DatabaseUtils 2392   at com.android.server.am.ActivityManagerService.handleIncomingUser(ActivityManagerService.java:13101)
+22:44:55.225 Error DatabaseUtils 2392   at android.app.ActivityManager.handleIncomingUser(ActivityManager.java:2038)
+22:44:55.225 Error DatabaseUtils 2392   at com.android.providers.settings.SettingsProvider.callFromPackage(SettingsProvider.java:607)
+22:44:55.225 Error DatabaseUtils 2392   at android.content.ContentProvider$Transport.call(ContentProvider.java:279)
+22:44:55.225 Error DatabaseUtils 2392   at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:273)
+22:44:55.225 Error DatabaseUtils 2392   at android.os.Binder.execTransact(Binder.java:388)
+22:44:55.225 Error DatabaseUtils 2392   at dalvik.system.NativeStart.run(Native Method)

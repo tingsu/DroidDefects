@@ -1,0 +1,8 @@
+04-06 00:34:14.988 E/AndroidRuntime(4515): java.lang.IllegalArgumentException: No inject registered for members/org.smssecure.smssecure.jobs.CreateSignedPreKeyJob. You must explicitly add it to the 'injects' option in one of your modules.
+04-06 00:34:14.988 E/AndroidRuntime(4515):  at dagger.ObjectGraph$DaggerObjectGraph.getInjectableTypeBinding(ObjectGraph.java:302)
+04-06 00:34:14.988 E/AndroidRuntime(4515):  at dagger.ObjectGraph$DaggerObjectGraph.inject(ObjectGraph.java:279)
+04-06 00:34:14.988 E/AndroidRuntime(4515):  at org.smssecure.smssecure.ApplicationContext.injectDependencies(ApplicationContext.java:67)
+04-06 00:34:14.988 E/AndroidRuntime(4515):  at org.whispersystems.jobqueue.JobManager$1.run(JobManager.java:109)
+04-06 00:34:14.988 E/AndroidRuntime(4515):  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+04-06 00:34:14.988 E/AndroidRuntime(4515):  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-06 00:34:14.988 E/AndroidRuntime(4515):  at java.lang.Thread.run(Thread.java:841)

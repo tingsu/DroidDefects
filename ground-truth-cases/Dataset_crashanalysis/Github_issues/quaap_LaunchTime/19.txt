@@ -1,0 +1,9 @@
+java.lang.IllegalArgumentException: column indices (start + span) mustn't exceed the column count.
+        at android.widget.GridLayout.handleInvalidParams(GridLayout.java:819)
+        at android.widget.GridLayout.checkLayoutParams(GridLayout.java:833)
+        at android.widget.GridLayout.checkLayoutParams(GridLayout.java:849)
+        at android.view.ViewGroup.addViewInner(ViewGroup.java:3570)
+        at android.view.ViewGroup.addView(ViewGroup.java:3415)
+        at android.view.ViewGroup.addView(ViewGroup.java:3360)
+        at android.view.ViewGroup.addView(ViewGroup.java:3336)
+        at com.quaap.launchtime.MainActivity$12.handleDrop(MainActivity.java:1224)

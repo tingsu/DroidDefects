@@ -1,0 +1,21 @@
+java.lang.NullPointerException^M
+        at com.nutomic.syncthingandroid.util.FolderObserver.<init>(FolderObserver.java:78)^M
+        at com.nutomic.syncthingandroid.util.FolderObserver.<init>(FolderObserver.java:79)^M
+        at com.nutomic.syncthingandroid.util.FolderObserver.<init>(FolderObserver.java:32)^M
+        at com.nutomic.syncthingandroid.syncthing.SyncthingService$StartupTask$1.onApiAvailable(SyncthingService.java:285)^M
+        at com.nutomic.syncthingandroid.syncthing.RestApi.tryIsAvailable(RestApi.java:247)^M
+        at com.nutomic.syncthingandroid.syncthing.RestApi.access$100(RestApi.java:39)^M
+        at com.nutomic.syncthingandroid.syncthing.RestApi$3.onReceiveSystemInfo(RestApi.java:232)^M
+        at com.nutomic.syncthingandroid.syncthing.RestApi$7.onPostExecute(RestApi.java:434)^M
+        at com.nutomic.syncthingandroid.syncthing.RestApi$7.onPostExecute(RestApi.java:419)^M
+        at android.os.AsyncTask.finish(AsyncTask.java:631)^M
+        at android.os.AsyncTask.access$600(AsyncTask.java:177)^M
+        at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)^M
+        at android.os.Handler.dispatchMessage(Handler.java:99)^M
+        at android.os.Looper.loop(Looper.java:137)^M
+        at android.app.ActivityThread.main(ActivityThread.java:5279)^M
+        at java.lang.reflect.Method.invokeNative(Native Method)^M
+        at java.lang.reflect.Method.invoke(Method.java:511)^M
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1102)^M
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:869)^M
+        at dalvik.system.NativeStart.main(Native Method)^M

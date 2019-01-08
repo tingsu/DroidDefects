@@ -1,0 +1,4 @@
+thanks for your game, i just check it dan run in my smartphone, and i find bug in Game L , when i finish the Game L the app forclose, java.lang.ArrayIndexOutOfBoundsException: length=8; index=-1
+                                                                         at de.tobiasbielefeld.brickgames.games.GameL.calculation(GameL.java:80)
+                                                                         at de.tobiasbielefeld.brickgames.classes.Game.timerTick(Game.java:100)
+                                                                         at de.tobiasbielefeld.brickgames.ui.Main.run(Main.java:269)

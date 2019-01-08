@@ -1,0 +1,6 @@
+java.lang.IllegalArgumentException: Invalid long: ""
+12-28 00:06:55.787 9089-9089/org.tvbrowser.tvbrowser W/System.err:     at android.os.Parcel.readException(Parcel.java:1603)
+12-28 00:06:55.787 9089-9089/org.tvbrowser.tvbrowser W/System.err:     at android.os.Parcel.readException(Parcel.java:1552)
+12-28 00:06:55.787 9089-9089/org.tvbrowser.tvbrowser W/System.err:     at **org.tvbrowser.devplugin.Plugin$Stub$Proxy.handleFirstKnownProgramId(Plugin.java:529)**
+12-28 00:06:55.787 9089-9089/org.tvbrowser.tvbrowser W/System.err:     at org.tvbrowser.devplugin.PluginServiceConnection.callOnActivation(PluginServiceConnection.java:153)
+12-28 00:06:55.787 9089-9089/org.tvbrowser.tvbrowser W/System.err:     at org.tvbrowser.devplugin.PluginServiceConnection.onServiceConnected(PluginServiceConnection.java:140)

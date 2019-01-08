@@ -1,0 +1,6 @@
+java.lang.NullPointerException
+    at com.nextgis.maplib.util.GeoJSONUtil.fillLayerFromGeoJSONStream(GeoJSONUtil.java:379)
+    at com.nextgis.maplib.map.VectorLayer.fillFromGeoJson(VectorLayer.java:495)
+    at com.nextgis.maplibui.service.LayerFillService$VectorLayerFormFillTask.execute(LayerFillService.java:576)
+    at com.nextgis.maplibui.service.LayerFillService$2.run(LayerFillService.java:253)
+    at java.lang.Thread.run(Thread.java:841)

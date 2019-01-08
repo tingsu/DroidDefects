@@ -1,0 +1,12 @@
+    java.lang.NullPointerException: Attempt to invoke interface method 'void org.thoughtcrime.securesms.components.ThumbnailView$ThumbnailClickListener.onClick(android.view.View, org.thoughtcrime.securesms.mms.Slide)' on a null object reference
+            at org.thoughtcrime.securesms.components.ThumbnailView$ThumbnailClickDispatcher.onClick(ThumbnailView.java:180)
+            at android.view.View.performClick(View.java:4780)
+            at android.view.View$PerformClick.run(View.java:19866)
+            at android.os.Handler.handleCallback(Handler.java:739)
+            at android.os.Handler.dispatchMessage(Handler.java:95)
+            at android.os.Looper.loop(Looper.java:135)
+            at android.app.ActivityThread.main(ActivityThread.java:5254)
+            at java.lang.reflect.Method.invoke(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:372)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)

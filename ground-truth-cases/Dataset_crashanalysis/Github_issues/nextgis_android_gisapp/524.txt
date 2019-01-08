@@ -1,0 +1,10 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'int java.io.InputStream.read(byte[], int, int)' on a null object reference
+    at com.nextgis.maplib.util.FileUtil.copyStream(FileUtil.java:181)
+    at com.nextgis.maplib.util.NetworkUtil.responseToString(NetworkUtil.java:140)
+    at com.nextgis.maplib.util.NetworkUtil.get(NetworkUtil.java:193)
+    at com.nextgis.maplib.util.NGWUtil.getNgwVersion(NGWUtil.java:172)
+    at com.nextgis.maplib.map.NGWVectorLayer.sync(NGWVectorLayer.java:682)
+    at com.nextgis.maplib.datasource.ngw.SyncAdapter.sync(SyncAdapter.java:156)
+    at com.nextgis.maplib.datasource.ngw.SyncAdapter.onPerformSync(SyncAdapter.java:119)
+    at com.nextgis.mobile.datasource.SyncAdapter.onPerformSync(SyncAdapter.java:56)
+    at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:259)

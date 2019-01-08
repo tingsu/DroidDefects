@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: com.hexad.bluezime
+//version: 1.20
+//appro_time: 53
+ java.lang.RuntimeException: Error receiving broadcast Intent { act=com.hexad.bluezime.config flg=0x10 (has extras) } in com.hexad.bluezime.BluezIMESettings$11@ad2c4018
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:773)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at com.hexad.bluezime.BluezIMESettings.enumerateBondedDevices(BluezIMESettings.java:391)
+ 	at com.hexad.bluezime.BluezIMESettings.updateDisplay(BluezIMESettings.java:424)
+ 	at com.hexad.bluezime.BluezIMESettings.access$800(BluezIMESettings.java:45)
+ 	at com.hexad.bluezime.BluezIMESettings$11.onReceive(BluezIMESettings.java:571)
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:763)

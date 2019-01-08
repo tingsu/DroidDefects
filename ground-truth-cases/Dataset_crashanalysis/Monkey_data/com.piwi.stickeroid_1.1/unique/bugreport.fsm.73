@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: com.piwi.stickeroid
+//version: 1.1
+//appro_time: 177
+ java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=0, result=-1, data=Intent { (has extras) }} to activity {com.piwi.stickeroid/com.piwi.stickeroid.Main}: java.lang.IllegalArgumentException: File u4v zmzd\yj j:-) 8
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3367)
+ 	at android.app.ActivityThread.handleSendResult(ActivityThread.java:3410)
+ 	at android.app.ActivityThread.access$1100(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1304)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalArgumentException: File u4v zmzd\yj j:-) 8
+ 	at android.app.ContextImpl.makeFilename(ContextImpl.java:2000)
+ 	at android.app.ContextImpl.openFileOutput(ContextImpl.java:709)
+ 	at android.content.ContextWrapper.openFileOutput(ContextWrapper.java:179)
+ 	at com.piwi.stickeroid.Main.onActivityCreateResult(Main.java:189)
+ 	at com.piwi.stickeroid.Main.onActivityResult(Main.java:167)
+ 	at android.app.Activity.dispatchActivityResult(Activity.java:5322)
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3363)

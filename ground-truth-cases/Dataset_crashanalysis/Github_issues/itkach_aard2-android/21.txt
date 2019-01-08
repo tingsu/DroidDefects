@@ -1,0 +1,20 @@
+E/AndroidRuntime(19149): java.lang.RuntimeException: An error occured while executing doInBackground()
+E/AndroidRuntime(19149):    at android.os.AsyncTask$3.done(AsyncTask.java:300)
+E/AndroidRuntime(19149):    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+E/AndroidRuntime(19149):    at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+E/AndroidRuntime(19149):    at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+E/AndroidRuntime(19149):    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+E/AndroidRuntime(19149):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+E/AndroidRuntime(19149):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+E/AndroidRuntime(19149):    at java.lang.Thread.run(Thread.java:841)
+E/AndroidRuntime(19149): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(19149):    at itkach.aard2.ArticleCollectionActivity.createFromUri(ArticleCollectionActivity.java:178)
+E/AndroidRuntime(19149):    at itkach.aard2.ArticleCollectionActivity.access$000(ArticleCollectionActivity.java:50)
+E/AndroidRuntime(19149):    at itkach.aard2.ArticleCollectionActivity$2.doInBackground(ArticleCollectionActivity.java:86)
+E/AndroidRuntime(19149):    at itkach.aard2.ArticleCollectionActivity$2.doInBackground(ArticleCollectionActivity.java:79)
+E/AndroidRuntime(19149):    at android.os.AsyncTask$2.call(AsyncTask.java:288)
+E/AndroidRuntime(19149):    at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+E/AndroidRuntime(19149):    ... 4 more
+W/ActivityManager(  831):   Force finishing activity itkach.aard2/.ArticleCollectionActivity
+W/ActivityManager(  831):   Force finishing activity itkach.aard2/.ArticleCollectionActivity
+I/InputDispatcher(  831): Dropping event because there is no touchable window at (761, 1257).

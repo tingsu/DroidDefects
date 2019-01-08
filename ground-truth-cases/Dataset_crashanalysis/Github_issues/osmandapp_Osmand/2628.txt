@@ -1,0 +1,41 @@
+2. Try send changes this server (to simulate the lack of internet should enough switch off)
+3. Look at message that send is failed. I have 2 option: Try again or cancel.
+4. Click "try again" always crashed.
+
+Log here:
+Version  OsmAnd 2.3.3
+25.05.2016 3:39:36
+Apk Version : 2.3.3 235
+Exception occured in thread Thread[main,5,main] : 
+java.lang.RuntimeException: Unable to start activity ComponentInfo{net.osmand/net.osmand.plus.activities.MapActivity}: java.lang.NullPointerException
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2429)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2493)
+    at android.app.ActivityThread.access$800(ActivityThread.java:166)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1283)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.app.ActivityThread.main(ActivityThread.java:5584)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1268)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1084)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+    at net.osmand.plus.osmedit.EditPoiDialogFragment$9.afterTextChanged(EditPoiDialogFragment.java:267)
+    at android.widget.TextView.sendAfterTextChanged(TextView.java:7997)
+    at android.widget.TextView.setText(TextView.java:4190)
+    at android.widget.TextView.setText(TextView.java:4034)
+    at android.widget.EditText.setText(EditText.java:80)
+    at android.widget.TextView.setText(TextView.java:4009)
+    at net.osmand.plus.osmedit.EditPoiDialogFragment.onCreateView(EditPoiDialogFragment.java:273)
+    at android.support.v4.app.Fragment.performCreateView(Fragment.java:1962)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1067)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1248)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1230)
+    at android.support.v4.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:2042)
+    at android.support.v4.app.FragmentController.dispatchActivityCreated(FragmentController.java:165)
+    at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:543)
+    at net.osmand.plus.activities.MapActivity.onStart(MapActivity.java:852)
+    at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1178)
+    at android.app.Activity.performStart(Activity.java:5452)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2402)

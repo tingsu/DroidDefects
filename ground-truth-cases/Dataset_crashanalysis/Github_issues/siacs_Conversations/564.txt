@@ -1,0 +1,13 @@
+java.lang.NullPointerException
+    at eu.siacs.conversations.xmpp.jingle.JingleInbandTransport.receiveNextBlock(JingleInbandTransport.java:160)
+    at eu.siacs.conversations.xmpp.jingle.JingleInbandTransport.deliverPayload(JingleInbandTransport.java:185)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnectionManager.deliverIbbPacket(JingleConnectionManager.java:159)
+    at eu.siacs.conversations.parser.IqParser.onIqPacketReceived(IqParser.java:69)
+    at eu.siacs.conversations.xmpp.XmppConnection.processIq(XmppConnection.java:442)
+    at eu.siacs.conversations.xmpp.XmppConnection.processStream(XmppConnection.java:342)
+    at eu.siacs.conversations.xmpp.XmppConnection.processStream(XmppConnection.java:262)
+    at eu.siacs.conversations.xmpp.XmppConnection.switchOverToTls(XmppConnection.java:536)
+    at eu.siacs.conversations.xmpp.XmppConnection.processStream(XmppConnection.java:254)
+    at eu.siacs.conversations.xmpp.XmppConnection.connect(XmppConnection.java:187)
+    at eu.siacs.conversations.xmpp.XmppConnection.run(XmppConnection.java:242)
+    at java.lang.Thread.run(Thread.java:856)

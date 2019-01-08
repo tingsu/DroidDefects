@@ -1,0 +1,8 @@
+05-29 22:17:55.305: E/Main(25704): com.github.andlyticsproject.console.NetworkException: org.apache.http.client.HttpResponseException: Not Found
+05-29 22:17:55.305: E/Main(25704):  at com.github.andlyticsproject.console.v2.DevConsoleV2.post(DevConsoleV2.java:375)
+05-29 22:17:55.305: E/Main(25704):  at com.github.andlyticsproject.console.v2.DevConsoleV2.fetchAppInfos(DevConsoleV2.java:193)
+05-29 22:17:55.305: E/Main(25704):  at com.github.andlyticsproject.console.v2.DevConsoleV2.fetchAppInfosAndStatistics(DevConsoleV2.java:112)
+05-29 22:17:55.305: E/Main(25704):  at com.github.andlyticsproject.console.v2.DevConsoleV2.getAppInfo(DevConsoleV2.java:100)
+05-29 22:17:55.305: E/Main(25704):  at com.github.andlyticsproject.Main$LoadRemoteEntries.doInBackground(Main.java:449)
+05-29 22:17:55.305: E/Main(25704):  at com.github.andlyticsproject.Main$LoadRemoteEntries.doInBackground(Main.java:1)
+05-29 22:17:55.305: E/Main(25704):  at com.github.andlyticsproject.console.v2.DevConsoleV2.post(DevConsoleV2.java:369)

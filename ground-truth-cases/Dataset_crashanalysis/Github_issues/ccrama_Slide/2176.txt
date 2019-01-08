@@ -1,0 +1,72 @@
+09-19 02:06:39.321 W/dalvikvm(30727): VFY: unable to resolve virtual method 1522: Landroid/webkit/CookieManager;.removeAllCookies (Landroid/webkit/ValueCallback;)V
+09-19 02:06:39.321 D/dalvikvm(30727): VFY: replacing opcode 0x6e at 0x010f
+09-19 02:06:39.326 V/AudioFlinger( 2198): presentationComplete() mPresentationCompleteFrames 50137 framesWritten 49152
+09-19 02:06:39.331 D/KeyguardUpdateMonitor( 3158): handleKeyguardVisibilityChanged(1)
+09-19 02:06:39.336 D/MultiPhoneWindow(30727): generateLayout : sMinimumStackBoundForPortraitOrientRect(0, 0 - 0, 0), sMinimumStackBoundForLandscapeOrient=Rect(0, 0 - 0, 0)
+09-19 02:06:39.341 D/PhoneStatusBar( 3158): setTransGradationMode=false, mTransparentMode=false, mSemiTransparentMode=false, mMultiWindowMode=false
+09-19 02:06:39.341 D/StatusBarManagerService( 2738): tr p:30727,o:f
+09-19 02:06:39.346 V/AudioFlinger( 2198): presentationComplete() mPresentationCompleteFrames 50137 framesWritten 50176
+09-19 02:06:39.346 V/AudioFlinger( 2198): presentationComplete() session 488 complete: framesWritten 50176
+09-19 02:06:39.361 V/(BaseActivityAnim.java:24)(30727): WONT SWIPE FROM ANYWHERE
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): Error sending ping
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): java.net.ConnectException: failed to connect to www.googleadservices.com/127.0.0.1 (port 443) after 60000ms: isConnected failed: ECONNREFUSED (Connection refused)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at libcore.io.IoBridge.isConnected(IoBridge.java:223)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at libcore.io.IoBridge.connect(IoBridge.java:112)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at java.net.Socket.connect(Socket.java:843)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at com.android.okhttp.internal.Platform.connectSocket(Platform.java:152)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at com.android.okhttp.Connection.connect(Connection.java:101)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:294)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at com.android.okhttp.internal.http.HttpEngine.sendSocketRequest(HttpEngine.java:255)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:206)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:345)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at com.android.okhttp.internal.http.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:296)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at com.android.okhttp.internal.http.HttpURLConnectionImpl.getResponseCode(HttpURLConnectionImpl.java:503)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at com.android.okhttp.internal.http.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:136)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at bqa.a(SourceFile:230)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at bqd.run(SourceFile:174)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at java.lang.Thread.run(Thread.java:841)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): Caused by: libcore.io.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): at libcore.io.IoBridge.isConnected(IoBridge.java:208)
+09-19 02:06:39.371 E/GoogleConversionReporter(30767): ... 17 more
+09-19 02:06:39.371 V/LvOutput( 2198): initCheck: 0
+09-19 02:06:39.371 V/LvOutput( 2198): detachEffects: detach processing for output 2, stream 1, session 488
+09-19 02:06:39.371 V/LvOutput( 2198): detachEffects: no output processing was attached to this stream
+09-19 02:06:39.371 V/AudioFlinger( 2198): PlaybackThread::Track destructor
+09-19 02:06:39.371 V/AudioPolicyManagerBase( 2198): stopOutput() output 2, stream 1, session 488
+09-19 02:06:39.371 V/AudioPolicyManagerBase( 2198): changeRefCount() stream 1, count 1
+09-19 02:06:39.371 V/AudioPolicyManagerBase( 2198): releaseOutput() 2
+09-19 02:06:39.376 V/WebViewChromiumFactoryProvider(30727): Binding Chromium to main looper Looper (main, tid 1) {42e5aab0}
+09-19 02:06:39.376 I/LibraryLoader(30727): Expected native library version number "",actual native library version number ""
+09-19 02:06:39.376 I/chromium(30727): [INFO:library_loader_hooks.cc(116)] Chromium logging enabled: level = 0, default verbosity = 0
+09-19 02:06:39.381 I/BrowserStartupController(30727): Initializing chromium process, renderers=0
+09-19 02:06:39.386 E/AudioManagerAndroid(30727): BLUETOOTH permission is missing!
+09-19 02:06:39.391 D/dalvikvm(30922): GC_FOR_ALLOC freed 6631K, 39% free 15248K/24672K, paused 120ms, total 120ms
+09-19 02:06:39.431 W/chromium(30727): [WARNING:proxy_service.cc(890)] PAC support disabled because there is no system implementation
+09-19 02:06:39.451 I/Icing   (11020): Indexing 6E3433DAB6EFD20DB103AF037BB68BE87E0CE7B0 from com.google.android.gm
+09-19 02:06:39.456 V/(Activity.java:5582)(30727): Auth URL: https://i.reddit.com/api/v1/authorize?state=5l4oe5sgjtbtpkhsaavns8vn1n&duration=permanent&scope=identity+modcontributors+modconfig+modothers+modwiki+creddits+livemanage+account+privatemessages+modflair+modlog+report+modposts+modwiki+read+vote+edit+submit+subscribe+save+wikiread+flair+history+mysubreddits&response_type=code&client_id=KI2Nl9A_ouG9Qw&redirect_uri=http://www.ccrama.me
+09-19 02:06:39.471 I/Icing   (11020): Indexing done 6E3433DAB6EFD20DB103AF037BB68BE87E0CE7B0
+09-19 02:06:39.556 D/dalvikvm( 4102): GC_CONCURRENT freed 776K, 23% free 15011K/19400K, paused 4ms+4ms, total 65ms
+09-19 02:06:39.561 D/AndroidRuntime(30727): Shutting down VM
+09-19 02:06:39.561 W/dalvikvm(30727): threadid=1: thread exiting with uncaught exception (group=0x42120c08)
+09-19 02:06:39.596 E/AndroidRuntime(30727): FATAL EXCEPTION: main
+09-19 02:06:39.596 E/AndroidRuntime(30727): Process: me.ccrama.redditslide, PID: 30727
+09-19 02:06:39.596 E/AndroidRuntime(30727): java.lang.NoSuchMethodError: android.webkit.CookieManager.removeAllCookies
+09-19 02:06:39.596 E/AndroidRuntime(30727): at me.ccrama.redditslide.Activities.Login.onCreate(Login.java:93)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at android.app.Activity.performCreate(Activity.java:5582)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1093)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2405)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2500)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at android.app.ActivityThread.access$900(ActivityThread.java:171)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1309)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at android.os.Handler.dispatchMessage(Handler.java:102)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at android.os.Looper.loop(Looper.java:146)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at android.app.ActivityThread.main(ActivityThread.java:5679)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at java.lang.reflect.Method.invokeNative(Native Method)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at java.lang.reflect.Method.invoke(Method.java:515)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1291)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1107)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+09-19 02:06:39.596 E/AndroidRuntime(30727): at dalvik.system.NativeStart.main(Native Method)

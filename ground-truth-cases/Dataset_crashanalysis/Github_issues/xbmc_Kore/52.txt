@@ -1,0 +1,28 @@
+W/dalvikvm(10640): VFY: unable to resolve static method 7578: Landroid/view/ViewAnimationUtils;.createCircularReveal (Landroid/view/View;IIFF)Landroid/animation/Animator;
+D/dalvikvm(10640): VFY: replacing opcode 0x71 at 0x001b
+D/libEGL  (10640): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  (10640): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  (10640): loaded /system/lib/egl/libGLESv2_mali.so
+E/        (10640): Device driver API match
+E/        (10640): Device driver API version: 23
+E/        (10640): User space API version: 23 
+E/        (10640): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Fri Mar 21 13:52:50 KST 2014 
+D/OpenGLRenderer(10640): Enabling debug mode 0
+I/HK/LatinKeyboardBaseView( 2572): closing org.pocketworkstation.pckeyboard.LatinKeyboardView{41dd5988 V.ED.... ......ID 0,0-720,320 #1020026 android:id/keyboardView}
+I/ActivityManager( 2290): Displayed org.xbmc.kore/.ui.RemoteActivity: +725ms
+I/Timeline( 2290): Timeline: Activity_windows_visible id: ActivityRecord{41fa4cd8 u0 org.xbmc.kore/.ui.RemoteActivity t165} time:87037463
+I/Timeline(10640): Timeline: Activity_idle id: android.os.BinderProxy@421cae98 time:87037502
+E/rsC++   ( 2658): RS Message thread exiting.
+W/dalvikvm(10640): threadid=12: thread exiting with uncaught exception (group=0x41935ce0)
+E/AndroidRuntime(10640): FATAL EXCEPTION: Thread-3441
+E/AndroidRuntime(10640): Process: org.xbmc.kore, PID: 10640
+E/AndroidRuntime(10640): java.lang.ClassCastException: com.fasterxml.jackson.databind.node.TextNode cannot be cast to com.fasterxml.jackson.databind.node.ArrayNode
+E/AndroidRuntime(10640):    at org.xbmc.kore.jsonrpc.type.VideoType$Cast.castListFromJsonNode(VideoType.java:60)
+E/AndroidRuntime(10640):    at org.xbmc.kore.jsonrpc.type.ListType$ItemBase.<init>(ListType.java:221)
+E/AndroidRuntime(10640):    at org.xbmc.kore.jsonrpc.type.ListType$ItemsAll.<init>(ListType.java:303)
+E/AndroidRuntime(10640):    at org.xbmc.kore.jsonrpc.method.Player$GetItem.resultFromJson(Player.java:88)
+E/AndroidRuntime(10640):    at org.xbmc.kore.jsonrpc.method.Player$GetItem.resultFromJson(Player.java:68)
+E/AndroidRuntime(10640):    at org.xbmc.kore.jsonrpc.HostConnection.handleTcpResponse(HostConnection.java:729)
+E/AndroidRuntime(10640):    at org.xbmc.kore.jsonrpc.HostConnection.access$400(HostConnection.java:49)
+E/AndroidRuntime(10640):    at org.xbmc.kore.jsonrpc.HostConnection$7.run(HostConnection.java:583)
+E/AndroidRuntime(10640):    at java.lang.Thread.run(Thread.java:841)

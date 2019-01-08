@@ -1,0 +1,15 @@
+W/TextSecureMessageSender( 3082): org.whispersystems.textsecure.api.push.exceptions.UnregisteredUserException: org.whispersystems.textsecure.api.push.exceptions.NotFoundException: Not found
+W/TextSecureMessageSender( 3082): at org.whispersystems.textsecure.internal.push.PushServiceSocket.sendMessage(PushServiceSocket.java:148)
+W/TextSecureMessageSender( 3082): at org.whispersystems.textsecure.api.TextSecureMessageSender.sendMessage(TextSecureMessageSender.java:177)
+W/TextSecureMessageSender( 3082): at org.whispersystems.textsecure.api.TextSecureMessageSender.sendMessage(TextSecureMessageSender.java:156)
+W/TextSecureMessageSender( 3082): at org.whispersystems.textsecure.api.TextSecureMessageSender.sendMessage(TextSecureMessageSender.java:99)
+W/TextSecureMessageSender( 3082): at org.thoughtcrime.securesms.jobs.PushGroupSendJob.deliver(PushGroupSendJob.java:138)
+W/TextSecureMessageSender( 3082): at org.thoughtcrime.securesms.jobs.PushGroupSendJob.onSend(PushGroupSendJob.java:74)
+W/TextSecureMessageSender( 3082): at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:38)
+W/TextSecureMessageSender( 3082): at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/TextSecureMessageSender( 3082): at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:72)
+W/TextSecureMessageSender( 3082): at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/TextSecureMessageSender( 3082): Caused by: org.whispersystems.textsecure.api.push.exceptions.NotFoundException: Not found
+W/TextSecureMessageSender( 3082): at org.whispersystems.textsecure.internal.push.PushServiceSocket.makeBaseRequest(PushServiceSocket.java:447)
+W/TextSecureMessageSender( 3082): at org.whispersystems.textsecure.internal.push.PushServiceSocket.makeRequest(PushServiceSocket.java:410)
+W/TextSecureMessageSender( 3082): at org.whispersystems.textsecure.internal.push.PushServiceSocket.sendMessage(PushServiceSocket.java:146)

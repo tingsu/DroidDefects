@@ -1,0 +1,34 @@
+//this is an auto-generated bug report
+//package name: com.llamacorp.equate
+//version: 1.3
+//appro_time: 19
+ FATAL EXCEPTION: main
+ java.lang.StringIndexOutOfBoundsException: length=12; regionStart=0; regionLength=45
+ 	at java.lang.String.startEndAndLength(String.java:583)
+ 	at java.lang.String.substring(String.java:1464)
+ 	at com.llamacorp.equate.view.EditTextDisplay$1.onAnimationUpdate(EditTextDisplay.java:161)
+ 	at android.animation.ValueAnimator.animateValue(ValueAnimator.java:1179)
+ 	at android.animation.ValueAnimator.animationFrame(ValueAnimator.java:1115)
+ 	at android.animation.ValueAnimator.doAnimationFrame(ValueAnimator.java:1144)
+ 	at android.animation.ValueAnimator.setCurrentPlayTime(ValueAnimator.java:510)
+ 	at android.animation.ValueAnimator.start(ValueAnimator.java:921)
+ 	at android.animation.ValueAnimator.start(ValueAnimator.java:931)
+ 	at com.llamacorp.equate.view.EditTextDisplay.setupHighlighting(EditTextDisplay.java:185)
+ 	at com.llamacorp.equate.view.EditTextDisplay.updateTextFromCalc(EditTextDisplay.java:128)
+ 	at com.llamacorp.equate.view.CalcActivity.updateScreen(CalcActivity.java:520)
+ 	at com.llamacorp.equate.view.CalcActivity.updateScreen(CalcActivity.java:547)
+ 	at com.llamacorp.equate.view.ConvKeysFragment.tryConvert(ConvKeysFragment.java:315)
+ 	at com.llamacorp.equate.view.ConvKeysFragment.clickUnitButton(ConvKeysFragment.java:285)
+ 	at com.llamacorp.equate.view.ConvKeysFragment.access$100(ConvKeysFragment.java:21)
+ 	at com.llamacorp.equate.view.ConvKeysFragment$2.onClick(ConvKeysFragment.java:157)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

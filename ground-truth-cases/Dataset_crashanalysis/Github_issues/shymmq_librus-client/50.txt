@@ -1,0 +1,52 @@
+`01-29 23:25:30.191 30889-30889/pl.librus.client E/UncaughtException: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.util.ArrayList.size()' on a null object reference
+                                                                         at android.support.v4.app.FragmentManagerImpl.getFragment(FragmentManager.java:872)
+                                                                         at android.support.v4.app.FragmentStatePagerAdapter.restoreState(FragmentStatePagerAdapter.java:215)
+                                                                         at android.support.v4.view.ViewPager.onRestoreInstanceState(ViewPager.java:1481)
+                                                                         at android.view.View.dispatchRestoreInstanceState(View.java:15755)
+                                                                         at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3231)
+                                                                         at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3237)
+                                                                         at android.view.View.restoreHierarchyState(View.java:15733)
+                                                                         at android.support.v4.app.Fragment.restoreViewState(Fragment.java:470)
+                                                                         at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1326)
+                                                                         at android.support.v4.app.FragmentManagerImpl.moveFragmentsToInvisible(FragmentManager.java:2323)
+                                                                         at android.support.v4.app.FragmentManagerImpl.executeOpsTogether(FragmentManager.java:2136)
+                                                                         at android.support.v4.app.FragmentManagerImpl.optimizeAndExecuteOps(FragmentManager.java:2092)
+                                                                         at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1998)
+                                                                         at android.support.v4.app.FragmentManagerImpl$1.run(FragmentManager.java:709)
+                                                                         at android.os.Handler.handleCallback(Handler.java:751)
+                                                                         at android.os.Handler.dispatchMessage(Handler.java:95)
+                                                                         at android.os.Looper.loop(Looper.java:154)
+                                                                         at android.app.ActivityThread.main(ActivityThread.java:6176)
+                                                                         at java.lang.reflect.Method.invoke(Native Method)
+                                                                         at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:888)
+                                                                         at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:778)
+01-29 23:25:30.228 30889-31033/pl.librus.client I/DynamiteModule: Considering local module com.google.android.gms.tagmanager:8 and remote module com.google.android.gms.tagmanager:8
+01-29 23:25:30.228 30889-31033/pl.librus.client I/DynamiteModule: Selected local version of com.google.android.gms.tagmanager
+01-29 23:25:30.283 30889-31033/? W/GoogleTagManager: No container asset found in /assets/containers. Checking top level /assets directory for container assets.
+01-29 23:25:30.284 30889-31033/? W/GoogleTagManager: Tag Manager's event handler WILL NOT be installed (no container loaded)
+01-29 23:25:30.285 30889-31033/? I/GoogleTagManager: Tag Manager initilization took 3ms
+01-29 23:25:30.290 30889-31033/? D/FA: Logging event (FE): _ae, Bundle[{_o=crash, _sc=MainActivity, _si=-4018912270804065806, timestamp=1485728730191, fatal=1}]
+01-29 23:25:30.474 30889-30889/? E/AndroidRuntime: FATAL EXCEPTION: main
+                                                   Process: pl.librus.client, PID: 30889
+                                                   java.lang.NullPointerException: Attempt to invoke virtual method 'int java.util.ArrayList.size()' on a null object reference
+                                                       at android.support.v4.app.FragmentManagerImpl.getFragment(FragmentManager.java:872)
+                                                       at android.support.v4.app.FragmentStatePagerAdapter.restoreState(FragmentStatePagerAdapter.java:215)
+                                                       at android.support.v4.view.ViewPager.onRestoreInstanceState(ViewPager.java:1481)
+                                                       at android.view.View.dispatchRestoreInstanceState(View.java:15755)
+                                                       at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3231)
+                                                       at android.view.ViewGroup.dispatchRestoreInstanceState(ViewGroup.java:3237)
+                                                       at android.view.View.restoreHierarchyState(View.java:15733)
+                                                       at android.support.v4.app.Fragment.restoreViewState(Fragment.java:470)
+                                                       at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1326)
+                                                       at android.support.v4.app.FragmentManagerImpl.moveFragmentsToInvisible(FragmentManager.java:2323)
+                                                       at android.support.v4.app.FragmentManagerImpl.executeOpsTogether(FragmentManager.java:2136)
+                                                       at android.support.v4.app.FragmentManagerImpl.optimizeAndExecuteOps(FragmentManager.java:2092)
+                                                       at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1998)
+                                                       at android.support.v4.app.FragmentManagerImpl$1.run(FragmentManager.java:709)
+                                                       at android.os.Handler.handleCallback(Handler.java:751)
+                                                       at android.os.Handler.dispatchMessage(Handler.java:95)
+                                                       at android.os.Looper.loop(Looper.java:154)
+                                                       at android.app.ActivityThread.main(ActivityThread.java:6176)
+                                                       at java.lang.reflect.Method.invoke(Native Method)
+                                                       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:888)
+                                                       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:778)

@@ -1,0 +1,4 @@
+E/AndroidRuntime( 5368): java.lang.NullPointerException
+E/AndroidRuntime( 5368):    at cgeo.geocaching.SearchResult.filterSearchResults(SearchResult.java:150)
+E/AndroidRuntime( 5368):    at cgeo.geocaching.cgBase.searchByViewport(cgBase.java:1966)
+E/AndroidRuntime( 5368):    at cgeo.geocaching.maps.CGeoMap$DownloadThread.run(CGeoMap.java:1274)

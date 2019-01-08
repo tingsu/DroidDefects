@@ -1,0 +1,22 @@
+E/AndroidRuntime(15934): java.lang.OutOfMemoryError: bitmap size exceeds VM budget 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at android.graphics.BitmapFactory.nativeDecodeAsset(Native Method) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:563) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at android.graphics.BitmapFactory.decodeResourceStream(BitmapFactory.java:439) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at android.graphics.BitmapFactory.decodeResource(BitmapFactory.java:462) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at android.graphics.BitmapFactory.decodeResource(BitmapFactory.java:488) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at cgeo.geocaching.ui.CompassView.onAttachedToWindow(CompassView.java:80) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at android.view.View.dispatchAttachedToWindow(View.java:6209) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:1127) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:1127) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:1127) 03-11 17:25:57.185
+ E/AndroidRuntime(15934): at android.view.ViewGroup.dispatchAttachedToWindow(ViewGroup.java:1127) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at android.view.ViewRoot.performTraversals(ViewRoot.java:773) 03-11 17:25:57.185
+ E/AndroidRuntime(15934): at android.view.ViewRoot.handleMessage(ViewRoot.java:1868) 03-11 17:25:57.185
+ E/AndroidRuntime(15934): at android.os.Handler.dispatchMessage(Handler.java:99) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at android.os.Looper.loop(Looper.java:130) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at android.app.ActivityThread.main(ActivityThread.java:3691) 03-11 17:25:57.185
+ E/AndroidRuntime(15934): at java.lang.reflect.Method.invokeNative(Native Method) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at java.lang.reflect.Method.invoke(Method.java:507) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:907) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:665) 03-11 17:25:57.185 
+E/AndroidRuntime(15934): at dalvik.system.NativeStart.main(Native Method) 03-11 17:25:57.190

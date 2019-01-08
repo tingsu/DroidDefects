@@ -1,0 +1,4 @@
+E/AndroidRuntime(15206): java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+E/AndroidRuntime(15206):    at android.graphics.Bitmap.nativeCreate(Native Method)
+E/AndroidRuntime(15206):    at android.graphics.Bitmap.createBitmap(Bitmap.java:477)
+E/AndroidRuntime(15206):    at org.mapsforge.android.maps.Overlay.run(Overlay.java:215)

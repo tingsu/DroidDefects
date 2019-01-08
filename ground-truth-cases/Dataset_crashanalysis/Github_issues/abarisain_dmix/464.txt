@@ -1,0 +1,18 @@
+E/AndroidRuntime( 1477): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.namelessdev.mpdroid/com.namelessdev.mpdroid.SettingsActivity}: java.lang.NullPointerException
+E/AndroidRuntime( 1477):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1768)
+E/AndroidRuntime( 1477):        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1784)
+E/AndroidRuntime( 1477):        at android.app.ActivityThread.access$1500(ActivityThread.java:123)
+E/AndroidRuntime( 1477):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:939)
+E/AndroidRuntime( 1477):        at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 1477):        at android.os.Looper.loop(Looper.java:130)
+E/AndroidRuntime( 1477):        at android.app.ActivityThread.main(ActivityThread.java:3835)
+E/AndroidRuntime( 1477):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1477):        at java.lang.reflect.Method.invoke(Method.java:507)
+E/AndroidRuntime( 1477):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:864)
+E/AndroidRuntime( 1477):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:622)
+E/AndroidRuntime( 1477):        at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 1477): Caused by: java.lang.NullPointerException
+E/AndroidRuntime( 1477):        at com.namelessdev.mpdroid.cover.CachedCover.getCacheUsage(CachedCover.java:48)
+E/AndroidRuntime( 1477):        at com.namelessdev.mpdroid.SettingsActivity.onCreate(SettingsActivity.java:107)
+E/AndroidRuntime( 1477):        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+E/AndroidRuntime( 1477):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1722)

@@ -1,0 +1,29 @@
+**Actual result:** 
+Looking at the logs shows a NPE when processing the contacts. Unfortunately the crash doesn't indicate which contact is causing the issue. I've also seen it after completely emptying the address book, so it looks like it's related to Signals contact mapping.
+
+As a side note, after I removed and restored my address book I have several contacts in Signal that only show numbers, but not names. When checking the contact the Signal entry is missing. I can manually restore that to make the name show up again. My guess is that those names don't have the Signal entry (restored) because the sync crashed.
+
+```
+--------- beginning of crash
+08-27 20:08:38.880 11357 11514 E AndroidRuntime: FATAL EXCEPTION: AsyncTask #3
+08-27 20:08:38.880 11357 11514 E AndroidRuntime: Process: org.thoughtcrime.securesms, PID: 11357
+08-27 20:08:38.880 11357 11514 E AndroidRuntime: java.lang.RuntimeException: An error occurred while executing doInBackground()
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at android.os.AsyncTask$3.done(AsyncTask.java:309)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:234)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at java.lang.Thread.run(Thread.java:818)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.contains(java.lang.CharSequence)' on a null object reference
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at org.whispersystems.signalservice.api.util.PhoneNumberFormatter.formatNumber(PhoneNumberFormatter.java:79)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at org.thoughtcrime.securesms.contacts.ContactsDatabase.getSignalRawContacts(ContactsDatabase.java:330)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at org.thoughtcrime.securesms.contacts.ContactsDatabase.setRegisteredUsers(ContactsDatabase.java:88)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at org.thoughtcrime.securesms.util.DirectoryHelper.updateContactsDatabase(DirectoryHelper.java:203)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at org.thoughtcrime.securesms.util.DirectoryHelper.refreshDirectory(DirectoryHelper.java:101)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at org.thoughtcrime.securesms.util.DirectoryHelper.refreshDirectory(DirectoryHelper.java:72)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at org.thoughtcrime.securesms.ContactSelectionActivity$RefreshDirectoryTask.doInBackground(ContactSelectionActivity.java:141)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at org.thoughtcrime.securesms.ContactSelectionActivity$RefreshDirectoryTask.doInBackground(ContactSelectionActivity.java:126)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at android.os.AsyncTask$2.call(AsyncTask.java:295)
+08-27 20:08:38.880 11357 11514 E AndroidRuntime:  at java.util.concurrent.FutureTask.run(FutureTask.java:237)

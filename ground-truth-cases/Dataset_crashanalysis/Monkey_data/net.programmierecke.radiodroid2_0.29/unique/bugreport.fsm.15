@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: net.programmierecke.radiodroid2
+//version: 0.29
+//appro_time: 69
+ FATAL EXCEPTION: Thread-253
+ java.lang.OutOfMemoryError
+ 	at android.graphics.BitmapFactory.nativeDecodeAsset(Native Method)
+ 	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:503)
+ 	at android.graphics.BitmapFactory.decodeResourceStream(BitmapFactory.java:356)
+ 	at android.graphics.drawable.Drawable.createFromResourceStream(Drawable.java:800)
+ 	at android.content.res.Resources.loadDrawable(Resources.java:2110)
+ 	at android.content.res.Resources.getDrawable(Resources.java:695)
+ 	at android.support.v4.content.res.ResourcesCompat.getDrawable(ResourcesCompat.java:62)
+ 	at net.programmierecke.radiodroid2.PlayerService.SendMessage(PlayerService.java:329)
+ 	at net.programmierecke.radiodroid2.PlayerService.UpdateNotification(PlayerService.java:538)
+ 	at net.programmierecke.radiodroid2.PlayerService.foundLiveStreamInfo(PlayerService.java:575)
+ 	at net.programmierecke.radiodroid2.StreamProxy.defaultStream(StreamProxy.java:163)
+ 	at net.programmierecke.radiodroid2.StreamProxy.doConnectToStream(StreamProxy.java:306)
+ 	at net.programmierecke.radiodroid2.StreamProxy.access$100(StreamProxy.java:29)
+ 	at net.programmierecke.radiodroid2.StreamProxy$1.run(StreamProxy.java:71)
+ 	at java.lang.Thread.run(Thread.java:841)

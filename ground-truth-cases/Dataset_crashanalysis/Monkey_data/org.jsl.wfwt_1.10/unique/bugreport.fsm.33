@@ -1,0 +1,8 @@
+//this is an auto-generated bug report
+//package name: org.jsl.wfwt
+//version: 1.10
+//appro_time: 148
+ java.lang.IllegalStateException: startRecording() called on an uninitialized AudioRecord.
+ 	at android.media.AudioRecord.startRecording(AudioRecord.java:517)
+ 	at org.jsl.wfwt.AudioRecorder.run(AudioRecorder.java:116)
+ 	at java.lang.Thread.run(Thread.java:841)

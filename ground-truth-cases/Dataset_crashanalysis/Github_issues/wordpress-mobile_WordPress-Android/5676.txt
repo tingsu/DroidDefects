@@ -1,0 +1,8 @@
+Fatal Exception: java.lang.IllegalStateException: closed
+       at com.android.okhttp.okio.RealBufferedSink.emitCompleteSegments(RealBufferedSink.java:174)
+       at com.android.okhttp.internal.http.HttpEngine$2.read(HttpEngine.java:1176)
+       at com.android.okhttp.okio.RealBufferedSource$1.read(RealBufferedSource.java:374)
+       at java.io.InputStream.read(InputStream.java:162)
+       at org.wordpress.android.editor.Utils.downloadExternalMedia(Utils.java:216)
+       at org.wordpress.android.editor.ImageSettingsDialogFragment$4.run(ImageSettingsDialogFragment.java:322)
+       at java.lang.Thread.run(Thread.java:818)

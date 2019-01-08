@@ -1,0 +1,231 @@
+
+Here is the logcat of my device at the time:
+
+    05-09 19:02:11.460  1843  1843 W ViewPager: Requested offscreen page limit 0 too small; defaulting to 1
+    05-09 19:02:11.480  1843  1843 I LatinIME: Starting input. Cursor position = 0,0
+    05-09 19:02:11.497  2740  2740 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+    05-09 19:02:11.497  2740  2740 W IInputConnectionWrapper: getSelectedText on inactive InputConnection
+    05-09 19:02:11.508  2740  2740 W IInputConnectionWrapper: requestCursorAnchorInfo on inactive InputConnection
+    05-09 19:02:11.510  2740  2740 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+    05-09 19:02:11.511  1843  1843 E RichInputConnection: Unable to connect to the editor to retrieve text.
+    05-09 19:02:11.511  1843  1843 D RichInputConnection: Will try to retrieve text later.
+    05-09 19:02:11.536  2740  2740 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+    05-09 19:02:11.537  1843  1843 E RichInputConnection: Unable to connect to the editor to retrieve text.
+    05-09 19:02:11.537  1843  1843 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+    05-09 19:02:11.709  1843  2938 D OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+    05-09 19:02:11.743  1843  1843 I LatinIME: Starting input. Cursor position = 19,19
+    05-09 19:02:12.043  1843  2938 W Adreno-GSL: <get_panel_settings:3802>: Android framework reported version 2. So, don't force ES30
+    05-09 19:02:12.064  1843  2938 I Adreno-EGL: <qeglDrvAPI_eglInitialize:381>: EGL 1.4 QUALCOMM build: AU_LINUX_ANDROID_KK_2.7_RB1.04.04.00.007.018_msm8960_KK_2.
+    7_RB1_CL3869936_release_AU (CL3869936)
+    05-09 19:02:12.064  1843  2938 I Adreno-EGL: OpenGL ES Shader Compiler Version: 17.01.10.SPL
+    05-09 19:02:12.064  1843  2938 I Adreno-EGL: Build Date: 12/09/13 Mon
+    05-09 19:02:12.064  1843  2938 I Adreno-EGL: Local Branch: mybranch2092625
+    05-09 19:02:12.064  1843  2938 I Adreno-EGL: Remote Branch: quic/kk_2.7_rb1.15
+    05-09 19:02:12.064  1843  2938 I Adreno-EGL: Local Patches: NONE
+    05-09 19:02:12.064  1843  2938 I Adreno-EGL: Reconstruct Branch: AU_LINUX_ANDROID_KK_2.7_RB1.04.04.00.007.018 +  NOTHING
+    05-09 19:02:12.099  1843  2938 I OpenGLRenderer: Initialized EGL, version 1.4
+    05-09 19:02:12.492  1088  1105 I ActivityManager: Process com.android.cellbroadcastreceiver (pid 2868) has died
+    05-09 19:02:12.492  1088  1105 D ActivityManager: cleanUpApplicationRecord -- 2868
+    05-09 19:02:13.641   199   199 I surfaceflinger: type=1400 audit(0.0:117): avc: denied { read write } for path="/dev/kgsl-3d0" dev="tmpfs" ino=1818 scontext=u:
+    r:surfaceflinger:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+    05-09 19:02:13.811  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:13.811  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:14.488  1843  1939 I LatinIME:LogUtils: Dictionary info: dictionary = contacts.fr ; version = 1494349334 ; date = ?
+    05-09 19:02:14.672  1943  1956 I art     : Waiting for a blocking GC DisableMovingGc
+    05-09 19:02:14.685  1943  1954 I art     : CollectorTransition marksweep + semispace GC freed 9498(687KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 4MB/
+    6MB, paused 148.254ms total 148.254ms
+    05-09 19:02:14.686  1943  1956 I art     : WaitForGcToComplete blocked for 14.312ms for cause DisableMovingGc
+    05-09 19:02:14.686  1943  1956 I art     : Starting a blocking GC DisableMovingGc
+    05-09 19:02:14.932  1843  1939 I LatinIME:LogUtils: Dictionary info: dictionary = contacts.fr ; version = 1494349334 ; date = 1494349334
+    05-09 19:02:16.650  1843  1843 I LatinIME: Starting input. Cursor position = 0,0
+    05-09 19:02:16.839  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:16.839  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:17.463  1843  1843 I LatinIME: Starting input. Cursor position = 0,0
+    05-09 19:02:17.679  2740  2750 I art     : Background sticky concurrent mark sweep GC freed 11997(656KB) AllocSpace objects, 1(24KB) LOS objects, 31% free, 4MB
+    /6MB, paused 579us total 167.663ms
+    05-09 19:02:18.292  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.309  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.322  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.336  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.350  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.363  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.369  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:18.369  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:18.440  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.454  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.473  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.487  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.500  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.513  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.527  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.540  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.554  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.568  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.583  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.598  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.612  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.624  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.637  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.647  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.657  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.668  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.682  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.693  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.702  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.714  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.726  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.741  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.752  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.765  1088  1287 D WifiService: Client connection lost with reason: 4
+    05-09 19:02:18.769  1088  2018 I ActivityManager: Process com.android.settings (pid 2854) has died
+    05-09 19:02:18.770  1088  2018 D ActivityManager: cleanUpApplicationRecord -- 2854
+    05-09 19:02:18.805  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.820  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.838  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.851  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.862  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.874  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.887  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.900  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.914  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.930  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:18.941  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:18.941  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:18.988  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.001  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.015  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.028  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.043  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.053  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.063  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.079  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.092  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.106  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.117  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.128  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.143  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.154  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.163  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.179  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.189  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.201  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.216  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.235  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.295  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.316  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.330  1088  1294 D AudioService: Stream muted, skip playback
+    05-09 19:02:19.390  2740  2740 V TrackContentProvider: query(), uri=content://me.guillaumin.android.osmtracker.provider/track
+    05-09 19:02:19.442  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:19.488  2740  2740 V TrackContentProvider: query(), uri=content://me.guillaumin.android.osmtracker.provider/track/active
+    05-09 19:02:20.146  2740  2753 D OpenGLRenderer: endAllStagingAnimators on 0xa698d8 (RippleDrawable) with handle 0xa26c48
+    05-09 19:02:20.177  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:20.230   199   199 W SurfaceFlinger: couldn't log to binary event log: overflow.
+    05-09 19:02:20.352  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:20.387  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:20.415  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:20.427  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:20.441  1322  2252 W ExifInterface: Skip the tag entry since tag number is not defined: 2
+    05-09 19:02:20.736  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:20.736  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:21.281  1088  1294 D AudioService: Stream muted, skip playback
+    05-09 19:02:21.284  1088  1363 I ActivityManager: START u0 {cmp=me.guillaumin.android.osmtracker/.activity.TrackDetail (has extras)} from uid 10076 on display 0
+    05-09 19:02:21.497  2740  2740 V TrackContentProvider: query(), uri=content://me.guillaumin.android.osmtracker.provider/track/4
+    05-09 19:02:21.563  2740  2740 V TrackContentProvider: query(), uri=content://me.guillaumin.android.osmtracker.provider/track/4/start
+    05-09 19:02:21.575  2740  2740 V TrackContentProvider: query(), uri=content://me.guillaumin.android.osmtracker.provider/track/4/end
+    05-09 19:02:21.730  1843  1939 I LatinIME:LogUtils: Dictionary info: dictionary = spellcheck_contacts.fr ; version = 1494164709 ; date = 1494164709
+    05-09 19:02:21.738  1843  1939 I LatinIME:LogUtils: Dictionary info: dictionary = spellcheck_userunigram.fr ; version = 1494349341 ; date = ?
+    05-09 19:02:21.955  1943  1954 I art     : CollectorTransition marksweep + semispace GC freed 90(-103KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 4MB/5MB, paused 193.634ms total 193.634ms
+    05-09 19:02:22.054  1843  1939 I LatinIME:LogUtils: Dictionary info: dictionary = main:fr ; version = 54 ; date = 1414726264
+    05-09 19:02:22.086  2740  2740 I Choreographer: Skipped 30 frames!  The application may be doing too much work on its main thread.
+    05-09 19:02:22.169  1088  1158 I ActivityManager: Displayed me.guillaumin.android.osmtracker/.activity.TrackDetail: +853ms
+    05-09 19:02:22.548   199   199 W SurfaceFlinger: couldn't log to binary event log: overflow.
+    05-09 19:02:22.976  1322  2252 W MediaScanner: Error opening directory '/oem/media/', skipping: No such file or directory.
+    05-09 19:02:23.013  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:23.013  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:23.406  1088  1294 D AudioService: Stream muted, skip playback
+    05-09 19:02:23.544  2049  2150 E ELEVEN  : calling refresh!
+    05-09 19:02:25.297  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:25.297  1322  2252 I art     : Starting a blocking GC Alloc
+    05-09 19:02:25.448  1088  1294 D AudioService: Stream muted, skip playback
+    05-09 19:02:25.486  1088  1959 I ActivityManager: START u0 {cmp=me.guillaumin.android.osmtracker/.activity.DisplayTrackMap (has extras)} from uid 10076 on display 0
+    05-09 19:02:25.704  2740  2740 I AndroidLoggerFactory: Logger name 'org.osmdroid.views.MapView' exceeds maximum length of 23 characters, using 'o*.o*.v*.MapView' instead.
+    05-09 19:02:25.718  2740  2740 I AndroidLoggerFactory: Logger name 'org.osmdroid.DefaultResourceProxyImpl' exceeds maximum length of 23 characters, using 'o*.o*.DefaultResourceP*' instead.
+    05-09 19:02:25.731  2740  2740 I AndroidLoggerFactory: Logger name 'org.osmdroid.tileprovider.tilesource.BitmapTileSourceBase' exceeds maximum length of 23 characters, using 'o*.o*.t*.t*.BitmapTile*' instead.
+    05-09 19:02:25.743  2740  2740 I AndroidLoggerFactory: Logger name 'org.osmdroid.tileprovider.tilesource.CloudmadeTileSource' exceeds maximum length of 23 characters, using 'o*.o*.t*.t*.CloudmadeT*' instead.
+    05-09 19:02:25.743  2740  2740 I o*.o*.v*.MapView: Using tile source: org.osmdroid.tileprovider.tilesource.XYTileSource@488ee25
+    05-09 19:02:25.744  2740  2740 I AndroidLoggerFactory: Logger name 'org.osmdroid.tileprovider.MapTileProviderBase' exceeds maximum length of 23 characters, using 'o*.o*.t*.MapTileProvid*' instead.
+    05-09 19:02:25.750  2740  2740 I AndroidLoggerFactory: Logger name 'org.osmdroid.tileprovider.LRUMapTileCache' exceeds maximum length of 23 characters, using 'o*.o*.t*.LRUMapTileCac*' instead.
+    05-09 19:02:25.751  2740  2740 I AndroidLoggerFactory: Logger name 'org.osmdroid.tileprovider.modules.TileWriter' exceeds maximum length of 23 characters, using 'o*.o*.t*.m*.TileWriter' instead.
+    05-09 19:02:25.768  2740  2740 I AndroidLoggerFactory: Logger name 'org.osmdroid.tileprovider.modules.MapTileModuleProviderBase' exceeds maximum length of 23 characters, using 'o*.o*.t*.m*.MapTileMod*' instead.
+    05-09 19:02:25.768  2740  2740 I AndroidLoggerFactory: Logger name 'org.osmdroid.tileprovider.modules.MapTileFileStorageProviderBase' exceeds maximum length of 23 characters, using 'o*.o*.t*.m*.MapTileFil*' instead.
+    05-09 19:02:25.786  2740  2740 I o*.o*.t*.m*.MapTileFil*: sdcard state: mounted
+    05-09 19:02:25.801  2740  2740 I o*.o*.t*.m*.MapTileFil*: sdcard state: mounted
+    05-09 19:02:25.868  2740  2740 I AndroidLoggerFactory: Logger name 'org.osmdroid.tileprovider.modules.ArchiveFileFactory' exceeds maximum length of 23 characters, using 'o*.o*.t*.m*.ArchiveFil*' instead.
+    05-09 19:02:25.869  2740  2740 I AndroidLoggerFactory: Logger name 'org.osmdroid.tileprovider.modules.MapTileDownloader' exceeds maximum length of 23 characters, using 'o*.o*.t*.m*.MapTileDow*' instead.
+    05-09 19:02:25.871  2740  2740 I AndroidLoggerFactory: Logger name 'org.osmdroid.views.overlay.TilesOverlay' exceeds maximum length of 23 characters, using 'o*.o*.v*.o*.TilesOverl*' instead.
+    05-09 19:02:25.975  2740  2740 I o*.o*.t*.MapTileProvid*: rescale tile cache from 0 to 18
+    05-09 19:02:25.980  2740  2740 I o*.o*.t*.MapTileProvid*: Finished rescale in 5ms
+    05-09 19:02:26.314  2740  2750 W art     : Suspending all threads took: 5.004ms
+    05-09 19:02:26.347  2740  2961 W System  : ClassLoader referenced unknown path: /system/framework/tcmclient.jar
+    05-09 19:02:26.353  2740  2960 W System  : ClassLoader referenced unknown path: /system/framework/tcmclient.jar
+    05-09 19:02:26.393  2740  2750 I art     : Background partial concurrent mark sweep GC freed 13054(934KB) AllocSpace objects, 11(328KB) LOS objects, 24% free, 6MB/8MB, paused 15.258ms total 394.775ms
+    05-09 19:02:26.484  2740  2740 V TrackContentProvider: query(), uri=content://me.guillaumin.android.osmtracker.provider/track/4/waypoints
+    05-09 19:02:26.509  2740  2740 V TrackContentProvider: query(), uri=content://me.guillaumin.android.osmtracker.provider/track/4
+    05-09 19:02:26.532  2740  2740 V TrackContentProvider: query(), uri=content://me.guillaumin.android.osmtracker.provider/track/4/trackpoints
+    05-09 19:02:26.710  1088  1101 I art     : Background sticky concurrent mark sweep GC freed 22337(1095KB) AllocSpace objects, 3(60KB) LOS objects, 11% free, 11MB/13MB, paused 3.692ms total 119.842ms
+    05-09 19:02:26.761  2740  2740 E SQLiteLog: (11) database corruption at line 67578 of [2ef4f3a5b1]
+    05-09 19:02:26.761  2740  2740 E SQLiteLog: (11) statement aborts at 11: [SELECT latitude, longitude, _id FROM trackpoint WHERE (track_id = ?) ORDER BY _id asc] database disk image is malformed
+    05-09 19:02:26.762  2740  2740 E DefaultDatabaseErrorHandler: Corruption reported by sqlite on database: /data/user/0/me.guillaumin.android.osmtracker/databases/OSMTracker
+    05-09 19:02:26.763  2740  2740 E DefaultDatabaseErrorHandler: deleting the database file: /data/user/0/me.guillaumin.android.osmtracker/databases/OSMTracker
+    05-09 19:02:26.773  2740  2740 D AndroidRuntime: Shutting down VM
+    --------- beginning of crash
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime: FATAL EXCEPTION: main
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime: Process: me.guillaumin.android.osmtracker, PID: 2740
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime: Theme: themes:{}
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {me.guillaumin.android.osmtracker/me.guillaumin.android.osmtracker.activity.DisplayTrackMap}: android.database.sqlite.SQLiteDatabaseCorruptException: database disk image is malformed (code 11)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3137)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3168)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2515)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.app.ActivityThread.-wrap11(ActivityThread.java)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1363)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:102)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:148)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:5461)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime: Caused by: android.database.sqlite.SQLiteDatabaseCorruptException: database disk image is malformed (code 11)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.database.sqlite.SQLiteConnection.nativeExecuteForCursorWindow(Native Method)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.database.sqlite.SQLiteConnection.executeForCursorWindow(SQLiteConnection.java:845)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.database.sqlite.SQLiteSession.executeForCursorWindow(SQLiteSession.java:836)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:62)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:143)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.database.sqlite.SQLiteCursor.getCount(SQLiteCursor.java:132)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.content.ContentResolver.query(ContentResolver.java:512)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.content.ContentResolver.query(ContentResolver.java:435)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at me.guillaumin.android.osmtracker.activity.DisplayTrackMap.pathChanged(DisplayTrackMap.java:413)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at me.guillaumin.android.osmtracker.activity.DisplayTrackMap.onResume(DisplayTrackMap.java:269)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1259)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.app.Activity.performResume(Activity.java:6327)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3126)
+    05-09 19:02:26.794  2740  2740 E AndroidRuntime:        ... 10 more
+    05-09 19:02:26.805  1088  2090 W ActivityManager:   Force finishing activity me.guillaumin.android.osmtracker/.activity.DisplayTrackMap
+    05-09 19:02:26.813  1088  2090 W ActivityManager:   Force finishing activity me.guillaumin.android.osmtracker/.activity.TrackDetail
+    05-09 19:02:26.870  1088  2965 D OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer: Could not acquire gfx stats buffer
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer: android.os.RemoteException: Invalid package name
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at com.android.server.GraphicsStatsService.requestBufferForProcess(GraphicsStatsService.java:97)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at android.view.ThreadedRenderer$ProcessInitializer.initGraphicsStats(ThreadedRenderer.java:459)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at android.view.ThreadedRenderer$ProcessInitializer.init(ThreadedRenderer.java:447)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at android.view.ThreadedRenderer.<init>(ThreadedRenderer.java:126)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at android.view.HardwareRenderer.create(HardwareRenderer.java:436)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at android.view.ViewRootImpl.enableHardwareAcceleration(ViewRootImpl.java:759)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at android.view.ViewRootImpl.setView(ViewRootImpl.java:492)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:310)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:86)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at android.app.Dialog.show(Dialog.java:319)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at com.android.server.am.ActivityManagerService$UiHandler.handleMessage(ActivityManagerService.java:1491)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at android.os.Handler.dispatchMessage(Handler.java:102)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at android.os.Looper.loop(Looper.java:148)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at android.os.HandlerThread.run(HandlerThread.java:61)
+    05-09 19:02:26.913  1088  1139 W HardwareRenderer:      at com.android.server.ServiceThread.run(ServiceThread.java:46)

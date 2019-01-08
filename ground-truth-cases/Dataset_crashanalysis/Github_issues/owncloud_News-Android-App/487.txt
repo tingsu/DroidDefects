@@ -1,0 +1,13 @@
+? E/AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{de.luhmer.owncloudnewsreader/de.luhmer.owncloudnewsreader.SettingsActivity}: android.view.InflateException: Binary XML file line #33: Error inflating class java.lang.reflect.Constructor
+? E/AndroidRuntime:     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2201)
+? E/AndroidRuntime:     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2250)
+? E/AndroidRuntime:     at android.app.ActivityThread.access$800(ActivityThread.java:141)
+? E/AndroidRuntime:     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1213)
+? E/AndroidRuntime:     at android.os.Handler.dispatchMessage(Handler.java:102)
+? E/AndroidRuntime:     at android.os.Looper.loop(Looper.java:136)
+? E/AndroidRuntime:     at android.app.ActivityThread.main(ActivityThread.java:5065)
+? E/AndroidRuntime:     at java.lang.reflect.Method.invokeNative(Native Method)
+? E/AndroidRuntime:     at java.lang.reflect.Method.invoke(Method.java:515)
+? E/AndroidRuntime:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+? E/AndroidRuntime:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+? E/AndroidRuntime:     at dalvik.system.NativeStart.main(Native Method)

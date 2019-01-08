@@ -1,0 +1,699 @@
+10-14 12:42:05.457 W/subsystem_ramdu( 8527): type=1400 audit(0.0:42426): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:05.467 I/ssr-ramdumpd( 8527): Dumps will be created at /data/tombstones/ramdump
+10-14 12:42:05.468 E/ssr-ramdumpd( 8527): Directory /data/tombstones/ramdump does not exist
+10-14 12:42:05.468 I/ssr-ramdumpd( 8527): Attempting to create /data/tombstones/ramdump
+10-14 12:42:05.468 E/ssr-ramdumpd( 8527): Ramdump: Unable to create /data/tombstones/ramdump
+10-14 12:42:05.468 E/ssr-ramdumpd( 8527): Creating ramdump directory /data/tombstones/ramdump failed
+10-14 12:42:05.457 W/subsystem_ramdu( 8527): type=1400 audit(0.0:42427): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:05.482 D/QSEECOMD: ( 8526): qseecom listener services process entry PPID = 1
+10-14 12:42:05.482 E/QSEECOMD: ( 8526): Listener: index = 0, hierarchy = 0
+10-14 12:42:05.482 E/QSEECOMD: ( 8526): Init dlopen(librpmb.so, RLTD_NOW) is failed....
+10-14 12:42:05.482 E/QSEECOMD: ( 8526): ERROR: RPMB_INIT failed, shall not start listener services
+10-14 12:42:05.652 D/NetlinkSocketObserver(  837): NeighborEvent{elapsedMs=148408760, 192.168.0.1, [A4B1E92A791B], RTM_NEWNEIGH, NUD_STALE}
+10-14 12:42:06.088 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:06.091 I/ActivityManager(  837): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher3/.Launcher (has extras)} from uid 1000 on display 0
+10-14 12:42:06.100 D/audio_hw_primary(  210): select_devices: out_snd_device(2: speaker) in_snd_device(0: none)
+10-14 12:42:06.100 D/msm8974_platform(  210): platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(15)
+10-14 12:42:06.100 D/audio_hw_primary(  210): enable_snd_device: snd_device(2: speaker)
+10-14 12:42:06.104 D/audio_hw_primary(  210): enable_audio_route: apply and update mixer path: low-latency-playback
+10-14 12:42:06.222 E/Surface ( 8048): getSlotFromBufferLocked: unknown buffer: 0x9bf34a50
+10-14 12:42:06.653 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:06.654 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:06.655 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:06.655 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:06.655 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:06.655 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:06.655 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:06.659 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:06.668 D/BtGatt.GattService(11705): registerClient() - UUID=7256d750-26a7-47c7-9071-19e874e4f1af
+10-14 12:42:06.669 D/BtGatt.GattService(11705): onClientRegistered() - UUID=7256d750-26a7-47c7-9071-19e874e4f1af, clientIf=5
+10-14 12:42:06.670 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:06.671 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:06.673 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:06.678 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:06.678 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:06.678 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:06.680 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:06.688 W/OpenGLRenderer( 1347): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+10-14 12:42:06.688 W/OpenGLRenderer( 1347): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+10-14 12:42:08.680 E/Surface ( 8048): getSlotFromBufferLocked: unknown buffer: 0x9eacddb0
+10-14 12:42:08.687 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:08.688 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:08.689 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:08.689 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:08.689 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:08.689 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:08.689 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:08.696 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:08.704 D/BtGatt.GattService(11705): registerClient() - UUID=22449ad5-cd33-4c80-9f7b-70f01ada7c87
+10-14 12:42:08.704 D/BtGatt.GattService(11705): onClientRegistered() - UUID=22449ad5-cd33-4c80-9f7b-70f01ada7c87, clientIf=5
+10-14 12:42:08.704 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:08.705 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:08.707 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:08.709 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:08.709 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:08.710 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:08.711 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:09.259 D/audio_hw_primary(  210): disable_audio_route: reset and update mixer path: low-latency-playback
+10-14 12:42:09.259 D/audio_hw_primary(  210): disable_snd_device: snd_device(2: speaker)
+10-14 12:42:10.125 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:10.136 D/audio_hw_primary(  210): select_devices: out_snd_device(2: speaker) in_snd_device(0: none)
+10-14 12:42:10.137 D/msm8974_platform(  210): platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(15)
+10-14 12:42:10.137 D/audio_hw_primary(  210): enable_snd_device: snd_device(2: speaker)
+10-14 12:42:10.138 D/audio_hw_primary(  210): enable_audio_route: apply and update mixer path: low-latency-playback
+10-14 12:42:10.163 D/AudioFlinger(  210): mixer(0xb4180000) throttle end: throttle time(10)
+10-14 12:42:10.500 I/ssr-ramdumpd( 8546): Dumps will be created at /data/tombstones/ramdump
+10-14 12:42:10.487 W/subsystem_ramdu( 8546): type=1400 audit(0.0:42428): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:10.487 W/subsystem_ramdu( 8546): type=1400 audit(0.0:42429): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:15.517 W/subsystem_ramdu( 8577): type=1400 audit(0.0:42430): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:10.500 E/ssr-ramdumpd( 8546): Directory /data/tombstones/ramdump does not exist
+10-14 12:42:10.501 I/ssr-ramdumpd( 8546): Attempting to create /data/tombstones/ramdump
+10-14 12:42:10.501 E/ssr-ramdumpd( 8546): Ramdump: Unable to create /data/tombstones/ramdump
+10-14 12:42:10.501 E/ssr-ramdumpd( 8546): Creating ramdump directory /data/tombstones/ramdump failed
+10-14 12:42:10.509 D/QSEECOMD: ( 8545): qseecom listener services process entry PPID = 1
+10-14 12:42:10.509 E/QSEECOMD: ( 8545): Listener: index = 0, hierarchy = 0
+10-14 12:42:10.509 E/QSEECOMD: ( 8545): Init dlopen(librpmb.so, RLTD_NOW) is failed....
+10-14 12:42:10.509 E/QSEECOMD: ( 8545): ERROR: RPMB_INIT failed, shall not start listener services
+10-14 12:42:10.650 D/WifiStateMachine(  837): starting scan for "dead"WPA_PSK with 2412
+10-14 12:42:10.745 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:10.745 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:10.746 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:10.746 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:10.746 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:10.746 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:10.746 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:10.749 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:10.751 D/BtGatt.GattService(11705): registerClient() - UUID=3efbc9d8-d119-4bb8-bb98-2dabc717e825
+10-14 12:42:10.752 D/BtGatt.GattService(11705): onClientRegistered() - UUID=3efbc9d8-d119-4bb8-bb98-2dabc717e825, clientIf=5
+10-14 12:42:10.752 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:10.758 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:10.759 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:10.761 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:10.761 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:10.761 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:10.762 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:11.223 D/NetlinkSocketObserver(  837): NeighborEvent{elapsedMs=148414331, 192.168.0.1, [A4B1E92A791B], RTM_NEWNEIGH, NUD_PROBE}
+10-14 12:42:11.314 I/ActivityManager(  837): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=ws.xsoh.etar/com.android.calendar.AllInOneActivity (has extras)} from uid 10008 on display 0
+10-14 12:42:11.320 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:11.337 I/ActivityManager(  837): Start proc 8547:ws.xsoh.etar/u0a20 for activity ws.xsoh.etar/com.android.calendar.AllInOneActivity
+10-14 12:42:11.357 D/AudioFlinger(  210): mixer(0xb4180000) throttle end: throttle time(7)
+10-14 12:42:11.396 W/System  ( 8547): ClassLoader referenced unknown path: /data/app/ws.xsoh.etar-1/lib/arm
+10-14 12:42:11.401 E/Surface ( 1347): getSlotFromBufferLocked: unknown buffer: 0xa92f5ed0
+10-14 12:42:11.416 D/ExtensionsFactory( 8547): No custom extensions.
+10-14 12:42:11.420 D/ExtensionsFactory( 8547): AllInOneMenuExtensions not found in properties file.
+10-14 12:42:11.463 I/AppCompatViewInflater( 8547): app:theme is now deprecated. Please move to using android:theme instead.
+10-14 12:42:11.551 D/OpenGLRenderer( 8547): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+10-14 12:42:11.566 D/AlertService( 8547): 0 Action = android.intent.action.PROVIDER_CHANGED
+10-14 12:42:11.597 I/Adreno-EGL( 8547): <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 09/02/15, 76f806e, Ibddc658e36
+10-14 12:42:11.598 I/OpenGLRenderer( 8547): Initialized EGL, version 1.4
+10-14 12:42:11.730 I/ActivityManager(  837): Displayed ws.xsoh.etar/com.android.calendar.AllInOneActivity: +405ms
+10-14 12:42:12.166 D/ConnectivityService(  837): updateNetworkScore for NetworkAgentInfo [WIFI () - 106] to 56
+10-14 12:42:12.166 D/ConnectivityService(  837): rematching NetworkAgentInfo [WIFI () - 106]
+10-14 12:42:12.543 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:12.543 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:12.544 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:12.544 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:12.544 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:12.544 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:12.545 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:13.929 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:13.963 D/AudioFlinger(  210): mixer(0xb4180000) throttle end: throttle time(7)
+10-14 12:42:14.584 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:14.585 D/BtGatt.GattService(11705): registerClient() - UUID=fc41aeb0-f2f0-441d-9af1-15e242dffe42
+10-14 12:42:14.586 D/BtGatt.GattService(11705): onClientRegistered() - UUID=fc41aeb0-f2f0-441d-9af1-15e242dffe42, clientIf=5
+10-14 12:42:14.586 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:14.586 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:14.588 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:14.589 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:15.517 W/subsystem_ramdu( 8577): type=1400 audit(0.0:42431): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:14.589 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:14.589 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:14.591 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:14.928 I/ActivityManager(  837): START u0 {act=android.intent.action.VIEW flg=0x20020000 cmp=ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity} from uid 10020 on display 0
+10-14 12:42:14.939 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:14.960 I/AccountManagerService(  837): getTypesVisibleToCaller: isPermitted? true
+10-14 12:42:15.023 I/ActivityManager(  837): Displayed ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity: +88ms
+10-14 12:42:15.054 D/OpenGLRenderer( 8547): endAllStagingAnimators on 0xb37c3f80 (NavigationMenuView) with handle 0xa874e230
+10-14 12:42:15.085 D/BluetoothAdapter( 7153): startLeScan(): null
+10-14 12:42:15.085 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:15.087 D/BtGatt.GattService(11705): registerClient() - UUID=44b120fc-7d7e-4bf7-b130-7b59423eb00f
+10-14 12:42:15.088 D/BtGatt.GattService(11705): onClientRegistered() - UUID=44b120fc-7d7e-4bf7-b130-7b59423eb00f, clientIf=6
+10-14 12:42:15.088 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=6
+10-14 12:42:15.088 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:15.090 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:15.091 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=2
+10-14 12:42:15.091 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=2
+10-14 12:42:15.181 D/ConnectivityService(  837): updateNetworkScore for NetworkAgentInfo [WIFI () - 106] to 60
+10-14 12:42:15.181 D/ConnectivityService(  837): rematching NetworkAgentInfo [WIFI () - 106]
+10-14 12:42:15.424 D/BluetoothAdapter( 7153): stopLeScan()
+10-14 12:42:15.425 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:15.425 D/BtGatt.GattService(11705): stopScan() - queue size =2
+10-14 12:42:15.426 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:15.426 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=2
+10-14 12:42:15.426 D/BtGatt.GattService(11705): unregisterClient() - clientIf=6
+10-14 12:42:15.524 I/ssr-ramdumpd( 8577): Dumps will be created at /data/tombstones/ramdump
+10-14 12:42:15.524 E/ssr-ramdumpd( 8577): Directory /data/tombstones/ramdump does not exist
+10-14 12:42:15.524 I/ssr-ramdumpd( 8577): Attempting to create /data/tombstones/ramdump
+10-14 12:42:15.526 E/ssr-ramdumpd( 8577): Ramdump: Unable to create /data/tombstones/ramdump
+10-14 12:42:15.526 E/ssr-ramdumpd( 8577): Creating ramdump directory /data/tombstones/ramdump failed
+10-14 12:42:15.536 D/QSEECOMD: ( 8576): qseecom listener services process entry PPID = 1
+10-14 12:42:15.536 E/QSEECOMD: ( 8576): Listener: index = 0, hierarchy = 0
+10-14 12:42:15.536 E/QSEECOMD: ( 8576): Init dlopen(librpmb.so, RLTD_NOW) is failed....
+10-14 12:42:15.536 E/QSEECOMD: ( 8576): ERROR: RPMB_INIT failed, shall not start listener services
+10-14 12:42:16.584 D/AlertService( 8547): Beginning updateAlertNotification
+10-14 12:42:16.595 D/AlertService( 8547): No fired or scheduled alerts
+10-14 12:42:16.615 D/AlertService( 8547): Scheduling next alarm with AlarmScheduler. sEventReminderReceived: null
+10-14 12:42:16.626 D/AlarmScheduler( 8547): Query result count for events starting within 1 week: 2
+10-14 12:42:16.626 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:16.627 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:16.627 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:16.627 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:16.627 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:16.627 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:16.627 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:16.629 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:16.633 D/BtGatt.GattService(11705): registerClient() - UUID=af783f08-b763-4726-a63e-1d74b9707db8
+10-14 12:42:16.633 D/BtGatt.GattService(11705): onClientRegistered() - UUID=af783f08-b763-4726-a63e-1d74b9707db8, clientIf=5
+10-14 12:42:16.634 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:16.635 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:16.637 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:16.639 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:16.639 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:16.639 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:16.640 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:16.654 D/AlarmScheduler( 8547): Scheduling alarm for EVENT_REMINDER_APP broadcast for event 102 at 1444930937616 (Thu, Oct 15, 2015 12:42pm)
+10-14 12:42:17.419 I/ActivityManager(  837): START u0 {act=android.intent.action.MAIN cmp=ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity (has extras)} from uid 10020 on display 0
+10-14 12:42:17.429 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:17.466 D/AudioFlinger(  210): mixer(0xb4180000) throttle end: throttle time(4)
+10-14 12:42:17.495 D/NuPlayerDriver(  210): notifyListener_l(0xb369a5a0), (1, 0, 0)
+10-14 12:42:17.496 D/MediaPlayer( 8547): setSubtitleAnchor in MediaPlayer
+10-14 12:42:17.500 D/Ringtone( 8547): Successfully created local player
+10-14 12:42:17.654 I/ActivityManager(  837): Displayed ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity: +224ms
+10-14 12:42:17.700 E/Surface ( 8547): getSlotFromBufferLocked: unknown buffer: 0x9f1e9590
+10-14 12:42:17.705 D/OpenGLRenderer( 8547): endAllStagingAnimators on 0x9f1f1980 (ListView) with handle 0xa874e830
+10-14 12:42:18.196 D/ConnectivityService(  837): updateNetworkScore for NetworkAgentInfo [WIFI () - 106] to 56
+10-14 12:42:18.196 D/ConnectivityService(  837): rematching NetworkAgentInfo [WIFI () - 106]
+10-14 12:42:18.673 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:18.673 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:18.674 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:18.674 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:18.674 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:18.674 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:18.674 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:18.675 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:18.679 D/BtGatt.GattService(11705): registerClient() - UUID=54f6c63b-b95f-478a-83b1-355f78e79d63
+10-14 12:42:18.679 D/BtGatt.GattService(11705): onClientRegistered() - UUID=54f6c63b-b95f-478a-83b1-355f78e79d63, clientIf=5
+10-14 12:42:18.680 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:18.684 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:18.685 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:18.686 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:18.686 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:18.686 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:18.687 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:20.516 I/AccountManagerService(  837): getTypesVisibleToCaller: isPermitted? true
+10-14 12:42:20.518 I/AccountManagerService(  837): getTypesVisibleToCaller: isPermitted? true
+10-14 12:42:20.569 D/audio_hw_primary(  210): disable_audio_route: reset and update mixer path: low-latency-playback
+10-14 12:42:20.569 D/audio_hw_primary(  210): disable_snd_device: snd_device(2: speaker)
+10-14 12:42:20.567 W/subsystem_ramdu( 8586): type=1400 audit(0.0:42432): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:20.578 I/ssr-ramdumpd( 8586): Dumps will be created at /data/tombstones/ramdump
+10-14 12:42:20.578 E/ssr-ramdumpd( 8586): Directory /data/tombstones/ramdump does not exist
+10-14 12:42:20.578 I/ssr-ramdumpd( 8586): Attempting to create /data/tombstones/ramdump
+10-14 12:42:20.578 E/ssr-ramdumpd( 8586): Ramdump: Unable to create /data/tombstones/ramdump
+10-14 12:42:20.578 E/ssr-ramdumpd( 8586): Creating ramdump directory /data/tombstones/ramdump failed
+10-14 12:42:20.567 W/subsystem_ramdu( 8586): type=1400 audit(0.0:42433): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:20.605 D/QSEECOMD: ( 8585): qseecom listener services process entry PPID = 1
+10-14 12:42:20.605 E/QSEECOMD: ( 8585): Listener: index = 0, hierarchy = 0
+10-14 12:42:20.605 E/QSEECOMD: ( 8585): Init dlopen(librpmb.so, RLTD_NOW) is failed....
+10-14 12:42:20.605 E/QSEECOMD: ( 8585): ERROR: RPMB_INIT failed, shall not start listener services
+10-14 12:42:20.734 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:20.735 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:20.735 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:20.735 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:20.735 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:20.735 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:20.737 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:20.745 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:20.748 D/BtGatt.GattService(11705): registerClient() - UUID=e03056ee-c715-434e-b958-8a4ca8667e31
+10-14 12:42:20.758 D/BtGatt.GattService(11705): onClientRegistered() - UUID=e03056ee-c715-434e-b958-8a4ca8667e31, clientIf=5
+10-14 12:42:20.759 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:20.786 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:20.788 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:20.789 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:20.789 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:20.789 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:20.792 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:21.459 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:21.471 D/audio_hw_primary(  210): select_devices: out_snd_device(2: speaker) in_snd_device(0: none)
+10-14 12:42:21.471 D/msm8974_platform(  210): platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(15)
+10-14 12:42:21.471 D/audio_hw_primary(  210): enable_snd_device: snd_device(2: speaker)
+10-14 12:42:21.472 D/audio_hw_primary(  210): enable_audio_route: apply and update mixer path: low-latency-playback
+10-14 12:42:21.497 D/AudioFlinger(  210): mixer(0xb4180000) throttle end: throttle time(10)
+10-14 12:42:21.503 D/AndroidRuntime( 8547): Shutting down VM
+--------- beginning of crash
+10-14 12:42:21.504 E/AndroidRuntime( 8547): FATAL EXCEPTION: main
+10-14 12:42:21.504 E/AndroidRuntime( 8547): Process: ws.xsoh.etar, PID: 8547
+10-14 12:42:21.504 E/AndroidRuntime( 8547): java.lang.ClassCastException: long[] cannot be cast to int[]
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at com.android.timezonepicker.TimeZoneInfo.getTransitions(TimeZoneInfo.java:202)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at com.android.timezonepicker.TimeZoneInfo.<init>(TimeZoneInfo.java:64)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at com.android.timezonepicker.TimeZoneData.loadTzsInZoneTab(TimeZoneData.java:446)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at com.android.timezonepicker.TimeZoneData.loadTzs(TimeZoneData.java:120)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at com.android.timezonepicker.TimeZoneData.<init>(TimeZoneData.java:80)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at com.android.timezonepicker.TimeZonePickerView.<init>(TimeZonePickerView.java:66)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at com.android.timezonepicker.TimeZonePickerDialog.onCreateView(TimeZonePickerDialog.java:70)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at android.app.Fragment.performCreateView(Fragment.java:2220)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:973)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1148)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at android.app.BackStackRecord.run(BackStackRecord.java:793)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1535)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at android.app.FragmentManagerImpl$1.run(FragmentManager.java:482)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at android.os.Handler.handleCallback(Handler.java:739)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at android.os.Handler.dispatchMessage(Handler.java:95)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at android.os.Looper.loop(Looper.java:148)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at java.lang.reflect.Method.invoke(Native Method)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-14 12:42:21.504 E/AndroidRuntime( 8547):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-14 12:42:21.505 W/ActivityManager(  837):   Force finishing activity ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity
+10-14 12:42:21.554 I/OpenGLRenderer(  837): Initialized EGL, version 1.4
+10-14 12:42:22.010 W/ActivityManager(  837): Activity pause timeout for ActivityRecord{788a78 u0 ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity t225 f}
+10-14 12:42:22.854 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:22.855 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:22.856 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:22.856 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:22.856 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:22.856 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:22.856 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:22.859 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:22.861 D/BtGatt.GattService(11705): registerClient() - UUID=9a50c816-4388-4538-95fd-ae1183970fb1
+10-14 12:42:22.862 D/BtGatt.GattService(11705): onClientRegistered() - UUID=9a50c816-4388-4538-95fd-ae1183970fb1, clientIf=5
+10-14 12:42:22.863 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:22.863 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:22.867 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:22.871 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:22.871 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:22.871 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:22.873 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:23.315 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:23.320 I/Process ( 8547): Sending signal. PID: 8547 SIG: 9
+10-14 12:42:23.325 E/Surface (  837): getSlotFromBufferLocked: unknown buffer: 0x9ae87460
+10-14 12:42:23.329 D/OpenGLRenderer(  837): endAllStagingAnimators on 0x9e6f2080 (RippleDrawable) with handle 0x9c35b660
+10-14 12:42:23.350 I/WindowState(  837): WIN DEATH: Window{e0ddb06 u0 ws.xsoh.etar/com.android.calendar.AllInOneActivity}
+10-14 12:42:23.351 D/NuPlayerDriver(  210): reset(0xb369a5a0)
+10-14 12:42:23.352 D/NuPlayerDriver(  210): notifyListener_l(0xb369a5a0), (8, 0, 0)
+10-14 12:42:23.352 D/GraphicsStats(  837): Buffer count: 6
+10-14 12:42:23.352 D/AudioFlinger(  210): mixer(0xb4180000) throttle end: throttle time(7)
+10-14 12:42:23.353 D/NuPlayerDriver(  210): notifyResetComplete(0xb369a5a0)
+10-14 12:42:23.353 I/WindowState(  837): WIN DEATH: Window{9e7d624 u0 ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity}
+10-14 12:42:23.354 I/WindowState(  837): WIN DEATH: Window{cdf44de u0 ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity}
+10-14 12:42:23.383 I/ActivityManager(  837): Process ws.xsoh.etar (pid 8547) has died
+10-14 12:42:23.383 W/ActivityManager(  837): Service crashed 2 times, stopping: ServiceRecord{a43a808 u0 ws.xsoh.etar/com.android.calendar.alerts.AlertService}
+10-14 12:42:23.398 I/ActivityManager(  837): Start proc 8600:ws.xsoh.etar/u0a20 for activity ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity
+10-14 12:42:23.444 W/System  ( 8600): ClassLoader referenced unknown path: /data/app/ws.xsoh.etar-1/lib/arm
+10-14 12:42:23.461 D/ExtensionsFactory( 8600): No custom extensions.
+10-14 12:42:23.501 W/AppOps  (  837): Finishing op nesting under-run: uid 1000 pkg android code 24 time=0 duration=0 nesting=0
+10-14 12:42:23.506 D/OpenGLRenderer( 8600): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+10-14 12:42:23.552 I/Adreno-EGL( 8600): <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 09/02/15, 76f806e, Ibddc658e36
+10-14 12:42:23.554 I/OpenGLRenderer( 8600): Initialized EGL, version 1.4
+10-14 12:42:23.614 I/ActivityManager(  837): Displayed ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity: +226ms
+10-14 12:42:23.614 W/InputMethodManagerService(  837): Got RemoteException sending setActive(false) notification to pid 8547 uid 10020
+10-14 12:42:23.652 W/WindowAnimator(  837): Failed to dispatch window animation state change.
+10-14 12:42:23.652 W/WindowAnimator(  837): android.os.DeadObjectException
+10-14 12:42:23.652 W/WindowAnimator(  837):     at android.os.BinderProxy.transactNative(Native Method)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at android.os.BinderProxy.transact(Binder.java:503)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at android.view.IWindow$Stub$Proxy.onAnimationStopped(IWindow.java:534)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at com.android.server.wm.WindowAnimator.updateWindowsLocked(WindowAnimator.java:286)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at com.android.server.wm.WindowAnimator.animateLocked(WindowAnimator.java:678)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at com.android.server.wm.WindowAnimator.-wrap0(WindowAnimator.java)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at com.android.server.wm.WindowAnimator$1.doFrame(WindowAnimator.java:123)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at android.view.Choreographer$CallbackRecord.run(Choreographer.java:856)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at android.view.Choreographer.doCallbacks(Choreographer.java:670)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at android.view.Choreographer.doFrame(Choreographer.java:603)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:844)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at android.os.Handler.handleCallback(Handler.java:739)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at android.os.Handler.dispatchMessage(Handler.java:95)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at android.os.Looper.loop(Looper.java:148)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at android.os.HandlerThread.run(HandlerThread.java:61)
+10-14 12:42:23.652 W/WindowAnimator(  837):     at com.android.server.ServiceThread.run(ServiceThread.java:46)
+10-14 12:42:24.251 D/ConnectivityService(  837): updateNetworkScore for NetworkAgentInfo [WIFI () - 106] to 60
+10-14 12:42:24.251 D/ConnectivityService(  837): rematching NetworkAgentInfo [WIFI () - 106]
+10-14 12:42:24.638 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:24.638 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:24.639 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:24.639 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:24.639 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:24.639 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:24.640 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:25.317 I/ActivityManager(  837): START u0 {act=android.intent.action.MAIN cmp=ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity (has extras)} from uid 10020 on display 0
+10-14 12:42:25.334 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:25.409 D/NuPlayerDriver(  210): notifyListener_l(0xb60985e0), (1, 0, 0)
+10-14 12:42:25.409 D/MediaPlayer( 8600): setSubtitleAnchor in MediaPlayer
+10-14 12:42:25.415 D/Ringtone( 8600): Successfully created local player
+10-14 12:42:25.602 I/ActivityManager(  837): Displayed ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity: +269ms
+10-14 12:42:25.626 I/ssr-ramdumpd( 8628): Dumps will be created at /data/tombstones/ramdump
+10-14 12:42:25.627 E/ssr-ramdumpd( 8628): Directory /data/tombstones/ramdump does not exist
+10-14 12:42:25.617 W/subsystem_ramdu( 8628): type=1400 audit(0.0:42434): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:25.617 W/subsystem_ramdu( 8628): type=1400 audit(0.0:42435): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:25.627 E/ssr-ramdumpd( 8628): Ramdump: Unable to create /data/tombstones/ramdump
+10-14 12:42:25.627 E/ssr-ramdumpd( 8628): Creating ramdump directory /data/tombstones/ramdump failed
+10-14 12:42:25.644 D/QSEECOMD: ( 8627): qseecom listener services process entry PPID = 1
+10-14 12:42:25.644 E/QSEECOMD: ( 8627): Listener: index = 0, hierarchy = 0
+10-14 12:42:25.644 E/QSEECOMD: ( 8627): Init dlopen(librpmb.so, RLTD_NOW) is failed....
+10-14 12:42:25.644 E/QSEECOMD: ( 8627): ERROR: RPMB_INIT failed, shall not start listener services
+10-14 12:42:25.655 E/Surface ( 8600): getSlotFromBufferLocked: unknown buffer: 0xaef25340
+10-14 12:42:25.661 D/OpenGLRenderer( 8600): endAllStagingAnimators on 0xb073ae80 (ListView) with handle 0xa86fd230
+10-14 12:42:26.684 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:26.687 D/BtGatt.GattService(11705): registerClient() - UUID=0306b830-5ab5-425e-9a73-b31aad7e3dae
+10-14 12:42:26.688 D/BtGatt.GattService(11705): onClientRegistered() - UUID=0306b830-5ab5-425e-9a73-b31aad7e3dae, clientIf=5
+10-14 12:42:26.688 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:26.688 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:26.691 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:26.692 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:26.692 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:26.692 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:26.695 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:27.524 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:27.561 D/AudioFlinger(  210): mixer(0xb4180000) throttle end: throttle time(4)
+10-14 12:42:27.574 D/AndroidRuntime( 8600): Shutting down VM
+10-14 12:42:27.574 E/AndroidRuntime( 8600): FATAL EXCEPTION: main
+10-14 12:42:27.574 E/AndroidRuntime( 8600): Process: ws.xsoh.etar, PID: 8600
+10-14 12:42:27.574 E/AndroidRuntime( 8600): java.lang.ClassCastException: long[] cannot be cast to int[]
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at com.android.timezonepicker.TimeZoneInfo.getTransitions(TimeZoneInfo.java:202)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at com.android.timezonepicker.TimeZoneInfo.<init>(TimeZoneInfo.java:64)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at com.android.timezonepicker.TimeZoneData.loadTzsInZoneTab(TimeZoneData.java:446)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at com.android.timezonepicker.TimeZoneData.loadTzs(TimeZoneData.java:120)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at com.android.timezonepicker.TimeZoneData.<init>(TimeZoneData.java:80)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at com.android.timezonepicker.TimeZonePickerView.<init>(TimeZonePickerView.java:66)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at com.android.timezonepicker.TimeZonePickerDialog.onCreateView(TimeZonePickerDialog.java:70)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at android.app.Fragment.performCreateView(Fragment.java:2220)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:973)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1148)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at android.app.BackStackRecord.run(BackStackRecord.java:793)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1535)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at android.app.FragmentManagerImpl$1.run(FragmentManager.java:482)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at android.os.Handler.handleCallback(Handler.java:739)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at android.os.Handler.dispatchMessage(Handler.java:95)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at android.os.Looper.loop(Looper.java:148)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at java.lang.reflect.Method.invoke(Native Method)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-14 12:42:27.574 E/AndroidRuntime( 8600):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-14 12:42:27.576 W/ActivityManager(  837):   Force finishing activity ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity
+10-14 12:42:27.616 I/OpenGLRenderer(  837): Initialized EGL, version 1.4
+10-14 12:42:28.081 W/ActivityManager(  837): Activity pause timeout for ActivityRecord{e2f45ab u0 ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity t225 f}
+10-14 12:42:28.725 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:28.725 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:28.726 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:28.726 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:28.726 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:28.726 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:28.726 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:28.728 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:28.734 D/BtGatt.GattService(11705): registerClient() - UUID=e3bd2218-7bc7-4b03-bab7-a5faa690d689
+10-14 12:42:28.735 D/BtGatt.GattService(11705): onClientRegistered() - UUID=e3bd2218-7bc7-4b03-bab7-a5faa690d689, clientIf=5
+10-14 12:42:28.735 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:28.737 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:28.741 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:28.743 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:28.743 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:28.743 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:28.744 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:29.454 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:29.467 I/Process ( 8600): Sending signal. PID: 8600 SIG: 9
+10-14 12:42:29.472 E/Surface (  837): getSlotFromBufferLocked: unknown buffer: 0x9ae89df0
+10-14 12:42:29.486 D/OpenGLRenderer(  837): endAllStagingAnimators on 0x955acb00 (RippleDrawable) with handle 0x9d442470
+10-14 12:42:29.487 D/GraphicsStats(  837): Buffer count: 6
+10-14 12:42:29.487 I/WindowState(  837): WIN DEATH: Window{df3feee u0 ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity}
+10-14 12:42:29.488 D/NuPlayerDriver(  210): reset(0xb60985e0)
+10-14 12:42:29.488 D/NuPlayerDriver(  210): notifyListener_l(0xb60985e0), (8, 0, 0)
+10-14 12:42:29.489 D/NuPlayerDriver(  210): notifyResetComplete(0xb60985e0)
+10-14 12:42:29.490 I/WindowState(  837): WIN DEATH: Window{71a9187 u0 ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity}
+10-14 12:42:29.519 I/ActivityManager(  837): Process ws.xsoh.etar (pid 8600) has died
+10-14 12:42:29.535 I/ActivityManager(  837): Start proc 8632:ws.xsoh.etar/u0a20 for activity ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity
+10-14 12:42:29.584 W/System  ( 8632): ClassLoader referenced unknown path: /data/app/ws.xsoh.etar-1/lib/arm
+10-14 12:42:29.599 D/ExtensionsFactory( 8632): No custom extensions.
+10-14 12:42:29.638 D/OpenGLRenderer( 8632): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+10-14 12:42:29.665 W/AppOps  (  837): Finishing op nesting under-run: uid 1000 pkg android code 24 time=0 duration=0 nesting=0
+10-14 12:42:29.682 I/Adreno-EGL( 8632): <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 09/02/15, 76f806e, Ibddc658e36
+10-14 12:42:29.684 I/OpenGLRenderer( 8632): Initialized EGL, version 1.4
+10-14 12:42:29.746 I/ActivityManager(  837): Displayed ws.xsoh.etar/com.android.calendar.CalendarSettingsActivity: +226ms
+10-14 12:42:29.746 W/InputMethodManagerService(  837): Got RemoteException sending setActive(false) notification to pid 8600 uid 10020
+10-14 12:42:29.781 W/WindowAnimator(  837): Failed to dispatch window animation state change.
+10-14 12:42:29.781 W/WindowAnimator(  837): android.os.DeadObjectException
+10-14 12:42:29.781 W/WindowAnimator(  837):     at android.os.BinderProxy.transactNative(Native Method)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at android.os.BinderProxy.transact(Binder.java:503)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at android.view.IWindow$Stub$Proxy.onAnimationStopped(IWindow.java:534)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at com.android.server.wm.WindowAnimator.updateWindowsLocked(WindowAnimator.java:286)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at com.android.server.wm.WindowAnimator.animateLocked(WindowAnimator.java:678)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at com.android.server.wm.WindowAnimator.-wrap0(WindowAnimator.java)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at com.android.server.wm.WindowAnimator$1.doFrame(WindowAnimator.java:123)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at android.view.Choreographer$CallbackRecord.run(Choreographer.java:856)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at android.view.Choreographer.doCallbacks(Choreographer.java:670)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at android.view.Choreographer.doFrame(Choreographer.java:603)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:844)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at android.os.Handler.handleCallback(Handler.java:739)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at android.os.Handler.dispatchMessage(Handler.java:95)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at android.os.Looper.loop(Looper.java:148)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at android.os.HandlerThread.run(HandlerThread.java:61)
+10-14 12:42:29.781 W/WindowAnimator(  837):     at com.android.server.ServiceThread.run(ServiceThread.java:46)
+10-14 12:42:30.093 D/NetlinkSocketObserver(  837): NeighborEvent{elapsedMs=148433201, 192.168.0.1, [A4B1E92A791B], RTM_NEWNEIGH, NUD_STALE}
+10-14 12:42:30.657 W/subsystem_ramdu( 8652): type=1400 audit(0.0:42436): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:30.657 W/subsystem_ramdu( 8652): type=1400 audit(0.0:42437): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:30.651 D/WifiStateMachine(  837): starting scan for "dead"WPA_PSK with 2412
+10-14 12:42:30.671 I/ssr-ramdumpd( 8652): Dumps will be created at /data/tombstones/ramdump
+10-14 12:42:30.671 E/ssr-ramdumpd( 8652): Directory /data/tombstones/ramdump does not exist
+10-14 12:42:30.671 I/ssr-ramdumpd( 8652): Attempting to create /data/tombstones/ramdump
+10-14 12:42:30.671 E/ssr-ramdumpd( 8652): Ramdump: Unable to create /data/tombstones/ramdump
+10-14 12:42:30.671 E/ssr-ramdumpd( 8652): Creating ramdump directory /data/tombstones/ramdump failed
+10-14 12:42:30.673 D/QSEECOMD: ( 8651): qseecom listener services process entry PPID = 1
+10-14 12:42:30.673 E/QSEECOMD: ( 8651): Listener: index = 0, hierarchy = 0
+10-14 12:42:30.673 E/QSEECOMD: ( 8651): Init dlopen(librpmb.so, RLTD_NOW) is failed....
+10-14 12:42:30.673 E/QSEECOMD: ( 8651): ERROR: RPMB_INIT failed, shall not start listener services
+10-14 12:42:30.783 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:35.687 W/subsystem_ramdu( 8675): type=1400 audit(0.0:42438): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:30.784 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:35.687 W/subsystem_ramdu( 8675): type=1400 audit(0.0:42439): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:30.784 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:30.784 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:30.784 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:30.784 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:30.784 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:30.787 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:30.792 D/BtGatt.GattService(11705): registerClient() - UUID=c0f64664-e2cd-4d07-a621-7893adbcf728
+10-14 12:42:30.793 D/BtGatt.GattService(11705): onClientRegistered() - UUID=c0f64664-e2cd-4d07-a621-7893adbcf728, clientIf=5
+10-14 12:42:30.793 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:30.794 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:30.795 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:30.797 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:30.797 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:30.797 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:30.798 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:32.603 D/audio_hw_primary(  210): disable_audio_route: reset and update mixer path: low-latency-playback
+10-14 12:42:32.603 D/audio_hw_primary(  210): disable_snd_device: snd_device(2: speaker)
+10-14 12:42:32.637 I/AccountManagerService(  837): getTypesVisibleToCaller: isPermitted? true
+10-14 12:42:32.639 I/AccountManagerService(  837): getTypesVisibleToCaller: isPermitted? true
+10-14 12:42:32.809 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:32.810 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:32.810 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:32.811 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:32.811 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:32.811 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:32.811 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:32.817 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:32.826 D/BtGatt.GattService(11705): registerClient() - UUID=dd190050-2a4c-42ed-bb7e-39b72bd28347
+10-14 12:42:32.826 D/BtGatt.GattService(11705): onClientRegistered() - UUID=dd190050-2a4c-42ed-bb7e-39b72bd28347, clientIf=5
+10-14 12:42:32.826 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:32.827 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:32.829 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:32.833 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:32.833 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:32.833 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:32.834 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:33.190 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:33.191 I/ActivityManager(  837): START u0 {act=com.android.systemui.recents.SHOW_RECENTS flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity} from uid 10016 on display 0
+10-14 12:42:33.202 D/audio_hw_primary(  210): select_devices: out_snd_device(2: speaker) in_snd_device(0: none)
+10-14 12:42:33.202 D/msm8974_platform(  210): platform_send_audio_calibration: sending audio calibration for snd_device(2) acdb_id(15)
+10-14 12:42:33.202 D/audio_hw_primary(  210): enable_snd_device: snd_device(2: speaker)
+10-14 12:42:33.205 D/audio_hw_primary(  210): enable_audio_route: apply and update mixer path: low-latency-playback
+10-14 12:42:33.224 D/AudioFlinger(  210): mixer(0xb4180000) throttle end: throttle time(10)
+10-14 12:42:33.319 I/art     (  837): Background partial concurrent mark sweep GC freed 40331(2MB) AllocSpace objects, 14(264KB) LOS objects, 33% free, 25MB/38MB, paused 1.108ms total 110.120ms
+10-14 12:42:33.335 E/Surface ( 8632): getSlotFromBufferLocked: unknown buffer: 0xaee65660
+10-14 12:42:34.869 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:34.870 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:34.871 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:34.871 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:34.871 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:34.871 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:34.872 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:34.881 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:34.885 D/BtGatt.GattService(11705): registerClient() - UUID=f9c22f71-c6e4-4297-98dc-aca24f221341
+10-14 12:42:34.886 D/BtGatt.GattService(11705): onClientRegistered() - UUID=f9c22f71-c6e4-4297-98dc-aca24f221341, clientIf=5
+10-14 12:42:34.886 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:34.891 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:34.893 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:34.895 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:34.895 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:34.896 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:34.897 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:35.693 I/ssr-ramdumpd( 8675): Dumps will be created at /data/tombstones/ramdump
+10-14 12:42:35.693 E/ssr-ramdumpd( 8675): Directory /data/tombstones/ramdump does not exist
+10-14 12:42:35.693 I/ssr-ramdumpd( 8675): Attempting to create /data/tombstones/ramdump
+10-14 12:42:35.693 E/ssr-ramdumpd( 8675): Ramdump: Unable to create /data/tombstones/ramdump
+10-14 12:42:35.693 E/ssr-ramdumpd( 8675): Creating ramdump directory /data/tombstones/ramdump failed
+10-14 12:42:35.694 D/QSEECOMD: ( 8674): qseecom listener services process entry PPID = 1
+10-14 12:42:35.694 E/QSEECOMD: ( 8674): Listener: index = 0, hierarchy = 0
+10-14 12:42:35.694 E/QSEECOMD: ( 8674): Init dlopen(librpmb.so, RLTD_NOW) is failed....
+10-14 12:42:35.694 E/QSEECOMD: ( 8674): ERROR: RPMB_INIT failed, shall not start listener services
+10-14 12:42:35.952 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:35.989 D/AudioFlinger(  210): mixer(0xb4180000) throttle end: throttle time(7)
+10-14 12:42:36.040 E/Surface (  998): getSlotFromBufferLocked: unknown buffer: 0xa0477360
+10-14 12:42:36.325 D/ConnectivityService(  837): updateNetworkScore for NetworkAgentInfo [WIFI () - 106] to 56
+10-14 12:42:36.325 D/ConnectivityService(  837): rematching NetworkAgentInfo [WIFI () - 106]
+10-14 12:42:36.734 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:36.734 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:36.735 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:36.735 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:36.735 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:36.735 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:36.735 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:37.751 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:37.779 D/ExtensionsFactory( 8632): AllInOneMenuExtensions not found in properties file.
+10-14 12:42:37.825 I/AppCompatViewInflater( 8632): app:theme is now deprecated. Please move to using android:theme instead.
+10-14 12:42:38.038 I/ActivityManager(  837): Displayed ws.xsoh.etar/com.android.calendar.AllInOneActivity: +279ms
+10-14 12:42:38.773 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:38.775 D/BtGatt.GattService(11705): registerClient() - UUID=d0bb26c9-67c1-4332-8d43-4c581e606635
+10-14 12:42:38.776 D/BtGatt.GattService(11705): onClientRegistered() - UUID=d0bb26c9-67c1-4332-8d43-4c581e606635, clientIf=5
+10-14 12:42:38.776 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:38.776 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:38.778 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:38.781 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:38.781 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:38.781 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:38.784 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:39.344 D/ConnectivityService(  837): updateNetworkScore for NetworkAgentInfo [WIFI () - 106] to 60
+10-14 12:42:39.344 D/ConnectivityService(  837): rematching NetworkAgentInfo [WIFI () - 106]
+10-14 12:42:39.623 D/NetlinkSocketObserver(  837): NeighborEvent{elapsedMs=148442731, 192.168.0.1, [A4B1E92A791B], RTM_NEWNEIGH, NUD_PROBE}
+10-14 12:42:40.047 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:40.097 D/AudioFlinger(  210): mixer(0xb4180000) throttle end: throttle time(11)
+10-14 12:42:40.153 E/Surface ( 8632): getSlotFromBufferLocked: unknown buffer: 0x9f8979a0
+10-14 12:42:40.707 W/subsystem_ramdu( 8686): type=1400 audit(0.0:42440): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:40.707 W/subsystem_ramdu( 8686): type=1400 audit(0.0:42441): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:40.715 E/ssr-ramdumpd( 8686): Directory /data/tombstones/ramdump does not exist
+10-14 12:42:40.715 I/ssr-ramdumpd( 8686): Attempting to create /data/tombstones/ramdump
+10-14 12:42:40.715 E/ssr-ramdumpd( 8686): Ramdump: Unable to create /data/tombstones/ramdump
+10-14 12:42:40.716 E/ssr-ramdumpd( 8686): Creating ramdump directory /data/tombstones/ramdump failed
+10-14 12:42:40.724 D/QSEECOMD: ( 8685): qseecom listener services process entry PPID = 1
+10-14 12:42:40.724 E/QSEECOMD: ( 8685): Listener: index = 0, hierarchy = 0
+10-14 12:42:40.724 E/QSEECOMD: ( 8685): Init dlopen(librpmb.so, RLTD_NOW) is failed....
+10-14 12:42:40.724 E/QSEECOMD: ( 8685): ERROR: RPMB_INIT failed, shall not start listener services
+10-14 12:42:40.821 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:40.822 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:40.822 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:40.822 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:40.822 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:40.822 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:40.823 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:40.825 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:40.828 D/BtGatt.GattService(11705): registerClient() - UUID=c3754881-d783-4528-bd47-903b4d8eb8b8
+10-14 12:42:40.828 D/BtGatt.GattService(11705): onClientRegistered() - UUID=c3754881-d783-4528-bd47-903b4d8eb8b8, clientIf=5
+10-14 12:42:40.828 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:40.828 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:40.831 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:40.834 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:40.834 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:40.834 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:40.835 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:42.873 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:42.874 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:42.874 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:42.874 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:42.874 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:42.874 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:42.874 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:42.881 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:42.887 D/BtGatt.GattService(11705): registerClient() - UUID=b6669b3d-9813-4f92-9a7e-7a74cb72b542
+10-14 12:42:42.887 D/BtGatt.GattService(11705): onClientRegistered() - UUID=b6669b3d-9813-4f92-9a7e-7a74cb72b542, clientIf=5
+10-14 12:42:42.887 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:42.888 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:42.890 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:42.891 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:42.891 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:42.892 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:42.894 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:43.092 I/ActivityManager(  837): START u0 {act=com.android.systemui.recents.SHOW_RECENTS flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity} from uid 10016 on display 0
+10-14 12:42:43.104 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:43.137 D/AudioFlinger(  210): mixer(0xb4180000) throttle end: throttle time(7)
+10-14 12:42:43.150 E/Surface ( 1347): getSlotFromBufferLocked: unknown buffer: 0xa92f5ac0
+10-14 12:42:44.201 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:44.237 D/AudioFlinger(  210): mixer(0xb4180000) throttle end: throttle time(4)
+10-14 12:42:44.316 E/Surface (  998): getSlotFromBufferLocked: unknown buffer: 0x9c734200
+10-14 12:42:44.929 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:44.930 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:44.931 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:44.931 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:44.931 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:44.931 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:44.931 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:44.936 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:44.939 D/BtGatt.GattService(11705): registerClient() - UUID=184f3b85-f42a-4083-bbbe-06bf7afae0e8
+10-14 12:42:44.939 D/BtGatt.GattService(11705): onClientRegistered() - UUID=184f3b85-f42a-4083-bbbe-06bf7afae0e8, clientIf=5
+10-14 12:42:44.939 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:44.941 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:44.947 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:44.949 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:44.949 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:44.949 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:44.952 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:45.468 D/BluetoothAdapter( 7153): startLeScan(): null
+10-14 12:42:45.470 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:45.471 D/BtGatt.GattService(11705): registerClient() - UUID=9fb116b8-6e0a-4ccb-adcf-3e7beea6c5f0
+10-14 12:42:45.472 D/BtGatt.GattService(11705): onClientRegistered() - UUID=9fb116b8-6e0a-4ccb-adcf-3e7beea6c5f0, clientIf=6
+10-14 12:42:45.472 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=6
+10-14 12:42:45.472 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:45.474 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:45.475 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=2
+10-14 12:42:45.475 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=2
+10-14 12:42:45.591 D/audio_hw_primary(  210): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+10-14 12:42:45.737 W/subsystem_ramdu( 8694): type=1400 audit(0.0:42442): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:45.737 W/subsystem_ramdu( 8694): type=1400 audit(0.0:42443): avc: denied { search } for name="tombstones" dev="mmcblk0p28" ino=360449 scontext=u:r:ssr:s0 tcontext=u:object_r:tombstone_data_file:s0 tclass=dir permissive=0
+10-14 12:42:45.748 E/ssr-ramdumpd( 8694): Directory /data/tombstones/ramdump does not exist
+10-14 12:42:45.748 I/ssr-ramdumpd( 8694): Attempting to create /data/tombstones/ramdump
+10-14 12:42:45.748 E/ssr-ramdumpd( 8694): Ramdump: Unable to create /data/tombstones/ramdump
+10-14 12:42:45.748 E/ssr-ramdumpd( 8694): Creating ramdump directory /data/tombstones/ramdump failed
+10-14 12:42:45.756 D/QSEECOMD: ( 8693): qseecom listener services process entry PPID = 1
+10-14 12:42:45.756 E/QSEECOMD: ( 8693): Listener: index = 0, hierarchy = 0
+10-14 12:42:45.756 E/QSEECOMD: ( 8693): Init dlopen(librpmb.so, RLTD_NOW) is failed....
+10-14 12:42:45.756 E/QSEECOMD: ( 8693): ERROR: RPMB_INIT failed, shall not start listener services
+10-14 12:42:45.812 D/BluetoothAdapter( 7153): stopLeScan()
+10-14 12:42:45.813 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:45.814 D/BtGatt.GattService(11705): stopScan() - queue size =2
+10-14 12:42:45.814 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:45.814 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=2
+10-14 12:42:45.815 D/BtGatt.GattService(11705): unregisterClient() - clientIf=6
+10-14 12:42:46.990 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:46.990 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:46.991 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:46.991 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:46.991 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:46.991 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:46.992 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:46.995 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:46.997 D/BtGatt.GattService(11705): registerClient() - UUID=53341228-f3d2-4a99-954d-7bc46d761eeb
+10-14 12:42:46.998 D/BtGatt.GattService(11705): onClientRegistered() - UUID=53341228-f3d2-4a99-954d-7bc46d761eeb, clientIf=5
+10-14 12:42:46.998 D/BluetoothLeScanner( 7153): onClientRegistered() - status=0 clientIf=5
+10-14 12:42:46.999 D/BtGatt.GattService(11705): start scan with filters
+10-14 12:42:47.002 D/BtGatt.ScanManager(11705): handling starting scan
+10-14 12:42:47.004 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=1
+10-14 12:42:47.004 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=2 mLastConfiguredScanSetting=-2147483648
+10-14 12:42:47.004 D/BtGatt.ScanManager(11705): configureRegularScanParams - scanInterval = 8000configureRegularScanParams - scanWindow = 8000
+10-14 12:42:47.005 D/BtGatt.GattService(11705): onScanParamSetupCompleted : 0
+10-14 12:42:48.754 D/audio_hw_primary(  210): disable_audio_route: reset and update mixer path: low-latency-playback
+10-14 12:42:48.754 D/audio_hw_primary(  210): disable_snd_device: snd_device(2: speaker)
+10-14 12:42:48.824 D/BluetoothAdapter( 7153): STATE_ON
+10-14 12:42:48.827 D/BtGatt.GattService(11705): stopScan() - queue size =1
+10-14 12:42:48.827 D/BtGatt.ScanManager(11705): stop scan
+10-14 12:42:48.828 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue=0
+10-14 12:42:48.828 D/BtGatt.ScanManager(11705): configureRegularScanParams() - ScanSetting Scan mode=-2147483648 mLastConfiguredScanSetting=2
+10-14 12:42:48.828 D/BtGatt.ScanManager(11705): configureRegularScanParams() - queue emtpy, scan stopped
+10-14 12:42:48.842 D/BtGatt.GattService(11705): unregisterClient() - clientIf=5
+10-14 12:42:50.657 D/WifiStateMachine(  837): starting scan for "dead"WPA_PSK with 2412
+10-14 12:42:50.779 I/ssr-ramdumpd( 8700): Dumps will be created at /data/tombstones/ramdump

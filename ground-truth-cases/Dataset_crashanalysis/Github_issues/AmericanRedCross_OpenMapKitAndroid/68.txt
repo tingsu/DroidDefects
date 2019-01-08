@@ -1,0 +1,11 @@
+Error: Tileset does not exist
+    at /usr/local/lib/node_modules/tilejson/lib/tilejson.js:64:37
+    at done (/usr/local/lib/node_modules/tilejson/lib/tilejson.js:216:13)
+    at error (/usr/local/lib/node_modules/tilejson/node_modules/get/lib/index.js:294:9)
+    at Get.<anonymous> (/usr/local/lib/node_modules/tilejson/node_modules/get/lib/index.js:299:25)
+    at Get.handleClientRequest (/usr/local/lib/node_modules/tilejson/node_modules/get/lib/index.js:153:29)
+    at ClientRequest.g (events.js:199:16)
+    at ClientRequest.emit (events.js:107:17)
+    at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:426:21)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:111:23)
+    at Socket.socketOnData (_http_client.js:317:20)

@@ -1,0 +1,38 @@
+//this is an auto-generated bug report
+//package name: net.wireloss.android.fahrplan.pw16
+//version: 0.6
+//appro_time: 180
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{net.wireloss.android.fahrplan.pw16/nerd.tuxmobil.fahrplan.congress.MainActivity}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at android.view.Choreographer.getRefreshRate(Choreographer.java:180)
+ 	at android.view.Choreographer.<init>(Choreographer.java:169)
+ 	at android.view.Choreographer.<init>(Choreographer.java:69)
+ 	at android.view.Choreographer$1.initialValue(Choreographer.java:95)
+ 	at android.view.Choreographer$1.initialValue(Choreographer.java:88)
+ 	at java.lang.ThreadLocal$Values.getAfterMiss(ThreadLocal.java:430)
+ 	at java.lang.ThreadLocal.get(ThreadLocal.java:65)
+ 	at android.view.Choreographer.getInstance(Choreographer.java:191)
+ 	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:369)
+ 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:239)
+ 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+ 	at android.app.Dialog.show(Dialog.java:281)
+ 	at android.app.ProgressDialog.show(ProgressDialog.java:116)
+ 	at android.app.ProgressDialog.show(ProgressDialog.java:99)
+ 	at nerd.tuxmobil.fahrplan.congress.MainActivity.showFetchingStatus(MainActivity.java:219)
+ 	at nerd.tuxmobil.fahrplan.congress.MainActivity.fetchFahrplan(MainActivity.java:254)
+ 	at nerd.tuxmobil.fahrplan.congress.MainActivity.onCreate(MainActivity.java:102)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)

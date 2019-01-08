@@ -1,0 +1,401 @@
+05-11 09:09:08.964  6307  6350 W AttachmentDatabase: Wrote part to file: /data/user/0/org.thoughtcrime.securesms/app_parts/part-579533413.mms
+05-11 09:09:08.965  6307  6350 W AttachmentDatabase: Inserted attachment at ID: (row id: 113, unique ID: 1462972148938)
+05-11 09:09:09.021  6307  6350 W MmsSmsDatabase: Executing query: SELECT _id, unique_row_id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, subscription_id, transport_type, attachment_id, unique_id, mid, data_size, _data, ct, cl, cd, name, pending_push FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, 'SMS::' || _id || '::' || date_sent AS unique_row_id, NULL AS attachment_id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, subscription_id, NULL AS network_failures, 'sms' AS transport_type, NULL AS unique_id, NULL AS mid, NULL AS data_size, NULL AS _data, NULL AS ct, NULL AS cl, NULL AS cd, NULL AS name, NULL AS pending_push FROM sms WHERE (thread_id = 3) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, mms._id AS _id, 'MMS::' || mms._id || '::' || date AS unique_row_id, part._id AS attachment_id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, subscription_id, network_failures, 'mms' AS transport_type, unique_id, NULL AS mid, data_size, NULL AS _data, ct, cl, cd, name, pending_push FROM mms LEFT OUTER JOIN part ON part._id =  (SELECT part._id FROM part WHERE part.mid = mms._id LIMIT 1) WHERE (thread_id = 3) ORDER BY date_received DESC LIMIT 1)
+05-11 09:09:09.035  6307  6346 W MmsSmsDatabase: Executing query: SELECT _id, unique_row_id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, subscription_id, transport_type, attachment_id, unique_id, mid, data_size, _data, ct, cl, cd, name, pending_push FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, 'SMS::' || _id || '::' || date_sent AS unique_row_id, NULL AS attachment_id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, subscription_id, NULL AS network_failures, 'sms' AS transport_type, NULL AS unique_id, NULL AS mid, NULL AS data_size, NULL AS _data, NULL AS ct, NULL AS cl, NULL AS cd, NULL AS name, NULL AS pending_push FROM sms WHERE (thread_id = 3) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, mms._id AS _id, 'MMS::' || mms._id || '::' || date AS unique_row_id, part._id AS attachment_id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, subscription_id, network_failures, 'mms' AS transport_type, unique_id, NULL AS mid, data_size, NULL AS _data, ct, cl, cd, name, pending_push FROM mms LEFT OUTER JOIN part ON part._id =  (SELECT part._id FROM part WHERE part.mid = mms._id LIMIT 1) WHERE (thread_id = 3) ORDER BY date_received DESC LIMIT 500)
+05-11 09:09:09.095  6307  6330 W MmsSmsDatabase: Executing query: SELECT _id, unique_row_id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, subscription_id, transport_type, attachment_id, unique_id, mid, data_size, _data, ct, cl, cd, name, pending_push FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, 'SMS::' || _id || '::' || date_sent AS unique_row_id, NULL AS attachment_id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, subscription_id, NULL AS network_failures, 'sms' AS transport_type, NULL AS unique_id, NULL AS mid, NULL AS data_size, NULL AS _data, NULL AS ct, NULL AS cl, NULL AS cd, NULL AS name, NULL AS pending_push FROM sms WHERE (thread_id = 3) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, mms._id AS _id, 'MMS::' || mms._id || '::' || date AS unique_row_id, part._id AS attachment_id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, subscription_id, network_failures, 'mms' AS transport_type, unique_id, NULL AS mid, data_size, NULL AS _data, ct, cl, cd, name, pending_push FROM mms LEFT OUTER JOIN part ON part._id =  (SELECT part._id FROM part WHERE part.mid = mms._id LIMIT 1) WHERE (thread_id = 3) ORDER BY date_received DESC LIMIT 1)
+05-11 09:09:09.103  6307  6307 W ThumbnailView: loading part with id content://org.thoughtcrime.securesms/part/1462972148938/113, progress 1
+05-11 09:09:09.107  6307  6307 W ThumbnailView: Not re-loading slide content://org.thoughtcrime.securesms/part/1462920979313/110
+05-11 09:09:09.111  6307  6379 W AttachmentDatabase: getThumbnailStream((row id: 113, unique ID: 1462972148938))
+05-11 09:09:09.120  6307  6398 W MmsSmsDatabase: Executing query: SELECT _id, unique_row_id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, subscription_id, transport_type, attachment_id, unique_id, mid, data_size, _data, ct, cl, cd, name, pending_push FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, 'SMS::' || _id || '::' || date_sent AS unique_row_id, NULL AS attachment_id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, subscription_id, NULL AS network_failures, 'sms' AS transport_type, NULL AS unique_id, NULL AS mid, NULL AS data_size, NULL AS _data, NULL AS ct, NULL AS cl, NULL AS cd, NULL AS name, NULL AS pending_push FROM sms WHERE (thread_id = 3) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, mms._id AS _id, 'MMS::' || mms._id || '::' || date AS unique_row_id, part._id AS attachment_id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, subscription_id, network_failures, 'mms' AS transport_type, unique_id, NULL AS mid, data_size, NULL AS _data, ct, cl, cd, name, pending_push FROM mms LEFT OUTER JOIN part ON part._id =  (SELECT part._id FROM part WHERE part.mid = mms._id LIMIT 1) WHERE (thread_id = 3) ORDER BY date_received DESC LIMIT 500)
+05-11 09:09:09.190  6307  6345 W Bitmap  : Called reconfigure on a bitmap that is in use! This may cause graphical corruption!
+05-11 09:09:09.191  6307  6345 W Bitmap  : Called reconfigure on a bitmap that is in use! This may cause graphical corruption!
+05-11 09:09:09.193  6307  6331 W SignalServiceMessageSender: Found attachment, creating pointer...
+05-11 09:09:09.193  6307  6331 W PushServiceSocket: Push service URL: https://textsecure-service.whispersystems.org
+05-11 09:09:09.193  6307  6331 W PushServiceSocket: Opening URL: https://textsecure-service.whispersystems.org/v1/attachments/
+05-11 09:09:09.202  6307  6307 W ThumbnailView: Not re-loading slide content://org.thoughtcrime.securesms/part/1462972148938/113
+05-11 09:09:09.203  6307  6307 W ThumbnailView: Not re-loading slide content://org.thoughtcrime.securesms/part/1462920979313/110
+05-11 09:09:09.237  6307  6345 W MediaUtil: generated thumbnail for part, 472x630 (0.749:1) in 58ms
+05-11 09:09:09.255  6307  6345 W AttachmentDatabase: updating part thumbnail for #(row id: 113, unique ID: 1462972148938)
+05-11 09:09:09.580  6307  6331 W PushServiceSocket: Got attachment content location: https://whispersystems-textsecure-attachments.s3.amazonaws.com/981805075462949532?AWSAccessKeyId=AKIAJHWS3AOTJTASHBDA&Expires=1462975750&Signature=5oCM1w9KOiW8aDvHfyLQVEczY6M%3D
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:328)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:103)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.okhttp.Connection.connect(Connection.java:143)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.connect(DelegatingHttpsURLConnection.java:89)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.internal.push.PushServiceSocket.uploadAttachment(PushServiceSocket.java:457)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.internal.push.PushServiceSocket.sendAttachment(PushServiceSocket.java:357)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointer(SignalServiceMessageSender.java:359)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointers(SignalServiceMessageSender.java:342)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createMessageContent(SignalServiceMessageSender.java:187)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.sendMessage(SignalServiceMessageSender.java:124)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:127)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:43)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob: Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:324)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.TrustManagerImpl.checkServerTrusted(TrustManagerImpl.java:225)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.Platform.checkServerTrusted(Platform.java:115)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:556)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  ... 23 more
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob: Caused by: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:09.708  6307  6331 W PushMediaSendJob:  ... 29 more
+05-11 09:09:09.710  6307  6331 W JobConsumer: org.thoughtcrime.securesms.transport.RetryLaterException: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:136)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:43)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+05-11 09:09:09.710  6307  6331 W JobConsumer: Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:328)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:103)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.okhttp.Connection.connect(Connection.java:143)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.connect(DelegatingHttpsURLConnection.java:89)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.internal.push.PushServiceSocket.uploadAttachment(PushServiceSocket.java:457)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.internal.push.PushServiceSocket.sendAttachment(PushServiceSocket.java:357)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointer(SignalServiceMessageSender.java:359)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointers(SignalServiceMessageSender.java:342)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createMessageContent(SignalServiceMessageSender.java:187)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.sendMessage(SignalServiceMessageSender.java:124)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:127)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   ... 5 more
+05-11 09:09:09.710  6307  6331 W JobConsumer: Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:324)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.org.conscrypt.TrustManagerImpl.checkServerTrusted(TrustManagerImpl.java:225)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.org.conscrypt.Platform.checkServerTrusted(Platform.java:115)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:556)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)
+05-11 09:09:09.710  6307  6331 W JobConsumer:   ... 23 more
+05-11 09:09:09.710  6307  6331 W JobConsumer: Caused by: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:09.710  6307  6331 W JobConsumer:   ... 29 more
+05-11 09:09:09.744  6307  6331 W SignalServiceMessageSender: Found attachment, creating pointer...
+05-11 09:09:09.744  6307  6331 W PushServiceSocket: Push service URL: https://textsecure-service.whispersystems.org
+05-11 09:09:09.744  6307  6331 W PushServiceSocket: Opening URL: https://textsecure-service.whispersystems.org/v1/attachments/
+05-11 09:09:09.979  6307  6331 W PushServiceSocket: Got attachment content location: https://whispersystems-textsecure-attachments.s3.amazonaws.com/847490244473574968?AWSAccessKeyId=AKIAJHWS3AOTJTASHBDA&Expires=1462975750&Signature=FuYFLMrag0IQFf40xn9Opcw4Xe8%3D
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:328)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:103)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.okhttp.Connection.connect(Connection.java:143)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.connect(DelegatingHttpsURLConnection.java:89)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.internal.push.PushServiceSocket.uploadAttachment(PushServiceSocket.java:457)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.internal.push.PushServiceSocket.sendAttachment(PushServiceSocket.java:357)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointer(SignalServiceMessageSender.java:359)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointers(SignalServiceMessageSender.java:342)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createMessageContent(SignalServiceMessageSender.java:187)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.sendMessage(SignalServiceMessageSender.java:124)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:127)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:43)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob: Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:324)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.TrustManagerImpl.checkServerTrusted(TrustManagerImpl.java:225)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.Platform.checkServerTrusted(Platform.java:115)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:556)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  ... 23 more
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob: Caused by: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.080  6307  6331 W PushMediaSendJob:  ... 29 more
+05-11 09:09:10.080  6307  6331 W JobConsumer: org.thoughtcrime.securesms.transport.RetryLaterException: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:136)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:43)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+05-11 09:09:10.080  6307  6331 W JobConsumer: Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:328)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:103)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.okhttp.Connection.connect(Connection.java:143)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.connect(DelegatingHttpsURLConnection.java:89)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.internal.push.PushServiceSocket.uploadAttachment(PushServiceSocket.java:457)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.internal.push.PushServiceSocket.sendAttachment(PushServiceSocket.java:357)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointer(SignalServiceMessageSender.java:359)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointers(SignalServiceMessageSender.java:342)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createMessageContent(SignalServiceMessageSender.java:187)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.sendMessage(SignalServiceMessageSender.java:124)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:127)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   ... 5 more
+05-11 09:09:10.080  6307  6331 W JobConsumer: Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:324)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.org.conscrypt.TrustManagerImpl.checkServerTrusted(TrustManagerImpl.java:225)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.org.conscrypt.Platform.checkServerTrusted(Platform.java:115)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:556)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)
+05-11 09:09:10.080  6307  6331 W JobConsumer:   ... 23 more
+05-11 09:09:10.080  6307  6331 W JobConsumer: Caused by: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.080  6307  6331 W JobConsumer:   ... 29 more
+05-11 09:09:10.106  6307  6331 W SignalServiceMessageSender: Found attachment, creating pointer...
+05-11 09:09:10.106  6307  6331 W PushServiceSocket: Push service URL: https://textsecure-service.whispersystems.org
+05-11 09:09:10.107  6307  6331 W PushServiceSocket: Opening URL: https://textsecure-service.whispersystems.org/v1/attachments/
+05-11 09:09:10.332  6307  6331 W PushServiceSocket: Got attachment content location: https://whispersystems-textsecure-attachments.s3.amazonaws.com/8256946205139429431?AWSAccessKeyId=AKIAJHWS3AOTJTASHBDA&Expires=1462975751&Signature=ZB8cfAsgq1Cxghbe7KQG%2BjGnb0k%3D
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:328)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:103)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.okhttp.Connection.connect(Connection.java:143)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.connect(DelegatingHttpsURLConnection.java:89)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.internal.push.PushServiceSocket.uploadAttachment(PushServiceSocket.java:457)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.internal.push.PushServiceSocket.sendAttachment(PushServiceSocket.java:357)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointer(SignalServiceMessageSender.java:359)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointers(SignalServiceMessageSender.java:342)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createMessageContent(SignalServiceMessageSender.java:187)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.sendMessage(SignalServiceMessageSender.java:124)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:127)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:43)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob: Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:324)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.TrustManagerImpl.checkServerTrusted(TrustManagerImpl.java:225)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.Platform.checkServerTrusted(Platform.java:115)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:556)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  ... 23 more
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob: Caused by: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.417  6307  6331 W PushMediaSendJob:  ... 29 more
+05-11 09:09:10.417  6307  6331 W JobConsumer: org.thoughtcrime.securesms.transport.RetryLaterException: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:136)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:43)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+05-11 09:09:10.417  6307  6331 W JobConsumer: Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:328)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:103)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.okhttp.Connection.connect(Connection.java:143)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.connect(DelegatingHttpsURLConnection.java:89)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.internal.push.PushServiceSocket.uploadAttachment(PushServiceSocket.java:457)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.internal.push.PushServiceSocket.sendAttachment(PushServiceSocket.java:357)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointer(SignalServiceMessageSender.java:359)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointers(SignalServiceMessageSender.java:342)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createMessageContent(SignalServiceMessageSender.java:187)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.sendMessage(SignalServiceMessageSender.java:124)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:127)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   ... 5 more
+05-11 09:09:10.417  6307  6331 W JobConsumer: Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:324)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.org.conscrypt.TrustManagerImpl.checkServerTrusted(TrustManagerImpl.java:225)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.org.conscrypt.Platform.checkServerTrusted(Platform.java:115)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:556)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)
+05-11 09:09:10.417  6307  6331 W JobConsumer:   ... 23 more
+05-11 09:09:10.417  6307  6331 W JobConsumer: Caused by: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.417  6307  6331 W JobConsumer:   ... 29 more
+05-11 09:09:10.439  6307  6331 W SignalServiceMessageSender: Found attachment, creating pointer...
+05-11 09:09:10.440  6307  6331 W PushServiceSocket: Push service URL: https://textsecure-service.whispersystems.org
+05-11 09:09:10.440  6307  6331 W PushServiceSocket: Opening URL: https://textsecure-service.whispersystems.org/v1/attachments/
+05-11 09:09:10.690  6307  6331 W PushServiceSocket: Got attachment content location: https://whispersystems-textsecure-attachments.s3.amazonaws.com/6172136537136897128?AWSAccessKeyId=AKIAJHWS3AOTJTASHBDA&Expires=1462975751&Signature=pDhx1D8Z%2F7WLM6VCeaprQ6FNzgo%3D
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:328)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:103)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.okhttp.Connection.connect(Connection.java:143)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.connect(DelegatingHttpsURLConnection.java:89)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.internal.push.PushServiceSocket.uploadAttachment(PushServiceSocket.java:457)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.internal.push.PushServiceSocket.sendAttachment(PushServiceSocket.java:357)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointer(SignalServiceMessageSender.java:359)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointers(SignalServiceMessageSender.java:342)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createMessageContent(SignalServiceMessageSender.java:187)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.sendMessage(SignalServiceMessageSender.java:124)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:127)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:43)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob: Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:324)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.TrustManagerImpl.checkServerTrusted(TrustManagerImpl.java:225)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.Platform.checkServerTrusted(Platform.java:115)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:556)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  ... 23 more
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob: Caused by: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.788  6307  6331 W PushMediaSendJob:  ... 29 more
+05-11 09:09:10.789  6307  6331 W JobConsumer: org.thoughtcrime.securesms.transport.RetryLaterException: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:136)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:43)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+05-11 09:09:10.789  6307  6331 W JobConsumer: Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:328)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:103)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.okhttp.Connection.connect(Connection.java:143)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.connect(DelegatingHttpsURLConnection.java:89)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.internal.push.PushServiceSocket.uploadAttachment(PushServiceSocket.java:457)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.internal.push.PushServiceSocket.sendAttachment(PushServiceSocket.java:357)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointer(SignalServiceMessageSender.java:359)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointers(SignalServiceMessageSender.java:342)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createMessageContent(SignalServiceMessageSender.java:187)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.sendMessage(SignalServiceMessageSender.java:124)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:127)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   ... 5 more
+05-11 09:09:10.789  6307  6331 W JobConsumer: Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:324)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.org.conscrypt.TrustManagerImpl.checkServerTrusted(TrustManagerImpl.java:225)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.org.conscrypt.Platform.checkServerTrusted(Platform.java:115)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:556)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)
+05-11 09:09:10.789  6307  6331 W JobConsumer:   ... 23 more
+05-11 09:09:10.789  6307  6331 W JobConsumer: Caused by: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:10.789  6307  6331 W JobConsumer:   ... 29 more
+05-11 09:09:10.814  6307  6331 W SignalServiceMessageSender: Found attachment, creating pointer...
+05-11 09:09:10.814  6307  6331 W PushServiceSocket: Push service URL: https://textsecure-service.whispersystems.org
+05-11 09:09:10.814  6307  6331 W PushServiceSocket: Opening URL: https://textsecure-service.whispersystems.org/v1/attachments/
+05-11 09:09:10.914  6307 29750 W WebSocketConnection: Sending keep alive...
+05-11 09:09:10.956  6307 29749 W OkHttpClientWrapper: onMessage: BINARY
+05-11 09:09:10.956  6307 29749 W WebSocketConnection: WSC onMessage()
+05-11 09:09:10.956  6307 29749 W WebSocketConnection: Message Type: 2
+05-11 09:09:11.046  6307  6331 W PushServiceSocket: Got attachment content location: https://whispersystems-textsecure-attachments.s3.amazonaws.com/4688241550271747451?AWSAccessKeyId=AKIAJHWS3AOTJTASHBDA&Expires=1462975751&Signature=RxQxgjot98hw9vSAwcq9%2Flosm1Q%3D
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:328)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:103)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.okhttp.Connection.connect(Connection.java:143)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.connect(DelegatingHttpsURLConnection.java:89)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.internal.push.PushServiceSocket.uploadAttachment(PushServiceSocket.java:457)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.internal.push.PushServiceSocket.sendAttachment(PushServiceSocket.java:357)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointer(SignalServiceMessageSender.java:359)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointers(SignalServiceMessageSender.java:342)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.createMessageContent(SignalServiceMessageSender.java:187)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at org.whispersystems.signalservice.api.SignalServiceMessageSender.sendMessage(SignalServiceMessageSender.java:124)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:127)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:43)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob: Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:324)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.TrustManagerImpl.checkServerTrusted(TrustManagerImpl.java:225)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.Platform.checkServerTrusted(Platform.java:115)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:556)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  ... 23 more
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob: Caused by: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:11.137  6307  6331 W PushMediaSendJob:  ... 29 more
+05-11 09:09:11.138  6307  6331 W JobConsumer: org.thoughtcrime.securesms.transport.RetryLaterException: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:136)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:43)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+05-11 09:09:11.138  6307  6331 W JobConsumer: Caused by: javax.net.ssl.SSLHandshakeException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:328)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.SocketConnector.connectTls(SocketConnector.java:103)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.okhttp.Connection.connect(Connection.java:143)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.okhttp.Connection.connectAndSetOwner(Connection.java:185)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.okhttp.OkHttpClient$1.connectAndSetOwner(OkHttpClient.java:128)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.nextConnection(HttpEngine.java:341)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:330)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:248)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:437)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:114)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.connect(DelegatingHttpsURLConnection.java:89)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.internal.push.PushServiceSocket.uploadAttachment(PushServiceSocket.java:457)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.internal.push.PushServiceSocket.sendAttachment(PushServiceSocket.java:357)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointer(SignalServiceMessageSender.java:359)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createAttachmentPointers(SignalServiceMessageSender.java:342)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.createMessageContent(SignalServiceMessageSender.java:187)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.whispersystems.signalservice.api.SignalServiceMessageSender.sendMessage(SignalServiceMessageSender.java:124)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:127)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   ... 5 more
+05-11 09:09:11.138  6307  6331 W JobConsumer: Caused by: java.security.cert.CertificateException: java.security.cert.CertPathValidatorException: Trust anchor for certification path not found.
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.org.conscrypt.TrustManagerImpl.checkTrusted(TrustManagerImpl.java:324)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.org.conscrypt.TrustManagerImpl.checkServerTrusted(TrustManagerImpl.java:225)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.org.conscrypt.Platform.checkServerTrusted(Platform.java:115)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:556)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+05-11 09:09:11.138  6307  6331 W JobConsumer:   at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)

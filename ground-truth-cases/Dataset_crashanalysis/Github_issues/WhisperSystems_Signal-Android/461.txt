@@ -1,0 +1,99 @@
+12-03 10:28:53.639 W/ActivityManager(  720): android.os.TransactionTooLargeException
+12-03 10:28:53.639 W/ActivityManager(  720):    at android.os.BinderProxy.transact(Native Method)
+12-03 10:28:53.639 W/ActivityManager(  720):    at android.app.ApplicationThreadProxy.scheduleLaunchActivity(ApplicationThreadNative.java:743)
+12-03 10:28:53.639 W/ActivityManager(  720):    at com.android.server.am.ActivityStack.realStartActivityLocked(ActivityStack.java:971)
+12-03 10:28:53.639 W/ActivityManager(  720):    at com.android.server.am.ActivityStack.startSpecificActivityLocked(ActivityStack.java:1096)
+12-03 10:28:53.639 W/ActivityManager(  720):    at com.android.server.am.ActivityStack.resumeTopActivityLocked(ActivityStack.java:2691)
+12-03 10:28:53.639 W/ActivityManager(  720):    at com.android.server.am.ActivityStack.resumeTopActivityLocked(ActivityStack.java:2169)
+12-03 10:28:53.639 W/ActivityManager(  720):    at com.android.server.am.ActivityStack.resumeTopActivityLocked(ActivityStack.java:2155)
+12-03 10:28:53.639 W/ActivityManager(  720):    at com.android.server.am.ActivityStack.completePauseLocked(ActivityStack.java:1623)
+12-03 10:28:53.639 W/ActivityManager(  720):    at com.android.server.am.ActivityStack.activityPaused(ActivityStack.java:1438)
+12-03 10:28:53.639 W/ActivityManager(  720):    at com.android.server.am.ActivityManagerService.activityPaused(ActivityManagerService.java:5268)
+12-03 10:28:53.639 W/ActivityManager(  720):    at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:442)
+12-03 10:28:53.639 W/ActivityManager(  720):    at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:1982)
+12-03 10:28:53.639 W/ActivityManager(  720):    at android.os.Binder.execTransact(Binder.java:351)
+12-03 10:28:53.639 W/ActivityManager(  720):    at dalvik.system.NativeStart.run(Native Method)
+12-03 10:28:53.639 W/ContextImpl(  720): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1323 com.android.server.am.ActivityManagerService.cleanUpApplicationRecordLocked:12344 com.android.server.am.ActivityManagerService.handleAppDiedLocked:3566 com.android.server.am.ActivityManagerService.startProcessLocked:2285 com.android.server.am.ActivityStack.startSpecificActivityLocked:1108 
+12-03 10:28:53.639 W/ActivityManager(  720): Force removing ActivityRecord{43595878 u0 org.thoughtcrime.securesms/.ConversationListActivity}: app died, no saved state
+12-03 10:28:53.649 E/MP-Decision( 1674): num online cores: 2 reqd : 4 available : 4 rq_depth:4.900000 hotplug_avg_load_dw: 154
+12-03 10:28:53.649 E/MP-Decision( 1674): UP cpu:1 core_idx:1 Nw:1.900000 Tw:140 total_time_up:0.000000
+12-03 10:28:53.649 E/MP-Decision( 1674): UP cpu:2 core_idx:2 Nw:2.700000 Tw:90 total_time_up:95.000000
+12-03 10:28:53.649 E/MP-Decision( 1674): UP cpu:3 core_idx:3 Nw:3.500000 Tw:90 total_time_up:95.000000
+12-03 10:28:53.649 D/SELinux ( 4694): selinux_knoxprecontexthook:  Calling  selinux_knoxprecontexthook for uid: 10013 isSystemServer: 0 seinfo: default pkgname org.thoughtcrime.securesms
+12-03 10:28:53.659 W/GAV2    ( 4476): Thread[GAThread,5,main]: Exception sending hit: HttpHostConnectException
+12-03 10:28:53.659 W/GAV2    ( 4476): Thread[GAThread,5,main]: Connection to https://ssl.google-analytics.com refused
+12-03 10:28:53.659 W/KeyCachingService( 4241): Decrementing activity count...
+12-03 10:28:53.659 W/KeyCachingService( 4241): Starting timeout: 300000
+12-03 10:28:53.659 D/AbsListView( 4241): unregisterIRListener() is called 
+12-03 10:28:53.659 D/AbsListView( 4241): unregisterIRListener() is called 
+12-03 10:28:53.659 W/ContextImpl(  720): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1337 com.android.server.StatusBarManagerService.sendNotification:179 com.android.server.StatusBarManagerService.removeNotification:812 com.android.server.NotificationManagerService.cancelNotificationLocked:1615 com.android.server.NotificationManagerService.cancelNotification:1688 
+12-03 10:28:53.659 D/STATUSBAR-StatusBarManagerService(  720): sendNotification(3) - 4141
+12-03 10:28:53.659 D/LightsService(  720): [SvcLED] turnOff:: id = 4mIsIDUsingPatternLED = true
+12-03 10:28:53.659 D/LightsService(  720): [SvcLED] setSvcLedStateLocked:: id = 4, color = 0, mode = Off, set = Off
+12-03 10:28:53.659 D/LightsService(  720): [SvcLED] ForcedSvcLEDTask is running.
+12-03 10:28:53.659 D/LightsService(  720): [SvcLED] setSvcLedLightLocked : mSvcLedState : 0x0  priority : 6  mSvcLedMode : 0
+12-03 10:28:53.669 D/WindowManager(  720): computeScreenConfigurationLocked() set config.orientation=1 dw=1080 dh=1920 Callers=com.android.server.wm.WindowManagerService.updateOrientationFromAppTokensLocked:5124 com.android.server.wm.WindowManagerService.updateOrientationFromAppTokens:5093 com.android.server.am.ActivityStack.realStartActivityLocked:902 
+12-03 10:28:53.669 D/PowerManagerService(  720): setKeyboardVisibility: false
+12-03 10:28:53.679 E/JavaBinder(  720): !!! FAILED BINDER TRANSACTION !!!
+12-03 10:28:53.679 D/qdmemalloc(  215): ion: unmap_buffer base:0x0 size:8355840 offset:0 fd:49
+12-03 10:28:53.679 D/qdmemalloc(  215): ion: unmap_buffer base:0x0 size:4096 offset:0 fd:65
+12-03 10:28:53.679 E/ActivityManager(  720): Second failure launching org.thoughtcrime.securesms/.ConversationActivity, giving up
+12-03 10:28:53.679 E/ActivityManager(  720): android.os.TransactionTooLargeException
+12-03 10:28:53.679 E/ActivityManager(  720):    at android.os.BinderProxy.transact(Native Method)
+12-03 10:28:53.679 E/ActivityManager(  720):    at android.app.ApplicationThreadProxy.scheduleLaunchActivity(ApplicationThreadNative.java:743)
+12-03 10:28:53.679 E/ActivityManager(  720):    at com.android.server.am.ActivityStack.realStartActivityLocked(ActivityStack.java:971)
+12-03 10:28:53.679 E/ActivityManager(  720):    at com.android.server.am.ActivityManagerService.attachApplicationLocked(ActivityManagerService.java:5008)
+12-03 10:28:53.679 E/ActivityManager(  720):    at com.android.server.am.ActivityManagerService.attachApplication(ActivityManagerService.java:5100)
+12-03 10:28:53.679 E/ActivityManager(  720):    at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:410)
+12-03 10:28:53.679 E/ActivityManager(  720):    at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:1982)
+12-03 10:28:53.679 E/ActivityManager(  720):    at android.os.Binder.execTransact(Binder.java:351)
+12-03 10:28:53.679 E/ActivityManager(  720):    at dalvik.system.NativeStart.run(Native Method)
+12-03 10:28:53.679 I/ActivityManager(  720): Process org.thoughtcrime.securesms (pid 4694) (adj 0) has died.
+12-03 10:28:53.679 W/ContextImpl(  720): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1323 com.android.server.am.ActivityManagerService.cleanUpApplicationRecordLocked:12344 com.android.server.am.ActivityManagerService.handleAppDiedLocked:3566 com.android.server.am.ActivityManagerService.appDiedLocked:3670 com.android.server.am.ActivityStack.realStartActivityLocked:1005 
+12-03 10:28:53.689 D/qdmemalloc(  215): ion: unmap_buffer base:0x0 size:8355840 offset:0 fd:43
+12-03 10:28:53.689 D/qdmemalloc(  215): ion: unmap_buffer base:0x0 size:4096 offset:0 fd:56
+12-03 10:28:53.699 D/SELinux ( 4708): selinux_knoxprecontexthook:  Calling  selinux_knoxprecontexthook for uid: 10013 isSystemServer: 0 seinfo: default pkgname org.thoughtcrime.securesms
+12-03 10:28:53.709 I/SurfaceFlinger(  215): id=30(3) createSurf 0x4047b694 (1x1),1 flag=404, tecuresms
+12-03 10:28:53.709 W/ContextImpl(  720): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1323 com.android.server.am.ActivityManagerService.computeOomAdjLocked:14854 com.android.server.am.ActivityManagerService.computeOomAdjLocked:14514 com.android.server.am.ActivityManagerService.updateOomAdjLocked:15145 com.android.server.am.ActivityManagerService.updateOomAdjLocked:15337 
+12-03 10:28:53.709 W/ContextImpl(  720): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1323 com.android.server.am.ActivityManagerService.computeOomAdjLocked:14860 com.android.server.am.ActivityManagerService.computeOomAdjLocked:14514 com.android.server.am.ActivityManagerService.updateOomAdjLocked:15145 com.android.server.am.ActivityManagerService.updateOomAdjLocked:15337 
+12-03 10:28:53.729 D/Launcher( 1194): onRestart, Launcher: 1124355968
+12-03 10:28:53.729 D/Launcher( 1194): onStart, Launcher: 1124355968
+12-03 10:28:53.729 D/Launcher.HomeView( 1194): onStart
+12-03 10:28:53.729 D/Launcher( 1194): onResume, Launcher: 1124355968
+12-03 10:28:53.729 D/Launcher.HomeView( 1194): onResume
+12-03 10:28:53.729 D/WindowManager(  720): computeScreenConfigurationLocked() set config.orientation=1 dw=1080 dh=1920 Callers=com.android.server.wm.WindowManagerService.updateOrientationFromAppTokensLocked:5124 com.android.server.wm.WindowManagerService.updateOrientationFromAppTokens:5093 com.android.server.am.ActivityStack.resumeTopActivityLocked:2558 
+12-03 10:28:53.729 D/PowerManagerService(  720): setKeyboardVisibility: false
+12-03 10:28:53.729 W/ContextImpl(  720): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1337 com.android.server.am.ActivityStack.resumeTopActivityLocked:2622 com.android.server.am.ActivityStack.resumeTopActivityLocked:2169 com.android.server.am.ActivityStack.resumeTopActivityLocked:2155 com.android.server.am.ActivityStack.finishCurrentActivityLocked:5810 
+12-03 10:28:53.749 D/qdmemalloc(  215): ion: Mapped buffer base:0x46c44000 size:8355840 fd:43
+12-03 10:28:53.749 D/qdmemalloc(  215): ion: Mapped buffer base:0x4008e000 size:4096 fd:49
+12-03 10:28:53.749 V/SmartFaceService - 3rd party pause(  720): onReceive [android.intent.action.ACTIVITY_STATE/com.sec.android.app.launcher/resume]
+12-03 10:28:53.769 D/MenuAppsGridFragment( 1194): onResume
+12-03 10:28:53.779 W/ContextImpl(  720): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1323 com.android.server.am.ActivityManagerService.cleanUpApplicationRecordLocked:12344 com.android.server.am.ActivityManagerService.handleAppDiedLocked:3566 com.android.server.am.ActivityManagerService.appDiedLocked:3670 com.android.server.am.ActivityManagerService$AppDeathRecipient.binderDied:981 
+12-03 10:28:53.789 D/AndroidRuntime( 4694): Shutting down VM
+12-03 10:28:53.789 W/dalvikvm( 4694): threadid=1: thread exiting with uncaught exception (group=0x41ad8ac8)
+12-03 10:28:53.789 E/AndroidRuntime( 4694): FATAL EXCEPTION: main
+12-03 10:28:53.789 E/AndroidRuntime( 4694): java.lang.RuntimeException: Unable to get provider org.thoughtcrime.securesms.providers.PartProvider: java.lang.SecurityException: Unable to find app for caller android.app.ApplicationThreadProxy@42f0df08 (pid=4694) when registering receiver android.content.IIntentReceiver$Stub$Proxy@42f0a868
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.app.ActivityThread.installProvider(ActivityThread.java:4998)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.app.ActivityThread.installContentProviders(ActivityThread.java:4608)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4548)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.app.ActivityThread.access$1400(ActivityThread.java:151)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1341)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.os.Handler.dispatchMessage(Handler.java:99)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.os.Looper.loop(Looper.java:137)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.app.ActivityThread.main(ActivityThread.java:5293)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at java.lang.reflect.Method.invokeNative(Native Method)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at java.lang.reflect.Method.invoke(Method.java:511)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1102)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:869)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at dalvik.system.NativeStart.main(Native Method)
+12-03 10:28:53.789 E/AndroidRuntime( 4694): Caused by: java.lang.SecurityException: Unable to find app for caller android.app.ApplicationThreadProxy@42f0df08 (pid=4694) when registering receiver android.content.IIntentReceiver$Stub$Proxy@42f0a868
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.os.Parcel.readException(Parcel.java:1425)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.os.Parcel.readException(Parcel.java:1379)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.app.ActivityManagerProxy.registerReceiver(ActivityManagerNative.java:2380)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.app.ContextImpl.registerReceiverInternal(ContextImpl.java:1619)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.app.ContextImpl.registerReceiver(ContextImpl.java:1587)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.content.ContextWrapper.registerReceiver(ContextWrapper.java:437)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at org.thoughtcrime.securesms.providers.PartProvider.initializeMasterSecret(PartProvider.java:145)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at org.thoughtcrime.securesms.providers.PartProvider.onCreate(PartProvider.java:62)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.content.ContentProvider.attachInfo(ContentProvider.java:1058)
+12-03 10:28:53.789 E/AndroidRuntime( 4694):     at android.app.ActivityThread.installProvider(ActivityThread.java:4995)

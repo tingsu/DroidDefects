@@ -1,0 +1,30 @@
+//this is an auto-generated bug report
+//package name: org.runnerup
+//version: 1.53
+//appro_time: 125
+ java.lang.RuntimeException: Error receiving broadcast Intent { act=org.runnerup.START_WORKOUT flg=0x10 } in org.runnerup.view.StartActivity$3@ad2bcfe0
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:773)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalStateException: attempt to re-open an already-closed object: SQLiteDatabase: /data/data/org.runnerup/databases/runnerup.db
+ 	at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:55)
+ 	at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1156)
+ 	at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1032)
+ 	at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1238)
+ 	at org.runnerup.export.SyncManager.loadLiveLoggers(SyncManager.java:1143)
+ 	at org.runnerup.tracker.Tracker.connect(Tracker.java:282)
+ 	at org.runnerup.view.StartActivity.startGps(StartActivity.java:457)
+ 	at org.runnerup.view.StartActivity.access$100(StartActivity.java:93)
+ 	at org.runnerup.view.StartActivity$6.onClick(StartActivity.java:575)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at org.runnerup.view.StartActivity$3$1.run(StartActivity.java:391)
+ 	at android.app.Activity.runOnUiThread(Activity.java:4673)
+ 	at org.runnerup.view.StartActivity$3.onReceive(StartActivity.java:379)
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:763)

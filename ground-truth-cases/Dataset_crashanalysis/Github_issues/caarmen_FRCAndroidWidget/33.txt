@@ -1,0 +1,6 @@
+                  java.lang.NoSuchMethodError: android.app.Notification$Builder.setLocalOnly
+                      at ca.rmen.android.frccommon.compat.Api11Helper.createNotification(Api11Helper.java:45)
+                      at ca.rmen.android.frccommon.compat.NotificationCompat.createNotification(NotificationCompat.java:70)
+                      at ca.rmen.android.frccommon.FRCSystemNotification$ShowNotificationTask.onPostExecute(FRCSystemNotification.java:67)
+                      at ca.rmen.android.frccommon.FRCSystemNotification$ShowNotificationTask.onPostExecute(FRCSystemNotification.java:37)
+                      at android.os.AsyncTask.finish(AsyncTask.java:602)

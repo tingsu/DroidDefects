@@ -1,0 +1,27 @@
+                                                                          java.lang.RuntimeException: Unable to start activity ComponentInfo{com.junjunguo.pocketmaps/com.Saafaa.map.controller.MainActivity}: java.lang.NullPointerException: **Attempt to get length of null array**
+                                                                              at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+                                                                              at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+                                                                              at android.app.ActivityThread.-wrap11(ActivityThread.java)
+                                                                              at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+                                                                              at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                              at android.os.Looper.loop(Looper.java:148)
+                                                                              at android.app.ActivityThread.main(ActivityThread.java:5417)
+                                                                              at java.lang.reflect.Method.invoke(Native Method)
+                                                                              at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+                                                                              at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+                                                                           Caused by: java.lang.NullPointerException: Attempt to get length of null array
+                                                                              at com.junjunguo.map.controller.**MainActivity.refreshList(MainActivity.java:263)**
+                                                                              at com.junjunguo.map.controller.**MainActivity.generateList(MainActivity.java:246)**
+                                                                              at com.junjunguo.map.controller.MainActivity.onCreate(MainActivity.java:169)
+                                                                              at android.app.Activity.performCreate(Activity.java:6237)
+                                                                              at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+                                                                              at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+                                                                              at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476) 
+                                                                              at android.app.ActivityThread.-wrap11(ActivityThread.java) 
+                                                                              at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344) 
+                                                                              at android.os.Handler.dispatchMessage(Handler.java:102) 
+                                                                              at android.os.Looper.loop(Looper.java:148) 
+                                                                              at android.app.ActivityThread.main(ActivityThread.java:5417) 
+                                                                              at java.lang.reflect.Method.invoke(Native Method) 
+                                                                              at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726) 
+                                                                              at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616) 

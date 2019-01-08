@@ -1,0 +1,37 @@
+04-03 01:11:05.560 1477-1477/com.keylesspalace.tusky W/System.err: javax.net.ssl.SSLHandshakeException: Handshake failed
+04-03 01:11:05.561 1477-1477/com.keylesspalace.tusky W/System.err:     at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:429)
+04-03 01:11:05.562 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.java:267)
+04-03 01:11:05.562 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.java:237)
+04-03 01:11:05.562 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:148)
+04-03 01:11:05.563 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:186)
+04-03 01:11:05.563 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:121)
+04-03 01:11:05.563 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:100)
+04-03 01:11:05.564 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+04-03 01:11:05.564 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+04-03 01:11:05.564 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+04-03 01:11:05.565 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+04-03 01:11:05.565 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+04-03 01:11:05.565 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+04-03 01:11:05.566 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+04-03 01:11:05.566 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+04-03 01:11:05.567 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:120)
+04-03 01:11:05.567 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:92)
+04-03 01:11:05.567 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:67)
+04-03 01:11:05.568 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:179)
+04-03 01:11:05.568 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.RealCall$AsyncCall.execute(RealCall.java:129)
+04-03 01:11:05.569 1477-1477/com.keylesspalace.tusky W/System.err:     at okhttp3.internal.NamedRunnable.run(NamedRunnable.java:32)
+04-03 01:11:05.569 1477-1477/com.keylesspalace.tusky W/System.err:     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+04-03 01:11:05.569 1477-1477/com.keylesspalace.tusky W/System.err:     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+04-03 01:11:05.570 1477-1477/com.keylesspalace.tusky W/System.err:     at java.lang.Thread.run(Thread.java:776)
+04-03 01:11:05.571 1477-1477/com.keylesspalace.tusky W/System.err: 	Suppressed: javax.net.ssl.SSLHandshakeException: Handshake failed
+04-03 01:11:05.572 1477-1477/com.keylesspalace.tusky W/System.err: 		... 24 more
+04-03 01:11:05.573 1477-1477/com.keylesspalace.tusky W/System.err: 	Caused by: javax.net.ssl.SSLProtocolException: SSL handshake terminated: ssl=0x7646f11a40: Failure in SSL library, usually a protocol error
+04-03 01:11:05.574 1477-1477/com.keylesspalace.tusky W/System.err: error:10000410:SSL routines:OPENSSL_internal:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/s3_pkt.c:610 0x76460766e0:0x00000001)
+04-03 01:11:05.574 1477-1477/com.keylesspalace.tusky W/System.err: error:1000009a:SSL routines:OPENSSL_internal:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/s3_clnt.c:764 0x7657bf2f76:0x00000000)
+04-03 01:11:05.574 1477-1477/com.keylesspalace.tusky W/System.err:     at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+04-03 01:11:05.575 1477-1477/com.keylesspalace.tusky W/System.err:     at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:357)
+04-03 01:11:05.575 1477-1477/com.keylesspalace.tusky W/System.err: 		... 23 more
+04-03 01:11:05.576 1477-1477/com.keylesspalace.tusky W/System.err: Caused by: javax.net.ssl.SSLProtocolException: SSL handshake terminated: ssl=0x7646f11a40: Failure in SSL library, usually a protocol error
+04-03 01:11:05.577 1477-1477/com.keylesspalace.tusky W/System.err: error:1000042e:SSL routines:OPENSSL_internal:TLSV1_ALERT_PROTOCOL_VERSION (external/boringssl/src/ssl/s3_pkt.c:610 0x76460766e0:0x00000001)
+04-03 01:11:05.577 1477-1477/com.keylesspalace.tusky W/System.err:     at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+04-03 01:11:05.577 1477-1477/com.keylesspalace.tusky W/System.err:     at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:357)

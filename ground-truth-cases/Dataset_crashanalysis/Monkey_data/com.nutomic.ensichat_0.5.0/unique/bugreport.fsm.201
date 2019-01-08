@@ -1,0 +1,42 @@
+//this is an auto-generated bug report
+//package name: com.nutomic.ensichat
+//version: 0.5.0
+//appro_time: 12
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.nutomic.ensichat/com.nutomic.ensichat.activities.FirstStartActivity}: android.content.res.Resources$NotFoundException: File res/drawable/abc_vector_test.xml from drawable resource ID #0x7f02004f
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.content.res.Resources$NotFoundException: File res/drawable/abc_vector_test.xml from drawable resource ID #0x7f02004f
+ 	at android.content.res.Resources.loadDrawable(Resources.java:2096)
+ 	at android.content.res.Resources.getDrawable(Resources.java:695)
+ 	at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:346)
+ 	at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:194)
+ 	at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:182)
+ 	at android.support.v7.widget.AppCompatDrawableManager.checkVectorDrawableSetup(AppCompatDrawableManager.java:717)
+ 	at android.support.v7.widget.AppCompatDrawableManager.getDrawable(AppCompatDrawableManager.java:187)
+ 	at android.support.v7.widget.TintTypedArray.getDrawableIfKnown(TintTypedArray.java:77)
+ 	at android.support.v7.app.AppCompatDelegateImplBase.<init>(AppCompatDelegateImplBase.java:127)
+ 	at android.support.v7.app.AppCompatDelegateImplV9.<init>(AppCompatDelegateImplV9.java:147)
+ 	at android.support.v7.app.AppCompatDelegateImplV11.<init>(AppCompatDelegateImplV11.java:27)
+ 	at android.support.v7.app.AppCompatDelegateImplV14.<init>(AppCompatDelegateImplV14.java:50)
+ 	at android.support.v7.app.AppCompatDelegate.create(AppCompatDelegate.java:201)
+ 	at android.support.v7.app.AppCompatDelegate.create(AppCompatDelegate.java:181)
+ 	at android.support.v7.app.AppCompatActivity.getDelegate(AppCompatActivity.java:521)
+ 	at android.support.v7.app.AppCompatActivity.onCreate(AppCompatActivity.java:71)
+ 	at com.nutomic.ensichat.activities.FirstStartActivity.onCreate(FirstStartActivity.scala:37)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)
+ Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #17: invalid drawable tag vector
+ 	at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:897)
+ 	at android.graphics.drawable.Drawable.createFromXml(Drawable.java:837)
+ 	at android.content.res.Resources.loadDrawable(Resources.java:2092)

@@ -1,0 +1,12 @@
+W/AbstractXMPPConnection( 2329): java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@1a2cb1c2 rejected from java.util.concurrent.ThreadPoolExecutor@13cfbd3[Running, pool size = 1, active threads = 1, queued tasks = 100, completed tasks = 68]
+W/AbstractXMPPConnection( 2329):    at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2011)
+W/AbstractXMPPConnection( 2329):    at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:793)
+W/AbstractXMPPConnection( 2329):    at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1339)
+W/AbstractXMPPConnection( 2329):    at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:81)
+W/AbstractXMPPConnection( 2329):    at org.jivesoftware.smack.AbstractXMPPConnection.processPacket(AbstractXMPPConnection.java:980)
+W/AbstractXMPPConnection( 2329):    at org.jivesoftware.smack.AbstractXMPPConnection.parseAndProcessStanza(AbstractXMPPConnection.java:965)
+W/AbstractXMPPConnection( 2329):    at org.jivesoftware.smack.tcp.XMPPTCPConnection.access$400(XMPPTCPConnection.java:139)
+W/AbstractXMPPConnection( 2329):    at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:980)
+W/AbstractXMPPConnection( 2329):    at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$200(XMPPTCPConnection.java:935)
+W/AbstractXMPPConnection( 2329):    at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:950)
+W/AbstractXMPPConnection( 2329):    at java.lang.Thread.run(Thread.java:818)

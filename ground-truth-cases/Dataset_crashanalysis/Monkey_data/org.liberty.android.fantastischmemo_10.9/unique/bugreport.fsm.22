@@ -1,0 +1,40 @@
+//this is an auto-generated bug report
+//package name: org.liberty.android.fantastischmemo
+//version: 10.9
+//appro_time: 177
+ java.lang.RuntimeException: An error occurred while executing doInBackground()
+ 	at android.support.v4.content.ModernAsyncTask$3.done(ModernAsyncTask.java:142)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.RuntimeException: java.sql.SQLException: queryForOne from database failed: SELECT * FROM `settings` WHERE `id` = ?
+ 	at org.liberty.android.fantastischmemo.dao.AbstractHelperDaoImpl.queryForId(AbstractHelperDaoImpl.java:67)
+ 	at org.liberty.android.fantastischmemo.ui.loader.SettingLoader.dbLoadInBackground(SettingLoader.java:14)
+ 	at org.liberty.android.fantastischmemo.ui.loader.SettingLoader.dbLoadInBackground(SettingLoader.java:7)
+ 	at org.liberty.android.fantastischmemo.ui.loader.DBLoader.loadInBackground(DBLoader.java:46)
+ 	at android.support.v4.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:296)
+ 	at android.support.v4.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:54)
+ 	at android.support.v4.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:42)
+ 	at android.support.v4.content.ModernAsyncTask$2.call(ModernAsyncTask.java:128)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ Caused by: java.sql.SQLException: queryForOne from database failed: SELECT * FROM `settings` WHERE `id` = ?
+ 	at com.j256.ormlite.misc.SqlExceptionUtil.create(SqlExceptionUtil.java:22)
+ 	at com.j256.ormlite.android.AndroidDatabaseConnection.queryForOne(AndroidDatabaseConnection.java:204)
+ 	at com.j256.ormlite.stmt.mapped.MappedQueryForId.execute(MappedQueryForId.java:38)
+ 	at com.j256.ormlite.stmt.StatementExecutor.queryForId(StatementExecutor.java:85)
+ 	at com.j256.ormlite.dao.BaseDaoImpl.queryForId(BaseDaoImpl.java:223)
+ 	at org.liberty.android.fantastischmemo.dao.AbstractHelperDaoImpl.queryForId(AbstractHelperDaoImpl.java:64)
+ Caused by: android.database.sqlite.SQLiteException: no such table: settings (code 1): , while compiling: SELECT * FROM `settings` WHERE `id` = ?
+ 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+ 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:500)
+ 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+ 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+ 	at android.database.sqlite.SQLiteQuery.<init>(SQLiteQuery.java:37)
+ 	at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:44)
+ 	at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1314)
+ 	at android.database.sqlite.SQLiteDatabase.rawQuery(SQLiteDatabase.java:1253)
+ 	at com.j256.ormlite.android.AndroidDatabaseConnection.queryForOne(AndroidDatabaseConnection.java:190)

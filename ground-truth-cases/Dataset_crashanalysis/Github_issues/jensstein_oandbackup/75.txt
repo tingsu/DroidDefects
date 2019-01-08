@@ -1,0 +1,4 @@
+> Thu, 18 Dec 2014 14:09:32 +0600: E/AndroidRuntime( 1990): java.lang.NullPointerException
+> Thu, 18 Dec 2014 14:09:32 +0600: E/AndroidRuntime( 1990):     at dk.jens.backup.ShellCommands.doRestore(ShellCommands.java:132)
+> Thu, 18 Dec 2014 14:09:32 +0600: E/AndroidRuntime( 1990):     at dk.jens.backup.OAndBackup$3.run(OAndBackup.java:284)
+> Thu, 18 Dec 2014 14:09:32 +0600: E/AndroidRuntime( 1990):     at java.lang.Thread.run(Thread.java:856)

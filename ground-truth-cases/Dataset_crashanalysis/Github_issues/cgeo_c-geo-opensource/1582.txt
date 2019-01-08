@@ -1,0 +1,5 @@
+E/AndroidRuntime(20855): java.lang.NullPointerException
+E/AndroidRuntime(20855):    at org.mapsforge.map.reader.MapDatabase.executeQuery(MapDatabase.java:247)
+E/AndroidRuntime(20855):    at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.executeJob(DatabaseRenderer.java:169)
+E/AndroidRuntime(20855):    at org.mapsforge.android.maps.mapgenerator.MapWorker.doWork(MapWorker.java:73)
+E/AndroidRuntime(20855):    at org.mapsforge.android.maps.PausableThread.run(PausableThread.java:90)

@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: am.ed.importcontacts
+//version: 1.3.1
+//appro_time: 47
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{am.ed.importcontacts/am.ed.importcontacts.ConfigureVCF}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at am.ed.importcontacts.FileChooser.strtipLastFilepartFromPath(FileChooser.java:386)
+ 	at am.ed.importcontacts.FileChooser.updateList(FileChooser.java:400)
+ 	at am.ed.importcontacts.FileChooser.onPrepareDialog(FileChooser.java:311)
+ 	at am.ed.importcontacts.ConfigureVCF.onPrepareDialog(ConfigureVCF.java:258)
+ 	at android.app.Activity.onPrepareDialog(Activity.java:3027)
+ 	at android.app.Activity.restoreManagedDialogs(Activity.java:968)
+ 	at android.app.Activity.performRestoreInstanceState(Activity.java:911)
+ 	at android.app.Instrumentation.callActivityOnRestoreInstanceState(Instrumentation.java:1138)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2189)

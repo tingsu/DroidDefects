@@ -1,0 +1,13 @@
+java.lang.NullPointerException
+    at net.nightwhistler.pageturner.catalog.CatalogFragment.queueImageLoading(CatalogFragment.java:518)
+    at net.nightwhistler.pageturner.catalog.CatalogFragment.access$600(CatalogFragment.java:70)
+    at net.nightwhistler.pageturner.catalog.CatalogFragment$LoadingScrollListener$1.run(CatalogFragment.java:627)
+    at android.os.Handler.handleCallback(Handler.java:587)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:123)
+    at android.app.ActivityThread.main(ActivityThread.java:4627)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:521)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:860)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:618)
+    at dalvik.system.NativeStart.main(Native Method)

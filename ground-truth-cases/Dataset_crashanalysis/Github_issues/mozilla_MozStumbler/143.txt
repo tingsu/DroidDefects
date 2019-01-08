@@ -1,0 +1,5 @@
+E/org.mozilla.mozstumbler.Reporter( 3587): java.io.FileNotFoundException: https://location.services.mozilla.com/v1/submit
+E/org.mozilla.mozstumbler.Reporter( 3587):  at libcore.net.http.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:186)
+E/org.mozilla.mozstumbler.Reporter( 3587):  at libcore.net.http.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:271)
+E/org.mozilla.mozstumbler.Reporter( 3587):  at org.mozilla.mozstumbler.Reporter$1.run(Reporter.java:192)
+E/org.mozilla.mozstumbler.Reporter( 3587):  at java.lang.Thread.run(Thread.java:856)

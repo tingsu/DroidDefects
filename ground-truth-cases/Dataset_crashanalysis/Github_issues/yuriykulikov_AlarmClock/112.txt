@@ -1,0 +1,11 @@
+java.lang.IllegalStateException
+        at android.media.MediaPlayer.setVolume(Native Method)
+        at com.better.alarm.presenter.background.KlaxonService$Volume.handleMessage(KlaxonService.java:199)
+        at android.os.Handler.dispatchMessage(Handler.java:95)
+        at android.os.Looper.loop(Looper.java:137)
+        at android.app.ActivityThread.main(ActivityThread.java:4898)
+        at java.lang.reflect.Method.invokeNative(Native Method)
+        at java.lang.reflect.Method.invoke(Method.java:511)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1006)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:773)
+        at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,12 @@
+//this is an auto-generated bug report
+//package name: com.tunes.viewer
+//version: 1.3.0
+//appro_time: 49
+ java.lang.RuntimeException: Can't create handler inside thread that has not called Looper.prepare()
+ 	at android.os.Handler.<init>(Handler.java:197)
+ 	at android.os.Handler.<init>(Handler.java:111)
+ 	at android.widget.Toast$TN.<init>(Toast.java:324)
+ 	at android.widget.Toast.<init>(Toast.java:91)
+ 	at android.widget.Toast.makeText(Toast.java:238)
+ 	at com.tunes.viewer.WebView.JSInterface$2.run(JSInterface.java:108)
+ 	at java.lang.Thread.run(Thread.java:841)

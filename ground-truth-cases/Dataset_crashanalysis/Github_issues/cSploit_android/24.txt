@@ -1,0 +1,48 @@
+
+dSploit as same as cSploit crash at start on Android 5.0 Lollipop.
+Here is my logcat : 
+
+```
+I/ActivityManager(26125): Start proc org.csploit.android for activity org.csploit.android/.MainActivity: pid=31377 uid=10109 gids={50109, 9997, 3003, 1028, 1015} abi=armeabi
+D/CSPLOIT[core.System.init](31377): initializing System...
+D/WifiService(26125): New client listening to asynchronous messages
+D/WifiService(26125): acquireWifiLockLocked: WifiLock{wifiLock type=1 binder=android.os.BinderProxy@148b40cd}
+D/OpenGLRenderer(31377): Render dirty regions requested: true
+D/Atlas   (31377): Validating map...
+D/CSPLOIT[MainActivity.onCreate](31377): initializer thread created and started in 1 ms
+D/CSPLOIT[core.System.isARM](31377): Build.CPU_ABI = armeabi-v7a
+D/CSPLOIT[core.ToolsInstaller.needed](31377): Checking version file /data/data/org.csploit.android/files/tools/VERSION
+D/CSPLOIT[core.ToolsInstaller.install](31377): Installing tools ...
+D/CSPLOIT[core.System.setForwarding](31377): Setting ipv4 forwarding to false
+D/CSPLOIT[core.UpdateChecker.run](31377): Service started.
+D/CSPLOIT[net.NetworkDiscovery.run](31377): Network monitor started ...
+E/cSploitClient(31377): start_command: not authenticated
+E/CSPLOIT[core.System.setForwarding](31377): cannot start commands
+D/CSPLOIT[net.NetworkDiscovery$UdpProber.run](31377): UdpProber started ...
+E/cSploitClient(31377): connect_unix: connect: No such file or directory
+D/CSPLOIT[net.NetworkDiscovery$ArpReader.run](31377): ArpReader started ...
+E/cSploitClient(31377): start_command: not authenticated
+E/CSPLOIT[MainActivity$7.run](31377): cannot start commands
+I/Adreno-EGL(31377): <qeglDrvAPI_eglInitialize:410>: QUALCOMM Build: 10/24/14, 167c270, I68fa98814b
+I/OpenGLRenderer(31377): Initialized EGL, version 1.4
+W/Adreno-ES20(31377): <get_gpu_clk:229>: open failed: errno 24
+D/OpenGLRenderer(31377): Enabling debug mode 0
+W/art     (31377): Large object allocation failed: ashmem_create_region failed for 'large object space allocation': Too many open files
+E/NativeCrypto(31377): AppData::create pipe(2) failed: Too many open files
+E/CSPLOIT[core.System.errorLogging](31377): Unable to create application data
+E/CSPLOIT[core.System.errorLogging](31377): javax.net.ssl.SSLException: Unable to create application data
+E/CSPLOIT[core.System.errorLogging](31377):     at com.android.org.conscrypt.NativeCrypto.SSL_new(Native Method)
+E/CSPLOIT[core.System.errorLogging](31377):     at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:270)
+E/CSPLOIT[core.System.errorLogging](31377):     at com.android.okhttp.Connection.upgradeToTls(Connection.java:197)
+E/CSPLOIT[core.System.errorLogging](31377):     at com.android.okhttp.Connection.connect(Connection.java:151)
+E/CSPLOIT[core.System.errorLogging](31377):     at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:276)
+E/CSPLOIT[core.System.errorLogging](31377):     at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:211)
+E/CSPLOIT[core.System.errorLogging](31377):     at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:373)
+E/CSPLOIT[core.System.errorLogging](31377):     at com.android.okhttp.internal.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:106)
+E/CSPLOIT[core.System.errorLogging](31377):     at com.android.okhttp.internal.http.DelegatingHttpsURLConnection.connect(DelegatingHttpsURLConnection.java:89)
+E/CSPLOIT[core.System.errorLogging](31377):     at com.android.okhttp.internal.http.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:25)
+E/CSPLOIT[core.System.errorLogging](31377):     at org.csploit.android.net.GitHubParser.fetchRemoteData(GitHubParser.java:77)
+E/CSPLOIT[core.System.errorLogging](31377):     at org.csploit.android.net.GitHubParser.fetchReleases(GitHubParser.java:102)
+E/CSPLOIT[core.System.errorLogging](31377):     at org.csploit.android.net.GitHubParser.getLastReleaseVersion(GitHubParser.java:171)
+E/CSPLOIT[core.System.errorLogging](31377):     at org.csploit.android.core.UpdateService.isUpdateAvailable(UpdateService.java:163)
+E/CSPLOIT[core.System.errorLogging](31377):     at org.csploit.android.core.UpdateChecker.run(UpdateChecker.java:60)

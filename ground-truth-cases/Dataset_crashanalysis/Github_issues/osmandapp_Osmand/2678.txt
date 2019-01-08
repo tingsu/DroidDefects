@@ -1,0 +1,77 @@
+06-09 20:48:25.362 20862 20882 E net.osmand: TileSourceManager Sourced file: inline evaluation of: ``getTileUrl(13,4092,2723);'' internal Error: Don't know how to eval an ambiguous name!  Use toObject() if you want an object.
+06-09 20:48:25.362 20862 20882 E net.osmand: Sourced file: inline evaluation of: ``getTileUrl(13,4092,2723);'' internal Error: Don't know how to eval an ambiguous name!  Use toObject() if you want an object. : at Line: 1 : in file: inline evaluation of: ``getTileUrl(13,4092,2723);'' : getTileUrl ( 13 , 4092 , 2723 ) 
+06-09 20:48:25.362 20862 20882 E net.osmand: 
+06-09 20:48:25.362 20862 20882 E net.osmand: Called from method: getTileUrl : at Line: 1 : in file: inline evaluation of: ``getTileUrl(13,4092,2723);'' : getTileUrl ( 13 , 4092 , 2723 ) 
+06-09 20:48:25.362 20862 20882 E net.osmand:    at bsh.Interpreter.eval(Unknown Source)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at bsh.Interpreter.eval(Unknown Source)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at bsh.Interpreter.eval(Unknown Source)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at net.osmand.map.TileSourceManager$BeanShellTileSourceTemplate.getUrlToLoad(TileSourceManager.java:579)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at net.osmand.plus.resources.ResourceManager.getTileImageForMap(ResourceManager.java:314)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at net.osmand.plus.resources.ResourceManager.getTileImageForMap(ResourceManager.java:258)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at net.osmand.plus.resources.ResourceManager.getTileImageForMapAsync(ResourceManager.java:185)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at net.osmand.plus.views.MapTileLayer.drawTileMap(MapTileLayer.java:177)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at net.osmand.plus.views.MapTileLayer.onPrepareBufferImage(MapTileLayer.java:122)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at net.osmand.plus.views.OsmandMapTileView.refreshBaseMapInternal(OsmandMapTileView.java:487)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at net.osmand.plus.views.OsmandMapTileView.access$700(OsmandMapTileView.java:62)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at net.osmand.plus.views.OsmandMapTileView$2.run(OsmandMapTileView.java:629)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at android.os.Handler.handleCallback(Handler.java:751)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at android.os.Handler.dispatchMessage(Handler.java:95)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at android.os.Looper.loop(Looper.java:154)
+06-09 20:48:25.362 20862 20882 E net.osmand:    at android.os.HandlerThread.run(HandlerThread.java:61)
+06-09 20:48:25.364 20862 20882 W System.err: bsh.InterpreterError: Don't know how to eval an ambiguous name!  Use toObject() if you want an object.
+06-09 20:48:25.364 20862 20882 W System.err:    at bsh.BSHAmbiguousName.eval(Unknown Source)
+06-09 20:48:25.364 20862 20882 W System.err:    at bsh.BSHPrimaryExpression.eval(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BSHPrimaryExpression.eval(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BSHArguments.getArguments(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BSHMethodInvocation.eval(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BSHPrimaryExpression.eval(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BSHPrimaryExpression.eval(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BSHBinaryExpression.eval(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BSHBinaryExpression.eval(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BSHBinaryExpression.eval(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BSHReturnStatement.eval(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BSHBlock.evalBlock(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BSHBlock.eval(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BshMethod.invokeImpl(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BshMethod.invoke(Unknown Source)
+06-09 20:48:25.365 20862 20882 W System.err:    at bsh.BshMethod.invoke(Unknown Source)
+06-09 20:48:25.366 20862 20882 W System.err:    at bsh.Name.invokeLocalMethod(Unknown Source)
+06-09 20:48:25.366 20862 20882 W System.err:    at bsh.Name.invokeMethod(Unknown Source)
+06-09 20:48:25.366 20862 20882 W System.err:    at bsh.BSHMethodInvocation.eval(Unknown Source)
+06-09 20:48:25.366 20862 20882 W System.err:    at bsh.BSHPrimaryExpression.eval(Unknown Source)
+06-09 20:48:25.366 20862 20882 W System.err:    at bsh.BSHPrimaryExpression.eval(Unknown Source)
+06-09 20:48:25.366 20862 20882 W System.err:    at bsh.Interpreter.eval(Unknown Source)
+06-09 20:48:25.366 20862 20882 W System.err:    at bsh.Interpreter.eval(Unknown Source)
+06-09 20:48:25.366 20862 20882 W System.err:    at bsh.Interpreter.eval(Unknown Source)
+06-09 20:48:25.366 20862 20882 W System.err:    at net.osmand.map.TileSourceManager$BeanShellTileSourceTemplate.getUrlToLoad(TileSourceManager.java:579)
+06-09 20:48:25.366 20862 20882 W System.err:    at net.osmand.plus.resources.ResourceManager.getTileImageForMap(ResourceManager.java:314)
+06-09 20:48:25.366 20862 20882 W System.err:    at net.osmand.plus.resources.ResourceManager.getTileImageForMap(ResourceManager.java:258)
+06-09 20:48:25.366 20862 20882 W System.err:    at net.osmand.plus.resources.ResourceManager.getTileImageForMapAsync(ResourceManager.java:185)
+06-09 20:48:25.366 20862 20882 W System.err:    at net.osmand.plus.views.MapTileLayer.drawTileMap(MapTileLayer.java:177)
+06-09 20:48:25.367 20862 20882 W System.err:    at net.osmand.plus.views.MapTileLayer.onPrepareBufferImage(MapTileLayer.java:122)
+06-09 20:48:25.367 20862 20882 W System.err:    at net.osmand.plus.views.OsmandMapTileView.refreshBaseMapInternal(OsmandMapTileView.java:487)
+06-09 20:48:25.367 20862 20882 W System.err:    at net.osmand.plus.views.OsmandMapTileView.access$700(OsmandMapTileView.java:62)
+06-09 20:48:25.367 20862 20882 W System.err:    at net.osmand.plus.views.OsmandMapTileView$2.run(OsmandMapTileView.java:629)
+06-09 20:48:25.367 20862 20882 W System.err:    at android.os.Handler.handleCallback(Handler.java:751)
+06-09 20:48:25.367 20862 20882 W System.err:    at android.os.Handler.dispatchMessage(Handler.java:95)
+06-09 20:48:25.367 20862 20882 W System.err:    at android.os.Looper.loop(Looper.java:154)
+06-09 20:48:25.367 20862 20882 W System.err:    at android.os.HandlerThread.run(HandlerThread.java:61)
+```
+
+This seems to occur for all beanshell map sources.
+
+The core issue seems to be inside beanshell - for some reason, variables can't be evaluated.  Eg. the following code would fail:
+
+String a = "foo";  // succeeds
+String b = a;  // fails
+
+However methods can be invoked:
+String b = a.concat("");  // succeeds
+
+Variables can be defined with a value, but not reassigned.
+String a = "foo";  // succeeds
+a = "foo";  // fails
+
+I suspect the proguard config might be breaking beanshell, but I have no leads how.
+
+I was hoping to be able to at least fix the defaults to work with the broken beanshell, but I'm not sure it's possible.

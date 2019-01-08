@@ -1,0 +1,18 @@
+12-15 16:05:40.840  8427  8427 E AndroidRuntime: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.namelessdev.mpdroid/com.namelessdev.mpdroid.library.SimpleLibraryActivity}: java.lang.RuntimeException: Error : cannot start SimpleLibraryActivity without an extra
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2228)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2288)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at android.app.ActivityThread.access$600(ActivityThread.java:148)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1273)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at android.os.Handler.dispatchMessage(Handler.java:99)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at android.os.Looper.loop(Looper.java:137)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at android.app.ActivityThread.main(ActivityThread.java:5222)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at java.lang.reflect.Method.invokeNative(Native Method)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at java.lang.reflect.Method.invoke(Method.java:525)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at dalvik.system.NativeStart.main(Native Method)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime: Caused by: java.lang.RuntimeException: Error : cannot start SimpleLibraryActivity without an extra
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at com.namelessdev.mpdroid.library.SimpleLibraryActivity.onCreate(SimpleLibraryActivity.java:71)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at android.app.Activity.performCreate(Activity.java:5150)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+12-15 16:05:40.840  8427  8427 E AndroidRuntime:    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2192)

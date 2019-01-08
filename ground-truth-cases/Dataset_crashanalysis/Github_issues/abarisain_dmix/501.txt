@@ -1,0 +1,7 @@
+    java.lang.NullPointerException
+            at com.namelessdev.mpdroid.fragments.ArtistsFragment.asyncUpdate(ArtistsFragment.java:70)
+            at com.namelessdev.mpdroid.fragments.BrowseFragment$5.run(BrowseFragment.java:445)
+            at com.namelessdev.mpdroid.helpers.MPDAsyncHelper$MPDAsyncWorker.handleMessage(MPDAsyncHelper.java:120)
+            at android.os.Handler.dispatchMessage(Handler.java:102)
+            at android.os.Looper.loop(Looper.java:136)
+            at android.os.HandlerThread.run(HandlerThread.java:61)

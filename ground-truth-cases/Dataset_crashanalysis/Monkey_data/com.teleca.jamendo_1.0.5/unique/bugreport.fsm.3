@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: com.teleca.jamendo
+//version: 1.0.5
+//appro_time: 26
+ java.lang.RuntimeException: Unable to pause activity {com.teleca.jamendo/com.teleca.jamendo.activity.SearchActivity}: java.lang.ClassCastException: com.teleca.jamendo.adapter.PlaylistRemoteAdapter cannot be cast to com.teleca.jamendo.adapter.AlbumAdapter
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3064)
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3019)
+ 	at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:2997)
+ 	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1267)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.ClassCastException: com.teleca.jamendo.adapter.PlaylistRemoteAdapter cannot be cast to com.teleca.jamendo.adapter.AlbumAdapter
+ 	at com.teleca.jamendo.activity.SearchActivity.onSaveInstanceState(SearchActivity.java:157)
+ 	at android.app.Activity.performSaveInstanceState(Activity.java:1147)
+ 	at android.app.Instrumentation.callActivityOnSaveInstanceState(Instrumentation.java:1223)
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3045)

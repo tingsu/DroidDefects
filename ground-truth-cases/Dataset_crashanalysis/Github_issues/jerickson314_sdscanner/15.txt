@@ -1,0 +1,6 @@
+05-30 15:58:03.594 E/AndroidRuntime( 5877): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.io.File.getCanonicalPath()' on a null object reference
+05-30 15:58:03.594 E/AndroidRuntime( 5877):     at com.gmail.jerickson314.sdscanner.ScanFragment$ScanParameters.shouldScan(ScanFragment.java:330)
+05-30 15:58:03.594 E/AndroidRuntime( 5877):     at com.gmail.jerickson314.sdscanner.ScanFragment$PreprocessTask.recursiveAddFiles(ScanFragment.java:341)
+05-30 15:58:03.594 E/AndroidRuntime( 5877):     at com.gmail.jerickson314.sdscanner.ScanFragment$PreprocessTask.recursiveAddFiles(ScanFragment.java:359)
+05-30 15:58:03.594 E/AndroidRuntime( 5877):     at com.gmail.jerickson314.sdscanner.ScanFragment$PreprocessTask.doInBackground(ScanFragment.java:428)
+05-30 15:58:03.594 E/AndroidRuntime( 5877):     at com.gmail.jerickson314.sdscanner.ScanFragment$PreprocessTask.doInBackground(ScanFragment.java:337)

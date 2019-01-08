@@ -1,0 +1,11 @@
+java.lang.IllegalAccessError: Class ref in pre-verified class resolved to unexpected implementation
+    at dalvik.system.DexFile.defineClass(Native Method)
+    at dalvik.system.DexFile.loadClassBinaryName(DexFile.java:195)
+    at dalvik.system.DexPathList.findClass(DexPathList.java:315)
+    at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:58)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:501)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:461)
+    at de.robv.android.xposed.XposedBridge.loadModule(XposedBridge.java:421)
+    at de.robv.android.xposed.XposedBridge.loadModules(XposedBridge.java:386)
+    at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:120)
+    at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: org.voidsink.anewjkuapp
+//version: 0.44.1
+//appro_time: 179
+ java.lang.NullPointerException
+ 	at android.support.v4.app.LoaderManagerImpl.restartLoader(LoaderManager.java:695)
+ 	at org.voidsink.anewjkuapp.fragment.CalendarFragment.loadData(CalendarFragment.java:199)
+ 	at org.voidsink.anewjkuapp.fragment.CalendarFragment.loadMoreData(CalendarFragment.java:195)
+ 	at org.voidsink.anewjkuapp.fragment.CalendarFragment.access$000(CalendarFragment.java:72)
+ 	at org.voidsink.anewjkuapp.fragment.CalendarFragment$1.onClick(CalendarFragment.java:94)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

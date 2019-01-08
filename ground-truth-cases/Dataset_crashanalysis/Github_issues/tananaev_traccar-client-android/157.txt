@@ -1,0 +1,18 @@
+<pre>java.lang.RuntimeException: Unable to create service org.traccar.client.TrackingService: java.lang.NumberFormatException: unable to parse '' as integer
+    at android.app.ActivityThread.handleCreateService(ActivityThread.java:1959)
+    at android.app.ActivityThread.access$2500(ActivityThread.java:117)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:989)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:130)
+    at android.app.ActivityThread.main(ActivityThread.java:3687)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:507)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:867)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:625)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NumberFormatException: unable to parse '' as integer
+    at java.lang.Integer.parseInt(Integer.java:362)
+    at java.lang.Integer.parseInt(Integer.java:332)
+    at org.traccar.client.TrackingController.<init>(TrackingController.java:70)
+    at org.traccar.client.TrackingService.onCreate(TrackingService.java:88)
+    at android.app.ActivityThread.handleCreateService(ActivityThread.java:1949)

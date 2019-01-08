@@ -1,0 +1,54 @@
+ [checkenv] Android SDK Tools Revision 20
+ [checkenv] Installed at D:\android-sdk
+
+-setup:
+     [echo] Project Name: PPSSPP
+  [gettype] Project Type: Application
+     [echo] Switching between debug and non debug build: Deleting previous compi                lation output...
+   [delete] Deleting directory D:\Cygwin\home\Aco\ppsspp\android\bin\classes
+
+-set-debug-mode:
+
+-debug-obfuscation-check:
+
+-build-setup:
+     [echo] Resolving Build Target for PPSSPP...
+[gettarget] Project Target:   Android 2.3.3
+[gettarget] API level:        10
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: D:\Cygwin\home\Aco\ppsspp\android\bin\classes
+     [echo] ----------
+     [echo] Resolving Dependencies for PPSSPP...
+[dependency] Library dependencies:
+[dependency]
+[dependency] ------------------
+[dependency] Ordered libraries:
+
+BUILD FAILED
+D:\android-sdk\tools\ant\build.xml:546: java.lang.NullPointerException
+        at com.android.sdklib.internal.project.ProjectProperties.parsePropertyFi                le(ProjectProperties.java:444)
+        at com.android.sdklib.internal.project.ProjectProperties.load(ProjectPro                perties.java:253)
+        at com.android.sdklib.internal.project.ProjectProperties.load(ProjectPro                perties.java:239)
+        at com.android.ant.TaskHelper.getProperties(TaskHelper.java:135)
+        at com.android.ant.DependencyHelper$AdvancedLibraryProcessor.processLibr                ary(DependencyHelper.java:67)
+        at com.android.ant.DependencyHelper.processLibraries(DependencyHelper.ja                va:209)
+        at com.android.ant.GetLibraryPathTask.execute(GetLibraryPathTask.java:18                3)
+        at com.android.ant.GetLibraryPathTask.execute(GetLibraryPathTask.java:16                2)
+        at com.android.ant.ComputeDependencyTask.execute(ComputeDependencyTask.j                ava:191)
+        at org.apache.tools.ant.UnknownElement.execute(UnknownElement.java:291)
+        at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+        at java.lang.reflect.Method.invoke(Unknown Source)
+        at org.apache.tools.ant.dispatch.DispatchUtils.execute(DispatchUtils.jav                a:106)
+        at org.apache.tools.ant.Task.perform(Task.java:348)
+        at org.apache.tools.ant.Target.execute(Target.java:390)
+        at org.apache.tools.ant.Target.performTasks(Target.java:411)
+        at org.apache.tools.ant.Project.executeSortedTargets(Project.java:1399)
+        at org.apache.tools.ant.Project.executeTarget(Project.java:1368)
+        at org.apache.tools.ant.helper.DefaultExecutor.executeTargets(DefaultExe                cutor.java:41)
+        at org.apache.tools.ant.Project.executeTargets(Project.java:1251)
+        at org.apache.tools.ant.Main.runBuild(Main.java:809)
+        at org.apache.tools.ant.Main.startAnt(Main.java:217)
+        at org.apache.tools.ant.launch.Launcher.run(Launcher.java:280)
+        at org.apache.tools.ant.launch.Launcher.main(Launcher.java:109)

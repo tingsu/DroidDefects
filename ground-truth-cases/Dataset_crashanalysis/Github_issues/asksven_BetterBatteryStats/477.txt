@@ -1,0 +1,9 @@
+07-01 12:53:44.382 E/StatsProvider( 8843): Exception: java.lang.ClassCastException: com.asksven.android.common.privateapiproxies.Wakelock cannot be cast to com.asksven.android.common.privateapiproxies.Misc
+07-01 12:53:44.382 E/StatsProvider( 8843):  at com.asksven.betterbatterystats.data.StatsProvider.getCurrentOtherUsageStatList(StatsProvider.java:2027)
+07-01 12:53:44.382 E/StatsProvider( 8843):  at com.asksven.betterbatterystats.data.StatsProvider.populateReference(StatsProvider.java:2485)
+07-01 12:53:44.382 E/StatsProvider( 8843):  at com.asksven.betterbatterystats.data.StatsProvider.setCurrentReference(StatsProvider.java:2339)
+07-01 12:53:44.382 E/StatsProvider( 8843):  at com.asksven.betterbatterystats.services.WriteCurrentReferenceService.onHandleIntent(WriteCurrentReferenceService.java:79)
+07-01 12:53:44.382 E/StatsProvider( 8843):  at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+07-01 12:53:44.382 E/StatsProvider( 8843):  at android.os.Handler.dispatchMessage(Handler.java:102)
+07-01 12:53:44.382 E/StatsProvider( 8843):  at android.os.Looper.loop(Looper.java:136)
+07-01 12:53:44.382 E/StatsProvider( 8843):  at android.os.HandlerThread.run(HandlerThread.java:61)

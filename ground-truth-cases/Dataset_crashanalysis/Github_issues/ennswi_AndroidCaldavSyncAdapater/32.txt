@@ -1,0 +1,45 @@
+E/SyncAdapter(22133): java.net.MalformedURLException
+E/SyncAdapter(22133):   at java.net.URL.<init>(URL.java:152)
+E/SyncAdapter(22133):   at java.net.URL.<init>(URL.java:125)
+E/SyncAdapter(22133):   at org.gege.caldavsyncadapter.b.a.<init>(Unknown Source)
+E/SyncAdapter(22133):   at org.gege.caldavsyncadapter.syncadapter.a.onPerformSync(Unknown Source)
+E/SyncAdapter(22133):   at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:259)
+E/dalvikvm(22133): Could not find class 'android.app.Notification$Action$Builder', referenced from method a.a.a.a.g.a
+W/dalvikvm(22133): VFY: unable to resolve new-instance 47 (Landroid/app/Notification$Action$Builder;) in La/a/a/a/g;
+D/dalvikvm(22133): VFY: replacing opcode 0x22 at 0x0000
+W/dalvikvm(22133): VFY: unable to find class referenced in signature ([Landroid/app/RemoteInput;)
+E/dalvikvm(22133): Could not find class 'android.app.RemoteInput[]', referenced from method a.a.a.a.g.a
+W/dalvikvm(22133): VFY: unable to resolve new-array 694 ([Landroid/app/RemoteInput;) in La/a/a/a/g;
+D/dalvikvm(22133): VFY: replacing opcode 0x23 at 0x0005
+D/dalvikvm(22133): DexOpt: unable to opt direct call 0x0074 at 0x0e in La/a/a/a/g;.a
+D/dalvikvm(22133): DexOpt: unable to opt direct call 0x00b0 at 0x13 in La/a/a/a/g;.a
+W/ActivityManager( 1027): Unable to start service Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x24000000 cmp=de.we.acaldav/org.gege.caldavsyncadapter.authenticator.AuthenticatorActivity (has extras) } U=0: not found
+D/SyncManager( 1027): failed sync operation bioc u0 (org.gege.caldavsyncadapter.account), com.android.calendar, SERVER, latestRunTime 56950162, reason: AutoSync, SyncResult: stats [ numIoExceptions: 1]
+I/SNISocketFactory(22133): Established TLSv1.2 connection with www.google.com using TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+I/SyncAdapter(22133): 1 calendars found at android
+I/SyncAdapter(22133): Detected calendar name=first lastname URI=https://www.google.com/calendar/dav/redacted@gmail.com/events
+I/SyncAdapter(22133): Entries:                       0
+I/SyncAdapter(22133): Rows inserted:                 0
+I/SyncAdapter(22133): Rows updated:                  0
+I/SyncAdapter(22133): Rows deleted:                  0
+I/SyncAdapter(22133): Rows skipped:                  0
+I/SyncAdapter(22133): Io Exceptions:                 0
+I/SyncAdapter(22133): Parse Exceptions:              0
+I/SyncAdapter(22133): Auth Exceptions:               0
+I/SyncAdapter(22133): Conflict Detected Exceptions:  0
+E/SyncAdapter(22133): IOException
+E/SyncAdapter(22133): java.net.MalformedURLException
+E/SyncAdapter(22133):   at java.net.URL.<init>(URL.java:152)
+E/SyncAdapter(22133):   at java.net.URL.<init>(URL.java:125)
+E/SyncAdapter(22133):   at org.gege.caldavsyncadapter.b.a.<init>(Unknown Source)
+E/SyncAdapter(22133):   at org.gege.caldavsyncadapter.syncadapter.a.onPerformSync(Unknown Source)
+E/SyncAdapter(22133):   at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:259)
+W/ActivityManager( 1027): Unable to start service Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x24000000 cmp=de.we.acaldav/org.gege.caldavsyncadapter.authenticator.AuthenticatorActivity (has extras) } U=0: not found
+D/SyncManager( 1027): failed sync operation lab u0 (org.gege.caldavsyncadapter.account), com.android.calendar, USER, latestRunTime 57034926, reason: 10011, SyncResult: stats [ numIoExceptions: 1]
+E/SyncAdapter(22770): IOException
+E/SyncAdapter(22770): java.net.MalformedURLException
+E/SyncAdapter(22770):   at java.net.URL.<init>(URL.java:152)
+E/SyncAdapter(22770):   at java.net.URL.<init>(URL.java:125)
+E/SyncAdapter(22770):   at org.gege.caldavsyncadapter.b.a.<init>(Unknown Source)
+E/SyncAdapter(22770):   at org.gege.caldavsyncadapter.syncadapter.a.onPerformSync(Unknown Source)
+E/SyncAdapter(22770):   at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:259)

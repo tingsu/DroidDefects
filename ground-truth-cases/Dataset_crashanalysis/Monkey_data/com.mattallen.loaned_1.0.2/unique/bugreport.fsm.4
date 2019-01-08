@@ -1,0 +1,33 @@
+//this is an auto-generated bug report
+//package name: com.mattallen.loaned
+//version: 1.0.2
+//appro_time: 60
+ android.database.sqlite.SQLiteDatabaseLockedException: database is locked (code 5): , while compiling: PRAGMA journal_mode
+ 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+ 	at android.database.sqlite.SQLiteConnection.executeForString(SQLiteConnection.java:634)
+ 	at android.database.sqlite.SQLiteConnection.setJournalMode(SQLiteConnection.java:320)
+ 	at android.database.sqlite.SQLiteConnection.setWalModeFromConfiguration(SQLiteConnection.java:294)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:215)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+ 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+ 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:804)
+ 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:789)
+ 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:694)
+ 	at android.app.ContextImpl.openOrCreateDatabase(ContextImpl.java:863)
+ 	at android.content.ContextWrapper.openOrCreateDatabase(ContextWrapper.java:235)
+ 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:224)
+ 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:164)
+ 	at com.mattallen.loaned.storage.DatabaseManager.addItem(DatabaseManager.java:351)
+ 	at com.mattallen.loaned.addloan.ChooseItemFragment$1.onClick(ChooseItemFragment.java:126)
+ 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

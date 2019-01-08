@@ -1,0 +1,9 @@
+04-30 01:39:46.619 29648 29732 W DownloadService: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+04-30 01:39:46.619 29648 29732 W DownloadService:       at github.daneren2005.dsub.service.DownloadService.applyReplayGain(DownloadService.java:2612)
+04-30 01:39:46.619 29648 29732 W DownloadService:       at github.daneren2005.dsub.service.DownloadService.access$2300(DownloadService.java:99)
+04-30 01:39:46.619 29648 29732 W DownloadService:       at github.daneren2005.dsub.service.DownloadService$8.onPrepared(DownloadService.java:1934)
+04-30 01:39:46.619 29648 29732 W DownloadService:       at android.media.MediaPlayer$EventHandler.handleMessage(MediaPlayer.java:2815)
+04-30 01:39:46.619 29648 29732 W DownloadService:       at android.os.Handler.dispatchMessage(Handler.java:102)
+04-30 01:39:46.619 29648 29732 W DownloadService:       at android.os.Looper.loop(Looper.java:148)
+04-30 01:39:46.619 29648 29732 W DownloadService:       at github.daneren2005.dsub.service.DownloadService$1.run(DownloadService.java:259)
+04-30 01:39:46.619 29648 29732 W DownloadService:       at java.lang.Thread.run(Thread.java:818)

@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: org.scid.android
+//version: 1.39
+//appro_time: 26
+ java.lang.UnsatisfiedLinkError: Couldn't load jni from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/org.scid.android-1.apk"],nativeLibraryDirectories=[/data/app-lib/org.scid.android-1, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at org.scid.database.DataBase.<clinit>(DataBase.java:12)
+ 	at org.scid.android.ScidAndroidActivity.createDatabase(ScidAndroidActivity.java:1924)
+ 	at org.scid.android.ScidAndroidActivity.access$2100(ScidAndroidActivity.java:63)
+ 	at org.scid.android.ScidAndroidActivity$18.onClick(ScidAndroidActivity.java:1658)
+ 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

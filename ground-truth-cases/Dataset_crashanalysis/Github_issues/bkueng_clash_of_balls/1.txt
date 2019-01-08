@@ -1,0 +1,373 @@
+E/AndroidRuntime(28277): java.lang.UnsatisfiedLinkError: Couldn't load alljoyn_java from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.sapos_aplastados.game.clash_of_balls-1.apk"],nativeLibraryDirectories=[/data/app-lib/com.sapos_aplastados.game.clash_of_balls-1, /vendor/lib, /system/lib]]]: findLibrary returned null
+E/AndroidRuntime(28277):    at java.lang.Runtime.loadLibrary(Runtime.java:358)
+E/AndroidRuntime(28277):    at java.lang.System.loadLibrary(System.java:526)
+E/AndroidRuntime(28277):    at com.sapos_aplastados.game.clash_of_balls.network.Networking.<clinit>(Networking.java:1488)
+E/AndroidRuntime(28277):    at com.sapos_aplastados.game.clash_of_balls.NetworkService.onCreate(NetworkService.java:19)
+E/AndroidRuntime(28277):    at android.app.ActivityThread.handleCreateService(ActivityThread.java:2572)
+E/AndroidRuntime(28277):    at android.app.ActivityThread.access$1800(ActivityThread.java:135)
+E/AndroidRuntime(28277):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1278)
+E/AndroidRuntime(28277):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(28277):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(28277):    at android.app.ActivityThread.main(ActivityThread.java:5017)
+E/AndroidRuntime(28277):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(28277):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime(28277):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+E/AndroidRuntime(28277):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+E/AndroidRuntime(28277):    at dalvik.system.NativeStart.main(Native Method)
+W/ActivityManager(  508):   Force finishing activity com.sapos_aplastados.game.clash_of_balls/.MainActivity
+D/GameLevel(28277): Game Level: w=24, h=15, name=level 2
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 9; 0, 4; 0, 8; 0, 11; 0, 11; 0, 11; 0, 11; 0, 9; 0, 4; 0, 8; 0, 11; 0, 11; 0, 11; 0, 11; 0, 9; 0, 4; 0, 8; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 1; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 1; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 1; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 1; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 1; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 1; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 6; 0, 5; 0, 7; 0, 11; 0, 11; 0, 11; 0, 11; 0, 6; 0, 5; 0, 7; 0, 11; 0, 11; 0, 11; 0, 11; 0, 6; 0, 5; 0, 7; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+D/GameLevel(28277): Players: 6
+D/GameLevel(28277): Game Level: w=24, h=15, name=level 1
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+D/dalvikvm(28277): GC_CONCURRENT freed 398K, 6% free 8078K/8512K, paused 2ms+2ms, total 18ms
+D/dalvikvm(28277): WAIT_FOR_CONCURRENT_GC blocked 13ms
+V/GameLevel(28277): 0, 11; 0, 9; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 8; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 15; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 12; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 1; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 1; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 14; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 13; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 6; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 7; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+D/GameLevel(28277): Players: 6
+D/GameLevel(28277): Game Level: w=24, h=15, name=level 1
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 9; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 8; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 10; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 10; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 15; 0, 11; 0, 11; 0, 11; 0, 11; 0, 12; 0, 0; 0, 0; 0, 15; 0, 11; 0, 11; 0, 11; 0, 11; 0, 12; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 1; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 1; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 14; 0, 11; 0, 11; 0, 11; 0, 11; 0, 13; 0, 0; 0, 0; 0, 14; 0, 11; 0, 11; 0, 11; 0, 11; 0, 13; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 10; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 10; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 6; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 7; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+D/GameLevel(28277): Players: 6
+D/dalvikvm(28277): GC_CONCURRENT freed 504K, 7% free 8072K/8624K, paused 2ms+2ms, total 18ms
+D/dalvikvm(28277): WAIT_FOR_CONCURRENT_GC blocked 12ms
+D/GameLevel(28277): Game Level: w=21, h=13, name=test level 1
+V/GameLevel(28277): 2, 11; 2, 9; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 8; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 1; 2, 0; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 0; 2, 1; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 10; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 10; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 10; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 10; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 1; 2, 0; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 0; 2, 1; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 6; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 7; 2, 11; 
+D/GameLevel(28277): Players: 4
+D/GameLevel(28277): Game Level: w=20, h=13, name=level obstacles
+V/GameLevel(28277): 0, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 9; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 8; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 0; 2, 1; 2, 0; 2, 0; 2, 1; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 1; 2, 0; 2, 0; 2, 1; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 0; 2, 1; 2, 0; 2, 0; 2, 1; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 1; 2, 0; 2, 0; 2, 1; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 6; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 7; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 
+D/GameLevel(28277): Players: 8
+D/GameLevel(28277): Game Level: w=20, h=14, name=level walls
+I/WindowManager(  508): Screen frozen for +653ms due to Window{4257ba48 u0 Starting com.sapos_aplastados.game.clash_of_balls}
+D/dalvikvm(28277): GC_CONCURRENT freed 463K, 6% free 8121K/8624K, paused 2ms+1ms, total 23ms
+D/dalvikvm(28277): WAIT_FOR_CONCURRENT_GC blocked 15ms
+V/GameLevel(28277): 1, 23; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 24; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 1; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 1; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 15; 1, 12; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 15; 1, 12; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 11; 1, 11; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 11; 1, 11; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 11; 1, 11; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 11; 1, 11; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 14; 1, 13; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 14; 1, 13; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 1; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 1; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 22; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 25; 
+D/GameLevel(28277): Players: 4
+D/GameLevel(28277): Game Level: w=21, h=13, name=level  walls 2
+V/GameLevel(28277): 1, 23; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 24; 
+V/GameLevel(28277): 1, 21; 1, 10; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 10; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 1; 1, 0; 1, 10; 1, 0; 1, 0; 1, 1; 1, 0; 1, 10; 1, 0; 1, 1; 1, 0; 1, 0; 1, 10; 1, 0; 1, 1; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 10; 1, 21; 1, 10; 1, 0; 1, 0; 1, 10; 1, 21; 1, 10; 1, 0; 1, 0; 1, 10; 1, 21; 1, 10; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 10; 1, 0; 1, 20; 1, 20; 1, 26; 1, 20; 1, 0; 1, 0; 1, 20; 1, 26; 1, 20; 1, 0; 1, 0; 1, 20; 1, 26; 1, 20; 1, 20; 1, 0; 1, 10; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 10; 1, 21; 1, 10; 1, 0; 1, 0; 1, 10; 1, 21; 1, 10; 1, 0; 1, 0; 1, 10; 1, 21; 1, 10; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 1; 1, 0; 1, 10; 1, 0; 1, 0; 1, 1; 1, 0; 1, 10; 1, 0; 1, 1; 1, 0; 1, 0; 1, 10; 1, 0; 1, 1; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 10; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 10; 1, 21; 
+V/GameLevel(28277): 1, 22; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 25; 
+D/GameLevel(28277): Players: 8
+I/dalvikvm(28277): Rejecting re-init on previously-failed class Lcom/sapos_aplastados/game/clash_of_balls/network/Networking; v=0x0
+W/dalvikvm(28277): threadid=12: thread exiting with uncaught exception (group=0x415efba8)
+I/Process (28277): Sending signal. PID: 28277 SIG: 9
+W/InputDispatcher(  508): channel '425fb920 Loading Game... (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  508): channel '425fb920 Loading Game... (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  508): channel '42636c48 com.sapos_aplastados.game.clash_of_balls/com.sapos_aplastados.game.clash_of_balls.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  508): channel '42636c48 com.sapos_aplastados.game.clash_of_balls/com.sapos_aplastados.game.clash_of_balls.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  508): Attempted to unregister already unregistered input channel '425fb920 Loading Game... (server)'
+I/WindowState(  508): WIN DEATH: Window{425fb920 u0 Loading Game...}
+W/InputDispatcher(  508): Attempted to unregister already unregistered input channel '42636c48 com.sapos_aplastados.game.clash_of_balls/com.sapos_aplastados.game.clash_of_balls.MainActivity (server)'
+I/WindowState(  508): WIN DEATH: Window{42636c48 u0 com.sapos_aplastados.game.clash_of_balls/com.sapos_aplastados.game.clash_of_balls.MainActivity}
+W/WindowManager(  508): Force-removing child win Window{4263b660 u0 SurfaceView} from container Window{42636c48 u0 com.sapos_aplastados.game.clash_of_balls/com.sapos_aplastados.game.clash_of_balls.MainActivity}
+W/WindowManager(  508): Failed looking up window
+W/WindowManager(  508): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@41d6fb58 does not exist
+W/WindowManager(  508):     at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7923)
+W/WindowManager(  508):     at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7914)
+W/WindowManager(  508):     at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1047)
+W/WindowManager(  508):     at android.os.BinderProxy.sendDeathNotice(Binder.java:493)
+W/WindowManager(  508):     at dalvik.system.NativeStart.run(Native Method)
+I/WindowState(  508): WIN DEATH: null
+W/ActivityManager(  508): Exception thrown during pause
+W/ActivityManager(  508): android.os.DeadObjectException
+W/ActivityManager(  508):   at android.os.BinderProxy.transact(Native Method)
+W/ActivityManager(  508):   at android.app.ApplicationThreadProxy.schedulePauseActivity(ApplicationThreadNative.java:660)
+W/ActivityManager(  508):   at com.android.server.am.ActivityStack.startPausingLocked(ActivityStack.java:761)
+W/ActivityManager(  508):   at com.android.server.am.ActivityStack.finishActivityLocked(ActivityStack.java:2455)
+W/ActivityManager(  508):   at com.android.server.am.ActivityStack.finishTopRunningActivityLocked(ActivityStack.java:2329)
+W/ActivityManager(  508):   at com.android.server.am.ActivityStackSupervisor.finishTopRunningActivityLocked(ActivityStackSupervisor.java:2035)
+W/ActivityManager(  508):   at com.android.server.am.ActivityManagerService.handleAppCrashLocked(ActivityManagerService.java:9543)
+W/ActivityManager(  508):   at com.android.server.am.ActivityManagerService.makeAppCrashingLocked(ActivityManagerService.java:9436)
+W/ActivityManager(  508):   at com.android.server.am.ActivityManagerService.crashApplication(ActivityManagerService.java:10081)
+W/ActivityManager(  508):   at com.android.server.am.ActivityManagerService.handleApplicationCrashInner(ActivityManagerService.java:9632)
+W/ActivityManager(  508):   at com.android.server.am.ActivityManagerService.handleApplicationCrash(ActivityManagerService.java:9614)
+W/ActivityManager(  508):   at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1311)
+W/ActivityManager(  508):   at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2071)
+W/ActivityManager(  508):   at android.os.Binder.execTransact(Binder.java:404)
+W/ActivityManager(  508):   at dalvik.system.NativeStart.run(Native Method)
+I/ActivityManager(  508): Process com.sapos_aplastados.game.clash_of_balls (pid 28277) has died.
+D/dalvikvm( 6961): GC_CONCURRENT freed 3491K, 32% free 13477K/19604K, paused 2ms+10ms, total 40ms
+D/dalvikvm( 6961): GC_FOR_ALLOC freed 1474K, 30% free 13795K/19604K, paused 42ms, total 42ms
+D/dalvikvm( 6961): GC_FOR_ALLOC freed 688K, 24% free 15003K/19604K, paused 42ms, total 43ms
+D/dalvikvm(  508): GC_EXPLICIT freed 809K, 19% free 20454K/25108K, paused 9ms+7ms, total 102ms
+--------- beginning of /dev/log/system
+I/ActivityManager(  508): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.sapos_aplastados.game.clash_of_balls/.MainActivity} from pid 6961
+--------- beginning of /dev/log/main
+D/dalvikvm(28277): Late-enabling CheckJNI
+I/ActivityManager(  508): Start proc com.sapos_aplastados.game.clash_of_balls for activity com.sapos_aplastados.game.clash_of_balls/.MainActivity: pid=28277 uid=10165 gids={50165, 3003, 3002, 3001}
+I/ActivityManager(  508): Config changes=480 {1.15 ?mcc?mnc en_GB ldltr sw600dp w961dp h528dp 213dpi lrg land finger -keyb/v/h -nav/h s.86}
+I/InputReader(  508): Reconfiguring input devices.  changes=0x00000004
+I/InputReader(  508): Device reconfigured: id=2, name='elan-touchscreen', size 800x1280, orientation 1, mode 1, display id 0
+D/PhoneStatusBar(  901): mSettingsPanelGravity = 8388661
+D/dalvikvm(28277): GC_CONCURRENT freed 72K, 2% free 7963K/8072K, paused 3ms+3ms, total 23ms
+D/libEGL  (28277): loaded /system/lib/egl/libEGL_tegra.so
+D/libEGL  (28277): loaded /system/lib/egl/libGLESv1_CM_tegra.so
+D/libEGL  (28277): loaded /system/lib/egl/libGLESv2_tegra.so
+D/OpenGLRenderer(28277): Enabling debug mode 0
+I/NetworkService(28277): NetworkServer: onCreate()
+I/Networking(28277): System.loadLibrary("alljoyn_java")
+W/dalvikvm(28277): Exception Ljava/lang/UnsatisfiedLinkError; thrown while initializing Lcom/sapos_aplastados/game/clash_of_balls/network/Networking;
+D/AndroidRuntime(28277): Shutting down VM
+W/dalvikvm(28277): threadid=1: thread exiting with uncaught exception (group=0x415efba8)
+D/GameRenderer(28277): onSurfaceChanged: w=1280, h=736
+E/AndroidRuntime(28277): FATAL EXCEPTION: main
+E/AndroidRuntime(28277): Process: com.sapos_aplastados.game.clash_of_balls, PID: 28277
+E/AndroidRuntime(28277): java.lang.UnsatisfiedLinkError: Couldn't load alljoyn_java from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.sapos_aplastados.game.clash_of_balls-1.apk"],nativeLibraryDirectories=[/data/app-lib/com.sapos_aplastados.game.clash_of_balls-1, /vendor/lib, /system/lib]]]: findLibrary returned null
+E/AndroidRuntime(28277):    at java.lang.Runtime.loadLibrary(Runtime.java:358)
+E/AndroidRuntime(28277):    at java.lang.System.loadLibrary(System.java:526)
+E/AndroidRuntime(28277):    at com.sapos_aplastados.game.clash_of_balls.network.Networking.<clinit>(Networking.java:1488)
+E/AndroidRuntime(28277):    at com.sapos_aplastados.game.clash_of_balls.NetworkService.onCreate(NetworkService.java:19)
+E/AndroidRuntime(28277):    at android.app.ActivityThread.handleCreateService(ActivityThread.java:2572)
+E/AndroidRuntime(28277):    at android.app.ActivityThread.access$1800(ActivityThread.java:135)
+E/AndroidRuntime(28277):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1278)
+E/AndroidRuntime(28277):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(28277):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(28277):    at android.app.ActivityThread.main(ActivityThread.java:5017)
+E/AndroidRuntime(28277):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(28277):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime(28277):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+E/AndroidRuntime(28277):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+E/AndroidRuntime(28277):    at dalvik.system.NativeStart.main(Native Method)
+W/ActivityManager(  508):   Force finishing activity com.sapos_aplastados.game.clash_of_balls/.MainActivity
+D/GameLevel(28277): Game Level: w=24, h=15, name=level 2
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 9; 0, 4; 0, 8; 0, 11; 0, 11; 0, 11; 0, 11; 0, 9; 0, 4; 0, 8; 0, 11; 0, 11; 0, 11; 0, 11; 0, 9; 0, 4; 0, 8; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 1; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 1; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 1; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 0; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 1; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 1; 0, 3; 0, 11; 0, 11; 0, 11; 0, 11; 0, 2; 0, 1; 0, 3; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 6; 0, 5; 0, 7; 0, 11; 0, 11; 0, 11; 0, 11; 0, 6; 0, 5; 0, 7; 0, 11; 0, 11; 0, 11; 0, 11; 0, 6; 0, 5; 0, 7; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+D/GameLevel(28277): Players: 6
+D/GameLevel(28277): Game Level: w=24, h=15, name=level 1
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+D/dalvikvm(28277): GC_CONCURRENT freed 398K, 6% free 8078K/8512K, paused 2ms+2ms, total 18ms
+D/dalvikvm(28277): WAIT_FOR_CONCURRENT_GC blocked 13ms
+V/GameLevel(28277): 0, 11; 0, 9; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 8; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 15; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 12; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 1; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 1; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 14; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 13; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 6; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 7; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+D/GameLevel(28277): Players: 6
+D/GameLevel(28277): Game Level: w=24, h=15, name=level 1
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 9; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 4; 0, 8; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 10; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 10; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 15; 0, 11; 0, 11; 0, 11; 0, 11; 0, 12; 0, 0; 0, 0; 0, 15; 0, 11; 0, 11; 0, 11; 0, 11; 0, 12; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 1; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 1; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 14; 0, 11; 0, 11; 0, 11; 0, 11; 0, 13; 0, 0; 0, 0; 0, 14; 0, 11; 0, 11; 0, 11; 0, 11; 0, 13; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 10; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 10; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 2; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 1; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 0; 0, 3; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 6; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 5; 0, 7; 0, 11; 
+V/GameLevel(28277): 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 0, 11; 
+D/GameLevel(28277): Players: 6
+D/dalvikvm(28277): GC_CONCURRENT freed 504K, 7% free 8072K/8624K, paused 2ms+2ms, total 18ms
+D/dalvikvm(28277): WAIT_FOR_CONCURRENT_GC blocked 12ms
+D/GameLevel(28277): Game Level: w=21, h=13, name=test level 1
+V/GameLevel(28277): 2, 11; 2, 9; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 8; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 1; 2, 0; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 0; 2, 1; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 10; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 10; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 10; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 10; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 1; 2, 0; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 20; 2, 10; 2, 0; 2, 1; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 2, 11; 2, 6; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 7; 2, 11; 
+D/GameLevel(28277): Players: 4
+D/GameLevel(28277): Game Level: w=20, h=13, name=level obstacles
+V/GameLevel(28277): 0, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 9; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 4; 2, 8; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 0; 2, 1; 2, 0; 2, 0; 2, 1; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 1; 2, 0; 2, 0; 2, 1; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 10; 2, 0; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 0; 2, 1; 2, 0; 2, 0; 2, 1; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 0; 2, 1; 2, 0; 2, 0; 2, 1; 2, 0; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 2; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 0; 2, 0; 2, 26; 2, 3; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 6; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 5; 2, 7; 2, 11; 
+V/GameLevel(28277): 0, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 2, 11; 
+D/GameLevel(28277): Players: 8
+D/GameLevel(28277): Game Level: w=20, h=14, name=level walls
+I/WindowManager(  508): Screen frozen for +653ms due to Window{4257ba48 u0 Starting com.sapos_aplastados.game.clash_of_balls}
+D/dalvikvm(28277): GC_CONCURRENT freed 463K, 6% free 8121K/8624K, paused 2ms+1ms, total 23ms
+D/dalvikvm(28277): WAIT_FOR_CONCURRENT_GC blocked 15ms
+V/GameLevel(28277): 1, 23; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 24; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 1; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 1; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 15; 1, 12; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 15; 1, 12; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 11; 1, 11; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 11; 1, 11; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 11; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 11; 1, 11; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 11; 1, 11; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 14; 1, 13; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 14; 1, 13; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 1; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 1; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 22; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 25; 
+D/GameLevel(28277): Players: 4
+D/GameLevel(28277): Game Level: w=21, h=13, name=level  walls 2
+V/GameLevel(28277): 1, 23; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 24; 
+V/GameLevel(28277): 1, 21; 1, 10; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 10; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 1; 1, 0; 1, 10; 1, 0; 1, 0; 1, 1; 1, 0; 1, 10; 1, 0; 1, 1; 1, 0; 1, 0; 1, 10; 1, 0; 1, 1; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 10; 1, 21; 1, 10; 1, 0; 1, 0; 1, 10; 1, 21; 1, 10; 1, 0; 1, 0; 1, 10; 1, 21; 1, 10; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 10; 1, 0; 1, 20; 1, 20; 1, 26; 1, 20; 1, 0; 1, 0; 1, 20; 1, 26; 1, 20; 1, 0; 1, 0; 1, 20; 1, 26; 1, 20; 1, 20; 1, 0; 1, 10; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 10; 1, 21; 1, 10; 1, 0; 1, 0; 1, 10; 1, 21; 1, 10; 1, 0; 1, 0; 1, 10; 1, 21; 1, 10; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 1, 0; 1, 0; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 0; 1, 0; 1, 1; 1, 0; 1, 10; 1, 0; 1, 0; 1, 1; 1, 0; 1, 10; 1, 0; 1, 1; 1, 0; 1, 0; 1, 10; 1, 0; 1, 1; 1, 0; 1, 0; 1, 21; 
+V/GameLevel(28277): 1, 21; 1, 10; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 0; 1, 10; 1, 21; 
+V/GameLevel(28277): 1, 22; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 20; 1, 25; 
+D/GameLevel(28277): Players: 8
+I/dalvikvm(28277): Rejecting re-init on previously-failed class Lcom/sapos_aplastados/game/clash_of_balls/network/Networking; v=0x0
+W/dalvikvm(28277): threadid=12: thread exiting with uncaught exception (group=0x415efba8)
+I/Process (28277): Sending signal. PID: 28277 SIG: 9
+W/InputDispatcher(  508): channel '425fb920 Loading Game... (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  508): channel '425fb920 Loading Game... (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  508): channel '42636c48 com.sapos_aplastados.game.clash_of_balls/com.sapos_aplastados.game.clash_of_balls.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(  508): channel '42636c48 com.sapos_aplastados.game.clash_of_balls/com.sapos_aplastados.game.clash_of_balls.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(  508): Attempted to unregister already unregistered input channel '425fb920 Loading Game... (server)'
+I/WindowState(  508): WIN DEATH: Window{425fb920 u0 Loading Game...}
+W/InputDispatcher(  508): Attempted to unregister already unregistered input channel '42636c48 com.sapos_aplastados.game.clash_of_balls/com.sapos_aplastados.game.clash_of_balls.MainActivity (server)'
+I/WindowState(  508): WIN DEATH: Window{42636c48 u0 com.sapos_aplastados.game.clash_of_balls/com.sapos_aplastados.game.clash_of_balls.MainActivity}
+W/WindowManager(  508): Force-removing child win Window{4263b660 u0 SurfaceView} from container Window{42636c48 u0 com.sapos_aplastados.game.clash_of_balls/com.sapos_aplastados.game.clash_of_balls.MainActivity}
+W/WindowManager(  508): Failed looking up window
+W/WindowManager(  508): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@41d6fb58 does not exist
+W/WindowManager(  508):     at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7923)
+W/WindowManager(  508):     at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7914)
+W/WindowManager(  508):     at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1047)
+W/WindowManager(  508):     at android.os.BinderProxy.sendDeathNotice(Binder.java:493)
+W/WindowManager(  508):     at dalvik.system.NativeStart.run(Native Method)
+I/WindowState(  508): WIN DEATH: null
+W/ActivityManager(  508): Exception thrown during pause
+W/ActivityManager(  508): android.os.DeadObjectException
+W/ActivityManager(  508):   at android.os.BinderProxy.transact(Native Method)
+W/ActivityManager(  508):   at android.app.ApplicationThreadProxy.schedulePauseActivity(ApplicationThreadNative.java:660)
+W/ActivityManager(  508):   at com.android.server.am.ActivityStack.startPausingLocked(ActivityStack.java:761)
+W/ActivityManager(  508):   at com.android.server.am.ActivityStack.finishActivityLocked(ActivityStack.java:2455)
+W/ActivityManager(  508):   at com.android.server.am.ActivityStack.finishTopRunningActivityLocked(ActivityStack.java:2329)
+W/ActivityManager(  508):   at com.android.server.am.ActivityStackSupervisor.finishTopRunningActivityLocked(ActivityStackSupervisor.java:2035)
+W/ActivityManager(  508):   at com.android.server.am.ActivityManagerService.handleAppCrashLocked(ActivityManagerService.java:9543)
+W/ActivityManager(  508):   at com.android.server.am.ActivityManagerService.makeAppCrashingLocked(ActivityManagerService.java:9436)
+W/ActivityManager(  508):   at com.android.server.am.ActivityManagerService.crashApplication(ActivityManagerService.java:10081)
+W/ActivityManager(  508):   at com.android.server.am.ActivityManagerService.handleApplicationCrashInner(ActivityManagerService.java:9632)
+W/ActivityManager(  508):   at com.android.server.am.ActivityManagerService.handleApplicationCrash(ActivityManagerService.java:9614)
+W/ActivityManager(  508):   at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:1311)
+W/ActivityManager(  508):   at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2071)
+W/ActivityManager(  508):   at android.os.Binder.execTransact(Binder.java:404)
+W/ActivityManager(  508):   at dalvik.system.NativeStart.run(Native Method)

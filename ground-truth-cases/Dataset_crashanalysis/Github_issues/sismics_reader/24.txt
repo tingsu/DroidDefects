@@ -1,0 +1,11 @@
+2013/07/03 05:31:32,537 ERROR [org.jboss.msc.service.fail](MSC service thread 1-4) MSC00001: Failed to start service jboss.deployment.unit."ROOT.war".POST_MODULE: org.jboss.msc.service.StartException in service jboss.deployment.unit."ROOT.war".POST_MODULE: Failed to process phase POST_MODULE of deployment "ROOT.war"
+        at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:119) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.startService(ServiceControllerImpl.java:1811) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+        at org.jboss.msc.service.ServiceControllerImpl$StartTask.run(ServiceControllerImpl.java:1746) [jboss-msc-1.0.2.GA.jar:1.0.2.GA]
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145) [rt.jar:1.7.0_25]
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615) [rt.jar:1.7.0_25]
+        at java.lang.Thread.run(Thread.java:724) [rt.jar:1.7.0_25]
+Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: JBAS011232: Only one JAX-RS Application Class allowed.  com.sun.jersey.api.core.ClasspathResourceConfig com.sun.jersey.api.core.ClassNamesResourceConfig com.sun.jersey.api.core.ClasspathResourceConfig com.sun.jersey.api.core.ScanningResourceConfig com.sun.jersey.api.core.ResourceConfig com.sun.jersey.api.core.PackagesResourceConfig com.sun.jersey.api.core.PackagesResourceConfig com.sun.jersey.api.core.ScanningResourceConfig com.sun.jersey.api.core.ResourceConfig com.sun.jersey.api.core.ApplicationAdapter com.sun.jersey.api.core.servlet.WebAppResourceConfig com.sun.jersey.api.core.ApplicationAdapter com.sun.jersey.api.core.DefaultResourceConfig com.sun.jersey.server.impl.application.DeferredResourceConfig com.sun.jersey.api.core.ClassNamesResourceConfig com.sun.jersey.server.impl.application.DeferredResourceConfig com.sun.jersey.api.core.DefaultResourceConfig
+        at org.jboss.as.jaxrs.deployment.JaxrsScanningProcessor.scan(JaxrsScanningProcessor.java:209)
+        at org.jboss.as.jaxrs.deployment.JaxrsScanningProcessor.deploy(JaxrsScanningProcessor.java:105)
+        at org.jboss.as.server.deployment.DeploymentUnitPhaseService.start(DeploymentUnitPhaseService.java:113) [jboss-as-server-7.1.1.Final.jar:7.1.1.Final]

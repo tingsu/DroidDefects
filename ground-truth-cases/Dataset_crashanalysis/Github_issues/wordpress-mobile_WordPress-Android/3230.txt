@@ -1,0 +1,11 @@
+Unknown source file : com.android.dex.DexException: Multiple dex files define Lorg/wordpress/android/analytics/AnalyticsTracker$Stat;
+Unknown source file :   at com.android.dx.merge.DexMerger.readSortableTypes(DexMerger.java:596)
+Unknown source file :   at com.android.dx.merge.DexMerger.getSortedTypes(DexMerger.java:554)
+Unknown source file :   at com.android.dx.merge.DexMerger.mergeClassDefs(DexMerger.java:535)
+Unknown source file :   at com.android.dx.merge.DexMerger.mergeDexes(DexMerger.java:171)
+Unknown source file :   at com.android.dx.merge.DexMerger.merge(DexMerger.java:189)
+Unknown source file :   at com.android.dx.command.dexer.Main.mergeLibraryDexBuffers(Main.java:502)
+Unknown source file :   at com.android.dx.command.dexer.Main.runMonoDex(Main.java:334)
+Unknown source file :   at com.android.dx.command.dexer.Main.run(Main.java:277)
+Unknown source file :   at com.android.dx.command.dexer.Main.main(Main.java:245)
+Unknown source file :   at com.android.dx.command.Main.main(Main.java:106)

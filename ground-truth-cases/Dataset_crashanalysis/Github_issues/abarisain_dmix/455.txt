@@ -1,0 +1,9 @@
+    java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(java.lang.String)' on a null object reference
+            at org.a0z.mpd.Music.getFilename(Music.java:328)
+            at org.a0z.mpd.Directory.refreshData(Directory.java:257)
+            at com.namelessdev.mpdroid.fragments.FSFragment.asyncUpdate(FSFragment.java:112)
+            at com.namelessdev.mpdroid.fragments.BrowseFragment$5.run(BrowseFragment.java:436)
+            at com.namelessdev.mpdroid.helpers.MPDAsyncHelper$MPDAsyncWorker.handleMessage(MPDAsyncHelper.java:120)
+            at android.os.Handler.dispatchMessage(Handler.java:102)
+            at android.os.Looper.loop(Looper.java:136)
+            at android.os.HandlerThread.run(HandlerThread.java:61)

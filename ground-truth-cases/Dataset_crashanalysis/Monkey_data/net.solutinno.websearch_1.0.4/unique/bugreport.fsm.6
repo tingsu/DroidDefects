@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: net.solutinno.websearch
+//version: 1.0.4
+//appro_time: 168
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.NullPointerException
+ 	at com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper.openFileId(OrmLiteSqliteOpenHelper.java:270)
+ 	at com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper.<init>(OrmLiteSqliteOpenHelper.java:54)
+ 	at net.solutinno.websearch.data.Database.<init>(Database.java:24)
+ 	at net.solutinno.websearch.data.DataProvider.updateSearchEngine(DataProvider.java:67)
+ 	at net.solutinno.websearch.DetailFragment$6.doInBackground(DetailFragment.java:300)
+ 	at net.solutinno.websearch.DetailFragment$6.doInBackground(DetailFragment.java:296)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

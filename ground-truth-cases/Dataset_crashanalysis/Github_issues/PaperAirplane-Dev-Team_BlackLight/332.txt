@@ -1,0 +1,12 @@
+java.lang.OutOfMemoryError
+    at java.io.ByteArrayOutputStream.toByteArray(ByteArrayOutputStream.java:122)
+    at us.shandian.blacklight.support.http.HttpUtility.doRequest(HttpUtility.java:101)
+    at us.shandian.blacklight.api.BaseApi.request(BaseApi.java:56)
+    at us.shandian.blacklight.api.BaseApi.request(BaseApi.java:44)
+    at us.shandian.blacklight.api.statuses.PostApi.uploadPicture(PostApi.java:145)
+    at us.shandian.blacklight.ui.statuses.NewPostActivity.postPics(NewPostActivity.java:493)
+    at us.shandian.blacklight.ui.statuses.NewPostActivity.post(NewPostActivity.java:446)
+    at us.shandian.blacklight.ui.statuses.NewPostActivity$Uploader.doInBackground(NewPostActivity.java:523)
+    at us.shandian.blacklight.ui.statuses.NewPostActivity$Uploader.doInBackground(NewPostActivity.java:508)
+    at us.shandian.blacklight.support.AsyncTask$2.run(AsyncTask.java:73)
+    at java.lang.Thread.run(Thread.java:856)

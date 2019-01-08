@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: de.phoenixstudios.pc_dimmer
+//version: 1.4
+//appro_time: 93
+ FATAL EXCEPTION: main
+ java.lang.NumberFormatException: Invalid int: "06841101603"
+ 	at java.lang.Integer.invalidInt(Integer.java:138)
+ 	at java.lang.Integer.parse(Integer.java:378)
+ 	at java.lang.Integer.parseInt(Integer.java:366)
+ 	at java.lang.Integer.parseInt(Integer.java:332)
+ 	at de.phoenixstudios.pc_dimmer.Main.SetupCallbackToMain(Main.java:241)
+ 	at de.phoenixstudios.pc_dimmer.Main.LoadPreset(Main.java:2778)
+ 	at de.phoenixstudios.pc_dimmer.Main$63.onItemSelected(Main.java:2596)
+ 	at android.widget.AdapterView.fireOnSelected(AdapterView.java:892)
+ 	at android.widget.AdapterView.access$200(AdapterView.java:49)
+ 	at android.widget.AdapterView$SelectionNotifier.run(AdapterView.java:860)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

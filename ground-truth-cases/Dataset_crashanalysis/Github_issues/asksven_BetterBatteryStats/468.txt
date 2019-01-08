@@ -1,0 +1,12 @@
+06-26 14:21:55.056 E/AndroidRuntime( 5433): java.lang.NullPointerException
+06-26 14:21:55.056 E/AndroidRuntime( 5433):     at com.asksven.betterbatterystats.data.Reading.<init>(Reading.java:121)
+06-26 14:21:55.056 E/AndroidRuntime( 5433):     at com.asksven.betterbatterystats.StatsActivity$4.onClick(StatsActivity.java:1173)
+06-26 14:21:55.056 E/AndroidRuntime( 5433):     at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+06-26 14:21:55.056 E/AndroidRuntime( 5433):     at android.os.Handler.dispatchMessage(Handler.java:102)
+06-26 14:21:55.056 E/AndroidRuntime( 5433):     at android.os.Looper.loop(Looper.java:136)
+06-26 14:21:55.056 E/AndroidRuntime( 5433):     at android.app.ActivityThread.main(ActivityThread.java:5137)
+06-26 14:21:55.056 E/AndroidRuntime( 5433):     at java.lang.reflect.Method.invokeNative(Native Method)
+06-26 14:21:55.056 E/AndroidRuntime( 5433):     at java.lang.reflect.Method.invoke(Method.java:515)
+06-26 14:21:55.056 E/AndroidRuntime( 5433):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+06-26 14:21:55.056 E/AndroidRuntime( 5433):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:611)
+06-26 14:21:55.056 E/AndroidRuntime( 5433):     at dalvik.system.NativeStart.main(Native Method)

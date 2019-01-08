@@ -1,0 +1,14 @@
+From facebook
+I am suffering from crashes with the latest version from 26.08.2011, didn't have the issue with the previous version. After idling at the map, my HTC Sensation goes to sleep. When I wake the device from sleep and open the lockscreen, it does not bring me back to the map, but instead arrives at the main menu of c:geo. When I click the Live map from the main menu, the app crashes.
+
+And here is a log from logcollector from my Desire. I experienced similar behaviour:
+
+08-28 07:02:35.423 E/c:geo   (15064): cgMapOverlay.createItem: java.lang.IndexOutOfBoundsException: Invalid index 90, size is 7
+08-28 07:02:35.423 W/dalvikvm(15064): threadid=14: thread exiting with uncaught exception (group=0x400259f8)
+08-28 07:02:35.503 E/AndroidRuntime(15064): FATAL EXCEPTION: Thread-41
+08-28 07:02:35.503 E/AndroidRuntime(15064): java.lang.NullPointerException
+08-28 07:02:35.503 E/AndroidRuntime(15064): at com.google.android.maps.ItemizedOverlay.populate(ItemizedOverlay.java:311)
+08-28 07:02:35.503 E/AndroidRuntime(15064): at cgeo.geocaching.googlemaps.googleCacheOverlay.superPopulate(googleCacheOverlay.java:67)
+08-28 07:02:35.503 E/AndroidRuntime(15064): at cgeo.geocaching.mapcommon.ItemizedOverlayBase.populate(ItemizedOverlayBase.java:26)
+08-28 07:02:35.503 E/AndroidRuntime(15064): at cgeo.geocaching.mapcommon.cgMapOverlay.updateItems(cgMapOverlay.java:80)
+08-28 07:02:35.503 E/AndroidRuntime(15064): at cgeo.geocaching.mapcommon.cgeomap$DisplayThread.run(cgeomap.java:1295)

@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: com.geecko.QuickLyric
+//version: 1.8c
+//appro_time: 119
+ android.database.CursorWindowAllocationException: Cursor window could not be created from binder.
+ 	at android.database.CursorWindow.<init>(CursorWindow.java:133)
+ 	at android.database.CursorWindow.<init>(CursorWindow.java:41)
+ 	at android.database.CursorWindow$1.createFromParcel(CursorWindow.java:681)
+ 	at android.database.CursorWindow$1.createFromParcel(CursorWindow.java:679)
+ 	at android.database.BulkCursorDescriptor.readFromParcel(BulkCursorDescriptor.java:75)
+ 	at android.database.BulkCursorDescriptor$1.createFromParcel(BulkCursorDescriptor.java:34)
+ 	at android.database.BulkCursorDescriptor$1.createFromParcel(BulkCursorDescriptor.java:30)
+ 	at android.content.ContentProviderProxy.query(ContentProviderNative.java:388)
+ 	at android.content.ContentResolver.query(ContentResolver.java:414)
+ 	at android.content.ContentResolver.query(ContentResolver.java:357)
+ 	at com.geecko.QuickLyric.tasks.Id3LyricsReader.getCover(Id3LyricsReader.java:48)
+ 	at com.geecko.QuickLyric.fragment.LyricsViewFragment.update(LyricsViewFragment.java:341)
+ 	at com.geecko.QuickLyric.fragment.LyricsViewFragment.onLyricsDownloaded(LyricsViewFragment.java:335)
+ 	at com.geecko.QuickLyric.tasks.DownloadThread$1$1.handleMessage(DownloadThread.java:201)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

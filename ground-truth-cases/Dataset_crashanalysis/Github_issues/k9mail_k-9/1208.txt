@@ -1,0 +1,4 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'byte[] java.lang.String.getBytes()' on a null object reference
+    at com.fsck.k9.mailstore.migrations.MigrationTo51.insertTextualPartIntoDatabase(MigrationTo51.java:593)
+    at com.fsck.k9.mailstore.migrations.MigrationTo51.migrateSimpleMailContent(MigrationTo51.java:400)
+    at com.fsck.k9.mailstore.migrations.MigrationTo51.db51MigrateMessageFormat(MigrationTo51.java:111)

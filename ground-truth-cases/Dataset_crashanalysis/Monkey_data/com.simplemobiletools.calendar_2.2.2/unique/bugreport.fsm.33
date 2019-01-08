@@ -1,0 +1,16 @@
+//this is an auto-generated bug report
+//package name: com.simplemobiletools.calendar
+//version: 2.2.2
+//appro_time: 132
+ java.io.IOException: write failed: ENOSPC (No space left on device)
+ 	at libcore.io.IoBridge.write(IoBridge.java:455)
+ 	at java.io.FileOutputStream.write(FileOutputStream.java:187)
+ 	at com.simplemobiletools.calendar.activities.MainActivity.a(Unknown Source)
+ 	at com.simplemobiletools.calendar.activities.MainActivity.a(Unknown Source)
+ 	at com.simplemobiletools.calendar.activities.MainActivity$b$1.run(Unknown Source)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: libcore.io.ErrnoException: write failed: ENOSPC (No space left on device)
+ 	at libcore.io.Posix.writeBytes(Native Method)
+ 	at libcore.io.Posix.write(Posix.java:201)
+ 	at libcore.io.BlockGuardOs.write(BlockGuardOs.java:197)
+ 	at libcore.io.IoBridge.write(IoBridge.java:450)

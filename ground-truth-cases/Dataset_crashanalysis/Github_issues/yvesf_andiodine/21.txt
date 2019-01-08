@@ -1,0 +1,105 @@
+I/Iodine  (12460): 
+I/Iodine  (12460): Server is at XX.XXX.XX.XXX, trying raw login: 
+I/Iodine  (12460): OK
+I/Iodine  (12460): Sending raw traffic directly to XX.XXX.XX.XXX
+I/Iodine  (12460): Handshake successful, leave native code
+D/VPN_SERVICE(12460): Handshake successful
+D/VPN_SERVICE(12460): Send status: org.xapek.andiodine.IodineVpnService.STATUS_CONNECTED
+D/VPN_SERVICE(12460): Send: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECTED (has extras) }
+D/VPN_SERVICE(12460): Build tunnel for configuration: ip=10.0.0.4 netbits=27 mtu=1280
+D/VPN_SERVICE(12460): Build tunnel interface
+D/VPN_SERVICE(12460): VPN Thread exit
+E/AndroidRuntime(12460): FATAL EXCEPTION: org.xapek.andiodine.IodineVpnService
+E/AndroidRuntime(12460): Process: org.xapek.andiodine, PID: 12460
+E/AndroidRuntime(12460): java.lang.NullPointerException: Attempt to invoke virtual method 'int android.os.ParcelFileDescriptor.detachFd()' on a null object reference
+E/AndroidRuntime(12460):    at org.xapek.andiodine.IodineVpnService.runTunnel(IodineVpnService.java:337)
+E/AndroidRuntime(12460):    at org.xapek.andiodine.IodineVpnService.run(IodineVpnService.java:229)
+E/AndroidRuntime(12460):    at java.lang.Thread.run(Thread.java:818)
+W/ActivityManager(  890):   Force finishing activity org.xapek.andiodine/.IodineMain
+D/MAIN    (12460): Got intent: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECTED flg=0x10 (has extras) }
+D/FRAGMENT_STATUS(12460): Got intent: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECTED flg=0x10 (has extras) }
+W/ContextImpl( 1601): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1455 android.content.ContextWrapper.sendBroadcast:376 com.motorola.motocare.util.TriggerHelper$TriggerBuilder.send:76 com.motorola.motocare.internal.frameworkevents.PauseResumeTrigger.handleFrameworkEvent:53 com.motorola.motocare.internal.frameworkevents.FwEventMonitor$FrameworkListener.processFrameworkEvent:114 
+W/ContextImpl( 1601): Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1455 android.content.ContextWrapper.sendBroadcast:376 com.motorola.motocare.util.TriggerHelper$TriggerBuilder.send:76 com.motorola.motocare.internal.frameworkevents.PauseResumeTrigger.handleFrameworkEvent:53 com.motorola.motocare.internal.frameworkevents.FwEventMonitor$FrameworkListener.processFrameworkEvent:114 
+```
+
+logcat with raw mode disabled:
+
+```
+I/SBar.MotoNetworkCtrlr( 1332): onReceive: WifiManager.RSSI_CHANGED_ACTION Received
+I/SBar.MotoNetworkCtrlr( 1332): updateWifiState: RSSI_CHANGED_ACTION: mWifiConnected=true mWifiLevel=3 mWifiRssi=-56
+I/ThermalEngine(  363): Sensor:xo_therm_pu2:30000 mC
+D/FRAGMENT_LIST(10913): Call VPN Service for configuration: 1
+D/ConfigDatabase(10913): Selected: [IodineConfiguration name=Home]
+W/InputMethodManagerService(  890): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@356a2520 attribute=null, token = android.os.BinderProxy@6bc1ba2
+D/VPN_SERVICE(10913): VPN Thread enter
+D/VPN_SERVICE(10913): Send status: org.xapek.andiodine.IodineVpnService.STATUS_CONNECT
+D/VPN_SERVICE(10913): Send: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECT (has extras) }
+D/NATIVE  (10913): Native Library iodine-client loaded
+D/MAIN    (10913): Got intent: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECT flg=0x10 (has extras) }
+D/VPN_SERVICE(10913): Send status: org.xapek.andiodine.IodineVpnService.STATUS_CONNECT
+D/VPN_SERVICE(10913): Send: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECT (has extras) }
+D/MAIN    (10913): Got intent: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECT flg=0x10 (has extras) }
+D/FRAGMENT_STATUS(10913): Got intent: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECT flg=0x10 (has extras) }
+E/iodine  (10913): Topdomain from vm: XXXXXXXX.XX.XX
+E/iodine  (10913): Topdomain from vm: XXXXXXXX.XX.XX
+I/Iodine  (10913): Opened IPv4 UDP socket
+I/Iodine  (10913): Autodetecting DNS query type (use -T to override)
+I/Iodine  (10913): .
+I/Iodine  (10913): 
+I/Iodine  (10913): Using DNS type NULL queries
+I/Iodine  (10913): Version ok, both using protocol v 0x00000502. You are user #0
+I/Iodine  (10913): Server tunnel IP is 10.0.0.1
+I/Iodine  (10913): Skipping raw mode
+I/Iodine  (10913): Using EDNS0 extension
+I/Iodine  (10913): Switching upstream to codec Base128
+I/Iodine  (10913): Server switched upstream to codec Base128
+I/Iodine  (10913): No alternative downstream codec available, using default (Raw)
+I/Iodine  (10913): Switching to lazy mode for low-latency
+I/Iodine  (10913): Server switched to lazy mode
+I/Iodine  (10913): Autoprobing max downstream fragment size... (skip with -m fragsize)
+I/Iodine  (10913): 768 ok.. 
+I/Iodine  (10913): 1152 ok.. 
+I/Iodine  (10913): .
+I/SFPerfTracer(  321):      triggers: (rate: 238:6807) (compose: 0:17) (post: 0:6) (render: 13:372) (16:173769 frames) (17:186344)
+D/SFPerfTracer(  321):        layers: (3:10) (FocusedStackFrame (0xb707ff50): 0:820)* (DimLayer (0xb7082340): 0:108)* (DimLayer (0xb702c6a8): 0:754)* (DimLayer (0xb70a7890): 0:139)* (StatusBar (0xb70ab230): 0:29692) (com.android.systemui.ImageWallpaper (0xb70b9660): 0:2441)* (NavigationBar (0xb70d95d8): 0:116) (org.xapek.andiodine/org.xapek.andiodine.IodineMain (0xb70dfa28): 17:80) (org.xapek.andiodine/org.xapek.andiodine.IodineMain (0xb709fdd8): 0:48)- 
+I/SBar.MotoNetworkCtrlr( 1332): onReceive: WifiManager.RSSI_CHANGED_ACTION Received
+I/SBar.MotoNetworkCtrlr( 1332): updateWifiState: RSSI_CHANGED_ACTION: mWifiConnected=true mWifiLevel=3 mWifiRssi=-60
+I/Iodine  (10913): .
+I/Iodine  (10913): .
+I/Iodine  (10913): 1344 not ok.. 
+I/Iodine  (10913): .
+I/SFPerfTracer(  321):      triggers: (rate: 238:6807) (compose: 0:17) (post: 0:6) (render: 13:372) (31:173863 frames) (32:186444)
+D/SFPerfTracer(  321):        layers: (3:9) (FocusedStackFrame (0xb707ff50): 0:820)* (DimLayer (0xb7082340): 0:108)* (DimLayer (0xb702c6a8): 0:754)* (DimLayer (0xb70a7890): 0:139)* (StatusBar (0xb70ab230): 0:29692) (com.android.systemui.ImageWallpaper (0xb70b9660): 0:2441)* (NavigationBar (0xb70d95d8): 0:116) (org.xapek.andiodine/org.xapek.andiodine.IodineMain (0xb70dfa28): 32:180) 
+I/SBar.MotoNetworkCtrlr( 1332): onReceive: WifiManager.RSSI_CHANGED_ACTION Received
+I/SBar.MotoNetworkCtrlr( 1332): updateWifiState: RSSI_CHANGED_ACTION: mWifiConnected=true mWifiLevel=3 mWifiRssi=-59
+I/Iodine  (10913): .
+I/Iodine  (10913): .
+I/Iodine  (10913): 1248 not ok.. 
+I/Iodine  (10913): .
+I/SBar.MotoNetworkCtrlr( 1332): onReceive: WifiManager.RSSI_CHANGED_ACTION Received
+I/SBar.MotoNetworkCtrlr( 1332): updateWifiState: RSSI_CHANGED_ACTION: mWifiConnected=true mWifiLevel=3 mWifiRssi=-59
+I/Iodine  (10913): .
+I/SFPerfTracer(  321):      triggers: (rate: 238:6807) (compose: 0:17) (post: 0:6) (render: 13:372) (16:173972 frames) (17:186560)
+D/SFPerfTracer(  321):        layers: (3:9) (FocusedStackFrame (0xb707ff50): 0:820)* (DimLayer (0xb7082340): 0:108)* (DimLayer (0xb702c6a8): 0:754)* (DimLayer (0xb70a7890): 0:139)* (StatusBar (0xb70ab230): 0:29692) (com.android.systemui.ImageWallpaper (0xb70b9660): 0:2441)* (NavigationBar (0xb70d95d8): 0:116) (org.xapek.andiodine/org.xapek.andiodine.IodineMain (0xb70dfa28): 17:296) 
+I/ThermalEngine(  363): Sensor:xo_therm_pu2:31000 mC
+I/Iodine  (10913): .
+I/Iodine  (10913): 1200 not ok.. 
+I/Iodine  (10913): 1176 ok.. 
+I/Iodine  (10913): 1188 ok.. 
+I/Iodine  (10913): will use 1188-2=1186
+I/Iodine  (10913): Setting downstream fragment size to max 1186...
+I/Iodine  (10913): Handshake successful, leave native code
+D/VPN_SERVICE(10913): Handshake successful
+D/VPN_SERVICE(10913): Send status: org.xapek.andiodine.IodineVpnService.STATUS_CONNECTED
+D/VPN_SERVICE(10913): Send: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECTED (has extras) }
+D/MAIN    (10913): Got intent: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECTED flg=0x10 (has extras) }
+D/FRAGMENT_STATUS(10913): Got intent: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECTED flg=0x10 (has extras) }
+D/VPN_SERVICE(10913): Build tunnel for configuration: ip=10.0.0.2 netbits=27 mtu=1280
+D/VPN_SERVICE(10913): Build tunnel interface
+D/VPN_SERVICE(10913): VPN Thread exit
+E/AndroidRuntime(10913): FATAL EXCEPTION: org.xapek.andiodine.IodineVpnService
+E/AndroidRuntime(10913): Process: org.xapek.andiodine, PID: 10913
+E/AndroidRuntime(10913): java.lang.NullPointerException: Attempt to invoke virtual method 'int android.os.ParcelFileDescriptor.detachFd()' on a null object reference
+E/AndroidRuntime(10913):    at org.xapek.andiodine.IodineVpnService.runTunnel(IodineVpnService.java:337)
+E/AndroidRuntime(10913):    at org.xapek.andiodine.IodineVpnService.run(IodineVpnService.java:229)
+E/AndroidRuntime(10913):    at java.lang.Thread.run(Thread.java:818)

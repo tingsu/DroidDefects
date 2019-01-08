@@ -1,0 +1,60 @@
+java.lang.RuntimeException: An error occurred while executing doInBackground()
+    at android.os.AsyncTask$3.done(AsyncTask.java:309)
+    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+    at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+    at java.lang.Thread.run(Thread.java:818)
+
+Caused by: android.database.sqlite.SQLiteException: ambiguous column name: uid (code 1): , while compiling: 
+
+SELECT m.id AS id,uid,a.internal_date AS internal_date,subject,a.date AS date,sender_list,to_list,cc_list,a.read AS read,a.flagged AS flagged,a.answered AS answered,a.forwarded AS forwarded,a.attachment_count AS attachment_count,folder_id,preview_type,preview,root,name,thread_count 
+FROM (
+    SELECT t.root AS thread_root,MAX(internal_date) AS internal_date,MAX(date) AS date,MIN(read) AS read,MAX(flagged) AS flagged,MIN(answered) AS answered,MIN(forwarded) AS forwarded,SUM(attachment_count) AS attachment_count,COUNT(t.root) AS thread_count 
+    FROM messages m 
+    JOIN threads t ON (t.message_id = m.id)
+    JOIN folders f ON (m.folder_id = f.id) 
+    WHERE (t.root IN (
+        SELECT DISTINCT t.root 
+        FROM messages mf 
+        JOIN threads tf ON (tf.message_id = mf.id) 
+        JOIN threads t ON (tf.root = t.root) 
+        JOIN messages m ON (m.id = t.message_id) 
+        WHERE mf.empty = 0 AND mf.deleted = 0 AND m.empty = 0
+        AND m.deleted = 0 AND ( (uid = ? AND name = ?) OR (mf.folder_id = ?))
+    ) AND deleted = 0 AND empty = 0) 
+    GROUP BY t.root
+) a 
+JOIN threads t ON (t.root = a.thread_root) 
+JOIN messages m ON (m.id = t.message_id AND m.empty=0 AND m.deleted=0 AND m.date = a.date) 
+JOIN folders f ON (m.folder_id = f.id)  
+GROUP BY root ORDER BY a.internal_date DESC, id DESC
+
+    at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+    at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:887)
+    at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:498)
+    at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+    at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+    at android.database.sqlite.SQLiteQuery.<init>(SQLiteQuery.java:37)
+    at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:44)
+    at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1316)
+    at android.database.sqlite.SQLiteDatabase.rawQuery(SQLiteDatabase.java:1255)
+    at com.fsck.k9.provider.EmailProvider$2.doDbWork(EmailProvider.java:429)
+    at com.fsck.k9.provider.EmailProvider$2.doDbWork(EmailProvider.java:370)
+    at com.fsck.k9.mailstore.LockableDatabase.execute(LockableDatabase.java:275)
+    at com.fsck.k9.provider.EmailProvider.getThreadedMessages(EmailProvider.java:370)
+    at com.fsck.k9.provider.EmailProvider.query(EmailProvider.java:242)
+    at android.content.ContentProvider.query(ContentProvider.java:1017)
+    at android.content.ContentProvider$Transport.query(ContentProvider.java:238)
+    at android.content.ContentResolver.query(ContentResolver.java:491)
+    at android.content.CursorLoader.loadInBackground(CursorLoader.java:64)
+    at android.content.CursorLoader.loadInBackground(CursorLoader.java:56)
+    at android.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:312)
+    at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:69)
+    at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:66)
+    at android.os.AsyncTask$2.call(AsyncTask.java:295)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113) 
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588) 
+    at java.lang.Thread.run(Thread.java:818) 

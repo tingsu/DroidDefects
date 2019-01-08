@@ -1,0 +1,116 @@
+                                                                                              com.google.android.apps.gsa.shared.speech.a.g: Error reading from input stream
+                                                                                                  at com.google.android.apps.gsa.staticplugins.recognizer.i.a.a(SourceFile:342)
+                                                                                                  at com.google.android.apps.gsa.staticplugins.recognizer.i.a$1.run(SourceFile:1367)
+                                                                                                  at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:428)
+                                                                                                  at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ak.run(SourceFile:66)
+                                                                                                  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+                                                                                                  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+                                                                                                  at java.lang.Thread.run(Thread.java:761)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ad$1.run(SourceFile:85)
+                                                                                               Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 393238 | Buffer overflow, no available space.
+                                                                                                  at com.google.android.apps.gsa.speech.audio.Tee.g(SourceFile:2531)
+                                                                                                  at com.google.android.apps.gsa.speech.audio.ap.read(SourceFile:555)
+                                                                                                  at java.io.InputStream.read(InputStream.java:101)
+                                                                                                  at com.google.android.apps.gsa.speech.audio.al.run(SourceFile:362)
+                                                                                                  at com.google.android.apps.gsa.speech.audio.ak$1.run(SourceFile:471)
+                                                                                                  at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:428)
+                                                                                                  at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ak.run(SourceFile:66)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:139)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:139)
+                                                                                                  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133) 
+                                                                                                  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607) 
+                                                                                                  at java.lang.Thread.run(Thread.java:761) 
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ad$1.run(SourceFile:85) 
+04-03 12:31:09.790 2175-3597/com.google.android.googlequicksearchbox:search I/AudioController: internalShutdown
+04-03 12:31:09.790 2175-2393/com.google.android.googlequicksearchbox:search I/MicroRecognitionRunner: Stopping hotword detection.
+04-03 12:31:09.797 2175-2175/com.google.android.googlequicksearchbox:search I/MicroDetector: Keeping mic open: false
+04-03 12:31:09.797 2175-2175/com.google.android.googlequicksearchbox:search I/MicroDetectionWorker: #onError(false)
+04-03 12:31:09.797 2175-3596/com.google.android.googlequicksearchbox:search I/DeviceStateChecker: DeviceStateChecker cancelled
+04-03 12:31:14.802 2175-2175/com.google.android.googlequicksearchbox:search I/MicroDetectionWorker: Micro detection mode: [mDetectionMode: [1]].
+04-03 12:31:14.802 2175-2175/com.google.android.googlequicksearchbox:search I/AudioController: Using mInputStreamFactoryBuilder
+04-03 12:31:14.804 2175-3600/com.google.android.googlequicksearchbox:search I/MicroRecognitionRunner: Starting detection.
+04-03 12:31:14.809 2175-2228/com.google.android.googlequicksearchbox:search I/MicrophoneInputStream: mic_starting com.google.android.apps.gsa.staticplugins.z.c@ea690d3
+04-03 12:31:14.809 1304-1347/? W/APM_AudioPolicyManager: getInputForAttr() failed opening input: samplingRate 16000, format 1, channelMask 10
+04-03 12:31:14.809 2175-2228/com.google.android.googlequicksearchbox:search E/AudioRecord: Could not get audio input for session 1329, record source 1999, sample rate 16000, format 0x1, channel mask 0x10, flags 0
+04-03 12:31:14.809 2175-2228/com.google.android.googlequicksearchbox:search E/AudioRecord-JNI: Error creating AudioRecord instance: initialization check failed with status -22.
+04-03 12:31:14.809 2175-2228/com.google.android.googlequicksearchbox:search E/android.media.AudioRecord: Error code -20 when initializing native AudioRecord object.
+04-03 12:31:14.809 2175-2228/com.google.android.googlequicksearchbox:search I/MicrophoneInputStream: mic_started com.google.android.apps.gsa.staticplugins.z.c@ea690d3
+04-03 12:31:14.810 2175-2228/com.google.android.googlequicksearchbox:search E/ActivityThread: Failed to find provider info for com.google.android.apps.gsa.testing.ui.audio.recorded
+04-03 12:31:14.810 2175-2175/com.google.android.googlequicksearchbox:search I/MicroDetectionWorker: onReady
+04-03 12:31:14.813 2175-3600/com.google.android.googlequicksearchbox:search I/MicroRecognitionRunner: Detection finished
+04-03 12:31:14.813 2175-3600/com.google.android.googlequicksearchbox:search W/ErrorReporter: reportError [type: 211, code: 524300]: Error reading from input stream
+04-03 12:31:14.813 2175-2393/com.google.android.googlequicksearchbox:search I/MicroRecognitionRunner: Stopping hotword detection.
+04-03 12:31:14.813 2175-2228/com.google.android.googlequicksearchbox:search I/MicrophoneInputStream: mic_close com.google.android.apps.gsa.staticplugins.z.c@ea690d3
+04-03 12:31:14.814 2175-3600/com.google.android.googlequicksearchbox:search W/ErrorProcessor: onFatalError, processing error from engine(4)
+                                                                                              com.google.android.apps.gsa.shared.speech.a.g: Error reading from input stream
+                                                                                                  at com.google.android.apps.gsa.staticplugins.recognizer.i.a.a(SourceFile:342)
+                                                                                                  at com.google.android.apps.gsa.staticplugins.recognizer.i.a$1.run(SourceFile:1367)
+                                                                                                  at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:428)
+                                                                                                  at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ak.run(SourceFile:66)
+                                                                                                  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+                                                                                                  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+                                                                                                  at java.lang.Thread.run(Thread.java:761)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ad$1.run(SourceFile:85)
+                                                                                               Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 393238 | Buffer overflow, no available space.
+                                                                                                  at com.google.android.apps.gsa.speech.audio.Tee.g(SourceFile:2531)
+                                                                                                  at com.google.android.apps.gsa.speech.audio.ap.read(SourceFile:555)
+                                                                                                  at java.io.InputStream.read(InputStream.java:101)
+                                                                                                  at com.google.android.apps.gsa.speech.audio.al.run(SourceFile:362)
+                                                                                                  at com.google.android.apps.gsa.speech.audio.ak$1.run(SourceFile:471)
+                                                                                                  at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:428)
+                                                                                                  at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ak.run(SourceFile:66)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:139)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:139)
+                                                                                                  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133) 
+                                                                                                  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607) 
+                                                                                                  at java.lang.Thread.run(Thread.java:761) 
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ad$1.run(SourceFile:85) 
+04-03 12:31:14.814 2175-3600/com.google.android.googlequicksearchbox:search I/AudioController: internalShutdown
+04-03 12:31:14.814 2175-2175/com.google.android.googlequicksearchbox:search I/MicroDetector: Keeping mic open: false
+04-03 12:31:14.814 2175-2175/com.google.android.googlequicksearchbox:search I/MicroDetectionWorker: #onError(false)
+04-03 12:31:14.814 2175-3599/com.google.android.googlequicksearchbox:search I/DeviceStateChecker: DeviceStateChecker cancelled
+04-03 12:31:19.814 2175-2175/com.google.android.googlequicksearchbox:search I/MicroDetectionWorker: Micro detection mode: [mDetectionMode: [1]].
+04-03 12:31:19.815 2175-2175/com.google.android.googlequicksearchbox:search I/AudioController: Using mInputStreamFactoryBuilder
+04-03 12:31:19.816 2175-3603/com.google.android.googlequicksearchbox:search I/MicroRecognitionRunner: Starting detection.
+04-03 12:31:19.816 2175-2228/com.google.android.googlequicksearchbox:search I/MicrophoneInputStream: mic_starting com.google.android.apps.gsa.staticplugins.z.c@fef2879
+04-03 12:31:19.817 1304-1304/? W/APM_AudioPolicyManager: getInputForAttr() failed opening input: samplingRate 16000, format 1, channelMask 10
+04-03 12:31:19.817 2175-2228/com.google.android.googlequicksearchbox:search E/AudioRecord: Could not get audio input for session 1337, record source 1999, sample rate 16000, format 0x1, channel mask 0x10, flags 0
+04-03 12:31:19.817 2175-2228/com.google.android.googlequicksearchbox:search E/AudioRecord-JNI: Error creating AudioRecord instance: initialization check failed with status -22.
+04-03 12:31:19.817 2175-2228/com.google.android.googlequicksearchbox:search E/android.media.AudioRecord: Error code -20 when initializing native AudioRecord object.
+04-03 12:31:19.817 2175-2228/com.google.android.googlequicksearchbox:search I/MicrophoneInputStream: mic_started com.google.android.apps.gsa.staticplugins.z.c@fef2879
+04-03 12:31:19.817 2175-2228/com.google.android.googlequicksearchbox:search E/ActivityThread: Failed to find provider info for com.google.android.apps.gsa.testing.ui.audio.recorded
+04-03 12:31:19.817 2175-2175/com.google.android.googlequicksearchbox:search I/MicroDetectionWorker: onReady
+04-03 12:31:19.819 2175-2228/com.google.android.googlequicksearchbox:search I/MicrophoneInputStream: mic_close com.google.android.apps.gsa.staticplugins.z.c@fef2879
+04-03 12:31:19.819 2175-3603/com.google.android.googlequicksearchbox:search I/MicroRecognitionRunner: Detection finished
+04-03 12:31:19.819 2175-3603/com.google.android.googlequicksearchbox:search W/ErrorReporter: reportError [type: 211, code: 524300]: Error reading from input stream
+04-03 12:31:19.820 2175-2393/com.google.android.googlequicksearchbox:search I/MicroRecognitionRunner: Stopping hotword detection.
+04-03 12:31:19.820 2175-3603/com.google.android.googlequicksearchbox:search W/ErrorProcessor: onFatalError, processing error from engine(4)
+                                                                                              com.google.android.apps.gsa.shared.speech.a.g: Error reading from input stream
+                                                                                                  at com.google.android.apps.gsa.staticplugins.recognizer.i.a.a(SourceFile:342)
+                                                                                                  at com.google.android.apps.gsa.staticplugins.recognizer.i.a$1.run(SourceFile:1367)
+                                                                                                  at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:428)
+                                                                                                  at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ak.run(SourceFile:66)
+                                                                                                  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+                                                                                                  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+                                                                                                  at java.lang.Thread.run(Thread.java:761)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ad$1.run(SourceFile:85)
+                                                                                               Caused by: com.google.android.apps.gsa.shared.exception.GsaIOException: Error code: 393238 | Buffer overflow, no available space.
+                                                                                                  at com.google.android.apps.gsa.speech.audio.Tee.g(SourceFile:2531)
+                                                                                                  at com.google.android.apps.gsa.speech.audio.ap.read(SourceFile:555)
+                                                                                                  at java.io.InputStream.read(InputStream.java:101)
+                                                                                                  at com.google.android.apps.gsa.speech.audio.al.run(SourceFile:362)
+                                                                                                  at com.google.android.apps.gsa.speech.audio.ak$1.run(SourceFile:471)
+                                                                                                  at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:428)
+                                                                                                  at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ak.run(SourceFile:66)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:139)
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ax.run(SourceFile:139)
+                                                                                                  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133) 
+                                                                                                  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607) 
+                                                                                                  at java.lang.Thread.run(Thread.java:761) 
+                                                                                                  at com.google.android.apps.gsa.shared.util.concurrent.a.ad$1.run(SourceFile:85) 

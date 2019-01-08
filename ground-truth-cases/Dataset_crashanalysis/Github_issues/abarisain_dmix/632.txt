@@ -1,0 +1,13 @@
+java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+       at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:251)
+       at java.util.ArrayList.remove(ArrayList.java:399)
+       at com.namelessdev.mpdroid.fragments.StreamsFragment$DeleteDialogClickListener.onClick(StreamsFragment.java:77)
+       at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:172)
+       at android.os.Handler.dispatchMessage(Handler.java:99)
+       at android.os.Looper.loop(Looper.java:137)
+       at android.app.ActivityThread.main(ActivityThread.java:5129)
+       at java.lang.reflect.Method.invokeNative(Method.java)
+       at java.lang.reflect.Method.invoke(Method.java:511)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560)
+       at dalvik.system.NativeStart.main(NativeStart.java)

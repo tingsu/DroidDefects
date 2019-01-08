@@ -1,0 +1,43 @@
+read=1&is_category=0&limit=30 (took 2522 ms)
+W/System.err( 4243): org.json.JSONException: End of input at character 0 of 
+W/System.err( 4243):    at org.json.JSONTokener.syntaxError(JSONTokener.java:446)
+W/System.err( 4243):    at org.json.JSONTokener.nextValue(JSONTokener.java:93)
+W/System.err( 4243):    at org.json.JSONArray.<init>(JSONArray.java:87)
+W/System.err( 4243):    at org.json.JSONArray.<init>(JSONArray.java:103)
+W/System.err( 4243):    at 
+org.ttrssreader.net.TTRSSJsonConnector.getJSONResponseAsArray(TTRSSJsonConnector
+.java:144)
+W/System.err( 4243):    at 
+org.ttrssreader.net.TTRSSJsonConnector.getArticles(TTRSSJsonConnector.java:626)
+W/System.err( 4243):    at 
+org.ttrssreader.controllers.Data.updateArticles(Data.java:159)
+W/System.err( 4243):    at 
+org.ttrssreader.model.feedheadline.FeedHeadlineListAdapter.update(FeedHeadlineLi
+stAdapter.java:255)
+W/System.err( 4243):    at 
+org.ttrssreader.model.Updater.doInBackground(Updater.java:43)
+W/System.err( 4243):    at 
+org.ttrssreader.model.Updater.doInBackground(Updater.java:24)
+W/System.err( 4243):    at android.os.AsyncTask$2.call(AsyncTask.java:185)
+W/System.err( 4243):    at 
+java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+W/System.err( 4243):    at 
+java.util.concurrent.FutureTask.run(FutureTask.java:137)
+W/System.err( 4243):    at 
+java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1068)
+W/System.err( 4243):    at 
+java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:561)
+W/System.err( 4243):    at java.lang.Thread.run(Thread.java:1096)
+I/ActivityManager(  584): Starting activity: Intent { 
+cmp=org.ttrssreader/.gui.activities.ErrorActivity (has extras) }
+I/ttrss   ( 4243): FeedHeadlineListAdapter - getArticles(feedId: 321)
+W/Resources( 4243): Converting to string: TypedValue{t=0x12/d=0x0 a=2 
+r=0x7f070007}
+I/ActivityManager(  584): Displayed activity 
+org.ttrssreader/.gui.activities.ErrorActivity: 223 ms (total 223 ms)
+I/ttrss   ( 4243): FeedHeadlineListAdapter - getArticles(feedId: 321)
+I/ttrss   ( 4243): FeedListAdapter         - getFeeds(catId: 11)
+I/ttrss   ( 4243): CategoryListAdapter     - getCategories()
+```
+
+Original issue reported on code.google.com by `schla...@gmail.com` on 25 Oct 2010 at 8:02

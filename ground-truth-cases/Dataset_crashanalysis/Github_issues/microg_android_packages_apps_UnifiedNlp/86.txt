@@ -1,0 +1,8 @@
+```
+java.lang.NoSuchMethodError: android.location.Location.getElapsedRealtimeNanos at 
+org.microg.nlp.location.BackendHelper.updateElapsedRealtimeNanos(BackendHelper.java:112) at 
+org.microg.nlp.location.BackendHelper.setLastLocation(BackendHelper.java:102) at 
+org.microg.nlp.location.BackendHelper.access$200(BackendHelper.java:40) at 
+org.microg.nlp.location.BackendHelper$Callback.report(BackendHelper.java:156) at 
+org.microg.nlp.api.LocationCallback$Stub.onTransact(LocationCallback.java:55) at 
+android.os.Binder.execTransact(Binder.java:367) at 

@@ -1,0 +1,7 @@
+02-22 21:22:13.340: E/AsyncHTMLDownloader(32279): java.lang.NumberFormatException: Invalid int: "17 +7"
+02-22 21:22:13.340: E/AsyncHTMLDownloader(32279):   at java.lang.Integer.invalidInt(Integer.java:138)
+02-22 21:22:13.340: E/AsyncHTMLDownloader(32279):   at java.lang.Integer.parse(Integer.java:375)
+02-22 21:22:13.340: E/AsyncHTMLDownloader(32279):   at java.lang.Integer.parseInt(Integer.java:366)
+02-22 21:22:13.340: E/AsyncHTMLDownloader(32279):   at java.lang.Integer.parseInt(Integer.java:332)
+02-22 21:22:13.340: E/AsyncHTMLDownloader(32279):   at java.lang.Integer.valueOf(Integer.java:490)
+02-22 21:22:13.340: E/AsyncHTMLDownloader(32279):   at com.pcinpact.parseur.ParseurHTML.getListeArticles(ParseurHTML.java:117)

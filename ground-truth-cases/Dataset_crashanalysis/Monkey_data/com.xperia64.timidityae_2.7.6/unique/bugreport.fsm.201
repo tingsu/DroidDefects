@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: com.xperia64.timidityae
+//version: 2.7.6
+//appro_time: 37
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.RuntimeException: Can't create handler inside thread that has not called Looper.prepare()
+ 	at android.os.Handler.<init>(Handler.java:197)
+ 	at android.os.Handler.<init>(Handler.java:111)
+ 	at android.widget.Toast$TN.<init>(Toast.java:324)
+ 	at android.widget.Toast.<init>(Toast.java:91)
+ 	at android.widget.Toast.makeText(Toast.java:238)
+ 	at com.xperia64.timidityae.util.SettingsStorage$1.doInBackground(SettingsStorage.java:243)
+ 	at com.xperia64.timidityae.util.SettingsStorage$1.doInBackground(SettingsStorage.java:225)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

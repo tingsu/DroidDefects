@@ -1,0 +1,14 @@
+//this is an auto-generated bug report
+//package name: io.github.froodyapp
+//version: 0.2.3
+//appro_time: 73
+ FATAL EXCEPTION: Thread-624
+ java.lang.IllegalArgumentException: unexpected url: krhttps://api.fruity-app.at/user/register
+ 	at com.squareup.okhttp.Request$Builder.url(Request.java:163)
+ 	at io.github.froodyapp.api.invoker.ApiClient.buildCall(ApiClient.java:1068)
+ 	at io.github.froodyapp.api.api.UserApi.userRegisterGetCall(UserApi.java:216)
+ 	at io.github.froodyapp.api.api.UserApi.userRegisterGetValidateBeforeCall(UserApi.java:223)
+ 	at io.github.froodyapp.api.api.UserApi.userRegisterGetWithHttpInfo(UserApi.java:250)
+ 	at io.github.froodyapp.api.api.UserApi.userRegisterGet(UserApi.java:239)
+ 	at io.github.froodyapp.service.UserRegisterer.registerOrCheckUserId(UserRegisterer.java:73)
+ 	at io.github.froodyapp.service.UserRegisterer.run(UserRegisterer.java:45)

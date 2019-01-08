@@ -1,0 +1,11 @@
+//this is an auto-generated bug report
+//package name: com.simplemobiletools.calendar
+//version: 2.2.2
+//appro_time: 152
+ java.lang.NullPointerException
+ 	at com.simplemobiletools.calendar.d.d.Z(Unknown Source)
+ 	at com.simplemobiletools.calendar.d.d.a(Unknown Source)
+ 	at com.simplemobiletools.calendar.helpers.g.a(Unknown Source)
+ 	at com.simplemobiletools.calendar.helpers.c.b(Unknown Source)
+ 	at com.simplemobiletools.calendar.helpers.c$e.run(Unknown Source)
+ 	at java.lang.Thread.run(Thread.java:841)

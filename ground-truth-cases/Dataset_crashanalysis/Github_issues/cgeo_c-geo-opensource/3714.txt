@@ -1,0 +1,4 @@
+java.lang.NullPointerException
+   at cgeo.geocaching.files.LocalStorage.deleteDirectory(LocalStorage.java:366)
+   at cgeo.geocaching.DataStore$4.run(DataStore.java:890)
+   at java.lang.Thread.run(Thread.java:1096)

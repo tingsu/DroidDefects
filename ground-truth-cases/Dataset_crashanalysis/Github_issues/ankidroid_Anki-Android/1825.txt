@@ -1,0 +1,11 @@
+E/AndroidRuntime( 4808): java.lang.NullPointerException
+E/AndroidRuntime( 4808):    at com.ichi2.anki.StudyOptions.hideDeckInformation(StudyOptions.java:1932)
+E/AndroidRuntime( 4808):    at com.ichi2.anki.StudyOptions.access$7300(StudyOptions.java:89)
+E/AndroidRuntime( 4808):    at com.ichi2.anki.StudyOptions$40.onPreExecute(StudyOptions.java:2684)
+E/AndroidRuntime( 4808):    at com.ichi2.anki.DeckTask.onPreExecute(DeckTask.java:225)
+E/AndroidRuntime( 4808):    at android.os.AsyncTask.execute(AsyncTask.java:391)
+E/AndroidRuntime( 4808):    at com.ichi2.anki.DeckTask.launchDeckTask(DeckTask.java:89)
+E/AndroidRuntime( 4808):    at com.ichi2.anki.StudyOptions.loadSampleDeck(StudyOptions.java:2230)
+E/AndroidRuntime( 4808):    at com.ichi2.anki.StudyOptions.access$1300(StudyOptions.java:89)
+E/AndroidRuntime( 4808):    at com.ichi2.anki.StudyOptions$28.onClick(StudyOptions.java:1583)
+E/AndroidRuntime( 4808):    at com.ichi2.themes.StyledDialog$OnClickForwarder.onClick(StyledDialog.java:571)

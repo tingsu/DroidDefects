@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: in.p1x.tanks_of_freedom
+//version: 0.6.0-beta
+//appro_time: 180
+ java.lang.RuntimeException: Unable to instantiate application android.app.Application: java.lang.IllegalStateException: Unable to get package info for in.p1x.tanks_of_freedom; is system dying?
+ 	at android.app.LoadedApk.makeApplication(LoadedApk.java:509)
+ 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4417)
+ 	at android.app.ActivityThread.access$1300(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1316)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalStateException: Unable to get package info for in.p1x.tanks_of_freedom; is system dying?
+ 	at android.app.LoadedApk.initializeJavaContextClassLoader(LoadedApk.java:365)
+ 	at android.app.LoadedApk.getClassLoader(LoadedApk.java:322)
+ 	at android.app.LoadedApk.makeApplication(LoadedApk.java:501)
+ Caused by: android.os.DeadObjectException
+ 	at android.os.BinderProxy.transact(Native Method)
+ 	at android.content.pm.IPackageManager$Stub$Proxy.getPackageInfo(IPackageManager.java:1393)
+ 	at android.app.LoadedApk.initializeJavaContextClassLoader(LoadedApk.java:363)

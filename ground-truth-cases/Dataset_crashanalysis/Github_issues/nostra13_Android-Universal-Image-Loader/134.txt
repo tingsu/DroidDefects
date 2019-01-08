@@ -1,0 +1,8 @@
+        java.io.FileNotFoundException: http://i10.topit.me/l046/10046137034b1c0db0.jpg
+        at libcore.net.http.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:177)
+        at com.nostra13.universalimageloader.core.download.URLConnectionImageDownloader.getStreamFromNetwork(URLConnectionImageDownloader.java:40)
+        at com.nostra13.universalimageloader.core.download.ImageDownloader.getStream(ImageDownloader.java:27)
+        at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.saveImageOnDisc(LoadAndDisplayImageTask.java:296)
+        at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:204)
+        at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:128)
+        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:442)

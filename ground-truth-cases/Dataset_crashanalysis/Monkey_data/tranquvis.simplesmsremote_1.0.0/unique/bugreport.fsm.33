@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: tranquvis.simplesmsremote
+//version: 1.0.0
+//appro_time: 90
+ FATAL EXCEPTION: main
+ java.lang.IllegalStateException: The content of the adapter has changed but ListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thread. [in ListView(2131558530, class android.widget.ListView) with Adapter(class tranquvis.simplesmsremote.Adapters.GrantedPhonesEditableListAdapter)]
+ 	at android.widget.ListView.layoutChildren(ListView.java:1545)
+ 	at android.widget.AbsListView.onTouchModeChanged(AbsListView.java:3252)
+ 	at android.view.ViewTreeObserver.dispatchOnTouchModeChanged(ViewTreeObserver.java:865)
+ 	at android.view.ViewRootImpl.ensureTouchModeLocally(ViewRootImpl.java:3260)
+ 	at android.view.ViewRootImpl.ensureTouchMode(ViewRootImpl.java:3244)
+ 	at android.view.ViewRootImpl$EarlyPostImeInputStage.processPointerEvent(ViewRootImpl.java:3717)
+ 	at android.view.ViewRootImpl$EarlyPostImeInputStage.onProcess(ViewRootImpl.java:3685)
+ 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3379)
+ 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:5419)
+ 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:5399)
+ 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:5370)
+ 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:5493)
+ 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:182)
+ 	at android.os.MessageQueue.nativePollOnce(Native Method)
+ 	at android.os.MessageQueue.next(MessageQueue.java:132)
+ 	at android.os.Looper.loop(Looper.java:124)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: net.ddns.mlsoftlaberge.trycorder
+//version: 5.1.1
+//appro_time: 25
+ FATAL EXCEPTION: main
+ java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+ 	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+ 	at java.util.ArrayList.get(ArrayList.java:308)
+ 	at net.ddns.mlsoftlaberge.trycorder.TrygalleryFragment.buttonsend(TrygalleryFragment.java:287)
+ 	at net.ddns.mlsoftlaberge.trycorder.TrygalleryFragment.access$300(TrygalleryFragment.java:70)
+ 	at net.ddns.mlsoftlaberge.trycorder.TrygalleryFragment$4.onClick(TrygalleryFragment.java:183)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

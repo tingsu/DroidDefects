@@ -1,0 +1,8 @@
+mm-dd hh:mm:ss.mmm W/compose (#####): org.thoughtcrime.securesms.recipients.RecipientFormattingException: Recipient:a@aaa.aa is badly formatted.
+mm-dd hh:mm:ss.mmm W/compose (#####): at org.thoughtcrime.securesms.recipients.RecipientFactory.parseRecipient(RecipientFactory.java:186)
+mm-dd hh:mm:ss.mmm W/compose (#####): at org.thoughtcrime.securesms.recipients.RecipientFactory.getRecipientsFromString(RecipientFactory.java:114)
+mm-dd hh:mm:ss.mmm W/compose (#####): at org.thoughtcrime.securesms.components.RecipientsPanel.getRecipients(RecipientsPanel.java:84)
+mm-dd hh:mm:ss.mmm W/compose (#####): at org.thoughtcrime.securesms.ComposeMessageActivity.getRecipients(ComposeMessageActivity.java:618)
+mm-dd hh:mm:ss.mmm W/compose (#####): at org.thoughtcrime.securesms.ComposeMessageActivity.sendMessage(ComposeMessageActivity.java:651)
+mm-dd hh:mm:ss.mmm W/compose (#####): at org.thoughtcrime.securesms.ComposeMessageActivity.access$13(ComposeMessageActivity.java:649)
+mm-dd hh:mm:ss.mmm W/compose (#####): at org.thoughtcrime.securesms.ComposeMessageActivity$SendButtonListener.onClick(ComposeMessageActivity.java:817)

@@ -1,0 +1,18 @@
+10-18 00:28:40.382 E/AndroidRuntime( 1064): java.lang.RuntimeException: Unable to start activity ComponentInfo{cgeo.geocaching/cgeo.geocaching.cgeogpxes}: java.lang.NullPointerException
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1815)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1831)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at android.app.ActivityThread.access$500(ActivityThread.java:122)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1024)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at android.os.Handler.dispatchMessage(Handler.java:99)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at android.os.Looper.loop(Looper.java:132)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at android.app.ActivityThread.main(ActivityThread.java:4123)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at java.lang.reflect.Method.invokeNative(Native Method)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at java.lang.reflect.Method.invoke(Method.java:491)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:841)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:599)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at dalvik.system.NativeStart.main(Native Method)
+10-18 00:28:40.382 E/AndroidRuntime( 1064): Caused by: java.lang.NullPointerException
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at cgeo.geocaching.cgeogpxes.onCreate(cgeogpxes.java:83)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at android.app.Activity.performCreate(Activity.java:4397)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1048)
+10-18 00:28:40.382 E/AndroidRuntime( 1064):     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1779)

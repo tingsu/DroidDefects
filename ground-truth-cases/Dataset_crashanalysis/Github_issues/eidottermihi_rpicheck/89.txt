@@ -1,0 +1,56 @@
+09-15 14:31:30.859    1386-3188/de.eidottermihi.raspicheck E/net.schmizz.sshj.transport.TransportImpl﹕ Dying because - {}net.schmizz.sshj.common.SSHRuntimeException: null
+            at net.schmizz.sshj.signature.AbstractSignature.init(AbstractSignature.java:46) ~[na:0.0]
+            at net.schmizz.sshj.transport.kex.AbstractDHG.next(AbstractDHG.java:129) ~[na:0.0]
+            at net.schmizz.sshj.transport.KeyExchanger.handle(KeyExchanger.java:352) ~[na:0.0]
+            at net.schmizz.sshj.transport.TransportImpl.handle(TransportImpl.java:484) ~[na:0.0]
+            at net.schmizz.sshj.transport.Decoder.decode(Decoder.java:107) ~[na:0.0]
+            at net.schmizz.sshj.transport.Decoder.received(Decoder.java:175) ~[na:0.0]
+            at net.schmizz.sshj.transport.Reader.run(Reader.java:61) ~[na:0.0]
+     Caused by: java.security.NoSuchAlgorithmException: Signature SHA256withECDSA implementation not found
+            at org.apache.harmony.security.fortress.Engine.notFound(Engine.java:113) ~[na:0.0]
+            at org.apache.harmony.security.fortress.Engine.getInstance(Engine.java:135) ~[na:0.0]
+            at java.security.Signature.getSignatureInstance(Signature.java:183) ~[na:0.0]
+            at java.security.Signature.getInstance(Signature.java:149) ~[na:0.0]
+            at net.schmizz.sshj.common.SecurityUtils.getSignature(SecurityUtils.java:215) ~[na:0.0]
+            at net.schmizz.sshj.signature.AbstractSignature.init(AbstractSignature.java:40) ~[na:0.0]
+    ... 6 common frames omitted
+09-15 14:31:30.879    1386-3187/de.eidottermihi.raspicheck E/net.schmizz.concurrent.Promise﹕ <<kex done>> woke to: net.schmizz.sshj.transport.TransportException
+09-15 14:31:30.879    1386-3187/de.eidottermihi.raspicheck E/de.eidottermihi.rpicheck.activity.SSHQueryTask﹕ Could not establish a connection to host '192.168.2.103:22'. Check your connection and settings.de.eidottermihi.rpicheck.ssh.impl.RaspiQueryException: Could not establish a connection to host '192.168.2.103:22'. Check your connection and settings.
+            at de.eidottermihi.rpicheck.ssh.impl.RaspiQuery.connect(RaspiQuery.java:1146) ~[na:0.0]
+            at de.eidottermihi.rpicheck.activity.SSHQueryTask.doInBackground(SSHQueryTask.java:93) ~[na:0.0]
+            at de.eidottermihi.rpicheck.activity.SSHQueryTask.doInBackground(SSHQueryTask.java:43) ~[na:0.0]
+            at android.os.AsyncTask$2.call(AsyncTask.java:185) ~[na:0.0]
+            at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:306) ~[na:0.0]
+            at java.util.concurrent.FutureTask.run(FutureTask.java:138) ~[na:0.0]
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088) ~[na:0.0]
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581) ~[na:0.0]
+            at java.lang.Thread.run(Thread.java:1019) ~[na:0.0]
+     Caused by: net.schmizz.sshj.transport.TransportException: null
+            at net.schmizz.sshj.transport.TransportException$1.chain(TransportException.java:33) ~[na:0.0]
+            at net.schmizz.sshj.transport.TransportException$1.chain(TransportException.java:27) ~[na:0.0]
+            at net.schmizz.concurrent.Promise.deliverError(Promise.java:95) ~[na:0.0]
+            at net.schmizz.concurrent.Event.deliverError(Event.java:72) ~[na:0.0]
+            at net.schmizz.concurrent.ErrorDeliveryUtil.alertEvents(ErrorDeliveryUtil.java:34) ~[na:0.0]
+            at net.schmizz.sshj.transport.KeyExchanger.notifyError(KeyExchanger.java:380) ~[na:0.0]
+            at net.schmizz.sshj.transport.TransportImpl.die(TransportImpl.java:587) ~[na:0.0]
+            at net.schmizz.sshj.transport.Reader.run(Reader.java:67) ~[na:0.0]
+     Caused by: net.schmizz.sshj.common.SSHException: null
+            at net.schmizz.sshj.common.SSHException$1.chain(SSHException.java:36) ~[na:0.0]
+            at net.schmizz.sshj.common.SSHException$1.chain(SSHException.java:29) ~[na:0.0]
+            at net.schmizz.sshj.transport.TransportImpl.die(TransportImpl.java:582) ~[na:0.0]
+    ... 1 common frames omitted
+    Caused by: net.schmizz.sshj.common.SSHRuntimeException: null
+            at net.schmizz.sshj.signature.AbstractSignature.init(AbstractSignature.java:46) ~[na:0.0]
+            at net.schmizz.sshj.transport.kex.AbstractDHG.next(AbstractDHG.java:129) ~[na:0.0]
+            at net.schmizz.sshj.transport.KeyExchanger.handle(KeyExchanger.java:352) ~[na:0.0]
+            at net.schmizz.sshj.transport.TransportImpl.handle(TransportImpl.java:484) ~[na:0.0]
+            at net.schmizz.sshj.transport.Decoder.decode(Decoder.java:107) ~[na:0.0]
+            at net.schmizz.sshj.transport.Decoder.received(Decoder.java:175) ~[na:0.0]
+            at net.schmizz.sshj.transport.Reader.run(Reader.java:61) ~[na:0.0]
+     Caused by: java.security.NoSuchAlgorithmException: Signature SHA256withECDSA implementation not found
+            at org.apache.harmony.security.fortress.Engine.notFound(Engine.java:113) ~[na:0.0]
+            at org.apache.harmony.security.fortress.Engine.getInstance(Engine.java:135) ~[na:0.0]
+            at java.security.Signature.getSignatureInstance(Signature.java:183) ~[na:0.0]
+            at java.security.Signature.getInstance(Signature.java:149) ~[na:0.0]
+            at net.schmizz.sshj.common.SecurityUtils.getSignature(SecurityUtils.java:215) ~[na:0.0]
+            at net.schmizz.sshj.signature.AbstractSignature.init(AbstractSignature.java:40) ~[na:0.0]

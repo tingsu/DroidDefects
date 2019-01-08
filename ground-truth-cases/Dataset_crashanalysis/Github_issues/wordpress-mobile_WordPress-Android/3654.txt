@@ -1,0 +1,11 @@
+Fatal Exception: java.lang.NullPointerException: Attempt to invoke interface method 'int android.text.Spanned.nextSpanTransition(int, int, java.lang.Class)' on a null object reference
+       at android.text.Html.withinParagraph(Html.java:258)
+       at android.text.Html.withinBlockquote(Html.java:247)
+       at android.text.Html.withinDiv(Html.java:204)
+       at android.text.Html.withinHtml(Html.java:185)
+       at android.text.Html.toHtml(Html.java:144)
+       at org.wordpress.android.models.Note$Schema$1.index(Note.java:526)
+       at org.wordpress.android.models.Note$Schema$1.index(Note.java:513)
+       at com.simperium.client.BucketSchema.indexesFor(BucketSchema.java:95)
+       at com.simperium.android.PersistentStore$DataStore$Reindexer.run(PersistentStore.java:347)
+       at java.lang.Thread.run(Thread.java:818)

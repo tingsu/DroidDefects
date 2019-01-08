@@ -1,0 +1,10 @@
+java.lang.SecurityException: Not allowed to change Do Not Disturb state
+    at android.os.Parcel.readException(Parcel.java:1666)
+    at android.os.Parcel.readException(Parcel.java:1619)
+    at android.media.IAudioService$Stub$Proxy.setRingerModeExternal(IAudioService.java:962)
+    at android.media.AudioManager.setRingerMode(AudioManager.java:1022)
+    at de.tum.in.tumcampusapp.services.SilenceService.onHandleIntent(SilenceService.java:101)
+    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:67)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:154)
+    at android.os.HandlerThread.run(HandlerThread.java:61)

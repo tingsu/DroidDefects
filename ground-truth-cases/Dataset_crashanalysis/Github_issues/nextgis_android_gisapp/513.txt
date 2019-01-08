@@ -1,0 +1,11 @@
+java.lang.NoSuchMethodError: android.view.MenuItem.getActionView
+    at com.nextgis.mobile.activity.MainActivity$1.run(MainActivity.java:352)
+    at android.os.Handler.handleCallback(Handler.java:587)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:130)
+    at android.app.ActivityThread.main(ActivityThread.java:3687)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:507)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:867)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:625)
+    at dalvik.system.NativeStart.main(Native Method)

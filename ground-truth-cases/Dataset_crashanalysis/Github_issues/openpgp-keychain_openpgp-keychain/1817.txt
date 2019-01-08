@@ -1,0 +1,7 @@
+ java.lang.IllegalStateException: no encryption methods specified
+ at org.bouncycastle.openpgp.PGPEncryptedDataGenerator.open(PGPEncryptedDataGenerator.java:178)
+ at org.bouncycastle.openpgp.PGPEncryptedDataGenerator.open(PGPEncryptedDataGenerator.java:333)
+ at org.sufficientlysecure.keychain.pgp.PgpSignEncryptOperation.execute(PgpSignEncryptOperation.java:340)
+ at org.sufficientlysecure.keychain.operations.SignEncryptOperation.execute(SignEncryptOperation.java:153)
+ at org.sufficientlysecure.keychain.operations.SignEncryptOperation.execute(SignEncryptOperation.java:61)
+ at org.sufficientlysecure.keychain.service.KeychainService$1.run(KeychainService.java:146)

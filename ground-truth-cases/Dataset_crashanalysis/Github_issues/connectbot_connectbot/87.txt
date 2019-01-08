@@ -1,0 +1,7 @@
+`Exception in thread "Thread-27" java.lang.RuntimeException: Unsupported algorithm SHA256
+       at com.trilead.ssh2.crypto.digest.HashForSSH2Types.<init>(HashForSSH2Types.java:24)
+       at com.trilead.ssh2.crypto.dh.GenericDhExchange.calculateH(GenericDhExchange.java:72)
+       at com.trilead.ssh2.transport.KexManager.handleMessage(KexManager.java:667)
+       at com.trilead.ssh2.transport.TransportManager.receiveLoop(TransportManager.java:722)
+       at com.trilead.ssh2.transport.TransportManager$1.run(TransportManager.java:416)
+       at java.lang.Thread.run(Thread.java:745)`

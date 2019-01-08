@@ -1,0 +1,7 @@
+//this is an auto-generated bug report
+//package name: com.dngames.mobilewebcam
+//version: 2.98
+//appro_time: 74
+ java.lang.NullPointerException
+ 	at com.dngames.mobilewebcam.Preview$3.run(Preview.java:523)
+ 	at java.lang.Thread.run(Thread.java:841)

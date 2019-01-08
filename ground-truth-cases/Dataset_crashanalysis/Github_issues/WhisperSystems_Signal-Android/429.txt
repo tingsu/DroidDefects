@@ -1,0 +1,9 @@
+W/SmsSender(10715): java.lang.IllegalArgumentException: Receiver not registered: org.thoughtcrime.securesms.service.SystemStateListener@421e0a30
+W/SmsSender(10715):     at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:662)
+W/SmsSender(10715):     at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:1443)
+W/SmsSender(10715):     at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java:468)
+W/SmsSender(10715):     at org.thoughtcrime.securesms.service.SmsSender.unregisterForRadioChanges(SmsSender.java:133)
+W/SmsSender(10715):     at org.thoughtcrime.securesms.service.SmsSender.handleSentMessage(SmsSender.java:94)
+W/SmsSender(10715):     at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:52)
+W/SmsSender(10715):     at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:224)
+W/SmsSender(10715):     at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)

@@ -1,0 +1,13 @@
+E/cgeo    ( 2748): java.lang.NullPointerException
+E/cgeo    ( 2748):  at com.github.amlcurran.showcaseview.targets.ViewTarget.getPoint(ViewTarget.java:41)
+E/cgeo    ( 2748):  at com.github.amlcurran.showcaseview.targets.ActionViewTarget.getPoint(ActionViewTarget.java:69)
+E/cgeo    ( 2748):  at com.github.amlcurran.showcaseview.ShowcaseView$1.run(ShowcaseView.java:164)
+E/cgeo    ( 2748):  at android.os.Handler.handleCallback(Handler.java:733)
+E/cgeo    ( 2748):  at android.os.Handler.dispatchMessage(Handler.java:95)
+E/cgeo    ( 2748):  at android.os.Looper.loop(Looper.java:136)
+E/cgeo    ( 2748):  at android.app.ActivityThread.main(ActivityThread.java:5017)
+E/cgeo    ( 2748):  at java.lang.reflect.Method.invokeNative(Native Method)
+E/cgeo    ( 2748):  at java.lang.reflect.Method.invoke(Method.java:515)
+E/cgeo    ( 2748):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+E/cgeo    ( 2748):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+E/cgeo    ( 2748):  at dalvik.system.NativeStart.main(Native Method)

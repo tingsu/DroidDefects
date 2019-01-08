@@ -1,0 +1,22 @@
+java.lang.NullPointerException
+        at org.sufficientlysecure.ical.SaveCalendar.getDateTime(Unknown Source)
+        at org.sufficientlysecure.ical.SaveCalendar.convertFromDb(Unknown Source)
+        at org.sufficientlysecure.ical.SaveCalendar.run(Unknown Source)
+        at org.sufficientlysecure.ical.ui.dialogs.RunnableWithProgress$1.run(Unknown Source)
+        at java.lang.Thread.run(Thread.java:856)
+```
+
+**Test 3:** Trigger same bug when exporting a Google calendar (id 1):
+
+```
+[ 05-19 20:57:13.275  4563:14513 I/ICS_SaveCalendar ]
+Save id 1 to file /storage/emulated/0/bugtest.ics
+
+[ 05-19 20:57:16.439  4563:14513 E/ICS_RunnableWithProgress ]
+An exception occurred
+java.lang.NullPointerException
+        at org.sufficientlysecure.ical.SaveCalendar.getDateTime(Unknown Source)
+        at org.sufficientlysecure.ical.SaveCalendar.convertFromDb(Unknown Source)
+        at org.sufficientlysecure.ical.SaveCalendar.run(Unknown Source)
+        at org.sufficientlysecure.ical.ui.dialogs.RunnableWithProgress$1.run(Unknown Source)
+        at java.lang.Thread.run(Thread.java:856)

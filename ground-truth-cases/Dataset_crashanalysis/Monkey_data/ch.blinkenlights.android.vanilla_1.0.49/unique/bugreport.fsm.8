@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: ch.blinkenlights.android.vanilla
+//version: 1.0.49
+//appro_time: 136
+ java.lang.IllegalStateException: Cannot perform this operation because the connection pool has been closed.
+ 	at android.database.sqlite.SQLiteConnectionPool.throwIfClosedLocked(SQLiteConnectionPool.java:962)
+ 	at android.database.sqlite.SQLiteConnectionPool.waitForConnection(SQLiteConnectionPool.java:599)
+ 	at android.database.sqlite.SQLiteConnectionPool.acquireConnection(SQLiteConnectionPool.java:348)
+ 	at android.database.sqlite.SQLiteSession.acquireConnection(SQLiteSession.java:894)
+ 	at android.database.sqlite.SQLiteSession.executeForCursorWindow(SQLiteSession.java:834)
+ 	at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:62)
+ 	at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:144)
+ 	at android.database.sqlite.SQLiteCursor.getCount(SQLiteCursor.java:133)
+ 	at android.database.AbstractCursor.moveToPosition(AbstractCursor.java:197)
+ 	at android.database.AbstractCursor.moveToFirst(AbstractCursor.java:237)
+ 	at ch.blinkenlights.android.vanilla.CoverCache$BitmapDiskCache.get(CoverCache.java:367)
+ 	at ch.blinkenlights.android.vanilla.CoverCache.getStoredCover(CoverCache.java:122)
+ 	at ch.blinkenlights.android.vanilla.CoverCache.getCoverFromSong(CoverCache.java:103)
+ 	at ch.blinkenlights.android.vanilla.Song.getCoverInternal(Song.java:233)
+ 	at ch.blinkenlights.android.vanilla.Song.getCover(Song.java:206)
+ 	at ch.blinkenlights.android.vanilla.RemoteControlImplICS.updateRemote(RemoteControlImplICS.java:145)
+ 	at ch.blinkenlights.android.vanilla.PlaybackService.broadcastChange(PlaybackService.java:1062)
+ 	at ch.blinkenlights.android.vanilla.PlaybackService.handleMessage(PlaybackService.java:1543)
+ 	at android.os.Handler.dispatchMessage(Handler.java:95)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

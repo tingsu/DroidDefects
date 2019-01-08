@@ -1,0 +1,4 @@
+02-22 13:30:30.859: I/System(1876): libcore.io.ErrnoException: kill failed: ESRCH (No such process)
+02-22 13:30:30.859: I/System(1876):     at libcore.io.Posix.kill(Native Method)
+02-22 13:30:30.859: I/System(1876):     at libcore.io.ForwardingOs.kill(ForwardingOs.java:77)
+02-22 13:30:30.859: I/System(1876):     at java.lang.ProcessManager$ProcessImpl.destroy(ProcessManager.java:257)

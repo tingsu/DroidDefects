@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: com.google.zxing.client.android
+//version: 4.7.0
+//appro_time: 161
+ java.lang.RuntimeException: getParameters failed (empty parameters)
+ 	at android.hardware.Camera.native_getParameters(Native Method)
+ 	at android.hardware.Camera.getParameters(Camera.java:1507)
+ 	at com.google.zxing.client.android.camera.CameraConfigurationManager.getTorchState(CameraConfigurationManager.java:125)
+ 	at com.google.zxing.client.android.camera.CameraManager.setTorch(CameraManager.java:178)
+ 	at com.google.zxing.client.android.AmbientLightManager.onSensorChanged(AmbientLightManager.java:74)
+ 	at android.hardware.SystemSensorManager$SensorEventQueue.dispatchSensorEvent(SystemSensorManager.java:371)
+ 	at android.os.MessageQueue.nativePollOnce(Native Method)
+ 	at android.os.MessageQueue.next(MessageQueue.java:132)
+ 	at android.os.Looper.loop(Looper.java:124)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

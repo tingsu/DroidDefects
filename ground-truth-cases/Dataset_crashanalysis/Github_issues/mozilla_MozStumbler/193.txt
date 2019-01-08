@@ -1,0 +1,23 @@
+W/dalvikvm(25498): VFY: unable to resolve direct method 8: Landroid/app/AlertDialog$Builder;.<init> (Landroid/content/Context;I)V
+D/dalvikvm(25498): VFY: replacing opcode 0x70 at 0x0017
+D/dalvikvm(25498): VFY: dead code 0x001a-0046 in Lorg/mozilla/mozstumbler/MainActivity;.onStart ()V
+D/org.mozilla.mozstumbler.MainActivity(25498): onCreate
+D/AndroidRuntime(25498): Shutting down VM
+W/dalvikvm(25498): threadid=1: thread exiting with uncaught exception (group=0x40015578)
+E/AndroidRuntime(25498): FATAL EXCEPTION: main
+E/AndroidRuntime(25498): java.lang.NoSuchMethodError: android.app.AlertDialog$Builder.<init>
+E/AndroidRuntime(25498):    at org.mozilla.mozstumbler.MainActivity.onStart(MainActivity.java:146)
+E/AndroidRuntime(25498):    at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1129)
+E/AndroidRuntime(25498):    at android.app.Activity.performStart(Activity.java:3791)
+E/AndroidRuntime(25498):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1624)
+E/AndroidRuntime(25498):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1667)
+E/AndroidRuntime(25498):    at android.app.ActivityThread.access$1500(ActivityThread.java:117)
+E/AndroidRuntime(25498):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:935)
+E/AndroidRuntime(25498):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(25498):    at android.os.Looper.loop(Looper.java:130)
+E/AndroidRuntime(25498):    at android.app.ActivityThread.main(ActivityThread.java:3687)
+E/AndroidRuntime(25498):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(25498):    at java.lang.reflect.Method.invoke(Method.java:507)
+E/AndroidRuntime(25498):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:842)
+E/AndroidRuntime(25498):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+E/AndroidRuntime(25498):    at dalvik.system.NativeStart.main(Native Method)

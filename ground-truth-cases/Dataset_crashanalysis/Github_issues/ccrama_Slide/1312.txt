@@ -1,0 +1,8 @@
+04-04 23:36:47.694 14442 14442 E AndroidRuntime: java.lang.IllegalStateException: Unable to create layer for CardView
+04-04 23:36:47.694 14442 14442 E AndroidRuntime:    at android.os.MessageQueue.nativePollOnce(Native Method)
+04-04 23:36:47.694 14442 14442 E AndroidRuntime:    at android.os.MessageQueue.next(MessageQueue.java:323)
+04-04 23:36:47.694 14442 14442 E AndroidRuntime:    at android.os.Looper.loop(Looper.java:135)
+04-04 23:36:47.694 14442 14442 E AndroidRuntime:    at android.app.ActivityThread.main(ActivityThread.java:5461)
+04-04 23:36:47.694 14442 14442 E AndroidRuntime:    at java.lang.reflect.Method.invoke(Native Method)
+04-04 23:36:47.694 14442 14442 E AndroidRuntime:    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+04-04 23:36:47.694 14442 14442 E AndroidRuntime:    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

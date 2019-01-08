@@ -1,0 +1,7 @@
+Fatal Exception: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean org.wordpress.android.fluxc.model.SiteModel.isWPCom()' on a null object reference
+       at org.wordpress.android.util.SiteUtils.isAccessibleViaWPComAPI(SiteUtils.java:35)
+       at org.wordpress.android.ui.comments.CommentDetailFragment.setupSuggestionServiceAndAdapter(CommentDetailFragment.java:380)
+       at org.wordpress.android.ui.comments.CommentDetailFragment.onCreateView(CommentDetailFragment.java:362)
+       at android.app.Fragment.performCreateView(Fragment.java:2353)
+       at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:995)
+       at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1171)

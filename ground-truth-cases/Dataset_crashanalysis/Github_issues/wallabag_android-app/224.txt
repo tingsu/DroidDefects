@@ -1,0 +1,25 @@
+I/ActivityManager( 5364): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.ArticlesListActivity} from uid 10066 on display 0
+V/WindowManager( 5364): addAppToken: AppWindowToken{37566b92 token=Token{1ed11d1d ActivityRecord{1aa6c1f4 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.ArticlesListActivity t3455}}} to stack=1 task=3455 at 0
+V/WindowManager( 5364): Adding window Window{377d2d5 u0 Starting fr.gaulupeau.apps.InThePoche} at 18 of 23 (after Window{36eead01 u0 fr.neamar.kiss/fr.neamar.kiss.MainActivity})
+I/ActivityManager( 5364): Start proc 32679:fr.gaulupeau.apps.InThePoche/u0a198 for activity fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.ArticlesListActivity
+V/WindowManager( 5364): Adding window Window{ccdd42 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.ArticlesListActivity} at 18 of 23 (before Window{377d2d5 u0 Starting fr.gaulupeau.apps.InThePoche})
+V/WindowManager( 5364): Adding window Window{2cc08a90 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.ArticlesListActivity} at 18 of 24 (before Window{ccdd42 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.ArticlesListActivity})
+I/ActivityManager( 5364): Displayed fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.ArticlesListActivity: +732ms
+I/Timeline( 5364): Timeline: Activity_windows_visible id: ActivityRecord{1aa6c1f4 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.ArticlesListActivity t3455} time:63971810
+V/WindowManager( 5364): Adding window Window{3de026c1 u0 PopupWindow:3d1fa629} at 19 of 23 (after Window{2cc08a90 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.ArticlesListActivity})
+I/Timeline(32679): Timeline: Activity_launch_request id:fr.gaulupeau.apps.InThePoche time:63974205
+I/ActivityManager( 5364): START u0 {cmp=fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.SettingsActivity} from uid 10198 on display 0
+V/WindowManager( 5364): addAppToken: AppWindowToken{215b1af2 token=Token{3c076dfd ActivityRecord{2f324a54 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.SettingsActivity t3455}}} to stack=1 task=3455 at 1
+V/WindowManager( 5364): Adding window Window{c61ecf9 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.SettingsActivity} at 20 of 24 (after Window{3de026c1 u0 PopupWindow:3d1fa629 EXITING})
+I/ActivityManager( 5364): Displayed fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.SettingsActivity: +384ms
+I/Timeline( 5364): Timeline: Activity_windows_visible id: ActivityRecord{2f324a54 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.SettingsActivity t3455} time:63975018
+V/WindowManager( 5364): Adding window Window{ef8bed8 u0 PopupWindow:1d3a0ecd} at 20 of 24 (after Window{c61ecf9 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.SettingsActivity})
+V/WindowManager( 5364): not Base app: Adding window Window{4a6f084 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.SettingsActivity} at 21 of 25
+V/WindowManager( 5364): not Base app: Adding window Window{11e490f0 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.ArticlesListActivity} at 19 of 24
+I/Timeline( 5364): Timeline: Activity_windows_visible id: ActivityRecord{1aa6c1f4 u0 fr.gaulupeau.apps.InThePoche/fr.gaulupeau.apps.Poche.ui.ArticlesListActivity t3455} time:63980363
+E/AndroidRuntime(32679): Process: fr.gaulupeau.apps.InThePoche, PID: 32679
+E/AndroidRuntime(32679): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Boolean fr.gaulupeau.apps.Poche.entity.Article.getFavorite()' on a null object referenceE/AndroidRuntime(32679):        at fr.gaulupeau.apps.Poche.network.tasks.UpdateFeedTask.processFeed(UpdateFeedTask.java:347)
+E/AndroidRuntime(32679):        at fr.gaulupeau.apps.Poche.network.tasks.UpdateFeedTask.updateByFeed(UpdateFeedTask.java:190)
+E/AndroidRuntime(32679):        at fr.gaulupeau.apps.Poche.network.tasks.UpdateFeedTask.updateAllFeeds(UpdateFeedTask.java:124)
+E/AndroidRuntime(32679):        at fr.gaulupeau.apps.Poche.network.tasks.UpdateFeedTask.doInBackground(UpdateFeedTask.java:71)
+E/AndroidRuntime(32679):        at fr.gaulupeau.apps.Poche.network.tasks.UpdateFeedTask.doInBackground(UpdateFeedTask.java:30)

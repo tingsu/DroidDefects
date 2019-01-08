@@ -1,0 +1,18 @@
+    java.lang.RuntimeException: Unable to start activity ComponentInfo{com.javiersantos.whatsappbetaupdater/md59c7d171be2c3fa8785b4ded0570f618e.MainActivity}: java.lang.UnsupportedOperationException: Use StringFactory instead.
+            at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2411)
+            at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2470)
+            at android.app.ActivityThread.-wrap11(ActivityThread.java)
+            at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1343)
+            at android.os.Handler.dispatchMessage(Handler.java:102)
+            at android.os.Looper.loop(Looper.java:148)
+            at android.app.ActivityThread.main(ActivityThread.java:5401)
+            at java.lang.reflect.Method.invoke(Native Method)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:725)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:615)
+     Caused by: java.lang.UnsupportedOperationException: Use StringFactory instead.
+            at java.lang.String.<init>(String.java:245)
+            at md59c7d171be2c3fa8785b4ded0570f618e.MainActivity.n_onCreate(Native Method)
+            at md59c7d171be2c3fa8785b4ded0570f618e.MainActivity.onCreate(MainActivity.java:32)
+            at android.app.Activity.performCreate(Activity.java:6116)
+            at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+            at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2364)

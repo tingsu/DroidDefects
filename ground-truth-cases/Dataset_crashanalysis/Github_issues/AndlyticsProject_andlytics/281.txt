@@ -1,0 +1,31 @@
+E/ACRA    (15246): org.acra.sender.ReportSenderException: Error while sending report to Google Form.
+E/ACRA    (15246):      at org.acra.sender.GoogleFormSender.send(GoogleFormSender.java:88)
+E/ACRA    (15246):      at org.acra.SendWorker.sendCrashReport(SendWorker.java:178)
+E/ACRA    (15246):      at org.acra.SendWorker.checkAndSendReports(SendWorker.java:141)
+E/ACRA    (15246):      at org.acra.SendWorker.run(SendWorker.java:77)
+E/ACRA    (15246): Caused by: java.io.IOException: Host returned error code 400
+E/ACRA    (15246):      at org.acra.util.HttpRequest.sendPost(HttpRequest.java:139)
+E/ACRA    (15246):      at org.acra.sender.GoogleFormSender.send(GoogleFormSender.java:85)
+E/ACRA    (15246):      ... 3 more
+D/ACRA    (15246): #checkAndSendReports - finish
+D/dalvikvm(  481): GC_CONCURRENT freed 1481K, 31% free 13820K/19972K, paused 9ms+6ms, total 48ms
+D/ACRA    (15246): Wait for Toast + worker ended. Kill Application ? true
+E/ACRA    (15246): com.github.andlyticsproject fatal error : Package name not found in AppInfo table: klwinkel.huiswerk
+E/ACRA    (15246): java.lang.IllegalStateException: Package name not found in AppInfo table: klwinkel.huiswerk
+E/ACRA    (15246):      at com.github.andlyticsproject.db.AndlyticsDb.getLastCommentsRemoteUpdateTime(AndlyticsDb.java:313)
+E/ACRA    (15246):      at com.github.andlyticsproject.CommentsActivity.shouldRemoteUpdateComments(CommentsActivity.java:235)
+E/ACRA    (15246):      at com.github.andlyticsproject.CommentsActivity.refreshCommentsIfNecessary(CommentsActivity.java:419)
+E/ACRA    (15246):      at com.github.andlyticsproject.CommentsActivity.access$3(CommentsActivity.java:418)
+E/ACRA    (15246):      at com.github.andlyticsproject.CommentsActivity$LoadCommentsCache.onPostExecute(CommentsActivity.java:211)
+E/ACRA    (15246):      at com.github.andlyticsproject.CommentsActivity$LoadCommentsCache.onPostExecute(CommentsActivity.java:1)
+E/ACRA    (15246):      at android.os.AsyncTask.finish(AsyncTask.java:631)
+E/ACRA    (15246):      at android.os.AsyncTask.access$600(AsyncTask.java:177)
+E/ACRA    (15246):      at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)
+E/ACRA    (15246):      at android.os.Handler.dispatchMessage(Handler.java:99)
+E/ACRA    (15246):      at android.os.Looper.loop(Looper.java:137)
+E/ACRA    (15246):      at android.app.ActivityThread.main(ActivityThread.java:5039)
+E/ACRA    (15246):      at java.lang.reflect.Method.invokeNative(Native Method)
+E/ACRA    (15246):      at java.lang.reflect.Method.invoke(Method.java:511)
+E/ACRA    (15246):      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+E/ACRA    (15246):      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560)
+E/ACRA    (15246):      at dalvik.system.NativeStart.main(Native Method)

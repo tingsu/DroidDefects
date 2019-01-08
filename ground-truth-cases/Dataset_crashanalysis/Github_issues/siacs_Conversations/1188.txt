@@ -1,0 +1,38 @@
+I/art     ( 2760): Explicit concurrent mark sweep GC freed 25(5KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 16MB/21MB, paused 707us total 32.536ms
+V/WindowManager(  833): Adding window Window{39875cd6 u0 PopupWindow:8dae560} at 2 of 8 (after Window{e8bea75 u0 eu.siacs.conversations/eu.siacs.conversations.ui.ConversationActivity})
+E/AudioTrack(  833): AudioTrack::set : Exit
+I/Timeline(26339): Timeline: Activity_launch_request id:eu.siacs.conversations time:12368806
+I/ActivityManager(  833): START u0 {cmp=eu.siacs.conversations/.ui.ChooseContactActivity (has extras)} from uid 10065 on display 0
+V/WindowManager(  833): addAppToken: AppWindowToken{299de5f3 token=Token{30747062 ActivityRecord{1063f32d u0 eu.siacs.conversations/.ui.ChooseContactActivity t309}}} to stack=1 task=309 at 1
+V/WindowManager(  833): Adding window Window{fc9b9dc u0 eu.siacs.conversations/eu.siacs.conversations.ui.ChooseContactActivity} at 3 of 9 (after Window{39875cd6 u0 PopupWindow:8dae560 EXITING})
+I/ActivityManager(  833): Displayed eu.siacs.conversations/.ui.ChooseContactActivity: +233ms
+I/Timeline(26339): Timeline: Activity_idle id: android.os.BinderProxy@1abe303e time:12369091
+I/Timeline(  833): Timeline: Activity_windows_visible id: ActivityRecord{1063f32d u0 eu.siacs.conversations/.ui.ChooseContactActivity t309} time:12369443
+D/conversations(26339): app switched into background
+E/AudioTrack(  833): AudioTrack::set : Exit
+V/WindowManager(  833): Adding window Window{28f697e0 u0 Starting eu.siacs.conversations} at 1 of 8 (before Window{fc9b9dc u0 eu.siacs.conversations/eu.siacs.conversations.ui.ChooseContactActivity})
+D/AndroidRuntime(26339): Shutting down VM
+E/AndroidRuntime(26339): FATAL EXCEPTION: main
+E/AndroidRuntime(26339): Process: eu.siacs.conversations, PID: 26339
+E/AndroidRuntime(26339): java.lang.RuntimeException: Unable to resume activity {eu.siacs.conversations/eu.siacs.conversations.ui.ConversationActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=258, result=-1, data=Intent { (has extras) }} to activity {eu.siacs.conversations/eu.siacs.conversations.ui.ConversationActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'eu.siacs.conversations.entities.Conversation eu.siacs.conversations.services.XmppConnectionService.findConversationByUuid(java.lang.String)' on a null object reference
+E/AndroidRuntime(26339):    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3017)
+E/AndroidRuntime(26339):    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3048)
+E/AndroidRuntime(26339):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2423)
+E/AndroidRuntime(26339):    at android.app.ActivityThread.access$900(ActivityThread.java:154)
+E/AndroidRuntime(26339):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1321)
+E/AndroidRuntime(26339):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(26339):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(26339):    at android.app.ActivityThread.main(ActivityThread.java:5293)
+E/AndroidRuntime(26339):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(26339):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(26339):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime(26339):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/AndroidRuntime(26339): Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=258, result=-1, data=Intent { (has extras) }} to activity {eu.siacs.conversations/eu.siacs.conversations.ui.ConversationActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'eu.siacs.conversations.entities.Conversation eu.siacs.conversations.services.XmppConnectionService.findConversationByUuid(java.lang.String)' on a null object reference
+E/AndroidRuntime(26339):    at android.app.ActivityThread.deliverResults(ActivityThread.java:3605)
+E/AndroidRuntime(26339):    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3003)
+E/AndroidRuntime(26339):    ... 11 more
+E/AndroidRuntime(26339): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'eu.siacs.conversations.entities.Conversation eu.siacs.conversations.services.XmppConnectionService.findConversationByUuid(java.lang.String)' on a null object reference
+E/AndroidRuntime(26339):    at eu.siacs.conversations.ui.XmppActivity.onActivityResult(XmppActivity.java:672)
+E/AndroidRuntime(26339):    at eu.siacs.conversations.ui.ConversationActivity.onActivityResult(ConversationActivity.java:994)
+E/AndroidRuntime(26339):    at android.app.Activity.dispatchActivityResult(Activity.java:6192)
+E/AndroidRuntime(26339):    at android.app.ActivityThread.deliverResults(ActivityThread.java:3601)

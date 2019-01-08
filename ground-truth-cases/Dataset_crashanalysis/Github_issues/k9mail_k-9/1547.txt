@@ -1,0 +1,28 @@
+
+I have multiple accounts configured in k9. For the sake of simplicity let's assume these are `default@example.com` and `other@example.net`. I composed a new mail and changed the sender from my default account to the other one at the top, wrote the body and pressed send. The sender address was now correctly set to my other account but k9 tried to deliver it using my default account's SMTP server. The mail couldn't be send.
+
+I was able to grab logcat output when the mail was attempted to be re-sent.
+Naturally, the SMTP server rejected a mail that's not coming from the associated sender address: 
+
+```
+Negative SMTP reply: 553 5.7.1 <other@example.net>: Sender address rejected: not owned by user default@example.com
+```
+
+Full trace:
+
+```
+I k9      : Committing preference changes
+I k9      : Preferences commit took 10ms
+E k9      : Failed to send message
+E k9      : com.fsck.k9.mail.MessagingException: Unable to send message
+E k9      :  at com.fsck.k9.mail.transport.SmtpTransport.sendMessageTo(SmtpTransport.java:539)
+E k9      :  at com.fsck.k9.mail.transport.SmtpTransport.sendMessage(SmtpTransport.java:495)
+E k9      :  at com.fsck.k9.controller.MessagingController.sendPendingMessagesSynchronous(MessagingController.java:3563)
+E k9      :  at com.fsck.k9.controller.MessagingController$20.run(MessagingController.java:3314)
+E k9      :  at com.fsck.k9.controller.MessagingController.run(MessagingController.java:435)
+E k9      :  at java.lang.Thread.run(Thread.java:818)
+E k9      : Caused by: com.fsck.k9.mail.transport.SmtpTransport$NegativeSmtpReplyException: Negative SMTP reply: 553 5.7.1 <other@example.net>: Sender address rejected: not owned by user default@example.com
+E k9      :  at com.fsck.k9.mail.transport.SmtpTransport.checkLine(SmtpTransport.java:649)
+E k9      :  at com.fsck.k9.mail.transport.SmtpTransport.executeSimpleCommand(SmtpTransport.java:690)
+E k9      :  at com.fsck.k9.mail.transport.SmtpTransport.executeSimpleCommand(SmtpTransport.java:654)
+E k9      :  at com.fsck.k9.mail.transport.SmtpTransport.sendMessageTo(SmtpTransport.java:524)

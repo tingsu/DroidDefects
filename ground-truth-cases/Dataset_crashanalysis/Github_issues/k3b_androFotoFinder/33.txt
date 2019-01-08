@@ -1,0 +1,8 @@
+02-29 20:39:50.607 E/k3bFoto (28323): Caused by: java.lang.NullPointerException: Attempt to get length of null array
+02-29 20:39:50.607 E/k3bFoto (28323):   at de.k3b.android.util.RecursiveMediaScanner.scanDirOrFile(RecursiveMediaScanner.java:80)
+02-29 20:39:50.607 E/k3bFoto (28323):   at de.k3b.android.util.RecursiveMediaScanner.scanDirOrFile(RecursiveMediaScanner.java:93)
+02-29 20:39:50.607 E/k3bFoto (28323):   at de.k3b.android.util.RecursiveMediaScanner.scanDirOrFile(RecursiveMediaScanner.java:93)
+02-29 20:39:50.607 E/k3bFoto (28323):   at de.k3b.android.util.RecursiveMediaScanner.doInBackground(RecursiveMediaScanner.java:59)
+02-29 20:39:50.607 E/k3bFoto (28323):   at de.k3b.android.util.RecursiveMediaScanner.doInBackground(RecursiveMediaScanner.java:28)
+02-29 20:39:50.607 E/k3bFoto (28323):   at android.os.AsyncTask$2.call(AsyncTask.java:292)
+02-29 20:39:50.607 E/k3bFoto (28323):   at java.util.concurrent.FutureTask.run(FutureTask.java:237)

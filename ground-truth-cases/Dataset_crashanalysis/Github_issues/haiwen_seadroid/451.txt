@@ -1,0 +1,11 @@
+I/CameraSyncAdapter( 2819): SeafException{code=2, msg=Network Error}
+I/CameraSyncAdapter( 2819):     at com.seafile.seadroid2.SeafConnection.getSeafExceptionFromHttpRequestException(SeafConnection.java:1121)
+I/CameraSyncAdapter( 2819):     at com.seafile.seadroid2.SeafConnection.uploadFileCommon(SeafConnection.java:683)
+I/CameraSyncAdapter( 2819):     at com.seafile.seadroid2.SeafConnection.uploadFile(SeafConnection.java:564)
+I/CameraSyncAdapter( 2819):     at com.seafile.seadroid2.data.DataManager.uploadFileCommon(DataManager.java:558)
+I/CameraSyncAdapter( 2819):     at com.seafile.seadroid2.data.DataManager.uploadFile(DataManager.java:543)
+I/CameraSyncAdapter( 2819):     at com.seafile.seadroid2.cameraupload.CameraSyncAdapter.uploadFile(CameraSyncAdapter.java:452)
+I/CameraSyncAdapter( 2819):     at com.seafile.seadroid2.cameraupload.CameraSyncAdapter.iterateCursor(CameraSyncAdapter.java:419)
+I/CameraSyncAdapter( 2819):     at com.seafile.seadroid2.cameraupload.CameraSyncAdapter.uploadImages(CameraSyncAdapter.java:309)
+I/CameraSyncAdapter( 2819):     at com.seafile.seadroid2.cameraupload.CameraSyncAdapter.onPerformSync(CameraSyncAdapter.java:229)
+I/CameraSyncAdapter( 2819):     at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:259.

@@ -1,0 +1,7 @@
+E/AndroidRuntime(16273): android.database.CursorIndexOutOfBoundsException: Index -1 requested, with a size of 0^M
+E/AndroidRuntime(16273):        at android.database.AbstractCursor.checkPosition(AbstractCursor.java:580)^M
+E/AndroidRuntime(16273):        at android.database.AbstractWindowedCursor.checkPosition(AbstractWindowedCursor.java:214)^M
+E/AndroidRuntime(16273):        at android.database.AbstractWindowedCursor.getInt(AbstractWindowedCursor.java:84)^M
+E/AndroidRuntime(16273):        at com.icecondor.nest.db.GeoRss.trimLog(GeoRss.java:223)^M
+E/AndroidRuntime(16273):        at com.icecondor.nest.db.GeoRss.log(GeoRss.java:214)^M
+E/AndroidRuntime(16273):        at com.icecondor.nest.Pigeon.onLocationChanged(Pigeon.java:305)^M

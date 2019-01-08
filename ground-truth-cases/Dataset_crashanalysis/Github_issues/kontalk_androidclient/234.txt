@@ -1,0 +1,13 @@
+java.lang.OutOfMemoryError
+    at android.graphics.Bitmap.nativeCreate(Native Method)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:697)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:674)
+    at android.graphics.Bitmap.createBitmap(Bitmap.java:607)
+    at android.graphics.Bitmap.createScaledBitmap(Bitmap.java:487)
+    at org.kontalk.util.MediaStorage.resizeImage(MediaStorage.java:249)
+    at org.kontalk.util.MediaStorage.resizeImage(MediaStorage.java:222)
+    at org.kontalk.service.UploadService.onHandleIntent(UploadService.java:165)
+    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.os.HandlerThread.run(HandlerThread.java:61)

@@ -1,0 +1,13 @@
+22:48:23.652 Error cgeo 24291  java.lang.IllegalArgumentException: R array length must be 3 or 4
+22:48:23.652 Error cgeo 24291   at android.hardware.SensorManager.getRotationMatrixFromVector(SensorManager.java:1336)
+22:48:23.652 Error cgeo 24291   at cgeo.geocaching.sensors.RotationProvider.onSensorChanged(RotationProvider.java:43)
+22:48:23.652 Error cgeo 24291   at android.hardware.SystemSensorManager$SensorEventQueue.dispatchSensorEvent(SystemSensorManager.java:467)
+22:48:23.652 Error cgeo 24291   at android.os.MessageQueue.nativePollOnce(Native Method)
+22:48:23.652 Error cgeo 24291   at android.os.MessageQueue.next(MessageQueue.java:132)
+22:48:23.652 Error cgeo 24291   at android.os.Looper.loop(Looper.java:124)
+22:48:23.652 Error cgeo 24291   at android.app.ActivityThread.main(ActivityThread.java:5414)
+22:48:23.652 Error cgeo 24291   at java.lang.reflect.Method.invokeNative(Native Method)
+22:48:23.652 Error cgeo 24291   at java.lang.reflect.Method.invoke(Method.java:525)
+22:48:23.652 Error cgeo 24291   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1187)
+22:48:23.652 Error cgeo 24291   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1003)
+22:48:23.652 Error cgeo 24291   at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,4 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+    at com.nextgis.maplibui.service.LayerFillService$UnzipForm.execute(LayerFillService.java:489)
+    at com.nextgis.maplibui.service.LayerFillService$2.run(LayerFillService.java:253)
+    at java.lang.Thread.run(Thread.java:818)

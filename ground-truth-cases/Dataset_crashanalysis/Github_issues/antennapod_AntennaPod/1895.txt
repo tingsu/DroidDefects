@@ -1,0 +1,17 @@
+java.lang.RuntimeException: Unable to stop activity {de.danoeh.antennapod/de.danoeh.antennapod.activity.AudioplayerActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void de.danoeh.antennapod.activity.AudioplayerActivity$AudioplayerPagerAdapter.setController(de.danoeh.antennapod.core.util.playback.PlaybackController)' on a null object reference
+    at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3795)
+    at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:3849)
+    at android.app.ActivityThread.handleRelaunchActivity(ActivityThread.java:4053)
+    at android.app.ActivityThread.-wrap15(ActivityThread.java)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1350)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5417)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void de.danoeh.antennapod.activity.AudioplayerActivity$AudioplayerPagerAdapter.setController(de.danoeh.antennapod.core.util.playback.PlaybackController)' on a null object reference
+    at de.danoeh.antennapod.activity.AudioplayerActivity.onStop(AudioplayerActivity.java:109)
+    at android.app.Instrumentation.callActivityOnStop(Instrumentation.java:1278)
+    at android.app.Activity.performStop(Activity.java:6395)
+    at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3790)

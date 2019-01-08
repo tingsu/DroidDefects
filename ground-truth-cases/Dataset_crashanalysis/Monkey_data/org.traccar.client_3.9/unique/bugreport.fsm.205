@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: org.traccar.client
+//version: 3.9
+//appro_time: 179
+ java.lang.IllegalArgumentException: provider doesn't exisit: null
+ 	at android.os.Parcel.readException(Parcel.java:1435)
+ 	at android.os.Parcel.readException(Parcel.java:1385)
+ 	at android.location.ILocationManager$Stub$Proxy.requestLocationUpdates(ILocationManager.java:540)
+ 	at android.location.LocationManager.requestLocationUpdates(LocationManager.java:836)
+ 	at android.location.LocationManager.requestLocationUpdates(LocationManager.java:430)
+ 	at org.traccar.client.MixedPositionProvider.startBackupProvider(MixedPositionProvider.java:73)
+ 	at org.traccar.client.MixedPositionProvider.onProviderDisabled(MixedPositionProvider.java:107)
+ 	at android.location.LocationManager$ListenerTransport._handleMessage(LocationManager.java:268)
+ 	at android.location.LocationManager$ListenerTransport.access$000(LocationManager.java:184)
+ 	at android.location.LocationManager$ListenerTransport$1.handleMessage(LocationManager.java:200)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

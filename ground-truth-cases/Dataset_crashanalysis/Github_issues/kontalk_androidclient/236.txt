@@ -1,0 +1,4 @@
+java.lang.NullPointerException
+    at org.kontalk.ui.ComposeMessageFragment.playAudio(ComposeMessageFragment.java:2601)
+    at org.kontalk.ui.ComposeMessageFragment.buttonClick(ComposeMessageFragment.java:2541)
+    at org.kontalk.ui.AudioContentView.onClick(AudioContentView.java:128)

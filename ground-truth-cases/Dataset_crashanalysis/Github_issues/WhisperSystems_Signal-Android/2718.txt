@@ -1,0 +1,18 @@
+W/OkHttpClientWrapper(15113): java.io.EOFException
+W/OkHttpClientWrapper(15113):   at okio.RealBufferedSource.require(RealBufferedSource.java:64)
+W/OkHttpClientWrapper(15113):   at okio.RealBufferedSource.readByte(RealBufferedSource.java:77)
+W/OkHttpClientWrapper(15113):   at com.squareup.okhttp.internal.ws.WebSocketReader.readHeader(WebSocketReader.java:130)
+W/OkHttpClientWrapper(15113):   at com.squareup.okhttp.internal.ws.WebSocketReader.readUntilNonControlFrame(WebSocketReader.java:119)
+W/OkHttpClientWrapper(15113):   at com.squareup.okhttp.internal.ws.WebSocketReader.readMessage(WebSocketReader.java:94)
+W/OkHttpClientWrapper(15113):   at com.squareup.okhttp.internal.ws.WebSocket$ReaderRunnable.execute(WebSocket.java:355)
+W/OkHttpClientWrapper(15113):   at com.squareup.okhttp.internal.NamedRunnable.run(NamedRunnable.java:33)
+W/OkHttpClientWrapper(15113):   at java.lang.Thread.run(Thread.java:841)
+W/WebSocketConnection(15113): onClose()...
+W/OkHttpClientWrapper(15113): Calling disconnect()...
+W/WebSocketConnection(15113): WSC connect()...
+W/OkHttpClientWrapper(15113): Connecting to: wss://textsecure-service.whispersystems.org/v1/websocket/?login=%s&password=%s
+W/MessageRetrievalService(15113): java.util.concurrent.TimeoutException: Timeout exceeded
+W/MessageRetrievalService(15113):   at org.whispersystems.textsecure.internal.websocket.WebSocketConnection.readRequest(WebSocketConnection.java:77)
+W/MessageRetrievalService(15113):   at org.whispersystems.textsecure.api.TextSecureMessagePipe.read(TextSecureMessagePipe.java:72)
+W/MessageRetrievalService(15113):   at org.thoughtcrime.securesms.service.MessageRetrievalService.run(MessageRetrievalService.java:79)
+W/MessageRetrievalService(15113):   at java.lang.Thread.run(Thread.java:841)

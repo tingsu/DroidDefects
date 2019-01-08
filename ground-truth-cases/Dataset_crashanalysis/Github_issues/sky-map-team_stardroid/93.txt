@@ -1,0 +1,17 @@
+java.lang.RuntimeException: Unable to resume activity {com.google.android.stardroid/com.google.android.stardroid.activities.SplashScreenActivity}: java.lang.IllegalStateException: Fragment already added: EulaDialogFragment{3a6b5321 #0 Eula Dialog}
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3028)
+    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3063)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1361)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5343)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:905)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:700)
+Caused by: java.lang.IllegalStateException: Fragment already added: EulaDialogFragment{3a6b5321 #0 Eula Dialog}
+    at android.app.FragmentManagerImpl.addFragment(FragmentManager.java:1138)
+    at android.app.BackStackRecord.run(BackStackRecord.java:757)
+    at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1454)
+    at android.app.Activity.performResume(Activity.java:6107)
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3011)

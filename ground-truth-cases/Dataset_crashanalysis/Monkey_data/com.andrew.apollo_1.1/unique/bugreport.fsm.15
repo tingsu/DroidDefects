@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: com.andrew.apollo
+//version: 1.1
+//appro_time: 75
+ java.lang.IllegalArgumentException: the bind value at index 1 is null
+ 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:167)
+ 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:137)
+ 	at android.content.ContentProviderProxy.query(ContentProviderNative.java:385)
+ 	at android.content.ContentResolver.query(ContentResolver.java:414)
+ 	at android.content.ContentResolver.query(ContentResolver.java:357)
+ 	at com.andrew.apollo.utils.MusicUtils.getIdForAlbum(MusicUtils.java:721)
+ 	at com.andrew.apollo.utils.NavUtils.openAlbumProfile(NavUtils.java:74)
+ 	at com.andrew.apollo.ui.activities.AudioPlayerActivity$5.onClick(AudioPlayerActivity.java:850)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

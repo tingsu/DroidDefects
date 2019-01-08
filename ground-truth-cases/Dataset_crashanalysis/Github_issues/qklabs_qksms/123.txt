@@ -1,0 +1,4 @@
+Caused by: java.lang.NullPointerException
+            at com.moez.QKSMS.ui.dialog.DefaultSmsHelper.<init>(DefaultSmsHelper.java:37)
+            at com.moez.QKSMS.ui.MainActivity.onActivityResult(MainActivity.java:305)
+            at android.app.Activity.dispatchActivityResult(Activity.java:5423)

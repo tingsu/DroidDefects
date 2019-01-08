@@ -1,0 +1,12 @@
+Caused by java.lang.NullPointerException: Attempt to invoke virtual method 'long org.wordpress.android.fluxc.model.SiteModel.getSiteId()' on a null object reference
+       at org.wordpress.android.ui.comments.CommentDetailFragment.onEventMainThread(CommentDetailFragment.java:517)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at de.greenrobot.event.EventBus.invokeSubscriber(EventBus.java:498)
+       at de.greenrobot.event.EventBus.invokeSubscriber(EventBus.java:492)
+       at de.greenrobot.event.HandlerPoster.handleMessage(HandlerPoster.java:67)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:154)
+       at android.app.ActivityThread.main(ActivityThread.java:6123)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:867)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:757)

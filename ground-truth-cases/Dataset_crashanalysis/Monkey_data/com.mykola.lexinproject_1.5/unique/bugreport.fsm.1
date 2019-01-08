@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: com.mykola.lexinproject
+//version: 1.5
+//appro_time: 50
+ java.lang.NullPointerException
+ 	at android.widget.ArrayAdapter.init(ArrayAdapter.java:310)
+ 	at android.widget.ArrayAdapter.<init>(ArrayAdapter.java:153)
+ 	at com.mykola.lexinproject.ui.PreviewFragment.resetWordsSuggestions(PreviewFragment.java:487)
+ 	at com.mykola.lexinproject.ui.PreviewFragment.onFoundWords(PreviewFragment.java:475)
+ 	at com.mykola.lexinproject.providers.TranslationManager.responseGetAllWords(TranslationManager.java:147)
+ 	at com.mykola.lexinproject.data.DictionaryDatabase$5.onPostExecute(DictionaryDatabase.java:332)
+ 	at com.mykola.lexinproject.data.DictionaryDatabase$5.onPostExecute(DictionaryDatabase.java:301)
+ 	at android.os.AsyncTask.finish(AsyncTask.java:631)
+ 	at android.os.AsyncTask.access$600(AsyncTask.java:177)
+ 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

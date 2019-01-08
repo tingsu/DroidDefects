@@ -1,0 +1,16 @@
+W/PartProvider( 3984): Parting out a single row...
+W/PartDatabase( 3984): Getting part at ID: 113
+W/PartProvider( 3984): java.io.FileNotFoundException: No part data for id: 113
+W/PartProvider( 3984):  at org.thoughtcrime.securesms.database.PartDatabase.getPartStream(PartDatabase.java:288)
+W/PartProvider( 3984):  at org.thoughtcrime.securesms.providers.PartProvider.copyPartToTemporaryFile(PartProvider.java:71)
+W/PartProvider( 3984):  at org.thoughtcrime.securesms.providers.PartProvider.openFile(PartProvider.java:99)
+W/PartProvider( 3984):  at android.content.ContentProvider.openAssetFile(ContentProvider.java:1213)
+W/PartProvider( 3984):  at android.content.ContentProvider.openTypedAssetFile(ContentProvider.java:1393)
+W/PartProvider( 3984):  at android.content.ContentProvider.openTypedAssetFile(ContentProvider.java:1459)
+W/PartProvider( 3984):  at android.content.ContentProvider$Transport.openTypedAssetFile(ContentProvider.java:342)
+W/PartProvider( 3984):  at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:312)
+W/PartProvider( 3984):  at android.os.Binder.execTransact(Binder.java:404)
+W/PartProvider( 3984):  at de.robv.android.xposed.XposedBridge.invokeOriginalMethodNative(Native Method)
+W/PartProvider( 3984):  at de.robv.android.xposed.XposedBridge.handleHookedMethod(XposedBridge.java:631)
+W/PartProvider( 3984):  at android.os.Binder.execTransact(Native Method)
+W/PartProvider( 3984):  at dalvik.system.NativeStart.run(Native Method)

@@ -1,0 +1,17 @@
+
+I have a map view. After first fix, when I press unzoom UI button (i.e. zoom out), the MapView starts repainting at 30 frames per second. This suffices to block main thread (due to an self written overlay). There are no tiles loaded, no invalidates() issued from the app code. The repainting does not stop (overloading map view by my own class, I see a continuous flood of invalidate() calls not issued by any application part)
+
+```
+09-13 07:06:16.729 11955-11955/de.spieleck.app.badgers.debug D/invalidate: invalidate
+                                                               java.lang.Exception
+                                                                   at de.spieleck.app.badgers.osmdroid.PoleLimitedMapView.invalidate(PoleLimitedMapView.java:93)
+                                                                   at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:3190)
+                                                                   at android.os.Handler.dispatchMessage(Handler.java:99)
+                                                                   at android.os.Looper.loop(Looper.java:137)
+                                                                   at android.app.ActivityThread.main(ActivityThread.java:5279)
+                                                                   at java.lang.reflect.Method.invokeNative(Native Method)
+                                                                   at java.lang.reflect.Method.invoke(Method.java:511)
+                                                                   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1102)
+                                                                   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:869)
+                                                                   at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+                                                                   at dalvik.system.NativeStart.main(Native Method)

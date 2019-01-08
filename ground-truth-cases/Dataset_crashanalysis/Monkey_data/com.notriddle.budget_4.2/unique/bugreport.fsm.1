@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: com.notriddle.budget
+//version: 4.2
+//appro_time: 8
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalStateException: attempt to re-open an already-closed object: SQLiteDatabase: /data/data/com.notriddle.budget/databases/envelopes.db
+ 	at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:55)
+ 	at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1156)
+ 	at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1032)
+ 	at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1238)
+ 	at com.notriddle.budget.SQLiteLoader.loadInBackground(SQLiteLoader.java:99)
+ 	at com.notriddle.budget.SQLiteLoader.loadInBackground(SQLiteLoader.java:28)
+ 	at android.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:303)
+ 	at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:68)
+ 	at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:56)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

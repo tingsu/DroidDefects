@@ -1,0 +1,7 @@
+E/System: java.io.IOException: Bad file number
+                                                              at android.net.LocalSocketImpl.close_native(Native Method)
+                                                              at android.net.LocalSocketImpl.close(LocalSocketImpl.java:225)
+                                                              at android.net.LocalSocketImpl.finalize(LocalSocketImpl.java:487)
+                                                              at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:187)
+                                                              at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:170)
+                                                              at java.lang.Thread.run(Thread.java:856)

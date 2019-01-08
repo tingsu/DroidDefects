@@ -1,0 +1,15 @@
+//this is an auto-generated bug report
+//package name: com.polipoid
+//version: 1.1.0
+//appro_time: 151
+ java.lang.NullPointerException
+ 	at com.polipoid.backend.proxy.ProxyProcess.stop(ProxyProcess.java:85)
+ 	at com.polipoid.backend.proxy.ProxyManager.stopProxy(ProxyManager.java:68)
+ 	at com.polipoid.backend.ProxyWrapperService.stopProxy(ProxyWrapperService.java:84)
+ 	at com.polipoid.backend.PolipoCrashHandler.handleCrash(PolipoCrashHandler.java:54)
+ 	at com.polipoid.backend.ProxyWrapperService$1.apply(ProxyWrapperService.java:55)
+ 	at com.polipoid.backend.ProxyWrapperService$1.apply(ProxyWrapperService.java:49)
+ 	at com.polipoid.backend.proxy.ProxyManager$1.apply(ProxyManager.java:57)
+ 	at com.polipoid.backend.proxy.ProxyManager$1.apply(ProxyManager.java:52)
+ 	at com.polipoid.backend.proxy.ProxyProcess$1.run(ProxyProcess.java:60)
+ 	at java.lang.Thread.run(Thread.java:841)

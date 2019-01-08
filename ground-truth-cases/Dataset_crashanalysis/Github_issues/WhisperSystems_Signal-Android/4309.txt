@@ -1,0 +1,12 @@
+10-26 12:15:49.142 3029-3361/org.thoughtcrime.securesms.dev E/AndroidRuntime: android.database.sqlite.SQLiteException: no such table: sms_restricted (code 1): , while compiling: SELECT * FROM sms_restricted WHERE (thread_id = 20) ORDER BY date DESC
+10-26 12:15:49.142 3029-3361/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:179)
+10-26 12:15:49.142 3029-3361/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:135)
+10-26 12:15:49.142 3029-3361/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at android.content.ContentProviderProxy.query(ContentProviderNative.java:421)
+10-26 12:15:49.142 3029-3361/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at android.content.ContentResolver.query(ContentResolver.java:491)
+10-26 12:15:49.142 3029-3361/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at android.content.ContentResolver.query(ContentResolver.java:434)
+10-26 12:15:49.142 3029-3361/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at org.thoughtcrime.securesms.database.SmsMigrator.migrateConversation(SmsMigrator.java:173)
+10-26 12:15:49.142 3029-3361/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at org.thoughtcrime.securesms.database.SmsMigrator.migrateDatabase(SmsMigrator.java:220)
+10-26 12:15:49.142 3029-3361/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at org.thoughtcrime.securesms.service.ApplicationMigrationService$ImportRunnable.run(ApplicationMigrationService.java:164)
+10-26 12:15:49.142 3029-3361/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+10-26 12:15:49.142 3029-3361/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+10-26 12:15:49.142 3029-3361/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at java.lang.Thread.run(Thread.java:818)

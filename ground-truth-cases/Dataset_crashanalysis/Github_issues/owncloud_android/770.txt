@@ -1,0 +1,34 @@
+11-29 19:27:49.932: E/FileDisplayActivity(19625): Got to start sync
+11-29 19:27:49.933: E/FileDisplayActivity(19625): Requesting sync for user@my-site.com at org.owncloud with new API
+11-29 19:27:49.934: D/AndroidRuntime(19625): Shutting down VM
+11-29 19:27:49.993: E/AndroidRuntime(19625): FATAL EXCEPTION: main
+11-29 19:27:49.993: E/AndroidRuntime(19625): Process: com.owncloud.android, PID: 19625
+11-29 19:27:49.993: E/AndroidRuntime(19625): java.lang.IllegalArgumentException: error unparceling Bundle
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at android.content.ContentResolver.validateSyncExtrasBundle(ContentResolver.java:1835)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at android.content.SyncRequest$Builder.build(SyncRequest.java:490)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.owncloud.android.ui.activity.FileDisplayActivity.startSynchronization(FileDisplayActivity.java:532)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.owncloud.android.ui.activity.FileDisplayActivity.onOptionsItemSelected(FileDisplayActivity.java:480)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at android.support.v4.app._ActionBarSherlockTrojanHorse.onMenuItemSelected(_ActionBarSherlockTrojanHorse.java:119)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.actionbarsherlock.ActionBarSherlock.callbackOptionsItemSelected(ActionBarSherlock.java:600)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.actionbarsherlock.internal.ActionBarSherlockNative.dispatchOptionsItemSelected(ActionBarSherlockNative.java:78)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.actionbarsherlock.app.SherlockFragmentActivity.onMenuItemSelected(SherlockFragmentActivity.java:194)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.android.internal.policy.impl.PhoneWindow.onMenuItemSelected(PhoneWindow.java:1127)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.android.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:761)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:152)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:904)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:894)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.android.internal.view.menu.MenuPopupHelper.onItemClick(MenuPopupHelper.java:179)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at android.widget.AdapterView.performItemClick(AdapterView.java:300)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at android.widget.AbsListView.performItemClick(AbsListView.java:1143)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at android.widget.AbsListView$PerformClick.run(AbsListView.java:3044)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at android.widget.AbsListView$3.run(AbsListView.java:3833)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at android.os.Handler.handleCallback(Handler.java:739)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at android.os.Handler.dispatchMessage(Handler.java:95)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at android.os.Looper.loop(Looper.java:135)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at android.app.ActivityThread.main(ActivityThread.java:5221)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at java.lang.reflect.Method.invoke(Native Method)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at java.lang.reflect.Method.invoke(Method.java:372)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+11-29 19:27:49.993: E/AndroidRuntime(19625): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.Set android.os.Bundle.keySet()' on a null object reference
+11-29 19:27:49.993: E/AndroidRuntime(19625):    at android.content.ContentResolver.validateSyncExtrasBundle(ContentResolver.java:1819)

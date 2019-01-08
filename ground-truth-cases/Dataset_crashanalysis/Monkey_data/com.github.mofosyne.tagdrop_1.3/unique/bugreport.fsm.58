@@ -1,0 +1,32 @@
+//this is an auto-generated bug report
+//package name: com.github.mofosyne.tagdrop
+//version: 1.3
+//appro_time: 43
+ FATAL EXCEPTION: main
+ java.lang.IllegalStateException: Could not execute method of the activity
+ 	at android.view.View$1.onClick(View.java:3633)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.reflect.InvocationTargetException
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at android.view.View$1.onClick(View.java:3628)
+ 	... 11 more
+ Caused by: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=com.google.zxing.client.android.SCAN (has extras) }
+ 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1632)
+ 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1424)
+ 	at android.app.Activity.startActivityForResult(Activity.java:3390)
+ 	at android.app.Activity.startActivityForResult(Activity.java:3351)
+ 	at android.support.v4.app.FragmentActivity.startActivityForResult(FragmentActivity.java:820)
+ 	at com.github.mofosyne.tagdrop.main.launchBarcodeReader(main.java:127)
+ 	at com.github.mofosyne.tagdrop.main.scanButton(main.java:119)
+ 	... 14 more

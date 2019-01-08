@@ -1,0 +1,18 @@
+//this is an auto-generated bug report
+//package name: com.commonsware.android.arXiv
+//version: 2.0.20
+//appro_time: 122
+ java.lang.NullPointerException: storage == null
+ 	at java.util.Arrays$ArrayList.<init>(Arrays.java:38)
+ 	at java.util.Arrays.asList(Arrays.java:154)
+ 	at android.widget.ArrayAdapter.<init>(ArrayAdapter.java:128)
+ 	at com.commonsware.android.arXiv.SearchListWindow$myCustomAdapter.<init>(SearchListWindow.java:127)
+ 	at com.commonsware.android.arXiv.SearchListWindow$1.handleMessage(SearchListWindow.java:174)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

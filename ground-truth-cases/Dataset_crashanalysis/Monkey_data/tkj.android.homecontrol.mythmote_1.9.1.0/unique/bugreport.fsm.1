@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: tkj.android.homecontrol.mythmote
+//version: 1.9.1.0
+//appro_time: 122
+ FATAL EXCEPTION: AsyncTask #1
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.ArrayIndexOutOfBoundsException: length=1; index=1
+ 	at tkj.android.homecontrol.mythmote.SendWolTask.getMacBytes(WOLPowerManager.java:107)
+ 	at tkj.android.homecontrol.mythmote.SendWolTask.getWolMagicPacket(WOLPowerManager.java:125)
+ 	at tkj.android.homecontrol.mythmote.SendWolTask.doInBackground(WOLPowerManager.java:152)
+ 	at tkj.android.homecontrol.mythmote.SendWolTask.doInBackground(WOLPowerManager.java:87)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	... 4 more

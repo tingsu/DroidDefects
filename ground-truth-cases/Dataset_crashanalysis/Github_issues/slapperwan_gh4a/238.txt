@@ -1,0 +1,88 @@
+E/ActivityThread( 7767): android.view.InflateException: Binary XML file line #7: Error inflating class com.viewpagerindicator.TitlePageIndicator
+E/ActivityThread( 7767):    at android.view.LayoutInflater.createView(LayoutInflater.java:620)
+E/ActivityThread( 7767):    at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+E/ActivityThread( 7767):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+E/ActivityThread( 7767):    at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+E/ActivityThread( 7767):    at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+E/ActivityThread( 7767):    at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+E/ActivityThread( 7767):    at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:343)
+E/ActivityThread( 7767):    at com.actionbarsherlock.internal.ActionBarSherlockNative.setContentView(ActionBarSherlockNative.java:133)
+E/ActivityThread( 7767):    at com.actionbarsherlock.app.SherlockFragmentActivity.setContentView(SherlockFragmentActivity.java:261)
+E/ActivityThread( 7767):    at com.gh4a.activities.ExploreActivity.onCreate(ExploreActivity.java:56)
+E/ActivityThread( 7767):    at android.app.Activity.performCreate(Activity.java:5231)
+E/ActivityThread( 7767):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+E/ActivityThread( 7767):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2169)
+E/ActivityThread( 7767):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2271)
+E/ActivityThread( 7767):    at android.app.ActivityThread.access$800(ActivityThread.java:144)
+E/ActivityThread( 7767):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1205)
+E/ActivityThread( 7767):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/ActivityThread( 7767):    at android.os.Looper.loop(Looper.java:136)
+E/ActivityThread( 7767):    at android.app.ActivityThread.main(ActivityThread.java:5146)
+E/ActivityThread( 7767):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/ActivityThread( 7767):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/ActivityThread( 7767):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+E/ActivityThread( 7767):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+E/ActivityThread( 7767):    at dalvik.system.NativeStart.main(Native Method)
+E/ActivityThread( 7767): Caused by: java.lang.reflect.InvocationTargetException
+E/ActivityThread( 7767):    at java.lang.reflect.Constructor.constructNative(Native Method)
+E/ActivityThread( 7767):    at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+E/ActivityThread( 7767):    at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+E/ActivityThread( 7767):    ... 23 more
+E/ActivityThread( 7767): Caused by: android.content.res.Resources$NotFoundException: File res/layout/abs__list_menu_item_icon.xml from color state list resource ID #0x7f03000d
+E/ActivityThread( 7767):    at android.content.res.Resources.loadColorStateList(Resources.java:2391)
+E/ActivityThread( 7767):    at android.content.res.Resources.getColor(Resources.java:874)
+E/ActivityThread( 7767):    at com.viewpagerindicator.TitlePageIndicator.<init>(TitlePageIndicator.java:165)
+E/ActivityThread( 7767):    at com.viewpagerindicator.TitlePageIndicator.<init>(TitlePageIndicator.java:156)
+E/ActivityThread( 7767):    ... 26 more
+E/ActivityThread( 7767): Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #17: invalid drawable tag ImageView
+E/ActivityThread( 7767):    at android.content.res.ColorStateList.createFromXmlInner(ColorStateList.java:146)
+E/ActivityThread( 7767):    at android.content.res.ColorStateList.createFromXml(ColorStateList.java:129)
+E/ActivityThread( 7767):    at android.content.res.Resources.loadColorStateList(Resources.java:2387)
+E/ActivityThread( 7767):    ... 29 more
+D/AndroidRuntime( 7767): Shutting down VM
+W/dalvikvm( 7767): threadid=1: thread exiting with uncaught exception (group=0x41a1ece0)
+E/AndroidRuntime( 7767): FATAL EXCEPTION: main
+E/AndroidRuntime( 7767): Process: com.gh4a, PID: 7767
+E/AndroidRuntime( 7767): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.gh4a/com.gh4a.activities.ExploreActivity}: android.view.InflateException: Binary XML file line #7: Error inflating class com.viewpagerindicator.TitlePageIndicator
+E/AndroidRuntime( 7767):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2212)
+E/AndroidRuntime( 7767):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2271)
+E/AndroidRuntime( 7767):    at android.app.ActivityThread.access$800(ActivityThread.java:144)
+E/AndroidRuntime( 7767):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1205)
+E/AndroidRuntime( 7767):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 7767):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 7767):    at android.app.ActivityThread.main(ActivityThread.java:5146)
+E/AndroidRuntime( 7767):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 7767):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 7767):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+E/AndroidRuntime( 7767):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+E/AndroidRuntime( 7767):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 7767): Caused by: android.view.InflateException: Binary XML file line #7: Error inflating class com.viewpagerindicator.TitlePageIndicator
+E/AndroidRuntime( 7767):    at android.view.LayoutInflater.createView(LayoutInflater.java:620)
+E/AndroidRuntime( 7767):    at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+E/AndroidRuntime( 7767):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+E/AndroidRuntime( 7767):    at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+E/AndroidRuntime( 7767):    at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+E/AndroidRuntime( 7767):    at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+E/AndroidRuntime( 7767):    at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:343)
+E/AndroidRuntime( 7767):    at com.actionbarsherlock.internal.ActionBarSherlockNative.setContentView(ActionBarSherlockNative.java:133)
+E/AndroidRuntime( 7767):    at com.actionbarsherlock.app.SherlockFragmentActivity.setContentView(SherlockFragmentActivity.java:261)
+E/AndroidRuntime( 7767):    at com.gh4a.activities.ExploreActivity.onCreate(ExploreActivity.java:56)
+E/AndroidRuntime( 7767):    at android.app.Activity.performCreate(Activity.java:5231)
+E/AndroidRuntime( 7767):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+E/AndroidRuntime( 7767):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2169)
+E/AndroidRuntime( 7767):    ... 11 more
+E/AndroidRuntime( 7767): Caused by: java.lang.reflect.InvocationTargetException
+E/AndroidRuntime( 7767):    at java.lang.reflect.Constructor.constructNative(Native Method)
+E/AndroidRuntime( 7767):    at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+E/AndroidRuntime( 7767):    at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+E/AndroidRuntime( 7767):    ... 23 more
+E/AndroidRuntime( 7767): Caused by: android.content.res.Resources$NotFoundException: File res/layout/abs__list_menu_item_icon.xml from color state list resource ID #0x7f03000d
+E/AndroidRuntime( 7767):    at android.content.res.Resources.loadColorStateList(Resources.java:2391)
+E/AndroidRuntime( 7767):    at android.content.res.Resources.getColor(Resources.java:874)
+E/AndroidRuntime( 7767):    at com.viewpagerindicator.TitlePageIndicator.<init>(TitlePageIndicator.java:165)
+E/AndroidRuntime( 7767):    at com.viewpagerindicator.TitlePageIndicator.<init>(TitlePageIndicator.java:156)
+E/AndroidRuntime( 7767):    ... 26 more
+E/AndroidRuntime( 7767): Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #17: invalid drawable tag ImageView
+E/AndroidRuntime( 7767):    at android.content.res.ColorStateList.createFromXmlInner(ColorStateList.java:146)
+E/AndroidRuntime( 7767):    at android.content.res.ColorStateList.createFromXml(ColorStateList.java:129)
+E/AndroidRuntime( 7767):    at android.content.res.Resources.loadColorStateList(Resources.java:2387)

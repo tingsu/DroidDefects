@@ -1,0 +1,13 @@
+java.lang.IllegalArgumentException: Cannot draw recycled bitmaps
+  at android.view.GLES20Canvas.drawBitmap(GLES20Canvas.java)
+  at android.view.GLES20RecordingCanvas.drawBitmap(GLES20RecordingCanvas.java)
+  at android.graphics.drawable.BitmapDrawable.draw(BitmapDrawable.java)
+  at android.graphics.drawable.TransitionDrawable.draw(TransitionDrawable.java)
+  at android.widget.ImageView.onDraw(ImageView.java)
+  at android.view.View.draw(View.java)
+  at android.view.View.getDisplayList(View.java)
+  at android.view.View.getDisplayList(View.java)
+  at android.view.ViewGroup.dispatchGetDisplayLIst(ViewGroup.java)
+  at android.view.View.getDisplayList(View.java)
+  at android.view.View.getDisplayList(View.java)
+  at android.view.ViewGroup.dispatchGetDisplayLIst(ViewGroup.java)

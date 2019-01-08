@@ -1,0 +1,136 @@
+E/AndroidRuntime( 7856): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime( 7856):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime( 7856):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime( 7856):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 7856):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 7856):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(13025): FATAL EXCEPTION: JobConsumer-1
+E/AndroidRuntime(13025): Process: org.thoughtcrime.securesms, PID: 13025
+E/AndroidRuntime(13025): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(13025):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(13025):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(13025):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(13025):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(13025):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(13025):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(13025):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(13025):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(13025):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(13025):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(13025):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(13025):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(13025):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(13025):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(21384): FATAL EXCEPTION: JobConsumer-2
+E/AndroidRuntime(21384): Process: org.thoughtcrime.securesms, PID: 21384
+E/AndroidRuntime(21384): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(21384):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(21384):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(21384):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(21384):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(21384):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(21384):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(21384):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(21384):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(21384):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(21384):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(21384):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(21384):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(21384):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(21384):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+--------- beginning of system
+W/ResourcesManager(23018): Asset path '/system/framework/com.google.android.maps.jar' does not exist or contains no resources.
+W/ResourcesManager(23018): Asset path '/system/framework/com.sonymobile.settings.illumination.jar' does not exist or contains no resources.
+W/ResourcesManager(23018): Asset path '/system/framework/com.google.android.media.effects.jar' does not exist or contains no resources.
+W/ResourcesManager(23018): Asset path '/system/framework/com.google.android.maps.jar' does not exist or contains no resources.
+W/ResourcesManager(23018): Asset path '/system/framework/com.sonymobile.settings.illumination.jar' does not exist or contains no resources.
+W/ResourcesManager(23018): Asset path '/system/framework/com.google.android.media.effects.jar' does not exist or contains no resources.
+E/AndroidRuntime(23018): FATAL EXCEPTION: JobConsumer-2
+E/AndroidRuntime(23018): Process: org.thoughtcrime.securesms, PID: 23018
+E/AndroidRuntime(23018): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(23018):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(23018):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(23018):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(23018):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(23018):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(23018):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(23018):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(23018):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(23018):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(23018):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(23018):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(23018):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(23018):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(23018):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/ResourcesManager(23018): Asset path '/system/framework/com.google.android.maps.jar' does not exist or contains no resources.
+W/ResourcesManager(23018): Asset path '/system/framework/com.sonymobile.settings.illumination.jar' does not exist or contains no resources.
+W/ResourcesManager(23018): Asset path '/system/framework/com.google.android.media.effects.jar' does not exist or contains no resources.
+W/ResourcesManager( 5581): Asset path '/system/framework/com.google.android.maps.jar' does not exist or contains no resources.
+W/ResourcesManager( 5581): Asset path '/system/framework/com.sonymobile.settings.illumination.jar' does not exist or contains no resources.
+W/ResourcesManager( 5581): Asset path '/system/framework/com.google.android.media.effects.jar' does not exist or contains no resources.
+E/AndroidRuntime( 5581): FATAL EXCEPTION: JobConsumer-1
+E/AndroidRuntime( 5581): Process: org.thoughtcrime.securesms, PID: 5581
+E/AndroidRuntime( 5581): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime( 5581):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime( 5581):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime( 5581):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 5581):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 5581):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

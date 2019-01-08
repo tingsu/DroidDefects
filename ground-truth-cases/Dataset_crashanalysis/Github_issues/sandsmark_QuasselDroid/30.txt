@@ -1,0 +1,10 @@
+E/AndroidRuntime(13415): java.lang.RuntimeException: com.iskrembilen.quasseldroid.io.CustomTrustManager$NewCertificateException
+E/AndroidRuntime(13415):        at org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:674)
+E/AndroidRuntime(13415):        at org.apache.harmony.xnet.provider.jsse.NativeCrypto.SSL_do_handshake(Native Method)
+E/AndroidRuntime(13415):        at org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:474)
+E/AndroidRuntime(13415):        at org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:328)
+E/AndroidRuntime(13415):        at com.iskrembilen.quasseldroid.io.CoreConnection.connect(CoreConnection.java:341)
+E/AndroidRuntime(13415):        at com.iskrembilen.quasseldroid.io.CoreConnection$ReadThread.run(CoreConnection.java:597)
+E/AndroidRuntime(13415): Caused by: com.iskrembilen.quasseldroid.io.CustomTrustManager$NewCertificateException
+E/AndroidRuntime(13415):        at com.iskrembilen.quasseldroid.io.CustomTrustManager.checkServerTrusted(CustomTrustManager.java:89)
+E/AndroidRuntime(13415):        at org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:664)

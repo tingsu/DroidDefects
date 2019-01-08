@@ -1,0 +1,4 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'double java.lang.Double.doubleValue()' on a null object reference
+    at de.koelle.christian.trickytripper.activities.CurrencyCalculatorActivity.canResultBeCalculated(Unknown Source)
+    at de.koelle.christian.trickytripper.activities.CurrencyCalculatorActivity.onPrepareOptionsMenu(Unknown Source)
+    at android.app.Activity.onPreparePanel(Activity.java:2868)

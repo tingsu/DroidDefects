@@ -1,0 +1,27 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.String.toLowerCase()' on a null object reference
+    at com.nextgis.maplibui.dialog.SelectNGWResourceDialog.fillConnections(SelectNGWResourceDialog.java:211)
+    at com.nextgis.maplibui.dialog.SelectNGWResourceDialog.onCreateDialog(SelectNGWResourceDialog.java:114)
+    at android.support.v4.app.DialogFragment.getLayoutInflater(DialogFragment.java:307)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1104)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1286)
+    at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:758)
+    at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1671)
+    at android.support.v4.app.FragmentManagerImpl$1.run(FragmentManager.java:532)
+    at android.os.Handler.handleCallback(Handler.java:815)
+    at android.os.Handler.dispatchMessage(Handler.java:104)
+    at android.os.Looper.loop(Looper.java:194)
+    at android.app.ActivityThread.main(ActivityThread.java:5624)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:959)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:754)
+```
+
+```
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.lang.String.toLowerCase()' on a null object reference
+    at com.nextgis.maplibui.GISApplication.getAccountUrl(GISApplication.java:240)
+    at com.nextgis.maplib.map.NGWLookupTable.setAccountCacheData(NGWLookupTable.java:126)
+    at com.nextgis.maplib.map.NGWLookupTable.setAccountName(NGWLookupTable.java:197)
+    at com.nextgis.maplibui.service.LayerFillService$NGWVectorLayerFillTask.execute(LayerFillService.java:665)
+    at com.nextgis.maplibui.service.LayerFillService$2.run(LayerFillService.java:253)
+    at java.lang.Thread.run(Thread.java:818)

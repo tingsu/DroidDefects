@@ -1,0 +1,13 @@
+//this is an auto-generated bug report
+//package name: ca.mimic.apphangar
+//version: 2.5.1
+//appro_time: 55
+ java.lang.IllegalStateException: attempt to re-open an already-closed object: SQLiteDatabase: /data/data/ca.mimic.apphangar/databases/tasks.db
+ 	at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:55)
+ 	at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1156)
+ 	at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1032)
+ 	at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1200)
+ 	at ca.mimic.apphangar.bv.c(Unknown Source)
+ 	at ca.mimic.apphangar.Settings.g(Unknown Source)
+ 	at ca.mimic.apphangar.aw.run(Unknown Source)
+ 	at java.lang.Thread.run(Thread.java:841)

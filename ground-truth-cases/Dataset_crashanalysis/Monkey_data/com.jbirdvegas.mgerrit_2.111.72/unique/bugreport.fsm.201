@@ -1,0 +1,10 @@
+//this is an auto-generated bug report
+//package name: com.jbirdvegas.mgerrit
+//version: 2.111.72
+//appro_time: 126
+ FATAL EXCEPTION: Thread-743
+ java.lang.NullPointerException
+ 	at com.jbirdvegas.mgerrit.tasks.CommitProcessor.doInsert(CommitProcessor.java:85)
+ 	at com.jbirdvegas.mgerrit.tasks.CommitProcessor.insert(CommitProcessor.java:48)
+ 	at com.jbirdvegas.mgerrit.tasks.CommitProcessor.insert(CommitProcessor.java:37)
+ 	at com.jbirdvegas.mgerrit.tasks.SyncProcessor$ResponseHandler.run(SyncProcessor.java:233)

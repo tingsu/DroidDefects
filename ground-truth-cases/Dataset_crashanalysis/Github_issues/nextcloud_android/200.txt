@@ -1,0 +1,15 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.owncloud.android.operations.UploadFileOperation.getOriginalStoragePath()' on a null object reference
+    at com.owncloud.android.files.services.FileUploader.uploadFile(FileUploader.java:960)
+    at com.owncloud.android.files.services.FileUploader$ServiceHandler.handleMessage(FileUploader.java:866)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:224)
+    at android.os.HandlerThread.run(HandlerThread.java:61)
+```
+
+```
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.owncloud.android.operations.UploadFileOperation.getOriginalStoragePath()' on a null object reference
+    at com.owncloud.android.files.services.FileUploader.uploadFile(FileUploader.java:960)
+    at com.owncloud.android.files.services.FileUploader$ServiceHandler.handleMessage(FileUploader.java:866)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.os.HandlerThread.run(HandlerThread.java:61)

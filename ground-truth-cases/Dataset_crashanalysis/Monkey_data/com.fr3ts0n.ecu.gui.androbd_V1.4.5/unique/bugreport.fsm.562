@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: com.fr3ts0n.ecu.gui.androbd
+//version: V1.4.5
+//appro_time: 149
+ android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.OPEN_DOCUMENT cat=[android.intent.category.OPENABLE] typ=*/* }
+ 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1632)
+ 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1541)
+ 	at android.app.Activity.startActivityFromFragment(Activity.java:3917)
+ 	at android.app.Fragment.startActivityForResult(Fragment.java:1078)
+ 	at android.app.Fragment.startActivityForResult(Fragment.java:1062)
+ 	at com.fr3ts0n.ecu.gui.androbd.SettingsActivity$PrefsFragment.onPreferenceClick(SettingsActivity.java:287)
+ 	at android.preference.Preference.performClick(Preference.java:952)
+ 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:215)
+ 	at android.widget.AdapterView.performItemClick(AdapterView.java:298)
+ 	at android.widget.AbsListView.performItemClick(AbsListView.java:1100)
+ 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:2788)
+ 	at android.widget.AbsListView$1.run(AbsListView.java:3463)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

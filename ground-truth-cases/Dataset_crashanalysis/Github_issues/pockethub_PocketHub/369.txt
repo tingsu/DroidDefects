@@ -1,0 +1,6 @@
+05-26 13:02:13.046: D/StarRepositoryTask(278): java.io.IOException: Length Required (411)
+05-26 13:02:13.046: D/StarRepositoryTask(278):  at org.eclipse.egit.github.core.client.GitHubClient.createException(GitHubClient.java:564)
+05-26 13:02:13.046: D/StarRepositoryTask(278):  at org.eclipse.egit.github.core.client.GitHubClient.sendJson(GitHubClient.java:643)
+05-26 13:02:13.046: D/StarRepositoryTask(278):  at org.eclipse.egit.github.core.client.GitHubClient.put(GitHubClient.java:773)
+05-26 13:02:13.046: D/StarRepositoryTask(278):  at org.eclipse.egit.github.core.client.GitHubClient.put(GitHubClient.java:584)
+05-26 13:02:13.046: D/StarRepositoryTask(278):  at org.eclipse.egit.github.core.service.WatcherService.watch(WatcherService.java:296)

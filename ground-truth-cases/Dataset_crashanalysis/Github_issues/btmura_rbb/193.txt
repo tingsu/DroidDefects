@@ -1,0 +1,8 @@
+02-22 08:13:45.409 25531 25531 E AndroidRuntime: java.lang.IllegalStateException
+02-22 08:13:45.409 25531 25531 E AndroidRuntime:    at com.btmura.android.reddit.widget.ThingAdapter.vote(ThingAdapter.java:505)
+02-22 08:13:45.409 25531 25531 E AndroidRuntime:    at com.btmura.android.reddit.app.ThingListFragment.onVote(ThingListFragment.java:308)
+02-22 08:13:45.409 25531 25531 E AndroidRuntime:    at com.btmura.android.reddit.widget.VotingArrows.onSingleTapUp(VotingArrows.java:213)
+02-22 08:13:45.409 25531 25531 E AndroidRuntime:    at com.btmura.android.reddit.widget.ThingView.onSingleTapUp(ThingView.java:726)
+02-22 08:13:45.409 25531 25531 E AndroidRuntime:    at android.view.GestureDetector.onTouchEvent(GestureDetector.java:588)
+02-22 08:13:45.409 25531 25531 E AndroidRuntime:    at com.btmura.android.reddit.widget.ThingView.onTouchEvent(ThingView.java:670)
+02-22 08:13:45.409 25531 25531 E AndroidRuntime:    at android.view.View.dispatchTouchEvent(View.java:7246)

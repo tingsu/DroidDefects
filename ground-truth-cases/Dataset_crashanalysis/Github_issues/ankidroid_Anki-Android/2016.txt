@@ -1,0 +1,17 @@
+doInBackground()
+E/AndroidRuntime(16137):        at android.os.AsyncTask$3.done(AsyncTask.java:278)
+E/AndroidRuntime(16137):        at java.util.concurrent.FutureTask$Sync.innerSetException(FutureTask.java:273)
+E/AndroidRuntime(16137):        at java.util.concurrent.FutureTask.setException(FutureTask.java:124)
+E/AndroidRuntime(16137):        at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:307)
+E/AndroidRuntime(16137):        at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+E/AndroidRuntime(16137):        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+E/AndroidRuntime(16137):        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+E/AndroidRuntime(16137):        at java.lang.Thread.run(Thread.java:856)
+E/AndroidRuntime(16137): Caused by: java.lang.ClassCastException: java.lang.String
+cannot be cast to java.lang.Integer
+E/AndroidRuntime(16137):        at com.ichi2.async.Connection.doInBackgroundSync(Connection.java:284)
+E/AndroidRuntime(16137):        at com.ichi2.async.Connection.doOneInBackground(Connection.java:192)
+E/AndroidRuntime(16137):        at com.ichi2.async.Connection.doInBackground(Connection.java:174)
+E/AndroidRuntime(16137):        at com.ichi2.async.Connection.doInBackground(Connection.java:59)
+E/AndroidRuntime(16137):        at android.os.AsyncTask$2.call(AsyncTask.java:264)
+E/AndroidRuntime(16137):        at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)

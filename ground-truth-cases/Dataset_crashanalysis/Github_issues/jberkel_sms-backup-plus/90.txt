@@ -1,0 +1,683 @@
+I/ActivityManager(   75): Process com.google.android.apps.uploader (pid 7407) has died.
+W/ContentService(   75): binderDied() at ObserverNode name com.google.android.gsf.gservices
+D/dalvikvm( 8042): GC freed 2040 objects / 155584 bytes in 578ms
+D/WifiService(   75): releaseWifiLockLocked: WifiLock{NetworkLocationProvider type=2 binder=android.os.Binder@4478d558}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+D/BatteryService(   75): isUsbConnected() = false
+D/BatteryService(   75): mPlugType = 0
+D/WifiService(   75): ACTION_BATTERY_CHANGED pluggedType: 0
+D/nicolas (  449): onUsbChange
+D/nicolas (  449): 0
+D/nicolas (  449): Begin onReceive->_stopService
+D/nicolas (  449): End onReceive->_stopService
+D/UsbConnectedReceiver( 1255): action = psclient.intent.action.usb_status
+D/UsbConnectedReceiver( 1255): ACTION_BATTERY_CHANGED
+D/UsbConnectedReceiver( 1255): usbCurrentType = 0
+D/UsbConnectedReceiver( 1255): Current type is same as previous, return!
+D/dalvikvm( 8013): threadid=29 wakeup: interrupted
+D/DownloadManager( 8013): notifyDownloadCompleted status: 200
+D/vending ( 7997): [37] AssetDownloader$DownloadManagerBroadcastReceiver.handleDownloadCompletedAction(): Got a download completed intent.
+I/vending ( 7997): [37] AssetDownloader$DownloadManagerBroadcastReceiver.startNextDownload(): Found Paused URI null
+I/vending ( 7997): [37] AssetDownloader$DownloadManagerBroadcastReceiver.startNextDownload(): No more paused downloads.
+D/vending ( 7997): [37] LocalAssetDatabase.notifyListener(): -8667028677416061123 / null
+D/vending ( 7997): [38] AssetDownloader$DownloadManagerBroadcastReceiver.installFromUri(): Calling install uri=content://downloads/download/2127 src=null asset=-8667028677416061123 (org.jtb.alogcat:0) [DOWNLOADING] name=aLogcat - Logcat Application last=TRUE
+D/vending ( 7997): [38] LocalAssetDatabase.notifyListener(): -8667028677416061123 / INSTALLING
+D/dalvikvm(   75): GC freed 16153 objects / 843360 bytes in 461ms
+D/vending ( 7997): [38] VendingNotificationManager.showNotification(): Showing notification: [AssetID=-8667028677416061123, NotificationID=1588841780, Title=aLogcat - Logcat Application, Message=Установка...]
+D/PackageParser(   75): Scanning package: /data/app/vmdl56277.tmp
+D/dalvikvm( 8042): GC freed 2350 objects / 157152 bytes in 714ms
+I/ActivityManager(   75): Start proc com.zegoggles.smssync for service com.zegoggles.smssync/.SmsBackupService: pid=8064 uid=10052 gids={3003, 1015}
+D/dalvikvm( 7397): GC freed 358 objects / 14392 bytes in 3327ms
+I/PackageManager(   75): /data/app/vmdl56277.tmp changed; unpacking
+D/installd(   58): DexInv: --- BEGIN '/data/app/vmdl56277.tmp' ---
+I/ActivityManager(   75): Process com.maxmpz.audioplayer (pid 495) has died.
+W/ActivityManager(   75): Scheduling restart of crashed service com.maxmpz.audioplayer/.player.HeadsetMicroService in 5000ms
+D/AudioFlinger(   56): binderDied() 0xfc70, tid 74, calling tid 56
+D/AudioFlinger(   56): Removing notification client 0xfc70
+D/dalvikvm( 8070): DexOpt: load 494ms, verify 419ms, opt 3ms
+D/installd(   58): DexInv: --- END '/data/app/vmdl56277.tmp' (success) ---
+D/dalvikvm( 8013): GC freed 7041 objects / 483704 bytes in 152ms
+D/JOGBALL (   75): Jogball, + set_jogball_mode mode=0
+I/installd(   58): move /data/dalvik-cache/data@app@vmdl56277.tmp@classes.dex -> /data/dalvik-cache/data@app@org.jtb.alogcat.apk@classes.dex
+D/PackageManager(   75): New package installed in /data/app/org.jtb.alogcat.apk
+W/Process (   75): Unable to open /proc/495/status
+I/ActivityManager(   75): Start proc com.maxmpz.audioplayer for service com.maxmpz.audioplayer/.player.HeadsetMicroService: pid=8073 uid=10051 gids={1015, 3003}
+D/WifiService(   75): acquireWifiLockLocked: WifiLock{SMS Backup+ type=1 binder=android.os.BinderProxy@446903b8}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+D/vending ( 7997): [41] AssetDownloader$DownloadManagerBroadcastReceiver$MyPackageInstallObserver.packageInstalled(): Package 'org.jtb.alogcat' installed!
+D/vending ( 7997): [41] AssetDownloader$DownloadManagerBroadcastReceiver$MyPackageInstallObserver.packageInstalled(): Source=null last=TRUE asset=-8667028677416061123 (org.jtb.alogcat:0) [DOWNLOADING]
+D/vending ( 7997): [41] VendingNotificationManager.showNotification(): Showing notification: [AssetID=-8667028677416061123, NotificationID=1588841780, Title=aLogcat - Logcat Application, Message=Успешно установлено.]
+D/        ( 7997): unable to unlink '/cache/Download-16.apk': Permission denied (errno=13)
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f050002
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f020000
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f030001
+I/ActivityManager(   75): Start proc com.svox.pico for broadcast com.svox.pico/.VoiceDataInstallerReceiver: pid=8080 uid=10015 gids={}
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f060000
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f02001a
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f050001
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f0a03ee
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f020003
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f040000
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f050007
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f040000
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f060004
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f040000
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f050000
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f020005
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f020004
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f060007
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f040000
+D/dalvikvm(   55): GC freed 292 objects / 11104 bytes in 418ms
+D/dalvikvm(   55): GC freed 52 objects / 2320 bytes in 156ms
+D/dalvikvm(   55): GC freed 2 objects / 48 bytes in 153ms
+D/dalvikvm(   75): GC freed 12313 objects / 637184 bytes in 1747ms
+I/ActivityManager(   75): Process com.google.android.apps.maps:LocationFriendService (pid 8042) has died.
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f0a027a
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f02027c
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f02027c
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+D/BatteryService(   75): isUsbConnected() = false
+D/BatteryService(   75): mPlugType = 0
+D/dalvikvm( 7997): GC freed 22825 objects / 1171184 bytes in 680ms
+W/ResourceType(   75): Resources don't contain package for resource number 0x7f080000
+D/BackupManagerService(   75): Received broadcast Intent { act=android.intent.action.PACKAGE_ADDED dat=package:org.jtb.alogcat flg=0x20000000 (has extras) }
+V/BackupManagerService(   75): addPackageParticipantsLocked: org.jtb.alogcat
+V/BackupManagerService(   75): Adding 10 backup participants:
+V/BackupManagerService(   75):     PackageInfo{4479be78 com.android.browser} agent=com.android.browser.BrowserBackupAgent uid=10043 killAfterRestore=true restoreNeedsApplication=false
+V/BackupManagerService(   75):     PackageInfo{4477cda0 com.android.mms} agent=com.android.mms.MmsBackupAgent uid=10017 killAfterRestore=true restoreNeedsApplication=false
+V/BackupManagerService(   75):     PackageInfo{44726da8 com.htc.CustomizationSetup} agent=com.htc.CustomizationSetup.AccountBackupAgent uid=10005 killAfterRestore=true restoreNeedsApplication=false
+V/BackupManagerService(   75):     PackageInfo{446f1908 com.android.providers.telephony} agent=com.android.providers.telephony.MessageBackupAgent uid=1001 killAfterRestore=false restoreNeedsApplication=false
+V/BackupManagerService(   75):     PackageInfo{446db498 com.android.providers.settings} agent=com.android.providers.settings.SettingsBackupAgent uid=1000 killAfterRestore=false restoreNeedsApplication=false
+V/BackupManagerService(   75):     PackageInfo{446c0e70 com.htc.android.htcime} agent=com.htc.android.htcime.util.BackupAgent uid=10031 killAfterRestore=false restoreNeedsApplication=false
+V/BackupManagerService(   75):     PackageInfo{4460d508 com.android.providers.userdictionary} agent=com.android.providers.userdictionary.DictionaryBackupAgent uid=10008 killAfterRestore=false restoreNeedsApplication=false
+V/BackupManagerService(   75):     PackageInfo{4457e8a8 android} agent=com.android.server.SystemBackupAgent uid=1000 killAfterRestore=false restoreNeedsApplication=false
+V/BackupManagerService(   75):     PackageInfo{44487f68 com.android.vending} agent=com.android.vending.VendingBackupAgent uid=10007 killAfterRestore=false restoreNeedsApplication=true
+V/BackupManagerService(   75):     PackageInfo{447c1ba8 com.htc.provider.settings} agent=com.htc.provider.settings.BackupAgent uid=10005 killAfterRestore=false restoreNeedsApplication=false
+D/nicolas (  449): onUsbChange
+D/nicolas (  449): 0
+D/nicolas (  449): Begin onReceive->_stopService
+D/nicolas (  449): End onReceive->_stopService
+D/UsbConnectedReceiver( 1255): action = psclient.intent.action.usb_status
+D/UsbConnectedReceiver( 1255): ACTION_BATTERY_CHANGED
+D/UsbConnectedReceiver( 1255): usbCurrentType = 0
+D/UsbConnectedReceiver( 1255): Current type is same as previous, return!
+W/ResourceType(  345): getEntry failing because entryIndex 636 is beyond type entryCount 94
+W/ResourceType(  345): Failure getting entry for 0x7f02027c (t=1 e=636) in package 0: 0x80000001
+W/ResourceType(  345): getEntry failing because entryIndex 332 is beyond type entryCount 94
+W/ResourceType(  345): Failure getting entry for 0x7f02014c (t=1 e=332) in package 0: 0x80000001
+I/ActivityManager(   75): Process com.svox.pico (pid 8080) has died.
+I/ActivityManager(   75): Start proc com.htc.RosieUtility for broadcast com.htc.AddProgramWidget/.HtcWidgetScanner: pid=8089 uid=1000 gids={3003, 1007, 3001, 3002, 2001}
+D/PackageInstallationReceiver( 1255): Removing.../data/local/tmp/org.jtb.alogcat.apk
+D/WifiService(   75): ACTION_BATTERY_CHANGED pluggedType: 0
+I/ActivityThread( 8089): Publishing provider com.htc.wdm.provider.WDMProvider: com.htc.wdm.provider.WDMProvider
+I/global  ( 8073): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+I/ActivityThread( 8073): Publishing provider com.maxmpz.audioplayer.data: com.maxmpz.audioplayer.data.AudioPlayerProvider
+I/ActivityManager(   75): Process android.process.media (pid 8013) has died.
+I/JuLOG   (   75): Is it a good time to clear Browser's memory! rec.curAdj=10
+D/HtcWidgetScanner( 8089): action - android.intent.action.PACKAGE_ADDED
+D/HtcWidgetScanner( 8089): packageUid - 10070
+I/ActivityManager(   75): Start proc org.dayup.gtask for broadcast org.dayup.gtask/.KeyInstalledReceiver: pid=8098 uid=10076 gids={3003, 1007}
+D/dalvikvm( 8073): DexOpt: couldn't find static field
+W/dalvikvm( 8073): VFY: unable to resolve static field 50 (CPU_ABI2) in Landroid/os/Build;
+D/dalvikvm( 8073): VFY: replacing opcode 0x62 at 0x0034
+D/dalvikvm( 8073): Making a copy of Lcom/maxmpz/audioplayer/0XF;.�� code (244 bytes)
+D/dalvikvm( 8073): DexOpt: couldn't find static field
+W/dalvikvm( 8073): VFY: unable to resolve static field 50 (CPU_ABI2) in Landroid/os/Build;
+D/dalvikvm( 8073): VFY: replacing opcode 0x62 at 0x0047
+D/dalvikvm( 8073): Making a copy of Lcom/maxmpz/audioplayer/0XF;.uncaughtException code (871 bytes)
+W/audioplayer.Application( 8073): detected HTC
+D/dalvikvm( 8073): Trying to load lib /data/data/com.maxmpz.audioplayer/files/libffmpeg.so 0x442d8700
+D/dalvikvm( 8073): Added shared lib /data/data/com.maxmpz.audioplayer/files/libffmpeg.so 0x442d8700
+D/dalvikvm( 8073): No JNI_OnLoad found in /data/data/com.maxmpz.audioplayer/files/libffmpeg.so 0x442d8700
+D/dalvikvm( 8073): Trying to load lib /data/data/com.maxmpz.audioplayer/lib/libaudioplayer_native.so 0x442d8700
+D/JOGBALL (   75): Jogball, + set_jogball_mode mode=0
+D/JOGBALL (   75): Jogball, + set_jogball_mode mode=0
+D/dalvikvm( 8073): Added shared lib /data/data/com.maxmpz.audioplayer/lib/libaudioplayer_native.so 0x442d8700
+I/ActivityManager(   75): Process com.htc.RosieUtility (pid 8089) has died.
+V/MmsProvider(  139): Query uri=content://mms, match=0
+I/AudioPlayerProvider( 8073): Found storage vol_id=-792970855 path=/sdcard
+I/ActivityThread( 8098): Publishing provider org.dayup.gtask.data: org.dayup.gtask.GoogleTaskProvider
+W/su      ( 8095): request rejected (0->0 /system/bin/sh)
+D/PackageInstallationReceiver( 1255): Remove Return Code=255
+I/ActivityManager(   75): Starting activity: Intent { act=android.intent.action.MAIN flg=0x10000000 cmp=org.jtb.alogcat/.LogActivity bnds=[0,195][320,259] }
+D/JOGBALL (   75): Jogball, + set_jogball_mode mode=0
+I/ActivityManager(   75): Start proc org.jtb.alogcat for activity org.jtb.alogcat/.LogActivity: pid=8108 uid=10070 gids={1007, 1015}
+W/InputManagerService(   75): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@445374c0
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_open' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_open' (wrong CL)
+V/alogcat ( 8108): created
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for 'java_open' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for 'java_open' (wrong CL)
+I/NotificationService(   75): enqueueToast pkg=org.jtb.alogcat callback=android.app.ITransientNotification$Stub$Proxy@4470d0c8 duration=1
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_openLibs' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_openLibs' (wrong CL)
+D/alogcat ( 8108): canceling periodic saves
+V/alogcat ( 8108): started
+V/alogcat ( 8108): resumed
+D/alogcat ( 8108): starting ...
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_LloadBuffer' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_LloadBuffer' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_pcall' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_pcall' (wrong CL)
+I/ActivityManager(   75): Displayed activity org.jtb.alogcat/.LogActivity: 2601 ms (total 2601 ms)
+W/dalvikvm(   75): disableGcForExternalAlloc: false
+D/dalvikvm( 8108): GC freed 2421 objects / 168104 bytes in 188ms
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+D/NetworkLocationProvider(   75): onCellLocationChanged [17701,202]
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+I/SmsBackup+( 8064): Starting backup (53 messages)
+I/ActivityManager(   75): Process org.dayup.gtask (pid 8098) has died.
+D/vending ( 7997): [45] LocalAssetDatabase.notifyListener(): -8667028677416061123 / INSTALLED
+D/dalvikvm( 8073): GC freed 3487 objects / 320888 bytes in 378ms
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_getTop' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_getTop' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_pushJavaObject' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_pushJavaObject' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_pushNumber' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_pushNumber' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_gc' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_gc' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_getGlobal' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_getGlobal' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_isBoolean' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_isBoolean' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_type' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_type' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_toString' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_toString' (wrong CL)
+D/dalvikvm( 8108): GC freed 5199 objects / 521064 bytes in 115ms
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_isFunction' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_isFunction' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_isTable' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_isTable' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_isUserdata' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_isUserdata' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_isObject' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_isObject' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_getObjectFromUserdata' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_getObjectFromUserdata' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_toNumber' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_toNumber' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_isNil' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_isNil' (wrong CL)
+D/WifiService(   75): acquireWifiLockLocked: WifiLock{NetworkLocationProvider type=2 binder=android.os.Binder@4478d558}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+D/NetworkLocationProvider(   75): getLocation(): triggering a wifi scan
+D/NetworkLocationProvider(   75): onCellLocationChanged [17701,202]
+D/ActivityThread( 8073): Loading provider com.maxmpz.audioplayer: com.maxmpz.audioplayer.unlock.DataProvider
+I/CheckinService(   75): Checkin triggered: Intent { act=android.server.checkin.CHECKIN (has extras) }, market only = true
+I/wpa_supplicant( 7710): CTRL-EVENT-SCAN-RESULTS  Ready
+I/wpa_supplicant( 7710): - wpa_supplicant_event_scan_results RETURN (ap_scan = 2)-
+D/NetworkLocationProvider(   75): updateWifIScanResults(): 2 APs
+D/LocationMasfClient(   75): getNetworkLocation(): Location not found in cache, making network request
+D/dalvikvm( 8108): GC freed 3213 objects / 555248 bytes in 104ms
+D/LocationMasfClient(   75): getNetworkLocation(): Number of prefetched entries 4
+E/LocationMasfClient(   75): getNetworkLocation(): Returning _server_ computed location with accuracy 150
+I/ActivityManager(   75): Start proc com.google.android.apps.maps:LocationFriendService for service com.google.android.apps.maps/com.google.googlenav.friend.android.LocationFriendService: pid=8124 uid=10048 gids={3003, 1015}
+D/LocationManagerService(   75): Acquired wakelock
+D/LocationManagerService(   75): Released wakelock
+I/CheckinService(   75): Sending checkin request (5093 bytes)...
+D/dalvikvm( 8124): GC freed 1935 objects / 151608 bytes in 228ms
+D/WifiService(   75): releaseWifiLockLocked: WifiLock{NetworkLocationProvider type=2 binder=android.os.Binder@4478d558}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+I/ActivityManager(   75): Process com.htc.bg (pid 7397) has died.
+W/ActivityManager(   75): Scheduling restart of crashed service com.htc.htctwitter/.BackgroundService in 5000ms
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_pushBoolean' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_pushBoolean' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libwebcore.so' for '_toInteger' (wrong CL)
+D/dalvikvm( 8073): +++ not scanning '/system/lib/libexif.so' for '_toInteger' (wrong CL)
+I/dalvikvm( 8073): Could not find method android.media.AudioManager.registerMediaButtonEventReceiver, referenced from method com.maxmpz.audioplayer.player.PlayerMediaButtonReceiver.��
+W/dalvikvm( 8073): VFY: unable to resolve virtual method 355: Landroid/media/AudioManager;.registerMediaButtonEventReceiver (Landroid/content/ComponentName;)V
+D/dalvikvm( 8073): VFY: replacing opcode 0x6e at 0x001d
+D/dalvikvm( 8073): Making a copy of Lcom/maxmpz/audioplayer/player/PlayerMediaButtonReceiver;.�� code (84 bytes)
+D/dalvikvm( 8108): GC freed 2366 objects / 521536 bytes in 105ms
+I/dalvikvm( 8073): Could not find method android.media.AudioManager.unregisterMediaButtonEventReceiver, referenced from method com.maxmpz.audioplayer.player.PlayerMediaButtonReceiver.��
+W/dalvikvm( 8073): VFY: unable to resolve virtual method 357: Landroid/media/AudioManager;.unregisterMediaButtonEventReceiver (Landroid/content/ComponentName;)V
+D/dalvikvm( 8073): VFY: replacing opcode 0x6e at 0x001d
+D/dalvikvm( 8073): Making a copy of Lcom/maxmpz/audioplayer/player/PlayerMediaButtonReceiver;.�� code (84 bytes)
+I/AudioPolicyService(   56): getOutput(): before lock
+W/audioplayer.Application( 8073): starting headset micro service
+D/dalvikvm( 8073): GC freed 7426 objects / 448312 bytes in 292ms
+D/WifiService(   75): releaseWifiLockLocked: WifiLock{SMS Backup+ type=1 binder=android.os.BinderProxy@446903b8}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+D/dalvikvm( 8124): GC freed 2330 objects / 156280 bytes in 320ms
+D/SmsBackup+( 8064): Scheduled sync due in 1800 seconds.
+W/dalvikvm( 8064): threadid=15: thread exiting with uncaught exception (group=0x4001e390)
+E/AndroidRuntime( 8064): Uncaught handler: thread AsyncTask #1 exiting due to uncaught exception
+I/ActivityManager(   75): Process com.zegoggles.smssync (pid 8064) has died.
+I/CheckinService(   75): From server: Intent { act=android.server.checkin.FOTA_CANCEL }
+D/htcCheckinService(   75): Receive cancel Intent, but not by htc
+V/CheckinService(   75): Disabling timed checkins (interval: 0 secs)
+I/ActivityManager(   75): Start proc com.htc.bg for service com.htc.htctwitter/.BackgroundService: pid=8133 uid=10005 gids={3003, 1006, 1015}
+D/dalvikvm( 8108): GC freed 2130 objects / 518552 bytes in 180ms
+I/ActivityThread( 8133): Publishing provider com.htc.socialnetwork.flickr.provider.StreamProvider: com.htc.socialnetwork.flickr.provider.FlickrStreamProvider
+I/ActivityThread( 8133): Publishing provider com.htc.accounts: com.htc.CustomizationSetup.AccountsProvider
+I/ActivityThread( 8133): Publishing provider com.htc.socialnetwork.flickr.provider.CacheImageProvider: com.htc.socialnetwork.flickr.provider.FlickrCacheImageProvider
+I/ActivityThread( 8133): Publishing provider uploads: com.htc.providers.uploads.UploadProvider
+D/UploadManager( 8133): UploadProvider is running
+I/ActivityThread( 8133): Publishing provider com.htc.socialnetwork.facebook.provider.CacheImageProvider: com.htc.socialnetwork.facebook.provider.FacebookCacheImageProvider
+I/ActivityThread( 8133): Publishing provider com.htc.socialnetwork.facebook: com.htc.socialnetwork.facebook.FacebookDB
+W/dalvikvm( 8133): Refusing to reopen boot DEX '/system/framework/com.htc.framework.jar'
+I/TwidroidBackgroundService( 8133): ++onCreate Background Service++
+D/dalvikvm( 1255): GC freed 1784 objects / 83272 bytes in 370ms
+D/dalvikvm( 6675): GC freed 1104 objects / 86104 bytes in 160ms
+D/dalvikvm( 4593): GC freed 1109 objects / 64696 bytes in 97ms
+I/ActivityManager(   75): Process com.google.android.apps.maps:LocationFriendService (pid 8124) has died.
+D/dalvikvm(  150): GC freed 2374 objects / 155704 bytes in 281ms
+D/dalvikvm(  130): GC freed 963 objects / 42704 bytes in 334ms
+D/dalvikvm( 8108): GC freed 2067 objects / 522928 bytes in 139ms
+D/dalvikvm( 7997): GC freed 6218 objects / 447728 bytes in 228ms
+E/libagl  (   75): uses alphaPlaneWorkaround
+W/dalvikvm(   75): disableGcForExternalAlloc: false
+W/InputManagerService(   75): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@444962b8
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+D/WifiService(   75): ACTION_BATTERY_CHANGED pluggedType: 0
+D/BatteryService(   75): isUsbConnected() = false
+D/BatteryService(   75): mPlugType = 0
+D/nicolas (  449): onUsbChange
+D/nicolas (  449): 0
+D/nicolas (  449): Begin onReceive->_stopService
+D/nicolas (  449): End onReceive->_stopService
+D/UsbConnectedReceiver( 1255): action = psclient.intent.action.usb_status
+D/UsbConnectedReceiver( 1255): ACTION_BATTERY_CHANGED
+D/UsbConnectedReceiver( 1255): usbCurrentType = 0
+D/UsbConnectedReceiver( 1255): Current type is same as previous, return!
+D/dalvikvm( 4593): GC freed 478 objects / 24600 bytes in 104ms
+D/WifiService(   75): acquireWifiLockLocked: WifiLock{NetworkLocationProvider type=2 binder=android.os.Binder@4478d558}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+D/NetworkLocationProvider(   75): getLocation(): triggering a wifi scan
+D/NetworkLocationProvider(   75): onCellLocationChanged [17701,202]
+D/dalvikvm( 8108): GC freed 2170 objects / 481504 bytes in 102ms
+I/wpa_supplicant( 7710): CTRL-EVENT-SCAN-RESULTS  Ready
+I/wpa_supplicant( 7710): - wpa_supplicant_event_scan_results RETURN (ap_scan = 2)-
+D/NetworkLocationProvider(   75): updateWifIScanResults(): 3 APs
+D/LocationMasfClient(   75): getNetworkLocation(): Location not found in cache, making network request
+D/LocationMasfClient(   75): getNetworkLocation(): Number of prefetched entries 5
+E/LocationMasfClient(   75): getNetworkLocation(): Returning _server_ computed location with accuracy 150
+I/ActivityManager(   75): Start proc com.google.android.apps.maps:LocationFriendService for service com.google.android.apps.maps/com.google.googlenav.friend.android.LocationFriendService: pid=8142 uid=10048 gids={3003, 1015}
+D/LocationManagerService(   75): Acquired wakelock
+D/LocationManagerService(   75): Released wakelock
+D/dalvikvm( 8142): GC freed 1990 objects / 153704 bytes in 107ms
+D/dalvikvm( 8142): GC freed 2342 objects / 156840 bytes in 114ms
+D/WifiService(   75): releaseWifiLockLocked: WifiLock{NetworkLocationProvider type=2 binder=android.os.Binder@4478d558}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+D/WifiService(   75): ACTION_BATTERY_CHANGED pluggedType: 0
+D/BatteryService(   75): isUsbConnected() = false
+D/BatteryService(   75): mPlugType = 0
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+D/WifiService(   75): ACTION_BATTERY_CHANGED pluggedType: 0
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+D/BatteryService(   75): isUsbConnected() = false
+D/BatteryService(   75): mPlugType = 0
+D/nicolas (  449): onUsbChange
+D/nicolas (  449): 0
+D/nicolas (  449): Begin onReceive->_stopService
+D/nicolas (  449): End onReceive->_stopService
+D/UsbConnectedReceiver( 1255): action = psclient.intent.action.usb_status
+D/UsbConnectedReceiver( 1255): ACTION_BATTERY_CHANGED
+D/UsbConnectedReceiver( 1255): usbCurrentType = 0
+D/nicolas (  449): onUsbChange
+D/nicolas (  449): 0
+D/nicolas (  449): Begin onReceive->_stopService
+D/nicolas (  449): End onReceive->_stopService
+D/UsbConnectedReceiver( 1255): Current type is same as previous, return!
+D/UsbConnectedReceiver( 1255): action = psclient.intent.action.usb_status
+D/UsbConnectedReceiver( 1255): ACTION_BATTERY_CHANGED
+D/UsbConnectedReceiver( 1255): usbCurrentType = 0
+D/UsbConnectedReceiver( 1255): Current type is same as previous, return!
+D/dalvikvm( 8108): GC freed 2244 objects / 515768 bytes in 103ms
+I/ActivityManager(   75): Process com.google.android.apps.maps:LocationFriendService (pid 8142) has died.
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+D/WifiService(   75): ACTION_BATTERY_CHANGED pluggedType: 0
+D/BatteryService(   75): isUsbConnected() = false
+D/BatteryService(   75): mPlugType = 0
+D/nicolas (  449): onUsbChange
+D/nicolas (  449): 0
+D/nicolas (  449): Begin onReceive->_stopService
+D/nicolas (  449): End onReceive->_stopService
+D/UsbConnectedReceiver( 1255): action = psclient.intent.action.usb_status
+D/UsbConnectedReceiver( 1255): ACTION_BATTERY_CHANGED
+D/UsbConnectedReceiver( 1255): usbCurrentType = 0
+D/UsbConnectedReceiver( 1255): Current type is same as previous, return!
+E/libagl  (   75): uses alphaPlaneWorkaround
+W/dalvikvm(   75): disableGcForExternalAlloc: false
+D/WifiService(   75): acquireWifiLockLocked: WifiLock{NetworkLocationProvider type=2 binder=android.os.Binder@4478d558}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+D/NetworkLocationProvider(   75): getLocation(): triggering a wifi scan
+D/NetworkLocationProvider(   75): onCellLocationChanged [17701,202]
+I/wpa_supplicant( 7710): CTRL-EVENT-SCAN-RESULTS  Ready
+I/wpa_supplicant( 7710): - wpa_supplicant_event_scan_results RETURN (ap_scan = 2)-
+D/NetworkLocationProvider(   75): updateWifIScanResults(): 3 APs
+D/LocationMasfClient(   75): getNetworkLocation(): Location not found in cache, making network request
+D/LocationMasfClient(   75): getNetworkLocation(): Number of prefetched entries 5
+E/LocationMasfClient(   75): getNetworkLocation(): Returning _server_ computed location with accuracy 150
+I/ActivityManager(   75): Start proc com.google.android.apps.maps:LocationFriendService for service com.google.android.apps.maps/com.google.googlenav.friend.android.LocationFriendService: pid=8152 uid=10048 gids={3003, 1015}
+D/LocationManagerService(   75): Acquired wakelock
+D/LocationManagerService(   75): Released wakelock
+W/InputManagerService(   75): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@44975d00
+E/libagl  (   75): uses alphaPlaneWorkaround
+D/dalvikvm( 8152): GC freed 2017 objects / 154736 bytes in 105ms
+D/dalvikvm( 8152): GC freed 2347 objects / 157064 bytes in 119ms
+D/WifiService(   75): releaseWifiLockLocked: WifiLock{NetworkLocationProvider type=2 binder=android.os.Binder@4478d558}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+D/dalvikvm( 8108): GC freed 2371 objects / 517312 bytes in 148ms
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+D/WifiService(   75): ACTION_BATTERY_CHANGED pluggedType: 0
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+D/BatteryService(   75): isUsbConnected() = false
+D/BatteryService(   75): mPlugType = 0
+D/nicolas (  449): onUsbChange
+D/nicolas (  449): 0
+D/nicolas (  449): Begin onReceive->_stopService
+D/nicolas (  449): End onReceive->_stopService
+D/UsbConnectedReceiver( 1255): action = psclient.intent.action.usb_status
+D/UsbConnectedReceiver( 1255): ACTION_BATTERY_CHANGED
+D/UsbConnectedReceiver( 1255): usbCurrentType = 0
+D/UsbConnectedReceiver( 1255): Current type is same as previous, return!
+I/ActivityManager(   75): Start proc org.dayup.gtask for broadcast org.dayup.gtask/.GoogleTaskAppWidgetProviderLarge: pid=8160 uid=10076 gids={3003, 1007}
+I/ActivityThread( 8160): Publishing provider org.dayup.gtask.data: org.dayup.gtask.GoogleTaskProvider
+I/ActivityManager(   75): Process com.fd.httpd (pid 449) has died.
+W/ActivityManager(   75): Scheduling restart of crashed service com.fd.httpd/.FDHttpdSvc in 5000ms
+D/dalvikvm( 4593): GC freed 1122 objects / 65768 bytes in 296ms
+D/dalvikvm(   75): GC freed 25309 objects / 1770464 bytes in 572ms
+D/OpenSSLSessionImpl(   75): Freeing OpenSSL session
+W/Process (   75): Unable to open /proc/449/status
+I/ActivityManager(   75): Start proc com.curvefish.widgets.autorotateonoff for broadcast com.curvefish.widgets.autorotateonoff/.AutoRotateOnOff: pid=8170 uid=10081 gids={1015}
+I/ActivityManager(   75): Start proc com.fd.httpd for service com.fd.httpd/.FDHttpdSvc: pid=8176 uid=10060 gids={3003, 1015}
+I/ActivityManager(   75): Process com.curvefish.widgets.autorotateonoff (pid 8170) has died.
+I/ActivityThread( 8176): Publishing provider com.fd.httpd.provider: com.fd.httpd.FDDatabaseProvider
+D/nicolas ( 8176): onCreate
+D/dalvikvm( 8108): GC freed 2205 objects / 517848 bytes in 98ms
+D/nicolas ( 8176): onStart
+D/nicolas ( 8176): before intent == null
+D/nicolas ( 8176): onUsbChange
+D/nicolas ( 8176): 0
+D/nicolas ( 8176): Begin onReceive->_stopService
+D/nicolas ( 8176): End onReceive->_stopService
+D/dalvikvm(  130): GC freed 532 objects / 28008 bytes in 159ms
+D/dalvikvm( 4593): GC freed 868 objects / 44216 bytes in 86ms
+D/dalvikvm( 4593): GC freed 109 objects / 5896 bytes in 98ms
+D/Twitter-MessageReceiver( 8133): action com.htc.socialnetwork.account.SYNC_SERVICE
+I/SyncControl_People(  345): Sync active detected - Account: [mcconfig/com.htc.htctwitter], authority: com.htc.chirp.provider.Tweet, autoSyncFlag: 1
+I/SyncControl_Dialer(  142): Sync active detected - Account: [mcconfig/com.htc.htctwitter], authority: com.htc.chirp.provider.Tweet, autoSyncFlag: 1
+D/ActivityThread( 8133): Loading provider com.htc.chirp.provider.Tweet: com.htc.htctwitter.TwitterProvider
+D/TwidroidBackgroundService( 8133): perform sync
+I/SyncControl_People(  345): Sync active detected - Account: [mcconfig/com.htc.htctwitter], authority: com.htc.htctwitter.Users, autoSyncFlag: 1
+I/SyncControl_Dialer(  142): Sync active detected - Account: [mcconfig/com.htc.htctwitter], authority: com.htc.htctwitter.Users, autoSyncFlag: 1
+I/TwidroidBackgroundService( 8133): ++onStart Background Service++ 21:56
+D/TwidroidBackgroundService( 8133): network status 1
+D/TwidroidBackgroundService( 8133): update while roaming true
+D/TwidroidBackgroundService( 8133): sync type 0
+D/TwidroidBackgroundService( 8133): cancelService false
+I/FriendSyncService( 8133): ++onCreate FriendSyncService++
+D/ActivityThread( 8133): Loading provider com.htc.htctwitter.Users: com.htc.htctwitter.FriendProvider
+D/FriendSyncService( 8133): perform sync
+I/FriendSyncService( 8133): ++onStart FriendSyncService++
+D/FriendSyncService( 8133): start sync thread
+D/FriendSyncService( 8133): sync thread run
+D/apiurl  ( 8133): apiurl twitter.com
+D/dalvikvm( 8108): GC freed 2151 objects / 523856 bytes in 95ms
+D/apiurl  ( 8133): apiurl twitter.com
+D/Twitter ( 8133): account name = mcconfig
+D/Twitter ( 8133): account name = mcconfig
+D/apiurl  ( 8133): apiurl twitter.com
+I/TwidroidBackgroundService( 8133): 09:56 PMBackground Check started
+I/TwidroidBackgroundService( 8133): Trying to get WIFI lock
+I/ActivityManager(   75): Process com.google.android.apps.maps:LocationFriendService (pid 8152) has died.
+D/WifiService(   75): acquireWifiLockLocked: WifiLock{TwidroidBackgroundService type=1 binder=android.os.BinderProxy@4457e9e8}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+I/TwitterApiPlus( 8133): PublicMessages since_id=9934769370431488
+D/dalvikvm( 8133): GC freed 4459 objects / 291136 bytes in 105ms
+D/Twitter ( 8133): Calling URL GET: http://twitter.com/statuses/friends.json?cursor=-1
+D/Twitter ( 8133): start execute name = mcconfig
+I/TwitterApiPlus( 8133): DirectMessages since_id=0
+D/TwidroidBackgroundService( 8133): WM:9934769370431488
+D/Twitter ( 8133): Calling URL GET: http://twitter.com/statuses/home_timeline.json?count=50&page=1&since_id=9934769370431488&
+D/Twitter ( 8133): start execute name = mcconfig
+D/dalvikvm( 8133): GC freed 2363 objects / 167752 bytes in 98ms
+D/dalvikvm( 8133): GC freed 1613 objects / 100304 bytes in 102ms
+I/Resources( 8133): Loaded time zone names for en_US in 1798ms.
+I/Resources( 8133): Loaded time zone names for en_US in 1004ms.
+D/Twitter ( 8133): finish execute
+D/dalvikvm( 8133): GC freed 14218 objects / 849840 bytes in 110ms
+D/TwitterApiPlus( 8133): next_curcor = -1
+D/TwitterApiPlus( 8133): name Dropbox
+D/TwitterApiPlus( 8133): name HTMC.RU
+D/TwitterApiPlus( 8133): name Michael A. Rodionov
+D/TwitterApiPlus( 8133): name Дмитрий Медведев
+D/TwitterApiPlus( 8133): name Bill Gates
+D/TwitterApiPlus( 8133): name DevPoint
+D/TwitterApiPlus( 8133): name Готти
+D/dalvikvm( 8108): GC freed 2227 objects / 522408 bytes in 107ms
+D/TwitterApiPlus( 8133): name 0
+D/TwitterApiPlus( 8133): user name=Dropbox
+D/TwitterApiPlus( 8133): update user 14749606
+D/TwitterApiPlus( 8133): user name=HTMC.RU
+D/TwitterApiPlus( 8133): update user 77204656
+D/TwitterApiPlus( 8133): user name=Michael A. Rodionov
+D/TwitterApiPlus( 8133): update user 52746955
+D/TwitterApiPlus( 8133): user name=Дмитрий Медведев
+D/TwitterApiPlus( 8133): update user 153812887
+D/TwitterApiPlus( 8133): user name=Bill Gates
+D/TwitterApiPlus( 8133): update user 50393960
+D/TwitterApiPlus( 8133): user name=DevPoint
+D/TwitterApiPlus( 8133): update user 128119089
+D/TwitterApiPlus( 8133): user name=Готти
+D/TwitterApiPlus( 8133): update user 101652404
+D/TwitterApiPlus( 8133): insertUser applyBatch, count = 7
+D/Twitter ( 8133): Calling URL GET: http://twitter.com/statuses/followers.json?cursor=-1
+D/Twitter ( 8133): start execute name = mcconfig
+D/dalvikvm( 8133): GC freed 4521 objects / 311240 bytes in 97ms
+D/Twitter ( 8133): finish execute
+D/TwitterApiPlus( 8133): user name=Billi H. Delano
+D/TwitterApiPlus( 8133): update user 130646855
+D/TwitterApiPlus( 8133): insertUser applyBatch, count = 1
+D/FriendSyncService( 8133): sync thread finish
+I/Resources( 8133): Loaded time zone names for en_US in 7311ms.
+I/Resources( 8133): Loaded time zone names for en_US in 1085ms.
+D/Twitter ( 8133): finish execute
+D/Twitter ( 8133): size = 0 page = 1 lastId = -1
+D/TwitterApiPlus( 8133): before load old Messages applyBatch, count = 0
+I/TwidroidBackgroundService( 8133): Update Tweets: 0
+D/Twitter ( 8133): Calling URL GET: http://twitter.com/statuses/mentions.json?
+D/Twitter ( 8133): start execute name = mcconfig
+D/dalvikvm( 8133): GC freed 3217 objects / 597360 bytes in 105ms
+D/Twitter ( 8133): finish execute
+D/TwitterApiPlus( 8133): before UpdateReplies applyBatch, count = 0
+I/TwitterApiPlus( 8133): Finished UpdateReplies > 0 0  real:0
+I/TwidroidBackgroundService( 8133): Update Replies: 0
+D/Twitter ( 8133): Calling URL GET: http://twitter.com/direct_messages.json
+D/Twitter ( 8133): start execute name = mcconfig
+D/Twitter ( 8133): finish execute
+D/TwitterApiPlus( 8133): before UpdateDirectMessages applyBatch, count = 0
+I/TwitterApiPlus( 8133): Finished UpdateDirectMessages with NEW: 0
+I/TwidroidBackgroundService( 8133): Update DM: 0
+D/Twitter ( 8133): Calling URL GET: http://twitter.com/favorites/mcconfig.json
+D/Twitter ( 8133): start execute name = mcconfig
+D/dalvikvm( 8133): GC freed 1371 objects / 449168 bytes in 100ms
+D/Twitter ( 8133): finish execute
+D/TwitterApiPlus( 8133): before UpdateFavorates applyBatch, count = 0
+I/TwitterApiPlus( 8133): Finished UpdateFavorites > 0 0
+D/dalvikvm( 8108): GC freed 2738 objects / 521568 bytes in 107ms
+D/TwidroidBackgroundService( 8133): updateInCurrentAp false
+D/TwidroidBackgroundService( 8133): finish Background Service 21:56
+I/TwidroidBackgroundService( 8133): Release WIFI lock
+D/WifiService(   75): releaseWifiLockLocked: WifiLock{TwidroidBackgroundService type=1 binder=android.os.BinderProxy@4457e9e8}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+D/TwidroidBackgroundService( 8133): nullify updateThread
+D/WifiService(   75): acquireWifiLockLocked: WifiLock{NetworkLocationProvider type=2 binder=android.os.Binder@4478d558}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+D/NetworkLocationProvider(   75): getLocation(): triggering a wifi scan
+D/NetworkLocationProvider(   75): onCellLocationChanged [17701,202]
+I/wpa_supplicant( 7710): CTRL-EVENT-SCAN-RESULTS  Ready
+I/wpa_supplicant( 7710): - wpa_supplicant_event_scan_results RETURN (ap_scan = 2)-
+D/NetworkLocationProvider(   75): updateWifIScanResults(): 3 APs
+D/LocationMasfClient(   75): getNetworkLocation(): Location not found in cache, making network request
+D/LocationMasfClient(   75): getNetworkLocation(): Number of prefetched entries 5
+E/LocationMasfClient(   75): getNetworkLocation(): Returning _server_ computed location with accuracy 150
+D/dalvikvm(   55): GC freed 301 objects / 11472 bytes in 217ms
+I/ActivityManager(   75): Start proc com.google.android.apps.maps:LocationFriendService for service com.google.android.apps.maps/com.google.googlenav.friend.android.LocationFriendService: pid=8190 uid=10048 gids={3003, 1015}
+D/dalvikvm(   55): GC freed 57 objects / 2552 bytes in 187ms
+D/dalvikvm(   55): GC freed 2 objects / 56 bytes in 132ms
+D/LocationManagerService(   75): Acquired wakelock
+I/ActivityManager(   75): Process com.htc.bg (pid 8133) has died.
+D/LocationManagerService(   75): Released wakelock
+D/dalvikvm( 8190): GC freed 2123 objects / 158784 bytes in 101ms
+D/dalvikvm( 8190): GC freed 2367 objects / 157936 bytes in 104ms
+D/WifiService(   75): releaseWifiLockLocked: WifiLock{NetworkLocationProvider type=2 binder=android.os.Binder@4478d558}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+D/WifiService(   75): ACTION_BATTERY_CHANGED pluggedType: 0
+I/global  (   75): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+D/BatteryService(   75): isUsbConnected() = false
+D/BatteryService(   75): mPlugType = 0
+D/dalvikvm( 8108): GC freed 2516 objects / 523984 bytes in 127ms
+D/nicolas ( 8176): onUsbChange
+D/nicolas ( 8176): 0
+D/nicolas ( 8176): Begin onReceive->_stopService
+D/nicolas ( 8176): End onReceive->_stopService
+D/UsbConnectedReceiver( 1255): action = psclient.intent.action.usb_status
+D/UsbConnectedReceiver( 1255): ACTION_BATTERY_CHANGED
+D/UsbConnectedReceiver( 1255): usbCurrentType = 0
+D/UsbConnectedReceiver( 1255): Current type is same as previous, return!
+E/libagl  (   75): uses alphaPlaneWorkaround
+W/dalvikvm(   75): disableGcForExternalAlloc: false
+W/InputManagerService(   75): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@44839978
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+W/dalvikvm(   75): disableGcForExternalAlloc: false
+W/InputManagerService(   75): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@446a8ec8
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+W/dalvikvm(   75): disableGcForExternalAlloc: false
+W/InputManagerService(   75): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@447155a8
+E/libagl  (   75): uses alphaPlaneWorkaround
+E/libagl  (   75): uses alphaPlaneWorkaround
+W/dalvikvm(   75): disableGcForExternalAlloc: false
+W/InputManagerService(   75): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@446dd880
+E/libagl  (   75): uses alphaPlaneWorkaround
+D/JOGBALL (   75): Jogball, + set_jogball_mode mode=0
+D/JOGBALL (   75): Jogball, + set_jogball_mode mode=0
+W/InputManagerService(   75): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@448e15d0
+D/dalvikvm( 8108): GC freed 2128 objects / 462520 bytes in 222ms
+I/HTCIMEService(  136): [onCreateInputView]
+W/Resources(  136): Converting to string: TypedValue{t=0x12/d=0x0 a=3 r=0x7f090193}
+W/Resources(  136): Converting to string: TypedValue{t=0x12/d=0x0 a=3 r=0x7f090194}
+W/dalvikvm(   75): disableGcForExternalAlloc: false
+I/ActivityManager(   75): Process com.google.android.apps.maps:LocationFriendService (pid 8190) has died.
+D/dalvikvm(  136): GC freed 4380 objects / 664288 bytes in 101ms
+D/dalvikvm(  136): GC freed 900 objects / 66736 bytes in 134ms
+D/WifiService(   75): acquireWifiLockLocked: WifiLock{NetworkLocationProvider type=2 binder=android.os.Binder@4478d558}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+D/NetworkLocationProvider(   75): getLocation(): triggering a wifi scan
+D/NetworkLocationProvider(   75): onCellLocationChanged [17701,202]
+I/wpa_supplicant( 7710): CTRL-EVENT-SCAN-RESULTS  Ready
+I/wpa_supplicant( 7710): - wpa_supplicant_event_scan_results RETURN (ap_scan = 2)-
+D/NetworkLocationProvider(   75): updateWifIScanResults(): 3 APs
+D/LocationMasfClient(   75): getNetworkLocation(): Location not found in cache, making network request
+D/LocationMasfClient(   75): getNetworkLocation(): Number of prefetched entries 5
+E/LocationMasfClient(   75): getNetworkLocation(): Returning _server_ computed location with accuracy 150
+W/dalvikvm(   75): disableGcForExternalAlloc: true
+I/ActivityManager(   75): Start proc com.google.android.apps.maps:LocationFriendService for service com.google.android.apps.maps/com.google.googlenav.friend.android.LocationFriendService: pid=8201 uid=10048 gids={3003, 1015}
+I/ActivityManager(   75): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10100000 cmp=com.zegoggles.smssync/.SmsSync bnds=[163,138][237,224] }
+V/alogcat ( 8108): save instance
+V/alogcat ( 8108): paused
+I/ActivityManager(   75): Start proc com.zegoggles.smssync for activity com.zegoggles.smssync/.SmsSync: pid=8207 uid=10052 gids={3003, 1015}
+D/LocationManagerService(   75): Acquired wakelock
+D/LocationManagerService(   75): Released wakelock
+D/alogcat ( 8108): stopping ...
+I/ActivityManager(   75): Process org.dayup.gtask (pid 8160) has died.
+D/alogcat ( 8108): stopped
+W/Resources( 8207): Converting to string: TypedValue{t=0x10/d=0xffffffff a=-1}
+W/Resources( 8207): Converting to string: TypedValue{t=0x10/d=0xffffffff a=-1}
+W/Resources( 8207): Converting to string: TypedValue{t=0x10/d=0xffffffff a=-1}
+W/Resources( 8207): Converting to string: TypedValue{t=0x10/d=0x1c20 a=-1}
+W/Resources( 8207): Converting to string: TypedValue{t=0x10/d=0x1c20 a=-1}
+W/Resources( 8207): Converting to string: TypedValue{t=0x10/d=0xb4 a=-1}
+W/Resources( 8207): Converting to string: TypedValue{t=0x10/d=0xb4 a=-1}
+W/InputManagerService(   75): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@445c4830 (uid=10070 pid=8108)
+I/ActivityManager(   75): Displayed activity com.zegoggles.smssync/.SmsSync: 2567 ms (total 2567 ms)
+W/dalvikvm(   75): disableGcForExternalAlloc: false
+D/dalvikvm( 8201): GC freed 1851 objects / 148392 bytes in 555ms
+D/WifiService(   75): releaseWifiLockLocked: WifiLock{NetworkLocationProvider type=2 binder=android.os.Binder@4478d558}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+D/dalvikvm( 8201): GC freed 2317 objects / 155688 bytes in 112ms
+D/dalvikvm( 8108): GC freed 2309 objects / 480656 bytes in 118ms
+D/WifiService(   75): acquireWifiLockLocked: WifiLock{SMS Backup+ type=1 binder=android.os.BinderProxy@4471f450}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+D/dalvikvm( 8207): GC freed 5646 objects / 317136 bytes in 104ms
+V/MmsProvider(  139): Query uri=content://mms, match=0
+I/SmsBackup+( 8207): Starting backup (53 messages)
+D/WifiService(   75): releaseWifiLockLocked: WifiLock{SMS Backup+ type=1 binder=android.os.BinderProxy@4471f450}
+D/WifiService(   75): enable and start wifi due to updateWifiState
+D/SmsBackup+( 8207): Scheduled sync due in 1800 seconds.
+W/dalvikvm( 8207): threadid=15: thread exiting with uncaught exception (group=0x4001e390)
+E/AndroidRuntime( 8207): Uncaught handler: thread AsyncTask #1 exiting due to uncaught exception
+E/AndroidRuntime( 8207): java.lang.RuntimeException: An error occured while executing doInBackground()
+E/AndroidRuntime( 8207): at android.os.AsyncTask$3.done(AsyncTask.java:200)
+E/AndroidRuntime( 8207): at java.util.concurrent.FutureTask$Sync.innerSetException(FutureTask.java:273)
+E/AndroidRuntime( 8207): at java.util.concurrent.FutureTask.setException(FutureTask.java:124)
+E/AndroidRuntime( 8207): at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:307)
+E/AndroidRuntime( 8207): at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+E/AndroidRuntime( 8207): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1068)
+E/AndroidRuntime( 8207): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:561)
+E/AndroidRuntime( 8207): at java.lang.Thread.run(Thread.java:1102)
+E/AndroidRuntime( 8207): Caused by: java.lang.IllegalArgumentException: ИМЯ is not a constant in the enum type class com.zegoggles.smssync.CursorToMessage$Style
+E/AndroidRuntime( 8207): at java.lang.Enum.valueOf(Enum.java:185)
+E/AndroidRuntime( 8207): at com.zegoggles.smssync.CursorToMessage$Style.valueOf(CursorToMessage.java:79)
+E/AndroidRuntime( 8207): at com.zegoggles.smssync.CursorToMessage.<init>(CursorToMessage.java:147)
+E/AndroidRuntime( 8207): at com.zegoggles.smssync.SmsBackupService$BackupTask.backup(SmsBackupService.java:206)
+E/AndroidRuntime( 8207): at com.zegoggles.smssync.SmsBackupService$BackupTask.doInBackground(SmsBackupService.java:149)
+E/AndroidRuntime( 8207): at com.zegoggles.smssync.SmsBackupService$BackupTask.doInBackground(SmsBackupService.java:90)
+E/AndroidRuntime( 8207): at android.os.AsyncTask$2.call(AsyncTask.java:185)
+E/AndroidRuntime( 8207): at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)

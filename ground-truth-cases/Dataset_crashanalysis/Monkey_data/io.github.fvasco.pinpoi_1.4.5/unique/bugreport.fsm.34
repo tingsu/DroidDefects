@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: io.github.fvasco.pinpoi
+//version: 1.4.5
+//appro_time: 76
+ android.database.sqlite.SQLiteConstraintException: column name is not unique (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at io.github.fvasco.pinpoi.dao.PlacemarkCollectionDao.insert(PlacemarkCollectionDao.kt:82)
+ 	at io.github.fvasco.pinpoi.PlacemarkCollectionListActivity$createPlacemarkCollection$1.onClick(PlacemarkCollectionListActivity.kt:154)
+ 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

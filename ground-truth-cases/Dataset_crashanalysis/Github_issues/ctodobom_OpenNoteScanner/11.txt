@@ -1,0 +1,74 @@
+E/JavaCameraView(15738): Camera #1failed to open: Fail to connect to camera service
+V/WindowManager(27327): Adding window Window{3653eaff u0 com.todobom.opennotescanner/com.todobom.opennotescanner.OpenNoteScannerActivity} at 5 of 14 (before Window{20a38522 u0 Starting com.todobom.opennotescanner})
+E/AndroidRuntime(15738): FATAL EXCEPTION: main
+E/AndroidRuntime(15738): Process: com.todobom.opennotescanner, PID: 15738
+E/AndroidRuntime(15738): java.lang.NullPointerException: Attempt to invoke virtual method 'android.hardware.Camera$Parameters android.hardware.Camera.getParameters()' on a null object reference
+E/AndroidRuntime(15738):        at com.todobom.opennotescanner.views.OpenNoteCameraView.getResolutionList(OpenNoteCameraView.java:52)
+E/AndroidRuntime(15738):        at com.todobom.opennotescanner.views.OpenNoteCameraView.setMaxPreviewResolution(OpenNoteCameraView.java:85)
+E/AndroidRuntime(15738):        at com.todobom.opennotescanner.OpenNoteScannerActivity.onCameraViewStarted(OpenNoteScannerActivity.java:539)
+E/AndroidRuntime(15738):        at org.opencv.android.CameraBridgeViewBase.processEnterState(CameraBridgeViewBase.java:322)
+E/AndroidRuntime(15738):        at org.opencv.android.CameraBridgeViewBase.checkCurrentState(CameraBridgeViewBase.java:312)
+E/AndroidRuntime(15738):        at org.opencv.android.CameraBridgeViewBase.surfaceChanged(CameraBridgeViewBase.java:197)
+E/AndroidRuntime(15738):        at android.view.SurfaceView.updateWindow(SurfaceView.java:591)
+E/AndroidRuntime(15738):        at android.view.SurfaceView$3.onPreDraw(SurfaceView.java:176)
+E/AndroidRuntime(15738):        at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:944)
+E/AndroidRuntime(15738):        at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1970)
+E/AndroidRuntime(15738):        at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1061)
+E/AndroidRuntime(15738):        at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5891)
+E/AndroidRuntime(15738):        at android.view.Choreographer$CallbackRecord.run(Choreographer.java:767)
+E/AndroidRuntime(15738):        at android.view.Choreographer.doCallbacks(Choreographer.java:580)
+E/AndroidRuntime(15738):        at android.view.Choreographer.doFrame(Choreographer.java:550)
+E/AndroidRuntime(15738):        at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:753)
+E/AndroidRuntime(15738):        at android.os.Handler.handleCallback(Handler.java:739)
+E/AndroidRuntime(15738):        at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime(15738):        at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(15738):        at android.app.ActivityThread.main(ActivityThread.java:5374)
+E/AndroidRuntime(15738):        at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(15738):        at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(15738):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime(15738):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+W/ActivityManager(27327):   Force finishing activity 1 com.todobom.opennotescanner/.OpenNoteScannerActivity
+I/WindowManager(27327): Screen frozen for +742ms due to Window{20a38522 u0 Starting com.todobom.opennotescanner}
+I/WindowManager(27327): Screenshot max retries 4 of Token{247ce6ca ActivityRecord{1d942235 u0 com.todobom.opennotescanner/.OpenNoteScannerActivity t1193 f}} appWin=Window{20a38522 u0 Starting com.todobom.opennotescanner} drawState=3
+W/art     (27327): Long monitor contention event with owner method=void com.android.server.am.ActivityManagerService.crashApplication(com.android.server.am.ProcessRecord, android.app.ApplicationErrorReport$CrashInfo) from ActivityManagerService.java:12297 waiters=0 for 374ms
+W/ActivityManager(27327): Skipping crash dialog of ProcessRecord{2a2289c 15738:com.todobom.opennotescanner/u0a121}: disabled
+I/Process (15738): Sending signal. PID: 15738 SIG: 9
+E/lowmemorykiller( 1973): Error writing /proc/15738/oom_score_adj; errno=22
+W/ResourceType(27462): No package identifier when getting value for resource number 0x00000000
+W/PackageManager(27462): Failure retrieving resources for com.todobom.opennotescanner: Resource ID #0x0
+I/ActivityManager(27327): Process com.todobom.opennotescanner (pid 15738) has died
+W/InputDispatcher(27327): channel '299b7ad2 com.todobom.opennotescanner/com.todobom.opennotescanner.OpenNoteScannerActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(27327): channel '299b7ad2 com.todobom.opennotescanner/com.todobom.opennotescanner.OpenNoteScannerActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher(27327): channel '3653eaff com.todobom.opennotescanner/com.todobom.opennotescanner.OpenNoteScannerActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher(27327): channel '3653eaff com.todobom.opennotescanner/com.todobom.opennotescanner.OpenNoteScannerActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+V/ActivityManager(27327): killProcessGroupAsync took 58 ms for PID 15738 on thread 17
+I/WindowState(27327): WIN DEATH: Window{3653eaff u0 com.todobom.opennotescanner/com.todobom.opennotescanner.OpenNoteScannerActivity}
+W/InputDispatcher(27327): Attempted to unregister already unregistered input channel '3653eaff com.todobom.opennotescanner/com.todobom.opennotescanner.OpenNoteScannerActivity (server)'
+W/InputDispatcher(27327): Attempted to unregister already unregistered input channel '299b7ad2 com.todobom.opennotescanner/com.todobom.opennotescanner.OpenNoteScannerActivity (server)'
+W/WindowManager(27327): Failed looking up window
+W/WindowManager(27327): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@1e4fe15d does not exist
+W/WindowManager(27327):         at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8885)
+W/WindowManager(27327):         at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8876)
+W/WindowManager(27327):         at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(27327):         at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(27327): WIN DEATH: null
+W/WindowManager(27327): Failed looking up window
+W/WindowManager(27327): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@270b77a3 does not exist
+W/WindowManager(27327):         at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8885)
+W/WindowManager(27327):         at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8876)
+W/WindowManager(27327):         at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1140)
+W/WindowManager(27327):         at android.os.BinderProxy.sendDeathNotice(Binder.java:551)
+I/WindowState(27327): WIN DEATH: null
+W/WindowManager(27327): Failed looking up window
+W/WindowManager(27327): java.lang.IllegalArgumentException: Requested window android.view.ViewRootImpl$W@9c362ed does not exist
+W/WindowManager(27327):         at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8885)
+W/WindowManager(27327):         at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:8876)
+W/WindowManager(27327):         at com.android.server.wm.WindowManagerService.removeWindow(WindowManagerService.java:2664)
+W/WindowManager(27327):         at com.android.server.wm.Session.remove(Session.java:187)
+W/WindowManager(27327):         at android.view.ViewRootImpl.dispatchDetachedFromWindow(ViewRootImpl.java:3015)
+W/WindowManager(27327):         at android.view.ViewRootImpl.doDie(ViewRootImpl.java:5502)
+W/WindowManager(27327):         at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:3321)
+W/WindowManager(27327):         at android.os.Handler.dispatchMessage(Handler.java:102)
+W/WindowManager(27327):         at android.os.Looper.loop(Looper.java:135)
+W/WindowManager(27327):         at android.os.HandlerThread.run(HandlerThread.java:61)
+W/WindowManager(27327):         at com.android.server.ServiceThread.run(ServiceThread.java:46)

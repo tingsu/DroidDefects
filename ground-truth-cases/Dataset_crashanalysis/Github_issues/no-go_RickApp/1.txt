@@ -1,0 +1,16 @@
+E/AndroidRuntime(30276): java.lang.RuntimeException: Unable to start activity ComponentInfo{click.dummer.rickapp/click.dummer.rickapp.RickActivity}: java.lang.IllegalArgumentException: Invalid audio buffer size.
+E/AndroidRuntime(30276):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2339)
+E/AndroidRuntime(30276):        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2413)
+E/AndroidRuntime(30276):        at android.app.ActivityThread.access$800(ActivityThread.java:155)
+E/AndroidRuntime(30276):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1317)
+E/AndroidRuntime(30276):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(30276):        at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(30276):        at android.app.ActivityThread.main(ActivityThread.java:5343)
+E/AndroidRuntime(30276):        at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(30276):        at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(30276):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:905)
+E/AndroidRuntime(30276):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:700)
+E/AndroidRuntime(30276):        at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:102)
+E/AndroidRuntime(30276): Caused by: java.lang.IllegalArgumentException: Invalid audio buffer size.
+E/AndroidRuntime(30276):        at android.media.AudioRecord.audioBuffSizeCheck(AudioRecord.java:428)
+E/AndroidRuntime(30276):        at android.media.AudioRecord.<init>(AudioRecord.java:318)

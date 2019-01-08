@@ -1,0 +1,4 @@
+Exception in thread "main" java.lang.RuntimeException: com.google.zxing.NotFoundException
+    at org.nutz.qrcode.QRCode.from(QRCode.java:329)
+    at org.nutz.qrcode.QRCode.from(QRCode.java:287)
+    at zzh.ZZHMain.main(ZZHMain.java:9)

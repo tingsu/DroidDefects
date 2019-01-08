@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: protect.card_locker
+//version: 0.8
+//appro_time: 87
+ Error inserting barcodetype=CODE_128 store=i  _id=1 cardid=h note=z
+ android.database.sqlite.SQLiteConstraintException: PRIMARY KEY must be unique (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at protect.card_locker.DBHelper.insertLoyaltyCard(DBHelper.java:77)
+ 	at protect.card_locker.CsvDatabaseImporter.importLoyaltyCard(CsvDatabaseImporter.java:133)
+ 	at protect.card_locker.CsvDatabaseImporter.importData(CsvDatabaseImporter.java:32)
+ 	at protect.card_locker.MultiFormatImporter.importData(MultiFormatImporter.java:38)
+ 	at protect.card_locker.ImportExportTask.performImport(ImportExportTask.java:68)
+ 	at protect.card_locker.ImportExportTask.doInBackground(ImportExportTask.java:125)
+ 	at protect.card_locker.ImportExportTask.doInBackground(ImportExportTask.java:19)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

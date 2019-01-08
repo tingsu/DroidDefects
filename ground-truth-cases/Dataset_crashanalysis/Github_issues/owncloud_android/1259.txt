@@ -1,0 +1,11 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.Iterator java.util.ArrayList.iterator()' on a null object reference
+    at com.owncloud.android.ui.activity.FileDisplayActivity.requestCopyOperation(FileDisplayActivity.java:830)
+    at com.owncloud.android.ui.activity.FileDisplayActivity.access$300(FileDisplayActivity.java:119)
+    at com.owncloud.android.ui.activity.FileDisplayActivity$3.run(FileDisplayActivity.java:694)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5417)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

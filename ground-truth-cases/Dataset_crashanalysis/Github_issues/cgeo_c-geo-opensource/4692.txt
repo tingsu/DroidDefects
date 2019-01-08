@@ -1,0 +1,125 @@
+
+Other than looking at the log file and asking here is there any easy way to find what might be causing the problem?  I've tested maybe 5 other maps (almost all covering larger areas and one much larger one which includes the area causing the fault) and they all work fine.
+
+I've uploaded 2 maps to Dropbox (https://www.dropbox.com/sh/chaxjx4oxtjs9ih/AACf9g0wNcRgCOB5n4IaMWDOa?dl=0)
+
+OS_NU_android crashes and OS_TEST_android (which is a subset of it) doesn't.
+
+I'm not used to checking log files on Android but I've managed to recover:
+
+build.board: baylake
+build.bootloader: unknown
+build.brand: asus
+build.cpu_abi: x86
+build.cpu_abi2: armeabi-v7a
+build.device: K013_1
+build.display: WW-3.1.23.158
+build.fingerprint: asus/WW_K013/K013_1:4.4.2/KOT49H/WW_user_3.1.23.158_20140620:user/release-keys
+build.hardware: K013
+build.host: Androidbuilder
+build.id: KOT49H
+build.manufacturer: asus
+build.model: K013
+build.product: WW_K013
+build.radio: unknown
+build.serial: E6OKCY120175
+build.tags: release-keys
+build.time: 1403269896000
+build.type: user
+build.user: ab
+version.codename: REL
+version.incremental: WW_K013-WW_user_3.1.23.158_20140620-user-20140620
+version.release: 4.4.2
+version.sdk_int: 19
+
+--------- beginning of /dev/log/system
+02-20 11:02:02.511 E/AndroidRuntime(6502): FATAL EXCEPTION: MapWorker
+02-20 11:02:02.511 E/AndroidRuntime(6502): Process: cgeo.geocaching, PID: 6502
+02-20 11:02:02.511 E/AndroidRuntime(6502): java.lang.NullPointerException
+02-20 11:02:02.511 E/AndroidRuntime(6502): at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.renderArea(DatabaseRenderer.java:218)
+02-20 11:02:02.511 E/AndroidRuntime(6502): at org.mapsforge.android.maps.rendertheme.renderinstruction.Area.renderWay(Area.java:132)
+02-20 11:02:02.511 E/AndroidRuntime(6502): at org.mapsforge.android.maps.rendertheme.Rule.matchWay(Rule.java:217)
+02-20 11:02:02.511 E/AndroidRuntime(6502): at org.mapsforge.android.maps.rendertheme.Rule.matchWay(Rule.java:221)
+02-20 11:02:02.511 E/AndroidRuntime(6502): at org.mapsforge.android.maps.rendertheme.RenderTheme.matchWay(RenderTheme.java:198)
+02-20 11:02:02.511 E/AndroidRuntime(6502): at org.mapsforge.android.maps.rendertheme.RenderTheme.matchClosedWay(RenderTheme.java:126)
+02-20 11:02:02.511 E/AndroidRuntime(6502): at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.renderWaterBackground(DatabaseRenderer.java:264)
+02-20 11:02:02.511 E/AndroidRuntime(6502): at org.mapsforge.map.reader.MapDatabase.processBlocks(MapDatabase.java:566)
+02-20 11:02:02.511 E/AndroidRuntime(6502): at org.mapsforge.map.reader.MapDatabase.executeQuery(MapDatabase.java:263)
+02-20 11:02:02.511 E/AndroidRuntime(6502): at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.executeJob(DatabaseRenderer.java:158)
+02-20 11:02:02.511 E/AndroidRuntime(6502): at org.mapsforge.android.maps.mapgenerator.MapWorker.doWork(MapWorker.java:73)
+02-20 11:02:02.511 E/AndroidRuntime(6502): at org.mapsforge.android.maps.PausableThread.run(PausableThread.java:94)
+02-20 11:05:04.771 E/AndroidRuntime(6624): FATAL EXCEPTION: MapWorker
+02-20 11:05:04.771 E/AndroidRuntime(6624): Process: cgeo.geocaching, PID: 6624
+02-20 11:05:04.771 E/AndroidRuntime(6624): java.lang.NullPointerException
+02-20 11:05:04.771 E/AndroidRuntime(6624): at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.renderArea(DatabaseRenderer.java:218)
+02-20 11:05:04.771 E/AndroidRuntime(6624): at org.mapsforge.android.maps.rendertheme.renderinstruction.Area.renderWay(Area.java:132)
+02-20 11:05:04.771 E/AndroidRuntime(6624): at org.mapsforge.android.maps.rendertheme.Rule.matchWay(Rule.java:217)
+02-20 11:05:04.771 E/AndroidRuntime(6624): at org.mapsforge.android.maps.rendertheme.Rule.matchWay(Rule.java:221)
+02-20 11:05:04.771 E/AndroidRuntime(6624): at org.mapsforge.android.maps.rendertheme.RenderTheme.matchWay(RenderTheme.java:198)
+02-20 11:05:04.771 E/AndroidRuntime(6624): at org.mapsforge.android.maps.rendertheme.RenderTheme.matchClosedWay(RenderTheme.java:126)
+02-20 11:05:04.771 E/AndroidRuntime(6624): at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.renderWaterBackground(DatabaseRenderer.java:264)
+02-20 11:05:04.771 E/AndroidRuntime(6624): at org.mapsforge.map.reader.MapDatabase.processBlocks(MapDatabase.java:566)
+02-20 11:05:04.771 E/AndroidRuntime(6624): at org.mapsforge.map.reader.MapDatabase.executeQuery(MapDatabase.java:263)
+02-20 11:05:04.771 E/AndroidRuntime(6624): at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.executeJob(DatabaseRenderer.java:158)
+02-20 11:05:04.771 E/AndroidRuntime(6624): at org.mapsforge.android.maps.mapgenerator.MapWorker.doWork(MapWorker.java:73)
+02-20 11:05:04.771 E/AndroidRuntime(6624): at org.mapsforge.android.maps.PausableThread.run(PausableThread.java:94)
+--------- beginning of /dev/log/main
+02-20 11:10:28.361 E/MetadataRetrieverClient(193): failed to extract an album art
+02-20 11:14:39.191 E/ActivityThread(7800): Service com.android.exchange.ExchangeService has leaked ServiceConnection com.android.emailcommon.service.ServiceProxy$ProxyConnection@21ede7b0 that was originally bound here
+02-20 11:14:39.191 E/ActivityThread(7800): android.app.ServiceConnectionLeaked: Service com.android.exchange.ExchangeService has leaked ServiceConnection com.android.emailcommon.service.ServiceProxy$ProxyConnection@21ede7b0 that was originally bound here
+02-20 11:14:39.191 E/ActivityThread(7800): at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:979)
+02-20 11:14:39.191 E/ActivityThread(7800): at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:873)
+02-20 11:14:39.191 E/ActivityThread(7800): at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1629)
+02-20 11:14:39.191 E/ActivityThread(7800): at android.app.ContextImpl.bindService(ContextImpl.java:1612)
+02-20 11:14:39.191 E/ActivityThread(7800): at android.content.ContextWrapper.bindService(ContextWrapper.java:518)
+02-20 11:14:39.191 E/ActivityThread(7800): at com.android.emailcommon.service.ServiceProxy.setTask(ServiceProxy.java:157)
+02-20 11:14:39.191 E/ActivityThread(7800): at com.android.emailcommon.service.ServiceProxy.setTask(ServiceProxy.java:145)
+02-20 11:14:39.191 E/ActivityThread(7800): at com.android.emailcommon.service.AccountServiceProxy.reconcileAccounts(AccountServiceProxy.java:70)
+02-20 11:14:39.191 E/ActivityThread(7800): at com.android.exchange.ExchangeService.runAccountReconcilerSync(ExchangeService.java:1436)
+02-20 11:14:39.191 E/ActivityThread(7800): at com.android.exchange.ExchangeService$3.run(ExchangeService.java:1426)
+02-20 11:15:33.951 E/ObjectHelper(7892): Can't find method:setCompatibilityInfo
+02-20 11:15:34.101 E/WhatsNext(7498): >>>>>widget is empty
+02-20 11:17:53.231 E/bo (864): onStartInput event aborted: com.touchtype.keyboard.c.ag: could not obtain extracted text (class com.touchtype.keyboard.c.ag)
+02-20 11:18:12.421 E/WhatsNext(7498): >>>>>widget is empty
+02-20 11:18:18.551 E/memtrack(7976): Couldn't load memtrack module (No such file or directory)
+02-20 11:18:18.551 E/android.os.Debug(7976): failed to load memtrack module: -2
+02-20 11:18:18.851 E/memtrack(7991): Couldn't load memtrack module (No such file or directory)
+02-20 11:18:18.851 E/android.os.Debug(7991): failed to load memtrack module: -2
+02-20 11:18:19.221 E/memtrack(8009): Couldn't load memtrack module (No such file or directory)
+02-20 11:18:19.221 E/android.os.Debug(8009): failed to load memtrack module: -2
+02-20 11:18:19.461 E/memtrack(8024): Couldn't load memtrack module (No such file or directory)
+02-20 11:18:19.461 E/android.os.Debug(8024): failed to load memtrack module: -2
+02-20 11:19:06.591 E/cgeo (8041): [MapWorker] UncaughtException
+02-20 11:19:06.591 E/cgeo (8041): java.lang.NullPointerException
+02-20 11:19:06.591 E/cgeo (8041): at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.renderArea(DatabaseRenderer.java:218)
+02-20 11:19:06.591 E/cgeo (8041): at org.mapsforge.android.maps.rendertheme.renderinstruction.Area.renderWay(Area.java:132)
+02-20 11:19:06.591 E/cgeo (8041): at org.mapsforge.android.maps.rendertheme.Rule.matchWay(Rule.java:217)
+02-20 11:19:06.591 E/cgeo (8041): at org.mapsforge.android.maps.rendertheme.Rule.matchWay(Rule.java:221)
+02-20 11:19:06.591 E/cgeo (8041): at org.mapsforge.android.maps.rendertheme.RenderTheme.matchWay(RenderTheme.java:198)
+02-20 11:19:06.591 E/cgeo (8041): at org.mapsforge.android.maps.rendertheme.RenderTheme.matchClosedWay(RenderTheme.java:126)
+02-20 11:19:06.591 E/cgeo (8041): at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.renderWaterBackground(DatabaseRenderer.java:264)
+02-20 11:19:06.591 E/cgeo (8041): at org.mapsforge.map.reader.MapDatabase.processBlocks(MapDatabase.java:566)
+02-20 11:19:06.591 E/cgeo (8041): at org.mapsforge.map.reader.MapDatabase.executeQuery(MapDatabase.java:263)
+02-20 11:19:06.591 E/cgeo (8041): at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.executeJob(DatabaseRenderer.java:158)
+02-20 11:19:06.591 E/cgeo (8041): at org.mapsforge.android.maps.mapgenerator.MapWorker.doWork(MapWorker.java:73)
+02-20 11:19:06.591 E/cgeo (8041): at org.mapsforge.android.maps.PausableThread.run(PausableThread.java:94)
+02-20 11:19:06.591 E/AndroidRuntime(8041): FATAL EXCEPTION: MapWorker
+02-20 11:19:06.591 E/AndroidRuntime(8041): Process: cgeo.geocaching, PID: 8041
+02-20 11:19:06.591 E/AndroidRuntime(8041): java.lang.NullPointerException
+02-20 11:19:06.591 E/AndroidRuntime(8041): at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.renderArea(DatabaseRenderer.java:218)
+02-20 11:19:06.591 E/AndroidRuntime(8041): at org.mapsforge.android.maps.rendertheme.renderinstruction.Area.renderWay(Area.java:132)
+02-20 11:19:06.591 E/AndroidRuntime(8041): at org.mapsforge.android.maps.rendertheme.Rule.matchWay(Rule.java:217)
+02-20 11:19:06.591 E/AndroidRuntime(8041): at org.mapsforge.android.maps.rendertheme.Rule.matchWay(Rule.java:221)
+02-20 11:19:06.591 E/AndroidRuntime(8041): at org.mapsforge.android.maps.rendertheme.RenderTheme.matchWay(RenderTheme.java:198)
+02-20 11:19:06.591 E/AndroidRuntime(8041): at org.mapsforge.android.maps.rendertheme.RenderTheme.matchClosedWay(RenderTheme.java:126)
+02-20 11:19:06.591 E/AndroidRuntime(8041): at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.renderWaterBackground(DatabaseRenderer.java:264)
+02-20 11:19:06.591 E/AndroidRuntime(8041): at org.mapsforge.map.reader.MapDatabase.processBlocks(MapDatabase.java:566)
+02-20 11:19:06.591 E/AndroidRuntime(8041): at org.mapsforge.map.reader.MapDatabase.executeQuery(MapDatabase.java:263)
+02-20 11:19:06.591 E/AndroidRuntime(8041): at org.mapsforge.android.maps.mapgenerator.databaserenderer.DatabaseRenderer.executeJob(DatabaseRenderer.java:158)
+02-20 11:19:06.591 E/AndroidRuntime(8041): at org.mapsforge.android.maps.mapgenerator.MapWorker.doWork(MapWorker.java:73)
+02-20 11:19:06.591 E/AndroidRuntime(8041): at org.mapsforge.android.maps.PausableThread.run(PausableThread.java:94)
+02-20 11:19:49.761 E/memtrack(8116): Couldn't load memtrack module (No such file or directory)
+02-20 11:19:49.761 E/android.os.Debug(8116): failed to load memtrack module: -2
+02-20 11:19:49.991 E/memtrack(8131): Couldn't load memtrack module (No such file or directory)
+02-20 11:19:49.991 E/android.os.Debug(8131): failed to load memtrack module: -2
+02-20 11:19:50.061 F/libc (8023): Fatal signal 13 (SIGPIPE) at 0x00001f57 (code=0), thread 8023 (logcat)

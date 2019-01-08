@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: ch.bailu.aat
+//version: v1.4-beta
+//appro_time: 83
+ java.lang.NullPointerException
+ 	at ch.bailu.aat.services.OneService.appendStatusText(OneService.java:153)
+ 	at ch.bailu.aat.services.OneService.appendStatusText(OneService.java:144)
+ 	at ch.bailu.aat.services.ServiceLink.appendStatusText(ServiceLink.java:193)
+ 	at ch.bailu.aat.views.StatusTextView.updateText(StatusTextView.java:25)
+ 	at ch.bailu.aat.activities.TestActivity.onResumeWithService(TestActivity.java:190)
+ 	at ch.bailu.aat.activities.AbsServiceLink$1.onServiceUp(AbsServiceLink.java:34)
+ 	at ch.bailu.aat.services.ServiceLink.onServiceConnected(ServiceLink.java:61)
+ 	at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1106)
+ 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1123)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

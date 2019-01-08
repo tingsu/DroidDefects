@@ -1,0 +1,5 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.Long.intValue()' on a null object reference
+    at it.feio.android.omninotes.utils.ReminderHelper.addReminder(ReminderHelper.java:49)
+    at it.feio.android.omninotes.utils.ReminderHelper.addReminder(ReminderHelper.java:41)
+    at it.feio.android.omninotes.async.notes.SaveNoteTask.doInBackground(SaveNoteTask.java:62)
+    at it.feio.android.omninotes.async.notes.SaveNoteTask.doInBackground(SaveNoteTask.java:37)

@@ -1,0 +1,31 @@
+//this is an auto-generated bug report
+//package name: com.mitzuli
+//version: 1.0.8
+//appro_time: 92
+ android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@ad31e438 is not valid; is your activity running?
+ 	at android.view.ViewRootImpl.setView(ViewRootImpl.java:559)
+ 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:269)
+ 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+ 	at android.app.Dialog.show(Dialog.java:281)
+ 	at com.mitzuli.SettingsActivity.onSharedPreferenceChanged(SettingsActivity.java:244)
+ 	at android.app.SharedPreferencesImpl$EditorImpl.notifyListeners(SharedPreferencesImpl.java:475)
+ 	at android.app.SharedPreferencesImpl$EditorImpl.apply(SharedPreferencesImpl.java:385)
+ 	at android.preference.Preference.tryCommit(Preference.java:1350)
+ 	at android.preference.Preference.persistBoolean(Preference.java:1616)
+ 	at android.preference.TwoStatePreference.setChecked(TwoStatePreference.java:83)
+ 	at android.preference.TwoStatePreference.onClick(TwoStatePreference.java:69)
+ 	at android.preference.Preference.performClick(Preference.java:950)
+ 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:215)
+ 	at android.widget.AdapterView.performItemClick(AdapterView.java:298)
+ 	at android.widget.AbsListView.performItemClick(AbsListView.java:1100)
+ 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:2788)
+ 	at android.widget.AbsListView$1.run(AbsListView.java:3463)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

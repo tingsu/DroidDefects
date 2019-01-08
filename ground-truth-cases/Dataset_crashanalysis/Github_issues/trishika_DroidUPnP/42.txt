@@ -1,0 +1,138 @@
+09-10 14:10:28.923: E/AndroidRuntime(8919): java.lang.RuntimeException: Unable to stop service org.droidupnp.model.cling.UpnpService@4259bee8: android.os.NetworkOnMainThreadException
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at android.app.ActivityThread.handleStopService(ActivityThread.java:2730)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at android.app.ActivityThread.access$2100(ActivityThread.java:135)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1499)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at android.os.Handler.dispatchMessage(Handler.java:102)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at android.os.Looper.loop(Looper.java:137)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at android.app.ActivityThread.main(ActivityThread.java:4998)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at java.lang.reflect.Method.invokeNative(Native Method)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at java.lang.reflect.Method.invoke(Method.java:515)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:777)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:593)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at dalvik.system.NativeStart.main(Native Method)
+09-10 14:10:28.923: E/AndroidRuntime(8919): Caused by: android.os.NetworkOnMainThreadException
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at android.os.StrictMode$AndroidBlockGuardPolicy.onNetwork(StrictMode.java:1145)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at libcore.io.BlockGuardOs.sendto(BlockGuardOs.java:175)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at libcore.io.IoBridge.sendto(IoBridge.java:466)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at java.net.PlainDatagramSocketImpl.send(PlainDatagramSocketImpl.java:182)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at java.net.DatagramSocket.send(DatagramSocket.java:281)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.transport.impl.DatagramIOImpl.send(DatagramIOImpl.java:152)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.transport.impl.DatagramIOImpl.send(DatagramIOImpl.java:145)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.transport.RouterImpl.send(RouterImpl.java:265)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.transport.SwitchableRouterImpl.send(SwitchableRouterImpl.java:198)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.protocol.async.SendingNotification.sendMessages(SendingNotification.java:111)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.protocol.async.SendingNotification.execute(SendingNotification.java:85)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.protocol.async.SendingNotificationByebye.execute(SendingNotificationByebye.java:51)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.protocol.SendingAsync.run(SendingAsync.java:44)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.registry.LocalItems.advertiseByebye(LocalItems.java:234)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.registry.LocalItems.remove(LocalItems.java:137)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.registry.LocalItems.removeAll(LocalItems.java:164)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.registry.LocalItems.shutdown(LocalItems.java:208)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.registry.RegistryImpl.shutdown(RegistryImpl.java:380)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.UpnpServiceImpl.shutdown(UpnpServiceImpl.java:131)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.fourthline.cling.android.AndroidUpnpServiceImpl.onDestroy(AndroidUpnpServiceImpl.java:101)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at org.droidupnp.model.cling.UpnpService.onDestroy(UpnpService.java:46)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     at android.app.ActivityThread.handleStopService(ActivityThread.java:2713)
+09-10 14:10:28.923: E/AndroidRuntime(8919):     ... 10 more
+09-10 14:10:28.994: W/LocationOracleImpl(2357): Best location was null
+09-10 14:10:30.695: D/wpa_supplicant(935): RX ctrl_iface - hexdump(len=11): 53 49 47 4e 41 4c 5f 50 4f 4c 4c
+09-10 14:10:30.695: D/wpa_supplicant(935): wlan0: Control interface command 'SIGNAL_POLL'
+09-10 14:10:30.705: D/wpa_supplicant(935): nl80211: survey data missing!
+09-10 14:10:30.965: D/dalvikvm(2821): GC_FOR_ALLOC freed 893K, 9% free 12456K/13688K, paused 52ms, total 53ms
+09-10 14:10:33.708: D/wpa_supplicant(935): RX ctrl_iface - hexdump(len=11): 53 49 47 4e 41 4c 5f 50 4f 4c 4c
+09-10 14:10:33.708: D/wpa_supplicant(935): wlan0: Control interface command 'SIGNAL_POLL'
+09-10 14:10:33.708: D/wpa_supplicant(935): nl80211: survey data missing!
+09-10 14:10:36.721: D/wpa_supplicant(935): RX ctrl_iface - hexdump(len=11): 53 49 47 4e 41 4c 5f 50 4f 4c 4c
+09-10 14:10:36.721: D/wpa_supplicant(935): wlan0: Control interface command 'SIGNAL_POLL'
+09-10 14:10:36.731: D/wpa_supplicant(935): nl80211: survey data missing!
+09-10 14:10:36.791: D/dalvikvm(2821): GC_FOR_ALLOC freed 887K, 10% free 12455K/13688K, paused 52ms, total 52ms
+09-10 14:10:38.273: D/dalvikvm(8919): GC_FOR_ALLOC freed 519K, 10% free 10097K/11128K, paused 16ms, total 16ms
+09-10 14:10:38.283: V/DeviceDiscovery(8919): New device detected : Samsung Electronics BD-D5700 1.0
+09-10 14:10:38.283: V/DeviceDiscovery(8919): New device detected : Samsung Electronics BD-D5700 1.0
+09-10 14:10:38.313: V/DeviceDiscovery(8919): New device detected : Samsung Electronics BD-D5700 1.0
+09-10 14:10:38.313: V/DeviceDiscovery(8919): New device detected : Samsung Electronics BD-D5700 1.0
+09-10 14:10:39.404: W/ActivityManager(690): Activity destroy timeout for ActivityRecord{42cfb998 u0 org.droidupnp/.Main t77 f}
+09-10 14:10:39.734: D/wpa_supplicant(935): RX ctrl_iface - hexdump(len=11): 53 49 47 4e 41 4c 5f 50 4f 4c 4c
+09-10 14:10:39.734: D/wpa_supplicant(935): wlan0: Control interface command 'SIGNAL_POLL'
+09-10 14:10:39.744: D/wpa_supplicant(935): nl80211: survey data missing!
+09-10 14:10:40.555: D/dalvikvm(8919): GC_FOR_ALLOC freed 466K, 9% free 10140K/11128K, paused 18ms, total 18ms
+09-10 14:10:40.575: V/DeviceDiscovery(8919): New device detected : Sony Corporation Internet TV Box NSZ-GT1
+09-10 14:10:40.575: V/DeviceDiscovery(8919): New device detected : Sony Corporation Internet TV Box NSZ-GT1
+09-10 14:10:40.615: V/DeviceDiscovery(8919): New device detected : Sony Corporation Internet TV Box NSZ-GT1
+09-10 14:10:40.615: V/DeviceDiscovery(8919): New device detected : Sony Corporation Internet TV Box NSZ-GT1
+09-10 14:10:42.747: D/wpa_supplicant(935): RX ctrl_iface - hexdump(len=11): 53 49 47 4e 41 4c 5f 50 4f 4c 4c
+09-10 14:10:42.747: D/wpa_supplicant(935): wlan0: Control interface command 'SIGNAL_POLL'
+09-10 14:10:42.757: D/wpa_supplicant(935): nl80211: survey data missing!
+09-10 14:10:42.777: D/dalvikvm(2821): GC_FOR_ALLOC freed 886K, 10% free 12455K/13688K, paused 58ms, total 58ms
+09-10 14:10:42.827: D/dalvikvm(2821): GC_FOR_ALLOC freed 837K, 9% free 12457K/13688K, paused 26ms, total 26ms
+09-10 14:10:43.277: D/dalvikvm(8919): GC_FOR_ALLOC freed 540K, 10% free 10107K/11128K, paused 15ms, total 16ms
+09-10 14:10:43.297: V/DeviceDiscovery(8919): New device detected : PacketVideo TwonkyServer 7.3.2
+09-10 14:10:43.297: V/DeviceDiscovery(8919): New device detected : PacketVideo TwonkyServer 7.3.2
+09-10 14:10:43.328: V/DeviceDiscovery(8919): New device detected : PacketVideo Twonky NMC Queue Handler 7.3.2
+09-10 14:10:43.328: V/DeviceDiscovery(8919): New device detected : PacketVideo Twonky NMC Queue Handler 7.3.2
+09-10 14:10:43.338: V/DeviceDiscovery(8919): New device detected : PacketVideo Twonky NMC Queue Handler 7.3.2
+09-10 14:10:43.338: V/DeviceDiscovery(8919): New device detected : PacketVideo Twonky NMC Queue Handler 7.3.2
+09-10 14:10:43.388: D/dalvikvm(8919): GC_FOR_ALLOC freed 467K, 9% free 10151K/11128K, paused 16ms, total 16ms
+09-10 14:10:43.588: D/dalvikvm(8919): GC_FOR_ALLOC freed 536K, 9% free 10127K/11128K, paused 16ms, total 16ms
+09-10 14:10:43.718: V/DeviceDiscovery(8919): New device detected : PacketVideo TwonkyServer 7.3.2
+09-10 14:10:43.718: V/DeviceDiscovery(8919): New device detected : PacketVideo TwonkyServer 7.3.2
+09-10 14:10:43.718: V/UpnpDeviceListFragment(8919): New device detected : PacketVideo TwonkyServer 7.3.2
+09-10 14:10:45.770: D/wpa_supplicant(935): RX ctrl_iface - hexdump(len=11): 53 49 47 4e 41 4c 5f 50 4f 4c 4c
+09-10 14:10:45.770: D/wpa_supplicant(935): wlan0: Control interface command 'SIGNAL_POLL'
+09-10 14:10:45.770: D/wpa_supplicant(935): nl80211: survey data missing!
+09-10 14:10:47.602: D/dalvikvm(8919): GC_FOR_ALLOC freed 466K, 9% free 10172K/11128K, paused 16ms, total 17ms
+09-10 14:10:47.612: V/DeviceDiscovery(8919): New device detected : Sony Corporation Internet TV Box NSZ-GT1
+09-10 14:10:47.622: V/DeviceDiscovery(8919): New device detected : Sony Corporation Internet TV Box NSZ-GT1
+09-10 14:10:48.032: D/dalvikvm(2821): GC_FOR_ALLOC freed 877K, 9% free 12457K/13688K, paused 27ms, total 27ms
+09-10 14:10:48.763: D/wpa_supplicant(935): RX ctrl_iface - hexdump(len=11): 53 49 47 4e 41 4c 5f 50 4f 4c 4c
+09-10 14:10:48.763: D/wpa_supplicant(935): wlan0: Control interface command 'SIGNAL_POLL'
+09-10 14:10:48.773: D/wpa_supplicant(935): nl80211: survey data missing!
+09-10 14:10:48.883: D/dalvikvm(8919): GC_FOR_ALLOC freed 489K, 9% free 10194K/11128K, paused 15ms, total 16ms
+09-10 14:10:49.003: D/dalvikvm(8919): GC_FOR_ALLOC freed 481K, 9% free 10225K/11128K, paused 15ms, total 15ms
+09-10 14:10:49.043: V/DeviceDiscovery(8919): New device detected : Sony Corporation Internet TV Box NSZ-GT1
+09-10 14:10:49.043: V/DeviceDiscovery(8919): New device detected : Sony Corporation Internet TV Box NSZ-GT1
+09-10 14:10:49.043: V/UpnpDeviceListFragment(8919): New device detected : Sony Corporation Internet TV Box NSZ-GT1
+09-10 14:10:49.163: D/dalvikvm(8919): GC_FOR_ALLOC freed 565K, 9% free 10172K/11128K, paused 32ms, total 33ms
+09-10 14:10:51.786: D/wpa_supplicant(935): RX ctrl_iface - hexdump(len=11): 53 49 47 4e 41 4c 5f 50 4f 4c 4c
+09-10 14:10:51.786: D/wpa_supplicant(935): wlan0: Control interface command 'SIGNAL_POLL'
+09-10 14:10:51.796: D/wpa_supplicant(935): nl80211: survey data missing!
+09-10 14:10:53.437: D/dalvikvm(2821): GC_FOR_ALLOC freed 989K, 9% free 12457K/13688K, paused 48ms, total 48ms
+09-10 14:10:54.799: D/wpa_supplicant(935): RX ctrl_iface - hexdump(len=11): 53 49 47 4e 41 4c 5f 50 4f 4c 4c
+09-10 14:10:54.799: D/wpa_supplicant(935): wlan0: Control interface command 'SIGNAL_POLL'
+09-10 14:10:54.809: D/wpa_supplicant(935): nl80211: survey data missing!
+09-10 14:10:57.241: D/dalvikvm(8919): GC_FOR_ALLOC freed 481K, 9% free 10203K/11128K, paused 19ms, total 20ms
+09-10 14:10:57.812: D/wpa_supplicant(935): RX ctrl_iface - hexdump(len=11): 53 49 47 4e 41 4c 5f 50 4f 4c 4c
+09-10 14:10:57.812: D/wpa_supplicant(935): wlan0: Control interface command 'SIGNAL_POLL'
+09-10 14:10:57.832: D/wpa_supplicant(935): nl80211: survey data missing!
+09-10 14:10:58.612: I/PowerManagerService(690): Going to sleep due to screen timeout...
+09-10 14:10:58.622: I/Sensors(327): DSPS file:sns_smgr_sol.c(1230):SMGR: One val: 1
+09-10 14:10:58.713: D/dalvikvm(2821): GC_FOR_ALLOC freed 878K, 9% free 12457K/13688K, paused 74ms, total 75ms
+09-10 14:10:59.143: I/Sensors(327): sns_pwr.c(417):sns_pwr_set_cpu_latency: hz -1
+09-10 14:10:59.143: I/Sensors(327): DSPS file:sns_smgr_sol.c(1230):SMGR: One val: 0
+09-10 14:10:59.143: I/Sensors(327): DSPS file:sns_smgr_md.c(597):Send power vote 0 due to request from client 0 at time 629454155
+09-10 14:10:59.223: W/ProcessCpuTracker(690): Skipping unknown process pid 9087
+09-10 14:10:59.223: W/ProcessCpuTracker(690): Skipping unknown process pid 9089
+09-10 14:10:59.223: W/ProcessCpuTracker(690): Skipping unknown process pid 9090
+09-10 14:10:59.273: D/wpa_supplicant(935): RX ctrl_iface - hexdump(len=23): 44 52 49 56 45 52 20 53 45 54 53 55 53 50 45 4e 44 4d 4f 44 45 20 31
+09-10 14:10:59.273: D/wpa_supplicant(935): wlan0: Control interface command 'DRIVER SETSUSPENDMODE 1'
+09-10 14:10:59.283: D/wpa_supplicant(935): wpa_driver_nl80211_driver_cmd SETSUSPENDMODE 1 len = 0, 16
+09-10 14:10:59.283: D/LightsService(690): Excessive delay setting light: 150ms
+09-10 14:10:59.293: D/SurfaceFlinger(179): Screen released, type=0 flinger=0x406de450
+09-10 14:10:59.293: D/qdhwcomposer(179): hwc_blank: Blanking display: 0
+09-10 14:10:59.453: D/qdhwcomposer(179): hwc_blank: Done blanking display: 0
+09-10 14:10:59.453: D/SurfaceControl(690): Excessive delay in blankDisplay() while turning screen off: 167ms
+09-10 14:10:59.463: I/LockScreenService(8093): WIIKII=onReceive==action=android.intent.action.SCREEN_OFF
+09-10 14:11:00.654: I/Sensors(327): sns_pwr.c(307):releasing wakelock
+09-10 14:11:03.998: D/dalvikvm(2821): GC_FOR_ALLOC freed 888K, 9% free 12457K/13688K, paused 95ms, total 97ms
+09-10 14:11:04.418: D/BackupManagerService(690): Now staging backup of android
+09-10 14:11:04.768: D/dalvikvm(834): GC_FOR_ALLOC freed 2512K, 49% free 14813K/28500K, paused 72ms, total 76ms
+09-10 14:11:04.929: W/AccountAuthenticator(1138): confirmCredentials(Account {name=jayachandra.sontela@gmail.com, type=com.google})
+09-10 14:11:04.929: W/AccountAuthenticator(1138): java.lang.NullPointerException
+09-10 14:11:04.929: W/AccountAuthenticator(1138):   at android.os.Bundle.putAll(Bundle.java:313)
+09-10 14:11:04.929: W/AccountAuthenticator(1138):   at android.content.Intent.putExtras(Intent.java:6145)
+09-10 14:11:04.929: W/AccountAuthenticator(1138):   at com.google.android.gsf.loginservice.GoogleLoginService$AccountAuthenticatorImpl.multiProcessHopFix(GoogleLoginService.java:541)
+09-10 14:11:04.929: W/AccountAuthenticator(1138):   at com.google.android.gsf.loginservice.GoogleLoginService$AccountAuthenticatorImpl.confirmCredentials(GoogleLoginService.java:383)
+09-10 14:11:04.929: W/AccountAuthenticator(1138):   at android.accounts.AbstractAccountAuthenticator$Transport.confirmCredentials(AbstractAccountAuthenticator.java:150)
+09-10 14:11:04.929: W/AccountAuthenticator(1138):   at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:89)
+09-10 14:11:04.929: W/AccountAuthenticator(1138):   at android.os.Binder.execTransact(Binder.java:404)
+09-10 14:11:04.929: W/AccountAuthenticator(1138):   at dalvik.system.NativeStart.run(Native Method)

@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: org.ligi.gobandroid_hd
+//version: 2.5.2
+//appro_time: 69
+ java.io.FileNotFoundException: /storage/sdcard/gobandroid/sgf/review/commented/An-Jungki-vs-Chen-Yaoye-20150608-Commentary-An-Younggil.sgf: open failed: ENOENT (No such file or directory)
+ 	at libcore.io.IoBridge.open(IoBridge.java:409)
+ 	at java.io.FileOutputStream.<init>(FileOutputStream.java:88)
+ 	at java.io.FileOutputStream.<init>(FileOutputStream.java:73)
+ 	at java.io.FileWriter.<init>(FileWriter.java:42)
+ 	at org.ligi.gobandroid_hd.ui.UnzipSGFsDialog.a(SourceFile:43)
+ 	at org.ligi.gobandroid_hd.ui.UnzipSGFsDialog.a(SourceFile:39)
+ 	at org.ligi.gobandroid_hd.ui.UnzipSGFsDialog.a(SourceFile:39)
+ 	at org.ligi.gobandroid_hd.ui.UnzipSGFsDialog.a(SourceFile:39)
+ 	at org.ligi.gobandroid_hd.ui.UnzipSGFsDialog.a(SourceFile:11)
+ 	at org.ligi.gobandroid_hd.ui.UnzipSGFsDialog$1.run(SourceFile:20)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+ 	at libcore.io.Posix.open(Native Method)
+ 	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+ 	at libcore.io.IoBridge.open(IoBridge.java:393)

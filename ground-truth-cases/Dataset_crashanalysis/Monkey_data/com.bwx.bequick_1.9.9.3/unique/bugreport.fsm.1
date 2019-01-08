@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: com.bwx.bequick
+//version: 1.9.9.3
+//appro_time: 127
+ java.lang.SecurityException: Permission Denial: not allowed to send broadcast android.intent.action.AIRPLANE_MODE from pid=2596, uid=10046
+ 	at android.os.Parcel.readException(Parcel.java:1431)
+ 	at android.os.Parcel.readException(Parcel.java:1385)
+ 	at android.app.ActivityManagerProxy.broadcastIntent(ActivityManagerNative.java:2224)
+ 	at android.app.ContextImpl.sendBroadcast(ContextImpl.java:1046)
+ 	at android.content.ContextWrapper.sendBroadcast(ContextWrapper.java:344)
+ 	at com.bwx.bequick.handlers.AirplaneModeSettingHandler.setAirMode(AirplaneModeSettingHandler.java:112)
+ 	at com.bwx.bequick.handlers.AirplaneModeSettingHandler.onSwitched(AirplaneModeSettingHandler.java:82)
+ 	at com.bwx.bequick.fwk.Setting.notifySwitchClicked(Setting.java:147)
+ 	at com.bwx.bequick.renderers.ToggleSettingRenderer.onClick(ToggleSettingRenderer.java:83)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.widget.CompoundButton.performClick(CompoundButton.java:100)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

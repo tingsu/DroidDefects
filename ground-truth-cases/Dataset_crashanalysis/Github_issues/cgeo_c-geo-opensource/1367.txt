@@ -1,0 +1,13 @@
+04-03 10:24:04.095 E/cgeo ( 2097): java.lang.NullPointerException
+04-03 10:24:04.095 E/cgeo ( 2097): at cgeo.geocaching.cgCache.gatherMissingFrom(cgCache.java:286)
+04-03 10:24:04.095 E/cgeo ( 2097): at cgeo.geocaching.cgData.saveCache(cgData.java:1238)
+04-03 10:24:04.095 E/cgeo ( 2097): at cgeo.geocaching.cgeoapplication.saveCache(cgeoapplication.java:535)
+04-03 10:24:04.095 E/cgeo ( 2097): at cgeo.geocaching.SearchResult.addCache(SearchResult.java:192)
+04-03 10:24:04.095 E/cgeo ( 2097): at cgeo.geocaching.connector.gc.GCBase.parseMapJSON(GCBase.java:274)
+04-03 10:24:04.095 E/cgeo ( 2097): at cgeo.geocaching.connector.gc.GCBase.searchByViewport(GCBase.java:74)
+04-03 10:24:04.095 E/cgeo ( 2097): at cgeo.geocaching.connector.gc.GCConnector.searchByViewport(GCConnector.java:148)
+04-03 10:24:04.095 E/cgeo ( 2097): at cgeo.geocaching.connector.ConnectorFactory.searchByViewport(ConnectorFactory.java:83)
+04-03 10:24:04.095 E/cgeo ( 2097): at cgeo.geocaching.maps.CGeoMap$DownloadRunnable.run(CGeoMap.java:1208)
+04-03 10:24:04.095 E/cgeo ( 2097): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1068)
+04-03 10:24:04.095 E/cgeo ( 2097): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:561)
+04-03 10:24:04.095 E/cgeo ( 2097): at java.lang.Thread.run(Thread.java:1096) 

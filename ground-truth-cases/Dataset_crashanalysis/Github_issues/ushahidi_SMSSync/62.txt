@@ -1,0 +1,18 @@
+E/AndroidRuntime( 9326): java.lang.RuntimeException: Unable to start receiver org.addhen.smssync.receivers.CheckTaskScheduledReceiver: java.lang.UnsupportedOperationException: Exceeded maximum number of wifi locks
+E/AndroidRuntime( 9326):    at android.app.ActivityThread.handleReceiver(ActivityThread.java:1805)
+E/AndroidRuntime( 9326):    at android.app.ActivityThread.access$2400(ActivityThread.java:117)
+E/AndroidRuntime( 9326):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:981)
+E/AndroidRuntime( 9326):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 9326):    at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime( 9326):    at android.app.ActivityThread.main(ActivityThread.java:3683)
+E/AndroidRuntime( 9326):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 9326):    at java.lang.reflect.Method.invoke(Method.java:507)
+E/AndroidRuntime( 9326):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+E/AndroidRuntime( 9326):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+E/AndroidRuntime( 9326):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 9326): Caused by: java.lang.UnsupportedOperationException: Exceeded maximum number of wifi locks
+E/AndroidRuntime( 9326):    at android.net.wifi.WifiManager$WifiLock.acquire(WifiManager.java:908)
+E/AndroidRuntime( 9326):    at org.addhen.smssync.services.SmsSyncServices.sendWakefulTask(SmsSyncServices.java:78)
+E/AndroidRuntime( 9326):    at org.addhen.smssync.services.SmsSyncServices.sendWakefulTask(SmsSyncServices.java:83)
+E/AndroidRuntime( 9326):    at org.addhen.smssync.receivers.CheckTaskScheduledReceiver.onReceive(CheckTaskScheduledReceiver.java:39)
+E/AndroidRuntime( 9326):    at android.app.ActivityThread.handleReceiver(ActivityThread.java:1794)

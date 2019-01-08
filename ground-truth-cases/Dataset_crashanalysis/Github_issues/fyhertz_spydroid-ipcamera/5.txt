@@ -1,0 +1,12 @@
+12-20 13:48:42.746   26266-5118/net.majorkernelpanic.spydroid W/System.err﹕ java.lang.RuntimeException: Fail to connect to camera service
+12-20 13:48:42.746   26266-5118/net.majorkernelpanic.spydroid W/System.err﹕ at android.hardware.Camera.native_setup(Native Method)
+12-20 13:48:42.746   26266-5118/net.majorkernelpanic.spydroid W/System.err﹕ at android.hardware.Camera.<init>(Camera.java:350)
+12-20 13:48:42.746   26266-5118/net.majorkernelpanic.spydroid W/System.err﹕ at android.hardware.Camera.open(Camera.java:309)
+12-20 13:48:42.746   26266-5118/net.majorkernelpanic.spydroid W/System.err﹕ at net.majorkernelpanic.streaming.video.VideoStream.createCamera(VideoStream.java:444)
+12-20 13:48:42.746   26266-5118/net.majorkernelpanic.spydroid W/System.err﹕ at net.majorkernelpanic.streaming.video.H264Stream.testH264(H264Stream.java:126)
+12-20 13:48:42.746   26266-5118/net.majorkernelpanic.spydroid W/System.err﹕ at net.majorkernelpanic.streaming.video.H264Stream.generateSessionDescription(H264Stream.java:84)
+12-20 13:48:42.746   26266-5118/net.majorkernelpanic.spydroid W/System.err﹕ at net.majorkernelpanic.streaming.Session.getSessionDescription(Session.java:165)
+12-20 13:48:42.746   26266-5118/net.majorkernelpanic.spydroid W/System.err﹕ at net.majorkernelpanic.spydroid.api.CustomHttpServer$DescriptionRequestHandler.handle(CustomHttpServer.java:268)
+12-20 13:48:42.746   26266-5118/net.majorkernelpanic.spydroid W/System.err﹕ at org.apache.http.protocol.HttpService.doService(HttpService.java:243)
+12-20 13:48:42.746   26266-5118/net.majorkernelpanic.spydroid W/System.err﹕ at org.apache.http.protocol.HttpService.handleRequest(HttpService.java:187)
+12-20 13:48:42.746   26266-5118/net.majorkernelpanic.spydroid W/System.err﹕ at net.majorkernelpanic.http.TinyHttpServer$WorkerThread.run(TinyHttpServer.java:651)

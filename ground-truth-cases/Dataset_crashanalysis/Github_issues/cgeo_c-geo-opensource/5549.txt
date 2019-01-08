@@ -1,0 +1,27 @@
+E/AndroidRuntime(17900): java.lang.IllegalStateException: Exception thrown on Scheduler.Worker thread. Add `onError` handling.
+E/AndroidRuntime(17900):    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:60)
+E/AndroidRuntime(17900):    at android.os.Handler.handleCallback(Handler.java:739)
+E/AndroidRuntime(17900):    at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime(17900):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(17900):    at android.app.ActivityThread.main(ActivityThread.java:5289)
+E/AndroidRuntime(17900):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(17900):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(17900):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime(17900):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/AndroidRuntime(17900): Caused by: rx.exceptions.OnErrorNotImplementedException: Attempt to invoke virtual method 'void android.widget.ImageView.setImageResource(int)' on a null object reference
+E/AndroidRuntime(17900):    at rx.Observable$27.onError(Observable.java:8139)
+E/AndroidRuntime(17900):    at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:157)
+E/AndroidRuntime(17900):    at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:120)
+E/AndroidRuntime(17900):    at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:200)
+E/AndroidRuntime(17900):    at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:144)
+E/AndroidRuntime(17900):    at rx.android.app.OperatorConditionalBinding$1.onNext(OperatorConditionalBinding.java:79)
+E/AndroidRuntime(17900):    at rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber.call(OperatorObserveOn.java:207)
+E/AndroidRuntime(17900):    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)
+E/AndroidRuntime(17900):    ... 8 more
+E/AndroidRuntime(17900): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.ImageView.setImageResource(int)' on a null object reference
+E/AndroidRuntime(17900):    at cgeo.geocaching.ui.ImagesList.display(ImagesList.java:154)
+E/AndroidRuntime(17900):    at cgeo.geocaching.ui.ImagesList.access$100(ImagesList.java:56)
+E/AndroidRuntime(17900):    at cgeo.geocaching.ui.ImagesList$2.call(ImagesList.java:137)
+E/AndroidRuntime(17900):    at cgeo.geocaching.ui.ImagesList$2.call(ImagesList.java:134)
+E/AndroidRuntime(17900):    at rx.Observable$27.onNext(Observable.java:8144)
+E/AndroidRuntime(17900):    at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)

@@ -1,0 +1,11 @@
+aused by: java.lang.NullPointerException: name == null
+    at java.lang.Enum.valueOf(Enum.java:187)
+    at net.osmand.plus.osmedit.OsmPoint$Action.valueOf(OsmPoint.java:11)
+    at net.osmand.plus.osmedit.OsmBugsLayer.prepareBugDialog(OsmBugsLayer.java:411)
+    at net.osmand.plus.osmedit.OsmBugsLayer.onPrepareDialog(OsmBugsLayer.java:562)
+    at net.osmand.plus.activities.MapActivity.onPrepareDialog(MapActivity.java:794)
+    at android.app.Activity.onPrepareDialog(Activity.java:3071)
+    at android.app.Activity.restoreManagedDialogs(Activity.java:975)
+    at android.app.Activity.performRestoreInstanceState(Activity.java:918)
+    at android.app.Instrumentation.callActivityOnRestoreInstanceState(Instrumentation.java:1138)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2165)

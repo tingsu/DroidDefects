@@ -1,0 +1,39 @@
+10-05 21:40:10.100 24643 24672 E Utils   : java.lang.NoSuchMethodException: setMobileDataEnabled [boolean]
+10-05 21:40:10.100 24643 24672 E Utils   :  at java.lang.Class.getMethod(Class.java:624)
+10-05 21:40:10.100 24643 24672 E Utils   :  at java.lang.Class.getDeclaredMethod(Class.java:586)
+10-05 21:40:10.100 24643 24672 E Utils   :  at com.moez.QKSMS.mmssms.Utils.setMobileDataEnabled(Utils.java:250)
+10-05 21:40:10.100 24643 24672 E Utils   :  at com.android.mms.transaction.TransactionService.onNewIntent(TransactionService.java:237)
+10-05 21:40:10.100 24643 24672 E Utils   :  at com.android.mms.transaction.TransactionService$ServiceHandler.handleMessage(TransactionService.java:644)
+10-05 21:40:10.100 24643 24672 E Utils   :  at android.os.Handler.dispatchMessage(Handler.java:102)
+10-05 21:40:10.100 24643 24672 E Utils   :  at android.os.Looper.loop(Looper.java:148)
+10-05 21:40:10.100 24643 24672 E Utils   :  at android.os.HandlerThread.run(HandlerThread.java:61)
+10-05 21:40:10.112 24643 24671 I Adreno  : QUALCOMM build                   : cababe8, I8a8f1b7e8f
+10-05 21:40:10.112 24643 24671 I Adreno  : Build Date                       : 07/16/16
+10-05 21:40:10.112 24643 24671 I Adreno  : OpenGL ES Shader Compiler Version: XE031.09.00.03
+10-05 21:40:10.112 24643 24671 I Adreno  : Local Branch                     : 
+10-05 21:40:10.112 24643 24671 I Adreno  : Remote Branch                    : 
+10-05 21:40:10.112 24643 24671 I Adreno  : Remote Branch                    : 
+10-05 21:40:10.112 24643 24671 I Adreno  : Reconstruct Branch               : 
+10-05 21:40:10.115 24643 24671 I OpenGLRenderer: Initialized EGL, version 1.4
+10-05 21:40:10.165 24643 24654 W CursorWrapperInner: Cursor finalized without prior close()
+10-05 21:40:10.261 24643 24667 E Mms     : [839] Tried to add duplicate Conversation to Cache for threadId: 49 new conv: [48XXXXXXXXX] (tid 49)
+10-05 21:40:10.276 24643 24643 D ConnectivityManager: getMobileDataEnabled()+ subId=1
+10-05 21:40:10.277  2523  4864 D PhoneInterfaceManager: [PhoneIntfMgr] getDataEnabled: subId=1 phoneId=0
+10-05 21:40:10.278  2523  4864 D PhoneInterfaceManager: [PhoneIntfMgr] getDataEnabled: subId=1 retVal=false
+10-05 21:40:10.278 24643 24643 D ConnectivityManager: getMobileDataEnabled()- subId=1 retVal=false
+10-05 21:40:10.294 24643 24643 E Utils   : exception thrown
+10-05 21:40:10.294 24643 24643 E Utils   : java.lang.NoSuchMethodException: setMobileDataEnabled [boolean]
+10-05 21:40:10.294 24643 24643 E Utils   :  at java.lang.Class.getMethod(Class.java:624)
+10-05 21:40:10.294 24643 24643 E Utils   :  at java.lang.Class.getDeclaredMethod(Class.java:586)
+10-05 21:40:10.294 24643 24643 E Utils   :  at com.moez.QKSMS.mmssms.Utils.setMobileDataEnabled(Utils.java:250)
+10-05 21:40:10.294 24643 24643 E Utils   :  at com.android.mms.transaction.TransactionService.onDestroy(TransactionService.java:455)
+10-05 21:40:10.294 24643 24643 E Utils   :  at android.app.ActivityThread.handleStopService(ActivityThread.java:3074)
+10-05 21:40:10.294 24643 24643 E Utils   :  at android.app.ActivityThread.-wrap21(ActivityThread.java)
+10-05 21:40:10.294 24643 24643 E Utils   :  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1466)
+10-05 21:40:10.294 24643 24643 E Utils   :  at android.os.Handler.dispatchMessage(Handler.java:102)
+10-05 21:40:10.294 24643 24643 E Utils   :  at android.os.Looper.loop(Looper.java:148)
+10-05 21:40:10.294 24643 24643 E Utils   :  at android.app.ActivityThread.main(ActivityThread.java:5461)
+10-05 21:40:10.294 24643 24643 E Utils   :  at java.lang.reflect.Method.invoke(Native Method)
+10-05 21:40:10.294 24643 24643 E Utils   :  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-05 21:40:10.294 24643 24643 E Utils   :  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-05 21:40:10.294 24643 24643 E Utils   :  at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:102)

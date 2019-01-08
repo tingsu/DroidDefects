@@ -1,0 +1,6 @@
+    java.lang.RuntimeException: java.lang.Throwable: A WebView method was called on thread 'Thread-118'. All WebView methods must be called on the same thread. (Expected Looper Looper (main, tid 1) {528211a0} called on null, FYI main Looper is Looper (main, tid 1) {528211a0})
+            at android.webkit.WebView.checkThread(WebView.java:2073)
+            at android.webkit.WebView.setWebViewClient(WebView.java:1563)
+            at org.wordpress.android.ui.posts.ViewPostFragment$6.run(ViewPostFragment.java:179)
+     Caused by: java.lang.Throwable: A WebView method was called on thread 'Thread-118'. All WebView methods must be called on the same thread. (Expected Looper Looper (main, tid 1) {528211a0} called on null, FYI main Looper is Looper (main, tid 1) {528211a0})
+            at android.webkit.WebView.checkThread(WebView.java:2063)

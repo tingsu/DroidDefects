@@ -1,0 +1,51 @@
+01-08 19:32:41.314  22805-22805/org.thoughtcrime.securesms W/CreateAccountActivity? Error type: INVALID_COUNTRY_CODE. Could not interpret numbers after plus-sign.
+            at com.google.i18n.phonenumbers.PhoneNumberUtil.parseHelper(PhoneNumberUtil.java:2933)
+            at com.google.i18n.phonenumbers.PhoneNumberUtil.parse(PhoneNumberUtil.java:2775)
+            at com.google.i18n.phonenumbers.PhoneNumberUtil.parse(PhoneNumberUtil.java:2765)
+            at org.thoughtcrime.securesms.RegistrationActivity.initializeNumber(RegistrationActivity.java:120)
+            at org.thoughtcrime.securesms.RegistrationActivity.onCreate(RegistrationActivity.java:65)
+            at android.app.Activity.performCreate(Activity.java:5933)
+            at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+            at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2251)
+            at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2360)
+            at android.app.ActivityThread.access$800(ActivityThread.java:144)
+            at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1278)
+            at android.os.Handler.dispatchMessage(Handler.java:102)
+            at android.os.Looper.loop(Looper.java:135)
+            at android.app.ActivityThread.main(ActivityThread.java:5223)
+            at java.lang.reflect.Method.invoke(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:372)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:898)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:693)
+01-08 19:32:41.319  22805-22805/org.thoughtcrime.securesms I/Choreographer? Skipped 168 frames!  The application may be doing too much work on its main thread.
+01-08 19:32:41.416      520-549/system_process I/ActivityManager? Displayed org.thoughtcrime.securesms/.RegistrationActivity: +3s202ms
+01-08 19:32:41.465  22805-22805/org.thoughtcrime.securesms I/Timeline? Timeline: Activity_idle id: android.os.BinderProxy@328a1834 time:17538162
+01-08 19:32:41.794      520-549/system_process I/Timeline? Timeline: Activity_windows_visible id: ActivityRecord{37137f00 u0 org.thoughtcrime.securesms/.RegistrationActivity t117} time:17538492
+01-08 19:32:44.398  22805-22805/org.thoughtcrime.securesms D/AndroidRuntime? Shutting down VM
+01-08 19:32:44.399  22805-22805/org.thoughtcrime.securesms E/AndroidRuntime? FATAL EXCEPTION: main
+    Process: org.thoughtcrime.securesms, PID: 22805
+    java.lang.NumberFormatException: Invalid int: "1111111111111111"
+            at java.lang.Integer.invalidInt(Integer.java:138)
+            at java.lang.Integer.parse(Integer.java:413)
+            at java.lang.Integer.parseInt(Integer.java:367)
+            at java.lang.Integer.parseInt(Integer.java:334)
+            at org.thoughtcrime.securesms.RegistrationActivity$CountryCodeChangedListener.afterTextChanged(RegistrationActivity.java:227)
+            at android.widget.TextView.sendAfterTextChanged(TextView.java:7679)
+            at android.widget.TextView$ChangeWatcher.afterTextChanged(TextView.java:9451)
+            at android.text.SpannableStringBuilder.sendAfterTextChanged(SpannableStringBuilder.java:972)
+            at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:516)
+            at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:454)
+            at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:33)
+            at android.widget.TextView.paste(TextView.java:8815)
+            at android.widget.TextView.onTextContextMenuItem(TextView.java:8630)
+            at android.widget.Editor$ActionPopupWindow.onClick(Editor.java:2971)
+            at android.view.View.performClick(View.java:4756)
+            at android.view.View$PerformClick.run(View.java:19749)
+            at android.os.Handler.handleCallback(Handler.java:739)
+            at android.os.Handler.dispatchMessage(Handler.java:95)
+            at android.os.Looper.loop(Looper.java:135)
+            at android.app.ActivityThread.main(ActivityThread.java:5223)
+            at java.lang.reflect.Method.invoke(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:372)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:898)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:693)

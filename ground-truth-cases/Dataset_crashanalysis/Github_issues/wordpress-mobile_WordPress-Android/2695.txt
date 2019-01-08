@@ -1,0 +1,13 @@
+java.lang.IndexOutOfBoundsException: getChars (0 ... 25125) ends beyond length 25124
+       at android.text.SpannableStringBuilder.checkRange(SpannableStringBuilder.java:1016)
+       at android.text.SpannableStringBuilder.getChars(SpannableStringBuilder.java:913)
+       at android.text.TextUtils.getChars(TextUtils.java:70)
+       at android.text.SpannableStringBuilder.(SpannableStringBuilder.java:61)
+       at android.text.SpannableStringBuilder.(SpannableStringBuilder.java:44)
+       at org.wordpress.android.ui.posts.EditPostActivity.updatePostContent(EditPostActivity.java:915)
+       at org.wordpress.android.ui.posts.EditPostActivity.updatePostObject(EditPostActivity.java:556)
+       at org.wordpress.android.ui.posts.EditPostActivity.savePost(EditPostActivity.java:569)
+       at org.wordpress.android.ui.posts.EditPostActivity.savePost(EditPostActivity.java:564)
+       at org.wordpress.android.ui.posts.EditPostActivity.access$400(EditPostActivity.java:93)
+       at org.wordpress.android.ui.posts.EditPostActivity$AutoSaveTask.run(EditPostActivity.java:273)
+       at java.util.Timer$TimerImpl.run(Timer.java:284)

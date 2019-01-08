@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: org.linphone
+//version: 2.5.0-fdroid
+//appro_time: 95
+ java.lang.RuntimeException: Linphone Manager was already destroyed. Better use getLcIfManagerNotDestroyed and check returned value
+ 	at org.linphone.LinphoneManager.getInstance(LinphoneManager.java:371)
+ 	at org.linphone.LinphoneManager.getLc(LinphoneManager.java:379)
+ 	at org.linphone.LinphoneActivity.onClick(LinphoneActivity.java:706)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

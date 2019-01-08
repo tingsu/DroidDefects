@@ -1,0 +1,19 @@
+    java.lang.Throwable
+            at com.google.android.apps.muzei.util.LogUtil.LOGE(LogUtil.java:101)
+            at com.google.android.apps.muzei.render.GLUtil.loadTexture(GLUtil.java:95)
+            at com.google.android.apps.muzei.render.GLPicture.<init>(GLPicture.java:156)
+            at com.google.android.apps.muzei.render.MuzeiBlurRenderer$GLPictureSet.load(MuzeiBlurRenderer.java:335)
+            at com.google.android.apps.muzei.render.MuzeiBlurRenderer.setAndConsumeBitmapRegionLoader(MuzeiBlurRenderer.java:256)
+            at com.google.android.apps.muzei.render.RenderController$1$1.run(RenderController.java:78)
+            at com.google.android.apps.muzei.render.GLTextureView$GLThread.guardedRun(GLTextureView.java:1238)
+            at com.google.android.apps.muzei.render.GLTextureView$GLThread.run(GLTextureView.java:1015)
+02-12 09:50:39.196  27554-27977/? E/AndroidRuntime﹕ FATAL EXCEPTION: GLThread 1133
+    Process: net.nurik.roman.muzei, PID: 27554
+    java.lang.RuntimeException: Error loading texture (empty texture handle).
+            at com.google.android.apps.muzei.render.GLUtil.loadTexture(GLUtil.java:97)
+            at com.google.android.apps.muzei.render.GLPicture.<init>(GLPicture.java:156)
+            at com.google.android.apps.muzei.render.MuzeiBlurRenderer$GLPictureSet.load(MuzeiBlurRenderer.java:335)
+            at com.google.android.apps.muzei.render.MuzeiBlurRenderer.setAndConsumeBitmapRegionLoader(MuzeiBlurRenderer.java:256)
+            at com.google.android.apps.muzei.render.RenderController$1$1.run(RenderController.java:78)
+            at com.google.android.apps.muzei.render.GLTextureView$GLThread.guardedRun(GLTextureView.java:1238)
+            at com.google.android.apps.muzei.render.GLTextureView$GLThread.run(GLTextureView.java:1015)

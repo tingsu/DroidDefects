@@ -1,0 +1,9 @@
+E/AndroidRuntime(28664): java.lang.ArrayIndexOutOfBoundsException
+E/AndroidRuntime(28664):    at com.google.android.maps.ItemizedOverlay.getItemsAtLocation(ItemizedOverlay.java:626)
+E/AndroidRuntime(28664):    at com.google.android.maps.ItemizedOverlay.getItemAtLocation(ItemizedOverlay.java:586)
+E/AndroidRuntime(28664):    at com.google.android.maps.ItemizedOverlay.handleMotionEvent(ItemizedOverlay.java:498)
+E/AndroidRuntime(28664):    at com.google.android.maps.ItemizedOverlay.onTouchEvent(ItemizedOverlay.java:572)
+E/AndroidRuntime(28664):    at com.google.android.maps.OverlayBundle.onTouchEvent(OverlayBundle.java:63)
+E/AndroidRuntime(28664):    at com.google.android.maps.MapView.onTouchEvent(MapView.java:679)
+E/AndroidRuntime(28664):    at cgeo.geocaching.googlemaps.googleMapView.onTouchEvent(googleMapView.java:171)
+E/AndroidRuntime(28664):    at android.view.View.dispatchTouchEvent(View.java:3901)

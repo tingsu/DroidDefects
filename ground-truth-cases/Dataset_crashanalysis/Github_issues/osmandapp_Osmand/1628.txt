@@ -1,0 +1,14 @@
+java.lang.UnsupportedOperationException
+    at java.util.Collections$UnmodifiableMap.put(Collections.java:1342)
+    at net.osmand.osm.MapRenderingTypesEncoder.prepareColorTag(MapRenderingTypesEncoder.java:459)
+    at net.osmand.osm.MapRenderingTypesEncoder.processExtraTags(MapRenderingTypesEncoder.java:640)
+    at net.osmand.osm.MapRenderingTypesEncoder.getRelationPropogatedTags(MapRenderingTypesEncoder.java:73)
+    at net.osmand.data.preparation.IndexVectorMapCreator.indexMapRelationsAndMultiPolygons(IndexVectorMapCreator.java:115)
+    at net.osmand.data.preparation.IndexCreator$9.iterateEntity(IndexCreator.java:783)
+    at net.osmand.data.preparation.OsmDbAccessor.iterateOverEntities(OsmDbAccessor.java:252)
+    at net.osmand.data.preparation.OsmDbAccessor.iterateOverEntities(OsmDbAccessor.java:206)
+    at net.osmand.data.preparation.IndexCreator.indexRelations(IndexCreator.java:775)
+    at net.osmand.data.preparation.IndexCreator.generateIndexes(IndexCreator.java:594)
+    at net.osmand.data.preparation.IndexCreator.generateIndexes(IndexCreator.java:518)
+    at net.osmand.MainUtilities.generateObf(MainUtilities.java:90)
+    at net.osmand.MainUtilities.main(MainUtilities.java:55)`

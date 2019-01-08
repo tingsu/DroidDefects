@@ -1,0 +1,16 @@
+//this is an auto-generated bug report
+//package name: pep.android.k9
+//version: 0.9.3
+//appro_time: 67
+ java.lang.UnsatisfiedLinkError: Couldn't load pEpJNI from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/pep.android.k9-1.apk"],nativeLibraryDirectories=[/data/app-lib/pep.android.k9-1, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at org.pEp.jniadapter.AbstractEngine.<clinit>(AbstractEngine.java:10)
+ 	at com.fsck.k9.pEp.PEpProviderImpl.createEngineSession(PEpProviderImpl.java:77)
+ 	at com.fsck.k9.pEp.PEpProviderImpl.createEngineInstanceIfNeeded(PEpProviderImpl.java:418)
+ 	at com.fsck.k9.pEp.PEpProviderImpl.<init>(PEpProviderImpl.java:38)
+ 	at com.fsck.k9.pEp.PEpProviderFactory.createProvider(PEpProviderFactory.java:19)
+ 	at com.fsck.k9.controller.MessagingController.runInBackground(MessagingController.java:201)
+ 	at com.fsck.k9.controller.MessagingController.access$000(MessagingController.java:122)
+ 	at com.fsck.k9.controller.MessagingController$1.run(MessagingController.java:184)
+ 	at java.lang.Thread.run(Thread.java:841)

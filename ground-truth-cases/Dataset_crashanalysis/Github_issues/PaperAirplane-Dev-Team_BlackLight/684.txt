@@ -1,0 +1,17 @@
+java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1001, result=-1, data=Intent { dat=file:///data/data/com.oppo.gallery3d/files/rotate_temp.jpg }} to activity {us.shandian.blacklight/us.shandian.blacklight.ui.statuses.NewPostActivity}: java.lang.NullPointerException
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3319)
+    at android.app.ActivityThread.handleSendResult(ActivityThread.java:3362)
+    at android.app.ActivityThread.access$1100(ActivityThread.java:159)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1365)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:153)
+    at android.app.ActivityThread.main(ActivityThread.java:5048)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:511)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:821)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:584)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+    at us.shandian.blacklight.ui.statuses.NewPostActivity.onActivityResult(NewPostActivity.java:290)
+    at android.app.Activity.dispatchActivityResult(Activity.java:5263)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3315)

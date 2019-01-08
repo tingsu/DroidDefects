@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: org.passwordmaker.android
+//version: 1.1.10
+//appro_time: 172
+ java.lang.RuntimeException: Unable to resume activity {org.passwordmaker.android/org.passwordmaker.android.PasswordMakerProForAndroidActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=4, result=0, data=null} to activity {org.passwordmaker.android/org.passwordmaker.android.PasswordMakerProForAndroidActivity}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2790)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2266)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=4, result=0, data=null} to activity {org.passwordmaker.android/org.passwordmaker.android.PasswordMakerProForAndroidActivity}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3367)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2777)
+ Caused by: java.lang.NullPointerException
+ 	at org.passwordmaker.android.PasswordMakerProForAndroidActivity.onActivityResult(PasswordMakerProForAndroidActivity.java:385)
+ 	at android.app.Activity.dispatchActivityResult(Activity.java:5322)
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3363)

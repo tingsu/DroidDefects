@@ -1,0 +1,17 @@
+    org.mozilla.mozstumbler.communicator.AbstractCommunicator$HttpErrorException
+            at org.mozilla.mozstumbler.communicator.AbstractCommunicator.sendData(AbstractCommunicator.java:96)
+            at org.mozilla.mozstumbler.communicator.AbstractCommunicator.send(AbstractCommunicator.java:109)
+            at org.mozilla.mozstumbler.communicator.Submitter.cleanSend(Submitter.java:40)
+            at org.mozilla.mozstumbler.sync.SyncAdapter.onPerformSync(SyncAdapter.java:91)
+            at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:247)
+```
+
+I could also see the following error repeated several times:
+
+`03-20 08:19:39.959    1298-2054/org.mozilla.mozstumbler:.ScannerService E/org.mozilla.mozstumbler.cellscanner.CellInfo﹕ java.lang.IllegalArgumentException: Unexpected network type: 0
+            at org.mozilla.mozstumbler.cellscanner.CellInfo.getCellRadioTypeName(CellInfo.java:320)
+            at org.mozilla.mozstumbler.cellscanner.CellInfo.setCellLocation(CellInfo.java:176)
+            at org.mozilla.mozstumbler.cellscanner.DefaultCellScanner.getCurrentCellInfo(DefaultCellScanner.java:125)
+            at org.mozilla.mozstumbler.cellscanner.DefaultCellScanner.getCellInfo(DefaultCellScanner.java:91)
+            at org.mozilla.mozstumbler.cellscanner.CellScanner$1.run(CellScanner.java:64)
+            at java.util.Timer$TimerImpl.run(Timer.java:284)`

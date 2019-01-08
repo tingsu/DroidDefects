@@ -1,0 +1,6 @@
+        java.util.ConcurrentModificationException
+        at java.util.ArrayList$ArrayListIterator.next(ArrayList.java:573)
+        at com.namelessdev.mpdroid.fragments.PlaylistFragment.update(PlaylistFragment.java:241)
+        at com.namelessdev.mpdroid.fragments.PlaylistFragment.update(PlaylistFragment.java:225)
+        at com.namelessdev.mpdroid.fragments.PlaylistFragment$4.run(PlaylistFragment.java:339)
+        at java.lang.Thread.run(Thread.java:841)

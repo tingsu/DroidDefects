@@ -1,0 +1,37 @@
+
+It seems to stop playing almost at the end (95%>). But because it does not get to 100% the slider will never reset itself to the beginning. Does not affect longer voice messages (e.g. 2 seconds and above work fine)
+
+Signal 3.5.0, Nexus 5, stock 5.1.1
+
+Edit:
+Here's a debug log: https://gist.github.com/anonymous/9f8dcbd1bfbeb01d02c7
+I tried to play the message four times. Last three tries are when the slider is around >95%
+Relevant part:(?)
+
+```
+W/AudioSlidePlayer( 5132): onComplete
+W/AudioView( 5132): playbutton onClick
+D/MediaPlayer( 5132): Couldn't open file on client side, trying server side
+I/AudioAttachmentServer( 5132): Header: user-agent : stagefright/1.2 (Linux;Android 5.1.1)
+I/AudioAttachmentServer( 5132): Header: accept-encoding : gzip
+I/AudioAttachmentServer( 5132): Header: host : 127.0.0.1:42460
+I/AudioAttachmentServer( 5132): Header: connection : Keep-Alive
+I/AudioAttachmentServer( 5132): headers: HTTP/1.1 200 OK
+I/AudioAttachmentServer( 5132): Content-Type: audio/*
+I/AudioAttachmentServer( 5132): Accept-Ranges: bytes
+I/AudioAttachmentServer( 5132): Content-Length: 2214
+I/AudioAttachmentServer( 5132): Connection: Keep-Alive
+I/AudioAttachmentServer( 5132): 
+E/MediaPlayer( 5132): Should have subtitle controller already set
+W/AudioSlidePlayer( 5132): onPrepared
+W/AudioSlidePlayer( 5132): onComplete
+W/AudioAttachmentServer( 5132): java.net.SocketTimeoutException
+W/AudioAttachmentServer( 5132):     at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:99)
+W/AudioAttachmentServer( 5132):     at java.net.ServerSocket.implAccept(ServerSocket.java:216)
+W/AudioAttachmentServer( 5132):     at java.net.ServerSocket.accept(ServerSocket.java:140)
+W/AudioAttachmentServer( 5132):     at org.thoughtcrime.securesms.audio.AudioAttachmentServer.run(AudioAttachmentServer.java:85)
+W/AudioAttachmentServer( 5132):     at java.lang.Thread.run(Thread.java:818)
+W/AudioAttachmentServer( 5132): Caused by: android.system.ErrnoException: accept failed: EAGAIN (Try again)
+W/AudioAttachmentServer( 5132):     at libcore.io.Posix.accept(Native Method)
+W/AudioAttachmentServer( 5132):     at libcore.io.BlockGuardOs.accept(BlockGuardOs.java:63)
+W/AudioAttachmentServer( 5132):     at java.net.PlainSocketImpl.accept(PlainSocketImpl.java:89)

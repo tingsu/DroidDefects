@@ -1,0 +1,13 @@
+java.lang.AssertionError: Should not perform wait action
+    at rabbitescape.engine.solution.SolutionRunner$1.caseWaitAction(SolutionRunner.java:107)
+    at rabbitescape.engine.solution.WaitAction.typeSwitch(WaitAction.java:64)
+    at rabbitescape.engine.solution.SolutionRunner.doPerformAction(SolutionRunner.java:102)
+    at rabbitescape.engine.solution.SolutionRunner.performAction(SolutionRunner.java:75)
+    at rabbitescape.ui.text.InputHandler.handle(InputHandler.java:77)
+    at rabbitescape.ui.text.TextGameLaunch.run(TextGameLaunch.java:61)
+    at rabbitescape.render.Main.launchGame(Main.java:54)
+    at rabbitescape.ui.text.TextMenu.level(TextMenu.java:116)
+    at rabbitescape.ui.text.TextMenu.handleTarget(TextMenu.java:102)
+    at rabbitescape.ui.text.TextMenu.run(TextMenu.java:86)
+    at rabbitescape.ui.text.TextMain.run(TextMain.java:35)
+    at rabbitescape.ui.text.TextMain.main(TextMain.java:30)

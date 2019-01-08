@@ -1,0 +1,22 @@
+java.lang.RuntimeException: Unable to resume activity {com.money.manager.ex/com.money.manager.ex.settings.SecuritySettingsActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=android:fragment:0, request=10, result=-1, data=Intent { (has extras) }} to activity {com.money.manager.ex/com.money.manager.ex.settings.SecuritySettingsActivity}: java.lang.NullPointerException
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2975)
+    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3004)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2397)
+    at android.app.ActivityThread.access$900(ActivityThread.java:169)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1280)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:146)
+    at android.app.ActivityThread.main(ActivityThread.java:5487)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1283)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1099)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=android:fragment:0, request=10, result=-1, data=Intent { (has extras) }} to activity {com.money.manager.ex/com.money.manager.ex.settings.SecuritySettingsActivity}: java.lang.NullPointerException
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3580)
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2962)
+    ... 12 more
+Caused by: java.lang.NullPointerException
+    at com.money.manager.ex.settings.SecuritySettingsFragment.onActivityResult(SecuritySettingsFragment.java:113)
+    at android.app.Activity.dispatchActivityResult(Activity.java:5647)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3576)

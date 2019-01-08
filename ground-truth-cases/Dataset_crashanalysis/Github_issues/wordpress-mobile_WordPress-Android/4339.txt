@@ -1,0 +1,11 @@
+    java.lang.NullPointerException: Attempt to invoke virtual method 'void android.view.View.setBackgroundColor(int)' on a null object reference
+        at org.wordpress.android.ui.prefs.MultiSelectListView.onItemLongClick(MultiSelectListView.java:68)
+        at android.widget.AbsListView.performLongPress(AbsListView.java:3151)
+        at android.widget.AbsListView$CheckForLongPress.run(AbsListView.java:3083)
+        at android.os.Handler.handleCallback(Handler.java:739)
+        at android.os.Handler.dispatchMessage(Handler.java:95)
+        at android.os.Looper.loop(Looper.java:148)
+        at android.app.ActivityThread.main(ActivityThread.java:5461)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

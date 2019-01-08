@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: com.intervigil.micdroid
+//version: 0.44
+//appro_time: 50
+ java.lang.UnsatisfiedLinkError: Couldn't load autotalent from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.intervigil.micdroid-1.apk"],nativeLibraryDirectories=[/data/app-lib/com.intervigil.micdroid-1, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at net.sourceforge.autotalent.Autotalent.<clinit>(Autotalent.java:7)
+ 	at com.intervigil.micdroid.Mic.updateAutoTalentPreferences(Mic.java:361)
+ 	at com.intervigil.micdroid.Mic.onActivityResult(Mic.java:234)
+ 	at android.app.Activity.dispatchActivityResult(Activity.java:5322)
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3363)
+ 	at android.app.ActivityThread.handleSendResult(ActivityThread.java:3410)
+ 	at android.app.ActivityThread.access$1100(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1304)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

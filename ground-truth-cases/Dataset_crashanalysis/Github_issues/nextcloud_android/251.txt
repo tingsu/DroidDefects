@@ -1,0 +1,48 @@
+- Jun 14, 3:36 PM, v1.0.0, Xperia Z5 Compact (E5823), `One of my folders kill the nextcloud app. This also happend on owncloud.`
+- #760 at some point browsing through the folders
+
+### Environment data
+
+Android version: 6.0
+
+Device model: LG G4 (p1), Xperia Z4 (SOV31), HTC One M9 (htc_himauhl), HTC One (M8) (htc_m8), SHIELD Tablet (shieldtablet)
+
+Stock or customized system: -
+
+Nextcloud app version: 1.0.0 to least 1.4.2 RC4
+### Logs
+
+```
+java.lang.IndexOutOfBoundsException: Invalid index 5, size is 1
+    at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+    at java.util.ArrayList.get(ArrayList.java:308)
+    at android.widget.HeaderViewListAdapter.isEnabled(HeaderViewListAdapter.java:164)
+    at android.widget.AbsListView.onInitializeAccessibilityNodeInfoForItem(AbsListView.java:2525)
+    at android.widget.ListView.onInitializeAccessibilityNodeInfoForItem(ListView.java:3949)
+    at android.widget.AbsListView$ListItemAccessibilityDelegate.onInitializeAccessibilityNodeInfo(AbsListView.java:2452)
+    at android.view.View.onInitializeAccessibilityNodeInfo(View.java:6079)
+    at android.view.View.createAccessibilityNodeInfoInternal(View.java:6040)
+    at android.view.View$AccessibilityDelegate.createAccessibilityNodeInfo(View.java:22348)
+    at android.view.View.createAccessibilityNodeInfo(View.java:6023)
+    at android.view.accessibility.AccessibilityRecord.setSource(AccessibilityRecord.java:145)
+    at android.view.accessibility.AccessibilityRecord.setSource(AccessibilityRecord.java:119)
+    at android.view.View.onInitializeAccessibilityEventInternal(View.java:5977)
+    at android.view.View$AccessibilityDelegate.onInitializeAccessibilityEvent(View.java:22260)
+    at android.view.View.onInitializeAccessibilityEvent(View.java:5963)
+    at android.view.View.sendAccessibilityEventUncheckedInternal(View.java:5830)
+    at android.view.View$AccessibilityDelegate.sendAccessibilityEventUnchecked(View.java:22199)
+    at android.view.View.sendAccessibilityEventUnchecked(View.java:5813)
+    at android.view.View.sendAccessibilityEventInternal(View.java:5792)
+    at android.view.View$AccessibilityDelegate.sendAccessibilityEvent(View.java:22157)
+    at android.view.View.sendAccessibilityEvent(View.java:5757)
+    at android.widget.AdapterView.performItemClick(AdapterView.java:317)
+    at android.widget.AbsListView.performItemClick(AbsListView.java:1188)
+    at android.widget.AbsListView$PerformClick.run(AbsListView.java:3100)
+    at android.widget.AbsListView$3.run(AbsListView.java:4091)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5525)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:730)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:620)

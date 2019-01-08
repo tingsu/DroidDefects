@@ -1,0 +1,26 @@
+02-16 21:06:01.405 16384-16384/me.ccrama.redditslide A/art: art/runtime/check_jni.cc:65]   native: #14 pc 000522cf  /data/dalvik-cache/arm/system@framework@boot.oat (Java_android_os_MessageQueue_nativePollOnce__JI+102)
+02-16 21:06:01.405 16384-16384/me.ccrama.redditslide A/art: art/runtime/check_jni.cc:65]   at android.os.MessageQueue.nativePollOnce(Native method)
+02-16 21:06:01.405 16384-16384/me.ccrama.redditslide A/art: art/runtime/check_jni.cc:65]   at android.os.MessageQueue.next(MessageQueue.java:143)
+02-16 21:06:01.405 16384-16384/me.ccrama.redditslide A/art: art/runtime/check_jni.cc:65]   at android.os.Looper.loop(Looper.java:122)
+02-16 21:06:01.405 16384-16384/me.ccrama.redditslide A/art: art/runtime/check_jni.cc:65]   at android.app.ActivityThread.main(ActivityThread.java:5272)
+02-16 21:06:01.405 16384-16384/me.ccrama.redditslide A/art: art/runtime/check_jni.cc:65]   at java.lang.reflect.Method.invoke!(Native method)
+02-16 21:06:01.406 16384-16384/me.ccrama.redditslide A/art: art/runtime/check_jni.cc:65]   at java.lang.reflect.Method.invoke(Method.java:372)
+02-16 21:06:01.406 16384-16384/me.ccrama.redditslide A/art: art/runtime/check_jni.cc:65]   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:909)
+02-16 21:06:01.406 16384-16384/me.ccrama.redditslide A/art: art/runtime/check_jni.cc:65]   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:704)
+02-16 21:06:01.406 16384-16384/me.ccrama.redditslide A/art: art/runtime/check_jni.cc:65] 
+```
+
+and sometime I get this
+
+```
+02-16 21:08:02.655 17636-17636/me.ccrama.redditslide E/AndroidRuntime: FATAL EXCEPTION: main
+                                                                       Process: me.ccrama.redditslide, PID: 17636
+                                                                       java.lang.IllegalStateException: Unable to create layer for CardView
+                                                                           at android.os.MessageQueue.nativePollOnce(Native Method)
+                                                                           at android.os.MessageQueue.next(MessageQueue.java:143)
+                                                                           at android.os.Looper.loop(Looper.java:122)
+                                                                           at android.app.ActivityThread.main(ActivityThread.java:5272)
+                                                                           at java.lang.reflect.Method.invoke(Native Method)
+                                                                           at java.lang.reflect.Method.invoke(Method.java:372)
+                                                                           at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:909)
+                                                                           at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:704)

@@ -1,0 +1,165 @@
+10-27 21:53:37.830 E/AndroidRuntime(9724): java.lang.UnsatisfiedLinkError: calculateAgreement
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at org.whispersystems.libaxolotl.ecc.Curve25519.calculateAgreement(Native Method)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at org.whispersystems.libaxolotl.ecc.Curve25519.calculateAgreement(Curve25519.java:53)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at org.whispersystems.libaxolotl.ecc.Curve.calculateAgreement(Curve.java:53)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at org.whispersystems.libaxolotl.ratchet.RootKey.createChain(RootKey.java:45)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at org.whispersystems.libaxolotl.SessionCipher.getOrCreateChainKey(SessionCipher.java:286)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:254)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:212)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:195)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at org.thoughtcrime.securesms.crypto.TextSecureCipher.decrypt(TextSecureCipher.java:51)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at org.thoughtcrime.securesms.crypto.DecryptingQueue$DecryptionWorkItem.handleRemoteAsymmetricEncrypt(DecryptingQueue.java:391)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at org.thoughtcrime.securesms.crypto.DecryptingQueue$DecryptionWorkItem.run(DecryptingQueue.java:475)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+10-27 21:53:37.830 E/AndroidRuntime(9724):  at java.lang.Thread.run(Thread.java:864)
+10-27 21:53:37.840 E/EmbeddedLogger(1588): App crashed! Process: org.thoughtcrime.securesms
+10-27 21:53:37.840 E/EmbeddedLogger(1588): App crashed! Package: org.thoughtcrime.securesms v83 (2.2.0)
+10-27 21:53:37.840 E/EmbeddedLogger(1588): Application Label: TextSecure
+10-27 21:53:37.850 W/ActivityManager(1588):   Force finishing activity org.thoughtcrime.securesms/.ConversationActivity
+10-27 21:53:37.860 D/ViewRootImpl(1588): @@@- disable SystemServer HW acceleration
+10-27 21:53:37.900 D/dalvikvm(2232): GC_FOR_ALLOC freed 738K, 37% free 3508K/5539K, paused 158ms
+10-27 21:53:37.960 I/Adreno200-EGLSUB(1435): <CreateImage:893>: Android Image
+10-27 21:53:37.960 I/Adreno200-EGLSUB(1435): <GetImageAttributes:1102>: RGBA_8888
+10-27 21:53:37.990 I/dalvikvm(9724): Total arena pages for JIT: 18
+10-27 21:53:38.040 W/dalvikvm(9724): No implementation found for native Lorg/whispersystems/libaxolotl/ecc/Curve25519;.calculateAgreement ([B[B)[B
+10-27 21:53:38.050 W/dalvikvm(9724): threadid=21: thread exiting with uncaught exception (group=0x40a9d228)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724): crash in the same process: pool-4-thread-2
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724): java.lang.UnsatisfiedLinkError: calculateAgreement
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at org.whispersystems.libaxolotl.ecc.Curve25519.calculateAgreement(Native Method)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at org.whispersystems.libaxolotl.ecc.Curve25519.calculateAgreement(Curve25519.java:53)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at org.whispersystems.libaxolotl.ecc.Curve.calculateAgreement(Curve.java:53)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at org.whispersystems.libaxolotl.ratchet.RootKey.createChain(RootKey.java:45)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at org.whispersystems.libaxolotl.SessionCipher.getOrCreateChainKey(SessionCipher.java:286)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:254)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:212)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:195)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at org.thoughtcrime.securesms.crypto.TextSecureCipher.decrypt(TextSecureCipher.java:51)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at org.thoughtcrime.securesms.crypto.DecryptingQueue$PushDecryptionWorkItem.run(DecryptingQueue.java:218)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+10-27 21:53:38.050 E/AndroidRuntime_2_crash(9724):  at java.lang.Thread.run(Thread.java:864)
+10-27 21:53:38.110 I/CVW     (2232): Dismiss CandidateViewWindow WCLID:0
+10-27 21:53:38.110 I/CVW     (2232): Dismiss CandidateViewWindow WCLID:1
+10-27 21:53:38.110 I/CVW     (2232): Dismiss CandidateViewWindow WCLID:2
+10-27 21:53:38.110 I/CVW     (2232): Dismiss CandidateViewWindow WCLID:3
+10-27 21:53:38.160 W/dalvikvm(9724): No implementation found for native Lorg/whispersystems/libaxolotl/ecc/Curve25519;.calculateAgreement ([B[B)[B
+10-27 21:53:38.200 W/dalvikvm(9724): threadid=22: thread exiting with uncaught exception (group=0x40a9d228)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724): crash in the same process: pool-4-thread-3
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724): java.lang.UnsatisfiedLinkError: calculateAgreement
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at org.whispersystems.libaxolotl.ecc.Curve25519.calculateAgreement(Native Method)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at org.whispersystems.libaxolotl.ecc.Curve25519.calculateAgreement(Curve25519.java:53)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at org.whispersystems.libaxolotl.ecc.Curve.calculateAgreement(Curve.java:53)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at org.whispersystems.libaxolotl.ratchet.RootKey.createChain(RootKey.java:45)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at org.whispersystems.libaxolotl.SessionCipher.getOrCreateChainKey(SessionCipher.java:286)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:254)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:212)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at org.whispersystems.libaxolotl.SessionCipher.decrypt(SessionCipher.java:195)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at org.thoughtcrime.securesms.crypto.TextSecureCipher.decrypt(TextSecureCipher.java:51)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at org.thoughtcrime.securesms.crypto.DecryptingQueue$PushDecryptionWorkItem.run(DecryptingQueue.java:218)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+10-27 21:53:38.210 E/AndroidRuntime_3_crash(9724):  at java.lang.Thread.run(Thread.java:864)
+10-27 21:53:38.240 D/dalvikvm(2232): GC_EXPLICIT freed 32K, 25% free 4164K/5539K, paused 19ms+10ms
+10-27 21:53:38.240 I/CVW     (2232): Dismiss CandidateViewWindow WCLID:0
+10-27 21:53:38.240 I/CVW     (2232): Dismiss CandidateViewWindow WCLID:1
+10-27 21:53:38.240 I/CVW     (2232): Dismiss CandidateViewWindow WCLID:2
+10-27 21:53:38.240 I/CVW     (2232): Dismiss CandidateViewWindow WCLID:3
+10-27 21:53:38.240 I/XT9_C   (2232): [T9_ReleaseBuffer] Release memory of LDB#0
+10-27 21:53:38.250 D/memalloc(2232): /dev/pmem: Unmapping buffer base:0x52906000 size:12779520 offset:11980800
+10-27 21:53:38.250 D/memalloc(2232): /dev/pmem: Unmapping buffer base:0x54a13000 size:21774336 offset:20975616
+10-27 21:53:38.350 W/ActivityManager(1588): Activity pause timeout for ActivityRecord{41b58f10 org.thoughtcrime.securesms/.ConversationActivity}
+10-27 21:53:38.400 I/dalvikvm(9724): Could not find method android.view.ViewTreeObserver.removeOnGlobalLayoutListener, referenced from method com.astuetz.PagerSlidingTabStrip$1.onGlobalLayout
+10-27 21:53:38.400 W/dalvikvm(9724): VFY: unable to resolve virtual method 6906: Landroid/view/ViewTreeObserver;.removeOnGlobalLayoutListener (Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+10-27 21:53:38.400 D/dalvikvm(9724): VFY: replacing opcode 0x6e at 0x0031
+10-27 21:53:38.400 D/ConnectivityService(1588): onUidRulesChanged(uid=10168, uidRules=0)
+10-27 21:53:38.461 D/dalvikvm(9523): GC_CONCURRENT freed 1854K, 58% free 4131K/9827K, paused 135ms+20ms
+10-27 21:53:38.791 D/dalvikvm(9724): GC_CONCURRENT freed 957K, 19% free 4697K/5795K, paused 3ms+4ms
+10-27 21:53:38.871 I/Adreno200-EGLSUB(1435): <CreateImage:893>: Android Image
+10-27 21:53:38.871 I/Adreno200-EGLSUB(1435): <GetImageAttributes:1102>: RGBA_8888
+10-27 21:53:38.931 D/dalvikvm(9724): GC_FOR_ALLOC freed 807K, 26% free 4963K/6691K, paused 60ms
+10-27 21:53:38.991 D/dalvikvm(9724): GC_FOR_ALLOC freed 495K, 25% free 5124K/6819K, paused 44ms
+10-27 21:53:39.181 D/PhoneStatusBarPolicy(1661): silentresetvalue = 0, mTimerEnabled = false
+10-27 21:53:39.181 D/PhoneStatusBarPolicy(1661): updateSignalStrength(), in service, remove timer
+10-27 21:53:39.191 D/PhoneStatusBarPolicy(1661): isCdma():false hasService:true mSimState=UNKNOWN gprsState=0 mDataState=0 dataActivity=0 mPhone.htcModemLinkOn:false hspa==true
+10-27 21:53:39.191 D/PhoneStatusBarPolicy(1661): updateDataIcon(), silentresetvalue = 0, mTimerEnabled = false
+10-27 21:53:39.191 D/PhoneStatusBarPolicy(1661): updateDataIcon(), in data service, do nothing
+10-27 21:53:39.221 I/Adreno200-EGLSUB(1435): <CreateImage:893>: Android Image
+10-27 21:53:39.221 I/Adreno200-EGLSUB(1435): <GetImageAttributes:1158>: RGBX_8888
+10-27 21:53:39.221 W/ResourceType(1588): Skipping entry 0x7f040002 in package table 0 because it is not complex!
+10-27 21:53:39.221 W/ResourceType(1588): Skipping entry 0x7f040001 in package table 0 because it is not complex!
+10-27 21:53:39.301 W/CpuWake (1588): >>releaseCpuPerfWakeLock
+10-27 21:53:39.301 W/CpuWake (1588): <<releaseCpuPerfWakeLock
+10-27 21:53:39.502 W/memalloc(1435): /dev/pmem: No more pmem available
+10-27 21:53:39.502 W/memalloc(1435): Falling back to ashmem
+10-27 21:53:39.502 D/memalloc(1435): ashmem: Allocated buffer base:0x4378b000 size:1536000 fd:75
+10-27 21:53:39.502 D/memalloc(9523): ashmem: Mapped buffer base:0x51cac000 size:1536000 fd:54
+10-27 21:53:39.552 I/Adreno200-EGLSUB(1435): <CreateImage:893>: Android Image
+10-27 21:53:39.552 I/Adreno200-EGLSUB(1435): <GetImageAttributes:1158>: RGBX_8888
+10-27 21:53:39.652 D/dalvikvm(9724): GC_CONCURRENT freed 841K, 15% free 6056K/7075K, paused 3ms+3ms
+10-27 21:53:39.952 D/ConnectivityService(1588): onUidRulesChanged(uid=10144, uidRules=1)
+10-27 21:53:39.992 W/PhoneNumberFormatter(9724): Got local CC: DE
+10-27 21:53:40.012 D/SqliteDatabaseCpp(9724): DB info: open db, path = /data/data/org.thoughtcrime.securesms/databases , key = s`awhev[davegtkvq, flag = 6, file size = 10240
+10-27 21:53:40.012 D/SqliteDatabaseCpp(9724): DB info: path = /data/data/org.thoughtcrime.securesms/databases , key = s`awhev[davegtkvq, handle: 0x1eb1388, type: w, r/w: (0,1), mode: truncate, disk free size: 382 M
+10-27 21:53:40.042 W/PhoneNumberFormatter(9724): Got local CC: DE
+10-27 21:53:40.052 W/MmsSmsDatabase(9724): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (thread_id = 1) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (thread_id = 1) ORDER BY date_received ASC)
+10-27 21:53:40.132 W/MmsCommunication(9724): Getting MMSC params for apn null
+10-27 21:53:40.132 D/memalloc(9724): /dev/pmem: Unmapping buffer base:0x54d62000 size:11980800 offset:10444800
+10-27 21:53:40.132 D/memalloc(9724): /dev/pmem: Unmapping buffer base:0x538ba000 size:5836800 offset:4300800
+10-27 21:53:40.142 D/memalloc(1435): ashmem: Freeing buffer base:0x43514000 size:1536000 fd:63
+10-27 21:53:40.152 D/memalloc(9724): /dev/pmem: Unmapping buffer base:0x5456c000 size:7372800 offset:5836800
+10-27 21:53:40.152 D/memalloc(9724): /dev/pmem: Unmapping buffer base:0x558cf000 size:8908800 offset:7372800
+10-27 21:53:40.172 D/OpenGLRenderer(9724): Flushing caches (mode 1)
+10-27 21:53:40.202 W/KeyCachingService(9724): Incrementing activity count...
+10-27 21:53:40.202 W/KeyCachingService(9724): Decrementing activity count...
+10-27 21:53:40.202 W/KeyCachingService(9724): Starting timeout: 900000
+10-27 21:53:40.292 D/SqliteDatabaseCpp(9724): DB info: open db, path = /data/data/org.thoughtcrime.securesms/databases , key = Yhjw, flag = 1, file size = 262144
+10-27 21:53:40.302 D/SqliteDatabaseCpp(9724): DB info: path = /data/data/org.thoughtcrime.securesms/databases , key = Yhjw, handle: 0x1de01d0, type: r, r/w: (1,0), mode: truncate, disk free size: 382 M
+10-27 21:53:40.342 W/TelephonyUtil(9724): Choosing MCC+MNC info from TelephonyManager.getSimOperator()
+10-27 21:53:40.342 W/ApnDatabase(9724): Querying table for MCC+MNC 26203 without APN name
+10-27 21:53:40.432 W/ApnDatabase(9724): Returning preferred APN Apn{ mmsc: "http://mms/eplus", proxy: "212.23.97.153", port: 5080 }
+10-27 21:53:40.603 W/MmsSmsDatabase(9724): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+10-27 21:53:40.633 I/PowerManagerService-JNI(1588): [Stability] PowerManagerService_userActivity JNI pass power key event to PowerManagerService userActivity()
+10-27 21:53:40.643 W/SQLiteCursor(9724): Close cursor android.database.sqlite.SQLiteCursor@4122b810 on null twice or more
+10-27 21:53:40.713 D/Process (9724): killProcess, pid=9724
+10-27 21:53:40.713 D/Process (9724): dalvik.system.VMStack.getThreadStackTrace(Native Method)
+10-27 21:53:40.713 D/Process (9724): java.lang.Thread.getStackTrace(Thread.java:599)
+10-27 21:53:40.713 D/Process (9724): android.os.Process.killProcess(Process.java:807)
+10-27 21:53:40.713 D/Process (9724): com.android.internal.os.RuntimeInit$UncaughtHandler.uncaughtException(RuntimeInit.java:104)
+10-27 21:53:40.713 D/Process (9724): java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+10-27 21:53:40.713 D/Process (9724): java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+10-27 21:53:40.713 I/Process (9724): Sending signal. PID: 9724 SIG: 9
+10-27 21:53:40.723 D/WifiStateMachine(1588): fetchRssiAndLinkSpeedNative RSSI = -81
+10-27 21:53:40.723 D/WifiStateMachine(1588): fetchRssiAndLinkSpeedNative send RSSIChange intent, newSignalLevel =1mLastSignalLevel = 2
+10-27 21:53:40.753 W/ContentService(1588): binderDied() at ObserverNode
+10-27 21:53:40.753 I/ActivityManager(1588): Process org.thoughtcrime.securesms (pid 9724) has died.
+10-27 21:53:40.753 W/ActivityManager(1588): Scheduling restart of crashed service org.thoughtcrime.securesms/.service.KeyCachingService in 5000ms
+10-27 21:53:40.763 D/lights  (1588): [LedInfo] write attr ok name=/sys/class/leds/amber/brightness string=0,len=1
+10-27 21:53:40.763 D/lights  (1588): [LedInfo] write attr ok name=/sys/class/leds/amber/blink string=0,len=1
+10-27 21:53:40.763 D/lights  (1588): [LedInfo] write attr ok name=/sys/class/leds/amber/off_timer string=0 0,len=3
+10-27 21:53:40.763 D/lights  (1588): [LedInfo] write attr ok name=/sys/class/leds/green/brightness string=0,len=1
+10-27 21:53:40.773 D/lights  (1588): [LedInfo] write attr ok name=/sys/class/leds/green/blink string=0,len=1
+10-27 21:53:40.773 D/lights  (1588): [LedInfo] write attr ok name=/sys/class/leds/green/off_timer string=0 0,len=3
+10-27 21:53:40.893 W/InputManagerService(1588): Got RemoteException sending setActive(false) notification to pid 9724 uid 10144
+10-27 21:53:40.893 I/InputManagerService(1588): [startInputLocked] Enable input method client.
+10-27 21:53:40.933 D/dalvikvm(1661): GC_CONCURRENT freed 1862K, 38% free 5572K/8931K, paused 4ms+4ms
+10-27 21:53:40.973 D/memalloc(1588): /dev/pmem: Unmapping buffer base:0x560e2000 size:368640 offset:0
+10-27 21:53:40.973 D/memalloc(1588): /dev/pmem: Unmapping buffer base:0x5a8fa000 size:12349440 offset:11980800
+10-27 21:53:43.726 D/WifiStateMachine(1588): fetchRssiAndLinkSpeedNative RSSI = -83
+10-27 21:53:43.726 D/WifiStateMachine(1588): fetchRssiAndLinkSpeedNative send RSSIChange intent, SameSignalLevelCount =1
+10-27 21:53:45.197 D/PhoneStatusBarPolicy(1661): silentresetvalue = 0, mTimerEnabled = false
+10-27 21:53:45.197 D/PhoneStatusBarPolicy(1661): updateSignalStrength(), in service, remove timer
+10-27 21:53:45.237 D/PhoneStatusBarPolicy(1661): isCdma():false hasService:true mSimState=UNKNOWN gprsState=0 mDataState=0 dataActivity=0 mPhone.htcModemLinkOn:false hspa==true
+10-27 21:53:45.237 D/PhoneStatusBarPolicy(1661): updateDataIcon(), silentresetvalue = 0, mTimerEnabled = false
+10-27 21:53:45.237 D/PhoneStatusBarPolicy(1661): updateDataIcon(), in data service, do nothing
+10-27 21:53:45.788 I/ActivityManager(1588): Start proc org.thoughtcrime.securesms for service org.thoughtcrime.securesms/.service.KeyCachingService: pid=9860 uid=10144 gids={3003, 1015}
+10-27 21:53:46.148 I/PowerManagerService-JNI(1588): [Stability] PowerManagerService_userActivity JNI pass power key event to PowerManagerService userActivity()
+10-27 21:53:46.218 D/dalvikvm(9523): GC_CONCURRENT freed 1709K, 58% free 4144K/9827K, paused 2ms+9ms
+10-27 21:53:46.288 D/dalvikvm(1661): GC_CONCURRENT freed 2144K, 43% free 5180K/8931K, paused 1ms+2ms
+10-27 21:53:46.308 I/ActivityThread(9860): Pub org.thoughtcrime.provider.securesms: org.thoughtcrime.securesms.providers.PartProvider
+10-27 21:53:46.408 D/SqliteDatabaseCpp(9860): Registering sqlite logging func: /data/data/org.thoughtcrime.securesms/databases/_jobqueue-TextSecureJobs
+10-27 21:53:46.408 D/SqliteDatabaseCpp(9860): DB info: open db, path = /data/data/org.thoughtcrime.securesms/databases , key = [nkfiueue-TeptWeguveN, flag = 6, file size = 4096
+10-27 21:53:46.408 D/SqliteDatabaseCpp(9860): DB info: path = /data/data/org.thoughtcrime.securesms/databases , key = [nkfiueue-TeptWeguveN, handle: 0x1829358, type: w, r/w: (0,1), mode: truncate, disk free size: 382 M
+10-27 21:53:46.438 I/dalvikvm(9860): Could not find method android.provider.Telephony$Sms.getDefaultSmsPackage, referenced from method org.thoughtcrime.securesms.util.Util.isDefaultSmsProvider
+10-27 21:53:46.438 W/dalvikvm(9860): VFY: unable to resolve static method 1314: Landroid/provider/Telephony$Sms;.getDefaultSmsPackage (Landroid/content/Context;)Ljava/lang/String;
+10-27 21:53:46.448 D/dalvikvm(9860): VFY: replacing opcode 0x71 at 0x000a

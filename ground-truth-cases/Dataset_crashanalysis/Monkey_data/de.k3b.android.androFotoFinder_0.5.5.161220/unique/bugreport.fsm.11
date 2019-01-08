@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: de.k3b.android.androFotoFinder
+//version: 0.5.5.161220
+//appro_time: 89
+ FATAL EXCEPTION: main
+ java.lang.NullPointerException
+ 	at java.io.File.fixSlashes(File.java:185)
+ 	at java.io.File.<init>(File.java:134)
+ 	at de.k3b.android.androFotoFinder.imagedetail.ImageDetailActivityViewPager.onRenameDirQueston(ImageDetailActivityViewPager.java:931)
+ 	at de.k3b.android.androFotoFinder.imagedetail.ImageDetailActivityViewPager.onOptionsItemSelected(ImageDetailActivityViewPager.java:811)
+ 	at android.app.Activity.onMenuItemSelected(Activity.java:2566)
+ 	at com.android.internal.policy.impl.PhoneWindow.onMenuItemSelected(PhoneWindow.java:986)
+ 	at com.android.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:742)
+ 	at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:152)
+ 	at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:881)
+ 	at com.android.internal.view.menu.MenuPopupHelper.onItemClick(MenuPopupHelper.java:156)
+ 	at android.widget.AdapterView.performItemClick(AdapterView.java:298)
+ 	at android.widget.AbsListView.performItemClick(AbsListView.java:1100)
+ 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:2788)
+ 	at android.widget.AbsListView$1.run(AbsListView.java:3463)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

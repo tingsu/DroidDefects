@@ -1,0 +1,12 @@
+E/AndroidRuntime( 9185): java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+E/AndroidRuntime( 9185):    at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+E/AndroidRuntime( 9185):    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:459)
+E/AndroidRuntime( 9185):    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:515)
+E/AndroidRuntime( 9185):    at cgeo.geocaching.connector.gc.Tile.requestMapTile(Tile.java:223)
+E/AndroidRuntime( 9185):    at cgeo.geocaching.connector.gc.GCMap.searchByViewport(GCMap.java:243)
+E/AndroidRuntime( 9185):    at cgeo.geocaching.connector.gc.GCConnector.searchByViewport(GCConnector.java:115)
+E/AndroidRuntime( 9185):    at cgeo.geocaching.connector.ConnectorFactory.searchByViewport(ConnectorFactory.java:74)
+E/AndroidRuntime( 9185):    at cgeo.geocaching.maps.CGeoMap$DownloadRunnable.run(CGeoMap.java:1151)
+E/AndroidRuntime( 9185):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1068)
+E/AndroidRuntime( 9185):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:561)
+E/AndroidRuntime( 9185):    at java.lang.Thread.run(Thread.java:1096)

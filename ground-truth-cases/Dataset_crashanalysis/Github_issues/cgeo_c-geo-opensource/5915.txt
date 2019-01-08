@@ -1,0 +1,57 @@
+
+Message should disappear, and map shown. Or at least if there is something wrong don't hang like this.
+##### Version of c:geo used:
+
+current release (self build)
+##### Is the problem reproducible for you?
+
+Yes.
+##### System information:
+
+```
+--- System information ---
+Device: m8 (cm_m8, htc)
+Android version: 6.0.1
+Android build: cm_m8-userdebug 6.0.1 MOB30R 702ea7c7ee test-keys
+Cgeo version: 2016.08.21-6de45ba developer build
+Google Play services: enabled
+Low power mode: inactive
+Compass capabilities: yes
+Rotation vector sensor: present
+Orientation sensor: present
+Magnetometer & Accelerometer sensor: present
+Direction sensor used: rotation vector
+Hide own/found: false
+Map strategy: fast
+HW acceleration: enabled (default state)
+System language: en_US
+Log date format: 8/21/16
+Debug mode active: yes (cgeo forced to English)
+Geocaching sites enabled:
+geocaching.com: Logged in (Login OK) / PREMIUM
+Installed cgeo plugins: none
+--- End of system information ---
+```
+##### Other comments and remarks:
+
+Why `Static Maps` entry is only visible when cache is stored?
+
+```
+08-21 23:24:09.333 2923-5219/cgeo.geocaching E/cgeo: [Thread-9895] UncaughtException
+                                                     android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
+                                                         at android.view.ViewRootImpl.checkThread(ViewRootImpl.java:6566)
+                                                         at android.view.ViewRootImpl.focusableViewAvailable(ViewRootImpl.java:3042)
+                                                         at android.view.ViewGroup.focusableViewAvailable(ViewGroup.java:761)
+                                                         at android.view.ViewGroup.focusableViewAvailable(ViewGroup.java:761)
+                                                         at android.view.ViewGroup.focusableViewAvailable(ViewGroup.java:761)
+                                                         at android.view.ViewGroup.focusableViewAvailable(ViewGroup.java:761)
+                                                         at android.view.View.setFlags(View.java:10565)
+                                                         at android.view.View.setFocusableInTouchMode(View.java:7508)
+                                                         at android.widget.AdapterView.checkFocus(AdapterView.java:744)
+                                                         at android.widget.AdapterView$AdapterDataSetObserver.onChanged(AdapterView.java:839)
+                                                         at android.widget.AbsListView$AdapterDataSetObserver.onChanged(AbsListView.java:6203)
+                                                         at android.database.DataSetObservable.notifyChanged(DataSetObservable.java:37)
+                                                         at android.widget.BaseAdapter.notifyDataSetChanged(BaseAdapter.java:50)
+                                                         at android.widget.ArrayAdapter.notifyDataSetChanged(ArrayAdapter.java:301)
+                                                         at android.widget.ArrayAdapter.add(ArrayAdapter.java:197)
+                                                         at cgeo.geocaching.staticmaps.StaticMapsActivity$LoadMapsThread.run(StaticMapsActivity.java:100)

@@ -1,0 +1,95 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'void com.google.android.gms.maps.GoogleMap.setOnMarkerClickListener(com.google.android.gms.maps.GoogleMap$OnMarkerClickListener)' on a null object reference
+    at org.onebusaway.android.map.googlemapsv2.StopOverlay.<init>(StopOverlay.java:135)
+    at org.onebusaway.android.map.googlemapsv2.BaseMapFragment.setupStopOverlay(BaseMapFragment.java:354)
+    at org.onebusaway.android.map.googlemapsv2.BaseMapFragment.setFocusStop(BaseMapFragment.java:931)
+    at org.onebusaway.android.report.ui.InfrastructureIssueActivity.prepareServiceList(InfrastructureIssueActivity.java:762)
+    at org.onebusaway.android.report.ui.InfrastructureIssueActivity.onServicesTaskCompleted(InfrastructureIssueActivity.java:729)
+    at org.onebusaway.android.report.connection.ServiceListTask.onPostExecute(ServiceListTask.java:85)
+    at org.onebusaway.android.report.connection.ServiceListTask.onPostExecute(ServiceListTask.java:33)
+    at android.os.AsyncTask.finish(AsyncTask.java:651)
+    at android.os.AsyncTask.access$500(AsyncTask.java:180)
+    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:168)
+    at android.app.ActivityThread.main(ActivityThread.java:5885)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:819)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:709)
+```
+
+There is also a similar-ish stack trace only for v2.1.2:
+
+```
+java.lang.NullPointerException
+    at org.onebusaway.android.map.googlemapsv2.StopOverlay.<init>(StopOverlay.java:135)
+    at org.onebusaway.android.map.googlemapsv2.BaseMapFragment.setupStopOverlay(BaseMapFragment.java:359)
+    at org.onebusaway.android.map.googlemapsv2.BaseMapFragment.setFocusStop(BaseMapFragment.java:936)
+    at org.onebusaway.android.ui.HomeActivity.onArrivalTimesUpdated(HomeActivity.java:923)
+    at org.onebusaway.android.ui.ArrivalsListFragment.onLoadFinished(ArrivalsListFragment.java:501)
+    at org.onebusaway.android.ui.ArrivalsListFragment.onLoadFinished(ArrivalsListFragment.java:89)
+    at android.support.v4.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:476)
+    at android.support.v4.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:444)
+    at android.support.v4.content.Loader.deliverResult(Loader.java:126)
+    at org.onebusaway.android.ui.ArrivalsListLoader.deliverResult(ArrivalsListLoader.java:59)
+    at org.onebusaway.android.ui.ArrivalsListLoader.deliverResult(ArrivalsListLoader.java:27)
+    at android.support.v4.content.AsyncTaskLoader.dispatchOnLoadComplete(AsyncTaskLoader.java:249)
+    at android.support.v4.content.AsyncTaskLoader$LoadTask.onPostExecute(AsyncTaskLoader.java:77)
+    at android.support.v4.content.ModernAsyncTask.finish(ModernAsyncTask.java:466)
+    at android.support.v4.content.ModernAsyncTask.access$400(ModernAsyncTask.java:48)
+    at android.support.v4.content.ModernAsyncTask$InternalHandler.handleMessage(ModernAsyncTask.java:483)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.app.ActivityThread.main(ActivityThread.java:5034)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:602)
+    at dalvik.system.NativeStart.main(Native Method)
+```
+
+**Steps to reproduce:** 
+
+Unknown
+
+**Expected behavior:** 
+
+Not crash
+
+**Observed behavior:** 
+
+Crash
+
+**Device and Android version:** 
+
+```
+Device
+HTC 10 (htc_pmewl)
+Manufacturer HTC 
+Android version Android 6.0 
+RAM (MB) 4096 
+Screen size 1440 × 2560 
+Screen density (dpi) 640 
+OpenGL ES version 3.1 
+Native platform armeabi-v7a 
+CPU make Qualcomm 
+CPU model MSM8996
+```
+
+```
+Grand S Flex (iris)
+Manufacturer ZTE 
+Android version Android 4.1 
+RAM (MB) 1024 
+Screen size 720 × 1280 
+Screen density (dpi) 320 
+OpenGL ES version 2.0 
+Native platform armeabi-v7a 
+CPU make Qualcomm 
+CPU model MSM8930
+```
+
+**Screenshots:** 
+
+N/A
+
+@cagryInside If you have a chance to look at this and see what might be happening (top stack trace includes Open311 API call) any wisdom is appreciated.  Looks like it's potentially related to setting a focus stop before the overlay initializes.  If not, no worries, I'll take a look myself.

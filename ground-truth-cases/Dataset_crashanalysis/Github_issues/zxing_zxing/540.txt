@@ -1,0 +1,9 @@
+Exception in thread "main" com.beust.jcommander.ParameterException: "[Main class]": couldn't convert "/some space directory/file.png" to a RFC 2396 and RFC 2732 compliant URI
+    at com.beust.jcommander.converters.URIConverter.convert(URIConverter.java:41)
+    at com.beust.jcommander.converters.URIConverter.convert(URIConverter.java:31)
+    at com.beust.jcommander.JCommander.convertValue(JCommander.java:1305)
+    at com.beust.jcommander.JCommander.parseValues(JCommander.java:767)
+    at com.beust.jcommander.JCommander.parse(JCommander.java:282)
+    at com.beust.jcommander.JCommander.parse(JCommander.java:265)
+    at com.beust.jcommander.JCommander.<init>(JCommander.java:210)
+    at com.google.zxing.client.j2se.CommandLineRunner.main(CommandLineRunner.java:52)

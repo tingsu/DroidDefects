@@ -1,0 +1,10 @@
+07-20 11:15:28.166: E/AndroidRuntime(23652): java.lang.RuntimeException: joinIrcUser: Did not find buffer with name #test
+07-20 11:15:28.166: E/AndroidRuntime(23652):    at com.iskrembilen.quasseldroid.service.CoreConnService$IncomingHandler.handleMessage(CoreConnService.java:797)
+07-20 11:15:28.166: E/AndroidRuntime(23652):    at android.os.Handler.dispatchMessage(Handler.java:99)
+07-20 11:15:28.166: E/AndroidRuntime(23652):    at android.os.Looper.loop(Looper.java:137)
+07-20 11:15:28.166: E/AndroidRuntime(23652):    at android.app.ActivityThread.main(ActivityThread.java:4745)
+07-20 11:15:28.166: E/AndroidRuntime(23652):    at java.lang.reflect.Method.invokeNative(Native Method)
+07-20 11:15:28.166: E/AndroidRuntime(23652):    at java.lang.reflect.Method.invoke(Method.java:511)
+07-20 11:15:28.166: E/AndroidRuntime(23652):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+07-20 11:15:28.166: E/AndroidRuntime(23652):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+07-20 11:15:28.166: E/AndroidRuntime(23652):    at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: net.debian.debiandroid
+//version: 1.744
+//appro_time: 106
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.util.regex.PatternSyntaxException: Incorrectly nested parentheses in regexp pattern near index 35:
+ 	at java.util.regex.Pattern.compileImpl(Native Method)
+ 	at java.util.regex.Pattern.compile(Pattern.java:407)
+ 	at java.util.regex.Pattern.<init>(Pattern.java:390)
+ 	at java.util.regex.Pattern.compile(Pattern.java:381)
+ 	at java.lang.String.replaceAll(String.java:1774)
+ 	at net.debian.debiandroid.apiLayer.PTS.getMadisonInfo(PTS.java:109)
+ 	at net.debian.debiandroid.contentfragments.PTSFragment$SearchPackageInfoTask.doInBackground(PTSFragment.java:237)
+ 	at net.debian.debiandroid.contentfragments.PTSFragment$SearchPackageInfoTask.doInBackground(PTSFragment.java:185)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

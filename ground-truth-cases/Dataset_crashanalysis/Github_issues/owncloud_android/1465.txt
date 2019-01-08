@@ -1,0 +1,16 @@
+java.lang.RuntimeException: Unable to start service com.owncloud.android.files.services.FileUploader@30c1f5ba with Intent { cmp=com.owncloud.android.beta/com.owncloud.android.files.services.FileUploader (has extras) }: java.lang.IllegalArgumentException: Trying to create a OCFile with a non valid remote path: 
+    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2941)
+    at android.app.ActivityThread.access$2100(ActivityThread.java:155)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1415)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5343)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:905)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:700)
+Caused by: java.lang.IllegalArgumentException: Trying to create a OCFile with a non valid remote path: 
+    at com.owncloud.android.datamodel.OCFile.<init>(OCFile.java:103)
+    at com.owncloud.android.files.services.FileUploader.obtainNewOCFileToUpload(FileUploader.java:771)
+    at com.owncloud.android.files.services.FileUploader.onStartCommand(FileUploader.java:286)
+    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2924)

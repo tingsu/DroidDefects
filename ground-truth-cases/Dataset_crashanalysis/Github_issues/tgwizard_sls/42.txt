@@ -1,0 +1,16 @@
+08-15 11:25:58.478: E/AndroidRuntime(14968): java.lang.RuntimeException: Unable to start service com.adam.aslfms.service.ScrobblingService@4253ed10 with null: java.lang.NullPointerException
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2507)
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at android.app.ActivityThread.access$1900(ActivityThread.java:130)
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1292)
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at android.os.Handler.dispatchMessage(Handler.java:99)
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at android.os.Looper.loop(Looper.java:137)
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at android.app.ActivityThread.main(ActivityThread.java:4745)
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at java.lang.reflect.Method.invokeNative(Native Method)
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at java.lang.reflect.Method.invoke(Method.java:511)
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at dalvik.system.NativeStart.main(Native Method)
+08-15 11:25:58.478: E/AndroidRuntime(14968): Caused by: java.lang.NullPointerException
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at com.adam.aslfms.service.ScrobblingService.onStart(ScrobblingService.java:84)
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at android.app.Service.onStartCommand(Service.java:450)
+08-15 11:25:58.478: E/AndroidRuntime(14968):    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2490)

@@ -1,0 +1,7 @@
+`10-28 17:45:24.892 10469-13425/org.awesomeapp.messenger.debug W/AbstractXMPPConnection: java.security.cert.CertificateException: Hostname verification of certificate failed. Certificate does not authenticate 5rgdtlawqkcplz75.onion
+10-28 17:45:24.892 10469-13425/org.awesomeapp.messenger.debug W/AbstractXMPPConnection:     at org.jivesoftware.smack.tcp.XMPPTCPConnection.proceedTLSReceived(XMPPTCPConnection.java:763)
+10-28 17:45:24.892 10469-13425/org.awesomeapp.messenger.debug W/AbstractXMPPConnection:     at org.jivesoftware.smack.tcp.XMPPTCPConnection.access$1000(XMPPTCPConnection.java:140)
+10-28 17:45:24.892 10469-13425/org.awesomeapp.messenger.debug W/AbstractXMPPConnection:     at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:1010)
+10-28 17:45:24.892 10469-13425/org.awesomeapp.messenger.debug W/AbstractXMPPConnection:     at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$300(XMPPTCPConnection.java:944)
+10-28 17:45:24.892 10469-13425/org.awesomeapp.messenger.debug W/AbstractXMPPConnection:     at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:959)
+10-28 17:45:24.892 10469-13425/org.awesomeapp.messenger.debug W/AbstractXMPPConnection:     at java.lang.Thread.run(Thread.java:856)`

@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: edu.killerud.kitchentimer
+//version: 2.2
+//appro_time: 145
+ java.lang.RuntimeException: Error receiving broadcast Intent { act=TIMER_TICK flg=0x10 (has extras) } in edu.killerud.kitchentimer.OpenTimerActivity$4@ad4419c8
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:773)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IndexOutOfBoundsException: Invalid index 2, size is 2
+ 	at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+ 	at java.util.ArrayList.get(ArrayList.java:308)
+ 	at edu.killerud.kitchentimer.OpenTimerActivity$4.onReceive(OpenTimerActivity.java:320)
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:763)

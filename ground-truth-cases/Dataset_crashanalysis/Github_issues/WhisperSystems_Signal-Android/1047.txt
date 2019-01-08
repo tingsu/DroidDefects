@@ -1,0 +1,194 @@
+W/dalvikvm( 5780): VFY: unable to resolve static method 969: Landroid/provider/Telephony$Sms;.getDefaultSmsPackage (Landroid/content/Context;)Ljava/lang/String;
+D/dalvikvm( 5780): VFY: replacing opcode 0x71 at 0x000a
+W/MmsSmsDatabase( 5780): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+W/KeyCachingService( 6818): Incrementing activity count...
+D/libEGL  ( 6818): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  ( 6818): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  ( 6818): loaded /system/lib/egl/libGLESv2_mali.so
+E/        ( 6818): Device driver API match
+E/        ( 6818): Device driver API version: 23
+E/        ( 6818): User space API version: 23 
+E/        ( 6818): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Wed Oct  9 21:05:57 KST 2013 
+D/OpenGLRenderer( 6818): Enabling debug mode 0
+W/PartProvider( 6818): Got master secret: null
+W/KeyCachingService( 6818): Decrementing activity count...
+D/dalvikvm( 6818): GC_FOR_ALLOC freed 360K, 22% free 9839K/12520K, paused 20ms, total 20ms
+I/dalvikvm-heap( 6818): Grow heap (frag case) to 12.945MB for 1127536-byte allocation
+D/dalvikvm( 6818): GC_CONCURRENT freed <1K, 20% free 10940K/13624K, paused 2ms+1ms, total 21ms
+D/dalvikvm( 6818): WAIT_FOR_CONCURRENT_GC blocked 16ms
+D/dalvikvm( 6818): WAIT_FOR_CONCURRENT_GC blocked 12ms
+D/dalvikvm( 6818): GC_FOR_ALLOC freed 5K, 20% free 10956K/13624K, paused 15ms, total 15ms
+W/service ( 6818): Broadcasting new secret...
+W/DecryptingQueue( 6818): Processing pending decrypts...
+I/dalvikvm( 6818): Could not find method android.provider.Telephony$Sms.getDefaultSmsPackage, referenced from method org.thoughtcrime.securesms.util.Util.isDefaultSmsProvider
+W/dalvikvm( 6818): VFY: unable to resolve static method 969: Landroid/provider/Telephony$Sms;.getDefaultSmsPackage (Landroid/content/Context;)Ljava/lang/String;
+D/dalvikvm( 6818): VFY: replacing opcode 0x71 at 0x000a
+D/dalvikvm( 6818): GC_EXPLICIT freed 188K, 19% free 11210K/13824K, paused 2ms+4ms, total 45ms
+W/MmsSmsDatabase( 6818): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+I/Choreographer( 6818): Skipped 30 frames!  The application may be doing too much work on its main thread.
+W/SendReceiveService( 6818): Got a MasterSecret broadcast...
+W/PartProvider( 6818): Got master secret: org.whispersystems.textsecure.crypto.MasterSecret@426f74f8
+W/KeyCachingService( 6818): Incrementing activity count...
+W/KeyCachingService( 6818): Decrementing activity count...
+D/AbsListView( 6818): Get MotionRecognitionManager
+D/AbsListView( 6818): Get MotionRecognitionManager
+W/DirectoryRefreshListener( 6818): Scheduling for: 1394051833012
+D/AbsListView( 6818): onVisibilityChanged() is called, visibility : 4
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): onVisibilityChanged() is called, visibility : 4
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): onVisibilityChanged() is called, visibility : 0
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): onVisibilityChanged() is called, visibility : 0
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): onVisibilityChanged() is called, visibility : 4
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/dalvikvm( 6818): GC_CONCURRENT freed 236K, 19% free 11505K/14124K, paused 3ms+3ms, total 24ms
+W/KeyCachingService( 6818): Incrementing activity count...
+W/RecipientProvider( 6818): Cache miss [ASYNC]!
+W/RecipientProvider( 6818): Cache miss [ASYNC]!
+W/RecipientProvider( 6818): Cache miss [ASYNC]!
+D/dalvikvm( 6818): GC_CONCURRENT freed 173K, 18% free 12040K/14596K, paused 3ms+5ms, total 48ms
+W/RecipientProvider( 6818): Cache miss [ASYNC]!
+W/RecipientProvider( 6818): Cache miss [ASYNC]!
+W/RecipientProvider( 6818): Cache miss [ASYNC]!
+W/RecipientProvider( 6818): Cache miss [ASYNC]!
+W/RecipientProvider( 6818): Cache miss [ASYNC]!
+W/RecipientProvider( 6818): Cache miss [ASYNC]!
+D/dalvikvm( 6818): GC_CONCURRENT freed 778K, 21% free 12109K/15268K, paused 2ms+3ms, total 24ms
+D/dalvikvm( 6818): WAIT_FOR_CONCURRENT_GC blocked 7ms
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+W/SendReceiveService( 6818): SendReceive service got master secret.
+W/SmsSender( 6818): Sending message: -1
+W/MmsSender( 6818): Got intent action: org.thoughtcrime.securesms.SendReceiveService.SEND_MMS_ACTION
+D/dalvikvm( 6818): GC_CONCURRENT freed 192K, 17% free 12780K/15376K, paused 3ms+3ms, total 33ms
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+W/ConversationListFragment( 6818): Batch mode: false
+W/KeyCachingService( 6818): Decrementing activity count...
+D/AbsListView( 6818): Get MotionRecognitionManager
+D/AbsListView( 6818): Get MotionRecognitionManager
+D/AbsListView( 6818): Get MotionRecognitionManager
+W/MmsSmsDatabase( 6818): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 61) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 61) ORDER BY date_received ASC)
+W/RecipientsPanel( 6818): org.thoughtcrime.securesms.recipients.RecipientFormattingException: Recipient List Is Empty!
+W/RecipientsPanel( 6818):   at org.thoughtcrime.securesms.components.RecipientsPanel.getRecipients(RecipientsPanel.java:110)
+W/RecipientsPanel( 6818):   at org.thoughtcrime.securesms.components.RecipientsPanel.addRecipients(RecipientsPanel.java:88)
+W/RecipientsPanel( 6818):   at org.thoughtcrime.securesms.ConversationActivity.initializeRecipientsInput(ConversationActivity.java:776)
+W/RecipientsPanel( 6818):   at org.thoughtcrime.securesms.ConversationActivity.onResume(ConversationActivity.java:200)
+W/RecipientsPanel( 6818):   at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1209)
+W/RecipientsPanel( 6818):   at android.app.Activity.performResume(Activity.java:5450)
+W/RecipientsPanel( 6818):   at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2909)
+W/RecipientsPanel( 6818):   at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2948)
+W/RecipientsPanel( 6818):   at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2354)
+W/RecipientsPanel( 6818):   at android.app.ActivityThread.access$700(ActivityThread.java:159)
+W/RecipientsPanel( 6818):   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1316)
+W/RecipientsPanel( 6818):   at android.os.Handler.dispatchMessage(Handler.java:99)
+W/RecipientsPanel( 6818):   at android.os.Looper.loop(Looper.java:176)
+W/RecipientsPanel( 6818):   at android.app.ActivityThread.main(ActivityThread.java:5419)
+W/RecipientsPanel( 6818):   at java.lang.reflect.Method.invokeNative(Native Method)
+W/RecipientsPanel( 6818):   at java.lang.reflect.Method.invoke(Method.java:525)
+W/RecipientsPanel( 6818):   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1046)
+W/RecipientsPanel( 6818):   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:862)
+W/RecipientsPanel( 6818):   at dalvik.system.NativeStart.main(Native Method)
+W/Session ( 6818): Checking session...
+W/SessionRecordV1( 6818): Checking: 61
+D/AbsListView( 6818): onVisibilityChanged() is called, visibility : 4
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): onVisibilityChanged() is called, visibility : 0
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+W/KeyCachingService( 6818): Incrementing activity count...
+I/MmsCommunication( 6818): Couldn't write APN settings, expected. msg: No permission to write APN settings: Neither user 10223 nor current process has android.permission.WRITE_APN_SETTINGS.
+W/MmsSmsDatabase( 6818): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/dalvikvm( 6818): GC_CONCURRENT freed 2331K, 26% free 13845K/18556K, paused 2ms+5ms, total 42ms
+D/dalvikvm( 6818): WAIT_FOR_CONCURRENT_GC blocked 22ms
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): onVisibilityChanged() is called, visibility : 4
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): onVisibilityChanged() is called, visibility : 4
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): Get MotionRecognitionManager
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+D/AbsListView( 6818): unregisterIRListener() is called 
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+W/ResourceType( 6818): Invalid package identifier when getting bag for resource number 0xffffffff
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): onDetachedFromWindow
+E/ViewRootImpl( 6818): sendUserActionEvent() mView == null
+W/MessageDatabase( 6818): Deleting: 268
+W/MmsSmsDatabase( 6818): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 61) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 61) ORDER BY date_received DESC) LIMIT 1
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/dalvikvm( 6818): GC_CONCURRENT freed 1091K, 24% free 14134K/18556K, paused 3ms+8ms, total 48ms
+E/ViewRootImpl( 6818): sendUserActionEvent() mView == null
+D/AbsListView( 6818): [unregisterDoubleTapMotionListener]
+I/MotionRecognitionManager( 6818):   .unregisterListener : / listener count = 0->0,  
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+D/AbsListView( 6818): unregisterIRListener() is called 
+W/ConversationActivity( 6818): Sending message...
+W/MmsSmsDatabase( 6818): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 61) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 61) ORDER BY date_received DESC) LIMIT 1
+W/SMSSender( 6818): Got message id for new message: 268
+D/AbsListView( 6818): unregisterIRListener() is called 
+W/SmsSender( 6818): Sending message: 268
+W/MessageDatabase( 6818): Updating ID: 268 to base type: 22
+W/MmsSmsDatabase( 6818): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 61) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 61) ORDER BY date_received DESC) LIMIT 1
+D/AbsListView( 6818): unregisterIRListener() is called 
+W/UniversalTransport( 6818): Delivering with GCM...
+W/PushServiceSocket( 6818): Push service URL: https://textsecure-service.whispersystems.org
+W/PushServiceSocket( 6818): Opening URL: https://textsecure-service.whispersystems.org/v1/keys/+41797661012/*
+W/MessageDatabase( 6818): Updating ID: 268 to base type: 21
+D/AbsListView( 6818): unregisterIRListener() is called 
+W/MmsSmsDatabase( 6818): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 61) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 61) ORDER BY date_received DESC) LIMIT 1
+W/SystemStateListener( 6818): Registering for any connectivity changes...
+W/SystemStateListener( 6818): java.lang.IllegalArgumentException: Receiver not registered: org.thoughtcrime.securesms.service.SystemStateListener$ConnectivityListener@42932458
+W/SystemStateListener( 6818):   at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:667)
+W/SystemStateListener( 6818):   at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:1743)
+W/SystemStateListener( 6818):   at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java:475)
+W/SystemStateListener( 6818):   at org.thoughtcrime.securesms.service.SystemStateListener.unregisterForConnectivityChange(SystemStateListener.java:46)
+W/SystemStateListener( 6818):   at org.thoughtcrime.securesms.service.SystemStateListener.registerForConnectivityChange(SystemStateListener.java:36)
+W/SystemStateListener( 6818):   at org.thoughtcrime.securesms.service.SmsSender.handleSendMessage(SmsSender.java:99)
+W/SystemStateListener( 6818):   at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:60)
+W/SystemStateListener( 6818):   at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:257)
+W/SystemStateListener( 6818):   at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)

@@ -1,0 +1,8 @@
+java.lang.IllegalStateException: Expected an int but was BOOLEAN
+    at android.util.JsonReader.nextInt(JsonReader.java:512)
+    at com.nextgis.maplib.util.NGWUtil.readNGWFeatureFields(NGWUtil.java:439)
+    at com.nextgis.maplib.util.NGWUtil.readNGWFeature(NGWUtil.java:403)
+    at com.nextgis.maplib.map.NGWVectorLayer.createFromNGW(NGWVectorLayer.java:508)
+    at com.nextgis.maplibui.service.LayerFillService$NGWVectorLayerFillTask.execute(LayerFillService.java:673)
+    at com.nextgis.maplibui.service.LayerFillService$2.run(LayerFillService.java:253)
+    at java.lang.Thread.run(Thread.java:818)

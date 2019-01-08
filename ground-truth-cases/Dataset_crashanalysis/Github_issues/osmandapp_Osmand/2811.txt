@@ -1,0 +1,548 @@
+java.lang.NullPointerException
+    at net.osmand.plus.osmedit.OsmEditsFragment.enableSelectionMode(OsmEditsFragment.java:288)
+    at net.osmand.plus.osmedit.OsmEditsFragment.access$700(OsmEditsFragment.java:58)
+    at net.osmand.plus.osmedit.OsmEditsFragment$5.onDestroyActionMode(OsmEditsFragment.java:196)
+    at android.support.v7.app.AppCompatDelegateImplV7$ActionModeCallbackWrapperV7.onDestroyActionMode(AppCompatDelegateImplV7.java:1707)
+    at android.support.v7.app.WindowDecorActionBar$ActionModeImpl.finish(WindowDecorActionBar.java:974)
+    at android.support.v7.widget.ActionBarContextView$1.onClick(ActionBarContextView.java:167)
+    at android.view.View.performClick(View.java:4240)
+    at android.view.View$PerformClick.run(View.java:17742)
+    at android.os.Handler.handleCallback(Handler.java:730)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+05.05.2016 1:13:22
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[main,5,main] : 
+java.lang.NullPointerException
+    at net.osmand.plus.osmedit.OsmEditsFragment.enableSelectionMode(OsmEditsFragment.java:288)
+    at net.osmand.plus.osmedit.OsmEditsFragment.access$700(OsmEditsFragment.java:58)
+    at net.osmand.plus.osmedit.OsmEditsFragment$5.onDestroyActionMode(OsmEditsFragment.java:196)
+    at android.support.v7.app.AppCompatDelegateImplV7$ActionModeCallbackWrapperV7.onDestroyActionMode(AppCompatDelegateImplV7.java:1707)
+    at android.support.v7.app.WindowDecorActionBar$ActionModeImpl.finish(WindowDecorActionBar.java:974)
+    at android.support.v7.widget.ActionBarContextView$1.onClick(ActionBarContextView.java:167)
+    at android.view.View.performClick(View.java:4240)
+    at android.view.View$PerformClick.run(View.java:17742)
+    at android.os.Handler.handleCallback(Handler.java:730)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+06.05.2016 12:43:06
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[main,5,main] : 
+java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+    at android.support.v4.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1489)
+    at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1507)
+    at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:634)
+    at android.support.v4.app.BackStackRecord.commit(BackStackRecord.java:613)
+    at android.support.v4.app.DialogFragment.dismissInternal(DialogFragment.java:201)
+    at android.support.v4.app.DialogFragment.dismiss(DialogFragment.java:167)
+    at net.osmand.plus.osmedit.EditPoiDialogFragment$14.processResult(EditPoiDialogFragment.java:426)
+    at net.osmand.plus.osmedit.EditPoiDialogFragment$14.processResult(EditPoiDialogFragment.java:406)
+    at net.osmand.plus.osmedit.EditPoiDialogFragment$15.onPostExecute(EditPoiDialogFragment.java:487)
+    at net.osmand.plus.osmedit.EditPoiDialogFragment$15.onPostExecute(EditPoiDialogFragment.java:469)
+    at android.os.AsyncTask.finish(AsyncTask.java:631)
+    at android.os.AsyncTask.access$600(AsyncTask.java:177)
+    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+06.05.2016 12:43:06
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[main,5,main] : 
+java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+    at android.support.v4.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1489)
+    at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1507)
+    at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:634)
+    at android.support.v4.app.BackStackRecord.commit(BackStackRecord.java:613)
+    at android.support.v4.app.DialogFragment.dismissInternal(DialogFragment.java:201)
+    at android.support.v4.app.DialogFragment.dismiss(DialogFragment.java:167)
+    at net.osmand.plus.osmedit.EditPoiDialogFragment$14.processResult(EditPoiDialogFragment.java:426)
+    at net.osmand.plus.osmedit.EditPoiDialogFragment$14.processResult(EditPoiDialogFragment.java:406)
+    at net.osmand.plus.osmedit.EditPoiDialogFragment$15.onPostExecute(EditPoiDialogFragment.java:487)
+    at net.osmand.plus.osmedit.EditPoiDialogFragment$15.onPostExecute(EditPoiDialogFragment.java:469)
+    at android.os.AsyncTask.finish(AsyncTask.java:631)
+    at android.os.AsyncTask.access$600(AsyncTask.java:177)
+    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+06.05.2016 3:35:07
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[main,5,main] : 
+java.lang.NullPointerException
+    at net.osmand.plus.mapcontextmenu.editors.PointEditorFragment.dismiss(PointEditorFragment.java:377)
+    at net.osmand.plus.mapcontextmenu.editors.FavoritePointEditorFragment$3.onClick(FavoritePointEditorFragment.java:178)
+    at android.support.v7.app.AlertController$ButtonHandler.handleMessage(AlertController.java:157)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+06.05.2016 3:35:07
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[main,5,main] : 
+java.lang.NullPointerException
+    at net.osmand.plus.mapcontextmenu.editors.PointEditorFragment.dismiss(PointEditorFragment.java:377)
+    at net.osmand.plus.mapcontextmenu.editors.FavoritePointEditorFragment$3.onClick(FavoritePointEditorFragment.java:178)
+    at android.support.v7.app.AlertController$ButtonHandler.handleMessage(AlertController.java:157)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+06.05.2016 3:46:22
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[FinalizerWatchdogDaemon,5,system] : 
+java.util.concurrent.TimeoutException: android.content.res.AssetManager.finalize() timed out after 10 seconds
+    at android.content.res.AssetManager.destroy(Native Method)
+    at android.content.res.AssetManager.finalize(AssetManager.java:533)
+    at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:187)
+    at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:170)
+    at java.lang.Thread.run(Thread.java:841)
+Version  OsmAnd+ 2.3.5
+07.05.2016 5:06:22
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[main,5,main] : 
+java.lang.NullPointerException
+    at net.osmand.plus.views.TransportStopsLayer.getFromPoint(TransportStopsLayer.java:59)
+    at net.osmand.plus.views.TransportStopsLayer.collectObjectsFromPoint(TransportStopsLayer.java:209)
+    at net.osmand.plus.views.ContextMenuLayer.selectObjectsForContextMenu(ContextMenuLayer.java:248)
+    at net.osmand.plus.views.ContextMenuLayer.onTouchEvent(ContextMenuLayer.java:340)
+    at net.osmand.plus.views.OsmandMapTileView.onTouchEvent(OsmandMapTileView.java:832)
+    at net.osmand.plus.views.OsmAndMapSurfaceView.onTouchEvent(OsmAndMapSurfaceView.java:103)
+    at android.view.View.dispatchTouchEvent(View.java:7384)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at com.android.internal.policy.impl.PhoneWindow$DecorView.superDispatchTouchEvent(PhoneWindow.java:1992)
+    at com.android.internal.policy.impl.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:1418)
+    at android.app.Activity.dispatchTouchEvent(Activity.java:2490)
+    at android.support.v7.view.WindowCallbackWrapper.dispatchTouchEvent(WindowCallbackWrapper.java:60)
+    at com.android.internal.policy.impl.PhoneWindow$DecorView.dispatchTouchEvent(PhoneWindow.java:1914)
+    at android.view.View.dispatchPointerEvent(View.java:7564)
+    at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:3912)
+    at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:3807)
+    at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3391)
+    at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3441)
+    at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3410)
+    at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3495)
+    at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3418)
+    at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:3552)
+    at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3391)
+    at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3441)
+    at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3410)
+    at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3418)
+    at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3391)
+    at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:5488)
+    at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:5468)
+    at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:5439)
+    at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:5562)
+    at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:192)
+    at android.os.MessageQueue.nativePollOnce(Native Method)
+    at android.os.MessageQueue.next(MessageQueue.java:136)
+    at android.os.Looper.loop(Looper.java:124)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+07.05.2016 5:06:22
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[main,5,main] : 
+java.lang.NullPointerException
+    at net.osmand.plus.views.TransportStopsLayer.getFromPoint(TransportStopsLayer.java:59)
+    at net.osmand.plus.views.TransportStopsLayer.collectObjectsFromPoint(TransportStopsLayer.java:209)
+    at net.osmand.plus.views.ContextMenuLayer.selectObjectsForContextMenu(ContextMenuLayer.java:248)
+    at net.osmand.plus.views.ContextMenuLayer.onTouchEvent(ContextMenuLayer.java:340)
+    at net.osmand.plus.views.OsmandMapTileView.onTouchEvent(OsmandMapTileView.java:832)
+    at net.osmand.plus.views.OsmAndMapSurfaceView.onTouchEvent(OsmAndMapSurfaceView.java:103)
+    at android.view.View.dispatchTouchEvent(View.java:7384)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2211)
+    at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1912)
+    at com.android.internal.policy.impl.PhoneWindow$DecorView.superDispatchTouchEvent(PhoneWindow.java:1992)
+    at com.android.internal.policy.impl.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:1418)
+    at android.app.Activity.dispatchTouchEvent(Activity.java:2490)
+    at android.support.v7.view.WindowCallbackWrapper.dispatchTouchEvent(WindowCallbackWrapper.java:60)
+    at com.android.internal.policy.impl.PhoneWindow$DecorView.dispatchTouchEvent(PhoneWindow.java:1914)
+    at android.view.View.dispatchPointerEvent(View.java:7564)
+    at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:3912)
+    at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:3807)
+    at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3391)
+    at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3441)
+    at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3410)
+    at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3495)
+    at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3418)
+    at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:3552)
+    at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3391)
+    at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3441)
+    at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3410)
+    at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3418)
+    at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3391)
+    at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:5488)
+    at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:5468)
+    at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:5439)
+    at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:5562)
+    at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:192)
+    at android.os.MessageQueue.nativePollOnce(Native Method)
+    at android.os.MessageQueue.next(MessageQueue.java:136)
+    at android.os.Looper.loop(Looper.java:124)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+28.05.2016 11:16:00
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[main,5,main] : 
+java.lang.IllegalStateException: Activity has been destroyed
+    at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1511)
+    at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:634)
+    at android.support.v4.app.BackStackRecord.commitAllowingStateLoss(BackStackRecord.java:617)
+    at net.osmand.plus.mapcontextmenu.other.MapMultiSelectionMenuFragment.showInstance(MapMultiSelectionMenuFragment.java:109)
+    at net.osmand.plus.mapcontextmenu.other.MapMultiSelectionMenu.show(MapMultiSelectionMenu.java:166)
+    at net.osmand.plus.views.ContextMenuLayer.showContextMenuForSelectedObjects(ContextMenuLayer.java:323)
+    at net.osmand.plus.views.ContextMenuLayer.showContextMenu(ContextMenuLayer.java:190)
+    at net.osmand.plus.views.ContextMenuLayer.onSingleTap(ContextMenuLayer.java:305)
+    at net.osmand.plus.views.OsmandMapTileView$MapTileViewOnGestureListener.onSingleTapConfirmed(OsmandMapTileView.java:1089)
+    at android.view.GestureDetector$GestureHandler.handleMessage(GestureDetector.java:273)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+28.05.2016 11:16:00
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[main,5,main] : 
+java.lang.IllegalStateException: Activity has been destroyed
+    at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1511)
+    at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:634)
+    at android.support.v4.app.BackStackRecord.commitAllowingStateLoss(BackStackRecord.java:617)
+    at net.osmand.plus.mapcontextmenu.other.MapMultiSelectionMenuFragment.showInstance(MapMultiSelectionMenuFragment.java:109)
+    at net.osmand.plus.mapcontextmenu.other.MapMultiSelectionMenu.show(MapMultiSelectionMenu.java:166)
+    at net.osmand.plus.views.ContextMenuLayer.showContextMenuForSelectedObjects(ContextMenuLayer.java:323)
+    at net.osmand.plus.views.ContextMenuLayer.showContextMenu(ContextMenuLayer.java:190)
+    at net.osmand.plus.views.ContextMenuLayer.onSingleTap(ContextMenuLayer.java:305)
+    at net.osmand.plus.views.OsmandMapTileView$MapTileViewOnGestureListener.onSingleTapConfirmed(OsmandMapTileView.java:1089)
+    at android.view.GestureDetector$GestureHandler.handleMessage(GestureDetector.java:273)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+28.05.2016 11:16:00
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[main,5,main] : 
+java.lang.IllegalStateException: Activity has been destroyed
+    at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1511)
+    at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:634)
+    at android.support.v4.app.BackStackRecord.commitAllowingStateLoss(BackStackRecord.java:617)
+    at net.osmand.plus.mapcontextmenu.other.MapMultiSelectionMenuFragment.showInstance(MapMultiSelectionMenuFragment.java:109)
+    at net.osmand.plus.mapcontextmenu.other.MapMultiSelectionMenu.show(MapMultiSelectionMenu.java:166)
+    at net.osmand.plus.views.ContextMenuLayer.showContextMenuForSelectedObjects(ContextMenuLayer.java:323)
+    at net.osmand.plus.views.ContextMenuLayer.showContextMenu(ContextMenuLayer.java:190)
+    at net.osmand.plus.views.ContextMenuLayer.onSingleTap(ContextMenuLayer.java:305)
+    at net.osmand.plus.views.OsmandMapTileView$MapTileViewOnGestureListener.onSingleTapConfirmed(OsmandMapTileView.java:1089)
+    at android.view.GestureDetector$GestureHandler.handleMessage(GestureDetector.java:273)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+12.06.2016 5:47:11
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[main,5,main] : 
+java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+    at android.support.v4.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1489)
+    at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1507)
+    at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:634)
+    at android.support.v4.app.BackStackRecord.commit(BackStackRecord.java:613)
+    at android.support.v4.app.DialogFragment.dismissInternal(DialogFragment.java:201)
+    at android.support.v4.app.DialogFragment.dismiss(DialogFragment.java:167)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.onPostExecute(UploadOpenstreetmapPointAsyncTask.java:99)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.onPostExecute(UploadOpenstreetmapPointAsyncTask.java:15)
+    at android.os.AsyncTask.finish(AsyncTask.java:631)
+    at android.os.AsyncTask.access$600(AsyncTask.java:177)
+    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+12.06.2016 5:47:11
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[main,5,main] : 
+java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+    at android.support.v4.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1489)
+    at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1507)
+    at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:634)
+    at android.support.v4.app.BackStackRecord.commit(BackStackRecord.java:613)
+    at android.support.v4.app.DialogFragment.dismissInternal(DialogFragment.java:201)
+    at android.support.v4.app.DialogFragment.dismiss(DialogFragment.java:167)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.onPostExecute(UploadOpenstreetmapPointAsyncTask.java:99)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.onPostExecute(UploadOpenstreetmapPointAsyncTask.java:15)
+    at android.os.AsyncTask.finish(AsyncTask.java:631)
+    at android.os.AsyncTask.access$600(AsyncTask.java:177)
+    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5121)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+    at dalvik.system.NativeStart.main(Native Method)
+Version  OsmAnd+ 2.3.5
+07.07.2016 4:15:07
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[AsyncTask #2,5,main] : 
+java.lang.RuntimeException: An error occured while executing doInBackground()
+    at android.os.AsyncTask$3.done(AsyncTask.java:299)
+    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+    at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:841)
+Caused by: java.lang.NullPointerException
+    at org.kxml2.io.KXmlSerializer.attribute(KXmlSerializer.java:463)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.openChangeSet(OpenstreetmapRemoteUtil.java:183)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.commitNodeImpl(OpenstreetmapRemoteUtil.java:252)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:58)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:15)
+    at android.os.AsyncTask$2.call(AsyncTask.java:287)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+    ... 4 more
+Version  OsmAnd+ 2.3.5
+07.07.2016 4:15:08
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[AsyncTask #2,5,main] : 
+java.lang.RuntimeException: An error occured while executing doInBackground()
+    at android.os.AsyncTask$3.done(AsyncTask.java:299)
+    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+    at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:841)
+Caused by: java.lang.NullPointerException
+    at org.kxml2.io.KXmlSerializer.attribute(KXmlSerializer.java:463)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.openChangeSet(OpenstreetmapRemoteUtil.java:183)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.commitNodeImpl(OpenstreetmapRemoteUtil.java:252)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:58)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:15)
+    at android.os.AsyncTask$2.call(AsyncTask.java:287)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+    ... 4 more
+Version  OsmAnd+ 2.3.5
+07.07.2016 4:16:02
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[AsyncTask #5,5,main] : 
+java.lang.RuntimeException: An error occured while executing doInBackground()
+    at android.os.AsyncTask$3.done(AsyncTask.java:299)
+    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+    at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:841)
+Caused by: java.lang.NullPointerException
+    at org.kxml2.io.KXmlSerializer.attribute(KXmlSerializer.java:463)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.openChangeSet(OpenstreetmapRemoteUtil.java:183)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.commitNodeImpl(OpenstreetmapRemoteUtil.java:252)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:58)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:15)
+    at android.os.AsyncTask$2.call(AsyncTask.java:287)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+    ... 4 more
+Version  OsmAnd+ 2.3.5
+07.07.2016 4:16:03
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[AsyncTask #5,5,main] : 
+java.lang.RuntimeException: An error occured while executing doInBackground()
+    at android.os.AsyncTask$3.done(AsyncTask.java:299)
+    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+    at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:841)
+Caused by: java.lang.NullPointerException
+    at org.kxml2.io.KXmlSerializer.attribute(KXmlSerializer.java:463)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.openChangeSet(OpenstreetmapRemoteUtil.java:183)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.commitNodeImpl(OpenstreetmapRemoteUtil.java:252)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:58)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:15)
+    at android.os.AsyncTask$2.call(AsyncTask.java:287)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+    ... 4 more
+Version  OsmAnd+ 2.3.5
+07.07.2016 4:28:54
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[AsyncTask #2,5,main] : 
+java.lang.RuntimeException: An error occured while executing doInBackground()
+    at android.os.AsyncTask$3.done(AsyncTask.java:299)
+    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+    at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:841)
+Caused by: java.lang.NullPointerException
+    at org.kxml2.io.KXmlSerializer.attribute(KXmlSerializer.java:463)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.openChangeSet(OpenstreetmapRemoteUtil.java:183)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.commitNodeImpl(OpenstreetmapRemoteUtil.java:252)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:58)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:15)
+    at android.os.AsyncTask$2.call(AsyncTask.java:287)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+    ... 4 more
+Version  OsmAnd+ 2.3.5
+07.07.2016 4:28:54
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[AsyncTask #2,5,main] : 
+java.lang.RuntimeException: An error occured while executing doInBackground()
+    at android.os.AsyncTask$3.done(AsyncTask.java:299)
+    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+    at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:841)
+Caused by: java.lang.NullPointerException
+    at org.kxml2.io.KXmlSerializer.attribute(KXmlSerializer.java:463)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.openChangeSet(OpenstreetmapRemoteUtil.java:183)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.commitNodeImpl(OpenstreetmapRemoteUtil.java:252)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:58)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:15)
+    at android.os.AsyncTask$2.call(AsyncTask.java:287)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+    ... 4 more
+Version  OsmAnd+ 2.3.5
+07.07.2016 4:35:12
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[AsyncTask #4,5,main] : 
+java.lang.RuntimeException: An error occured while executing doInBackground()
+    at android.os.AsyncTask$3.done(AsyncTask.java:299)
+    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+    at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:841)
+Caused by: java.lang.NullPointerException
+    at org.kxml2.io.KXmlSerializer.attribute(KXmlSerializer.java:463)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.openChangeSet(OpenstreetmapRemoteUtil.java:183)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.commitNodeImpl(OpenstreetmapRemoteUtil.java:252)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:58)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:15)
+    at android.os.AsyncTask$2.call(AsyncTask.java:287)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+    ... 4 more
+Version  OsmAnd+ 2.3.5
+07.07.2016 4:35:12
+Apk Version : 2.3.5 237
+Exception occured in thread Thread[AsyncTask #4,5,main] : 
+java.lang.RuntimeException: An error occured while executing doInBackground()
+    at android.os.AsyncTask$3.done(AsyncTask.java:299)
+    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+    at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:841)
+Caused by: java.lang.NullPointerException
+    at org.kxml2.io.KXmlSerializer.attribute(KXmlSerializer.java:463)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.openChangeSet(OpenstreetmapRemoteUtil.java:183)
+    at net.osmand.plus.osmedit.OpenstreetmapRemoteUtil.commitNodeImpl(OpenstreetmapRemoteUtil.java:252)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:58)
+    at net.osmand.plus.osmedit.UploadOpenstreetmapPointAsyncTask.doInBackground(UploadOpenstreetmapPointAsyncTask.java:15)
+    at android.os.AsyncTask$2.call(AsyncTask.java:287)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:234)

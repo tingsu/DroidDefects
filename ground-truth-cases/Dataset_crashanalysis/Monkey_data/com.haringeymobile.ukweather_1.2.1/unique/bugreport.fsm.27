@@ -1,0 +1,18 @@
+//this is an auto-generated bug report
+//package name: com.haringeymobile.ukweather
+//version: 1.2.1
+//appro_time: 176
+ FATAL EXCEPTION: Thread-175
+ android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
+ 	at android.view.ViewRootImpl.checkThread(ViewRootImpl.java:5908)
+ 	at android.view.ViewRootImpl.invalidateChildInParent(ViewRootImpl.java:869)
+ 	at android.view.ViewGroup.invalidateChild(ViewGroup.java:4253)
+ 	at android.view.View.invalidate(View.java:10539)
+ 	at android.view.View.invalidate(View.java:10494)
+ 	at android.widget.TextView.checkForRelayout(TextView.java:6525)
+ 	at android.widget.TextView.setText(TextView.java:3771)
+ 	at android.widget.TextView.setText(TextView.java:3629)
+ 	at android.widget.TextView.setText(TextView.java:3604)
+ 	at android.support.v7.widget.Toolbar.setTitle(Toolbar.java:774)
+ 	at com.haringeymobile.ukweather.weather.WeatherInfoActivity$1.run(WeatherInfoActivity.java:131)
+ 	at java.lang.Thread.run(Thread.java:841)

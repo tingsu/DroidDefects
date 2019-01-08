@@ -1,0 +1,9 @@
+08-25 15:06:07.264 W/SmsSender(1603): java.lang.IllegalArgumentException: Bigger than the maximum SMS message size
+08-25 15:06:07.264 W/SmsSender(1603): at android.telephony.SmsManager.sendTextMessage(SmsManager.java:203)
+08-25 15:06:07.264 W/SmsSender(1603): at org.thoughtcrime.securesms.transport.SmsTransport.deliverSecureMessage(SmsTransport.java:64)
+08-25 15:06:07.264 W/SmsSender(1603): at org.thoughtcrime.securesms.transport.SmsTransport.deliver(SmsTransport.java:36)
+08-25 15:06:07.264 W/SmsSender(1603): at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:27)
+08-25 15:06:07.264 W/SmsSender(1603): at org.thoughtcrime.securesms.service.SmsSender.handleSendMessage(SmsSender.java:74)
+08-25 15:06:07.264 W/SmsSender(1603): at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:50)
+08-25 15:06:07.264 W/SmsSender(1603): at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:220)
+08-25 15:06:07.264 W/SmsSender(1603): at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)

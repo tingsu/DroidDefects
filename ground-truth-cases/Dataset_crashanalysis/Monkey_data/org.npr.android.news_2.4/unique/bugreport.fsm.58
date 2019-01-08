@@ -1,0 +1,38 @@
+//this is an auto-generated bug report
+//package name: org.npr.android.news
+//version: 2.4
+//appro_time: 53
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{org.npr.android.news/org.npr.android.news.NewsStoryActivity}: android.os.NetworkOnMainThreadException
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.os.NetworkOnMainThreadException
+ 	at android.os.StrictMode$AndroidBlockGuardPolicy.onNetwork(StrictMode.java:1133)
+ 	at java.net.InetAddress.lookupHostByName(InetAddress.java:385)
+ 	at java.net.InetAddress.getAllByNameImpl(InetAddress.java:236)
+ 	at java.net.InetAddress.getAllByName(InetAddress.java:214)
+ 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:137)
+ 	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:164)
+ 	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:119)
+ 	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:360)
+ 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+ 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:487)
+ 	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:465)
+ 	at org.npr.api.HttpHelper.download(HttpHelper.java:51)
+ 	at org.npr.api.Client.download(Client.java:77)
+ 	at org.npr.api.Client.execute(Client.java:45)
+ 	at org.npr.api.Story$StoryFactory.downloadStory(Story.java:1107)
+ 	at org.npr.android.news.NewsListActivity.getStoryFromCache(NewsListActivity.java:147)
+ 	at org.npr.android.news.NewsStoryActivity.onCreate(NewsStoryActivity.java:126)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)

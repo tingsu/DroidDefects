@@ -1,0 +1,16 @@
+12-25 01:37:49.562 W/GLSActivity(1074): java.io.IOException: NetworkError
+12-25 01:37:49.562 W/GLSActivity(1074):     at com.google.android.gms.auth.GoogleAuthUtil.getToken(Unknown Source)
+12-25 01:37:49.562 W/GLSActivity(1074):     at com.google.android.gms.auth.GoogleAuthUtil.a(Unknown Source)
+12-25 01:37:49.562 W/GLSActivity(1074):     at com.google.android.gms.auth.GoogleAuthUtil.getTokenWithNotification(Unknown Source)
+12-25 01:37:49.562 W/GLSActivity(1074):     at com.google.android.gsf.loginservice.GoogleLoginService$AccountAuthenticatorImpl.getAuthToken(GoogleLoginService.java:296)
+12-25 01:37:49.562 W/GLSActivity(1074):     at android.accounts.AbstractAccountAuthenticator$Transport.getAuthToken(AbstractAccountAuthenticator.java:196)
+12-25 01:37:49.562 W/GLSActivity(1074):     at android.accounts.IAccountAuthenticator$Stub.onTransact(IAccountAuthenticator.java:113)
+12-25 01:37:49.562 W/GLSActivity(1074):     at android.os.Binder.execTransact(Binder.java:404)
+12-25 01:37:49.562 W/GLSActivity(1074):     at dalvik.system.NativeStart.run(Native Method)
+12-25 01:37:49.572 W/SMSBackup+(27127): java.io.IOException: NetworkError
+12-25 01:37:49.572 W/SMSBackup+(27127):     at android.accounts.AccountManager.convertErrorToException(AccountManager.java:1711)
+12-25 01:37:49.572 W/SMSBackup+(27127):     at android.accounts.AccountManager.access$400(AccountManager.java:144)
+12-25 01:37:49.572 W/SMSBackup+(27127):     at android.accounts.AccountManager$AmsTask$Response.onError(AccountManager.java:1572)
+12-25 01:37:49.572 W/SMSBackup+(27127):     at android.accounts.IAccountManagerResponse$Stub.onTransact(IAccountManagerResponse.java:69)
+12-25 01:37:49.572 W/SMSBackup+(27127):     at android.os.Binder.execTransact(Binder.java:404)
+12-25 01:37:49.572 W/SMSBackup+(27127):     at dalvik.system.NativeStart.run(Native Method)

@@ -1,0 +1,36 @@
+//this is an auto-generated bug report
+//package name: org.sufficientlysecure.viewer
+//version: 2.7.9
+//appro_time: 9
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.viewer/org.ebookdroid.ui.viewer.ViewerActivity}: java.lang.RuntimeException: java.lang.ExceptionInInitializerError
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.RuntimeException: java.lang.ExceptionInInitializerError
+ 	at org.ebookdroid.core.models.DocumentModel.<init>(DocumentModel.java:74)
+ 	at org.ebookdroid.ui.viewer.ViewerActivityController.afterCreate(ViewerActivityController.java:242)
+ 	at org.ebookdroid.ui.viewer.ViewerActivityController.afterCreate(ViewerActivityController.java:98)
+ 	at org.emdev.ui.AbstractActionActivity.onCreate(AbstractActionActivity.java:108)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)
+ Caused by: java.lang.ExceptionInInitializerError
+ 	at java.lang.Class.newInstanceImpl(Native Method)
+ 	at java.lang.Class.newInstance(Class.java:1130)
+ 	at org.ebookdroid.core.models.DocumentModel.<init>(DocumentModel.java:71)
+ Caused by: java.lang.RuntimeException: java.lang.UnsatisfiedLinkError: Couldn't load ebookdroid from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/org.sufficientlysecure.viewer-1.apk"],nativeLibraryDirectories=[/data/app-lib/org.sufficientlysecure.viewer-1, /system/lib]]]: findLibrary returned null
+ 	at org.ebookdroid.EBookDroidLibraryLoader.load(EBookDroidLibraryLoader.java:21)
+ 	at org.ebookdroid.droids.mupdf.codec.MuPdfContext.<clinit>(MuPdfContext.java:24)
+ Caused by: java.lang.UnsatisfiedLinkError: Couldn't load ebookdroid from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/org.sufficientlysecure.viewer-1.apk"],nativeLibraryDirectories=[/data/app-lib/org.sufficientlysecure.viewer-1, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at org.ebookdroid.EBookDroidLibraryLoader.load(EBookDroidLibraryLoader.java:17)

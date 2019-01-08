@@ -1,0 +1,5 @@
+> java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+> at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+> at java.util.ArrayList.get(ArrayList.java:308)
+> at de.tum.in.tumcampus.adapters.ChatHistoryAdapter.getItem(ChatHistoryAdapter.java:71)
+> at de.tum.in.tumcampus.activities.ChatActivity.onItemLongClick(ChatActivity.java:508)

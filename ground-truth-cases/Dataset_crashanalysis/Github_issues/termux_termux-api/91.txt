@@ -1,0 +1,10 @@
+    android.os.DeadObjectException: Transaction failed on small parcel; remote process probably died
+        at android.os.BinderProxy.transactNative(Native Method)
+        at android.os.BinderProxy.transact(Binder.java:628)
+        at android.os.BinderProxy.shellCommand(Binder.java:675)
+        at com.android.commands.pm.Pm.runShellCommand(Pm.java:295)
+        at com.android.commands.pm.Pm.runList(Pm.java:644)
+        at com.android.commands.pm.Pm.run(Pm.java:130)
+        at com.android.commands.pm.Pm.main(Pm.java:99)
+        at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+        at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:301)

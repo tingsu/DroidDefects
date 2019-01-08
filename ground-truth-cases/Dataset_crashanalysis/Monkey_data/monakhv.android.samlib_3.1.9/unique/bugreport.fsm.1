@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: monakhv.android.samlib
+//version: 3.1.9
+//appro_time: 78
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.NullPointerException
+ 	at java.util.regex.Matcher.appendEvaluated(Matcher.java:131)
+ 	at java.util.regex.Matcher.appendReplacement(Matcher.java:111)
+ 	at java.util.regex.Matcher.replaceFirst(Matcher.java:304)
+ 	at java.lang.String.replaceFirst(String.java:1793)
+ 	at monakhv.android.samlib.sql.entity.SamLibConfig$SamIzdat.getSearchAuthorURL(SamLibConfig.java:190)
+ 	at monakhv.android.samlib.sql.entity.SamLibConfig$SamIzdat.access$400(SamLibConfig.java:126)
+ 	at monakhv.android.samlib.sql.entity.SamLibConfig.getSearchAuthorURL(SamLibConfig.java:308)
+ 	at monakhv.samlib.http.HttpClientController.searchAuhors(HttpClientController.java:153)
+ 	at monakhv.android.samlib.tasks.SearchAuthor.makeSearch(SearchAuthor.java:132)
+ 	at monakhv.android.samlib.tasks.SearchAuthor.doInBackground(SearchAuthor.java:94)
+ 	at monakhv.android.samlib.tasks.SearchAuthor.doInBackground(SearchAuthor.java:43)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

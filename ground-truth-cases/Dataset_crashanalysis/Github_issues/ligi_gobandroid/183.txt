@@ -1,0 +1,18 @@
+> java.lang.IndexOutOfBoundsException: Invalid index 1, size is 1
+> at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+> at java.util.ArrayList.get(ArrayList.java:308)
+> at org.ligi.gobandroid_hd.logic.GoMove.a(SourceFile:146)
+> at org.ligi.gobandroid_hd.logic.GoGame.a(SourceFile:288)
+> at
+> org.ligi.gobandroid_hd.ui.alerts.GameForwardAlert$var_select_listener$1.onClick(SourceFile:64)
+> at android.view.View.performClick(View.java:4789)
+> at android.view.View$PerformClick.run(View.java:19881)
+> at android.os.Handler.handleCallback(Handler.java:739)
+> at android.os.Handler.dispatchMessage(Handler.java:95)
+> at android.os.Looper.loop(Looper.java:135)
+> at android.app.ActivityThread.main(ActivityThread.java:5294)
+> at java.lang.reflect.Method.invoke(Native Method)
+> at java.lang.reflect.Method.invoke(Method.java:372)
+> at
+> com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+> at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)

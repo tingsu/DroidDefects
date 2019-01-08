@@ -1,0 +1,4 @@
+java.lang.NullPointerException
+    at net.osmand.data.preparation.address.DBStreetDAO.writeBuilding(DBStreetDAO.java:116)
+    at net.osmand.data.preparation.address.CachedDBStreetDAO.writeBuilding(CachedDBStreetDAO.java:50)
+    at net.osmand.data.preparation.address.IndexAddressCreator.indexAddressRelation(IndexAddressCreator.java:504)

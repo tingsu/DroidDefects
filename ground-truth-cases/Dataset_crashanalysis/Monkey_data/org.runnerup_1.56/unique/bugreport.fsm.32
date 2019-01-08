@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: org.runnerup
+//version: 1.56
+//appro_time: 137
+ java.lang.AssertionError
+ 	at org.runnerup.view.StartActivity.onGpsTrackerBound(StartActivity.java:447)
+ 	at org.runnerup.view.StartActivity.onResume(StartActivity.java:337)
+ 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+ 	at android.app.Activity.performResume(Activity.java:5211)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)
+ 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:169)
+ 	at android.app.LocalActivityManager.dispatchResume(LocalActivityManager.java:523)
+ 	at android.app.ActivityGroup.onResume(ActivityGroup.java:61)
+ 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+ 	at android.app.Activity.performResume(Activity.java:5211)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1298)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,33 @@
+//this is an auto-generated bug report
+//package name: de.jdsoft.law
+//version: 0.8.1
+//appro_time: 28
+ java.lang.NullPointerException
+ 	at de.jdsoft.law.LawListActivity$5.onTextChanged(LawListActivity.java:379)
+ 	at android.widget.TextView.sendOnTextChanged(TextView.java:7318)
+ 	at android.widget.TextView.setText(TextView.java:3774)
+ 	at android.widget.TextView.setText(TextView.java:3629)
+ 	at android.widget.EditText.setText(EditText.java:80)
+ 	at android.widget.TextView.setText(TextView.java:3604)
+ 	at de.jdsoft.law.LawListActivity$3.onFocusChange(LawListActivity.java:222)
+ 	at android.view.View.onFocusChanged(View.java:4640)
+ 	at android.widget.TextView.onFocusChanged(TextView.java:7551)
+ 	at android.view.View.unFocus(View.java:4561)
+ 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:3773)
+ 	at android.view.ViewGroup.removeViewInternal(ViewGroup.java:3761)
+ 	at android.view.ViewGroup.removeView(ViewGroup.java:3693)
+ 	at com.android.internal.widget.ActionBarView$ExpandedActionViewMenuPresenter.collapseItemActionView(ActionBarView.java:1662)
+ 	at com.android.internal.view.menu.MenuBuilder.collapseItemActionView(MenuBuilder.java:1262)
+ 	at com.android.internal.view.menu.MenuItemImpl.collapseActionView(MenuItemImpl.java:643)
+ 	at com.android.internal.widget.ActionBarView$2.onClick(ActionBarView.java:162)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

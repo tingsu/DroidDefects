@@ -1,0 +1,81 @@
+W/JobConsumer(12122): org.whispersystems.textsecure.internal.util.JsonUtil$JsonParseException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+W/JobConsumer(12122):  at [Source: <html>
+W/JobConsumer(12122): <head><title>411 Length Required</title></head>
+W/JobConsumer(12122): <body bgcolor="white">
+W/JobConsumer(12122): <center><h1>411 Length Required</h1></center>
+W/JobConsumer(12122): <hr><center>nginx/1.1.19</center>
+W/JobConsumer(12122): </body>
+W/JobConsumer(12122): </html>
+W/JobConsumer(12122): ; line: 1, column: 2]
+W/JobConsumer(12122):   at org.whispersystems.textsecure.internal.util.JsonUtil.fromJson(JsonUtil.java:44)
+W/JobConsumer(12122):   at org.whispersystems.textsecure.internal.push.PushServiceSocket.makeBaseRequest(PushServiceSocket.java:523)
+W/JobConsumer(12122):   at org.whispersystems.textsecure.internal.push.PushServiceSocket.makeRequest(PushServiceSocket.java:465)
+W/JobConsumer(12122):   at org.whispersystems.textsecure.internal.push.PushServiceSocket.sendMessage(PushServiceSocket.java:169)
+W/JobConsumer(12122):   at org.whispersystems.textsecure.api.TextSecureMessageSender.sendMessage(TextSecureMessageSender.java:300)
+W/JobConsumer(12122):   at org.whispersystems.textsecure.api.TextSecureMessageSender.sendMessage(TextSecureMessageSender.java:123)
+W/JobConsumer(12122):   at org.thoughtcrime.securesms.jobs.PushTextSendJob.deliver(PushTextSendJob.java:115)
+W/JobConsumer(12122):   at org.thoughtcrime.securesms.jobs.PushTextSendJob.onSend(PushTextSendJob.java:62)
+W/JobConsumer(12122):   at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+W/JobConsumer(12122):   at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/JobConsumer(12122):   at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/JobConsumer(12122):   at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/JobConsumer(12122): Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+W/JobConsumer(12122):  at [Source: <html>
+W/JobConsumer(12122): <head><title>411 Length Required</title></head>
+W/JobConsumer(12122): <body bgcolor="white">
+W/JobConsumer(12122): <center><h1>411 Length Required</h1></center>
+W/JobConsumer(12122): <hr><center>nginx/1.1.19</center>
+W/JobConsumer(12122): </body>
+W/JobConsumer(12122): </html>
+W/JobConsumer(12122): ; line: 1, column: 2]
+W/JobConsumer(12122):   at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1486)
+W/JobConsumer(12122):   at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+W/JobConsumer(12122):   at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:447)
+W/JobConsumer(12122):   at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1462)
+W/JobConsumer(12122):   at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:683)
+W/JobConsumer(12122):   at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:3600)
+W/JobConsumer(12122):   at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3545)
+W/JobConsumer(12122):   at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2576)
+W/JobConsumer(12122):   at org.whispersystems.textsecure.internal.util.JsonUtil.fromJson(JsonUtil.java:41)
+W/JobConsumer(12122):   ... 11 more
+E/AndroidRuntime(12122): FATAL EXCEPTION: JobConsumer-2
+E/AndroidRuntime(12122): Process: org.thoughtcrime.securesms, PID: 12122
+E/AndroidRuntime(12122): org.whispersystems.textsecure.internal.util.JsonUtil$JsonParseException: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+E/AndroidRuntime(12122):  at [Source: <html>
+E/AndroidRuntime(12122): <head><title>411 Length Required</title></head>
+E/AndroidRuntime(12122): <body bgcolor="white">
+E/AndroidRuntime(12122): <center><h1>411 Length Required</h1></center>
+E/AndroidRuntime(12122): <hr><center>nginx/1.1.19</center>
+E/AndroidRuntime(12122): </body>
+E/AndroidRuntime(12122): </html>
+E/AndroidRuntime(12122): ; line: 1, column: 2]
+E/AndroidRuntime(12122):    at org.whispersystems.textsecure.internal.util.JsonUtil.fromJson(JsonUtil.java:44)
+E/AndroidRuntime(12122):    at org.whispersystems.textsecure.internal.push.PushServiceSocket.makeBaseRequest(PushServiceSocket.java:523)
+E/AndroidRuntime(12122):    at org.whispersystems.textsecure.internal.push.PushServiceSocket.makeRequest(PushServiceSocket.java:465)
+E/AndroidRuntime(12122):    at org.whispersystems.textsecure.internal.push.PushServiceSocket.sendMessage(PushServiceSocket.java:169)
+E/AndroidRuntime(12122):    at org.whispersystems.textsecure.api.TextSecureMessageSender.sendMessage(TextSecureMessageSender.java:300)
+E/AndroidRuntime(12122):    at org.whispersystems.textsecure.api.TextSecureMessageSender.sendMessage(TextSecureMessageSender.java:123)
+E/AndroidRuntime(12122):    at org.thoughtcrime.securesms.jobs.PushTextSendJob.deliver(PushTextSendJob.java:115)
+E/AndroidRuntime(12122):    at org.thoughtcrime.securesms.jobs.PushTextSendJob.onSend(PushTextSendJob.java:62)
+E/AndroidRuntime(12122):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(12122):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(12122):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(12122):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(12122): Caused by: com.fasterxml.jackson.core.JsonParseException: Unexpected character ('<' (code 60)): expected a valid value (number, String, array, object, 'true', 'false' or 'null')
+E/AndroidRuntime(12122):  at [Source: <html>
+E/AndroidRuntime(12122): <head><title>411 Length Required</title></head>
+E/AndroidRuntime(12122): <body bgcolor="white">
+E/AndroidRuntime(12122): <center><h1>411 Length Required</h1></center>
+E/AndroidRuntime(12122): <hr><center>nginx/1.1.19</center>
+E/AndroidRuntime(12122): </body>
+E/AndroidRuntime(12122): </html>
+E/AndroidRuntime(12122): ; line: 1, column: 2]
+E/AndroidRuntime(12122):    at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1486)
+E/AndroidRuntime(12122):    at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:518)
+E/AndroidRuntime(12122):    at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:447)
+E/AndroidRuntime(12122):    at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:1462)
+E/AndroidRuntime(12122):    at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:683)
+E/AndroidRuntime(12122):    at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:3600)
+E/AndroidRuntime(12122):    at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3545)
+E/AndroidRuntime(12122):    at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2576)
+E/AndroidRuntime(12122):    at org.whispersystems.textsecure.internal.util.JsonUtil.fromJson(JsonUtil.java:41)

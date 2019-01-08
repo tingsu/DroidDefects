@@ -1,0 +1,321 @@
+W/PartDatabase(18575): Wrote part to file: /data/data/org.thoughtcrime.securesms/app_parts/part719545300.mms
+W/PartDatabase(18575): Inserted part at ID: 251
+W/PartDatabase(18575): Writing part data from buffer
+W/EncryptingPartDatabase(18575): Writing part to: /data/data/org.thoughtcrime.securesms/app_parts/part492166823.mms
+W/PartDatabase(18575): Wrote part to file: /data/data/org.thoughtcrime.securesms/app_parts/part492166823.mms
+W/PartDatabase(18575): Inserted part at ID: 252
+W/MmsSmsDatabase(18575): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (thread_id = 4) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (thread_id = 4) ORDER BY date_received DESC) LIMIT 1
+W/Session (18575): Checking session...
+W/MmsSender(18575): Got intent action: org.thoughtcrime.securesms.SendReceiveService.SEND_MMS_ACTION
+W/EncryptingPartDatabase(18575): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part719545300.mms
+W/ImageSlide(18575): Got soft reference: null
+W/ImageSlide(18575): Got soft reference: null
+W/Slide   (18575): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/252
+W/PartDatabase(18575): Getting part at ID: 252
+W/EncryptingPartDatabase(18575): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part492166823.mms
+E/SpannableStringBuilder(18575): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder(18575): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+W/EncryptingPartDatabase(18575): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part492166823.mms
+W/Slide   (18575): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/252
+W/PartDatabase(18575): Getting part at ID: 252
+W/EncryptingPartDatabase(18575): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part492166823.mms
+E/SpannableStringBuilder(18575): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder(18575): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+W/MmsSender(18575): Passing to MMS transport: 398
+W/MmsTransport(18575): Sending MMS with radio change and proxy...
+W/MmsRadio(18575): startUsingNetworkFeature status: 1
+W/MmsRadio(18575): Got connectivity change...
+W/BitmapUtil(18575): rough scale 960x1280 => 480x640
+W/BitmapUtil(18575): fine scale  480x640 => 195.75x261.0
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+E/SpannableStringBuilder(18575): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder(18575): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+W/MmsRadio(18575): Got back from connectivity wait, and not connected...
+W/MmsRadio(18575): MMS Radio Disconnect Called...
+W/MmsRadio(18575): Reference count: 0
+W/MmsRadio(18575): Turning off MMS radio...
+W/MmsRadio(18575): Unregistering receiver...
+W/MmsTransport(18575): org.thoughtcrime.securesms.mms.MmsRadioException: Unable to successfully enable MMS radio.
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.mms.MmsRadio.connect(MmsRadio.java:94)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:84)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:113)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.MmsSender.handleSendMms(MmsSender.java:79)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.MmsSender.process(MmsSender.java:60)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:275)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsSender(18575): org.thoughtcrime.securesms.transport.UndeliverableMessageException: org.thoughtcrime.securesms.mms.MmsRadioException: Unable to successfully enable MMS radio.
+W/MmsSender(18575):     at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:108)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:113)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.service.MmsSender.handleSendMms(MmsSender.java:79)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.service.MmsSender.process(MmsSender.java:60)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:275)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsSender(18575): Caused by: org.thoughtcrime.securesms.mms.MmsRadioException: Unable to successfully enable MMS radio.
+W/MmsSender(18575):     at org.thoughtcrime.securesms.mms.MmsRadio.connect(MmsRadio.java:94)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:84)
+W/MmsSender(18575):     ... 5 more
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+E/MediaPlayer(18575): Should have subtitle controller already set
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+W/MmsSender(18575): Got intent action: org.thoughtcrime.securesms.SendReceiveService.SEND_MMS_ACTION
+W/EncryptingPartDatabase(18575): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part719545300.mms
+W/EncryptingPartDatabase(18575): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part492166823.mms
+W/MmsSender(18575): Passing to MMS transport: 398
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+W/MmsTransport(18575): Sending MMS with radio change and proxy...
+W/MmsRadio(18575): startUsingNetworkFeature status: 1
+W/MmsRadio(18575): Got connectivity change...
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+W/InputEventReceiver(18575): Attempted to finish an input event but the input event receiver has already been disposed.
+W/MediaPlayer-JNI(18575): MediaPlayer finalized without being released
+W/MmsRadio(18575): Got connectivity change...
+W/MmsRadio(18575): Notifying connected...
+W/PduComposer(18575): Making send request...
+W/PduComposer(18575): Making message body...
+W/PduComposer(18575): Returning: 132082 bytes...
+W/MmsSendHelper(18575): Sending MMS of length: 132082. using mms radio
+W/MmsCommunication(18575): Getting MMSC params for apn event.vodafone.de
+W/MmsCommunication(18575): Android won't let us query the APN database.
+W/TelephonyUtil(18575): Choosing MCC+MNC info from TelephonyManager.getSimOperator()
+W/ApnDatabase(18575): Querying table for MCC+MNC 26202 and APN name event.vodafone.de
+W/ApnDatabase(18575): Returning preferred APN MmsConnectionParameters{ mmsc: "http://139.7.24.1/servlets/mms", proxy: "139.7.29.17", port: 80 }
+W/MmsCommunication(18575): Checking route to address: 139.7.29.17 , 139.7.29.17
+W/MmsTransport(18575): java.io.IOException: Connection manager could not obtain route to host.
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.mms.MmsSendHelper.sendBytes(MmsSendHelper.java:125)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.mms.MmsSendHelper.sendMms(MmsSendHelper.java:95)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.MmsTransport.sendMms(MmsTransport.java:127)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:87)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:113)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.MmsSender.handleSendMms(MmsSender.java:79)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.MmsSender.process(MmsSender.java:60)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:275)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsTransport(18575): Sending MMS with radio change and without proxy...
+W/PduComposer(18575): Making send request...
+W/PduComposer(18575): Making message body...
+W/PduComposer(18575): Returning: 132082 bytes...
+W/MmsSendHelper(18575): Sending MMS of length: 132082. using mms radio
+W/MmsCommunication(18575): Getting MMSC params for apn event.vodafone.de
+W/MmsCommunication(18575): Android won't let us query the APN database.
+W/TelephonyUtil(18575): Choosing MCC+MNC info from TelephonyManager.getSimOperator()
+W/ApnDatabase(18575): Querying table for MCC+MNC 26202 and APN name event.vodafone.de
+W/ApnDatabase(18575): Returning preferred APN MmsConnectionParameters{ mmsc: "http://139.7.24.1/servlets/mms", proxy: "139.7.29.17", port: 80 }
+W/MmsCommunication(18575): Checking route to address: 139.7.24.1 , 139.7.24.1
+W/MmsTransport(18575): java.io.IOException: Connection manager could not obtain route to host.
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.mms.MmsSendHelper.sendBytes(MmsSendHelper.java:125)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.mms.MmsSendHelper.sendMms(MmsSendHelper.java:95)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.MmsTransport.sendMms(MmsTransport.java:127)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:97)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:113)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.MmsSender.handleSendMms(MmsSender.java:79)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.MmsSender.process(MmsSender.java:60)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:275)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsRadio(18575): MMS Radio Disconnect Called...
+W/MmsRadio(18575): Reference count: 0
+W/MmsRadio(18575): Turning off MMS radio...
+W/MmsRadio(18575): Unregistering receiver...
+W/MmsSender(18575): org.thoughtcrime.securesms.transport.UndeliverableMessageException: java.io.IOException: Connection manager could not obtain route to host.
+W/MmsSender(18575):     at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:103)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:113)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.service.MmsSender.handleSendMms(MmsSender.java:79)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.service.MmsSender.process(MmsSender.java:60)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:275)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsSender(18575): Caused by: java.io.IOException: Connection manager could not obtain route to host.
+W/MmsSender(18575):     at org.thoughtcrime.securesms.mms.MmsSendHelper.sendBytes(MmsSendHelper.java:125)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.mms.MmsSendHelper.sendMms(MmsSendHelper.java:95)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.transport.MmsTransport.sendMms(MmsTransport.java:127)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:97)
+W/MmsSender(18575):     ... 5 more
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+E/MediaPlayer(18575): Should have subtitle controller already set
+I/Timeline(18575): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:32169904
+W/KeyCachingService(18575): Decrementing activity count...
+W/KeyCachingService(18575): Starting timeout: 1200000
+W/KeyCachingService(18575): Incrementing activity count...
+I/Timeline(18575): Timeline: Activity_idle id: android.os.BinderProxy@41f81c78 time:32170912
+I/Timeline(18575): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:32172851
+W/KeyCachingService(18575): Decrementing activity count...
+W/KeyCachingService(18575): Starting timeout: 1200000
+W/Resources(18575): Converting to string: TypedValue{t=0x10/d=0x1f4 a=-1}
+W/Resources(18575): Converting to string: TypedValue{t=0x10/d=0x1f4 a=-1}
+D/Ringtone(18575): Successfully created local player
+E/MediaPlayer(18575): Should have subtitle controller already set
+W/KeyCachingService(18575): Incrementing activity count...
+I/Choreographer(18575): Skipped 38 frames!  The application may be doing too much work on its main thread.
+W/MediaPlayer-JNI(18575): MediaPlayer finalized without being released
+W/MediaPlayer-JNI(18575): MediaPlayer finalized without being released
+I/Timeline(18575): Timeline: Activity_idle id: android.os.BinderProxy@42142d50 time:32174080
+I/Timeline(18575): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:32176500
+W/KeyCachingService(18575): Decrementing activity count...
+W/KeyCachingService(18575): Starting timeout: 1200000
+I/Timeline(18575): Timeline: Activity_idle id: android.os.BinderProxy@42120870 time:32176773
+```
+
+Trying to send with wifi disabled:
+
+```
+--------- beginning of /dev/log/main
+I/Timeline(18575): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:32582270
+W/KeyCachingService(18575): Decrementing activity count...
+W/KeyCachingService(18575): Starting timeout: 1200000
+W/MmsCommunication(18575): Getting MMSC params for apn null
+W/MmsCommunication(18575): Android won't let us query the APN database.
+W/TelephonyUtil(18575): Choosing MCC+MNC info from TelephonyManager.getSimOperator()
+W/ApnDatabase(18575): Querying table for MCC+MNC 26202 and APN name event.vodafone.de
+W/ApnDatabase(18575): Returning preferred APN MmsConnectionParameters{ mmsc: "http://139.7.24.1/servlets/mms", proxy: "139.7.29.17", port: 80 }
+I/Choreographer(18575): Skipped 37 frames!  The application may be doing too much work on its main thread.
+W/KeyCachingService(18575): Incrementing activity count...
+I/Choreographer(18575): Skipped 50 frames!  The application may be doing too much work on its main thread.
+I/Timeline(18575): Timeline: Activity_idle id: android.os.BinderProxy@423cc7b8 time:32584572
+W/MediaPlayer-JNI(18575): MediaPlayer finalized without being released
+W/MmsCommunication(18575): Getting MMSC params for apn null
+W/MmsCommunication(18575): Android won't let us query the APN database.
+W/KeyCachingService(18575): Decrementing activity count...
+W/KeyCachingService(18575): Starting timeout: 1200000
+W/KeyCachingService(18575): Incrementing activity count...
+I/Choreographer(18575): Skipped 53 frames!  The application may be doing too much work on its main thread.
+I/Timeline(18575): Timeline: Activity_idle id: android.os.BinderProxy@426601b0 time:32589763
+W/InputEventReceiver(18575): Attempted to finish an input event but the input event receiver has already been disposed.
+W/KeyCachingService(18575): Decrementing activity count...
+W/KeyCachingService(18575): Starting timeout: 1200000
+W/KeyCachingService(18575): Incrementing activity count...
+I/Choreographer(18575): Skipped 35 frames!  The application may be doing too much work on its main thread.
+I/Timeline(18575): Timeline: Activity_idle id: android.os.BinderProxy@41f81c78 time:32595728
+I/Timeline(18575): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:32596857
+W/KeyCachingService(18575): Decrementing activity count...
+W/KeyCachingService(18575): Starting timeout: 1200000
+W/Session (18575): Checking session...
+W/MmsSmsDatabase(18575): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (thread_id = 4) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (thread_id = 4) ORDER BY date_received ASC)
+W/KeyCachingService(18575): Incrementing activity count...
+W/MmsCommunication(18575): Getting MMSC params for apn event.vodafone.de
+W/MmsCommunication(18575): Android won't let us query the APN database.
+W/MmsSmsDatabase(18575): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+I/Choreographer(18575): Skipped 64 frames!  The application may be doing too much work on its main thread.
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42613a58
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423781d8
+W/ImageSlide(18575): Setting cached thumbnail...
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42613a58
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423781d8
+W/ImageSlide(18575): Setting cached thumbnail...
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+I/Timeline(18575): Timeline: Activity_idle id: android.os.BinderProxy@41f87d20 time:32599134
+E/SpannableStringBuilder(18575): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder(18575): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+W/MmsSender(18575): Got intent action: org.thoughtcrime.securesms.SendReceiveService.SEND_MMS_ACTION
+W/EncryptingPartDatabase(18575): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part719545300.mms
+W/EncryptingPartDatabase(18575): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part492166823.mms
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42613a58
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423781d8
+W/ImageSlide(18575): Setting cached thumbnail...
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+W/MmsSender(18575): Passing to MMS transport: 398
+W/MmsTransport(18575): Sending MMS with radio change and proxy...
+W/MmsRadio(18575): startUsingNetworkFeature status: 1
+W/MmsRadio(18575): Got connectivity change...
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42613a58
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423781d8
+W/ImageSlide(18575): Setting cached thumbnail...
+W/ImageSlide(18575): Got soft reference: java.lang.ref.SoftReference@42142830
+W/ImageSlide(18575): Got cached bitmap: android.graphics.drawable.BitmapDrawable@423f3130
+W/ImageSlide(18575): Setting cached thumbnail...
+W/MmsRadio(18575): Got connectivity change...
+W/MmsRadio(18575): Notifying connected...
+W/PduComposer(18575): Making send request...
+W/PduComposer(18575): Making message body...
+W/PduComposer(18575): Returning: 132082 bytes...
+W/MmsSendHelper(18575): Sending MMS of length: 132082. using mms radio
+W/MmsCommunication(18575): Getting MMSC params for apn event.vodafone.de
+W/MmsCommunication(18575): Android won't let us query the APN database.
+W/MmsCommunication(18575): Checking route to address: 139.7.29.17 , 139.7.29.17
+W/MmsCommunication(18575): Constructing http client using a proxy: (139.7.29.17:80)
+W/MmsSendHelper(18575): Connecting to http://139.7.24.1/servlets/mms
+W/MmsTransport(18575): java.io.IOException: Connection manager could not obtain route to host.
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.mms.MmsSendHelper.sendBytes(MmsSendHelper.java:125)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.mms.MmsSendHelper.sendMms(MmsSendHelper.java:95)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.MmsTransport.sendMms(MmsTransport.java:127)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:87)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:113)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.MmsSender.handleSendMms(MmsSender.java:79)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.MmsSender.process(MmsSender.java:60)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:275)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsTransport(18575): Sending MMS with radio change and without proxy...
+W/PduComposer(18575): Making send request...
+W/PduComposer(18575): Making message body...
+W/PduComposer(18575): Returning: 132082 bytes...
+W/MmsSendHelper(18575): Sending MMS of length: 132082. using mms radio
+W/MmsCommunication(18575): Getting MMSC params for apn event.vodafone.de
+W/MmsCommunication(18575): Android won't let us query the APN database.
+W/MmsCommunication(18575): Checking route to address: 139.7.24.1 , 139.7.24.1
+W/MmsCommunication(18575): Constructing http client without proxy
+W/MmsSendHelper(18575): Connecting to http://139.7.24.1/servlets/mms
+W/MmsSendHelper(18575): Writing mms payload, 132082 bytes
+W/MmsSendHelper(18575): Payload sent
+W/MmsSendHelper(18575): java.io.FileNotFoundException: http://139.7.24.1/servlets/mms
+W/MmsSendHelper(18575):     at com.android.okhttp.internal.http.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:186)
+W/MmsSendHelper(18575):     at org.thoughtcrime.securesms.mms.MmsSendHelper.makePost(MmsSendHelper.java:69)
+W/MmsSendHelper(18575):     at org.thoughtcrime.securesms.mms.MmsSendHelper.sendBytes(MmsSendHelper.java:116)
+W/MmsSendHelper(18575):     at org.thoughtcrime.securesms.mms.MmsSendHelper.sendMms(MmsSendHelper.java:95)
+W/MmsSendHelper(18575):     at org.thoughtcrime.securesms.transport.MmsTransport.sendMms(MmsTransport.java:127)
+W/MmsSendHelper(18575):     at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:97)
+W/MmsSendHelper(18575):     at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:113)
+W/MmsSendHelper(18575):     at org.thoughtcrime.securesms.service.MmsSender.handleSendMms(MmsSender.java:79)
+W/MmsSendHelper(18575):     at org.thoughtcrime.securesms.service.MmsSender.process(MmsSender.java:60)
+W/MmsSendHelper(18575):     at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:275)
+W/MmsSendHelper(18575):     at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsTransport(18575): java.io.IOException: Connection manager could not obtain route to host.
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.mms.MmsSendHelper.sendBytes(MmsSendHelper.java:125)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.mms.MmsSendHelper.sendMms(MmsSendHelper.java:95)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.MmsTransport.sendMms(MmsTransport.java:127)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:97)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:113)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.MmsSender.handleSendMms(MmsSender.java:79)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.MmsSender.process(MmsSender.java:60)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:275)
+W/MmsTransport(18575):  at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsRadio(18575): MMS Radio Disconnect Called...
+W/MmsRadio(18575): Reference count: 0
+W/MmsRadio(18575): Turning off MMS radio...
+W/MmsRadio(18575): Unregistering receiver...
+W/MmsSender(18575): org.thoughtcrime.securesms.transport.UndeliverableMessageException: java.io.IOException: Connection manager could not obtain route to host.
+W/MmsSender(18575):     at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:103)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:113)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.service.MmsSender.handleSendMms(MmsSender.java:79)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.service.MmsSender.process(MmsSender.java:60)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:275)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/MmsSender(18575): Caused by: java.io.IOException: Connection manager could not obtain route to host.
+W/MmsSender(18575):     at org.thoughtcrime.securesms.mms.MmsSendHelper.sendBytes(MmsSendHelper.java:125)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.mms.MmsSendHelper.sendMms(MmsSendHelper.java:95)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.transport.MmsTransport.sendMms(MmsTransport.java:127)
+W/MmsSender(18575):     at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:97)

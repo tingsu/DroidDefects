@@ -1,0 +1,7 @@
+java.lang.AbstractMethodError: abstract method not implemented
+    at android.service.notification.NotificationListenerService.onNotificationPosted(NotificationListenerService.java)
+    at it.feio.android.omninotes.services.NotificationListener.onNotificationPosted(NotificationListener.java:40)
+    at android.service.notification.NotificationListenerService$INotificationListenerWrapper.onNotificationPosted(NotificationListenerService.java:167)
+    at android.service.notification.INotificationListener$Stub.onTransact(INotificationListener.java:56)
+    at android.os.Binder.execTransact(Binder.java:388)
+    at dalvik.system.NativeStart.run(Native Method)

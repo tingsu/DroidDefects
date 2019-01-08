@@ -1,0 +1,8 @@
+//this is an auto-generated bug report
+//package name: org.jsl.wfwt
+//version: 1.10
+//appro_time: 161
+ java.lang.IllegalStateException: stop() called on an uninitialized AudioRecord.
+ 	at android.media.AudioRecord.stop(AudioRecord.java:558)
+ 	at org.jsl.wfwt.AudioRecorder.run(AudioRecorder.java:120)
+ 	at java.lang.Thread.run(Thread.java:841)

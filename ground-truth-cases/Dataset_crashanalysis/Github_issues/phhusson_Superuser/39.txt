@@ -1,0 +1,5 @@
+03-10 21:47:36.214 I/Superuser(28244): java.io.IOException: Permission denied
+03-10 21:47:36.214 I/Superuser(28244):  at android.net.LocalSocketImpl.connectLocal(Native Method)
+03-10 21:47:36.214 I/Superuser(28244):  at android.net.LocalSocketImpl.connect(LocalSocketImpl.java:293)
+03-10 21:47:36.214 I/Superuser(28244):  at android.net.LocalSocket.connect(LocalSocket.java:130)
+03-10 21:47:36.214 I/Superuser(28244):  at com.koushikdutta.superuser.MultitaskSuRequestActivity$7.run(MultitaskSuRequestActivity.java:278)

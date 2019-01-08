@@ -1,0 +1,21 @@
+08-07 14:33:36.080 E/DatabaseUtils( 4215): android.database.sqlite.SQLiteException: no such column: sdn_alpha_id: , while compiling: SELECT sns_receiver_count, numberlabel, service_type, matched_number, type, contactid, lookup_uri, mime_type, sdn_alpha_id, sp_type, messageid, fname, simnum, lname, sns_pkey, account_id, formatted_number, call_out_duration, number, geocoded_location, account_name, is_read, raw_contact_id, source_data, cdnip_number, state, m_subject, date, real_phone_number, source_package, _id, sns_tid, name, normalized_number, name_reversed, _data, photo_id, logtype, reject_flag, has_content, m_content, country_code, frequent, cityid, bname, countryiso, numbertype, new, duration, cnap_name, address, e164_number, voicemail_uri FROM logs WHERE (logs.logtype=100 OR logs.logtype=110 OR logs.logtype=500 OR logs.logtype=800 OR logs.logtype=900 OR logs.logtype=1000 OR (logs.logtype=200 AND number NOT IN (SELECT number FROM logs WHERE number LIKE '%@%')) OR logs.logtype=300) AND (((date > ?) AND ((type != '4')))) ORDER BY date
+08-07 14:33:36.080 E/DatabaseUtils( 4215): at android.database.sqlite.SQLiteCompiledSql.native_compile(Native Method)
+08-07 14:33:36.080 E/DatabaseUtils( 4215): at android.database.sqlite.SQLiteCompiledSql.<init>(SQLiteCompiledSql.java:68)
+08-07 14:33:36.080 E/DatabaseUtils( 4215): at android.database.sqlite.SQLiteQueryBuilder.validateSql(SQLiteQueryBuilder.java:366)
+08-07 14:33:36.080 E/DatabaseUtils( 4215): at android.database.sqlite.SQLiteQueryBuilder.query(SQLiteQueryBuilder.java:344)
+08-07 14:33:36.080 E/DatabaseUtils( 4215): at com.sec.android.provider.logsprovider.LogsProvider.query(LogsProvider.java:990)
+08-07 14:33:36.080 E/DatabaseUtils( 4215): at android.content.ContentProvider$Transport.query(ContentProvider.java:178)
+08-07 14:33:36.080 E/DatabaseUtils( 4215): at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:112)
+08-07 14:33:36.080 E/DatabaseUtils( 4215): at android.os.Binder.execTransact(Binder.java:338)
+08-07 14:33:36.080 E/DatabaseUtils( 4215): at dalvik.system.NativeStart.run(Native Method)
+08-07 14:33:36.085 E/DatabaseUtils( 2318): Writing exception to parcel
+08-07 14:33:36.085 E/DatabaseUtils( 2318): android.database.sqlite.SQLiteException: no such column: sdn_alpha_id: , while compiling: SELECT sns_receiver_count, numberlabel, service_type, matched_number, type, contactid, lookup_uri, mime_type, sdn_alpha_id, sp_type, messageid, fname, simnum, lname, sns_pkey, account_id, formatted_number, call_out_duration, number, geocoded_location, account_name, is_read, raw_contact_id, source_data, cdnip_number, state, m_subject, date, real_phone_number, source_package, _id, sns_tid, name, normalized_number, name_reversed, _data, photo_id, logtype, reject_flag, has_content, m_content, country_code, frequent, cityid, bname, countryiso, numbertype, new, duration, cnap_name, address, e164_number, voicemail_uri FROM logs WHERE (logs.logtype=100 OR logs.logtype=110 OR logs.logtype=500 OR logs.logtype=800 OR logs.logtype=900 OR logs.logtype=1000 OR (logs.logtype=200 AND number NOT IN (SELECT number FROM logs WHERE number LIKE '%@%')) OR logs.logtype=300) AND (((date > ?) AND ((type != '4')))) ORDER BY date
+08-07 14:33:36.085 E/DatabaseUtils( 2318): at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:180)
+08-07 14:33:36.085 E/DatabaseUtils( 2318): at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:136)
+08-07 14:33:36.085 E/DatabaseUtils( 2318): at android.content.ContentProviderProxy.query(ContentProviderNative.java:358)
+08-07 14:33:36.085 E/DatabaseUtils( 2318): at android.content.ContentResolver.query(ContentResolver.java:317)
+08-07 14:33:36.085 E/DatabaseUtils( 2318): at com.android.providers.contacts.CallLogProvider.query(CallLogProvider.java:175)
+08-07 14:33:36.085 E/DatabaseUtils( 2318): at android.content.ContentProvider$Transport.query(ContentProvider.java:178)
+08-07 14:33:36.085 E/DatabaseUtils( 2318): at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:112)
+08-07 14:33:36.085 E/DatabaseUtils( 2318): at android.os.Binder.execTransact(Binder.java:338)
+08-07 14:33:36.085 E/DatabaseUtils( 2318): at dalvik.system.NativeStart.run(Native Method)

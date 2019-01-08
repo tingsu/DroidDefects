@@ -1,0 +1,11 @@
+E/AndroidRuntime( 6394): java.lang.NullPointerException
+E/AndroidRuntime( 6394):    at org.kiwix.kiwixmobile.library.LibraryAdapter$BookFilter.publishResults(LibraryAdapter.java:275)
+E/AndroidRuntime( 6394):    at android.widget.Filter$ResultsHandler.handleMessage(Filter.java:282)
+E/AndroidRuntime( 6394):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 6394):    at android.os.Looper.loop(Looper.java:175)
+E/AndroidRuntime( 6394):    at android.app.ActivityThread.main(ActivityThread.java:5279)
+E/AndroidRuntime( 6394):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 6394):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime( 6394):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1102)
+E/AndroidRuntime( 6394):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:869)
+E/AndroidRuntime( 6394):    at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: cz.hejl.chesswalk
+//version: 1.5.1
+//appro_time: 53
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.NullPointerException: lock == null
+ 	at java.io.Reader.<init>(Reader.java:64)
+ 	at java.io.InputStreamReader.<init>(InputStreamReader.java:122)
+ 	at java.io.InputStreamReader.<init>(InputStreamReader.java:59)
+ 	at cz.hejl.chesswalk.ChessClient$FicsListenerTask.doInBackground(ChessClient.java:360)
+ 	at cz.hejl.chesswalk.ChessClient$FicsListenerTask.doInBackground(ChessClient.java:350)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

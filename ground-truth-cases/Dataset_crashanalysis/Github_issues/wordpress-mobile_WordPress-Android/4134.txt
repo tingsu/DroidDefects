@@ -1,0 +1,12 @@
+Fatal Exception: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.app.Activity.startIntentSenderForResult(android.content.IntentSender, int, android.content.Intent, int, int, int)' on a null object reference
+       at com.google.android.gms.common.api.Status.startResolutionForResult(Unknown Source)
+       at org.wordpress.android.ui.accounts.SignInFragment$13.onResult(SignInFragment.java:709)
+       at org.wordpress.android.ui.accounts.SignInFragment$13.onResult(SignInFragment.java:703)
+       at com.google.android.gms.internal.zzly$zza.zzb(Unknown Source)
+       at com.google.android.gms.internal.zzly$zza.handleMessage(Unknown Source)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:158)
+       at android.app.ActivityThread.main(ActivityThread.java:7224)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1230)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1120)

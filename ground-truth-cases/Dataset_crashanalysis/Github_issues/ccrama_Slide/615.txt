@@ -1,0 +1,63 @@
+1. Go to a subreddit with very few posts (for example, /r/fleksy)
+2. Scroll down until you see the spinner at the bottom of the page
+3. Scroll up
+4. Scroll back down, causing Slide to crash
+
+Running Slide v4.3.4
+
+```
+--------- beginning of crash
+[ 11-18 13:07:56.486 22102:22102 E/AndroidRuntime ]
+FATAL EXCEPTION: main
+Process: me.ccrama.redditslide, PID: 22102
+java.lang.IndexOutOfBoundsException: Inconsistency detected. Invalid item position 5(offset:5).state:6
+        at android.support.v7.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:4401)
+        at android.support.v7.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:4359)
+        at android.support.v7.widget.LinearLayoutManager$LayoutState.next(LinearLayoutManager.java:1961)
+        at android.support.v7.widget.LinearLayoutManager.layoutChunk(LinearLayoutManager.java:1370)
+        at android.support.v7.widget.LinearLayoutManager.fill(LinearLayoutManager.java:1333)
+        at android.support.v7.widget.LinearLayoutManager.scrollBy(LinearLayoutManager.java:1161)
+        at android.support.v7.widget.LinearLayoutManager.scrollVerticallyBy(LinearLayoutManager.java:1018)
+        at android.support.v7.widget.RecyclerView.scrollByInternal(RecyclerView.java:1492)
+        at android.support.v7.widget.RecyclerView.onTouchEvent(RecyclerView.java:2416)
+        at android.view.View.dispatchTouchEvent(View.java:9294)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2547)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2240)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2553)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2553)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2553)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2553)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2553)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2553)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2553)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2553)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2553)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2553)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+        at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2553)
+        at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2254)
+        at com.android.internal.policy.PhoneWindow$DecorView.superDispatchTouchEvent(PhoneWindow.java:2403)
+        at com.android.internal.policy.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:1737)
+        at android.app.Activity.dispatchTouchEvent(Activity.java:2765)
+        at android.support.v7.internal.view.WindowCallbackWrapper.dispatchTouchEvent(WindowCallbackWrapper.java:60)
+        at android.support.v7.internal.view.WindowCallbackWrapper.dispatchTouchEvent(WindowCallbackWrapper.java:60)
+        at com.android.internal.policy.PhoneWindow$DecorView.dispatchTouchEvent(PhoneWindow.java:2364)
+        at android.view.View.dispatchPointerEvent(View.java:9514)
+        at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:4230)
+        at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4096)
+        at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3642)
+        at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3695)
+        at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3661)
+        at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3787)
+        at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3669)
+        at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:3844)
+        at androi

@@ -1,0 +1,14 @@
+04-05 17:38:41.098 1665 1708 W SessionCipherV2: org.whispersystems.textsecure.crypto.InvalidMessageException: Bad Mac!
+04-05 17:38:41.098 1665 1708 W SessionCipherV2: at org.whispersystems.textsecure.crypto.protocol.WhisperMessageV2.verifyMac(WhisperMessageV2.java:107)
+04-05 17:38:41.098 1665 1708 W SessionCipherV2: at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:127)
+04-05 17:38:41.098 1665 1708 W SessionCipherV2: at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:89)
+04-05 17:38:41.098 1665 1708 W SessionCipherV2: at org.thoughtcrime.securesms.crypto.DecryptingQueue$PushDecryptionWorkItem.run(DecryptingQueue.java:207)
+04-05 17:38:41.098 1665 1708 W SessionCipherV2: at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+04-05 17:38:41.098 1665 1708 W SessionCipherV2: at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+04-05 17:38:41.098 1665 1708 W SessionCipherV2: at java.lang.Thread.run(Thread.java:1019)
+04-05 17:38:41.108 1665 1708 W DecryptionQueue: org.whispersystems.textsecure.crypto.InvalidMessageException: No valid sessions.
+04-05 17:38:41.108 1665 1708 W DecryptionQueue: at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:109)
+04-05 17:38:41.108 1665 1708 W DecryptionQueue: at org.thoughtcrime.securesms.crypto.DecryptingQueue$PushDecryptionWorkItem.run(DecryptingQueue.java:207)
+04-05 17:38:41.108 1665 1708 W DecryptionQueue: at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+04-05 17:38:41.108 1665 1708 W DecryptionQueue: at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+04-05 17:38:41.108 1665 1708 W DecryptionQueue: at java.lang.Thread.run(Thread.java:1019)

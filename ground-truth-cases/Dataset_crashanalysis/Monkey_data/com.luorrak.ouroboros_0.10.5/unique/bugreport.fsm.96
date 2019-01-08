@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: com.luorrak.ouroboros
+//version: 0.10.5
+//appro_time: 171
+ FATAL EXCEPTION: main
+ java.lang.NullPointerException
+ 	at com.luorrak.ouroboros.util.NetworkHelper.captchaTest(NetworkHelper.java:208)
+ 	at com.luorrak.ouroboros.util.NetworkHelper.access$000(NetworkHelper.java:55)
+ 	at com.luorrak.ouroboros.util.NetworkHelper$1.onCompleted(NetworkHelper.java:134)
+ 	at com.luorrak.ouroboros.util.NetworkHelper$1.onCompleted(NetworkHelper.java:121)
+ 	at com.koushikdutta.async.future.SimpleFuture.handleCallbackUnlocked(SimpleFuture.java:107)
+ 	at com.koushikdutta.async.future.SimpleFuture.setComplete(SimpleFuture.java:141)
+ 	at com.koushikdutta.async.future.SimpleFuture.setComplete(SimpleFuture.java:128)
+ 	at com.koushikdutta.ion.IonRequestBuilder$EmitterTransform$1.onCompleted(IonRequestBuilder.java:428)
+ 	at com.koushikdutta.async.future.SimpleFuture.handleCallbackUnlocked(SimpleFuture.java:107)
+ 	at com.koushikdutta.async.future.SimpleFuture.setComplete(SimpleFuture.java:141)
+ 	at com.koushikdutta.async.future.SimpleFuture.setComplete(SimpleFuture.java:124)
+ 	at com.koushikdutta.ion.IonRequestBuilder$1.run(IonRequestBuilder.java:244)
+ 	at com.koushikdutta.async.AsyncServer$RunnableWrapper.run(AsyncServer.java:57)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,12 @@
+W/PhoneNumberFormatter(31496): Error type: TOO_LONG. The string supplied is too long to be a phone number.
+W/PhoneNumberFormatter(31496):  at com.google.i18n.phonenumbers.PhoneNumberUtil.parseHelper(PhoneNumberUtil.java:2982)
+W/PhoneNumberFormatter(31496):  at com.google.i18n.phonenumbers.PhoneNumberUtil.parse(PhoneNumberUtil.java:2775)
+W/PhoneNumberFormatter(31496):  at com.google.i18n.phonenumbers.PhoneNumberUtil.parse(PhoneNumberUtil.java:2765)
+W/PhoneNumberFormatter(31496):  at org.whispersystems.textsecure.api.util.PhoneNumberFormatter.formatNumber(PhoneNumberFormatter.java:95)
+W/PhoneNumberFormatter(31496):  at org.thoughtcrime.securesms.database.TextSecureDirectory.getPushEligibleContactNumbers(TextSecureDirectory.java:182)
+W/PhoneNumberFormatter(31496):  at org.thoughtcrime.securesms.util.DirectoryHelper.refreshDirectory(DirectoryHelper.java:68)
+W/PhoneNumberFormatter(31496):  at org.thoughtcrime.securesms.util.DirectoryHelper.refreshDirectory(DirectoryHelper.java:61)
+W/PhoneNumberFormatter(31496):  at org.thoughtcrime.securesms.util.DirectoryHelper.refreshDirectory(DirectoryHelper.java:55)
+W/PhoneNumberFormatter(31496):  at org.thoughtcrime.securesms.jobs.DirectoryRefreshJob.onRun(DirectoryRefreshJob.java:33)
+W/PhoneNumberFormatter(31496):  at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/PhoneNumberFormatter(31496):  at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

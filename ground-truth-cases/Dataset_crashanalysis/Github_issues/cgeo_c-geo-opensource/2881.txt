@@ -1,0 +1,4 @@
+java.lang.NullPointerException
+    at cgeo.geocaching.connector.gc.GCParser.isSearchForMyCaches(GCParser.java:865)
+    at cgeo.geocaching.connector.gc.GCParser.searchByUsername(GCParser.java:880)
+    at cgeo.geocaching.loaders.UsernameGeocacheListLoader.runSearch(UsernameGeocacheListLoader.java:20)

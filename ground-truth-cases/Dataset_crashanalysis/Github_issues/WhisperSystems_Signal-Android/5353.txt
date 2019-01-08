@@ -1,0 +1,6 @@
+D/RedPhoneService(18728): java.lang.NullPointerException
+D/RedPhoneService(18728):   at org.thoughtcrime.redphone.audio.OutgoingRinger.onPrepared(OutgoingRinger.java:147)
+D/RedPhoneService(18728):   at android.media.MediaPlayer$EventHandler.handleMessage(MediaPlayer.java:1992)
+D/RedPhoneService(18728):   at android.os.Handler.dispatchMessage(Handler.java:99)
+D/RedPhoneService(18728):   at android.os.Looper.loop(Looper.java:153)
+D/RedPhoneService(18728):   at android.app.ActivityThread.main(ActivityThread.java:5299)

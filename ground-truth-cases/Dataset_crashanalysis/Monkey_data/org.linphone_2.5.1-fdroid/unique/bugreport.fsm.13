@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: org.linphone
+//version: 2.5.1-fdroid
+//appro_time: 81
+ java.lang.RuntimeException: Linphone Manager was already destroyed. Better use getLcIfManagerNotDestroyed and check returned value
+ 	at org.linphone.LinphoneManager.getInstance(LinphoneManager.java:371)
+ 	at org.linphone.LinphoneManager.getLc(LinphoneManager.java:379)
+ 	at org.linphone.HistorySimpleFragment.onResume(HistorySimpleFragment.java:142)
+ 	at android.support.v4.app.Fragment.performResume(Fragment.java:1832)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:995)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+ 	at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:740)
+ 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1501)
+ 	at android.support.v4.app.FragmentManagerImpl.executePendingTransactions(FragmentManager.java:490)
+ 	at org.linphone.LinphoneActivity.changeFragmentForTablets(LinphoneActivity.java:518)
+ 	at org.linphone.LinphoneActivity.changeCurrentFragment(LinphoneActivity.java:424)
+ 	at org.linphone.LinphoneActivity.changeCurrentFragment(LinphoneActivity.java:344)
+ 	at org.linphone.LinphoneActivity.onClick(LinphoneActivity.java:704)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

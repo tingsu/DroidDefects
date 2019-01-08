@@ -1,0 +1,17 @@
+ W/System.err: java.net.SocketException
+ W/System.err:     at fi.iki.elonen.NanoHTTPD$HTTPSession.execute(NanoHTTPD.java:723)
+ W/System.err:     at fi.iki.elonen.NanoHTTPD$1$1.run(NanoHTTPD.java:160)
+ W/System.err:     at java.lang.Thread.run(Thread.java:856)
+ E/RendererCommand: Fail to play ! Error: Playing failed (HTTP response was: 500 Internal Server Error)
+        04-12 14:25:32.244 2122-2146/system_process W/ProcessStats: Skipping unknown process pid 6401
+ W/StreamClient: HTTP request failed: (OutgoingActionRequestMessage) POST http://192.168.1.18:49494/upnp/control/rendertransport1
+        org.eclipse.jetty.io.EofException: early EOF
+        at org.eclipse.jetty.client.AbstractHttpConnection$Handler.earlyEOF(AbstractHttpConnection.java:352)
+        at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:323)
+        at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+        at org.eclipse.jetty.client.AsyncHttpConnection.handle(AsyncHttpConnection.java:135)
+        at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:668)
+        at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+        at java.lang.Thread.run(Thread.java:856)

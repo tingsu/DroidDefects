@@ -1,0 +1,5 @@
+E/AndroidRuntime( 1690): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.StringBuffer java.lang.StringBuffer.append(char[], int, int)' on a null object reference
+E/AndroidRuntime( 1690):        at org.connectbot.TerminalView.propagateConsoleText(TerminalView.java:552)
+E/AndroidRuntime( 1690):        at org.connectbot.service.TerminalBridge.propagateConsoleText(TerminalBridge.java:713)
+E/AndroidRuntime( 1690):        at org.connectbot.service.Relay.run(Relay.java:136)
+E/AndroidRuntime( 1690):        at java.lang.Thread.run(Thread.java:818)

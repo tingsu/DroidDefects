@@ -1,0 +1,11 @@
+java.lang.RuntimeException: Error receiving broadcast Intent { act=org.yaaic.server.status } in org.yaaic.receiver.ServerReceiver@448aa378
+  at android.app.ActivityThread$PackageInfo$ReceiverDispatcher$Args.run(ActivityThread.java:765)
+    at android.os.Handler.handleCallback(Handler.java:587)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:123)
+    at android.app.ActivityThread.main(ActivityThread.java:4363)
+    at java.lang.reflect.Method.invokeNative(Method.java:-2)
+    at java.lang.reflect.Method.invoke(Method.java:521)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:860)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:618)
+    at dalvik.system.NativeStart.main(NativeStart.java:-2)

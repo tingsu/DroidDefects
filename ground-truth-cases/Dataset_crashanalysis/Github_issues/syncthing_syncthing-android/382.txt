@@ -1,0 +1,494 @@
+05-04 16:42:17.378 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.378 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.378 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.378 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.378 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.378 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.378 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.378 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.378 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.378 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.378 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.448 E/SyncthingNativeCode(14100): Syncthing binary crashed with error code 1
+05-04 16:42:17.458 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.458 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.458 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.458 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.458 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.458 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.458 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.458 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.458 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.458 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.458 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.458 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.508 E/SyncthingNativeCode(14100): Syncthing binary crashed with error code 1
+05-04 16:42:17.508 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.508 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.508 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.508 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.508 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.508 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.508 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.508 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.508 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.508 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.508 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.508 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.558 E/SyncthingNativeCode(14100): Syncthing binary crashed with error code 1
+05-04 16:42:17.558 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.558 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.558 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.558 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.558 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.558 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.558 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.558 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.558 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.558 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.558 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.558 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.568 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.568 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.568 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.568 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.568 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.568 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.568 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.568 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.568 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.568 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.568 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.568 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.608 E/SyncthingNativeCode(14100): Syncthing binary crashed with error code 1
+05-04 16:42:17.608 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.608 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.608 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.608 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.608 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.638 E/SyncthingNativeCode(14100): Syncthing binary crashed with error code 1
+05-04 16:42:17.648 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.648 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.648 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.648 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.648 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.648 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.648 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.648 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.648 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.648 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.648 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.648 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.658 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.658 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.658 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.658 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.658 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.658 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.658 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.658 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.658 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.658 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.658 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.658 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.688 E/SyncthingNativeCode(14100): Syncthing binary crashed with error code 1
+05-04 16:42:17.698 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.698 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.698 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.698 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.698 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.728 E/SyncthingNativeCode(14100): Syncthing binary crashed with error code 1
+05-04 16:42:17.728 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.728 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.728 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.728 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.728 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.768 E/SyncthingNativeCode(14100): Syncthing binary crashed with error code 1
+05-04 16:42:17.778 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.778 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.778 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.778 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.778 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.778 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.778 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.778 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.778 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.778 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.778 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.778 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.788 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.788 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.788 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.788 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.788 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.788 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.788 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.788 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.788 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.788 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.788 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.788 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.818 W/SyncthingNativeCode(14100): error: only position independent executables (PIE) are supported.
+05-04 16:42:17.818 E/SyncthingNativeCode(14100): Syncthing binary crashed with error code 1
+05-04 16:42:17.858 E/SyncthingNativeCode(14100): Syncthing binary crashed with error code 1
+05-04 16:42:17.858 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.858 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.858 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.858 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.858 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.858 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.858 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.858 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.858 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.858 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.858 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.858 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.868 E/AndroidRuntime(14100): Process: com.nutomic.syncthingandroid, PID: 14100
+05-04 16:42:17.868 E/AndroidRuntime(14100):     at com.nutomic.syncthingandroid.b.a.<init>(Unknown Source)
+05-04 16:42:17.868 E/AndroidRuntime(14100):     at com.nutomic.syncthingandroid.syncthing.ap.a(Unknown Source)
+05-04 16:42:17.868 E/AndroidRuntime(14100):     at com.nutomic.syncthingandroid.syncthing.ap.doInBackground(Unknown Source)
+05-04 16:42:17.868 W/SyncthingRunnable(14100): Failed to read Syncthing's command line output
+05-04 16:42:17.868 W/SyncthingRunnable(14100): java.io.IOException: File descriptor closed
+05-04 16:42:17.868 W/SyncthingRunnable(14100):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:17.868 W/SyncthingRunnable(14100):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:17.868 W/SyncthingRunnable(14100):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:17.868 W/SyncthingRunnable(14100):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:17.868 W/SyncthingRunnable(14100):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:17.868 W/SyncthingRunnable(14100):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:17.868 W/SyncthingRunnable(14100):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:17.868 W/SyncthingRunnable(14100):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:17.868 W/SyncthingRunnable(14100):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:17.868 W/SyncthingRunnable(14100):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:17.888 W/ActivityManager(2305):   Force finishing activity com.nutomic.syncthingandroid/.activities.MainActivity
+05-04 16:42:18.488 W/SyncthingNativeCode(14100): usage: ionice <pid> [none|rt|be|idle] [prio]
+05-04 16:42:18.488 I/SyncthingRunnable-Nice(14100): ionice performed on libsyncthing.so
+05-04 16:42:18.488 E/SyncthingRunnable-Nice(14100): Failed to set ionice 1
+05-04 16:42:18.538 E/WindowManager(14100): android.view.WindowLeaked: Activity com.nutomic.syncthingandroid.activities.MainActivity has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{341c934c V.E..... R....... 0,0-1026,1167} that was originally added here
+05-04 16:42:18.538 E/WindowManager(14100):  at com.nutomic.syncthingandroid.activities.h.run(Unknown Source)
+05-04 16:42:18.538 E/WindowManager(14100):  at com.nutomic.syncthingandroid.activities.MainActivity.a(Unknown Source)
+05-04 16:42:18.538 E/WindowManager(14100):  at com.nutomic.syncthingandroid.syncthing.SyncthingService.a(Unknown Source)
+05-04 16:42:18.538 E/WindowManager(14100):  at com.nutomic.syncthingandroid.activities.MainActivity.onServiceConnected(Unknown Source)
+05-04 16:42:18.598 W/SyncthingNativeCode(14100): usage: ionice <pid> [none|rt|be|idle] [prio]
+05-04 16:42:18.608 I/SyncthingRunnable-Nice(14100): ionice performed on libsyncthing.so
+05-04 16:42:18.608 E/SyncthingRunnable-Nice(14100): Failed to set ionice 1
+05-04 16:42:18.638 W/SyncthingNativeCode(14100): usage: ionice <pid> [none|rt|be|idle] [prio]
+05-04 16:42:18.648 I/SyncthingRunnable-Nice(14100): ionice performed on libsyncthing.so
+05-04 16:42:18.648 E/SyncthingRunnable-Nice(14100): Failed to set ionice 1
+05-04 16:42:18.678 W/SyncthingNativeCode(14100): usage: ionice <pid> [none|rt|be|idle] [prio]
+05-04 16:42:18.688 I/SyncthingRunnable-Nice(14100): ionice performed on libsyncthing.so
+05-04 16:42:18.688 E/SyncthingRunnable-Nice(14100): Failed to set ionice 1
+05-04 16:42:18.718 W/SyncthingNativeCode(14100): usage: ionice <pid> [none|rt|be|idle] [prio]
+05-04 16:42:18.718 I/SyncthingRunnable-Nice(14100): ionice performed on libsyncthing.so
+05-04 16:42:18.718 E/SyncthingRunnable-Nice(14100): Failed to set ionice 1
+05-04 16:42:18.758 W/SyncthingNativeCode(14100): usage: ionice <pid> [none|rt|be|idle] [prio]
+05-04 16:42:18.758 I/SyncthingRunnable-Nice(14100): ionice performed on libsyncthing.so
+05-04 16:42:18.758 E/SyncthingRunnable-Nice(14100): Failed to set ionice 1
+05-04 16:42:18.818 W/SyncthingNativeCode(14100): usage: ionice <pid> [none|rt|be|idle] [prio]
+05-04 16:42:18.818 I/SyncthingRunnable-Nice(14100): ionice performed on libsyncthing.so
+05-04 16:42:18.818 E/SyncthingRunnable-Nice(14100): Failed to set ionice 1
+05-04 16:42:18.818 W/SyncthingNativeCode(14100): usage: ionice <pid> [none|rt|be|idle] [prio]
+05-04 16:42:18.828 I/SyncthingRunnable-Nice(14100): ionice performed on libsyncthing.so
+05-04 16:42:18.828 E/SyncthingRunnable-Nice(14100): Failed to set ionice 1
+05-04 16:42:18.878 W/SyncthingNativeCode(14100): usage: ionice <pid> [none|rt|be|idle] [prio]
+05-04 16:42:18.878 I/SyncthingRunnable-Nice(14100): ionice performed on libsyncthing.so
+05-04 16:42:18.878 E/SyncthingRunnable-Nice(14100): Failed to set ionice 1
+05-04 16:42:18.888 I/Timeline(2305): Timeline: Activity_windows_visible id: ActivityRecord{1b4284c3 u0 com.nutomic.syncthingandroid/.activities.MainActivity t6874 f} time:46800802
+05-04 16:42:18.918 W/SyncthingNativeCode(14100): usage: ionice <pid> [none|rt|be|idle] [prio]
+05-04 16:42:18.928 I/SyncthingRunnable-Nice(14100): ionice performed on libsyncthing.so
+05-04 16:42:18.928 E/SyncthingRunnable-Nice(14100): Failed to set ionice 1
+05-04 16:42:18.988 W/SyncthingNativeCode(14100): usage: ionice <pid> [none|rt|be|idle] [prio]
+05-04 16:42:18.988 I/SyncthingRunnable-Nice(14100): ionice performed on libsyncthing.so
+05-04 16:42:18.988 E/SyncthingRunnable-Nice(14100): Failed to set ionice 1
+05-04 16:42:19.178 I/ActivityManager(2305): Process com.nutomic.syncthingandroid (pid 14100) has died
+05-04 16:42:19.178 W/ActivityManager(2305): Scheduling restart of crashed service com.nutomic.syncthingandroid/.syncthing.SyncthingService in 1000ms
+05-04 16:42:20.198 I/ActivityManager(2305): Start proc com.nutomic.syncthingandroid for service com.nutomic.syncthingandroid/.syncthing.SyncthingService: pid=14264 uid=10375 gids={50375, 9997, 1028, 1015, 3003} abi=armeabi
+05-04 16:42:20.318 E/SyncthingNativeCode(14264): Syncthing binary crashed with error code 1
+05-04 16:42:20.338 W/PackageManager(2571): Failure retrieving resources for com.nutomic.syncthingandroid: Resource ID #0x0
+05-04 16:42:20.358 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.358 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.358 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.358 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.358 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.378 E/SyncthingNativeCode(14264): Syncthing binary crashed with error code 1
+05-04 16:42:20.388 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.388 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.388 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.388 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.388 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.418 E/SyncthingNativeCode(14264): Syncthing binary crashed with error code 1
+05-04 16:42:20.418 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.418 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.418 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.418 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.418 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.418 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.418 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.418 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.418 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.418 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.418 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.418 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.458 E/SyncthingNativeCode(14264): Syncthing binary crashed with error code 1
+05-04 16:42:20.458 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.458 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.458 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.458 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.458 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.458 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.458 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.458 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.458 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.458 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.458 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.458 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.498 E/SyncthingNativeCode(14264): Syncthing binary crashed with error code 1
+05-04 16:42:20.498 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.498 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.498 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.498 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.498 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.498 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.498 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.498 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.498 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.498 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.498 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.498 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.538 E/SyncthingNativeCode(14264): Syncthing binary crashed with error code 1
+05-04 16:42:20.548 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.548 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.548 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.548 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.548 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.548 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.548 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.548 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.548 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.548 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.548 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.548 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.558 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.558 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.558 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.558 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.558 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.558 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.558 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.558 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.558 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.558 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.558 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.558 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.578 E/SyncthingNativeCode(14264): Syncthing binary crashed with error code 1
+05-04 16:42:20.578 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.578 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.578 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.578 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.578 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.578 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.578 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.578 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.578 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.578 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.578 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.578 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.588 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.588 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.588 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.588 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.588 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.588 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.588 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.588 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.588 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.588 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.588 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.588 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.608 E/SyncthingNativeCode(14264): Syncthing binary crashed with error code 1
+05-04 16:42:20.618 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.618 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.618 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.618 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.618 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.638 E/SyncthingNativeCode(14264): Syncthing binary crashed with error code 1
+05-04 16:42:20.648 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.648 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.648 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.648 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.648 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.678 E/SyncthingNativeCode(14264): Syncthing binary crashed with error code 1
+05-04 16:42:20.688 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.688 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.688 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.688 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.688 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.688 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.688 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.688 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.688 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.688 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.688 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.688 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.698 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.698 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.698 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.698 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.698 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.698 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.698 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.698 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.698 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.698 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.698 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.698 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.718 E/SyncthingNativeCode(14264): Syncthing binary crashed with error code 1
+05-04 16:42:20.718 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.718 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at libcore.io.IoBridge.read(IoBridge.java:472)
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at java.io.FileInputStream.read(FileInputStream.java:177)
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at java.io.InputStreamReader.read(InputStreamReader.java:231)
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at java.io.BufferedReader.fillBuf(BufferedReader.java:145)
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at java.io.BufferedReader.readLine(BufferedReader.java:397)
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at com.nutomic.syncthingandroid.syncthing.ag.run(Unknown Source)
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at java.lang.Thread.run(Thread.java:818)
+05-04 16:42:20.718 W/SyncthingRunnable(14264): Failed to read Syncthing's command line output
+05-04 16:42:20.718 W/SyncthingRunnable(14264): java.io.IOException: File descriptor closed
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at libcore.io.Posix.readBytes(Native Method)
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at libcore.io.Posix.read(Posix.java:147)
+05-04 16:42:20.718 W/SyncthingRunnable(14264):  at libcore.io.BlockGuardOs.read(BlockGuardOs.java:230)

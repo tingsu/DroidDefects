@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: com.evancharlton.mileage
+//version: 3.0.8
+//appro_time: 133
+ java.lang.NumberFormatException: Invalid long: "900-"
+ 	at java.lang.Long.invalidLong(Long.java:125)
+ 	at java.lang.Long.parse(Long.java:362)
+ 	at java.lang.Long.parseLong(Long.java:353)
+ 	at java.lang.Long.parseLong(Long.java:319)
+ 	at com.evancharlton.mileage.views.DeltaView.getDelta(DeltaView.java:58)
+ 	at com.evancharlton.mileage.ServiceIntervalActivity.setFields(ServiceIntervalActivity.java:151)
+ 	at com.evancharlton.mileage.BaseFormActivity$1.onClick(BaseFormActivity.java:50)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

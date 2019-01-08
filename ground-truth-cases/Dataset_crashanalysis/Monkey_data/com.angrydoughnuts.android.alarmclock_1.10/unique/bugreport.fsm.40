@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: com.angrydoughnuts.android.alarmclock
+//version: 1.10
+//appro_time: 137
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.angrydoughnuts.android.alarmclock/com.angrydoughnuts.android.alarmclock.ActivityAlarmSettings}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at com.angrydoughnuts.android.alarmclock.ActivityAlarmSettings.onCreateDialog(ActivityAlarmSettings.java:328)
+ 	at android.app.Activity.onCreateDialog(Activity.java:2989)
+ 	at android.app.Activity.createDialog(Activity.java:976)
+ 	at android.app.Activity.restoreManagedDialogs(Activity.java:965)
+ 	at android.app.Activity.performRestoreInstanceState(Activity.java:911)
+ 	at android.app.Instrumentation.callActivityOnRestoreInstanceState(Instrumentation.java:1138)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2189)

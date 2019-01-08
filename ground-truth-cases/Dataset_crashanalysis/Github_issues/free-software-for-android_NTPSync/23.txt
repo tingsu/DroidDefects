@@ -1,0 +1,20 @@
+> E/DatabaseUtils( 3612): java.lang.SecurityException: Permission Denial: get/set setting for user asks to run as user -2 but is calling from user 0; this requires android.permission.INTERACT_ACROSS_USERS_FULL
+> E/DatabaseUtils( 3612):   at com.android.server.am.ActivityManagerService.handleIncomingUser(ActivityManagerService.java:13175)
+> E/DatabaseUtils( 3612):   at android.app.ActivityManager.handleIncomingUser(ActivityManager.java:2044)
+> E/DatabaseUtils( 3612):   at com.android.providers.settings.SettingsProvider.callFromPackage(SettingsProvider.java:615)
+> E/DatabaseUtils( 3612):   at android.content.ContentProvider$Transport.call(ContentProvider.java:279)
+> E/DatabaseUtils( 3612):   at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:273)
+> E/DatabaseUtils( 3612):   at android.os.Binder.execTransact(Binder.java:388)
+> E/DatabaseUtils( 3612):   at dalvik.system.NativeStart.run(Native Method)
+> W/ActivityManager( 3612): Permission Denial: get/set setting for user asks to run as user -2 but is calling from user 0; this requires android.permission.INTERACT_ACROSS_USERS_FULL
+> _[...]_
+> D/SystemClock( 7840): Setting time of day to sec=1410443164
+> D/SystemClock( 7840): Trying to open a file
+> E/SystemClock( 7840): File Open Failed
+> W/SystemClock( 7840): Unable to open alarm driver: Permission denied
+
+The [SuperSU](https://play.google.com/store/apps/details?id=eu.chainfire.supersu) log clearly shows NTPSync successfully chmoding `/dev/alarm` to mode 666 and back. Oddly, there are no log entries with the tag `NTPSync` and I haven't been able to trigger the making of any Debug-level entries with `/data/local.prop`.
+
+A [StackExchange answer](http://stackoverflow.com/questions/8739074/setting-system-time-of-rooted-phone#8752130) lays out the `/dev/alarm` technique, but goes on to claim that on newer Samsung firmwares, it doesn't work because of SELinux restrictions, and that use of `date` is needed.
+
+So, how about some use of `date` if `setCurrentTimeMillis` fails? Or at least an error message.

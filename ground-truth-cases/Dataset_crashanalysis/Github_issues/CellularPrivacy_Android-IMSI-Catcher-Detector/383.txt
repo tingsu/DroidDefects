@@ -1,0 +1,12 @@
+    java.lang.NullPointerException
+            at com.SecUpwN.AIMSICD.service.CellTracker.checkForNeighbourCount(CellTracker.java:540)
+            at com.SecUpwN.AIMSICD.service.CellTracker$2.onCellLocationChanged(CellTracker.java:764)
+            at android.telephony.PhoneStateListener$2.handleMessage(PhoneStateListener.java:384)
+            at android.os.Handler.dispatchMessage(Handler.java:102)
+            at android.os.Looper.loop(Looper.java:136)
+            at android.app.ActivityThread.main(ActivityThread.java:5158)
+            at java.lang.reflect.Method.invokeNative(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:515)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+            at dalvik.system.NativeStart.main(Native Method)

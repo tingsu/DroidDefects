@@ -1,0 +1,18 @@
+E/AndroidRuntime(15461): java.lang.RuntimeException: Unable to start receiver fr.neamar.kiss.broadcast.NewAppInstalledHandler: java.lang.NullPointerException: Attempt to invoke virtual method 'void fr.neamar.kiss.dataprovider.ShortcutProvider.removeShortcuts(java.lang.String)' on a null object reference
+E/AndroidRuntime(15461):        at android.app.ActivityThread.handleReceiver(ActivityThread.java:2649)
+E/AndroidRuntime(15461):        at de.robv.android.xposed.XposedBridge.invokeOriginalMethodNative(Native Method)
+E/AndroidRuntime(15461):        at de.robv.android.xposed.XposedBridge.handleHookedMethod(XposedBridge.java:675)
+E/AndroidRuntime(15461):        at android.app.ActivityThread.handleReceiver(<Xposed>)
+E/AndroidRuntime(15461):        at android.app.ActivityThread.access$1800(ActivityThread.java:154)
+E/AndroidRuntime(15461):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1398)
+E/AndroidRuntime(15461):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(15461):        at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(15461):        at android.app.ActivityThread.main(ActivityThread.java:5294)
+E/AndroidRuntime(15461):        at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(15461):        at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(15461):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime(15461):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/AndroidRuntime(15461):        at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:114)
+E/AndroidRuntime(15461): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void fr.neamar.kiss.dataprovider.ShortcutProvider.removeShortcuts(java.lang.String)' on a null object reference
+E/AndroidRuntime(15461):        at fr.neamar.kiss.broadcast.NewAppInstalledHandler.onReceive(NewAppInstalledHandler.java:41)
+E/AndroidRuntime(15461):        at android.app.ActivityThread.handleReceiver(ActivityThread.java:2642)

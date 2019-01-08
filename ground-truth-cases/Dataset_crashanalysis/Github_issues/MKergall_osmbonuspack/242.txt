@@ -1,0 +1,5 @@
+Suppressed: java.lang.ClassNotFoundException: org.osmdroid.bonuspack.R$layout
+    at java.lang.Class.classForName(Native Method)
+    at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+    at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:504)

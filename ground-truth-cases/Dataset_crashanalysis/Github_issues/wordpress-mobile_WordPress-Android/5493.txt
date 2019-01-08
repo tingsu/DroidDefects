@@ -1,0 +1,12 @@
+Fatal Exception: java.lang.NullPointerException
+       at org.wordpress.android.util.WPActivityUtils.hideKeyboard(WPActivityUtils.java:102)
+       at org.wordpress.android.ui.media.MediaBrowserActivity$1.onClick(MediaBrowserActivity.java:257)
+       at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:170)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:146)
+       at android.app.ActivityThread.main(ActivityThread.java:5511)
+       at java.lang.reflect.Method.invokeNative(Method.java)
+       at java.lang.reflect.Method.invoke(Method.java:515)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1283)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1099)
+       at dalvik.system.NativeStart.main(NativeStart.java)

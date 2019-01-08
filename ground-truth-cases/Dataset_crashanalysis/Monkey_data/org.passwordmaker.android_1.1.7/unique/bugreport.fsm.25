@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: org.passwordmaker.android
+//version: 1.1.7
+//appro_time: 156
+ java.lang.NullPointerException
+ 	at org.passwordmaker.android.hashalgos.HmacHashAlgo.digestLength(HmacHashAlgo.java:21)
+ 	at org.passwordmaker.android.PwmHashAlgorithm.<init>(PwmHashAlgorithm.java:64)
+ 	at org.passwordmaker.android.PwmHashAlgorithm.get(PwmHashAlgorithm.java:155)
+ 	at org.passwordmaker.android.PwmProfile.setHashAlgo(PwmProfile.java:181)
+ 	at org.passwordmaker.android.PasswordMakerEditProfile$12.onItemSelected(PasswordMakerEditProfile.java:218)
+ 	at android.widget.AdapterView.fireOnSelected(AdapterView.java:892)
+ 	at android.widget.AdapterView.access$200(AdapterView.java:49)
+ 	at android.widget.AdapterView$SelectionNotifier.run(AdapterView.java:860)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,18 @@
+java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+    at android.os.Process$1.run(Process.java:424)
+Caused by: java.lang.reflect.InvocationTargetException
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at android.os.Process$1.run(Process.java:417)
+Caused by: java.lang.RuntimeException: Debug crash
+    at us.shandian.blacklight.ui.settings.SettingsActivity.onPreferenceClick(SettingsActivity.java:207)
+    at android.preference.Preference.performClick(Preference.java:954)
+    at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:215)
+    at android.widget.AdapterView.performItemClick(AdapterView.java:299)
+    at android.widget.AbsListView.performItemClick(AbsListView.java:1113)
+    at android.widget.AbsListView$PerformClick.run(AbsListView.java:2904)
+    at android.widget.AbsListView$3.run(AbsListView.java:3638)
+    at android.os.Handler.handleCallback(Handler.java:733)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:156)
+    at android.app.ActivityThread.main(ActivityThread.java:5078)

@@ -1,0 +1,43 @@
+//this is an auto-generated bug report
+//package name: es.usc.citius.servando.calendula
+//version: 2.3.1
+//appro_time: 134
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Error finding model
+ 	at es.usc.citius.servando.calendula.database.GenericDao.findOneBy(GenericDao.java:89)
+ 	at es.usc.citius.servando.calendula.persistence.Routine.findByName(Routine.java:92)
+ 	at es.usc.citius.servando.calendula.fragments.ScheduleTimetableFragment$24.onItemSelected(ScheduleTimetableFragment.java:1140)
+ 	at android.widget.AdapterView.fireOnSelected(AdapterView.java:892)
+ 	at android.widget.AdapterView.access$200(AdapterView.java:49)
+ 	at android.widget.AdapterView$SelectionNotifier.run(AdapterView.java:860)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.sql.SQLException: Problems executing Android query: SELECT * FROM `Routines` WHERE `Name` = 'sn't' 
+ 	at com.j256.ormlite.misc.SqlExceptionUtil.create(SqlExceptionUtil.java:22)
+ 	at com.j256.ormlite.android.AndroidCompiledStatement.getCursor(AndroidCompiledStatement.java:166)
+ 	at com.j256.ormlite.android.AndroidCompiledStatement.runQuery(AndroidCompiledStatement.java:57)
+ 	at com.j256.ormlite.stmt.StatementExecutor.queryForFirst(StatementExecutor.java:94)
+ 	at com.j256.ormlite.dao.BaseDaoImpl.queryForFirst(BaseDaoImpl.java:231)
+ 	at com.j256.ormlite.stmt.QueryBuilder.queryForFirst(QueryBuilder.java:333)
+ 	at com.j256.ormlite.stmt.Where.queryForFirst(Where.java:499)
+ 	at es.usc.citius.servando.calendula.database.GenericDao.findOneBy(GenericDao.java:87)
+ 	... 14 more
+ Caused by: android.database.sqlite.SQLiteException: near "t": syntax error (code 1): , while compiling: SELECT * FROM `Routines` WHERE `Name` = 'sn't'
+ 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+ 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:500)
+ 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+ 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+ 	at android.database.sqlite.SQLiteQuery.<init>(SQLiteQuery.java:37)
+ 	at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:44)
+ 	at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1314)
+ 	at android.database.sqlite.SQLiteDatabase.rawQuery(SQLiteDatabase.java:1253)
+ 	at com.j256.ormlite.android.AndroidCompiledStatement.getCursor(AndroidCompiledStatement.java:162)
+ 	... 20 more

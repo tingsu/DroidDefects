@@ -1,0 +1,17 @@
+java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=-1, data=null} to activity {cgeo.geocaching/cgeo.geocaching.ImageSelectActivity}: java.lang.NullPointerException
+   at android.app.ActivityThread.deliverResults(ActivityThread.java:3164)
+   at android.app.ActivityThread.handleSendResult(ActivityThread.java:3207)
+   at android.app.ActivityThread.access$1100(ActivityThread.java:136)
+   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1249)
+   at android.os.Handler.dispatchMessage(Handler.java:99)
+   at android.os.Looper.loop(Looper.java:137)
+   at android.app.ActivityThread.main(ActivityThread.java:4802)
+   at java.lang.reflect.Method.invokeNative(Native Method)
+   at java.lang.reflect.Method.invoke(Method.java:511)
+   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:813)
+   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:580)
+   at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+   at cgeo.geocaching.ImageSelectActivity.onActivityResult(ImageSelectActivity.java:227)
+   at android.app.Activity.dispatchActivityResult(Activity.java:5197)
+   at android.app.ActivityThread.deliverResults(ActivityThread.java:3160)

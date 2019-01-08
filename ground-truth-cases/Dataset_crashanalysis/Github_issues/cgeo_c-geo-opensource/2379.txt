@@ -1,0 +1,15 @@
+
+If you want to try, first create a backup of your database. Then open the VisitCacheActivity for a cache and tap one of your inventory items listed at the bottom. During loading the trackable details, c:geo stops and deletes the database for me:
+
+01-11 17:47:39.720: E/DefaultDatabaseErrorHandler(7453): Corruption reported by sqlite on database: /data/data/cgeo.geocaching/databases/data
+01-11 17:47:39.725: E/DefaultDatabaseErrorHandler(7453): deleting the database file: /data/data/cgeo.geocaching/databases/data
+01-11 17:47:39.725: W/dalvikvm(7453): threadid=18: thread exiting with uncaught exception (group=0x40c631f8)
+01-11 17:47:39.735: E/AndroidRuntime(7453): FATAL EXCEPTION: Thread-20530
+01-11 17:47:39.735: E/AndroidRuntime(7453): java.lang.IllegalStateException: database /data/data/cgeo.geocaching/databases/data (conn# 0) already closed
+01-11 17:47:39.735: E/AndroidRuntime(7453):     at android.database.sqlite.SQLiteDatabase.verifyDbIsOpen(SQLiteDatabase.java:2222)
+01-11 17:47:39.735: E/AndroidRuntime(7453):     at android.database.sqlite.SQLiteDatabase.verifyLockOwner(SQLiteDatabase.java:2228)
+01-11 17:47:39.735: E/AndroidRuntime(7453):     at android.database.sqlite.SQLiteDatabase.endTransaction(SQLiteDatabase.java:721)
+01-11 17:47:39.735: E/AndroidRuntime(7453):     at cgeo.geocaching.cgData.saveTrackable(cgData.java:1307)
+01-11 17:47:39.735: E/AndroidRuntime(7453):     at cgeo.geocaching.connector.gc.GCParser.parseTrackable(GCParser.java:1421)
+01-11 17:47:39.735: E/AndroidRuntime(7453):     at cgeo.geocaching.connector.gc.GCParser.searchTrackable(GCParser.java:912)
+01-11 17:47:39.735: E/AndroidRuntime(7453):     at cgeo.geocaching.TrackableActivity$LoadTrackableThread.run(TrackableActivity.java:286)

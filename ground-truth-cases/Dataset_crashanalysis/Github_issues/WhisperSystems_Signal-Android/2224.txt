@@ -1,0 +1,38 @@
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ | state=R schedstat=( 0 0 0 ) utm=8 stm=0 core=1
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:620)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:596)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:634)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at org.thoughtcrime.securesms.util.BitmapUtil.getScaledCircleCroppedBitmap(BitmapUtil.java:208)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at org.thoughtcrime.securesms.GroupCreateActivity$DecodeCropAndSetAsyncTask.doInBackground(GroupCreateActivity.java:514)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at org.thoughtcrime.securesms.GroupCreateActivity$DecodeCropAndSetAsyncTask.doInBackground(GroupCreateActivity.java:503)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at android.os.AsyncTask$2.call(AsyncTask.java:288)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ at java.lang.Thread.run(Thread.java:841)
+12-15 20:48:57.621  28983-29038/org.thoughtcrime.securesms I/dalvikvm﹕ [ 12-15 20:48:57.621 28983:29038 D/skia     ]
+    --- decoder->decode returned false
+12-15 20:48:57.631  28983-29038/org.thoughtcrime.securesms W/dalvikvm﹕ threadid=26: thread exiting with uncaught exception (group=0x4160cce0)
+12-15 20:48:57.631  28983-29038/org.thoughtcrime.securesms E/AndroidRuntime﹕ FATAL EXCEPTION: AsyncTask #3
+    Process: org.thoughtcrime.securesms, PID: 28983
+    java.lang.RuntimeException: An error occured while executing doInBackground()
+            at android.os.AsyncTask$3.done(AsyncTask.java:300)
+            at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+            at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:841)
+     Caused by: java.lang.OutOfMemoryError
+            at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+            at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:620)
+            at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:596)
+            at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:634)
+            at org.thoughtcrime.securesms.util.BitmapUtil.getScaledCircleCroppedBitmap(BitmapUtil.java:208)
+            at org.thoughtcrime.securesms.GroupCreateActivity$DecodeCropAndSetAsyncTask.doInBackground(GroupCreateActivity.java:514)
+            at org.thoughtcrime.securesms.GroupCreateActivity$DecodeCropAndSetAsyncTask.doInBackground(GroupCreateActivity.java:503)
+            at android.os.AsyncTask$2.call(AsyncTask.java:288)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:237)

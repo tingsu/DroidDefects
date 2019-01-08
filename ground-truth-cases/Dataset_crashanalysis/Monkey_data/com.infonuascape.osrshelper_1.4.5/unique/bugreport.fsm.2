@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: com.infonuascape.osrshelper
+//version: 1.4.5
+//appro_time: 68
+ FATAL EXCEPTION: AsyncTask #4
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalArgumentException: Illegal character in query at index 95: http://services.runescape.com/m=itemdb_oldschool/api/catalogue/items.json?category=1&alpha=***n
+ %203%20!&page=1
+ 	at java.net.URI.create(URI.java:727)
+ 	at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:75)
+ 	at com.infonuascape.osrshelper.utils.http.HTTPRequest.performRequest(HTTPRequest.java:73)
+ 	at com.infonuascape.osrshelper.utils.http.HTTPRequest.<init>(HTTPRequest.java:59)
+ 	at com.infonuascape.osrshelper.utils.http.HTTPRequest.<init>(HTTPRequest.java:55)
+ 	at com.infonuascape.osrshelper.grandexchange.GEFetcher.search(GEFetcher.java:18)
+ 	at com.infonuascape.osrshelper.grandexchange.GEHelper.search(GEHelper.java:14)
+ 	at com.infonuascape.osrshelper.SearchItemActivity$PopulateSearchResults.doInBackground(SearchItemActivity.java:131)
+ 	at com.infonuascape.osrshelper.SearchItemActivity$PopulateSearchResults.doInBackground(SearchItemActivity.java:121)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	... 4 more

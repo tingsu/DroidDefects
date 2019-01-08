@@ -1,0 +1,9 @@
+12-16 13:24:58.977: E/AndroidRuntime(17301): java.util.ConcurrentModificationException
+12-16 13:24:58.977: E/AndroidRuntime(17301):    at java.util.LinkedHashMap$LinkedHashIterator.nextEntry(LinkedHashMap.java:347)
+12-16 13:24:58.977: E/AndroidRuntime(17301):    at java.util.LinkedHashMap$KeyIterator.next(LinkedHashMap.java:367)
+12-16 13:24:58.977: E/AndroidRuntime(17301):    at cgeo.geocaching.maps.CGeoMap.filter(CGeoMap.java:1433)
+12-16 13:24:58.977: E/AndroidRuntime(17301):    at cgeo.geocaching.maps.CGeoMap.access$40(CGeoMap.java:1428)
+12-16 13:24:58.977: E/AndroidRuntime(17301):    at cgeo.geocaching.maps.CGeoMap$LoadRunnable.run(CGeoMap.java:1115)
+12-16 13:24:58.977: E/AndroidRuntime(17301):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+12-16 13:24:58.977: E/AndroidRuntime(17301):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+12-16 13:24:58.977: E/AndroidRuntime(17301):    at java.lang.Thread.run(Thread.java:841)

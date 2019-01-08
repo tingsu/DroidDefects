@@ -1,0 +1,424 @@
+05-22 12:29:59.890: E/AndroidRuntime(1944): java.lang.IndexOutOfBoundsException: Invalid index 2, size is 0
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:251)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at java.util.ArrayList.get(ArrayList.java:304)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at eu.lighthouselabs.obd.commands.fuel.FuelLevelObdCommand.getFormattedResult(FuelLevelObdCommand.java:32)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at eu.lighthouselabs.obd.reader.activity.MainActivity$3.stateUpdate(MainActivity.java:149)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at eu.lighthouselabs.obd.reader.io.ObdGatewayService._executeQueue(ObdGatewayService.java:281)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at eu.lighthouselabs.obd.reader.io.ObdGatewayService.access$200(ObdGatewayService.java:52)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at eu.lighthouselabs.obd.reader.io.ObdGatewayService$LocalBinder.addJobToQueue(ObdGatewayService.java:384)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at eu.lighthouselabs.obd.reader.io.ObdGatewayServiceConnection.addJobToQueue(ObdGatewayServiceConnection.java:52)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at eu.lighthouselabs.obd.reader.activity.MainActivity.queueCommands(MainActivity.java:468)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at eu.lighthouselabs.obd.reader.activity.MainActivity.access$600(MainActivity.java:56)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at eu.lighthouselabs.obd.reader.activity.MainActivity$4.run(MainActivity.java:433)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at android.os.Handler.handleCallback(Handler.java:605)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at android.os.Handler.dispatchMessage(Handler.java:92)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at android.os.Looper.loop(Looper.java:137)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at android.app.ActivityThread.main(ActivityThread.java:4424)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at java.lang.reflect.Method.invokeNative(Native Method)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at java.lang.reflect.Method.invoke(Method.java:511)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+05-22 12:29:59.890: E/AndroidRuntime(1944):     at dalvik.system.NativeStart.main(Native Method)
+05-22 12:29:59.910: W/ActivityManager(145):   Force finishing activity eu.lighthouselabs.obd.reader/.activity.MainActivity
+05-22 12:30:00.440: W/ActivityManager(145): Activity pause timeout for ActivityRecord{41975be0 eu.lighthouselabs.obd.reader/.activity.MainActivity}
+05-22 12:30:00.470: D/WebViewTimersControl(24461): onBrowserActivityResume
+05-22 12:30:00.470: D/WebViewTimersControl(24461): Resuming webview timers, view=com.android.browser.BrowserWebView@410fe618
+05-22 12:30:00.470: W/BaseUi(24461): mMainView is already attached to wrapper in attachTabToContentView!
+05-22 12:30:00.470: W/BaseUi(24461): mContainer is already attached to content in attachTabToContentView!
+05-22 12:30:00.540: D/dalvikvm(24461): GC_CONCURRENT freed 594K, 9% free 7996K/8775K, paused 2ms+3ms
+05-22 12:30:01.470: I/ActivityManager(145): No longer want android.process.acore (pid 1569): hidden #16
+05-22 12:30:02.520: I/Process(1944): Sending signal. PID: 1944 SIG: 9
+05-22 12:30:02.540: W/InputDispatcher(145): channel '41912068 eu.lighthouselabs.obd.reader/eu.lighthouselabs.obd.reader.activity.MainActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x8
+05-22 12:30:02.540: E/InputDispatcher(145): channel '41912068 eu.lighthouselabs.obd.reader/eu.lighthouselabs.obd.reader.activity.MainActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+05-22 12:30:02.540: W/InputDispatcher(145): Attempted to unregister already unregistered input channel '41912068 eu.lighthouselabs.obd.reader/eu.lighthouselabs.obd.reader.activity.MainActivity (server)'
+05-22 12:30:02.540: V/Sensors(145): handle : 16 en: 0 mEnabled:00014000
+05-22 12:30:02.540: V/Sensors(145): sensor state change what=16
+05-22 12:30:02.540: V/Sensors(145):  enabled_sensors: 16384 dmp_started: 1
+05-22 12:30:02.540: I/(145): mpu3050_suspend: suspending sensors to 0000
+05-22 12:30:02.540: I/WindowManager(145): WINDOW DIED Window{41912068 eu.lighthouselabs.obd.reader/eu.lighthouselabs.obd.reader.activity.MainActivity paused=false}
+05-22 12:30:02.540: I/ActivityManager(145): Process eu.lighthouselabs.obd.reader (pid 1944) has died.
+05-22 12:30:02.540: W/ActivityManager(145): Scheduling restart of crashed service eu.lighthouselabs.obd.reader/.io.ObdGatewayService in 5000ms
+05-22 12:30:02.550: W/WindowManager(145): Failed looking up window
+05-22 12:30:02.550: W/WindowManager(145): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@416f1428 does not exist
+05-22 12:30:02.550: W/WindowManager(145):   at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7156)
+05-22 12:30:02.550: W/WindowManager(145):   at com.android.server.wm.WindowManagerService.windowForClientLocked(WindowManagerService.java:7147)
+05-22 12:30:02.550: W/WindowManager(145):   at com.android.server.wm.WindowState$DeathRecipient.binderDied(WindowState.java:1529)
+05-22 12:30:02.550: W/WindowManager(145):   at android.os.BinderProxy.sendDeathNotice(Binder.java:417)
+05-22 12:30:02.550: W/WindowManager(145):   at dalvik.system.NativeStart.run(Native Method)
+05-22 12:30:02.550: I/WindowManager(145): WIN DEATH: null
+05-22 12:30:02.620: I/(145): mpu3050_suspend: Will resume next to 03ff
+05-22 12:30:02.620: V/Sensors(145): MLSetMPUSensors: 70
+05-22 12:30:02.620: I/MPL-ml(145): Actual ODR: 25 Hz
+05-22 12:30:02.620: V/Sensors(145): Starting DMP
+05-22 12:30:02.620: I/(145): mpu3050_resume: Resuming to 0070
+05-22 12:30:04.780: D/BluetoothEventLoop(145): Device property changed: 00:19:5D:25:E2:AA property: Connected value: false
+05-22 12:30:07.570: I/ActivityManager(145): Start proc eu.lighthouselabs.obd.reader for service eu.lighthouselabs.obd.reader/.io.ObdGatewayService: pid=2057 uid=10049 gids={3003, 3002, 3001}
+05-22 12:30:07.580: I/dalvikvm(2057): Turning on JNI app bug workarounds for target SDK version 8...
+05-22 12:30:07.600: D/ObdGatewayService(2057): Received start id 2: null
+05-22 12:30:07.600: D/ObdGatewayService(2057): Starting service..
+05-22 12:30:07.620: D/ObdGatewayService(2057): Stopping Bluetooth discovery.
+05-22 12:30:07.620: E/BluetoothService.cpp(145): stopDiscoveryNative: D-Bus error in StopDiscovery: org.bluez.Error.Failed (Invalid discovery session)
+05-22 12:30:07.630: D/ObdGatewayService(2057): Starting OBD connection..
+05-22 12:30:07.630: E/BluetoothEventLoop.cpp(145): onCreateDeviceResult: D-Bus error: org.bluez.Error.AlreadyExists (Already Exists)
+05-22 12:30:08.140: D/BluetoothEventLoop(145): Device property changed: 00:19:5D:25:E2:AA property: Connected value: true
+05-22 12:30:08.440: D/BluetoothService(145): updateDeviceServiceChannelCache(00:19:5D:25:E2:AA)
+05-22 12:30:08.440: D/BluetoothService(145):    uuid(application): 00001101-0000-1000-8000-00805f9b34fb 1
+05-22 12:30:08.460: D/BluetoothService(145): Making callback for 00001101-0000-1000-8000-00805f9b34fb with result 1
+05-22 12:30:08.890: D/ObdGatewayService(2057): Queing jobs for connection configuration..
+05-22 12:30:08.890: D/ObdGatewayService(2057): Adding job[1] to queue..
+05-22 12:30:08.890: D/ObdGatewayService(2057): Job queued successfully.
+05-22 12:30:08.890: D/ObdGatewayService(2057): Adding job[2] to queue..
+05-22 12:30:08.890: D/ObdGatewayService(2057): Job queued successfully.
+05-22 12:30:08.890: D/ObdGatewayService(2057): Adding job[3] to queue..
+05-22 12:30:08.890: D/ObdGatewayService(2057): Job queued successfully.
+05-22 12:30:08.890: D/ObdGatewayService(2057): Adding job[4] to queue..
+05-22 12:30:08.890: D/ObdGatewayService(2057): Job queued successfully.
+05-22 12:30:08.890: D/ObdGatewayService(2057): Adding job[5] to queue..
+05-22 12:30:08.890: D/ObdGatewayService(2057): Job queued successfully.
+05-22 12:30:08.900: D/ObdGatewayService(2057): Adding job[6] to queue..
+05-22 12:30:08.900: D/ObdGatewayService(2057): Job queued successfully.
+05-22 12:30:08.900: D/ObdGatewayService(2057): Adding job[7] to queue..
+05-22 12:30:08.900: D/ObdGatewayService(2057): Job queued successfully.
+05-22 12:30:08.900: D/ObdGatewayService(2057): Initialization jobs queued.
+05-22 12:30:11.460: W/ActivityManager(145): Activity destroy timeout for ActivityRecord{41975be0 eu.lighthouselabs.obd.reader/.activity.MainActivity}
+05-22 12:31:09.890: I/ActivityManager(145): START {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher} from pid 145
+05-22 12:31:09.920: D/WebViewTimersControl(24461): onBrowserActivityPause
+05-22 12:31:09.920: D/WebViewTimersControl(24461): Pausing webview timers, view=com.android.browser.BrowserWebView@410fe618
+05-22 12:31:10.070: W/InputManagerService(145): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@413191c0 (uid=10055 pid=24461)
+05-22 12:31:10.100: D/OpenGLRenderer(24461): Flushing caches (mode 0)
+05-22 12:31:10.300: I/ActivityManager(145): Start proc com.google.android.gm for service com.google.android.gm/.widget.GmailWidgetService: pid=2074 uid=10040 gids={3003, 1015}
+05-22 12:31:10.360: D/dalvikvm(24461): GC_FOR_ALLOC freed 47K, 6% free 8268K/8775K, paused 54ms
+05-22 12:31:10.390: I/ActivityThread(2074): Pub gmail-ls: com.google.android.gm.provider.MailProvider
+05-22 12:31:10.400: I/ActivityThread(2074): Pub com.google.android.gm: com.google.android.gm.provider.PublicContentProvider
+05-22 12:31:10.400: I/ActivityThread(2074): Pub com.google.android.gmail.SuggestionProvider: com.google.android.gm.SuggestionsProvider
+05-22 12:31:10.430: D/dalvikvm(24461): GC_FOR_ALLOC freed 562K, 13% free 7827K/8903K, paused 49ms
+05-22 12:31:10.520: D/dalvikvm(2074): GC_CONCURRENT freed 221K, 5% free 6818K/7111K, paused 3ms+9ms
+05-22 12:31:10.560: D/dalvikvm(24461): GC_CONCURRENT freed 414K, 12% free 7900K/8903K, paused 3ms+3ms
+05-22 12:31:10.650: D/dalvikvm(18422): GC_CONCURRENT freed 3079K, 37% free 14611K/22855K, paused 7ms+10ms
+05-22 12:31:10.720: D/dalvikvm(24461): GC_CONCURRENT freed 508K, 13% free 7791K/8903K, paused 2ms+2ms
+05-22 12:31:10.790: D/dalvikvm(24461): GC_CONCURRENT freed 313K, 12% free 7910K/8903K, paused 3ms+2ms
+05-22 12:31:11.370: I/Gmail(2074): calculateUnknownSyncRationalesAndPurgeInBackground: queueing
+05-22 12:31:11.400: I/Gmail(2074): calculateUnknownSyncRationalesAndPurgeInBackground: queueing
+05-22 12:31:11.500: D/dalvikvm(2074): GC_CONCURRENT freed 329K, 7% free 6924K/7367K, paused 2ms+3ms
+05-22 12:31:11.580: I/Gmail(2074): calculateUnknownSyncRationalesAndPurgeInBackground: running
+05-22 12:31:11.580: I/Gmail(2074): calculateUnknownSyncRationalesAndPurgeInBackground: running
+05-22 12:31:11.660: D/dalvikvm(18422): GC_CONCURRENT freed 3748K, 44% free 12937K/22855K, paused 3ms+4ms
+05-22 12:31:11.830: D/dalvikvm(2074): GC_CONCURRENT freed 385K, 6% free 7061K/7495K, paused 2ms+2ms
+05-22 12:31:12.000: I/ActivityManager(145): Start proc com.docomedia.android.acer.monet for service com.docomedia.android.acer.monet/.BookWidgetService: pid=2099 uid=10028 gids={1006, 3003, 1015}
+05-22 12:31:12.010: I/dalvikvm(2099): Turning on JNI app bug workarounds for target SDK version 9...
+05-22 12:31:12.060: E/widget(2099): onCreate
+05-22 12:31:12.080: E/widget(2099): ondataSetChanged
+05-22 12:31:12.090: I/initData(2099): current version = 2016
+05-22 12:31:12.190: D/dalvikvm(2099): GC_CONCURRENT freed 267K, 6% free 6748K/7111K, paused 3ms+3ms
+05-22 12:31:12.290: D/dalvikvm(18422): GC_CONCURRENT freed 605K, 38% free 14311K/22855K, paused 3ms+6ms
+05-22 12:31:12.320: D/dalvikvm(145): JIT code cache reset in 12 ms (1048472 bytes 31/0)
+05-22 12:31:12.330: D/dalvikvm(145): GC_EXPLICIT freed 1261K, 24% free 14220K/18695K, paused 4ms+22ms
+05-22 12:31:12.360: D/dalvikvm(24408): GC_FOR_ALLOC freed 1472K, 23% free 6743K/8647K, paused 27ms
+05-22 12:31:12.380: D/dalvikvm(24408): GC_FOR_ALLOC freed 3K, 22% free 6805K/8647K, paused 16ms
+05-22 12:31:12.380: I/dalvikvm-heap(24408): Grow heap (frag case) to 7.878MB for 1228816-byte allocation
+05-22 12:31:12.420: D/dalvikvm(24408): GC_CONCURRENT freed <1K, 8% free 8005K/8647K, paused 2ms+2ms
+05-22 12:31:12.480: D/dalvikvm(24408): GC_FOR_ALLOC freed 1414K, 22% free 6802K/8647K, paused 17ms
+05-22 12:31:12.480: I/dalvikvm-heap(24408): Grow heap (frag case) to 7.875MB for 1228816-byte allocation
+05-22 12:31:12.510: D/dalvikvm(24408): GC_CONCURRENT freed 1K, 8% free 8001K/8647K, paused 2ms+2ms
+05-22 12:31:12.560: D/dalvikvm(24408): GC_FOR_ALLOC freed 1404K, 22% free 6800K/8647K, paused 18ms
+05-22 12:31:12.570: I/dalvikvm-heap(24408): Grow heap (frag case) to 7.874MB for 1228816-byte allocation
+05-22 12:31:12.610: D/dalvikvm(24408): GC_CONCURRENT freed <1K, 8% free 7999K/8647K, paused 2ms+1ms
+05-22 12:31:12.670: D/dalvikvm(24408): GC_FOR_ALLOC freed 1402K, 22% free 6799K/8647K, paused 21ms
+05-22 12:31:12.670: I/dalvikvm-heap(24408): Grow heap (frag case) to 7.873MB for 1228816-byte allocation
+05-22 12:31:12.710: D/dalvikvm(24408): GC_CONCURRENT freed <1K, 8% free 7999K/8647K, paused 2ms+1ms
+05-22 12:31:12.760: D/dalvikvm(24408): GC_FOR_ALLOC freed 1402K, 23% free 6741K/8647K, paused 18ms
+05-22 12:31:12.780: D/dalvikvm(24408): GC_FOR_ALLOC freed <1K, 22% free 6813K/8647K, paused 18ms
+05-22 12:31:12.780: I/dalvikvm-heap(24408): Grow heap (frag case) to 7.886MB for 1228816-byte allocation
+05-22 12:31:12.820: D/dalvikvm(24408): GC_CONCURRENT freed 0K, 8% free 8013K/8647K, paused 3ms+2ms
+05-22 12:31:14.940: I/AudioService(145):  AudioFocus  abandonAudioFocus() from android.media.AudioManager@413d9fb0
+05-22 12:31:16.360: D/OpenGLRenderer(24461): Flushing caches (mode 1)
+05-22 12:31:16.600: I/ActivityManager(145): START {cmp=eu.lighthouselabs.obd.reader/.activity.MainActivity bnds=[354,903][784,967]} from pid -1
+05-22 12:31:16.600: W/ActivityManager(145): startActivity called from non-Activity context; forcing Intent.FLAG_ACTIVITY_NEW_TASK for: Intent { cmp=eu.lighthouselabs.obd.reader/.activity.MainActivity bnds=[354,903][784,967] }
+05-22 12:31:16.700: W/KeyguardViewMediator(145): verifyUnlock called when not externally disabled
+05-22 12:31:16.740: D/OpenGLRenderer(18422): Flushing caches (mode 0)
+05-22 12:31:16.750: D/MainActivity(2057): Binding service..
+05-22 12:31:16.750: D/MainActivity(2057): Resuming..
+05-22 12:31:16.750: V/Sensors(145): handle : 16 en: 1 mEnabled:00004000
+05-22 12:31:16.750: V/Sensors(145): sensor state change what=16
+05-22 12:31:16.750: V/Sensors(145):  enabled_sensors: 81920 dmp_started: 1
+05-22 12:31:16.750: I/(145): mpu3050_suspend: suspending sensors to 0000
+05-22 12:31:16.760: I/(145): mpu3050_suspend: Will resume next to 0070
+05-22 12:31:16.760: V/Sensors(145): MLSetMPUSensors: 3ff
+05-22 12:31:16.760: V/Sensors(145): Starting DMP
+05-22 12:31:16.870: I/(145): mpu3050_resume: Resuming to 03ff
+05-22 12:31:16.980: D/OpenGLRenderer(225): Flushing caches (mode 0)
+05-22 12:31:17.030: I/width(2057): 330 7
+05-22 12:31:17.030: I/ActivityManager(145): Displayed eu.lighthouselabs.obd.reader/.activity.MainActivity: +345ms
+05-22 12:31:17.050: V/TabletStatusBar(225): setLightsOn(true)
+05-22 12:31:17.840: I/ActivityManager(145): No longer want com.google.android.partnersetup (pid 1843): hidden #16
+05-22 12:31:24.340: D/MainActivity(2057): Stopping live data..
+05-22 12:31:24.350: W/InputManagerService(145): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@414a5218
+05-22 12:31:28.160: W/InputManagerService(145): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@4137b2c0
+05-22 12:31:29.590: D/MainActivity(2057): Pausing..
+05-22 12:31:30.230: I/ActivityManager(145): No longer want com.android.musicfx (pid 1855): hidden #16
+05-22 12:31:30.250: E/ActivityThread(2057): Activity eu.lighthouselabs.obd.reader.activity.MainActivity has leaked ServiceConnection eu.lighthouselabs.obd.reader.io.ObdGatewayServiceConnection@410df2b0 that was originally bound here
+05-22 12:31:30.250: E/ActivityThread(2057): android.app.ServiceConnectionLeaked: Activity eu.lighthouselabs.obd.reader.activity.MainActivity has leaked ServiceConnection eu.lighthouselabs.obd.reader.io.ObdGatewayServiceConnection@410df2b0 that was originally bound here
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.app.LoadedApk$ServiceDispatcher.<init>(LoadedApk.java:936)
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.app.LoadedApk.getServiceDispatcher(LoadedApk.java:830)
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.app.ContextImpl.bindService(ContextImpl.java:1117)
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.content.ContextWrapper.bindService(ContextWrapper.java:370)
+05-22 12:31:30.250: E/ActivityThread(2057):     at eu.lighthouselabs.obd.reader.activity.MainActivity.onCreate(MainActivity.java:228)
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.app.Activity.performCreate(Activity.java:4465)
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1049)
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1920)
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1981)
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.app.ActivityThread.access$600(ActivityThread.java:123)
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1147)
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.os.Handler.dispatchMessage(Handler.java:99)
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.os.Looper.loop(Looper.java:137)
+05-22 12:31:30.250: E/ActivityThread(2057):     at android.app.ActivityThread.main(ActivityThread.java:4424)
+05-22 12:31:30.250: E/ActivityThread(2057):     at java.lang.reflect.Method.invokeNative(Native Method)
+05-22 12:31:30.250: E/ActivityThread(2057):     at java.lang.reflect.Method.invoke(Method.java:511)
+05-22 12:31:30.250: E/ActivityThread(2057):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+05-22 12:31:30.250: E/ActivityThread(2057):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+05-22 12:31:30.250: E/ActivityThread(2057):     at dalvik.system.NativeStart.main(Native Method)
+05-22 12:31:30.250: D/ObdGatewayService(2057): Stopping service..
+05-22 12:31:30.250: W/ActivityManager(145): Unbind failed: could not find connection for android.os.BinderProxy@416a0548
+05-22 12:31:32.440: D/BluetoothEventLoop(145): Device property changed: 00:19:5D:25:E2:AA property: Connected value: false
+05-22 12:31:32.670: D/dalvikvm(18422): GC_FOR_ALLOC freed 535K, 32% free 15592K/22855K, paused 35ms
+05-22 12:31:35.130: I/ActivityManager(145): START {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.android.settings/.Settings} from pid 18422
+05-22 12:31:35.200: I/ActivityManager(145): Start proc com.android.settings for activity com.android.settings/.Settings: pid=2116 uid=1000 gids={1015, 3002, 3001, 3003, 3007}
+05-22 12:31:35.230: D/OpenGLRenderer(18422): Flushing caches (mode 1)
+05-22 12:31:35.340: D/OpenGLRenderer(18422): Flushing caches (mode 0)
+05-22 12:31:35.420: D/LocalBluetoothProfileManager(2116): Adding local A2DP profile
+05-22 12:31:35.420: D/LocalBluetoothProfileManager(2116): Adding local OPP profile
+05-22 12:31:35.430: D/LocalBluetoothProfileManager(2116): LocalBluetoothProfileManager construction complete
+05-22 12:31:35.440: D/dalvikvm(2116): GC_CONCURRENT freed 192K, 4% free 6854K/7111K, paused 3ms+3ms
+05-22 12:31:35.500: I/ManageApplications(2116): onCreateOptionsMenu in ManageApplications{410dfef8 #1 id=0x10202e3}: com.android.internal.view.menu.MenuBuilder@410ddcf0
+05-22 12:31:35.870: D/dalvikvm(2116): GC_CONCURRENT freed 98K, 3% free 7170K/7367K, paused 2ms+3ms
+05-22 12:31:35.990: I/ManageApplications(2116): onCreateOptionsMenu in ManageApplications{410dfef8 #1 id=0x10202e3}: com.android.internal.view.menu.MenuBuilder@410ddcf0
+05-22 12:31:36.000: I/ManageApplications(2116): onCreateOptionsMenu in ManageApplications{410dfef8 #1 id=0x10202e3}: com.android.internal.view.menu.MenuBuilder@410ddcf0
+05-22 12:31:36.050: D/libEGL(2116): loaded /system/lib/egl/libEGL_tegra.so
+05-22 12:31:36.070: D/libEGL(2116): loaded /system/lib/egl/libGLESv1_CM_tegra.so
+05-22 12:31:36.090: D/libEGL(2116): loaded /system/lib/egl/libGLESv2_tegra.so
+05-22 12:31:36.120: D/OpenGLRenderer(2116): Enabling debug mode 0
+05-22 12:31:36.150: D/BluetoothAdapterStateMachine(145): BluetoothOn process message: 1
+05-22 12:31:36.150: W/BluetoothAdapterStateMachine(145): BluetoothOn received: 1
+05-22 12:31:36.210: D/dalvikvm(2116): GC_CONCURRENT freed 217K, 4% free 7405K/7687K, paused 4ms+4ms
+05-22 12:31:36.360: D/dalvikvm(2116): GC_FOR_ALLOC freed 127K, 4% free 7632K/7879K, paused 19ms
+05-22 12:31:36.380: I/dalvikvm-heap(2116): Grow heap (frag case) to 9.985MB for 2592016-byte allocation
+05-22 12:31:36.400: D/dalvikvm(2116): GC_FOR_ALLOC freed 24K, 3% free 10139K/10439K, paused 18ms
+05-22 12:31:36.440: D/dalvikvm(2116): GC_CONCURRENT freed 3K, 3% free 10228K/10439K, paused 1ms+3ms
+05-22 12:31:36.510: W/InputManagerService(145): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@41738a28 (uid=10032 pid=18422)
+05-22 12:31:36.630: D/dalvikvm(2116): GC_FOR_ALLOC freed 110K, 2% free 10751K/10951K, paused 24ms
+05-22 12:31:36.670: I/ActivityManager(145): Displayed com.android.settings/.Settings: +1s481ms
+05-22 12:31:36.840: D/dalvikvm(2116): GC_CONCURRENT freed 115K, 3% free 11983K/12231K, paused 2ms+4ms
+05-22 12:31:37.020: D/dalvikvm(2116): GC_FOR_ALLOC freed 97K, 2% free 13377K/13639K, paused 20ms
+05-22 12:31:40.000: D/dalvikvm(2116): GC_CONCURRENT freed 1485K, 11% free 13830K/15431K, paused 2ms+4ms
+05-22 12:31:40.360: D/dalvikvm(1829): GC_CONCURRENT freed 413K, 7% free 6569K/7047K, paused 1ms+2ms
+05-22 12:31:42.440: D/dalvikvm(145): GC_CONCURRENT freed 2072K, 25% free 14077K/18695K, paused 3ms+7ms
+05-22 12:31:44.040: D/dalvikvm(1829): GC_CONCURRENT freed 420K, 8% free 6565K/7111K, paused 1ms+1ms
+05-22 12:31:45.010: I/ActivityManager(145): Force stopping package eu.lighthouselabs.obd.reader uid=10049
+05-22 12:31:45.010: I/ActivityManager(145): Killing proc 2057:eu.lighthouselabs.obd.reader/10049: force stop
+05-22 12:31:45.030: V/Sensors(145): handle : 16 en: 0 mEnabled:00014000
+05-22 12:31:45.030: V/Sensors(145): sensor state change what=16
+05-22 12:31:45.030: V/Sensors(145):  enabled_sensors: 16384 dmp_started: 1
+05-22 12:31:45.030: I/(145): mpu3050_suspend: suspending sensors to 0000
+05-22 12:31:45.120: I/(145): mpu3050_suspend: Will resume next to 03ff
+05-22 12:31:45.120: V/Sensors(145): MLSetMPUSensors: 70
+05-22 12:31:45.120: I/MPL-ml(145): Actual ODR: 25 Hz
+05-22 12:31:45.120: V/Sensors(145): Starting DMP
+05-22 12:31:45.120: I/(145): mpu3050_resume: Resuming to 0070
+05-22 12:31:45.160: W/InputManagerService(145): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@416e8020
+05-22 12:31:46.530: I/InstalledAppDetails(2116): Clearing user data for package : eu.lighthouselabs.obd.reader
+05-22 12:31:46.530: I/ActivityManager(145): Force stopping package eu.lighthouselabs.obd.reader uid=10049
+05-22 12:31:46.610: I/InstalledAppDetails(2116): Cleared user data for package : eu.lighthouselabs.obd.reader
+05-22 12:31:46.690: W/InputManagerService(145): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@41650b60
+05-22 12:31:48.240: I/ActivityManager(145): START {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher} from pid 145
+05-22 12:31:48.400: D/OpenGLRenderer(2116): Flushing caches (mode 0)
+05-22 12:31:48.940: W/InputManagerService(145): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@416afbf8 (uid=1000 pid=2116)
+05-22 12:31:48.970: D/OpenGLRenderer(2116): Flushing caches (mode 1)
+05-22 12:31:49.660: D/dalvikvm(18422): GC_CONCURRENT freed 2184K, 33% free 15434K/22855K, paused 2ms+5ms
+05-22 12:31:50.300: D/dalvikvm(18422): GC_CONCURRENT freed 1671K, 31% free 15777K/22855K, paused 3ms+5ms
+05-22 12:31:56.710: D/dalvikvm(18422): GC_CONCURRENT freed 1667K, 30% free 16036K/22855K, paused 2ms+7ms
+05-22 12:31:56.840: D/dalvikvm(18422): GC_CONCURRENT freed 1696K, 29% free 16373K/22855K, paused 2ms+6ms
+05-22 12:31:57.410: D/dalvikvm(18422): GC_FOR_ALLOC freed 1140K, 30% free 16098K/22855K, paused 43ms
+05-22 12:32:05.510: I/ActivityManager(145): START {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=eu.lighthouselabs.obd.reader/.activity.MainActivity} from pid 18422
+05-22 12:32:05.600: I/ActivityManager(145): Start proc eu.lighthouselabs.obd.reader for activity eu.lighthouselabs.obd.reader/.activity.MainActivity: pid=2132 uid=10049 gids={3003, 3002, 3001}
+05-22 12:32:05.600: I/dalvikvm(2132): Turning on JNI app bug workarounds for target SDK version 8...
+05-22 12:32:05.620: D/OpenGLRenderer(18422): Flushing caches (mode 1)
+05-22 12:32:05.650: D/OpenGLRenderer(18422): Flushing caches (mode 0)
+05-22 12:32:05.690: D/MainActivity(2132): Binding service..
+05-22 12:32:05.690: D/MainActivity(2132): Resuming..
+05-22 12:32:05.690: V/Sensors(145): handle : 16 en: 1 mEnabled:00004000
+05-22 12:32:05.690: V/Sensors(145): sensor state change what=16
+05-22 12:32:05.690: V/Sensors(145):  enabled_sensors: 81920 dmp_started: 1
+05-22 12:32:05.690: I/(145): mpu3050_suspend: suspending sensors to 0000
+05-22 12:32:05.690: I/(145): mpu3050_suspend: Will resume next to 0070
+05-22 12:32:05.690: V/Sensors(145): MLSetMPUSensors: 3ff
+05-22 12:32:05.690: V/Sensors(145): Starting DMP
+05-22 12:32:05.790: I/(145): mpu3050_resume: Resuming to 03ff
+05-22 12:32:05.870: V/TabletStatusBar(225): setLightsOn(true)
+05-22 12:32:05.870: W/InputManagerService(145): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@41738a28 (uid=10032 pid=18422)
+05-22 12:32:05.930: I/width(2132): 330 7
+05-22 12:32:05.930: I/ActivityManager(145): Displayed eu.lighthouselabs.obd.reader/.activity.MainActivity: +350ms
+05-22 12:32:09.010: I/ActivityManager(145): START {cmp=eu.lighthouselabs.obd.reader/.activity.ConfigActivity} from pid 2132
+05-22 12:32:09.070: D/MainActivity(2132): Pausing..
+05-22 12:32:09.120: W/Resources(2132): Converting to string: TypedValue{t=0x10/d=0x4 a=-1}
+05-22 12:32:09.130: W/Resources(2132): Converting to string: TypedValue{t=0x10/d=0x46 a=-1}
+05-22 12:32:09.130: W/Resources(2132): Converting to string: TypedValue{t=0x4/d=0x3f59999a a=-1}
+05-22 12:32:09.130: W/Resources(2132): Converting to string: TypedValue{t=0x4/d=0x3fcccccd a=-1}
+05-22 12:32:09.200: D/dalvikvm(2132): GC_CONCURRENT freed 171K, 4% free 6812K/7047K, paused 3ms+3ms
+05-22 12:32:09.260: V/TabletStatusBar(225): setLightsOn(true)
+05-22 12:32:09.450: I/ActivityManager(145): Displayed eu.lighthouselabs.obd.reader/.activity.ConfigActivity: +385ms
+05-22 12:32:10.700: D/dalvikvm(145): GC_CONCURRENT freed 1647K, 25% free 14194K/18695K, paused 4ms+9ms
+05-22 12:32:11.050: D/dalvikvm(2132): GC_CONCURRENT freed 43K, 2% free 7238K/7367K, paused 1ms+3ms
+05-22 12:32:15.830: D/dalvikvm(2132): GC_FOR_ALLOC freed 271K, 6% free 7240K/7623K, paused 30ms
+05-22 12:32:15.840: I/dalvikvm-heap(2132): Grow heap (frag case) to 7.326MB for 204816-byte allocation
+05-22 12:32:15.850: D/dalvikvm(2132): GC_FOR_ALLOC freed 1K, 6% free 7439K/7879K, paused 18ms
+05-22 12:32:15.870: D/dalvikvm(2132): GC_FOR_ALLOC freed 0K, 6% free 7439K/7879K, paused 19ms
+05-22 12:32:15.870: I/dalvikvm-heap(2132): Grow heap (frag case) to 7.520MB for 204816-byte allocation
+05-22 12:32:15.890: D/dalvikvm(2132): GC_FOR_ALLOC freed 0K, 7% free 7639K/8135K, paused 18ms
+05-22 12:32:15.910: D/dalvikvm(2132): GC_FOR_ALLOC freed 0K, 7% free 7639K/8135K, paused 17ms
+05-22 12:32:15.910: I/dalvikvm-heap(2132): Grow heap (frag case) to 7.715MB for 204816-byte allocation
+05-22 12:32:15.930: D/dalvikvm(2132): GC_FOR_ALLOC freed 0K, 7% free 7839K/8391K, paused 18ms
+05-22 12:32:15.950: D/dalvikvm(2132): GC_FOR_ALLOC freed 0K, 5% free 8039K/8391K, paused 18ms
+05-22 12:32:15.970: D/dalvikvm(2132): GC_FOR_ALLOC freed 0K, 5% free 8239K/8647K, paused 19ms
+05-22 12:32:15.990: D/dalvikvm(2132): GC_FOR_ALLOC freed 0K, 6% free 8440K/8903K, paused 17ms
+05-22 12:32:16.010: D/dalvikvm(2132): GC_FOR_ALLOC freed 0K, 6% free 8640K/9159K, paused 18ms
+05-22 12:32:16.030: D/dalvikvm(2132): GC_FOR_ALLOC freed 0K, 4% free 9040K/9415K, paused 19ms
+05-22 12:32:16.050: D/dalvikvm(2132): GC_FOR_ALLOC freed 0K, 5% free 9440K/9927K, paused 17ms
+05-22 12:32:16.080: D/dalvikvm(2132): GC_FOR_ALLOC freed 0K, 4% free 10041K/10439K, paused 18ms
+05-22 12:32:16.100: D/dalvikvm(2132): GC_FOR_ALLOC freed 0K, 4% free 10841K/11207K, paused 19ms
+05-22 12:32:49.000: W/InputManagerService(145): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@4174d0c8
+05-22 12:32:51.590: W/InputManagerService(145): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@4170cca8
+05-22 12:32:54.690: D/MainActivity(2132): Resuming..
+05-22 12:32:54.700: V/TabletStatusBar(225): setLightsOn(true)
+05-22 12:32:54.720: I/width(2132): 330 7
+05-22 12:32:59.720: D/MainActivity(2132): Starting live data..
+05-22 12:32:59.720: D/MainActivity(2132): Service is not running. Going to start it..
+05-22 12:32:59.720: D/ObdGatewayService(2132): Received start id 1: Intent { cmp=eu.lighthouselabs.obd.reader/.io.ObdGatewayService }
+05-22 12:32:59.720: D/ObdGatewayService(2132): Starting service..
+05-22 12:32:59.720: D/ObdGatewayService(2132): Stopping Bluetooth discovery.
+05-22 12:32:59.720: E/BluetoothService.cpp(145): stopDiscoveryNative: D-Bus error in StopDiscovery: org.bluez.Error.Failed (Invalid discovery session)
+05-22 12:32:59.730: D/ObdGatewayService(2132): Starting OBD connection..
+05-22 12:32:59.730: E/BluetoothEventLoop.cpp(145): onCreateDeviceResult: D-Bus error: org.bluez.Error.AlreadyExists (Already Exists)
+05-22 12:33:00.340: D/BluetoothEventLoop(145): Device property changed: 00:19:5D:25:E2:AA property: Connected value: true
+05-22 12:33:00.620: D/BluetoothService(145): updateDeviceServiceChannelCache(00:19:5D:25:E2:AA)
+05-22 12:33:00.620: D/BluetoothService(145):    uuid(application): 00001101-0000-1000-8000-00805f9b34fb 1
+05-22 12:33:00.620: D/BluetoothService(145): Making callback for 00001101-0000-1000-8000-00805f9b34fb with result 1
+05-22 12:33:00.630: V/BluetoothEventManager(2116): Received android.bluetooth.device.action.UUID
+05-22 12:33:01.070: D/ObdGatewayService(2132): Queing jobs for connection configuration..
+05-22 12:33:01.070: D/ObdGatewayService(2132): Adding job[1] to queue..
+05-22 12:33:01.070: D/ObdGatewayService(2132): Job queued successfully.
+05-22 12:33:01.070: D/ObdGatewayService(2132): Adding job[2] to queue..
+05-22 12:33:01.070: D/ObdGatewayService(2132): Job queued successfully.
+05-22 12:33:01.070: D/ObdGatewayService(2132): Adding job[3] to queue..
+05-22 12:33:01.070: D/ObdGatewayService(2132): Job queued successfully.
+05-22 12:33:01.070: D/ObdGatewayService(2132): Adding job[4] to queue..
+05-22 12:33:01.070: D/ObdGatewayService(2132): Job queued successfully.
+05-22 12:33:01.070: D/ObdGatewayService(2132): Adding job[5] to queue..
+05-22 12:33:01.070: D/ObdGatewayService(2132): Job queued successfully.
+05-22 12:33:01.070: D/ObdGatewayService(2132): Adding job[6] to queue..
+05-22 12:33:01.070: D/ObdGatewayService(2132): Job queued successfully.
+05-22 12:33:01.070: D/ObdGatewayService(2132): Adding job[7] to queue..
+05-22 12:33:01.070: D/ObdGatewayService(2132): Job queued successfully.
+05-22 12:33:01.070: D/ObdGatewayService(2132): Initialization jobs queued.
+05-22 12:33:01.080: D/MainActivity(2132): SPD:1, MAF:1.0, LTFT:0.0
+05-22 12:33:01.080: D/ObdGatewayService(2132): Adding job [Vehicle Speed] to queue.
+05-22 12:33:01.080: D/ObdGatewayService(2132): Executing queue..
+05-22 12:33:01.080: D/ObdGatewayService(2132): Taking job[1] from queue..
+05-22 12:33:01.080: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:01.290: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:01.290: D/MainActivity(2132): Long Term Fuel Trim Bank 1 equals Reset OBD?
+05-22 12:33:01.290: D/ObdGatewayService(2132): Taking job[2] from queue..
+05-22 12:33:01.290: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:01.500: E/ObdGatewayService(2132): Failed to run command. -> Invalid int: "0xOK"
+05-22 12:33:01.500: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:01.500: D/MainActivity(2132): Long Term Fuel Trim Bank 1 equals Echo Off?
+05-22 12:33:01.500: D/ObdGatewayService(2132): Taking job[3] from queue..
+05-22 12:33:01.500: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:01.730: E/ObdGatewayService(2132): Failed to run command. -> Invalid int: "0xOK"
+05-22 12:33:01.730: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:01.730: D/MainActivity(2132): Long Term Fuel Trim Bank 1 equals Echo Off?
+05-22 12:33:01.730: D/ObdGatewayService(2132): Taking job[4] from queue..
+05-22 12:33:01.730: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:01.930: E/ObdGatewayService(2132): Failed to run command. -> Invalid int: "0xOK"
+05-22 12:33:01.930: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:01.930: D/MainActivity(2132): Long Term Fuel Trim Bank 1 equals Line Feed Off?
+05-22 12:33:01.950: D/ObdGatewayService(2132): Taking job[5] from queue..
+05-22 12:33:01.950: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:01.980: D/dalvikvm(2132): GC_CONCURRENT freed 4869K, 41% free 7305K/12295K, paused 5ms+6ms
+05-22 12:33:02.160: E/ObdGatewayService(2132): Failed to run command. -> Invalid int: "0xOK"
+05-22 12:33:02.160: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:02.160: D/MainActivity(2132): Long Term Fuel Trim Bank 1 equals Timeout?
+05-22 12:33:02.170: D/ObdGatewayService(2132): Taking job[6] from queue..
+05-22 12:33:02.170: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:02.370: E/ObdGatewayService(2132): Failed to run command. -> Invalid int: "0xOK"
+05-22 12:33:02.370: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:02.370: D/MainActivity(2132): Long Term Fuel Trim Bank 1 equals Select Protocol AUTO?
+05-22 12:33:02.380: D/ObdGatewayService(2132): Taking job[7] from queue..
+05-22 12:33:02.380: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:03.190: E/ObdGatewayService(2132): Failed to run command. -> Invalid int: "0xSE"
+05-22 12:33:03.190: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:03.190: D/MainActivity(2132): Long Term Fuel Trim Bank 1 equals Ambient Air Temperature?
+05-22 12:33:03.190: D/ObdGatewayService(2132): Taking job[null] from queue..
+05-22 12:33:03.190: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:03.500: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:03.500: D/MainActivity(2132): Long Term Fuel Trim Bank 1 equals Vehicle Speed?
+05-22 12:33:03.500: D/ObdGatewayService(2132): Adding job [Engine RPM] to queue.
+05-22 12:33:03.500: D/ObdGatewayService(2132): Executing queue..
+05-22 12:33:03.500: D/ObdGatewayService(2132): Taking job[null] from queue..
+05-22 12:33:03.500: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:03.810: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:03.810: D/MainActivity(2132): Long Term Fuel Trim Bank 1 equals Engine RPM?
+05-22 12:33:03.810: D/ObdGatewayService(2132): Adding job [Mass Air Flow] to queue.
+05-22 12:33:03.810: D/ObdGatewayService(2132): Executing queue..
+05-22 12:33:03.810: D/ObdGatewayService(2132): Taking job[null] from queue..
+05-22 12:33:03.810: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:04.030: D/dalvikvm(225): GC_CONCURRENT freed 1841K, 37% free 13994K/21895K, paused 5ms+7ms
+05-22 12:33:04.110: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:04.110: D/MainActivity(2132): Long Term Fuel Trim Bank 1 equals Mass Air Flow?
+05-22 12:33:04.110: D/ObdGatewayService(2132): Adding job [Fuel Level] to queue.
+05-22 12:33:04.110: D/ObdGatewayService(2132): Executing queue..
+05-22 12:33:04.110: D/ObdGatewayService(2132): Taking job[null] from queue..
+05-22 12:33:04.110: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:04.410: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:04.420: D/MainActivity(2132): Long Term Fuel Trim Bank 1 equals Fuel Level?
+05-22 12:33:04.420: D/ObdGatewayService(2132): Adding job [Long Term Fuel Trim Bank 1] to queue.
+05-22 12:33:04.420: D/ObdGatewayService(2132): Executing queue..
+05-22 12:33:04.420: D/ObdGatewayService(2132): Taking job[null] from queue..
+05-22 12:33:04.420: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:04.710: E/ObdGatewayService(2132): Failed to run command. -> Invalid int: "0xNO"
+05-22 12:33:04.710: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:04.710: D/MainActivity(2132): Long Term Fuel Trim Bank 1 equals Long Term Fuel Trim Bank 1?
+05-22 12:33:04.720: I/InputQueue-JNI(2132): Sending finished signal for input channel '41626b10 AtchDlg:eu.lighthouselabs.obd.reader/eu.lighthouselabs.obd.reader.activity.MainActivity (client)' since it is being unregistered while an input message is still in progress.
+05-22 12:33:04.750: I/width(2132): 330 7
+05-22 12:33:04.760: I/InputQueue-JNI(2132): Ignoring finish signal on channel that is no longer registered.
+05-22 12:33:04.760: W/InputManagerService(145): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@4140fdc8
+05-22 12:33:05.740: V/BluetoothEventManager(2116): Received android.bluetooth.device.action.UUID
+05-22 12:33:06.710: D/MainActivity(2132): SPD:0, MAF:9.100000381469727, LTFT:0.0
+05-22 12:33:06.710: D/ObdGatewayService(2132): Adding job [Vehicle Speed] to queue.
+05-22 12:33:06.710: D/ObdGatewayService(2132): Executing queue..
+05-22 12:33:06.710: D/ObdGatewayService(2132): Taking job[null] from queue..
+05-22 12:33:06.710: D/ObdGatewayService(2132): Job state is NEW. Run it..
+05-22 12:33:06.940: D/ObdGatewayService(2132): Job is finished.
+05-22 12:33:06.940: D/AndroidRuntime(2132): Shutting down VM
+05-22 12:33:06.940: W/dalvikvm(2132): threadid=1: thread exiting with uncaught exception (group=0x40a361f8)
+05-22 12:33:06.950: E/AndroidRuntime(2132): FATAL EXCEPTION: main
+05-22 12:33:06.950: E/AndroidRuntime(2132): java.lang.IndexOutOfBoundsException: Invalid index 2, size is 0
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:251)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at java.util.ArrayList.get(ArrayList.java:304)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at eu.lighthouselabs.obd.commands.SpeedObdCommand.getFormattedResult(SpeedObdCommand.java:41)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at eu.lighthouselabs.obd.reader.activity.MainActivity$3.stateUpdate(MainActivity.java:149)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at eu.lighthouselabs.obd.reader.io.ObdGatewayService._executeQueue(ObdGatewayService.java:281)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at eu.lighthouselabs.obd.reader.io.ObdGatewayService.access$200(ObdGatewayService.java:52)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at eu.lighthouselabs.obd.reader.io.ObdGatewayService$LocalBinder.addJobToQueue(ObdGatewayService.java:384)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at eu.lighthouselabs.obd.reader.io.ObdGatewayServiceConnection.addJobToQueue(ObdGatewayServiceConnection.java:52)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at eu.lighthouselabs.obd.reader.activity.MainActivity.queueCommands(MainActivity.java:464)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at eu.lighthouselabs.obd.reader.activity.MainActivity.access$600(MainActivity.java:56)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at eu.lighthouselabs.obd.reader.activity.MainActivity$4.run(MainActivity.java:433)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at android.os.Handler.handleCallback(Handler.java:605)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at android.os.Handler.dispatchMessage(Handler.java:92)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at android.os.Looper.loop(Looper.java:137)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at android.app.ActivityThread.main(ActivityThread.java:4424)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at java.lang.reflect.Method.invokeNative(Native Method)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at java.lang.reflect.Method.invoke(Method.java:511)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+05-22 12:33:06.950: E/AndroidRuntime(2132):     at dalvik.system.NativeStart.main(Native Method)

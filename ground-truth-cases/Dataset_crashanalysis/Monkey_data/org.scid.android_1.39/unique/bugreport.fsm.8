@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: org.scid.android
+//version: 1.39
+//appro_time: 133
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.UnsatisfiedLinkError: Couldn't load jni from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/org.scid.android-1.apk"],nativeLibraryDirectories=[/data/app-lib/org.scid.android-1, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at org.scid.database.DataBase.<clinit>(DataBase.java:12)
+ 	at org.scid.android.ImportPgnTask.doInBackground(ImportPgnTask.java:23)
+ 	at org.scid.android.ImportPgnTask.doInBackground(ImportPgnTask.java:11)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

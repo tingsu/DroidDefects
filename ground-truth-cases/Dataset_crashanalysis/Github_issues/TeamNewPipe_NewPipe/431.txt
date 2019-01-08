@@ -1,0 +1,11 @@
+01-31 10:13:10.923 20522-20892/org.schabi.newpipe W/System.err: org.schabi.newpipe.extractor.services.youtube.YoutubeStreamExtractor$DecryptException: Could not load decrypt function
+01-31 10:13:10.923 20522-20892/org.schabi.newpipe W/System.err:     at org.schabi.newpipe.extractor.services.youtube.YoutubeStreamExtractor.loadDecryptionCode(YoutubeStreamExtractor.java:815)
+01-31 10:13:10.923 20522-20892/org.schabi.newpipe W/System.err:     at org.schabi.newpipe.extractor.services.youtube.YoutubeStreamExtractor.<init>(YoutubeStreamExtractor.java:217)
+01-31 10:13:10.923 20522-20892/org.schabi.newpipe W/System.err:     at org.schabi.newpipe.extractor.services.youtube.YoutubeService.getExtractorInstance(YoutubeService.java:51)
+01-31 10:13:10.923 20522-20892/org.schabi.newpipe W/System.err:     at org.schabi.newpipe.detail.StreamInfoWorker$StreamExtractorRunnable.run(StreamInfoWorker.java:80)
+01-31 10:13:10.923 20522-20892/org.schabi.newpipe W/System.err:     at java.lang.Thread.run(Thread.java:818)
+01-31 10:13:10.923 20522-20892/org.schabi.newpipe W/System.err: Caused by: java.net.MalformedURLException: Protocol not found: /yts/jsbin/player-en_US-vflV3n15C/base.js
+01-31 10:13:10.923 20522-20892/org.schabi.newpipe W/System.err:     at java.net.URL.<init>(URL.java:176)
+01-31 10:13:10.923 20522-20892/org.schabi.newpipe W/System.err:     at java.net.URL.<init>(URL.java:125)
+01-31 10:13:10.923 20522-20892/org.schabi.newpipe W/System.err:     at org.schabi.newpipe.Downloader.download(Downloader.java:141)
+01-31 10:13:10.923 20522-20892/org.schabi.newpipe W/System.err:     at org.schabi.newpipe.extractor.services.youtube.YoutubeStreamExtractor.loadDecryptionCode(YoutubeStreamExtractor.java:794)

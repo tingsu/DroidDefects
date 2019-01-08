@@ -1,0 +1,44 @@
+10-12 15:30:26.079: E/AndroidRuntime(11594): java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/org.doubango.imsdroid/lib/libtinyWRAP.so" not found
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at java.lang.Runtime.load(Runtime.java:332)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at java.lang.System.load(System.java:1069)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at org.doubango.ngn.NgnEngine.initialize2(NgnEngine.java:118)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at org.doubango.ngn.NgnEngine.<clinit>(NgnEngine.java:94)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at org.doubango.imsdroid.Main.<init>(Main.java:69)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at java.lang.Class.newInstance(Native Method)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at android.app.Instrumentation.newActivity(Instrumentation.java:1067)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2317)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at android.app.ActivityThread.-wrap11(ActivityThread.java)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at android.os.Handler.dispatchMessage(Handler.java:102)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at android.os.Looper.loop(Looper.java:148)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at java.lang.reflect.Method.invoke(Native Method)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-12 15:30:26.079: E/AndroidRuntime(11594):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+10-12 15:30:41.558: D/org.doubango.imsdroid.IMSDroid(12371): IMSDroid()
+10-12 15:30:41.552: W/ubango.imsdroid(12371): type=1400 audit(0.0:30721): avc: denied { search } for name="org.doubango.imsdroid" dev="mmcblk0p28" ino=89900 scontext=u:r:untrusted_app:s0:c522,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+10-12 15:30:41.562: W/ubango.imsdroid(12371): type=1400 audit(0.0:30722): avc: denied { search } for name="org.doubango.imsdroid" dev="mmcblk0p28" ino=89900 scontext=u:r:untrusted_app:s0:c522,c768 tcontext=u:object_r:app_data_file:s0:c512,c768 tclass=dir permissive=0
+10-12 15:30:41.559: D/org.doubango.ngn.NgnApplication(12371): Build.MODEL=nexus 5
+10-12 15:30:41.559: D/org.doubango.ngn.NgnApplication(12371): Build.VERSION.SDK=23
+10-12 15:30:41.566: D/AndroidRuntime(12371): Shutting down VM
+10-12 15:30:41.567: E/AndroidRuntime(12371): FATAL EXCEPTION: main
+10-12 15:30:41.567: E/AndroidRuntime(12371): Process: org.doubango.imsdroid, PID: 12371
+10-12 15:30:41.567: E/AndroidRuntime(12371): java.lang.UnsatisfiedLinkError: dlopen failed: library "/data/data/org.doubango.imsdroid/lib/libtinyWRAP.so" not found
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at java.lang.Runtime.load(Runtime.java:332)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at java.lang.System.load(System.java:1069)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at org.doubango.ngn.NgnEngine.initialize2(NgnEngine.java:118)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at org.doubango.ngn.NgnEngine.<clinit>(NgnEngine.java:94)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at org.doubango.imsdroid.Main.<init>(Main.java:69)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at java.lang.Class.newInstance(Native Method)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at android.app.Instrumentation.newActivity(Instrumentation.java:1067)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2317)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at android.app.ActivityThread.-wrap11(ActivityThread.java)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at android.os.Handler.dispatchMessage(Handler.java:102)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at android.os.Looper.loop(Looper.java:148)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at java.lang.reflect.Method.invoke(Native Method)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-12 15:30:41.567: E/AndroidRuntime(12371):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

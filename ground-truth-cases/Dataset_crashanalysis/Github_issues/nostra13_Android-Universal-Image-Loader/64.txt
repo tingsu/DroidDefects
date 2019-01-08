@@ -1,0 +1,4 @@
+09-14 13:46:22.442: E/AndroidRuntime(5209): java.lang.NullPointerException
+09-14 13:46:22.442: E/AndroidRuntime(5209):     at com.nostra13.universalimageloader.core.ImageLoader.getImageSizeScaleTo(ImageLoader.java:295)
+09-14 13:46:22.442: E/AndroidRuntime(5209):     at com.nostra13.universalimageloader.core.ImageLoader.displayImage(ImageLoader.java:189)
+09-14 13:46:22.442: E/AndroidRuntime(5209):     at com.nostra13.universalimageloader.core.ImageLoader.displayImage(ImageLoader.java:96)

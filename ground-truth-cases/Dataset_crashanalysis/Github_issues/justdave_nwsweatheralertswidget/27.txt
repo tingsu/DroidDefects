@@ -1,0 +1,8 @@
+04-16 04:09:21.804  9952 10016 W System.err: java.net.MalformedURLException: no protocol: 
+04-16 04:09:21.811  9952 10016 W System.err:    at java.net.URL.<init>(URL.java:589)
+04-16 04:09:21.811  9952 10016 W System.err:    at java.net.URL.<init>(URL.java:486)
+04-16 04:09:21.811  9952 10016 W System.err:    at java.net.URL.<init>(URL.java:435)
+04-16 04:09:21.812  9952 10016 W System.err:    at net.justdave.nwsweatheralertswidget.AlertDetailActivity.sendHttpRequest(AlertDetailActivity.java:161)
+04-16 04:09:21.812  9952 10016 W System.err:    at net.justdave.nwsweatheralertswidget.AlertDetailActivity.access$200(AlertDetailActivity.java:28)
+04-16 04:09:21.812  9952 10016 W System.err:    at net.justdave.nwsweatheralertswidget.AlertDetailActivity$1.run(AlertDetailActivity.java:63)
+04-16 04:09:21.812  9952 10016 W System.err:    at java.lang.Thread.run(Thread.java:761)

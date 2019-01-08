@@ -1,0 +1,72 @@
+E/AndroidRuntime(11208): java.lang.RuntimeException: Unable to resume activity {com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.activities.SettingsActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=65771, result=-1, data=Intent { act=com.google.zxing.client.android.SCAN flg=0x80000 (has extras) }} to activity {com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.activities.SettingsActivity}: java.lang.NullPointerException: Attempt to write to field 'java.lang.String com.nutomic.syncthingandroid.syncthing.RestApi$Device.DeviceID' on a null object reference
+E/AndroidRuntime(11208):    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2774)
+E/AndroidRuntime(11208):    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2803)
+E/AndroidRuntime(11208):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2238)
+E/AndroidRuntime(11208):    at android.app.ActivityThread.handleRelaunchActivity(ActivityThread.java:3724)
+E/AndroidRuntime(11208):    at android.app.ActivityThread.access$900(ActivityThread.java:135)
+E/AndroidRuntime(11208):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1202)
+E/AndroidRuntime(11208):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(11208):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(11208):    at android.app.ActivityThread.main(ActivityThread.java:5001)
+E/AndroidRuntime(11208):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(11208):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+E/AndroidRuntime(11208):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+E/AndroidRuntime(11208): Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=65771, result=-1, data=Intent { act=com.google.zxing.client.android.SCAN flg=0x80000 (has extras) }} to activity {com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.activities.SettingsActivity}: java.lang.NullPointerException: Attempt to write to field 'java.lang.String com.nutomic.syncthingandroid.syncthing.RestApi$Device.DeviceID' on a null object reference
+E/AndroidRuntime(11208):    at android.app.ActivityThread.deliverResults(ActivityThread.java:3351)
+E/AndroidRuntime(11208):    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2761)
+E/AndroidRuntime(11208):    ... 11 more
+E/AndroidRuntime(11208): Caused by: java.lang.NullPointerException: Attempt to write to field 'java.lang.String com.nutomic.syncthingandroid.syncthing.RestApi$Device.DeviceID' on a null object reference
+E/AndroidRuntime(11208):    at com.nutomic.syncthingandroid.fragments.DeviceSettingsFragment.onActivityResult(DeviceSettingsFragment.java:267)
+E/AndroidRuntime(11208):    at android.support.v4.app.FragmentActivity.onActivityResult(FragmentActivity.java:166)
+E/AndroidRuntime(11208):    at android.app.Activity.dispatchActivityResult(Activity.java:5423)
+E/AndroidRuntime(11208):    at android.app.ActivityThread.deliverResults(ActivityThread.java:3347)
+E/AndroidRuntime(11208):    ... 12 more
+W/ActivityManager(  601):   Force finishing activity com.nutomic.syncthingandroid/.activities.SettingsActivity
+```
+
+When I'm trying to add a folder, tapping "Create" does nothing. When I get back from the "Add folder" dialog activity the folder isn't created. Logcat:
+
+```
+W/RestApi (22248): Failed to edit folder test at /storage/emulated/0/Download
+W/RestApi (22248): org.json.JSONException: No value for Folder
+W/RestApi (22248):  at org.json.JSONObject.get(JSONObject.java:355)
+W/RestApi (22248):  at org.json.JSONObject.getJSONArray(JSONObject.java:549)
+W/RestApi (22248):  at com.nutomic.syncthingandroid.syncthing.RestApi.editFolder(RestApi.java:752)
+W/RestApi (22248):  at com.nutomic.syncthingandroid.fragments.FolderSettingsFragment.onOptionsItemSelected(FolderSettingsFragment.java:192)
+W/RestApi (22248):  at android.support.v4.app.Fragment.performOptionsItemSelected(Fragment.java:1608)
+W/RestApi (22248):  at android.support.v4.app.FragmentManagerImpl.dispatchOptionsItemSelected(FragmentManager.java:2012)
+W/RestApi (22248):  at android.support.v4.app.FragmentActivity.onMenuItemSelected(FragmentActivity.java:378)
+W/RestApi (22248):  at android.support.v7.app.ActionBarActivity.superOnMenuItemSelected(ActionBarActivity.java:244)
+W/RestApi (22248):  at android.support.v7.app.ActionBarActivityDelegateICS.onMenuItemSelected(ActionBarActivityDelegateICS.java:164)
+W/RestApi (22248):  at android.support.v7.app.ActionBarActivity.onMenuItemSelected(ActionBarActivity.java:130)
+W/RestApi (22248):  at android.support.v7.app.ActionBarActivityDelegateICS$WindowCallbackWrapper.onMenuItemSelected(ActionBarActivityDelegateICS.java:308)
+W/RestApi (22248):  at com.android.internal.policy.impl.PhoneWindow.onMenuItemSelected(PhoneWindow.java:1012)
+W/RestApi (22248):  at com.android.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:741)
+W/RestApi (22248):  at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:152)
+W/RestApi (22248):  at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:884)
+W/RestApi (22248):  at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:874)
+W/RestApi (22248):  at com.android.internal.view.menu.ActionMenuView.invokeItem(ActionMenuView.java:546)
+W/RestApi (22248):  at com.android.internal.view.menu.ActionMenuItemView.onClick(ActionMenuItemView.java:115)
+W/RestApi (22248):  at android.view.View.performClick(View.java:4438)
+W/RestApi (22248):  at android.view.View$PerformClick.run(View.java:18422)
+W/RestApi (22248):  at android.os.Handler.handleCallback(Handler.java:733)
+W/RestApi (22248):  at android.os.Handler.dispatchMessage(Handler.java:95)
+W/RestApi (22248):  at android.os.Looper.loop(Looper.java:136)
+W/RestApi (22248):  at android.app.ActivityThread.main(ActivityThread.java:5001)
+W/RestApi (22248):  at java.lang.reflect.Method.invokeNative(Native Method)
+W/RestApi (22248):  at java.lang.reflect.Method.invoke(Method.java:515)
+W/RestApi (22248):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+W/RestApi (22248):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+W/RestApi (22248):  at dalvik.system.NativeStart.main(Native Method)
+```
+
+There are also these messages:
+
+```
+F/FileObserver(22248): Unhandled exception in FileObserver com.nutomic.syncthingandroid.util.FolderObserver@41b3eb68
+F/FileObserver(22248): java.lang.NullPointerException
+F/FileObserver(22248):  at com.nutomic.syncthingandroid.util.FolderObserver.<init>(FolderObserver.java:60)
+F/FileObserver(22248):  at com.nutomic.syncthingandroid.util.FolderObserver.onEvent(FolderObserver.java:91)
+F/FileObserver(22248):  at android.os.FileObserver$ObserverThread.onEvent(FileObserver.java:125)
+F/FileObserver(22248):  at android.os.FileObserver$ObserverThread.observe(Native Method)
+F/FileObserver(22248):  at android.os.FileObserver$ObserverThread.run(FileObserver.java:88)

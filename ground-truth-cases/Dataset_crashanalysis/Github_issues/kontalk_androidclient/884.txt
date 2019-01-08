@@ -1,0 +1,5 @@
+java.lang.UnsupportedOperationException: Unknown group command: [OWNER_JID];create:[USER1_JID];[USER2_JID];[USER3_JID]
+       at org.kontalk.message.GroupCommandComponent.getTextContent(GroupCommandComponent.java:230)
+       at org.kontalk.ui.MessagingNotification.updateMessagesNotification(MessagingNotification.java:310)
+       at org.kontalk.ui.MessagingNotification$1.run(MessagingNotification.java:166)
+       at java.lang.Thread.run(Thread.java:1019)

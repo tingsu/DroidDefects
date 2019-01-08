@@ -1,0 +1,10 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'double android.location.Location.getLatitude()' on a null object reference
+    at org.onebusaway.android.map.googlemapsv2.BaseMapFragment.onRegionTaskFinished(BaseMapFragment.java:527)
+    at org.onebusaway.android.region.ObaRegionsTask$2.run(ObaRegionsTask.java:267)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5422)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

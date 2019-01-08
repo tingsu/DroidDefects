@@ -1,0 +1,10 @@
+org.json.JSONException: No value for missed
+    at org.json.JSONObject.get(JSONObject.java:355)
+    at org.json.JSONObject.getJSONArray(JSONObject.java:549)
+    at com.rastating.droidbeard.net.FetchUpcomingEpisodesTask.doInBackground(FetchUpcomingEpisodesTask.java:47)
+    at com.rastating.droidbeard.net.FetchUpcomingEpisodesTask.doInBackground(FetchUpcomingEpisodesTask.java:34)
+    at android.os.AsyncTask$2.call(AsyncTask.java:288)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+    at java.lang.Thread.run(Thread.java:811)

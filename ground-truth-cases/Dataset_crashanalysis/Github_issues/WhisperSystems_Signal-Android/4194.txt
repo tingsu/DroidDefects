@@ -1,0 +1,15 @@
+W/JobConsumer(10673): java.lang.NegativeArraySizeException: -20
+W/JobConsumer(10673):   at org.thoughtcrime.securesms.crypto.MasterCipher.verifyMacBody(MasterCipher.java:157)
+W/JobConsumer(10673):   at org.thoughtcrime.securesms.crypto.MasterCipher.decryptBytes(MasterCipher.java:98)
+W/JobConsumer(10673):   at org.thoughtcrime.securesms.crypto.MediaKey.getDecrypted(MediaKey.java:28)
+W/JobConsumer(10673):   at org.thoughtcrime.securesms.jobs.AttachmentDownloadJob.createAttachmentPointer(AttachmentDownloadJob.java:133)
+W/JobConsumer(10673):   at org.thoughtcrime.securesms.jobs.AttachmentDownloadJob.retrievePart(AttachmentDownloadJob.java:108)
+W/JobConsumer(10673):   at org.thoughtcrime.securesms.jobs.AttachmentDownloadJob.onRun(AttachmentDownloadJob.java:81)
+W/JobConsumer(10673):   at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/JobConsumer(10673):   at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/JobConsumer(10673):   at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+```
+
+Looks like there's a message waiting that causes it to crash.
+
+Right now I can't use TextSecure at all. Any ideas?

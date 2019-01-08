@@ -1,0 +1,13 @@
+java.lang.NullPointerException
+    at com.nextgis.maplib.map.LocalTMSLayer.fillFromZip(LocalTMSLayer.java:194)
+    at com.nextgis.maplibui.service.LayerFillService$LocalTMSFillTask.execute(LayerFillService.java:591)
+    at com.nextgis.maplibui.service.LayerFillService$2.run(LayerFillService.java:251)
+    at java.lang.Thread.run(Thread.java:856)
+```
+
+```
+java.lang.NullPointerException: Attempt to get length of null array
+    at com.nextgis.maplib.map.LocalTMSLayer.fillFromZip(LocalTMSLayer.java:194)
+    at com.nextgis.maplibui.service.LayerFillService$LocalTMSFillTask.execute(LayerFillService.java:591)
+    at com.nextgis.maplibui.service.LayerFillService$2.run(LayerFillService.java:251)
+    at java.lang.Thread.run(Thread.java:818)

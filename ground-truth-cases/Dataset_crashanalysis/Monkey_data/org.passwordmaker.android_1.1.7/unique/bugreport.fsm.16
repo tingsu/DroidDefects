@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: org.passwordmaker.android
+//version: 1.1.7
+//appro_time: 117
+ java.lang.RuntimeException: Unable to pause activity {org.passwordmaker.android/org.passwordmaker.android.PasswordMakerProForAndroidActivity}: java.lang.NumberFormatException: Invalid int: "6655457897"
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3064)
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3019)
+ 	at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:2997)
+ 	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1267)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NumberFormatException: Invalid int: "6655457897"
+ 	at java.lang.Integer.invalidInt(Integer.java:138)
+ 	at java.lang.Integer.parse(Integer.java:378)
+ 	at java.lang.Integer.parseInt(Integer.java:366)
+ 	at java.lang.Integer.parseInt(Integer.java:332)
+ 	at org.passwordmaker.android.PasswordMakerProForAndroidActivity.onPause(PasswordMakerProForAndroidActivity.java:143)
+ 	at android.app.Activity.performPause(Activity.java:5235)
+ 	at android.app.Instrumentation.callActivityOnPause(Instrumentation.java:1233)
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3050)

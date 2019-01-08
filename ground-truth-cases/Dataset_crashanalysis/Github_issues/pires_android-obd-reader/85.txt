@@ -1,0 +1,9 @@
+pt.lighthouselabs.obd.exceptions.MisunderstoodCommandException: Error running AT E0, response: +CONNECTING<<A0:F?
+    at java.lang.Class.newInstanceImpl(Native Method)
+    at java.lang.Class.newInstance(Class.java:1319)
+    at pt.lighthouselabs.obd.commands.ObdCommand.checkForErrors(ObdCommand.java:206)
+    at pt.lighthouselabs.obd.commands.ObdCommand.readResult(ObdCommand.java:137)
+    at pt.lighthouselabs.obd.commands.ObdCommand.run(ObdCommand.java:84)
+    at io.ObdGatewayService.executeQueue(ObdGatewayService.java:207)
+    at io.AbstractGatewayService$1.run(AbstractGatewayService.java:40)
+    at java.lang.Thread.run(Thread.java:864)

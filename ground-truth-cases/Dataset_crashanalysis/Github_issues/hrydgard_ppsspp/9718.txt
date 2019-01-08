@@ -1,0 +1,13 @@
+java.lang.NullPointerException: 
+  at android.app.LoadedApk.getAssets(LoadedApk.java:589)
+  at android.app.LoadedApk.makeApplication(LoadedApk.java:682)
+  at android.app.ActivityThread.handleBindApplication(ActivityThread.java:6002)
+  at android.app.ActivityThread.access$1700(ActivityThread.java:218)
+  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1795)
+  at android.os.Handler.dispatchMessage(Handler.java:102)
+  at android.os.Looper.loop(Looper.java:145)
+  at android.app.ActivityThread.main(ActivityThread.java:6934)
+  at java.lang.reflect.Method.invoke(Native Method:0)
+  at java.lang.reflect.Method.invoke(Method.java:372)
+  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)

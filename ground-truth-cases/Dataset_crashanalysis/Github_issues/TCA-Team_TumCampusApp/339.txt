@@ -1,0 +1,23 @@
+java.lang.RuntimeException: An error occured while executing doInBackground()
+    at android.os.AsyncTask$3.done(AsyncTask.java:300)
+    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+    at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+    at java.lang.Thread.run(Thread.java:818)
+Caused by: java.lang.IllegalStateException: Error handler returned null for wrapped exception.
+    at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:244)
+    at java.lang.reflect.Proxy.invoke(Proxy.java:397)
+    at de.tum.in.tumcampus.models.$Proxy3.createMember(Unknown Source)
+    at de.tum.in.tumcampus.models.TUMCabeClient.createMember(TUMCabeClient.java:109)
+    at de.tum.in.tumcampus.activities.wizard.WizNavChatActivity.onLoadInBackground(WizNavChatActivity.java:178)
+    at de.tum.in.tumcampus.activities.wizard.WizNavChatActivity.onLoadInBackground(WizNavChatActivity.java:38)
+    at de.tum.in.tumcampus.activities.generic.ActivityForLoadingInBackground$1.doInBackground(ActivityForLoadingInBackground.java:63)
+    at android.os.AsyncTask$2.call(AsyncTask.java:288)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+    ... 4 more
+Caused by: retrofit.RetrofitError: 400 Bad Request
+    at retrofit.RestAdapter$RestHandler.invokeRequest(RestAdapter.java:388)
+    at retrofit.RestAdapter$RestHandler.invoke(RestAdapter.java:240)

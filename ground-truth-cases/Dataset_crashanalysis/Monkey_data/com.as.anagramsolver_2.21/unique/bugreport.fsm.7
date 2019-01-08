@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: com.as.anagramsolver
+//version: 2.21
+//appro_time: 121
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: android.database.sqlite.SQLiteException: near "(": syntax error (code 1): , while compiling: SELECT word FROM French WHERE aword=''(='
+ 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+ 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:500)
+ 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+ 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+ 	at android.database.sqlite.SQLiteQuery.<init>(SQLiteQuery.java:37)
+ 	at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:44)
+ 	at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1314)
+ 	at android.database.sqlite.SQLiteDatabase.rawQuery(SQLiteDatabase.java:1253)
+ 	at com.as.anagramsolver.DictionaryDBCreator.rawQueryResults(DictionaryDBCreator.java:189)
+ 	at com.as.anagramsolver.DictionaryDBCreator.getMatchingAnagrams(DictionaryDBCreator.java:172)
+ 	at com.as.anagramsolver.StartPage$DBSearchTask.doInBackground(StartPage.java:145)
+ 	at com.as.anagramsolver.StartPage$DBSearchTask.doInBackground(StartPage.java:114)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

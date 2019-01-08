@@ -1,0 +1,33 @@
+W/MessageQueue( 2400): java.lang.RuntimeException: Handler (de.qspool.clementineremote.backend.ClementineConnectionHandler) {2c020cd8} sending message to a Handler on a dead thread
+W/MessageQueue( 2400):  at android.os.MessageQueue.enqueueMessage(MessageQueue.java:294)
+W/MessageQueue( 2400):  at android.os.Handler.sendMessageAtTime(Handler.java:473)
+W/MessageQueue( 2400):  at android.os.Handler.sendMessageDelayed(Handler.java:446)
+W/MessageQueue( 2400):  at de.qspool.clementineremote.backend.ClementinePlayerConnection.checkForData(ClementinePlayerConnection.java:210)
+W/MessageQueue( 2400):  at de.qspool.clementineremote.backend.ClementineConnectionHandler.handleMessage(ClementineConnectionHandler.java:41)
+W/MessageQueue( 2400):  at android.os.Handler.dispatchMessage(Handler.java:99)
+W/MessageQueue( 2400):  at android.os.Looper.loop(Looper.java:137)
+W/MessageQueue( 2400):  at de.qspool.clementineremote.backend.ClementinePlayerConnection.run(ClementinePlayerConnection.java:126)
+W/MessageQueue( 2400):  at java.lang.Thread.run(Thread.java:856)
+D/ClementineService( 2400): onStartCommand
+D/ClementineService( 2400): handleServiceAction - start
+D/ClementineService( 2400): handleServiceAction - action: 3
+W/MessageQueue( 2400): Handler (de.qspool.clementineremote.backend.ClementineConnectionHandler) {2c020cd8} sending message to a Handler on a dead thread
+W/MessageQueue( 2400): java.lang.RuntimeException: Handler (de.qspool.clementineremote.backend.ClementineConnectionHandler) {2c020cd8} sending message to a Handler on a dead thread
+W/MessageQueue( 2400):  at android.os.MessageQueue.enqueueMessage(MessageQueue.java:294)
+W/MessageQueue( 2400):  at android.os.Handler.sendMessageAtTime(Handler.java:473)
+W/MessageQueue( 2400):  at android.os.Handler.sendMessageDelayed(Handler.java:446)
+W/MessageQueue( 2400):  at android.os.Handler.post(Handler.java:263)
+W/MessageQueue( 2400):  at de.qspool.clementineremote.backend.ClementineService.intteruptThread(ClementineService.java:131)
+W/MessageQueue( 2400):  at de.qspool.clementineremote.backend.ClementineService.handleServiceAction(ClementineService.java:92)
+W/MessageQueue( 2400):  at de.qspool.clementineremote.backend.ClementineService.onStartCommand(ClementineService.java:57)
+W/MessageQueue( 2400):  at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2616)
+W/MessageQueue( 2400):  at android.app.ActivityThread.access$1900(ActivityThread.java:142)
+W/MessageQueue( 2400):  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1305)
+W/MessageQueue( 2400):  at android.os.Handler.dispatchMessage(Handler.java:99)
+W/MessageQueue( 2400):  at android.os.Looper.loop(Looper.java:137)
+W/MessageQueue( 2400):  at android.app.ActivityThread.main(ActivityThread.java:4931)
+W/MessageQueue( 2400):  at java.lang.reflect.Method.invokeNative(Native Method)
+W/MessageQueue( 2400):  at java.lang.reflect.Method.invoke(Method.java:511)
+W/MessageQueue( 2400):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:791)
+W/MessageQueue( 2400):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:558)
+W/MessageQueue( 2400):  at dalvik.system.NativeStart.main(Native Method)

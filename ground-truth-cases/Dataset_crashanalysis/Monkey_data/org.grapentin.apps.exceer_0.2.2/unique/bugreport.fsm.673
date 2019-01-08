@@ -1,0 +1,33 @@
+//this is an auto-generated bug report
+//package name: org.grapentin.apps.exceer
+//version: 0.2.2
+//appro_time: 89
+ FATAL EXCEPTION: main
+ java.lang.Error: java.lang.NumberFormatException: Invalid long: "null"
+ 	at org.grapentin.apps.exceer.models.BaseModel.get(BaseModel.java:110)
+ 	at org.grapentin.apps.exceer.models.ModelTraining.get(ModelTraining.java:62)
+ 	at org.grapentin.apps.exceer.training.TrainingManager.prepare(TrainingManager.java:76)
+ 	at org.grapentin.apps.exceer.TrainingActivity.onCreate(TrainingActivity.java:55)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NumberFormatException: Invalid long: "null"
+ 	at java.lang.Long.invalidLong(Long.java:125)
+ 	at java.lang.Long.parseLong(Long.java:342)
+ 	at java.lang.Long.parseLong(Long.java:319)
+ 	at org.grapentin.apps.exceer.models.BaseModel$Column.getLong(BaseModel.java:220)
+ 	at org.grapentin.apps.exceer.models.BaseModel.getId(BaseModel.java:186)
+ 	at org.grapentin.apps.exceer.managers.DatabaseManager.addToCache(DatabaseManager.java:82)
+ 	at org.grapentin.apps.exceer.models.BaseModel.get(BaseModel.java:104)
+ 	... 17 more

@@ -1,0 +1,7 @@
+                                                                   java.lang.UnsatisfiedLinkError: de.blinkt.openvpn.core.NativeUtils
+                                                                       at de.blinkt.openvpn.VpnProfile.getConfigFile(VpnProfile.java:278)
+                                                                       at de.blinkt.openvpn.VpnProfile.writeConfigFile(VpnProfile.java:660)
+                                                                       at de.blinkt.openvpn.core.OpenVPNService.startOpenVPN(OpenVPNService.java:408)
+                                                                       at de.blinkt.openvpn.core.OpenVPNService.access$200(OpenVPNService.java:58)
+                                                                       at de.blinkt.openvpn.core.OpenVPNService$2.run(OpenVPNService.java:388)
+                                                                       at java.lang.Thread.run(Thread.java:818)

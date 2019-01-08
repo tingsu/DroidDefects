@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: com.ringdroid
+//version: 2.6
+//appro_time: 129
+ java.lang.RuntimeException: Unable to resume activity {com.ringdroid/com.ringdroid.RingdroidSelectActivity}: android.database.StaleDataException: Attempted to access a cursor after it has been closed.
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2790)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1298)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.database.StaleDataException: Attempted to access a cursor after it has been closed.
+ 	at android.database.BulkCursorToCursorAdaptor.throwIfCursorIsClosed(BulkCursorToCursorAdaptor.java:64)
+ 	at android.database.BulkCursorToCursorAdaptor.requery(BulkCursorToCursorAdaptor.java:133)
+ 	at android.database.CursorWrapper.requery(CursorWrapper.java:186)
+ 	at android.app.Activity.performRestart(Activity.java:5177)
+ 	at android.app.Activity.performResume(Activity.java:5203)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)

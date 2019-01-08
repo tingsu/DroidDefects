@@ -1,0 +1,16 @@
+java.lang.RuntimeException: Error receiving broadcast Intent { act=android.intent.action.SCREEN_OFF flg=0x50000010 } in net.osmand.plus.activities.MapActivity$ScreenOffReceiver@1a6d6be9
+    at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:915)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5595)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:960)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:755)
+Caused by: java.lang.NullPointerException: Null pointer exception during instruction 'invoke-static {v0}, net.osmand.plus.audionotes.AudioVideoNotesPlugin$AVActionType net.osmand.plus.audionotes.AudioVideoNotesPlugin$CurrentRecording.access$1200(net.osmand.plus.audionotes.AudioVideoNotesPlugin$CurrentRecording) // method@58096'
+    at net.osmand.plus.audionotes.AudioVideoNotesPlugin.stopRecording(AudioVideoNotesPlugin.java:1561)
+    at net.osmand.plus.audionotes.AudioVideoNotesPlugin.mapActivityScreenOff(AudioVideoNotesPlugin.java:819)
+    at net.osmand.plus.OsmandPlugin.onMapActivityScreenOff(OsmandPlugin.java:390)
+    at net.osmand.plus.activities.MapActivity$ScreenOffReceiver.onReceive(MapActivity.java:1445)
+    at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:900)

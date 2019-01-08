@@ -1,0 +1,36 @@
+java.lang.StringIndexOutOfBoundsException: length=0; index=0
+    at java.lang.String.indexAndLength(String.java:584)
+    at java.lang.String.charAt(String.java:578)
+    at ch.blinkenlights.android.vanilla.MediaAdapter.buildAlphabet(MediaAdapter.java:738)
+    at ch.blinkenlights.android.vanilla.MediaAdapter.changeCursor(MediaAdapter.java:495)
+    at ch.blinkenlights.android.vanilla.MediaAdapter.commitQuery(MediaAdapter.java:411)
+    at ch.blinkenlights.android.vanilla.LibraryPagerAdapter.handleMessage(LibraryPagerAdapter.java:651)
+    at android.os.Handler.dispatchMessage(Handler.java:98)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.app.ActivityThread.main(ActivityThread.java:5017)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+    at dalvik.system.NativeStart.main(Native Method)
+```
+
+And:
+
+```
+java.lang.StringIndexOutOfBoundsException: length=0; index=0
+    at ch.blinkenlights.android.vanilla.MediaAdapter.buildAlphabet(MediaAdapter.java:738)
+    at ch.blinkenlights.android.vanilla.MediaAdapter.changeCursor(MediaAdapter.java:495)
+    at ch.blinkenlights.android.vanilla.MediaAdapter.commitQuery(MediaAdapter.java:411)
+    at ch.blinkenlights.android.vanilla.LibraryPagerAdapter.handleMessage(LibraryPagerAdapter.java:651)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:4921)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:511)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1027)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:794)
+    at dalvik.system.NativeStart.main(Native Method)
+```
+
+Seems to cause a crash at startup (!)

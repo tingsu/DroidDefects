@@ -1,0 +1,24 @@
+E/ACRA    (16593): java.lang.RuntimeException: Unable to resume activity {de.azapps.mirakelandroid/de.azapps.mirakel.main_activity.MainActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=4, result=0, data=null} to activity {de.azapps.mirakelandroid/de.azapps.mirakel.main_activity.MainActivity}: java.lang.NullPointerException
+E/ACRA    (16593):  at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2808)
+E/ACRA    (16593):  at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2837)
+E/ACRA    (16593):  at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2270)
+E/ACRA    (16593):  at android.app.ActivityThread.access$800(ActivityThread.java:145)
+E/ACRA    (16593):  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1206)
+E/ACRA    (16593):  at android.os.Handler.dispatchMessage(Handler.java:102)
+E/ACRA    (16593):  at android.os.Looper.loop(Looper.java:136)
+E/ACRA    (16593):  at android.app.ActivityThread.main(ActivityThread.java:5081)
+E/ACRA    (16593):  at java.lang.reflect.Method.invokeNative(Native Method)
+E/ACRA    (16593):  at java.lang.reflect.Method.invoke(Method.java:515)
+E/ACRA    (16593):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:781)
+E/ACRA    (16593):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+E/ACRA    (16593):  at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:126)
+E/ACRA    (16593):  at dalvik.system.NativeStart.main(Native Method)
+E/ACRA    (16593): Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=4, result=0, data=null} to activity {de.azapps.mirakelandroid/de.azapps.mirakel.main_activity.MainActivity}: java.lang.NullPointerException
+E/ACRA    (16593):  at android.app.ActivityThread.deliverResults(ActivityThread.java:3385)
+E/ACRA    (16593):  at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2795)
+E/ACRA    (16593):  ... 13 more
+E/ACRA    (16593): Caused by: java.lang.NullPointerException
+E/ACRA    (16593):  at de.azapps.mirakel.main_activity.tasks_fragment.TasksFragment.updateButtons(TasksFragment.java:555)
+E/ACRA    (16593):  at de.azapps.mirakel.main_activity.MainActivity.onActivityResult(MainActivity.java:553)
+E/ACRA    (16593):  at android.app.Activity.dispatchActivityResult(Activity.java:5423)
+E/ACRA    (16593):  at android.app.ActivityThread.deliverResults(ActivityThread.java:3381)

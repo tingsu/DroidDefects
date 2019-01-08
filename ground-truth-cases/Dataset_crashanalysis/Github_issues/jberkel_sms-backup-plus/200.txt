@@ -1,0 +1,6 @@
+12-19 01:27:13.056: E/ACRA(1172): java.lang.IllegalArgumentException: REPORT_SENDER is not a constant in the enum type class org.acra.ReportField
+12-19 01:27:13.056: E/ACRA(1172):   at java.lang.Enum.valueOf(Enum.java:196)
+12-19 01:27:13.056: E/ACRA(1172):   at org.acra.CrashReportPersister.load(CrashReportPersister.java:265)
+12-19 01:27:13.056: E/ACRA(1172):   at org.acra.CrashReportPersister.load(CrashReportPersister.java:76)
+12-19 01:27:13.056: E/ACRA(1172):   at org.acra.SendWorker.checkAndSendReports(SendWorker.java:112)
+12-19 01:27:13.056: E/ACRA(1172):   at org.acra.SendWorker.run(SendWorker.java:58)`

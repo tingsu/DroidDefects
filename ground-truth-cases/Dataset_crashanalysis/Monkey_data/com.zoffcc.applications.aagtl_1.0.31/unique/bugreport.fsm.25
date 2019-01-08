@@ -1,0 +1,9 @@
+//this is an auto-generated bug report
+//package name: com.zoffcc.applications.aagtl
+//version: 1.0.31
+//appro_time: 76
+ java.lang.NullPointerException
+ 	at com.zoffcc.applications.aagtl.HTMLDownloader.get_geocaches_v3(HTMLDownloader.java:397)
+ 	at com.zoffcc.applications.aagtl.HTMLDownloader.get_geocaches(HTMLDownloader.java:341)
+ 	at com.zoffcc.applications.aagtl.aagtl.download_caches_in_visible_view_wrapper(aagtl.java:1708)
+ 	at com.zoffcc.applications.aagtl.aagtl$ProgressThread.run(aagtl.java:1964)

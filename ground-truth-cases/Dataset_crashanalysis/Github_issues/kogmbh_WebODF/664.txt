@@ -1,0 +1,10 @@
+TypeError: Cannot read property 'nodeType' of null
+    at new core.PositionIterator (http://ci.kogmbh.com/deploy/WebODF/webodf-ci-b409-g077ebf53/editor/webodf.js:93:89)
+    at Function.gui.SelectionMover.createPositionIterator (http://ci.kogmbh.com/deploy/WebODF/webodf-ci-b409-g077ebf53/editor/webodf.js:312:262)
+    at m [as createStepIterator] (http://ci.kogmbh.com/deploy/WebODF/webodf-ci-b409-g077ebf53/editor/webodf.js:330:105)
+    at d (http://ci.kogmbh.com/deploy/WebODF/webodf-ci-b409-g077ebf53/editor/webodf.js:456:546)
+    at h [as expandToWordBoundaries] (http://ci.kogmbh.com/deploy/WebODF/webodf-ci-b409-g077ebf53/editor/webodf.js:457:299)
+    at w (http://ci.kogmbh.com/deploy/WebODF/webodf-ci-b409-g077ebf53/editor/webodf.js:481:76)
+    at Array.v (http://ci.kogmbh.com/deploy/WebODF/webodf-ci-b409-g077ebf53/editor/webodf.js:482:221)
+    at emit (http://ci.kogmbh.com/deploy/WebODF/webodf-ci-b409-g077ebf53/editor/webodf.js:86:375)
+    at HTMLDivElement.d (http://ci.kogmbh.com/deploy/WebODF/webodf-ci-b409-g077ebf53/editor/webodf.js:427:912)```

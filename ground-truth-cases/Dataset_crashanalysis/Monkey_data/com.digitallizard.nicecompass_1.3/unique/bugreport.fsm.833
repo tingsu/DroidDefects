@@ -1,0 +1,11 @@
+//this is an auto-generated bug report
+//package name: com.digitallizard.nicecompass
+//version: 1.3
+//appro_time: 139
+ java.lang.IllegalArgumentException
+ 	at android.view.Surface.nativeUnlockCanvasAndPost(Native Method)
+ 	at android.view.Surface.unlockCanvasAndPost(Surface.java:255)
+ 	at android.view.SurfaceView$4.unlockCanvasAndPost(SurfaceView.java:844)
+ 	at com.digitallizard.nicecompass.CompassSurface.triggerDraw(CompassSurface.java:293)
+ 	at com.digitallizard.nicecompass.CompassSurface.run(CompassSurface.java:489)
+ 	at java.lang.Thread.run(Thread.java:841)

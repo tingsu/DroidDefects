@@ -1,0 +1,17 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{me.ccrama.redditslide/me.ccrama.redditslide.Activities.CreateMulti}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.Iterator java.util.ArrayList.iterator()' on a null object reference
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3149)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3257)
+    at android.app.ActivityThread.access$1000(ActivityThread.java:197)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1681)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:145)
+    at android.app.ActivityThread.main(ActivityThread.java:6891)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.Iterator java.util.ArrayList.iterator()' on a null object reference
+    at me.ccrama.redditslide.Activities.CreateMulti.onCreate(CreateMulti.java:95)
+    at android.app.Activity.performCreate(Activity.java:6550)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1120)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3102)

@@ -1,0 +1,23 @@
+11-21 11:15:14.087: E/AndroidRuntime(18449): java.lang.RuntimeException: Unable to resume activity {com.btmura.android.reddit/com.btmura.android.reddit.app.BrowserActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=android:fragment:0, request=0, result=0, data=null} to activity {com.btmura.android.reddit/com.btmura.android.reddit.app.BrowserActivity}: java.lang.NullPointerException
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2742)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2771)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2235)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.app.ActivityThread.handleRelaunchActivity(ActivityThread.java:3692)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.app.ActivityThread.access$700(ActivityThread.java:141)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1240)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.os.Handler.dispatchMessage(Handler.java:99)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.os.Looper.loop(Looper.java:137)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.app.ActivityThread.main(ActivityThread.java:5039)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at java.lang.reflect.Method.invokeNative(Native Method)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at java.lang.reflect.Method.invoke(Method.java:511)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at dalvik.system.NativeStart.main(Native Method)
+11-21 11:15:14.087: E/AndroidRuntime(18449): Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=android:fragment:0, request=0, result=0, data=null} to activity {com.btmura.android.reddit/com.btmura.android.reddit.app.BrowserActivity}: java.lang.NullPointerException
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.app.ActivityThread.deliverResults(ActivityThread.java:3319)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2729)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    ... 13 more
+11-21 11:15:14.087: E/AndroidRuntime(18449): Caused by: java.lang.NullPointerException
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at com.btmura.android.reddit.app.GlobalMenuFragment.onActivityResult(GlobalMenuFragment.java:176)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.app.Activity.dispatchActivityResult(Activity.java:5297)
+11-21 11:15:14.087: E/AndroidRuntime(18449):    at android.app.ActivityThread.deliverResults(ActivityThread.java:3315)

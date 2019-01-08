@@ -1,0 +1,6 @@
+Fatal Exception: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.contains(java.lang.CharSequence)' on a null object reference
+       at org.wordpress.android.ui.media.MediaGridAdapter.onBindViewHolder(MediaGridAdapter.java:134)
+       at org.wordpress.android.ui.media.MediaGridAdapter.onBindViewHolder(MediaGridAdapter.java:40)
+       at android.support.v7.widget.RecyclerView$Adapter.onBindViewHolder(RecyclerView.java:6308)
+       at android.support.v7.widget.RecyclerView$Adapter.bindViewHolder(RecyclerView.java:6341)
+       at ...

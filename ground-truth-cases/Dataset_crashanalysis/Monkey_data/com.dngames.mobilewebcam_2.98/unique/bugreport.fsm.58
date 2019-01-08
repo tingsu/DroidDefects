@@ -1,0 +1,11 @@
+//this is an auto-generated bug report
+//package name: com.dngames.mobilewebcam
+//version: 2.98
+//appro_time: 40
+ java.lang.IllegalArgumentException: provider doesn't exisit: null
+ 	at android.os.Parcel.readException(Parcel.java:1435)
+ 	at android.os.Parcel.readException(Parcel.java:1385)
+ 	at android.location.ILocationManager$Stub$Proxy.requestLocationUpdates(ILocationManager.java:540)
+ 	at android.location.LocationManager.requestLocationUpdates(LocationManager.java:836)
+ 	at android.location.LocationManager.requestLocationUpdates(LocationManager.java:430)
+ 	at com.dngames.mobilewebcam.WorkImage$2.run(WorkImage.java:426)

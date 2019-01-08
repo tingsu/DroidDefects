@@ -1,0 +1,10 @@
+        java.lang.NullPointerException
+        at cgeo.geocaching.apps.cache.navi.AbstractStaticMapsApp.invokeStaticMaps(AbstractStaticMapsApp.java:51)
+        at cgeo.geocaching.apps.cache.navi.DownloadStaticMapsApp.navigate(DownloadStaticMapsApp.java:27)
+        at cgeo.geocaching.apps.cache.navi.NavigationAppFactory$1.onClick(NavigationAppFactory.java:149)
+        at com.android.internal.app.AlertController$AlertParams$3.onItemClick(AlertController.java:924)
+        at android.widget.AdapterView.performItemClick(AdapterView.java:298)
+        at android.widget.AbsListView.performItemClick(AbsListView.java:1086)
+        at android.widget.AbsListView$PerformClick.run(AbsListView.java:2855)
+
+Looking at the code, this can happen when cache and waypoint are null and thus the loggable. This patch should fix this.

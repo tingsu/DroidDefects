@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: com.cepmuvakkit.times
+//version: 2.5
+//appro_time: 95
+ java.lang.ClassCastException: java.lang.Float cannot be cast to java.lang.Integer
+ 	at android.app.SharedPreferencesImpl.getInt(SharedPreferencesImpl.java:240)
+ 	at com.cepmuvakkit.times.Schedule.<init>(Schedule.java:43)
+ 	at com.cepmuvakkit.times.Schedule.today(Schedule.java:111)
+ 	at com.cepmuvakkit.times.receiver.StartNotificationReceiver.setNext(StartNotificationReceiver.java:23)
+ 	at com.cepmuvakkit.times.SalatTimes.updateTodaysTimetableAndNotification(SalatTimes.java:406)
+ 	at com.cepmuvakkit.times.SalatTimes.onResume(SalatTimes.java:295)
+ 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+ 	at android.app.Activity.performResume(Activity.java:5211)
+ 	at android.app.ActivityThread.performNewIntents(ActivityThread.java:2345)
+ 	at android.app.ActivityThread.handleNewIntent(ActivityThread.java:2352)
+ 	at android.app.ActivityThread.access$1400(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1327)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

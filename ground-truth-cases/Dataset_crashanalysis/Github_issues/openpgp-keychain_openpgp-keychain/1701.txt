@@ -1,0 +1,16 @@
+java.lang.RuntimeException: Unable to start service org.sufficientlysecure.keychain.service.KeyserverSyncAdapterService@434523f0 with Intent { act=cancel flg=0x10 cmp=org.sufficientlysecure.keychain/.service.KeyserverSyncAdapterService }: java.lang.ArrayIndexOutOfBoundsException: length=0; index=0
+    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2877)
+    at android.app.ActivityThread.access$2200(ActivityThread.java:161)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1362)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:157)
+    at android.app.ActivityThread.main(ActivityThread.java:5356)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1265)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1081)
+    at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: length=0; index=0
+    at org.sufficientlysecure.keychain.service.KeyserverSyncAdapterService.isSyncEnabled(KeyserverSyncAdapterService.java:528)
+    at org.sufficientlysecure.keychain.service.KeyserverSyncAdapterService.onStartCommand(KeyserverSyncAdapterService.java:85)

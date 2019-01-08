@@ -1,0 +1,25 @@
+java.util.IllegalFormatFlagsException:  
+        at java.util.Formatter$FormatToken.checkFlags(Formatter.java:1357)
+        at java.util.Formatter.transform(Formatter.java:1440)
+        at java.util.Formatter.doFormat(Formatter.java:1079)
+        at java.util.Formatter.format(Formatter.java:1040)
+        at java.util.Formatter.format(Formatter.java:1009)
+        at java.lang.String.format(String.java:1998)
+        at android.content.res.Resources.getString(Resources.java:355)
+        at de.blau.android.Logic$5.onPostExecute(Logic.java:1647)
+        at de.blau.android.Logic$5.onPostExecute(Logic.java:1)
+        at android.os.AsyncTask.finish(AsyncTask.java:631)
+        at android.os.AsyncTask.access$600(AsyncTask.java:177)
+        at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)
+        at android.os.Handler.dispatchMessage(Handler.java:99)
+        at android.os.Looper.loop(Looper.java:137)
+        at android.app.ActivityThread.main(ActivityThread.java:4898)
+        at java.lang.reflect.Method.invokeNative(Native Method)
+        at java.lang.reflect.Method.invoke(Method.java:511)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1008)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:775)
+        at dalvik.system.NativeStart.main(Native Method)
+
+```
+
+Original issue reported on code.google.com by `sp8...@gmail.com` on 16 Oct 2013 at 9:23

@@ -1,0 +1,15 @@
+```
+java.lang.IllegalArgumentException: the bind value at index 3 is null
+E/AndroidRuntime(10496):    at android.database.sqlite.SQLiteProgram.bindString(SQLiteProgram.java:164)
+E/AndroidRuntime(10496):    at android.database.sqlite.SQLiteProgram.bindAllArgsAsStrings(SQLiteProgram.java:200)
+E/AndroidRuntime(10496):    at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:47)
+E/AndroidRuntime(10496):    at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1448)
+E/AndroidRuntime(10496):    at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1295)
+E/AndroidRuntime(10496):    at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1166)
+E/AndroidRuntime(10496):    at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1334)
+E/AndroidRuntime(10496):    at com.seafile.seadroid2.data.DatabaseHelper.getRepoDir(DatabaseHelper.java:317)
+E/AndroidRuntime(10496):    at com.seafile.seadroid2.data.DataManager.getRepoDir(DataManager.java:225)
+E/AndroidRuntime(10496):    at com.seafile.seadroid2.data.DataManager.getLocalRepoFile(DataManager.java:272)
+E/AndroidRuntime(10496):    at com.seafile.seadroid2.ui.adapter.SeafItemAdapter.setFileView(SeafItemAdapter.java:247)
+E/AndroidRuntime(10496):    at com.seafile.seadroid2.ui.adapter.SeafItemAdapter.getDirentView(SeafItemAdapter.java:222)
+E/AndroidRuntime(10496):    at com.seafile.seadroid2.ui.adapter.SeafItemAdapter.getView(SeafItemAdapter.java:368)

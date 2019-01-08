@@ -1,0 +1,17 @@
+`java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=-1, data=Intent { dat=file:///storage/emulated/0/Documents/Modèles Bornes/Les-prochains-trains-et-leurs-voies.jpg typ=image/jpeg (has extras) }} to activity {com.fastebro.androidrgbtool/com.fastebro.androidrgbtool.ui.MainActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.database.Cursor.moveToFirst()' on a null object reference
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:4196)
+    at android.app.ActivityThread.handleSendResult(ActivityThread.java:4239)
+    at android.app.ActivityThread.access$1400(ActivityThread.java:181)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1531)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:145)
+    at android.app.ActivityThread.main(ActivityThread.java:6145)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1399)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1194)
+Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.database.Cursor.moveToFirst()' on a null object reference
+    at com.fastebro.androidrgbtool.ui.MainActivity.a(Unknown Source)
+    at com.fastebro.androidrgbtool.ui.MainActivity.onActivityResult(Unknown Source)
+    at android.app.Activity.dispatchActivityResult(Activity.java:6632)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:4192)

@@ -1,0 +1,31 @@
+11-07 14:48:21.945 W/SmsTransport(3925): java.lang.NullPointerException
+11-07 14:48:21.945 W/SmsTransport(3925):    at android.os.Parcel.readException(Parcel.java:1431)
+11-07 14:48:21.945 W/SmsTransport(3925):    at android.os.Parcel.readException(Parcel.java:1379)
+11-07 14:48:21.945 W/SmsTransport(3925):    at com.android.internal.telephony.ISms$Stub$Proxy.sendMultipartText(ISms.java:508)
+11-07 14:48:21.945 W/SmsTransport(3925):    at android.telephony.SmsManager.sendMultipartTextMessage(SmsManager.java:157)
+11-07 14:48:21.945 W/SmsTransport(3925):    at org.thoughtcrime.securesms.transport.SmsTransport.deliverPlaintextMessage(SmsTransport.java:96)
+11-07 14:48:21.945 W/SmsTransport(3925):    at org.thoughtcrime.securesms.transport.SmsTransport.deliver(SmsTransport.java:38)
+11-07 14:48:21.945 W/SmsTransport(3925):    at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:27)
+11-07 14:48:21.945 W/SmsTransport(3925):    at org.thoughtcrime.securesms.service.SmsSender.handleSendMessage(SmsSender.java:74)
+11-07 14:48:21.945 W/SmsTransport(3925):    at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:50)
+11-07 14:48:21.945 W/SmsTransport(3925):    at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:224)
+11-07 14:48:21.945 W/SmsTransport(3925):    at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+11-07 14:48:21.945 W/SmsTransport(3925): Recipient: 07584550838
+11-07 14:48:21.945 W/SmsTransport(3925): Message Parts: 3
+11-07 14:48:21.945 W/SmsTransport(3925): Message Part Length: 153
+11-07 14:48:21.945 W/SmsTransport(3925): Message Part Length: 153
+11-07 14:48:21.945 W/SmsTransport(3925): Message Part Length: 3
+11-07 14:48:21.950 W/SmsSender(3925): org.thoughtcrime.securesms.transport.UndeliverableMessageException: java.lang.NullPointerException
+11-07 14:48:21.950 W/SmsSender(3925):   at org.thoughtcrime.securesms.transport.SmsTransport.deliverPlaintextMessage(SmsTransport.java:104)
+11-07 14:48:21.950 W/SmsSender(3925):   at org.thoughtcrime.securesms.transport.SmsTransport.deliver(SmsTransport.java:38)
+11-07 14:48:21.950 W/SmsSender(3925):   at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:27)
+11-07 14:48:21.950 W/SmsSender(3925):   at org.thoughtcrime.securesms.service.SmsSender.handleSendMessage(SmsSender.java:74)
+11-07 14:48:21.950 W/SmsSender(3925):   at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:50)
+11-07 14:48:21.950 W/SmsSender(3925):   at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:224)
+11-07 14:48:21.950 W/SmsSender(3925):   at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+11-07 14:48:21.950 W/SmsSender(3925): Caused by: java.lang.NullPointerException
+11-07 14:48:21.950 W/SmsSender(3925):   at android.os.Parcel.readException(Parcel.java:1431)
+11-07 14:48:21.950 W/SmsSender(3925):   at android.os.Parcel.readException(Parcel.java:1379)
+11-07 14:48:21.950 W/SmsSender(3925):   at com.android.internal.telephony.ISms$Stub$Proxy.sendMultipartText(ISms.java:508)
+11-07 14:48:21.950 W/SmsSender(3925):   at android.telephony.SmsManager.sendMultipartTextMessage(SmsManager.java:157)
+11-07 14:48:21.950 W/SmsSender(3925):   at org.thoughtcrime.securesms.transport.SmsTransport.deliverPlaintextMessage(SmsTransport.java:96)

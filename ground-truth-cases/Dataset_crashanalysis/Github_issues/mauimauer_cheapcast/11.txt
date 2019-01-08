@@ -1,0 +1,76 @@
+W/dalvikvm(15664): VFY: unable to resolve new-instance 32 (Landroid/app/Notification$Builder;) in Lat/maui/cheapcast/service/CheapCastService;
+D/dalvikvm(15664): VFY: replacing opcode 0x22 at 0x000e
+D/dalvikvm(15664): VFY: dead code 0x0010-007b in Lat/maui/cheapcast/service/CheapCastService;.onStartCommand (Landroid/content/Intent;II)I
+I/dalvikvm(15664): Could not find method org.slf4j.LoggerFactory.getLogger, referenced from method org.eclipse.jetty.util.log.Slf4jLog.<init>
+W/dalvikvm(15664): VFY: unable to resolve static method 20475: Lorg/slf4j/LoggerFactory;.getLogger (Ljava/lang/String;)Lorg/slf4j/Logger;
+D/dalvikvm(15664): VFY: replacing opcode 0x71 at 0x0003
+D/dalvikvm(15664): VFY: dead code 0x0006-0017 in Lorg/eclipse/jetty/util/log/Slf4jLog;.<init> (Ljava/lang/String;)V
+I/dalvikvm(15664): Could not find method org.slf4j.Logger.debug, referenced from method org.eclipse.jetty.util.log.Slf4jLog.debug
+W/dalvikvm(15664): VFY: unable to resolve interface method 20467: Lorg/slf4j/Logger;.debug (Ljava/lang/String;Ljava/lang/Throwable;)V
+D/dalvikvm(15664): VFY: replacing opcode 0x72 at 0x0002
+D/dalvikvm(15664): VFY: dead code 0x0005-0005 in Lorg/eclipse/jetty/util/log/Slf4jLog;.debug (Ljava/lang/String;Ljava/lang/Throwable;)V
+I/dalvikvm(15664): Could not find method org.slf4j.Logger.debug, referenced from method org.eclipse.jetty.util.log.Slf4jLog.debug
+W/dalvikvm(15664): VFY: unable to resolve interface method 20468: Lorg/slf4j/Logger;.debug (Ljava/lang/String;[Ljava/lang/Object;)V
+D/dalvikvm(15664): VFY: replacing opcode 0x72 at 0x0002
+D/dalvikvm(15664): VFY: dead code 0x0005-0005 in Lorg/eclipse/jetty/util/log/Slf4jLog;.debug (Ljava/lang/String;[Ljava/lang/Object;)V
+I/dalvikvm(15664): Could not find method org.slf4j.Logger.getName, referenced from method org.eclipse.jetty.util.log.Slf4jLog.getName
+W/dalvikvm(15664): VFY: unable to resolve interface method 20469: Lorg/slf4j/Logger;.getName ()Ljava/lang/String;
+D/dalvikvm(15664): VFY: replacing opcode 0x72 at 0x0002
+D/dalvikvm(15664): VFY: dead code 0x0005-0006 in Lorg/eclipse/jetty/util/log/Slf4jLog;.getName ()Ljava/lang/String;
+I/dalvikvm(15664): Could not find method org.slf4j.Logger.info, referenced from method org.eclipse.jetty.util.log.Slf4jLog.info
+W/dalvikvm(15664): VFY: unable to resolve interface method 20470: Lorg/slf4j/Logger;.info (Ljava/lang/String;Ljava/lang/Throwable;)V
+D/dalvikvm(15664): VFY: replacing opcode 0x72 at 0x0002
+D/dalvikvm(15664): VFY: dead code 0x0005-0005 in Lorg/eclipse/jetty/util/log/Slf4jLog;.info (Ljava/lang/String;Ljava/lang/Throwable;)V
+I/dalvikvm(15664): Could not find method org.slf4j.Logger.info, referenced from method org.eclipse.jetty.util.log.Slf4jLog.info
+W/dalvikvm(15664): VFY: unable to resolve interface method 20471: Lorg/slf4j/Logger;.info (Ljava/lang/String;[Ljava/lang/Object;)V
+D/dalvikvm(15664): VFY: replacing opcode 0x72 at 0x0002
+D/dalvikvm(15664): VFY: dead code 0x0005-0005 in Lorg/eclipse/jetty/util/log/Slf4jLog;.info (Ljava/lang/String;[Ljava/lang/Object;)V
+I/dalvikvm(15664): Could not find method org.slf4j.Logger.isDebugEnabled, referenced from method org.eclipse.jetty.util.log.Slf4jLog.isDebugEnabled
+W/dalvikvm(15664): VFY: unable to resolve interface method 20472: Lorg/slf4j/Logger;.isDebugEnabled ()Z
+D/dalvikvm(15664): VFY: replacing opcode 0x72 at 0x0002
+D/dalvikvm(15664): VFY: dead code 0x0005-0006 in Lorg/eclipse/jetty/util/log/Slf4jLog;.isDebugEnabled ()Z
+I/dalvikvm(15664): Could not find method org.slf4j.Logger.warn, referenced from method org.eclipse.jetty.util.log.Slf4jLog.warn
+W/dalvikvm(15664): VFY: unable to resolve interface method 20473: Lorg/slf4j/Logger;.warn (Ljava/lang/String;Ljava/lang/Throwable;)V
+D/dalvikvm(15664): VFY: replacing opcode 0x72 at 0x0002
+D/dalvikvm(15664): VFY: dead code 0x0005-0005 in Lorg/eclipse/jetty/util/log/Slf4jLog;.warn (Ljava/lang/String;Ljava/lang/Throwable;)V
+I/dalvikvm(15664): Could not find method org.slf4j.Logger.warn, referenced from method org.eclipse.jetty.util.log.Slf4jLog.warn
+W/dalvikvm(15664): VFY: unable to resolve interface method 20474: Lorg/slf4j/Logger;.warn (Ljava/lang/String;[Ljava/lang/Object;)V
+D/dalvikvm(15664): VFY: replacing opcode 0x72 at 0x0002
+D/dalvikvm(15664): VFY: dead code 0x0005-0005 in Lorg/eclipse/jetty/util/log/Slf4jLog;.warn (Ljava/lang/String;[Ljava/lang/Object;)V
+D/CheapCastService(15664): onCreate()
+D/CheapCastService(15664): Registered app: ChromeCast
+D/CheapCastService(15664): Registered app: YouTube
+D/CheapCastService(15664): Registered app: PlayMovies
+D/CheapCastService(15664): Registered app: GoogleMusic
+D/CheapCastService(15664): Registered app: GoogleCastSampleApp
+D/CheapCastService(15664): Registered app: GoogleCastPlayer
+D/CheapCastService(15664): Registered app: Fling
+D/CheapCastService(15664): Registered app: TicTacToe
+D/PreferenceActivity(10728): Connected to CheapCastService
+D/CheapCastService(15664): onStartCommand()
+W/ActivityManager(  947): Error showing notification for service
+W/ActivityManager(  947): java.lang.IllegalArgumentException: contentIntent required: pkg=at.maui.cheapcast id=1337 notification=Notification(vibrate=null,sound=null,defaults=0x0,flags=0x42)
+W/ActivityManager(  947):   at com.android.server.NotificationManagerService.enqueueNotificationInternal(NotificationManagerService.java:724)
+W/ActivityManager(  947):   at com.android.server.am.ServiceRecord$1.run(ServiceRecord.java:342)
+W/ActivityManager(  947):   at android.os.Handler.handleCallback(Handler.java:587)
+W/ActivityManager(  947):   at android.os.Handler.dispatchMessage(Handler.java:92)
+W/ActivityManager(  947):   at android.os.Looper.loop(Looper.java:130)
+W/ActivityManager(  947):   at com.android.server.am.ActivityManagerService$AThread.run(ActivityManagerService.java:1336)
+W/System.err(15664): 2013-08-12 21:21:09.513:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
+W/System.err(15664): 2013-08-12 21:21:09.540:INFO:oejs.AbstractConnector:Started SelectChannelConnector@0.0.0.0:8008
+D/CheapCastService(15664): Initialized HTTP/WS Server
+D/CheapCastService(15664): Initialized SSDP/DIAL Discovery
+D/AndroidRuntime(15664): Shutting down VM
+W/dalvikvm(15664): threadid=1: thread exiting with uncaught exception (group=0x40015560)
+W/GAV2    (15664): Thread[main,5,main]: dispatch call queued.  Need to call GAServiceManager.getInstance().initialize().
+E/AndroidRuntime(15664): FATAL EXCEPTION: main
+E/AndroidRuntime(15664): android.app.RemoteServiceException: Bad notification for startForeground: java.lang.IllegalArgumentException: contentIntent required: pkg=at.maui.cheapcast id=1337 notification=Notification(vibrate=null,sound=null,defaults=0x0,flags=0x42)
+E/AndroidRuntime(15664):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1044)
+E/AndroidRuntime(15664):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(15664):    at android.os.Looper.loop(Looper.java:130)
+E/AndroidRuntime(15664):    at android.app.ActivityThread.main(ActivityThread.java:3683)
+E/AndroidRuntime(15664):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(15664):    at java.lang.reflect.Method.invoke(Method.java:507)
+E/AndroidRuntime(15664):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+E/AndroidRuntime(15664):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+E/AndroidRuntime(15664):    at dalvik.system.NativeStart.main(Native Method)

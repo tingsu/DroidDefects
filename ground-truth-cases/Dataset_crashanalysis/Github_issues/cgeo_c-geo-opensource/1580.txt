@@ -1,0 +1,47 @@
+- Click menu and select Navigate -> Static maps or Download static maps
+- c:geo is stuck some time at the menu and crashed after that
+
+The log says:
+
+```
+05-15 23:45:22.740 W/dalvikvm(23483): threadid=1: thread exiting with uncaught exception (group=0x40c2d1f8)
+05-15 23:45:22.790 E/AndroidRuntime(23483): FATAL EXCEPTION: main
+05-15 23:45:22.790 E/AndroidRuntime(23483): java.lang.NullPointerException
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at cgeo.geocaching.apps.cache.navi.AbstractStaticMapsApp.invoke(AbstractStaticMapsApp.java:50)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at cgeo.geocaching.apps.cache.navi.StaticMapApp.invoke(StaticMapApp.java:18)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at cgeo.geocaching.apps.cache.navi.NavigationAppFactory$1.onClick(NavigationAppFactory.java:136)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at com.android.internal.app.AlertController$AlertParams$3.onItemClick(AlertController.java:929)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.widget.AdapterView.performItemClick(AdapterView.java:292)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.widget.AbsListView.performItemClick(AbsListView.java:1177)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.widget.AbsListView$PerformClick.run(AbsListView.java:2705)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.widget.AbsListView.onTouchEvent(AbsListView.java:3473)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.View.dispatchTouchEvent(View.java:5681)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:1951)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1712)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:1957)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1726)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:1957)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1726)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:1957)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1726)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:1957)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1726)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:1957)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1726)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at com.android.internal.policy.impl.PhoneWindow$DecorView.superDispatchTouchEvent(PhoneWindow.java:2063)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at com.android.internal.policy.impl.PhoneWindow.superDispatchTouchEvent(PhoneWindow.java:1399)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.app.Dialog.dispatchTouchEvent(Dialog.java:738)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at com.android.internal.policy.impl.PhoneWindow$DecorView.dispatchTouchEvent(PhoneWindow.java:2011)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.View.dispatchPointerEvent(View.java:5861)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewRootImpl.deliverPointerEvent(ViewRootImpl.java:3094)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewRootImpl.handleMessage(ViewRootImpl.java:2614)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewRootImpl.processInputEvents(ViewRootImpl.java:978)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.view.ViewRootImpl.handleMessage(ViewRootImpl.java:2623)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.os.Handler.dispatchMessage(Handler.java:99)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.os.Looper.loop(Looper.java:137)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at android.app.ActivityThread.main(ActivityThread.java:4507)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at java.lang.reflect.Method.invokeNative(Native Method)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at java.lang.reflect.Method.invoke(Method.java:511)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:790)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:557)
+05-15 23:45:22.790 E/AndroidRuntime(23483):     at dalvik.system.NativeStart.main(Native Method)

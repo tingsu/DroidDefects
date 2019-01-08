@@ -1,0 +1,7 @@
+Caused by java.lang.NumberFormatException: Invalid long: ""
+       at java.lang.Long.invalidLong(Long.java:124)
+       at java.lang.Long.parseLong(Long.java:345)
+       at java.lang.Long.parseLong(Long.java:321)
+       at java.lang.Long.valueOf(Long.java:511)
+       at org.wordpress.android.ui.posts.EditPostActivity.onMediaUploadCancelClicked(EditPostActivity.java:2189)
+       at org.wordpress.android.editor.EditorFragment.onDetach(EditorFragment.java:416)

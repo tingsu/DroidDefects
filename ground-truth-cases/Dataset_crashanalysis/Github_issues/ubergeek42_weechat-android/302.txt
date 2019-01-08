@@ -1,0 +1,7 @@
+09-10 21:02:07.106 26881 26902 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String[] java.lang.String.split(java.lang.String)' on a null object reference
+09-10 21:02:07.106 26881 26902 E AndroidRuntime:        at com.ubergeek42.weechat.relay.protocol.Data.getHdata(Data.java:173)
+09-10 21:02:07.106 26881 26902 E AndroidRuntime:        at com.ubergeek42.weechat.relay.protocol.Data.getObject(Data.java:273)
+09-10 21:02:07.106 26881 26902 E AndroidRuntime:        at com.ubergeek42.weechat.relay.RelayMessage.<init>(RelayMessage.java:2238)
+09-10 21:02:07.106 26881 26902 E AndroidRuntime:        at com.ubergeek42.weechat.relay.connection.AbstractConnection.access$300(AbstractConnection.java:2147)
+09-10 21:02:07.106 26881 26902 E AndroidRuntime:        at com.ubergeek42.weechat.relay.connection.AbstractConnection$2.run(AbstractConnection.java:83)
+09-10 21:02:07.106 26881 26902 E AndroidRuntime:        at java.lang.Thread.run(Thread.java:761)

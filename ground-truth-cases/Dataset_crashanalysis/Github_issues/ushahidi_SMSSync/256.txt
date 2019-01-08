@@ -1,0 +1,18 @@
+    java.lang.IllegalArgumentException: java.security.spec.InvalidKeySpecException: java.lang.RuntimeException: error:0D07207B:asn1 encoding routines:ASN1_get_object:header too long
+            at com.github.jberkel.pay.me.validator.DefaultSignatureValidator.generatePublicKey(DefaultSignatureValidator.java:107)
+            at com.github.jberkel.pay.me.validator.DefaultSignatureValidator.<init>(DefaultSignatureValidator.java:52)
+            at com.github.jberkel.pay.me.IabHelper.<init>(IabHelper.java:120)
+            at org.addhen.smssync.fragments.DonationFragment.checkUserHasDonated(DonationFragment.java:92)
+            at org.addhen.smssync.activities.BaseActivity$1.run(BaseActivity.java:317)
+     Caused by: java.security.spec.InvalidKeySpecException: java.lang.RuntimeException: error:0D07207B:asn1 encoding routines:ASN1_get_object:header too long
+            at com.android.org.conscrypt.OpenSSLKey.getPublicKey(OpenSSLKey.java:155)
+            at com.android.org.conscrypt.OpenSSLRSAKeyFactory.engineGeneratePublic(OpenSSLRSAKeyFactory.java:47)
+            at java.security.KeyFactory.generatePublic(KeyFactory.java:172)
+            at com.github.jberkel.pay.me.validator.DefaultSignatureValidator.generatePublicKey(DefaultSignatureValidator.java:102)
+            at com.github.jberkel.pay.me.validator.DefaultSignatureValidator.<init>(DefaultSignatureValidator.java:52)
+            at com.github.jberkel.pay.me.IabHelper.<init>(IabHelper.java:120)
+            at org.addhen.smssync.fragments.DonationFragment.checkUserHasDonated(DonationFragment.java:92)
+            at org.addhen.smssync.activities.BaseActivity$1.run(BaseActivity.java:317)
+     Caused by: java.lang.RuntimeException: error:0D07207B:asn1 encoding routines:ASN1_get_object:header too long
+            at com.android.org.conscrypt.NativeCrypto.d2i_PUBKEY(Native Method)
+            at com.android.org.conscrypt.OpenSSLKey.getPublicKey(OpenSSLKey.java:153)

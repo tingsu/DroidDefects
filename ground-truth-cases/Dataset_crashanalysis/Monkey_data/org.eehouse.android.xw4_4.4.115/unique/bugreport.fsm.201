@@ -1,0 +1,43 @@
+//this is an auto-generated bug report
+//package name: org.eehouse.android.xw4
+//version: 4.4.115
+//appro_time: 11
+ java.lang.RuntimeException: Unable to create application org.eehouse.android.xw4.XWApp: android.view.InflateException: Binary XML file line #39: Error inflating class java.lang.reflect.Constructor
+ 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4447)
+ 	at android.app.ActivityThread.access$1300(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1316)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.view.InflateException: Binary XML file line #39: Error inflating class java.lang.reflect.Constructor
+ 	at android.preference.GenericInflater.createItem(GenericInflater.java:397)
+ 	at android.preference.GenericInflater.createItemFromTag(GenericInflater.java:430)
+ 	at android.preference.GenericInflater.rInflate(GenericInflater.java:481)
+ 	at android.preference.GenericInflater.rInflate(GenericInflater.java:493)
+ 	at android.preference.GenericInflater.rInflate(GenericInflater.java:493)
+ 	at android.preference.GenericInflater.inflate(GenericInflater.java:326)
+ 	at android.preference.GenericInflater.inflate(GenericInflater.java:263)
+ 	at android.preference.PreferenceManager.inflateFromResource(PreferenceManager.java:272)
+ 	at android.preference.PreferenceManager.setDefaultValues(PreferenceManager.java:485)
+ 	at android.preference.PreferenceManager.setDefaultValues(PreferenceManager.java:444)
+ 	at org.eehouse.android.xw4.XWApp.onCreate(XWApp.java:80)
+ 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1007)
+ 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4444)
+ Caused by: java.lang.reflect.InvocationTargetException
+ 	at java.lang.reflect.Constructor.constructNative(Native Method)
+ 	at java.lang.reflect.Constructor.newInstance(Constructor.java:417)
+ 	at android.preference.GenericInflater.createItem(GenericInflater.java:383)
+ Caused by: java.lang.UnsatisfiedLinkError: dlopen failed: cannot locate symbol "srandom" referenced by "libxwjni.so"...
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:361)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at org.eehouse.android.xw4.jni.XwJNI.<clinit>(XwJNI.java:120)
+ 	at org.eehouse.android.xw4.DictLangCache.getInfo(DictLangCache.java:487)
+ 	at org.eehouse.android.xw4.DictLangCache.getInfo(DictLangCache.java:466)
+ 	at org.eehouse.android.xw4.DictLangCache.getDictLangCode(DictLangCache.java:304)
+ 	at org.eehouse.android.xw4.DictListPreference.setEntriesForLang(DictListPreference.java:54)
+ 	at org.eehouse.android.xw4.DictListPreference.<init>(DictListPreference.java:34)

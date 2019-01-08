@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: org.opengappsdownloader
+//version: 0.4
+//appro_time: 15
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=99, result=0, data=null} to activity {org.opengappsdownloader/org.opengappsdownloader.MainActivity}: java.lang.NumberFormatException: Invalid int: "v3"
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3367)
+ 	at android.app.ActivityThread.handleSendResult(ActivityThread.java:3410)
+ 	at android.app.ActivityThread.access$1100(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1304)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NumberFormatException: Invalid int: "v3"
+ 	at java.lang.Integer.invalidInt(Integer.java:138)
+ 	at java.lang.Integer.parse(Integer.java:375)
+ 	at java.lang.Integer.parseInt(Integer.java:366)
+ 	at java.lang.Integer.parseInt(Integer.java:332)
+ 	at org.opengappsdownloader.MainActivity.setRecurringAlarm(MainActivity.java:169)
+ 	at org.opengappsdownloader.MainActivity.setAlarm(MainActivity.java:157)
+ 	at org.opengappsdownloader.MainActivity.onActivityResult(MainActivity.java:90)
+ 	at android.app.Activity.dispatchActivityResult(Activity.java:5322)
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3363)
+ 	... 11 more

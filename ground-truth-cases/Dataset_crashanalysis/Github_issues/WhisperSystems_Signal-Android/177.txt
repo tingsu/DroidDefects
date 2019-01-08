@@ -1,0 +1,7 @@
+W/DecryptingQueue(28053): org.thoughtcrime.securesms.crypto.InvalidMessageException: Bad MAC
+W/DecryptingQueue(28053):   at org.thoughtcrime.securesms.crypto.SessionCipher.decryptMessage(SessionCipher.java:133)
+W/DecryptingQueue(28053):   at org.thoughtcrime.securesms.crypto.DecryptingQueue$MmsDecryptionItem.run(DecryptingQueue.java:193)
+W/DecryptingQueue(28053):   at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/DecryptingQueue(28053): Caused by: org.thoughtcrime.securesms.crypto.InvalidMacException: MAC on message does not match calculated MAC.
+W/DecryptingQueue(28053):   at org.thoughtcrime.securesms.crypto.MessageMac.verifyMac(MessageMac.java:82)
+W/DecryptingQueue(28053):   at org.thoughtcrime.securesms.crypto.SessionCipher.decryptMessage(SessionCipher.java:112)

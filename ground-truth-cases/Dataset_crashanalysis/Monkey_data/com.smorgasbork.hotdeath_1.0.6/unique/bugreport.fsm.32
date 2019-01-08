@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: com.smorgasbork.hotdeath
+//version: 1.0.6
+//appro_time: 122
+ java.lang.NullPointerException
+ 	at android.preference.PreferenceManager.getDefaultSharedPreferencesName(PreferenceManager.java:374)
+ 	at android.preference.PreferenceManager.getDefaultSharedPreferences(PreferenceManager.java:369)
+ 	at com.smorgasbork.hotdeath.Prefs.getP3AggressionLevel(Prefs.java:191)
+ 	at com.smorgasbork.hotdeath.GameOptions.getP3Agg(GameOptions.java:52)
+ 	at com.smorgasbork.hotdeath.ComputerPlayer.readAggressionAndSkill(ComputerPlayer.java:111)
+ 	at com.smorgasbork.hotdeath.ComputerPlayer.addCardToHand(ComputerPlayer.java:460)
+ 	at com.smorgasbork.hotdeath.Game.forceDraw(Game.java:2107)
+ 	at com.smorgasbork.hotdeath.Game.handleSpecialCards(Game.java:1668)
+ 	at com.smorgasbork.hotdeath.Game.advanceRound(Game.java:863)
+ 	at com.smorgasbork.hotdeath.Game.mainLoop(Game.java:744)
+ 	at com.smorgasbork.hotdeath.Game.postDealHands(Game.java:734)
+ 	at com.smorgasbork.hotdeath.Game.dealHands(Game.java:587)
+ 	at com.smorgasbork.hotdeath.Game.startRound(Game.java:698)
+ 	at com.smorgasbork.hotdeath.Game.startGame(Game.java:774)
+ 	at com.smorgasbork.hotdeath.Game.run(Game.java:767)

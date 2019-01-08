@@ -1,0 +1,7 @@
+//this is an auto-generated bug report
+//package name: fr.keuse.rightsalert
+//version: 0.3a
+//appro_time: 167
+ java.lang.NullPointerException
+ 	at fr.keuse.rightsalert.thread.LoadApplicationsThread.sendOpenPopup(LoadApplicationsThread.java:71)
+ 	at fr.keuse.rightsalert.thread.LoadApplicationsThread.run(LoadApplicationsThread.java:37)

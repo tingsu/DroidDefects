@@ -1,0 +1,21 @@
+12-02 18:39:22.638: D/dalvikvm(9451): DexOpt: couldn't find field Landroid/graphics/BitmapFactory$Options;.inBitmap
+12-02 18:39:22.638: I/dalvikvm(9451): DexOpt: unable to optimize instance field ref 0x0026 at 0x02 in Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;.copyOptions11
+12-02 18:39:22.638: D/dalvikvm(9451): DexOpt: couldn't find field Landroid/graphics/BitmapFactory$Options;.inMutable
+12-02 18:39:22.638: I/dalvikvm(9451): DexOpt: unable to optimize instance field ref 0x002b at 0x04 in Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;.copyOptions11
+12-02 18:39:22.638: D/dalvikvm(9451): DexOpt: couldn't find field Landroid/graphics/BitmapFactory$Options;.inMutable
+12-02 18:39:22.638: I/dalvikvm(9451): DexOpt: unable to optimize instance field ref 0x002b at 0x06 in Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;.copyOptions11
+
+12-02 20:34:07.807: E/ImageLoader(22960): https://docscom/api/private/json/shareddownloaddocument/gu1wa234d09693c6d4523800d3a9ad8ea2e61?sharedDocName=20131115_170116.jpg&servicetype=upload&authtoken=e1942eb2b36390f2768de420f1ce
+12-02 20:34:07.807: E/ImageLoader(22960): java.io.FileNotFoundException: https://docscom/api/private/json/shareddownloaddocument/gu1wa234d09693c6d4523800d3a9ad8ea2e61?sharedDocName=20131115_170116.jpg&servicetype=upload&authtoken=e1942eb2b36390f2768de420f1ce
+12-02 20:34:07.807: E/ImageLoader(22960):   at org.apache.harmony.luni.internal.net.www.protocol.http.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:530)
+12-02 20:34:07.807: E/ImageLoader(22960):   at org.apache.harmony.luni.internal.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:258)
+12-02 20:34:07.807: E/ImageLoader(22960):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStreamFromNetwork(BaseImageDownloader.java:119)
+12-02 20:34:07.807: E/ImageLoader(22960):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStream(BaseImageDownloader.java:85)
+12-02 20:34:07.807: E/ImageLoader(22960):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.getImageStream(BaseImageDecoder.java:84)
+12-02 20:34:07.807: E/ImageLoader(22960):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:70)
+12-02 20:34:07.807: E/ImageLoader(22960):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:297)
+12-02 20:34:07.807: E/ImageLoader(22960):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:256)
+12-02 20:34:07.807: E/ImageLoader(22960):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:134)
+12-02 20:34:07.807: E/ImageLoader(22960):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+12-02 20:34:07.807: E/ImageLoader(22960):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+12-02 20:34:07.807: E/ImageLoader(22960):   at java.lang.Thread.run(Thread.java:1019)

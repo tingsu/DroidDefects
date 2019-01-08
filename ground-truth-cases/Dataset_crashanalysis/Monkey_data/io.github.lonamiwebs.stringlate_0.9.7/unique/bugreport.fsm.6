@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: io.github.lonamiwebs.stringlate
+//version: 0.9.7
+//appro_time: 156
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of fetch command
+ 	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:145)
+ 	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:178)
+ 	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:125)
+ 	at io.github.lonamiwebs.stringlate.git.GitWrapper.cloneRepo(GitWrapper.java:70)
+ 	at io.github.lonamiwebs.stringlate.classes.repos.RepoHandler$2.doInBackground(RepoHandler.java:283)
+ 	at io.github.lonamiwebs.stringlate.classes.repos.RepoHandler$2.doInBackground(RepoHandler.java:278)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ Caused by: org.eclipse.jgit.errors.NotSupportedException: URI not supported: fhttps://github.com/lucasdnd/16-bit-clock.git
+ 	at org.eclipse.jgit.transport.Transport.open(Transport.java:563)
+ 	at org.eclipse.jgit.transport.Transport.open(Transport.java:437)
+ 	at org.eclipse.jgit.transport.Transport.open(Transport.java:318)
+ 	at org.eclipse.jgit.transport.Transport.open(Transport.java:287)
+ 	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:120)

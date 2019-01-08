@@ -1,0 +1,10 @@
+                        E  java.lang.StringIndexOutOfBoundsException: length=16; index=24
+                        E      at java.lang.String.indexAndLength(String.java:584)
+                        E      at java.lang.String.substring(String.java:1449)
+                        E      at org.sufficientlysecure.keychain.operations.ImportExportOperation.importKeyRings(ImportExportOperation.java:219)
+                        E      at org.sufficientlysecure.keychain.operations.ImportExportOperation.importKeyRings(ImportExportOperation.java:136)
+                        E      at org.sufficientlysecure.keychain.service.KeychainIntentService.onHandleIntent(KeychainIntentService.java:525)
+                        E      at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+                        E      at android.os.Handler.dispatchMessage(Handler.java:102)
+                        E      at android.os.Looper.loop(Looper.java:136)
+                        E      at android.os.HandlerThread.run(HandlerThread.java:61)

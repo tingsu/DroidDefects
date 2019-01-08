@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: naman14.timber
+//version: 0.2b
+//appro_time: 50
+ java.lang.IllegalArgumentException: setNextMediaPlayer failed.: status=0xFFFFFFED
+ 	at android.os.Parcel.readException(Parcel.java:1435)
+ 	at android.os.Parcel.readException(Parcel.java:1385)
+ 	at com.naman14.timber.ITimberService$Stub$Proxy.setQueuePosition(ITimberService.java:601)
+ 	at com.naman14.timber.MusicPlayer.setQueuePosition(MusicPlayer.java:385)
+ 	at com.naman14.timber.adapters.BaseQueueAdapter$ItemHolder$1.run(BaseQueueAdapter.java:166)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

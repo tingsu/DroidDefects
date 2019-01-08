@@ -1,0 +1,17 @@
+E/AndroidRuntime( 1129): java.lang.IllegalStateException: Could not find a method previousScreen(View) in the activity class com.android.launcher.Launcher for onClick handler on view class android.widget.ImageView with id 'btn_scroll_left'
+E/AndroidRuntime( 1129):    at android.view.View$1.onClick(View.java:2059)
+E/AndroidRuntime( 1129):    at android.view.View.performClick(View.java:2408)
+E/AndroidRuntime( 1129):    at android.view.View$PerformClick.run(View.java:8816)
+E/AndroidRuntime( 1129):    at android.os.Handler.handleCallback(Handler.java:587)
+E/AndroidRuntime( 1129):    at android.os.Handler.dispatchMessage(Handler.java:92)
+E/AndroidRuntime( 1129):    at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime( 1129):    at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/AndroidRuntime( 1129):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1129):    at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime( 1129):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:876)
+E/AndroidRuntime( 1129):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:634)
+E/AndroidRuntime( 1129):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 1129): Caused by: java.lang.NoSuchMethodException: previousScreen
+E/AndroidRuntime( 1129):    at java.lang.ClassCache.findMethodByName(ClassCache.java:308)
+E/AndroidRuntime( 1129):    at java.lang.Class.getMethod(Class.java:985)
+E/AndroidRuntime( 1129):    at android.view.View$1.onClick(View.java:2052)

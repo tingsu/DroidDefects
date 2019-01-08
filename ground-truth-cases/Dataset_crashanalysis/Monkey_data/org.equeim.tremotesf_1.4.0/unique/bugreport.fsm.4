@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: org.equeim.tremotesf
+//version: 1.4.0
+//appro_time: 15
+ java.lang.RuntimeException: Unable to resume activity {org.equeim.tremotesf/org.equeim.tremotesf.SettingsActivity}: kotlin.UninitializedPropertyAccessException: lateinit property url has not been initialized
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2790)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1298)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: kotlin.UninitializedPropertyAccessException: lateinit property url has not been initialized
+ 	at org.equeim.tremotesf.Rpc.postRequest(Rpc.kt:789)
+ 	at org.equeim.tremotesf.Rpc.getServerSettings(Rpc.kt:388)
+ 	at org.equeim.tremotesf.Rpc.updateData(Rpc.kt:645)
+ 	at org.equeim.tremotesf.Rpc.setBackgroundUpdate(Rpc.kt:207)
+ 	at org.equeim.tremotesf.BaseActivity.onStart(BaseActivity.kt:59)
+ 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1171)
+ 	at android.app.Activity.performStart(Activity.java:5143)
+ 	at android.app.Activity.performRestart(Activity.java:5198)
+ 	at android.app.Activity.performResume(Activity.java:5203)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)

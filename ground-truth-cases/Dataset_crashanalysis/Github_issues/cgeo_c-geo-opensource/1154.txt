@@ -1,0 +1,6 @@
+ java.lang.IllegalArgumentException: geocode must not be empty
+       at cgeo.geocaching.CacheCache.removeCacheFromCache(CacheCache.java:42)
+       at cgeo.geocaching.cgData.removeCaches(cgData.java:3027)
+       at cgeo.geocaching.cgData.removeCache(cgData.java:3009)
+       at cgeo.geocaching.cgeoapplication.removeCache(cgeoapplication.java:536)
+       at cgeo.geocaching.cgeowaypoint$deleteWaypointListener.onClick(cgeowaypoint.java:316)

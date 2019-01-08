@@ -1,0 +1,49 @@
+java.lang.AssertionError: getNewNotificationId() called with no free notification ID
+    at com.fsck.k9.notification.NotificationData.getNewNotificationId(NotificationData.java:77)
+    at com.fsck.k9.notification.NotificationData.addNotificationContent(NotificationData.java:46)
+    at com.fsck.k9.notification.NewMailNotifications.addNewMailNotification(NewMailNotifications.java:56)
+    at com.fsck.k9.notification.NotificationController.addNewMailNotification(NotificationController.java:105)
+    at com.fsck.k9.controller.MessagingController$12.messageFinished(MessagingController.java:1435)
+    at com.fsck.k9.mail.store.pop3.Pop3Store$Pop3Folder.fetch(Pop3Store.java:836)
+    at com.fsck.k9.controller.MessagingController.downloadSmallMessages(MessagingController.java:1393)
+    at com.fsck.k9.controller.MessagingController.downloadMessages(MessagingController.java:1196)
+    at com.fsck.k9.controller.MessagingController.synchronizeMailboxSynchronous(MessagingController.java:953)
+    at com.fsck.k9.controller.MessagingController$9.run(MessagingController.java:739)
+    at com.fsck.k9.controller.MessagingController.runInBackground(MessagingController.java:204)
+    at com.fsck.k9.controller.MessagingController.access$000(MessagingController.java:115)
+    at com.fsck.k9.controller.MessagingController$1.run(MessagingController.java:173)
+    at java.lang.Thread.run(Thread.java:818)
+```
+
+```
+java.lang.AssertionError: getNewNotificationId() called with no free notification ID
+    at com.fsck.k9.notification.NotificationData.getNewNotificationId(NotificationData.java:77)
+    at com.fsck.k9.notification.NotificationData.addNotificationContent(NotificationData.java:46)
+    at com.fsck.k9.notification.NewMailNotifications.addNewMailNotification(NewMailNotifications.java:56)
+    at com.fsck.k9.notification.NotificationController.addNewMailNotification(NotificationController.java:105)
+    at com.fsck.k9.controller.MessagingController$12.messageFinished(MessagingController.java:1435)
+    at com.fsck.k9.mail.store.imap.ImapFolder.fetch(ImapFolder.java:770)
+    at com.fsck.k9.controller.MessagingController.downloadSmallMessages(MessagingController.java:1393)
+    at com.fsck.k9.controller.MessagingController.downloadMessages(MessagingController.java:1196)
+    at com.fsck.k9.controller.MessagingController.access$3200(MessagingController.java:115)
+    at com.fsck.k9.controller.MessagingController$40.run(MessagingController.java:4440)
+    at com.fsck.k9.controller.MessagingController.runInBackground(MessagingController.java:204)
+    at com.fsck.k9.controller.MessagingController.access$000(MessagingController.java:115)
+    at com.fsck.k9.controller.MessagingController$1.run(MessagingController.java:173)
+    at java.lang.Thread.run(Thread.java:818)
+```
+
+```
+java.lang.AssertionError: getNewNotificationId() called with no free notification ID
+    at com.fsck.k9.notification.NotificationData.getNewNotificationId(NotificationData.java:77)
+    at com.fsck.k9.notification.NotificationData.addNotificationContent(NotificationData.java:46)
+    at com.fsck.k9.notification.NewMailNotifications.addNewMailNotification(NewMailNotifications.java:56)
+    at com.fsck.k9.notification.NotificationController.addNewMailNotification(NotificationController.java:105)
+    at com.fsck.k9.controller.MessagingController.downloadLargeMessages(MessagingController.java:1571)
+    at com.fsck.k9.controller.MessagingController.downloadMessages(MessagingController.java:1203)
+    at com.fsck.k9.controller.MessagingController.synchronizeMailboxSynchronous(MessagingController.java:953)
+    at com.fsck.k9.controller.MessagingController$9.run(MessagingController.java:739)
+    at com.fsck.k9.controller.MessagingController.runInBackground(MessagingController.java:204)
+    at com.fsck.k9.controller.MessagingController.access$000(MessagingController.java:115)
+    at com.fsck.k9.controller.MessagingController$1.run(MessagingController.java:173)
+    at java.lang.Thread.run(Thread.java:818)

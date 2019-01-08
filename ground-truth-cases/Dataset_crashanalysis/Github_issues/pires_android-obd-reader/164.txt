@@ -1,0 +1,8 @@
+W/System.err: java.lang.IndexOutOfBoundsException: Invalid index 3, size is 3
+W/System.err:     at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+W/System.err:     at java.util.ArrayList.get(ArrayList.java:308)
+W/System.err:     at com.github.pires.obd.commands.fuel.ConsumptionRateCommand.performCalculations(ConsumptionRateCommand.java:36)
+W/System.err:     at com.github.pires.obd.commands.ObdCommand.readResult(ObdCommand.java:125)
+W/System.err:     at com.github.pires.obd.commands.ObdCommand.run(ObdCommand.java:77)
+W/System.err:     at com.github.pires.obd.reader.io.ObdGatewayService.executeQueue(ObdGatewayService.java:199)
+W/System.err:     at com.github.pires.obd.reader.io.AbstractGatewayService$1.run(AbstractGatewayService.java:39)

@@ -1,0 +1,31 @@
+//this is an auto-generated bug report
+//package name: com.morlunk.mumbleclient
+//version: 3.3.0-rc1
+//appro_time: 51
+ java.lang.NullPointerException
+ 	at com.morlunk.mumbleclient.channel.ChannelListAdapter.<init>(ChannelListAdapter.java:102)
+ 	at com.morlunk.mumbleclient.channel.ChannelListFragment.setupChannelList(ChannelListFragment.java:309)
+ 	at com.morlunk.mumbleclient.channel.ChannelListFragment.onServiceBound(ChannelListFragment.java:199)
+ 	at com.morlunk.mumbleclient.util.JumbleServiceFragment.onServiceAttached(JumbleServiceFragment.java:84)
+ 	at com.morlunk.mumbleclient.util.JumbleServiceFragment.onActivityCreated(JumbleServiceFragment.java:58)
+ 	at com.morlunk.mumbleclient.channel.ChannelListFragment.onActivityCreated(ChannelListFragment.java:172)
+ 	at android.support.v4.app.Fragment.performActivityCreated(Fragment.java:1794)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:967)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1126)
+ 	at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:739)
+ 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1489)
+ 	at android.support.v4.app.Fragment.performStart(Fragment.java:1807)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:977)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1126)
+ 	at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:739)
+ 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1489)
+ 	at android.support.v4.app.FragmentManagerImpl$1.run(FragmentManager.java:454)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

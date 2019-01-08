@@ -1,0 +1,20 @@
+09-22 08:27:54.272 E/AndroidRuntime(14842): java.lang.RuntimeException: Unable to create service com.SecUpwN.AIMSICD.service.AimsicdService: java.lang.IllegalArgumentException: provider doesn't exist: gps
+09-22 08:27:54.272 E/AndroidRuntime(14842):     at com.SecUpwN.AIMSICD.service.AimsicdService.setCellTracking(AimsicdService.java:729)
+09-22 08:27:54.272 E/AndroidRuntime(14842):     at com.SecUpwN.AIMSICD.service.AimsicdService.loadPreferences(AimsicdService.java:543)
+09-22 08:27:54.272 E/AndroidRuntime(14842):     at com.SecUpwN.AIMSICD.service.AimsicdService.onCreate(AimsicdService.java:201)
+09-22 08:27:54.282 W/ActivityManager(765):   Force finishing activity com.SecUpwN.AIMSICD/.AIMSICD
+09-22 08:27:54.802 W/ActivityManager(765): Activity pause timeout for ActivityRecord{65159e48 u0 com.SecUpwN.AIMSICD/.AIMSICD t25 f}
+09-22 08:27:55.832 W/InputDispatcher(765): channel '657345b8 com.SecUpwN.AIMSICD/com.SecUpwN.AIMSICD.AIMSICD (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+09-22 08:27:55.832 E/InputDispatcher(765): channel '657345b8 com.SecUpwN.AIMSICD/com.SecUpwN.AIMSICD.AIMSICD (server)' ~ Channel is unrecoverably broken and will be disposed!
+09-22 08:27:55.832 W/InputDispatcher(765): Attempted to unregister already unregistered input channel '657345b8 com.SecUpwN.AIMSICD/com.SecUpwN.AIMSICD.AIMSICD (server)'
+09-22 08:27:55.832 I/ActivityManager(765): Process com.SecUpwN.AIMSICD (pid 14842) has died.
+09-22 08:27:55.832 I/WindowState(765): WIN DEATH: Window{657345b8 u0 com.SecUpwN.AIMSICD/com.SecUpwN.AIMSICD.AIMSICD}
+09-22 08:27:55.832 W/ActivityManager(765): Scheduling restart of crashed service com.SecUpwN.AIMSICD/.service.AimsicdService in 3262ms
+09-22 08:27:59.162 I/ActivityManager(765): Start proc com.SecUpwN.AIMSICD for service com.SecUpwN.AIMSICD/.service.AimsicdService: pid=15385 uid=10297 gids={50297, 1028, 1015, 3003}
+09-22 08:27:59.192 D/ActivityThread(15385): handleBindApplication:com.SecUpwN.AIMSICD
+09-22 08:27:59.232 I/AIMSICD_Service(15385): LocationManager already existed
+09-22 08:27:59.242 E/AndroidRuntime(15385): Process: com.SecUpwN.AIMSICD, PID: 15385
+09-22 08:27:59.242 E/AndroidRuntime(15385): java.lang.RuntimeException: Unable to create service com.SecUpwN.AIMSICD.service.AimsicdService: java.lang.IllegalArgumentException: provider doesn't exist: gps
+09-22 08:27:59.242 E/AndroidRuntime(15385):     at com.SecUpwN.AIMSICD.service.AimsicdService.setCellTracking(AimsicdService.java:729)
+09-22 08:27:59.242 E/AndroidRuntime(15385):     at com.SecUpwN.AIMSICD.service.AimsicdService.loadPreferences(AimsicdService.java:543)
+09-22 08:27:59.242 E/AndroidRuntime(15385):     at com.SecUpwN.AIMSICD.service.AimsicdService.onCreate(AimsicdService.java:201)

@@ -1,0 +1,12 @@
+Non-fatal Exception: java.lang.IllegalArgumentException
+       at android.media.AudioRecord.<init>(AudioRecord.java:277)
+       at android.media.AudioRecord.<init>(AudioRecord.java:233)
+       at edu.cmu.pocketsphinx.SpeechRecognizer.<init>(SpeechRecognizer.java:82)
+       at edu.cmu.pocketsphinx.SpeechRecognizerSetup.getRecognizer(SpeechRecognizerSetup.java:74)
+       at com.willblaschko.android.alexalistens.MainActivity$SettingsFragment$6.doInBackground(MainActivity.java:261)
+       at com.willblaschko.android.alexalistens.MainActivity$SettingsFragment$6.doInBackground(MainActivity.java:245)
+       at android.os.AsyncTask$2.call(AsyncTask.java:292)
+       at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+       at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+       at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+       at java.lang.Thread.run(Thread.java:818)

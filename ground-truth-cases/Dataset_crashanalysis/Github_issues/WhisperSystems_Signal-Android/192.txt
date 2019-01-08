@@ -1,0 +1,50 @@
+Writing exception to parcel
+java.lang.IllegalArgumentException: Cannot bind argument at index 1 because the index is out of range.  The statement has 0 parameters.
+        at android.database.sqlite.SQLiteProgram.bind(SQLiteProgram.java:212)
+        at android.database.sqlite.SQLiteProgram.bindString(SQLiteProgram.java:166)
+        at android.database.sqlite.SQLiteProgram.bindAllArgsAsStrings(SQLiteProgram.java:200)
+        at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:68)
+        at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1370)
+        at android.database.sqlite.SQLiteQueryBuilder.query(SQLiteQueryBuilder.java:421)
+        at android.database.sqlite.SQLiteQueryBuilder.query(SQLiteQueryBuilder.java:315)
+        at com.android.providers.telephony.TelephonyProvider.query(TelephonyProvider.java:1415)
+        at android.content.ContentProvider.query(ContentProvider.java:673)
+        at android.content.ContentProvider$Transport.query(ContentProvider.java:210)
+        at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:143)
+        at android.os.Binder.execTransact(Binder.java:367)
+        at dalvik.system.NativeStart.run(Native Method)
+
+[ 06-09 10:57:29.721   180:  289 D/memalloc ]
+ion: Freeing buffer base:0x4e98c000 size:8355840 fd:155
+
+[ 06-09 10:57:29.721   180:  289 D/memalloc ]
+ion: Unmapping buffer  base:0x4e98c000 size:8355840
+
+[ 06-09 10:57:29.721  1357: 6433 W/InputMethodManagerService ]
+Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@42220590 attribute=android.view.inputmethod.EditorInfo@4210f190
+
+[ 06-09 10:57:29.731   180:  289 D/memalloc ]
+ion: Freeing buffer base:0x40121000 size:4096 fd:156
+
+[ 06-09 10:57:29.731   180:  289 D/memalloc ]
+ion: Unmapping buffer  base:0x40121000 size:4096
+
+[ 06-09 10:57:29.731  2637: 2823 W/MmsCommunication ]
+java.lang.IllegalArgumentException: Cannot bind argument at index 1 because the index is out of range.  The statement has 0 parameters.
+        at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:170)
+        at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:140)
+        at android.content.ContentProviderProxy.query(ContentProviderNative.java:423)
+        at android.content.ContentResolver.query(ContentResolver.java:375)
+        at android.content.ContentResolver.query(ContentResolver.java:318)
+        at org.thoughtcrime.securesms.database.MmsDatabase.getCarrierMmsInformation(MmsDatabase.java:584)
+        at org.thoughtcrime.securesms.mms.MmsCommunication.getMmsConnectionParameters(MmsCommunication.java:92)
+        at org.thoughtcrime.securesms.mms.MmsSendHelper.hasNecessaryApnDetails(MmsSendHelper.java:119)
+        at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:530)
+        at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:527)
+        at android.os.AsyncTask$2.call(AsyncTask.java:287)
+        at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+        at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+        at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+        at java.lang.Thread.run(Thread.java:864)

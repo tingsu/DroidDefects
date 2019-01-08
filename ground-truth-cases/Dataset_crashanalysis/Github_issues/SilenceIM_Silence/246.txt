@@ -1,0 +1,51 @@
+E/AndroidRuntime(17420): java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=-1, data=Intent { dat=content://com.android.providers.media.documents/document/image:23230 flg=0x43 }} to activity {org.smssecure.smssecure/org.smssecure.smssecure.ConversationActivity}: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+E/AndroidRuntime(17420):    at android.app.ActivityThread.deliverResults(ActivityThread.java:3621)
+E/AndroidRuntime(17420):    at android.app.ActivityThread.handleSendResult(ActivityThread.java:3664)
+E/AndroidRuntime(17420):    at android.app.ActivityThread.access$1400(ActivityThread.java:153)
+E/AndroidRuntime(17420):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1373)
+E/AndroidRuntime(17420):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(17420):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(17420):    at android.app.ActivityThread.main(ActivityThread.java:5374)
+E/AndroidRuntime(17420):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(17420):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(17420):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:911)
+E/AndroidRuntime(17420):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+E/AndroidRuntime(17420): Caused by: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+E/AndroidRuntime(17420):    at android.app.SharedPreferencesImpl.getString(SharedPreferencesImpl.java:223)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.util.SMSSecurePreferences.getStringPreference(SMSSecurePreferences.java:499)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.util.SMSSecurePreferences.getEnterKeyType(SMSSecurePreferences.java:236)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.components.ComposeText.setTransport(ComposeText.java:67)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.ConversationActivity$12.onChange(ConversationActivity.java:774)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.TransportOptions.notifyTransportChangeListeners(TransportOptions.java:121)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.TransportOptions.reset(TransportOptions.java:42)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.components.SendButton.resetAvailableTransports(SendButton.java:71)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.ConversationActivity.initializeSecurity(ConversationActivity.java:695)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.ConversationActivity.onAttachmentChanged(ConversationActivity.java:1334)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.mms.AttachmentManager.setMedia(AttachmentManager.java:117)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.mms.AttachmentManager.setImage(AttachmentManager.java:96)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.ConversationActivity.addAttachmentImage(ConversationActivity.java:884)
+E/AndroidRuntime(17420):    at org.smssecure.smssecure.ConversationActivity.onActivityResult(ConversationActivity.java:278)
+E/AndroidRuntime(17420):    at android.app.Activity.dispatchActivityResult(Activity.java:7067)
+E/AndroidRuntime(17420):    at android.app.ActivityThread.deliverResults(ActivityThread.java:3617)
+E/AndroidRuntime(17420):    ... 10 more
+W/ActivityManager( 2439):   Force finishing activity 1 org.smssecure.smssecure/.ConversationActivity
+W/ActivityManager( 2439): Skipping crash dialog of ProcessRecord{27c112ce 17420:org.smssecure.smssecure/u0a119}: disabled
+I/Process (17420): Sending signal. PID: 17420 SIG: 9
+I/WindowState( 2439): WIN DEATH: Window{1e987b48 u0 org.smssecure.smssecure/org.smssecure.smssecure.ConversationActivity}
+W/InputDispatcher( 2439): channel '2c9d2b94 org.smssecure.smssecure/org.smssecure.smssecure.RoutingActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+E/InputDispatcher( 2439): channel '2c9d2b94 org.smssecure.smssecure/org.smssecure.smssecure.RoutingActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+W/InputDispatcher( 2439): Attempted to unregister already unregistered input channel '2c9d2b94 org.smssecure.smssecure/org.smssecure.smssecure.RoutingActivity (server)'
+I/WindowState( 2439): WIN DEATH: Window{2c9d2b94 u0 org.smssecure.smssecure/org.smssecure.smssecure.RoutingActivity}
+I/ActivityManager( 2439): Process org.smssecure.smssecure (pid 17420) has died
+W/ActivityManager( 2439): Scheduling restart of crashed service org.smssecure.smssecure/.service.KeyCachingService in 1000ms
+V/WindowManager( 2439): Adding window Window{6a77066 u0 Starting org.smssecure.smssecure} at 6 of 22 (before Window{3d36218d u0 com.android.documentsui/com.android.documentsui.DocumentsActivity})
+I/ActivityManager( 2439): Start proc 17550:org.smssecure.smssecure/u0a119 for activity org.smssecure.smssecure/.RoutingActivity
+W/PartProvider(17550): onCreate()
+W/PassphraseRequiredActionBarActivity(17550): routeApplicationState(), state: 2
+I/Timeline(17550): Timeline: Activity_launch_request id:org.smssecure.smssecure time:12992646
+I/ActivityManager( 2439): START u0 {cmp=org.smssecure.smssecure/.PassphrasePromptActivity (has extras)} from uid 10119 on display 0
+V/WindowManager( 2439): addAppToken: AppWindowToken{ee560d8 token=Token{38f523bb ActivityRecord{291e684a u0 org.smssecure.smssecure/.PassphrasePromptActivity t1203}}} to stack=1 task=1203 at 2
+V/WindowManager( 2439): Adding window Window{6a77066 u0 Starting org.smssecure.smssecure} at 7 of 22 (after Window{3d36218d u0 com.android.documentsui/com.android.documentsui.DocumentsActivity})
+D/OpenGLRenderer(17550): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+D/Atlas   (17550): Validating map...
+V/WindowManager( 2439): Adding window Window{d676a6d u0 org.smssecure.smssecure/org.smssecure.smssecure.PassphrasePromptActivity} at 7 of 23 (before Window{6a77066 u0 Starting org.smssecure.smssecure})

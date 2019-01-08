@@ -1,0 +1,79 @@
+09-01 10:29:24.912  29780-29780/org.gnucash.android.devel E/WindowManager﹕ android.view.WindowLeaked: Activity org.gnucash.android.ui.FormActivity has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{444df3d0 V.E..... R......D 0,0-1026,450} that was originally added here
+            at android.view.ViewRootImpl.<init>(ViewRootImpl.java:374)
+            at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:255)
+            at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+            at android.app.Dialog.show(Dialog.java:286)
+            at org.gnucash.android.export.ExportAsyncTask.onPreExecute(ExportAsyncTask.java:119)
+            at android.os.AsyncTask.executeOnExecutor(AsyncTask.java:587)
+            at android.os.AsyncTask.execute(AsyncTask.java:535)
+            at org.gnucash.android.ui.export.ExportFormFragment.startExport(ExportFormFragment.java:215)
+            at org.gnucash.android.ui.export.ExportFormFragment.onOptionsItemSelected(ExportFormFragment.java:175)
+            at android.support.v4.app.Fragment.performOptionsItemSelected(Fragment.java:1897)
+            at android.support.v4.app.FragmentManagerImpl.dispatchOptionsItemSelected(FragmentManager.java:2046)
+            at android.support.v4.app.FragmentActivity.onMenuItemSelected(FragmentActivity.java:359)
+            at android.support.v7.app.AppCompatActivity.onMenuItemSelected(AppCompatActivity.java:144)
+            at android.support.v7.internal.view.WindowCallbackWrapper.onMenuItemSelected(WindowCallbackWrapper.java:99)
+            at android.support.v7.internal.view.WindowCallbackWrapper.onMenuItemSelected(WindowCallbackWrapper.java:99)
+            at android.support.v7.internal.app.ToolbarActionBar$2.onMenuItemClick(ToolbarActionBar.java:72)
+            at android.support.v7.widget.Toolbar$1.onMenuItemClick(Toolbar.java:164)
+            at android.support.v7.widget.ActionMenuView$MenuBuilderCallback.onMenuItemSelected(ActionMenuView.java:740)
+            at android.support.v7.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:811)
+            at android.support.v7.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:153)
+            at android.support.v7.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:958)
+            at android.support.v7.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:948)
+            at android.support.v7.widget.ActionMenuView.invokeItem(ActionMenuView.java:598)
+            at android.support.v7.internal.view.menu.ActionMenuItemView.onClick(ActionMenuItemView.java:139)
+            at android.view.View.performClick(View.java:4448)
+            at android.view.View$PerformClick.run(View.java:18461)
+            at android.os.Handler.handleCallback(Handler.java:733)
+            at android.os.Handler.dispatchMessage(Handler.java:95)
+            at android.os.Looper.loop(Looper.java:136)
+            at android.app.ActivityThread.main(ActivityThread.java:5065)
+            at java.lang.reflect.Method.invokeNative(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:515)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+            at dalvik.system.NativeStart.main(Native Method)
+09-01 10:29:26.412  29780-29780/org.gnucash.android.devel D/AccountsListFragment﹕ Accounts loader finished. Swapping in cursor
+09-01 10:29:27.402  29780-29780/org.gnucash.android.devel D/AccountsListFragment﹕ Accounts loader finished. Swapping in cursor
+09-01 10:29:27.402  29780-29919/org.gnucash.android.devel V/AccountsDbAdapter﹕ Fetching all accounts from db where (parent_account_uid IS NULL OR parent_account_uid = ?) AND is_hidden = 0 AND type != ? order by name ASC
+09-01 10:29:27.692  29780-29921/org.gnucash.android.devel I/ExporterAsyncTask﹕ Moving exported file to external storage
+09-01 10:29:27.712  29780-29921/org.gnucash.android.devel D/AccountsDbAdapter﹕ Computing account balance for account ID 05b5adc2fd12396f2233285caaebbf72
+09-01 10:29:27.722  29780-29921/org.gnucash.android.devel D/AccountsDbAdapter﹕ all account list : 1
+09-01 10:29:27.772  29780-29921/org.gnucash.android.devel D/SplitsDbAdapter﹕ amount return 6724839/100
+09-01 10:29:27.772  29780-29921/org.gnucash.android.devel D/AccountsDbAdapter﹕ Computing account balance for account ID 33c51f7d48a1face26af7088168e8a74
+09-01 10:29:27.782  29780-29921/org.gnucash.android.devel D/AccountsDbAdapter﹕ all account list : 1
+09-01 10:29:27.822  29780-29921/org.gnucash.android.devel D/SplitsDbAdapter﹕ amount return 6900154/100
+09-01 10:29:27.822  29780-29921/org.gnucash.android.devel D/AccountsDbAdapter﹕ Computing account balance for account ID 36facac005ec3f128aedcc2fc7efae02
+09-01 10:29:27.832  29780-29921/org.gnucash.android.devel D/AccountsDbAdapter﹕ all account list : 1
+09-01 10:29:27.862  29780-29921/org.gnucash.android.devel D/SplitsDbAdapter﹕ amount return 65138/100
+09-01 10:29:27.862  29780-29921/org.gnucash.android.devel D/AccountsDbAdapter﹕ Computing account balance for account ID 458c67ee6548999c5f97068bb938aace
+09-01 10:29:27.872  29780-29921/org.gnucash.android.devel D/AccountsDbAdapter﹕ all account list : 1
+09-01 10:29:27.892  29780-29780/org.gnucash.android.devel D/AccountsListFragment﹕ Accounts loader finished. Swapping in cursor
+09-01 10:29:27.922  29780-29921/org.gnucash.android.devel D/SplitsDbAdapter﹕ amount return 5432840/100
+09-01 10:29:27.932  29780-29921/org.gnucash.android.devel D/AccountsDbAdapter﹕ Computing account balance for account ID 527675f390d800c1c565595c2656dbbf
+09-01 10:29:27.942  29780-29921/org.gnucash.android.devel D/AccountsDbAdapter﹕ all account list : 1
+09-01 10:29:27.952  29780-29780/org.gnucash.android.devel W/Toast﹕ From org.gnucash.android.devel, go ahead.
+09-01 10:29:27.952  29780-29780/org.gnucash.android.devel D/AndroidRuntime﹕ Shutting down VM
+09-01 10:29:27.952  29780-29780/org.gnucash.android.devel W/dalvikvm﹕ threadid=1: thread exiting with uncaught exception (group=0x41752d58)
+09-01 10:29:27.952  29780-29780/org.gnucash.android.devel E/AndroidRuntime﹕ FATAL EXCEPTION: main
+    Process: org.gnucash.android.devel, PID: 29780
+    java.lang.IllegalArgumentException: View=com.android.internal.policy.impl.PhoneWindow$DecorView{444df3d0 V.E..... R......D 0,0-1026,450} not attached to window manager
+            at android.view.WindowManagerGlobal.findViewLocked(WindowManagerGlobal.java:380)
+            at android.view.WindowManagerGlobal.removeView(WindowManagerGlobal.java:309)
+            at android.view.WindowManagerImpl.removeViewImmediate(WindowManagerImpl.java:84)
+            at android.app.Dialog.dismissDialog(Dialog.java:329)
+            at android.app.Dialog.dismiss(Dialog.java:312)
+            at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:248)
+            at org.gnucash.android.export.ExportAsyncTask.onPostExecute(ExportAsyncTask.java:83)
+            at android.os.AsyncTask.finish(AsyncTask.java:632)
+            at android.os.AsyncTask.access$600(AsyncTask.java:177)
+            at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)
+            at android.os.Handler.dispatchMessage(Handler.java:102)
+            at android.os.Looper.loop(Looper.java:136)
+            at android.app.ActivityThread.main(ActivityThread.java:5065)
+            at java.lang.reflect.Method.invokeNative(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:515)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:609)
+            at dalvik.system.NativeStart.main(Native Method)

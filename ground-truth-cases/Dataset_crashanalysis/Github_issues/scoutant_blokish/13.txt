@@ -1,0 +1,23 @@
+E/AndroidRuntime( 3703): android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=vnd.youtube://3Q7ow07uaMw }
+E/AndroidRuntime( 3703):    at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1632)
+E/AndroidRuntime( 3703):    at android.app.Instrumentation.execStartActivity(Instrumentation.java:1424)
+E/AndroidRuntime( 3703):    at android.app.Activity.startActivityForResult(Activity.java:3553)
+E/AndroidRuntime( 3703):    at android.app.Activity.startActivityForResult(Activity.java:3514)
+E/AndroidRuntime( 3703):    at android.app.Activity.startActivity(Activity.java:3756)
+E/AndroidRuntime( 3703):    at android.app.Activity.startActivity(Activity.java:3724)
+E/AndroidRuntime( 3703):    at org.scoutant.blokish.Help$1.onClick(Help.java:19)
+E/AndroidRuntime( 3703):    at android.view.View.performClick(View.java:4444)
+E/AndroidRuntime( 3703):    at android.view.View$PerformClick.run(View.java:18445)
+E/AndroidRuntime( 3703):    at android.os.Handler.handleCallback(Handler.java:733)
+E/AndroidRuntime( 3703):    at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime( 3703):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 3703):    at android.app.ActivityThread.main(ActivityThread.java:5135)
+E/AndroidRuntime( 3703):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 3703):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 3703):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+E/AndroidRuntime( 3703):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:611)
+E/AndroidRuntime( 3703):    at dalvik.system.NativeStart.main(Native Method)
+
+The suspicious code may be in Help.java:
+
+<img width="719" alt="screen shot 2016-04-13 at 11 26 21 am" src="https://cloud.githubusercontent.com/assets/3156978/14481921/ef54bfae-0169-11e6-86c4-f9345f1e02b0.png">

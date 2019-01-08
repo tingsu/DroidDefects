@@ -1,0 +1,6 @@
+java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+       at android.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1328)
+       at android.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1346)
+       at android.app.BackStackRecord.commitInternal(BackStackRecord.java:728)
+       at android.app.BackStackRecord.commit(BackStackRecord.java:704)
+       at org.wordpress.android.ui.main.MySiteFragment.onCreateView(MySiteFragment.java:86)

@@ -1,0 +1,10 @@
+E/DatabaseUtils( 1034): java.lang.SecurityException: No permission to write APN settings: Neither user 10127 nor current process has android.permission.WRITE_APN_SETTINGS.
+E/DatabaseUtils( 1034):     at android.app.ContextImpl.enforce(ContextImpl.java:1685)
+E/DatabaseUtils( 1034):     at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1714)
+E/DatabaseUtils( 1034):     at com.android.providers.telephony.TelephonyProvider.checkPermission(TelephonyProvider.java:735)
+E/DatabaseUtils( 1034):     at com.android.providers.telephony.TelephonyProvider.query(TelephonyProvider.java:462)
+E/DatabaseUtils( 1034):     at android.content.ContentProvider.query(ContentProvider.java:857)
+E/DatabaseUtils( 1034):     at android.content.ContentProvider$Transport.query(ContentProvider.java:200)
+E/DatabaseUtils( 1034):     at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:112)
+E/DatabaseUtils( 1034):     at android.os.Binder.execTransact(Binder.java:404)
+E/DatabaseUtils( 1034):     at dalvik.system.NativeStart.run(Native Method)

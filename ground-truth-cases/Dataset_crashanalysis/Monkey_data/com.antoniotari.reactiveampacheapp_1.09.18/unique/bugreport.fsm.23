@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: com.antoniotari.reactiveampacheapp
+//version: 1.09.18
+//appro_time: 147
+ FATAL EXCEPTION: main
+ java.lang.StringIndexOutOfBoundsException: length=2; regionStart=0; regionLength=7
+ 	at java.lang.String.startEndAndLength(String.java:583)
+ 	at java.lang.String.substring(String.java:1464)
+ 	at com.antoniotari.reactiveampacheapp.ui.activities.LoginActivity.attemptLogin(LoginActivity.java:116)
+ 	at com.antoniotari.reactiveampacheapp.ui.activities.LoginActivity.attemptLogin(LoginActivity.java:98)
+ 	at com.antoniotari.reactiveampacheapp.ui.activities.LoginActivity.lambda$-com_antoniotari_reactiveampacheapp_ui_activities_LoginActivity_lambda$1(LoginActivity.java:70)
+ 	at com.antoniotari.reactiveampacheapp.ui.activities.-$Lambda$28.$m$0(Unknown Source)
+ 	at com.antoniotari.reactiveampacheapp.ui.activities.-$Lambda$28.onEditorAction(Unknown Source)
+ 	at android.widget.TextView.onEditorAction(TextView.java:4192)
+ 	at com.android.internal.widget.EditableInputConnection.performEditorAction(EditableInputConnection.java:138)
+ 	at com.android.internal.view.IInputConnectionWrapper.executeMessage(IInputConnectionWrapper.java:297)
+ 	at com.android.internal.view.IInputConnectionWrapper$MyHandler.handleMessage(IInputConnectionWrapper.java:77)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,7 @@
+java.lang.NullPointerException: Attempt to read from null array
+    at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:108)
+    at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:70)
+    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

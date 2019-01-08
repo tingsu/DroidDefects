@@ -1,0 +1,5 @@
+E/AndroidRuntime(20689): java.lang.IllegalArgumentException: No config chosen
+E/AndroidRuntime(20689):    at android.opengl.GLSurfaceView$BaseConfigChooser.chooseConfig(GLSurfaceView.java:874)
+E/AndroidRuntime(20689):    at android.opengl.GLSurfaceView$EglHelper.start(GLSurfaceView.java:1024)
+E/AndroidRuntime(20689):    at android.opengl.GLSurfaceView$GLThread.guardedRun(GLSurfaceView.java:1401)
+E/AndroidRuntime(20689):    at android.opengl.GLSurfaceView$GLThread.run(GLSurfaceView.java:1240)

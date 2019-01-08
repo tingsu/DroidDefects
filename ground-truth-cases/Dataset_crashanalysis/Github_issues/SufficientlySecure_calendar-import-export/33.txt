@@ -1,0 +1,23 @@
+E/DatabaseUtils(32704): java.lang.NullPointerException
+E/DatabaseUtils(32704):         at android.database.sqlite.SQLiteQueryBuilder.computeProjection(SQLiteQueryBuilder.java:625)
+E/DatabaseUtils(32704):         at android.database.sqlite.SQLiteQueryBuilder.buildQuery(SQLiteQueryBuilder.java:447)
+E/DatabaseUtils(32704):         at android.database.sqlite.SQLiteQueryBuilder.query(SQLiteQueryBuilder.java:393)
+E/DatabaseUtils(32704):         at android.database.sqlite.SQLiteQueryBuilder.query(SQLiteQueryBuilder.java:333)
+E/DatabaseUtils(32704):         at com.android.providers.calendar.CalendarProvider2.query(CalendarProvider2.java:1029)
+E/DatabaseUtils(32704):         at com.android.providers.calendar.CalendarProvider2.query(CalendarProvider2.java:1000)
+E/DatabaseUtils(32704):         at android.content.ContentProvider.query(ContentProvider.java:652)
+E/DatabaseUtils(32704):         at android.content.ContentProvider$Transport.query(ContentProvider.java:189)
+E/DatabaseUtils(32704):         at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:113)
+E/DatabaseUtils(32704):         at android.os.Binder.execTransact(Binder.java:367)
+E/DatabaseUtils(32704):         at dalvik.system.NativeStart.run(Native Method)
+E/ICS_RunnableWithProgress( 2690): An exception occurred
+E/ICS_RunnableWithProgress( 2690): java.lang.NullPointerException
+E/ICS_RunnableWithProgress( 2690):      at android.os.Parcel.readException(Parcel.java:1431)
+E/ICS_RunnableWithProgress( 2690):      at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:188)
+E/ICS_RunnableWithProgress( 2690):      at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:140)
+E/ICS_RunnableWithProgress( 2690):      at android.content.ContentProviderProxy.query(ContentProviderNative.java:366)
+E/ICS_RunnableWithProgress( 2690):      at android.content.ContentResolver.query(ContentResolver.java:370)
+E/ICS_RunnableWithProgress( 2690):      at android.content.ContentResolver.query(ContentResolver.java:313)
+E/ICS_RunnableWithProgress( 2690):      at org.sufficientlysecure.ical.SaveCalendar.run(Unknown Source)
+E/ICS_RunnableWithProgress( 2690):      at org.sufficientlysecure.ical.ui.dialogs.RunnableWithProgress$1.run(Unknown Source)
+E/ICS_RunnableWithProgress( 2690):      at java.lang.Thread.run(Thread.java:856)

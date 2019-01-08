@@ -1,0 +1,7 @@
+java.lang.IllegalArgumentException: Illegal character: . (0x002e)
+    at com.google.zxing.datamatrix.encoder.HighLevelEncoder.illegalCharacter(HighLevelEncoder.java:445)
+    at com.google.zxing.datamatrix.encoder.X12Encoder.encodeChar(X12Encoder.java:65)
+    at com.google.zxing.datamatrix.encoder.X12Encoder.encode(X12Encoder.java:34)
+    at com.google.zxing.datamatrix.encoder.HighLevelEncoder.encodeHighLevel(HighLevelEncoder.java:182)
+    at com.google.zxing.datamatrix.DataMatrixWriter.encode(DataMatrixWriter.java:84)
+    at com.google.zxing.Writer$encode.call(Unknown Source)

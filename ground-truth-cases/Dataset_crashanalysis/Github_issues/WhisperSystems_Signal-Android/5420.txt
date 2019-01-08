@@ -1,0 +1,32 @@
+W/LowLatencySocketConnector( 3866): java.net.ConnectException: failed to connect to relay.whispersystems.org/176.58.114.110 (port 31337): isConnected failed: ECONNREFUSED (Connection refused)
+W/LowLatencySocketConnector( 3866):     at libcore.io.IoBridge.isConnected(IoBridge.java:238)
+W/LowLatencySocketConnector( 3866):     at java.nio.SocketChannelImpl.finishConnect(SocketChannelImpl.java:277)
+W/LowLatencySocketConnector( 3866):     at org.thoughtcrime.redphone.network.LowLatencySocketConnector.isChannelConnected(LowLatencySocketConnector.java:108)
+W/LowLatencySocketConnector( 3866):     at org.thoughtcrime.redphone.network.LowLatencySocketConnector.waitForFirstChannel(LowLatencySocketConnector.java:74)
+W/LowLatencySocketConnector( 3866):     at org.thoughtcrime.redphone.network.LowLatencySocketConnector.connect(LowLatencySocketConnector.java:55)
+W/LowLatencySocketConnector( 3866):     at org.thoughtcrime.redphone.signaling.SignalingSocket.timeoutHackConnect(SignalingSocket.java:127)
+W/LowLatencySocketConnector( 3866):     at org.thoughtcrime.redphone.signaling.SignalingSocket.constructSSLSocket(SignalingSocket.java:115)
+W/LowLatencySocketConnector( 3866):     at org.thoughtcrime.redphone.signaling.SignalingSocket.<init>(SignalingSocket.java:96)
+W/LowLatencySocketConnector( 3866):     at org.thoughtcrime.redphone.call.InitiatingCallManager.run(InitiatingCallManager.java:75)
+W/LowLatencySocketConnector( 3866): Caused by: android.system.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+W/LowLatencySocketConnector( 3866):     at libcore.io.IoBridge.isConnected(IoBridge.java:223)
+W/LowLatencySocketConnector( 3866):     ... 8 more
+W/InitiatingCallManager( 3866): org.thoughtcrime.redphone.signaling.SignalingException: java.io.IOException: All connections failed!
+W/InitiatingCallManager( 3866):     at org.thoughtcrime.redphone.signaling.SignalingSocket.constructSSLSocket(SignalingSocket.java:117)
+W/InitiatingCallManager( 3866):     at org.thoughtcrime.redphone.signaling.SignalingSocket.<init>(SignalingSocket.java:96)
+W/InitiatingCallManager( 3866):     at org.thoughtcrime.redphone.call.InitiatingCallManager.run(InitiatingCallManager.java:75)
+W/InitiatingCallManager( 3866): Caused by: java.io.IOException: All connections failed!
+W/InitiatingCallManager( 3866):     at org.thoughtcrime.redphone.network.LowLatencySocketConnector.waitForFirstChannel(LowLatencySocketConnector.java:85)
+W/InitiatingCallManager( 3866):     at org.thoughtcrime.redphone.network.LowLatencySocketConnector.connect(LowLatencySocketConnector.java:55)
+W/InitiatingCallManager( 3866):     at org.thoughtcrime.redphone.signaling.SignalingSocket.timeoutHackConnect(SignalingSocket.java:127)
+W/InitiatingCallManager( 3866):     at org.thoughtcrime.redphone.signaling.SignalingSocket.constructSSLSocket(SignalingSocket.java:115)
+W/InitiatingCallManager( 3866):     ... 2 more
+D/AccelerometerListener( 3866): orientation: vertical
+D/LockManager( 3866): Orentation Update: 1
+D/LockManager( 3866): Entered Lock State: PROXIMITY
+W/RedPhone( 3866): Got message from service: SERVER_FAILURE
+W/RedPhoneService( 3866): termination stack
+W/RedPhoneService( 3866): java.lang.Exception
+W/RedPhoneService( 3866):   at org.thoughtcrime.redphone.RedPhoneService.terminate(RedPhoneService.java:364)
+W/RedPhoneService( 3866):   at org.thoughtcrime.redphone.RedPhoneService.notifyServerFailure(RedPhoneService.java:468)
+W/RedPhoneService( 3866):   at org.thoughtcrime.redphone.call.InitiatingCallManager.run(InitiatingCallManager.java:106)

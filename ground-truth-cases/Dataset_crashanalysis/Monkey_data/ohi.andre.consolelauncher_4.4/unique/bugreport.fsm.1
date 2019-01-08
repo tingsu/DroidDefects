@@ -1,0 +1,32 @@
+//this is an auto-generated bug report
+//package name: ohi.andre.consolelauncher
+//version: 4.4
+//appro_time: 95
+ FATAL EXCEPTION: Thread-888
+ android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
+ 	at android.view.ViewRootImpl.checkThread(ViewRootImpl.java:5908)
+ 	at android.view.ViewRootImpl.requestLayout(ViewRootImpl.java:837)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.widget.RelativeLayout.requestLayout(RelativeLayout.java:358)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.widget.ScrollView.requestLayout(ScrollView.java:1440)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.widget.TextView.checkForResize(TextView.java:6467)
+ 	at android.widget.TextView.updateAfterEdit(TextView.java:7347)
+ 	at android.widget.TextView.handleTextChanged(TextView.java:7363)
+ 	at android.widget.TextView$ChangeWatcher.onTextChanged(TextView.java:9076)
+ 	at android.text.SpannableStringBuilder.sendTextChanged(SpannableStringBuilder.java:962)
+ 	at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:496)
+ 	at android.text.SpannableStringBuilder.append(SpannableStringBuilder.java:253)
+ 	at android.text.SpannableStringBuilder.append(SpannableStringBuilder.java:30)
+ 	at android.widget.TextView.append(TextView.java:3355)
+ 	at android.widget.TextView.append(TextView.java:3342)
+ 	at ohi.andre.consolelauncher.managers.TerminalManager.writeToView(TerminalManager.java:159)
+ 	at ohi.andre.consolelauncher.managers.TerminalManager.setOutput(TerminalManager.java:148)
+ 	at ohi.andre.consolelauncher.UIManager.setOutput(UIManager.java:418)
+ 	at ohi.andre.consolelauncher.LauncherActivity$3.onOutput(LauncherActivity.java:76)
+ 	at ohi.andre.consolelauncher.MainManager$SystemCommandTrigger$1.run(MainManager.java:196)

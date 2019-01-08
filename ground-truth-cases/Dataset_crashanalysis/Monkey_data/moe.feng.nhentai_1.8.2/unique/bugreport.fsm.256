@@ -1,0 +1,10 @@
+//this is an auto-generated bug report
+//package name: moe.feng.nhentai
+//version: 1.8.2
+//appro_time: 99
+ FATAL EXCEPTION: Thread-856
+ java.lang.NullPointerException
+ 	at moe.feng.nhentai.api.PageApi.getPageBook(PageApi.java:36)
+ 	at moe.feng.nhentai.api.PageApi.getBookDetailList(PageApi.java:235)
+ 	at moe.feng.nhentai.api.BookApi.getBook(BookApi.java:28)
+ 	at moe.feng.nhentai.ui.RandomActivity$RandomThread.run(RandomActivity.java:233)

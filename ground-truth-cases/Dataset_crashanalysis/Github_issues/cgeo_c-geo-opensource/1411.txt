@@ -1,0 +1,5 @@
+E/AndroidRuntime(18924): java.lang.IllegalArgumentException: coords must not be null
+E/AndroidRuntime(18924):    at cgeo.geocaching.cgData.loadBatchOfStoredGeocodes(cgData.java:2598)
+E/AndroidRuntime(18924):    at cgeo.geocaching.cgeoapplication.getBatchOfStoredCaches$4ebae73a(cgeoapplication.java:295)
+E/AndroidRuntime(18924):    at cgeo.geocaching.cgBase.searchByStored(cgBase.java:1344)
+E/AndroidRuntime(18924):    at cgeo.geocaching.cgeocaches$LoadByOfflineThread.run(cgeocaches.java:1507)

@@ -1,0 +1,16 @@
+E/AndroidRuntime( 4437): java.lang.RuntimeException: Error receiving broadcast Intent { act=android.net.wifi.SCAN_RESULTS } in ru.glesik.wifireminders.AlarmService$1@4051e2a8
+E/AndroidRuntime( 4437):    at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:722)
+E/AndroidRuntime( 4437):    at android.os.Handler.handleCallback(Handler.java:587)
+E/AndroidRuntime( 4437):    at android.os.Handler.dispatchMessage(Handler.java:92)
+E/AndroidRuntime( 4437):    at android.os.Looper.loop(Looper.java:130)
+E/AndroidRuntime( 4437):    at android.app.ActivityThread.main(ActivityThread.java:3687)
+E/AndroidRuntime( 4437):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 4437):    at java.lang.reflect.Method.invoke(Method.java:507)
+E/AndroidRuntime( 4437):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:867)
+E/AndroidRuntime( 4437):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:625)
+E/AndroidRuntime( 4437):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 4437): Caused by: java.lang.NullPointerException
+E/AndroidRuntime( 4437):    at ru.glesik.wifireminders.AlarmService.stopAlarm(AlarmService.java:138)
+E/AndroidRuntime( 4437):    at ru.glesik.wifireminders.AlarmService.scanResultHandler(AlarmService.java:126)
+E/AndroidRuntime( 4437):    at ru.glesik.wifireminders.AlarmService$1.onReceive(AlarmService.java:63)
+E/AndroidRuntime( 4437):    at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:709)

@@ -1,0 +1,12 @@
+10-02 11:50:56.927 12552-12552/? E/AndroidRuntime: java.lang.IllegalStateException
+10-02 11:50:56.927 12552-12552/? E/AndroidRuntime:     at android.media.MediaPlayer._start(Native Method)
+10-02 11:50:56.927 12552-12552/? E/AndroidRuntime:     at android.media.MediaPlayer.start(MediaPlayer.java:1219)
+10-02 11:50:56.927 12552-12552/? E/AndroidRuntime:     at org.thoughtcrime.redphone.audio.OutgoingRinger.onPrepared(OutgoingRinger.java:146)
+10-02 11:50:56.927 12552-12552/? E/AndroidRuntime:     at android.media.MediaPlayer$EventHandler.handleMessage(MediaPlayer.java:2593)
+10-02 11:50:56.927 12552-12552/? E/AndroidRuntime:     at android.os.Handler.dispatchMessage(Handler.java:102)
+10-02 11:50:56.927 12552-12552/? E/AndroidRuntime:     at android.os.Looper.loop(Looper.java:211)
+10-02 11:50:56.927 12552-12552/? E/AndroidRuntime:     at android.app.ActivityThread.main(ActivityThread.java:5373)
+10-02 11:50:56.927 12552-12552/? E/AndroidRuntime:     at java.lang.reflect.Method.invoke(Native Method)
+10-02 11:50:56.927 12552-12552/? E/AndroidRuntime:     at java.lang.reflect.Method.invoke(Method.java:372)
+10-02 11:50:56.927 12552-12552/? E/AndroidRuntime:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1020)
+10-02 11:50:56.927 12552-12552/? E/AndroidRuntime:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:815)

@@ -1,0 +1,12 @@
+E/AndroidRuntime( 5839): Caused by: java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+E/AndroidRuntime( 5839):    at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+E/AndroidRuntime( 5839):    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:470)
+E/AndroidRuntime( 5839):    at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:140)
+E/AndroidRuntime( 5839):    at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:104)
+E/AndroidRuntime( 5839):    at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:95)
+E/AndroidRuntime( 5839):    at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:85)
+E/AndroidRuntime( 5839):    at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:74)
+E/AndroidRuntime( 5839):    at org.thoughtcrime.securesms.MediaPreviewActivity$1.doInBackground(MediaPreviewActivity.java:211)
+E/AndroidRuntime( 5839):    at org.thoughtcrime.securesms.MediaPreviewActivity$1.doInBackground(MediaPreviewActivity.java:203)
+E/AndroidRuntime( 5839):    at android.os.AsyncTask$2.call(AsyncTask.java:185)
+E/AndroidRuntime( 5839):    at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:306)

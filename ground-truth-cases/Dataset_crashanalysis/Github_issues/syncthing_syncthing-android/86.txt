@@ -1,0 +1,83 @@
+```
+W/GetTask (10673): Failed to call Rest API at http://127.0.0.1:8080/rest/version                                                                                                     [524/1923]
+W/GetTask (10673): org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:8080 refused
+W/GetTask (10673):      at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:183)
+W/GetTask (10673):      at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:164)
+W/GetTask (10673):      at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:119)
+W/GetTask (10673):      at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:360)
+W/GetTask (10673):      at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+W/GetTask (10673):      at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:487)
+W/GetTask (10673):      at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:465)
+W/GetTask (10673):      at com.nutomic.syncthingandroid.syncthing.GetTask.doInBackground(GetTask.java:60)
+W/GetTask (10673):      at com.nutomic.syncthingandroid.syncthing.GetTask.doInBackground(GetTask.java:26)
+W/GetTask (10673):      at android.os.AsyncTask$2.call(AsyncTask.java:288)
+W/GetTask (10673):      at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+W/GetTask (10673):      at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+W/GetTask (10673):      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/GetTask (10673):      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/GetTask (10673):      at java.lang.Thread.run(Thread.java:811)
+W/GetTask (10673): Caused by: java.net.ConnectException: failed to connect to /127.0.0.1 (port 8080): connect failed: ECONNREFUSED (Connection refused)
+W/GetTask (10673):      at libcore.io.IoBridge.connect(IoBridge.java:114)
+W/GetTask (10673):      at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+W/GetTask (10673):      at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+W/GetTask (10673):      at java.net.Socket.connect(Socket.java:843)
+W/GetTask (10673):      at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119)
+W/GetTask (10673):      at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:144)
+W/GetTask (10673):      ... 14 more
+W/GetTask (10673): Caused by: libcore.io.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+W/GetTask (10673):      at libcore.io.Posix.connect(Native Method)
+W/GetTask (10673):      at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+W/GetTask (10673):      at libcore.io.IoBridge.connectErrno(IoBridge.java:127)
+W/GetTask (10673):      at libcore.io.IoBridge.connect(IoBridge.java:112)
+W/GetTask (10673):      ... 19 more
+I/RestApi (10673): Syncthing version is null
+W/GetTask (10673): Failed to call Rest API at http://127.0.0.1:8080/rest/config
+W/GetTask (10673): org.apache.http.conn.HttpHostConnectException: Connection to http://127.0.0.1:8080 refused
+W/GetTask (10673):      at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:183)
+W/GetTask (10673):      at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:164)
+W/GetTask (10673):      at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:119)
+W/GetTask (10673):      at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:360)
+W/GetTask (10673):      at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+W/GetTask (10673):      at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:487)
+W/GetTask (10673):      at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:465)
+W/GetTask (10673):      at com.nutomic.syncthingandroid.syncthing.GetTask.doInBackground(GetTask.java:60)
+W/GetTask (10673):      at com.nutomic.syncthingandroid.syncthing.GetTask.doInBackground(GetTask.java:26)
+W/GetTask (10673):      at android.os.AsyncTask$2.call(AsyncTask.java:288)
+W/GetTask (10673):      at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+W/GetTask (10673):      at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+W/GetTask (10673):      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/GetTask (10673):      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/GetTask (10673):      at java.lang.Thread.run(Thread.java:811)
+W/GetTask (10673): Caused by: java.net.ConnectException: failed to connect to /127.0.0.1 (port 8080): connect failed: ECONNREFUSED (Connection refused)
+W/GetTask (10673):      at libcore.io.IoBridge.connect(IoBridge.java:114)
+W/GetTask (10673):      at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+W/GetTask (10673):      at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+W/GetTask (10673):      at java.net.Socket.connect(Socket.java:843)
+W/GetTask (10673):      at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119)
+W/GetTask (10673):      at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:144)
+W/GetTask (10673):      ... 14 more
+W/GetTask (10673): Caused by: libcore.io.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+W/GetTask (10673):      at libcore.io.Posix.connect(Native Method)                                                                                                                   [466/1923]
+W/GetTask (10673):      at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+W/GetTask (10673):      at libcore.io.IoBridge.connectErrno(IoBridge.java:127)
+W/GetTask (10673):      at libcore.io.IoBridge.connect(IoBridge.java:112)
+W/GetTask (10673):      ... 19 more
+D/AndroidRuntime(10673): Shutting down VM
+E/AndroidRuntime(10673): FATAL EXCEPTION: main
+E/AndroidRuntime(10673): Process: com.nutomic.syncthingandroid, PID: 10673
+E/AndroidRuntime(10673): java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference
+E/AndroidRuntime(10673):        at org.json.JSONTokener.nextCleanInternal(JSONTokener.java:116)
+E/AndroidRuntime(10673):        at org.json.JSONTokener.nextValue(JSONTokener.java:94)
+E/AndroidRuntime(10673):        at org.json.JSONObject.<init>(JSONObject.java:155)
+E/AndroidRuntime(10673):        at org.json.JSONObject.<init>(JSONObject.java:172)
+E/AndroidRuntime(10673):        at com.nutomic.syncthingandroid.syncthing.RestApi$2.onPostExecute(RestApi.java:210)
+E/AndroidRuntime(10673):        at com.nutomic.syncthingandroid.syncthing.RestApi$2.onPostExecute(RestApi.java:206)
+E/AndroidRuntime(10673):        at android.os.AsyncTask.finish(AsyncTask.java:632)
+E/AndroidRuntime(10673):        at android.os.AsyncTask.access$600(AsyncTask.java:177)
+E/AndroidRuntime(10673):        at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)
+E/AndroidRuntime(10673):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(10673):        at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(10673):        at android.app.ActivityThread.main(ActivityThread.java:5001)
+E/AndroidRuntime(10673):        at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(10673):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+E/AndroidRuntime(10673):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)

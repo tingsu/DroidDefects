@@ -1,0 +1,44 @@
+java.lang.IndexOutOfBoundsException: Invalid location 10, size is 10
+  at java.util.ArrayList.get(ArrayList.java:341)
+  at com.totsp.bookworm.BookSearch$2.onItemClick(BookSearch.java:83)
+  at android.widget.AdapterView.performItemClick(AdapterView.java:284)
+  at android.widget.ListView.performItemClick(ListView.java:3285)
+  at android.widget.AbsListView.onKeyUp(AbsListView.java:1757)
+  at android.widget.ListView.commonKey(ListView.java:2059)
+  at android.widget.ListView.onKeyUp(ListView.java:1968)
+  at android.view.KeyEvent.dispatch(KeyEvent.java:1061)
+  at android.view.View.dispatchKeyEvent(View.java:3683)
+  at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:746)
+  at android.widget.ListView.dispatchKeyEvent(ListView.java:1943)
+  at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:748)
+  at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:748)
+  at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:748)
+  at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:748)
+  at 
+com.android.internal.policy.impl.PhoneWindow$DecorView.superDispatchKeyEven
+t(PhoneWindow.java:1655)
+  at 
+com.android.internal.policy.impl.PhoneWindow.superDispatchKeyEvent(PhoneWin
+dow.java:1102)
+  at android.app.Activity.dispatchKeyEvent(Activity.java:2038)
+  at 
+com.android.internal.policy.impl.PhoneWindow$DecorView.dispatchKeyEvent(Pho
+neWindow.java:1631)
+  at 
+android.view.ViewRoot.deliverKeyEventToViewHierarchy(ViewRoot.java:2368)
+  at android.view.ViewRoot.handleFinishedEvent(ViewRoot.java:2338)
+  at android.view.ViewRoot.handleMessage(ViewRoot.java:1641)
+  at android.os.Handler.dispatchMessage(Handler.java:99)
+  at android.os.Looper.loop(Looper.java:123)
+  at android.app.ActivityThread.main(ActivityThread.java:4363)
+  at java.lang.reflect.Method.invokeNative(Method.java:-2)
+  at java.lang.reflect.Method.invoke(Method.java:521)
+  at 
+com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:
+860)
+  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:618)
+  at dalvik.system.NativeStart.main(NativeStart.java:-2)
+
+```
+
+Original issue reported on code.google.com by `charlie....@gmail.com` on 1 Jun 2010 at 12:46

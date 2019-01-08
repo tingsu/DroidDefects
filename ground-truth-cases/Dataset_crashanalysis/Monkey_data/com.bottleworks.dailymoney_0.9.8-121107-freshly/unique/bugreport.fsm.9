@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: com.bottleworks.dailymoney
+//version: 0.9.8-121107-freshly
+//appro_time: 154
+ java.lang.IllegalStateException: no available dataProvider, di you get data provider out of life cycle
+ 	at com.bottleworks.dailymoney.context.Contexts.getDataProvider(Contexts.java:613)
+ 	at com.bottleworks.dailymoney.ui.DetailEditorActivity.reloadSpinnerData(DetailEditorActivity.java:231)
+ 	at com.bottleworks.dailymoney.ui.DetailEditorActivity.onFromChanged(DetailEditorActivity.java:318)
+ 	at com.bottleworks.dailymoney.ui.DetailEditorActivity.access$300(DetailEditorActivity.java:43)
+ 	at com.bottleworks.dailymoney.ui.DetailEditorActivity$3.onItemSelected(DetailEditorActivity.java:205)
+ 	at android.widget.AdapterView.fireOnSelected(AdapterView.java:892)
+ 	at android.widget.AdapterView.access$200(AdapterView.java:49)
+ 	at android.widget.AdapterView$SelectionNotifier.run(AdapterView.java:860)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

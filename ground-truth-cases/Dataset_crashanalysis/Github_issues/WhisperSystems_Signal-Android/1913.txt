@@ -1,0 +1,423 @@
+W/PartDatabase(15128): Wrote part to file: /data/data/org.thoughtcrime.securesms/app_parts/part137216395.mms
+W/PartDatabase(15128): Inserted part at ID: 150
+W/PartDatabase(15128): Writing part data from buffer
+W/EncryptingPartDatabase(15128): Writing part to: /data/data/org.thoughtcrime.securesms/app_parts/part709241015.mms
+W/PartDatabase(15128): Wrote part to file: /data/data/org.thoughtcrime.securesms/app_parts/part709241015.mms
+W/PartDatabase(15128): Inserted part at ID: 151
+W/MmsSmsDatabase(15128): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 172) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 172) ORDER BY date_received DESC) LIMIT 1
+W/Session (15128): Checking session...
+D/AbsListView(15128): onDetachedFromWindow
+D/AbsListView(15128): unregisterIRListener() is called 
+I/SpenGestureManager( 1945): setFocusWindow21055
+D/KeyguardUpdateMonitor( 2354): sendKeyguardVisibilityChanged(true)
+D/KeyguardUpdateMonitor( 2354): handleKeyguardVisibilityChanged(1)
+D/PointerIcon( 1945): setMouseIconStyle1 pointerType: 1001iconType:101 flag:0
+D/PointerIcon( 1945): setMouseCustomIcon IconType is same.101
+D/PointerIcon( 1945): setHoveringSpenIconStyle1 pointerType: 10001iconType:1 flag:0
+D/PointerIcon( 1945): setHoveringSpenCustomIcon IconType is same.1
+D/AbsListView(15128): unregisterIRListener() is called 
+D/CustomFrequencyManagerService( 1945): releaseDVFSLockLocked : Getting Lock type frm List : DVFS_MIN_LIMIT  frequency : 2457600  uid : 1000  pid : 1945  tag : ROTATION_BOOSTER@31
+W/MmsSender(15128): Got intent action: org.thoughtcrime.securesms.SendReceiveService.SEND_MMS_ACTION
+D/AbsListView(15128): unregisterIRListener() is called 
+W/EncryptingPartDatabase(15128): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part137216395.mms
+W/EncryptingPartDatabase(15128): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part709241015.mms
+E/ViewRootImpl(15128): sendUserActionEvent() mView == null
+D/SViewCoverWidget( 2879): initClock() : TimeZone =libcore.util.ZoneInfo[id="Europe/London",mRawOffset=0,mEarliestRawOffset=0,mUseDst=true,mDstSavings=3600000,transitions=242]
+W/InputMethodManagerService( 1945): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@43d4d920 attribute=null, token = android.os.BinderProxy@44e99538
+D/SViewCoverPager( 2879): [widthMeasureSpec, heightMeasureSpec] = [1073742838, 1073742781]
+D/KeyguardUpdateMonitor( 2354): sendKeyguardVisibilityChanged(true)
+D/KeyguardUpdateMonitor( 2354): handleKeyguardVisibilityChanged(1)
+I/SurfaceFlinger( 1588): id=1948 Removed Donversatio (32/48)
+I/SurfaceFlinger( 1588): id=1948 Removed Donversatio (-2/48)
+D/KeyguardUpdateMonitor( 2354): sendKeyguardVisibilityChanged(true)
+D/KeyguardUpdateMonitor( 2354): handleKeyguardVisibilityChanged(1)
+D/dalvikvm(15128): GC_FOR_ALLOC freed 14332K, 47% free 29621K/55140K, paused 56ms, total 56ms
+D/AbsListView(15128): [unregisterDoubleTapMotionListener]
+D/AbsListView(15128): unregisterIRListener() is called 
+I/MotionRecognitionManager(15128):   .unregisterListener : / listener count = 0->0,  
+D/AbsListView(15128): unregisterIRListener() is called 
+W/ImageSlide(15128): Got soft reference: java.lang.ref.SoftReference@432169a0
+W/ImageSlide(15128): Got cached bitmap: android.graphics.drawable.BitmapDrawable@43bda1d8
+W/ImageSlide(15128): Setting cached thumbnail...
+D/AbsListView(15128): unregisterIRListener() is called 
+W/MmsSender(15128): Passing to MMS transport: 251
+W/MmsTransport(15128): Sending MMS with radio change and proxy...
+D/EnterpriseDeviceManager( 1945): ContainerId: 0
+E/PhoneRestrictionPolicy( 1945): getEmergencyCall >>false
+W/MmsRadio(15128): startUsingNetworkFeature status: 1
+D/ConnectivityService( 1945): startUsingNetworkFeature reconnecting to 0: enableMMS
+D/ConnectivityService( 1945): startUsingNetworkFeature X: return APN_REQUEST_STARTED
+D/MobileDataStateTracker( 1945): mms: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=mms
+D/MobileDataStateTracker( 1945): mms: Received state=CONNECTING, old=DISCONNECTED, reason=dataEnabled
+D/MobileDataStateTracker( 1945): mms: setDetailed state, old =IDLE and new state=CONNECTING
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+D/MobileDataStateTracker( 1945): fota: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=fota
+D/MobileDataStateTracker( 1945): fota: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataEnabled
+D/MobileDataStateTracker( 1945): dun: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=dun
+D/MobileDataStateTracker( 1945): dun: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataEnabled
+D/MobileDataStateTracker( 1945): ia: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=ia
+D/MobileDataStateTracker( 1945): ia: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataEnabled
+D/MobileDataStateTracker( 1945): supl: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=supl
+D/MobileDataStateTracker( 1945): supl: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataEnabled
+D/MobileDataStateTracker( 1945): hipri: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=hipri
+D/MobileDataStateTracker( 1945): hipri: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataEnabled
+D/PhoneApp( 2584): mReceiver: ACTION_ANY_DATA_CONNECTION_STATE_CHANGED
+D/FileWriteThread( 2584): FileWriteThread : threadType = 3
+D/PhoneApp( 2584): mReceiver: ACTION_ANY_DATA_CONNECTION_STATE_CHANGED
+D/FileWriteThread( 2584): FileWriteThread : threadType = 3
+D/PhoneApp( 2584): mReceiver: ACTION_ANY_DATA_CONNECTION_STATE_CHANGED
+D/FileWriteThread( 2584): FileWriteThread : threadType = 3
+D/PhoneApp( 2584): mReceiver: ACTION_ANY_DATA_CONNECTION_STATE_CHANGED
+D/FileWriteThread( 2584): FileWriteThread : threadType = 3
+D/PhoneApp( 2584): mReceiver: ACTION_ANY_DATA_CONNECTION_STATE_CHANGED
+D/MobileDataStateTracker( 1945): ims: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=ims
+D/MobileDataStateTracker( 1945): ims: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataEnabled
+D/FileWriteThread( 2584): FileWriteThread : threadType = 3
+D/PhoneApp( 2584): mReceiver: ACTION_ANY_DATA_CONNECTION_STATE_CHANGED
+D/FileWriteThread( 2584): FileWriteThread : threadType = 3
+D/PhoneApp( 2584): mReceiver: ACTION_ANY_DATA_CONNECTION_STATE_CHANGED
+D/FileWriteThread( 2584): FileWriteThread : threadType = 3
+D/PhoneApp( 2584): mReceiver: ACTION_ANY_DATA_CONNECTION_STATE_CHANGED
+D/FileWriteThread( 2584): FileWriteThread : threadType = 3
+D/PhoneApp( 2584): mReceiver: ACTION_ANY_DATA_CONNECTION_STATE_CHANGED
+D/FileWriteThread( 2584): FileWriteThread : threadType = 3
+D/MobileDataStateTracker( 1945): cbs: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=cbs
+D/MobileDataStateTracker( 1945): cbs: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataEnabled
+D/MobileDataStateTracker( 1945): bip: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=bip
+D/MobileDataStateTracker( 1945): bip: Received state=DISCONNECTED, old=DISCONNECTED, reason=dataEnabled
+D/AbsListView(15128): unregisterIRListener() is called 
+W/ImageSlide(15128): Got soft reference: java.lang.ref.SoftReference@432169a0
+W/ImageSlide(15128): Got cached bitmap: android.graphics.drawable.BitmapDrawable@43bda1d8
+W/ImageSlide(15128): Setting cached thumbnail...
+D/AbsListView(15128): unregisterIRListener() is called 
+I/wpa_supplicant( 2316): nl80211: Received scan results (17 BSSes)
+D/Tethering( 1945): interfaceLinkStateChanged wlan0, true
+D/Tethering( 1945): interfaceStatusChanged wlan0, true
+D/dalvikvm( 1945): GC_EXPLICIT freed 6991K, 20% free 75055K/93440K, paused 6ms+10ms, total 216ms
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+D/LocationManagerService( 1945): Not screening locations
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+E/LocSvc_flp( 1945): I/===> int flp_inject_location(FlpLocation*) line 194 
+E/LocSvc_utils_q( 1945): D/msg_q_snd: Sending message with handle = 0x7B4568F0
+E/LocSvc_utils_ll( 1945): D/linked_list_add: Adding to list data_obj = 0x7B4568F0
+E/LocSvc_utils_q( 1945): D/msg_q_rcv: Received message 0x7B4568F0 rv = 0
+E/LocSvc_api_v02( 1945): I/---> locClientSendReq line 2332 QMI_LOC_INJECT_POSITION_REQ_V02
+E/LocSvc_utils_q( 1945): D/msg_q_snd: Finished Sending message with handle = 0x7B4568F0
+E/LocSvc_ApiV02( 1945): I/<--- void globalRespCb(locClientHandleType, uint32_t, locClientRespIndUnionType, void*) line 113 QMI_LOC_INJECT_POSITION_REQ_V02
+E/LocSvc_api_v02( 1945): D/loc_free_slot:299]: freeing slot 0
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+D/dalvikvm(30512): GC_CONCURRENT freed 6091K, 31% free 18788K/27228K, paused 2ms+1ms, total 52ms
+I/GCoreUlr( 2859): Successfully inserted location
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/GCoreUlr( 2859): Starting service, intent=Intent { cmp=com.google.android.gms/com.google.android.location.reporting.LocationReportingService }, extras=null
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+V/AudioPolicyManagerBase( 1591): stopOutput() output 3, stream 1, session 3446
+V/AudioPolicyManagerBase( 1591): changeRefCount() stream 1, count 0
+V/AudioPolicyManagerBase( 1591): getNewDevice() selected device 0
+V/AudioPolicyManagerBase( 1591): setOutputDevice() output 3 device 0000 force 0 delayMs 100 
+V/AudioPolicyManagerBase( 1591): setOutputDevice() prevDevice (0002)
+V/AudioPolicyManagerBase( 1591): setOutputDevice() setting same device 0000 or null device for output 3
+W/GLSUser ( 2774): GoogleAccountDataService.getToken()
+D/dalvikvm( 2859): GC_CONCURRENT freed 1856K, 26% free 20191K/27228K, paused 3ms+2ms, total 39ms
+D/dalvikvm( 2859): WAIT_FOR_CONCURRENT_GC blocked 31ms
+I/mbh     ( 2859): I/O exception (javax.net.ssl.SSLException) caught when processing request: Write error: ssl=0x78af71d0: I/O error during system call, Broken pipe
+I/mbh     ( 2859): Retrying request
+D/STATUSBAR-NetworkController( 2354): onDataActivity: direction=3
+D/STATUSBAR-NetworkController( 2354): refreshSignalCluster - setNWBoosterIndicators(true), showBoosterIcon : false
+D/STATUSBAR-NetworkController( 2354): refreshSignalCluster: data=2 bt=false
+D/Tethering( 1945): interfaceLinkStateChanged rmnet1, true
+D/Tethering( 1945): interfaceStatusChanged rmnet1, true
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+D/STATUSBAR-NetworkController( 2354): onDataActivity: direction=3
+D/STATUSBAR-NetworkController( 2354): onDataActivity: direction=3
+E/MP-Decision( 1470): CPU1 On from Data Packet
+E/MP-Decision( 1470): CPU Freq Max
+D/MobileDataStateTracker( 1945): mms: Broadcast received: android.intent.action.ANY_DATA_STATE apnType=mms
+D/MobileDataStateTracker( 1945): mms: Received state=CONNECTED, old=CONNECTING, reason=connected
+D/MobileDataStateTracker( 1945): mms: setDetailed state, old =CONNECTING and new state=CONNECTED
+D/ConnectivityService( 1945): ConnectivityChange for mobile_mms: CONNECTED/CONNECTED
+E/ConnectivityService( 1945): Exception trying to remove a route: java.lang.IllegalStateException: command '3488 interface route remove rmnet1 default 0.0.0.0 0 10.4.44.157' failed with '400 3488 Failed to remove route from default table (No such process)'
+D/ConnectivityService( 1945): updateSourceRoutes : no source routing conditions
+D/SmartBondingService( 1945): SmartBondingReceiver: onReceive action=android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+D/SmartBondingService( 1945): EVENT_UPDATE_SB_STATE called / mDisableBySIOP false
+D/SmartBondingService( 1945): getNetworkEnabled : wifi : false mobile : true
+D/STATUSBAR-NetworkController( 2354): onSignalStrengthsChanged signalStrength=SignalStrength: 99 -1 -1 -1 -1 -1 -1 28 -87 -7 236 -1 2147483647 gsm|lte 0x3 level=3
+D/EnterpriseDeviceManager( 1945): ContainerId: 0
+D/PhoneApp( 2584): mReceiver: ACTION_ANY_DATA_CONNECTION_STATE_CHANGED
+D/FileWriteThread( 2584): FileWriteThread : threadType = 3
+D/EnterpriseDeviceManager( 1945): ContainerId: 0
+D/MobileDataStateTracker( 1945): default: setPolicyDataEnable(enabled=true)
+D/NotificationMgr( 2584): hideDataDisconnectedRoaming()...
+E/SMD     ( 1584): DCD ON
+W/NetworkStats( 1945): getDevSummary: NetworkStats: elapsedRealtime=0
+W/NetworkStats( 1945): getXtSummary: NetworkStats: elapsedRealtime=1131749085
+W/NetworkStats( 1945):   [0] iface=null uid=-1 set=ALL tag=0x0 rxBytes=653150814 rxPackets=794652 txBytes=110655436 txPackets=744283 operations=0
+W/NetworkPolicy( 1945): shared quota unsupported; generating rule for each iface
+I/System.out( 2859): Thread-118 calls detatch()
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/GCoreUlr( 2859): Starting service, intent=Intent { act=com.google.android.location.reporting.ACTION_UPDATE_ACTIVE_STATE cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService }, extras=null
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/AdsMeasurementBroadcastReceiver(10253): Reporting settings might have changed, alerting AdsMeasurementService
+I/GCoreUlr( 2859): Batch Location Update succeeded for account account#-9#
+D/AdsMeasurementBroadcastReceiver(10253): Unauthorized to start the main service
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/GCoreUlr( 2859): Ensuring that reporting is active for [account#-9#]
+I/GCoreUlr( 2859): Starting service, intent=Intent { act=com.google.android.location.reporting.ACTION_LOCATION_STATUS cmp=com.google.android.gms/com.google.android.location.reporting.service.DispatchingService (has extras) }, extras=Bundle[{status=LocationStatus[cell status: STATUS_SUCCESSFUL, wifi status: STATUS_SUCCESSFUL, elapsed realtime ns: 154033447074639]}]
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+D/dalvikvm( 2774): GC_EXPLICIT freed 195K, 34% free 18024K/27228K, paused 2ms+2ms, total 32ms
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+D/Tethering( 1945): Tethering got CONNECTIVITY_ACTION
+D/Tethering( 1945): MasterInitialState.processMessage what=3
+D/CaptivePortalTracker( 1945): NoActiveNetworkState{ when=0 what=1 obj=NetworkInfo: type: mobile_mms[LTE], state: CONNECTED/CONNECTED, reason: connected, extra: eezone, roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false target=com.android.internal.util.StateMachine$SmHandler }
+D/CaptivePortalTracker( 1945): NoActiveNetworkState not a wifi connectivity change, ignore
+D/SmartBondingService( 1945): SmartBondingReceiver: onReceive action=android.net.conn.CONNECTIVITY_CHANGE
+D/SmartBondingService( 1945): EVENT_UPDATE_SB_STATE called / mDisableBySIOP false
+D/SmartBondingService( 1945): getNetworkEnabled : wifi : false mobile : true
+D/STATUSBAR-NetworkController( 2354): onReceive() - CONNECTIVITY_ACTION, INET_CONDITION_ACTION
+D/STATUSBAR-NetworkController( 2354): getUpdateDataNetType() - mDataNetType:13
+D/STATUSBAR-NetworkController( 2354): updateDataNetType()
+D/LocSvc_java( 1945): updateNetworkState available info: NetworkInfo: type: mobile_mms[LTE], state: CONNECTED/CONNECTED, reason: connected, extra: eezone, roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false
+D/LocSvc_java( 1945): getAGpsConnectionInfo connType - 3
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+D/STATUSBAR-NetworkController( 2354): Nothing, mRoamingIconId = 0
+E/StatusBar.NetworkController( 2354): updateORGDataNetType:13
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+W/MmsRadio(15128): Got connectivity change...
+W/MmsRadio(15128): Notifying connected...
+W/PduComposer(15128): Making send request...
+W/PduComposer(15128): Making message body...
+W/PduComposer(15128): Returning: 234093 bytes...
+W/Session (15128): Checking session...
+I/AmazonVideo.connectivity(30067): NetworkConnectionManager$ConnectivityChangeReceiver.onReceive: Received CONNECTIVITY_ACTION intent. Refreshing network info.
+I/SELinux (31709): Function: selinux_android_load_priority [0], There is no sepolicy file.
+I/SELinux (31709):  
+I/SELinux (31709): Function: selinux_android_load_priority [1], There is no sepolicy version file.
+I/SELinux (31709):  
+I/SELinux (31709): Function: selinux_android_load_priority , priority version is VE=SEPF_SM-G900F_4.4.2_0016
+I/SELinux (31709):  
+I/SELinux (31709):  
+I/SELinux (31709): selinux_android_seapp_context_reload: seapp_contexts file is loaded from /seapp_contexts
+E/dalvikvm(31709): >>>>> Normal User
+E/dalvikvm(31709): >>>>> com.sec.pcw.device [ userId:0 | appId:1000 ]
+I/SNL     (10109): Proxy service version is 2.7.3.0
+I/SNL     (10109): SNL :: p_nc - Call(2)
+I/SNL     (10109): SNL :: p_nc - version 0.2.7.3.0
+I/SNL     (10109): SNL :: APM::onNotifyNetChange - Guard Locked
+I/SNL     (10109): SNL :: APM::onNotifyNetChange - Guard Locked
+I/SNL     (10109): SNL :: APM::onNotifyNetChange - end
+I/SNL     (10109): SNL :: p_nc - Res()
+D/dalvikvm(15128): GC_FOR_ALLOC freed 3053K, 45% free 30691K/55140K, paused 61ms, total 62ms
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+W/PduComposer(15128): Making send request...
+W/PduComposer(15128): Making message body...
+W/PduComposer(15128): Returning: 312366 bytes...
+W/MmsSendHelper(15128): Sending MMS of length: 312366. using mms radio
+W/MmsCommunication(15128): Getting MMSC params for apn eezone
+I/dalvikvm(31709): Enabling JNI app bug workarounds for target SDK version 8...
+E/Watchdog( 1945): !@Sync 2289
+E/DatabaseUtils( 2584): Writing exception to parcel
+E/DatabaseUtils( 2584): java.lang.SecurityException: No permission to write APN settings: Neither user 10228 nor current process has android.permission.WRITE_APN_SETTINGS.
+E/DatabaseUtils( 2584):     at android.app.ContextImpl.enforce(ContextImpl.java:2179)
+E/DatabaseUtils( 2584):     at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:2208)
+E/DatabaseUtils( 2584):     at com.android.providers.telephony.TelephonyProvider.checkPermission(TelephonyProvider.java:2174)
+E/DatabaseUtils( 2584):     at com.android.providers.telephony.TelephonyProvider.query(TelephonyProvider.java:1153)
+E/DatabaseUtils( 2584):     at android.content.ContentProvider.query(ContentProvider.java:857)
+E/DatabaseUtils( 2584):     at android.content.ContentProvider$Transport.query(ContentProvider.java:200)
+E/DatabaseUtils( 2584):     at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:112)
+E/DatabaseUtils( 2584):     at android.os.Binder.execTransact(Binder.java:404)
+E/DatabaseUtils( 2584):     at dalvik.system.NativeStart.run(Native Method)
+W/MmsCommunication(15128): Android won't let us query the APN database.
+W/TelephonyUtil(15128): Choosing MCC+MNC info from TelephonyManager.getSimOperator()
+W/ApnDatabase(15128): Querying table for MCC+MNC 23430 and APN name eezone
+W/ApnDatabase(15128): Returning preferred APN MmsConnectionParameters{ mmsc: "http://mms/", proxy: "149.254.201.135", port: 8080 }
+W/MmsCommunication(15128): Checking route to address: 149.254.201.135 , 149.254.201.135
+D/ConnectivityService( 1945): isIpv4Connected: true
+I/PCWCLIENTTRACE_LOG(31709): DEFAULT_LOGON : true
+I/PCWCLIENTTRACE_LOG(31709): DEFAULT_LOGLEVEL : 3
+I/PCWCLIENTTRACE_PushUtil(31709): SPPPushClient is installed : true
+I/PCWCLIENTTRACE_PushUtil(31709): sales region : global
+I/PCWCLIENTTRACE_PushUtil(31709): getPushTypeList : [SPP, GCM]
+I/PCWCLIENTTRACE_SYSTEMReceiver(31709): [onReceive] - android.net.conn.CONNECTIVITY_CHANGE
+I/ActivityManager( 1945): Killing 30450:com.twitter.android/u0a222 (adj 15): empty #31
+I/SELinux (31740): Function: selinux_android_load_priority [0], There is no sepolicy file.
+I/SELinux (31740):  
+I/SELinux (31740): Function: selinux_android_load_priority [1], There is no sepolicy version file.
+I/SELinux (31740):  
+I/SELinux (31740): Function: selinux_android_load_priority , priority version is VE=SEPF_SM-G900F_4.4.2_0016
+I/SELinux (31740):  
+I/SELinux (31740):  
+I/SELinux (31740): selinux_android_seapp_context_reload: seapp_contexts file is loaded from /seapp_contexts
+E/dalvikvm(31740): >>>>> Normal User
+E/dalvikvm(31740): >>>>> com.sec.android.diagmonagent [ userId:0 | appId:1000 ]
+W/MmsCommunication(15128): Constructing http client using a proxy: (149.254.201.135:8080)
+W/MmsSendHelper(15128): Connecting to http://mms/
+W/NetworkStats( 1945): getDevSummary: NetworkStats: elapsedRealtime=0
+D/ConnectivityService( 1945): requestRouteToHostAddress ok=true
+W/NetworkStats( 1945): getXtSummary: NetworkStats: elapsedRealtime=1131749889
+W/NetworkStats( 1945):   [0] iface=null uid=-1 set=ALL tag=0x0 rxBytes=653150814 rxPackets=794652 txBytes=110655436 txPackets=744283 operations=0
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+D/EnterpriseDeviceManager( 1945): ContainerId: 0
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+D/MobileDataStateTracker( 1945): default: setPolicyDataEnable(enabled=true)
+W/NetworkStats( 1945): getDevSummary: NetworkStats: elapsedRealtime=0
+W/NetworkStats( 1945): getXtSummary: NetworkStats: elapsedRealtime=1131749901
+W/NetworkStats( 1945):   [0] iface=null uid=-1 set=ALL tag=0x0 rxBytes=653150814 rxPackets=794652 txBytes=110655436 txPackets=744283 operations=0
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+W/MmsSendHelper(15128): Writing mms payload, 312366 bytes
+W/MmsSendHelper(15128): Payload sent
+I/DBG_DIAGMONDM(31740): [1.140242.0257][Line:545][xdmGetCheckWifiOnlyModel] isWifiOnly : false
+I/DBG_DIAGMONDM(31740): [1.140242.0257][Line:48][onCreate] myUserId : 0
+I/DBG_DIAGMONDM(31740): [1.140242.0257][Line:390][xdbDMffs_Init] 
+I/DBG_DIAGMONDM(31740): [1.140242.0257][Line:70][onCreate] nStatus : 0
+I/SELinux (31755): Function: selinux_android_load_priority [0], There is no sepolicy file.
+I/SELinux (31755):  
+I/SELinux (31755): Function: selinux_android_load_priority [1], There is no sepolicy version file.
+I/SELinux (31755):  
+I/SELinux (31755): Function: selinux_android_load_priority , priority version is VE=SEPF_SM-G900F_4.4.2_0016
+I/SELinux (31755):  
+I/SELinux (31755):  
+I/SELinux (31755): selinux_android_seapp_context_reload: seapp_contexts file is loaded from /seapp_contexts
+E/dalvikvm(31755): >>>>> Normal User
+E/dalvikvm(31755): >>>>> com.sec.android.fotaclient [ userId:0 | appId:10013 ]
+E/DatabaseUtils(31755): Writing exception to parcel
+E/DatabaseUtils(31755): java.lang.SecurityException: Permission Denial
+E/DatabaseUtils(31755):     at com.sec.android.log.provider.AbstractLogProvider.enforceAgreement(AbstractLogProvider.java:98)
+E/DatabaseUtils(31755):     at com.sec.android.log.provider.AbstractLogProvider.call(AbstractLogProvider.java:110)
+E/DatabaseUtils(31755):     at com.sec.android.log.provider.MasterLogProvider.call(MasterLogProvider.java:78)
+E/DatabaseUtils(31755):     at android.content.ContentProvider$Transport.call(ContentProvider.java:325)
+E/DatabaseUtils(31755):     at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:275)
+E/DatabaseUtils(31755):     at android.os.Binder.execTransact(Binder.java:404)
+E/DatabaseUtils(31755):     at dalvik.system.NativeStart.run(Native Method)
+I/ActivityManager( 1945): Killing 30491:com.tripit/u0a224 (adj 15): empty #31
+D/FOTA_Client(31755): [FotaRegisterReceiver.java(Line:85/Method:onReceive)] Receive broadcast meassage:android.net.conn.CONNECTIVITY_CHANGE
+I/FOTA_Client(31755): [FotaRegisterReceiver.java] Already device registered...
+D/FOTA_Client(31755): [FotaUpdaterReceiver.java(Line:80/Method:onReceive)] Receive broadcast meassage:android.net.conn.CONNECTIVITY_CHANGE
+I/FOTA_Client(31755): [FotaUpdaterReceiver.java] Heartbeat settings is activated.
+I/FOTA_Client(31755): [Heartbeat.java] heartbeat time is not vaild
+I/FOTA_Client(31755): [FotaUpdaterReceiver.java] Heartbeat time is already passed. Start Heartbeat report Immediately
+I/FOTA_Client(31755): [FotaReportHeartBeatService.java] HeartBeat State: Report polling HeartBeat
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+D/GCM     ( 2774): GcmService start Intent { act=android.net.conn.CONNECTIVITY_CHANGE flg=0x4000010 cmp=com.google.android.gms/.gcm.GcmService (has extras) } android.net.conn.CONNECTIVITY_CHANGE
+I/FOTA_Client(31755): [NetConnect.java] Request Network Connection
+I/FOTA_Client(31755): [FotaReportHeartBeatService.java] Request NetActionReportHeartBeat Polling
+I/FOTA_Client(31755): [NetCondition.java] Network is connected
+I/FOTA_Client(31755): [ServerTimeManager.java] Request ServerTime
+W/System.err(31755): [DEBUG] GbaRequest - GbaRequest: Constructor Called 222 userAgent null
+W/System.err(31755): [DEBUG] NafRequest - NafRequest: NafRequest constructor===useragent null
+I/FOTA_Client(31755): [RestClient.java] =====================================================================
+I/FOTA_Client(31755): [RestClient.java] =====================================================================
+I/SELinux (31772): Function: selinux_android_load_priority [0], There is no sepolicy file.
+I/SELinux (31772):  
+I/SELinux (31772): Function: selinux_android_load_priority [1], There is no sepolicy version file.
+I/SELinux (31772):  
+I/SELinux (31772): Function: selinux_android_load_priority , priority version is VE=SEPF_SM-G900F_4.4.2_0016
+I/SELinux (31772):  
+I/SELinux (31772):  
+I/SELinux (31772): selinux_android_seapp_context_reload: seapp_contexts file is loaded from /seapp_contexts
+E/dalvikvm(31772): >>>>> Normal User
+E/dalvikvm(31772): >>>>> com.samsung.klmsagent [ userId:0 | appId:10020 ]
+I/ServiceKeeper( 1945): In getappinfo pid = 1945 pkgName = android appinfo = null
+I/ServiceKeeper( 1945): In getseinfo pid = 1945 uid = 1000 seinfo= system
+I/System.out(31755): Thread-44941(ApacheHTTPLog):Reading from variable values from setDefaultValuesToVariables
+I/System.out(31755): Thread-44941(ApacheHTTPLog):isShipBuild true
+I/System.out(31755): Thread-44941(ApacheHTTPLog):SmartBonding Enabling is true, SHIP_BUILD is true, log to file is false, DBG is false
+D/KLMS-2.3.164 : (31772): KLMSValidator() : checkQATesting()
+I/KLMS-2.3.164 : (31772): MainReciver() : EventNotificationReciver- method called: AppActivityListner onReceive for Intent Action : android.net.conn.CONNECTIVITY_CHANGE , timestamp: 1410657751720
+I/KLMS-2.3.164 : (31772): KLMSUtility() : isNetworkAvailable() - WIFI : false| MOBILE : true
+I/SELinux (31787): Function: selinux_android_load_priority [0], There is no sepolicy file.
+I/SELinux (31787):  
+I/SELinux (31787): Function: selinux_android_load_priority [1], There is no sepolicy version file.
+I/SELinux (31787):  
+I/SELinux (31787): Function: selinux_android_load_priority , priority version is VE=SEPF_SM-G900F_4.4.2_0016
+I/SELinux (31787):  
+I/SELinux (31787):  
+I/SELinux (31787): selinux_android_seapp_context_reload: seapp_contexts file is loaded from /seapp_contexts
+E/dalvikvm(31787): >>>>> Normal User
+E/dalvikvm(31787): >>>>> com.vlingo.midas [ userId:0 | appId:10037 ]
+I/ActivityManager( 1945): Killing 20314:com.sec.android.app.samsungapps/u0a43 (adj 15): empty #31
+W/MmsSendHelper(15128): Response code: 200/OK
+W/MmsCommunication(15128): Received full server response, 44 bytes
+W/PduParser(15128): parse() called...
+W/PduParser(15128): Message Type: 129
+W/MmsSender(15128): Sent MMS part of content-type: text/plain
+W/MmsSender(15128): org.thoughtcrime.securesms.transport.UndeliverableMessageException: Got bad response: 225
+W/MmsSender(15128):     at org.thoughtcrime.securesms.transport.MmsTransport.sendMms(MmsTransport.java:137)
+W/MmsSender(15128):     at org.thoughtcrime.securesms.transport.MmsTransport.deliver(MmsTransport.java:87)
+W/MmsSender(15128):     at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:113)
+W/MmsSender(15128):     at org.thoughtcrime.securesms.service.MmsSender.handleSendMms(MmsSender.java:79)
+W/MmsSender(15128):     at org.thoughtcrime.securesms.service.MmsSender.process(MmsSender.java:60)
+W/MmsSender(15128):     at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:275)
+W/MmsSender(15128):     at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)

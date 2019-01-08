@@ -1,0 +1,210 @@
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)
+12:31:10.328 Debug cgeo 26228  Database clean: started
+12:31:10.328 Error cgeo 26228  MainActivity.CountBubbleUpdateThread.run
+12:31:10.328 Error cgeo 26228  java.lang.IllegalMonitorStateException: object not locked by thread before wait()
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Native Method)
+12:31:10.328 Error cgeo 26228   at java.lang.Object.wait(Object.java:401)
+12:31:10.328 Error cgeo 26228   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:657)

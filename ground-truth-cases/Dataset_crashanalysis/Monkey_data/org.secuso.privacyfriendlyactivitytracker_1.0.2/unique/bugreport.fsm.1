@@ -1,0 +1,16 @@
+//this is an auto-generated bug report
+//package name: org.secuso.privacyfriendlyactivitytracker
+//version: 1.0.2
+//appro_time: 18
+ FATAL EXCEPTION: AsyncTask #1
+ java.lang.IllegalStateException: Cannot call this method while RecyclerView is computing a layout or scrolling
+ 	at android.support.v7.widget.RecyclerView.assertNotInLayoutOrScroll(RecyclerView.java:2457)
+ 	at android.support.v7.widget.RecyclerView$RecyclerViewDataObserver.onItemRangeChanged(RecyclerView.java:4803)
+ 	at android.support.v7.widget.RecyclerView$AdapterDataObservable.notifyItemRangeChanged(RecyclerView.java:10783)
+ 	at android.support.v7.widget.RecyclerView$AdapterDataObservable.notifyItemRangeChanged(RecyclerView.java:10774)
+ 	at android.support.v7.widget.RecyclerView$Adapter.notifyItemChanged(RecyclerView.java:6363)
+ 	at org.secuso.privacyfriendlyactivitytracker.fragments.MonthlyReportFragment$2.run(MonthlyReportFragment.java:331)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

@@ -1,0 +1,5 @@
+ Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector
+                                                                           at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:969)
+                                                                           at android.graphics.drawable.Drawable.createFromXml(Drawable.java:913)
+                                                                           at android.content.res.Resources.loadDrawable(Resources.java:3449)
+                                                                           at android.content.res.Resources.getDrawable(Resources.java:1896) 

@@ -1,0 +1,9 @@
+    java.lang.NullPointerException
+            at com.google.android.apps.muzei.util.IOUtil.readFullyWriteToOutputStream(IOUtil.java:210)
+            at com.google.android.apps.muzei.util.IOUtil.readFullyWriteToFile(IOUtil.java:202)
+            at com.google.android.apps.muzei.ArtworkCache.maybeDownloadCurrentArtworkSync(ArtworkCache.java:122)
+            at com.google.android.apps.muzei.TaskQueueService.onHandleIntent(TaskQueueService.java:56)
+            at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+            at android.os.Handler.dispatchMessage(Handler.java:102)
+            at android.os.Looper.loop(Looper.java:136)
+            at android.os.HandlerThread.run(HandlerThread.java:61)

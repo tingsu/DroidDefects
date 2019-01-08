@@ -1,0 +1,6 @@
+12:50:31.267 Error cgeo 22499  java.lang.IllegalStateException: attempt to re-open an already-closed object: SQLiteProgram: SELECT count(_id) FROM cg_caches WHERE reason >= 1
+12:50:31.267 Error cgeo 22499   at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:55)
+12:50:31.268 Error cgeo 22499   at android.database.sqlite.SQLiteStatement.simpleQueryForLong(SQLiteStatement.java:105)
+12:50:31.268 Error cgeo 22499   at cgeo.geocaching.DataStore$PreparedStatement.simpleQueryForLong(DataStore.java:2915)
+12:50:31.268 Error cgeo 22499   at cgeo.geocaching.DataStore.getAllCachesCount(DataStore.java:2609)
+12:50:31.268 Error cgeo 22499   at cgeo.geocaching.MainActivity$CountBubbleUpdateThread.run(MainActivity.java:684)

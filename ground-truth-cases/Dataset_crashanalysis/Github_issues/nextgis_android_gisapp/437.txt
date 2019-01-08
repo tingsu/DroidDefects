@@ -1,0 +1,4 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.Iterator java.util.ArrayList.iterator()' on a null object reference
+    at com.nextgis.maplibui.service.LayerFillService$NGWVectorLayerFillTask.execute(LayerFillService.java:663)
+    at com.nextgis.maplibui.service.LayerFillService$2.run(LayerFillService.java:254)
+    at java.lang.Thread.run(Thread.java:818)

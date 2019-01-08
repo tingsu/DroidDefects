@@ -1,0 +1,11 @@
+02-09 18:37:37.617 W/System.err(18160): javax.net.ssl.SSLException: Write error: ssl=0x774d37b0: I/O error during system call, Connection reset by peer
+02-09 18:37:37.617 W/System.err(18160):     at com.android.org.conscrypt.NativeCrypto.SSL_write(Native Method)
+02-09 18:37:37.617 W/System.err(18160):     at com.android.org.conscrypt.OpenSSLSocketImpl$SSLOutputStream.write(OpenSSLSocketImpl.java:731)
+02-09 18:37:37.617 W/System.err(18160):     at java.io.OutputStream.write(OutputStream.java:82)
+02-09 18:37:37.617 W/System.err(18160):     at com.ubergeek42.weechat.relay.RelayConnection$1.run(RelayConnection.java:229)
+02-09 18:37:37.617 W/System.err(18160):     at java.lang.Thread.run(Thread.java:841)
+02-09 18:37:37.627 W/dalvikvm(18160): threadid=18: thread exiting with uncaught exception (group=0x417adba8)
+
+02-09 18:37:37.827 E/ACRA    (18160): java.lang.NullPointerException
+02-09 18:37:37.827 E/ACRA    (18160):   at com.ubergeek42.weechat.relay.RelayConnection$1.run(RelayConnection.java:229)
+02-09 18:37:37.827 E/ACRA    (18160):   at java.lang.Thread.run(Thread.java:841)

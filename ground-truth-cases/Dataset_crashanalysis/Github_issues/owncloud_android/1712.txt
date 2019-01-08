@@ -1,0 +1,24 @@
+java.lang.RuntimeException: Unable to instantiate activity ComponentInfo{com.owncloud.android.beta/com.owncloud.android.ui.activity.Uploader}: java.lang.ClassNotFoundException: Didn't find class "com.owncloud.android.ui.activity.Uploader" on path: DexPathList[[zip file "/data/app/com.owncloud.android.beta-1/base.apk"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]
+ at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2993)
+ at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3248)
+ at android.app.ActivityThread.access$1000(ActivityThread.java:197)
+ at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1681)
+ at android.os.Handler.dispatchMessage(Handler.java:102)
+ at android.os.Looper.loop(Looper.java:145)
+ at android.app.ActivityThread.main(ActivityThread.java:6872)
+ at java.lang.reflect.Method.invoke(Native Method)
+ at java.lang.reflect.Method.invoke(Method.java:372)
+ at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1404)
+ at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1199)
+Caused by: java.lang.ClassNotFoundException: Didn't find class "com.owncloud.android.ui.activity.Uploader" on path: DexPathList[[zip file "/data/app/com.owncloud.android.beta-1/base.apk"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]
+ at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+ at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+ at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+ at android.app.Instrumentation.newActivity(Instrumentation.java:1080)
+ at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2983)
+ ... 10 more
+ Suppressed: java.lang.ClassNotFoundException: com.owncloud.android.ui.activity.Uploader
+  at java.lang.Class.classForName(Native Method)
+  at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+  at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+  at java.lang.ClassLoader.loadClass(ClassLoader.java:504)

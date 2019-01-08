@@ -1,0 +1,27 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{ch.logixisland.anuto/ch.logixisland.anuto.MainActivity}: java.lang.RuntimeException: Could not load level!
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2416)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2476)
+    at android.app.ActivityThread.-wrap11(ActivityThread.java)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1344)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5417)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: java.lang.RuntimeException: Could not load level!
+    at ch.logixisland.anuto.MainActivity.onCreate(MainActivity.java:35)
+    at android.app.Activity.performCreate(Activity.java:6237)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1107)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2369)
+    ... 9 more
+Caused by: java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+    at android.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1411)
+    at android.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1429)
+    at android.app.BackStackRecord.commitInternal(BackStackRecord.java:687)
+    at android.app.BackStackRecord.commit(BackStackRecord.java:663)
+    at ch.logixisland.anuto.GameOverFragment.onGameStarted(GameOverFragment.java:59)
+    at ch.logixisland.anuto.game.GameManager.onGameStarted(GameManager.java:522)
+    at ch.logixisland.anuto.game.GameManager.restart(GameManager.java:233)
+    at ch.logixisland.anuto.game.GameManager.setLevel(GameManager.java:252)
+    at ch.logixisland.anuto.MainActivity.onCreate(MainActivity.java:30)

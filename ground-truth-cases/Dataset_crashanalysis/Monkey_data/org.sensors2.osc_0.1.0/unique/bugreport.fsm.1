@@ -1,0 +1,15 @@
+//this is an auto-generated bug report
+//package name: org.sensors2.osc
+//version: 0.1.0
+//appro_time: 26
+ FATAL EXCEPTION: OSC dispatcher thread
+ java.lang.IllegalArgumentException: Port out of range: 259000
+ 	at java.net.DatagramPacket.setPort(DatagramPacket.java:244)
+ 	at java.net.DatagramPacket.<init>(DatagramPacket.java:97)
+ 	at java.net.DatagramPacket.<init>(DatagramPacket.java:117)
+ 	at com.illposed.osc.OSCPortOut.send(OSCPortOut.java:93)
+ 	at org.sensors2.osc.dispatch.OscHandler.handleMessage(OscHandler.java:36)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)
+ 	at org.sensors2.osc.dispatch.OscCommunication.run(OscCommunication.java:22)

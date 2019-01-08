@@ -1,0 +1,13 @@
+E/AndroidRuntime(4561): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.fareye.tektris/com.google.zxing.client.android.CaptureActivity}: android.view.InflateException: Binary XML file line #35: Error inflating class android.support.v7.internal.widget.ActionBarView
+11-05 18:44:04.569: E/AndroidRuntime(4561): at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2343)
+11-05 18:44:04.569: E/AndroidRuntime(4561): at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2395)
+11-05 18:44:04.569: E/AndroidRuntime(4561): at android.app.ActivityThread.access$600(ActivityThread.java:162)
+11-05 18:44:04.569: E/AndroidRuntime(4561): at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1364)
+11-05 18:44:04.569: E/AndroidRuntime(4561): at android.os.Handler.dispatchMessage(Handler.java:107)
+11-05 18:44:04.569: E/AndroidRuntime(4561): at android.os.Looper.loop(Looper.java:194)
+11-05 18:44:04.569: E/AndroidRuntime(4561): at android.app.ActivityThread.main(ActivityThread.java:5371)
+11-05 18:44:04.569: E/AndroidRuntime(4561): at java.lang.reflect.Method.invokeNative(Native Method)
+11-05 18:44:04.569: E/AndroidRuntime(4561): at java.lang.reflect.Method.invoke(Method.java:525)
+11-05 18:44:04.569: E/AndroidRuntime(4561): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:833)
+11-05 18:44:04.569: E/AndroidRuntime(4561): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:600)
+11-05 18:44:04.569: E/AndroidRuntime(4561): at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,14 @@
+java.lang.IllegalArgumentException: Service Intent must be explicit: Intent { act=android.bluetooth.IBluetoothA2dp }
+    at android.app.ContextImpl.validateServiceIntent(ContextImpl.java:1195)
+    at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1294)
+    at android.app.ContextImpl.bindService(ContextImpl.java:1272)
+    at android.content.ContextWrapper.bindService(ContextWrapper.java:604)
+     **at a2dp.Vol.service.getIBluetoothA2dp(service.java:1302)**
+    at a2dp.Vol.service$6.onFinish(service.java:621)
+    at android.os.CountDownTimer$1.handleMessage(CountDownTimer.java:127)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:224)
+    at android.app.ActivityThread.main(ActivityThread.java:5526)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

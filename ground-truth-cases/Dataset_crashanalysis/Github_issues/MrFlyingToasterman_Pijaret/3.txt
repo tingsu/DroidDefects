@@ -1,0 +1,24 @@
+E AndroidRuntime: java.lang.IllegalStateException: Could not execute method for android:onClick
+E AndroidRuntime: at android.support.v7.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:293)
+E AndroidRuntime: at android.view.View.performClick(View.java:4856)
+E AndroidRuntime: at android.view.View$PerformClick.run(View.java:19956)
+E AndroidRuntime: at android.os.Handler.handleCallback(Handler.java:739)
+E AndroidRuntime: at android.os.Handler.dispatchMessage(Handler.java:95)
+E AndroidRuntime: at android.os.Looper.loop(Looper.java:211)
+E AndroidRuntime: at android.app.ActivityThread.main(ActivityThread.java:5373)
+E AndroidRuntime: at java.lang.reflect.Method.invoke(Native Method)
+E AndroidRuntime: at java.lang.reflect.Method.invoke(Method.java:372)
+E AndroidRuntime: at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1020)
+E AndroidRuntime: at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:815)
+E AndroidRuntime: at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:102)
+E AndroidRuntime: Caused by: java.lang.reflect.InvocationTargetException
+E AndroidRuntime: at java.lang.reflect.Method.invoke(Native Method)
+E AndroidRuntime: at java.lang.reflect.Method.invoke(Method.java:372)
+E AndroidRuntime: at android.support.v7.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:288)
+E AndroidRuntime: ... 11 more
+E AndroidRuntime: Caused by: java.lang.NumberFormatException: Invalid int: "12345678901"
+E AndroidRuntime: at java.lang.Integer.invalidInt(Integer.java:138)
+E AndroidRuntime: at java.lang.Integer.parse(Integer.java:413)
+E AndroidRuntime: at java.lang.Integer.parseInt(Integer.java:367)
+E AndroidRuntime: at java.lang.Integer.parseInt(Integer.java:334)
+E AndroidRuntime: at dmusiolik.pijaret.MainActivity.enc_btn(MainActivity.java:58)

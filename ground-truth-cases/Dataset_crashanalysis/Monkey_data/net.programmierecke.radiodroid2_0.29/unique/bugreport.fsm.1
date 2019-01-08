@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: net.programmierecke.radiodroid2
+//version: 0.29
+//appro_time: 3
+ FATAL EXCEPTION: AsyncTask #1
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.OutOfMemoryError
+ 	at java.lang.AbstractStringBuilder.enlargeBuffer(AbstractStringBuilder.java:94)
+ 	at java.lang.AbstractStringBuilder.append0(AbstractStringBuilder.java:124)
+ 	at java.lang.StringBuilder.append(StringBuilder.java:271)
+ 	at java.io.BufferedReader.readLine(BufferedReader.java:417)
+ 	at net.programmierecke.radiodroid2.Utils.downloadFeed(Utils.java:134)
+ 	at net.programmierecke.radiodroid2.FragmentBase$1.doInBackground(FragmentBase.java:78)
+ 	at net.programmierecke.radiodroid2.FragmentBase$1.doInBackground(FragmentBase.java:71)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	... 4 more

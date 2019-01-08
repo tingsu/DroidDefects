@@ -1,0 +1,7 @@
+java.lang.NullPointerException
+    at com.owncloud.android.datamodel.FileDataStorageManager.prepareInsertShares(FileDataStorageManager.java:1529)
+    at com.owncloud.android.datamodel.FileDataStorageManager.saveSharesInFolder(FileDataStorageManager.java:1490)
+    at com.owncloud.android.operations.RefreshFolderOperation.refreshSharesForFolder(RefreshFolderOperation.java:495)
+    at com.owncloud.android.operations.RefreshFolderOperation.run(RefreshFolderOperation.java:216)
+    at com.owncloud.android.lib.common.operations.RemoteOperation.run(RemoteOperation.java:303)
+    at java.lang.Thread.run(Thread.java:841)

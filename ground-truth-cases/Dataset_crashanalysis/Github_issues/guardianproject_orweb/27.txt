@@ -1,0 +1,26 @@
+08-22 18:06:26.169: E/AndroidRuntime(703): java.lang.ClassCastException: android.net.ProxyProperties cannot be cast to java.lang.String
+08-22 18:06:26.169: E/AndroidRuntime(703):  at android.webkit.WebViewCore$WebCoreThread$1.handleMessage(WebViewCore.java:696)
+08-22 18:06:26.169: E/AndroidRuntime(703):  at android.os.Handler.dispatchMessage(Handler.java:99)
+08-22 18:06:26.169: E/AndroidRuntime(703):  at android.os.Looper.loop(Looper.java:126)
+08-22 18:06:26.169: E/AndroidRuntime(703):  at android.webkit.WebViewCore$WebCoreThread.run(WebViewCore.java:703)
+08-22 18:06:26.169: E/AndroidRuntime(703):  at java.lang.Thread.run(Thread.java:1020)
+```
+
+In Android 3.2, Orweb simply doesn't proxy its browser. With Orbot not running (or installed), check.torproject.org loads and indicates that the user is not using Tor.
+
+I believe that the problem is this check ([OrbotHelper.java:45](https://github.com/guardianproject/Orweb/blob/master/src/org/torproject/android/OrbotHelper.java#L45)): 
+
+``` java
+if (Build.VERSION.SDK_INT < 11) 
+{
+    worked = setWebkitProxyGingerbread(ctx, host, port);
+}
+else
+{
+    worked = setWebkitProxyICS(ctx, host, port);
+}
+```
+
+I think that the check should be for `SDK_INT < 14` -- i.e., below ICS. (This corresponds to the info in this blog post -- http://manojtk.blogspot.ca/2011/01/android-webview-proxy-setting.html -- and its comments. I think that you used that post for the pre-ICS code, and we at Psiphon used it for the ICS+ code.)
+
+Not really important to the fix, but for interest's sake: Why the difference between 3.0/3.1 and 3.2? As can be seen in the stack, 3.0/3.1 results in an uncaught exception in another thread, so the catches at the bottom of `setWebkitProxyICS()` don't get hit and the app crashes. In 3.2, `setWebkitProxyICS()` appears to succeed, returns true, but doesn't actually set the browser proxy. These wacky behaviours caused me to find a bug in Psiphon which led to finding this problem in Orweb.

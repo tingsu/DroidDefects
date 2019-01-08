@@ -1,0 +1,30 @@
+W/SmsTransport( 4376): java.lang.NullPointerException: collection == null
+W/SmsTransport( 4376):  at android.os.Parcel.readException(Parcel.java:1437)
+W/SmsTransport( 4376):  at android.os.Parcel.readException(Parcel.java:1385)
+W/SmsTransport( 4376):  at com.android.internal.telephony.ISms$Stub$Proxy.sendMultipartText(ISms.java:631)
+W/SmsTransport( 4376):  at android.telephony.SmsManager.sendMultipartTextMessage(SmsManager.java:214)
+W/SmsTransport( 4376):  at org.thoughtcrime.securesms.transport.SmsTransport.deliverPlaintextMessage(SmsTransport.java:96)
+W/SmsTransport( 4376):  at org.thoughtcrime.securesms.transport.SmsTransport.deliver(SmsTransport.java:38)
+W/SmsTransport( 4376):  at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:27)
+W/SmsTransport( 4376):  at org.thoughtcrime.securesms.service.SmsSender.handleSendMessage(SmsSender.java:74)
+W/SmsTransport( 4376):  at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:50)
+W/SmsTransport( 4376):  at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:224)
+W/SmsTransport( 4376):  at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/SmsTransport( 4376): Recipient: +xx xxx xxxxxxxxx
+W/SmsTransport( 4376): Message Parts: 2
+W/SmsTransport( 4376): Message Part Length: 156
+W/SmsTransport( 4376): Message Part Length: 64
+W/SmsSender( 4376): org.thoughtcrime.securesms.transport.UndeliverableMessageException: java.lang.NullPointerException: collection == null
+W/SmsSender( 4376):     at org.thoughtcrime.securesms.transport.SmsTransport.deliverPlaintextMessage(SmsTransport.java:104)
+W/SmsSender( 4376):     at org.thoughtcrime.securesms.transport.SmsTransport.deliver(SmsTransport.java:38)
+W/SmsSender( 4376):     at org.thoughtcrime.securesms.transport.UniversalTransport.deliver(UniversalTransport.java:27)
+W/SmsSender( 4376):     at org.thoughtcrime.securesms.service.SmsSender.handleSendMessage(SmsSender.java:74)
+W/SmsSender( 4376):     at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:50)
+W/SmsSender( 4376):     at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:224)
+W/SmsSender( 4376):     at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/SmsSender( 4376): Caused by: java.lang.NullPointerException: collection == null
+W/SmsSender( 4376):     at android.os.Parcel.readException(Parcel.java:1437)
+W/SmsSender( 4376):     at android.os.Parcel.readException(Parcel.java:1385)
+W/SmsSender( 4376):     at com.android.internal.telephony.ISms$Stub$Proxy.sendMultipartText(ISms.java:631)
+W/SmsSender( 4376):     at android.telephony.SmsManager.sendMultipartTextMessage(SmsManager.java:214)
+W/SmsSender( 4376):     at org.thoughtcrime.securesms.transport.SmsTransport.deliverPlaintextMessage(SmsTransport.java:96)

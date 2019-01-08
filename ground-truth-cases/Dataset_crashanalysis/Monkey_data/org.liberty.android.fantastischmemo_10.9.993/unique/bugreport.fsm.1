@@ -1,0 +1,37 @@
+//this is an auto-generated bug report
+//package name: org.liberty.android.fantastischmemo
+//version: 10.9.993
+//appro_time: 58
+ java.lang.RuntimeException: An error occurred while executing doInBackground()
+ 	at android.support.v4.content.ModernAsyncTask$3.done(ModernAsyncTask.java:161)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.RuntimeException: java.sql.SQLException: Getting a writable database from helper AnyMemoDBOpenHelper@ada5b9e8 failed
+ 	at org.liberty.android.fantastischmemo.dao.AbstractHelperDaoImpl.queryForId(AbstractHelperDaoImpl.java:68)
+ 	at org.liberty.android.fantastischmemo.ui.loader.SettingLoader.dbLoadInBackground(SettingLoader.java:14)
+ 	at org.liberty.android.fantastischmemo.ui.loader.SettingLoader.dbLoadInBackground(SettingLoader.java:7)
+ 	at org.liberty.android.fantastischmemo.ui.loader.DBLoader.loadInBackground(DBLoader.java:46)
+ 	at android.support.v4.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:299)
+ 	at android.support.v4.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:57)
+ 	at android.support.v4.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:45)
+ 	at android.support.v4.content.ModernAsyncTask$2.call(ModernAsyncTask.java:138)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ Caused by: java.sql.SQLException: Getting a writable database from helper AnyMemoDBOpenHelper@ada5b9e8 failed
+ 	at com.j256.ormlite.misc.SqlExceptionUtil.create(SqlExceptionUtil.java:22)
+ 	at com.j256.ormlite.android.AndroidConnectionSource.getReadWriteConnection(AndroidConnectionSource.java:68)
+ 	at com.j256.ormlite.android.AndroidConnectionSource.getReadOnlyConnection(AndroidConnectionSource.java:54)
+ 	at com.j256.ormlite.dao.BaseDaoImpl.queryForId(BaseDaoImpl.java:221)
+ 	at org.liberty.android.fantastischmemo.dao.AbstractHelperDaoImpl.queryForId(AbstractHelperDaoImpl.java:65)
+ Caused by: android.database.sqlite.SQLiteException: cannot rollback - no transaction is active (code 1)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecute(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.execute(SQLiteConnection.java:555)
+ 	at android.database.sqlite.SQLiteSession.endTransactionUnchecked(SQLiteSession.java:439)
+ 	at android.database.sqlite.SQLiteSession.endTransaction(SQLiteSession.java:401)
+ 	at android.database.sqlite.SQLiteDatabase.endTransaction(SQLiteDatabase.java:522)
+ 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:263)
+ 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:164)
+ 	at com.j256.ormlite.android.AndroidConnectionSource.getReadWriteConnection(AndroidConnectionSource.java:66)

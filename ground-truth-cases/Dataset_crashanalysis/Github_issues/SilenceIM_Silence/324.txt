@@ -1,0 +1,22 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'void android.media.Ringtone.setAudioAttributes(android.media.AudioAttributes)' on a null object reference
+    at org.smssecure.smssecure.notifications.MessageNotifier.sendInThreadNotification(MessageNotifier.java:282)
+    at org.smssecure.smssecure.notifications.MessageNotifier.notifyMessageDeliveryFailed(MessageNotifier.java:101)
+    at org.smssecure.smssecure.jobs.MmsSendJob.notifyMediaMessageDeliveryFailed(MmsSendJob.java:258)
+    at org.smssecure.smssecure.jobs.MmsSendJob.onSend(MmsSendJob.java:110)
+    at org.smssecure.smssecure.jobs.SendJob.onRun(SendJob.java:37)
+    at org.smssecure.smssecure.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+```
+
+Slightly different:
+
+```
+java.lang.NullPointerException
+    at org.smssecure.smssecure.notifications.MessageNotifier.sendInThreadNotification(MessageNotifier.java:286)
+    at org.smssecure.smssecure.notifications.MessageNotifier.updateNotification(MessageNotifier.java:140)
+    at org.smssecure.smssecure.jobs.MmsDownloadJob.storeRetrievedMms(MmsDownloadJob.java:231)
+    at org.smssecure.smssecure.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:126)
+    at org.smssecure.smssecure.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

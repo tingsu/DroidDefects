@@ -1,0 +1,11 @@
+TypeError: Object #<Agent> has no method 'destroy'
+    at closeAgents (/home/thomas/coding/kiwix-other/mwoffliner/mwoffliner.js:540:22)
+    at async.queue.path (/home/thomas/coding/kiwix-other/mwoffliner/mwoffliner.js:375:2)
+    at /home/thomas/coding/kiwix-other/mwoffliner/node_modules/async/lib/async.js:744:13
+    at /home/thomas/coding/kiwix-other/mwoffliner/node_modules/async/lib/async.js:46:16
+    at /home/thomas/coding/kiwix-other/mwoffliner/node_modules/async/lib/async.js:260:32
+    at /home/thomas/coding/kiwix-other/mwoffliner/node_modules/async/lib/async.js:37:16
+    at /home/thomas/coding/kiwix-other/mwoffliner/node_modules/async/lib/async.js:741:17
+    at /home/thomas/coding/kiwix-other/mwoffliner/mwoffliner.js:361:8
+    at /home/thomas/coding/kiwix-other/mwoffliner/node_modules/async/lib/async.js:744:13
+    at /home/thomas/coding/kiwix-other/mwoffliner/node_modules/async/lib/async.js:46:16

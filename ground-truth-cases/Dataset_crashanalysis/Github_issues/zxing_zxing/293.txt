@@ -1,0 +1,4 @@
+java.lang.NoSuchMethodError: java.lang.String.isEmpty
+    at com.google.zxing.oned.OneDimensionalCodeWriter.encode(OneDimensionalCodeWriter.java:53)
+    at com.google.zxing.oned.Code128Writer.encode(Code128Writer.java:61)
+    at com.google.zxing.MultiFormatWriter.encode(MultiFormatWriter.java:94)

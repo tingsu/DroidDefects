@@ -1,0 +1,7 @@
+E/AndroidRuntime( 4613): java.lang.RuntimeException: Can't create handler inside thread that has not called Looper.prepare()
+E/AndroidRuntime( 4613):    at android.os.Handler.<init>(Handler.java:200)
+E/AndroidRuntime( 4613):    at android.os.Handler.<init>(Handler.java:114)
+E/AndroidRuntime( 4613):    at android.telephony.PhoneStateListener$2.<init>(PhoneStateListener.java:367)
+E/AndroidRuntime( 4613):    at android.telephony.PhoneStateListener.<init>(PhoneStateListener.java:367)
+E/AndroidRuntime( 4613):    at org.fitchfamily.android.gsmlocation.GSMService$1$1.<init>(GSMService.java:56)
+E/AndroidRuntime( 4613):    at org.fitchfamily.android.gsmlocation.GSMService$1.run(GSMService.java:56)

@@ -1,0 +1,11 @@
+java.lang.IllegalStateException: Fragment NotificationSettingsFragment{2ab5db1f} not attached to Activity
+    at android.app.Fragment.getResources(Fragment.java:788)
+    at android.app.Fragment.getString(Fragment.java:810)
+    at org.wordpress.android.ui.prefs.NotificationSettingsFragment.enabledButtonClick(NotificationSettingsFragment.java:227)
+    at org.wordpress.android.ui.prefs.NotificationSettingsFragment.access$300(NotificationSettingsFragment.java:36)
+    at org.wordpress.android.ui.prefs.NotificationSettingsFragment$3$1.onClick(NotificationSettingsFragment.java:189)
+    at android.view.View.performClick(View.java:4756)
+    at android.view.View.onKeyUp(View.java:8935)
+    at android.widget.TextView.onKeyUp(TextView.java:5883)
+    at android.view.KeyEvent.dispatch(KeyEvent.java:2633)
+    at android.view.View.dispatchKeyEvent(View.java:8338)

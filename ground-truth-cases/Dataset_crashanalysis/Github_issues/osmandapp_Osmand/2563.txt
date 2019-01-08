@@ -1,0 +1,12 @@
+05-18 08:41:12.996 26770 26801 E OsmAndCore:Android/NativeCore: java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/net.osmand.dev-1/base.apk"],nativeLibraryDirectories=[/data/app/net.osmand.dev-1/lib/arm, /data/app/net.osmand.dev-1/base.apk!/lib/armeabi-v7a, /vendor/lib, /system/lib]]] couldn't find "libQt5Core.so"
+05-18 08:41:12.996 26770 26801 E OsmAndCore:Android/NativeCore:     at java.lang.Runtime.loadLibrary(Runtime.java:367)
+05-18 08:41:12.996 26770 26801 E OsmAndCore:Android/NativeCore:     at java.lang.System.loadLibrary(System.java:1076)
+05-18 08:41:12.996 26770 26801 E OsmAndCore:Android/NativeCore:     at net.osmand.core.android.NativeCore.loadNativeLibrary(NativeCore.java:25)
+05-18 08:41:12.996 26770 26801 E OsmAndCore:Android/NativeCore:     at net.osmand.core.android.NativeCore.<clinit>(NativeCore.java:43)
+05-18 08:41:12.996 26770 26801 E OsmAndCore:Android/NativeCore:     at net.osmand.plus.views.corenative.NativeCoreContext.init(NativeCoreContext.java:48)
+05-18 08:41:12.996 26770 26801 E OsmAndCore:Android/NativeCore:     at net.osmand.plus.views.corenative.NativeCoreContext.tryCatchInit(NativeCoreContext.java:37)
+05-18 08:41:12.996 26770 26801 E OsmAndCore:Android/NativeCore:     at net.osmand.plus.AppInitializer.initNativeCore(AppInitializer.java:591)
+05-18 08:41:12.996 26770 26801 E OsmAndCore:Android/NativeCore:     at net.osmand.plus.AppInitializer.startApplicationBackground(AppInitializer.java:488)
+05-18 08:41:12.996 26770 26801 E OsmAndCore:Android/NativeCore:     at net.osmand.plus.AppInitializer.access$200(AppInitializer.java:69)
+05-18 08:41:12.996 26770 26801 E OsmAndCore:Android/NativeCore:     at net.osmand.plus.AppInitializer$9.run(AppInitializer.java:729)
+05-18 08:41:12.996 26770 26801 E OsmAndCore:Android/NativeCore:     at java.lang.Thread.run(Thread.java:818)

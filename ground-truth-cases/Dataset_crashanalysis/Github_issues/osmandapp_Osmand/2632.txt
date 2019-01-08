@@ -1,0 +1,42 @@
+java.lang.IllegalArgumentException: Please specify directory with .osm or .osm.bz2 files as directory_for_osm_files (attribute)/home/$user/mapbuild/osmand-pbf
+        at net.osmand.data.index.IndexBatchCreator.setupProcess(IndexBatchCreator.java:203)
+        at net.osmand.data.index.IndexBatchCreator.main(IndexBatchCreator.java:147)
+Mai 30, 2016 11:09:07 PM net.osmand.data.index.IndexBatchCreator main
+SCHWERWIEGEND: XML configuration file could not be read from batch.xml
+java.lang.IllegalArgumentException: Please specify directory with .osm or .osm.bz2 files as directory_for_osm_files (attribute)/home/$user/mapbuild/osmand-pbf
+        at net.osmand.data.index.IndexBatchCreator.setupProcess(IndexBatchCreator.java:203)
+        at net.osmand.data.index.IndexBatchCreator.main(IndexBatchCreator.java:147)
+
+nils@nils-HP-620:~/Downloads/OsmAndMapCreator-main$ java -Djava.util.logging.config.file=logging.properties -Xms64M -Xmx1300M -cp "./OsmAndMapCreator.jar:lib/OsmAnd-core.jar:./lib/*.jar" net.osmand.data.index.IndexBatchCreator batch.xml
+Mai 30, 2016 11:11:56 PM net.osmand.data.index.IndexBatchCreator generatedIndexes
+INFORMATION: Check if /home/nils/Berlin_2.obf.zip exists
+Mai 30, 2016 11:11:56 PM net.osmand.data.index.IndexBatchCreator generateIndex
+WARNUNG: -------------------------------------------
+Mai 30, 2016 11:11:56 PM net.osmand.data.index.IndexBatchCreator generateIndex
+WARNUNG: ----------- Generate BERLIN.osm.pbf
+
+Mai 30, 2016 11:11:56 PM net.osmand.osm.MapPoiTypes init
+INFORMATION: Time to init poi types 246
+Mai 30, 2016 11:11:58 PM net.osmand.osm.MapRenderingTypes init
+INFORMATION: Time to init 1996
+Exception in thread "main" java.lang.UnsatisfiedLinkError: org.sqlite.core.NativeDB._open(Ljava/lang/String;I)V
+        at org.sqlite.core.NativeDB._open(Native Method)
+        at org.sqlite.core.DB.open(DB.java:161)
+        at org.sqlite.core.CoreConnection.open(CoreConnection.java:145)
+        at org.sqlite.core.CoreConnection.<init>(CoreConnection.java:66)
+        at org.sqlite.jdbc3.JDBC3Connection.<init>(JDBC3Connection.java:21)
+        at org.sqlite.jdbc4.JDBC4Connection.<init>(JDBC4Connection.java:23)
+        at org.sqlite.SQLiteConnection.<init>(SQLiteConnection.java:45)
+        at org.sqlite.JDBC.createConnection(JDBC.java:114)
+        at org.sqlite.JDBC.connect(JDBC.java:88)
+        at java.sql.DriverManager.getConnection(DriverManager.java:571)
+        at java.sql.DriverManager.getConnection(DriverManager.java:233)
+        at net.osmand.data.preparation.DBDialect.getDatabaseConnection(DBDialect.java:58)
+        at net.osmand.data.preparation.IndexCreator.getDatabaseConnection(IndexCreator.java:167)
+        at net.osmand.data.preparation.IndexCreator.createDatabaseIndexesStructure(IndexCreator.java:456)
+        at net.osmand.data.preparation.IndexCreator.generateIndexes(IndexCreator.java:660)
+        at net.osmand.data.preparation.IndexCreator.generateIndexes(IndexCreator.java:589)
+        at net.osmand.data.index.IndexBatchCreator.generateIndex(IndexBatchCreator.java:552)
+        at net.osmand.data.index.IndexBatchCreator.generatedIndexes(IndexBatchCreator.java:464)
+        at net.osmand.data.index.IndexBatchCreator.runBatch(IndexBatchCreator.java:307)
+        at net.osmand.data.index.IndexBatchCreator.main(IndexBatchCreator.java:165)`

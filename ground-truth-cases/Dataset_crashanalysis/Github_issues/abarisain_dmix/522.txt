@@ -1,0 +1,16 @@
+    java.lang.IllegalStateException: Fragment NowPlayingSmallFragment{41fb0ff0} not attached to Activity
+            at android.support.v4.app.Fragment.getResources(Fragment.java:601)
+            at com.namelessdev.mpdroid.fragments.NowPlayingSmallFragment.stateChanged(NowPlayingSmallFragment.java:330)
+            at com.namelessdev.mpdroid.fragments.NowPlayingSmallFragment$updateTrackInfoAsync.onPostExecute(NowPlayingSmallFragment.java:137)
+            at com.namelessdev.mpdroid.fragments.NowPlayingSmallFragment$updateTrackInfoAsync.onPostExecute(NowPlayingSmallFragment.java:54)
+            at android.os.AsyncTask.finish(AsyncTask.java:632)
+            at android.os.AsyncTask.access$600(AsyncTask.java:177)
+            at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)
+            at android.os.Handler.dispatchMessage(Handler.java:102)
+            at android.os.Looper.loop(Looper.java:136)
+            at android.app.ActivityThread.main(ActivityThread.java:5017)
+            at java.lang.reflect.Method.invokeNative(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:515)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+            at dalvik.system.NativeStart.main(Native Method)`

@@ -1,0 +1,32 @@
+//this is an auto-generated bug report
+//package name: com.newsblur
+//version: 5.0.0b2
+//appro_time: 70
+ java.lang.OutOfMemoryError
+ 	at java.lang.AbstractStringBuilder.enlargeBuffer(AbstractStringBuilder.java:94)
+ 	at java.lang.AbstractStringBuilder.append0(AbstractStringBuilder.java:124)
+ 	at java.lang.StringBuilder.append(StringBuilder.java:271)
+ 	at com.google.gson.stream.JsonReader.nextQuotedValue(JsonReader.java:1010)
+ 	at com.google.gson.stream.JsonReader.nextString(JsonReader.java:820)
+ 	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:722)
+ 	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:743)
+ 	at com.google.gson.internal.bind.TypeAdapters$29.read(TypeAdapters.java:718)
+ 	at com.google.gson.internal.Streams.parse(Streams.java:48)
+ 	at com.google.gson.TreeTypeAdapter.read(TreeTypeAdapter.java:54)
+ 	at com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper.read(TypeAdapterRuntimeTypeWrapper.java:40)
+ 	at com.google.gson.internal.bind.ArrayTypeAdapter.read(ArrayTypeAdapter.java:72)
+ 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1.read(ReflectiveTypeAdapterFactory.java:116)
+ 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:216)
+ 	at com.google.gson.Gson.fromJson(Gson.java:879)
+ 	at com.google.gson.Gson.fromJson(Gson.java:844)
+ 	at com.google.gson.Gson.fromJson(Gson.java:793)
+ 	at com.google.gson.Gson.fromJson(Gson.java:765)
+ 	at com.newsblur.network.APIResponse.getResponse(APIResponse.java:130)
+ 	at com.newsblur.network.APIManager.getStories(APIManager.java:344)
+ 	at com.newsblur.service.NBSyncService.syncPendingFeedStories(NBSyncService.java:669)
+ 	at com.newsblur.service.NBSyncService.doSync(NBSyncService.java:243)
+ 	at com.newsblur.service.NBSyncService.access$000(NBSyncService.java:67)
+ 	at com.newsblur.service.NBSyncService$1.run(NBSyncService.java:183)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

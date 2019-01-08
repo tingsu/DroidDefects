@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: org.ttrssreader
+//version: 1.91.1
+//appro_time: 96
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at org.ttrssreader.utils.AsyncTask$3.done(Unknown Source)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.NullPointerException
+ 	at org.ttrssreader.controllers.Controller.getSinceId(Unknown Source)
+ 	at org.ttrssreader.controllers.Data.cacheArticles(Unknown Source)
+ 	at org.ttrssreader.gui.CategoryActivity$CategoryUpdater.doInBackground(Unknown Source)
+ 	at org.ttrssreader.gui.CategoryActivity$CategoryUpdater.doInBackground(Unknown Source)
+ 	at org.ttrssreader.utils.AsyncTask$2.call(Unknown Source)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

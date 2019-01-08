@@ -1,0 +1,13 @@
+Fatal Exception: java.lang.ClassCastException: java.lang.Boolean cannot be cast to java.lang.String
+       at org.xmlrpc.android.ApiHelper$UploadMediaTask.onPostExecute(ApiHelper.java:863)
+       at org.xmlrpc.android.ApiHelper$UploadMediaTask.onPostExecute(ApiHelper.java:744)
+       at android.os.AsyncTask.finish(AsyncTask.java:636)
+       at android.os.AsyncTask.access$500(AsyncTask.java:177)
+       at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:653)
+       at android.os.Handler.dispatchMessage(Handler.java:111)
+       at android.os.Looper.loop(Looper.java:210)
+       at android.app.ActivityThread.main(ActivityThread.java:5830)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at java.lang.reflect.Method.invoke(Method.java:372)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1113)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:879)

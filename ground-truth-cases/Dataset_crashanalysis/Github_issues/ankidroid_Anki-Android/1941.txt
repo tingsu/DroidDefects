@@ -1,0 +1,5 @@
+E/AndroidRuntime(23320): java.lang.NullPointerException
+E/AndroidRuntime(23320):    at com.ichi2.anki.StudyOptions$39.onPostExecute(StudyOptions.java:2571)
+E/AndroidRuntime(23320):    at com.ichi2.anki.DeckTask.onPostExecute(DeckTask.java:237)
+E/AndroidRuntime(23320):    at com.ichi2.anki.DeckTask.onPostExecute(DeckTask.java:42)
+E/AndroidRuntime(23320):    at android.os.AsyncTask.finish(AsyncTask.java:417)

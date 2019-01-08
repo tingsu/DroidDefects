@@ -1,0 +1,6 @@
+0   java.lang.ArrayIndexOutOfBoundsException
+1   at com.dalthed.tucan.ui.MainMenu.onPostExecute(MainMenu.java:246)
+2   at com.dalthed.tucan.Connection.SimpleSecureBrowser.onPostExecute(SimpleSecureBrowser.java:74)
+3   at com.dalthed.tucan.Connection.SimpleSecureBrowser.onPostExecute(SimpleSecureBrowser.java:1)
+4   at android.os.AsyncTask.finish(AsyncTask.java:417)
+5   at android.os.AsyncTask.access$300(AsyncTask.java:127)

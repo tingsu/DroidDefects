@@ -1,0 +1,10 @@
+java.lang.NullPointerException: Attempt to invoke interface method 'void org.onebusaway.android.ui.RouteFavoriteDialogFragment$Callback.onSelectionComplete(boolean)' on a null object reference
+    at org.onebusaway.android.ui.RouteFavoriteDialogFragment$1.onClick(RouteFavoriteDialogFragment.java:207)
+    at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:162)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5438)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)

@@ -1,0 +1,82 @@
+###### Background
+I've recently written an app that uses the AnkiDroid Instant Add API. Many users reported that my app crashes when attempting to connect to AnkiDroid (actaully Ankidroid crashes at the same time, and this is the major issue), and their issues can be solved by opening Ankidroid before using my app. After some debuging, I believed that it is either a problem with the `com.ichi2.anki:api:1.1.0alpha5` package or the content provider of Ankidroid. I tried the "API sample" app from the Ankidroid API documentation and the problem remained. 
+
+###### Research
+
+[ x ] I have read the [support page](https://ankidroid.org/docs/help.html) and am reporting a bug or enhancement request specific to AnkiDroid
+
+[ x ] I have checked the [manual](https://ankidroid.org/docs/manual.html) and the [FAQ](https://github.com/ankidroid/Anki-Android/wiki/FAQ) and could not find a solution to my issue
+
+[ x ] I have searched for similar existing issues here and on the user forum
+
+
+###### Reproduction Steps
+
+1. On Android N (I use the official AVD rom from google on windows), install the lasted version of AnkiDroid and the"API sample" app for testing Instant API.
+2. Go to settings and stop Ankidroid process to make sure it's not running on the background.
+3. Open API sample app, allow requested permission, select an item and share it with the menu item "Ankidroid Instant-Add".
+###### Expected Result
+Card added to Ankidroid.
+
+###### Actual Result
+AnkiDroid crashes.
+"API sample" crashes (because the api returned `null`).
+
+###### Debug info
+I debuged this on Android Studio and this was the log when crash happened.
+
+###### from api sample app:
+```
+04-09 04:22:55.597 30484-30484/com.ichi2.apisample E/AndroidRuntime: FATAL EXCEPTION: main
+                                                                     Process: com.ichi2.apisample, PID: 30484
+                                                                     java.lang.NullPointerException: Attempt to invoke interface method 'java.util.Set java.util.Map.entrySet()' on a null object reference
+                                                                         at com.ichi2.apisample.AnkiDroidHelper.getDeckId(AnkiDroidHelper.java:190)
+                                                                         at com.ichi2.apisample.AnkiDroidHelper.findDeckIdByName(AnkiDroidHelper.java:167)
+                                                                         at com.ichi2.apisample.MainActivity.getDeckId(MainActivity.java:249)
+                                                                         at com.ichi2.apisample.MainActivity.addCardsToAnkiDroid(MainActivity.java:272)
+                                                                         at com.ichi2.apisample.MainActivity.access$300(MainActivity.java:36)
+                                                                         at com.ichi2.apisample.MainActivity$AnkiDroidActionProvider.onMenuItemClick(MainActivity.java:223)
+                                                                         at android.support.v7.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:148)
+                                                                         at android.support.v7.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:958)
+                                                                         at android.support.v7.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:948)
+                                                                         at android.support.v7.view.menu.MenuPopupHelper.onItemClick(MenuPopupHelper.java:191)
+                                                                         at android.widget.AdapterView.performItemClick(AdapterView.java:310)
+                                                                         at android.widget.AbsListView.performItemClick(AbsListView.java:1156)
+                                                                         at android.widget.AbsListView$PerformClick.run(AbsListView.java:3121)
+                                                                         at android.widget.AbsListView.onTouchUp(AbsListView.java:4048)
+                                                                         at android.widget.AbsListView.onTouchEvent(AbsListView.java:3807)
+                                                                         at android.support.v7.widget.ListViewCompat.onTouchEvent(ListViewCompat.java:120)
+                                                                         at android.view.View.dispatchTouchEvent(View.java:10023)
+                                                                         at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2626)
+                                                                         at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2307)
+                                                                         at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2632)
+                                                                         at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2321)
+                                                                         at android.view.ViewGroup.dispatchTransformedTouchEvent(ViewGroup.java:2632)
+                                                                         at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:2321)
+                                                                         at android.widget.PopupWindow$PopupDecorView.dispatchTouchEvent(PopupWindow.java:2275)
+                                                                         at android.view.View.dispatchPointerEvent(View.java:10243)
+                                                                         at android.view.ViewRootImpl$ViewPostImeInputStage.processPointerEvent(ViewRootImpl.java:4438)
+                                                                         at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4306)
+                                                                         at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3853)
+                                                                         at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3906)
+                                                                         at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3872)
+                                                                         at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:3999)
+                                                                         at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3880)
+                                                                         at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4056)
+                                                                         at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3853)
+                                                                         at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:3906)
+                                                                         at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:3872)
+                                                                         at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:3880)
+                                                                         at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:3853)
+                                                                         at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:6246)
+                                                                         at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:6220)
+                                                                         at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:6181)
+                                                                         at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:6349)
+                                                                         at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:185)
+                                                                         at android.os.MessageQueue.nativePollOnce(Native Method)
+                                                                         at android.os.MessageQueue.next(MessageQueue.java:323)
+                                                                         at android.os.Looper.loop(Looper.java:136)
+                                                                         at android.app.ActivityThread.main(ActivityThread.java:6119)
+                                                                         at java.lang.reflect.Method.invoke(Native Method)
+                                                                         at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+                                                                         at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)

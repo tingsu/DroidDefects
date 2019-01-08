@@ -1,0 +1,7 @@
+                                                   java.lang.IllegalArgumentException: width and height must be > 0
+                                                       at android.graphics.Bitmap.createBitmap(Bitmap.java:829)
+                                                       at android.graphics.Bitmap.createBitmap(Bitmap.java:808)
+                                                       at android.graphics.Bitmap.createBitmap(Bitmap.java:775)
+                                                       at org.androidsoft.coloring.ui.widget.PaintView.loadFromBitmap(PaintView.java:98)
+                                                       at org.androidsoft.coloring.ui.activity.PaintActivity$InitPaintView.run(PaintActivity.java:371)
+                                                       at java.lang.Thread.run(Thread.java:818)

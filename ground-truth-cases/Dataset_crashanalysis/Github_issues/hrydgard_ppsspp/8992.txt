@@ -1,0 +1,4 @@
+java.lang.UnsatisfiedLinkError: Native method not found: org.ppsspp.ppsspp.NativeApp.sendMessage:(Ljava/lang/String;Ljava/lang/String;)V
+    at org.ppsspp.ppsspp.NativeApp.sendMessage(Native Method)
+    at org.ppsspp.ppsspp.PowerSaveModeReceiver.sendPowerSaving(PowerSaveModeReceiver.java:76)
+    at org.ppsspp.ppsspp.PowerSaveModeReceiver.onReceive(PowerSaveModeReceiver.java:27)

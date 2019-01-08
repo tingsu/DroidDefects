@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: com.tobykurien.google_news
+//version: 1.17
+//appro_time: 131
+ java.lang.UnsupportedOperationException: This isn't a hierarchical URI.
+ 	at android.net.Uri.getQueryParameter(Uri.java:1663)
+ 	at com.tobykurien.google_news.webviewclient.WebClient.getLoadUri(WebClient.java:92)
+ 	at com.tobykurien.google_news.webviewclient.WebClient.shouldOverrideUrlLoading(WebClient.java:50)
+ 	at android.webkit.CallbackProxy.uiOverrideUrlLoading(CallbackProxy.java:261)
+ 	at android.webkit.WebViewClassic.overrideLoading(WebViewClassic.java:7024)
+ 	at android.webkit.WebViewClassic.onHandleUiEvent(WebViewClassic.java:1366)
+ 	at android.webkit.WebViewClassic.access$7000(WebViewClassic.java:146)
+ 	at android.webkit.WebViewClassic$PrivateHandler.dispatchUiEvent(WebViewClassic.java:7655)
+ 	at android.webkit.WebViewInputDispatcher.dispatchUiEvent(WebViewInputDispatcher.java:841)
+ 	at android.webkit.WebViewInputDispatcher.dispatchUiEvents(WebViewInputDispatcher.java:829)
+ 	at android.webkit.WebViewInputDispatcher.access$300(WebViewInputDispatcher.java:78)
+ 	at android.webkit.WebViewInputDispatcher$UiHandler.handleMessage(WebViewInputDispatcher.java:1118)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

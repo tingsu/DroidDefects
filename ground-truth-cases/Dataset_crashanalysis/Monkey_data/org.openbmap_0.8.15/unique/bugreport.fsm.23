@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: org.openbmap
+//version: 0.8.15
+//appro_time: 179
+ android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (code 14): Could not open database
+ 	at android.database.sqlite.SQLiteConnection.nativeOpen(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:209)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+ 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+ 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:804)
+ 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:789)
+ 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:694)
+ 	at android.app.ContextImpl.openOrCreateDatabase(ContextImpl.java:863)
+ 	at android.content.ContextWrapper.openOrCreateDatabase(ContextWrapper.java:235)
+ 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:224)
+ 	at android.database.sqlite.SQLiteOpenHelper.getReadableDatabase(SQLiteOpenHelper.java:188)
+ 	at org.openbmap.db.c.a(Unknown Source)
+ 	at org.openbmap.utils.ap.a(Unknown Source)
+ 	at org.openbmap.utils.ap.doInBackground(Unknown Source)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

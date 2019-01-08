@@ -1,0 +1,21 @@
+                                                                 java.lang.NoClassDefFoundError: de/blinkt/openvpn/core/NativeUtils
+                                                                     at de.blinkt.openvpn.core.VpnStatus.logInformation(VpnStatus.java:215)
+                                                                     at de.blinkt.openvpn.core.VpnStatus.clearLog(VpnStatus.java:207)
+                                                                     at de.blinkt.openvpn.LaunchVPN.startVpnFromIntent(LaunchVPN.java:94)
+                                                                     at de.blinkt.openvpn.LaunchVPN.onCreate(LaunchVPN.java:79)
+                                                                     at android.app.Activity.performCreate(Activity.java:5442)
+                                                                     at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1094)
+                                                                     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2393)
+                                                                     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2493)
+                                                                     at android.app.ActivityThread.access$800(ActivityThread.java:166)
+                                                                     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1283)
+                                                                     at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                     at android.os.Looper.loop(Looper.java:136)
+                                                                     at android.app.ActivityThread.main(ActivityThread.java:5584)
+                                                                     at java.lang.reflect.Method.invokeNative(Native Method)
+                                                                     at java.lang.reflect.Method.invoke(Method.java:515)
+                                                                     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1268)
+                                                                     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1084)
+                                                                     at dalvik.system.NativeStart.main(Native Method)
+
+Can anyone help with this issue? I did use android studio to work with ics-openvpn for android, no errors at all in the code but the the time I'm going to connect with the imported profile, I just got this error. Please help

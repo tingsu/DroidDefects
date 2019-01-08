@@ -1,0 +1,10 @@
+    java.lang.NoSuchMethodError: com.google.android.gms.maps.MapsInitializer.initialize
+            at org.osmdroid.google.wrapper.v2.MapFactory.getMap(MapFactory.java:23)
+            at com.tatinfotech.myapplication.GoogleWrapperSample.setMapView(GoogleWrapperSample.java:192)
+            at com.tatinfotech.myapplication.GoogleWrapperSample.onOptionsItemSelected(GoogleWrapperSample.java:150)
+            at android.app.Activity.onMenuItemSelected(Activity.java:2516)
+            at com.android.internal.policy.impl.PhoneWindow.onMenuItemSelected(PhoneWindow.java:961)
+            at com.android.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:735)
+            at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:149)
+            at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:874)
+            at com.android.internal.view.menu.ListMenuPresenter.onItemClick(ListMenuPresenter.java:163)

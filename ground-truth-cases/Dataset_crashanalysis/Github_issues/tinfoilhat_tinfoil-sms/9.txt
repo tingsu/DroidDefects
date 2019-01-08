@@ -1,0 +1,14 @@
+
+For cryptographic security, could also include the message part numbering, but this is nearly impossible as the cipher used is a stream cipher, and if they're already reordering your messages maliciously (since GSM has spec for properly ordering multi-part messages) then including the ordering won't help at all (since they could just as easily block your messages/corrupt them anyways).
+## Logcat Output
+
+```
+05-12 19:08:27.655: W/System.err(287): java.lang.NullPointerException
+05-12 19:08:27.665: W/System.err(287):  at android.os.Parcel.readException(Parcel.java:1253)
+05-12 19:08:27.665: W/System.err(287):  at android.os.Parcel.readException(Parcel.java:1235)
+05-12 19:08:27.665: W/System.err(287):  at com.android.internal.telephony.ISms$Stub$Proxy.sendText(ISms.java:369)
+05-12 19:08:27.665: W/System.err(287):  at android.telephony.SmsManager.sendTextMessage(SmsManager.java:87)
+05-12 19:08:27.665: W/System.err(287):  at com.tinfoil.sms.utility.SMSUtility.sendSMS(SMSUtility.java:159)
+05-12 19:08:27.665: W/System.err(287):  at com.tinfoil.sms.utility.SMSUtility.sendMessage(SMSUtility.java:294)
+05-12 19:08:27.665: W/System.err(287):  at com.tinfoil.sms.messageQueue.MessageSender.run(MessageSender.java:112)
+05-12 19:08:27.665: W/System.err(287):  at java.lang.Thread.run(Thread.java:1096)

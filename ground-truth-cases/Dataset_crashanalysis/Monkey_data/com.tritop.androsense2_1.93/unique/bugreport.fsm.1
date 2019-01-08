@@ -1,0 +1,33 @@
+//this is an auto-generated bug report
+//package name: com.tritop.androsense2
+//version: 1.93
+//appro_time: 19
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.tritop.androsense2/com.tritop.androsense2.MainActivity}: android.os.BadParcelableException: Parcelable protocol requires the CREATOR object to be static on class com.tritop.androsense2.log.LogItem$LogCore
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.os.BadParcelableException: Parcelable protocol requires the CREATOR object to be static on class com.tritop.androsense2.log.LogItem$LogCore
+ 	at android.os.Parcel.readParcelableCreator(Parcel.java:2119)
+ 	at android.os.Parcel.readParcelable(Parcel.java:2055)
+ 	at android.os.Parcel.readValue(Parcel.java:1971)
+ 	at android.os.Parcel.readMapInternal(Parcel.java:2255)
+ 	at android.os.Bundle.unparcel(Bundle.java:223)
+ 	at android.os.Bundle.getSparseParcelableArray(Bundle.java:1237)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:861)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1104)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1086)
+ 	at android.support.v4.app.FragmentManagerImpl.dispatchCreate(FragmentManager.java:1879)
+ 	at android.support.v4.app.FragmentActivity.onCreate(FragmentActivity.java:215)
+ 	at com.tritop.androsense2.MainActivity.onCreate(MainActivity.java:57)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)

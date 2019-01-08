@@ -1,0 +1,5 @@
+01-07 10:11:24.691: D/WebSocketClient(961): java.io.EOFException
+01-07 10:11:24.691: D/WebSocketClient(961):     at java.io.DataInputStream.readByte(DataInputStream.java:77)
+01-07 10:11:24.691: D/WebSocketClient(961):     at com.codebutler.android_websockets.HybiParser.start(HybiParser.java:116)
+01-07 10:11:24.691: D/WebSocketClient(961):     at com.codebutler.android_websockets.WebSocketClient$1.run(WebSocketClient.java:134)
+01-07 10:11:24.691: D/WebSocketClient(961):     at java.lang.Thread.run(Thread.java:841)

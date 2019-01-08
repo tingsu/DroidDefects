@@ -1,0 +1,35 @@
+10:11:47.513 D/SQLiteDatabase: beginTransaction()
+10:11:47.517 E/SQLiteLog: (787) abort at 54 in [INSERT INTO splits ( memo , type , value_num , value_denom , quantity_num , quantity_denom , created_at , reconcile_state , reconcile_date , account_uid , transaction_uid , uid ) VALUES ( ? , ?
+10:11:47.533 D/SQLiteDatabase: endTransaction()
+10:11:47.538 D/SQLiteDatabase: endTransaction()
+10:11:47.569 E/org.gnucash.android.importer.ImportAsyncTask: FOREIGN KEY constraint failed (code 787)
+10:11:47.569 E/CrashlyticsCore: Crashlytics must be initialized by calling Fabric.with(Context) prior to logging messages.
+10:11:47.569 E/CrashlyticsCore: Crashlytics must be initialized by calling Fabric.with(Context) prior to logging exceptions.
+10:11:47.570 W/System.err: android.database.sqlite.SQLiteConstraintException: FOREIGN KEY constraint failed (code 787)
+10:11:47.606 W/System.err:     at android.database.sqlite.SQLiteConnection.nativeExecute(Native Method)
+10:11:47.606 W/System.err:     at android.database.sqlite.SQLiteConnection.execute(SQLiteConnection.java:559)
+10:11:47.606 W/System.err:     at android.database.sqlite.SQLiteSession.execute(SQLiteSession.java:619)
+10:11:47.606 W/System.err:     at android.database.sqlite.SQLiteStatement.execute(SQLiteStatement.java:44)
+10:11:47.606 W/System.err:     at org.gnucash.android.db.adapter.DatabaseAdapter.doAddModels(DatabaseAdapter.java:260)
+10:11:47.607 W/System.err:     at org.gnucash.android.db.adapter.DatabaseAdapter.bulkAddRecords(DatabaseAdapter.java:298)
+10:11:47.607 W/System.err:     at org.gnucash.android.db.adapter.TransactionsDbAdapter.bulkAddRecords(TransactionsDbAdapter.java:160)
+10:11:47.607 W/System.err:     at org.gnucash.android.importer.GncXmlHandler.saveToDatabase(GncXmlHandler.java:1000)
+10:11:47.607 W/System.err:     at org.gnucash.android.importer.GncXmlHandler.endDocument(GncXmlHandler.java:967)
+10:11:47.607 W/System.err:     at org.apache.harmony.xml.ExpatParser.endDocument(ExpatParser.java:532)
+10:11:47.607 W/System.err:     at org.apache.harmony.xml.ExpatParser.parseDocument(ExpatParser.java:476)
+10:11:47.607 W/System.err:     at org.apache.harmony.xml.ExpatReader.parse(ExpatReader.java:316)
+10:11:47.607 W/System.err:     at org.apache.harmony.xml.ExpatReader.parse(ExpatReader.java:279)
+10:11:47.607 W/System.err:     at org.gnucash.android.importer.GncXmlImporter.parse(GncXmlImporter.java:69)
+10:11:47.607 W/System.err:     at org.gnucash.android.importer.ImportAsyncTask.doInBackground(ImportAsyncTask.java:85)
+10:11:47.607 W/System.err:     at org.gnucash.android.importer.ImportAsyncTask.doInBackground(ImportAsyncTask.java:49)
+10:11:47.607 W/System.err:     at android.os.AsyncTask$2.call(AsyncTask.java:288)
+10:11:47.607 W/System.err:     at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+10:11:47.607 W/System.err:     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+10:11:47.607 W/System.err:     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+10:11:47.607 W/System.err:     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+10:11:47.607 W/System.err:     at java.lang.Thread.run(Thread.java:818)
+```
+
+There seems to be some issue with the scheduled transaction defined in the file, because the splits aren't balanced. This causes a template transaction to be created with an imbalance split (in [`GncXmlHandler.endElement`](https://github.com/codinguser/gnucash-android/blob/develop/app/src/main/java/org/gnucash/android/importer/GncXmlHandler.java#L691)) and with a currency code as account UID.
+
+The currency code as account UID in the split should be fixed when we finish parsing in [`GncXmlHandler.endDocument`](https://github.com/codinguser/gnucash-android/blob/develop/app/src/main/java/org/gnucash/android/importer/GncXmlHandler.java#L901), however, the scheduled actions are parsed first, and here's the problem. When a scheduled action has been parsed, [`GncXmlHandler.generateMissedScheduledTransactions`](https://github.com/codinguser/gnucash-android/blob/develop/app/src/main/java/org/gnucash/android/importer/GncXmlHandler.java#L795) is called. This method clones the template transaction, but the split with the currency code as account UID isn't added to `mAutoBalanceSplits` so as to be fixed at the end.

@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: ch.blinkenlights.android.vanilla
+//version: 1.0.50
+//appro_time: 160
+ android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=market://details?id=ch.blinkenlights.android.vanillaplug }
+ 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1632)
+ 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1541)
+ 	at android.app.Activity.startActivityFromFragment(Activity.java:3917)
+ 	at android.app.Activity.startActivityFromFragment(Activity.java:3892)
+ 	at android.app.Fragment.startActivity(Fragment.java:1053)
+ 	at android.app.Fragment.startActivity(Fragment.java:1032)
+ 	at ch.blinkenlights.android.vanilla.PreferencesActivity$HeadsetLaunchFragment$2.onClick(PreferencesActivity.java:279)
+ 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

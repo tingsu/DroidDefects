@@ -1,0 +1,7 @@
+                                                                            java.lang.ArrayIndexOutOfBoundsException: length=0; index=-1
+                                                                                at java.util.ArrayList.remove(ArrayList.java:405)
+                                                                                at com.amaze.filemanager.utils.ServiceWatcherUtil$2.run(ServiceWatcherUtil.java:156)
+                                                                                at android.os.Handler.handleCallback(Handler.java:746)
+                                                                                at android.os.Handler.dispatchMessage(Handler.java:95)
+                                                                                at android.os.Looper.loop(Looper.java:148)
+                                                                                at android.os.HandlerThread.run(HandlerThread.java:61)

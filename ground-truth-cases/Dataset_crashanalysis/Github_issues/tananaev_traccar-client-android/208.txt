@@ -1,0 +1,15 @@
+java.lang.RuntimeException: Unable to create service org.traccar.client.TrackingService: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+    at android.app.ActivityThread.handleCreateService(ActivityThread.java:2785)
+    at android.app.ActivityThread.access$1800(ActivityThread.java:151)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1393)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5268)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:902)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:697)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.equals(java.lang.Object)' on a null object reference
+    at org.traccar.client.TrackingController.<init>(TrackingController.java:66)
+    at org.traccar.client.TrackingService.onCreate(TrackingService.java:88)
+    at android.app.ActivityThread.handleCreateService(ActivityThread.java:2775)

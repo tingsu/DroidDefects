@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: com.ichi2.anki
+//version: 2.8.1
+//appro_time: 62
+ FATAL EXCEPTION: main
+ java.lang.IllegalStateException: Fragment null must be a public static class to be  properly recreated from instance state.
+ 	at android.support.v4.app.BackStackRecord.doAddOp(BackStackRecord.java:384)
+ 	at android.support.v4.app.BackStackRecord.add(BackStackRecord.java:363)
+ 	at android.support.v4.app.DialogFragment.show(DialogFragment.java:158)
+ 	at com.ichi2.anki.AnkiActivity.showDialogFragment(AnkiActivity.java:348)
+ 	at com.ichi2.anki.DeckPicker$28.onPostExecute(DeckPicker.java:2234)
+ 	at com.ichi2.async.DeckTask.onPostExecute(DeckTask.java:362)
+ 	at com.ichi2.async.DeckTask.onPostExecute(DeckTask.java:66)
+ 	at android.os.AsyncTask.finish(AsyncTask.java:631)
+ 	at android.os.AsyncTask.access$600(AsyncTask.java:177)
+ 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

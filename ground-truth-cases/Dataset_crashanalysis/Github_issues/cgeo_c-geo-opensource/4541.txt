@@ -1,0 +1,13 @@
+java.lang.IllegalStateException: Fatal Exception thrown on Scheduler.Worker thread.
+   at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:54)
+   at android.os.Handler.handleCallback(Handler.java:587)
+   at android.os.Handler.dispatchMessage(Handler.java:92)
+   at android.os.Looper.loop(Looper.java:130)
+   at android.os.HandlerThread.run(HandlerThread.java:60)
+Caused by: java.lang.ArrayIndexOutOfBoundsException
+   at android.hardware.SensorManager$ListenerDelegate.setDelay(SensorManager.java:596)
+   at android.hardware.SensorManager.registerListener(SensorManager.java:1173)
+   at android.hardware.SensorManager.registerListener(SensorManager.java:1034)
+   at cgeo.geocaching.sensors.RotationProvider.onStart(RotationProvider.java:65)
+   at cgeo.geocaching.utils.RxUtils$LooperCallbacks$1.call(RxUtils.java:94)
+   at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:47)

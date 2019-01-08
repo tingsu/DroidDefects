@@ -1,0 +1,11 @@
+> java.util.ConcurrentModificationException
+> at java.util.ArrayList$ArrayListIterator.next(ArrayList.java:573)
+> at org.csploit.android.plugins.mitm.Sniffer$StatListAdapter.getStats(Sniffer.java:165)
+> at org.csploit.android.plugins.mitm.Sniffer$5$1.onPacket(Sniffer.java:415)
+> at org.csploit.android.tools.TcpDump$TcpDumpReceiver.onEvent(TcpDump.java:42)
+> at org.csploit.android.core.ChildManager.dispatchEvent(ChildManager.java:182)
+> at org.csploit.android.core.ChildManager.access$000(ChildManager.java:22)
+> at org.csploit.android.core.ChildManager$1.run(ChildManager.java:229)
+> at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+> at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+> at java.lang.Thread.run(Thread.java:818)

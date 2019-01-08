@@ -1,0 +1,31 @@
+LogCat filtered by SyncAdapter:
+`07-19 16:01:33.423: I/SyncAdapter(11888): 1 calendars found at android
+07-19 16:01:33.423: I/SyncAdapter(11888): Detected calendar name=Default calendar URI=https://ch4osdd.ignorelist.com/baikal/cal.php/calendars/dtx/default/
+07-19 16:01:34.273: I/SyncAdapter(11888): Event /baikal/cal.php/calendars/dtx/default/51622ddd-c40e-4524-8994-cefc524c5841-caldavsyncadapter.ics androidUri=content://com.android.calendar/events/1916
+07-19 16:01:34.364: I/SyncAdapter(11888): Event /baikal/cal.php/calendars/dtx/default/52d34f54-87d6-401c-b5ce-8cd057d22f19.ics androidUri=content://com.android.calendar/events/1917
+07-19 16:01:34.449: I/SyncAdapter(11888): Event /baikal/cal.php/calendars/dtx/default/55be1e1d-a263-49cb-b942-7a857b29db7d.ics androidUri=content://com.android.calendar/events/1918
+07-19 16:01:34.484: I/SyncAdapter(11888): Event /baikal/cal.php/calendars/dtx/default/5c7330be-9458-48fb-8e80-c5c93be40b9f-caldavsyncadapter.ics androidUri=null
+07-19 16:01:34.726: E/SyncAdapter(11888): Updating calendar exception java.lang.IllegalArgumentException
+07-19 16:01:34.726: E/SyncAdapter(11888): java.lang.IllegalArgumentException: Invalid int: "T0"
+07-19 16:01:34.726: E/SyncAdapter(11888):   at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:167)
+07-19 16:01:34.726: E/SyncAdapter(11888):   at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:137)
+07-19 16:01:34.726: E/SyncAdapter(11888):   at android.content.ContentProviderProxy.insert(ContentProviderNative.java:475)
+07-19 16:01:34.726: E/SyncAdapter(11888):   at android.content.ContentProviderClient.insert(ContentProviderClient.java:204)
+07-19 16:01:34.726: E/SyncAdapter(11888):   at org.gege.caldavsyncadapter.b.b.a.b(Unknown Source)
+07-19 16:01:34.726: E/SyncAdapter(11888):   at org.gege.caldavsyncadapter.syncadapter.a.a(Unknown Source)
+07-19 16:01:34.726: E/SyncAdapter(11888):   at org.gege.caldavsyncadapter.syncadapter.a.onPerformSync(Unknown Source)
+07-19 16:01:34.726: E/SyncAdapter(11888):   at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:259)`
+
+LogCat filtered by ACalDav's process id (different from the above due to different recording time)
+`07-19 15:44:35.818: E/DatabaseUtils(5750): Writing exception to parcel
+07-19 15:44:35.818: E/DatabaseUtils(5750): java.lang.NumberFormatException: Invalid int: "T0"
+07-19 15:44:35.818: E/DatabaseUtils(5750):  at java.lang.Integer.invalidInt(Integer.java:138)
+07-19 15:44:35.818: E/DatabaseUtils(5750):  at java.lang.Integer.parse(Integer.java:410)
+07-19 15:44:35.818: E/DatabaseUtils(5750):  at java.lang.Integer.parseInt(Integer.java:367)
+07-19 15:44:35.818: E/DatabaseUtils(5750):  at java.lang.Integer.parseInt(Integer.java:334)
+07-19 15:44:35.818: E/DatabaseUtils(5750):  at com.android.providers.calendar.CalendarProvider2.fixAllDayTime(CalendarProvider2.java:1596)
+07-19 15:44:35.818: E/DatabaseUtils(5750):  at com.android.providers.calendar.CalendarProvider2.insertInTransaction(CalendarProvider2.java:2290)
+07-19 15:44:35.818: E/DatabaseUtils(5750):  at com.android.providers.calendar.SQLiteContentProvider.insert(SQLiteContentProvider.java:98)
+07-19 15:44:35.818: E/DatabaseUtils(5750):  at android.content.ContentProvider$Transport.insert(ContentProvider.java:238)
+07-19 15:44:35.818: E/DatabaseUtils(5750):  at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:163)
+07-19 15:44:35.818: E/DatabaseUtils(5750):  at android.os.Binder.execTransact(Binder.java:446)`

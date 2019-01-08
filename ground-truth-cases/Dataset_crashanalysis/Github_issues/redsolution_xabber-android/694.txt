@@ -1,0 +1,11 @@
+W/System.err: org.jivesoftware.smack.sasl.SASLErrorException: SASLError using PLAIN: not-authorized
+03-31 10:52:36.492 27403-10572/com.dating W/System.err:     at org.jivesoftware.smack.SASLAuthentication.authenticationFailed(SASLAuthentication.java:365)
+03-31 10:52:36.492 27403-10572/com.dating W/System.err:     at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:1044)
+03-31 10:52:36.502 27403-10572/com.dating W/System.err:     at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$300(XMPPTCPConnection.java:948)
+03-31 10:52:36.502 27403-10572/com.dating W/System.err:     at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:963)
+03-31 10:52:36.502 27403-10573/com.dating W/System.err: 	at org.jivesoftware.smack.sasl.SASLErrorException: SASLError using PLAIN: not-authorized
+03-31 10:52:36.502 27403-10572/com.dating W/System.err: java.lang.Thread.run(Thread.java:841)
+03-31 10:52:36.502 27403-10573/com.dating W/System.err:     at org.jivesoftware.smack.SASLAuthentication.authenticationFailed(SASLAuthentication.java:365)
+03-31 10:52:36.502 27403-10573/com.dating W/System.err:     at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:1044)
+03-31 10:52:36.502 27403-10573/com.dating W/System.err:     at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$300(XMPPTCPConnection.java:948)
+03-31 10:52:36.502 27403-10573/com.dating W/System.err:     at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:963)

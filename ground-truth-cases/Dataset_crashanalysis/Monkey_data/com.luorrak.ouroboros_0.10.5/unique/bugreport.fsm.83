@@ -1,0 +1,32 @@
+//this is an auto-generated bug report
+//package name: com.luorrak.ouroboros
+//version: 0.10.5
+//appro_time: 159
+ FATAL EXCEPTION: main
+ android.database.sqlite.SQLiteDatabaseLockedException: database is locked (code 5)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLong(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLong(SQLiteConnection.java:598)
+ 	at android.database.sqlite.SQLiteSession.executeForLong(SQLiteSession.java:652)
+ 	at android.database.sqlite.SQLiteStatement.simpleQueryForLong(SQLiteStatement.java:107)
+ 	at android.database.DatabaseUtils.longForQuery(DatabaseUtils.java:813)
+ 	at android.database.DatabaseUtils.longForQuery(DatabaseUtils.java:801)
+ 	at android.database.sqlite.SQLiteDatabase.getVersion(SQLiteDatabase.java:862)
+ 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:242)
+ 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:164)
+ 	at com.luorrak.ouroboros.util.InfiniteDbHelper.<init>(InfiniteDbHelper.java:42)
+ 	at com.luorrak.ouroboros.catalog.BoardListFragment.onCreateView(BoardListFragment.java:77)
+ 	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1974)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1067)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1252)
+ 	at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:742)
+ 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1617)
+ 	at android.support.v4.app.FragmentManagerImpl$1.run(FragmentManager.java:517)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

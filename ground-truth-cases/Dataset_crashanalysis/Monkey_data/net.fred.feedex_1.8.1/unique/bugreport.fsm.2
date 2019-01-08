@@ -1,0 +1,33 @@
+//this is an auto-generated bug report
+//package name: net.fred.feedex
+//version: 1.8.1
+//appro_time: 1
+ java.lang.IllegalStateException: Could not execute method of the activity
+ 	at android.view.View$1.onClick(View.java:3633)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.reflect.InvocationTargetException
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at android.view.View$1.onClick(View.java:3628)
+ Caused by: java.lang.NullPointerException
+ 	at android.content.UriMatcher.match(UriMatcher.java:222)
+ 	at net.fred.feedex.provider.FeedData.a(SourceFile:86)
+ 	at net.fred.feedex.fragment.EntriesListFragment$1.onCreateLoader(SourceFile:85)
+ 	at android.app.LoaderManagerImpl.createLoader(LoaderManager.java:546)
+ 	at android.app.LoaderManagerImpl.createAndInstallLoader(LoaderManager.java:555)
+ 	at android.app.LoaderManagerImpl.restartLoader(LoaderManager.java:704)
+ 	at net.fred.feedex.fragment.EntriesListFragment$2.onSharedPreferenceChanged(SourceFile:107)
+ 	at android.app.SharedPreferencesImpl$EditorImpl.notifyListeners(SharedPreferencesImpl.java:475)
+ 	at android.app.SharedPreferencesImpl$EditorImpl.apply(SharedPreferencesImpl.java:385)
+ 	at net.fred.feedex.utils.PrefUtils.b(SourceFile:73)
+ 	at net.fred.feedex.activity.HomeActivity.onClickHideRead(SourceFile:230)

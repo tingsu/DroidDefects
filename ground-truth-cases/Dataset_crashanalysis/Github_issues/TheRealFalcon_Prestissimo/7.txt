@@ -1,0 +1,6 @@
+W/BinderNative(31182): java.lang.NullPointerException
+W/BinderNative(31182):  at com.falconware.prestissimo.SoundService.handleRemoteException(SoundService.java:75)
+W/BinderNative(31182):  at com.falconware.prestissimo.SoundService.access$200(SoundService.java:36)
+W/BinderNative(31182):  at com.falconware.prestissimo.SoundService$1$1.binderDied(SoundService.java:333)
+W/BinderNative(31182):  at android.os.BinderProxy.sendDeathNotice(Binder.java:433)
+W/BinderNative(31182):  at dalvik.system.NativeStart.run(Native Method)

@@ -1,0 +1,13 @@
+12-17 15:26:07.807 10131 10131 E AndroidRuntime: java.lang.ArrayIndexOutOfBoundsException: length=27; index=27
+12-17 15:26:07.807 10131 10131 E AndroidRuntime:        at org.asteroidos.sync.ble.WeatherService$2.success(WeatherService.java:84)
+12-17 15:26:07.807 10131 10131 E AndroidRuntime:        at github.vatsal.easyweather.WeatherMap$3.onResponseWeatherObject(WeatherMap.java:141)
+12-17 15:26:07.807 10131 10131 E AndroidRuntime:        at github.vatsal.easyweather.WeatherMap$3.onResponseWeatherObject(WeatherMap.java:122)
+12-17 15:26:07.807 10131 10131 E AndroidRuntime:        at github.vatsal.easyweather.retrofit.api.WeatherRetrofitCallback.onResponse(WeatherRetrofitCallback.java:33)
+12-17 15:26:07.807 10131 10131 E AndroidRuntime:        at retrofit2.ExecutorCallAdapterFactory$ExecutorCallbackCall$1$1.run(ExecutorCallAdapterFactory.java:68)
+12-17 15:26:07.807 10131 10131 E AndroidRuntime:        at android.os.Handler.handleCallback(Handler.java:751)
+12-17 15:26:07.807 10131 10131 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:95)
+12-17 15:26:07.807 10131 10131 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:154)
+12-17 15:26:07.807 10131 10131 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:6126)
+12-17 15:26:07.807 10131 10131 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+12-17 15:26:07.807 10131 10131 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+12-17 15:26:07.807 10131 10131 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)

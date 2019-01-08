@@ -1,0 +1,13 @@
+java.lang.OutOfMemoryError
+       at org.kxml2.io.KXmlParser.<init>(KXmlParser.java:142)
+       at java.lang.Class.newInstanceImpl(Class.java)
+       at java.lang.Class.newInstance(Class.java:1130)
+       at org.xmlpull.v1.XmlPullParserFactory.newInstance(XmlPullParserFactory.java:310)
+       at org.xmlpull.v1.XmlPullParserFactory.newInstance(XmlPullParserFactory.java:247)
+       at org.jivesoftware.smack.util.PacketParserUtils.newXmppParser(PacketParserUtils.java:174)
+       at org.jivesoftware.smack.util.PacketParserUtils.newXmppParser(PacketParserUtils.java:203)
+       at org.kontalk.client.XMPPTCPConnection.openStream(XMPPTCPConnection.java:945)
+       at org.kontalk.client.XMPPTCPConnection$PacketWriter.writePackets(XMPPTCPConnection.java:1317)
+       at org.kontalk.client.XMPPTCPConnection$PacketWriter.access$3200(XMPPTCPConnection.java:1198)
+       at org.kontalk.client.XMPPTCPConnection$PacketWriter$1.run(XMPPTCPConnection.java:1236)
+       at java.lang.Thread.run(Thread.java:841)

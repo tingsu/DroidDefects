@@ -1,0 +1,12 @@
+java.lang.NullPointerException: Attempt to read from field 'boolean us.shandian.blacklight.model.UserModel.follow_me' on a null object reference
+    at us.shandian.blacklight.ui.statuses.UserTimeLineActivity.resetFollowState(UserTimeLineActivity.java:272)
+    at us.shandian.blacklight.ui.statuses.UserTimeLineActivity.access$800(UserTimeLineActivity.java:61)
+    at us.shandian.blacklight.ui.statuses.UserTimeLineActivity$Downloader.onProgressUpdate(UserTimeLineActivity.java:448)
+    at us.shandian.blacklight.support.AsyncTask$1.handleMessage(AsyncTask.java:59)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5312)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:901)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:696)

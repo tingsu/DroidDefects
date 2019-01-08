@@ -1,0 +1,16 @@
+00:07:36.894 Error cgeo 17545  [network-6] HtmlImage.downloadOrRefreshCopy
+00:07:36.894 Error cgeo 17545  java.lang.IllegalArgumentException: Illegal character in path at index 28: http://geokrety.org/obrazki/
+00:07:36.894 Error cgeo 17545   at java.net.URI.create(URI.java:727)
+00:07:36.894 Error cgeo 17545   at ch.boye.httpclientandroidlib.client.methods.HttpGet.<init>(HttpGet.java:69)
+00:07:36.894 Error cgeo 17545   at cgeo.geocaching.network.Network.request(Network.java:180)
+00:07:36.894 Error cgeo 17545   at cgeo.geocaching.network.Network.getRequest(Network.java:288)
+00:07:36.894 Error cgeo 17545   at cgeo.geocaching.network.HtmlImage.downloadOrRefreshCopy(HtmlImage.java:312)
+00:07:36.894 Error cgeo 17545   at cgeo.geocaching.network.HtmlImage.access$700(HtmlImage.java:54)
+00:07:36.894 Error cgeo 17545   at cgeo.geocaching.network.HtmlImage$4.downloadAndSave(HtmlImage.java:258)
+00:07:36.894 Error cgeo 17545   at cgeo.geocaching.network.HtmlImage$4.access$500(HtmlImage.java:217)
+00:07:36.894 Error cgeo 17545   at cgeo.geocaching.network.HtmlImage$4$1$1.call(HtmlImage.java:236)
+00:07:36.894 Error cgeo 17545   at rx.schedulers.ExecutorScheduler$ExecutorAction.run(ExecutorScheduler.java:173)
+00:07:36.894 Error cgeo 17545   at rx.schedulers.ExecutorScheduler$ExecutorSchedulerWorker.run(ExecutorScheduler.java:99)
+00:07:36.894 Error cgeo 17545   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+00:07:36.894 Error cgeo 17545   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+00:07:36.894 Error cgeo 17545   at java.lang.Thread.run(Thread.java:841)

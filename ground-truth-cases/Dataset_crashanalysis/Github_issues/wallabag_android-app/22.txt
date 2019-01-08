@@ -1,0 +1,8 @@
+W/System.err( 5934): org.w3c.dom.DOMException: Only one root element allowed
+W/System.err( 5934):    at org.apache.harmony.xml.dom.DocumentImpl.insertChildAt(DocumentImpl.java:409)
+W/System.err( 5934):    at org.apache.harmony.xml.dom.InnerNodeImpl.appendChild(InnerNodeImpl.java:50)
+W/System.err( 5934):    at org.apache.harmony.xml.parsers.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:345)
+W/System.err( 5934):    at org.apache.harmony.xml.parsers.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:133)
+W/System.err( 5934):    at fr.gaulupeau.apps.Poche.Poche.parseRSS(Poche.java:383)
+W/System.err( 5934):    at fr.gaulupeau.apps.Poche.Poche$1$1.run(Poche.java:168)
+W/System.err( 5934):    at java.lang.Thread.run(Thread.java:1027)

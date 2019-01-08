@@ -1,0 +1,27 @@
+W/NotificationService(   61): java.io.IOException: setDataSource failed.: status=0x80000000
+W/NotificationService(   61):   at android.media.MediaPlayer.setDataSource(Native Method)
+W/NotificationService(   61):   at android.media.MediaPlayer.setDataSource(MediaPlayer.java:737)
+W/NotificationService(   61):   at android.media.MediaPlayer.setDataSource(MediaPlayer.java:692)
+W/NotificationService(   61):   at com.android.server.NotificationPlayer$CreationAndCompletionThread.run(NotificationPlayer.java:88)
+W/ActivityManager(   61): Timeout of broadcast BroadcastRecord{407a4320 android.provider.Telephony.SMS_RECEIVED} - receiver=android.os.BinderProxy@406f3d28, started 10006ms ago
+W/ActivityManager(   61): Receiver during timeout: ResolveInfo{4079cb70 org.addhen.smssync.receivers.SmsReceiver p=0 o=0 m=0x108000}
+I/ActivityManager(   61): Crashing app skipping ANR: ProcessRecord{406178a8 19902:org.addhen.smssync/10034} Broadcast of Intent { act=android.provider.Telephony.SMS_RECEIVED cmp=org.addhen.smssync/.receivers.SmsReceiver (has extras) }
+W/ActivityManager(   61): Timeout of broadcast BroadcastRecord{40769b08 null} - receiver=android.os.BinderProxy@406f3d28, started 10001ms ago
+W/ActivityManager(   61): Receiver during timeout: ResolveInfo{4068dff0 org.addhen.smssync.receivers.CheckTaskScheduledReceiver p=0 o=0 m=0x0}
+I/ActivityManager(   61): Crashing app skipping ANR: ProcessRecord{406178a8 19902:org.addhen.smssync/10034} Broadcast of Intent { flg=0x4 cmp=org.addhen.smssync/.receivers.CheckTaskScheduledReceiver (has extras) }
+V/BackupManagerService(   61): Backup requested but nothing pending
+W/ActivityManager(   61): Timeout of broadcast BroadcastRecord{406ca2a0 null} - receiver=android.os.BinderProxy@406f3d28, started 10001ms ago
+W/ActivityManager(   61): Receiver during timeout: ResolveInfo{406d98e8 org.addhen.smssync.receivers.CheckTaskScheduledReceiver p=0 o=0 m=0x0}
+I/ActivityManager(   61): Crashing app skipping ANR: ProcessRecord{406178a8 19902:org.addhen.smssync/10034} Broadcast of Intent { flg=0x4 cmp=org.addhen.smssync/.receivers.CheckTaskScheduledReceiver (has extras) }
+D/helloworld.SmsReceiver( 8711): onReceive android.provider.Telephony.SMS_RECEIVED
+V/Telephony( 9175): getOrCreateThreadId cursor cnt: 1
+W/NotificationService(   61): STOP command without a player
+D/MediaPlayer(   61): Couldn't open file on client side, trying server side
+E/MediaPlayerService(   34): Couldn't open fd for content://settings/system/notification_sound
+E/MediaPlayer(   61): Unable to to create media player
+W/NotificationService(   61): error loading sound for content://settings/system/notification_sound
+W/NotificationService(   61): java.io.IOException: setDataSource failed.: status=0x80000000
+W/NotificationService(   61):   at android.media.MediaPlayer.setDataSource(Native Method)
+W/NotificationService(   61):   at android.media.MediaPlayer.setDataSource(MediaPlayer.java:737)
+W/NotificationService(   61):   at android.media.MediaPlayer.setDataSource(MediaPlayer.java:692)
+W/NotificationService(   61):   at com.android.server.NotificationPlayer$CreationAndCompletionThread.run(NotificationPlayer.java:88)

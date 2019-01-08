@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: org.asdtm.fas
+//version: 0.2
+//appro_time: 157
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to start receiver org.asdtm.fas.JacocoInstrument.SMSInstrumentedReceiver: java.lang.ClassCastException: org.asdtm.fas.InventumContextWrapper cannot be cast to android.app.ContextImpl
+ 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:2431)
+ 	at android.app.ActivityThread.access$1500(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1332)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.ClassCastException: org.asdtm.fas.InventumContextWrapper cannot be cast to android.app.ContextImpl
+ 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:2421)
+ 	... 10 more

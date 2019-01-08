@@ -1,0 +1,28 @@
+W/System.err( 6219): java.io.FileNotFoundException: /storage/emulated/0/Android/data/org.gnucash.android/files/20150603_135620_gnucash_export.qif: open failed: EACCES (Permission denied)
+W/System.err( 6219):    at libcore.io.IoBridge.open(IoBridge.java:456)
+W/System.err( 6219):    at java.io.FileOutputStream.<init>(FileOutputStream.java:87)
+W/System.err( 6219):    at java.io.FileOutputStream.<init>(FileOutputStream.java:72)
+W/System.err( 6219):    at org.gnucash.android.export.ExporterAsyncTask.doInBackground(ExporterAsyncTask.java:115)
+W/System.err( 6219):    at org.gnucash.android.export.ExporterAsyncTask.doInBackground(ExporterAsyncTask.java:52)
+W/System.err( 6219):    at android.os.AsyncTask$2.call(AsyncTask.java:288)
+W/System.err( 6219):    at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+W/System.err( 6219):    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+W/System.err( 6219):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/System.err( 6219):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/System.err( 6219):    at java.lang.Thread.run(Thread.java:818)
+W/System.err( 6219): Caused by: android.system.ErrnoException: open failed: EACCES (Permission denied)
+W/System.err( 6219):    at libcore.io.Posix.open(Native Method)
+W/System.err( 6219):    at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+W/System.err( 6219):    at libcore.io.IoBridge.open(IoBridge.java:442)
+W/System.err( 6219):    ... 10 more
+E/ExporterAsyncTask( 6219): /storage/emulated/0/Android/data/org.gnucash.android/files/20150603_135620_gnucash_export.qif: open failed: EACCES (Permission denied)
+```
+
+Funnily enough, the parent directory of the file to be created _does_ exist and seems to be writeable:
+
+```
+root@titan_umtsds:/ # ls -l /storage/emulated/0/Android/data/org.gnucash.andro>
+drwxrwx--- root     sdcard_r          2015-06-03 13:33 files
+```
+
+My phone is a Moto G 2014 running Lolipop. I also have a MicroSD card, which is mounted at `/storage/sdcard1`. The app was installed via F-Droid, the version is 1.5.5.

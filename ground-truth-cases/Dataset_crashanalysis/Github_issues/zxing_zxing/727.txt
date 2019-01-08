@@ -1,0 +1,17 @@
+
+Unfortunately, this is hard to reproduce, at least there is a stack trace:
+
+```
+java.lang.ArrayIndexOutOfBoundsException: length=929; index=-488
+    at com.google.zxing.pdf417.decoder.ec.ModulusGF.multiply(ModulusGF.java:105)
+    at com.google.zxing.pdf417.decoder.ec.ModulusPoly.evaluateAt(ModulusPoly.java:99)
+    at com.google.zxing.pdf417.decoder.ec.ErrorCorrection.decode(ErrorCorrection.java:53)
+    at com.google.zxing.pdf417.decoder.PDF417ScanningDecoder.correctErrors(PDF417ScanningDecoder.java:556)
+    at com.google.zxing.pdf417.decoder.PDF417ScanningDecoder.decodeCodewords(PDF417ScanningDecoder.java:529)
+    at com.google.zxing.pdf417.decoder.PDF417ScanningDecoder.createDecoderResultFromAmbiguousValues(PDF417ScanningDecoder.java:308)
+    at com.google.zxing.pdf417.decoder.PDF417ScanningDecoder.createDecoderResult(PDF417ScanningDecoder.java:277)
+    at com.google.zxing.pdf417.decoder.PDF417ScanningDecoder.decode(PDF417ScanningDecoder.java:124)
+    at com.google.zxing.pdf417.PDF417Reader.decode(PDF417Reader.java:87)
+    at com.google.zxing.pdf417.PDF417Reader.decode(PDF417Reader.java:61)
+    at com.google.zxing.MultiFormatReader.decodeInternal(MultiFormatReader.java:171)
+    at com.google.zxing.MultiFormatReader.decode(MultiFormatReader.java:55)

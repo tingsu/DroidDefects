@@ -1,0 +1,43 @@
+We are using zbar library to scan qr code ourselves and we also use zxing core jar.
+Can you point to where should I be looking at 
+The log that I see is here
+<code>FATAL EXCEPTION: main
+                                                                    Process: zebpay.Application, PID: 24127
+                                                                    java.lang.NoClassDefFoundError: Failed resolution of: Lcom/google/zxing/client/android/R$layout;
+                                                                        at com.google.zxing.client.android.CaptureActivity.onCreate(CaptureActivity.java:159)
+                                                                        at android.app.Activity.performCreate(Activity.java:5995)
+                                                                        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+                                                                        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2312)
+                                                                        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2421)
+                                                                        at android.app.ActivityThread.access$900(ActivityThread.java:153)
+                                                                        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1324)
+                                                                        at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                        at android.os.Looper.loop(Looper.java:135)
+                                                                        at android.app.ActivityThread.main(ActivityThread.java:5347)
+                                                                        at java.lang.reflect.Method.invoke(Native Method)
+                                                                        at java.lang.reflect.Method.invoke(Method.java:372)
+                                                                        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+                                                                        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+                                                                     Caused by: java.lang.ClassNotFoundException: Didn't find class "com.google.zxing.client.android.R$layout" on path: DexPathList[[zip file "/data/app/zebpay.Application-1/base.apk"],nativeLibraryDirectories=[/data/app/zebpay.Application-1/lib/arm, /vendor/lib, /system/lib]]
+                                                                        at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+                                                                        at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+                                                                        at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+                                                                        at com.google.zxing.client.android.CaptureActivity.onCreate(CaptureActivity.java:159) 
+                                                                        at android.app.Activity.performCreate(Activity.java:5995) 
+                                                                        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106) 
+                                                                        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2312) 
+                                                                        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2421) 
+                                                                        at android.app.ActivityThread.access$900(ActivityThread.java:153) 
+                                                                        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1324) 
+                                                                        at android.os.Handler.dispatchMessage(Handler.java:102) 
+                                                                        at android.os.Looper.loop(Looper.java:135) 
+                                                                        at android.app.ActivityThread.main(ActivityThread.java:5347) 
+                                                                        at java.lang.reflect.Method.invoke(Native Method) 
+                                                                        at java.lang.reflect.Method.invoke(Method.java:372) 
+                                                                        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904) 
+                                                                        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699) 
+                                                                        Suppressed: java.lang.ClassNotFoundException: com.google.zxing.client.android.R$layout
+                                                                        at java.lang.Class.classForName(Native Method)
+                                                                        at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+                                                                        at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+                                                                        at java.lang.ClassLoader.loadClass(ClassLoader.java:504)

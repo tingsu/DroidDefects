@@ -1,0 +1,4 @@
+java.lang.IllegalArgumentException: rectangle is outside the image
+                                                                       at android.graphics.BitmapRegionDecoder.decodeRegion(BitmapRegionDecoder.java:187)
+                                                                       at com.test.emptydemo.lib2.InputStreamScene.fillCache(InputStreamScene.java:63)
+                                                                       at com.test.emptydemo.lib2.Scene$CacheThread.run(Scene.java:526)

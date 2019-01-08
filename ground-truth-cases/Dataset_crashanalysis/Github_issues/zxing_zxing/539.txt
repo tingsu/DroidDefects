@@ -1,0 +1,6 @@
+Exception in thread "main" java.lang.IllegalArgumentException: URI is not hierarchical
+    at sun.nio.fs.UnixUriUtils.fromUri(UnixUriUtils.java:48)
+    at sun.nio.fs.UnixFileSystemProvider.getPath(UnixFileSystemProvider.java:98)
+    at java.nio.file.Paths.get(Paths.java:138)
+    at com.google.zxing.client.j2se.CommandLineRunner.retainValid(CommandLineRunner.java:125)
+    at com.google.zxing.client.j2se.CommandLineRunner.main(CommandLineRunner.java:61)

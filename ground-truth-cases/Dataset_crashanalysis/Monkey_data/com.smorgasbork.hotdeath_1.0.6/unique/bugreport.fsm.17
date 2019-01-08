@@ -1,0 +1,11 @@
+//this is an auto-generated bug report
+//package name: com.smorgasbork.hotdeath
+//version: 1.0.6
+//appro_time: 56
+ java.lang.NullPointerException
+ 	at com.smorgasbork.hotdeath.Game.checkCard(Game.java:1113)
+ 	at com.smorgasbork.hotdeath.Hand.hasValidCards(Hand.java:244)
+ 	at com.smorgasbork.hotdeath.ComputerPlayer.startTurn(ComputerPlayer.java:34)
+ 	at com.smorgasbork.hotdeath.Game.advanceRound(Game.java:831)
+ 	at com.smorgasbork.hotdeath.Game.mainLoop(Game.java:744)
+ 	at com.smorgasbork.hotdeath.Game.run(Game.java:762)

@@ -1,0 +1,10 @@
+01-31 23:21:24.094 26592 26608 W MessageQueue: java.lang.IllegalStateException: Handler (com.android.internal.os.HandlerCaller$MyHandler) {6250e3} sending message to a Handler on a dead thread
+01-31 23:21:24.094 26592 26608 W MessageQueue:  at android.os.MessageQueue.enqueueMessage(MessageQueue.java:543)
+01-31 23:21:24.094 26592 26608 W MessageQueue:  at android.os.Handler.enqueueMessage(Handler.java:631)
+01-31 23:21:24.094 26592 26608 W MessageQueue:  at android.os.Handler.sendMessageAtTime(Handler.java:600)
+01-31 23:21:24.094 26592 26608 W MessageQueue:  at android.os.Handler.sendMessageDelayed(Handler.java:570)
+01-31 23:21:24.094 26592 26608 W MessageQueue:  at android.os.Handler.sendMessage(Handler.java:507)
+01-31 23:21:24.094 26592 26608 W MessageQueue:  at com.android.internal.os.HandlerCaller.sendMessage(HandlerCaller.java:86)
+01-31 23:21:24.094 26592 26608 W MessageQueue:  at android.accessibilityservice.AccessibilityService$IAccessibilityServiceClientWrapper.onAccessibilityEvent(AccessibilityService.java:725)
+01-31 23:21:24.094 26592 26608 W MessageQueue:  at android.accessibilityservice.IAccessibilityServiceClient$Stub.onTransact(IAccessibilityServiceClient.java:72)
+01-31 23:21:24.094 26592 26608 W MessageQueue:  at android.os.Binder.execTransact(Binder.java:453)

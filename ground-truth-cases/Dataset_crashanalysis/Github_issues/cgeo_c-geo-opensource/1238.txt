@@ -1,0 +1,47 @@
+> I/dalvikvm(30601):   | sysTid=31090 nice=19 sched=0/0 cgrp=bg_non_interactive handle=7644240
+> I/dalvikvm(30601):   at org.apache.http.util.ByteArrayBuffer.toByteArray(ByteArrayBuffer.java:~124)
+> I/dalvikvm(30601):   at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:85)
+> I/dalvikvm(30601):   at org.apache.http.entity.BufferedHttpEntity.<init>(BufferedHttpEntity.java:62)
+> I/dalvikvm(30601):   at cgeo.geocaching.network.HtmlImage.getDrawable(HtmlImage.java:93)
+> I/dalvikvm(30601):   at cgeo.geocaching.cgBase.storeCache(cgBase.java:2532)
+> I/dalvikvm(30601):   at cgeo.geocaching.cgeocaches$LoadDetailsThread.run(cgeocaches.java:1969)
+> I/dalvikvm(30601): 
+> W/dalvikvm(30601): threadid=9: thread exiting with uncaught exception (group=0x40018560)
+> E/AndroidRuntime(30601): FATAL EXCEPTION: Thread-65
+> E/AndroidRuntime(30601): java.lang.OutOfMemoryError
+> E/AndroidRuntime(30601): at org.apache.http.util.ByteArrayBuffer.toByteArray(ByteArrayBuffer.java:124)
+> E/AndroidRuntime(30601): at org.apache.http.util.EntityUtils.toByteArray(EntityUtils.java:85)
+> E/AndroidRuntime(30601): at org.apache.http.entity.BufferedHttpEntity.<init>(BufferedHttpEntity.java:62)
+> E/AndroidRuntime(30601): at cgeo.geocaching.network.HtmlImage.getDrawable(HtmlImage.java:93)
+> E/AndroidRuntime(30601): at cgeo.geocaching.cgBase.storeCache(cgBase.java:2532)
+> E/AndroidRuntime(30601): at cgeo.geocaching.cgeocaches$LoadDetailsThread.run(cgeocaches.java:1969)
+> W/ActivityManager(  192):   Force finishing activity cgeo.geocaching/.cgeocaches
+> I/cgeo    (30601): Using last location from network
+> D/WifiService(  192): acquireWifiLockLocked: WifiLock{NetworkLocationProvider type=2 binder=android.os.BinderProxy@408ab968}
+> I/cgeo    (30601): Location service started
+> E/WindowManager(30601): Activity cgeo.geocaching.cgeocaches has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView@40b44ed0 that was originally added here
+> E/WindowManager(30601): android.view.WindowLeaked: Activity cgeo.geocaching.cgeocaches has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView@40b44ed0 that was originally added here
+> E/WindowManager(30601): at android.view.ViewRoot.<init>(ViewRoot.java:259)
+> E/WindowManager(30601): at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:148)
+> E/WindowManager(30601): at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:91)
+> E/WindowManager(30601): at android.view.Window$LocalWindowManager.addView(Window.java:465)
+> E/WindowManager(30601): at android.app.Dialog.show(Dialog.java:241)
+> E/WindowManager(30601): at cgeo.geocaching.cgeocaches.onOptionsItemSelected(cgeocaches.java:990)
+> E/WindowManager(30601): at android.app.Activity.onMenuItemSelected(Activity.java:2205)
+> E/WindowManager(30601): at com.android.internal.policy.impl.PhoneWindow.onMenuItemSelected(PhoneWindow.java:776)
+> E/WindowManager(30601): at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:143)
+> E/WindowManager(30601): at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:855)
+> E/WindowManager(30601): at com.android.internal.view.menu.MenuDialogHelper.onClick(MenuDialogHelper.java:137)
+> E/WindowManager(30601): at com.android.internal.app.AlertController$AlertParams$3.onItemClick(AlertController.java:873)
+> E/WindowManager(30601): at android.widget.AdapterView.performItemClick(AdapterView.java:284)
+> E/WindowManager(30601): at android.widget.ListView.performItemClick(ListView.java:3513)
+> E/WindowManager(30601): at android.widget.AbsListView$PerformClick.run(AbsListView.java:1849)
+> E/WindowManager(30601): at android.os.Handler.handleCallback(Handler.java:587)
+> E/WindowManager(30601): at android.os.Handler.dispatchMessage(Handler.java:92)
+> E/WindowManager(30601): at android.os.Looper.loop(Looper.java:130)
+> E/WindowManager(30601): at android.app.ActivityThread.main(ActivityThread.java:3835)
+> E/WindowManager(30601): at java.lang.reflect.Method.invokeNative(Native Method)
+> E/WindowManager(30601): at java.lang.reflect.Method.invoke(Method.java:507)
+> E/WindowManager(30601): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:847)
+> E/WindowManager(30601): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:605)
+> E/WindowManager(30601): at dalvik.system.NativeStart.main(Native Method)

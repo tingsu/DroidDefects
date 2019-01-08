@@ -1,0 +1,9 @@
+E/AndroidRuntime(12726): android.database.sqlite.SQLiteException: unable to close due to unfinalised statements
+E/AndroidRuntime(12726):    at android.database.sqlite.SQLiteDatabase.dbclose(Native Method)
+E/AndroidRuntime(12726):    at android.database.sqlite.SQLiteDatabase.onAllReferencesReleased(SQLiteDatabase.java)
+E/AndroidRuntime(12726):    at android.database.sqlite.SQLiteDatabase.close(SQLiteDatabase.java)
+E/AndroidRuntime(12726):    at com.asksven.betterbatterystats.data.ReferenceDBHelper.addOrUpdateReference(ReferenceDBHelper.java:254)
+E/AndroidRuntime(12726):    at com.asksven.betterbatterystats.data.ReferenceStore.serializeRef(ReferenceStore.java:213)
+E/AndroidRuntime(12726):    at com.asksven.betterbatterystats.data.ReferenceStore.access$0(ReferenceStore.java:210)
+E/AndroidRuntime(12726):    at com.asksven.betterbatterystats.data.ReferenceStore$1.run(ReferenceStore.java:150)
+E/AndroidRuntime(12726):    at java.lang.Thread.run(Thread.java:1027)

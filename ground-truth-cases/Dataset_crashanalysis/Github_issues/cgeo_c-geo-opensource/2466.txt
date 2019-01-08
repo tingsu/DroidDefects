@@ -1,0 +1,4 @@
+02-10 20:46:21.013 E/AndroidRuntime(17011): java.util.ConcurrentModificationException
+02-10 20:46:21.013 E/AndroidRuntime(17011):     at java.util.ArrayList$ArrayListIterator.next(ArrayList.java:569)
+02-10 20:46:21.013 E/AndroidRuntime(17011):     at cgeo.geocaching.ui.CacheListAdapter.getCheckedCaches(CacheListAdapter.java:668)
+02-10 20:46:21.013 E/AndroidRuntime(17011):     at cgeo.geocaching.cgeocaches$MoveCachesToListThread.run(cgeocaches.java:1714)

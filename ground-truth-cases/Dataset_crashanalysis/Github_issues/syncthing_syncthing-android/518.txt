@@ -1,0 +1,33 @@
+I/System  (21141): libcore.io.ErrnoException: kill failed: ESRCH (No such process)
+I/System  (21141):      at libcore.io.Posix.kill(Native Method)
+I/System  (21141):      at libcore.io.ForwardingOs.kill(ForwardingOs.java:77)
+I/System  (21141):      at java.lang.ProcessManager$ProcessImpl.destroy(ProcessManager.java:257)
+I/System  (21141):      at com.nutomic.syncthingandroid.syncthing.SyncthingRunnable.run(SyncthingRunnable.java:136)
+I/System  (21141):      at com.nutomic.syncthingandroid.util.ConfigXml.generateKeysConfig(ConfigXml.java:104)
+I/System  (21141):      at com.nutomic.syncthingandroid.util.ConfigXml.<init>(ConfigXml.java:75)
+I/System  (21141):      at com.nutomic.syncthingandroid.syncthing.SyncthingService.updateState(SyncthingService.java:234)
+I/System  (21141):      at com.nutomic.syncthingandroid.syncthing.SyncthingService.onStartCommand(SyncthingService.java:191)
+I/System  (21141):      at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2359)
+I/System  (21141):      at android.app.ActivityThread.access$1900(ActivityThread.java:123)
+I/System  (21141):      at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1210)
+I/System  (21141):      at android.os.Handler.dispatchMessage(Handler.java:99)
+I/System  (21141):      at android.os.Looper.loop(Looper.java:137)
+I/System  (21141):      at android.app.ActivityThread.main(ActivityThread.java:4424)
+I/System  (21141):      at java.lang.reflect.Method.invokeNative(Native Method)
+I/System  (21141):      at java.lang.reflect.Method.invoke(Method.java:511)
+I/System  (21141):      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+I/System  (21141):      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+I/System  (21141):      at dalvik.system.NativeStart.main(Native Method)
+E/SyncthingNativeCode(21141): Syncthing binary crashed with error code 11
+W/ConfigXml(21141): Failed to open config, moving to config.xml.invalid and creating blank config
+F/libc    (22106): Fatal signal 11 (SIGSEGV) at 0x00dcfe64 (code=1)
+I/SyncthingRunnableIoNice(21141): ionice performed on libsyncthing.so
+I/System  (21141): Failed to destroy process 22112
+I/System  (21141): libcore.io.ErrnoException: kill failed: ESRCH (No such process)
+I/System  (21141):      at libcore.io.Posix.kill(Native Method)
+I/System  (21141):      at libcore.io.ForwardingOs.kill(ForwardingOs.java:77)
+I/System  (21141):      at java.lang.ProcessManager$ProcessImpl.destroy(ProcessManager.java:257)
+I/System  (21141):      at com.nutomic.syncthingandroid.syncthing.SyncthingRunnable$1.run(SyncthingRunnable.java:183)
+```
+
+I looked at app directory with adb shell and saw this:

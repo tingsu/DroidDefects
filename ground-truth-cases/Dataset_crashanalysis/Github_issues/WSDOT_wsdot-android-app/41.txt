@@ -1,0 +1,15 @@
+`java.lang.NoClassDefFoundError: android.support.v7.internal.view.menu.MenuBuilder
+    at android.support.v7.app.AppCompatDelegateImplV7.initializePanelMenu(AppCompatDelegateImplV7.java:1168)
+    at android.support.v7.app.AppCompatDelegateImplV7.preparePanel(AppCompatDelegateImplV7.java:1232)
+    at android.support.v7.app.AppCompatDelegateImplV7.doInvalidatePanelMenu(AppCompatDelegateImplV7.java:1527)
+    at android.support.v7.app.AppCompatDelegateImplV7.access$100(AppCompatDelegateImplV7.java:90)
+    at android.support.v7.app.AppCompatDelegateImplV7$1.run(AppCompatDelegateImplV7.java:125)
+    at android.os.Handler.handleCallback(Handler.java:725)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:176)
+    at android.app.ActivityThread.main(ActivityThread.java:5299)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:511)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1102)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:869)
+    at dalvik.system.NativeStart.main(Native Method)`

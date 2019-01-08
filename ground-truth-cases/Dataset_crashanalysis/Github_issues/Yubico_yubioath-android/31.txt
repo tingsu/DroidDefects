@@ -1,0 +1,23 @@
+java.lang.RuntimeException: Unable to resume activity {com.yubico.yubioath/com.yubico.yubioath.MainActivity}:   java.lang.NullPointerException: Attempt to invoke virtual method 'boolean nordpol.android.TagDispatcher.interceptIntent (android.content.Intent)' on a null object reference
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3050)
+    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3081)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2447)
+    at android.app.ActivityThread.access$800(ActivityThread.java:156)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1351)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:211)
+    at android.app.ActivityThread.main(ActivityThread.java:5373)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1020)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:815)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean nordpol.android.TagDispatcher.interceptIntent  (android.content.Intent)' on a null object reference
+    at com.yubico.yubioath.MainActivity.onNewIntent(Unknown Source)
+    at android.app.Instrumentation.callActivityOnNewIntent(Instrumentation.java:1216)
+    at android.app.Instrumentation.callActivityOnNewIntent(Instrumentation.java:1228)
+    at android.app.ActivityThread.deliverNewIntents(ActivityThread.java:2511)
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3032)
+    ... 11 more
+```
+
+I haven't been able to find a reliable way of triggering this, but it seems that sometimes onNewIntent is called before onResume, leaving tagDispatcher = null. I've looked at the tutorial for Nordpol, and it seems to follow the same pattern of instantiating tagDispatcher in onResume, deactivating it in onPause, and calling tagDispatcher.interceptIntent() in onNewIntent. @Franzaine, @petter-fidesmo any suggestions on how to do this in a better way? A simple null check would obviously solve the NPE, but if you have any better suggestions please let me know!

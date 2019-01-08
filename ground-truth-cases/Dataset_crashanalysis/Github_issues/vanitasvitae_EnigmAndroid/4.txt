@@ -1,0 +1,23 @@
+E/AndroidRuntime( 1930): java.lang.IllegalStateException: Could not execute method of the activity
+E/AndroidRuntime( 1930):    at android.view.View$1.onClick(View.java:3591)
+E/AndroidRuntime( 1930):    at android.view.View.performClick(View.java:4084)
+E/AndroidRuntime( 1930):    at android.view.View$PerformClick.run(View.java:16966)
+E/AndroidRuntime( 1930):    at android.os.Handler.handleCallback(Handler.java:615)
+E/AndroidRuntime( 1930):    at android.os.Handler.dispatchMessage(Handler.java:92)
+E/AndroidRuntime( 1930):    at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime( 1930):    at android.app.ActivityThread.main(ActivityThread.java:4745)
+E/AndroidRuntime( 1930):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1930):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime( 1930):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+E/AndroidRuntime( 1930):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+E/AndroidRuntime( 1930):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 1930): Caused by: java.lang.reflect.InvocationTargetException
+E/AndroidRuntime( 1930):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1930):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime( 1930):    at android.view.View$1.onClick(View.java:3586)
+E/AndroidRuntime( 1930):    ... 11 more
+E/AndroidRuntime( 1930): Caused by: java.lang.ArrayIndexOutOfBoundsException: length=26; index=-9
+E/AndroidRuntime( 1930):    at de.vanitasvitae.enigmandroid.Plugboard.setPlugPair(Plugboard.java:64)
+E/AndroidRuntime( 1930):    at de.vanitasvitae.enigmandroid.Enigma.setPlugboard(Enigma.java:203)
+E/AndroidRuntime( 1930):    at de.vanitasvitae.enigmandroid.MainActivity.updateEnigma(MainActivity.java:117)
+E/AndroidRuntime( 1930):    at de.vanitasvitae.enigmandroid.MainActivity.doCrypto(MainActivity.java:134)

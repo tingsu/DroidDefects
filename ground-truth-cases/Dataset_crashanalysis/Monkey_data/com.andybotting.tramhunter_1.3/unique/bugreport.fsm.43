@@ -1,0 +1,31 @@
+//this is an auto-generated bug report
+//package name: com.andybotting.tramhunter
+//version: 1.3
+//appro_time: 58
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalStateException: Cannot perform this operation because the connection pool has been closed.
+ 	at android.database.sqlite.SQLiteConnectionPool.throwIfClosedLocked(SQLiteConnectionPool.java:962)
+ 	at android.database.sqlite.SQLiteConnectionPool.waitForConnection(SQLiteConnectionPool.java:599)
+ 	at android.database.sqlite.SQLiteConnectionPool.acquireConnection(SQLiteConnectionPool.java:348)
+ 	at android.database.sqlite.SQLiteSession.acquireConnection(SQLiteSession.java:894)
+ 	at android.database.sqlite.SQLiteSession.executeForLong(SQLiteSession.java:650)
+ 	at android.database.sqlite.SQLiteStatement.simpleQueryForLong(SQLiteStatement.java:107)
+ 	at android.database.DatabaseUtils.longForQuery(DatabaseUtils.java:813)
+ 	at android.database.DatabaseUtils.longForQuery(DatabaseUtils.java:801)
+ 	at android.database.sqlite.SQLiteDatabase.getVersion(SQLiteDatabase.java:862)
+ 	at com.andybotting.tramhunter.dao.TramHunterDB.createDB(TramHunterDB.java:230)
+ 	at com.andybotting.tramhunter.dao.TramHunterDB.getExternalStorageDB(TramHunterDB.java:198)
+ 	at com.andybotting.tramhunter.dao.TramHunterDB.getDatabase(TramHunterDB.java:126)
+ 	at com.andybotting.tramhunter.dao.TramHunterDB.getTramClass(TramHunterDB.java:974)
+ 	at com.andybotting.tramhunter.activity.StopDetailsActivity$GetNextTramTimes.doInBackground(StopDetailsActivity.java:594)
+ 	at com.andybotting.tramhunter.activity.StopDetailsActivity$GetNextTramTimes.doInBackground(StopDetailsActivity.java:569)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

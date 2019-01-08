@@ -1,0 +1,5 @@
+ [proguard] java.io.IOException: The input doesn't contain any classes. Did you specify the proper '-injars' options?
+ [proguard]     at proguard.InputReader.execute(InputReader.java:91)
+ [proguard]     at proguard.ProGuard.readInput(ProGuard.java:195)
+ [proguard]     at proguard.ProGuard.execute(ProGuard.java:78)
+ [proguard]     at proguard.ProGuard.main(ProGuard.java:499)

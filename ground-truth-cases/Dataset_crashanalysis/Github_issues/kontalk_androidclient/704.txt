@@ -1,0 +1,11 @@
+java.lang.NullPointerException
+       at org.kontalk.service.msgcenter.MessageCenterService.sendPacket(MessageCenterService.java:664)
+       at org.kontalk.service.msgcenter.MessageCenterService.sendPacket(MessageCenterService.java:655)
+       at org.kontalk.service.msgcenter.MessageCenterService.sendPresence(MessageCenterService.java:1437)
+       at org.kontalk.service.msgcenter.MessageCenterService.inactive(MessageCenterService.java:1407)
+       at org.kontalk.service.msgcenter.MessageCenterService.access$200(MessageCenterService.java:148)
+       at org.kontalk.service.msgcenter.MessageCenterService$IdleConnectionHandler.handleMessage(MessageCenterService.java:440)
+       at org.kontalk.service.msgcenter.MessageCenterService$IdleConnectionHandler.handleMessage(MessageCenterService.java:420)
+       at android.os.Handler.dispatchMessage(Handler.java:99)
+       at android.os.Looper.loop(Looper.java:176)
+       at android.os.HandlerThread.run(HandlerThread.java:60)

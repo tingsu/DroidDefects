@@ -1,0 +1,9 @@
+     [exec] junit.framework.AssertionFailedError: expected:<N 51° 21.544 · E 007° 02.566> but was:<null>
+     [exec]     at cgeo.geocaching.connector.gc.GCParserTest.testEditModifiedCoordinates(GCParserTest.java:163)
+     [exec]     at java.lang.reflect.Method.invokeNative(Native Method)
+     [exec]     at android.test.InstrumentationTestCase.runMethod(InstrumentationTestCase.java:214)
+     [exec]     at android.test.InstrumentationTestCase.runTest(InstrumentationTestCase.java:199)
+     [exec]     at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:169)
+     [exec]     at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:154)
+     [exec]     at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:545)
+     [exec]     at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1551)

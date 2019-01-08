@@ -1,0 +1,6 @@
+java.util.ConcurrentModificationException
+       at java.util.HashMap$HashIterator.nextEntry(HashMap.java:788)
+       at java.util.HashMap$KeyIterator.next(HashMap.java:815)
+       at org.jivesoftware.smackx.ping.PingManager.pingMyServer(PingManager.java:252)
+       at org.kontalk.service.msgcenter.MessageCenterService$3.run(MessageCenterService.java:1114)
+       at java.lang.Thread.run(Thread.java:818)

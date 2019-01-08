@@ -1,0 +1,6 @@
+java.lang.NullPointerException
+    at com.zxing.decoding.DecodeHandler.decode(DecodeHandler.java:76)
+    at com.zxing.decoding.DecodeHandler.handleMessage(DecodeHandler.java:57)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:136)
+    at com.zxing.decoding.DecodeThread.run(DecodeThread.java:82)

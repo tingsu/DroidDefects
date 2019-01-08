@@ -1,0 +1,5 @@
+E/AndroidRuntime(29693): java.lang.ClassCastException: java.net.ConnectException cannot be cast to javax.net.ssl.SSLException
+E/AndroidRuntime(29693):    at com.ubergeek42.WeechatAndroid.WeechatActivity.onError(WeechatActivity.java:206)
+E/AndroidRuntime(29693):    at com.ubergeek42.WeechatAndroid.service.RelayService.onError(RelayService.java:431)
+E/AndroidRuntime(29693):    at com.ubergeek42.weechat.relay.RelayConnection$3.run(RelayConnection.java:341)
+E/AndroidRuntime(29693):    at java.lang.Thread.run(Thread.java:856)

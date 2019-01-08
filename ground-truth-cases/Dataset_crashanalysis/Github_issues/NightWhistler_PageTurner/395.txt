@@ -1,0 +1,6 @@
+> java.lang.ArrayIndexOutOfBoundsException: length=0; index=-1
+>     at java.util.ArrayList.get(ArrayList.java:306)
+>     at net.nightwhistler.pageturner.view.bookview.FixedPagesStrategy.getTopLeftPosition(FixedPagesStrategy.java:216)
+>     at net.nightwhistler.pageturner.view.bookview.BookView.getStartOfCurrentPage(BookView.java:687)
+>     at net.nightwhistler.pageturner.activity.ReadingFragment$StreamToDiskRunnable.run(ReadingFragment.java:654)
+>     at java.lang.Thread.run(Thread.java:856)

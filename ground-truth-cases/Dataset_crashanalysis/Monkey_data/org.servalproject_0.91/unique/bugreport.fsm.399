@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: org.servalproject
+//version: 0.91
+//appro_time: 41
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.UnsatisfiedLinkError: Couldn't load serval from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/org.servalproject-1.apk"],nativeLibraryDirectories=[/data/app-lib/org.servalproject-1, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at org.servalproject.servald.ServalD.<clinit>(ServalD.java:53)
+ 	at org.servalproject.ServalBatPhoneApplication.installFiles(ServalBatPhoneApplication.java:559)
+ 	at org.servalproject.Main$3.doInBackground(Main.java:237)
+ 	at org.servalproject.Main$3.doInBackground(Main.java:234)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

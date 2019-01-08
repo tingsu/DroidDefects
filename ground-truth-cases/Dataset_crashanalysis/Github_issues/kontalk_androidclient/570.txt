@@ -1,0 +1,10 @@
+java.lang.NoSuchMethodError: android.database.sqlite.SQLiteStatement.executeUpdateDelete
+    at org.kontalk.provider.UsersProvider.executeUpdateDelete(UsersProvider.java:957)
+    at org.kontalk.provider.UsersProvider.addResyncContact(UsersProvider.java:678)
+    at org.kontalk.provider.UsersProvider.resync(UsersProvider.java:491)
+    at org.kontalk.provider.UsersProvider.update(UsersProvider.java:331)
+    at android.content.ContentProvider$Transport.update(ContentProvider.java:245)
+    at android.content.ContentProviderClient.update(ContentProviderClient.java:77)
+    at org.kontalk.sync.Syncer.performSync(Syncer.java:354)
+    at org.kontalk.sync.SyncAdapter.onPerformSync(SyncAdapter.java:109)
+    at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:164)

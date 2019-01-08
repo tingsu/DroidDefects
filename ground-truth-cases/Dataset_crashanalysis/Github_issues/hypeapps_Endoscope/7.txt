@@ -1,0 +1,21 @@
+08-09 21:56:52.530 D/IMG-OMX ( 2387): Loaded OMX.IMG.TOPAZ.VIDEO.Encoder (0xb76ea148) from libomx_vxe.so
+08-09 21:56:52.530 E/IMGTOPAZ( 2387): Error in OTE_Video_GetParameter at line 499
+08-09 21:56:52.530 D/IMG-OMX ( 2387): Removed 0xb76ea148 from libomx_vxe.so
+08-09 21:56:52.535 D/CameraSource( 2387): Camera does not support setVideoSize()
+08-09 21:56:52.535 E/CameraSource( 2387): Video dimension (800x480) is unsupported
+08-09 21:56:52.535 E/MediaRecorder(15019): start failed: -19
+08-09 21:56:52.540 W/dalvikvm(15019): threadid=13: thread exiting with uncaught exception (group=0x41591c50)
+08-09 21:56:52.540 E/AndroidRuntime(15019): FATAL EXCEPTION: Thread-1303
+08-09 21:56:52.540 E/AndroidRuntime(15019): Process: pl.hypeapp.endoscope, PID: 15019
+08-09 21:56:52.540 E/AndroidRuntime(15019): java.lang.RuntimeException: Can't create handler inside thread that has not called Looper.prepare()
+08-09 21:56:52.540 E/AndroidRuntime(15019):     at android.os.Handler.<init>(Handler.java:200)
+08-09 21:56:52.540 E/AndroidRuntime(15019):     at android.os.Handler.<init>(Handler.java:114)
+08-09 21:56:52.540 E/AndroidRuntime(15019):     at android.app.Dialog.<init>(Dialog.java:109)
+08-09 21:56:52.540 E/AndroidRuntime(15019):     at android.app.Dialog.<init>(Dialog.java:149)
+08-09 21:56:52.540 E/AndroidRuntime(15019):     at android.support.v7.app.AppCompatDialog.<init>(AppCompatDialog.java:43)
+08-09 21:56:52.540 E/AndroidRuntime(15019):     at android.support.v7.app.AlertDialog.<init>(AlertDialog.java:95)
+08-09 21:56:52.540 E/AndroidRuntime(15019):     at android.support.v7.app.AlertDialog$Builder.create(AlertDialog.java:927)
+08-09 21:56:52.540 E/AndroidRuntime(15019):     at pl.hypeapp.endoscope.StartStreamActivity.logError(StartStreamActivity.java:224)
+08-09 21:56:52.540 E/AndroidRuntime(15019):     at pl.hypeapp.endoscope.StartStreamActivity.onError(StartStreamActivity.java:168)
+08-09 21:56:52.540 E/AndroidRuntime(15019):     at net.majorkernelpanic.streaming.rtsp.RtspServer.postError(RtspServer.java:300)
+08-09 21:56:52.540 E/AndroidRuntime(15019):     at net.majorkernelpanic.streaming.rtsp.RtspServer$WorkerThread.run(RtspServer.java:410)

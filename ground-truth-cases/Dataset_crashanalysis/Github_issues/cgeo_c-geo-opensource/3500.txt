@@ -1,0 +1,12 @@
+java.lang.NullPointerException
+   at cgeo.geocaching.utils.LazyInitializedList.size(LazyInitializedList.java:50)
+   at java.util.AbstractList$SimpleListIterator.hasNext(AbstractList.java:51)
+   at cgeo.geocaching.Waypoint.mergeWayPoints(Waypoint.java:118)
+   at cgeo.geocaching.Geocache.gatherMissingFrom(Geocache.java:316)
+   at cgeo.geocaching.cgData.saveCache(cgData.java:1026)
+   at cgeo.geocaching.SearchResult.addAndPutInCache(SearchResult.java:246)
+   at cgeo.geocaching.connector.gc.GCParser.parseCacheFromText(GCParser.java:754)
+   at cgeo.geocaching.connector.gc.GCParser.parseCache(GCParser.java:347)
+   at cgeo.geocaching.connector.gc.GCConnector.searchByGeocode(GCConnector.java:156)
+   at cgeo.geocaching.Geocache.searchByGeocode(Geocache.java:1678)
+   at cgeo.geocaching.CacheDetailActivity$LoadCacheThread.run(CacheDetailActivity.java:729)

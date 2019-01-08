@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: io.github.hidroh.materialistic
+//version: 3.1
+//appro_time: 15
+ java.lang.IllegalStateException: The specified child already has a parent. You must call removeView() on the child's parent first.
+ 	at android.view.ViewGroup.addViewInner(ViewGroup.java:3509)
+ 	at android.view.ViewGroup.addView(ViewGroup.java:3380)
+ 	at android.view.ViewGroup.addView(ViewGroup.java:3325)
+ 	at android.view.ViewGroup.addView(ViewGroup.java:3301)
+ 	at io.github.hidroh.materialistic.WebFragment.setFullscreen(WebFragment.java:448)
+ 	at io.github.hidroh.materialistic.WebFragment$1.onReceive(WebFragment.java:89)
+ 	at android.support.v4.content.LocalBroadcastManager.executePendingBroadcasts(LocalBroadcastManager.java:297)
+ 	at android.support.v4.content.LocalBroadcastManager.access$000(LocalBroadcastManager.java:46)
+ 	at android.support.v4.content.LocalBroadcastManager$1.handleMessage(LocalBroadcastManager.java:116)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

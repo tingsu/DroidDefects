@@ -1,0 +1,42 @@
+09-26 10:13:44.526 28380 28380 W ConversationItem: Content location: http://sobmmsc.vmobl.com:8088/ammsc/?xxxxxx
+09-26 10:13:44.601 28380 28399 W MmsDownloadJob: Downloading mms at sobmmsc.vmobl.com
+09-26 10:13:44.603 28380 28399 W CompatMmsConnection: Falling back to try receiving via Lollipop API
+09-26 10:13:44.610 28380 28399 W IncomingLollipopMmsConnection: downloading multimedia from http://sobmmsc.vmobl.com:8088/ammsc/?xxxxxx to content://org.thoughtcrime.provider.securesms.mms/mms/1474899224609
+09-26 10:13:44.655 28380 28380 W PhoneNumberFormatter: Got local CC: US
+09-26 10:13:44.662 28380 28380 W PhoneNumberFormatter: Got local CC: US
+09-26 10:13:44.689 28380 28380 W PhoneNumberFormatter: Got local CC: US
+09-26 10:13:44.695 28380 28380 W PhoneNumberFormatter: Got local CC: US
+09-26 10:13:44.714 28380 28380 W PhoneNumberFormatter: Got local CC: US
+09-26 10:13:44.720 28380 28380 W PhoneNumberFormatter: Got local CC: US
+09-26 10:13:44.727 28380 28380 W PhoneNumberFormatter: Got local CC: US
+09-26 10:13:44.733 28380 28380 W PhoneNumberFormatter: Got local CC: US
+09-26 10:14:33.329 28380 30672 W WebSocketConnection: Sending keep alive...
+09-26 10:14:33.606 28380 30671 W OkHttpClientWrapper: onMessage: BINARY
+09-26 10:14:33.612 28380 30671 W WebSocketConnection: WSC onMessage()
+09-26 10:14:33.619 28380 30671 W WebSocketConnection: Message Type: 2
+09-26 10:14:37.678 28380 28405 W MessageRetrievalService: Application level read timeout...
+09-26 10:14:37.681 28380 28405 W MessageRetrievalService: Network requirement: true, active activities: 1, push pending: 0
+09-26 10:14:37.684 28380 28405 W MessageRetrievalService: Reading message...
+09-26 10:14:44.473 28380 28380 W PassphraseRequiredActionBarActivity: onPause()
+09-26 10:14:44.513 28380 28380 W KeyCachingService: onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+09-26 10:14:44.513 28380 28380 W KeyCachingService: Decrementing activity count...
+09-26 10:14:44.513 28380 28380 W KeyCachingService: Starting timeout: 1800000
+09-26 10:14:44.515 28380 28380 W MessageRetrievalService: Active Count: 0
+09-26 10:14:44.648 28380 28399 W IncomingLollipopMmsConnection: java.util.concurrent.TimeoutException: timeout when waiting for MMS
+09-26 10:14:44.648 28380 28399 W IncomingLollipopMmsConnection:     at org.thoughtcrime.securesms.mms.LollipopMmsConnection.waitForResult(LollipopMmsConnection.java:74)
+09-26 10:14:44.648 28380 28399 W IncomingLollipopMmsConnection:     at org.thoughtcrime.securesms.mms.IncomingLollipopMmsConnection.retrieve(IncomingLollipopMmsConnection.java:86)
+09-26 10:14:44.648 28380 28399 W IncomingLollipopMmsConnection:     at org.thoughtcrime.securesms.mms.CompatMmsConnection.retrieve(CompatMmsConnection.java:74)
+09-26 10:14:44.648 28380 28399 W IncomingLollipopMmsConnection:     at org.thoughtcrime.securesms.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:97)
+09-26 10:14:44.648 28380 28399 W IncomingLollipopMmsConnection:     at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+09-26 10:14:44.648 28380 28399 W IncomingLollipopMmsConnection:     at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+09-26 10:14:44.648 28380 28399 W IncomingLollipopMmsConnection:     at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+09-26 10:14:44.663 28380 28399 W MmsDownloadJob: ws.com.google.android.mms.MmsException: java.util.concurrent.TimeoutException: timeout when waiting for MMS
+09-26 10:14:44.663 28380 28399 W MmsDownloadJob:    at org.thoughtcrime.securesms.mms.IncomingLollipopMmsConnection.retrieve(IncomingLollipopMmsConnection.java:97)
+09-26 10:14:44.663 28380 28399 W MmsDownloadJob:    at org.thoughtcrime.securesms.mms.CompatMmsConnection.retrieve(CompatMmsConnection.java:74)
+09-26 10:14:44.663 28380 28399 W MmsDownloadJob:    at org.thoughtcrime.securesms.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:97)
+09-26 10:14:44.663 28380 28399 W MmsDownloadJob:    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+09-26 10:14:44.663 28380 28399 W MmsDownloadJob:    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+09-26 10:14:44.663 28380 28399 W MmsDownloadJob:    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+09-26 10:14:44.663 28380 28399 W MmsDownloadJob: Caused by: java.util.concurrent.TimeoutException: timeout when waiting for MMS
+09-26 10:14:44.663 28380 28399 W MmsDownloadJob:    at org.thoughtcrime.securesms.mms.LollipopMmsConnection.waitForResult(LollipopMmsConnection.java:74)
+09-26 10:14:44.663 28380 28399 W MmsDownloadJob:    at org.thoughtcrime.securesms.mms.IncomingLollipopMmsConnection.retrieve(IncomingLollipopMmsConnection.java:86)

@@ -1,0 +1,7 @@
+11-30 23:25:44.308: E/AndroidRuntime(11463): java.lang.UnsatisfiedLinkError: Couldn't load pacman from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.zagayevskiy.pacman-2.apk"],nativeLibraryDirectories=[/data/app-lib/com.zagayevskiy.pacman-2, /vendor/lib, /system/lib]]]: findLibrary returned null
+11-30 23:25:44.308: E/AndroidRuntime(11463):    at java.lang.Runtime.loadLibrary(Runtime.java:355)
+11-30 23:25:44.308: E/AndroidRuntime(11463):    at java.lang.System.loadLibrary(System.java:525)
+11-30 23:25:44.308: E/AndroidRuntime(11463):    at com.zagayevskiy.pacman.PacmanLib.<clinit>(PacmanLib.java:8)
+11-30 23:25:44.308: E/AndroidRuntime(11463):    at com.zagayevskiy.pacman.PacmanView$PacmanRenderer.onSurfaceChanged(PacmanView.java:54)
+11-30 23:25:44.308: E/AndroidRuntime(11463):    at android.opengl.GLSurfaceView$GLThread.guardedRun(GLSurfaceView.java:1514)
+11-30 23:25:44.308: E/AndroidRuntime(11463):    at android.opengl.GLSurfaceView$GLThread.run(GLSurfaceView.java:1242)

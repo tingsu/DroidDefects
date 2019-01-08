@@ -1,0 +1,16 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{us.shandian.blacklight/us.shandian.blacklight.ui.statuses.SingleActivity}: java.lang.NullPointerException: Attempt to read from field 'boolean us.shandian.blacklight.model.MessageModel.favorited' on a null object reference
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2198)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2257)
+    at android.app.ActivityThread.access$800(ActivityThread.java:139)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1210)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.app.ActivityThread.main(ActivityThread.java:5086)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+Caused by: java.lang.NullPointerException: Attempt to read from field 'boolean us.shandian.blacklight.model.MessageModel.favorited' on a null object reference
+    at us.shandian.blacklight.ui.statuses.SingleActivity.onCreate(SingleActivity.java:100)
+    at android.app.Activity.performCreate(Activity.java:5248)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1110)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2162)

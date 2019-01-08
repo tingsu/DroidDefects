@@ -1,0 +1,43 @@
+    Trace: NODEJS FATAL EXCEPTION:TypeError: Object __X() has no method 'apply'
+    at process.<anonymous> (/home/fred/WikiDumper/mwoffliner/mwoffliner.js:1441:13)
+    at process.emit (events.js:95:17)
+    at process._fatalException (node.js:295:26)
+TypeError: Object __X() has no method 'apply'
+    at listOnTimeout (timers.js:112:15)
+---------------------------------------------
+    at startTimer (/home/fred/WikiDumper/mwoffliner/node_modules/jsdom/lib/jsdom/browser/Window.js:23:13)
+    at Window.setTimeout (/home/fred/WikiDumper/mwoffliner/node_modules/jsdom/lib/jsdom/browser/Window.js:70:48)
+    at eval (eval at eval at <anonymous> (http://focus.ti.com/js/shared/metrics/metrics-min.js?version=1:9:316))
+    at http://focus.ti.com/js/shared/metrics/metrics-min.js?version=1:9:316
+    at Contextify.sandbox.run (/home/fred/WikiDumper/mwoffliner/node_modules/jsdom/node_modules/contextify/lib/contextify.js:12:24)
+    at exports.javascript (/home/fred/WikiDumper/mwoffliner/node_modules/jsdom/lib/jsdom/level2/languages/javascript.js:5:14)
+    at define.proto._eval (/home/fred/WikiDumper/mwoffliner/node_modules/jsdom/lib/jsdom/level2/html.js:1621:47)
+    at /home/fred/WikiDumper/mwoffliner/node_modules/jsdom/lib/jsdom/level2/html.js:51:20
+---------------------------------------------
+    at ClientRequest.<anonymous> (/home/fred/WikiDumper/mwoffliner/node_modules/jsdom/lib/jsdom/level2/html.js:129:16)
+    at ClientRequest.emit (events.js:95:17)
+    at parserOnIncomingClient (http.js:1693:21)
+    at parserOnHeadersComplete (http.js:122:23)
+    at socketOnData (http.js:1588:20)
+    at onread (net.js:528:27)
+/home/fred/WikiDumper/mwoffliner/mwoffliner.js:1443
+    throw error;
+          ^
+TypeError: Object __X() has no method 'apply'
+    at listOnTimeout (timers.js:112:15)
+---------------------------------------------
+    at startTimer (/home/fred/WikiDumper/mwoffliner/node_modules/jsdom/lib/jsdom/browser/Window.js:23:13)
+    at Window.setTimeout (/home/fred/WikiDumper/mwoffliner/node_modules/jsdom/lib/jsdom/browser/Window.js:70:48)
+    at eval (eval at eval at <anonymous> (http://focus.ti.com/js/shared/metrics/metrics-min.js?version=1:9:316))
+    at http://focus.ti.com/js/shared/metrics/metrics-min.js?version=1:9:316
+    at Contextify.sandbox.run (/home/fred/WikiDumper/mwoffliner/node_modules/jsdom/node_modules/contextify/lib/contextify.js:12:24)
+    at exports.javascript (/home/fred/WikiDumper/mwoffliner/node_modules/jsdom/lib/jsdom/level2/languages/javascript.js:5:14)
+    at define.proto._eval (/home/fred/WikiDumper/mwoffliner/node_modules/jsdom/lib/jsdom/level2/html.js:1621:47)
+    at /home/fred/WikiDumper/mwoffliner/node_modules/jsdom/lib/jsdom/level2/html.js:51:20
+---------------------------------------------
+    at ClientRequest.<anonymous> (/home/fred/WikiDumper/mwoffliner/node_modules/jsdom/lib/jsdom/level2/html.js:129:16)
+    at ClientRequest.emit (events.js:95:17)
+    at parserOnIncomingClient (http.js:1693:21)
+    at parserOnHeadersComplete (http.js:122:23)
+    at socketOnData (http.js:1588:20)
+    at onread (net.js:528:27)

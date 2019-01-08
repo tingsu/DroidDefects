@@ -1,0 +1,9 @@
+//this is an auto-generated bug report
+//package name: tkj.android.homecontrol.mythmote
+//version: 1.10.0.0
+//appro_time: 149
+ FATAL EXCEPTION: Thread-698
+ java.lang.IllegalArgumentException: host=s, port=165461
+ 	at java.net.InetSocketAddress.<init>(InetSocketAddress.java:99)
+ 	at java.net.InetSocketAddress.<init>(InetSocketAddress.java:90)
+ 	at tkj.android.homecontrol.mythmote.MythCom$2.run(MythCom.java:255)

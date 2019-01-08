@@ -1,0 +1,5 @@
+W/System.err( 6190): java.text.ParseException: Unparseable date: "Tue Dec 23 12:57:01 CET 2014" (at offset 0)
+W/System.err( 6190):    at java.text.DateFormat.parse(DateFormat.java:555)
+W/System.err( 6190):    at com.mattallen.loaned.storage.DatabaseManager.getAllLoansByPersonID(DatabaseManager.java:177)
+W/System.err( 6190):    at com.mattallen.loaned.history.LoanHistoryActivity.getLoans(LoanHistoryActivity.java:175)
+W/System.err( 6190):    at com.mattallen.loaned.history.PersonDetailsFragment.onClick(PersonDetailsFragment.java:92)

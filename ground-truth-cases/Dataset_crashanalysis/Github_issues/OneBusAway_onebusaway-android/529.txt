@@ -1,0 +1,96 @@
+java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+    at android.support.v4.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1489)
+    at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1507)
+    at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:634)
+    at android.support.v4.app.BackStackRecord.commit(BackStackRecord.java:613)
+    at org.onebusaway.android.report.ui.SimpleArrivalListFragment.show(SimpleArrivalListFragment.java:87)
+    at org.onebusaway.android.report.ui.InfrastructureIssueActivity.showArrivalListFragment(InfrastructureIssueActivity.java:1055)
+    at org.onebusaway.android.report.ui.InfrastructureIssueActivity.showTripProblemFragment(InfrastructureIssueActivity.java:1040)
+    at org.onebusaway.android.report.ui.InfrastructureIssueActivity.showTransitService(InfrastructureIssueActivity.java:982)
+    at org.onebusaway.android.report.ui.InfrastructureIssueActivity.onSpinnerItemSelected(InfrastructureIssueActivity.java:522)
+    at org.onebusaway.android.report.ui.InfrastructureIssueActivity.access$300(InfrastructureIssueActivity.java:78)
+    at org.onebusaway.android.report.ui.InfrastructureIssueActivity$2.onItemSelected(InfrastructureIssueActivity.java:457)
+    at android.widget.AdapterView.fireOnSelected(AdapterView.java:931)
+    at android.widget.AdapterView.dispatchOnItemSelected(AdapterView.java:920)
+    at android.widget.AdapterView.-wrap1(AdapterView.java)
+    at android.widget.AdapterView$SelectionNotifier.run(AdapterView.java:890)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5422)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+```
+
+There is also a similar stacktrace from a crash in April for the production v1.7.9 - not sure if this is related to the same problem, but both stack traces including the flow for trip problem reporting:
+
+```
+java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+    at android.support.v4.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1360)
+    at android.support.v4.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1378)
+    at android.support.v4.app.BackStackRecord.commitInternal(BackStackRecord.java:595)
+    at android.support.v4.app.BackStackRecord.commit(BackStackRecord.java:574)
+    at com.joulespersecond.seattlebusbot.ReportTripProblemFragment.show(ReportTripProblemFragment.java:77)
+    at com.joulespersecond.seattlebusbot.ArrivalsListFragment$3.onClick(ArrivalsListFragment.java:436)
+    at com.android.internal.app.AlertController$AlertParams$3.onItemClick(AlertController.java:954)
+    at android.widget.AdapterView.performItemClick(AdapterView.java:308)
+    at android.widget.AbsListView.performItemClick(AbsListView.java:1524)
+    at android.widget.AbsListView$PerformClick.run(AbsListView.java:3531)
+    at android.widget.AbsListView$3.run(AbsListView.java:4898)
+    at android.os.Handler.handleCallback(Handler.java:733)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.app.ActivityThread.main(ActivityThread.java:5586)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1268)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1084)
+    at dalvik.system.NativeStart.main(Native Method)
+```
+
+**Steps to reproduce:** 
+
+Unknown
+
+**Expected behavior:** 
+
+Not crash
+
+**Observed behavior:** 
+
+Crash
+
+**Device and Android version:** 
+
+For v2.0.12 crash:
+
+```
+* Nexus 6P (angler)
+* Manufacturer Google 
+* Android version Android 6.0 
+* RAM (MB) 3072 
+* Screen size 1440 × 2560 
+* Screen density (dpi) 560 
+* OpenGL ES version 3.1 
+* Native platform armeabi-v7a 
+* CPU make Qualcomm 
+* CPU model MSM8994
+```
+
+for v1.7.9 crash:
+
+```
+* Galaxy S5 (k3g)
+* Manufacturer Samsung 
+* Android version Android 4.4 
+* RAM (MB) 2048 
+* Screen size 1080 × 1920 
+* Screen density (dpi) 480 
+* OpenGL ES version 3.0 
+* Native platform armeabi-v7a 
+* CPU make Samsung 
+* CPU model Exynos 5422
+```
+
+@cagryInside Could you please take a look at this?  Thanks!

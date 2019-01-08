@@ -1,0 +1,6 @@
+java.util.concurrent.TimeoutException: android.media.MediaMetadataRetriever.finalize() timed out after 10 seconds
+    at android.media.MediaMetadataRetriever.native_finalize(Native Method)
+    at android.media.MediaMetadataRetriever.finalize(MediaMetadataRetriever.java:344)
+    at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:187)
+    at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:170)
+    at java.lang.Thread.run(Thread.java:841)

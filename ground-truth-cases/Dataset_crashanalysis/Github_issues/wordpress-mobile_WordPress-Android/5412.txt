@@ -1,0 +1,13 @@
+Fatal Exception: java.lang.NullPointerException: Attempt to invoke virtual method 'org.wordpress.android.ui.prefs.SiteSettingsInterface org.wordpress.android.ui.prefs.SiteSettingsInterface.init(boolean)' on a null object reference
+       at org.wordpress.android.ui.posts.EditPostActivity.addMediaVisualEditor(EditPostActivity.java:1727)
+       at org.wordpress.android.ui.posts.EditPostActivity.addMedia(EditPostActivity.java:1695)
+       at org.wordpress.android.ui.posts.EditPostActivity.onPhotoChooserMediaChosen(EditPostActivity.java:595)
+       at org.wordpress.android.ui.posts.photochooser.PhotoChooserFragment$4.onItemTapped(PhotoChooserFragment.java:140)
+       at org.wordpress.android.ui.posts.photochooser.PhotoChooserAdapter$ThumbnailViewHolder$1.onSingleTapConfirmed(PhotoChooserAdapter.java:288)
+       at android.view.GestureDetector$GestureHandler.handleMessage(GestureDetector.java:300)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:154)
+       at android.app.ActivityThread.main(ActivityThread.java:6119)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)

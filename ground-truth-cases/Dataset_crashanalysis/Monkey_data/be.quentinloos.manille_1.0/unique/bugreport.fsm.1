@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: be.quentinloos.manille
+//version: 1.0
+//appro_time: 32
+ java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=0, data=null} to activity {be.quentinloos.manille/be.quentinloos.manille.gui.activities.MainActivity}: java.lang.NumberFormatException: Invalid int: ""
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3367)
+ 	at android.app.ActivityThread.handleSendResult(ActivityThread.java:3410)
+ 	at android.app.ActivityThread.access$1100(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1304)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NumberFormatException: Invalid int: ""
+ 	at java.lang.Integer.invalidInt(Integer.java:138)
+ 	at java.lang.Integer.parseInt(Integer.java:359)
+ 	at java.lang.Integer.parseInt(Integer.java:332)
+ 	at be.quentinloos.manille.gui.fragments.MainFragment.getTitle(MainFragment.java:132)
+ 	at be.quentinloos.manille.gui.fragments.MainFragment.refresh(MainFragment.java:101)
+ 	at be.quentinloos.manille.gui.activities.MainActivity.refreshMainFragment(MainActivity.java:127)
+ 	at be.quentinloos.manille.gui.activities.MainActivity.onActivityResult(MainActivity.java:91)
+ 	at android.app.Activity.dispatchActivityResult(Activity.java:5322)
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3363)

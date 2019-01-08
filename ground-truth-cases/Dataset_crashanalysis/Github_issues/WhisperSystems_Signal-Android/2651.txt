@@ -1,0 +1,132 @@
+I/dalvikvm( 3741):   | schedstat=( 203034249 55746292 246 ) utm=19 stm=1 core=0
+I/dalvikvm( 3741):   at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+I/dalvikvm( 3741):   at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:652)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:140)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:104)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:95)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:85)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBytes(BitmapUtil.java:41)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.mms.MediaConstraints.getResizedMedia(MediaConstraints.java:63)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.jobs.SendJob.resizePart(SendJob.java:85)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.jobs.SendJob.preparePart(SendJob.java:66)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.jobs.SendJob.prepareMessageMedia(SendJob.java:49)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:113)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:38)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+I/dalvikvm( 3741):   at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:72)
+I/dalvikvm( 3741):   at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+I/dalvikvm( 3741): 
+D/skia    ( 3741): --- decoder->decode returned false
+W/BitmapUtil( 3741): OutOfMemoryError when scaling precisely, doing rough scale to save memory instead
+W/PartDatabase( 3741): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1302102608.mms
+W/PartDatabase( 3741): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1302102608.mms
+W/PartDatabase( 3741): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1302102608.mms
+D/dalvikvm( 3741): GC_FOR_ALLOC freed 318K, 23% free 15355K/19783K, paused 38ms, total 40ms
+I/dalvikvm-heap( 3741): Grow heap (frag case) to 23.863MB for 7990288-byte allocation
+D/dalvikvm( 3741): GC_FOR_ALLOC freed 2K, 17% free 23155K/27591K, paused 52ms, total 52ms
+D/dalvikvm( 3741): GC_CONCURRENT freed 28K, 17% free 23159K/27591K, paused 12ms+22ms, total 91ms
+W/ImageSlide( 3741): thumbnail decode/generate time: 627ms
+D/dalvikvm( 3741): GC_CONCURRENT freed 2007K, 17% free 23118K/27591K, paused 13ms+3ms, total 77ms
+W/BitmapUtil( 3741): rough scale 3264x2448 => 1632x1224
+D/dalvikvm( 3741): GC_CONCURRENT freed 1786K, 16% free 23341K/27591K, paused 15ms+4ms, total 67ms
+D/dalvikvm( 3741): GC_FOR_ALLOC freed 262K, 15% free 23588K/27591K, paused 29ms, total 29ms
+I/dalvikvm-heap( 3741): Grow heap (frag case) to 25.281MB for 1046544-byte allocation
+D/dalvikvm( 3741): GC_FOR_ALLOC freed 510K, 16% free 24100K/28615K, paused 32ms, total 32ms
+D/dalvikvm( 3741): GC_FOR_ALLOC freed <1K, 16% free 24100K/28615K, paused 27ms, total 27ms
+I/dalvikvm-heap( 3741): Grow heap (frag case) to 26.781MB for 2095120-byte allocation
+D/dalvikvm( 3741): GC_CONCURRENT freed 1022K, 19% free 25124K/30663K, paused 12ms+5ms, total 46ms
+D/dalvikvm( 3741): WAIT_FOR_CONCURRENT_GC blocked 7ms
+D/dalvikvm( 3741): GC_CONCURRENT freed 3552K, 24% free 23588K/30663K, paused 12ms+3ms, total 42ms
+D/dalvikvm( 3741): GC_CONCURRENT freed 2016K, 24% free 23588K/30663K, paused 2ms+4ms, total 33ms
+W/BitmapUtil( 3741): createScaledBytes(content://org.thoughtcrime.securesms/part/251) -> quality 50, 5 attempt(s)
+W/PushMediaSendJob( 3741): java.io.IOException: Unable to scale image below: 333358
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBytes(BitmapUtil.java:63)
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.mms.MediaConstraints.getResizedMedia(MediaConstraints.java:63)
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.jobs.SendJob.resizePart(SendJob.java:85)
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.jobs.SendJob.preparePart(SendJob.java:66)
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.jobs.SendJob.prepareMessageMedia(SendJob.java:49)
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:113)
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:38)
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/PushMediaSendJob( 3741):  at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:72)
+W/PushMediaSendJob( 3741):  at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/PushMediaSendJob( 3741): Marking message as pending secure SMS fallback
+W/PushMediaSendJob( 3741): org.thoughtcrime.securesms.transport.SecureFallbackApprovalException: Pending user approval for fallback secure to SMS
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.fallbackOrAskApproval(PushMediaSendJob.java:151)
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:128)
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:38)
+W/PushMediaSendJob( 3741):  at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/PushMediaSendJob( 3741):  at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:72)
+W/PushMediaSendJob( 3741):  at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/ImageSlide( 3741): Got soft reference: java.lang.ref.SoftReference@42ef8468
+W/ImageSlide( 3741): Got cached bitmap: android.graphics.drawable.BitmapDrawable@42efcd30
+W/ImageSlide( 3741): Setting cached thumbnail...
+D/SensorManager( 3741): unregisterListener:: Trklfufi 9 budiwrd5mrfo5WirfulblrwuFmfulTrklfufi$KfukwiFmfulTrklfufiRvht@,):+b/a8
+D/Sensors ( 3741): Remain listener = Sending .. normal delay 200ms
+I/Sensors ( 3741): sendDelay --- 200000000
+D/SensorManager( 3741): JNI - sendDelay
+I/SensorManager( 3741): Set normal delay = true
+W/InputEventReceiver( 3741): Attempted to finish an input event but the input event receiver has already been disposed.
+D/SensorManager( 3741): registerListener :: handle = 0  name= K3DH Acceleration Sensor delay= 200000 Trklfufi 9 budiwrd5mrfo5WirfulblrwuFmfulTrklfufi$KfukwiFmfulTrklfufiRvht@,):+b/a8
+W/ImageSlide( 3741): Got soft reference: java.lang.ref.SoftReference@42ef8468
+W/ImageSlide( 3741): Got cached bitmap: android.graphics.drawable.BitmapDrawable@42efcd30
+W/ImageSlide( 3741): Setting cached thumbnail...
+I/dalvikvm( 3741): Could not find method android.widget.PopupWindow.showAsDropDown, referenced from method android.support.v7.internal.widget.AppCompatPopupWindow.showAsDropDown
+W/dalvikvm( 3741): VFY: unable to resolve virtual method 14136: Landroid/widget/PopupWindow;.showAsDropDown (Landroid/view/View;III)V
+D/dalvikvm( 3741): VFY: replacing opcode 0x6f at 0x000f
+D/AbsListView( 3741): Get MotionRecognitionManager
+D/SensorManager( 3741): unregisterListener:: Trklfufi 9 budiwrd5mrfo5WirfulblrwuFmfulTrklfufi$KfukwiFmfulTrklfufiRvht@,):+b/a8
+D/Sensors ( 3741): Remain listener = Sending .. normal delay 200ms
+I/Sensors ( 3741): sendDelay --- 200000000
+D/SensorManager( 3741): JNI - sendDelay
+I/SensorManager( 3741): Set normal delay = true
+W/ConversationListActivity( 3741): detected android contact data changed, refreshing cache
+W/ConversationListActivity( 3741): detected android contact data changed, refreshing cache
+W/InputEventReceiver( 3741): Attempted to finish an input event but the input event receiver has already been disposed.
+D/SensorManager( 3741): registerListener :: handle = 0  name= K3DH Acceleration Sensor delay= 200000 Trklfufi 9 budiwrd5mrfo5WirfulblrwuFmfulTrklfufi$KfukwiFmfulTrklfufiRvht@,):+b/a8
+W/ResourceType( 3741): Failure getting entry for 0x010802c1 (t=7 e=705) in package 0 (error -75)
+W/ImageSlide( 3741): Got soft reference: java.lang.ref.SoftReference@42ef8468
+W/ImageSlide( 3741): Got cached bitmap: android.graphics.drawable.BitmapDrawable@42efcd30
+W/ImageSlide( 3741): Setting cached thumbnail...
+W/ImageSlide( 3741): Got soft reference: java.lang.ref.SoftReference@42ef8468
+W/ImageSlide( 3741): Got cached bitmap: android.graphics.drawable.BitmapDrawable@42efcd30
+W/ImageSlide( 3741): Setting cached thumbnail...
+W/ImageSlide( 3741): Got soft reference: java.lang.ref.SoftReference@42ef8468
+W/ImageSlide( 3741): Got cached bitmap: android.graphics.drawable.BitmapDrawable@42efcd30
+W/ImageSlide( 3741): Setting cached thumbnail...
+W/MediaPreviewActivity( 3741): Loading Part URI: content://org.thoughtcrime.securesms/part/251
+W/MediaPreviewActivity( 3741): reported GL_MAX_TEXTURE_SIZE: 2048
+W/PartDatabase( 3741): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1302102608.mms
+W/PartDatabase( 3741): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1302102608.mms
+W/PartDatabase( 3741): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1302102608.mms
+W/IInputConnectionWrapper( 3741): getSelectedText on inactive InputConnection
+W/IInputConnectionWrapper( 3741): setComposingText on inactive InputConnection
+W/IInputConnectionWrapper( 3741): getExtractedText on inactive InputConnection
+D/dalvikvm( 3741): GC_FOR_ALLOC freed 9030K, 50% free 15628K/30663K, paused 37ms, total 38ms
+D/AbsListView( 3741): [unregisterDoubleTapMotionListener]
+I/dalvikvm-heap( 3741): Forcing collection of SoftReferences for 31961104-byte allocation
+D/dalvikvm( 3741): GC_BEFORE_OOM freed 49K, 50% free 15578K/30663K, paused 41ms, total 41ms
+E/dalvikvm-heap( 3741): Out of memory on a 31961104-byte allocation.
+I/dalvikvm( 3741): "AsyncTask #4" prio=5 tid=27 RUNNABLE
+I/dalvikvm( 3741):   | group="main" sCount=0 dsCount=0 obj=0x42c61208 self=0x544c1c40
+I/dalvikvm( 3741):   | sysTid=4580 nice=10 sched=0/0 cgrp=apps/bg_non_interactive handle=1414098848
+I/dalvikvm( 3741):   | schedstat=( 205752893 766134648 1569 ) utm=18 stm=2 core=0
+I/dalvikvm( 3741):   at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+I/dalvikvm( 3741):   at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:652)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:140)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:104)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:95)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:85)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:71)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.MediaPreviewActivity$1.doInBackground(MediaPreviewActivity.java:202)
+I/dalvikvm( 3741):   at org.thoughtcrime.securesms.MediaPreviewActivity$1.doInBackground(MediaPreviewActivity.java:194)
+I/dalvikvm( 3741):   at android.os.AsyncTask$2.call(AsyncTask.java:287)
+I/dalvikvm( 3741):   at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+I/dalvikvm( 3741):   at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+I/dalvikvm( 3741):   at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+I/dalvikvm( 3741):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+I/dalvikvm( 3741):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+I/dalvikvm( 3741):   at java.lang.Thread.run(Thread.java:856)

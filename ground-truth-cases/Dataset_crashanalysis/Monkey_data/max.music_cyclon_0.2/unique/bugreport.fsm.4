@@ -1,0 +1,13 @@
+//this is an auto-generated bug report
+//package name: max.music_cyclon
+//version: 0.2
+//appro_time: 17
+ FATAL EXCEPTION: IntentService[max.music_cyclon.service.LibraryService]
+ java.lang.IllegalArgumentException: unexpected url:  http://localhost:8337'/item?expand
+ 	at okhttp3.Request$Builder.url(Request.java:141)
+ 	at max.music_cyclon.service.BeetsFetcher.fetch(BeetsFetcher.java:50)
+ 	at max.music_cyclon.service.LibraryService.onHandleIntent(LibraryService.java:139)
+ 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

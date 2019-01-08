@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: ryey.camcov
+//version: 0.4.2
+//appro_time: 141
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to start service ryey.camcov.OverlayService@ad1cd638 with null: java.lang.NullPointerException
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2721)
+ 	at android.app.ActivityThread.access$1900(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1353)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at ryey.camcov.OverlayService.onStartCommand(OverlayService.java:119)
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2704)
+ 	... 10 more

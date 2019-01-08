@@ -1,0 +1,34 @@
+
+For MyOwnNotes I provided the basic URL (xxx/owncloud), but only get an error "no valid JSON received from server, server ok?" (displayed in my language though). Looking at logcat (long output enabled and actual domain replaced):
+
+```
+D/NoteListActivity(11595): menu: start sync
+D/NoteListActivity(11595): starting note synchonization
+D/NoteListActivity(11595): basePath no port: my.dyndns.domain/owncloud/index.php/apps/notes/api/v0.2/notes
+D/NoteListActivity(11595): urlToConnect:https://my.dyndns.domain/owncloud/index.php/apps/notes/api/v0.2/notes
+D/NoteListActivity(11595): writing modified notes to server
+D/NoteListActivity(11595): cursor rows modified notes:0
+D/NoteListActivity(11595): deleting notes from server
+D/NoteListActivity(11595): cursor rows to delete:0
+D/NoteListActivity(11595): writing new notes to server
+D/NoteListActivity(11595): cursor rows new notes:0
+D/NoteListActivity(11595): getting notes from server
+D/DOWNLOADTASK(11595): url:https://my.dyndns.domain/owncloud/index.php/apps/notes/api/v0.2/notes
+D/NoteListActivity(11595): download connection ok, doing the downloading
+W/System.err(11595): org.json.JSONException: Value <!DOCTYPE of type java.lang.String cannot be converted to JSONArray
+W/System.err(11595):    at org.json.JSON.typeMismatch(JSON.java:111)
+W/System.err(11595):    at org.json.JSONArray.<init>(JSONArray.java:96)
+W/System.err(11595):    at org.json.JSONArray.<init>(JSONArray.java:108)
+W/System.err(11595):    at org.aykit.owncloud_notes.NoteListActivity.updateDatabase(NoteListActivity.java:513)
+W/System.err(11595):    at org.aykit.owncloud_notes.NoteListActivity$DownloadNotesTask.onPostExecute(NoteListActivity.java:1264)
+W/System.err(11595):    at org.aykit.owncloud_notes.NoteListActivity$DownloadNotesTask.onPostExecute(NoteListActivity.java:1129)
+W/System.err(11595):    at android.os.AsyncTask.finish(AsyncTask.java:636)
+W/System.err(11595):    at android.os.AsyncTask.access$500(AsyncTask.java:177)
+W/System.err(11595):    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:653)
+W/System.err(11595):    at android.os.Handler.dispatchMessage(Handler.java:102)
+W/System.err(11595):    at android.os.Looper.loop(Looper.java:135)
+W/System.err(11595):    at android.app.ActivityThread.main(ActivityThread.java:5293)
+W/System.err(11595):    at java.lang.reflect.Method.invoke(Native Method)
+W/System.err(11595):    at java.lang.reflect.Method.invoke(Method.java:372)
+W/System.err(11595):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+W/System.err(11595):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)

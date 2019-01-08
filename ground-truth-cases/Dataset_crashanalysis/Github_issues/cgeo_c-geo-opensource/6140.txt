@@ -1,0 +1,13 @@
+W/System.err: java.io.InterruptedIOException
+W/System.err:     at com.android.okio.Deadline.throwIfReached(Deadline.java:56)
+W/System.err:     at com.android.okio.Okio$2.read(Okio.java:110)
+W/System.err:     at com.android.okio.RealBufferedSource.read(RealBufferedSource.java:48)
+W/System.err:     at com.android.okhttp.internal.http.HttpConnection$FixedLengthSource.read(HttpConnection.java:442)
+W/System.err:     at com.android.okio.RealBufferedSource$1.read(RealBufferedSource.java:168)
+W/System.err:     at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+W/System.err:     at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:635)
+W/System.err:     at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:611)
+W/System.err:     at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:649)
+W/System.err:     at org.mapsforge.v3.android.maps.mapgenerator.tiledownloader.TileDownloader.executeJob(TileDownloader.java:60)
+W/System.err:     at org.mapsforge.v3.android.maps.mapgenerator.MapWorker.doWork(MapWorker.java:73)
+W/System.err:     at org.mapsforge.v3.android.maps.PausableThread.run(PausableThread.java:94)

@@ -1,0 +1,27 @@
+doInBackground()
+E/AndroidRuntime( 6774):    at android.os.AsyncTask$3.done(AsyncTask.java:200)
+E/AndroidRuntime( 6774):    at java.util.concurrent.FutureTask$Sync.innerSetException(FutureTask.java:234)
+E/AndroidRuntime( 6774):    at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:258)
+E/AndroidRuntime( 6774):    at java.util.concurrent.FutureTask.run(FutureTask.java:122)
+E/AndroidRuntime( 6774):    at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:648)
+E/AndroidRuntime( 6774):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:673)
+E/AndroidRuntime( 6774):    at java.lang.Thread.run(Thread.java:1058)
+E/AndroidRuntime( 6774): Caused by: java.lang.RuntimeException: android.database.sqlite.SQLiteDiskIOException:
+disk I/O error
+E/AndroidRuntime( 6774):    at com.ichi2.anki.Deck.getAllCards(Deck.java:3007)
+E/AndroidRuntime( 6774):    at com.ichi2.anki.DeckTask.doInBackgroundLoadCards(DeckTask.java:335)
+E/AndroidRuntime( 6774):    at com.ichi2.anki.DeckTask.doInBackground(DeckTask.java:126)
+E/AndroidRuntime( 6774):    at com.ichi2.anki.DeckTask.doInBackground(DeckTask.java:1)
+E/AndroidRuntime( 6774):    at android.os.AsyncTask$2.call(AsyncTask.java:185)
+E/AndroidRuntime( 6774):    at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:256)
+E/AndroidRuntime( 6774):    ... 4 more
+E/AndroidRuntime( 6774): Caused by: android.database.sqlite.SQLiteDiskIOException:
+disk I/O error
+E/AndroidRuntime( 6774):    at android.database.sqlite.SQLiteQuery.native_fill_window(Native
+Method)
+E/AndroidRuntime( 6774):    at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:75)
+E/AndroidRuntime( 6774):    at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:288)
+E/AndroidRuntime( 6774):    at android.database.sqlite.SQLiteCursor.getCount(SQLiteCursor.java:269)
+E/AndroidRuntime( 6774):    at android.database.AbstractCursor.moveToPosition(AbstractCursor.java:171)
+E/AndroidRuntime( 6774):    at android.database.AbstractCursor.moveToNext(AbstractCursor.java:256)
+E/AndroidRuntime( 6774):    at com.ichi2.anki.Deck.getAllCards(Deck.java:2998)

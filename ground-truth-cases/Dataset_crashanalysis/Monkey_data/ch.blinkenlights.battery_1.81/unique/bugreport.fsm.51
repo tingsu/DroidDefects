@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: ch.blinkenlights.battery
+//version: 1.81
+//appro_time: 121
+ java.lang.NullPointerException
+ 	at ch.blinkenlights.battery.BlinkenlightsBattery$1.onCheckedChanged(BlinkenlightsBattery.java:114)
+ 	at android.widget.CompoundButton.setChecked(CompoundButton.java:126)
+ 	at android.widget.CompoundButton.toggle(CompoundButton.java:87)
+ 	at android.widget.CompoundButton.performClick(CompoundButton.java:99)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

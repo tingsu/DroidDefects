@@ -1,0 +1,17 @@
+//this is an auto-generated bug report
+//package name: com.gelakinetic.mtgfam
+//version: 3.3.4-foss
+//appro_time: 179
+ java.lang.NullPointerException
+ 	at com.gelakinetic.mtgfam.fragments.dialogs.FamiliarDialogFragment.getFamiliarFragment(FamiliarDialogFragment.java:74)
+ 	at com.gelakinetic.mtgfam.fragments.dialogs.SearchViewDialogFragment.getParentSearchViewFragment(SearchViewDialogFragment.java:28)
+ 	at com.gelakinetic.mtgfam.fragments.dialogs.SearchViewDialogFragment.onDismiss(SearchViewDialogFragment.java:34)
+ 	at android.app.Dialog$ListenersHandler.handleMessage(Dialog.java:1232)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

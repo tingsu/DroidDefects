@@ -1,0 +1,33 @@
+D/audio_hw_primary( 8317): out_set_parameters: enter: usecase(1: low-latency-playback) kvpairs: routing=2
+V/WindowManager(  806): addAppToken: AppWindowToken{76b3f89 token=Token{251b7a90 ActivityRecord{be13153 u0 org.thoughtcrime.securesms/.ApplicationPreferencesActivity t439}}} to stack=1 task=439 at 1
+W/KeyCachingService(13103): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(13103): Decrementing activity count...
+W/MessageRetrievalService(13103): Active Count: 0
+W/PassphraseRequiredActionBarActivity(13103): routeApplicationState(), state: 0
+W/PassphraseRequiredActionBarActivity(13103): initializeClearKeyReceiver()
+D/AndroidRuntime(13103): Shutting down VM
+E/AndroidRuntime(13103): FATAL EXCEPTION: main
+E/AndroidRuntime(13103): Process: org.thoughtcrime.securesms, PID: 13103
+E/AndroidRuntime(13103): java.lang.RuntimeException: Unable to start activity ComponentInfo{org.thoughtcrime.securesms/org.thoughtcrime.securesms.ApplicationPreferencesActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.preference.Preference.setOnPreferenceClickListener(android.preference.Preference$OnPreferenceClickListener)' on a null object reference
+E/AndroidRuntime(13103):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2356)
+E/AndroidRuntime(13103):        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2418)
+E/AndroidRuntime(13103):        at android.app.ActivityThread.access$900(ActivityThread.java:154)
+E/AndroidRuntime(13103):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1321)
+E/AndroidRuntime(13103):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(13103):        at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(13103):        at android.app.ActivityThread.main(ActivityThread.java:5289)
+E/AndroidRuntime(13103):        at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(13103):        at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(13103):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime(13103):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/AndroidRuntime(13103): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.preference.Preference.setOnPreferenceClickListener(android.preference.Preference$OnPreferenceClickListener)' on a null object reference
+E/AndroidRuntime(13103):        at org.thoughtcrime.securesms.ApplicationPreferencesActivity$ApplicationPreferenceFragment.onCreate(ApplicationPreferencesActivity.java:136)
+E/AndroidRuntime(13103):        at android.support.v4.app.Fragment.performCreate(Fragment.java:1766)
+E/AndroidRuntime(13103):        at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:917)
+E/AndroidRuntime(13103):        at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+E/AndroidRuntime(13103):        at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:740)
+E/AndroidRuntime(13103):        at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1501)
+E/AndroidRuntime(13103):        at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:551)
+E/AndroidRuntime(13103):        at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1236)
+E/AndroidRuntime(13103):        at android.app.Activity.performStart(Activity.java:6006)
+E/AndroidRuntime(13103):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2319)

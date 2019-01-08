@@ -1,0 +1,40 @@
+02-13 08:31:42.013: E/AndroidRuntime(2871): java.lang.NoClassDefFoundError: Failed resolution of: Lorg/bouncycastle/crypto/digests/SHA1Digest;
+02-13 08:31:42.013: E/AndroidRuntime(2871):     at eu.siacs.conversations.crypto.sasl.ScramSha1.<clinit>(ScramSha1.java:45)
+02-13 08:31:42.013: E/AndroidRuntime(2871):     at eu.siacs.conversations.xmpp.XmppConnection.processStreamFeatures(XmppConnection.java:564)
+02-13 08:31:42.013: E/AndroidRuntime(2871):     at eu.siacs.conversations.xmpp.XmppConnection.processStream(XmppConnection.java:256)
+02-13 08:31:42.013: E/AndroidRuntime(2871):     at eu.siacs.conversations.xmpp.XmppConnection.switchOverToTls(XmppConnection.java:535)
+02-13 08:31:42.013: E/AndroidRuntime(2871):     at eu.siacs.conversations.xmpp.XmppConnection.processStream(XmppConnection.java:258)
+02-13 08:31:42.013: E/AndroidRuntime(2871):     at eu.siacs.conversations.xmpp.XmppConnection.connect(XmppConnection.java:218)
+02-13 08:31:42.013: E/AndroidRuntime(2871):     at eu.siacs.conversations.xmpp.XmppConnection.run(XmppConnection.java:245)
+02-13 08:31:42.013: E/AndroidRuntime(2871):     at java.lang.Thread.run(Thread.java:818)
+02-13 08:31:42.013: E/AndroidRuntime(2871): Caused by: java.lang.ClassNotFoundException: Didn't find class "org.bouncycastle.crypto.digests.SHA1Digest" on path: DexPathList[[zip file "/data/app/eu.siacs.conversations-1/base.apk"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]
+02-13 08:31:42.013: E/AndroidRuntime(2871):     at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+02-13 08:31:42.013: E/AndroidRuntime(2871):     at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+02-13 08:31:42.013: E/AndroidRuntime(2871):     at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+02-13 08:31:42.013: E/AndroidRuntime(2871):     ... 8 more
+02-13 08:31:42.013: E/AndroidRuntime(2871):     Suppressed: java.lang.ClassNotFoundException: org.bouncycastle.crypto.digests.SHA1Digest
+02-13 08:31:42.013: E/AndroidRuntime(2871):         at java.lang.Class.classForName(Native Method)
+02-13 08:31:42.013: E/AndroidRuntime(2871):         at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+02-13 08:31:42.013: E/AndroidRuntime(2871):         at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+02-13 08:31:42.013: E/AndroidRuntime(2871):         at java.lang.ClassLoader.loadClass(ClassLoader.java:504)
+02-13 08:31:42.013: E/AndroidRuntime(2871):         ... 9 more
+02-13 08:31:42.013: E/AndroidRuntime(2871):     Caused by: java.lang.NoClassDefFoundError: Class not found using the boot class loader; no stack available
+## 2nd error
+
+02-13 08:31:50.439: E/AndroidRuntime(2906): FATAL EXCEPTION: main
+02-13 08:31:50.439: E/AndroidRuntime(2906): Process: eu.siacs.conversations, PID: 2906
+02-13 08:31:50.439: E/AndroidRuntime(2906): java.lang.NoClassDefFoundError: eu.siacs.conversations.ui.StartConversationActivity$7
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at eu.siacs.conversations.ui.StartConversationActivity.onCreate(StartConversationActivity.java:206)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at android.app.Activity.performCreate(Activity.java:5933)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2251)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2360)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at android.app.ActivityThread.access$800(ActivityThread.java:144)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1278)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at android.os.Handler.dispatchMessage(Handler.java:102)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at android.os.Looper.loop(Looper.java:135)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at android.app.ActivityThread.main(ActivityThread.java:5221)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at java.lang.reflect.Method.invoke(Native Method)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at java.lang.reflect.Method.invoke(Method.java:372)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+02-13 08:31:50.439: E/AndroidRuntime(2906):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)

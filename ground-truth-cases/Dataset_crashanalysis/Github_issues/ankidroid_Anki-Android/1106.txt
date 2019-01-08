@@ -1,0 +1,13 @@
+E/AndroidRuntime(13081): Caused by: java.lang.OutOfMemoryError
+E/AndroidRuntime(13081):    at java.io.ByteArrayOutputStream.expand(ByteArrayOutputStream.java:93)
+E/AndroidRuntime(13081):    at java.io.ByteArrayOutputStream.write(ByteArrayOutputStream.java:218)
+E/AndroidRuntime(13081):    at org.apache.harmony.luni.internal.net.www.protocol.http.HttpURLConnectionImpl$DefaultHttpOutputStream.write(HttpURLConnectionImpl.java:750)
+E/AndroidRuntime(13081):    at java.io.DataOutputStream.write(DataOutputStream.java:101)
+E/AndroidRuntime(13081):    at java.util.zip.DeflaterOutputStream.deflate(DeflaterOutputStream.java:140)
+E/AndroidRuntime(13081):    at java.util.zip.DeflaterOutputStream.write(DeflaterOutputStream.java:217)
+E/AndroidRuntime(13081):    at com.ichi2.anki.SyncClient.fullSyncFromLocal(SyncClient.java:2150)
+E/AndroidRuntime(13081):    at com.ichi2.async.Connection.doInBackgroundSyncDeck(Connection.java:331)
+E/AndroidRuntime(13081):    at com.ichi2.async.Connection.doInBackground(Connection.java:171)
+E/AndroidRuntime(13081):    at com.ichi2.async.Connection.doInBackground(Connection.java:1)
+E/AndroidRuntime(13081):    at android.os.AsyncTask$2.call(AsyncTask.java:185)
+E/AndroidRuntime(13081):    at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)

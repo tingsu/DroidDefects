@@ -1,0 +1,20 @@
+    com.android.volley.NoConnectionError: javax.net.ssl.SSLHandshakeException: Handshake failed
+            at com.android.volley.toolbox.BasicNetwork.performRequest(BasicNetwork.java:134)
+            at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:110)
+     Caused by: javax.net.ssl.SSLHandshakeException: Handshake failed
+            at com.google.android.gms.org.conscrypt.OpenSSLSocketImpl.startHandshake(SourceFile:374)
+            at libcore.net.http.HttpConnection.setupSecureSocket(HttpConnection.java:210)
+            at libcore.net.http.HttpsURLConnectionImpl$HttpsEngine.makeSslConnection(HttpsURLConnectionImpl.java:477)
+            at libcore.net.http.HttpsURLConnectionImpl$HttpsEngine.connect(HttpsURLConnectionImpl.java:441)
+            at libcore.net.http.HttpEngine.sendSocketRequest(HttpEngine.java:282)
+            at libcore.net.http.HttpEngine.sendRequest(HttpEngine.java:232)
+            at libcore.net.http.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:273)
+            at libcore.net.http.HttpURLConnectionImpl.getResponseCode(HttpURLConnectionImpl.java:479)
+            at libcore.net.http.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:133)
+            at com.android.volley.toolbox.HurlStack.performRequest(HurlStack.java:109)
+            at com.android.volley.toolbox.BasicNetwork.performRequest(BasicNetwork.java:93)
+            at com.android.volley.NetworkDispatcher.run(NetworkDispatcher.java:110)
+     Caused by: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0xe2a240: Failure in SSL library, usually a protocol error
+    error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:762 0x5e82d485:0x00000000)
+            at com.google.android.gms.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+            at com.google.android.gms.org.conscrypt.OpenSSLSocketImpl.startHandshake(SourceFile:302)

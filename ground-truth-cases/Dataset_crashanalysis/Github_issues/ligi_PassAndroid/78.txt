@@ -1,0 +1,15 @@
+04-19 18:46:06.459 D/PassAndroid(4005): java.lang.IllegalArgumentException: Parameter specified as non-null is null: method kotlin.jvm.internal.Intrinsics.b, parameter pass
+04-19 18:46:06.459 D/PassAndroid(4005):     at org.ligi.passandroid.model.PassClassifier.moveToTopic(SourceFile)
+04-19 18:46:06.459 D/PassAndroid(4005):     at org.ligi.passandroid.ui.PassImportActivity$ImportAndShowAsyncTask$1.a(SourceFile:94)
+04-19 18:46:06.459 D/PassAndroid(4005):     at org.ligi.passandroid.ui.UnzipPassDialog$1AlertDialogUpdater$1$1.run(SourceFile:61)
+04-19 18:46:06.459 D/PassAndroid(4005):     at android.os.Handler.handleCallback(Handler.java:739)
+04-19 18:46:06.459 D/PassAndroid(4005):     at android.os.Handler.dispatchMessage(Handler.java:95)
+04-19 18:46:06.459 D/PassAndroid(4005):     at android.os.Looper.loop(Looper.java:148)
+04-19 18:46:06.459 D/PassAndroid(4005):     at android.app.ActivityThread.main(ActivityThread.java:5461)
+04-19 18:46:06.459 D/PassAndroid(4005):     at java.lang.reflect.Method.invoke(Native Method)
+04-19 18:46:06.459 D/PassAndroid(4005):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+04-19 18:46:06.459 D/PassAndroid(4005):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+04-19 18:46:06.460 E/AndroidRuntime(4005): Process: org.ligi.passandroid, PID: 4005
+04-19 18:46:06.460 E/AndroidRuntime(4005):  at org.ligi.passandroid.model.PassClassifier.moveToTopic(SourceFile)
+04-19 18:46:06.460 E/AndroidRuntime(4005):  at org.ligi.passandroid.ui.PassImportActivity$ImportAndShowAsyncTask$1.a(SourceFile:94)
+04-19 18:46:06.460 E/AndroidRuntime(4005):  at org.ligi.passandroid.ui.UnzipPassDialog$1AlertDialogUpdater$1$1.run(SourceFile:61)

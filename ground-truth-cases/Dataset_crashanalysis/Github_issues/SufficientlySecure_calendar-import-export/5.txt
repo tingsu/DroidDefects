@@ -1,0 +1,8 @@
+ 27191          DatabaseUtils  E  java.lang.IllegalArgumentException: Event values must include an eventTimezone
+ 27191          DatabaseUtils  E  at com.android.providers.calendar.CalendarProvider2.validateEventData(CalendarProvider2.java:2533)
+ 27191          DatabaseUtils  E  at com.android.providers.calendar.CalendarProvider2.insertInTransaction(CalendarProvider2.java:2111)
+ 27191          DatabaseUtils  E  at com.android.providers.calendar.SQLiteContentProvider.insert(SQLiteContentProvider.java:96)
+ 27191          DatabaseUtils  E  at android.content.ContentProvider$Transport.insert(ContentProvider.java:201)
+ 27191          DatabaseUtils  E  at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:148)
+ 27191          DatabaseUtils  E  at android.os.Binder.execTransact(Binder.java:351)
+ 27191          DatabaseUtils  E  at dalvik.system.NativeStart.run(Native Method)

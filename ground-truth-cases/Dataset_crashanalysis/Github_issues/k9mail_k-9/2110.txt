@@ -1,0 +1,39 @@
+   java.lang.RuntimeException: An error occurred while executing doInBackground()
+       at android.os.AsyncTask$3.done(AsyncTask.java:325)
+       at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+       at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+       at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+       at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+       at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+       at java.lang.Thread.run(Thread.java:761)
+    Caused by: java.lang.SecurityException: Permission Denial: opening provider com.android.providers.contacts.ContactsProvider2 from ProcessRecord{9aee797 7635:com.fsck.k9.debug/u0a119} (pid=7635, uid=10119) requires android.permission.READ_CONTACTS or android.permission.WRITE_CONTACTS
+       at android.os.Parcel.readException(Parcel.java:1684)
+       at android.os.Parcel.readException(Parcel.java:1637)
+       at android.app.ActivityManagerProxy.getContentProvider(ActivityManagerNative.java:4199)
+       at android.app.ActivityThread.acquireProvider(ActivityThread.java:5476)
+       at android.app.ContextImpl$ApplicationContentResolver.acquireUnstableProvider(ContextImpl.java:2239)
+       at android.content.ContentResolver.acquireUnstableProvider(ContentResolver.java:1517)
+       at android.content.ContentResolver.query(ContentResolver.java:516)
+       at android.content.ContentResolver.query(ContentResolver.java:474)
+       at com.fsck.k9.activity.compose.RecipientLoader.fillContactDataFromQuery(RecipientLoader.java:188)
+       at com.fsck.k9.activity.compose.RecipientLoader.loadInBackground(RecipientLoader.java:110)
+```
+
+If you try and save an attachment with no Storage permission
+
+```
+01-21 20:32:12.880 12365-12600/com.fsck.k9.debug E/k9: Error saving attachment
+java.io.FileNotFoundException: /storage/emulated/0/download.jpeg (Permission denied)
+    at java.io.FileOutputStream.open(Native Method)
+    at java.io.FileOutputStream.<init>(FileOutputStream.java:221)
+    at java.io.FileOutputStream.<init>(FileOutputStream.java:169)
+    at com.fsck.k9.ui.messageview.AttachmentController.writeAttachmentToStorage(AttachmentController.java:151)
+    at com.fsck.k9.ui.messageview.AttachmentController.saveAttachmentWithUniqueFileName(AttachmentController.java:141)
+    at com.fsck.k9.ui.messageview.AttachmentController.access$900(AttachmentController.java:42)
+    at com.fsck.k9.ui.messageview.AttachmentController$SaveAttachmentAsyncTask.doInBackground(AttachmentController.java:348)
+    at com.fsck.k9.ui.messageview.AttachmentController$SaveAttachmentAsyncTask.doInBackground(AttachmentController.java:337)
+    at android.os.AsyncTask$2.call(AsyncTask.java:305)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+    at java.lang.Thread.run(Thread.java:761)

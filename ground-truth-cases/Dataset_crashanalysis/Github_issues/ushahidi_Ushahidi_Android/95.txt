@@ -1,0 +1,14 @@
+10-31 05:28:19.302: E/AndroidRuntime(972): java.lang.RuntimeException: Error receiving broadcast Intent { act=com.ushahidi.android.app.opengeosms.OpenGeoSMSSender1b31165c-7f5a-407c-92fd-63fe50f36b6d flg=0x10 } in com.ushahidi.android.app.opengeosms.OpenGeoSMSSender$Receiver@4125d708
+10-31 05:28:19.302: E/AndroidRuntime(972):  at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:765)
+10-31 05:28:19.302: E/AndroidRuntime(972):  at android.os.Handler.handleCallback(Handler.java:615)
+10-31 05:28:19.302: E/AndroidRuntime(972):  at android.os.Handler.dispatchMessage(Handler.java:92)
+10-31 05:28:19.302: E/AndroidRuntime(972):  at android.os.Looper.loop(Looper.java:137)
+10-31 05:28:19.302: E/AndroidRuntime(972):  at android.app.ActivityThread.main(ActivityThread.java:4745)
+10-31 05:28:19.302: E/AndroidRuntime(972):  at java.lang.reflect.Method.invokeNative(Native Method)
+10-31 05:28:19.302: E/AndroidRuntime(972):  at java.lang.reflect.Method.invoke(Method.java:511)
+10-31 05:28:19.302: E/AndroidRuntime(972):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+10-31 05:28:19.302: E/AndroidRuntime(972):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+10-31 05:28:19.302: E/AndroidRuntime(972):  at dalvik.system.NativeStart.main(Native Method)
+10-31 05:28:19.302: E/AndroidRuntime(972): Caused by: java.lang.NullPointerException
+10-31 05:28:19.302: E/AndroidRuntime(972):  at com.ushahidi.android.app.opengeosms.OpenGeoSMSSender$Receiver.onReceive(OpenGeoSMSSender.java:63)
+10-31 05:28:19.302: E/AndroidRuntime(972):  at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:755)

@@ -1,0 +1,62 @@
+W/SessionCipherV2( 6998): org.whispersystems.textsecure.crypto.InvalidMessageException: Bad Mac!
+W/SessionCipherV2( 6998): at org.whispersystems.textsecure.crypto.protocol.WhisperMessageV2.verifyMac(WhisperMessageV2.java:107)
+W/SessionCipherV2( 6998): at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:127)
+W/SessionCipherV2( 6998): at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:89)
+W/SessionCipherV2( 6998): at org.thoughtcrime.securesms.crypto.DecryptingQueue$PushDecryptionWorkItem.run(DecryptingQueue.java:207)
+W/SessionCipherV2( 6998): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/SessionCipherV2( 6998): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/SessionCipherV2( 6998): at java.lang.Thread.run(Thread.java:841)
+W/DecryptionQueue( 6998): org.whispersystems.textsecure.crypto.InvalidMessageException: No valid sessions.
+W/DecryptionQueue( 6998): at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:109)
+W/DecryptionQueue( 6998): at org.thoughtcrime.securesms.crypto.DecryptingQueue$PushDecryptionWorkItem.run(DecryptingQueue.java:207)
+W/DecryptionQueue( 6998): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/DecryptionQueue( 6998): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/DecryptionQueue( 6998): at java.lang.Thread.run(Thread.java:841)
+W/SessionCipherV2( 6998): org.whispersystems.textsecure.crypto.InvalidMessageException: Bad Mac!
+W/SessionCipherV2( 6998): at org.whispersystems.textsecure.crypto.protocol.WhisperMessageV2.verifyMac(WhisperMessageV2.java:107)
+W/SessionCipherV2( 6998): at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:127)
+W/SessionCipherV2( 6998): at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:89)
+W/SessionCipherV2( 6998): at org.thoughtcrime.securesms.crypto.DecryptingQueue$PushDecryptionWorkItem.run(DecryptingQueue.java:207)
+W/SessionCipherV2( 6998): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/SessionCipherV2( 6998): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/SessionCipherV2( 6998): at java.lang.Thread.run(Thread.java:841)
+W/DecryptionQueue( 6998): org.whispersystems.textsecure.crypto.InvalidMessageException: No valid sessions.
+W/DecryptionQueue( 6998): at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:109)
+W/DecryptionQueue( 6998): at org.thoughtcrime.securesms.crypto.DecryptingQueue$PushDecryptionWorkItem.run(DecryptingQueue.java:207)
+W/DecryptionQueue( 6998): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/DecryptionQueue( 6998): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/DecryptionQueue( 6998): at java.lang.Thread.run(Thread.java:841)
+W/MmsSmsDatabase( 6998): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 4) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 4) ORDER BY date_received DESC) LIMIT 1
+W/MessageDatabase( 6998): Updating ID: 2617 to base type: 268435456
+W/MmsSmsDatabase( 6998): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 4) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 4) ORDER BY date_received DESC) LIMIT 1
+W/MmsSmsDatabase( 6998): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+W/NotificationState( 6998): Added thread: 4
+W/NotificationState( 6998): Pending array off intent length: 1
+W/MmsSmsDatabase( 6998): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 4) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 4) ORDER BY date_received DESC) LIMIT 1
+W/MessageDatabase( 6998): Updating ID: 2618 to base type: 268435456
+W/MmsSmsDatabase( 6998): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 4) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 4) ORDER BY date_received DESC) LIMIT 1
+W/MmsSmsDatabase( 6998): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+W/NotificationState( 6998): Added thread: 4
+W/NotificationState( 6998): Pending array off intent length: 1
+V/GCMBroadcastReceiver( 6998): onReceive: com.google.android.c2dm.intent.RECEIVE
+V/GCMBroadcastReceiver( 6998): GCM IntentService class: org.thoughtcrime.securesms.gcm.GcmIntentService
+V/GCMBaseIntentService( 6998): Acquiring wakelock
+V/GCMBaseIntentService( 6998): Intent service name: GCMIntentService-DynamicSenderIds-15
+W/GcmIntentService( 6998): GCM message...
+W/IncomingEncryptedPushMessage( 6998): Our MAC: ac d8 c8 93 2d 0e 00 58 9a 31
+W/IncomingEncryptedPushMessage( 6998): Thr MAC: ac d8 c8 93 2d 0e 00 58 9a 31
+V/GCMBaseIntentService( 6998): Releasing wakelock
+W/SessionCipherV2( 6998): org.whispersystems.textsecure.crypto.InvalidMessageException: Bad Mac!
+W/SessionCipherV2( 6998): at org.whispersystems.textsecure.crypto.protocol.WhisperMessageV2.verifyMac(WhisperMessageV2.java:107)
+W/SessionCipherV2( 6998): at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:127)
+W/SessionCipherV2( 6998): at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:89)
+W/SessionCipherV2( 6998): at org.thoughtcrime.securesms.crypto.DecryptingQueue$PushDecryptionWorkItem.run(DecryptingQueue.java:207)
+W/SessionCipherV2( 6998): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/SessionCipherV2( 6998): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/SessionCipherV2( 6998): at java.lang.Thread.run(Thread.java:841)
+W/DecryptionQueue( 6998): org.whispersystems.textsecure.crypto.InvalidMessageException: No valid sessions.
+W/DecryptionQueue( 6998): at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:109)
+W/DecryptionQueue( 6998): at org.thoughtcrime.securesms.crypto.DecryptingQueue$PushDecryptionWorkItem.run(DecryptingQueue.java:207)
+W/DecryptionQueue( 6998): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/DecryptionQueue( 6998): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/DecryptionQueue( 6998): at java.lang.Thread.run(Thread.java:841)

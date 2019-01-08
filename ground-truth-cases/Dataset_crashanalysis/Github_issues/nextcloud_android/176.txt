@@ -1,0 +1,18 @@
+java.lang.RuntimeException: Failure from system
+    at android.app.ContextImpl.sendStickyBroadcast(ContextImpl.java:1021)
+    at android.content.ContextWrapper.sendStickyBroadcast(ContextWrapper.java:509)
+    at com.owncloud.android.syncadapter.FileSyncAdapter.sendLocalBroadcast(FileSyncAdapter.java:384)
+    at com.owncloud.android.syncadapter.FileSyncAdapter.synchronizeFolder(FileSyncAdapter.java:282)
+    at com.owncloud.android.syncadapter.FileSyncAdapter.syncChildren(FileSyncAdapter.java:354)
+    at com.owncloud.android.syncadapter.FileSyncAdapter.synchronizeFolder(FileSyncAdapter.java:298)
+    at com.owncloud.android.syncadapter.FileSyncAdapter.syncChildren(FileSyncAdapter.java:354)
+    at com.owncloud.android.syncadapter.FileSyncAdapter.synchronizeFolder(FileSyncAdapter.java:298)
+    at com.owncloud.android.syncadapter.FileSyncAdapter.syncChildren(FileSyncAdapter.java:354)
+    at com.owncloud.android.syncadapter.FileSyncAdapter.synchronizeFolder(FileSyncAdapter.java:298)
+    at com.owncloud.android.syncadapter.FileSyncAdapter.onPerformSync(FileSyncAdapter.java:187)
+    at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:272)
+Caused by: android.os.TransactionTooLargeException: data parcel size 1645084 bytes
+    at android.os.BinderProxy.transactNative(Native Method)
+    at android.os.BinderProxy.transact(Binder.java:503)
+    at android.app.ActivityManagerProxy.broadcastIntent(ActivityManagerNative.java:3075)
+    at android.app.ContextImpl.sendStickyBroadcast(ContextImpl.java:1016)

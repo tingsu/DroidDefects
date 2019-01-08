@@ -1,0 +1,33 @@
+
+The previous attempt at doing this failed, because it tried to modify
+the *first* exception in the chain, but it turns out that it's the
+*last* exception in the chain that Crashlytics looks at.
+
+So given an Exception...
+"
+java.lang.Exception: This is a test Exception
+    at not.bankdroid.at.all.ExceptionFactory.getException(ExceptionFactory.java:20)
+    at com.liato.bankdroid.utils.ExceptionUtilsTest.testBlameBankdroid(ExceptionUtilsTest.java:16)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:497)
+    at ...
+"
+... we now report to Crashlytics:
+"
+java.lang.Exception: This is a test Exception
+    at not.bankdroid.at.all.ExceptionFactory.getException(ExceptionFactory.java:20)
+    at com.liato.bankdroid.utils.ExceptionUtilsTest.testBlameBankdroid(ExceptionUtilsTest.java:16)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:497)
+    at ...
+Caused by: java.lang.Exception: This is a test Exception
+    at com.liato.bankdroid.utils.ExceptionUtilsTest.testBlameBankdroid(ExceptionUtilsTest.java:16)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:497)
+    at ...

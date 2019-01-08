@@ -1,0 +1,9 @@
+android.database.sqlite.SQLiteException: near "s": syntax error (code 1): , while compiling: SELECT _data FROM images WHERE (_data LIKE '/storage/emulated/0/<PATH TO FILE>/%') ORDER BY datetaken DESC LIMIT 8
+    at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:179)
+    at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:135)
+    at android.content.ContentProviderProxy.query(ContentProviderNative.java:421)
+    at android.content.ContentResolver.query(ContentResolver.java:530)
+    at android.content.ContentResolver.query(ContentResolver.java:472)
+    at com.owncloud.android.datamodel.MediaProvider.getMediaFolders(MediaProvider.java:79)
+    at com.owncloud.android.ui.activity.FolderSyncActivity$1.run(FolderSyncActivity.java:130)
+    at java.lang.Thread.run(Thread.java:761)

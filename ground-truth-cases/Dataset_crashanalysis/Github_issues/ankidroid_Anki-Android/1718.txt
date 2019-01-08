@@ -1,0 +1,6 @@
+E/AndroidRuntime(  575): java.lang.VerifyError: com.ichi2.themes.StyledDialog
+E/AndroidRuntime(  575):    at com.ichi2.themes.StyledDialog$Builder.create(StyledDialog.java:431)
+E/AndroidRuntime(  575):    at com.ichi2.themes.Themes.htmlOkDialog(Themes.java:354)
+E/AndroidRuntime(  575):    at com.ichi2.anki.StudyOptions.restorePreferences(StudyOptions.java:2379)
+E/AndroidRuntime(  575):    at com.ichi2.anki.StudyOptions.onCreate(StudyOptions.java:640)
+E/AndroidRuntime(  575):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1123)

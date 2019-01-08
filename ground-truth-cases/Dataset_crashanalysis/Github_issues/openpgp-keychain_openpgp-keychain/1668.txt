@@ -1,0 +1,13 @@
+01-10 11:52:05.960 E/AndroidRuntime(5081): java.lang.NullPointerException
+01-10 11:52:05.960 E/AndroidRuntime(5081):  at org.spongycastle.openpgp.PGPPublicKey.<init>(PGPPublicKey.java:144)
+01-10 11:52:05.960 E/AndroidRuntime(5081):  at org.spongycastle.openpgp.PGPPublicKey.removeCert(PGPPublicKey.java:808)
+01-10 11:52:05.960 E/AndroidRuntime(5081):  at org.spongycastle.openpgp.PGPPublicKey.removeCertification(PGPPublicKey.java:801)
+01-10 11:52:05.960 E/AndroidRuntime(5081):  at org.sufficientlysecure.keychain.pgp.UncachedKeyRing.canonicalize(UncachedKeyRing.java:606)
+01-10 11:52:05.960 E/AndroidRuntime(5081):  at org.sufficientlysecure.keychain.pgp.UncachedKeyRing.canonicalize(UncachedKeyRing.java:271)
+01-10 11:52:05.960 E/AndroidRuntime(5081):  at org.sufficientlysecure.keychain.provider.ProviderHelper.saveSecretKeyRing(ProviderHelper.java:1046)
+01-10 11:52:05.960 E/AndroidRuntime(5081):  at org.sufficientlysecure.keychain.operations.ImportOperation.serialKeyRingImport(ImportOperation.java:271)
+01-10 11:52:05.960 E/AndroidRuntime(5081):  at org.sufficientlysecure.keychain.operations.ImportOperation.serialKeyRingImport(ImportOperation.java:112)
+01-10 11:52:05.960 E/AndroidRuntime(5081):  at org.sufficientlysecure.keychain.operations.ImportOperation.execute(ImportOperation.java:390)
+01-10 11:52:05.960 E/AndroidRuntime(5081):  at org.sufficientlysecure.keychain.operations.ImportOperation.execute(ImportOperation.java:83)
+01-10 11:52:05.960 E/AndroidRuntime(5081):  at org.sufficientlysecure.keychain.service.KeychainService$1.run(KeychainService.java:146)
+01-10 11:52:05.960 E/AndroidRuntime(5081):  at java.lang.Thread.run(Thread.java:841)

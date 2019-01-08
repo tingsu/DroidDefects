@@ -1,0 +1,38 @@
+W/System.err( 2876): javax.net.ssl.SSLProtocolException: Write error: ssl=0x1819a0: Failure in SSL library, usually a protocol error
+W/System.err( 2876):    at org.apache.harmony.xnet.provider.jsse.NativeCrypto.SSL_write(Native Method)
+W/System.err( 2876):    at org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl$SSLOutputStream.write(OpenSSLSocketImpl.java:839)
+W/System.err( 2876):    at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:164)
+W/System.err( 2876):    at java.io.BufferedWriter.flush(BufferedWriter.java:128)
+W/System.err( 2876):    at org.jivesoftware.smack.PacketWriter.writePackets(PacketWriter.java:193)
+W/System.err( 2876):    at org.jivesoftware.smack.PacketWriter.access$000(PacketWriter.java:40)
+W/System.err( 2876):    at org.jivesoftware.smack.PacketWriter$1.run(PacketWriter.java:76)
+I/XmppConnection( 2876): reconnect on error
+I/XmppConnection( 2876): javax.net.ssl.SSLProtocolException: Write error: ssl=0x1819a0: Failure in SSL library, usually a protocol error
+I/XmppConnection( 2876):    at org.apache.harmony.xnet.provider.jsse.NativeCrypto.SSL_write(Native Method)
+I/XmppConnection( 2876):    at org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl$SSLOutputStream.write(OpenSSLSocketImpl.java:839)
+I/XmppConnection( 2876):    at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:164)
+I/XmppConnection( 2876):    at java.io.BufferedWriter.flush(BufferedWriter.java:128)
+I/XmppConnection( 2876):    at org.jivesoftware.smack.PacketWriter.writePackets(PacketWriter.java:193)
+I/XmppConnection( 2876):    at org.jivesoftware.smack.PacketWriter.access$000(PacketWriter.java:40)
+I/XmppConnection( 2876):    at org.jivesoftware.smack.PacketWriter$1.run(PacketWriter.java:76)
+W/System.err( 2876): javax.net.ssl.SSLException: Write error: ssl=0x1819a0: I/O error during system call, Broken pipe
+W/System.err( 2876):    at org.apache.harmony.xnet.provider.jsse.NativeCrypto.SSL_write(Native Method)
+W/System.err( 2876):    at org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl$SSLOutputStream.write(OpenSSLSocketImpl.java:839)
+W/System.err( 2876):    at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:164)
+W/System.err( 2876):    at java.io.BufferedWriter.flush(BufferedWriter.java:128)
+W/System.err( 2876):    at org.jivesoftware.smack.PacketWriter.openStream(PacketWriter.java:258)
+W/System.err( 2876):    at org.jivesoftware.smack.XMPPConnection.proceedTLSReceived(XMPPConnection.java:858)
+W/System.err( 2876):    at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:267)
+W/System.err( 2876):    at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:43)
+W/System.err( 2876):    at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:70)
+I/XmppConnection( 2876): reconnect on error
+I/XmppConnection( 2876): javax.net.ssl.SSLException: Write error: ssl=0x1819a0: I/O error during system call, Broken pipe
+I/XmppConnection( 2876):    at org.apache.harmony.xnet.provider.jsse.NativeCrypto.SSL_write(Native Method)
+I/XmppConnection( 2876):    at org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl$SSLOutputStream.write(OpenSSLSocketImpl.java:839)
+I/XmppConnection( 2876):    at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:164)
+I/XmppConnection( 2876):    at java.io.BufferedWriter.flush(BufferedWriter.java:128)
+I/XmppConnection( 2876):    at org.jivesoftware.smack.PacketWriter.openStream(PacketWriter.java:258)
+I/XmppConnection( 2876):    at org.jivesoftware.smack.XMPPConnection.proceedTLSReceived(XMPPConnection.java:858)
+I/XmppConnection( 2876):    at org.jivesoftware.smack.PacketReader.parsePackets(PacketReader.java:267)
+I/XmppConnection( 2876):    at org.jivesoftware.smack.PacketReader.access$000(PacketReader.java:43)
+I/XmppConnection( 2876):    at org.jivesoftware.smack.PacketReader$1.run(PacketReader.java:70)

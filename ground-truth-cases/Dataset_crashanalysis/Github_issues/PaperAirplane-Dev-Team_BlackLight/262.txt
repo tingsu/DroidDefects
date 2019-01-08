@@ -1,0 +1,13 @@
+java.lang.NullPointerException
+    at us.shandian.blacklight.ui.statuses.UserTimeLineActivity.resetFollowState(UserTimeLineActivity.java:272)
+    at us.shandian.blacklight.ui.statuses.UserTimeLineActivity.access$800(UserTimeLineActivity.java:61)
+    at us.shandian.blacklight.ui.statuses.UserTimeLineActivity$Downloader.onProgressUpdate(UserTimeLineActivity.java:448)
+    at us.shandian.blacklight.support.AsyncTask$1.handleMessage(AsyncTask.java:59)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5457)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:525)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:875)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:691)
+    at dalvik.system.NativeStart.main(Native Method)

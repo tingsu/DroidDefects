@@ -1,0 +1,31 @@
+W/dalvikvm( 3254): VFY: unable to resolve virtual method 1252: Landroid/os/PowerManager;.isInteractive ()Z
+D/dalvikvm( 3254): VFY: replacing opcode 0x6e at 0x0013
+E/CursorWindow( 3254): Failed to read row 0, column -1 from a CursorWindow which has 1 rows, 8 columns.
+D/AndroidRuntime( 3254): Shutting down VM
+W/dalvikvm( 3254): threadid=1: thread exiting with uncaught exception (group=0x41933ce0)
+E/AndroidRuntime( 3254): FATAL EXCEPTION: main
+E/AndroidRuntime( 3254): Process: eu.siacs.conversations, PID: 3254
+E/AndroidRuntime( 3254): java.lang.RuntimeException: Unable to create service eu.siacs.conversations.services.XmppConnectionService: java.lang.IllegalStateException: Couldn't read row 0, col -1 from CursorWindow.  Make sure the Cursor is initialized correctly before accessing data from it.
+E/AndroidRuntime( 3254):        at android.app.ActivityThread.handleCreateService(ActivityThread.java:2606)
+E/AndroidRuntime( 3254):        at android.app.ActivityThread.access$1800(ActivityThread.java:144)
+E/AndroidRuntime( 3254):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1287)
+E/AndroidRuntime( 3254):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 3254):        at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 3254):        at android.app.ActivityThread.main(ActivityThread.java:5146)
+E/AndroidRuntime( 3254):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 3254):        at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 3254):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+E/AndroidRuntime( 3254):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+E/AndroidRuntime( 3254):        at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 3254): Caused by: java.lang.IllegalStateException: Couldn't read row 0, col -1 from CursorWindow.  Make sure the Cursor is initialized correctly before accessing data from it.
+E/AndroidRuntime( 3254):        at android.database.CursorWindow.nativeGetString(Native Method)
+E/AndroidRuntime( 3254):        at android.database.CursorWindow.getString(CursorWindow.java:434)
+E/AndroidRuntime( 3254):        at android.database.AbstractWindowedCursor.getString(AbstractWindowedCursor.java:51)
+E/AndroidRuntime( 3254):        at eu.siacs.conversations.entities.Account.fromCursor(Account.java:185)
+E/AndroidRuntime( 3254):        at eu.siacs.conversations.persistance.DatabaseBackend.getAccounts(DatabaseBackend.java:490)
+E/AndroidRuntime( 3254):        at eu.siacs.conversations.persistance.DatabaseBackend.onUpgrade(DatabaseBackend.java:308)
+E/AndroidRuntime( 3254):        at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:257)
+E/AndroidRuntime( 3254):        at android.database.sqlite.SQLiteOpenHelper.getReadableDatabase(SQLiteOpenHelper.java:188)
+E/AndroidRuntime( 3254):        at eu.siacs.conversations.persistance.DatabaseBackend.getAccounts(DatabaseBackend.java:481)
+E/AndroidRuntime( 3254):        at eu.siacs.conversations.services.XmppConnectionService.onCreate(XmppConnectionService.java:656)
+E/AndroidRuntime( 3254):        at android.app.ActivityThread.handleCreateService(ActivityThread.java:2596)

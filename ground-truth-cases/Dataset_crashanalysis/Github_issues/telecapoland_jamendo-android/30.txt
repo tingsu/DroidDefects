@@ -1,0 +1,167 @@
+D/PhoneStatusBar(30872): addNotification score=0
+D/SizeAdaptiveLayout(30872): com.android.internal.widget.SizeAdaptiveLayout@41f9cf50child view android.widget.FrameLayout@42fa4ac0 measured out of bounds at 95px clamped to 96px
+D/SizeAdaptiveLayout(30872): com.android.internal.widget.SizeAdaptiveLayout@41f9cf50child view android.widget.FrameLayout@42fa4ac0 measured out of bounds at 95px clamped to 96px
+I/ActivityManager(  300): START {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.teleca.jamendo/.activity.SplashscreenActivity u=0} from pid 513
+D/dalvikvm(  300): GC_CONCURRENT freed 3507K, 34% free 17398K/26247K, paused 9ms+15ms, total 111ms
+D/dalvikvm(  300): WAIT_FOR_CONCURRENT_GC blocked 43ms
+W/IInputConnectionWrapper(  513): showStatusIcon on inactive InputConnection
+I/ActivityManager(  300): Displayed com.teleca.jamendo/.activity.SplashscreenActivity: +261ms (total +19s946ms)
+D/dalvikvm( 6443): GC_FOR_ALLOC freed 562K, 24% free 6500K/8451K, paused 48ms, total 48ms
+I/dalvikvm-heap( 6443): Grow heap (frag case) to 15.938MB for 1330576-byte allocation
+I/ActivityManager(  300): START {flg=0x4000000 cmp=com.teleca.jamendo/.activity.HomeActivity u=0} from pid 6443
+D/dalvikvm( 6443): GC_CONCURRENT freed 2820K, 44% free 5879K/10439K, paused 4ms+3ms, total 26ms
+I/ActivityManager(  300): Displayed com.teleca.jamendo/.activity.HomeActivity: +151ms
+D/jamendo ( 6443): Caller.doGet http://api.jamendo.com/get2/id+name+url+image+rating+artist_name/album/json/?n=20&order=ratingweek_desc
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/ActivityManager(  300): START {cmp=com.teleca.jamendo/.activity.DownloadActivity u=0} from pid 6443
+I/ActivityManager(  300): Displayed com.teleca.jamendo/.activity.DownloadActivity: +85ms
+W/InputMethodManagerService(  300): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@41f2aa50 attribute=null
+I/ActivityManager(  300): START {cmp=com.teleca.jamendo/.activity.RadioActivity u=0} from pid 6443
+D/dalvikvm( 6443): GC_CONCURRENT freed 625K, 33% free 7033K/10439K, paused 5ms+8ms, total 37ms
+I/ActivityManager(  300): Displayed com.teleca.jamendo/.activity.RadioActivity: +145ms
+D/jamendo ( 6443): Caller.doGet http://api.jamendo.com/get2/id+idstr+name+image/radio/json/?id=9+4+5+6+7+8+283+
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+D/PhoneStatusBar(30872): addNotification score=0
+D/SizeAdaptiveLayout(30872): com.android.internal.widget.SizeAdaptiveLayout@41da3ee8child view android.widget.FrameLayout@41e784e8 measured out of bounds at 95px clamped to 96px
+D/SizeAdaptiveLayout(30872): com.android.internal.widget.SizeAdaptiveLayout@41da3ee8child view android.widget.FrameLayout@41e784e8 measured out of bounds at 95px clamped to 96px
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+I/jamendo ( 6443): Loading album cover from file
+D/dalvikvm( 6443): GC_CONCURRENT freed 1963K, 35% free 6884K/10439K, paused 5ms+3ms, total 42ms
+I/jamendo ( 6443): TESTs
+D/jamendo ( 6443): Caller.doGet http://api.jamendo.com/get2/track_id/track/json/radio_track_inradioplaylist/?radio_id=5&nshuffle=200&n=20
+D/jamendo ( 6443): Caller.doGet http://api.jamendo.com/get2/id+name+url+image+rating+artist_name/album/json/?n=20&track_id=381582+73068+194117+693365+355333+33545+225779+381575+75991+81237+172030+520937+97354+97358+190871+172025+156947+172018+413829+73059+
+D/jamendo ( 6443): Caller.doGet http://api.jamendo.com/get2/id+numalbum+name+duration+rating+url+stream/track/json/?streamencoding=mp31&n=20&id=381582+73068+194117+693365+355333+33545+225779+381575+75991+81237+172030+520937+97354+97358+190871+172025+156947+172018+413829+73059+
+I/jamendo ( 6443): Pobieram liste
+I/jamendroid( 6443): S12 by Direct Raption
+I/jamendroid( 6443): Real Talk by Brix by Cartel
+I/jamendroid( 6443): I Remember When by Gates by Cartel
+I/jamendroid( 6443): L'enfer du décor by AL-FAMI
+I/jamendroid( 6443): Se desenvuelve+Punto final by Jomeini Taim
+I/jamendroid( 6443): 04 Ma Vile, Ma Vie by N'OR
+I/jamendroid( 6443): 08 Avoue by N'OR
+I/jamendroid( 6443): La rue c'est quoi (remix) by La Fabrik
+I/jamendroid( 6443): Want You To Know by Jonay
+I/jamendroid( 6443): Let Loose by Jonay
+I/jamendroid( 6443): This Is Sweden by Jonay
+I/jamendroid( 6443): Tons Of Paper by The Crime Lords by Cartel
+I/jamendroid( 6443): Tarry, Big C & Kolega - Dreams by Big C
+I/jamendroid( 6443): The Love by Mallz by Cartel
+I/jamendroid( 6443): The_Tony_Rich_Project-The_Dream_Is_Real by Hidden Beach Recordings
+I/jamendroid( 6443): Tha Way  by Blackwell
+I/jamendroid( 6443): Un4givable by Blackwell
+I/jamendroid( 6443): House of the Rising Son by Tab
+I/jamendroid( 6443): Mothership  by Kellee Maize
+I/jamendroid( 6443): Tu mirada - El Menol by Dioscar Rodriguez
+I/ActivityManager(  300): START {flg=0x4000000 cmp=com.teleca.jamendo/.activity.PlayerActivity (has extras) u=0} from pid 6443
+W/InputMethodManagerService(  300): Focus gain on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@41e8e598 (uid=10088 pid=6443)
+I/jamendo ( 6443): PlayerActivity.onCreate
+I/jamendo ( 6443): PlayerActivity.handleIntent
+I/jamendo ( 6443): PlayerActivity.loadPlaylist
+I/AwesomePlayer(  110): setDataSource_l('http://storage-new.newjamendo.com/?trackid=381582&format=mp31&u=0')
+I/jamendo ( 6443): Player [buffering] Un4givable
+I/ChromiumHTTPDataSource(  110): connect to http://storage-new.newjamendo.com/?trackid=381582&format=mp31&u=0 @0
+I/jamendo ( 6443): PlayerActivity.onResume
+D/jamendo ( 6443): Image is not present, try to download
+D/SizeAdaptiveLayout(30872): com.android.internal.widget.SizeAdaptiveLayout@41e90470child view android.widget.FrameLayout@41e911b8 measured out of bounds at 95px clamped to 96px
+D/SizeAdaptiveLayout(30872): com.android.internal.widget.SizeAdaptiveLayout@41e90470child view android.widget.FrameLayout@41e911b8 measured out of bounds at 95px clamped to 96px
+D/dalvikvm( 6443): GC_FOR_ALLOC freed 1156K, 34% free 6982K/10439K, paused 35ms, total 35ms
+I/dalvikvm-heap( 6443): Grow heap (frag case) to 15.913MB for 810016-byte allocation
+I/jamendo ( 6443): Player Service onStart - bind_listener
+D/jamendo ( 6443): Caller.doGet http://api.jamendo.com/get2/id+url+image/license/json/?album_id=48416
+I/ActivityManager(  300): Displayed com.teleca.jamendo/.activity.PlayerActivity: +326ms
+I/jamendo ( 6443): File not cached supportedhttp://i.creativecommons.org/l/by-sa/3.0/88x31.png
+I/jamendo ( 6443): Image is not present, try to download
+D/dalvikvm( 6443): GC_CONCURRENT freed 574K, 33% free 8345K/12295K, paused 4ms+3ms, total 26ms
+D/jamendo ( 6443): Image cached http://imgjam.com/albums/s48/48416/covers/1.500.jpg
+I/jamendo ( 6443): Image saved to sd
+W/WVMExtractor(  110): Failed to open libwvm.so
+D/jamendo ( 6443): Image cached http://i.creativecommons.org/l/by-sa/3.0/88x31.png
+I/jamendo ( 6443): Player [playing] Un4givable
+E/AudioPolicyManagerBase(  110): registerEffect() effect CyanogenMod's Equalizer, io 3, strategy 0 session 762 id 763
+E/AudioPolicyManagerBase(  110): registerEffect() memory 1, total memory 1
+E/AudioPolicyManagerBase(  110): setEffectEnabled(true) total CPU 10
+W/NvAudioALSAPolicyManager(  110): startOutput() mHardwareOutput=3
+E/AudioPolicyManagerBase(  110): changeRefCount() stream 3, count 1
+E/AudioPolicyManagerBase(  110): getNewDevice() selected device 2
+E/AudioPolicyManagerBase(  110): setOutputDevice() output 3 device 2 delayMs 0
+E/AudioPolicyManagerBase(  110): setOutputDevice() setting same device 2 or null device for output 3 prevDevice=2
+E/AudioPolicyManagerBase(  110): 
+E/AudioPolicyManagerBase(  110): ************************* Check And Set Volume Start ***************************
+E/NvAudioALSAPolicyManager(  110): [NVALSA] Current Device[0x2] -> Device Selected[0x1]
+E/NvAudioALSAPolicyManager(  110): [NVALSA] Volume From Table [3][1][7]=[0.063096]
+E/NvAudioALSAPolicyManager(  110): [NVALSA] ComputeVolume() -> Stream[3], Index[7], Output[3], Device[0x00000002], PureVol[0.063096]->Vol[0.063096]
+E/AudioPolicyManagerBase(  110): ********************************************************************************
+I/NuCachedSource2(  110): ERROR_END_OF_STREAM
+E/AudioPolicyManagerBase(  110): stopOutput() output 3, stream 3, session 762
+E/AudioPolicyManagerBase(  110): changeRefCount() stream 3, count 0
+E/AudioPolicyManagerBase(  110): getNewDevice() selected device 0
+E/AudioPolicyManagerBase(  110): setOutputDevice() output 3 device 0 delayMs 0
+E/AudioPolicyManagerBase(  110): setOutputDevice() setting same device 0 or null device for output 3 prevDevice=2
+W/TimedEventQueue(  110): Event 5 was not found in the queue, already cancelled?
+E/AudioPolicyManagerBase(  110): setEffectEnabled(false) total CPU 0
+E/AudioPolicyManagerBase(  110): unregisterEffect() effect CyanogenMod's Equalizer, ID 763, memory 1 total memory 0
+I/AwesomePlayer(  110): setDataSource_l('http://storage-new.newjamendo.com/?trackid=73068&format=mp31&u=0')
+I/jamendo ( 6443): Player [buffering] I Remember When by Gates
+I/ChromiumHTTPDataSource(  110): connect to http://storage-new.newjamendo.com/?trackid=73068&format=mp31&u=0 @0
+D/jamendo ( 6443): Image is not present, try to download
+D/SizeAdaptiveLayout(30872): com.android.internal.widget.SizeAdaptiveLayout@41e90470child view android.widget.FrameLayout@41e911b8 measured out of bounds at 95px clamped to 96px
+D/SizeAdaptiveLayout(30872): com.android.internal.widget.SizeAdaptiveLayout@41e90470child view android.widget.FrameLayout@41e911b8 measured out of bounds at 95px clamped to 96px
+D/dalvikvm( 6443): GC_FOR_ALLOC freed 198K, 33% free 8345K/12295K, paused 17ms, total 17ms
+I/dalvikvm-heap( 6443): Grow heap (frag case) to 17.425MB for 1000016-byte allocation
+D/jamendo ( 6443): Caller.doGet http://api.jamendo.com/get2/id+url+image/license/json/?album_id=6450
+I/jamendo ( 6443): File not cached supportedhttp://i.creativecommons.org/l/by-sa/3.0/88x31.png
+D/jamendo ( 6443): Image cached http://imgjam.com/albums/s6/6450/covers/1.500.jpg
+I/jamendo ( 6443): Image saved to sd
+W/WVMExtractor(  110): Failed to open libwvm.so
+I/jamendo ( 6443): Player [playing] I Remember When by Gates
+E/AudioPolicyManagerBase(  110): registerEffect() effect CyanogenMod's Equalizer, io 3, strategy 0 session 764 id 765
+E/AudioPolicyManagerBase(  110): registerEffect() memory 1, total memory 1
+D/AndroidRuntime( 6443): Shutting down VM
+W/dalvikvm( 6443): threadid=1: thread exiting with uncaught exception (group=0x419b8300)
+E/AndroidRuntime( 6443): FATAL EXCEPTION: main
+E/AndroidRuntime( 6443): java.lang.RuntimeException: AudioEffect: set/get parameter error
+E/AndroidRuntime( 6443):    at android.media.audiofx.AudioEffect.checkStatus(AudioEffect.java:1247)
+E/AndroidRuntime( 6443):    at android.media.audiofx.Equalizer.getProperties(Equalizer.java:532)
+E/AndroidRuntime( 6443):    at com.teleca.jamendo.media.PlayerEngineImpl.play(PlayerEngineImpl.java:223)
+E/AndroidRuntime( 6443):    at com.teleca.jamendo.media.PlayerEngineImpl$3.onPrepared(PlayerEngineImpl.java:327)
+E/AndroidRuntime( 6443):    at android.media.MediaPlayer$EventHandler.handleMessage(MediaPlayer.java:1975)
+E/AndroidRuntime( 6443):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 6443):    at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime( 6443):    at android.app.ActivityThread.main(ActivityThread.java:4931)
+E/AndroidRuntime( 6443):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 6443):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime( 6443):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:791)
+E/AndroidRuntime( 6443):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:558)
+E/AndroidRuntime( 6443):    at dalvik.system.NativeStart.main(Native Method)
+W/ActivityManager(  300):   Force finishing activity com.teleca.jamendo/.activity.PlayerActivity
+W/ActivityManager(  300):   Force finishing activity com.teleca.jamendo/.activity.RadioActivity
+W/ActivityManager(  300): Activity pause timeout for ActivityRecord{41dfc5d8 com.teleca.jamendo/.activity.PlayerActivity}
+I/Process ( 6443): Sending signal. PID: 6443 SIG: 9
+E/AudioPolicyManagerBase(  110): setEffectEnabled(false) effect already disabled
+E/AudioPolicyManagerBase(  110): unregisterEffect() effect CyanogenMod's Equalizer, ID 765, memory 1 total memory 0
+W/TimedEventQueue(  110): Event 4 was not found in the queue, already cancelled?
+I/WindowState(  300): WIN DEATH: Window{425346c8 com.teleca.jamendo/com.teleca.jamendo.activity.RadioActivity paused=true}
+I/WindowState(  300): WIN DEATH: Window{4230cbc0 com.teleca.jamendo/com.teleca.jamendo.activity.HomeActivity paused=false}
+I/ActivityManager(  300): Process com.teleca.jamendo (pid 6443) has died.
+W/ActivityManager(  300): Service crashed 2 times, stopping: ServiceRecord{425f36d0 com.teleca.jamendo/.service.PlayerService}
+I/WindowState(  300): WIN DEATH: Window{42740050 com.teleca.jamendo/com.teleca.jamendo.activity.PlayerActivity paused=false}
+W/ActivityManager(  300): Force removing ActivityRecord{41d2d0a0 com.teleca.jamendo/.activity.HomeActivity}: app died, no saved state
+W/InputMethodManagerService(  300): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@41dada18 (uid=10091 pid=513)
+W/InputMethodManagerService(  300): Got RemoteException sending setActive(false) notification to pid 6443 uid 10088
+D/PhoneStatusBar(30872): addNotification score=0
+D/SizeAdaptiveLayout(30872): com.android.internal.widget.SizeAdaptiveLayout@42ceee18child view android.widget.FrameLayout@41e2fc78 measured out of bounds at 95px clamped to 96px
+D/SizeAdaptiveLayout(30872): com.android.internal.widget.SizeAdaptiveLayout@42ceee18child view android.widget.FrameLayout@41e2fc78 measured out of bounds at 95px clamped to 96px

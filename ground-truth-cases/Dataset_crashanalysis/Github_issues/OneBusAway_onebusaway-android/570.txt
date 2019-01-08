@@ -1,0 +1,13 @@
+java.lang.IllegalStateException: Fragment BaseMapFragment{221a95f8} not attached to Activity
+    at android.support.v4.app.Fragment.getResources(Fragment.java:639)
+    at android.support.v4.app.Fragment.getString(Fragment.java:661)
+    at org.onebusaway.android.map.googlemapsv2.BaseMapFragment.onRegionTaskFinished(BaseMapFragment.java:499)
+    at org.onebusaway.android.region.ObaRegionsTask$2.run(ObaRegionsTask.java:266)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:145)
+    at android.app.ActivityThread.main(ActivityThread.java:5951)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1399)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1194)

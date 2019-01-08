@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: de.k3b.android.androFotoFinder
+//version: 0.5.5.161220
+//appro_time: 124
+ FATAL EXCEPTION: main
+ java.lang.NullPointerException
+ 	at de.k3b.android.androFotoFinder.locationmap.LocationMapFragment.createHashMap(LocationMapFragment.java:967)
+ 	at de.k3b.android.androFotoFinder.locationmap.LocationMapFragment.reloadFotoMarker(LocationMapFragment.java:673)
+ 	at de.k3b.android.androFotoFinder.locationmap.LocationMapFragment.reloadFotoMarker(LocationMapFragment.java:647)
+ 	at de.k3b.android.androFotoFinder.locationmap.LocationMapFragment.access$000(LocationMapFragment.java:94)
+ 	at de.k3b.android.androFotoFinder.locationmap.LocationMapFragment$2.onScroll(LocationMapFragment.java:296)
+ 	at org.osmdroid.events.DelayedMapListener$CallbackTask.run(DelayedMapListener.java:88)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

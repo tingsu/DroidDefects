@@ -1,0 +1,8 @@
+03-05 00:12:32.016: E/cgeo(12923): java.lang.IllegalStateException: Content has been consumed
+03-05 00:12:32.016: E/cgeo(12923):  at org.apache.http.entity.BasicHttpEntity.getContent(BasicHttpEntity.java:84)
+03-05 00:12:32.016: E/cgeo(12923):  at org.apache.http.conn.BasicManagedEntity.getContent(BasicManagedEntity.java:100)
+03-05 00:12:32.016: E/cgeo(12923):  at org.apache.http.util.EntityUtils.toString(EntityUtils.java:112)
+03-05 00:12:32.016: E/cgeo(12923):  at cgeo.geocaching.cgBase.getResponseDataNoError(cgBase.java:2222)
+03-05 00:12:32.016: E/cgeo(12923):  at cgeo.geocaching.cgBase.getResponseData(cgBase.java:2238)
+03-05 00:12:32.016: E/cgeo(12923):  at cgeo.geocaching.cgBase.getResponseData(cgBase.java:2231)
+03-05 00:12:32.016: E/cgeo(12923):  at cgeo.geocaching.cgeocaches$LoadFromWebThread.run(cgeocaches.java:1964)

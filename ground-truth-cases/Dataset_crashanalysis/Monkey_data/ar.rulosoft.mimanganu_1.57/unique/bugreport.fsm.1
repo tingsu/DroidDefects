@@ -1,0 +1,31 @@
+//this is an auto-generated bug report
+//package name: ar.rulosoft.mimanganu
+//version: 1.57
+//appro_time: 133
+ java.lang.OutOfMemoryError
+ 	at okio.Segment.<init>(Segment.java:61)
+ 	at okio.SegmentPool.take(SegmentPool.java:46)
+ 	at okio.Buffer.writableSegment(Buffer.java:1151)
+ 	at okio.Okio$2.read(Okio.java:136)
+ 	at okio.AsyncTimeout$2.read(AsyncTimeout.java:238)
+ 	at okio.RealBufferedSource.read(RealBufferedSource.java:45)
+ 	at okhttp3.internal.http.Http1xStream$ChunkedSource.read(Http1xStream.java:422)
+ 	at okhttp3.internal.Util.skipAll(Util.java:176)
+ 	at okhttp3.internal.Util.discard(Util.java:158)
+ 	at okhttp3.internal.http.Http1xStream$ChunkedSource.close(Http1xStream.java:455)
+ 	at okio.RealBufferedSource.close(RealBufferedSource.java:434)
+ 	at okio.RealBufferedSource.close(RealBufferedSource.java:434)
+ 	at okio.InflaterSource.close(InflaterSource.java:126)
+ 	at okio.GzipSource.close(GzipSource.java:182)
+ 	at okio.RealBufferedSource.close(RealBufferedSource.java:434)
+ 	at okhttp3.internal.Util.closeQuietly(Util.java:88)
+ 	at okhttp3.ResponseBody.bytes(ResponseBody.java:130)
+ 	at okhttp3.ResponseBody.string(ResponseBody.java:154)
+ 	at ar.rulosoft.navegadores.Navigator.formatResponseBody(Navigator.java:171)
+ 	at ar.rulosoft.navegadores.Navigator.get(Navigator.java:66)
+ 	at ar.rulosoft.navegadores.Navigator.get(Navigator.java:50)
+ 	at ar.rulosoft.mimanganu.servers.EsMangaHere.getImageFrom(EsMangaHere.java:123)
+ 	at ar.rulosoft.mimanganu.services.DownloadPoolService.initPool(DownloadPoolService.java:449)
+ 	at ar.rulosoft.mimanganu.services.DownloadPoolService.access$000(DownloadPoolService.java:29)
+ 	at ar.rulosoft.mimanganu.services.DownloadPoolService$1.run(DownloadPoolService.java:339)
+ 	at java.lang.Thread.run(Thread.java:841)

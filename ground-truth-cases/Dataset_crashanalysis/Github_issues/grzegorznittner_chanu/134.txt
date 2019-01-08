@@ -1,0 +1,10 @@
+        java.lang.OutOfMemoryError
+        at android.graphics.BitmapFactory.nativeDecodeAsset(Native Method)
+        at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:623)
+        at android.graphics.BitmapFactory.decodeResourceStream(BitmapFactory.java:476)
+        at android.graphics.BitmapFactory.decodeResource(BitmapFactory.java:499)
+        at com.android.gallery3d.ui.ResourceTexture.onGetBitmap(ResourceTexture.java:42)
+        at com.android.gallery3d.ui.UploadedTexture.getBitmap(UploadedTexture.java:125)
+        at com.android.gallery3d.ui.UploadedTexture.getHeight(UploadedTexture.java:153)
+        at com.android.gallery3d.ui.ResourceTexture.getHeight(ResourceTexture.java:27)
+        at com.android.gallery3d.ui.EdgeEffect$Drawable.getIntrinsicHeight(EdgeEffect.java:421)

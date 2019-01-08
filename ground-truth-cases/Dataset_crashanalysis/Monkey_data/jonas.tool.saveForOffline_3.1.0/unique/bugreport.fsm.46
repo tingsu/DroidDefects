@@ -1,0 +1,14 @@
+//this is an auto-generated bug report
+//package name: jonas.tool.saveForOffline
+//version: 3.1.0
+//appro_time: 179
+ FATAL EXCEPTION: SaveService
+ java.lang.IllegalArgumentException: unexpected url: http://.com
+ 	at com.squareup.okhttp.Request$Builder.url(Request.java:163)
+ 	at jonas.tool.saveForOffline.PageSaver.getStringFromUrl(PageSaver.java:250)
+ 	at jonas.tool.saveForOffline.PageSaver.downloadHtmlAndParseLinks(PageSaver.java:168)
+ 	at jonas.tool.saveForOffline.PageSaver.getPage(PageSaver.java:113)
+ 	at jonas.tool.saveForOffline.SaveService$ServiceHandler.handleMessage(SaveService.java:115)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

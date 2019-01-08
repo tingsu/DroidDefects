@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: com.lostrealm.lembretes
+//version: v1-beta3-10-gc048e80-dirty
+//appro_time: 49
+ FATAL EXCEPTION: main
+ java.lang.NullPointerException
+ 	at com.lostrealm.lembretes.MainActivity.updateViews(MainActivity.java:98)
+ 	at com.lostrealm.lembretes.MainActivity.access$100(MainActivity.java:37)
+ 	at com.lostrealm.lembretes.MainActivity$1.onReceive(MainActivity.java:92)
+ 	at android.support.v4.content.LocalBroadcastManager.executePendingBroadcasts(LocalBroadcastManager.java:297)
+ 	at android.support.v4.content.LocalBroadcastManager.access$000(LocalBroadcastManager.java:46)
+ 	at android.support.v4.content.LocalBroadcastManager$1.handleMessage(LocalBroadcastManager.java:116)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

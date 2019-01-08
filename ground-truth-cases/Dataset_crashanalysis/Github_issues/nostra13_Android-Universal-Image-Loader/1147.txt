@@ -1,0 +1,8 @@
+Caused by: java.lang.IllegalStateException: cache is closed
+    at com.cubic.autohome.common.view.image.cache.disc.impl.ext.DiskLruCache.checkNotClosed(DiskLruCache.java:648)
+    at com.cubic.autohome.common.view.image.cache.disc.impl.ext.DiskLruCache.get(DiskLruCache.java:419)
+    at com.cubic.autohome.common.view.image.cache.disc.impl.ext.LruDiskCache.get(LruDiskCache.java:134)
+    at com.cubic.autohome.common.view.image.core.ImageLoaderEngine$1.run(ImageLoaderEngine.java:73)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+    at java.lang.Thread.run(Thread.java:841)

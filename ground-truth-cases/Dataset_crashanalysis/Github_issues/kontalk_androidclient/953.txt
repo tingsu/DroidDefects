@@ -1,0 +1,5 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String org.kontalk.data.Conversation.getRecipient()' on a null object reference
+       at org.kontalk.ui.ConversationsActivity.openConversation(ConversationsActivity.java:457)
+       at org.kontalk.ui.ConversationsActivity.openConversation(ConversationsActivity.java:443)
+       at org.kontalk.ui.ConversationsActivity.handleIntent(ConversationsActivity.java:151)
+       at org.kontalk.ui.ConversationsActivity.onCreate(ConversationsActivity.java:103)

@@ -1,0 +1,4 @@
+java.lang.NullPointerException: Attempt to read from field 'de.danoeh.antennapod.fragment.ChaptersFragment de.danoeh.antennapod.activity.AudioplayerActivity$AudioplayerPagerAdapter.chaptersFragment' on a null object reference
+    at de.danoeh.antennapod.activity.AudioplayerActivity.onPositionObserverUpdate(AudioplayerActivity.java:2559)
+    at de.danoeh.antennapod.activity.MediaplayerActivity$1.onPositionObserverUpdate(MediaplayerActivity.java:91)
+    at de.danoeh.antennapod.core.util.playback.PlaybackController$MediaPositionObserver$1.run(PlaybackController.java:777)

@@ -1,0 +1,92 @@
+03-18 10:33:13.712 22208-31259/com.owncloud.android D/UpdateOCVersionOperation: Got new OC version 9.0.0.19
+03-18 10:33:13.715 22208-31259/com.owncloud.android I/UpdateOCVersionOperation: Check for update of ownCloud server version at [EDITED]/remote.php/webdav: Operation finished with HTTP status code -1 (success)
+03-18 10:33:13.719 22208-31259/com.owncloud.android D/SimpleFactoryManager: getClientFor(OwnCloudAccount ... : 
+03-18 10:33:13.725 22208-31259/com.owncloud.android D/OwnCloudClient #48: Creating OwnCloudClient
+03-18 10:33:13.729 22208-31259/com.owncloud.android V/SimpleFactoryManager:     new client {noe@[EDITED], 478871444}
+03-18 10:33:13.734 22208-31259/com.owncloud.android D/OwnCloudClient #48: REQUEST GET /ocs/v1.php/cloud/capabilities
+03-18 10:33:13.773 22208-22208/com.owncloud.android D/UploadListActivity: onStop() ending
+03-18 10:33:13.778 22208-22208/com.owncloud.android D/UploadListActivity: onDestroy() ending
+03-18 10:33:14.022 22208-31259/com.owncloud.android D/GetRemoteCapabilitiesOperation: Successful response: {"ocs":{"meta":{"status":"ok","statuscode":100,"message":null},"data":{"version":{"major":9,"minor":0,"micro":0,"string":"9.0.0","edition":""},"capabilities":{"core":{"pollinterval":60,"webdav-root":"remote.php\/webdav"},"files_sharing":{"api_enabled":true,"public":{"enabled":true,"password":{"enforced":false},"expire_date":{"enabled":false},"send_mail":false,"upload":true},"user":{"send_mail":false},"resharing":true,"federation":{"outgoing":true,"incoming":true}},"files":{"bigfilechunking":true,"undelete":true,"versioning":true},"notifications":{"ocs-endpoints":["list","get","delete"]}}}}}
+03-18 10:33:14.025 22208-31259/com.owncloud.android D/GetRemoteCapabilitiesOperation: **\* Added version
+03-18 10:33:14.029 22208-31259/com.owncloud.android D/GetRemoteCapabilitiesOperation: **\* Added core
+03-18 10:33:14.032 22208-31259/com.owncloud.android D/GetRemoteCapabilitiesOperation: **\* Added files_sharing
+03-18 10:33:14.034 22208-31259/com.owncloud.android D/GetRemoteCapabilitiesOperation: **\* Added files
+03-18 10:33:14.036 22208-31259/com.owncloud.android D/GetRemoteCapabilitiesOperation: **\* Get Capabilities completed 
+03-18 10:33:14.054 22208-31259/com.owncloud.android D/RefreshFolderOperation: Checking changes in noe@[EDITED]/
+03-18 10:33:14.058 22208-31259/com.owncloud.android D/OwnCloudClient #47: REQUEST PROPFIND /remote.php/webdav/
+03-18 10:33:14.305 22208-31259/com.owncloud.android I/RefreshFolderOperation: Checked noe@[EDITED]/ : changed
+03-18 10:33:14.313 22208-31259/com.owncloud.android D/OwnCloudClient #47: REQUEST PROPFIND /remote.php/webdav/
+03-18 10:33:14.584 22208-31259/com.owncloud.android D/WebdavEntry: QUOTA_USED_BYTES 101633503
+03-18 10:33:14.587 22208-31259/com.owncloud.android D/WebdavEntry: QUOTA_AVAILABLE_BYTES -3
+03-18 10:33:14.594 22208-31259/com.owncloud.android D/WebdavEntry: QUOTA_USED_BYTES 6139342
+03-18 10:33:14.597 22208-31259/com.owncloud.android D/WebdavEntry: QUOTA_AVAILABLE_BYTES -3
+03-18 10:33:14.602 22208-31259/com.owncloud.android D/WebdavEntry: QUOTA_USED_BYTES 678556
+03-18 10:33:14.605 22208-31259/com.owncloud.android D/WebdavEntry: QUOTA_AVAILABLE_BYTES -3
+03-18 10:33:14.613 22208-31259/com.owncloud.android D/WebdavEntry: QUOTA_USED_BYTES 43995517
+03-18 10:33:14.616 22208-31259/com.owncloud.android D/WebdavEntry: QUOTA_AVAILABLE_BYTES -3
+03-18 10:33:14.621 22208-31259/com.owncloud.android D/WebdavEntry: QUOTA_USED_BYTES 47587849
+03-18 10:33:14.629 22208-31259/com.owncloud.android D/WebdavEntry: QUOTA_AVAILABLE_BYTES -3
+03-18 10:33:14.635 22208-31259/com.owncloud.android D/WebdavEntry: QUOTA_USED_BYTES 0
+03-18 10:33:14.638 22208-31259/com.owncloud.android D/WebdavEntry: QUOTA_AVAILABLE_BYTES -3
+03-18 10:33:14.646 22208-31259/com.owncloud.android I/ReadRemoteFolderOperation: Synchronized /: Operation finished with HTTP status code 207 (success)
+03-18 10:33:14.654 22208-31259/com.owncloud.android D/RefreshFolderOperation: Synchronizing noe@[EDITED]
+03-18 10:33:14.672 22208-31259/com.owncloud.android D/RefreshFolderOperation: Remote folder / changed - starting update of local data 
+03-18 10:33:14.697 22208-31259/com.owncloud.android D/FileDataStorageManager: Saving folder / with 6 children and 0 files to remove
+03-18 10:33:14.752 22208-31259/com.owncloud.android D/FileDataStorageManager: Sending 7 operations to FileContentProvider
+03-18 10:33:14.762 22208-31259/com.owncloud.android D/FileContentProvider: applying batch in provider com.owncloud.android.providers.FileContentProvider@1d2504c2 (temporary: false)
+03-18 10:33:14.798 22208-31259/com.owncloud.android D/FileContentProvider: applied batch in provider com.owncloud.android.providers.FileContentProvider@1d2504c2
+03-18 10:33:14.800 22208-31259/com.owncloud.android D/RefreshFolderOperation: Send broadcast com.owncloud.android.operations.RefreshFolderOperation.EVENT_SINGLE_FOLDER_CONTENTS_SYNCED
+03-18 10:33:14.813 22208-22208/com.owncloud.android D/FileDisplayActivity: Received broadcast com.owncloud.android.operations.RefreshFolderOperation.EVENT_SINGLE_FOLDER_CONTENTS_SYNCED
+03-18 10:33:14.814 22208-31259/com.owncloud.android D/OwnCloudClient #47: REQUEST GET /ocs/v1.php/apps/files_sharing/api/v1/shares
+03-18 10:33:14.837 22208-22208/com.owncloud.android D/FileDisplayActivity: Setting progress visibility to true
+03-18 10:33:14.852 22208-22208/com.owncloud.android D/cache_test_DISK_: image read from disk 770089446
+03-18 10:33:15.109 22208-31259/com.owncloud.android D/GetRemoteSharesForFileOperation: Got 0 shares
+03-18 10:33:15.135 22208-31259/com.owncloud.android D/FileDataStorageManager: Sending 6 operations to FileContentProvider
+03-18 10:33:15.140 22208-31259/com.owncloud.android D/FileContentProvider: applying batch in provider com.owncloud.android.providers.FileContentProvider@1d2504c2 (temporary: false)
+03-18 10:33:15.156 22208-31259/com.owncloud.android D/FileContentProvider: applied batch in provider com.owncloud.android.providers.FileContentProvider@1d2504c2
+03-18 10:33:15.163 22208-31259/com.owncloud.android D/RefreshFolderOperation: Send broadcast com.owncloud.android.operations.RefreshFolderOperation.EVENT_SINGLE_FOLDER_SHARES_SYNCED
+03-18 10:33:15.172 22208-22208/com.owncloud.android D/FileDisplayActivity: Received broadcast com.owncloud.android.operations.RefreshFolderOperation.EVENT_SINGLE_FOLDER_SHARES_SYNCED
+03-18 10:33:15.202 22208-22208/com.owncloud.android D/FileDisplayActivity: Setting progress visibility to false
+03-18 10:33:15.221 22208-22208/com.owncloud.android D/cache_test_DISK_: image read from disk 770089446
+03-18 10:33:15.930 22208-22208/com.owncloud.android I/AppCompatDelegate: The Activity's LayoutInflater already has a Factory installed so we can not install AppCompat's
+03-18 10:33:15.967 22208-22239/com.owncloud.android D/mali_winsys: new_window_surface returns 0x3000
+03-18 10:34:47.042 22208-22208/com.owncloud.android D/cache_test_DISK_: image read from disk 770089446
+03-18 10:34:47.083 22208-22208/com.owncloud.android V/FileDisplayActivity: onSaveInstanceState() start
+03-18 10:34:47.088 22208-22208/com.owncloud.android D/FileDisplayActivity: onSaveInstanceState(Bundle) starting
+03-18 10:34:47.096 22208-22208/com.owncloud.android D/ExtendedListFragment: onSaveInstanceState()
+03-18 10:34:47.099 22208-22208/com.owncloud.android V/FileDisplayActivity: onSaveInstanceState() end
+03-18 10:34:47.103 22208-22208/com.owncloud.android V/FileDisplayActivity: onStop() start
+03-18 10:34:47.107 22208-22208/com.owncloud.android D/FileDisplayActivity: onStop() ending
+03-18 10:34:47.111 22208-22208/com.owncloud.android V/FileDisplayActivity: onStop() end
+03-18 10:35:11.031 22208-22217/com.owncloud.android I/art: Debugger is no longer active
+03-18 10:35:18.265 22208-22208/com.owncloud.android E/ActivityThread: Performing pause of activity that is not resumed: {com.owncloud.android/com.owncloud.android.ui.activity.FileDisplayActivity}
+                                                                      java.lang.RuntimeException: Performing pause of activity that is not resumed: {com.owncloud.android/com.owncloud.android.ui.activity.FileDisplayActivity}
+                                                                          at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3196)
+                                                                          at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3184)
+                                                                          at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:3159)
+                                                                          at android.app.ActivityThread.access$1000(ActivityThread.java:144)
+                                                                          at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1289)
+                                                                          at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                          at android.os.Looper.loop(Looper.java:135)
+                                                                          at android.app.ActivityThread.main(ActivityThread.java:5221)
+                                                                          at java.lang.reflect.Method.invoke(Native Method)
+                                                                          at java.lang.reflect.Method.invoke(Method.java:372)
+                                                                          at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+                                                                          at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+03-18 10:35:18.269 22208-22208/com.owncloud.android V/FileDisplayActivity: onPause() start
+03-18 10:35:18.290 22208-22208/com.owncloud.android D/FileDisplayActivity: onPause() ending
+03-18 10:35:18.297 22208-22208/com.owncloud.android V/FileDisplayActivity: onPause() end
+03-18 10:35:18.312 22208-22208/com.owncloud.android W/IInputConnectionWrapper: showStatusIcon on inactive InputConnection
+03-18 10:35:18.600 22208-22208/com.owncloud.android E/ActivityThread: Performing stop of activity that is not resumed: {com.owncloud.android/com.owncloud.android.ui.activity.FileDisplayActivity}
+                                                                      java.lang.RuntimeException: Performing stop of activity that is not resumed: {com.owncloud.android/com.owncloud.android.ui.activity.FileDisplayActivity}
+                                                                          at android.app.ActivityThread.performStopActivityInner(ActivityThread.java:3309)
+                                                                          at android.app.ActivityThread.handleStopActivity(ActivityThread.java:3390)
+                                                                          at android.app.ActivityThread.access$1100(ActivityThread.java:144)
+                                                                          at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1307)
+                                                                          at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                          at android.os.Looper.loop(Looper.java:135)
+                                                                          at android.app.ActivityThread.main(ActivityThread.java:5221)
+                                                                          at java.lang.reflect.Method.invoke(Native Method)
+                                                                          at java.lang.reflect.Method.invoke(Method.java:372)
+                                                                          at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+                                                                          at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)

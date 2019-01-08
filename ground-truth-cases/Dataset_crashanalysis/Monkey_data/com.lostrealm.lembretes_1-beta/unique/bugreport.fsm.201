@@ -1,0 +1,14 @@
+//this is an auto-generated bug report
+//package name: com.lostrealm.lembretes
+//version: 1-beta
+//appro_time: 168
+ FATAL EXCEPTION: IntentService[MainIntentService]
+ java.lang.RuntimeException: Could not create meal.
+ 	at com.lostrealm.lembretes.Meal.<init>(Meal.java:39)
+ 	at com.lostrealm.lembretes.MealManager.setMeals(MealManager.java:54)
+ 	at com.lostrealm.lembretes.MainIntentService.handleActionDownload(MainIntentService.java:102)
+ 	at com.lostrealm.lembretes.MainIntentService.onHandleIntent(MainIntentService.java:73)
+ 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

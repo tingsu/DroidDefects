@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: protect.budgetwatch
+//version: 0.11
+//appro_time: 95
+ Error inserting budget=j-k _id=1 description=+c, value=2.0 account= receipt= date=1493697600000 type=1 note=\
+ android.database.sqlite.SQLiteConstraintException: PRIMARY KEY must be unique (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at protect.budgetwatch.DBHelper.insertTransaction(DBHelper.java:409)
+ 	at protect.budgetwatch.CsvDatabaseImporter.importTransaction(CsvDatabaseImporter.java:216)
+ 	at protect.budgetwatch.CsvDatabaseImporter.importData(CsvDatabaseImporter.java:48)
+ 	at protect.budgetwatch.MultiFormatImporter.importData(MultiFormatImporter.java:45)
+ 	at protect.budgetwatch.ImportExportTask.performImport(ImportExportTask.java:44)
+ 	at protect.budgetwatch.ImportExportTask.doInBackground(ImportExportTask.java:100)
+ 	at protect.budgetwatch.ImportExportTask.doInBackground(ImportExportTask.java:14)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

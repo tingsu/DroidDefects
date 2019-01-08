@@ -1,0 +1,88 @@
+I/dalvikvm( 5868):   | state=R schedstat=( 628065124 191858043 491 ) utm=56 stm=6 core=6
+I/dalvikvm( 5868):   at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+I/dalvikvm( 5868):   at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:620)
+I/dalvikvm( 5868):   at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:596)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:138)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:102)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:93)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:83)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:71)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.MediaUtil.generateImageThumbnail(MediaUtil.java:62)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.MediaUtil.generateThumbnail(MediaUtil.java:36)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.mms.ImageSlide.getThumbnail(ImageSlide.java:93)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.mms.AttachmentManager$1.doInBackground(AttachmentManager.java:86)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.mms.AttachmentManager$1.doInBackground(AttachmentManager.java:82)
+I/dalvikvm( 5868):   at android.os.AsyncTask$2.call(AsyncTask.java:288)
+I/dalvikvm( 5868):   at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+I/dalvikvm( 5868):   at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+I/dalvikvm( 5868):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+I/dalvikvm( 5868):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+I/dalvikvm( 5868):   at java.lang.Thread.run(Thread.java:841)
+I/dalvikvm( 5868): 
+D/skia    ( 5868): --- decoder->decode returned false
+W/BitmapUtil( 5868): OutOfMemoryError when scaling precisely, doing rough scale to save memory instead
+W/KeyCachingService( 5868): Incrementing activity count...
+I/dalvikvm-heap( 5868): Clamp target GC heap from 65.580MB to 64.000MB
+I/dalvikvm-heap( 5868): Forcing collection of SoftReferences for 499408-byte allocation
+I/dalvikvm(16888): Could not find method android.media.MediaCodecList.<init>, referenced from method gfz.z
+W/dalvikvm(16888): VFY: unable to resolve direct method 3450: Landroid/media/MediaCodecList;.<init> (I)V
+D/dalvikvm(16888): VFY: replacing opcode 0x70 at 0x0013
+I/dalvikvm-heap( 5868): Clamp target GC heap from 65.580MB to 64.000MB
+E/dalvikvm-heap( 5868): Out of memory on a 499408-byte allocation.
+I/dalvikvm( 5868): "AsyncTask #1" prio=5 tid=21 RUNNABLE
+I/dalvikvm( 5868):   | group="main" sCount=0 dsCount=0 obj=0x420b9db0 self=0x617469b8
+I/dalvikvm( 5868):   | sysTid=6203 nice=10 sched=0/0 cgrp=apps/bg_non_interactive handle=1634789184
+I/dalvikvm( 5868):   | state=R schedstat=( 824083123 381342501 507 ) utm=75 stm=6 core=6
+I/dalvikvm( 5868):   at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+I/dalvikvm( 5868):   at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:620)
+I/dalvikvm( 5868):   at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:596)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:138)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:102)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:93)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:83)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:74)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.MediaUtil.generateImageThumbnail(MediaUtil.java:62)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.util.MediaUtil.generateThumbnail(MediaUtil.java:36)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.mms.ImageSlide.getThumbnail(ImageSlide.java:93)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.mms.AttachmentManager$1.doInBackground(AttachmentManager.java:86)
+I/dalvikvm( 5868):   at org.thoughtcrime.securesms.mms.AttachmentManager$1.doInBackground(AttachmentManager.java:82)
+I/dalvikvm( 5868):   at android.os.AsyncTask$2.call(AsyncTask.java:288)
+I/dalvikvm( 5868):   at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+I/dalvikvm( 5868):   at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+I/dalvikvm( 5868):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+I/dalvikvm( 5868):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+I/dalvikvm( 5868):   at java.lang.Thread.run(Thread.java:841)
+I/dalvikvm( 5868): 
+D/skia    ( 5868): --- decoder->decode returned false
+W/IInputConnectionWrapper( 5868): showStatusIcon on inactive InputConnection
+W/dalvikvm( 5868): threadid=21: thread exiting with uncaught exception (group=0x41842ce0)
+W/MmsCommunication( 5868): Getting MMSC params for apn null
+W/TelephonyUtil( 5868): Choosing MCC+MNC info from TelephonyManager.getNetworkOperator()
+W/ApnDatabase( 5868): Choosing locally-overridden MMS settings
+E/AndroidRuntime( 5868): FATAL EXCEPTION: AsyncTask #1
+E/AndroidRuntime( 5868): Process: org.thoughtcrime.securesms, PID: 5868
+E/AndroidRuntime( 5868): java.lang.RuntimeException: An error occured while executing doInBackground()
+E/AndroidRuntime( 5868):    at android.os.AsyncTask$3.done(AsyncTask.java:300)
+E/AndroidRuntime( 5868):    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+E/AndroidRuntime( 5868):    at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+E/AndroidRuntime( 5868):    at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+E/AndroidRuntime( 5868):    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+E/AndroidRuntime( 5868):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+E/AndroidRuntime( 5868):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+E/AndroidRuntime( 5868):    at java.lang.Thread.run(Thread.java:841)
+E/AndroidRuntime( 5868): Caused by: java.lang.OutOfMemoryError
+E/AndroidRuntime( 5868):    at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+E/AndroidRuntime( 5868):    at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:620)
+E/AndroidRuntime( 5868):    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:596)
+E/AndroidRuntime( 5868):    at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:138)
+E/AndroidRuntime( 5868):    at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:102)
+E/AndroidRuntime( 5868):    at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:93)
+E/AndroidRuntime( 5868):    at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:83)
+E/AndroidRuntime( 5868):    at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:74)
+E/AndroidRuntime( 5868):    at org.thoughtcrime.securesms.util.MediaUtil.generateImageThumbnail(MediaUtil.java:62)
+E/AndroidRuntime( 5868):    at org.thoughtcrime.securesms.util.MediaUtil.generateThumbnail(MediaUtil.java:36)
+E/AndroidRuntime( 5868):    at org.thoughtcrime.securesms.mms.ImageSlide.getThumbnail(ImageSlide.java:93)
+E/AndroidRuntime( 5868):    at org.thoughtcrime.securesms.mms.AttachmentManager$1.doInBackground(AttachmentManager.java:86)
+E/AndroidRuntime( 5868):    at org.thoughtcrime.securesms.mms.AttachmentManager$1.doInBackground(AttachmentManager.java:82)
+E/AndroidRuntime( 5868):    at android.os.AsyncTask$2.call(AsyncTask.java:288)
+E/AndroidRuntime( 5868):    at java.util.concurrent.FutureTask.run(FutureTask.java:237)

@@ -1,0 +1,10 @@
+```
+Latest master, at AnkiDroid start (probably launching feedback dialog due to previous
+crash):
+
+E/AndroidRuntime( 2337): Caused by: java.lang.ClassCastException: android.widget.LinearLayout
+E/AndroidRuntime( 2337):    at com.ichi2.themes.StyledDialog$Builder.create(StyledDialog.java:463)
+E/AndroidRuntime( 2337):    at com.ichi2.anki.Feedback.initAllAlertDialogs(Feedback.java:137)
+E/AndroidRuntime( 2337):    at com.ichi2.anki.Feedback.onCreate(Feedback.java:217)
+E/AndroidRuntime( 2337):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+E/AndroidRuntime( 2337):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2627)

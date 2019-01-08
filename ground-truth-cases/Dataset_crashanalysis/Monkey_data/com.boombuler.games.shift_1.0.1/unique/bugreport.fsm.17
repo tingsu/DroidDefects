@@ -1,0 +1,16 @@
+//this is an auto-generated bug report
+//package name: com.boombuler.games.shift
+//version: 1.0.1
+//appro_time: 31
+ java.util.ConcurrentModificationException
+ 	at java.util.ArrayList$ArrayListIterator.next(ArrayList.java:573)
+ 	at com.boombuler.games.shift.Board.FindBlock(Board.java:221)
+ 	at com.boombuler.games.shift.Board.BlocksMoved(Board.java:182)
+ 	at com.boombuler.games.shift.Game.Move(Game.java:210)
+ 	at com.boombuler.games.shift.Board.ccTouchesEnded(Board.java:138)
+ 	at org.cocos2d.events.CCTouchHandler.ccTouchesEnded(CCTouchHandler.java:75)
+ 	at org.cocos2d.events.CCTouchDispatcher.touchesEnded(CCTouchDispatcher.java:280)
+ 	at org.cocos2d.events.CCTouchDispatcher.update(CCTouchDispatcher.java:237)
+ 	at org.cocos2d.nodes.CCDirector.onDrawFrame(CCDirector.java:660)
+ 	at android.opengl.GLSurfaceView$GLThread.guardedRun(GLSurfaceView.java:1523)
+ 	at android.opengl.GLSurfaceView$GLThread.run(GLSurfaceView.java:1240)

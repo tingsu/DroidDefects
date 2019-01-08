@@ -1,0 +1,8 @@
+02-13 07:18:07.717: E/AndroidRuntime(565): Caused by: java.lang.NullPointerException
+02-13 07:18:07.717: E/AndroidRuntime(565):  at com.ushahidi.android.app.data.Database$DatabaseHelper.onCreate(Database.java:309)
+02-13 07:18:07.717: E/AndroidRuntime(565):  at com.ushahidi.android.app.data.Database$DatabaseHelper.onUpgrade(Database.java:398)
+02-13 07:18:07.717: E/AndroidRuntime(565):  at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:162)
+02-13 07:18:07.717: E/AndroidRuntime(565):  at com.ushahidi.android.app.data.Database.open(Database.java:448)
+02-13 07:18:07.717: E/AndroidRuntime(565):  at com.ushahidi.android.app.MainApplication.onCreate(MainApplication.java:52)
+02-13 07:18:07.717: E/AndroidRuntime(565):  at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:968)
+02-13 07:18:07.717: E/AndroidRuntime(565):  at android.app.ActivityThread.handleBindApplication(ActivityThread.java:3696)

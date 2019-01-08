@@ -1,0 +1,9 @@
+                                         java.lang.NullPointerException: Attempt to invoke virtual method 'android.net.NetworkInfo android.net.ConnectivityManager.getActiveNetworkInfo()' on a null object reference
+                                             at com.ubergeek42.WeechatAndroid.service.Connectivity.isNetworkAvailable(Connectivity.java:36)
+                                             at com.ubergeek42.WeechatAndroid.service.RelayService.connect(RelayService.java:221)
+                                             at com.ubergeek42.WeechatAndroid.service.RelayService.access$100(RelayService.java:48)
+                                             at com.ubergeek42.WeechatAndroid.service.RelayService$1$1.run(RelayService.java:158)
+                                             at android.os.Handler.handleCallback(Handler.java:739)
+                                             at android.os.Handler.dispatchMessage(Handler.java:95)
+                                             at android.os.Looper.loop(Looper.java:148)
+                                             at android.os.HandlerThread.run(HandlerThread.java:61)

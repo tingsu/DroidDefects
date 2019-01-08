@@ -1,0 +1,5 @@
+  2207         AndroidRuntime  E  java.lang.NoSuchMethodError: android.content.ContentResolver.query
+  2207         AndroidRuntime  E  at org.sufficientlysecure.keychain.helper.ContactHelper.findRawContactId(ContactHelper.java:372)
+  2207         AndroidRuntime  E  at org.sufficientlysecure.keychain.helper.ContactHelper.writeKeysToContacts(ContactHelper.java:310)
+  2207         AndroidRuntime  E  at org.sufficientlysecure.keychain.service.ContactSyncAdapterService$ContactSyncAdapter.onPerformSync(ContactSyncAdapterService.java:97)
+  2207         AndroidRuntime  E  at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:164)

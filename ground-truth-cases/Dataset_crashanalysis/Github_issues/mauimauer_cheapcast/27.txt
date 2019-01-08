@@ -1,0 +1,25 @@
+I/Web Console(15508):  [  0.062s] [cv.receiver.WebSocketChannelFactory] [INFO] Initializing WebSocketChannelFactory...
+I/Web Console(15508):  at https://www.gstatic.com/cv/versions/release-d4fa0a24f89ec5ba83f7bf3324282c8d046bf612/receiver.html?v=release-d4fa0a24f89ec5ba83f7bf3324282c8d046bf612&id=local%3A2&idle=windowclose:6090
+D/CheapCastService(15524): GET /apps: Redirecting to ChromeCast
+W/System.err(15524): 2013-08-19 15:24:44.242:WARN:oejs.AbstractHttpConnection:/apps
+W/System.err(15524): java.lang.NullPointerException
+W/System.err(15524):    at at.maui.cheapcast.service.CheapCastService$3.handle(CheapCastService.java:437)
+W/System.err(15524):    at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+W/System.err(15524):    at org.eclipse.jetty.websocket.WebSocketHandler.handle(WebSocketHandler.java:48)
+W/System.err(15524):    at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+W/System.err(15524):    at org.eclipse.jetty.server.Server.handle(Server.java:370)
+W/System.err(15524):    at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489)
+W/System.err(15524):    at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:949)
+W/System.err(15524):    at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1011)
+W/System.err(15524):    at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:644)
+W/System.err(15524):    at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+W/System.err(15524):    at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+W/System.err(15524):    at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:668)
+W/System.err(15524):    at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+W/System.err(15524):    at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+W/System.err(15524):    at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+W/System.err(15524):    at java.lang.Thread.run(Thread.java:841)
+D/JS-CastActivity(15508):  [  0.091s] [browser] [SEVERE] Error: Uncaught AssertionError: Assertion failed: This browser does not support WebSocket (https://www.gstatic.com/cv/versions/release-d4fa0a24f89ec5ba83f7bf3324282c8d046bf612/receiver.html?v=release-d4fa0a24f89ec5ba83f7bf3324282c8d046bf612&id=local%3A2&idle=windowclose @ Line: 210)
+D/JS-CastActivity(15508): , 6090
+E/Web Console(15508):  [  0.091s] [browser] [SEVERE] Error: Uncaught AssertionError: Assertion failed: This browser does not support WebSocket (https://www.gstatic.com/cv/versions/release-d4fa0a24f89ec5ba83f7bf3324282c8d046bf612/receiver.html?v=release-d4fa0a24f89ec5ba83f7bf3324282c8d046bf612&id=local%3A2&idle=windowclose @ Line: 210)
+E/Web Console(15508):  at https://www.gstatic.com/cv/versions/release-d4fa0a24f89ec5ba83f7bf3324282c8d046bf612/receiver.html?v=release-d4fa0a24f89ec5ba83f7bf3324282c8d046bf612&id=local%3A2&idle=windowclose:6090

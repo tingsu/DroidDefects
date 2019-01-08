@@ -1,0 +1,11 @@
+  8770         AndroidRuntime  E  java.lang.ArrayIndexOutOfBoundsException: length=128; index=227
+  8770         AndroidRuntime  E  at org.spongycastle.bcpg.ArmoredInputStream.decode(ArmoredInputStream.java:86)
+  8770         AndroidRuntime  E  at org.spongycastle.bcpg.ArmoredInputStream.read(ArmoredInputStream.java:451)
+  8770         AndroidRuntime  E  at org.spongycastle.bcpg.BCPGInputStream.nextPacketTag(BCPGInputStream.java:114)
+  8770         AndroidRuntime  E  at org.spongycastle.openpgp.PGPObjectFactory.nextObject(PGPObjectFactory.java:101)
+  8770         AndroidRuntime  E  at org.sufficientlysecure.keychain.pgp.PgpDecryptVerify.decryptVerify(PgpDecryptVerify.java:318)
+  8770         AndroidRuntime  E  at org.sufficientlysecure.keychain.pgp.PgpDecryptVerify.executeInternal(PgpDecryptVerify.java:153)
+  8770         AndroidRuntime  E  at org.sufficientlysecure.keychain.pgp.PgpDecryptVerify.execute(PgpDecryptVerify.java:115)
+  8770         AndroidRuntime  E  at org.sufficientlysecure.keychain.pgp.PgpDecryptVerify.execute(PgpDecryptVerify.java:77)
+  8770         AndroidRuntime  E  at org.sufficientlysecure.keychain.service.KeychainNewService$1.run(KeychainNewService.java:111)
+  8770         AndroidRuntime  E  at java.lang.Thread.run(Thread.java:818)

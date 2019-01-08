@@ -1,0 +1,150 @@
+04-03 17:08:46.600: W/dalvikvm(11331): VFY: unable to resolve new-instance 1988 (Lorg/fourthline/cling/transport/impl/AsyncServletStreamServerImpl$1;) in Lorg/fourthline/cling/transport/impl/AsyncServletStreamServerImpl;
+04-03 17:08:46.600: D/dalvikvm(11331): VFY: replacing opcode 0x22 at 0x0000
+04-03 17:08:46.600: W/dalvikvm(11331): VFY: unable to find class referenced in signature (Ljavax/servlet/Servlet;)
+04-03 17:08:46.600: W/dalvikvm(11331): VFY: unable to find class referenced in signature (Ljavax/servlet/Servlet;)
+04-03 17:08:46.600: W/dalvikvm(11331): VFY: unable to find class referenced in signature (Ljavax/servlet/http/HttpServletRequest;)
+04-03 17:08:46.600: W/dalvikvm(11331): Unable to resolve superclass of Lorg/fourthline/cling/transport/impl/AsyncServletStreamServerImpl$1; (1063)
+04-03 17:08:46.600: W/dalvikvm(11331): Link of class 'Lorg/fourthline/cling/transport/impl/AsyncServletStreamServerImpl$1;' failed
+04-03 17:08:46.600: D/dalvikvm(11331): DexOpt: unable to opt direct call 0x2e1e at 0x02 in Lorg/fourthline/cling/transport/impl/AsyncServletStreamServerImpl;.createServlet
+04-03 17:08:46.600: W/dalvikvm(11331): VFY: unable to find class referenced in signature (Ljavax/servlet/http/HttpServletRequest;)
+04-03 17:08:46.610: W/dalvikvm(11331): VFY: unable to find class referenced in signature (Ljavax/servlet/http/HttpServletRequest;)
+04-03 17:08:46.610: W/dalvikvm(11331): VFY: unable to find class referenced in signature (Ljavax/servlet/http/HttpServletRequest;)
+04-03 17:08:46.610: E/dalvikvm(11331): Could not find class 'org.eclipse.jetty.server.Request', referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.isConnectionOpen
+04-03 17:08:46.610: W/dalvikvm(11331): VFY: unable to resolve check-cast 1203 (Lorg/eclipse/jetty/server/Request;) in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;
+04-03 17:08:46.610: D/dalvikvm(11331): VFY: replacing opcode 0x1f at 0x0001
+04-03 17:08:46.610: E/dalvikvm(11331): Could not find class 'org.eclipse.jetty.server.bio.SocketConnector', referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.addConnector
+04-03 17:08:46.610: W/dalvikvm(11331): VFY: unable to resolve new-instance 1205 (Lorg/eclipse/jetty/server/bio/SocketConnector;) in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;
+04-03 17:08:46.610: D/dalvikvm(11331): VFY: replacing opcode 0x22 at 0x0001
+04-03 17:08:46.610: W/dalvikvm(11331): VFY: unable to find class referenced in signature (Ljavax/servlet/Servlet;)
+04-03 17:08:46.610: I/dalvikvm(11331): Could not find method org.eclipse.jetty.server.Server.getHandler, referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.registerServlet
+04-03 17:08:46.610: W/dalvikvm(11331): VFY: unable to resolve virtual method 6431: Lorg/eclipse/jetty/server/Server;.getHandler ()Lorg/eclipse/jetty/server/Handler;
+04-03 17:08:46.610: D/dalvikvm(11331): VFY: replacing opcode 0x6e at 0x0003
+04-03 17:08:46.610: E/dalvikvm(11331): Could not find class 'org.eclipse.jetty.server.Server', referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.resetServer
+04-03 17:08:46.610: W/dalvikvm(11331): VFY: unable to resolve new-instance 1204 (Lorg/eclipse/jetty/server/Server;) in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;
+04-03 17:08:46.610: D/dalvikvm(11331): VFY: replacing opcode 0x22 at 0x0000
+04-03 17:08:46.610: I/dalvikvm(11331): Could not find method org.eclipse.jetty.server.Server.getThreadPool, referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.setExecutorService
+04-03 17:08:46.610: W/dalvikvm(11331): VFY: unable to resolve virtual method 6432: Lorg/eclipse/jetty/server/Server;.getThreadPool ()Lorg/eclipse/jetty/util/thread/ThreadPool;
+04-03 17:08:46.610: D/dalvikvm(11331): VFY: replacing opcode 0x6e at 0x0005
+04-03 17:08:46.610: I/dalvikvm(11331): Could not find method org.eclipse.jetty.server.Server.isStarted, referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.startIfNotRunning
+04-03 17:08:46.610: W/dalvikvm(11331): VFY: unable to resolve virtual method 6433: Lorg/eclipse/jetty/server/Server;.isStarted ()Z
+04-03 17:08:46.610: D/dalvikvm(11331): VFY: replacing opcode 0x6e at 0x0003
+04-03 17:08:46.610: I/dalvikvm(11331): Could not find method org.eclipse.jetty.server.Server.isStopped, referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.stopIfRunning
+04-03 17:08:46.610: W/dalvikvm(11331): VFY: unable to resolve virtual method 6435: Lorg/eclipse/jetty/server/Server;.isStopped ()Z
+04-03 17:08:46.610: D/dalvikvm(11331): VFY: replacing opcode 0x6e at 0x0003
+04-03 17:08:46.610: D/dalvikvm(11331): DexOpt: unable to opt direct call 0x192a at 0x03 in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;.addConnector
+04-03 17:08:46.610: D/dalvikvm(11331): DexOpt: unable to opt direct call 0x192f at 0x22 in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;.registerServlet
+04-03 17:08:46.610: D/dalvikvm(11331): DexOpt: unable to opt direct call 0x1932 at 0x32 in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;.registerServlet
+04-03 17:08:46.610: D/dalvikvm(11331): DexOpt: unable to opt direct call 0x191d at 0x02 in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;.resetServer
+04-03 17:08:46.610: W/dalvikvm(11331): Unable to resolve superclass of Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer$1; (1208)
+04-03 17:08:46.610: W/dalvikvm(11331): Link of class 'Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer$1;' failed
+04-03 17:08:46.610: D/dalvikvm(11331): DexOpt: unable to opt direct call 0x2f73 at 0x11 in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;.setExecutorService
+04-03 17:08:46.610: W/dalvikvm(11331): Exception Ljava/lang/NoClassDefFoundError; thrown while initializing Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;
+04-03 17:08:46.610: D/AndroidRuntime(11331): Shutting down VM
+04-03 17:08:46.610: W/dalvikvm(11331): threadid=1: thread exiting with uncaught exception (group=0x40b12930)
+04-03 17:08:46.620: E/AndroidRuntime(11331): FATAL EXCEPTION: main
+04-03 17:08:46.620: E/AndroidRuntime(11331): java.lang.ExceptionInInitializerError
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at org.fourthline.cling.android.AndroidUpnpServiceConfiguration.createStreamServer(AndroidUpnpServiceConfiguration.java:112)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at org.fourthline.cling.transport.RouterImpl.startAddressBasedTransports(RouterImpl.java:427)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at org.fourthline.cling.transport.RouterImpl.enable(RouterImpl.java:132)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at org.fourthline.cling.android.AndroidRouter.enable(AndroidRouter.java:92)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at org.fourthline.cling.UpnpServiceImpl.<init>(UpnpServiceImpl.java:87)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at org.fourthline.cling.android.AndroidUpnpServiceImpl$1.<init>(AndroidUpnpServiceImpl.java:54)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at org.fourthline.cling.android.AndroidUpnpServiceImpl.onCreate(AndroidUpnpServiceImpl.java:54)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at android.app.ActivityThread.handleCreateService(ActivityThread.java:2529)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at android.app.ActivityThread.access$1600(ActivityThread.java:141)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1316)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at android.os.Handler.dispatchMessage(Handler.java:99)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at android.os.Looper.loop(Looper.java:137)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at android.app.ActivityThread.main(ActivityThread.java:5041)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at java.lang.reflect.Method.invokeNative(Native Method)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at java.lang.reflect.Method.invoke(Method.java:511)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:817)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:584)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at dalvik.system.NativeStart.main(Native Method)
+04-03 17:08:46.620: E/AndroidRuntime(11331): Caused by: java.lang.NoClassDefFoundError: org.eclipse.jetty.server.Server
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at org.fourthline.cling.transport.impl.jetty.JettyServletContainer.resetServer(JettyServletContainer.java:132)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at org.fourthline.cling.transport.impl.jetty.JettyServletContainer.<init>(JettyServletContainer.java:56)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    at org.fourthline.cling.transport.impl.jetty.JettyServletContainer.<clinit>(JettyServletContainer.java:54)
+04-03 17:08:46.620: E/AndroidRuntime(11331):    ... 18 more
+04-03 17:08:46.640: D/dalvikvm(11331): GC_CONCURRENT freed 383K, 20% free 4297K/5320K, paused 2ms+2ms, total 18ms
+04-03 17:09:13.580: D/libEGL(12465): loaded /vendor/lib/egl/libEGL_POWERVR_SGX544_115.so
+04-03 17:09:13.640: D/libEGL(12465): loaded /vendor/lib/egl/libGLESv1_CM_POWERVR_SGX544_115.so
+04-03 17:09:13.670: D/libEGL(12465): loaded /vendor/lib/egl/libGLESv2_POWERVR_SGX544_115.so
+04-03 17:09:13.780: D/OpenGLRenderer(12465): Enabling debug mode 0
+04-03 17:09:19.950: I/UpnpServiceImpl(12465): >>> Starting UPnP service...
+04-03 17:09:19.950: I/UpnpServiceImpl(12465): Using configuration: com.ebus.srpcdlna.cling.android.UpnpService$1
+04-03 17:09:19.970: I/Router(12465): Creating Router: org.fourthline.cling.android.AndroidRouter
+04-03 17:09:20.020: D/dalvikvm(12465): GC_CONCURRENT freed 327K, 19% free 4289K/5256K, paused 3ms+1ms, total 22ms
+04-03 17:09:20.020: D/dalvikvm(12465): WAIT_FOR_CONCURRENT_GC blocked 13ms
+04-03 17:09:20.040: I/MulticastReceiver(12465): Creating wildcard socket (for receiving multicast datagrams) on port: 1900
+04-03 17:09:20.040: I/MulticastReceiver(12465): Joining multicast group: /239.255.255.250:1900 on network interface: wlan0
+04-03 17:09:20.050: W/dalvikvm(12465): Unable to resolve superclass of Lorg/fourthline/cling/transport/impl/AsyncServletStreamServerImpl$1; (1063)
+04-03 17:09:20.050: W/dalvikvm(12465): Link of class 'Lorg/fourthline/cling/transport/impl/AsyncServletStreamServerImpl$1;' failed
+04-03 17:09:20.050: E/dalvikvm(12465): Could not find class 'org.fourthline.cling.transport.impl.AsyncServletStreamServerImpl$1', referenced from method org.fourthline.cling.transport.impl.AsyncServletStreamServerImpl.createServlet
+04-03 17:09:20.050: W/dalvikvm(12465): VFY: unable to resolve new-instance 1988 (Lorg/fourthline/cling/transport/impl/AsyncServletStreamServerImpl$1;) in Lorg/fourthline/cling/transport/impl/AsyncServletStreamServerImpl;
+04-03 17:09:20.050: D/dalvikvm(12465): VFY: replacing opcode 0x22 at 0x0000
+04-03 17:09:20.050: W/dalvikvm(12465): VFY: unable to find class referenced in signature (Ljavax/servlet/Servlet;)
+04-03 17:09:20.050: W/dalvikvm(12465): VFY: unable to find class referenced in signature (Ljavax/servlet/Servlet;)
+04-03 17:09:20.050: W/dalvikvm(12465): VFY: unable to find class referenced in signature (Ljavax/servlet/http/HttpServletRequest;)
+04-03 17:09:20.050: W/dalvikvm(12465): Unable to resolve superclass of Lorg/fourthline/cling/transport/impl/AsyncServletStreamServerImpl$1; (1063)
+04-03 17:09:20.050: W/dalvikvm(12465): Link of class 'Lorg/fourthline/cling/transport/impl/AsyncServletStreamServerImpl$1;' failed
+04-03 17:09:20.060: D/dalvikvm(12465): DexOpt: unable to opt direct call 0x2e1e at 0x02 in Lorg/fourthline/cling/transport/impl/AsyncServletStreamServerImpl;.createServlet
+04-03 17:09:20.060: W/dalvikvm(12465): VFY: unable to find class referenced in signature (Ljavax/servlet/http/HttpServletRequest;)
+04-03 17:09:20.060: W/dalvikvm(12465): VFY: unable to find class referenced in signature (Ljavax/servlet/http/HttpServletRequest;)
+04-03 17:09:20.060: W/dalvikvm(12465): VFY: unable to find class referenced in signature (Ljavax/servlet/http/HttpServletRequest;)
+04-03 17:09:20.060: E/dalvikvm(12465): Could not find class 'org.eclipse.jetty.server.Request', referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.isConnectionOpen
+04-03 17:09:20.060: W/dalvikvm(12465): VFY: unable to resolve check-cast 1203 (Lorg/eclipse/jetty/server/Request;) in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;
+04-03 17:09:20.060: D/dalvikvm(12465): VFY: replacing opcode 0x1f at 0x0001
+04-03 17:09:20.060: E/dalvikvm(12465): Could not find class 'org.eclipse.jetty.server.bio.SocketConnector', referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.addConnector
+04-03 17:09:20.060: W/dalvikvm(12465): VFY: unable to resolve new-instance 1205 (Lorg/eclipse/jetty/server/bio/SocketConnector;) in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;
+04-03 17:09:20.060: D/dalvikvm(12465): VFY: replacing opcode 0x22 at 0x0001
+04-03 17:09:20.060: W/dalvikvm(12465): VFY: unable to find class referenced in signature (Ljavax/servlet/Servlet;)
+04-03 17:09:20.060: I/dalvikvm(12465): Could not find method org.eclipse.jetty.server.Server.getHandler, referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.registerServlet
+04-03 17:09:20.060: W/dalvikvm(12465): VFY: unable to resolve virtual method 6431: Lorg/eclipse/jetty/server/Server;.getHandler ()Lorg/eclipse/jetty/server/Handler;
+04-03 17:09:20.060: D/dalvikvm(12465): VFY: replacing opcode 0x6e at 0x0003
+04-03 17:09:20.060: E/dalvikvm(12465): Could not find class 'org.eclipse.jetty.server.Server', referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.resetServer
+04-03 17:09:20.060: W/dalvikvm(12465): VFY: unable to resolve new-instance 1204 (Lorg/eclipse/jetty/server/Server;) in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;
+04-03 17:09:20.060: D/dalvikvm(12465): VFY: replacing opcode 0x22 at 0x0000
+04-03 17:09:20.060: I/dalvikvm(12465): Could not find method org.eclipse.jetty.server.Server.getThreadPool, referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.setExecutorService
+04-03 17:09:20.060: W/dalvikvm(12465): VFY: unable to resolve virtual method 6432: Lorg/eclipse/jetty/server/Server;.getThreadPool ()Lorg/eclipse/jetty/util/thread/ThreadPool;
+04-03 17:09:20.060: D/dalvikvm(12465): VFY: replacing opcode 0x6e at 0x0005
+04-03 17:09:20.060: I/dalvikvm(12465): Could not find method org.eclipse.jetty.server.Server.isStarted, referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.startIfNotRunning
+04-03 17:09:20.060: W/dalvikvm(12465): VFY: unable to resolve virtual method 6433: Lorg/eclipse/jetty/server/Server;.isStarted ()Z
+04-03 17:09:20.060: D/dalvikvm(12465): VFY: replacing opcode 0x6e at 0x0003
+04-03 17:09:20.060: I/dalvikvm(12465): Could not find method org.eclipse.jetty.server.Server.isStopped, referenced from method org.fourthline.cling.transport.impl.jetty.JettyServletContainer.stopIfRunning
+04-03 17:09:20.060: W/dalvikvm(12465): VFY: unable to resolve virtual method 6435: Lorg/eclipse/jetty/server/Server;.isStopped ()Z
+04-03 17:09:20.060: D/dalvikvm(12465): VFY: replacing opcode 0x6e at 0x0003
+04-03 17:09:20.060: D/dalvikvm(12465): DexOpt: unable to opt direct call 0x192a at 0x03 in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;.addConnector
+04-03 17:09:20.060: D/dalvikvm(12465): DexOpt: unable to opt direct call 0x192f at 0x22 in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;.registerServlet
+04-03 17:09:20.060: D/dalvikvm(12465): DexOpt: unable to opt direct call 0x1932 at 0x32 in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;.registerServlet
+04-03 17:09:20.060: D/dalvikvm(12465): DexOpt: unable to opt direct call 0x191d at 0x02 in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;.resetServer
+04-03 17:09:20.060: W/dalvikvm(12465): Unable to resolve superclass of Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer$1; (1208)
+04-03 17:09:20.060: W/dalvikvm(12465): Link of class 'Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer$1;' failed
+04-03 17:09:20.060: D/dalvikvm(12465): DexOpt: unable to opt direct call 0x2f73 at 0x11 in Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;.setExecutorService
+04-03 17:09:20.060: W/dalvikvm(12465): Exception Ljava/lang/NoClassDefFoundError; thrown while initializing Lorg/fourthline/cling/transport/impl/jetty/JettyServletContainer;
+04-03 17:09:20.060: D/AndroidRuntime(12465): Shutting down VM
+04-03 17:09:20.060: W/dalvikvm(12465): threadid=1: thread exiting with uncaught exception (group=0x40b12930)
+04-03 17:09:20.080: E/AndroidRuntime(12465): FATAL EXCEPTION: main
+04-03 17:09:20.080: E/AndroidRuntime(12465): java.lang.ExceptionInInitializerError
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at org.fourthline.cling.android.AndroidUpnpServiceConfiguration.createStreamServer(AndroidUpnpServiceConfiguration.java:112)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at org.fourthline.cling.transport.RouterImpl.startAddressBasedTransports(RouterImpl.java:427)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at org.fourthline.cling.transport.RouterImpl.enable(RouterImpl.java:132)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at org.fourthline.cling.android.AndroidRouter.enable(AndroidRouter.java:92)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at org.fourthline.cling.UpnpServiceImpl.<init>(UpnpServiceImpl.java:87)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at org.fourthline.cling.android.AndroidUpnpServiceImpl$1.<init>(AndroidUpnpServiceImpl.java:54)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at org.fourthline.cling.android.AndroidUpnpServiceImpl.onCreate(AndroidUpnpServiceImpl.java:54)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at android.app.ActivityThread.handleCreateService(ActivityThread.java:2529)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at android.app.ActivityThread.access$1600(ActivityThread.java:141)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1316)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at android.os.Handler.dispatchMessage(Handler.java:99)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at android.os.Looper.loop(Looper.java:137)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at android.app.ActivityThread.main(ActivityThread.java:5041)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at java.lang.reflect.Method.invokeNative(Native Method)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at java.lang.reflect.Method.invoke(Method.java:511)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:817)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:584)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at dalvik.system.NativeStart.main(Native Method)
+04-03 17:09:20.080: E/AndroidRuntime(12465): Caused by: java.lang.NoClassDefFoundError: org.eclipse.jetty.server.Server
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at org.fourthline.cling.transport.impl.jetty.JettyServletContainer.resetServer(JettyServletContainer.java:132)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at org.fourthline.cling.transport.impl.jetty.JettyServletContainer.<init>(JettyServletContainer.java:56)
+04-03 17:09:20.080: E/AndroidRuntime(12465):    at org.fourthline.cling.transport.impl.jetty.JettyServletContainer.<clinit>(JettyServletContainer.java:54)

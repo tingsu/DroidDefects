@@ -1,0 +1,62 @@
+
+A third option might be to check when the user looks at the info tab for a manga, then show a message and remove it from the catalogue, i.e. 'This manga is no longer available, removing from catalogue'.
+
+Now of course you could say the catalogue source shouldn't be showing the manga anymore anyway and it's not the apps fault, but this could help save time for some people.
+
+Example catalogue: Mangafox, manga: Onepunch-Man:
+When I try to view the first chapter all I see is an empty message, it turns out that MangaFox is displaying "Sorry, its licensed, and not available." on the first URL it tries to go to 'http://mangafox.me/manga/onepunch_man/v01/c001/'.
+
+I know each catalogue will display different messages but the app is throwing having an error so you can detect something is wrong.
+
+Exception:
+
+```
+09-09 20:10:52.733 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity: java.lang.NullPointerException
+09-09 20:10:52.733 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at eu.kanade.tachiyomi.data.source.online.english.Mangafox.pageListParse(Mangafox.kt:112)
+09-09 20:10:52.733 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at eu.kanade.tachiyomi.data.source.online.OnlineSource$fetchPageListFromNetwork$1.call(OnlineSource.kt:267)
+09-09 20:10:52.733 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at eu.kanade.tachiyomi.data.source.online.OnlineSource$fetchPageListFromNetwork$1.call(OnlineSource.kt:29)
+09-09 20:10:52.733 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeMap$MapSubscriber.onNext(OnSubscribeMap.java:69)
+09-09 20:10:52.733 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at eu.kanade.tachiyomi.data.network.OkHttpExtensionsKt$asObservable$1$requestArbiter$1.request(OkHttpExtensions.kt:30)
+09-09 20:10:52.733 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.producers.ProducerArbiter.setProducer(ProducerArbiter.java:126)
+09-09 20:10:52.733 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OperatorOnErrorResumeNextViaFunction$4$1.setProducer(OperatorOnErrorResumeNextViaFunction.java:130)
+09-09 20:10:52.733 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeMap$MapSubscriber.setProducer(OnSubscribeMap.java:102)
+09-09 20:10:52.733 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at eu.kanade.tachiyomi.data.network.OkHttpExtensionsKt$asObservable$1.call(OkHttpExtensions.kt:50)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at eu.kanade.tachiyomi.data.network.OkHttpExtensionsKt$asObservable$1.call(OkHttpExtensions.kt:13)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.Observable.unsafeSubscribe(Observable.java:10211)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:48)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:33)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.Observable.unsafeSubscribe(Observable.java:10211)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OperatorOnErrorResumeNextViaFunction$4.onError(OperatorOnErrorResumeNextViaFunction.java:142)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.exceptions.Exceptions.throwOrReport(Exceptions.java:216)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeFromCallable.call(OnSubscribeFromCallable.java:50)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeFromCallable.call(OnSubscribeFromCallable.java:33)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.Observable.unsafeSubscribe(Observable.java:10211)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:235)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.Observable.unsafeSubscribe(Observable.java:10211)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.Observable.unsafeSubscribe(Observable.java:10211)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:235)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.Observable.unsafeSubscribe(Observable.java:10211)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:41)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeDoOnEach.call(OnSubscribeDoOnEach.java:30)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.Observable.unsafeSubscribe(Observable.java:10211)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:48)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeMap.call(OnSubscribeMap.java:33)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.Observable.unsafeSubscribe(Observable.java:10211)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OperatorSubscribeOn$1.call(OperatorSubscribeOn.java:94)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.schedulers.CachedThreadScheduler$EventLoopWorker$1.call(CachedThreadScheduler.java:228)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:152)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:265)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at java.lang.Thread.run(Thread.java:841)
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity: Caused by: rx.exceptions.OnErrorThrowable$OnNextValue: OnError while emitting onNext value: okhttp3.Response.class
+09-09 20:10:52.743 11785-11785/eu.kanade.tachiyomi.debug E/ReaderActivity:     at rx.internal.operators.OnSubscribeMap$MapSubscriber.onNext(OnSubscribeMap.java:73)

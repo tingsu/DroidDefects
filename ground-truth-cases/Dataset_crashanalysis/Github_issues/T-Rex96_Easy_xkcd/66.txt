@@ -1,0 +1,6 @@
+E/AndroidRuntime(21188): java.lang.ArrayIndexOutOfBoundsException: length=509; index=-1108
+E/AndroidRuntime(21188):        at android.util.SparseArray.keyAt(SparseArray.java:271)
+E/AndroidRuntime(21188):        at de.tap.easy_xkcd.fragments.OverviewBaseFragment.showComic(OverviewBaseFragment.java:55)
+E/AndroidRuntime(21188):        at de.tap.easy_xkcd.fragments.OverviewCardsFragment.showComic(OverviewCardsFragment.java:73)
+E/AndroidRuntime(21188):        at de.tap.easy_xkcd.Activities.MainActivity.onClick(MainActivity.java:233)
+E/AndroidRuntime(21188):        at de.tap.easy_xkcd.Activities.MainActivity$$ViewBinder$1.doClick(MainActivity$$ViewBinder.java:18)

@@ -1,0 +1,5 @@
+    java.lang.NullPointerException
+            at de.tum.in.tumcampus.auxiliary.calendar.Event.generateEventFromCursor(Event.java:110)
+            at de.tum.in.tumcampus.auxiliary.calendar.LoadEventsRequest.loadEvents(LoadEventsRequest.java:71)
+            at de.tum.in.tumcampus.auxiliary.calendar.LoadEventsRequest.processRequest(LoadEventsRequest.java:42)
+            at de.tum.in.tumcampus.auxiliary.calendar.EventLoader$LoaderThread.run(EventLoader.java:174)

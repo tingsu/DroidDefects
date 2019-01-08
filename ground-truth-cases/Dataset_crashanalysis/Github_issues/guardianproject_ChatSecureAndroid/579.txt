@@ -1,0 +1,11 @@
+       [dx] com.android.dex.DexException: Multiple dex files define Linfo/guardianproject/cacheword/CacheWordHandler;
+       [dx]     at com.android.dx.merge.DexMerger.readSortableTypes(DexMerger.java:596)
+       [dx]     at com.android.dx.merge.DexMerger.getSortedTypes(DexMerger.java:554)
+       [dx]     at com.android.dx.merge.DexMerger.mergeClassDefs(DexMerger.java:535)
+       [dx]     at com.android.dx.merge.DexMerger.mergeDexes(DexMerger.java:171)
+       [dx]     at com.android.dx.merge.DexMerger.merge(DexMerger.java:189)
+       [dx]     at com.android.dx.command.dexer.Main.mergeLibraryDexBuffers(Main.java:454)
+       [dx]     at com.android.dx.command.dexer.Main.runMonoDex(Main.java:302)
+       [dx]     at com.android.dx.command.dexer.Main.run(Main.java:245)
+       [dx]     at com.android.dx.command.dexer.Main.main(Main.java:214)
+       [dx]     at com.android.dx.command.Main.main(Main.java:106)

@@ -1,0 +1,5 @@
+> java.lang.IndexOutOfBoundsException
+>   at java.util.LinkedList.remove(LinkedList.java:660)
+>   at  de.luhmer.owncloudnewsreader.services.DownloadImagesService.StartNextDownloadInQueue(DownloadImagesService.java:148)
+>   at de.luhmer.owncloudnewsreader.services.DownloadImagesService.onHandleIntent(DownloadImagesService.java:139)
+>   at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)

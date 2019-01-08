@@ -1,0 +1,39 @@
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213): java.lang.RuntimeException: java.lang.reflect.InvocationTargetException
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.ichi2.anki.Deck.rebuildRevCount(Deck.java:943)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.ichi2.anki.Deck.rebuildCounts(Deck.java:1161)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.ichi2.anki.Deck.reset(Deck.java:1451)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.ichi2.anki.StudyOptions.updateValuesFromDeck(StudyOptions.java:707)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.ichi2.anki.StudyOptions.onCram(StudyOptions.java:767)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.ichi2.anki.StudyOptions.access$33(StudyOptions.java:761)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.ichi2.anki.StudyOptions$11.onClick(StudyOptions.java:594)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:161)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at android.os.Handler.dispatchMessage(Handler.java:99)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at android.os.Looper.loop(Looper.java:123)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at android.app.ActivityThread.main(ActivityThread.java:4627)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at java.lang.reflect.Method.invokeNative(Native
+Method)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at java.lang.reflect.Method.invoke(Method.java:521)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:858)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at dalvik.system.NativeStart.main(Native
+Method)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213): Caused by: java.lang.reflect.InvocationTargetException
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.ichi2.anki.Deck._rebuildCramCount(Deck.java:1744)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at java.lang.reflect.Method.invokeNative(Native
+Method)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at java.lang.reflect.Method.invoke(Method.java:521)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.ichi2.anki.Deck.rebuildRevCount(Deck.java:937)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     ... 15 more
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213): Caused by: android.database.sqlite.SQLiteException:
+near "ANDtype": syntax error: , while compiling: SELECT count(*) FROM cards c WHERE
++c.id IN (Basic,Forward) ANDtype BETWEEN 0 AND 2
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at android.database.sqlite.SQLiteCompiledSql.native_compile(Native
+Method)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at android.database.sqlite.SQLiteCompiledSql.compile(SQLiteCompiledSql.java:91)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at android.database.sqlite.SQLiteCompiledSql.<init>(SQLiteCompiledSql.java:64)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:80)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at android.database.sqlite.SQLiteQuery.<init>(SQLiteQuery.java:46)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:42)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1454)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at android.database.sqlite.SQLiteDatabase.rawQuery(SQLiteDatabase.java:1424)
+12-22 11:38:22.141: ERROR/AndroidRuntime(9213):     at com.ichi2.anki.AnkiDb.queryScalar(AnkiDb.java:77)

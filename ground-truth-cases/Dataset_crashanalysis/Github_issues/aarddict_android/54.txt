@@ -1,0 +1,18 @@
+I/dalvikvm(28347):   | state=R schedstat=( 467761795 483403705 6176 ) utm=24 stm=22 core=0
+I/dalvikvm(28347):   at aarddict.Volume.init(Volume.java:~93)
+I/dalvikvm(28347):   at aarddict.Volume.<init>(Volume.java:68)
+I/dalvikvm(28347):   at aarddict.android.DictionaryService.open(DictionaryService.java:254)
+I/dalvikvm(28347):   at aarddict.android.DictionaryService.refresh(DictionaryService.java:160)
+I/dalvikvm(28347):   at aarddict.android.DictionariesActivity$3.run(DictionariesActivity.java:488)
+I/dalvikvm(28347):   at java.lang.Thread.run(Thread.java:856)
+I/dalvikvm(28347): 
+W/dalvikvm(28347): threadid=17: thread exiting with uncaught exception (group=0x40b82930)
+D/aarddict.android.BaseDictionaryActivity(28347): dictionary open started
+E/AndroidRuntime(28347): FATAL EXCEPTION: Thread-1000
+E/AndroidRuntime(28347): java.lang.OutOfMemoryError
+E/AndroidRuntime(28347):    at aarddict.Volume.init(Volume.java:93)
+E/AndroidRuntime(28347):    at aarddict.Volume.<init>(Volume.java:68)
+E/AndroidRuntime(28347):    at aarddict.android.DictionaryService.open(DictionaryService.java:254)
+E/AndroidRuntime(28347):    at aarddict.android.DictionaryService.refresh(DictionaryService.java:160)
+E/AndroidRuntime(28347):    at aarddict.android.DictionariesActivity$3.run(DictionariesActivity.java:488)
+E/AndroidRuntime(28347):    at java.lang.Thread.run(Thread.java:856)

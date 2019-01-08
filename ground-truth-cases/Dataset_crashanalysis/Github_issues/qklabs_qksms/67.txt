@@ -1,0 +1,4 @@
+E/AndroidRuntime( 4577): java.lang.RuntimeException: Unable to start receiver com.moez.QKSMS.receiver.NightModeAutoReceiver: java.lang.NullPointerException: Attempt to invoke virtual method 'int android.content.res.Resources.getColor(int)' on a null object reference
+E/AndroidRuntime( 4577):    at com.moez.QKSMS.ui.d.f(ThemeManager.java:347)
+E/AndroidRuntime( 4577):    at com.moez.QKSMS.ui.d.a(ThemeManager.java:292)
+E/AndroidRuntime( 4577):    at com.moez.QKSMS.receiver.NightModeAutoReceiver.onReceive(NightModeAutoReceiver.java:47)

@@ -1,0 +1,105 @@
+E/AndroidRuntime( 3598): java.lang.NullPointerException
+E/AndroidRuntime( 3598):    at org.thoughtcrime.securesms.audio.AudioAttachmentServer$StreamToMediaPlayerTask.processRequest(AudioAttachmentServer.java:174)
+E/AndroidRuntime( 3598):    at org.thoughtcrime.securesms.audio.AudioAttachmentServer.run(AudioAttachmentServer.java:90)
+E/AndroidRuntime( 3598):    at java.lang.Thread.run(Thread.java:856)
+W/ActivityManager(  292):   Force finishing activity org.thoughtcrime.securesms/.ConversationActivity
+V/LPAPlayer(  115): getMediaTimeUs() isPaused 0 timeStarted 3006018615 timePlayed 0
+V/LPAPlayer(  115): curr_time 0
+V/LPAPlayer(  115): getMediaTimeUs() isPaused 0 timeStarted 3006018615 timePlayed 0
+V/LPAPlayer(  115): curr_time 0
+V/LPAPlayer(  115): getMediaTimeUs() isPaused 0 timeStarted 3006018615 timePlayed 0
+V/LPAPlayer(  115): curr_time 0
+W/PassphraseRequiredActionBarActivity( 3598): onPause()
+W/AudioSlidePlayer( 3598): Stop called!
+V/LPAPlayer(  115): pause: playPendingSamples 0
+V/LPAPlayer(  115): LPAPlayer::Pause - Pause driver
+V/LPAPlayer(  115): Posting an event for Pause timeout
+V/LPAPlayer(  115): getMediaTimeUs() isPaused 1 timeStarted 3006018615 timePlayed 8932068
+D/MediaPlayer( 3598): stop() mUri is http://127.0.0.1:42754/137a9e19a178355e9788c13b547d4190
+I/WindowManager(  292): SCREENLAYOUT_SIZE (1:small, 2:normal, 3:large, 4:xlarge) 2
+W/KeyCachingService( 3598): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService( 3598): Decrementing activity count...
+W/MessageRetrievalService( 3598): Active Count: 0
+W/PassphraseRequiredActionBarActivity( 3598): onResume()
+D/BluetoothA2dpService(  292): uri is http://127.0.0.1:42754/137a9e19a178355e9788c13b547d4190mUri is http://127.0.0.1:42754/137a9e19a178355e9788c13b547d4190
+D/BluetoothA2dpService(  292): PlaySatus is 0
+D/BluetoothA2dpService(  292): Metadata received
+D/BluetoothA2dpService(  292): Duration 167549
+D/BluetoothA2dpService(  292): position 8932
+D/BluetoothA2dpService(  292): playstate is 0
+D/BluetoothA2dpService(  292): Exc is java.lang.NullPointerException
+D/BluetoothA2dpService(  292): end of parsing mData
+```
+
+---
+
+Here's one playing a voice note (testing `moxie/ptt_rebase` at c014264a48c5ee83b7ca46f5a7dbe1cf8c40b9ea):
+
+```
+W/AudioView( 3095): playbutton onClick
+V/AudioHardwareMSM7X30(  115): open driver
+V/AudioHardwareMSM7X30(  115): get config
+V/AudioHardwareMSM7X30(  115): set config
+V/AudioHardwareMSM7X30(  115): buffer_size: 4800
+V/AudioHardwareMSM7X30(  115): buffer_count: 2
+V/AudioHardwareMSM7X30(  115): channel_count: 2
+V/AudioHardwareMSM7X30(  115): sample_rate: 44100
+V/AudioHardwareMSM7X30(  115): dec_id = 5
+V/AudioHardwareMSM7X30(  115): cur_rx for pcm playback = 2
+D/AudioHardwareMSM7X30(  115): value of device and enable is 2 1 ALSA dev id:7
+D/AudioHardwareMSM7X30(  115): msm_route_stream(PCM_PLAY,5,7,1)
+E/MediaPlayer( 3095): Uri is  http://127.0.0.1:52835/a195815b8575b8e084dee5d54c7c79e2
+D/MediaPlayer( 3095): Couldn't open file on client side, trying server side
+I/AudioAttachmentServer( 3095): Header: user-agent : stagefright/1.2 (Linux;Android 4.0.4)
+I/AudioAttachmentServer( 3095): Header: connection : keep-alive
+I/AudioAttachmentServer( 3095): Header: accept-encoding : gzip,deflate
+I/AudioAttachmentServer( 3095): Header: host : 127.0.0.1:52835
+I/AudioAttachmentServer( 3095): headers: HTTP/1.1 200 OK
+I/AudioAttachmentServer( 3095): Content-Type: audio/*
+I/AudioAttachmentServer( 3095): Accept-Ranges: bytes
+I/AudioAttachmentServer( 3095): Content-Length: 4806
+I/AudioAttachmentServer( 3095): Connection: Keep-Alive
+I/AudioAttachmentServer( 3095): 
+E/OMXCodec(  115): Attempting to allocate OMX node 'OMX.google.amrnb.decoder'
+E/OMXCodec(  115): Successfully allocated OMX node 'OMX.google.amrnb.decoder'
+W/AudioSlidePlayer( 3095): onPrepared
+D/MediaPlayer( 3095): start() mUri is http://127.0.0.1:52835/a195815b8575b8e084dee5d54c7c79e2
+E/AwesomePlayer(  115): AudioPlayer created, Non-LPA mode mime audio/3gpp duration 3000000
+D/BluetoothA2dpService(  292): uri is http://127.0.0.1:52835/a195815b8575b8e084dee5d54c7c79e2mUri is http://127.0.0.1:33694/b65c89d0dfca725acff45b7149e9859a
+D/BluetoothA2dpService(  292): PlaySatus is 1
+D/BluetoothA2dpService(  292): Metadata received
+D/BluetoothA2dpService(  292): Duration 3000
+D/BluetoothA2dpService(  292): position 0
+D/BluetoothA2dpService(  292): playstate is 1
+D/BluetoothA2dpService(  292): Exc is java.lang.NullPointerException
+D/BluetoothA2dpService(  292): end of parsing mData
+D/StateMachine(  292): handleMessage: E msg.what=131155
+D/StateMachine(  292): processMsg: ConnectedState
+D/WifiStateMachine(  292): ConnectedState{ what=131155 when=-4ms arg1=12 }
+D/wpa_supplicant( 2641): nl80211: survey data missing!
+D/StateMachine(  292): handleMessage: X
+W/AudioSlidePlayer( 3095): onComplete
+D/StateMachine(  292): handleMessage: E msg.what=131155
+D/StateMachine(  292): processMsg: ConnectedState
+D/WifiStateMachine(  292): ConnectedState{ what=131155 when=-4ms arg1=12 }
+D/wpa_supplicant( 2641): nl80211: survey data missing!
+D/StateMachine(  292): handleMessage: X
+D/AudioHardwareMSM7X30(  115): AudioStreamOutMSM72xx::standby()
+D/AudioHardwareMSM7X30(  115): Deroute pcm out stream
+E/AudioHardwareMSM7X30(  115): updateDeviceInfo: E rx_device 2 and tx_device 3
+D/AudioHardwareMSM7X30(  115): No active voicecall/playback, disabling cur_rx 2
+D/AudioHardwareMSM7X30(  115): value of device and enable is 2 0 ALSA dev id:7
+D/AudioHardwareMSM7X30(  115): No active voicecall/recording, disabling cur_tx 3
+D/AudioHardwareMSM7X30(  115): value of device and enable is 3 0 ALSA dev id:12
+E/AudioHardwareMSM7X30(  115): updateDeviceInfo: X cur_rx 2 cur_tx 3
+D/StateMachine(  292): handleMessage: E msg.what=131155
+D/StateMachine(  292): processMsg: ConnectedState
+D/WifiStateMachine(  292): ConnectedState{ what=131155 when=-4ms arg1=12 }
+D/wpa_supplicant( 2641): nl80211: survey data missing!
+D/StateMachine(  292): handleMessage: X
+W/dalvikvm( 3095): threadid=35: thread exiting with uncaught exception (group=0x40c7c1f8)
+E/AndroidRuntime( 3095): FATAL EXCEPTION: Thread-268
+E/AndroidRuntime( 3095): java.lang.NullPointerException
+E/AndroidRuntime( 3095):    at org.thoughtcrime.securesms.audio.AudioAttachmentServer$StreamToMediaPlayerTask.processRequest(AudioAttachmentServer.java:174)
+E/AndroidRuntime( 3095):    at org.thoughtcrime.securesms.audio.AudioAttachmentServer.run(AudioAttachmentServer.java:90)
+E/AndroidRuntime( 3095):    at java.lang.Thread.run(Thread.java:856)

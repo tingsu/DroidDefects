@@ -1,0 +1,17 @@
+E/AndroidRuntime(14869): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.activities.SettingsActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.hashCode()' on a null object reference
+E/AndroidRuntime(14869):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2358)
+E/AndroidRuntime(14869):        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2420)
+E/AndroidRuntime(14869):        at android.app.ActivityThread.access$900(ActivityThread.java:154)
+E/AndroidRuntime(14869):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1321)
+E/AndroidRuntime(14869):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(14869):        at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(14869):        at android.app.ActivityThread.main(ActivityThread.java:5294)
+E/AndroidRuntime(14869):        at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(14869):        at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(14869):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)E/AndroidRuntime(14869):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/AndroidRuntime(14869):        at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:114)
+E/AndroidRuntime(14869): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.hashCode()' on a null object reference
+E/AndroidRuntime(14869):        at com.nutomic.syncthingandroid.activities.SettingsActivity.onCreate(SettingsActivity.java:45)
+E/AndroidRuntime(14869):        at android.app.Activity.performCreate(Activity.java:5990)
+E/AndroidRuntime(14869):        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+E/AndroidRuntime(14869):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2311)

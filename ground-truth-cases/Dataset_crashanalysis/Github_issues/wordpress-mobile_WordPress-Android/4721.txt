@@ -1,0 +1,13 @@
+Fatal Exception: android.database.sqlite.SQLiteException: near "ORDER": syntax error (code 1): , while compiling: DELETE FROM tbl_posts WHERE tag_name=? AND tag_type=? ORDER BY date_published LIMIT ?
+       at android.database.sqlite.SQLiteConnection.nativePrepareStatement(SQLiteConnection.java)
+       at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+       at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:500)
+       at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+       at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+       at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+       at android.database.sqlite.SQLiteDatabase.delete(SQLiteDatabase.java:1497)
+       at org.wordpress.android.datasets.ReaderPostTable.purgePostsForTag(ReaderPostTable.java:212)
+       at org.wordpress.android.datasets.ReaderPostTable.purge(ReaderPostTable.java:190)
+       at org.wordpress.android.datasets.ReaderDatabase.purge(ReaderDatabase.java:194)
+       at org.wordpress.android.datasets.ReaderDatabase.access$000(ReaderDatabase.java:20)
+       at org.wordpress.android.datasets.ReaderDatabase$1.run(ReaderDatabase.java:228)

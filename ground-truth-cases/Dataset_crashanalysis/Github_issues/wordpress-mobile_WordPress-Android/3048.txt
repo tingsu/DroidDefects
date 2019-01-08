@@ -1,0 +1,10 @@
+java.lang.NullPointerException
+       at java.util.ArrayList.addAll(ArrayList.java:184)
+       at org.json.JSONArray.(JSONArray.java:70)
+       at org.wordpress.android.ui.posts.EditPostSettingsFragment.updatePostSettings(EditPostSettingsFragment.java:477)
+       at org.wordpress.android.ui.posts.EditPostActivity.updatePostObject(EditPostActivity.java:587)
+       at org.wordpress.android.ui.posts.EditPostActivity.savePost(EditPostActivity.java:597)
+       at org.wordpress.android.ui.posts.EditPostActivity.savePost(EditPostActivity.java:592)
+       at org.wordpress.android.ui.posts.EditPostActivity.access$400(EditPostActivity.java:97)
+       at org.wordpress.android.ui.posts.EditPostActivity$AutoSaveTask.run(EditPostActivity.java:284)
+       at java.util.Timer$TimerImpl.run(Timer.java:284)

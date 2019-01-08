@@ -1,0 +1,4 @@
+E/AndroidRuntime(19642): java.lang.ClassCastException: android.graphics.drawable.StateListDrawable cannot be cast to android.graphics.drawable.BitmapDrawable
+E/AndroidRuntime(19642):    at dk.jens.backup.AppInfoHelper.getPackageInfo(AppInfoHelper.java:48)
+E/AndroidRuntime(19642):    at dk.jens.backup.OAndBackup$1.run(OAndBackup.java:105)
+E/AndroidRuntime(19642):    at java.lang.Thread.run(Thread.java:841)

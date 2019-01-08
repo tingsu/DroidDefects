@@ -1,0 +1,8 @@
+java.lang.IllegalArgumentException: Port out of range: 19216803
+        at java.net.Socket.checkDestination(Socket.java:302)
+        at java.net.Socket.tryAllAddresses(Socket.java:127)
+        at java.net.Socket.<init>(Socket.java:178)
+        at java.net.Socket.<init>(Socket.java:150)
+        at org.connectbot.transport.Telnet.connect(Telnet.java:129)
+        at org.connectbot.service.TerminalBridge$3.run(TerminalBridge.java:275)
+        at java.lang.Thread.run(Thread.java:841)

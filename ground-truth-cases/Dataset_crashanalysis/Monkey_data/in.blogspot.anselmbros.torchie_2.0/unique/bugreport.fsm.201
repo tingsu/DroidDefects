@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: in.blogspot.anselmbros.torchie
+//version: 2.0
+//appro_time: 128
+ FATAL EXCEPTION: main
+ java.lang.NullPointerException
+ 	at in.blogspot.anselmbros.torchie.donate.IabHelper.startSetup(IabHelper.java:294)
+ 	at in.blogspot.anselmbros.torchie.utils.DonationAPI.setupConnection(DonationAPI.java:63)
+ 	at in.blogspot.anselmbros.torchie.ui.dialog.DonateDialog.onCreateView(DonateDialog.java:76)
+ 	at android.app.Fragment.performCreateView(Fragment.java:1699)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:885)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1057)
+ 	at android.app.BackStackRecord.run(BackStackRecord.java:682)
+ 	at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1435)
+ 	at android.app.FragmentManagerImpl$1.run(FragmentManager.java:441)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,28 @@
+
+This exception is being thrown several times. My app came to crash at a given time.
+// ============================================
+
+```
+07-27 00:57:32.425  14551-16805/es.hol.soundmedia E/ImageLoader: /data/data/es.hol.soundmedia/cache/uil-images/1524898849: open failed: ENOENT (No such file or directory)
+        java.io.FileNotFoundException: /data/data/es.hol.soundmedia/cache/uil-images/1524898849: open failed: ENOENT (No such file or directory)
+        at libcore.io.IoBridge.open(IoBridge.java:416)
+        at java.io.FileInputStream.<init>(FileInputStream.java:78)
+        at java.io.FileInputStream.<init>(FileInputStream.java:105)
+        at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStreamFromFile(BaseImageDownloader.java:141)
+        at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStream(BaseImageDownloader.java:78)
+        at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.getImageStream(BaseImageDecoder.java:82)
+        at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:68)
+        at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:305)
+        at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:260)
+        at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:129)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+        at java.lang.Thread.run(Thread.java:856)
+        Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+        at libcore.io.Posix.open(Native Method)
+        at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+        at libcore.io.IoBridge.open(IoBridge.java:400)
+        ... 12 more
+```
+
+Property values ​​used at startup.

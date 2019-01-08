@@ -1,0 +1,51 @@
+java.lang.RuntimeException: Loader failed: java.lang.RuntimeException: Failed to run query jp:理科
+    at sk.baka.aedict3.util.android.list.CheckableListFragment.handleLoaderError(CheckableListFragment.java:94)
+    at sk.baka.aedict3.dict.AbstractEntryRefListFragment.handleDictionaryCrash(AbstractEntryRefListFragment.java:244)
+    at sk.baka.aedict3.search.SearchResultFragment.handleLoaderError(SearchResultFragment.java:155)
+    at sk.baka.aedict3.util.android.list.CheckableListFragment$1.onFailure(CheckableListFragment.java:113)
+    at sk.baka.aedict3.util.android.LoaderEx$Loader.onFailure(LoaderEx.java:181)
+    at sk.baka.aedict3.util.android.LoaderEx$Loader.access$100(LoaderEx.java:105)
+    at sk.baka.aedict3.util.android.LoaderEx$Loader$1.run(LoaderEx.java:158)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:211)
+    at android.app.ActivityThread.main(ActivityThread.java:5317)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1016)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:811)
+Caused by: java.lang.RuntimeException: Failed to run query jp:理科
+    at sk.baka.aedict.search.impl.EdictSearch.search(EdictSearch.java:95)
+    at sk.baka.aedict.search.impl.EdictSearch.findByQuery(EdictSearch.java:107)
+    at sk.baka.aedict.search.impl.MultiJMDictSearch$2.search(MultiJMDictSearch.java:151)
+    at sk.baka.aedict.search.impl.MultiJMDictSearch.search(MultiJMDictSearch.java:130)
+    at sk.baka.aedict.search.impl.MultiJMDictSearch.findByQuery(MultiJMDictSearch.java:147)
+    at sk.baka.aedict.search.JMDictQuery.search(JMDictQuery.java:70)
+    at sk.baka.aedict3.search.SearchResultFragment$MyLoader.loadItemsInBackground(SearchResultFragment.java:55)
+    at sk.baka.aedict3.util.android.LoaderEx$Loader.run(LoaderEx.java:129)
+    at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:422)
+    at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+    at java.lang.Thread.run(Thread.java:818)
+Caused by: java.lang.RuntimeException: Failed to run query jp:理科: jp:"理科"
+    at sk.baka.aedict.search.lucene.LuceneSearchUtils.search(LuceneSearchUtils.java:153)
+    at sk.baka.aedict.search.impl.LuceneCache$1.search(LuceneCache.java:87)
+    at sk.baka.aedict.search.impl.EdictSearch.search(EdictSearch.java:89)
+    ... 12 more
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: Failed to invoke sk.baka.aedict.dict.JMDictEntry.readFrom(DataInput): java.lang.RuntimeException: Unsupported version 0
+    at sk.baka.aedict.util.Writables.read(Writables.java:247)
+    at sk.baka.aedict.search.lucene.LuceneSearchUtils.toWritables(LuceneSearchUtils.java:124)
+    at sk.baka.aedict.search.lucene.LuceneSearchUtils.search(LuceneSearchUtils.java:143)
+    ... 14 more
+Caused by: java.lang.RuntimeException: Failed to invoke sk.baka.aedict.dict.JMDictEntry.readFrom(DataInput): java.lang.RuntimeException: Unsupported version 0
+    at sk.baka.aedict.util.Writables.read(Writables.java:227)
+    at sk.baka.aedict.util.Writables.read(Writables.java:245)
+    ... 16 more
+Caused by: java.lang.reflect.InvocationTargetException
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at sk.baka.aedict.util.Writables.read(Writables.java:221)
+    ... 17 more
+Caused by: java.lang.RuntimeException: Unsupported version 0
+    at sk.baka.aedict.dict.JMDictEntry.readFrom(JMDictEntry.java:493)

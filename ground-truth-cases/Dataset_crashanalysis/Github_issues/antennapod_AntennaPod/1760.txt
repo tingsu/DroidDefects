@@ -1,0 +1,4 @@
+java.lang.IllegalStateException: play() called on uninitialized AudioTrack.
+    at android.media.AudioTrack.play(AudioTrack.java:1141)
+    at org.antennapod.audio.SonicAudioPlayer$2.run(SonicAudioPlayer.java:733)
+    at java.lang.Thread.run(Thread.java:818)

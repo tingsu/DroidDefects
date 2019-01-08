@@ -1,0 +1,4 @@
+> java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.lastIndexOf(int)' on a null object reference
+> at org.csploit.android.net.metasploit.MsfExploit.toString(MsfExploit.java:340)
+> at org.csploit.android.gui.MsfPreferences.createPreferenceHierarchy(MsfPreferences.java:128)
+> at org.csploit.android.gui.MsfPreferences.onCreate(MsfPreferences.java:101)

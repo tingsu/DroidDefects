@@ -1,0 +1,245 @@
+
+The second bug showed up at about version 0.8.5. Suddenly, captures or
+edits to existing nodes were not being seen by emacs when doing a
+pull. I knew I have made edits, but emacs pull reported "No new
+items". For the attached aLogcat file, I did a push, created a new
+node entitled "TEST", and edited a node to include the word "TEST" in
+the "payload". Then I synced mobileorg, attached to the PC, and did a
+pull.
+
+Strange thing - there was no "agenda.org" in the folder when I opened
+it up through the PC.
+
+I sync using a folder.
+By the way, the device is a Archos 32, firmware version 2.4.83 (Android 2.2.1)
+
+index.org:
+# +READONLY
+# +TODO: TODO NEXT STARTED | DONE
+# +READONLY
+# +TODO: WAITING SOMEDAY | CANCELLED
+# +TAGS: { @errand @office @home @library } PHONE internet computer QUOTE WORK READING VIDEO MUSIC NOTE CANCELLED FLAGGED
+# +DRAWERS: PROPERTIES CLOCK LOGBOOK RESULTS
+# +ALLPRIORITIES: A B C
+- [[file:agendas.org][Agenda Views]]
+- [[file:gsu.org][gsu.org]]
+- [[file:home.org][home.org]]
+- [[file:personal.org][personal.org]]
+
+alogcat:
+
+W/InputManagerService( 1267): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@455e4690
+I//system/bin/batteryd( 1165): 2482859  v_bat 4.080 (4.087), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.025 (4.033), level 85% (85%, 86%), state 7
+D/dalvikvm( 1349): GC_EXPLICIT freed 2313 objects / 110040 bytes in 96ms
+I//system/bin/batteryd( 1165): 2484862  v_bat 4.081 (4.093), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.026 (4.039), level 85% (85%, 86%), state 7
+I/ActivityManager( 1267): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.android.launcher/com.android.launcher2.Launcher }
+W/InputManagerService( 1267): Ignoring hideSoftInput of: com.android.internal.view.IInputMethodClient$Stub$Proxy@4592dce0
+I/ActivityManager( 1267): Starting activity: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.matburt.mobileorg/.Gui.OutlineActivity bnds=[95,132][172,187] }
+I//system/bin/batteryd( 1165): 2486865  v_bat 4.081 (4.070), i_supply 0.500, i_demand 0.162 => v_bat_idle 4.025 (4.016), level 85% (85%, 83%), state 7
+I/ActivityManager( 1267): Start proc com.matburt.mobileorg for activity com.matburt.mobileorg/.Gui.OutlineActivity: pid=2396 uid=10048 gids={3003, 1015}
+I/ActivityManager( 1267): Displayed activity com.matburt.mobileorg/.Gui.OutlineActivity: 547 ms (total 547 ms)
+I//system/bin/batteryd( 1165): 2488867  v_bat 4.081 (4.087), i_supply 0.500, i_demand 0.239 => v_bat_idle 4.026 (4.045), level 85% (85%, 87%), state 7
+D/dalvikvm( 2396): GC_FOR_MALLOC freed 2756 objects / 304520 bytes in 116ms
+E/Cursor  ( 2396): Finalizing a Cursor that has not been deactivated or closed. database = /data/data/com.matburt.mobileorg/databases/MobileOrg.db, table = orgdata, query = SELECT orgdata._id, orgdata.name, orgdata.todo, orgdata.tags, orgdata.priority, orgdata.payload, org
+E/Cursor  ( 2396): android.database.sqlite.DatabaseObjectNotClosedException: Application did not close the cursor or database object that was opened here
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteCursor.<init>(SQLiteCursor.java:210)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:53)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1345)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1229)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1184)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1264)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Parsing.OrgDatabase.getFileCursor(OrgDatabase.java:100)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Gui.OutlineActivity.refreshDisplay(OutlineActivity.java:123)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Gui.OutlineActivity.onCreate(OutlineActivity.java:101)
+E/Cursor  ( 2396):  at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+E/Cursor  ( 2396):  at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2627)
+E/Cursor  ( 2396):  at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2679)
+E/Cursor  ( 2396):  at android.app.ActivityThread.access$2300(ActivityThread.java:125)
+E/Cursor  ( 2396):  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2033)
+E/Cursor  ( 2396):  at android.os.Handler.dispatchMessage(Handler.java:99)
+E/Cursor  ( 2396):  at android.os.Looper.loop(Looper.java:123)
+E/Cursor  ( 2396):  at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/Cursor  ( 2396):  at java.lang.reflect.Method.invokeNative(Native Method)
+E/Cursor  ( 2396):  at java.lang.reflect.Method.invoke(Method.java:521)
+E/Cursor  ( 2396):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+E/Cursor  ( 2396):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+E/Cursor  ( 2396):  at dalvik.system.NativeStart.main(Native Method)
+I/global  ( 2396): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+I/global  ( 2396): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+I//system/bin/batteryd( 1165): 2490869  v_bat 4.080 (4.064), i_supply 0.500, i_demand 0.240 => v_bat_idle 4.026 (4.022), level 85% (85%, 84%), state 7
+D/MobileOrg( 2396): Getting agendas.org/Agenda Views
+I/global  ( 2396): Default buffer size used in BufferedReader constructor. It would be better to be explicit if an 8k-char buffer is required.
+D/dalvikvm( 2396): GC_FOR_MALLOC freed 5762 objects / 478992 bytes in 45ms
+D/dalvikvm( 2396): GC_FOR_MALLOC freed 6175 objects / 525936 bytes in 36ms
+I//system/bin/batteryd( 1165): 2492871  v_bat 4.080 (4.076), i_supply 0.500, i_demand 0.202 => v_bat_idle 4.026 (4.028), level 85% (85%, 85%), state 7
+I//system/bin/batteryd( 1165): 2494874  v_bat 4.080 (4.082), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.026 (4.028), level 85% (85%, 85%), state 7
+I//system/bin/batteryd( 1165): 2496877  v_bat 4.080 (4.082), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.026 (4.028), level 85% (85%, 85%), state 7
+I/ActivityManager( 1267): Starting activity: Intent { cmp=com.matburt.mobileorg/.Gui.Capture.EditActivity (has extras) }
+I//system/bin/batteryd( 1165): 2498879  v_bat 4.080 (4.076), i_supply 0.500, i_demand 0.240 => v_bat_idle 4.026 (4.034), level 85% (85%, 86%), state 7
+I/ActivityManager( 1267): Displayed activity com.matburt.mobileorg/.Gui.Capture.EditActivity: 589 ms (total 589 ms)
+I//system/bin/batteryd( 1165): 2500881  v_bat 4.079 (4.070), i_supply 0.500, i_demand 0.202 => v_bat_idle 4.026 (4.022), level 85% (85%, 84%), state 7
+I//system/bin/batteryd( 1165): 2502883  v_bat 4.080 (4.093), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.027 (4.039), level 85% (85%, 86%), state 7
+I//system/bin/batteryd( 1165): 2504886  v_bat 4.081 (4.093), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.027 (4.039), level 85% (85%, 86%), state 7
+I//system/bin/batteryd( 1165): 2506889  v_bat 4.081 (4.087), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.027 (4.033), level 85% (85%, 86%), state 7
+I//system/bin/batteryd( 1165): 2508889  v_bat 4.081 (4.082), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.027 (4.028), level 85% (85%, 85%), state 7
+I//system/bin/batteryd( 1165): 2510890  v_bat 4.081 (4.082), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.027 (4.028), level 85% (85%, 85%), state 7
+I/ActivityManager( 1267): Starting activity: Intent { cmp=com.matburt.mobileorg/.Gui.OutlineActivity (has extras) }
+D/dalvikvm( 2396): GC_FOR_MALLOC freed 5047 objects / 349712 bytes in 37ms
+E/Cursor  ( 2396): Finalizing a Cursor that has not been deactivated or closed. database = /data/data/com.matburt.mobileorg/databases/MobileOrg.db, table = orgdata, query = SELECT _id, name, todo, tags, priority, payload, parent_id, file_id FROM orgdata WHERE _id=?
+E/Cursor  ( 2396): android.database.sqlite.DatabaseObjectNotClosedException: Application did not close the cursor or database object that was opened here
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteCursor.<init>(SQLiteCursor.java:210)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:53)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1345)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1229)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1184)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1264)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Parsing.OrgDatabase.getNode(OrgDatabase.java:310)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Parsing.NodeWrapper.<init>(NodeWrapper.java:13)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Gui.OutlineActivity.isNodeInFile(OutlineActivity.java:222)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Gui.OutlineActivity.onCreateOptionsMenu(OutlineActivity.java:150)
+E/Cursor  ( 2396):  at android.support.v4.app.FragmentActivity.dispatchCreateOptionsMenu(FragmentActivity.java:607)
+E/Cursor  ( 2396):  at android.support.v4.app.FragmentActivity.invalidateOptionsMenu(FragmentActivity.java:712)
+E/Cursor  ( 2396):  at android.support.v4.app.FragmentActivity$6.run(FragmentActivity.java:289)
+E/Cursor  ( 2396):  at android.os.Handler.handleCallback(Handler.java:587)
+E/Cursor  ( 2396):  at android.os.Handler.dispatchMessage(Handler.java:92)
+E/Cursor  ( 2396):  at android.os.Looper.loop(Looper.java:123)
+E/Cursor  ( 2396):  at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/Cursor  ( 2396):  at java.lang.reflect.Method.invokeNative(Native Method)
+E/Cursor  ( 2396):  at java.lang.reflect.Method.invoke(Method.java:521)
+E/Cursor  ( 2396):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+E/Cursor  ( 2396):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+E/Cursor  ( 2396):  at dalvik.system.NativeStart.main(Native Method)
+I/ActivityManager( 1267): Displayed activity com.matburt.mobileorg/.Gui.OutlineActivity: 504 ms (total 504 ms)
+I//system/bin/batteryd( 1165): 2512892  v_bat 4.082 (4.087), i_supply 0.500, i_demand 0.201 => v_bat_idle 4.028 (4.039), level 85% (85%, 86%), state 7
+I//system/bin/batteryd( 1165): 2514895  v_bat 4.083 (4.099), i_supply 0.500, i_demand 0.160 => v_bat_idle 4.028 (4.045), level 85% (85%, 87%), state 7
+I/ActivityManager( 1267): Starting activity: Intent { cmp=com.matburt.mobileorg/.Gui.OutlineActivity (has extras) }
+I/dalvikvm( 2396): Jit: resizing JitTable from 4096 to 8192
+I/ActivityManager( 1267): Displayed activity com.matburt.mobileorg/.Gui.OutlineActivity: 364 ms (total 364 ms)
+I//system/bin/batteryd( 1165): 2516898  v_bat 4.083 (4.082), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.028 (4.028), level 85% (85%, 85%), state 7
+I//system/bin/batteryd( 1165): 2518901  v_bat 4.083 (4.082), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.028 (4.028), level 85% (85%, 85%), state 7
+I//system/bin/batteryd( 1165): 2520902  v_bat 4.082 (4.076), i_supply 0.500, i_demand 0.202 => v_bat_idle 4.028 (4.028), level 85% (85%, 85%), state 7
+I/ActivityManager( 1267): Starting activity: Intent { cmp=com.matburt.mobileorg/.Gui.Capture.EditActivity (has extras) }
+I/ActivityManager( 1267): Displayed activity com.matburt.mobileorg/.Gui.Capture.EditActivity: 534 ms (total 534 ms)
+I//system/bin/batteryd( 1165): 2522904  v_bat 4.083 (4.087), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.028 (4.033), level 85% (85%, 86%), state 7
+I//system/bin/batteryd( 1165): 2524906  v_bat 4.083 (4.093), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.029 (4.039), level 85% (85%, 86%), state 7
+D/dalvikvm( 1341): GC_EXTERNAL_ALLOC freed 4299 objects / 217032 bytes in 93ms
+I//system/bin/batteryd( 1165): 2526909  v_bat 4.084 (4.087), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.029 (4.033), level 85% (85%, 86%), state 7
+I//system/bin/batteryd( 1165): 2528912  v_bat 4.084 (4.093), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.029 (4.039), level 85% (85%, 86%), state 7
+I//system/bin/batteryd( 1165): 2530912  v_bat 4.085 (4.093), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.029 (4.039), level 85% (85%, 86%), state 7
+I//system/bin/batteryd( 1165): 2532914  v_bat 4.085 (4.082), i_supply 0.500, i_demand 0.161 => v_bat_idle 4.029 (4.028), level 85% (85%, 85%), state 7
+D/dalvikvm( 1267): GC_FOR_MALLOC freed 21473 objects / 1271632 bytes in 190ms
+D/dalvikvm( 2396): GC_FOR_MALLOC freed 6830 objects / 413104 bytes in 42ms
+E/Cursor  ( 2396): Finalizing a Cursor that has not been deactivated or closed. database = /data/data/com.matburt.mobileorg/databases/MobileOrg.db, table = orgdata, query = SELECT _id, name, todo, tags, priority, payload, parent_id, file_id FROM orgdata WHERE payload LIKE 
+E/Cursor  ( 2396): android.database.sqlite.DatabaseObjectNotClosedException: Application did not close the cursor or database object that was opened here
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteCursor.<init>(SQLiteCursor.java:210)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:53)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1345)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1229)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1184)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1264)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Parsing.OrgDatabase.getNodePayloadReal(OrgDatabase.java:337)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Parsing.NodeWrapper.preparePayload(NodeWrapper.java:86)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Parsing.NodeWrapper.getCleanedPayload(NodeWrapper.java:103)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Gui.Capture.EditActivity.init(EditActivity.java:118)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Gui.Capture.EditActivity.onCreate(EditActivity.java:68)
+E/Cursor  ( 2396):  at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+E/Cursor  ( 2396):  at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2627)
+E/Cursor  ( 2396):  at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2679)
+E/Cursor  ( 2396):  at android.app.ActivityThread.access$2300(ActivityThread.java:125)
+E/Cursor  ( 2396):  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2033)
+E/Cursor  ( 2396):  at android.os.Handler.dispatchMessage(Handler.java:99)
+E/Cursor  ( 2396):  at android.os.Looper.loop(Looper.java:123)
+E/Cursor  ( 2396):  at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/Cursor  ( 2396):  at java.lang.reflect.Method.invokeNative(Native Method)
+E/Cursor  ( 2396):  at java.lang.reflect.Method.invoke(Method.java:521)
+E/Cursor  ( 2396):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+E/Cursor  ( 2396):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+E/Cursor  ( 2396):  at dalvik.system.NativeStart.main(Native Method)
+E/Cursor  ( 2396): Finalizing a Cursor that has not been deactivated or closed. database = /data/data/com.matburt.mobileorg/databases/MobileOrg.db, table = orgdata, query = SELECT _id, name, todo, tags, priority, payload, parent_id, file_id FROM orgdata WHERE _id=?
+E/Cursor  ( 2396): android.database.sqlite.DatabaseObjectNotClosedException: Application did not close the cursor or database object that was opened here
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteCursor.<init>(SQLiteCursor.java:210)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:53)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1345)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1229)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1184)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1264)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Parsing.OrgDatabase.getNode(OrgDatabase.java:310)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Parsing.NodeWrapper.<init>(NodeWrapper.java:13)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Gui.OutlineActivity.isNodeInFile(OutlineActivity.java:222)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Gui.OutlineActivity.onCreateContextMenu(OutlineActivity.java:213)
+E/Cursor  ( 2396):  at android.view.View.createContextMenu(View.java:4222)
+E/Cursor  ( 2396):  at com.android.internal.view.menu.ContextMenuBuilder.show(ContextMenuBuilder.java:81)
+E/Cursor  ( 2396):  at com.android.internal.policy.impl.PhoneWindow$DecorView.showContextMenuForChild(PhoneWindow.java:1905)
+E/Cursor  ( 2396):  at android.view.ViewGroup.showContextMenuForChild(ViewGroup.java:459)
+E/Cursor  ( 2396):  at android.view.ViewGroup.showContextMenuForChild(ViewGroup.java:459)
+E/Cursor  ( 2396):  at android.view.ViewGroup.showContextMenuForChild(ViewGroup.java:459)
+E/Cursor  ( 2396):  at android.view.ViewGroup.showContextMenuForChild(ViewGroup.java:459)
+E/Cursor  ( 2396):  at android.view.ViewGroup.showContextMenuForChild(ViewGroup.java:459)
+E/Cursor  ( 2396):  at android.widget.AbsListView.performLongPress(AbsListView.java:1758)
+E/Cursor  ( 2396):  at android.widget.AbsListView.access$600(AbsListView.java:72)
+E/Cursor  ( 2396):  at android.widget.AbsListView$CheckForLongPress.run(AbsListView.java:1711)
+E/Cursor  ( 2396):  at android.os.Handler.handleCallback(Handler.java:587)
+E/Cursor  ( 2396):  at android.os.Handler.dispatchMessage(Handler.java:92)
+E/Cursor  ( 2396):  at android.os.Looper.loop(Looper.java:123)
+E/Cursor  ( 2396):  at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/Cursor  ( 2396):  at java.lang.reflect.Method.invokeNative(Native Method)
+E/Cursor  ( 2396):  at java.lang.reflect.Method.invoke(Method.java:521)
+E/Cursor  ( 2396):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+E/Cursor  ( 2396):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+E/Cursor  ( 2396):  at dalvik.system.NativeStart.main(Native Method)
+E/Cursor  ( 2396): Finalizing a Cursor that has not been deactivated or closed. database = /data/data/com.matburt.mobileorg/databases/MobileOrg.db, table = orgdata, query = SELECT _id, name, todo, tags, priority, payload, parent_id, file_id FROM orgdata WHERE _id=?
+E/Cursor  ( 2396): android.database.sqlite.DatabaseObjectNotClosedException: Application did not close the cursor or database object that was opened here
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteCursor.<init>(SQLiteCursor.java:210)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:53)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1345)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1229)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1184)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1264)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Parsing.OrgDatabase.getNode(OrgDatabase.java:310)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Parsing.NodeWrapper.<init>(NodeWrapper.java:13)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Gui.OutlineActivity.isNodeInFile(OutlineActivity.java:222)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Gui.OutlineActivity.onCreateContextMenu(OutlineActivity.java:209)
+E/Cursor  ( 2396):  at android.view.View.createContextMenu(View.java:4222)
+E/Cursor  ( 2396):  at com.android.internal.view.menu.ContextMenuBuilder.show(ContextMenuBuilder.java:81)
+E/Cursor  ( 2396):  at com.android.internal.policy.impl.PhoneWindow$DecorView.showContextMenuForChild(PhoneWindow.java:1905)
+E/Cursor  ( 2396):  at android.view.ViewGroup.showContextMenuForChild(ViewGroup.java:459)
+E/Cursor  ( 2396):  at android.view.ViewGroup.showContextMenuForChild(ViewGroup.java:459)
+E/Cursor  ( 2396):  at android.view.ViewGroup.showContextMenuForChild(ViewGroup.java:459)
+E/Cursor  ( 2396):  at android.view.ViewGroup.showContextMenuForChild(ViewGroup.java:459)
+E/Cursor  ( 2396):  at android.view.ViewGroup.showContextMenuForChild(ViewGroup.java:459)
+E/Cursor  ( 2396):  at android.widget.AbsListView.performLongPress(AbsListView.java:1758)
+E/Cursor  ( 2396):  at android.widget.AbsListView.access$600(AbsListView.java:72)
+E/Cursor  ( 2396):  at android.widget.AbsListView$CheckForLongPress.run(AbsListView.java:1711)
+E/Cursor  ( 2396):  at android.os.Handler.handleCallback(Handler.java:587)
+E/Cursor  ( 2396):  at android.os.Handler.dispatchMessage(Handler.java:92)
+E/Cursor  ( 2396):  at android.os.Looper.loop(Looper.java:123)
+E/Cursor  ( 2396):  at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/Cursor  ( 2396):  at java.lang.reflect.Method.invokeNative(Native Method)
+E/Cursor  ( 2396):  at java.lang.reflect.Method.invoke(Method.java:521)
+E/Cursor  ( 2396):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+E/Cursor  ( 2396):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+E/Cursor  ( 2396):  at dalvik.system.NativeStart.main(Native Method)
+E/Cursor  ( 2396): Finalizing a Cursor that has not been deactivated or closed. database = /data/data/com.matburt.mobileorg/databases/MobileOrg.db, table = orgdata, query = SELECT _id, name, todo, tags, priority, payload, parent_id, file_id FROM orgdata WHERE _id=?
+E/Cursor  ( 2396): android.database.sqlite.DatabaseObjectNotClosedException: Application did not close the cursor or database object that was opened here
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteCursor.<init>(SQLiteCursor.java:210)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:53)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1345)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1229)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1184)
+E/Cursor  ( 2396):  at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1264)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Parsing.OrgDatabase.getNode(OrgDatabase.java:310)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Parsing.NodeWrapper.<init>(NodeWrapper.java:13)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Gui.OutlineActivity.isNodeInFile(OutlineActivity.java:222)
+E/Cursor  ( 2396):  at com.matburt.mobileorg.Gui.OutlineActivity.onCreateOptionsMenu(OutlineActivity.java:150)
+E/Cursor  ( 2396):  at android.support.v4.app.FragmentActivity.dispatchCreateOptionsMenu(FragmentActivity.java:607)
+E/Cursor  ( 2396):  at android.support.v4.app.FragmentActivity.invalidateOptionsMenu(FragmentActivity.java:712)
+E/Cursor  ( 2396):  at android.support.v4.app.FragmentActivity$6.run(FragmentActivity.java:289)
+E/Cursor  ( 2396):  at android.os.Handler.handleCallback(Handler.java:587)
+E/Cursor  ( 2396):  at android.os.Handler.dispatchMessage(Handler.java:92)
+E/Cursor  ( 2396):  at android.os.Looper.loop(Looper.java:123)
+E/Cursor  ( 2396):  at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/Cursor  ( 2396):  at java.lang.reflect.Method.invokeNative(Native Method)
+E/Cursor  ( 2396):  at java.lang.reflect.Method.invoke(Method.java:521)
+E/Cursor  ( 2396):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+E/Cursor  ( 2396):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+E/Cursor  ( 2396):  at dalvik.system.NativeStart.main(Native Method)

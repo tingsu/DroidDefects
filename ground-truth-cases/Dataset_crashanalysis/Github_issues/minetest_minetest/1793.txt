@@ -1,0 +1,19 @@
+[Switching to Thread 0x7fffdbffe700 (LWP 8743)]
+0x00007ffff4f4f627 in __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:55
+55        return INLINE_SYSCALL (tgkill, 3, pid, selftid, sig);
+```
+
+```
+(gdb) bt
+#0  0x00007ffff4f4f627 in __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:55
+#1  0x00007ffff4f50dba in __GI_abort () at abort.c:89
+#2  0x00007ffff584bc0d in __gnu_cxx::__verbose_terminate_handler () at ../../../../libstdc++-v3/libsupc++/vterminate.cc:95
+#3  0x00007ffff5849c96 in __cxxabiv1::__terminate (handler=<optimized out>) at ../../../../libstdc++-v3/libsupc++/eh_terminate.cc:47
+#4  0x00007ffff5849ce1 in std::terminate () at ../../../../libstdc++-v3/libsupc++/eh_terminate.cc:57
+#5  0x00007ffff5849ef8 in __cxxabiv1::__cxa_throw (obj=0x7fffd0005ed0, tinfo=0xb60610 <typeinfo for LuaError>, dest=0x48f590 <LuaError::~LuaError()>)
+    at ../../../../libstdc++-v3/libsupc++/eh_throw.cc:87
+#6  0x00000000004a49ba in ScriptApiBase::scriptError (this=this@entry=0x10bf068) at /usr/src/debug/minetest-0.4.10/src/script/cpp_api/s_base.cpp:160
+#7  0x00000000004a1242 in AsyncWorkerThread::Thread (this=0x10beff0) at /usr/src/debug/minetest-0.4.10/src/script/cpp_api/s_async.cpp:297
+#8  0x0000000000485033 in JThread::TheThread (param=0x10beff0) at /usr/src/debug/minetest-0.4.10/src/jthread/pthread/jthread.cpp:160
+#9  0x00007ffff64765bd in start_thread (arg=0x7fffdbffe700) at pthread_create.c:310
+#10 0x00007ffff501178d in clone () at ../sysdeps/unix/sysv/linux/x86_64/clone.S:109

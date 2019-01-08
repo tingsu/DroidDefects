@@ -1,0 +1,18 @@
+java.lang.NullPointerException
+E/AndroidRuntime(29652):        at android.app.ActivityThread.performStopActivityInner(ActivityThread.java:3491)
+E/AndroidRuntime(29652):        at android.app.ActivityThread.handleStopActivity(ActivityThread.java:3537)
+E/AndroidRuntime(29652):        at android.app.ActivityThread.access$1200(ActivityThread.java:172)
+E/AndroidRuntime(29652):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1332)
+E/AndroidRuntime(29652):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(29652):        at android.os.Looper.loop(Looper.java:146)
+E/AndroidRuntime(29652):        at android.app.ActivityThread.main(ActivityThread.java:5598)
+E/AndroidRuntime(29652):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(29652):        at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime(29652):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1283)
+E/AndroidRuntime(29652):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1099)
+E/AndroidRuntime(29652):        at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(29652): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(29652):        at com.ichi2.anki.Reviewer.onStop(Reviewer.java:390)
+E/AndroidRuntime(29652):        at android.app.Instrumentation.callActivityOnStop(Instrumentation.java:1218)
+E/AndroidRuntime(29652):        at android.app.Activity.performStop(Activity.java:5604)
+E/AndroidRuntime(29652):        at android.app.ActivityThread.performStopActivityInner(ActivityThread.java:3488)

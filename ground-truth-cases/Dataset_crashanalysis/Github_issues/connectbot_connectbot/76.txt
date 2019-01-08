@@ -1,0 +1,21 @@
+W/System.err( 6589): java.io.IOException: Invalid signature format
+W/System.err( 6589):    at com.trilead.ssh2.signature.ECDSASHA2Verify.encodeSSHECDSASignature(ECDSASHA2Verify.java:278)
+W/System.err( 6589):    at com.trilead.ssh2.auth.AuthenticationManager.authenticatePublicKey(AuthenticationManager.java:272)
+W/System.err( 6589):    at com.trilead.ssh2.Connection.authenticateWithPublicKey(Connection.java:500)
+W/System.err( 6589):    at org.connectbot.transport.SSH.tryPublicKey(SSH.java:358)
+W/System.err( 6589):    at org.connectbot.transport.SSH.authenticate(SSH.java:240)
+W/System.err( 6589):    at org.connectbot.transport.SSH.connect(SSH.java:466)
+W/System.err( 6589):    at org.connectbot.service.TerminalBridge$3.run(TerminalBridge.java:278)
+W/System.err( 6589):    at java.lang.Thread.run(Thread.java:838)
+E/ConnectBot.SSH( 6589): Problem during handleAuthentication()
+E/ConnectBot.SSH( 6589): java.io.IOException: Publickey authentication failed.
+E/ConnectBot.SSH( 6589):    at com.trilead.ssh2.auth.AuthenticationManager.authenticatePublicKey(AuthenticationManager.java:309)
+E/ConnectBot.SSH( 6589):    at com.trilead.ssh2.Connection.authenticateWithPublicKey(Connection.java:500)
+E/ConnectBot.SSH( 6589):    at org.connectbot.transport.SSH.tryPublicKey(SSH.java:358)
+E/ConnectBot.SSH( 6589):    at org.connectbot.transport.SSH.authenticate(SSH.java:240)
+E/ConnectBot.SSH( 6589):    at org.connectbot.transport.SSH.connect(SSH.java:466)
+E/ConnectBot.SSH( 6589):    at org.connectbot.service.TerminalBridge$3.run(TerminalBridge.java:278)
+E/ConnectBot.SSH( 6589):    at java.lang.Thread.run(Thread.java:838)
+E/ConnectBot.SSH( 6589): Caused by: java.io.IOException: Invalid signature format
+E/ConnectBot.SSH( 6589):    at com.trilead.ssh2.signature.ECDSASHA2Verify.encodeSSHECDSASignature(ECDSASHA2Verify.java:278)
+E/ConnectBot.SSH( 6589):    at com.trilead.ssh2.auth.AuthenticationManager.authenticatePublicKey(AuthenticationManager.java:272)

@@ -1,0 +1,102 @@
+10-17 12:55:59.211 15432 15460 E net.osmand: java.io.FileNotFoundException: /storage/emulated/0/osmand/rendering/default.render.xml: open failed: ENOENT (No such file or directory)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at libcore.io.IoBridge.open(IoBridge.java:452)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at java.io.FileOutputStream.<init>(FileOutputStream.java:87)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at java.io.FileOutputStream.<init>(FileOutputStream.java:72)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at net.osmand.plus.render.RendererRegistry.copyFileForInternalStyle(RendererRegistry.java:184)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at net.osmand.plus.render.RendererRegistry.getInputStream(RendererRegistry.java:173)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at net.osmand.plus.render.RendererRegistry.loadRenderer(RendererRegistry.java:102)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at net.osmand.plus.render.RendererRegistry.getRenderer(RendererRegistry.java:78)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at net.osmand.plus.render.RendererRegistry.initRenderers(RendererRegistry.java:225)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at net.osmand.plus.AppInitializer.startApplicationBackground(AppInitializer.java:353)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at net.osmand.plus.AppInitializer.access$200(AppInitializer.java:55)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at net.osmand.plus.AppInitializer$7.run(AppInitializer.java:556)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at java.lang.Thread.run(Thread.java:818)
+10-17 12:55:59.211 15432 15460 E net.osmand: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at libcore.io.Posix.open(Native Method)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+10-17 12:55:59.211 15432 15460 E net.osmand:    at libcore.io.IoBridge.open(IoBridge.java:438)
+10-17 12:55:59.211 15432 15460 E net.osmand:    ... 11 more
+10-17 12:55:59.268 15432 15460 E net.osmand: RendererRegistry /storage/emulated/0/osmand/rendering/default.render.xml: open failed: ENOENT (No such file or directory)
+10-17 12:55:59.268 15432 15460 E net.osmand: java.io.FileNotFoundException: /storage/emulated/0/osmand/rendering/default.render.xml: open failed: ENOENT (No such file or directory)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at libcore.io.IoBridge.open(IoBridge.java:452)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at java.io.FileOutputStream.<init>(FileOutputStream.java:87)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at java.io.FileOutputStream.<init>(FileOutputStream.java:72)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at net.osmand.plus.render.RendererRegistry.copyFileForInternalStyle(RendererRegistry.java:184)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at net.osmand.plus.render.RendererRegistry.getInputStream(RendererRegistry.java:173)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at net.osmand.plus.render.RendererRegistry.loadRenderer(RendererRegistry.java:126)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at net.osmand.plus.render.RendererRegistry.getRenderer(RendererRegistry.java:78)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at net.osmand.plus.render.RendererRegistry.initRenderers(RendererRegistry.java:225)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at net.osmand.plus.AppInitializer.startApplicationBackground(AppInitializer.java:353)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at net.osmand.plus.AppInitializer.access$200(AppInitializer.java:55)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at net.osmand.plus.AppInitializer$7.run(AppInitializer.java:556)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at java.lang.Thread.run(Thread.java:818)
+10-17 12:55:59.268 15432 15460 E net.osmand: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at libcore.io.Posix.open(Native Method)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+10-17 12:55:59.268 15432 15460 E net.osmand:    at libcore.io.IoBridge.open(IoBridge.java:438)
+10-17 12:55:59.268 15432 15460 E net.osmand:    ... 11 more
+```
+
+Here's the error I'm seeing in the second case. Note that the app is failing to
+access a file under `/storage/emulated/0/Android/data/net.osmand.plus/files/`,
+which should be OsmAnd's dedicated external storage directory (i.e., it should
+_not_ need special permissions to read/write here):
+
+```
+10-17 13:09:30.774 17209 17259 D OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+10-17 13:09:30.803 17209 17209 I net.osmand: MapRenderRepositories RENDER MAP: Interrupt rendering map
+10-17 13:09:30.815  5475  5475 W LocationOracleImpl: Best location was null
+10-17 13:09:30.905  5475  6805 W LocationOracleImpl: Best location was null
+10-17 13:09:30.925 17209 17228 I art     : Background sticky concurrent mark sweep GC freed 93438(5MB) AllocSpace objects, 4(1572KB) LOS objects, 12% free, 31MB/36MB, paused 6.835ms total 165.435ms
+10-17 13:09:30.946 17209 17259 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 09/02/15, 76f806e, Ibddc658e36
+10-17 13:09:30.947 17209 17259 E linker  : readlink('/proc/self/fd/29') failed: Permission denied [fd=29]
+10-17 13:09:30.947 17209 17259 E linker  : warning: unable to get realpath for the library "/vendor/lib/egl/eglsubAndroid.so". Will use given name.
+10-17 13:09:30.948 17209 17259 I OpenGLRenderer: Initialized EGL, version 1.4
+10-17 13:09:30.968  5475  6805 W LocationOracleImpl: Best location was null
+10-17 13:09:30.982  5475  5475 E LocationReceiver: Received bad location: null
+10-17 13:09:31.005  1556  2165 I Icing   : Usage reports 1 indexed 0 rejected 0 imm upload true
+10-17 13:09:31.101   596   605 I art     : Background partial concurrent mark sweep GC freed 79555(5MB) AllocSpace objects, 6(140KB) LOS objects, 33% free, 23MB/35MB, paused 2.258ms total 165.985ms
+10-17 13:09:31.439 22598 22642 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+10-17 13:09:31.494   596  9744 I AccountManagerService: getTypesVisibleToCaller: isPermitted? false
+10-17 13:09:31.538 17209 17237 I net.osmand: MapRenderingTypes Time to init poi types 22
+10-17 13:09:31.547 17209 17237 I System.out: Initialized POI_TYPES_INITIALIZED in 1851 ms
+10-17 13:09:31.548 17209 17237 I System.out: Initialized ASSETS_COPIED in 1 ms
+10-17 13:09:31.549 17209 17237 D net.osmand: ResourceManager All map files initialized 1 ms
+10-17 13:09:31.550 17209 17237 I System.out: Initialized MAPS_INITIALIZED in 2 ms
+10-17 13:09:31.552 17209 17237 E net.osmand: RendererRegistry /storage/emulated/0/Android/data/net.osmand.plus/files/rendering/default.render.xml: open failed: ENOENT (No such file or directory)
+10-17 13:09:31.552 17209 17237 E net.osmand: java.io.FileNotFoundException: /storage/emulated/0/Android/data/net.osmand.plus/files/rendering/default.render.xml: open failed: ENOENT (No such file or directory)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at libcore.io.IoBridge.open(IoBridge.java:452)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at java.io.FileOutputStream.<init>(FileOutputStream.java:87)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at java.io.FileOutputStream.<init>(FileOutputStream.java:72)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at net.osmand.plus.render.RendererRegistry.copyFileForInternalStyle(RendererRegistry.java:184)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at net.osmand.plus.render.RendererRegistry.getInputStream(RendererRegistry.java:173)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at net.osmand.plus.render.RendererRegistry.loadRenderer(RendererRegistry.java:102)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at net.osmand.plus.render.RendererRegistry.getRenderer(RendererRegistry.java:78)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at net.osmand.plus.render.RendererRegistry.initRenderers(RendererRegistry.java:225)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at net.osmand.plus.AppInitializer.startApplicationBackground(AppInitializer.java:353)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at net.osmand.plus.AppInitializer.access$200(AppInitializer.java:55)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at net.osmand.plus.AppInitializer$7.run(AppInitializer.java:556)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at java.lang.Thread.run(Thread.java:818)
+10-17 13:09:31.552 17209 17237 E net.osmand: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at libcore.io.Posix.open(Native Method)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+10-17 13:09:31.552 17209 17237 E net.osmand:  at libcore.io.IoBridge.open(IoBridge.java:438)
+10-17 13:09:31.552 17209 17237 E net.osmand:  ... 11 more
+10-17 13:09:31.613 17209 17237 E net.osmand: RendererRegistry /storage/emulated/0/Android/data/net.osmand.plus/files/rendering/default.render.xml: open failed: ENOENT (No such file or directory)
+10-17 13:09:31.613 17209 17237 E net.osmand: java.io.FileNotFoundException: /storage/emulated/0/Android/data/net.osmand.plus/files/rendering/default.render.xml: open failed: ENOENT (No such file or directory)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at libcore.io.IoBridge.open(IoBridge.java:452)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at java.io.FileOutputStream.<init>(FileOutputStream.java:87)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at java.io.FileOutputStream.<init>(FileOutputStream.java:72)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at net.osmand.plus.render.RendererRegistry.copyFileForInternalStyle(RendererRegistry.java:184)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at net.osmand.plus.render.RendererRegistry.getInputStream(RendererRegistry.java:173)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at net.osmand.plus.render.RendererRegistry.loadRenderer(RendererRegistry.java:126)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at net.osmand.plus.render.RendererRegistry.getRenderer(RendererRegistry.java:78)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at net.osmand.plus.render.RendererRegistry.initRenderers(RendererRegistry.java:225)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at net.osmand.plus.AppInitializer.startApplicationBackground(AppInitializer.java:353)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at net.osmand.plus.AppInitializer.access$200(AppInitializer.java:55)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at net.osmand.plus.AppInitializer$7.run(AppInitializer.java:556)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at java.lang.Thread.run(Thread.java:818)
+10-17 13:09:31.613 17209 17237 E net.osmand: Caused by: android.system.ErrnoException: open failed: ENOENT (No such file or directory)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at libcore.io.Posix.open(Native Method)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+10-17 13:09:31.613 17209 17237 E net.osmand:  at libcore.io.IoBridge.open(IoBridge.java:438)

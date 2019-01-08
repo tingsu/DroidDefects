@@ -1,0 +1,10 @@
+Fatal Exception: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.isEmpty()' on a null object reference
+       at org.wordpress.android.ui.themes.ThemeBrowserActivity.startWebActivity(ThemeBrowserActivity.java:410)
+       at org.wordpress.android.ui.themes.ThemeBrowserActivity.onTryAndCustomizeSelected(ThemeBrowserActivity.java:446)
+       at org.wordpress.android.ui.themes.ThemeBrowserFragment$2.onClick(ThemeBrowserFragment.java:191)
+       at android.view.View.performClick(View.java:5155)
+       at android.view.View$PerformClick.run(View.java:20747)
+       at android.os.Handler.handleCallback(Handler.java:739)
+       at android.os.Handler.dispatchMessage(Handler.java:95)
+       at android.os.Looper.loop(Looper.java:145)
+       at android.app.ActivityThread.main(ActivityThread.java:5832)

@@ -1,0 +1,18 @@
+I/Timeline(  818): Timeline: Activity_windows_visible id: ActivityRecord{12f1473f u0 org.schabi.newpipe/.VideoItemDetailActivity t386} time:226391332
+W/System.err(17269):    at org.schabi.newpipe.services.youtube.YoutubeVideoExtractor.getAudioStreams(YoutubeVideoExtractor.java:222)
+W/System.err(17269):    at org.schabi.newpipe.services.VideoExtractor.getVideoInfo(VideoExtractor.java:84)
+W/System.err(17269):    at org.schabi.newpipe.services.youtube.YoutubeVideoExtractor.getVideoInfo(YoutubeVideoExtractor.java:378)
+W/System.err(17269):    at org.schabi.newpipe.VideoItemDetailFragment$VideoExtractorRunnable.run(VideoItemDetailFragment.java:110)
+E/class org.schabi.newpipe.services.youtube.YoutubeVideoExtractor(17269): failed to find pattern "((#|&)t=\d{0,3}h?\d{0,3}m?\d{1,3}s?)" inside of "https://www.youtube.com/watch?v=COrOBw1KOgE"
+W/System.err(17269):    at org.schabi.newpipe.services.youtube.YoutubeVideoExtractor.matchGroup1(YoutubeVideoExtractor.java:632)
+W/System.err(17269):    at org.schabi.newpipe.services.youtube.YoutubeVideoExtractor.getTimeStamp(YoutubeVideoExtractor.java:350)
+W/System.err(17269):    at org.schabi.newpipe.services.VideoExtractor.getVideoInfo(VideoExtractor.java:96)
+W/System.err(17269):    at org.schabi.newpipe.services.youtube.YoutubeVideoExtractor.getVideoInfo(YoutubeVideoExtractor.java:378)
+W/System.err(17269):    at org.schabi.newpipe.VideoItemDetailFragment$VideoExtractorRunnable.run(VideoItemDetailFragment.java:110)
+E/class org.schabi.newpipe.services.youtube.YoutubeVideoExtractor(17269): uninitialised audio streams!
+E/AndroidRuntime(17269): Process: org.schabi.newpipe, PID: 17269
+E/AndroidRuntime(17269): java.lang.NullPointerException: Attempt to read from field 'int org.schabi.newpipe.services.VideoInfo$AudioStream.format' on a null object reference
+E/AndroidRuntime(17269):    at org.schabi.newpipe.ActionBarHandler.downloadVideo(ActionBarHandler.java:268)
+E/AndroidRuntime(17269):    at org.schabi.newpipe.ActionBarHandler.onItemSelected(ActionBarHandler.java:181)
+E/AndroidRuntime(17269):    at org.schabi.newpipe.VideoItemDetailFragment.onOptionsItemSelected(VideoItemDetailFragment.java:455)
+E/AndroidRuntime(17269):    at org.schabi.newpipe.VideoItemDetailActivity.onOptionsItemSelected(VideoItemDetailActivity.java:145)

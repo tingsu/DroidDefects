@@ -1,0 +1,20 @@
+
+Edit: Not what I thought at first. Maybe more to it. Here is a log of the event.
+
+```
+09-11 18:54:29.324 32644-32644/me.ccrama.redditslide.debug I/VideoView: Destroyed surface number 0
+09-11 18:54:29.461 32644-1272/me.ccrama.redditslide.debug E/(GifUtils.java:548): Error writing GIF: url = [https://i.imgur.com/M4jCzLK.webm], progressBar = [android.widget.ProgressBar{eea18fd V.ED..... ......ID 0,0-1440,48 #7f0f00e0 app:id/gifprogress}], c = [me.ccrama.redditslide.Activities.MediaView@896b33e], afterDone = [me.ccrama.redditslide.util.GifUtils$AsyncLoadGif@2bb659f]
+09-11 18:54:29.462 32644-1272/me.ccrama.redditslide.debug E/(GifUtils.java:296): Error loading URL https://i.imgur.com/M4jCzLK.webm
+                                                                                 java.io.FileNotFoundException: https://i.imgur.com/M4jCzLK.webm
+                                                                                     at com.android.okhttp.internal.huc.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:250)
+                                                                                     at com.android.okhttp.internal.huc.DelegatingHttpsURLConnection.getInputStream(DelegatingHttpsURLConnection.java:210)
+                                                                                     at com.android.okhttp.internal.huc.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java)
+                                                                                     at me.ccrama.redditslide.util.GifUtils$AsyncLoadGif.writeGif(GifUtils.java:496)
+                                                                                     at me.ccrama.redditslide.util.GifUtils$AsyncLoadGif.doInBackground(GifUtils.java:294)
+                                                                                     at me.ccrama.redditslide.util.GifUtils$AsyncLoadGif.doInBackground(GifUtils.java:65)
+                                                                                     at android.os.AsyncTask$2.call(AsyncTask.java:304)
+                                                                                     at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+                                                                                     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243)
+                                                                                     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+                                                                                     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+                                                                                     at java.lang.Thread.run(Thread.java:761)

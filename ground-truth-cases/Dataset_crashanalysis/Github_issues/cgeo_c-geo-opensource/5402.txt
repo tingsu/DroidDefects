@@ -1,0 +1,41 @@
+18:52:06 <-- kumy has quit (Remote host closed the connection)
+18:58:39OneEyed_: Interesting. It shows that at some place the producer produces elements faster than they can be consumed, and that no backpressure handling operator (queue elements, drop after a certain limit, drop all when queue is full, keep only last, etc.) is present
+18:58:43OneEyed_: I'll have a look when I can
+```
+
+Stack trace from Google Play:
+
+```
+java.lang.IllegalStateException: Exception thrown on Scheduler.Worker thread. Add `onError` handling.
+    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:60)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:145)
+    at android.app.ActivityThread.main(ActivityThread.java:5832)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1399)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1194)
+Caused by: rx.exceptions.OnErrorNotImplementedException
+    at rx.Observable$27.onError(Observable.java:7535)
+    at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:154)
+    at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:111)
+    at rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber.pollQueue(OperatorObserveOn.java:197)
+    at rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber$2.call(OperatorObserveOn.java:170)
+    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)
+    ... 8 more
+Caused by: rx.exceptions.MissingBackpressureException
+    at rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber.onNext(OperatorObserveOn.java:138)
+    at rx.internal.operators.OperatorThrottleFirst$1.onNext(OperatorThrottleFirst.java:52)
+    at rx.internal.operators.OperatorDoOnEach$1.onNext(OperatorDoOnEach.java:84)
+    at rx.internal.operators.OperatorOnErrorResumeNextViaFunction$1.onNext(OperatorOnErrorResumeNextViaFunction.java:111)
+    at rx.internal.operators.OperatorOnBackpressureDrop$2.onNext(OperatorOnBackpressureDrop.java:82)
+    at rx.observers.Subscribers$1.onNext(Subscribers.java:67)
+    at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:130)
+    at rx.subjects.SubjectSubscriptionManager$SubjectObserver.onNext(SubjectSubscriptionManager.java:224)
+    at rx.subjects.ReplaySubject.onNext(ReplaySubject.java:370)
+    at cgeo.geocaching.playservices.LocationProvider.onLocationResult(LocationProvider.java:155)
+    at com.google.android.gms.location.internal.zzi$zza$1.handleMessage(Unknown Source)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:145)
+    at android.os.HandlerThread.run(HandlerThread.java:61)

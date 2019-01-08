@@ -1,0 +1,44 @@
+java.lang.UnsupportedOperationException: can't load this type of class file
+    at java.lang.VMClassLoader.defineClass(Native Method)
+    at java.lang.ClassLoader.defineClass(ClassLoader.java:292)
+    at org.mozilla.javascript.DefiningClassLoader.defineClass(DefiningClassLoader.java:62)
+    at org.mozilla.javascript.JavaAdapter.loadAdapterClass(JavaAdapter.java:507)
+    at org.mozilla.javascript.JavaAdapter.getAdapterClass(JavaAdapter.java:321)
+    at org.mozilla.javascript.JavaAdapter.js_createAdapter(JavaAdapter.java:196)
+    at org.mozilla.javascript.JavaAdapter.execIdCall(JavaAdapter.java:126)
+    at org.mozilla.javascript.IdFunctionObject.call(IdFunctionObject.java:129)
+    at org.mozilla.javascript.BaseFunction.construct(BaseFunction.java:338)
+    at org.mozilla.javascript.NativeJavaClass.construct(NativeJavaClass.java:214)
+    at org.mozilla.javascript.Interpreter.interpretLoop(Interpreter.java:3377)
+    at org.mozilla.javascript.Interpreter.interpret(Interpreter.java:2487)
+    at org.mozilla.javascript.InterpretedFunction.call(InterpretedFunction.java:164)
+    at org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:398)
+    at org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3065)
+    at org.mozilla.javascript.InterpretedFunction.exec(InterpretedFunction.java:175)
+    at org.mozilla.javascript.Context.evaluateString(Context.java:1104)
+
+Rhino-Exception:
+org.mozilla.javascript.EvaluatorException: error instantiating (can't load this 
+type of class file): class java.lang.Runnable is interface or abstract
+    at org.mozilla.javascript.DefaultErrorReporter.runtimeError(DefaultErrorReporter.java:109)
+    at org.mozilla.javascript.Context.reportRuntimeError(Context.java:939)
+    at org.mozilla.javascript.Context.reportRuntimeError(Context.java:994)
+    at org.mozilla.javascript.Context.reportRuntimeError2(Context.java:964)
+    at org.mozilla.javascript.NativeJavaClass.construct(NativeJavaClass.java:223)
+    at org.mozilla.javascript.Interpreter.interpretLoop(Interpreter.java:3377)
+    at org.mozilla.javascript.Interpreter.interpret(Interpreter.java:2487)
+    at org.mozilla.javascript.InterpretedFunction.call(InterpretedFunction.java:164)
+    at org.mozilla.javascript.ContextFactory.doTopCall(ContextFactory.java:398)
+    at org.mozilla.javascript.ScriptRuntime.doTopCall(ScriptRuntime.java:3065)
+    at org.mozilla.javascript.InterpretedFunction.exec(InterpretedFunction.java:175)
+    at org.mozilla.javascript.Context.evaluateString(Context.java:1104)
+
+
+What version of the product are you using? On what operating system?
+rhino_for_android_r2.apk
+rhino1_7R2.jar
+
+
+```
+
+Original issue reported on code.google.com by `NicolasG...@gmail.com` on 15 Jan 2012 at 10:32

@@ -1,0 +1,6 @@
+09-04 17:28:17.048: E/webview(18430): java.lang.Throwable: Error: WebView.destroy() called while still attached!
+09-04 17:28:17.048: E/webview(18430):   at android.webkit.WebViewClassic.destroy(WebViewClassic.java:2152)
+09-04 17:28:17.048: E/webview(18430):   at android.webkit.WebViewClassic.finalize(WebViewClassic.java:4224)
+09-04 17:28:17.048: E/webview(18430):   at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:187)
+09-04 17:28:17.048: E/webview(18430):   at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:170)
+09-04 17:28:17.048: E/webview(18430):   at java.lang.Thread.run(Thread.java:841)

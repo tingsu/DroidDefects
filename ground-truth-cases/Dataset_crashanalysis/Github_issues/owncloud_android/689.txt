@@ -1,0 +1,9 @@
+10-29 07:54:24.445: E/AndroidRuntime(32649): android.content.ActivityNotFoundException: Unable to find explicit activity class {com.google.android.gm/com.google.android.gm.ComposeActivityGmail}; have you declared this activity in your AndroidManifest.xml?
+10-29 07:54:24.445: E/AndroidRuntime(32649):    at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1618)
+10-29 07:54:24.445: E/AndroidRuntime(32649):    at android.app.Instrumentation.execStartActivity(Instrumentation.java:1417)
+10-29 07:54:24.445: E/AndroidRuntime(32649):    at android.app.Activity.startActivityForResult(Activity.java:3370)
+10-29 07:54:24.445: E/AndroidRuntime(32649):    at android.app.Activity.startActivityForResult(Activity.java:3331)
+10-29 07:54:24.445: E/AndroidRuntime(32649):    at android.support.v4.app.FragmentActivity.startActivityForResult(FragmentActivity.java:840)
+10-29 07:54:24.445: E/AndroidRuntime(32649):    at android.app.Activity.startActivity(Activity.java:3566)
+10-29 07:54:24.445: E/AndroidRuntime(32649):    at android.app.Activity.startActivity(Activity.java:3534)
+10-29 07:54:24.445: E/AndroidRuntime(32649):    at com.owncloud.android.ui.activity.LogHistoryActivity.sendMail(LogHistoryActivity.java:161)

@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: com.utyf.pmetro
+//version: 0.0.16
+//appro_time: 149
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.utyf.pmetro/com.utyf.pmetro.settings.SettingsActivity}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at com.utyf.pmetro.settings.MapList.loadData(MapList.java:29)
+ 	at com.utyf.pmetro.settings.CatalogManagement.catalogMapUpdate(CatalogManagement.java:148)
+ 	at com.utyf.pmetro.settings.CatalogManagement.onCreateView(CatalogManagement.java:81)
+ 	at android.app.Fragment.performCreateView(Fragment.java:1699)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:885)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1057)
+ 	at android.app.BackStackRecord.run(BackStackRecord.java:682)
+ 	at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1435)
+ 	at android.app.Activity.performStart(Activity.java:5142)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2184)

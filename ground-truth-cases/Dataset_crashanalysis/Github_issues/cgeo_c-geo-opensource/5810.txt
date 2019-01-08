@@ -1,0 +1,34 @@
+23:20:12.255 Error cgeo 18728  java.lang.IllegalStateException: Fatal Exception thrown on Scheduler.Worker thread.
+23:20:12.255 Error cgeo 18728   at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:62)
+23:20:12.255 Error cgeo 18728   at rx.internal.schedulers.ExecutorScheduler$ExecutorSchedulerWorker.run(ExecutorScheduler.java:108)
+23:20:12.255 Error cgeo 18728   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+23:20:12.255 Error cgeo 18728   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+23:20:12.255 Error cgeo 18728   at java.lang.Thread.run(Thread.java:818)
+23:20:12.255 Error cgeo 18728  Caused by: java.lang.IllegalArgumentException: Invalid % sequence at 1: z%u00e4nkisches+Bergvolk&amp;sortdir=desc&amp;sort=placed
+23:20:12.256 Error cgeo 18728   at libcore.net.UriCodec.decode(UriCodec.java:169)
+23:20:12.256 Error cgeo 18728   at java.net.URLDecoder.decode(URLDecoder.java:60)
+23:20:12.256 Error cgeo 18728   at cgeo.geocaching.network.Network.decode(Network.java:479)
+23:20:12.256 Error cgeo 18728   at cgeo.geocaching.connector.gc.GCParser.parseCacheFromText(GCParser.java:479)
+23:20:12.256 Error cgeo 18728   at cgeo.geocaching.connector.gc.GCParser.parseCache(GCParser.java:372)
+23:20:12.256 Error cgeo 18728   at cgeo.geocaching.connector.gc.GCConnector.searchByGeocode(GCConnector.java:187)
+23:20:12.256 Error cgeo 18728   at cgeo.geocaching.models.Geocache.searchByGeocode(Geocache.java:1739)
+23:20:12.256 Error cgeo 18728   at cgeo.geocaching.CacheDetailActivity$2.call(CacheDetailActivity.java:331)
+23:20:12.256 Error cgeo 18728   at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)
+23:20:12.256 Error cgeo 18728   ... 4 more
+23:20:12.256 Error cgeo 18728  [network-7] UncaughtException
+23:20:12.256 Error cgeo 18728  java.lang.IllegalStateException: Fatal Exception thrown on Scheduler.Worker thread.
+23:20:12.256 Error cgeo 18728   at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:62)
+23:20:12.257 Error cgeo 18728   at rx.internal.schedulers.ExecutorScheduler$ExecutorSchedulerWorker.run(ExecutorScheduler.java:108)
+23:20:12.257 Error cgeo 18728   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+23:20:12.257 Error cgeo 18728   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+23:20:12.257 Error cgeo 18728   at java.lang.Thread.run(Thread.java:818)
+23:20:12.257 Error cgeo 18728  Caused by: java.lang.IllegalArgumentException: Invalid % sequence at 1: z%u00e4nkisches+Bergvolk&amp;sortdir=desc&amp;sort=placed
+23:20:12.257 Error cgeo 18728   at libcore.net.UriCodec.decode(UriCodec.java:169)
+23:20:12.257 Error cgeo 18728   at java.net.URLDecoder.decode(URLDecoder.java:60)
+23:20:12.257 Error cgeo 18728   at cgeo.geocaching.network.Network.decode(Network.java:479)
+23:20:12.257 Error cgeo 18728   at cgeo.geocaching.connector.gc.GCParser.parseCacheFromText(GCParser.java:479)
+23:20:12.257 Error cgeo 18728   at cgeo.geocaching.connector.gc.GCParser.parseCache(GCParser.java:372)
+23:20:12.257 Error cgeo 18728   at cgeo.geocaching.connector.gc.GCConnector.searchByGeocode(GCConnector.java:187)
+23:20:12.257 Error cgeo 18728   at cgeo.geocaching.models.Geocache.searchByGeocode(Geocache.java:1739)
+23:20:12.257 Error cgeo 18728   at cgeo.geocaching.CacheDetailActivity$2.call(CacheDetailActivity.java:331)
+23:20:12.257 Error cgeo 18728   at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)

@@ -1,0 +1,8 @@
+ android.content.res.Resources$NotFoundException: Resource ID #0x0
+    at android.content.res.Resources.getValue(Resources.java:1119)
+    at android.content.res.Resources.getDrawable(Resources.java:694)
+    at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:323)
+    at android.support.v7.internal.widget.TintManager.getDrawable(TintManager.java:177)
+    at android.support.v7.internal.widget.TintManager.getDrawable(TintManager.java:170)
+    at android.support.v7.widget.AppCompatImageHelper.setImageResource(AppCompatImageHelper.java:53)
+    at android.support.v7.widget.AppCompatImageView.setImageResource(AppCompatImageView.java:74)

@@ -1,0 +1,9 @@
+E/AndroidRuntime( 2646): java.lang.IllegalStateException: attempt to re-open an already-closed object: SQLiteQuery: SELECT * FROM bar_chart_data WHERE blogId=? AND unit=? ORDER BY date DESC
+E/AndroidRuntime( 2646):    at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:55)
+E/AndroidRuntime( 2646):    at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:58)
+E/AndroidRuntime( 2646):    at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:152)
+E/AndroidRuntime( 2646):    at android.database.sqlite.SQLiteCursor.onMove(SQLiteCursor.java:124)
+E/AndroidRuntime( 2646):    at android.database.AbstractCursor.moveToPosition(AbstractCursor.java:214)
+E/AndroidRuntime( 2646):    at android.database.AbstractCursor.moveToNext(AbstractCursor.java:245)
+E/AndroidRuntime( 2646):    at android.database.CursorWrapper.moveToNext(CursorWrapper.java:166)
+E/AndroidRuntime( 2646):    at org.wordpress.android.ui.stats.StatsBarGraphFragment$1.run(StatsBarGraphFragment.java:127)

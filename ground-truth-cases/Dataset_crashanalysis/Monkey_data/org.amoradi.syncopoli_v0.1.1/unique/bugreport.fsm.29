@@ -1,0 +1,13 @@
+//this is an auto-generated bug report
+//package name: org.amoradi.syncopoli
+//version: v0.1.1
+//appro_time: 169
+ FATAL EXCEPTION: SyncAdapterThread-1
+ java.lang.IllegalArgumentException: File log_/w/
+ 5 contains a path separator
+ 	at android.app.ContextImpl.makeFilename(ContextImpl.java:2000)
+ 	at android.app.ContextImpl.openFileOutput(ContextImpl.java:709)
+ 	at android.content.ContextWrapper.openFileOutput(ContextWrapper.java:179)
+ 	at org.amoradi.syncopoli.BackupHandler.runBackup(BackupHandler.java:145)
+ 	at org.amoradi.syncopoli.SyncAdapter.onPerformSync(SyncAdapter.java:24)
+ 	at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:254)

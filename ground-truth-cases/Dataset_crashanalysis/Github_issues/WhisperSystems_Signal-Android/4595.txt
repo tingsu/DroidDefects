@@ -1,0 +1,10 @@
+1-18 18:35:01.743 10768 10768 E AndroidRuntime: java.lang.RuntimeException: Camera is being used after Camera.release() was called
+11-18 18:35:01.743 10768 10768 E AndroidRuntime:    at android.hardware.Camera.setHasPreviewCallback(Native Method)
+11-18 18:35:01.743 10768 10768 E AndroidRuntime:    at android.hardware.Camera.-wrap0(Camera.java)
+11-18 18:35:01.743 10768 10768 E AndroidRuntime:    at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1108)
+11-18 18:35:01.743 10768 10768 E AndroidRuntime:    at android.os.Handler.dispatchMessage(Handler.java:102)
+11-18 18:35:01.743 10768 10768 E AndroidRuntime:    at android.os.Looper.loop(Looper.java:148)
+11-18 18:35:01.743 10768 10768 E AndroidRuntime:    at android.app.ActivityThread.main(ActivityThread.java:5417)
+11-18 18:35:01.743 10768 10768 E AndroidRuntime:    at java.lang.reflect.Method.invoke(Native Method)
+11-18 18:35:01.743 10768 10768 E AndroidRuntime:    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+11-18 18:35:01.743 10768 10768 E AndroidRuntime:    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

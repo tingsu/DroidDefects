@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: com.sweetiepiggy.everylocale
+//version: 1.0.5
+//appro_time: 164
+ java.lang.Error: java.lang.reflect.InvocationTargetException
+ 	at com.sweetiepiggy.everylocale.EveryLocaleActivity.update_configuration(EveryLocaleActivity.java:225)
+ 	at com.sweetiepiggy.everylocale.EveryLocaleActivity.access$500(EveryLocaleActivity.java:46)
+ 	at com.sweetiepiggy.everylocale.EveryLocaleActivity$5.onClick(EveryLocaleActivity.java:192)
+ 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.reflect.InvocationTargetException
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.sweetiepiggy.everylocale.EveryLocaleActivity.update_configuration(EveryLocaleActivity.java:221)
+ Caused by: java.lang.SecurityException: Permission Denial: updateConfiguration() from pid=21025, uid=10046 requires android.permission.CHANGE_CONFIGURATION
+ 	at android.os.Parcel.readException(Parcel.java:1431)
+ 	at android.os.Parcel.readException(Parcel.java:1385)
+ 	at android.app.ActivityManagerProxy.updateConfiguration(ActivityManagerNative.java:2977)

@@ -1,0 +1,10 @@
+22:53:27.953 Error cgeo 7476  java.lang.NullPointerException
+22:53:27.953 Error cgeo 7476    at cgeo.geocaching.Geocache.hasIdenticalWaypoint(Geocache.java:1434)
+22:53:27.953 Error cgeo 7476    at cgeo.geocaching.Geocache.parseWaypointsFromNote(Geocache.java:1391)
+22:53:27.953 Error cgeo 7476    at cgeo.geocaching.connector.gc.GCParser.parseCacheFromText(GCParser.java:722)
+22:53:27.953 Error cgeo 7476    at cgeo.geocaching.connector.gc.GCParser.parseCache(GCParser.java:334)
+22:53:27.953 Error cgeo 7476    at cgeo.geocaching.connector.gc.GCConnector.searchByGeocode(GCConnector.java:141)
+22:53:27.953 Error cgeo 7476    at cgeo.geocaching.Geocache.searchByGeocode(Geocache.java:1662)
+22:53:27.953 Error cgeo 7476    at cgeo.geocaching.Geocache.storeCache(Geocache.java:1570)
+22:53:27.953 Error cgeo 7476    at cgeo.geocaching.Geocache.refresh(Geocache.java:1554)
+22:53:27.953 Error cgeo 7476    at cgeo.geocaching.CacheDetailActivity$DetailsViewCreator$RefreshCacheThread.run(CacheDetailActivity.java:1409)

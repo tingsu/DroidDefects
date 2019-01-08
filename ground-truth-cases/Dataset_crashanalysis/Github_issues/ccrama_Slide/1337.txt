@@ -1,0 +1,42 @@
+E/AndroidRuntime( 2629): java.lang.ClassCastException: me.ccrama.redditslide.Activities.MainActivity$OverviewPagerAdapter cannot be cast to me.ccrama.redditslide.Activities.MainActivity$OverviewPagerAdapterComment
+E/AndroidRuntime( 2629):        at me.ccrama.redditslide.Adapters.SubmissionAdapter$3.onClick(SubmissionAdapter.java:180)
+E/AndroidRuntime( 2629):        at android.view.View.performClick(View.java:4780)
+E/AndroidRuntime( 2629):        at android.view.View$PerformClick.run(View.java:19866)
+E/AndroidRuntime( 2629):        at android.os.Handler.handleCallback(Handler.java:739)
+E/AndroidRuntime( 2629):        at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime( 2629):        at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime( 2629):        at android.app.ActivityThread.main(ActivityThread.java:5254)
+E/AndroidRuntime( 2629):        at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 2629):        at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime( 2629):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+E/AndroidRuntime( 2629):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+```
+
+On the second I changed my view type preferences (I believe it was from comment pane → something) and it crashed when exiting settings
+
+```
+E/AndroidRuntime( 3875): FATAL EXCEPTION: main
+E/AndroidRuntime( 3875): Process: me.ccrama.redditslide.debug, PID: 3875
+E/AndroidRuntime( 3875): java.lang.RuntimeException: Unable to resume activity {me.ccrama.redditslide.debug/me.ccrama.redditslide.Activities.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.design.widget.TabLayout.setSelectedTabIndicatorColor(int)' on a null object reference
+E/AndroidRuntime( 3875):        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2986)
+E/AndroidRuntime( 3875):        at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3017)
+E/AndroidRuntime( 3875):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1347)
+E/AndroidRuntime( 3875):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 3875):        at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime( 3875):        at android.app.ActivityThread.main(ActivityThread.java:5254)
+E/AndroidRuntime( 3875):        at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 3875):        at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime( 3875):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+E/AndroidRuntime( 3875):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+E/AndroidRuntime( 3875): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.design.widget.TabLayout.setSelectedTabIndicatorColor(int)' on a null object reference
+E/AndroidRuntime( 3875):        at me.ccrama.redditslide.Activities.MainActivity$OverviewPagerAdapter$1.onPageSelected(MainActivity.java:2179)
+E/AndroidRuntime( 3875):        at android.support.v4.view.ViewPager.dispatchOnPageSelected(ViewPager.java:1862)
+E/AndroidRuntime( 3875):        at android.support.v4.view.ViewPager.scrollToItem(ViewPager.java:625)
+E/AndroidRuntime( 3875):        at android.support.v4.view.ViewPager.setCurrentItemInternal(ViewPager.java:609)
+E/AndroidRuntime( 3875):        at android.support.v4.view.ViewPager.setCurrentItemInternal(ViewPager.java:570)
+E/AndroidRuntime( 3875):        at android.support.v4.view.ViewPager.setCurrentItem(ViewPager.java:551)
+E/AndroidRuntime( 3875):        at me.ccrama.redditslide.Activities.MainActivity$OverviewPagerAdapter.<init>(MainActivity.java:2194)
+E/AndroidRuntime( 3875):        at me.ccrama.redditslide.Activities.MainActivity.onResume(MainActivity.java:2074)
+E/AndroidRuntime( 3875):        at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1257)
+E/AndroidRuntime( 3875):        at android.app.Activity.performResume(Activity.java:6076)
+E/AndroidRuntime( 3875):        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2975)

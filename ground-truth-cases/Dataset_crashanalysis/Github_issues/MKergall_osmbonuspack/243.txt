@@ -1,0 +1,27 @@
+08-18 14:46:49.904: E/AndroidRuntime(6106): java.lang.RuntimeException: An error occurred while executing doInBackground()
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at android.os.AsyncTask$3.done(AsyncTask.java:309)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:234)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at java.lang.Thread.run(Thread.java:818)
+08-18 14:46:49.904: E/AndroidRuntime(6106): Caused by: java.lang.NoClassDefFoundError: Failed resolution of: Lcom/squareup/okhttp/Request$Builder;
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at org.osmdroid.bonuspack.utils.HttpConnection.doGet(HttpConnection.java:59)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at org.osmdroid.bonuspack.kml.KmlDocument.parseKMLUrl(KmlDocument.java:203)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at com.example.demo.osmdroid.MainActivity$putKML.doInBackground(MainActivity.java:52)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at com.example.demo.osmdroid.MainActivity$putKML.doInBackground(MainActivity.java:1)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at android.os.AsyncTask$2.call(AsyncTask.java:295)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     ... 4 more
+08-18 14:46:49.904: E/AndroidRuntime(6106): Caused by: java.lang.ClassNotFoundException: Didn't find class "com.squareup.okhttp.Request$Builder" on path: DexPathList[[zip file "/data/app/com.example.demo.osmdroid-1/base.apk"],nativeLibraryDirectories=[/data/app/com.example.demo.osmdroid-1/lib/arm, /vendor/lib, /system/lib]]
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+08-18 14:46:49.904: E/AndroidRuntime(6106):     ... 10 more
+08-18 14:46:49.904: E/AndroidRuntime(6106):     Suppressed: java.lang.ClassNotFoundException: com.squareup.okhttp.Request$Builder
+08-18 14:46:49.904: E/AndroidRuntime(6106):         at java.lang.Class.classForName(Native Method)
+08-18 14:46:49.904: E/AndroidRuntime(6106):         at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+08-18 14:46:49.904: E/AndroidRuntime(6106):         at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+08-18 14:46:49.904: E/AndroidRuntime(6106):         at java.lang.ClassLoader.loadClass(ClassLoader.java:504)

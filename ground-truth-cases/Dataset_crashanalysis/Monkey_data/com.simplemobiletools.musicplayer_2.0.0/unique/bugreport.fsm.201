@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: com.simplemobiletools.musicplayer
+//version: 2.0.0
+//appro_time: 68
+ java.lang.RuntimeException: Unable to start service com.simplemobiletools.musicplayer.services.MusicService@ad213148 with Intent { act=com.simplemobiletools.musicplayer.action.PREVIOUS cmp=com.simplemobiletools.musicplayer/.services.MusicService }: java.lang.ArrayIndexOutOfBoundsException: length=0; index=-1
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2721)
+ 	at android.app.ActivityThread.access$1900(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1353)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.ArrayIndexOutOfBoundsException: length=0; index=-1
+ 	at java.util.ArrayList.get(ArrayList.java:310)
+ 	at com.simplemobiletools.musicplayer.services.MusicService.I(Unknown Source)
+ 	at com.simplemobiletools.musicplayer.services.MusicService.b(Unknown Source)
+ 	at com.simplemobiletools.musicplayer.services.MusicService.onStartCommand(Unknown Source)
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2704)

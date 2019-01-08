@@ -1,0 +1,638 @@
+E/AndroidRuntime( 7856): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime( 7856):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime( 7856):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime( 7856):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime( 7856):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime( 7856):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 7856):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 7856):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(13025): FATAL EXCEPTION: JobConsumer-1
+E/AndroidRuntime(13025): Process: org.thoughtcrime.securesms, PID: 13025
+E/AndroidRuntime(13025): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(13025):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(13025):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(13025):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(13025):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(13025):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(13025):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(13025):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(13025):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(13025):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(13025):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(13025):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(13025):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(13025):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(13025):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(13025):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(21384): FATAL EXCEPTION: JobConsumer-2
+E/AndroidRuntime(21384): Process: org.thoughtcrime.securesms, PID: 21384
+E/AndroidRuntime(21384): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(21384):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(21384):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(21384):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(21384):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(21384):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(21384):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(21384):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(21384):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(21384):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(21384):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(21384):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(21384):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(21384):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(21384):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(21384):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(23018): FATAL EXCEPTION: JobConsumer-2
+E/AndroidRuntime(23018): Process: org.thoughtcrime.securesms, PID: 23018
+E/AndroidRuntime(23018): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(23018):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(23018):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(23018):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(23018):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(23018):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(23018):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(23018):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(23018):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(23018):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(23018):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(23018):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(23018):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(23018):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(23018):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(23018):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime( 5581): FATAL EXCEPTION: JobConsumer-1
+E/AndroidRuntime( 5581): Process: org.thoughtcrime.securesms, PID: 5581
+E/AndroidRuntime( 5581): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime( 5581):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime( 5581):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime( 5581):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime( 5581):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime( 5581):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 5581):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 5581):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime( 6010): FATAL EXCEPTION: JobConsumer-1
+E/AndroidRuntime( 6010): Process: org.thoughtcrime.securesms, PID: 6010
+E/AndroidRuntime( 6010): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime( 6010):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime( 6010):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime( 6010):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime( 6010):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime( 6010):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime( 6010):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime( 6010):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime( 6010):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime( 6010):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime( 6010):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime( 6010):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime( 6010):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime( 6010):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime( 6010):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime( 6010):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime( 6010):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime( 6010):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime( 6010):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime( 6010):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime( 6010):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 6010):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 6010):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(27209): FATAL EXCEPTION: JobConsumer-2
+E/AndroidRuntime(27209): Process: org.thoughtcrime.securesms, PID: 27209
+E/AndroidRuntime(27209): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(27209):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(27209):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(27209):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(27209):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(27209):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(27209):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(27209):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(27209):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(27209):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(27209):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(27209):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(27209):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(27209):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(27209):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime(27209):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime(27209):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime(27209):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime(27209):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime(27209):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(27209):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(27209):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(27209):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(27821): FATAL EXCEPTION: JobConsumer-0
+E/AndroidRuntime(27821): Process: org.thoughtcrime.securesms, PID: 27821
+E/AndroidRuntime(27821): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(27821):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(27821):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(27821):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(27821):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(27821):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(27821):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(27821):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(27821):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(27821):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(27821):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(27821):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(27821):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(27821):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(27821):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime(27821):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime(27821):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime(27821):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime(27821):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime(27821):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(27821):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(27821):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(27821):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(26559): FATAL EXCEPTION: JobConsumer-1
+E/AndroidRuntime(26559): Process: org.thoughtcrime.securesms, PID: 26559
+E/AndroidRuntime(26559): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(26559):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(26559):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(26559):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(26559):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(26559):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(26559):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(26559):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(26559):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(26559):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(26559):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(26559):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(26559):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(26559):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(26559):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime(26559):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime(26559):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime(26559):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime(26559):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime(26559):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(26559):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(26559):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(26559):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(27822): FATAL EXCEPTION: JobConsumer-3
+E/AndroidRuntime(27822): Process: org.thoughtcrime.securesms, PID: 27822
+E/AndroidRuntime(27822): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(27822):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(27822):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(27822):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(27822):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(27822):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(27822):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(27822):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(27822):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(27822):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(27822):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(27822):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(27822):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(27822):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(27822):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime(27822):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime(27822):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime(27822):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime(27822):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime(27822):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(27822):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(27822):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(27822):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(28967): FATAL EXCEPTION: JobConsumer-3
+E/AndroidRuntime(28967): Process: org.thoughtcrime.securesms, PID: 28967
+E/AndroidRuntime(28967): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(28967):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(28967):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(28967):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(28967):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(28967):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(28967):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(28967):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(28967):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(28967):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(28967):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(28967):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(28967):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(28967):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(28967):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime(28967):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime(28967):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime(28967):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime(28967):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime(28967):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(28967):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(28967):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(28967):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime(31779): FATAL EXCEPTION: JobConsumer-2
+E/AndroidRuntime(31779): Process: org.thoughtcrime.securesms, PID: 31779
+E/AndroidRuntime(31779): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(31779):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(31779):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(31779):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(31779):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(31779):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(31779):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(31779):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(31779):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(31779):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(31779):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(31779):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(31779):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(31779):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(31779):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime(31779):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime(31779):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime(31779):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime(31779):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime(31779):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime(31779):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(31779):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(31779):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime( 1232): FATAL EXCEPTION: JobConsumer-2
+E/AndroidRuntime( 1232): Process: org.thoughtcrime.securesms, PID: 1232
+E/AndroidRuntime( 1232): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime( 1232):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime( 1232):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime( 1232):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime( 1232):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime( 1232):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime( 1232):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime( 1232):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime( 1232):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime( 1232):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime( 1232):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime( 1232):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime( 1232):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime( 1232):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime( 1232):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime( 1232):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime( 1232):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime( 1232):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime( 1232):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime( 1232):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime( 1232):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 1232):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 1232):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime( 4778): FATAL EXCEPTION: JobConsumer-0
+E/AndroidRuntime( 4778): Process: org.thoughtcrime.securesms, PID: 4778
+E/AndroidRuntime( 4778): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime( 4778):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime( 4778):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime( 4778):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime( 4778):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime( 4778):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime( 4778):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime( 4778):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime( 4778):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime( 4778):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime( 4778):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime( 4778):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime( 4778):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime( 4778):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime( 4778):    at org.thoughtcrime.securesms.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:109)
+E/AndroidRuntime( 4778):    at org.thoughtcrime.securesms.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:84)
+E/AndroidRuntime( 4778):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.retrieve(CompatMmsConnection.java:53)
+E/AndroidRuntime( 4778):    at org.thoughtcrime.securesms.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:98)
+E/AndroidRuntime( 4778):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 4778):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 4778):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime( 2897): FATAL EXCEPTION: JobConsumer-3
+E/AndroidRuntime( 2897): Process: org.thoughtcrime.securesms, PID: 2897
+E/AndroidRuntime( 2897): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime( 2897):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime( 2897):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime( 2897):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime( 2897):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime( 2897):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime( 2897):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime( 2897):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime( 2897):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime( 2897):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime( 2897):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime( 2897):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime( 2897):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime( 2897):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime( 2897):    at org.thoughtcrime.securesms.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:109)
+E/AndroidRuntime( 2897):    at org.thoughtcrime.securesms.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:84)
+E/AndroidRuntime( 2897):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.retrieve(CompatMmsConnection.java:53)
+E/AndroidRuntime( 2897):    at org.thoughtcrime.securesms.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:98)
+E/AndroidRuntime( 2897):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 2897):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 2897):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime( 4641): FATAL EXCEPTION: JobConsumer-1
+E/AndroidRuntime( 4641): Process: org.thoughtcrime.securesms, PID: 4641
+E/AndroidRuntime( 4641): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime( 4641):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime( 4641):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime( 4641):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime( 4641):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime( 4641):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime( 4641):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime( 4641):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime( 4641):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime( 4641):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime( 4641):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime( 4641):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime( 4641):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime( 4641):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime( 4641):    at org.thoughtcrime.securesms.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:109)
+E/AndroidRuntime( 4641):    at org.thoughtcrime.securesms.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:84)
+E/AndroidRuntime( 4641):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.retrieve(CompatMmsConnection.java:53)
+E/AndroidRuntime( 4641):    at org.thoughtcrime.securesms.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:98)
+E/AndroidRuntime( 4641):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 4641):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 4641):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime( 6293): FATAL EXCEPTION: JobConsumer-2
+E/AndroidRuntime( 6293): Process: org.thoughtcrime.securesms, PID: 6293
+E/AndroidRuntime( 6293): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime( 6293):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime( 6293):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime( 6293):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime( 6293):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime( 6293):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime( 6293):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime( 6293):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime( 6293):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime( 6293):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime( 6293):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime( 6293):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime( 6293):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime( 6293):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime( 6293):    at org.thoughtcrime.securesms.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:109)
+E/AndroidRuntime( 6293):    at org.thoughtcrime.securesms.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:84)
+E/AndroidRuntime( 6293):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.retrieve(CompatMmsConnection.java:53)
+E/AndroidRuntime( 6293):    at org.thoughtcrime.securesms.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:98)
+E/AndroidRuntime( 6293):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 6293):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 6293):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+E/AndroidRuntime( 7948): FATAL EXCEPTION: JobConsumer-4
+E/AndroidRuntime( 7948): Process: org.thoughtcrime.securesms, PID: 7948
+E/AndroidRuntime( 7948): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime( 7948):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime( 7948):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime( 7948):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime( 7948):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime( 7948):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime( 7948):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime( 7948):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime( 7948):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime( 7948):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime( 7948):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime( 7948):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime( 7948):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime( 7948):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime( 7948):    at org.thoughtcrime.securesms.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:109)
+E/AndroidRuntime( 7948):    at org.thoughtcrime.securesms.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:84)
+E/AndroidRuntime( 7948):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.retrieve(CompatMmsConnection.java:53)
+E/AndroidRuntime( 7948):    at org.thoughtcrime.securesms.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:98)
+E/AndroidRuntime( 7948):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 7948):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 7948):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+F/google-breakpad( 6620): -----BEGIN BREAKPAD MICRODUMP-----
+F/google-breakpad( 6620): V WebView:46.0.2490.76
+F/google-breakpad( 6620): O A arm 04 armv7l Sony/D6616/D6616:5.0.2/23.1.C.0.399/4078982578:user/release-keys
+F/google-breakpad( 6620): S 0 9A3FFCF0 9A3FF000 00001000
+F/google-breakpad( 6620): S 9A3FF000 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+F/google-breakpad( 6620): S 9A3FF180 DEF83F9AFF34F0B658F83F9A7CF23F9A010000007CF23F9A01000000020000007CF23F9AD0F23F9A04FD3F9A000000004C8F0E960D46F0B601000000875BF0B60000000000000000000000000000000000000000000000000000000054F23F9AFFFFFFFF58F83F9A4F910E9600000000000000003BF23F9A000000002B00000000000000000000003CF23F9A1D0000000000000040910E96000000005CF23F9A00000000000000000000000044F23F9A0000000004CEF3B600000000000000000000000000000000000000000000000000000000000000000000000000FD3F9A00000000000000000000000000000000000000000020020000A00000C8F23F9AE4F83F9A4334F0B674F83F9A7CF33F9A1D0000007CF33F9A1D000000010000007CF33F9AD0F33F9A04FD3F9A000000007CFD3F9A0D46F0B61D000000875BF0B644FD3F9A000000004F910E96010000004C8F0E961D0000000000000054F33F9A0000000074F83F9A4C8F0E9600000000000000003BF33F9AFFFFFFFF1D000000
+F/google-breakpad( 6620): S 9A3FF300 76530C96000000003CF33F9A53F33F9A000000004C8F0E96000000005CF33F9A54F33F9A010000000000000044F33F9A0000000004CEF3B6000000000000000000000000000000000000000004CEF3B600000000000000000000000004FD3F9A00000000000000000000000000000000000000001CFD3F9A00000000C8F33F9A0000000000000000000000000000000000000000E0F33F9A0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004C8F0E961D0000000000000000000000000000000000000076530C96020000009FF43F9A010000009AF43F9A0600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+F/google-breakpad( 6620): S 9A3FF480 000000000000000000000000000000000000000000000000000033343138323000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+F/google-breakpad( 6620): S 9A3FF600 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000005EEF39280000000058F83F9A58F83F9AB4F83F9A2B000000F126F0B658F83F9A0800000000FD3F9AEB46F0B600000000000000000000000000000000000000000000000000000000000000000000000048B4F3B60000000000000000
+F/google-breakpad( 6620): S 9A3FF780 00000000000000000000000000000000000000000000000000000000000000000000000040910E960000000000000000000000000000000000000000000000000000000004CEF3B6000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000430ECB6C1ECEBB64DF83F9A010000004EF83F9A0200000058F83F9A0800000084F83F9A0100000074910E9607000000E4F83F9A1E000000FFFFFFFFD168EEB6000000000000E412008943566CCACB09008943566CCACB090830ECB61E0000000000000061ECEBB604CEF3B60870E7B3D168EEB6CDEEEBB60802FFFF07000000FF03000084F83F9A0100000074910E9607000000E4F83F9A1E00000054F83F9A01000000A0510C961300000050414E49433A474162692B2B3A5075725EEF392804CEF3B6E4F83F9A74910E96070000000870E7B3BFF0EBB604FD3F9A50757265207669727475616C2066756E6374696F6E2063616C6C6564
+F/google-breakpad( 6620): S 9A3FF900 21002053746174733A0A7B0A202063757272656E745F6275666665725F73697A655F6D733A202020312C0A20207072656665727265645F6275666665725F73697A655F6D733A2038300A20206A69747465725F7065616B735F666F756E643A20202020202020300A20207061636B65745F6C6F73735F726174653A20202020202020202034330A20207061636B65745F646973636172645F726174653A202020202020300A2020657870616E645F726174653A2020202020202020202020202020343735360A2020707265656D70746976655F726174653A2020202020202020202033360A2020616363656C65726174655F726174653A202020202020202020203130310A2020636C6F636B64726966745F70706D3A20202020202020202020202D3334313832380A202061646465645F7A65726F5F73616D706C65733A20202020202020300A7D007D000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+F/google-breakpad( 6620): S 9A3FFA80 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000054910E9604B5F4B654910E9654910E960000000000000000000000000000000000000000000000000000000000000000000000000000000004FC3F9A00000000F4FB3F9A70095E9F04FC3F9A14FC3F9AE088F7950000000060095E9F
+F/google-breakpad( 6620): S 9A3FFC00 000000002CFC3F9A6BFC3F9A1CFC3F9A70095E9F2CFC3F9A3CFC3F9AE088F79560095E9F60095E9F6440A49F70095E9F93FC3F9A7840A49F5CFC3F9A5CFC3F9A60095E9F9CFC3F9A60095E9F5CFC3F9A6440A49FA0FC3F9A74FC3F9A6CFC3F9A6440A49FA0FC3F9A7CFC3F9A4086F7956440A49FA4FC3F9AC8D3EBB660910E9604B5F4B628000000B4FC3F9A0C27249FC8F5E29FA4FC3F9A4000000004B5F4B604B5F4B660910E96C8FC3F9AF4FC3F9A6E74005F04B5F4B604B5F4B6CF0FF5B604B5F4B6001000000300000004B5F4B6F4FC3F9A04B5F4B600000000500000000870E7B3CBFEF4B6F4FC3F9AA100F5B6B4CE0F9687740896B4CE0F960B750896E41200008B6B089605640896000000002B0000000F64089605640896C4FAF29550000000000000002B00000000000000941200002400000065000000BCC8FAFF000000000870E7B30870E7B3907E209F0100500000002B000000941224006500BCC8FAFF000000000070E7B34070E7B30070E7B37800000094FD3F9AB4FBF295
+F/google-breakpad( 6620): S 9A3FFD80 00000000907E209F78000000907E209FB0FD3F9AF168EEB6D168EEB60870E7B3D168EEB6E548EEB6B0FD3F9A00000000B0FD3F9A0070E7B31600000000000000000000005EEF3928000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+F/google-breakpad( 6620): S 9A3FFF00 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+F/google-breakpad( 6620): C 060000406D7408966D74089600000000B1CAADDE04B5F4B64C8F0E9600000000500000000870E7B30870E7B3D168EEB67CFD3F9A50000000F0FC3F9A877408967874089630000F400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+F/google-breakpad( 6620): M B6F5F000 00000000 00002000 ABA4762CF780D59FD8C3F6B75160A3C70 app_process32
+F/google-breakpad( 6620): M 95EBF000 00000000 0023E000 ACF774CF2020F386A14F25DA57B4D95D0 libredphone-audio.so
+F/google-breakpad( 6620): M 9ECD7000 00000000 00029000 14D3CFC90E548AD4DD8223685CCCBDE70 libRSCpuRef.so
+F/google-breakpad( 6620): M 9EE88000 00000000 00027000 CE70488B6A0D916DFC0F3510B3E1C4110 libRSDriver.so
+F/google-breakpad( 6620): M 9F480000 00000000 0002B000 816C1F00A1E9A29B55706B401F2D93540 libwilhelm.so
+F/google-breakpad( 6620): M 9FFE7000 00000000 0046A000 D211D74A3AC98A5B6E073FADFF6DD6990 libsc-a3xx.so
+F/google-breakpad( 6620): M A0460000 00000000 0000C000 01B0868E2A8FA502E7875E31FB478E170 eglsubAndroid.so
+F/google-breakpad( 6620): M A143C000 00000000 00022000 A83915DAB3829FEA01167E54EF1C109F0 libcurve25519.so
+F/google-breakpad( 6620): M A14FA000 00000000 00004000 D8D9004A312C20C7AEAEE0BE3D460C970 libwebviewchromium_plat_support.so
+F/google-breakpad( 6620): M A4409000 00000000 00006000 DCCA803A6F63F54E79F80D19AAF3E90C0 libaudioeffect_jni.so
+F/google-breakpad( 6620): M A440F000 00000000 00004000 55351E88E2AC5C2579B4A30C6E9AB3C30 libsoundpool.so
+F/google-breakpad( 6620): M A4413000 00000000 0000E000 65B4EE8C28DFCF943EF3BAB5CE2CF57E0 libstagefright_amrnb_common.so
+F/google-breakpad( 6620): M A4421000 00000000 0001A000 F59665C166584B07307B57DA85DCA86F0 libvorbisidec.so
+F/google-breakpad( 6620): M A443B000 00000000 00004000 840EEE8827F765C9EEB69A82A5385D860 libstagefright_yuv.so
+F/google-breakpad( 6620): M A443F000 00000000 0001D000 38D3871D728162A41021D801994F8E060 libstagefright_omx.so
+F/google-breakpad( 6620): M A445C000 00000000 00007000 BE9998F628EA6A5C32345D001998B9DE0 libstagefright_avc_common.so
+F/google-breakpad( 6620): M A4463000 00000000 00039000 34D438FC59A243B4B79B29B3300A98C30 libopus.so
+F/google-breakpad( 6620): M A449C000 00000000 0001D000 D06D5F8615A6CCCCA0E75F37FE18A2E80 libdrmframework.so
+F/google-breakpad( 6620): M A44B9000 00000000 0014E000 E2D2608B7420E31B0048C4B879C02AE10 libstagefright.so
+F/google-breakpad( 6620): M A4607000 00000000 0001F000 BF50879D7531E9A6F42BB3BCDBAC42210 libmtpip.so
+F/google-breakpad( 6620): M A4626000 00000000 00023000 9D4656F43C7DB909C8D4AD2344B366C20 libmtp.so
+F/google-breakpad( 6620): M A4649000 00000000 0000C000 E6293CA6FD6B09D0E5CFF69CD2B526390 libjhead.so
+F/google-breakpad( 6620): M A4656000 00000000 0002C000 E4882655C992D5689F44FC27B090B1390 libexif.so
+F/google-breakpad( 6620): M A4682000 00000000 00043000 01F8BDE6E6550ED248286FF8C98D973D0 libmedia_jni.so
+F/google-breakpad( 6620): M A4900000 00000000 00005000 89B5E9B7BF6412D458C721055A152C4A0 libpowermanager.so
+F/google-breakpad( 6620): M A4D00000 00000000 00005000 C0B533C06B726E2D3DBE3A8C120DAD220 libc2dcolorconvert.so
+F/google-breakpad( 6620): M A514B000 00000000 00018000 4587D669E23AA8521340F81ABB74BC010 libjavacrypto.so
+F/google-breakpad( 6620): M A8200000 00000000 01B61000 B7D8D4F6D073346CA6727AE4D486D3030 libwebviewchromium.so
+F/google-breakpad( 6620): M AE7C3000 00000000 0013C000 245D5D59E231BF6B97521242555CFFCE0 libGLESv2_adreno.so
+F/google-breakpad( 6620): M AEACC000 00000000 00029000 C5FD3D65A9AB34414448E236330BE5090 libEGL_adreno.so
+F/google-breakpad( 6620): M AED01000 00000000 00003000 03B0255D304C04BA1CB893EF055C0D880 libstagefright_enc_common.so
+F/google-breakpad( 6620): M AEEF7000 00000000 00009000 15E68926F10C52B9E1C918455B33395D0 librs_jni.so
+F/google-breakpad( 6620): M AF002000 00000000 00004000 0E06EC5E878E13508D96D05B6934C2D70 libaudiospring.so
+F/google-breakpad( 6620): M AF3F8000 00000000 00003000 483F75025319CE1E34079CF4813767020 memtrack.msm8974.so
+F/google-breakpad( 6620): M B0024000 00000000 00003000 07E50F790CF258618C54CBF3C74A6A1E0 libwebviewchromium_loader.so
+F/google-breakpad( 6620): M B0027000 00000000 00003000 80B32B0876CF3F38D2FD0F46F035FEAE0 libjnigraphics.so
+F/google-breakpad( 6620): M B002A000 00000000 00010000 20F09D48D37883B73086957945F85E1E0 libandroid.so
+F/google-breakpad( 6620): M B0077000 00000000 00004000 21EC3F487DDCC41F2F132A74974DCEC90 libeffects.so
+F/google-breakpad( 6620): M B132B000 00000000 00037000 E37BE90755915ECCF9F08B127572C8350 libjavacore.so
+F/google-breakpad( 6620): M B3E25000 00000000 0000B000 73B1B446F221DB446E05C0EEB3CBCA2C0 libqservice.so
+F/google-breakpad( 6620): M B3E31000 00000000 00008000 89AC1501E5B2B39A71AE6362DBE7D0690 libqdutils.so
+F/google-breakpad( 6620): M B3E39000 00000000 00005000 6C9981E33BF89A04FB5C89B46454607A0 libmemalloc.so
+F/google-breakpad( 6620): M B3E3E000 00000000 00005000 6A1083E89B7707902B587DD1022631D50 gralloc.msm8974.so
+F/google-breakpad( 6620): M B3E6E000 00000000 00003000 FDE96DE370F693086317FC9BBDD61D540 libstagefright_http_support.so
+F/google-breakpad( 6620): M B3E73000 00000000 00004000 168258BB2812F9237404A3F95C34CFD70 libOpenSLES.so
+F/google-breakpad( 6620): M B4D10000 00000000 002EE000 F78D761CFB8F54FC149EDDFE62A538710 libart.so
+F/google-breakpad( 6620): M B5201000 00000000 00008000 F5D3384E9BEEEDF600C2C4D02CB7146A0 libcompiler_rt.so
+F/google-breakpad( 6620): M B5209000 00000000 00034000 1CA0A2EA879C9248798EFAE9EDD8E61A0 libGLESv1_CM_adreno.so
+F/google-breakpad( 6620): M B523D000 00000000 00027000 80AD27DD16890FC4A54B5EAB18D26F730 libgsl.so
+F/google-breakpad( 6620): M B5267000 00000000 00004000 20AD2F435A25B9DCB8FA86DF7931C9060 libadreno_utils.so
+F/google-breakpad( 6620): M B526E000 00000000 00003000 B4D861A3F3ACFD7D321C59CB7177B7ED0 libqti-perfd-client.so
+F/google-breakpad( 6620): M B52D8000 00000000 00008000 64E35A7874A291941F48EF4307E830350 libbacktrace_libc++.so
+F/google-breakpad( 6620): M B52E2000 00000000 00003000 6B57D2DEA16D8CDED82A7C66F99277F40 libcnefeatureconfig.so
+F/google-breakpad( 6620): M B52E6000 00000000 00006000 1838F853FAA199B6AE17F044E775C7F40 libvendorconn.so
+F/google-breakpad( 6620): M B530C000 00000000 00004000 62EFD3D29964E6B599D4FAE01272421C0 libusbhost.so
+F/google-breakpad( 6620): M B5310000 00000000 0003F000 10156997F05D4A32C04CED2A1655CD200 libssl.so
+F/google-breakpad( 6620): M B534F000 00000000 0005F000 ABA08B079A24928C9C550513AB93D8D90 libsqlite.so
+F/google-breakpad( 6620): M B53AF000 00000000 0000E000 5531DBDE929DBC5D9C2D2973F0ACB63E0 libsoundtrigger.so
+F/google-breakpad( 6620): M B53BD000 00000000 00012000 F53050926856F9ED174D0B9FB54900510 libpcre.so
+F/google-breakpad( 6620): M B53CF000 00000000 0000E000 0F802272A9AE76935B119190781663370 libselinux.so
+F/google-breakpad( 6620): M B53DD000 00000000 00004000 099B10F2EAA0144B6769F0BF764BE16D0 libprocessgroup.so
+F/google-breakpad( 6620): M B53E1000 00000000 00447000 F96B93EA164BBEFDAF535E908AE475720 libpdfium.so
+F/google-breakpad( 6620): M B582D000 00000000 00004000 81704E2DEDEFE2621B87AD790D86ADDC0 libnetd_client.so
+F/google-breakpad( 6620): M B5831000 00000000 00007000 77F5AF375DBE06DC02BDA4B9AB92718D0 libnativehelper.so
+F/google-breakpad( 6620): M B5838000 00000000 00004000 BDA66AB0CF84402316081D5C4A9B0D020 libnativebridge.so
+F/google-breakpad( 6620): M B583C000 00000000 0000B000 31AB276E3517F1E58DA5C2843E6D1BB10 libminikin.so
+F/google-breakpad( 6620): M B5847000 00000000 00003000 E8D81805B27BF1C2BADC1C385C9D44110 libmemtrack.so
+F/google-breakpad( 6620): M B584A000 00000000 00014000 B10DD0AEE485EC819D9BD1C8DAFF6EC20 libstagefright_foundation.so
+F/google-breakpad( 6620): M B585E000 00000000 00050000 F8171C9F0DABBD6CB420EA184A65AFE80 libsonivox.so
+F/google-breakpad( 6620): M B58B3000 00000000 0000F000 0F206C184F10DAF8B580B1CA47FA6EC80 libcommon_time_client.so
+F/google-breakpad( 6620): M B58C2000 00000000 00009000 399728AF16295B648C81DAAD46E245490 libnbaio.so
+F/google-breakpad( 6620): M B58CB000 00000000 00004000 25D6D490536C571799E1DC21E36EDB310 libaudioparameter.so
+F/google-breakpad( 6620): M B58CF000 00000000 00099000 17F2084D8C126526ED94AB7F0DD38CBF0 libmedia.so
+F/google-breakpad( 6620): M B5968000 00000000 00038000 470699880E9E52DC83B9FDE6C85379560 libinputflinger.so
+F/google-breakpad( 6620): M B59A0000 00000000 0001A000 6611704686DCB5CD3670CD95EF84DC510 libinput.so
+F/google-breakpad( 6620): M B59BA000 00000000 0000D000 C17942DF5B7EBECE9049E849149CA1120 libimg_utils.so
+F/google-breakpad( 6620): M B59C7000 00000000 00032000 8F255D73F53B095B1764C82186FE28FC0 libjpeg.so
+F/google-breakpad( 6620): M B59F9000 00000000 0020F000 9B6AD5584B23BE4FB76006CCEC0875460 libskia.so
+F/google-breakpad( 6620): M B5C0D000 00000000 0001D000 07D2B8AF4531E260B838222D570AD8AE0 libRScpp.so
+F/google-breakpad( 6620): M B5C2A000 00000000 00027000 E9D9D21A863D5B6AEDD909DDA87BD8710 libpng.so
+F/google-breakpad( 6620): M B5C52000 00000000 00059000 54828C4F4B56D81127BD1BAF9A48D64E0 libft2.so
+F/google-breakpad( 6620): M B5CAC000 00000000 0003C000 1B80861EC7D08343A68E67B9BEA2F7F40 libbcinfo.so
+F/google-breakpad( 6620): M B5CE8000 00000000 00022000 8D7ABAAD5F03A042400AD9D90D15AEA70 libbcc.so
+F/google-breakpad( 6620): M B5D2A000 00000000 0008C000 2E253312365EE962E149F522C93F4EE60 libc++.so
+F/google-breakpad( 6620): M B5DB8000 00000000 008FE000 323B829F6CA674C236F86FC5D01BD8070 libLLVM.so
+F/google-breakpad( 6620): M B66BD000 00000000 00036000 250A79F4BE864B2863FAF614DE093BBB0 libRS.so
+F/google-breakpad( 6620): M B66F3000 00000000 0004B000 84029F4836BD76F6635BACC2ACBC4D520 libhwui.so
+F/google-breakpad( 6620): M B673E000 00000000 000FF000 24D405D2C9B637FC33CF5029217299690 libicuuc.so
+F/google-breakpad( 6620): M B6841000 00000000 00006000 6AC3328D55BE7167DD1549E59E88D8420 libgabi++.so
+F/google-breakpad( 6620): M B6847000 00000000 0014A000 30D014A51C507F017588CD57CC7ABDAD0 libicui18n.so
+F/google-breakpad( 6620): M B6991000 00000000 00048000 0A4C87FA92681FC81F1A614E2DB03AB50 libharfbuzz_ng.so
+F/google-breakpad( 6620): M B69D9000 00000000 00005000 CACAA2E6A0F1D4E5E8651942B4BD7C8B0 libwpa_client.so
+F/google-breakpad( 6620): M B69DE000 00000000 00007000 7CCA8E25379F1EDD2B1A8F2BB749EF2B0 libnetutils.so
+F/google-breakpad( 6620): M B69E5000 00000000 00007000 7738AFBBA87B1B867910F172540B103B0 libhardware_legacy.so
+F/google-breakpad( 6620): M B69EE000 00000000 00017000 D1B3203E3493EE80553E5CF9C9905E320 libexpat.so
+F/google-breakpad( 6620): M B6A05000 00000000 00004000 B4425CB66E62697B1AD9BE387A5814900 libemoji.so
+F/google-breakpad( 6620): M B6A09000 00000000 000F6000 BB5839DE8392ECE773CE6E32F26C300D0 libcrypto.so
+F/google-breakpad( 6620): M B6B01000 00000000 00003000 0C360DD265129CA1197EE36C44A162570 libhardware.so
+F/google-breakpad( 6620): M B6B04000 00000000 0000C000 AB61E5F34C506C41C8ACF65F1DF7A7690 libui.so
+F/google-breakpad( 6620): M B6B10000 00000000 00003000 7C24A254F6B1768D1FF8ADFB9A8A11500 libsync.so
+F/google-breakpad( 6620): M B6B13000 00000000 0004B000 D5E1A750C69B023307F1893A3E1C55FF0 libgui.so
+F/google-breakpad( 6620): M B6B5E000 00000000 00008000 D8696BA632B3725A2EA707DF961A62E60 libcamera_metadata.so
+F/google-breakpad( 6620): M B6B66000 00000000 00038000 030B1422F961223650B09F3397063A510 libcamera_client.so
+F/google-breakpad( 6620): M B6B9E000 00000000 00006000 20E951BEE083EAAC8A0EC8C9659BC90C0 libspeexresampler.so
+F/google-breakpad( 6620): M B6BA4000 00000000 00006000 F46CF21DBA370598A1CC77F198A9E89E0 libaudioutils.so
+F/google-breakpad( 6620): M B6BAA000 00000000 00019000 6FF245A929534129A0A09E804082C1F90 libz.so
+F/google-breakpad( 6620): M B6BC3000 00000000 00005000 42DFD12F95864B621FB4BD1C3FCA54400 libcrashlevelmatrix.so
+F/google-breakpad( 6620): M B6BC8000 00000000 0002D000 3D5BC0C556360A7A0CE320AF1F359B520 libbinder.so
+F/google-breakpad( 6620): M B6BF5000 00000000 00028000 BCA8D47A17F13AC7DAF8E0FD923504C50 libandroidfw.so
+F/google-breakpad( 6620): M B6C1D000 00000000 0000B000 E2F67EE50006FD0ED1482E1463C5CCFF0 libGLESv2.so
+F/google-breakpad( 6620): M B6C28000 00000000 00007000 EFE6ADDAF48E0BCED48FF0E60558C2F60 libGLESv1_CM.so
+F/google-breakpad( 6620): M B6C2F000 00000000 00004000 C10A3FF24BC314BDB4276E3588B5CFEF0 libETC1.so
+F/google-breakpad( 6620): M B6C33000 00000000 00004000 9A82E5E5DC0FF6464E020C95D6C265430 libunwind-ptrace.so
+F/google-breakpad( 6620): M B6C37000 00000000 0000E000 FCC4CF7B44EE2AEE89CCE84DDB0A34E30 libunwind.so
+F/google-breakpad( 6620): M B6C8B000 00000000 00007000 9AD603917CEBD0A26C5300A4455555250 libgccdemangle.so
+F/google-breakpad( 6620): M B6C93000 00000000 00008000 47DF3A7BF567990791523BFDB73D1C310 libbacktrace.so
+F/google-breakpad( 6620): M B6C9C000 00000000 00016000 F1EB0A58D1513E90CCD9CE77FD7583FA0 libutils.so
+F/google-breakpad( 6620): M B6CB3000 00000000 00036000 A86B4524AFE0B8B31C00A4A9DA14FB720 libstlport.so
+F/google-breakpad( 6620): M B6CE9000 00000000 0006C000 07EF805FEA7F6E42230EF70AA41071BC0 libGLES_trace.so
+F/google-breakpad( 6620): M B6D55000 00000000 00068000 7F040B49AAA1874F96154EA0DD7C496A0 libEGL.so
+F/google-breakpad( 6620): M B6DC0000 00000000 000D9000 499ABC73365026D936ED2BCBB8DE73C40 libandroid_runtime.so
+F/google-breakpad( 6620): M B6E99000 00000000 00004000 D1AC53E65CCF0819F62D0CBCB34992B60 libNimsWrap.so
+F/google-breakpad( 6620): M B6E9D000 00000000 00003000 6942576880529816BD6C80C55563D51C0 libsigchain.so
+F/google-breakpad( 6620): M B6EA0000 00000000 00004000 6892F8F322CCCA876FC620AE4F787EFE0 libstdc++.so
+F/google-breakpad( 6620): M B6EA4000 00000000 00018000 3D2BCD0A8F5E726801091CC87EA86DCC0 libm.so
+F/google-breakpad( 6620): M B6EBD000 00000000 00007000 89CB57F8A278A0B75BFB60479E7F36F40 liblog.so
+F/google-breakpad( 6620): M B6EC5000 00000000 0000D000 FB1355461D59F4F28E36C3076F41404D0 libcutils.so
+F/google-breakpad( 6620): M B6ED3000 00000000 00069000 437FA294E1E43939FB974B28993798650 libc.so
+F/google-breakpad( 6620): M B6F46000 00000000 00004000 96651846874C13074AB249F7709D67460 stamina.so
+F/google-breakpad( 6620): M B6F4F000 00000000 0000F000 BAB63EC0EDC6D02E1BACF9774088C28C0 linker
+F/google-breakpad( 6620): -----END BREAKPAD MICRODUMP-----
+F/libc    (13601): Fatal signal 11 (SIGSEGV), code 1, fault addr 0xdeadcab1 in tid 4836 (InitiatingCallM)
+E/AndroidRuntime(20787): FATAL EXCEPTION: JobConsumer-4
+E/AndroidRuntime(20787): Process: org.thoughtcrime.securesms, PID: 20787
+E/AndroidRuntime(20787): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime(20787):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime(20787):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime(20787):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime(20787):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime(20787):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime(20787):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime(20787):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime(20787):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime(20787):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime(20787):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime(20787):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime(20787):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime(20787):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime(20787):    at org.thoughtcrime.securesms.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:109)
+E/AndroidRuntime(20787):    at org.thoughtcrime.securesms.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:84)
+E/AndroidRuntime(20787):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.retrieve(CompatMmsConnection.java:53)
+E/AndroidRuntime(20787):    at org.thoughtcrime.securesms.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:98)
+E/AndroidRuntime(20787):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(20787):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(20787):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+--------- beginning of system
+W/ResourcesManager( 2515): Asset path '/system/framework/com.google.android.maps.jar' does not exist or contains no resources.
+W/ResourcesManager( 2515): Asset path '/system/framework/com.sonymobile.settings.illumination.jar' does not exist or contains no resources.
+W/ResourcesManager( 2515): Asset path '/system/framework/com.google.android.media.effects.jar' does not exist or contains no resources.
+E/AndroidRuntime( 2515): FATAL EXCEPTION: JobConsumer-1
+E/AndroidRuntime( 2515): Process: org.thoughtcrime.securesms, PID: 2515
+E/AndroidRuntime( 2515): java.lang.NullPointerException: Attempt to invoke interface method 'org.apache.http.util.CharArrayBuffer org.apache.http.message.LineFormatter.formatRequestLine(org.apache.http.util.CharArrayBuffer, org.apache.http.RequestLine)' on a null object reference
+E/AndroidRuntime( 2515):    at org.apache.http.impl.io.DefaultHttpRequestWriter.writeHeadLine(DefaultHttpRequestWriter.java:66)
+E/AndroidRuntime( 2515):    at org.apache.http.impl.io.AbstractMessageWriterHC4.write(AbstractMessageWriterHC4.java:109)
+E/AndroidRuntime( 2515):    at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestHeader(DefaultBHttpClientConnection.java:141)
+E/AndroidRuntime( 2515):    at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:201)
+E/AndroidRuntime( 2515):    at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:119)
+E/AndroidRuntime( 2515):    at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:260)
+E/AndroidRuntime( 2515):    at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+E/AndroidRuntime( 2515):    at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+E/AndroidRuntime( 2515):    at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+E/AndroidRuntime( 2515):    at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+E/AndroidRuntime( 2515):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+E/AndroidRuntime( 2515):    at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:106)
+E/AndroidRuntime( 2515):    at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:185)
+E/AndroidRuntime( 2515):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+E/AndroidRuntime( 2515):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+E/AndroidRuntime( 2515):    at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:93)
+E/AndroidRuntime( 2515):    at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:34)
+E/AndroidRuntime( 2515):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:86)
+E/AndroidRuntime( 2515):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+E/AndroidRuntime( 2515):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime( 2515):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime( 2515):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

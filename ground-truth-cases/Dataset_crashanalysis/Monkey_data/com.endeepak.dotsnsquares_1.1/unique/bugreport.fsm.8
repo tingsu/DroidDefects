@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: com.endeepak.dotsnsquares
+//version: 1.1
+//appro_time: 123
+ java.lang.IllegalStateException: Fragment SettingsFragment{ad283050} not attached to Activity
+ 	at android.app.Fragment.getResources(Fragment.java:766)
+ 	at com.endeepak.dotsnsquares.SettingsFragment.setTitle(SettingsFragment.java:80)
+ 	at com.endeepak.dotsnsquares.SettingsFragment.onSharedPreferenceChanged(SettingsFragment.java:68)
+ 	at android.app.SharedPreferencesImpl$EditorImpl.notifyListeners(SharedPreferencesImpl.java:475)
+ 	at android.app.SharedPreferencesImpl$EditorImpl.commit(SharedPreferencesImpl.java:461)
+ 	at com.endeepak.dotsnsquares.domain.GameOptions.saveToPreferences(GameOptions.java:93)
+ 	at com.endeepak.dotsnsquares.domain.GameOptions.initPreferences(GameOptions.java:112)
+ 	at com.endeepak.dotsnsquares.domain.GameOptions.resetPreferences(GameOptions.java:117)
+ 	at com.endeepak.dotsnsquares.SettingsFragment.resetSettings(SettingsFragment.java:43)
+ 	at com.endeepak.dotsnsquares.SettingsFragment.access$000(SettingsFragment.java:15)
+ 	at com.endeepak.dotsnsquares.SettingsFragment$1$1.onClick(SettingsFragment.java:34)
+ 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

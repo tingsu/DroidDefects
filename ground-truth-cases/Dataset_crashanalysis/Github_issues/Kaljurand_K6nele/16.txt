@@ -1,0 +1,9 @@
+E/AndroidRuntime( 5655): java.lang.NullPointerException
+E/AndroidRuntime( 5655):    at org.apache.harmony.luni.internal.net.www.protocol.http.HttpURLConnectionImpl.readln(HttpURLConnectionImpl.java:1293)
+E/AndroidRuntime( 5655):    at org.apache.harmony.luni.internal.net.www.protocol.http.HttpURLConnectionImpl.readServerResponse(HttpURLConnectionImpl.java:1351)
+E/AndroidRuntime( 5655):    at org.apache.harmony.luni.internal.net.www.protocol.http.HttpURLConnectionImpl.doRequest(HttpURLConnectionImpl.java:1644)
+E/AndroidRuntime( 5655):    at org.apache.harmony.luni.internal.net.www.protocol.http.HttpURLConnectionImpl.getInputStream(HttpURLConnectionImpl.java:1153)
+E/AndroidRuntime( 5655):    at ee.ioc.phon.netspeechapi.recsession.ChunkedWebRecSession.sendChunk(Unknown Source)
+E/AndroidRuntime( 5655):    at ee.ioc.phon.android.recognizerintent.RecognizerIntentActivity.sendChunk(RecognizerIntentActivity.java:706)
+E/AndroidRuntime( 5655):    at ee.ioc.phon.android.recognizerintent.RecognizerIntentActivity.access$4(RecognizerIntentActivity.java:703)
+E/AndroidRuntime( 5655):    at ee.ioc.phon.android.recognizerintent.RecognizerIntentActivity$6.run(RecognizerIntentActivity.java:560)

@@ -1,0 +1,14 @@
+03-06 16:50:45.564 20551-25186/com.nextcloud.client E/GetRemoteUserInfoOperation: Exception while getting OC user information
+   org.json.JSONException: Value [] at data of type org.json.JSONArray cannot be converted to JSONObject
+      at org.json.JSON.typeMismatch(JSON.java:100)
+      at org.json.JSONObject.getJSONObject(JSONObject.java:613)
+      at com.owncloud.android.lib.resources.users.GetRemoteUserInfoOperation.run(GetRemoteUserInfoOperation.java:137)
+      at com.owncloud.android.lib.common.operations.RemoteOperation.execute(RemoteOperation.java:136)
+      at com.owncloud.android.authentication.AuthenticatorAsyncTask.doInBackground(AuthenticatorAsyncTask.java:84)
+      at com.owncloud.android.authentication.AuthenticatorAsyncTask.doInBackground(AuthenticatorAsyncTask.java:41)
+      at android.os.AsyncTask$2.call(AsyncTask.java:305)
+      at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+      at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243)
+      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+      at java.lang.Thread.run(Thread.java:761)

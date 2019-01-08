@@ -1,0 +1,7 @@
+E/net.osmand(12822): org.json.JSONException: Value The of type java.lang.String cannot be converted to JSONObject
+E/net.osmand(12822):    at org.json.JSON.typeMismatch(JSON.java:111)
+E/net.osmand(12822):    at org.json.JSONObject.<init>(JSONObject.java:160)
+E/net.osmand(12822):    at org.json.JSONObject.<init>(JSONObject.java:173)
+E/net.osmand(12822):    at net.osmand.plus.routing.RouteProvider.findOSRMRoute(RouteProvider.java:1200)
+E/net.osmand(12822):    at net.osmand.plus.routing.RouteProvider.calculateRouteImpl(RouteProvider.java:318)
+E/net.osmand(12822):    at net.osmand.plus.routing.RoutingHelper$RouteRecalculationThread.run(RoutingHelper.java:833)

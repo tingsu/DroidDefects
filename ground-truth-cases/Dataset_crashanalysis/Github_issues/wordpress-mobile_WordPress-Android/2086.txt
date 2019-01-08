@@ -1,0 +1,12 @@
+java.lang.NullPointerException
+       at org.wordpress.android.ui.comments.CommentsActivity$2.onActionResult(CommentsActivity.java:273)
+       at org.wordpress.android.ui.comments.CommentActions$11$1.run(CommentActions.java:397)
+       at android.os.Handler.handleCallback(Handler.java:730)
+       at android.os.Handler.dispatchMessage(Handler.java:92)
+       at android.os.Looper.loop(Looper.java:137)
+       at android.app.ActivityThread.main(ActivityThread.java:5166)
+       at java.lang.reflect.Method.invokeNative(Method.java)
+       at java.lang.reflect.Method.invoke(Method.java:525)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:745)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:561)
+       at dalvik.system.NativeStart.main(NativeStart.java)

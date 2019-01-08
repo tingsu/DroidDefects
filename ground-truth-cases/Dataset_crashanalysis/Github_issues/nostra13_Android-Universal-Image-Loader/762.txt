@@ -1,0 +1,10 @@
+09-23 20:27:23.284: E/AndroidRuntime(1148): java.lang.OutOfMemoryError
+09-23 20:27:23.284: E/AndroidRuntime(1148):     at android.graphics.BitmapFactory.nativeDecodeAsset(Native Method)
+09-23 20:27:23.284: E/AndroidRuntime(1148):     at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:677)
+09-23 20:27:23.284: E/AndroidRuntime(1148):     at android.graphics.BitmapFactory.decodeResourceStream(BitmapFactory.java:507)
+09-23 20:27:23.284: E/AndroidRuntime(1148):     at android.graphics.drawable.Drawable.createFromResourceStream(Drawable.java:872)
+09-23 20:27:23.284: E/AndroidRuntime(1148):     at android.content.res.Resources.loadDrawable(Resources.java:3024)
+09-23 20:27:23.284: E/AndroidRuntime(1148):     at android.content.res.Resources.getDrawable(Resources.java:1586)
+09-23 20:27:23.284: E/AndroidRuntime(1148):     at com.nostra13.universalimageloader.core.DisplayImageOptions.getImageOnLoading(DisplayImageOptions.java:134)
+09-23 20:27:23.284: E/AndroidRuntime(1148):     at com.nostra13.universalimageloader.core.ImageLoader.displayImage(ImageLoader.java:257)
+09-23 20:27:23.284: E/AndroidRuntime(1148):     at com.nostra13.universalimageloader.core.ImageLoader.displayImage(ImageLoader.java:303)

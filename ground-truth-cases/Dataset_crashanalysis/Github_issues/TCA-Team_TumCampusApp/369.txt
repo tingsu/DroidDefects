@@ -1,0 +1,23 @@
+           org.json.JSONException: Value <!DOCTYPE of type java.lang.String cannot be converted to JSONArray
+               at org.json.JSON.typeMismatch(JSON.java:111)
+               at org.json.JSONArray.<init>(JSONArray.java:96)
+               at org.json.JSONArray.<init>(JSONArray.java:108)
+               at de.tum.in.tumcampusapp.auxiliary.NetUtils.downloadJsonArray(NetUtils.java:326)
+               at de.tum.in.tumcampusapp.tumonline.TUMRoomFinderRequest.fetchRooms(TUMRoomFinderRequest.java:106)
+               at de.tum.in.tumcampusapp.models.managers.LocationManager.roomLocationStringToGeo(LocationManager.java:325)
+               at de.tum.in.tumcampusapp.models.managers.CalendarManager$QueryLocationsService.loadGeo(CalendarManager.java:295)
+               at de.tum.in.tumcampusapp.models.managers.CacheManager.syncCalendar(CacheManager.java:169)
+               at de.tum.in.tumcampusapp.services.DownloadService.download(DownloadService.java:100)
+               at de.tum.in.tumcampusapp.services.DownloadService.access$000(DownloadService.java:32)
+               at de.tum.in.tumcampusapp.services.DownloadService$1.run(DownloadService.java:170)
+               at java.lang.Thread.run(Thread.java:818)
+06-08 14:34:12.176 3872-4601/de.tum.in.tumcampus E/AndroidRuntime: FATAL EXCEPTION: Thread-144
+                 Process: de.tum.in.tumcampus, PID: 3872
+                 java.lang.NullPointerException: Attempt to invoke virtual method 'int java.util.ArrayList.size()' on a null object reference
+                     at de.tum.in.tumcampusapp.models.managers.LocationManager.roomLocationStringToGeo(LocationManager.java:326)
+                     at de.tum.in.tumcampusapp.models.managers.CalendarManager$QueryLocationsService.loadGeo(CalendarManager.java:295)
+                     at de.tum.in.tumcampusapp.models.managers.CacheManager.syncCalendar(CacheManager.java:169)
+                     at de.tum.in.tumcampusapp.services.DownloadService.download(DownloadService.java:100)
+                     at de.tum.in.tumcampusapp.services.DownloadService.access$000(DownloadService.java:32)
+                     at de.tum.in.tumcampusapp.services.DownloadService$1.run(DownloadService.java:170)
+                     at java.lang.Thread.run(Thread.java:818)

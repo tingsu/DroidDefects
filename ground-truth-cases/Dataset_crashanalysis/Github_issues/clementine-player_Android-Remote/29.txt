@@ -1,0 +1,13 @@
+11-27 18:38:25.875 E/AndroidRuntime(31257): java.lang.NoClassDefFoundError: javax.jmdns.JmDNS
+11-27 18:38:25.875 E/AndroidRuntime(31257):     at de.qspool.clementineremote.backend.mdns.ClementineMDnsDiscovery.jmDnsListener(ClementineMDnsDiscovery.java:120)
+11-27 18:38:25.875 E/AndroidRuntime(31257):     at de.qspool.clementineremote.backend.mdns.ClementineMDnsDiscovery.access$100(ClementineMDnsDiscovery.java:40)
+11-27 18:38:25.875 E/AndroidRuntime(31257):     at de.qspool.clementineremote.backend.mdns.ClementineMDnsDiscovery$1.run(ClementineMDnsDiscovery.java:69)
+11-27 18:38:25.875 E/AndroidRuntime(31257):     at java.lang.Thread.run(Thread.java:856)
+11-27 18:38:27.325 E/WifiService(  397): Multicaster binderDied
+11-27 18:39:25.885 E/dalvikvm(31295): Could not find class 'javax.jmdns.ServiceInfo', referenced from method de.qspool.clementineremote.backend.mdns.ClementineMDnsDiscovery.getHosts
+11-27 18:39:25.945 E/AndroidRuntime(31295): FATAL EXCEPTION: Thread-3355
+11-27 18:39:25.945 E/AndroidRuntime(31295): java.lang.NoClassDefFoundError: javax.jmdns.JmDNS
+11-27 18:39:25.945 E/AndroidRuntime(31295):     at de.qspool.clementineremote.backend.mdns.ClementineMDnsDiscovery.jmDnsListener(ClementineMDnsDiscovery.java:120)
+11-27 18:39:25.945 E/AndroidRuntime(31295):     at de.qspool.clementineremote.backend.mdns.ClementineMDnsDiscovery.access$100(ClementineMDnsDiscovery.java:40)
+11-27 18:39:25.945 E/AndroidRuntime(31295):     at de.qspool.clementineremote.backend.mdns.ClementineMDnsDiscovery$1.run(ClementineMDnsDiscovery.java:69)
+11-27 18:39:25.945 E/AndroidRuntime(31295):     at java.lang.Thread.run(Thread.java:856)

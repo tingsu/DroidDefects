@@ -1,0 +1,8 @@
+   java.lang.OutOfMemoryError
+    at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:587)
+    at com.nostra13.universalimageloader.core.ImageDecoder.decode(ImageDecoder.java:83)
+    at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeWithOOMHandling(LoadAndDisplayImageTask.java:187)
+    at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:170)
+    at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:146)
+    at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:72)

@@ -1,0 +1,12 @@
+java.lang.IllegalStateException: Fragment RecurringTransactionsListFragment{408369b8} not attached to Activity
+    at android.support.v4.app.Fragment.getResources(Fragment.java:551)
+    at org.gnucash.android.ui.transactions.RecurringTransactionsListFragment$TransactionsCursorAdapter$2.run(RecurringTransactionsListFragment.java:353)
+    at android.os.Handler.handleCallback(Handler.java:587)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:130)
+    at android.app.ActivityThread.main(ActivityThread.java:3683)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:507)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:906)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:664)
+    at dalvik.system.NativeStart.main(Native Method)

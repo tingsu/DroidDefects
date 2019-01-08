@@ -1,0 +1,45 @@
+02-19 00:46:52.521 D/Logger  ( 8981): Adding StateMachine with LogLevel DEBUG
+02-19 00:46:52.521 D/[StateMachine.completeConstruction](8981): completed                                                                               at (StateMachine.java:951)
+02-19 00:46:52.531 D/com.github.androidutils.logger.FileLogWriter( 8981): Created a new file
+02-19 00:46:52.541 D/[StateMachine.completeConstruction](8981): completed                                                                               at (StateMachine.java:951)
+02-19 00:46:52.551 D/[StateMachine.completeConstruction](8981): completed                                                                               at (StateMachine.java:951)
+02-19 00:46:52.561 D/[Alarms.<init>](8981): Alarms:                                                                                        at (Alarms.java:72)
+02-19 00:46:52.571 D/[Alarms.<init>](8981): AlarmCore 1 in SetState on Feb 19, 2013 5:15:00 AM                                             at (Alarms.java:74)
+02-19 00:46:52.581 D/[Alarms.<init>](8981): AlarmCore 2 in EnableTransition on Feb 16, 2013 10:00:00 AM                                    at (Alarms.java:74)
+02-19 00:46:52.581 D/[Alarms.<init>](8981): AlarmCore 3 in DisabledState on Feb 13, 2013 9:05:01 PM                                        at (Alarms.java:74)
+02-19 00:46:52.591 D/[AlarmCore.onStateChanged](8981): saving state DisabledState                                                                 at (AlarmCore.java:250)
+02-19 00:46:52.621 D/[AlarmCore.onStateChanged](8981): saving state SetState                                                                      at (AlarmCore.java:250)
+02-19 00:46:52.631 D/[AlarmsScheduler.setUpRTCAlarm](8981): Set alarm 1 on Feb 19, 2013 5:15:00 AM                                               at (AlarmsScheduler.java:168)
+02-19 00:46:52.721 W/Logger  ( 8981): no LogLevel was found for AlarmsService
+02-19 00:46:52.721 D/Logger  ( 8981): Adding AlarmsService with LogLevel DEBUG
+02-19 00:46:52.721 D/[AlarmsService.onStartCommand](8981): Refreshing alarms because of android.intent.action.TIME_SET                             at (AlarmsService.java:60)
+02-19 00:46:52.811 D/[StateMachine.processMsg](8981): REFRESH in SetState                                                                     at (StateMachine.java:963)
+02-19 00:46:52.841 D/[StateMachine.processMsg](8981): REFRESH in EnabledState                                                                 at (StateMachine.java:980)
+02-19 00:46:52.871 E/MP-Decision( 1157): Error setting a sleep mode for secondary cores - -19
+02-19 00:46:52.881 D/[StateMachine.transitionTo](8981): from SetState to EnableTransition                                                      at (StateMachine.java:1185)
+02-19 00:46:52.891 D/[AlarmsScheduler.removeAlarm](8981): removing a ScheduledAlarm 1 type = NORMAL                                             at (AlarmsScheduler.java:83)
+02-19 00:46:52.901 D/[AlarmCore.broadcastAlarmState](8981): 1 - com.better.alarm.ALARM_DISMISS                                                         at (AlarmCore.java:557)
+02-19 00:46:52.921 D/[StateMachine.transitionTo](8981): from EnableTransition to SetState                                                      at (StateMachine.java:1185)
+02-19 00:46:52.931 D/[AlarmCore.onStateChanged](8981): saving state SetState                                                                      at (AlarmCore.java:250)
+02-19 00:46:52.961 D/[AlarmCore.broadcastAlarmState](8981): 1 - com.better.alarm.model.Intents.ACTION_ALARM_SET                                        at (AlarmCore.java:557)
+02-19 00:46:52.981 D/[AlarmsScheduler.setUpRTCAlarm](8981): Set alarm 1 on Feb 19, 2013 5:15:00 AM                                               at (AlarmsScheduler.java:168)
+02-19 00:46:52.991 D/[StateMachine.processMsg](8981): REFRESH in EnableTransition                                                             at (StateMachine.java:963)
+02-19 00:46:53.001 W/Logger  ( 8981): no LogLevel was found for ComplexTransition
+02-19 00:46:53.001 D/Logger  ( 8981): Adding ComplexTransition with LogLevel DEBUG
+02-19 00:46:53.001 E/[ComplexTransition.processMessage](8981): performComplexTransition() must transit immediately                                 at (ComplexTransition.java:27)
+02-19 00:46:53.001 W/dalvikvm( 8981): threadid=1: thread exiting with uncaught exception (group=0x4111c390)
+02-19 00:46:53.001 W/Logger  ( 8981): no LogLevel was found for LoggingExceptionHandler
+02-19 00:46:53.001 D/Logger  ( 8981): Adding LoggingExceptionHandler with LogLevel DEBUG
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981): Unhandled exception in Thread[main,5,main]                                    at (LoggingExceptionHandler.java:23)
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981): java.lang.NullPointerException
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981):         at com.github.androidutils.statemachine.ComplexTransition.processMessage(ComplexTransition.java:28)
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981):         at com.github.androidutils.statemachine.StateMachine$SmHandler.processMsg(StateMachine.java:968)
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981):         at com.github.androidutils.statemachine.StateMachine$SmHandler.handleMessage(StateMachine.java:821)
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981):         at android.os.Handler.dispatchMessage(Handler.java:99)
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981):         at android.os.Looper.loop(Looper.java:137)
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981):         at android.app.ActivityThread.main(ActivityThread.java:4573)
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981):         at java.lang.reflect.Method.invokeNative(Native Method)
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981):         at java.lang.reflect.Method.invoke(Method.java:511)
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981):         at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:788)
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981):         at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:555)
+02-19 00:46:53.011 E/[LoggingExceptionHandler.uncaughtException](8981):         at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,17 @@
+java.lang.RuntimeException: Unable to resume activity {de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.CastplayerActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'java.lang.String de.danoeh.antennapod.core.util.playback.Playable.getEpisodeTitle()' on a null object reference
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3103)
+    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3134)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1388)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5417)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'java.lang.String de.danoeh.antennapod.core.util.playback.Playable.getEpisodeTitle()' on a null object reference
+    at de.danoeh.antennapod.activity.MediaplayerInfoActivity$MediaplayerInfoPagerAdapter.onMediaChanged(MediaplayerInfoActivity.java:565)
+    at de.danoeh.antennapod.activity.MediaplayerInfoActivity.onResume(MediaplayerInfoActivity.java:168)
+    at de.danoeh.antennapod.activity.CastplayerActivity.onResume(CastplayerActivity.java:69)
+    at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1258)
+    at android.app.Activity.performResume(Activity.java:6327)
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3092)

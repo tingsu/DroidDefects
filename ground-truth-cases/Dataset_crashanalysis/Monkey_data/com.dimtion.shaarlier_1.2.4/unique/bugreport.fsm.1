@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: com.dimtion.shaarlier
+//version: 1.2.4
+//appro_time: 48
+ FATAL EXCEPTION: AsyncTask #3
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalArgumentException: Malformed URL: http://http:u///z/?do=login
+ 	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:64)
+ 	at org.jsoup.helper.HttpConnection.connect(HttpConnection.java:30)
+ 	at org.jsoup.Jsoup.connect(Jsoup.java:73)
+ 	at com.dimtion.shaarlier.NetworkManager.retrieveLoginToken(NetworkManager.java:117)
+ 	at com.dimtion.shaarlier.AddAccountActivity$CheckShaarli.doInBackground(AddAccountActivity.java:218)
+ 	at com.dimtion.shaarlier.AddAccountActivity$CheckShaarli.doInBackground(AddAccountActivity.java:200)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	... 4 more
+ Caused by: java.net.MalformedURLException: java.lang.NumberFormatException: Invalid int: "u"
+ 	at java.net.URL.<init>(URL.java:192)
+ 	at java.net.URL.<init>(URL.java:127)
+ 	at org.jsoup.helper.HttpConnection.url(HttpConnection.java:62)
+ 	... 11 more

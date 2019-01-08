@@ -1,0 +1,12 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'android.support.v4.app.Fragment me.ccrama.redditslide.Activities.SubredditOverview$OverviewPagerAdapter.getCurrentFragment()' on a null object reference
+    at me.ccrama.redditslide.Activities.SubredditOverview$9.onClick(SubredditOverview.java:290)
+    at android.view.View.performClick(View.java:5197)
+    at android.view.View$PerformClick.run(View.java:20926)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:145)
+    at android.app.ActivityThread.main(ActivityThread.java:5942)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1399)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1194)

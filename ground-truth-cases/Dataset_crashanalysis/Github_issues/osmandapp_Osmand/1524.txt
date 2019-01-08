@@ -1,0 +1,220 @@
+java.lang.OutOfMemoryError
+    at gnu.trove.list.array.TIntArrayList.ensureCapacity(TIntArrayList.java:143)
+    at gnu.trove.list.array.TIntArrayList.add(TIntArrayList.java:181)
+    at net.osmand.binary.BinaryMapIndexReader.readMapDataObject(BinaryMapIndexReader.java:1108)
+    at net.osmand.binary.BinaryMapIndexReader.readMapDataBlocks(BinaryMapIndexReader.java:966)
+    at net.osmand.binary.BinaryMapIndexReader.searchMapIndex(BinaryMapIndexReader.java:852)
+    at net.osmand.map.OsmandRegions.iterateOverAllObjects(OsmandRegions.java:420)
+    at net.osmand.map.OsmandRegions.initLocaleNames(OsmandRegions.java:326)
+    at net.osmand.map.OsmandRegions.prepareFile(OsmandRegions.java:60)
+    at net.osmand.plus.AppInitializer.indexRegionsBoundaries(AppInitializer.java:210)
+    at net.osmand.plus.AppInitializer.startApplicationBackground(AppInitializer.java:361)
+    at net.osmand.plus.AppInitializer.access$200(AppInitializer.java:55)
+    at net.osmand.plus.AppInitializer$7.run(AppInitializer.java:556)
+    at java.lang.Thread.run(Thread.java:1019)
+Version  OsmAnd 2.1.1
+04.08.2015 9:57:09
+Apk Version : 2.1.1 212
+Exception occured in thread Thread[Initializing app,5,main] : 
+java.lang.OutOfMemoryError
+    at gnu.trove.list.array.TIntArrayList.ensureCapacity(TIntArrayList.java:143)
+    at gnu.trove.list.array.TIntArrayList.add(TIntArrayList.java:181)
+    at net.osmand.binary.BinaryMapIndexReader.readMapDataObject(BinaryMapIndexReader.java:1108)
+    at net.osmand.binary.BinaryMapIndexReader.readMapDataBlocks(BinaryMapIndexReader.java:966)
+    at net.osmand.binary.BinaryMapIndexReader.searchMapIndex(BinaryMapIndexReader.java:852)
+    at net.osmand.map.OsmandRegions.iterateOverAllObjects(OsmandRegions.java:420)
+    at net.osmand.map.OsmandRegions.initLocaleNames(OsmandRegions.java:326)
+    at net.osmand.map.OsmandRegions.prepareFile(OsmandRegions.java:60)
+    at net.osmand.plus.AppInitializer.indexRegionsBoundaries(AppInitializer.java:210)
+    at net.osmand.plus.AppInitializer.startApplicationBackground(AppInitializer.java:361)
+    at net.osmand.plus.AppInitializer.access$200(AppInitializer.java:55)
+    at net.osmand.plus.AppInitializer$7.run(AppInitializer.java:556)
+    at java.lang.Thread.run(Thread.java:1019)
+Version  OsmAnd 2.1.1
+04.08.2015 9:57:11
+Apk Version : 2.1.1 212
+Exception occured in thread Thread[main,5,main] : 
+android.view.InflateException: Binary XML file line #20: Error inflating class <unknown>
+    at android.view.LayoutInflater.createView(LayoutInflater.java:518)
+    at com.android.internal.policy.impl.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:56)
+    at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:568)
+    at android.view.LayoutInflater.rInflate(LayoutInflater.java:623)
+    at android.view.LayoutInflater.inflate(LayoutInflater.java:408)
+    at android.view.LayoutInflater.inflate(LayoutInflater.java:320)
+    at net.osmand.plus.download.LocalIndexesFragment$LocalIndexesAdapter.getChildView(LocalIndexesFragment.java:928)
+    at android.widget.ExpandableListConnector.getView(ExpandableListConnector.java:450)
+    at android.widget.AbsListView.obtainView(AbsListView.java:1519)
+    at android.widget.ListView.makeAndAddView(ListView.java:1749)
+    at android.widget.ListView.fillDown(ListView.java:674)
+    at android.widget.ListView.fillFromTop(ListView.java:731)
+    at android.widget.ListView.layoutChildren(ListView.java:1588)
+    at android.widget.AbsListView.onLayout(AbsListView.java:1349)
+    at android.view.View.layout(View.java:7320)
+    at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1263)
+    at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1137)
+    at android.widget.LinearLayout.onLayout(LinearLayout.java:1051)
+    at android.view.View.layout(View.java:7320)
+    at android.widget.FrameLayout.onLayout(FrameLayout.java:342)
+    at android.view.View.layout(View.java:7320)
+    at android.support.v4.view.ViewPager.onLayout(ViewPager.java:1626)
+    at android.view.View.layout(View.java:7320)
+    at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1263)
+    at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1137)
+    at android.widget.LinearLayout.onLayout(LinearLayout.java:1051)
+    at android.view.View.layout(View.java:7320)
+    at android.widget.FrameLayout.onLayout(FrameLayout.java:342)
+    at android.view.View.layout(View.java:7320)
+    at android.support.v7.internal.widget.ActionBarOverlayLayout.onLayout(ActionBarOverlayLayout.java:493)
+    at android.view.View.layout(View.java:7320)
+    at android.widget.FrameLayout.onLayout(FrameLayout.java:342)
+    at android.view.View.layout(View.java:7320)
+    at android.widget.FrameLayout.onLayout(FrameLayout.java:342)
+    at android.view.View.layout(View.java:7320)
+    at android.view.ViewRoot.performTraversals(ViewRoot.java:1164)
+    at android.view.ViewRoot.handleMessage(ViewRoot.java:1884)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:138)
+    at android.app.ActivityThread.main(ActivityThread.java:3701)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:507)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:878)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:636)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.reflect.InvocationTargetException
+    at java.lang.reflect.Constructor.constructNative(Native Method)
+    at java.lang.reflect.Constructor.newInstance(Constructor.java:415)
+    at android.view.LayoutInflater.createView(LayoutInflater.java:505)
+    ... 44 more
+Caused by: java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+    at android.graphics.BitmapFactory.nativeDecodeAsset(Native Method)
+    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:483)
+    at android.graphics.BitmapFactory.decodeResourceStream(BitmapFactory.java:359)
+    at android.graphics.drawable.Drawable.createFromResourceStream(Drawable.java:715)
+    at android.content.res.Resources.loadDrawable(Resources.java:1721)
+    at android.content.res.TypedArray.getDrawable(TypedArray.java:601)
+    at android.widget.ImageView.<init>(ImageView.java:122)
+    at android.widget.ImageView.<init>(ImageView.java:112)
+    ... 47 more
+Version  OsmAnd 2.1.1
+04.08.2015 9:57:11
+Apk Version : 2.1.1 212
+Exception occured in thread Thread[main,5,main] : 
+android.view.InflateException: Binary XML file line #20: Error inflating class <unknown>
+    at android.view.LayoutInflater.createView(LayoutInflater.java:518)
+    at com.android.internal.policy.impl.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:56)
+    at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:568)
+    at android.view.LayoutInflater.rInflate(LayoutInflater.java:623)
+    at android.view.LayoutInflater.inflate(LayoutInflater.java:408)
+    at android.view.LayoutInflater.inflate(LayoutInflater.java:320)
+    at net.osmand.plus.download.LocalIndexesFragment$LocalIndexesAdapter.getChildView(LocalIndexesFragment.java:928)
+    at android.widget.ExpandableListConnector.getView(ExpandableListConnector.java:450)
+    at android.widget.AbsListView.obtainView(AbsListView.java:1519)
+    at android.widget.ListView.makeAndAddView(ListView.java:1749)
+    at android.widget.ListView.fillDown(ListView.java:674)
+    at android.widget.ListView.fillFromTop(ListView.java:731)
+    at android.widget.ListView.layoutChildren(ListView.java:1588)
+    at android.widget.AbsListView.onLayout(AbsListView.java:1349)
+    at android.view.View.layout(View.java:7320)
+    at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1263)
+    at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1137)
+    at android.widget.LinearLayout.onLayout(LinearLayout.java:1051)
+    at android.view.View.layout(View.java:7320)
+    at android.widget.FrameLayout.onLayout(FrameLayout.java:342)
+    at android.view.View.layout(View.java:7320)
+    at android.support.v4.view.ViewPager.onLayout(ViewPager.java:1626)
+    at android.view.View.layout(View.java:7320)
+    at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1263)
+    at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1137)
+    at android.widget.LinearLayout.onLayout(LinearLayout.java:1051)
+    at android.view.View.layout(View.java:7320)
+    at android.widget.FrameLayout.onLayout(FrameLayout.java:342)
+    at android.view.View.layout(View.java:7320)
+    at android.support.v7.internal.widget.ActionBarOverlayLayout.onLayout(ActionBarOverlayLayout.java:493)
+    at android.view.View.layout(View.java:7320)
+    at android.widget.FrameLayout.onLayout(FrameLayout.java:342)
+    at android.view.View.layout(View.java:7320)
+    at android.widget.FrameLayout.onLayout(FrameLayout.java:342)
+    at android.view.View.layout(View.java:7320)
+    at android.view.ViewRoot.performTraversals(ViewRoot.java:1164)
+    at android.view.ViewRoot.handleMessage(ViewRoot.java:1884)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:138)
+    at android.app.ActivityThread.main(ActivityThread.java:3701)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:507)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:878)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:636)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.reflect.InvocationTargetException
+    at java.lang.reflect.Constructor.constructNative(Native Method)
+    at java.lang.reflect.Constructor.newInstance(Constructor.java:415)
+    at android.view.LayoutInflater.createView(LayoutInflater.java:505)
+    ... 44 more
+Caused by: java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+    at android.graphics.BitmapFactory.nativeDecodeAsset(Native Method)
+    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:483)
+    at android.graphics.BitmapFactory.decodeResourceStream(BitmapFactory.java:359)
+    at android.graphics.drawable.Drawable.createFromResourceStream(Drawable.java:715)
+    at android.content.res.Resources.loadDrawable(Resources.java:1721)
+    at android.content.res.TypedArray.getDrawable(TypedArray.java:601)
+    at android.widget.ImageView.<init>(ImageView.java:122)
+    at android.widget.ImageView.<init>(ImageView.java:112)
+    ... 47 more
+Version  OsmAnd 2.1.1
+04.08.2015 10:08:33
+Apk Version : 2.1.1 212
+Exception occured in thread Thread[Initializing app,5,main] : 
+java.lang.OutOfMemoryError
+    at gnu.trove.list.array.TIntArrayList.ensureCapacity(TIntArrayList.java:143)
+    at gnu.trove.list.array.TIntArrayList.add(TIntArrayList.java:181)
+    at net.osmand.binary.BinaryMapIndexReader.readMapDataObject(BinaryMapIndexReader.java:1108)
+    at net.osmand.binary.BinaryMapIndexReader.readMapDataBlocks(BinaryMapIndexReader.java:966)
+    at net.osmand.binary.BinaryMapIndexReader.searchMapIndex(BinaryMapIndexReader.java:852)
+    at net.osmand.map.OsmandRegions.iterateOverAllObjects(OsmandRegions.java:420)
+    at net.osmand.map.OsmandRegions.initLocaleNames(OsmandRegions.java:326)
+    at net.osmand.map.OsmandRegions.prepareFile(OsmandRegions.java:60)
+    at net.osmand.plus.AppInitializer.indexRegionsBoundaries(AppInitializer.java:210)
+    at net.osmand.plus.AppInitializer.startApplicationBackground(AppInitializer.java:361)
+    at net.osmand.plus.AppInitializer.access$200(AppInitializer.java:55)
+    at net.osmand.plus.AppInitializer$7.run(AppInitializer.java:556)
+    at java.lang.Thread.run(Thread.java:1019)
+Version  OsmAnd 2.1.1
+04.08.2015 10:08:33
+Apk Version : 2.1.1 212
+Exception occured in thread Thread[Initializing app,5,main] : 
+java.lang.OutOfMemoryError
+    at gnu.trove.list.array.TIntArrayList.ensureCapacity(TIntArrayList.java:143)
+    at gnu.trove.list.array.TIntArrayList.add(TIntArrayList.java:181)
+    at net.osmand.binary.BinaryMapIndexReader.readMapDataObject(BinaryMapIndexReader.java:1108)
+    at net.osmand.binary.BinaryMapIndexReader.readMapDataBlocks(BinaryMapIndexReader.java:966)
+    at net.osmand.binary.BinaryMapIndexReader.searchMapIndex(BinaryMapIndexReader.java:852)
+    at net.osmand.map.OsmandRegions.iterateOverAllObjects(OsmandRegions.java:420)
+    at net.osmand.map.OsmandRegions.initLocaleNames(OsmandRegions.java:326)
+    at net.osmand.map.OsmandRegions.prepareFile(OsmandRegions.java:60)
+    at net.osmand.plus.AppInitializer.indexRegionsBoundaries(AppInitializer.java:210)
+    at net.osmand.plus.AppInitializer.startApplicationBackground(AppInitializer.java:361)
+    at net.osmand.plus.AppInitializer.access$200(AppInitializer.java:55)
+    at net.osmand.plus.AppInitializer$7.run(AppInitializer.java:556)
+    at java.lang.Thread.run(Thread.java:1019)
+Version  OsmAnd 2.1.1
+04.08.2015 10:08:37
+Apk Version : 2.1.1 212
+Exception occured in thread Thread[RenderingBaseImage,5,main] : 
+java.lang.OutOfMemoryError
+    at net.osmand.data.RotatedTileBox.copy(RotatedTileBox.java:426)
+    at net.osmand.plus.views.OsmandMapTileView$2.run(OsmandMapTileView.java:600)
+    at android.os.Handler.handleCallback(Handler.java:587)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:138)
+    at android.os.HandlerThread.run(HandlerThread.java:60)
+Version  OsmAnd 2.1.1
+04.08.2015 10:08:37
+Apk Version : 2.1.1 212
+Exception occured in thread Thread[RenderingBaseImage,5,main] : 
+java.lang.OutOfMemoryError
+    at net.osmand.data.RotatedTileBox.copy(RotatedTileBox.java:426)
+    at net.osmand.plus.views.OsmandMapTileView$2.run(OsmandMapTileView.java:600)
+    at android.os.Handler.handleCallback(Handler.java:587)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:138)
+    at android.os.HandlerThread.run(HandlerThread.java:60)

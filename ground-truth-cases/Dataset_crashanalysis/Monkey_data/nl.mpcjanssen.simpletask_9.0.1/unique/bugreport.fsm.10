@@ -1,0 +1,30 @@
+//this is an auto-generated bug report
+//package name: nl.mpcjanssen.simpletask
+//version: 9.0.1
+//appro_time: 105
+ java.lang.ArrayIndexOutOfBoundsException: length=2; index=5
+ 	at nl.mpcjanssen.simpletask.remote.FileStore$FileDialog$createFileDialog$1.onClick(FileStore.kt:232)
+ 	at com.android.internal.app.AlertController$AlertParams$3.onItemClick(AlertController.java:941)
+ 	at android.widget.AdapterView.performItemClick(AdapterView.java:298)
+ 	at android.widget.AbsListView.performItemClick(AbsListView.java:1100)
+ 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:2788)
+ 	at android.widget.AbsListView$1.run(AbsListView.java:3463)
+ 	at android.widget.AbsListView.onDetachedFromWindow(AbsListView.java:2670)
+ 	at android.view.View.dispatchDetachedFromWindow(View.java:12160)
+ 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:2570)
+ 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:2568)
+ 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:2568)
+ 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:2568)
+ 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:2568)
+ 	at android.view.ViewGroup.dispatchDetachedFromWindow(ViewGroup.java:2568)
+ 	at android.view.ViewRootImpl.dispatchDetachedFromWindow(ViewRootImpl.java:2820)
+ 	at android.view.ViewRootImpl.doDie(ViewRootImpl.java:5162)
+ 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:3148)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

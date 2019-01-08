@@ -1,0 +1,45 @@
+mp=cgeo.geocaching/.cgeo }
+I/ARMAssembler(   67): generated scanline__00000077:03545404_00000004_00000000 [ 47 ipp](67 ins) at [0x3887d8:0x3888e4] in 1104171 ns
+W/ActivityManager(   67): Activity pause timeout for HistoryRecord{45152798 com.android.gesture.builder/.**GestureBuilderActivity**}
+I/ActivityManager(   67): Start proc cgeo.geocaching for activity cgeo.geocaching/.cgeo: pid=389 uid=10040 gids={3003, 1015}
+D/AndroidRuntime(  389): Shutting down VM
+W/dalvikvm(  389): threadid=1: thread exiting with uncaught exception (group=0x4001d800)
+E/AndroidRuntime(  389): FATAL EXCEPTION: main
+E/AndroidRuntime(  389): java.lang.RuntimeException: Unable to start activity ComponentInfo{cgeo.geocaching/cgeo.geocaching.cgeo}: android.v
+iew.InflateException: Binary XML file line #6: Error inflating class android.widget.TextView
+E/AndroidRuntime(  389):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2663)
+E/AndroidRuntime(  389):        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2679)
+E/AndroidRuntime(  389):        at android.app.ActivityThread.access$2300(ActivityThread.java:125)
+E/AndroidRuntime(  389):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2033)
+E/AndroidRuntime(  389):        at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(  389):        at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime(  389):        at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/AndroidRuntime(  389):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(  389):        at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime(  389):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+E/AndroidRuntime(  389):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+E/AndroidRuntime(  389):        at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(  389): Caused by: android.view.InflateException: Binary XML file line #6: Error inflating class android.widget.TextView
+E/AndroidRuntime(  389):        at android.view.LayoutInflater.createView(LayoutInflater.java:513)
+E/AndroidRuntime(  389):        at com.android.internal.policy.impl.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:56)
+E/AndroidRuntime(  389):        at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:563)
+E/AndroidRuntime(  389):        at android.view.LayoutInflater.rInflate(LayoutInflater.java:618)
+E/AndroidRuntime(  389):        at android.view.LayoutInflater.inflate(LayoutInflater.java:407)
+E/AndroidRuntime(  389):        at android.view.LayoutInflater.inflate(LayoutInflater.java:320)
+E/AndroidRuntime(  389):        at android.view.LayoutInflater.inflate(LayoutInflater.java:276)
+E/AndroidRuntime(  389):        at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:198)
+E/AndroidRuntime(  389):        at android.app.Activity.setContentView(Activity.java:1647)
+E/AndroidRuntime(  389):        at cgeo.geocaching.cgeo.onCreate(cgeo.java:127)
+E/AndroidRuntime(  389):        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+E/AndroidRuntime(  389):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2627)
+E/AndroidRuntime(  389):        ... 11 more
+E/AndroidRuntime(  389): Caused by: java.lang.reflect.InvocationTargetException
+E/AndroidRuntime(  389):        at android.widget.TextView.<init>(TextView.java:321)
+E/AndroidRuntime(  389):        at java.lang.reflect.Constructor.constructNative(Native Method)
+E/AndroidRuntime(  389):        at java.lang.reflect.Constructor.newInstance(Constructor.java:446)
+E/AndroidRuntime(  389):        at android.view.LayoutInflater.createView(LayoutInflater.java:500)
+E/AndroidRuntime(  389):        ... 22 more
+E/AndroidRuntime(  389): Caused by: android.content.res.Resources$NotFoundException: File **res/drawable-hdpi/title_bar_shadow.9.png** from drawable resource ID #0x0: .xml extension required
+E/AndroidRuntime(  389):        at android.content.res.Resources.loadColorStateList(Resources.java:1824)
+E/AndroidRuntime(  389):        at android.content.res.TypedArray.getColorStateList(TypedArray.java:342)
+E/AndroidRuntime(  389):        at android.widget.TextView.<init>(TextView.java:628)

@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: me.kuehle.carreport
+//version: 3.11.2
+//appro_time: 34
+ FATAL EXCEPTION: main
+ java.lang.IllegalStateException: Fragment CalculatorFragment{ad2b4f28} not attached to Activity
+ 	at android.support.v4.app.Fragment.getResources(Fragment.java:636)
+ 	at me.kuehle.carreport.gui.CalculatorFragment.calculate(CalculatorFragment.java:221)
+ 	at me.kuehle.carreport.gui.CalculatorFragment.access$000(CalculatorFragment.java:59)
+ 	at me.kuehle.carreport.gui.CalculatorFragment$ForceLoadContentObserver.onChange(CalculatorFragment.java:72)
+ 	at android.database.ContentObserver.onChange(ContentObserver.java:129)
+ 	at android.database.ContentObserver$NotificationRunnable.run(ContentObserver.java:180)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

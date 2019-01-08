@@ -1,0 +1,363 @@
+> W/PartDatabase(26995): Writing part to: /data/data/org.thoughtcrime.securesms/app_parts/part976239452.mms
+> W/PartDatabase(26995): Inserted part at ID: 5
+> W/MmsSmsDatabase(26995): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (thread_id = 9) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (thread_id = 9) ORDER BY date_received DESC) LIMIT 1
+> W/MmsSmsDatabase(26995): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (thread_id = 9) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (thread_id = 9) ORDER BY date_received ASC)
+> W/ImageSlide(26995): Got soft reference: java.lang.ref.SoftReference@42753288
+> W/ImageSlide(26995): Got cached bitmap: android.graphics.drawable.BitmapDrawable@42753168
+> W/ImageSlide(26995): Setting cached thumbnail...
+> W/ImageSlide(26995): Got soft reference: null
+> W/ImageSlide(26995): Got soft reference: null
+> W/PartDatabase(26995): getThumbnailStream(5)
+> W/PartDatabase(26995): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part976239452.mms
+> W/SendJob (26995): resizing part 5
+> W/PartDatabase(26995): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part1702075504.mms
+> W/PartDatabase(26995): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part1702075504.mms
+> W/PartDatabase(26995): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part1702075504.mms
+> D/dalvikvm(26995): GC_FOR_ALLOC freed 939K, 77% free 10846K/46820K, paused 26ms, total 26ms
+> I/dalvikvm-heap(26995): Forcing collection of SoftReferences for 31961104-byte allocation
+> D/dalvikvm(26995): GC_BEFORE_OOM freed 84K, 78% free 10762K/46820K, paused 33ms, total 33ms
+> E/dalvikvm-heap(26995): Out of memory on a 31961104-byte allocation.
+> I/dalvikvm(26995): "JobConsumer-3" prio=5 tid=15 RUNNABLE
+> I/dalvikvm(26995):   | group="main" sCount=0 dsCount=0 obj=0x41e09038 self=0x5f3f7a00
+> I/dalvikvm(26995):   | sysTid=27016 nice=0 sched=0/0 cgrp=apps handle=1597996632
+> I/dalvikvm(26995):   | state=R schedstat=( 0 0 0 ) utm=8 stm=1 core=0
+> I/dalvikvm(26995):   at dalvik.system.VMRuntime.newNonMovableArray(Native Method)
+> I/dalvikvm(26995):   at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+> I/dalvikvm(26995):   at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:620)
+> I/dalvikvm(26995):   at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:596)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:138)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:102)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:93)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBitmap(BitmapUtil.java:83)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.util.BitmapUtil.createScaledBytes(BitmapUtil.java:41)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.mms.MediaConstraints.getResizedMedia(MediaConstraints.java:63)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.jobs.SendJob.resizePart(SendJob.java:85)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.jobs.SendJob.preparePart(SendJob.java:66)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.jobs.SendJob.prepareMessageMedia(SendJob.java:49)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.deliver(PushMediaSendJob.java:113)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.jobs.PushMediaSendJob.onSend(PushMediaSendJob.java:69)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:38)
+> I/dalvikvm(26995):   at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+> I/dalvikvm(26995):   at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:72)
+> I/dalvikvm(26995):   at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+> I/dalvikvm(26995): 
+> E/dalvikvm(26995): JNI ERROR (app bug): accessed stale local reference 0x3249 (index 3218 in a table of size 5)
+> E/dalvikvm(26995): VM aborting
+> F/libc    (26995): Fatal signal 6 (SIGABRT) at 0x00006973 (code=-6), thread 27016 (JobConsumer-3)
+> W/ImageSlide(26995): thumbnail decode/generate time: 138ms
+> I/DEBUG   ( 1426): **\* **\* **\* **\* **\* **\* **\* **\* **\* **\* **\* **\* **\* **\* **\* ***
+> I/DEBUG   ( 1426): Build fingerprint: 'samsung/serranoltexx/serranolte:4.4.2/KOT49H/I9195XXXXXXX:user/release-keys'
+> I/DEBUG   ( 1426): Revision: '5'
+> I/DEBUG   ( 1426): pid: 26995, tid: 27016, name: JobConsumer-3  >>> org.thoughtcrime.securesms <<<
+> I/DEBUG   ( 1426): signal 6 (SIGABRT), code -6 (SI_TKILL), fault addr --------
+> I/DEBUG   ( 1426):     r0 00000000  r1 00006988  r2 00000006  r3 00000000
+> I/DEBUG   ( 1426):     r4 00000006  r5 00000002  r6 00006988  r7 0000010c
+> I/DEBUG   ( 1426):     r8 575fee08  r9 587a7c78  sl 00000001  fp 60374fd0
+> I/DEBUG   ( 1426):     ip 60277a58  sp 60374ca0  lr 4013d035  pc 4014c020  cpsr 000f0010
+> I/DEBUG   ( 1426):     d0  0000000000000000  d1  0000000000000000
+> I/DEBUG   ( 1426):     d2  0000000000000000  d3  0000000000000000
+> I/DEBUG   ( 1426):     d4  8442220040840108  d5  0000108800010002
+> I/DEBUG   ( 1426):     d6  4b28284800004000  d7  42c8000000000001
+> I/DEBUG   ( 1426):     d8  3f8000003f800000  d9  0000000000000000
+> I/DEBUG   ( 1426):     d10 0000000000000000  d11 0000000000000000
+> I/DEBUG   ( 1426):     d12 0000000000000000  d13 0000000000000000
+> I/DEBUG   ( 1426):     d14 0000000000000000  d15 0000000000000000
+> I/DEBUG   ( 1426):     d16 61742061206e6920  d17 7320666f20656c62
+> I/DEBUG   ( 1426):     d18 0000000000000000  d19 0000000000000001
+> I/DEBUG   ( 1426):     d20 0000000000004000  d21 0000000000000000
+> I/DEBUG   ( 1426):     d22 0000000000004000  d23 0000000000000001
+> I/DEBUG   ( 1426):     d24 0000000000000000  d25 0000d79e0000eeb4
+> I/DEBUG   ( 1426):     d26 000092c00000b890  d27 000038b60000678c
+> I/DEBUG   ( 1426):     d28 000d000e000f000b  d29 000300060009000b
+> I/DEBUG   ( 1426):     d30 0000001100000016  d31 000000060000000c
+> I/DEBUG   ( 1426):     scr 60000010
+> I/DEBUG   ( 1426): 
+> I/DEBUG   ( 1426): backtrace:
+> I/DEBUG   ( 1426):     #00  pc 00022020  /system/lib/libc.so (tgkill+12)
+> I/DEBUG   ( 1426):     #01  pc 00013031  /system/lib/libc.so (pthread_kill+48)
+> I/DEBUG   ( 1426):     #02  pc 00013245  /system/lib/libc.so (raise+10)
+> I/DEBUG   ( 1426):     #03  pc 00011f7b  /system/lib/libc.so
+> I/DEBUG   ( 1426):     #04  pc 000218d4  /system/lib/libc.so (abort+4)
+> I/DEBUG   ( 1426):     #05  pc 00045beb  /system/lib/libdvm.so (dvmAbort+78)
+> I/DEBUG   ( 1426):     #06  pc 00027eb0  /system/lib/libdvm.so (IndirectRefTable::get(void_) const+216)
+> I/DEBUG   ( 1426):     #07  pc 0004a487  /system/lib/libdvm.so (dvmDecodeIndirectRef(Thread_, _jobject_)+30)
+> I/DEBUG   ( 1426):     #08  pc 000603f7  /system/lib/libdvm.so (dvmCallMethodV(Thread_, Method const_, Object_, bool, JValue_, std::__va_list)+158)
+> I/DEBUG   ( 1426):     #09  pc 0004c8ed  /system/lib/libdvm.so
+> I/DEBUG   ( 1426):     #10  pc 00077923  /system/lib/libandroid_runtime.so
+> I/DEBUG   ( 1426):     #11  pc 000786c9  /system/lib/libandroid_runtime.so (GraphicsJNI::allocateJavaPixelRef(_JNIEnv_, SkBitmap_, SkColorTable_)+104)
+> I/DEBUG   ( 1426):     #12  pc 00078763  /system/lib/libandroid_runtime.so (JavaPixelAllocator::allocPixelRef(SkBitmap_, SkColorTable_)+18)
+> I/DEBUG   ( 1426):     #13  pc 0009bfd5  /system/lib/libskia.so (SkBitmap::allocPixels(SkBitmap::Allocator_, SkColorTable_)+28)
+> I/DEBUG   ( 1426):     #14  pc 000ff111  /system/lib/libskia.so (SkJPEGImageDecoder::onDecode(SkStream_, SkBitmap_, SkImageDecoder::Mode)+328)
+> I/DEBUG   ( 1426):     #15  pc 000fc5b5  /system/lib/libskia.so (SkImageDecoder::decode(SkStream_, SkBitmap_, SkBitmap::Config, SkImageDecoder::Mode)+36)
+> I/DEBUG   ( 1426):     #16  pc 00075911  /system/lib/libandroid_runtime.so
+> I/DEBUG   ( 1426):     #17  pc 00075abd  /system/lib/libandroid_runtime.so
+> I/DEBUG   ( 1426):     #18  pc 0001dbcc  /system/lib/libdvm.so (dvmPlatformInvoke+112)
+> I/DEBUG   ( 1426):     #19  pc 0004e043  /system/lib/libdvm.so (dvmCallJNIMethod(unsigned int const_, JValue_, Method const_, Thread_)+398)
+> I/DEBUG   ( 1426):     #20  pc 00026fe0  /system/lib/libdvm.so
+> I/DEBUG   ( 1426):     #21  pc 0002df9c  /system/lib/libdvm.so (dvmMterpStd(Thread_)+76)
+> I/DEBUG   ( 1426):     #22  pc 0002b640  /system/lib/libdvm.so (dvmInterpret(Thread_, Method const_, JValue_)+184)
+> I/DEBUG   ( 1426):     #23  pc 000604ab  /system/lib/libdvm.so (dvmCallMethodV(Thread_, Method const_, Object_, bool, JValue_, std::__va_list)+338)
+> I/DEBUG   ( 1426):     #24  pc 000604cf  /system/lib/libdvm.so (dvmCallMethod(Thread_, Method const_, Object_, JValue_, ...)+20)
+> I/DEBUG   ( 1426):     #25  pc 000551bb  /system/lib/libdvm.so
+> I/DEBUG   ( 1426):     #26  pc 0000d1c0  /system/lib/libc.so (__thread_entry+72)
+> I/DEBUG   ( 1426):     #27  pc 0000d358  /system/lib/libc.so (pthread_create+240)
+> I/DEBUG   ( 1426): 
+> I/DEBUG   ( 1426): stack:
+> I/DEBUG   ( 1426):          60374c60  00000005  
+> I/DEBUG   ( 1426):          60374c64  5f3f7a00  [anon:libc_malloc]
+> I/DEBUG   ( 1426):          60374c68  60277a58  
+> I/DEBUG   ( 1426):          60374c6c  575fee08  /dev/ashmem/dalvik-LinearAlloc (deleted)
+> I/DEBUG   ( 1426):          60374c70  587a7c78  /data/dalvik-cache/system@framework@core.jar@classes.dex
+> I/DEBUG   ( 1426):          60374c74  00000001  
+> I/DEBUG   ( 1426):          60374c78  60374fd0  [stack:27016]
+> I/DEBUG   ( 1426):          60374c7c  4015053d  /system/lib/libc.so (snprintf+80)
+> I/DEBUG   ( 1426):          60374c80  5fb829a7  /data/dalvik-cache/data@app@org.thoughtcrime.securesms-2.apk@classes.dex
+> I/DEBUG   ( 1426):          60374c84  5fac4225  /data/dalvik-cache/data@app@org.thoughtcrime.securesms-2.apk@classes.dex
+> I/DEBUG   ( 1426):          60374c88  60374cfc  [stack:27016]
+> I/DEBUG   ( 1426):          60374c8c  00000000  
+> I/DEBUG   ( 1426):          60374c90  00000000  
+> I/DEBUG   ( 1426):          60374c94  41c8e008  /dev/ashmem/dalvik-heap (deleted)
+> I/DEBUG   ( 1426):          60374c98  00004000  
+> I/DEBUG   ( 1426):          60374c9c  60374d0a  [stack:27016]
+> I/DEBUG   ( 1426):     #00  60374ca0  00000006  
+> I/DEBUG   ( 1426):          60374ca4  00000002  
+> I/DEBUG   ( 1426):          60374ca8  00006988  
+> I/DEBUG   ( 1426):          60374cac  60277a58  
+> I/DEBUG   ( 1426):          60374cb0  60277a58  
+> I/DEBUG   ( 1426):          60374cb4  4013d035  /system/lib/libc.so (pthread_kill+52)
+> I/DEBUG   ( 1426):     #01  60374cb8  00000006  
+> I/DEBUG   ( 1426):          60374cbc  00000000  
+> I/DEBUG   ( 1426):          60374cc0  5f3f7a00  [anon:libc_malloc]
+> I/DEBUG   ( 1426):          60374cc4  4013d249  /system/lib/libc.so (raise+14)
+> I/DEBUG   ( 1426):     #02  60374cc8  60374cd4  [stack:27016]
+> I/DEBUG   ( 1426):          60374ccc  4013bf7f  /system/lib/libc.so
+> I/DEBUG   ( 1426): 
+> I/DEBUG   ( 1426): memory near r1:
+> I/DEBUG   ( 1426):     00006968 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006978 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006988 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006998 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     000069a8 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     000069b8 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     000069c8 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     000069d8 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     000069e8 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     000069f8 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006a08 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006a18 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006a28 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006a38 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006a48 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006a58 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426): 
+> I/DEBUG   ( 1426): memory near r6:
+> I/DEBUG   ( 1426):     00006968 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006978 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006988 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006998 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     000069a8 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     000069b8 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     000069c8 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     000069d8 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     000069e8 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     000069f8 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006a08 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006a18 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006a28 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006a38 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006a48 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426):     00006a58 ffffffff ffffffff ffffffff ffffffff  
+> I/DEBUG   ( 1426): 
+> I/DEBUG   ( 1426): memory near r8:
+> I/DEBUG   ( 1426):     575fede8 00000000 00000000 4160dcf1 00000000  
+> I/DEBUG   ( 1426):     575fedf8 00000000 00000000 00000000 00000544  
+> I/DEBUG   ( 1426):     575fee08 41670680 00000101 0002000b 00020000  
+> I/DEBUG   ( 1426):     575fee18 587d53b7 4165b8f8 00000176 587a7c77  
+> I/DEBUG   ( 1426):     575fee28 00000000 30000000 4160dd07 00000000  
+> I/DEBUG   ( 1426):     575fee38 00000000 00000000 41670680 00000101  
+> I/DEBUG   ( 1426):     575fee48 0001000c 00010000 587d8348 4165b8f8  
+> I/DEBUG   ( 1426):     575fee58 00000308 587a870a 00000000 40000000  
+> I/DEBUG   ( 1426):     575fee68 4160dc15 00000000 00000000 00000000  
+> I/DEBUG   ( 1426):     575fee78 41670680 00000101 0001000d 00010000  
+> I/DEBUG   ( 1426):     575fee88 587da0b2 4165b8f8 00000308 587a870a  
+> I/DEBUG   ( 1426):     575fee98 00000000 40000000 4160dbfd 00000000  
+> I/DEBUG   ( 1426):     575feea8 00000000 00000000 41670680 00000101  
+> I/DEBUG   ( 1426):     575feeb8 0001000e 00010000 587da200 4165b8f8  
+> I/DEBUG   ( 1426):     575feec8 0000091f 587d11c8 00000000 00000000  
+> I/DEBUG   ( 1426):     575feed8 415f7975 00000000 00000000 00000000  
+> I/DEBUG   ( 1426): 
+> I/DEBUG   ( 1426): memory near r9:
+> I/DEBUG   ( 1426):     587a7c58 494a4a4a 004a4c49 4a4a4a04 4a04004a  
+> I/DEBUG   ( 1426):     587a7c68 004c4a4a 4c4a4a03 4a4a0300 4a02005a  
+> I/DEBUG   ( 1426):     587a7c78 4a03004c 0400494c 49494c4a 4c4a0500  
+> I/DEBUG   ( 1426):     587a7c88 004a4949 494c4a05 04005a49 4c494c4a  
+> I/DEBUG   ( 1426):     587a7c98 4c4a0700 49494c49 4a040049 005a494c  
+> I/DEBUG   ( 1426):     587a7ca8 4a4c4a03 4c4a0400 0400494a 4a4a4c4a  
+> I/DEBUG   ( 1426):     587a7cb8 4c4a0300 4a10004c 43434c4c 4c4c434c  
+> I/DEBUG   ( 1426):     587a7cc8 434c4343 00434343 4c4c4a04 4a07004c  
+> I/DEBUG   ( 1426):     587a7cd8 494c4c4c 0500435a 4c4c4c4a 4a03004a  
+> I/DEBUG   ( 1426):     587a7ce8 02005a4c 0900504a 4e4f534a 76616a2e  
+> I/DEBUG   ( 1426):     587a7cf8 4a090061 414e4f53 79617272 534a0e00  
+> I/DEBUG   ( 1426):     587a7d08 72414e4f 2e796172 6176616a 534a1200  
+> I/DEBUG   ( 1426):     587a7d18 78454e4f 74706563 2e6e6f69 6176616a  
+> I/DEBUG   ( 1426):     587a7d28 534a0a00 624f4e4f 7463656a 534a0f00  
+> I/DEBUG   ( 1426):     587a7d38 624f4e4f 7463656a 76616a2e 4a110061  
+> I/DEBUG   ( 1426):     587a7d48 534e4f53 6e697274 2e726567 6176616a  
+> I/DEBUG   ( 1426): 
+> I/DEBUG   ( 1426): memory near fp:
+> I/DEBUG   ( 1426):     60374fb0 402a3de8 40269925 5f3c3b20 60374fcc  
+> I/DEBUG   ( 1426):     60374fc0 60375858 4026a6cd 575fee08 00003249  
+> I/DEBUG   ( 1426):     60374fd0 01e7b000 00000000 61955c88 00000000  
+> I/DEBUG   ( 1426):     60374fe0 00000000 01e7b000 00000cc0 00000990  
+> I/DEBUG   ( 1426):     60374ff0 00000003 00000001 415e1c99 60375924  
+> I/DEBUG   ( 1426):     60375000 00000000 60375858 00000cc0 61984068  
+> I/DEBUG   ( 1426):     60375010 00000001 00000000 619840b0 4026a767  
+> I/DEBUG   ( 1426):     60375020 4026a751 60375858 00000000 40530fd7  
+> I/DEBUG   ( 1426):     60375030 4065a5e0 00000001 00000000 00000005  
+> I/DEBUG   ( 1426):     60375040 00000001 40594115 00000000 00000001  
+> I/DEBUG   ( 1426):     60375050 60375858 61984068 00000001 40669bb4  
+> I/DEBUG   ( 1426):     60375060 00000000 00000000 00000000 00000000  
+> I/DEBUG   ( 1426):     60375070 00000000 00000cc0 00000990 00000000  
+> I/DEBUG   ( 1426):     60375080 00000000 00000001 00000001 00000000  
+> I/DEBUG   ( 1426):     60375090 00000000 00000000 00000000 00000000  
+> I/DEBUG   ( 1426):     603750a0 00000000 40596975 4059349d 4059349f  
+> I/DEBUG   ( 1426): 
+> I/DEBUG   ( 1426): memory near ip:
+> I/DEBUG   ( 1426):     60277a38 00000400 60277a70 60277a70 00000000  
+> I/DEBUG   ( 1426):     60277a48 575fee08 00000005 41670740 41670740  
+> I/DEBUG   ( 1426):     60277a58 01e7b000 60277a84 00000000 00000000  
+> I/DEBUG   ( 1426):     60277a68 00000000 576919a8 60277aa8 58f1b516  
+> I/DEBUG   ( 1426):     60277a78 576861e8 00000000 00000000 28400005  
+> I/DEBUG   ( 1426):     60277a88 1fb00009 00000000 1d40000d 60277ad0  
+> I/DEBUG   ( 1426):     60277a98 58f1b4c2 57686108 58f1b516 00000000  
+> I/DEBUG   ( 1426):     60277aa8 43f1d090 00004000 427b6cb8 00000000  
+> I/DEBUG   ( 1426):     60277ab8 41dab710 60277b08 5f76fda6 576860d0  
+> I/DEBUG   ( 1426):     60277ac8 58f1b4c2 00000000 00002000 00000000  
+> I/DEBUG   ( 1426):     60277ad8 00000000 575fe3d0 00000002 00000000  
+> I/DEBUG   ( 1426):     60277ae8 427b6cb8 00000000 41dab710 60277b90  
+> I/DEBUG   ( 1426):     60277af8 5f770288 57964668 5f76fda6 00000000  
+> I/DEBUG   ( 1426):     60277b08 00000000 41dab710 41dac9c0 00000500  
+> I/DEBUG   ( 1426):     60277b18 00000500 41dab710 00000000 00000cc0  
+> I/DEBUG   ( 1426):     60277b28 00000990 00000001 00000002 427b6cb8  
+> I/DEBUG   ( 1426): 
+> I/DEBUG   ( 1426): memory near sp:
+> I/DEBUG   ( 1426):     60374c80 5fb829a7 5fac4225 60374cfc 00000000  
+> I/DEBUG   ( 1426):     60374c90 00000000 41c8e008 00004000 60374d0a  
+> I/DEBUG   ( 1426):     60374ca0 00000006 00000002 00006988 60277a58  
+> I/DEBUG   ( 1426):     60374cb0 60277a58 4013d035 00000006 00000000  
+> I/DEBUG   ( 1426):     60374cc0 5f3f7a00 4013d249 60374cd4 4013bf7f  
+> I/DEBUG   ( 1426):     60374cd0 00000000 ffffffdf 401742c4 4017422c  
+> I/DEBUG   ( 1426):     60374ce0 00000000 4013eb3f 416571f0 416571f0  
+> I/DEBUG   ( 1426):     60374cf0 00000005 4014b8d8 00000000 415edbef  
+> I/DEBUG   ( 1426):     60374d00 00000000 6c756e28 0000296c 00000000  
+> I/DEBUG   ( 1426):     60374d10 00000000 00000000 00000000 00000000  
+> I/DEBUG   ( 1426):     60374d20 00000000 00000000 00000000 00000000  
+> I/DEBUG   ( 1426):     60374d30 00000000 00000000 00000000 00000000  
+> I/DEBUG   ( 1426):     60374d40 00000000 00000000 00000000 00000000  
+> I/DEBUG   ( 1426):     60374d50 00000000 00000000 00000000 00000000  
+> I/DEBUG   ( 1426):     60374d60 00000000 00000000 00000000 00000000  
+> I/DEBUG   ( 1426):     60374d70 00000000 00000000 00000000 00000000  
+> I/DEBUG   ( 1426): 
+> I/DEBUG   ( 1426): code around pc:
+> I/DEBUG   ( 1426):     4014c000 e8bd00f0 e3700a01 912fff1e e2600000  
+> I/DEBUG   ( 1426):     4014c010 ea006e38 e92d50f0 e3a07f43 ef000000  
+> I/DEBUG   ( 1426):     4014c020 e8bd50f0 e3700a01 912fff1e e2600000  
+> I/DEBUG   ( 1426):     4014c030 ea006e30 e92d50f0 e3a070ee ef000000  
+> I/DEBUG   ( 1426):     4014c040 e8bd50f0 e3700a01 912fff1e e2600000  
+> I/DEBUG   ( 1426):     4014c050 ea006e28 f200429a bf0080b9 f040f891  
+> I/DEBUG   ( 1426):     4014c060 4001e92d f2c02a04 2a1080a5 8093f2c0  
+> I/DEBUG   ( 1426):     4014c070 f2c02a20 2a408088 ea4fdb7f f1bc1c92  
+> I/DEBUG   ( 1426):     4014c080 dd6c0f0a 0600e92d 0f40f1bc f500dd4a  
+> I/DEBUG   ( 1426):     4014c090 f5016e80 ebae7920 ea4f0e09 ea4f5e4e  
+> I/DEBUG   ( 1426):     4014c0a0 f50e5e5e ebbc7e20 dd3b1f9e f04fbfc4  
+> I/DEBUG   ( 1426):     4014c0b0 ebd9090a dd35199e 0a0eeb01 0a3ff02a  
+> I/DEBUG   ( 1426):     4014c0c0 1c9eebac bfd245e1 0c09ebac f04f46e1  
+> I/DEBUG   ( 1426):     4014c0d0 f8910c00 f891f240 f921f280 f921028d  
+> I/DEBUG   ( 1426):     4014c0e0 f8da428d f1b93000 f9000901 f900028d  
+> I/DEBUG   ( 1426):     4014c0f0 f10a428d d1ee0a40 0f00f1bc f5bcd02b  
+> I/DEBUG   ( 1426): 
+> I/DEBUG   ( 1426): code around lr:
+> I/DEBUG   ( 1426):     4013d014 447b4b13 42b3e010 4812d10e 44786a1e  
+> I/DEBUG   ( 1426):     4013d024 ec82f7fb ea2ef00d 46224631 eff0f00e  
+> I/DEBUG   ( 1426):     4013d034 d00a3001 e00b2400 2b00681b 480ad1eb  
+> I/DEBUG   ( 1426):     4013d044 44782403 ec70f7fb f001e002 6804fa23  
+> I/DEBUG   ( 1426):     4013d054 fa20f001 46206005 bf00bd70 0003b38e  
+> I/DEBUG   ( 1426):     4013d064 0003b382 0003b37a 0003b356 bf7ef7ff  
+> I/DEBUG   ( 1426):     4013d074 4a3e4b3d 43f0e92d 447b460d 4606b08b  
+> I/DEBUG   ( 1426):     4013d084 6823589c 930946a1 fa04f001 8000f8d0  
+> I/DEBUG   ( 1426):     4013d094 d0482d00 f0104628 280ff98d d8444604  
+> I/DEBUG   ( 1426):     4013d0a4 ffe4f7ff d1064286 4629200f e8f8f00d  
+> I/DEBUG   ( 1426):     4013d0b4 d03c2800 482ee02e f7fb4478 482debb4  
+> I/DEBUG   ( 1426):     4013d0c4 e0154478 d11342b0 482b6a06 f7fb4478  
+> I/DEBUG   ( 1426):     4013d0d4 4a2aec2c 46332120 447aa801 fa04f013  
+> I/DEBUG   ( 1426):     4013d0e4 a8012101 fd1cf01a 46061c42 e011d104  
+> I/DEBUG   ( 1426):     4013d0f4 28006800 e02cd1e6 46294630 f00d4622  
+> I/DEBUG   ( 1426):     4013d104 1c43e934 d11e4607 f9c4f001 29046801  
+> D/Sensors ( 1814): LightSensor readEvents x = 0.000000, raw = 0
+> W/ActivityManager( 1814):   Force finishing activity org.thoughtcrime.securesms/.ConversationActivity
+> I/Choreographer(26995): Skipped 33 frames!  The application may be doing too much work on its main thread.
+> I/BootReceiver( 1814): Copying /data/tombstones/tombstone_05 to DropBox (SYSTEM_TOMBSTONE)
+> D/dalvikvm( 1814): GC_FOR_ALLOC freed 1193K, 18% free 15286K/18500K, paused 61ms, total 62ms
+> I/ActivityManager( 1814): Process org.thoughtcrime.securesms (pid 26995) has died.
+> W/ActivityManager( 1814): Scheduling restart of crashed service org.thoughtcrime.securesms/.service.KeyCachingService in 1000ms
+> I/WindowState( 1814): WIN DEATH: Window{4232ff30 u0 org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationListActivity}
+> I/WindowState( 1814): WIN DEATH: Window{41cc77c0 u0 org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity}
+> D/dalvikvm(27266): Late-enabling CheckJNI
+> I/ActivityManager( 1814): Start proc org.thoughtcrime.securesms for activity org.thoughtcrime.securesms/.ConversationListActivity: pid=27266 uid=10036 gids={50036, 3003, 1028, 1015, 1023}
+> D/dalvikvm( 1429): GC_EXPLICIT freed 43K, 2% free 6319K/6400K, paused 1ms+1ms, total 23ms
+> D/dalvikvm( 1429): GC_EXPLICIT freed <1K, 2% free 6319K/6400K, paused 1ms+12ms, total 29ms
+> D/dalvikvm( 1429): GC_EXPLICIT freed <1K, 2% free 6319K/6400K, paused 1ms+1ms, total 19ms
+> D/Zygote  ( 1429): Process 26995 terminated by signal (6)
+> W/PartProvider(27266): Got master secret: org.thoughtcrime.securesms.crypto.MasterSecret@41cf3f18
+> D/dalvikvm(27266): GC_CONCURRENT freed 1144K, 15% free 7223K/8404K, paused 4ms+1ms, total 29ms
+> D/dalvikvm(27266): WAIT_FOR_CONCURRENT_GC blocked 12ms
+> D/dalvikvm(27266): WAIT_FOR_CONCURRENT_GC blocked 14ms
+> D/Sensors ( 1814): LightSensor readEvents x = 0.000000, raw = 0
+> W/DirectoryRefreshListener(27266): Scheduling for: 1421984596035
+> D/Sensors ( 1814): LightSensor readEvents x = 0.000000, raw = 0
+> W/SendJob (27266): resizing part 5
+> W/PartDatabase(27266): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part1702075504.mms
+> W/PartDatabase(27266): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part1702075504.mms
+> W/PartDatabase(27266): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part1702075504.mms
+> D/dalvikvm(27266): GC_FOR_ALLOC freed 1131K, 14% free 7794K/8976K, paused 19ms, total 20ms
+> I/dalvikvm-heap(27266): Grow heap (frag case) to 38.125MB for 31961104-byte allocation
+> D/dalvikvm(27266): GC_FOR_ALLOC freed 2K, 3% free 39003K/40192K, paused 20ms, total 20ms
+> D/dalvikvm(27266): GC_CONCURRENT freed 35K, 3% free 39002K/40192K, paused 3ms+5ms, total 45ms
+> D/Sensors ( 1814): LightSensor readEvents x = 0.000000, raw = 0
+> W/service (27266): Broadcasting new secret...
+> W/KeyCachingService(27266): Incrementing activity count...
+> I/Adreno-EGL(27266): <qeglDrvAPI_eglInitialize:381>: EGL 1.4 QUALCOMM build: AU_LINUX_ANDROID_KK_2.7_RB1.04.04.02.007.050_msm8960_refs/tags/AU_LINUX_ANDROID_KK_2.7_RB1.04.04.02.007.050__release_AU ()
+> I/Adreno-EGL(27266): OpenGL ES Shader Compiler Version: 17.01.12.SPL
+> I/Adreno-EGL(27266): Build Date: 03/28/14 Fri
+> I/Adreno-EGL(27266): Local Branch: 
+> I/Adreno-EGL(27266): Remote Branch: refs/tags/AU_LINUX_ANDROID_KK_2.7_RB1.04.04.02.007.050
+> I/Adreno-EGL(27266): Local Patches: NONE
+> I/Adreno-EGL(27266): Reconstruct Branch: NOTHING
+> W/MmsSmsDatabase(27266): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+> W/ShortcutBadger(27266): No support for: com.android.launcher3
+> D/OpenGLRenderer(27266): Enabling debug mode 0
+> W/RecipientProvider(27266): Cache miss [ASYNC]!
+> W/RecipientProvider(27266): Cache miss [ASYNC]!
+> W/RecipientProvider(27266): Cache miss [ASYNC]!
+> W/RecipientProvider(27266): Cache miss [ASYNC]!
+> W/RecipientProvider(27266): Cache miss [ASYNC]!
+> W/RecipientProvider(27266): Cache miss [ASYNC]!
+> W/RecipientProvider(27266): Cache miss [ASYNC]!
+> W/BitmapUtil(27266): rough scale 3264x2448 => 3264x2448
+> W/BitmapUtil(27266): fine scale 3264x2448 => 1280x960
+> W/RecipientProvider(27266): Cache miss [ASYNC]!
+> W/RecipientProvider(27266): Cache miss [ASYNC]!
+> W/SendReceiveService(27266): Got a MasterSecret broadcast...
+> W/PartProvider(27266): Got master secret: org.thoughtcrime.securesms.crypto.MasterSecret@41cfb040
+> D/dalvikvm(27266): GC_FOR_ALLOC freed 33230K, 73% free 12917K/46748K, paused 20ms, total 20ms
+> I/dalvikvm-heap(27266): Grow heap (frag case) to 17.336MB for 4915216-byte allocation
+> D/dalvikvm(27266): GC_FOR_ALLOC freed 6K, 63% free 17711K/46748K, paused 19ms, total 19ms
+> D/dalvikvm(27266): GC_CONCURRENT freed 5K, 63% free 17711K/46748K, paused 3ms+11ms, total 32ms
+> I/ActivityManager( 1814): Displayed org.thoughtcrime.securesms/.ConversationListActivity: +2s927ms
+> W/InputMethodManagerService( 1814): Got RemoteException sending setActive(false) notification to pid 26995 uid 10036
+> W/Binder  ( 1973): Caught a RuntimeException from the binder stub implementation.
+> W/Binder  ( 1973): java.lang.NullPointerException
+> W/Binder  ( 1973):  at android.inputmethodservice.IInputMethodWrapper.setSessionEnabled(IInputMethodWrapper.java:287)
+> W/Binder  ( 1973):  at com.android.internal.view.IInputMethod$Stub.onTransact(IInputMethod.java:129)
+> W/Binder  ( 1973):  at android.os.Binder.execTransact(Binder.java:404)
+> W/Binder  ( 1973):  at dalvik.system.NativeStart.run(Native Method)

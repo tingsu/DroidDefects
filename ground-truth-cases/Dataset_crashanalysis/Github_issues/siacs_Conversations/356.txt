@@ -1,0 +1,12 @@
+java.lang.NullPointerException
+            at eu.siacs.conversations.parser.MessageParser.parseEvent(MessageParser.java:299)
+            at eu.siacs.conversations.parser.MessageParser.parseNormal(MessageParser.java:249)
+            at eu.siacs.conversations.parser.MessageParser.onMessagePacketReceived(MessageParser.java:387)
+            at eu.siacs.conversations.xmpp.XmppConnection.processMessage(XmppConnection.java:387)
+            at eu.siacs.conversations.xmpp.XmppConnection.processStream(XmppConnection.java:293)
+            at eu.siacs.conversations.xmpp.XmppConnection.processStream(XmppConnection.java:238)
+            at eu.siacs.conversations.xmpp.XmppConnection.switchOverToTls(XmppConnection.java:463)
+            at eu.siacs.conversations.xmpp.XmppConnection.processStream(XmppConnection.java:230)
+            at eu.siacs.conversations.xmpp.XmppConnection.connect(XmppConnection.java:171)
+            at eu.siacs.conversations.xmpp.XmppConnection.run(XmppConnection.java:213)
+            at java.lang.Thread.run(Thread.java:841)

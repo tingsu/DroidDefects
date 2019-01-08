@@ -1,0 +1,12 @@
+01-10 21:44:40.105 E/cgeo    (21208): org.json.JSONException: Value <?xml of type java.lang.String cannot be converted to JSONObject
+01-10 21:44:40.105 E/cgeo    (21208):   at org.json.JSON.typeMismatch(JSON.java:107)
+01-10 21:44:40.105 E/cgeo    (21208):   at org.json.JSONObject.<init>(JSONObject.java:158)
+01-10 21:44:40.105 E/cgeo    (21208):   at org.json.JSONObject.<init>(JSONObject.java:171)
+01-10 21:44:40.105 E/cgeo    (21208):   at cgeo.geocaching.network.Network.requestJSON(Network.java:393)
+01-10 21:44:40.105 E/cgeo    (21208):   at cgeo.geocaching.network.StatusUpdater.access$000(StatusUpdater.java:15)
+01-10 21:44:40.105 E/cgeo    (21208):   at cgeo.geocaching.network.StatusUpdater$1.act(StatusUpdater.java:56)
+01-10 21:44:40.105 E/cgeo    (21208):   at cgeo.geocaching.utils.PeriodicHandler.handleMessage(PeriodicHandler.java:50)
+01-10 21:44:40.105 E/cgeo    (21208):   at android.os.Handler.dispatchMessage(Handler.java:99)
+01-10 21:44:40.105 E/cgeo    (21208):   at android.os.Looper.loop(Looper.java:150)
+01-10 21:44:40.105 E/cgeo    (21208):   at cgeo.geocaching.network.StatusUpdater.run(StatusUpdater.java:59)
+01-10 21:44:40.105 E/cgeo    (21208):   at java.lang.Thread.run(Thread.java:1027)

@@ -1,0 +1,181 @@
+I/KeyguardUpdateMonitor(  704): visibility is same
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET dconf=?,decks=?]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+D/dalvikvm( 8494): GC_CONCURRENT freed 1636K, 29% free 8443K/11808K, paused 3ms+5ms,
+total 47ms
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+D/PowerHintManager( 2332): Got PowerHintService instance.
+
+...
+D/PowerHintManager( 2332): Got PowerHintService instance.
+
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+...
+
+E/DatabaseUtils(  582): Writing exception to parcel
+E/DatabaseUtils(  582): java.lang.SecurityException: Permission Denial: get/set setting
+for user asks to run as user -2 but is calling from user 0; this requires android.permission.INTERACT_ACROSS_USERS_FULL
+E/DatabaseUtils(  582):     at com.android.server.am.ActivityManagerService.handleIncomingUser(ActivityManagerService.java:15168)
+E/DatabaseUtils(  582):     at android.app.ActivityManager.handleIncomingUser(ActivityManager.java:2498)
+E/DatabaseUtils(  582):     at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:688)
+E/DatabaseUtils(  582):     at android.content.ContentProvider$Transport.call(ContentProvider.java:325)
+E/DatabaseUtils(  582):     at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:275)
+E/DatabaseUtils(  582):     at android.os.Binder.execTransact(Binder.java:404)
+E/DatabaseUtils(  582):     at dalvik.system.NativeStart.run(Native Method)
+I/StudyOptionsFragment( 8494): StudyOptionsFragment:: start study button pressed
+W/ActivityManager(  582): Permission Denial: get/set setting for user asks to run as
+user -2 but is calling from user 0; this requires android.permission.INTERACT_ACROSS_USERS_FULL
+
+W/ActivityManager(  582): mDVFSHelper.acquire()
+
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+E/SQLiteLog( 8494): (11) database corruption at line 56732 of [00bb9c9ce4]
+E/SQLiteLog( 8494): (11) statement aborts at 40: [UPDATE col SET mod=mod]
+
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+...
+E/AnkiDb$MyDbErrorHandler( 8494): The database has been corrupted...
+I/CollectionHelper( 8494): closeCollection
+I/dalvikvm( 8494): threadid=14: stack overflow on call to Ljava/util/Locale;.getLanguage:L
+I/dalvikvm( 8494):   method requires 8+20+0=28 bytes, fp is 0x7ac5a314 (20 left)
+I/dalvikvm( 8494):   expanding stack end (0x7ac5a300 to 0x7ac5a000)
+I/dalvikvm( 8494): Shrank stack (to 0x7ac5a300, curFrame is 0x7ac5a45c)
+W/dalvikvm( 8494): threadid=14: thread exiting with uncaught exception (group=0x418a5c08)
+E/ACRA    ( 8494): ACRA is disabled for com.ichi2.anki - forwarding uncaught Exception
+on to default ExceptionHandler
+E/AndroidRuntime( 8494): FATAL EXCEPTION: AsyncTask #1
+E/AndroidRuntime( 8494): Process: com.ichi2.anki, PID: 8494
+E/AndroidRuntime( 8494): java.lang.RuntimeException: An error occured while executing
+doInBackground()
+E/AndroidRuntime( 8494):    at android.os.AsyncTask$3.done(AsyncTask.java:300)
+E/AndroidRuntime( 8494):    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+E/AndroidRuntime( 8494):    at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+E/AndroidRuntime( 8494):    at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+E/AndroidRuntime( 8494):    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+E/AndroidRuntime( 8494):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+E/AndroidRuntime( 8494):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+E/AndroidRuntime( 8494):    at java.lang.Thread.run(Thread.java:841)
+E/AndroidRuntime( 8494): Caused by: java.lang.StackOverflowError
+E/AndroidRuntime( 8494):    at java.lang.CaseMapper.toUpperCase(CaseMapper.java:143)
+E/AndroidRuntime( 8494):    at java.lang.String.toUpperCase(String.java:1548)
+E/AndroidRuntime( 8494):    at android.database.DatabaseUtils.getSqlStatementType(DatabaseUtils.java:1379)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:45)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteStatement.<init>(SQLiteStatement.java:31)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1806)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1737)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.AnkiDb.execute(AnkiDb.java:299)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.AnkiDb.execute(AnkiDb.java:285)
+E/AndroidRuntime( 8494):    at com.ichi2.libanki.Collection.lock(Collection.java:284)
+E/AndroidRuntime( 8494):    at com.ichi2.libanki.Collection.close(Collection.java:318)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.CollectionHelper.closeCollection(CollectionHelper.java:139)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.AnkiDb$MyDbErrorHandler.onCorruption(AnkiDb.java:86)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteDatabase.onCorruption(SQLiteDatabase.java:353)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteProgram.onCorruption(SQLiteProgram.java:111)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:67)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1808)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1737)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.AnkiDb.execute(AnkiDb.java:299)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.AnkiDb.execute(AnkiDb.java:285)
+E/AndroidRuntime( 8494):    at com.ichi2.libanki.Collection.lock(Collection.java:284)
+E/AndroidRuntime( 8494):    at com.ichi2.libanki.Collection.close(Collection.java:318)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.CollectionHelper.closeCollection(CollectionHelper.java:139)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.AnkiDb$MyDbErrorHandler.onCorruption(AnkiDb.java:86)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteDatabase.onCorruption(SQLiteDatabase.java:353)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteProgram.onCorruption(SQLiteProgram.java:111)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:67)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1808)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1737)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.AnkiDb.execute(AnkiDb.java:299)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.AnkiDb.execute(AnkiDb.java:285)
+E/AndroidRuntime( 8494):    at com.ichi2.libanki.Collection.lock(Collection.java:284)
+E/AndroidRuntime( 8494):    at com.ichi2.libanki.Collection.close(Collection.java:318)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.CollectionHelper.closeCollection(CollectionHelper.java:139)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.AnkiDb$MyDbErrorHandler.onCorruption(AnkiDb.java:86)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteDatabase.onCorruption(SQLiteDatabase.java:353)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteProgram.onCorruption(SQLiteProgram.java:111)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:67)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteDatabase.executeSql(SQLiteDatabase.java:1808)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteDatabase.execSQL(SQLiteDatabase.java:1737)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.AnkiDb.execute(AnkiDb.java:299)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.AnkiDb.execute(AnkiDb.java:285)
+E/AndroidRuntime( 8494):    at com.ichi2.libanki.Collection.lock(Collection.java:284)
+E/AndroidRuntime( 8494):    at com.ichi2.libanki.Collection.close(Collection.java:318)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.CollectionHelper.closeCollection(CollectionHelper.java:139)
+E/AndroidRuntime( 8494):    at com.ichi2.anki.AnkiDb$MyDbErrorHandler.onCorruption(AnkiDb.java:86)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteDatabase.onCorruption(SQLiteDatabase.java:353)
+E/AndroidRuntime( 8494):    at android.database.sqlite.SQLiteProgram.onCorruption(SQLiteP

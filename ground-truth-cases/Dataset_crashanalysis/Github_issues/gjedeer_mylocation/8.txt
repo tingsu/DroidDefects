@@ -1,0 +1,19 @@
+mypapit.mobile.myposition.MyLocationActivity}: java.lang.IllegalArgumentException: provider doesn't exist: network                       
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3137)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3168)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2515)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at android.app.ActivityThread.-wrap11(ActivityThread.java)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1363)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:102)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:148)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:5461)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:134)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime: Caused by: java.lang.IllegalArgumentException: provider doesn't exist: network
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at android.os.Parcel.readException(Parcel.java:1624)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at android.os.Parcel.readException(Parcel.java:1573)
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at android.location.ILocationManager$Stub$Proxy.requestLocationUpdates(ILocationMa
+nager.java:606)                                                                                                                          
+06-03 13:54:26.589 22377 22377 E AndroidRuntime:        at android.location.LocationManager.requestLocationUpdates(LocationManager.java:89

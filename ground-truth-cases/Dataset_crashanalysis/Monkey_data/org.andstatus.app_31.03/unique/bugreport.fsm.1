@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: org.andstatus.app
+//version: 31.03
+//appro_time: 65
+ Error inserting account_id=0 command_created_date=1493920801255 retries_left=10 num_auth_exceptions=0 search_query= command_code=get_open_instances num_parse_exceptions=0 execution_count=1 username= timeline_type=home origin_id=0 _id=1493920801255 item_id=3 error_message=Expected 'SYNC', but was 'ONLINE' connection num_io_exceptions=1 progress_text=null downloaded_count=0 user_id=0 queue_type=retry last_executed_date=1493920801375 manually_launched=false in_foreground=true timeline_id=0
+ android.database.sqlite.SQLiteConstraintException: PRIMARY KEY must be unique (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at org.andstatus.app.service.CommandQueue.save(CommandQueue.java:186)
+ 	at org.andstatus.app.service.CommandQueue.save(CommandQueue.java:150)
+ 	at org.andstatus.app.service.MyService$QueueExecutor.doInBackground2(MyService.java:597)
+ 	at org.andstatus.app.service.MyService$QueueExecutor.doInBackground2(MyService.java:536)
+ 	at org.andstatus.app.os.MyAsyncTask.doInBackground(MyAsyncTask.java:99)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

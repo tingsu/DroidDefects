@@ -1,0 +1,8 @@
+java.lang.NullPointerException: null receiver
+    at java.lang.reflect.Method.invoke(Native Method)
+    at de.blinkt.openvpn.core.OpenVpnManagementThread.protectFileDescriptor(OpenVpnManagementThread.java:163)
+    at de.blinkt.openvpn.core.OpenVpnManagementThread.processNeedCommand(OpenVpnManagementThread.java:402)
+    at de.blinkt.openvpn.core.OpenVpnManagementThread.processCommand(OpenVpnManagementThread.java:221)
+    at de.blinkt.openvpn.core.OpenVpnManagementThread.processInput(OpenVpnManagementThread.java:189)
+    at de.blinkt.openvpn.core.OpenVpnManagementThread.run(OpenVpnManagementThread.java:146)
+    at java.lang.Thread.run(Thread.java:818)

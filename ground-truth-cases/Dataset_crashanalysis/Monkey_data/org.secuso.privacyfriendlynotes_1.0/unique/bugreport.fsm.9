@@ -1,0 +1,31 @@
+//this is an auto-generated bug report
+//package name: org.secuso.privacyfriendlynotes
+//version: 1.0
+//appro_time: 170
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to pause activity {org.secuso.privacyfriendlynotes/org.secuso.privacyfriendlynotes.SketchActivity}: java.lang.IllegalArgumentException: width and height must be > 0
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3064)
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3019)
+ 	at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:2997)
+ 	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1267)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalArgumentException: width and height must be > 0
+ 	at android.graphics.Bitmap.createBitmap(Bitmap.java:695)
+ 	at android.graphics.Bitmap.createBitmap(Bitmap.java:674)
+ 	at android.graphics.Bitmap.createBitmap(Bitmap.java:641)
+ 	at com.simplify.ink.InkView.getBitmap(InkView.java:416)
+ 	at com.simplify.ink.InkView.getBitmap(InkView.java:405)
+ 	at org.secuso.privacyfriendlynotes.SketchActivity.updateNote(SketchActivity.java:317)
+ 	at org.secuso.privacyfriendlynotes.SketchActivity.onPause(SketchActivity.java:193)
+ 	at android.app.Activity.performPause(Activity.java:5235)
+ 	at android.app.Instrumentation.callActivityOnPause(Instrumentation.java:1233)
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3050)
+ 	... 12 more

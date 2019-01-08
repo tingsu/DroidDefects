@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: com.matburt.mobileorg
+//version: 0.9.8
+//appro_time: 136
+ java.lang.RuntimeException: Unable to start service com.matburt.mobileorg.Services.CalendarSyncService@ad22fa88 with Intent { cmp=com.matburt.mobileorg/.Services.CalendarSyncService (has extras) }: java.lang.NumberFormatException: Invalid int: ""
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2721)
+ 	at android.app.ActivityThread.access$1900(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1353)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NumberFormatException: Invalid int: ""
+ 	at java.lang.Integer.invalidInt(Integer.java:138)
+ 	at java.lang.Integer.parseInt(Integer.java:359)
+ 	at java.lang.Integer.parseInt(Integer.java:332)
+ 	at java.lang.Integer.valueOf(Integer.java:490)
+ 	at com.matburt.mobileorg.Services.CalendarWrapper.refreshPreferences(CalendarWrapper.java:221)
+ 	at com.matburt.mobileorg.Services.CalendarSyncService.refreshPreferences(CalendarSyncService.java:268)
+ 	at com.matburt.mobileorg.Services.CalendarSyncService.onStartCommand(CalendarSyncService.java:78)
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2704)

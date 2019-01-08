@@ -1,0 +1,14 @@
+11-14 19:29:09.435 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err: java.net.MalformedURLException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference
+11-14 19:29:09.459 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err:     at java.net.URL.<init>(URL.java:623)
+11-14 19:29:09.460 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err:     at java.net.URL.<init>(URL.java:486)
+11-14 19:29:09.460 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err:     at java.net.URL.<init>(URL.java:435)
+11-14 19:29:09.461 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err:     at openfoodfacts.github.scrachx.openfood.views.HistoryScanActivity$FillAdapter.doInBackground(HistoryScanActivity.java:182)
+11-14 19:29:09.461 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err:     at openfoodfacts.github.scrachx.openfood.views.HistoryScanActivity$FillAdapter.doInBackground(HistoryScanActivity.java:160)
+11-14 19:29:09.461 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err:     at android.os.AsyncTask$2.call(AsyncTask.java:304)
+11-14 19:29:09.461 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err:     at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+11-14 19:29:09.461 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err:     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243)
+11-14 19:29:09.461 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err:     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+11-14 19:29:09.461 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err:     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+11-14 19:29:09.461 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err:     at java.lang.Thread.run(Thread.java:761)
+11-14 19:29:09.461 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err: Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference
+11-14 19:29:09.461 9712-10833/openfoodfacts.github.scrachx.openfood W/System.err:     at java.net.URL.<init>(URL.java:528)

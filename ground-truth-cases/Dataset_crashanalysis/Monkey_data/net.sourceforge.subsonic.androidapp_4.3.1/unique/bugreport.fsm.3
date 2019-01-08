@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: net.sourceforge.subsonic.androidapp
+//version: 4.3.1
+//appro_time: 61
+ android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@ad2c8ff8 is not valid; is your activity running?
+ 	at android.view.ViewRootImpl.setView(ViewRootImpl.java:559)
+ 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:269)
+ 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+ 	at android.app.Dialog.show(Dialog.java:281)
+ 	at net.sourceforge.subsonic.androidapp.util.ErrorDialog.<init>(ErrorDialog.java:59)
+ 	at net.sourceforge.subsonic.androidapp.util.BackgroundTask.error(BackgroundTask.java:60)
+ 	at net.sourceforge.subsonic.androidapp.util.TabActivityBackgroundTask$1$2.run(TabActivityBackgroundTask.java:46)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,18 @@
+E/AndroidRuntime(28599): java.lang.RuntimeException: Unable to resume activity {com.zeapo.pwdstore/com.zeapo.pwdstore.PasswordStore}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.io.File org.eclipse.jgit.lib.Repository.getWorkTree()' on a null object reference
+E/AndroidRuntime(28599):    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3007)
+E/AndroidRuntime(28599):    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3038)
+E/AndroidRuntime(28599):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1368)
+E/AndroidRuntime(28599):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(28599):    at android.os.Looper.loop(Looper.java:211)
+E/AndroidRuntime(28599):    at android.app.ActivityThread.main(ActivityThread.java:5321)
+E/AndroidRuntime(28599):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(28599):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(28599):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1016)
+E/AndroidRuntime(28599):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:811)
+E/AndroidRuntime(28599): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.io.File org.eclipse.jgit.lib.Repository.getWorkTree()' on a null object reference
+E/AndroidRuntime(28599):    at com.zeapo.pwdstore.utils.PasswordRepository.getWorkTree(PasswordRepository.java:165)
+E/AndroidRuntime(28599):    at com.zeapo.pwdstore.PasswordStore.checkLocalRepository(PasswordStore.java:257)
+E/AndroidRuntime(28599):    at com.zeapo.pwdstore.PasswordStore.onResume(PasswordStore.java:59)
+E/AndroidRuntime(28599):    at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1241)
+E/AndroidRuntime(28599):    at android.app.Activity.performResume(Activity.java:6019)
+E/AndroidRuntime(28599):    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2996)

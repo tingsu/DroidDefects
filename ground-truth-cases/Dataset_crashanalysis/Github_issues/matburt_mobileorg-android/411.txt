@@ -1,0 +1,206 @@
+08-28 08:55:31.967 E/AndroidRuntime(29306): java.lang.RuntimeException: Unable to create service com.matburt.mobileorg.Services.CalendarSyncService: java.lang.NumberFormatException: Invalid int: ""
+08-28 08:55:31.967 E/AndroidRuntime(29306):         at com.matburt.mobileorg.Services.CalendarWrapper.refreshPreferences(CalendarWrapper.java:236)
+08-28 08:55:31.967 E/AndroidRuntime(29306):         at com.matburt.mobileorg.Services.CalendarSyncService.refreshPreferences(CalendarSyncService.java:272)
+08-28 08:55:31.967 E/AndroidRuntime(29306):         at com.matburt.mobileorg.Services.CalendarSyncService.onCreate(CalendarSyncService.java:67)
+08-28 08:55:31.977 E/EmbeddedLogger(390): App crashed! Process: com.matburt.mobileorg
+08-28 08:55:31.977 E/EmbeddedLogger(390): App crashed! Package: com.matburt.mobileorg v913 (0.9.13)
+08-28 08:55:31.977 E/EmbeddedLogger(390): App crashed! Application Label: MobileOrg
+08-28 08:55:31.977 W/ActivityManager(390):   Force finishing activity com.matburt.mobileorg/.Settings.SettingsActivity
+08-28 08:55:32.522 W/ActivityManager(390): Activity pause timeout for ActivityRecord{42a857b0 com.matburt.mobileorg/.Settings.SettingsActivity}
+08-28 08:55:34.362 I/WindowState(390): WIN DEATH: Window{4299ddc8 com.matburt.mobileorg/com.matburt.mobileorg.Settings.SettingsActivity paused=false}
+08-28 08:55:34.362 I/ActivityManager(390): Process com.matburt.mobileorg (pid 29306) has died.
+08-28 08:55:34.362 W/ActivityManager(390): Scheduling restart of crashed service com.matburt.mobileorg/.Services.CalendarSyncService in 5000ms
+08-28 08:55:34.367 W/ActivityManager(390): Scheduling restart of crashed service com.matburt.mobileorg/.Services.SyncService in 14999ms
+08-28 08:55:34.367 I/WindowState(390): WIN DEATH: Window{4296fbb8 com.matburt.mobileorg/com.matburt.mobileorg.Settings.SettingsActivity paused=false}
+08-28 08:55:34.367 I/WindowState(390): WIN DEATH: Window{42473448 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity paused=false}
+08-28 08:55:34.372 W/ActivityManager(390): Force removing ActivityRecord{421bd0c0 com.matburt.mobileorg/.Gui.Outline.OutlineActivity}: app died, no saved state
+08-28 08:55:36.327 I/ActivityManager(390): START {act=android.intent.action.MAIN flg=0x10000000 cmp=com.matburt.mobileorg/.Gui.Outline.OutlineActivity bnds=[576,246][720,492] u=0} from pid 14788
+08-28 08:55:36.397 I/ActivityManager(390): Start proc com.matburt.mobileorg for activity com.matburt.mobileorg/.Gui.Outline.OutlineActivity: pid=30107 uid=10195 gids={3003, 1015, 1028}
+08-28 08:55:36.587 I/ActivityThread(30107): Pub com.matburt.mobileorg.OrgData.OrgProvider: com.matburt.mobileorg.OrgData.OrgProvider
+08-28 08:55:36.902 I/ActivityManager(390): Displayed com.matburt.mobileorg/.Gui.Outline.OutlineActivity: +520ms
+08-28 08:55:38.567 D/MobileOrg(30107): 下载中 agendas.org/Agenda Views
+08-28 08:55:39.482 E/AndroidRuntime(30107): java.lang.RuntimeException: Unable to create service com.matburt.mobileorg.Services.CalendarSyncService: java.lang.NumberFormatException: Invalid int: ""
+08-28 08:55:39.482 E/AndroidRuntime(30107):         at com.matburt.mobileorg.Services.CalendarWrapper.refreshPreferences(CalendarWrapper.java:236)
+08-28 08:55:39.482 E/AndroidRuntime(30107):         at com.matburt.mobileorg.Services.CalendarSyncService.refreshPreferences(CalendarSyncService.java:272)
+08-28 08:55:39.482 E/AndroidRuntime(30107):         at com.matburt.mobileorg.Services.CalendarSyncService.onCreate(CalendarSyncService.java:67)
+08-28 08:55:39.487 E/EmbeddedLogger(390): App crashed! Process: com.matburt.mobileorg
+08-28 08:55:39.487 E/EmbeddedLogger(390): App crashed! Package: com.matburt.mobileorg v913 (0.9.13)
+08-28 08:55:39.487 E/EmbeddedLogger(390): App crashed! Application Label: MobileOrg
+08-28 08:55:39.487 W/ActivityManager(390):   Force finishing activity com.matburt.mobileorg/.Gui.Outline.OutlineActivity
+08-28 08:55:40.037 W/ActivityManager(390): Activity pause timeout for ActivityRecord{421f05d8 com.matburt.mobileorg/.Gui.Outline.OutlineActivity}
+08-28 08:55:41.342 I/WindowState(390): WIN DEATH: Window{42ae46c0 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity paused=false}
+08-28 08:55:41.347 I/ActivityManager(390): Process com.matburt.mobileorg (pid 30107) has died.
+08-28 08:55:41.352 W/ActivityManager(390): Service crashed 2 times, stopping: ServiceRecord{425a79e8 com.matburt.mobileorg/.Services.CalendarSyncService}
+08-28 08:55:41.352 W/ActivityManager(390): Service crashed 2 times, stopping: ServiceRecord{42b99e80 com.matburt.mobileorg/.Services.SyncService}
+08-28 08:55:42.372 I/ActivityManager(390): START {act=android.intent.action.MAIN flg=0x10000000 cmp=com.matburt.mobileorg/.Gui.Outline.OutlineActivity bnds=[576,246][720,492] u=0} from pid 14788
+08-28 08:55:42.427 I/ActivityManager(390): Start proc com.matburt.mobileorg for activity com.matburt.mobileorg/.Gui.Outline.OutlineActivity: pid=30180 uid=10195 gids={3003, 1015, 1028}
+08-28 08:55:42.607 I/ActivityThread(30180): Pub com.matburt.mobileorg.OrgData.OrgProvider: com.matburt.mobileorg.OrgData.OrgProvider
+08-28 08:55:42.942 I/ActivityManager(390): Displayed com.matburt.mobileorg/.Gui.Outline.OutlineActivity: +532ms
+08-28 08:55:45.947 D/MobileOrg(30180): 下载中 i-account.org/i-account.org
+08-28 08:55:46.087 D/MobileOrg(30180): 下载中 i-contacts.org/i-contacts.org
+08-28 08:55:46.392 D/MobileOrg(30180): 下载中 i-demo.org/i-demo.org
+08-28 08:55:46.507 D/MobileOrg(30180): 下载中 i-journal.org/i-journal.org
+08-28 08:55:46.892 D/MobileOrg(30180): 下载中 i-learning-process.org/i-learning-process.org
+08-28 08:55:47.082 D/MobileOrg(30180): 下载中 i-notes-auto.org/i-notes-auto.org
+08-28 08:55:47.207 D/MobileOrg(30180): 下载中 i-notes-study.org/i-notes-study.org
+08-28 08:55:47.552 D/MobileOrg(30180): 下载中 i-notes.org/i-notes.org
+08-28 08:55:47.742 D/MobileOrg(30180): 下载中 i-schedule.org/i-schedule.org
+08-28 08:55:47.987 D/MobileOrg(30180): 下载中 i-todo.org/i-todo.org
+08-28 08:55:48.167 D/MobileOrg(30180): 下载中 sj-department-function.org/sj-department-function.org
+08-28 08:55:48.377 D/MobileOrg(30180): 下载中 sj-medical-record-measurement-tools.org/sj-medical-record-measurement-tools.org
+08-28 08:55:48.557 D/MobileOrg(30180): 下载中 sj-meeting-record-20120410.org/sj-meeting-record-20120410.org
+08-28 08:55:48.702 D/MobileOrg(30180): 下载中 sj-quality-manager-tools.org/sj-quality-manager-tools.org
+08-28 08:55:48.837 D/MobileOrg(30180): 下载中 sj-standard-2011.org/sj-standard-2011.org
+08-28 08:55:49.097 D/MobileOrg(30180): 下载中 sj-todo.org/sj-todo.org
+08-28 08:55:50.222 W/ActivityManager(390): Activity destroy timeout for ActivityRecord{421f05d8 com.matburt.mobileorg/.Gui.Outline.OutlineActivity}
+08-28 08:55:53.632 I/HTCIMEService(14347): [onStartInputView]: attribute=0x1, package=com.matburt.mobileorg
+08-28 08:56:01.357 I/ActivityManager(390): START {act=android.intent.action.MAIN flg=0x10000000 cmp=com.matburt.mobileorg/.Gui.Outline.OutlineActivity bnds=[576,246][720,492] u=0} from pid 14788
+08-28 08:56:01.927 I/ActivityManager(390): Displayed com.matburt.mobileorg/.Gui.Outline.OutlineActivity: +516ms (total +3s596ms)
+08-28 08:56:04.122 I/ActivityManager(390): START {cmp=com.matburt.mobileorg/.Settings.SettingsActivity u=0} from pid 30180
+08-28 08:56:04.492 I/ActivityManager(390): Displayed com.matburt.mobileorg/.Settings.SettingsActivity: +242ms
+08-28 08:56:14.807 E/AndroidRuntime(30180): java.lang.RuntimeException: Unable to create service com.matburt.mobileorg.Services.CalendarSyncService: java.lang.NumberFormatException: Invalid int: ""
+08-28 08:56:14.807 E/AndroidRuntime(30180):         at com.matburt.mobileorg.Services.CalendarWrapper.refreshPreferences(CalendarWrapper.java:236)
+08-28 08:56:14.807 E/AndroidRuntime(30180):         at com.matburt.mobileorg.Services.CalendarSyncService.refreshPreferences(CalendarSyncService.java:272)
+08-28 08:56:14.807 E/AndroidRuntime(30180):         at com.matburt.mobileorg.Services.CalendarSyncService.onCreate(CalendarSyncService.java:67)
+08-28 08:56:14.817 E/EmbeddedLogger(390): App crashed! Process: com.matburt.mobileorg
+08-28 08:56:14.817 E/EmbeddedLogger(390): App crashed! Package: com.matburt.mobileorg v913 (0.9.13)
+08-28 08:56:14.817 E/EmbeddedLogger(390): App crashed! Application Label: MobileOrg
+08-28 08:56:14.817 W/ActivityManager(390):   Force finishing activity com.matburt.mobileorg/.Gui.Outline.OutlineActivity
+08-28 08:56:15.362 W/ActivityManager(390): Activity pause timeout for ActivityRecord{424ce9d0 com.matburt.mobileorg/.Gui.Outline.OutlineActivity}
+08-28 08:56:16.547 I/ActivityManager(390): Process com.matburt.mobileorg (pid 30180) has died.
+08-28 08:56:16.547 W/ActivityManager(390): Scheduling restart of crashed service com.matburt.mobileorg/.Services.CalendarSyncService in 5000ms
+08-28 08:56:16.547 W/ActivityManager(390): Scheduling restart of crashed service com.matburt.mobileorg/.Services.SyncService in 15000ms
+08-28 08:56:16.547 I/WindowState(390): WIN DEATH: Window{426677e8 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity paused=false}
+08-28 08:56:21.672 I/ActivityManager(390): Start proc com.matburt.mobileorg for service com.matburt.mobileorg/.Services.CalendarSyncService: pid=30423 uid=10195 gids={3003, 1015, 1028}
+08-28 08:56:21.777 I/ActivityThread(30423): Pub com.matburt.mobileorg.OrgData.OrgProvider: com.matburt.mobileorg.OrgData.OrgProvider
+08-28 08:56:21.802 E/EmbeddedLogger(390): App crashed! Process: com.matburt.mobileorg
+08-28 08:56:21.802 E/EmbeddedLogger(390): App crashed! Package: com.matburt.mobileorg v913 (0.9.13)
+08-28 08:56:21.802 E/EmbeddedLogger(390): App crashed! Application Label: MobileOrg
+08-28 08:56:21.802 E/AndroidRuntime(30423): java.lang.RuntimeException: Unable to create service com.matburt.mobileorg.Services.CalendarSyncService: java.lang.NumberFormatException: Invalid int: ""
+08-28 08:56:21.802 E/AndroidRuntime(30423):         at com.matburt.mobileorg.Services.CalendarWrapper.refreshPreferences(CalendarWrapper.java:236)
+08-28 08:56:21.802 E/AndroidRuntime(30423):         at com.matburt.mobileorg.Services.CalendarSyncService.refreshPreferences(CalendarSyncService.java:272)
+08-28 08:56:21.802 E/AndroidRuntime(30423):         at com.matburt.mobileorg.Services.CalendarSyncService.onCreate(CalendarSyncService.java:67)
+08-28 08:56:23.382 I/ActivityManager(390): Process com.matburt.mobileorg (pid 30423) has died.
+08-28 08:56:23.387 W/ActivityManager(390): Service crashed 2 times, stopping: ServiceRecord{42bbc550 com.matburt.mobileorg/.Services.SyncService}
+08-28 08:56:23.387 W/ActivityManager(390): Service crashed 2 times, stopping: ServiceRecord{42ed1070 com.matburt.mobileorg/.Services.CalendarSyncService}
+08-28 08:56:25.537 W/ActivityManager(390): Activity destroy timeout for ActivityRecord{424ce9d0 com.matburt.mobileorg/.Gui.Outline.OutlineActivity}
+08-28 08:57:03.792 I/ActivityManager(390): START {act=android.intent.action.MAIN flg=0x10000000 cmp=com.matburt.mobileorg/.Gui.Outline.OutlineActivity bnds=[576,246][720,492] u=0} from pid 14788
+08-28 08:57:03.857 I/ActivityManager(390): Start proc com.matburt.mobileorg for activity com.matburt.mobileorg/.Gui.Outline.OutlineActivity: pid=30690 uid=10195 gids={3003, 1015, 1028}
+08-28 08:57:04.047 I/ActivityThread(30690): Pub com.matburt.mobileorg.OrgData.OrgProvider: com.matburt.mobileorg.OrgData.OrgProvider
+08-28 08:57:04.577 I/ActivityManager(390): Displayed com.matburt.mobileorg/.Gui.Outline.OutlineActivity: +734ms
+08-28 08:57:06.412 E/AndroidRuntime(30690): java.lang.RuntimeException: Unable to create service com.matburt.mobileorg.Services.CalendarSyncService: java.lang.NumberFormatException: Invalid int: ""
+08-28 08:57:06.412 E/AndroidRuntime(30690):         at com.matburt.mobileorg.Services.CalendarWrapper.refreshPreferences(CalendarWrapper.java:236)
+08-28 08:57:06.412 E/AndroidRuntime(30690):         at com.matburt.mobileorg.Services.CalendarSyncService.refreshPreferences(CalendarSyncService.java:272)
+08-28 08:57:06.412 E/AndroidRuntime(30690):         at com.matburt.mobileorg.Services.CalendarSyncService.onCreate(CalendarSyncService.java:67)
+08-28 08:57:06.422 E/EmbeddedLogger(390): App crashed! Process: com.matburt.mobileorg
+08-28 08:57:06.422 E/EmbeddedLogger(390): App crashed! Package: com.matburt.mobileorg v913 (0.9.13)
+08-28 08:57:06.422 E/EmbeddedLogger(390): App crashed! Application Label: MobileOrg
+08-28 08:57:06.422 W/ActivityManager(390):   Force finishing activity com.matburt.mobileorg/.Gui.Outline.OutlineActivity
+08-28 08:57:06.967 W/ActivityManager(390): Activity pause timeout for ActivityRecord{429ff778 com.matburt.mobileorg/.Gui.Outline.OutlineActivity}
+08-28 08:57:08.287 I/WindowState(390): WIN DEATH: Window{4285b2d8 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity paused=false}
+08-28 08:57:08.287 I/ActivityManager(390): Process com.matburt.mobileorg (pid 30690) has died.
+08-28 08:57:08.287 W/ActivityManager(390): Scheduling restart of crashed service com.matburt.mobileorg/.Services.SyncService in 5000ms
+08-28 08:57:08.287 W/ActivityManager(390): Scheduling restart of crashed service com.matburt.mobileorg/.Services.CalendarSyncService in 15000ms
+08-28 08:57:13.302 I/ActivityManager(390): Start proc com.matburt.mobileorg for service com.matburt.mobileorg/.Services.SyncService: pid=30773 uid=10195 gids={3003, 1015, 1028}
+08-28 08:57:13.357 I/ActivityThread(30773): Pub com.matburt.mobileorg.OrgData.OrgProvider: com.matburt.mobileorg.OrgData.OrgProvider
+08-28 08:57:17.147 W/ActivityManager(390): Activity destroy timeout for ActivityRecord{429ff778 com.matburt.mobileorg/.Gui.Outline.OutlineActivity}
+08-28 08:57:23.317 E/AndroidRuntime(30773): java.lang.RuntimeException: Unable to create service com.matburt.mobileorg.Services.CalendarSyncService: java.lang.NumberFormatException: Invalid int: ""
+08-28 08:57:23.317 E/AndroidRuntime(30773):         at com.matburt.mobileorg.Services.CalendarWrapper.refreshPreferences(CalendarWrapper.java:236)
+08-28 08:57:23.317 E/AndroidRuntime(30773):         at com.matburt.mobileorg.Services.CalendarSyncService.refreshPreferences(CalendarSyncService.java:272)
+08-28 08:57:23.317 E/AndroidRuntime(30773):         at com.matburt.mobileorg.Services.CalendarSyncService.onCreate(CalendarSyncService.java:67)
+08-28 08:57:23.332 E/EmbeddedLogger(390): App crashed! Process: com.matburt.mobileorg
+08-28 08:57:23.332 E/EmbeddedLogger(390): App crashed! Package: com.matburt.mobileorg v913 (0.9.13)
+08-28 08:57:23.332 E/EmbeddedLogger(390): App crashed! Application Label: MobileOrg
+08-28 08:57:24.857 I/ActivityManager(390): Process com.matburt.mobileorg (pid 30773) has died.
+08-28 08:57:24.857 W/ActivityManager(390): Service crashed 2 times, stopping: ServiceRecord{42874640 com.matburt.mobileorg/.Services.SyncService}
+08-28 08:57:24.857 W/ActivityManager(390): Service crashed 2 times, stopping: ServiceRecord{4254b3b0 com.matburt.mobileorg/.Services.CalendarSyncService}
+08-28 09:02:12.834 I/ActivityManager(390): START {act=android.intent.action.MAIN flg=0x10000000 cmp=com.matburt.mobileorg/.Gui.Outline.OutlineActivity bnds=[576,246][720,492] u=0} from pid 14788
+08-28 09:02:12.884 I/ActivityManager(390): Start proc com.matburt.mobileorg for activity com.matburt.mobileorg/.Gui.Outline.OutlineActivity: pid=31643 uid=10195 gids={3003, 1015, 1028}
+08-28 09:02:13.054 I/ActivityThread(31643): Pub com.matburt.mobileorg.OrgData.OrgProvider: com.matburt.mobileorg.OrgData.OrgProvider
+08-28 09:02:13.634 I/ActivityManager(390): Displayed com.matburt.mobileorg/.Gui.Outline.OutlineActivity: +761ms
+08-28 09:02:16.729 I/ActivityManager(390): START {cmp=com.matburt.mobileorg/.Settings.SettingsActivity u=0} from pid 31643
+08-28 09:02:17.099 I/ActivityManager(390): Displayed com.matburt.mobileorg/.Settings.SettingsActivity: +291ms
+08-28 09:02:21.129 E/AndroidRuntime(31643): java.lang.RuntimeException: Unable to create service com.matburt.mobileorg.Services.CalendarSyncService: java.lang.NumberFormatException: Invalid int: ""
+08-28 09:02:21.129 E/AndroidRuntime(31643):         at com.matburt.mobileorg.Services.CalendarWrapper.refreshPreferences(CalendarWrapper.java:236)
+08-28 09:02:21.129 E/AndroidRuntime(31643):         at com.matburt.mobileorg.Services.CalendarSyncService.refreshPreferences(CalendarSyncService.java:272)
+08-28 09:02:21.129 E/AndroidRuntime(31643):         at com.matburt.mobileorg.Services.CalendarSyncService.onCreate(CalendarSyncService.java:67)
+08-28 09:02:21.134 E/EmbeddedLogger(390): App crashed! Process: com.matburt.mobileorg
+08-28 09:02:21.134 E/EmbeddedLogger(390): App crashed! Package: com.matburt.mobileorg v913 (0.9.13)
+08-28 09:02:21.134 E/EmbeddedLogger(390): App crashed! Application Label: MobileOrg
+08-28 09:02:21.134 W/ActivityManager(390):   Force finishing activity com.matburt.mobileorg/.Settings.SettingsActivity
+08-28 09:02:21.684 W/ActivityManager(390): Activity pause timeout for ActivityRecord{429cf638 com.matburt.mobileorg/.Settings.SettingsActivity}
+08-28 09:02:23.304 I/WindowState(390): WIN DEATH: Window{42c24628 com.matburt.mobileorg/com.matburt.mobileorg.Settings.SettingsActivity paused=false}
+08-28 09:02:23.309 I/ActivityManager(390): Process com.matburt.mobileorg (pid 31643) has died.
+08-28 09:02:23.309 W/ActivityManager(390): Scheduling restart of crashed service com.matburt.mobileorg/.Services.CalendarSyncService in 5000ms
+08-28 09:02:23.314 W/InputDispatcher(390): channel '42b09f80 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+08-28 09:02:23.314 E/InputDispatcher(390): channel '42b09f80 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+08-28 09:02:23.314 W/InputDispatcher(390): Attempted to unregister already unregistered input channel '42b09f80 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity (server)'
+08-28 09:02:23.314 W/ActivityManager(390): Scheduling restart of crashed service com.matburt.mobileorg/.Services.SyncService in 14999ms
+08-28 09:02:23.314 I/WindowState(390): WIN DEATH: Window{42b09f80 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity paused=false}
+08-28 09:02:23.314 I/WindowState(390): WIN DEATH: Window{42c79530 com.matburt.mobileorg/com.matburt.mobileorg.Settings.SettingsActivity paused=false}
+08-28 09:02:23.319 I/WindowManager(390): WINDOW DIED Window{42b09f80 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity paused=false}
+08-28 09:02:23.319 W/ActivityManager(390): Force removing ActivityRecord{42622f50 com.matburt.mobileorg/.Gui.Outline.OutlineActivity}: app died, no saved state
+08-28 09:02:24.474 I/ActivityManager(390): START {act=android.intent.action.MAIN flg=0x10000000 cmp=com.matburt.mobileorg/.Gui.Outline.OutlineActivity bnds=[576,246][720,492] u=0} from pid 14788
+08-28 09:02:24.589 I/ActivityManager(390): Start proc com.matburt.mobileorg for activity com.matburt.mobileorg/.Gui.Outline.OutlineActivity: pid=31714 uid=10195 gids={3003, 1015, 1028}
+08-28 09:02:24.804 I/ActivityThread(31714): Pub com.matburt.mobileorg.OrgData.OrgProvider: com.matburt.mobileorg.OrgData.OrgProvider
+08-28 09:02:25.089 I/ActivityManager(390): Displayed com.matburt.mobileorg/.Gui.Outline.OutlineActivity: +520ms
+08-28 09:02:26.774 D/MobileOrg(31714): 下载中 agendas.org/Agenda Views
+08-28 09:02:28.399 E/AndroidRuntime(31714): java.lang.RuntimeException: Unable to create service com.matburt.mobileorg.Services.CalendarSyncService: java.lang.NumberFormatException: Invalid int: ""
+08-28 09:02:28.399 E/AndroidRuntime(31714):         at com.matburt.mobileorg.Services.CalendarWrapper.refreshPreferences(CalendarWrapper.java:236)
+08-28 09:02:28.399 E/AndroidRuntime(31714):         at com.matburt.mobileorg.Services.CalendarSyncService.refreshPreferences(CalendarSyncService.java:272)
+08-28 09:02:28.399 E/AndroidRuntime(31714):         at com.matburt.mobileorg.Services.CalendarSyncService.onCreate(CalendarSyncService.java:67)
+08-28 09:02:28.404 E/EmbeddedLogger(390): App crashed! Process: com.matburt.mobileorg
+08-28 09:02:28.404 E/EmbeddedLogger(390): App crashed! Package: com.matburt.mobileorg v913 (0.9.13)
+08-28 09:02:28.404 E/EmbeddedLogger(390): App crashed! Application Label: MobileOrg
+08-28 09:02:28.409 W/ActivityManager(390):   Force finishing activity com.matburt.mobileorg/.Gui.Outline.OutlineActivity
+08-28 09:02:28.959 W/ActivityManager(390): Activity pause timeout for ActivityRecord{421b1690 com.matburt.mobileorg/.Gui.Outline.OutlineActivity}
+08-28 09:02:30.364 I/WindowState(390): WIN DEATH: Window{424e6250 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity paused=false}
+08-28 09:02:30.364 I/ActivityManager(390): Process com.matburt.mobileorg (pid 31714) has died.
+08-28 09:02:30.364 W/ActivityManager(390): Service crashed 2 times, stopping: ServiceRecord{42c6de98 com.matburt.mobileorg/.Services.CalendarSyncService}
+08-28 09:02:30.364 W/ActivityManager(390): Service crashed 2 times, stopping: ServiceRecord{42b678c8 com.matburt.mobileorg/.Services.SyncService}
+08-28 09:02:31.734 I/ActivityManager(390): START {act=android.intent.action.MAIN flg=0x10000000 cmp=com.matburt.mobileorg/.Gui.Outline.OutlineActivity bnds=[576,246][720,492] u=0} from pid 14788
+08-28 09:02:31.864 I/ActivityManager(390): Start proc com.matburt.mobileorg for activity com.matburt.mobileorg/.Gui.Outline.OutlineActivity: pid=31779 uid=10195 gids={3003, 1015, 1028}
+08-28 09:02:32.079 I/ActivityThread(31779): Pub com.matburt.mobileorg.OrgData.OrgProvider: com.matburt.mobileorg.OrgData.OrgProvider
+08-28 09:02:32.384 I/ActivityManager(390): Displayed com.matburt.mobileorg/.Gui.Outline.OutlineActivity: +539ms
+08-28 09:02:34.229 D/MobileOrg(31779): 下载中 i-account.org/i-account.org
+08-28 09:02:34.449 D/MobileOrg(31779): 下载中 i-contacts.org/i-contacts.org
+08-28 09:02:34.679 D/MobileOrg(31779): 下载中 i-demo.org/i-demo.org
+08-28 09:02:34.804 D/MobileOrg(31779): 下载中 i-journal.org/i-journal.org
+08-28 09:02:35.179 D/MobileOrg(31779): 下载中 i-learning-process.org/i-learning-process.org
+08-28 09:02:35.329 D/MobileOrg(31779): 下载中 i-notes-auto.org/i-notes-auto.org
+08-28 09:02:35.504 D/MobileOrg(31779): 下载中 i-notes-study.org/i-notes-study.org
+08-28 09:02:35.859 D/MobileOrg(31779): 下载中 i-notes.org/i-notes.org
+08-28 09:02:36.049 D/MobileOrg(31779): 下载中 i-schedule.org/i-schedule.org
+08-28 09:02:36.234 D/MobileOrg(31779): 下载中 i-todo.org/i-todo.org
+08-28 09:02:36.389 D/MobileOrg(31779): 下载中 sj-department-function.org/sj-department-function.org
+08-28 09:02:36.559 D/MobileOrg(31779): 下载中 sj-medical-record-measurement-tools.org/sj-medical-record-measurement-tools.org
+08-28 09:02:36.769 D/MobileOrg(31779): 下载中 sj-meeting-record-20120410.org/sj-meeting-record-20120410.org
+08-28 09:02:36.899 D/MobileOrg(31779): 下载中 sj-quality-manager-tools.org/sj-quality-manager-tools.org
+08-28 09:02:37.069 D/MobileOrg(31779): 下载中 sj-standard-2011.org/sj-standard-2011.org
+08-28 09:02:37.354 D/MobileOrg(31779): 下载中 sj-todo.org/sj-todo.org
+08-28 09:02:37.829 E/AndroidRuntime(31779): java.lang.RuntimeException: Unable to create service com.matburt.mobileorg.Services.CalendarSyncService: java.lang.NumberFormatException: Invalid int: ""
+08-28 09:02:37.829 E/AndroidRuntime(31779):         at com.matburt.mobileorg.Services.CalendarWrapper.refreshPreferences(CalendarWrapper.java:236)
+08-28 09:02:37.829 E/AndroidRuntime(31779):         at com.matburt.mobileorg.Services.CalendarSyncService.refreshPreferences(CalendarSyncService.java:272)
+08-28 09:02:37.829 E/AndroidRuntime(31779):         at com.matburt.mobileorg.Services.CalendarSyncService.onCreate(CalendarSyncService.java:67)
+08-28 09:02:37.834 E/EmbeddedLogger(390): App crashed! Process: com.matburt.mobileorg
+08-28 09:02:37.834 E/EmbeddedLogger(390): App crashed! Package: com.matburt.mobileorg v913 (0.9.13)
+08-28 09:02:37.834 E/EmbeddedLogger(390): App crashed! Application Label: MobileOrg
+08-28 09:02:37.834 W/ActivityManager(390):   Force finishing activity com.matburt.mobileorg/.Gui.Outline.OutlineActivity
+08-28 09:02:38.394 W/ActivityManager(390): Activity pause timeout for ActivityRecord{4259ac08 com.matburt.mobileorg/.Gui.Outline.OutlineActivity}
+08-28 09:02:39.179 W/ActivityManager(390): Activity destroy timeout for ActivityRecord{421b1690 com.matburt.mobileorg/.Gui.Outline.OutlineActivity}
+08-28 09:02:39.454 W/InputDispatcher(390): channel '4299ddc8 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+08-28 09:02:39.454 E/InputDispatcher(390): channel '4299ddc8 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+08-28 09:02:39.454 I/ActivityManager(390): Process com.matburt.mobileorg (pid 31779) has died.
+08-28 09:02:39.454 W/ActivityManager(390): Scheduling restart of crashed service com.matburt.mobileorg/.Services.CalendarSyncService in 5000ms
+08-28 09:02:39.454 W/ActivityManager(390): Scheduling restart of crashed service com.matburt.mobileorg/.Services.SyncService in 15000ms
+08-28 09:02:39.459 W/InputDispatcher(390): Attempted to unregister already unregistered input channel '4299ddc8 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity (server)'
+08-28 09:02:39.459 I/WindowManager(390): WINDOW DIED Window{4299ddc8 com.matburt.mobileorg/com.matburt.mobileorg.Gui.Outline.OutlineActivity paused=false}
+08-28 09:02:44.594 I/ActivityManager(390): Start proc com.matburt.mobileorg for service com.matburt.mobileorg/.Services.CalendarSyncService: pid=31904 uid=10195 gids={3003, 1015, 1028}
+08-28 09:02:44.649 I/ActivityThread(31904): Pub com.matburt.mobileorg.OrgData.OrgProvider: com.matburt.mobileorg.OrgData.OrgProvider
+08-28 09:02:44.674 E/EmbeddedLogger(390): App crashed! Process: com.matburt.mobileorg
+08-28 09:02:44.674 E/EmbeddedLogger(390): App crashed! Package: com.matburt.mobileorg v913 (0.9.13)
+08-28 09:02:44.674 E/EmbeddedLogger(390): App crashed! Application Label: MobileOrg
+08-28 09:02:44.674 E/AndroidRuntime(31904): java.lang.RuntimeException: Unable to create service com.matburt.mobileorg.Services.CalendarSyncService: java.lang.NumberFormatException: Invalid int: ""
+08-28 09:02:44.674 E/AndroidRuntime(31904):         at com.matburt.mobileorg.Services.CalendarWrapper.refreshPreferences(CalendarWrapper.java:236)
+08-28 09:02:44.674 E/AndroidRuntime(31904):         at com.matburt.mobileorg.Services.CalendarSyncService.refreshPreferences(CalendarSyncService.java:272)
+08-28 09:02:44.674 E/AndroidRuntime(31904):         at com.matburt.mobileorg.Services.CalendarSyncService.onCreate(CalendarSyncService.java:67)

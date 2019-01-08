@@ -1,0 +1,17 @@
+04-15 15:16:13.480 E/AndroidRuntime(24122): java.lang.RuntimeException: Unable to start service org.kontalk.xmpp.service.MessageCenterService@41016c00 with Intent { act=org.kontalk.action.MESSAGE cmp=org.kontalk.xmpp/.service.MessageCenterService (has extras) }: java.lang.NullPointerException
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2499)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at android.app.ActivityThread.access$1900(ActivityThread.java:132)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1220)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at android.os.Handler.dispatchMessage(Handler.java:99)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at android.os.Looper.loop(Looper.java:137)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at android.app.ActivityThread.main(ActivityThread.java:4575)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at java.lang.reflect.Method.invokeNative(Native Method)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at java.lang.reflect.Method.invoke(Method.java:511)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:789)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:556)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at dalvik.system.NativeStart.main(Native Method)
+04-15 15:16:13.480 E/AndroidRuntime(24122): Caused by: java.lang.NullPointerException
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at org.kontalk.xmpp.service.MessageCenterService.sendMessage(MessageCenterService.java:814)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at org.kontalk.xmpp.service.MessageCenterService.handleIntent(MessageCenterService.java:486)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at org.kontalk.xmpp.service.MessageCenterService.onStartCommand(MessageCenterService.java:343)
+04-15 15:16:13.480 E/AndroidRuntime(24122):     at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2482)

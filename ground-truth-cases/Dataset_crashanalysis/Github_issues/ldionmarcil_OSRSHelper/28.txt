@@ -1,0 +1,8 @@
+Exception in thread "main" java.lang.NumberFormatException: For input string: "10b"
+        at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+        at java.lang.Integer.parseInt(Integer.java:580)
+        at java.lang.Integer.parseInt(Integer.java:615)
+        at com.infonuascape.osrshelper.grandexchange.GESearchResults.parseTrend(GESearchResults.java:65)
+        at com.infonuascape.osrshelper.grandexchange.GESearchResults.<init>(GESearchResults.java:38)
+        at com.infonuascape.osrshelper.grandexchange.GEHelper.search(GEHelper.java:16)
+        at com.infonuascape.osrshelper.Development.main(Development.java:19)```

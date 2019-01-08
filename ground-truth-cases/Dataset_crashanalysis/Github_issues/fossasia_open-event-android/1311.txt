@@ -1,0 +1,7 @@
+`Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v7.widget.RecyclerView$Adapter.notifyDataSetChanged()' on a null object reference
+                                                                            at org.fossasia.openevent.fragments.DayScheduleFragment$4.accept(DayScheduleFragment.java:153)
+                                                                            at org.fossasia.openevent.fragments.DayScheduleFragment$4.accept(DayScheduleFragment.java:147)
+                                                                            at io.reactivex.internal.observers.LambdaObserver.onNext(LambdaObserver.java:59)
+                                                                            at io.reactivex.internal.operators.observable.ObservableObserveOn$ObserveOnObserver.drainNormal(ObservableObserveOn.java:200) 
+                                                                            at io.reactivex.internal.operators.observable.ObservableObserveOn$ObserveOnObserver.run(ObservableObserveOn.java:252) 
+                                                                            at io.reactivex.android.schedulers.HandlerScheduler$ScheduledRunnable.run(HandlerScheduler.java:109) `

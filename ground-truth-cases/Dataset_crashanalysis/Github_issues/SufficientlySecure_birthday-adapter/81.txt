@@ -1,0 +1,22 @@
+E/Birthday Adapter(31597): android.os.TransactionTooLargeException
+E/Birthday Adapter(31597):  at android.os.BinderProxy.transact(Native Method)
+E/Birthday Adapter(31597):  at android.content.ContentProviderProxy.applyBatch(ContentProviderNative.java:482)
+E/Birthday Adapter(31597):  at android.content.ContentProviderClient.applyBatch(ContentProviderClient.java:227)
+E/Birthday Adapter(31597):  at android.content.ContentResolver.applyBatch(ContentResolver.java:951)
+E/Birthday Adapter(31597):  at org.birthdayadapter.service.CalendarSyncAdapterService.performSync(CalendarSyncAdapterService.java:860)
+E/Birthday Adapter(31597):  at org.birthdayadapter.service.CalendarSyncAdapterService.performSync(CalendarSyncAdapterService.java:697)
+E/Birthday Adapter(31597):  at org.birthdayadapter.service.CalendarSyncAdapterService.access$000(CalendarSyncAdapterService.java:65)
+E/Birthday Adapter(31597):  at org.birthdayadapter.service.CalendarSyncAdapterService$SyncAdapterImpl.onPerformSync(CalendarSyncAdapterService.java:86)
+E/Birthday Adapter(31597):  at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:257)
+E/JavaBinder(31597): !!! FAILED BINDER TRANSACTION !!!
+E/Birthday Adapter(31597): Applying batch error!
+E/Birthday Adapter(31597): android.os.TransactionTooLargeException
+E/Birthday Adapter(31597):  at android.os.BinderProxy.transact(Native Method)
+E/Birthday Adapter(31597):  at android.content.ContentProviderProxy.applyBatch(ContentProviderNative.java:482)
+E/Birthday Adapter(31597):  at android.content.ContentProviderClient.applyBatch(ContentProviderClient.java:227)
+E/Birthday Adapter(31597):  at android.content.ContentResolver.applyBatch(ContentResolver.java:951)
+E/Birthday Adapter(31597):  at org.birthdayadapter.service.CalendarSyncAdapterService.performSync(CalendarSyncAdapterService.java:860)
+E/Birthday Adapter(31597):  at org.birthdayadapter.service.CalendarSyncAdapterService.performSync(CalendarSyncAdapterService.java:697)
+E/Birthday Adapter(31597):  at org.birthdayadapter.service.CalendarSyncAdapterService.access$000(CalendarSyncAdapterService.java:65)
+E/Birthday Adapter(31597):  at org.birthdayadapter.service.CalendarSyncAdapterService$SyncAdapterImpl.onPerformSync(CalendarSyncAdapterService.java:86)
+E/Birthday Adapter(31597):  at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:257)

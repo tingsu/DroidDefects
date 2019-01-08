@@ -1,0 +1,5 @@
+E/AndroidRuntime( 1682): java.lang.ArrayIndexOutOfBoundsException: length=264; index=264
+E/AndroidRuntime( 1682):    at jackpal.androidterm.emulatorview.TextStyleLine.getStyle(UnicodeTranscript.java:1078)
+E/AndroidRuntime( 1682):    at jackpal.androidterm.emulatorview.TranscriptScreen.internalGetTranscriptText(TranscriptScreen.java:353)
+E/AndroidRuntime( 1682):    at jackpal.androidterm.emulatorview.TranscriptScreen.getTranscriptText(TranscriptScreen.java:296)
+E/AndroidRuntime( 1682):    at jackpal.androidterm.emulatorview.TerminalEmulator.updateSize(TerminalEmulator.java:414)

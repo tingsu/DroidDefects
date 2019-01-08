@@ -1,0 +1,25 @@
+E/AndroidRuntime(22576): java.lang.NoSuchMethodError: cgeo.geocaching.maps.google.GoogleMapView.getZoomButtonsController
+E/AndroidRuntime(22576):        at cgeo.geocaching.maps.google.GoogleMapView.displayZoomControls(GoogleMapView.java:74)
+E/AndroidRuntime(22576):        at cgeo.geocaching.maps.CGeoMap.onCreate(CGeoMap.java:421)
+E/AndroidRuntime(22576):        at cgeo.geocaching.maps.google.GoogleMapActivity.onCreate(GoogleMapActivity.jav:36)
+E/AndroidRuntime(22576):        at android.app.Activity.performCreate(Activity.java:5008)
+E/AndroidRuntime(22576):        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1079)
+E/AndroidRuntime(22576):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2030)
+E/AndroidRuntime(22576):        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2091)
+E/AndroidRuntime(22576):        at android.app.ActivityThread.access$600(ActivityThread.java:137)
+E/AndroidRuntime(22576):        at android.app.ActivityThread$H.handleMessage(Ac
+tivityThread.java:1202)
+E/AndroidRuntime(22576):        at android.os.Handler.dispatchMessage(Handler.ja
+va:99)
+E/AndroidRuntime(22576):        at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime(22576):        at android.app.ActivityThread.main(ActivityThrea
+d.java:4781)
+E/AndroidRuntime(22576):        at java.lang.reflect.Method.invokeNative(Native
+Method)
+E/AndroidRuntime(22576):        at java.lang.reflect.Method.invoke(Method.java:5
+11)
+E/AndroidRuntime(22576):        at com.android.internal.os.ZygoteInit$MethodAndA
+rgsCaller.run(ZygoteInit.java:805)
+E/AndroidRuntime(22576):        at com.android.internal.os.ZygoteInit.main(Zygot
+eInit.java:568)
+E/AndroidRuntime(22576):        at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,18 @@
+>     java.lang.RuntimeException: Unable to pause activity {com.greenaddress.greenbits_android_wallet/com.greenaddress.greenbits.ui.NetworkMonitorActivity}: java.lang.NullPointerException
+>             at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3260)
+>             at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3219)
+>             at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:3194)
+>             at android.app.ActivityThread.access$1000(ActivityThread.java:151)
+>             at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1321)
+>             at android.os.Handler.dispatchMessage(Handler.java:102)
+>             at android.os.Looper.loop(Looper.java:135)
+>             at android.app.ActivityThread.main(ActivityThread.java:5254)
+>             at java.lang.reflect.Method.invoke(Native Method)
+>             at java.lang.reflect.Method.invoke(Method.java:372)
+>             at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+>             at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+>      Caused by: java.lang.NullPointerException
+>             at com.google.common.base.Preconditions.checkNotNull(Preconditions.java:213)
+>             at org.bitcoinj.utils.ListenerRegistration.removeFromList(ListenerRegistration.java:38)
+>             at org.bitcoinj.core.PeerGroup.removeEventListener(PeerGroup.java:689)
+>             at com.greenaddress.greenbits.ui.NetworkMonitorActivity.onPause(NetworkMonitorActivity.java:61)

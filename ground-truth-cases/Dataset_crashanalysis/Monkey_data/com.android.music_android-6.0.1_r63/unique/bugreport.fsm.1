@@ -1,0 +1,18 @@
+//this is an auto-generated bug report
+//package name: com.android.music
+//version: android-6.0.1_r63
+//appro_time: 97
+ android.database.StaleDataException: Attempted to access a cursor after it has been closed.
+ 	at android.database.BulkCursorToCursorAdaptor.throwIfCursorIsClosed(BulkCursorToCursorAdaptor.java:64)
+ 	at android.database.BulkCursorToCursorAdaptor.getCount(BulkCursorToCursorAdaptor.java:70)
+ 	at android.database.CursorWrapper.getCount(CursorWrapper.java:57)
+ 	at com.android.music.TrackBrowserActivity$TrackListAdapter$TrackQueryHandler.onQueryComplete(TrackBrowserActivity.java:1398)
+ 	at android.content.AsyncQueryHandler.handleMessage(AsyncQueryHandler.java:344)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

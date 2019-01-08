@@ -1,0 +1,23 @@
+04-12 13:59:33.979 E/AndroidRuntime(18759): android.app.RemoteServiceException: Bad notification posted from package com.nutomic.syncthingandroid: Couldn't create icon: StatusBarIcon(pkg=com.nutomic.syncthingandroiduser=0 id=0x7f02003b level=0 visible=true num=0 )
+04-12 13:59:33.979 E/AndroidRuntime(18759):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1372)
+04-12 13:59:33.979 E/AndroidRuntime(18759):     at android.os.Handler.dispatchMessage(Handler.java:102)
+04-12 13:59:33.979 E/AndroidRuntime(18759):     at android.os.Looper.loop(Looper.java:136)
+04-12 13:59:33.979 E/AndroidRuntime(18759):     at android.app.ActivityThread.main(ActivityThread.java:5146)
+04-12 13:59:33.979 E/AndroidRuntime(18759):     at java.lang.reflect.Method.invokeNative(Native Method)
+04-12 13:59:33.979 E/AndroidRuntime(18759):     at java.lang.reflect.Method.invoke(Method.java:515)
+04-12 13:59:33.979 E/AndroidRuntime(18759):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+04-12 13:59:33.979 E/AndroidRuntime(18759):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+04-12 13:59:33.979 E/AndroidRuntime(18759):     at dalvik.system.NativeStart.main(Native Method)
+04-12 13:59:44.890 E/AndroidRuntime(18804): FATAL EXCEPTION: main
+04-12 13:59:44.890 E/AndroidRuntime(18804): Process: com.nutomic.syncthingandroid, PID: 18804
+04-12 13:59:44.890 E/AndroidRuntime(18804): android.app.RemoteServiceException: Bad notification posted from package com.nutomic.syncthingandroid: Couldn't create icon: StatusBarIcon(pkg=com.nutomic.syncthingandroiduser=0 id=0x7f02003b level=0 visible=true num=0 )
+04-12 13:59:44.890 E/AndroidRuntime(18804):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1372)
+04-12 13:59:44.890 E/AndroidRuntime(18804):     at android.os.Handler.dispatchMessage(Handler.java:102)
+04-12 13:59:44.890 E/AndroidRuntime(18804):     at android.os.Looper.loop(Looper.java:136)
+04-12 13:59:44.890 E/AndroidRuntime(18804):     at android.app.ActivityThread.main(ActivityThread.java:5146)
+
+04-12 13:59:44.890 E/AndroidRuntime(18804):     at java.lang.reflect.Method.invokeNative(Native Method)
+04-12 13:59:44.890 E/AndroidRuntime(18804):     at java.lang.reflect.Method.invoke(Method.java:515)
+04-12 13:59:44.890 E/AndroidRuntime(18804):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+04-12 13:59:44.890 E/AndroidRuntime(18804):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+04-12 13:59:44.890 E/AndroidRuntime(18804):     at dalvik.system.NativeStart.main(Native Method)

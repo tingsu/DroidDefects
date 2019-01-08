@@ -1,0 +1,9 @@
+03-12 19:19:56.633  3542  3558 E AndroidRuntime: java.lang.IllegalArgumentException: No length specified!
+03-12 19:19:56.633  3542  3558 E AndroidRuntime:    at org.whispersystems.textsecure.api.messages.TextSecureAttachment$Builder.build(TextSecureAttachment.java:80)
+03-12 19:19:56.633  3542  3558 E AndroidRuntime:    at org.thoughtcrime.securesms.jobs.PushSendJob.getAttachmentsFor(PushSendJob.java:78)
+03-12 19:19:56.633  3542  3558 E AndroidRuntime:    at org.thoughtcrime.securesms.jobs.PushGroupSendJob.deliver(PushGroupSendJob.java:132)
+03-12 19:19:56.633  3542  3558 E AndroidRuntime:    at org.thoughtcrime.securesms.jobs.PushGroupSendJob.onSend(PushGroupSendJob.java:82)
+03-12 19:19:56.633  3542  3558 E AndroidRuntime:    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:43)
+03-12 19:19:56.633  3542  3558 E AndroidRuntime:    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+03-12 19:19:56.633  3542  3558 E AndroidRuntime:    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+03-12 19:19:56.633  3542  3558 E AndroidRuntime:    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

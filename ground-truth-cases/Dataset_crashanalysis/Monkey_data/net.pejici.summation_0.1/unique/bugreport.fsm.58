@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: net.pejici.summation
+//version: 0.1
+//appro_time: 118
+ android.database.sqlite.SQLiteConstraintException: sheet.name may not be NULL (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at net.pejici.summation.model.Model.addSheet(Model.java:54)
+ 	at net.pejici.summation.SheetActivity.onPause(SheetActivity.java:122)
+ 	at android.app.Activity.performPause(Activity.java:5235)
+ 	at android.app.Instrumentation.callActivityOnPause(Instrumentation.java:1233)
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3050)
+ 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3019)
+ 	at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:2997)
+ 	at android.app.ActivityThread.access$800(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1273)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

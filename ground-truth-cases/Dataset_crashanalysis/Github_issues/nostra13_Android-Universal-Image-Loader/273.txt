@@ -1,0 +1,192 @@
+05-03 12:09:21.416: I/Choreographer(20728): Skipped 291 frames!  The application may be doing too much work on its main thread.
+05-03 12:09:21.456: W/ImageLoader(20728): Try to initialize ImageLoader which had already been initialized before. To re-init ImageLoader with new configuration call ImageLoader.destroy() at first.
+05-03 12:09:21.461: I/ImageLoader(20728): Start display image task [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:21.461: I/ImageLoader(20728): Load image from network [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:21.501: W/ImageLoader(20728): Try to initialize ImageLoader which had already been initialized before. To re-init ImageLoader with new configuration call ImageLoader.destroy() at first.
+05-03 12:09:21.501: I/ImageLoader(20728): Start display image task [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:21.501: I/ImageLoader(20728): Image already is loading. Waiting... [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:21.501: W/ImageLoader(20728): Try to initialize ImageLoader which had already been initialized before. To re-init ImageLoader with new configuration call ImageLoader.destroy() at first.
+05-03 12:09:21.501: I/ImageLoader(20728): Start display image task [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:21.501: I/ImageLoader(20728): Image already is loading. Waiting... [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:21.501: W/ImageLoader(20728): Try to initialize ImageLoader which had already been initialized before. To re-init ImageLoader with new configuration call ImageLoader.destroy() at first.
+05-03 12:09:21.506: W/ImageLoader(20728): Try to initialize ImageLoader which had already been initialized before. To re-init ImageLoader with new configuration call ImageLoader.destroy() at first.
+05-03 12:09:21.506: W/ImageLoader(20728): Try to initialize ImageLoader which had already been initialized before. To re-init ImageLoader with new configuration call ImageLoader.destroy() at first.
+05-03 12:09:21.511: W/ImageLoader(20728): Try to initialize ImageLoader which had already been initialized before. To re-init ImageLoader with new configuration call ImageLoader.destroy() at first.
+05-03 12:09:21.546: W/ImageLoader(20728): Try to initialize ImageLoader which had already been initialized before. To re-init ImageLoader with new configuration call ImageLoader.destroy() at first.
+05-03 12:09:22.251: E/ImageLoader(20728): failed to connect to www.spicy-software.com/77.244.243.51 (port 80) after 5000ms: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:22.251: E/ImageLoader(20728): java.net.ConnectException: failed to connect to www.spicy-software.com/77.244.243.51 (port 80) after 5000ms: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.io.IoBridge.isConnected(IoBridge.java:224)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.io.IoBridge.connect(IoBridge.java:112)
+05-03 12:09:22.251: E/ImageLoader(20728):   at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+05-03 12:09:22.251: E/ImageLoader(20728):   at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+05-03 12:09:22.251: E/ImageLoader(20728):   at java.net.Socket.connect(Socket.java:842)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.<init>(HttpConnection.java:76)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.<init>(HttpConnection.java:50)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.net.http.HttpConnection$Address.connect(HttpConnection.java:340)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.net.http.HttpConnectionPool.get(HttpConnectionPool.java:87)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.connect(HttpConnection.java:128)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.openSocketConnection(HttpEngine.java:315)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.connect(HttpEngine.java:310)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.sendSocketRequest(HttpEngine.java:289)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.sendRequest(HttpEngine.java:239)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.net.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:80)
+05-03 12:09:22.251: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.connectTo(BaseImageDownloader.java:126)
+05-03 12:09:22.251: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStreamFromNetwork(BaseImageDownloader.java:110)
+05-03 12:09:22.251: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStream(BaseImageDownloader.java:84)
+05-03 12:09:22.251: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.getImageStream(BaseImageDecoder.java:84)
+05-03 12:09:22.251: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:70)
+05-03 12:09:22.251: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:290)
+05-03 12:09:22.251: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:250)
+05-03 12:09:22.251: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:131)
+05-03 12:09:22.251: E/ImageLoader(20728):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+05-03 12:09:22.251: E/ImageLoader(20728):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+05-03 12:09:22.251: E/ImageLoader(20728):   at java.lang.Thread.run(Thread.java:856)
+05-03 12:09:22.251: E/ImageLoader(20728): Caused by: libcore.io.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:22.251: E/ImageLoader(20728):   at libcore.io.IoBridge.isConnected(IoBridge.java:208)
+05-03 12:09:22.251: E/ImageLoader(20728):   ... 26 more
+05-03 12:09:22.261: I/ImageLoader(20728): Start display image task [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:22.261: I/ImageLoader(20728): Image already is loading. Waiting... [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:22.266: I/ImageLoader(20728): Load image from network [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:22.281: W/ImageLoader(20728): Try to initialize ImageLoader which had already been initialized before. To re-init ImageLoader with new configuration call ImageLoader.destroy() at first.
+05-03 12:09:22.631: E/ImageLoader(20728): failed to connect to www.spicy-software.com/77.244.243.51 (port 80) after 5000ms: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:22.631: E/ImageLoader(20728): java.net.ConnectException: failed to connect to www.spicy-software.com/77.244.243.51 (port 80) after 5000ms: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.io.IoBridge.isConnected(IoBridge.java:224)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.io.IoBridge.connect(IoBridge.java:112)
+05-03 12:09:22.631: E/ImageLoader(20728):   at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+05-03 12:09:22.631: E/ImageLoader(20728):   at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+05-03 12:09:22.631: E/ImageLoader(20728):   at java.net.Socket.connect(Socket.java:842)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.<init>(HttpConnection.java:76)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.<init>(HttpConnection.java:50)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.net.http.HttpConnection$Address.connect(HttpConnection.java:340)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.net.http.HttpConnectionPool.get(HttpConnectionPool.java:87)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.connect(HttpConnection.java:128)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.openSocketConnection(HttpEngine.java:315)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.connect(HttpEngine.java:310)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.sendSocketRequest(HttpEngine.java:289)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.sendRequest(HttpEngine.java:239)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.net.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:80)
+05-03 12:09:22.631: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.connectTo(BaseImageDownloader.java:126)
+05-03 12:09:22.631: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStreamFromNetwork(BaseImageDownloader.java:110)
+05-03 12:09:22.631: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStream(BaseImageDownloader.java:84)
+05-03 12:09:22.631: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.getImageStream(BaseImageDecoder.java:84)
+05-03 12:09:22.631: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:70)
+05-03 12:09:22.631: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:290)
+05-03 12:09:22.631: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:250)
+05-03 12:09:22.631: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:131)
+05-03 12:09:22.631: E/ImageLoader(20728):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+05-03 12:09:22.631: E/ImageLoader(20728):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+05-03 12:09:22.631: E/ImageLoader(20728):   at java.lang.Thread.run(Thread.java:856)
+05-03 12:09:22.631: E/ImageLoader(20728): Caused by: libcore.io.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:22.631: E/ImageLoader(20728):   at libcore.io.IoBridge.isConnected(IoBridge.java:208)
+05-03 12:09:22.631: E/ImageLoader(20728):   ... 26 more
+05-03 12:09:22.636: I/ImageLoader(20728): Start display image task [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:22.636: I/ImageLoader(20728): Load image from network [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:22.641: I/ImageLoader(20728): Image already is loading. Waiting... [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:22.666: D/dalvikvm(20728): GC_CONCURRENT freed 481K, 12% free 12628K/14343K, paused 5ms+3ms, total 44ms
+05-03 12:09:23.391: E/ImageLoader(20728): failed to connect to www.spicy-software.com/77.244.243.51 (port 80) after 5000ms: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:23.391: E/ImageLoader(20728): java.net.ConnectException: failed to connect to www.spicy-software.com/77.244.243.51 (port 80) after 5000ms: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.io.IoBridge.isConnected(IoBridge.java:224)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.io.IoBridge.connect(IoBridge.java:112)
+05-03 12:09:23.391: E/ImageLoader(20728):   at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+05-03 12:09:23.391: E/ImageLoader(20728):   at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+05-03 12:09:23.391: E/ImageLoader(20728):   at java.net.Socket.connect(Socket.java:842)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.<init>(HttpConnection.java:76)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.<init>(HttpConnection.java:50)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.net.http.HttpConnection$Address.connect(HttpConnection.java:340)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.net.http.HttpConnectionPool.get(HttpConnectionPool.java:87)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.connect(HttpConnection.java:128)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.openSocketConnection(HttpEngine.java:315)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.connect(HttpEngine.java:310)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.sendSocketRequest(HttpEngine.java:289)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.sendRequest(HttpEngine.java:239)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.net.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:80)
+05-03 12:09:23.391: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.connectTo(BaseImageDownloader.java:126)
+05-03 12:09:23.391: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStreamFromNetwork(BaseImageDownloader.java:110)
+05-03 12:09:23.391: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStream(BaseImageDownloader.java:84)
+05-03 12:09:23.391: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.getImageStream(BaseImageDecoder.java:84)
+05-03 12:09:23.391: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:70)
+05-03 12:09:23.391: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:290)
+05-03 12:09:23.391: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:250)
+05-03 12:09:23.391: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:131)
+05-03 12:09:23.391: E/ImageLoader(20728):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+05-03 12:09:23.391: E/ImageLoader(20728):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+05-03 12:09:23.391: E/ImageLoader(20728):   at java.lang.Thread.run(Thread.java:856)
+05-03 12:09:23.391: E/ImageLoader(20728): Caused by: libcore.io.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:23.391: E/ImageLoader(20728):   at libcore.io.IoBridge.isConnected(IoBridge.java:208)
+05-03 12:09:23.391: E/ImageLoader(20728):   ... 26 more
+05-03 12:09:23.391: I/ImageLoader(20728): Start display image task [http://www.spicy-software.com/thumbs/stefi2.jpg_720x240]
+05-03 12:09:23.396: I/ImageLoader(20728): Load image from network [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:23.396: I/ImageLoader(20728): Load image from network [http://www.spicy-software.com/thumbs/stefi2.jpg_720x240]
+05-03 12:09:24.101: E/ImageLoader(20728): failed to connect to www.spicy-software.com/77.244.243.51 (port 80) after 5000ms: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:24.101: E/ImageLoader(20728): java.net.ConnectException: failed to connect to www.spicy-software.com/77.244.243.51 (port 80) after 5000ms: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.io.IoBridge.isConnected(IoBridge.java:224)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.io.IoBridge.connect(IoBridge.java:112)
+05-03 12:09:24.101: E/ImageLoader(20728):   at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+05-03 12:09:24.101: E/ImageLoader(20728):   at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+05-03 12:09:24.101: E/ImageLoader(20728):   at java.net.Socket.connect(Socket.java:842)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.<init>(HttpConnection.java:76)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.<init>(HttpConnection.java:50)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.net.http.HttpConnection$Address.connect(HttpConnection.java:340)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.net.http.HttpConnectionPool.get(HttpConnectionPool.java:87)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.connect(HttpConnection.java:128)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.openSocketConnection(HttpEngine.java:315)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.connect(HttpEngine.java:310)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.sendSocketRequest(HttpEngine.java:289)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.sendRequest(HttpEngine.java:239)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.net.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:80)
+05-03 12:09:24.101: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.connectTo(BaseImageDownloader.java:126)
+05-03 12:09:24.101: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStreamFromNetwork(BaseImageDownloader.java:110)
+05-03 12:09:24.101: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStream(BaseImageDownloader.java:84)
+05-03 12:09:24.101: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.getImageStream(BaseImageDecoder.java:84)
+05-03 12:09:24.101: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:70)
+05-03 12:09:24.101: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:290)
+05-03 12:09:24.101: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:250)
+05-03 12:09:24.101: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:131)
+05-03 12:09:24.101: E/ImageLoader(20728):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+05-03 12:09:24.101: E/ImageLoader(20728):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+05-03 12:09:24.101: E/ImageLoader(20728):   at java.lang.Thread.run(Thread.java:856)
+05-03 12:09:24.101: E/ImageLoader(20728): Caused by: libcore.io.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:24.101: E/ImageLoader(20728):   at libcore.io.IoBridge.isConnected(IoBridge.java:208)
+05-03 12:09:24.101: E/ImageLoader(20728):   ... 26 more
+05-03 12:09:24.116: I/ImageLoader(20728): Start display image task [http://www.spicy-software.com/thumbs/steffi3.jpg_720x240]
+05-03 12:09:24.116: E/ImageLoader(20728): failed to connect to www.spicy-software.com/77.244.243.51 (port 80) after 5000ms: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:24.116: E/ImageLoader(20728): java.net.ConnectException: failed to connect to www.spicy-software.com/77.244.243.51 (port 80) after 5000ms: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.io.IoBridge.isConnected(IoBridge.java:224)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.io.IoBridge.connectErrno(IoBridge.java:161)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.io.IoBridge.connect(IoBridge.java:112)
+05-03 12:09:24.116: E/ImageLoader(20728):   at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+05-03 12:09:24.116: E/ImageLoader(20728):   at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+05-03 12:09:24.116: E/ImageLoader(20728):   at java.net.Socket.connect(Socket.java:842)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.<init>(HttpConnection.java:76)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.<init>(HttpConnection.java:50)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.net.http.HttpConnection$Address.connect(HttpConnection.java:340)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.net.http.HttpConnectionPool.get(HttpConnectionPool.java:87)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.net.http.HttpConnection.connect(HttpConnection.java:128)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.openSocketConnection(HttpEngine.java:315)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.connect(HttpEngine.java:310)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.sendSocketRequest(HttpEngine.java:289)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.net.http.HttpEngine.sendRequest(HttpEngine.java:239)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.net.http.HttpURLConnectionImpl.connect(HttpURLConnectionImpl.java:80)
+05-03 12:09:24.116: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.connectTo(BaseImageDownloader.java:126)
+05-03 12:09:24.116: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStreamFromNetwork(BaseImageDownloader.java:110)
+05-03 12:09:24.116: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.download.BaseImageDownloader.getStream(BaseImageDownloader.java:84)
+05-03 12:09:24.116: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.getImageStream(BaseImageDecoder.java:84)
+05-03 12:09:24.116: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:70)
+05-03 12:09:24.116: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:290)
+05-03 12:09:24.116: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:250)
+05-03 12:09:24.116: E/ImageLoader(20728):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:131)
+05-03 12:09:24.116: E/ImageLoader(20728):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+05-03 12:09:24.116: E/ImageLoader(20728):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+05-03 12:09:24.116: E/ImageLoader(20728):   at java.lang.Thread.run(Thread.java:856)
+05-03 12:09:24.116: E/ImageLoader(20728): Caused by: libcore.io.ErrnoException: isConnected failed: ECONNREFUSED (Connection refused)
+05-03 12:09:24.116: E/ImageLoader(20728):   at libcore.io.IoBridge.isConnected(IoBridge.java:208)
+05-03 12:09:24.116: E/ImageLoader(20728):   ... 26 more
+05-03 12:09:24.116: I/ImageLoader(20728): Load image from network [http://www.spicy-software.com/thumbs/steffi3.jpg_720x240]
+05-03 12:09:24.121: I/ImageLoader(20728): Start display image task [http://www.spicy-software.com/thumbs/6.jpg_720x240]
+05-03 12:09:24.121: I/ImageLoader(20728): Load image from network [http://www.spicy-software.com/thumbs/6.jpg_720x240]
+05-03 12:09:24.126: I/ImageLoader(20728): Load image from network [http://www.spicy-software.com/thumbs/1363773210509.jpg_720x240]
+05-03 12:09:24.126: W/ImageLoader(20728): Try to initialize ImageLoader which had already been initialized before. To re-init ImageLoader with new configuration call ImageLoader.destroy() at first.

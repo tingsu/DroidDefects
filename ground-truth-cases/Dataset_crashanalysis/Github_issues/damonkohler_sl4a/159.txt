@@ -1,0 +1,29 @@
+directory.
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2496)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2512)
+        at android.app.ActivityThread.access$2200(ActivityThread.java:119)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1863)
+        at android.os.Handler.dispatchMessage(Handler.java:99)
+        at android.os.Looper.loop(Looper.java:123)
+        at android.app.ActivityThread.main(ActivityThread.java:4363)
+        at java.lang.reflect.Method.invokeNative(Native Method)
+        at java.lang.reflect.Method.invoke(Method.java:521)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:860)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:618)
+        at dalvik.system.NativeStart.main(Native Method)
+        Caused by: java.lang.RuntimeException: Failed to create scripts directory.
+        at com.googlecode.android_scripting.activity.ScriptManager.onCreate(ScriptManager.java:112)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2459)
+        ... 11 more
+
+
+What version of the product are you using? On what operating system?
+
+
+Please provide any additional information below.
+
+I unmounted the SD just in case 
+```
+
+Original issue reported on code.google.com by `scottbur...@gmail.com` on 17 Mar 2011 at 8:23

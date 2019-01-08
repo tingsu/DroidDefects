@@ -1,0 +1,6 @@
+03-12 20:10:19.263 E/AndroidRuntime( 8274): java.lang.NullPointerException
+03-12 20:10:19.263 E/AndroidRuntime( 8274):     at com.asksven.betterbatterystats.services.WriteDumpfileService.onHandleIntent(WriteDumpfileService.java:85)
+03-12 20:10:19.263 E/AndroidRuntime( 8274):     at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+03-12 20:10:19.263 E/AndroidRuntime( 8274):     at android.os.Handler.dispatchMessage(Handler.java:99)
+03-12 20:10:19.263 E/AndroidRuntime( 8274):     at android.os.Looper.loop(Looper.java:137)
+03-12 20:10:19.263 E/AndroidRuntime( 8274):     at android.os.HandlerThread.run(HandlerThread.java:60)

@@ -1,0 +1,7 @@
+//this is an auto-generated bug report
+//package name: org.ligi.etheremote
+//version: 0.2
+//appro_time: 129
+ kotlin.TypeCastException: null cannot be cast to non-null type kotlin.String
+ 	at org.ligi.etheremote.WalletActivity$onCreate$$inlined$verticalLayout$lambda$lambda$1.run(WalletActivity.kt:51)
+ 	at java.lang.Thread.run(Thread.java:841)

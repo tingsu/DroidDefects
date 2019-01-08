@@ -1,0 +1,9 @@
+W/RegistrationService( 5897): java.io.IOException: AUTHENTICATION_FAILED
+W/RegistrationService( 5897):   at com.google.android.gms.gcm.GoogleCloudMessaging.register(Unknown Source)
+W/RegistrationService( 5897):   at org.thoughtcrime.securesms.service.RegistrationService.handleCommonRegistration(RegistrationService.java:247)
+W/RegistrationService( 5897):   at org.thoughtcrime.securesms.service.RegistrationService.handleSmsRegistrationIntent(RegistrationService.java:208)
+W/RegistrationService( 5897):   at org.thoughtcrime.securesms.service.RegistrationService.access$000(RegistrationService.java:63)
+W/RegistrationService( 5897):   at org.thoughtcrime.securesms.service.RegistrationService$1.run(RegistrationService.java:95)
+W/RegistrationService( 5897):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/RegistrationService( 5897):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/RegistrationService( 5897):   at java.lang.Thread.run(Thread.java:818)

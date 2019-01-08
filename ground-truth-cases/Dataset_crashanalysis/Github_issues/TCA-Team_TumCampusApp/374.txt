@@ -1,0 +1,16 @@
+java.lang.RuntimeException: Unable to instantiate service de.tum.in.tumcampusapp.services.DownloadService: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.Context android.content.Context.getApplicationContext()' on a null object reference
+    at android.app.ActivityThread.handleCreateService(ActivityThread.java:2906)
+    at android.app.ActivityThread.-wrap4(ActivityThread.java)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1446)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5466)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.Context android.content.Context.getApplicationContext()' on a null object reference
+    at android.content.ContextWrapper.getApplicationContext(ContextWrapper.java:107)
+    at android.support.v4.content.LocalBroadcastManager.getInstance(LocalBroadcastManager.java:102)
+    at de.tum.in.tumcampusapp.services.DownloadService.<init>(DownloadService.java:43)
+    at java.lang.Class.newInstance(Native Method)
+    at android.app.ActivityThread.handleCreateService(ActivityThread.java:2903)

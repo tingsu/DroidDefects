@@ -1,0 +1,4 @@
+W/System.err(17831): java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long
+W/System.err(17831):    at com.ichi2.libanki.sync.Syncer.mergeNotes(Syncer.java:881)
+W/System.err(17831):    at com.ichi2.libanki.sync.Syncer.applyChunk(Syncer.java:566)
+W/System.err(17831):    at com.ichi2.libanki.sync.Syncer.sync(Syncer.java:182)

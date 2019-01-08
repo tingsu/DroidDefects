@@ -1,0 +1,10 @@
+02-05 16:47:02.549: E/ImageLoader(14105): java.lang.NullPointerException
+02-05 16:47:02.549: E/ImageLoader(14105):   at com.universalimageloader.core.LoadAndDisplayImageTask.saveImageOnDisc(LoadAndDisplayImageTask.java:289)
+02-05 16:47:02.549: E/ImageLoader(14105):   at com.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:204)
+02-05 16:47:02.549: E/ImageLoader(14105):   at com.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:128)
+02-05 16:47:02.549: E/ImageLoader(14105):   at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:442)
+02-05 16:47:02.549: E/ImageLoader(14105):   at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+02-05 16:47:02.549: E/ImageLoader(14105):   at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+02-05 16:47:02.549: E/ImageLoader(14105):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+02-05 16:47:02.549: E/ImageLoader(14105):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+02-05 16:47:02.549: E/ImageLoader(14105):   at java.lang.Thread.run(Thread.java:856)

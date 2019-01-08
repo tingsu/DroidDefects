@@ -1,0 +1,36 @@
+07-24 18:22:29.201  1807  1820 E DatabaseUtils: java.lang.NullPointerException^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.HtcContactsProvider2$PhoneDataRowHandler.insert(HtcContactsProvider2.java:10109)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.ContactsProvider2.insertData(ContactsProvider2.java:3508)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.ContactsProvider2.insertInTransaction(ContactsProvider2.java:3030)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.CContactsProvider2.insertInTransaction(CContactsProvider2.java:215)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.HtcContactsProvider2.insertInTransaction(HtcContactsProvider2.java:3078)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.AbstractContactsProvider.insert(AbstractContactsProvider.java:108)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.ContactsProvider2.insert(ContactsProvider2.java:2563)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.CContactsProvider2.insert(CContactsProvider2.java:117)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.HtcContactsProvider2.insert(HtcContactsProvider2.java:3104)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at android.content.ContentProviderOperation.apply(ContentProviderOperation.java:218)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.AbstractContactsProvider.applyBatch(AbstractContactsProvider.java:203)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.ContactsProvider2.applyBatch(ContactsProvider2.java:2713)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.CContactsProvider2.applyBatch(CContactsProvider2.java:159)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at com.android.providers.contacts.HtcContactsProvider2.applyBatch(HtcContactsProvider2.java:3127)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at android.content.ContentProvider$Transport.applyBatch(ContentProvider.java:219)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:214)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at android.os.Binder.execTransact(Binder.java:338)^M
+07-24 18:22:29.201  1807  1820 E DatabaseUtils:         at dalvik.system.NativeStart.run(Native Method)^M
+07-24 18:22:29.221  4609  4671 W dalvikvm: threadid=22: thread exiting with uncaught exception (group=0x40abe228)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime: FATAL EXCEPTION: pool-5-thread-1^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime: java.lang.NullPointerException^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at android.os.Parcel.readException(Parcel.java:1338)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:182)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at android.database.DatabaseUtils.readExceptionWithOperationApplicationExceptionFromParcel(DatabaseUtils.java:159)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at android.content.ContentProviderProxy.applyBatch(ContentProviderNative.java:509)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at android.content.ContentProviderClient.applyBatch(ContentProviderClient.java:120)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at android.content.ContentResolver.applyBatch(ContentResolver.java:771)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at org.thoughtcrime.securesms.contacts.ContactsDatabase.setRegisteredUsers(ContactsDatabase.java:113)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at org.thoughtcrime.securesms.util.DirectoryHelper.refreshDirectory(DirectoryHelper.java:67)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at org.thoughtcrime.securesms.service.RegistrationService.handleCommonRegistration(RegistrationService.java:250)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at org.thoughtcrime.securesms.service.RegistrationService.handleSmsRegistrationIntent(RegistrationService.java:204)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at org.thoughtcrime.securesms.service.RegistrationService.access$000(RegistrationService.java:59)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at org.thoughtcrime.securesms.service.RegistrationService$1.run(RegistrationService.java:91)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)^M
+07-24 18:22:29.241  4609  4671 E AndroidRuntime:        at java.lang.Thread.run(Thread.java:864)^M

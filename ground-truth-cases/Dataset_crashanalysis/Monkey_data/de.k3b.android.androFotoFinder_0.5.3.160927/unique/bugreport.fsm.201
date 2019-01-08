@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: de.k3b.android.androFotoFinder
+//version: 0.5.3.160927
+//appro_time: 15
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to create application de.k3b.android.androFotoFinder.AndroFotoFinderApp: java.lang.NumberFormatException: Invalid int: "g255"
+ 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4447)
+ 	at android.app.ActivityThread.access$1300(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1316)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NumberFormatException: Invalid int: "g255"
+ 	at java.lang.Integer.invalidInt(Integer.java:138)
+ 	at java.lang.Integer.parse(Integer.java:375)
+ 	at java.lang.Integer.parseInt(Integer.java:366)
+ 	at java.lang.Integer.parseInt(Integer.java:332)
+ 	at java.lang.Integer.valueOf(Integer.java:490)
+ 	at de.k3b.android.androFotoFinder.SettingsActivity.getPref(SettingsActivity.java:280)
+ 	at de.k3b.android.androFotoFinder.SettingsActivity.prefs2Global(SettingsActivity.java:179)
+ 	at de.k3b.android.androFotoFinder.AndroFotoFinderApp.onCreate(AndroFotoFinderApp.java:72)
+ 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1007)
+ 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4444)
+ 	... 10 more

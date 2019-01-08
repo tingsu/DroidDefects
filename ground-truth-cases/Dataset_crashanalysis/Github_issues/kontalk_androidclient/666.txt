@@ -1,0 +1,5 @@
+java.lang.IllegalArgumentException: Unknown URI content://org.kontalk.messages/messages
+    at android.content.ContentResolver.update(ContentResolver.java:986)
+    at org.kontalk.provider.MessagesProvider.markAllThreadsAsOld(MessagesProvider.java:1181)
+    at org.kontalk.ui.ConversationsActivity$5.run(ConversationsActivity.java:289)
+    at java.lang.Thread.run(Thread.java:856)

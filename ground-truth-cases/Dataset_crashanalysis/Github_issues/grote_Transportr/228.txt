@@ -1,0 +1,7 @@
+java.lang.NullPointerException
+    at de.grobox.liberario.ui.LocationView.stopLoader(LocationView.java:281)
+    at de.grobox.liberario.ui.LocationView.setLocation(LocationView.java:309)
+    at de.grobox.liberario.ui.LocationView.setLocation(LocationView.java:323)
+    at de.grobox.liberario.ui.LocationView.onLocationItemClick(LocationView.java:419)
+    at de.grobox.liberario.ui.LocationGpsView.onLocationItemClick(LocationGpsView.java:96)
+    at de.grobox.liberario.ui.LocationView$1.onItemClick(LocationView.java:106)

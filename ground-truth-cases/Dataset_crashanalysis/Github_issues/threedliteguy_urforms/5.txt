@@ -1,0 +1,17 @@
+E/AndroidRuntime(13705): java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=2, result=-1, data=Intent { (has extras) }} to activity {com.threedlite.urforms/com.threedlite.urforms.EnterDataActivity}: java.lang.NullPointerException
+E/AndroidRuntime(13705):    at android.app.ActivityThread.deliverResults(ActivityThread.java:3376)
+E/AndroidRuntime(13705):    at android.app.ActivityThread.handleSendResult(ActivityThread.java:3419)
+E/AndroidRuntime(13705):    at android.app.ActivityThread.access$1300(ActivityThread.java:147)
+E/AndroidRuntime(13705):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1259)
+E/AndroidRuntime(13705):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(13705):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(13705):    at android.app.ActivityThread.main(ActivityThread.java:5135)
+E/AndroidRuntime(13705):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(13705):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime(13705):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+E/AndroidRuntime(13705):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:611)
+E/AndroidRuntime(13705):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(13705): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(13705):    at com.threedlite.urforms.EnterDataActivity.onActivityResult(EnterDataActivity.java:373)
+E/AndroidRuntime(13705):    at android.app.Activity.dispatchActivityResult(Activity.java:5553)
+E/AndroidRuntime(13705):    at android.app.ActivityThread.deliverResults(ActivityThread.java:3372)

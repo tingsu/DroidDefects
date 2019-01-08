@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: de.luhmer.owncloudnewsreader
+//version: 0.9.9.2
+//appro_time: 63
+ java.lang.NullPointerException
+ 	at de.luhmer.owncloudnewsreader.NewsReaderDetailFragment.RefreshCurrentRssView(NewsReaderDetailFragment.java:217)
+ 	at de.luhmer.owncloudnewsreader.NewsReaderDetailFragment.onResume(NewsReaderDetailFragment.java:150)
+ 	at android.support.v4.app.Fragment.performResume(Fragment.java:2126)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1151)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1290)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1272)
+ 	at android.support.v4.app.FragmentManagerImpl.dispatchResume(FragmentManager.java:2159)
+ 	at android.support.v4.app.FragmentController.dispatchResume(FragmentController.java:223)
+ 	at android.support.v4.app.FragmentActivity.onResumeFragments(FragmentActivity.java:507)
+ 	at android.support.v4.app.FragmentActivity.onPostResume(FragmentActivity.java:496)
+ 	at android.support.v7.app.AppCompatActivity.onPostResume(AppCompatActivity.java:172)
+ 	at android.app.Activity.performResume(Activity.java:5224)
+ 	at android.app.ActivityThread.performNewIntents(ActivityThread.java:2345)
+ 	at android.app.ActivityThread.handleNewIntent(ActivityThread.java:2352)
+ 	at android.app.ActivityThread.access$1400(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1327)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

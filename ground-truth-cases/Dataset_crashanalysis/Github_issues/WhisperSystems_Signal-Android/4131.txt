@@ -1,0 +1,349 @@
+W/OutgoingLegacyMmsConnection(17022): java.io.IOException: unhandled response code
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:193)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:82)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:39)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:72)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/OutgoingLegacyMmsConnection(17022): at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/OutgoingLegacyMmsConnection(17022): at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/OutgoingLegacyMmsConnection(17022): java.io.IOException: Connection manager could not obtain route to host.
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:141)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:82)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:39)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:72)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/OutgoingLegacyMmsConnection(17022): at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/OutgoingLegacyMmsConnection(17022): at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/OutgoingLegacyMmsConnection(17022): Sending MMS with radio change and proxy...
+D/ConnectivityManager(17022): sending expire msg with seqNum 0 and delay 60000
+D/ConnectivityManager(17022): starting startUsingNetworkFeature for request NetworkRequest [ id=24, legacyType=2, [ Transports: CELLULAR Capabilities: MMS&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+W/MmsRadio(17022): startUsingNetworkFeature status: 1
+W/MmsRadio(17022): Got connectivity change...
+W/MmsRadio(17022): Connected: [type: MOBILE_MMS[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false]
+W/MmsRadio(17022): Connected: [type: MOBILE_MMS[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false]
+D/ConnectivityManager.CallbackHandler(17022): CM callback handler got msg 524290
+D/ConnectivityManager(17022): startUsingNetworkFeature got Network:102
+W/MmsRadio(17022): Got connectivity change...
+W/MmsRadio(17022): Connected: [type: MOBILE[LTE], state: CONNECTED/CONNECTED, reason: connected, extra: n.nv.ispsn, roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false]
+W/MmsRadio(17022): Notifying connected...
+W/MmsRadio(17022): Connected: [type: MOBILE[LTE], state: CONNECTED/CONNECTED, reason: connected, extra: n.nv.ispsn, roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false]
+W/OutgoingLegacyMmsConnection(17022): Sending MMS of length: 95914, using mms radio, using proxy
+W/LegacyMmsConnection(17022): Checking route to address: 68.28.31.7, 68.28.31.7
+W/LegacyMmsConnection(17022): requestRouteToHostAddress(/68.28.31.7) -> true
+W/OutgoingLegacyMmsConnection(17022): got successful route to host 68.28.31.7
+W/LegacyMmsConnection(17022): connecting to http://mms.sprintpcs.com
+D/ConnectivityManager.CallbackHandler(17022): CM callback handler got msg 524290
+D/ConnectivityManager(17022): startUsingNetworkFeature got Network:102
+W/LegacyMmsConnection(17022): * response code: HTTP/1.1 200 OK
+W/LegacyMmsConnection(17022): Received full server response, 49 bytes
+W/PduParser(17022): parse() called...
+W/PduParser(17022): Message Type: 129
+W/MmsRadio(17022): MMS Radio Disconnect Called...
+W/MmsRadio(17022): Reference count: 0
+W/MmsRadio(17022): Turning off MMS radio...
+D/ConnectivityManager(17022): stopUsingNetworkFeature for 0, enableMMS
+W/MmsRadio(17022): Unregistering receiver...
+W/MmsSendJob(17022): org.thoughtcrime.securesms.transport.UndeliverableMessageException: Got bad response: 225
+W/MmsSendJob(17022): at org.thoughtcrime.securesms.jobs.MmsSendJob.getSendResult(MmsSendJob.java:127)
+W/MmsSendJob(17022): at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:73)
+W/MmsSendJob(17022): at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+W/MmsSendJob(17022): at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/MmsSendJob(17022): at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/MmsSendJob(17022): at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+D/ConnectivityManager.CallbackHandler(17022): CM callback handler got msg 524296
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 8) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 8) ORDER BY date_received ASC)
+W/ThumbnailView(17022): Not re-loading slide (row id: 16, unique ID: 1443293026052)
+E/MediaPlayer(17022): Should have subtitle controller already set
+E/MediaPlayer(17022): Should have subtitle controller already set
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(17022): Decrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 0
+W/PassphraseRequiredActionBarActivity(17022): routeApplicationState(), state: 0
+W/PassphraseRequiredActionBarActivity(17022): initializeClearKeyReceiver()
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(17022): Incrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 1
+W/MessageDetailsActivity(17022): Recipient is not a group, resolving members immediately.
+W/ThumbnailView(17022): loading part with id (row id: 16, unique ID: 1443293026052), progress 1
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(17022): Decrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 0
+W/ThumbnailView(17022): Not re-loading slide (row id: 16, unique ID: 1443293026052)
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(17022): Incrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 1
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(17022): Decrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 0
+W/IInputConnectionWrapper(17022): showStatusIcon on inactive InputConnection
+W/MediaPlayer-JNI(17022): MediaPlayer finalized without being released
+W/WebSocketConnection(17022): Sending keep alive...
+W/OkHttpClientWrapper(17022): onMessage: BINARY
+W/WebSocketConnection(17022): WSC onMessage()
+W/WebSocketConnection(17022): Message Type: 2
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 8) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 8) ORDER BY date_received DESC) LIMIT 1
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(17022): Incrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 1
+W/art (17022): Before Android 4.1, method int android.support.v7.internal.widget.ListViewCompat.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(17022): Decrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 0
+W/PassphraseRequiredActionBarActivity(17022): routeApplicationState(), state: 0
+W/PassphraseRequiredActionBarActivity(17022): initializeClearKeyReceiver()
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(17022): Incrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 1
+W/MessageRetrievalService(17022): Application level read timeout...
+W/MessageRetrievalService(17022): Network requirement: true, active activities: 1, push pending: 0
+W/MessageRetrievalService(17022): Reading message...
+W/Resources(17022): Converting to string: TypedValue{t=0x10/d=0x1f4 a=-1}
+W/WebSocketConnection(17022): Sending keep alive...
+W/OkHttpClientWrapper(17022): onMessage: BINARY
+W/WebSocketConnection(17022): WSC onMessage()
+W/WebSocketConnection(17022): Message Type: 2
+W/MessageRetrievalService(17022): Application level read timeout...
+W/MessageRetrievalService(17022): Network requirement: true, active activities: 1, push pending: 0
+W/MessageRetrievalService(17022): Reading message...
+W/WebSocketConnection(17022): Sending keep alive...
+W/OkHttpClientWrapper(17022): onMessage: BINARY
+W/WebSocketConnection(17022): WSC onMessage()
+W/WebSocketConnection(17022): Message Type: 2
+W/MessageRetrievalService(17022): Application level read timeout...
+W/MessageRetrievalService(17022): Network requirement: true, active activities: 1, push pending: 0
+W/MessageRetrievalService(17022): Reading message...
+W/Resources(17022): Converting to string: TypedValue{t=0x10/d=0x1f4 a=-1}
+W/WebSocketConnection(17022): Sending keep alive...
+W/OkHttpClientWrapper(17022): onMessage: BINARY
+W/WebSocketConnection(17022): WSC onMessage()
+W/WebSocketConnection(17022): Message Type: 2
+W/ThreadDatabase(17022): Trimming thread: 8 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 8) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 8) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Cursor count is greater than length!
+W/ThreadDatabase(17022): Cut off tweet date: 1438479628324
+W/MmsDatabase(17022): Executing trim query: thread_id = ? AND (CASE (msg_box & 31) WHEN 21 THEN date < 1438479628324 WHEN 23 THEN date < 1438479628324 WHEN 22 THEN date < 1438479628324 WHEN 24 THEN date < 1438479628324 WHEN 25 THEN date < 1438479628324 WHEN 26 THEN date < 1438479628324 ELSE date_received < 1438479628324 END)
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 8) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 8) ORDER BY date_received DESC) LIMIT 1
+W/ThreadDatabase(17022): Trimming thread: 2 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 2) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 2) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 10 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 10) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 10) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 14 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 14) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 14) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 12 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 12) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 12) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 3 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 3) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 3) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 6 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 6) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 6) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 24 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 24) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 24) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 25 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 25) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 25) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 18 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 18) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 18) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 7 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 7) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 7) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 13 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 13) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 13) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 23 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 23) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 23) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 9 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 9) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 9) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 15 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 15) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 15) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 5 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 5) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 5) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 11 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 11) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 11) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 16 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 16) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 16) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 17 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 17) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 17) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 19 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 19) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 19) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 20 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 20) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 20) ORDER BY date_received ASC)
+W/ThreadDatabase(17022): Trimming thread: 21 to: 500
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 21) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 21) ORDER BY date_received ASC)
+V/RenderScript(17022): Application requested CPU execution
+V/RenderScript(17022): 0x9bc40000 Launching thread(s), CPUs 4
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(17022): Decrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 0
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(17022): Incrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 1
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(17022): Decrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 0
+W/PassphraseRequiredActionBarActivity(17022): routeApplicationState(), state: 0
+W/PassphraseRequiredActionBarActivity(17022): initializeClearKeyReceiver()
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(17022): Incrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 1
+W/MessageRetrievalService(17022): Application level read timeout...
+W/MessageRetrievalService(17022): Network requirement: true, active activities: 1, push pending: 0
+W/MessageRetrievalService(17022): Reading message...
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(17022): Decrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 0
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(17022): Incrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 1
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(17022): Decrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 0
+W/ConversationListActivity(17022): Detected android contact data changed, refreshing cache
+W/WebSocketConnection(17022): Sending keep alive...
+W/OkHttpClientWrapper(17022): onMessage: BINARY
+W/WebSocketConnection(17022): WSC onMessage()
+W/WebSocketConnection(17022): Message Type: 2
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(17022): Incrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 1
+W/InputEventReceiver(17022): Attempted to finish an input event but the input event receiver has already been disposed.
+--------- beginning of system
+W/ViewRootImpl(17022): Dropping event due to root view being removed: MotionEvent { action=ACTION_MOVE, id[0]=0, x[0]=-222.0, y[0]=352.0, toolType[0]=TOOL_TYPE_FINGER, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=14783986, downTime=14783980, deviceId=5, source=0x1002 }
+W/InputEventReceiver(17022): Attempted to finish an input event but the input event receiver has already been disposed.
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(17022): Decrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 0
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(17022): Incrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 1
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(17022): Decrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 0
+W/MessageRetrievalService(17022): Application level read timeout...
+W/MessageRetrievalService(17022): Network requirement: true, active activities: 0, push pending: 0
+W/MessageRetrievalService(17022): Shutting down pipe...
+W/WebSocketConnection(17022): WSC disconnect()...
+W/OkHttpClientWrapper(17022): Calling disconnect()...
+W/MessageRetrievalService(17022): Looping...
+W/MessageRetrievalService(17022): Waiting for websocket state change....
+W/MessageRetrievalService(17022): Network requirement: true, active activities: 0, push pending: 0
+W/OkHttpClientWrapper(17022): onClose(1000, OK)
+W/WebSocketConnection(17022): onClose()...
+W/WebSocketConnection(17022): Sending keep alive...
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(17022): Incrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 1
+W/MessageRetrievalService(17022): Network requirement: true, active activities: 1, push pending: 0
+W/MessageRetrievalService(17022): Making websocket connection....
+W/WebSocketConnection(17022): WSC connect()...
+W/OkHttpClientWrapper(17022): Connecting to: wss://textsecure-service.whispersystems.org/v1/websocket/?login=%s&password=%s
+W/MessageRetrievalService(17022): Network requirement: true, active activities: 1, push pending: 0
+W/MessageRetrievalService(17022): Reading message...
+W/WebSocketConnection(17022): onConnected()
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(17022): Decrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 0
+W/PassphraseRequiredActionBarActivity(17022): routeApplicationState(), state: 0
+W/PassphraseRequiredActionBarActivity(17022): initializeClearKeyReceiver()
+W/QuickAttachmentDrawer(17022): updateControlsView()
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 8) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 8) ORDER BY date_received ASC)
+W/KeyboardAwareLinearLayout(17022): rotation changed
+W/KeyboardAwareLinearLayout(17022): onKeyboardClose()
+W/CameraView(17022): skipping layout due to zero-width/height preview size
+W/MmsSmsDatabase(17022): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(17022): Incrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 1
+W/CanonicalAddressDatabase(17022): Hitting DB on query [ID].
+W/ThumbnailView(17022): loading part with id (row id: 16, unique ID: 1443293026052), progress 1
+D/OpenGLRenderer(17022): endAllStagingAnimators on 0x9f1a7d00 (RippleDrawable) with handle 0x99f93ac0
+W/ThumbnailView(17022): Not re-loading slide (row id: 16, unique ID: 1443293026052)
+W/ThumbnailView(17022): Not re-loading slide (row id: 16, unique ID: 1443293026052)
+W/ThumbnailView(17022): Not re-loading slide (row id: 16, unique ID: 1443293026052)
+W/ThumbnailView(17022): Not re-loading slide (row id: 16, unique ID: 1443293026052)
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService(17022): Decrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 0
+W/PassphraseRequiredActionBarActivity(17022): routeApplicationState(), state: 0
+W/PassphraseRequiredActionBarActivity(17022): initializeClearKeyReceiver()
+W/KeyCachingService(17022): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(17022): Incrementing activity count...
+W/MessageRetrievalService(17022): Active Count: 1
+W/MessageDetailsActivity(17022): Recipient is not a group, resolving members immediately.
+W/ThumbnailView(17022): loading part with id (row id: 16, unique ID: 1443293026052), progress 1
+W/PartDatabase(17022): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-387152277.mms
+W/PartDatabase(17022): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-387152277.mms
+W/SmilUtil(17022): Creating SMIL document from PduBody.
+W/PduComposer(17022): Making send request...
+W/PduComposer(17022): Making message body...
+W/PduComposer(17022): Returning: 95914 bytes...
+W/CompatMmsConnection(17022): Sending via legacy connection
+W/MessageDetailsActivity(17022): Recipient is not a group, resolving members immediately.
+W/TelephonyUtil(17022): Choosing MCC+MNC info from TelephonyManager.getSimOperator()
+W/ApnDatabase(17022): Querying table for MCC+MNC 310120 without APN name
+W/ApnDatabase(17022): Returning preferred APN LegacyMmsConnection$Apn{ mmsc: "http://mms.sprintpcs.com", proxy: "68.28.31.7", port: 80, user: none, pass: none }
+W/OutgoingLegacyMmsConnection(17022): Sending MMS directly without radio change...
+W/OutgoingLegacyMmsConnection(17022): Sending MMS of length: 95914
+W/ThumbnailView(17022): Not re-loading slide (row id: 16, unique ID: 1443293026052)
+W/LegacyMmsConnection(17022): returning vacuous success since MMS radio is not in use
+W/OutgoingLegacyMmsConnection(17022): got successful route to host mms.sprintpcs.com
+W/LegacyMmsConnection(17022): connecting to http://mms.sprintpcs.com
+W/LegacyMmsConnection(17022): * response code: HTTP/1.1 401 Authorization Required
+W/OutgoingLegacyMmsConnection(17022): java.io.IOException: unhandled response code
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.LegacyMmsConnection.execute(LegacyMmsConnection.java:193)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:135)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:82)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:39)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:72)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/OutgoingLegacyMmsConnection(17022): at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/OutgoingLegacyMmsConnection(17022): at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/OutgoingLegacyMmsConnection(17022): java.io.IOException: Connection manager could not obtain route to host.
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.sendBytes(OutgoingLegacyMmsConnection.java:141)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:118)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.OutgoingLegacyMmsConnection.send(OutgoingLegacyMmsConnection.java:82)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.mms.CompatMmsConnection.send(CompatMmsConnection.java:39)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:72)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+W/OutgoingLegacyMmsConnection(17022): at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/OutgoingLegacyMmsConnection(17022): at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/OutgoingLegacyMmsConnection(17022): at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/OutgoingLegacyMmsConnection(17022): Sending MMS with radio change and proxy...
+D/ConnectivityManager(17022): sending expire msg with seqNum 0 and delay 60000
+D/ConnectivityManager(17022): starting startUsingNetworkFeature for request NetworkRequest [ id=25, legacyType=2, [ Transports: CELLULAR Capabilities: MMS&NOT_RESTRICTED&TRUSTED&NOT_VPN] ]
+W/MmsRadio(17022): startUsingNetworkFeature status: 1
+W/MmsRadio(17022): Got connectivity change...
+W/MmsRadio(17022): Connected: [type: MOBILE_MMS[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false]
+W/MmsRadio(17022): Connected: [type: MOBILE_MMS[], state: DISCONNECTED/DISCONNECTED, reason: (unspecified), extra: (none), roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false]
+D/ConnectivityManager.CallbackHandler(17022): CM callback handler got msg 524290
+D/ConnectivityManager(17022): startUsingNetworkFeature got Network:103
+W/MmsRadio(17022): Got connectivity change...
+W/MmsRadio(17022): Connected: [type: MOBILE[LTE], state: CONNECTED/CONNECTED, reason: connected, extra: n.nv.ispsn, roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false]
+W/MmsRadio(17022): Notifying connected...
+W/MmsRadio(17022): Connected: [type: MOBILE[LTE], state: CONNECTED/CONNECTED, reason: connected, extra: n.nv.ispsn, roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false]
+W/OutgoingLegacyMmsConnection(17022): Sending MMS of length: 95914, using mms radio, using proxy
+W/LegacyMmsConnection(17022): Checking route to address: 68.28.31.7, 68.28.31.7
+W/LegacyMmsConnection(17022): requestRouteToHostAddress(/68.28.31.7) -> true
+W/OutgoingLegacyMmsConnection(17022): got successful route to host 68.28.31.7
+W/LegacyMmsConnection(17022): connecting to http://mms.sprintpcs.com
+D/ConnectivityManager.CallbackHandler(17022): CM callback handler got msg 524290
+D/ConnectivityManager(17022): startUsingNetworkFeature got Network:103
+W/LegacyMmsConnection(17022): * response code: HTTP/1.1 200 OK
+W/LegacyMmsConnection(17022): Received full server response, 49 bytes
+W/PduParser(17022): parse() called...
+W/PduParser(17022): Message Type: 129
+W/MmsRadio(17022): MMS Radio Disconnect Called...
+W/MmsRadio(17022): Reference count: 0
+W/MmsRadio(17022): Turning off MMS radio...
+D/ConnectivityManager(17022): stopUsingNetworkFeature for 0, enableMMS
+W/MmsRadio(17022): Unregistering receiver...
+W/MmsSendJob(17022): org.thoughtcrime.securesms.transport.UndeliverableMessageException: Got bad response: 225
+W/MmsSendJob(17022): at org.thoughtcrime.securesms.jobs.MmsSendJob.getSendResult(MmsSendJob.java:127)
+W/MmsSendJob(17022): at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:73)
+W/MmsSendJob(17022): at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+W/MmsSendJob(17022): at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/MmsSendJob(17022): at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/MmsSendJob(17022): at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

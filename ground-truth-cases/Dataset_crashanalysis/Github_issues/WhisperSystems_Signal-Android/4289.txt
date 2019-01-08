@@ -1,0 +1,9 @@
+10-23 16:13:30.750 29162-29162/org.thoughtcrime.securesms.dev E/AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'int android.media.MediaPlayer.getDuration()' on a null object reference
+10-23 16:13:30.750 29162-29162/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at org.thoughtcrime.securesms.audio.AudioSlidePlayer$1.onPrepared(AudioSlidePlayer.java:76)
+10-23 16:13:30.750 29162-29162/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at android.media.MediaPlayer$EventHandler.handleMessage(MediaPlayer.java:2816)
+10-23 16:13:30.750 29162-29162/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at android.os.Handler.dispatchMessage(Handler.java:102)
+10-23 16:13:30.750 29162-29162/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at android.os.Looper.loop(Looper.java:148)
+10-23 16:13:30.750 29162-29162/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at android.app.ActivityThread.main(ActivityThread.java:5417)
+10-23 16:13:30.750 29162-29162/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at java.lang.reflect.Method.invoke(Native Method)
+10-23 16:13:30.750 29162-29162/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+10-23 16:13:30.750 29162-29162/org.thoughtcrime.securesms.dev E/AndroidRuntime:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

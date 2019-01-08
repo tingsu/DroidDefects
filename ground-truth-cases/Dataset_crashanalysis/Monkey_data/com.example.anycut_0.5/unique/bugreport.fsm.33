@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: com.example.anycut
+//version: 0.5
+//appro_time: 42
+ java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=-1, data=Intent { act=com.android.launcher.action.INSTALL_SHORTCUT flg=0x4000000 (has extras) }} to activity {com.example.anycut/com.example.anycut.FrontDoorActivity}: java.lang.IllegalArgumentException: Can't use FLAG_RECEIVER_BOOT_UPGRADE here
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3367)
+ 	at android.app.ActivityThread.handleSendResult(ActivityThread.java:3410)
+ 	at android.app.ActivityThread.access$1100(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1304)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalArgumentException: Can't use FLAG_RECEIVER_BOOT_UPGRADE here
+ 	at android.os.Parcel.readException(Parcel.java:1435)
+ 	at android.os.Parcel.readException(Parcel.java:1385)
+ 	at android.app.ActivityManagerProxy.broadcastIntent(ActivityManagerNative.java:2224)
+ 	at android.app.ContextImpl.sendBroadcast(ContextImpl.java:1046)
+ 	at android.content.ContextWrapper.sendBroadcast(ContextWrapper.java:344)
+ 	at com.example.anycut.FrontDoorActivity.onActivityResult(FrontDoorActivity.java:68)
+ 	at android.app.Activity.dispatchActivityResult(Activity.java:5322)
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3363)

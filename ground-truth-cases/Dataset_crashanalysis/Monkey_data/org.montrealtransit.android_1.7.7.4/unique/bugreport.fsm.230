@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: org.montrealtransit.android
+//version: 1.7.7.4
+//appro_time: 150
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.RuntimeException: Can't create handler inside thread that has not called Looper.prepare()
+ 	at android.os.Handler.<init>(Handler.java:197)
+ 	at android.os.Handler.<init>(Handler.java:111)
+ 	at android.location.LocationManager$ListenerTransport$1.<init>(LocationManager.java:197)
+ 	at android.location.LocationManager$ListenerTransport.<init>(LocationManager.java:197)
+ 	at android.location.LocationManager.wrapListener(LocationManager.java:820)
+ 	at android.location.LocationManager.requestLocationUpdates(LocationManager.java:833)
+ 	at android.location.LocationManager.requestLocationUpdates(LocationManager.java:430)
+ 	at org.montrealtransit.android.LocationUtils.enableLocationUpdates(LocationUtils.java:158)
+ 	at org.montrealtransit.android.LocationUtils.enableLocationUpdatesIfNecessary(LocationUtils.java:165)
+ 	at org.montrealtransit.android.activity.v4.SubwayLineInfo.getLocation(SubwayLineInfo.java:454)
+ 	at org.montrealtransit.android.activity.v4.SubwayLineDirectionFragment$2.doInBackground(SubwayLineDirectionFragment.java:293)
+ 	at org.montrealtransit.android.activity.v4.SubwayLineDirectionFragment$2.doInBackground(SubwayLineDirectionFragment.java:258)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

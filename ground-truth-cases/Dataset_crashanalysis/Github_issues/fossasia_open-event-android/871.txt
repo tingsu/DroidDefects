@@ -1,0 +1,6 @@
+java.lang.IndexOutOfBoundsException: Invalid index 3, size is 3
+                                                                            at   java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+                                                                            at java.util.ArrayList.get(ArrayList.java:308)
+                                                                            at android.support.design.widget.CoordinatorLayout.onLayout(CoordinatorLayout.java:848)
+                                                                            at android.view.View.layout(View.java:16630)
+                                                                            at android.view.ViewGroup.layout(ViewGroup.java:5437)

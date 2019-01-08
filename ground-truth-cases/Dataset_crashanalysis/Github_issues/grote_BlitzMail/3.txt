@@ -1,0 +1,30 @@
+   javax.net.ssl.SSLException: Read error: ssl=0xebf40: I/O error during system call, Connection timed out
+   at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:1611)
+   at com.sun.mail.smtp.SMTPTransport.ehlo(SMTPTransport.java:936)
+   at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:415)
+   at javax.mail.Service.connect(Service.java:310)
+   at javax.mail.Service.connect(Service.java:169)
+   at javax.mail.Service.connect(Service.java:118)
+   at javax.mail.Transport.send0(Transport.java:188)
+   at javax.mail.Transport.send(Transport.java:118)
+   at de.grobox.blitzmail.MailSender.sendMail(MailSender.java:77)
+   at de.grobox.blitzmail.AsyncMailTask.doInBackground(AsyncMailTask.java:63)
+   at de.grobox.blitzmail.AsyncMailTask.doInBackground(AsyncMailTask.java:29)
+   at android.os.AsyncTask$2.call(AsyncTask.java:287)
+Caused by: javax.net.ssl.SSLException: Read error: ssl=0xebf40: I/O error during system call, Connection timed out
+   at org.apache.harmony.xnet.provider.jsse.NativeCrypto.SSL_read(Native Method)
+   at org.apache.harmony.xnet.provider.jsse.OpenSSLSocketImpl$SSLInputStream.read(OpenSSLSocketImpl.java:675)
+   at com.sun.mail.util.TraceInputStream.read(TraceInputStream.java:110)
+   at java.io.InputStream.read(InputStream.java:163)
+   at java.io.BufferedInputStream.fillbuf(BufferedInputStream.java:142)
+   at java.io.BufferedInputStream.read(BufferedInputStream.java:227)
+   at com.sun.mail.util.LineInputStream.readLine(LineInputStream.java:88)
+   at com.sun.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:1589)
+   ... 17 more
+
+FATAL EXCEPTION: main
+java.lang.NullPointerException
+       at de.grobox.blitzmail.AsyncMailTask.onPostExecute(AsyncMailTask.java:108)
+       at de.grobox.blitzmail.AsyncMailTask.onPostExecute(AsyncMailTask.java:29)
+       at android.os.AsyncTask.finish(AsyncTask.java:631)
+       at android.os.AsyncTask.access$600(AsyncTask.java:177)

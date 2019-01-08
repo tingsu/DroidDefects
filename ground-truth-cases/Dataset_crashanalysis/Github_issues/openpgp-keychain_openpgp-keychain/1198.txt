@@ -1,0 +1,9 @@
+ 23048               Keychain  E  org.sufficientlysecure.keychain.keyimport.Keyserver$QueryFailedException: not found
+ 23048               Keychain  E  at org.sufficientlysecure.keychain.keyimport.HkpKeyserver.get(HkpKeyserver.java:345)
+ 23048               Keychain  E  at org.sufficientlysecure.keychain.operations.ImportExportOperation.importKeyRings(ImportExportOperation.java:220)
+ 23048               Keychain  E  at org.sufficientlysecure.keychain.operations.ImportExportOperation.importKeyRings(ImportExportOperation.java:136)
+ 23048               Keychain  E  at org.sufficientlysecure.keychain.service.KeychainIntentService.onHandleIntent(KeychainIntentService.java:525)
+ 23048               Keychain  E  at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+ 23048               Keychain  E  at android.os.Handler.dispatchMessage(Handler.java:102)
+ 23048               Keychain  E  at android.os.Looper.loop(Looper.java:135)
+ 23048               Keychain  E  at android.os.HandlerThread.run(HandlerThread.java:61)

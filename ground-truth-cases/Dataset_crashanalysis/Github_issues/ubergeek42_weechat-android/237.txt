@@ -1,0 +1,29 @@
+
+For now my workaround is to disable this method on the server (`GSSAPIAuthentication=no` in sshd_config) but looking at the adb output it seems like there are missing libraries somewhere:
+
+```
+11-04 23:58:05.328 12207-24151/? I/System.out: [Level 1] Authentications that can continue: gssapi-with-mic,publickey,keyboard-interactive,password
+11-04 23:58:05.328 12207-24151/? I/System.out: [Level 1] Next authentication method: gssapi-with-mic
+11-04 23:58:05.402 12207-24151/? W/art: Unresolved exception class when finding catch block: org.ietf.jgss.GSSException
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime: FATAL EXCEPTION: Thread-649
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime: Process: com.ubergeek42.WeechatAndroid.dev, PID: 12207
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime: java.lang.NoClassDefFoundError: Failed resolution of: Lorg/ietf/jgss/Oid;
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at com.jcraft.jsch.jgss.GSSContextKrb5.a(Unknown Source)
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at com.jcraft.jsch.UserAuthGSSAPIWithMIC.a(Unknown Source)
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at com.jcraft.jsch.Session.a(Unknown Source)
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at com.ubergeek42.a.a.a.h.run(Unknown Source)
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at java.lang.Thread.run(Thread.java:818)
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:  Caused by: java.lang.ClassNotFoundException: Didn't find class "org.ietf.jgss.Oid" on path: DexPathList[[zip file "/data/app/com.ubergeek42.WeechatAndroid.dev-1/base.apk"],nativeLibraryDirectories=[/data/app/com.ubergeek42.WeechatAndroid.dev-1/lib/arm, /vendor/lib, /system/lib]]
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at com.jcraft.jsch.jgss.GSSContextKrb5.a(Unknown Source) 
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at com.jcraft.jsch.UserAuthGSSAPIWithMIC.a(Unknown Source) 
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at com.jcraft.jsch.Session.a(Unknown Source) 
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at com.ubergeek42.a.a.a.h.run(Unknown Source) 
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at java.lang.Thread.run(Thread.java:818) 
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:  Suppressed: java.lang.ClassNotFoundException: org.ietf.jgss.Oid
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at java.lang.Class.classForName(Native Method)
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+11-04 23:58:05.403 12207-24151/? E/AndroidRuntime:     at java.lang.ClassLoader.loadClass(ClassLoader.java:504)

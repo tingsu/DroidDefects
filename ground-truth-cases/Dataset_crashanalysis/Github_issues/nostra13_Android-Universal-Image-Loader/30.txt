@@ -1,0 +1,5 @@
+E/AndroidRuntime(7276): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(7276):     at com.nostra13.universalimageloader.cache.disc.LimitedDiscCache.calculateCacheSizeAndFillUsageMap(LimitedDiscCache.java:41)
+E/AndroidRuntime(7276):     at com.nostra13.universalimageloader.cache.disc.LimitedDiscCache.<init>(LimitedDiscCache.java:35)
+E/AndroidRuntime(7276):     at com.nostra13.universalimageloader.cache.disc.impl.FileCountLimitedDiscCache.<init>(FileCountLimitedDiscCache.java:25)
+E/AndroidRuntime(7276):     at myapp.android.MyModule.configure(MyModule.java:38)

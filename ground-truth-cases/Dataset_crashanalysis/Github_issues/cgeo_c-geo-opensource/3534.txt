@@ -1,0 +1,10 @@
+java.lang.NullPointerException
+   at cgeo.geocaching.files.LocalStorage.getInternalStorageBase(LocalStorage.java:93)
+   at cgeo.geocaching.files.LocalStorage.getInternalDbDirectory(LocalStorage.java:83)
+   at cgeo.geocaching.DataStore.databasePath(DataStore.java:391)
+   at cgeo.geocaching.DataStore.databasePath(DataStore.java:395)
+   at cgeo.geocaching.DataStore.access$100(DataStore.java:58)
+   at cgeo.geocaching.DataStore$DbHelper.<init>(DataStore.java:447)
+   at cgeo.geocaching.DataStore.init(DataStore.java:299)
+   at cgeo.geocaching.DataStore.clean(DataStore.java:2321)
+   at cgeo.geocaching.MainActivity$CleanDatabaseThread.run(MainActivity.java:708)

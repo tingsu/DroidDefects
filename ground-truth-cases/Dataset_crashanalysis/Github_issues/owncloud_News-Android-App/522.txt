@@ -1,0 +1,29 @@
+E/AndroidRuntime( 1189): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.net.URL.toString()' on a null object reference
+E/AndroidRuntime( 1189):    at de.luhmer.owncloudnewsreader.async_tasks.GetImageThreaded.start(GetImageThreaded.java:65)
+E/AndroidRuntime( 1189):    at de.luhmer.owncloudnewsreader.helper.FavIconHandler.PreCacheFavIcon(FavIconHandler.java:75)
+E/AndroidRuntime( 1189):    at de.luhmer.owncloudnewsreader.services.DownloadImagesService.onHandleIntent(DownloadImagesService.java:111)
+E/AndroidRuntime( 1189):    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+E/AndroidRuntime( 1189):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 1189):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime( 1189):    at android.os.HandlerThread.run(HandlerThread.java:61)
+W/ActivityManager( 2449):   Force finishing activity 1 de.luhmer.owncloudnewsreader/.NewsReaderListActivity
+E/ActivityThread( 1189): Failed to find provider info for com.teslacoilsw.notifier
+W/OpenGLRenderer( 3116): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+W/OpenGLRenderer( 3116): Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+W/ResourceType( 2793): No package identifier when getting value for resource number 0x00000000
+W/PackageManager( 2793): Failure retrieving resources for de.luhmer.owncloudnewsreader: Resource ID #0x0
+W/System.err( 1189): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.content.Context.getPackageName()' on a null object reference
+W/System.err( 1189):    at android.preference.PreferenceManager.getDefaultSharedPreferencesName(PreferenceManager.java:374)
+W/System.err( 1189):    at android.preference.PreferenceManager.getDefaultSharedPreferences(PreferenceManager.java:369)
+W/System.err( 1189):    at de.luhmer.owncloudnewsreader.NewsReaderListFragment$AsyncTaskGetUserInfo.onPostExecute(NewsReaderListFragment.java:344)
+W/System.err( 1189):    at de.luhmer.owncloudnewsreader.NewsReaderListFragment$AsyncTaskGetUserInfo.onPostExecute(NewsReaderListFragment.java:271)
+W/System.err( 1189):    at android.os.AsyncTask.finish(AsyncTask.java:636)
+W/System.err( 1189):    at android.os.AsyncTask.access$500(AsyncTask.java:177)
+W/System.err( 1189):    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:653)
+W/System.err( 1189):    at android.os.Handler.dispatchMessage(Handler.java:102)
+W/System.err( 1189):    at android.os.Looper.loop(Looper.java:135)
+W/System.err( 1189):    at android.app.ActivityThread.main(ActivityThread.java:5254)
+W/System.err( 1189):    at java.lang.reflect.Method.invoke(Native Method)
+W/System.err( 1189):    at java.lang.reflect.Method.invoke(Method.java:372)
+W/System.err( 1189):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+W/System.err( 1189):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)

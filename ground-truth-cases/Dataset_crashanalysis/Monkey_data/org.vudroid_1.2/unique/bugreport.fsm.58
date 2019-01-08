@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: org.vudroid
+//version: 1.2
+//appro_time: 91
+ java.lang.NullPointerException: storage == null
+ 	at java.util.Arrays$ArrayList.<init>(Arrays.java:38)
+ 	at java.util.Arrays.asList(Arrays.java:154)
+ 	at org.vudroid.core.presentation.BrowserAdapter.setCurrentDirectory(BrowserAdapter.java:69)
+ 	at org.vudroid.core.BaseBrowserActivity.setCurrentDir(BaseBrowserActivity.java:135)
+ 	at org.vudroid.core.BaseBrowserActivity.access$000(BaseBrowserActivity.java:19)
+ 	at org.vudroid.core.BaseBrowserActivity$1.onItemClick(BaseBrowserActivity.java:31)
+ 	at android.widget.AdapterView.performItemClick(AdapterView.java:298)
+ 	at android.widget.AbsListView.performItemClick(AbsListView.java:1100)
+ 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:2788)
+ 	at android.widget.AbsListView$1.run(AbsListView.java:3463)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

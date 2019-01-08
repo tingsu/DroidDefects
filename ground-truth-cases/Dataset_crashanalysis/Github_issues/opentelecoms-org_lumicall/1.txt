@@ -1,0 +1,4 @@
+E/IntegratedSipProvider( 3782): java.lang.Exception: No DNS SRV or A results found for: 192.168.1.253
+E/IntegratedSipProvider( 3782):         at org.zoolu.sip.provider.SipProvider.sendMessage(SipProvider.java:766)
+E/IntegratedSipProvider( 3782):         at org.zoolu.sip.provider.SipProvider.sendMessage(SipProvider.java:968)
+E/IntegratedSipProvider( 3782):         at org.zoolu.sip.transaction.TransactionClient.request(TransactionClient.java:99)

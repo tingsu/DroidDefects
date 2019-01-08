@@ -1,0 +1,8 @@
+     [exec] junit.framework.AssertionFailedError: expected:<N 52° 25.504 · E 009° 39.852> but was:<null>
+     [exec]     at cgeo.test.Compare.assertCompareCaches(Compare.java:28)
+     [exec]     at cgeo.geocaching.cgeoApplicationTest.testSearchByGeocodeBasis(cgeoApplicationTest.java:389)
+     [exec]     at java.lang.reflect.Method.invokeNative(Native Method)
+     [exec]     at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:169)
+     [exec]     at android.test.AndroidTestRunner.runTest(AndroidTestRunner.java:154)
+     [exec]     at android.test.InstrumentationTestRunner.onStart(InstrumentationTestRunner.java:545)
+     [exec]     at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:1551)

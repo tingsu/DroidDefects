@@ -1,0 +1,7 @@
+java.lang.NullPointerException:
+  at java.io.File.fixSlashes(File.java:267)
+  at java.io.File.<init>(File.java:131)
+  at nl.sogeti.android.gpstracker.actions.utils.GpxCreator.run(GpxCreator.java:235)
+```
+
+Original issue reported on code.google.com by `rcgr...@gmail.com` on 13 Jun 2010 at 9:25

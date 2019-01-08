@@ -1,0 +1,9 @@
+02-20 22:48:50.232 13499 14189 W System.err: javax.net.ssl.SSLPeerUnverifiedException: No peer certificate
+02-20 22:48:50.232 13499 14189 W System.err:    at com.android.org.conscrypt.SSLNullSession.getPeerCertificates(SSLNullSession.java:104)
+02-20 22:48:50.232 13499 14189 W System.err:    at de.duenndns.ssl.MemorizingTrustManager$MemorizingHostnameVerifier.verify(MemorizingTrustManager.java:804)
+02-20 22:48:50.232 13499 14189 W System.err:    at de.duenndns.ssl.MemorizingTrustManager$MemorizingHostnameVerifier.verify(MemorizingTrustManager.java:825)
+02-20 22:48:50.232 13499 14189 W System.err:    at eu.siacs.conversations.xmpp.XmppConnection.switchOverToTls(XmppConnection.java:798)
+02-20 22:48:50.232 13499 14189 W System.err:    at eu.siacs.conversations.xmpp.XmppConnection.processStream(XmppConnection.java:513)
+02-20 22:48:50.232 13499 14189 W System.err:    at eu.siacs.conversations.xmpp.XmppConnection.connect(XmppConnection.java:400)
+02-20 22:48:50.232 13499 14189 W System.err:    at eu.siacs.conversations.xmpp.XmppConnection.run(XmppConnection.java:502)
+02-20 22:48:50.232 13499 14189 W System.err:    at java.lang.Thread.run(Thread.java:761)

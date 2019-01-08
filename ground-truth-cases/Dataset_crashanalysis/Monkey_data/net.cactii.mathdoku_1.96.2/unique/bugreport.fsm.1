@@ -1,0 +1,32 @@
+//this is an auto-generated bug report
+//package name: net.cactii.mathdoku
+//version: 1.96.2
+//appro_time: 1
+ java.lang.RuntimeException: Unable to resume activity {net.cactii.mathdoku/net.cactii.mathdoku.MainActivity}: java.lang.NullPointerException: UsageLogging can not be retrieved if not instantiated before.
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2790)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2266)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException: UsageLogging can not be retrieved if not instantiated before.
+ 	at net.cactii.mathdoku.UsageLog.getInstance(UsageLog.java:194)
+ 	at net.cactii.mathdoku.MainActivity.onSharedPreferenceChanged(MainActivity.java:1732)
+ 	at android.app.SharedPreferencesImpl$EditorImpl.notifyListeners(SharedPreferencesImpl.java:475)
+ 	at android.app.SharedPreferencesImpl$EditorImpl.commit(SharedPreferencesImpl.java:461)
+ 	at net.cactii.mathdoku.UsageLog.writeLine(UsageLog.java:504)
+ 	at net.cactii.mathdoku.UsageLog.logSortedMap(UsageLog.java:440)
+ 	at net.cactii.mathdoku.UsageLog.logDevice(UsageLog.java:258)
+ 	at net.cactii.mathdoku.UsageLog.<init>(UsageLog.java:158)
+ 	at net.cactii.mathdoku.UsageLog.getInstance(UsageLog.java:181)
+ 	at net.cactii.mathdoku.MainActivity.onResume(MainActivity.java:493)
+ 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+ 	at android.app.Activity.performResume(Activity.java:5211)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)

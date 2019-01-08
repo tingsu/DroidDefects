@@ -1,0 +1,4 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List com.fsck.k9.mail.store.ImapStore$ImapConnection.executeSimpleCommand(java.lang.String, boolean, com.fsck.k9.mail.store.ImapStore$UntaggedHandler)' on a null object reference
+    at com.fsck.k9.mail.store.ImapStore$ImapFolder.executeSimpleCommand(ImapStore.java:862)
+    at com.fsck.k9.mail.store.ImapStore$ImapFolderPusher$1.run(ImapStore.java:3151)
+    at java.lang.Thread.run(Thread.java:818)

@@ -1,0 +1,52 @@
+E/AndroidRuntime(26913): java.lang.RuntimeException: An error occured while executing doInBackground()
+E/AndroidRuntime(26913):    at android.os.AsyncTask$3.done(AsyncTask.java:300)
+E/AndroidRuntime(26913):    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+E/AndroidRuntime(26913):    at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+E/AndroidRuntime(26913):    at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+E/AndroidRuntime(26913):    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+E/AndroidRuntime(26913):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+E/AndroidRuntime(26913):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+E/AndroidRuntime(26913):    at java.lang.Thread.run(Thread.java:841)
+E/AndroidRuntime(26913): Caused by: pt.lighthouselabs.obd.exceptions.Misundersto, response: ?ption: Error running AT Z
+E/AndroidRuntime(26913):    at java.lang.Class.newInstanceImpl(Native Method)
+E/AndroidRuntime(26913):    at java.lang.Class.newInstance(Class.java:1208)
+E/AndroidRuntime(26913):    at pt.lighthouselabs.obd.commands.ObdCommand.checkForErrors(ObdCommand.java:188)
+E/AndroidRuntime(26913):    at pt.lighthouselabs.obd.commands.ObdCommand.readResult(ObdCommand.java:125)
+E/AndroidRuntime(26913):    at pt.lighthouselabs.obd.commands.ObdCommand.run(ObdCommand.java:79)
+E/AndroidRuntime(26913):    at pt.lighthouselabs.obd.reader.activity.TroubleCodesActivity$GetTroubleCodesTask.doInBackground(TroubleCodesActivity.java:196)
+E/AndroidRuntime(26913):    at pt.lighthouselabs.obd.reader.activity.TroubleCodesActivity$GetTroubleCodesTask.doInBackground(TroubleCodesActivity.java:132)
+E/AndroidRuntime(26913):    at android.os.AsyncTask$2.call(AsyncTask.java:288)
+E/AndroidRuntime(26913):    at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+E/AndroidRuntime(26913):    ... 4 more
+W/ActivityManager( 2253):   Force finishing activity pt.lighthouselabs.obd.reader/.activity.TroubleCodesActivity
+D/pt.lighthouselabs.obd.reader.activity.MainActivity(26913): Entered onStart...
+D/pt.lighthouselabs.obd.reader.activity.MainActivity(26913): Resuming..
+I/Timeline(26913): Timeline: Activity_idle id: android.os.BinderProxy@421ae8f0 time:82671870
+W/bt-rfcomm(13170): rfc_port_closed
+W/bt-btif (13170): bta_jv_rfc_port_to_cb(port_handle:0xf):jv handle:0x0 not FOUND
+I/Timeline( 2253): Timeline: Activity_windows_visible id: ActivityRecord{42bb3930 u0 pt.lighthouselabs.obd.reader/.activity.MainActivity t51} time:82672140
+W/SurfaceFlinger( 1724): couldn't log to binary event log: overflow.
+E/WindowManager(26913): 
+E/WindowManager(26913): android.view.WindowLeaked: Activity pt.lighthouselabs.obd.reader.activity.TroubleCodesActivity has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{42b8b540 V.E..... R....... 0,0-1026,642} that was originally added here
+E/WindowManager(26913):     at android.view.ViewRootImpl.<init>(ViewRootImpl.java:346)
+E/WindowManager(26913):     at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:248)
+E/WindowManager(26913):     at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+E/WindowManager(26913):     at android.app.Dialog.show(Dialog.java:286)
+E/WindowManager(26913):     at pt.lighthouselabs.obd.reader.activity.TroubleCodesActivity$GetTroubleCodesTask.onPreExecute(TroubleCodesActivity.java:153)
+E/WindowManager(26913):     at android.os.AsyncTask.executeOnExecutor(AsyncTask.java:587)
+E/WindowManager(26913):     at android.os.AsyncTask.execute(AsyncTask.java:535)
+E/WindowManager(26913):     at pt.lighthouselabs.obd.reader.activity.TroubleCodesActivity.onCreate(TroubleCodesActivity.java:76)
+E/WindowManager(26913):     at android.app.Activity.performCreate(Activity.java:5231)
+E/WindowManager(26913):     at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+E/WindowManager(26913):     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2169)
+E/WindowManager(26913):     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2271)
+E/WindowManager(26913):     at android.app.ActivityThread.access$800(ActivityThread.java:144)
+E/WindowManager(26913):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1205)
+E/WindowManager(26913):     at android.os.Handler.dispatchMessage(Handler.java:102)
+E/WindowManager(26913):     at android.os.Looper.loop(Looper.java:136)
+E/WindowManager(26913):     at android.app.ActivityThread.main(ActivityThread.java:5146)
+E/WindowManager(26913):     at java.lang.reflect.Method.invokeNative(Native Method)
+E/WindowManager(26913):     at java.lang.reflect.Method.invoke(Method.java:515)
+E/WindowManager(26913):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+E/WindowManager(26913):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+E/WindowManager(26913):     at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,35 @@
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{fr.xplod.focal/org.cyanogenmod.focal.CameraActivity}: android.view.InflateException: Binary XML file line #218: Error inflating class org.cyanogenmod.focal.ui.ReviewDrawer
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2073)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2098)
+    at android.app.ActivityThread.access$600(ActivityThread.java:138)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1204)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:4872)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:511)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:790)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:557)
+    at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.view.InflateException: Binary XML file line #218: Error inflating class org.cyanogenmod.focal.ui.ReviewDrawer
+    at android.view.LayoutInflater.createView(LayoutInflater.java:613)
+    at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:687)
+    at android.view.LayoutInflater.rInflate(LayoutInflater.java:746)
+    at android.view.LayoutInflater.inflate(LayoutInflater.java:489)
+    at android.view.LayoutInflater.inflate(LayoutInflater.java:396)
+    at android.view.LayoutInflater.inflate(LayoutInflater.java:352)
+    at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:361)
+    at android.app.Activity.setContentView(Activity.java:2043)
+    at org.cyanogenmod.focal.CameraActivity.onCreate(CameraActivity.java:167)
+    at android.app.Activity.performCreate(Activity.java:5191)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1082)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2037)
+    ... 11 more
+ Caused by: java.lang.reflect.InvocationTargetException
+    at java.lang.reflect.Constructor.constructNative(Native Method)
+    at java.lang.reflect.Constructor.newInstance(Constructor.java:417)
+    at android.view.LayoutInflater.createView(LayoutInflater.java:587)
+    ... 22 more
+ Caused by: java.lang.NoClassDefFoundError: org.cyanogenmod.focal.ui.ReviewDrawer$ImageListAdapter
+    at org.cyanogenmod.focal.ui.ReviewDrawer.initialize(ReviewDrawer.java:104)
+    at org.cyanogenmod.focal.ui.ReviewDrawer.<init>(ReviewDrawer.java:82)

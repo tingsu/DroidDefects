@@ -1,0 +1,7 @@
+//this is an auto-generated bug report
+//package name: org.equeim.tremotesf
+//version: 1.3.0
+//appro_time: 106
+ kotlin.UninitializedPropertyAccessException: lateinit property url has not been initialized
+ 	at org.equeim.tremotesf.Rpc.access$getUrl$p(Rpc.kt:81)
+ 	at org.equeim.tremotesf.Rpc$postRequest$thread$1.run(Rpc.kt:780)

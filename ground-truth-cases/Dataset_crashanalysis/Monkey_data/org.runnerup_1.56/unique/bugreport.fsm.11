@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: org.runnerup
+//version: 1.56
+//appro_time: 60
+ java.lang.RuntimeException: An error occurred while executing doInBackground()
+ 	at android.support.v4.content.ModernAsyncTask$3.done(ModernAsyncTask.java:143)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalStateException: attempt to re-open an already-closed object: SQLiteDatabase: /data/data/org.runnerup/databases/runnerup.db
+ 	at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:55)
+ 	at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1156)
+ 	at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1032)
+ 	at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1200)
+ 	at org.runnerup.util.SimpleCursorLoader.loadInBackground(SimpleCursorLoader.java:44)
+ 	at org.runnerup.util.SimpleCursorLoader.loadInBackground(SimpleCursorLoader.java:26)
+ 	at android.support.v4.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:296)
+ 	at android.support.v4.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:54)
+ 	at android.support.v4.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:42)
+ 	at android.support.v4.content.ModernAsyncTask$2.call(ModernAsyncTask.java:128)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

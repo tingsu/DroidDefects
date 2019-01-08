@@ -1,0 +1,4 @@
+08-18 20:26:11.560  9932  5232 W System.err: java.io.IOException: eu.siacs.conversations
+08-18 20:26:11.560  9932  5232 W System.err:    at eu.siacs.conversations.http.HttpDownloadConnection$FileSizeChecker.retrieveFileSize(HttpDownloadConnection.java:191): eu.siacs.conversations
+08-18 20:26:11.560  9932  5232 W System.err:    at eu.siacs.conversations.http.HttpDownloadConnection$FileSizeChecker.run(HttpDownloadConnection.java:153): eu.siacs.conversations
+08-18 20:26:11.560  9932  5232 W System.err:    at java.lang.Thread.run(Thread.java:841): eu.siacs.conversations

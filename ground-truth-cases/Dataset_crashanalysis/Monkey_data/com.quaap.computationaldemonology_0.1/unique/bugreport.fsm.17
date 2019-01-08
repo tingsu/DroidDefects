@@ -1,0 +1,12 @@
+//this is an auto-generated bug report
+//package name: com.quaap.computationaldemonology
+//version: 0.1
+//appro_time: 136
+ FATAL EXCEPTION: Thread-246
+ java.lang.NullPointerException
+ 	at android.graphics.Canvas.throwIfRecycled(Canvas.java:1057)
+ 	at android.graphics.Canvas.drawBitmap(Canvas.java:1097)
+ 	at com.quaap.computationaldemonology.functions.Code.doDraw(Code.java:118)
+ 	at com.quaap.computationaldemonology.GraphicDmn.doDraw(GraphicDmn.java:422)
+ 	at com.quaap.computationaldemonology.GraphicDmn.access$100(GraphicDmn.java:49)
+ 	at com.quaap.computationaldemonology.GraphicDmn$GraphicDmnThread.run(GraphicDmn.java:373)

@@ -1,0 +1,298 @@
+W/MessageRetrievalService(20284): java.util.concurrent.TimeoutException: Timeout exceeded
+W/MessageRetrievalService(20284): at org.whispersystems.textsecure.internal.websocket.WebSocketConnection.readRequest(WebSocketConnection.java:77)
+W/MessageRetrievalService(20284): at org.whispersystems.textsecure.api.TextSecureMessagePipe.read(TextSecureMessagePipe.java:72)
+W/MessageRetrievalService(20284): at org.thoughtcrime.securesms.service.MessageRetrievalService.run(MessageRetrievalService.java:79)
+W/MessageRetrievalService(20284): at java.lang.Thread.run(Thread.java:841)
+W/MessageRetrievalService(20284): Network requirement: true, active activities: 0, push pending: false
+W/MessageRetrievalService(20284): Shutting down pipe...
+W/WebSocketConnection(20284): WSC disconnect()...
+W/OkHttpClientWrapper(20284): Calling disconnect()...
+W/MessageRetrievalService(20284): Looping...
+W/MessageRetrievalService(20284): Waiting for websocket state change....
+W/MessageRetrievalService(20284): Network requirement: true, active activities: 0, push pending: false
+I/Timeline(20284): Timeline: Activity_idle id: android.os.BinderProxy@42ce1860 time:8194384
+W/OkHttpClientWrapper(20284): onClose(1000, OK)
+W/WebSocketConnection(20284): onClose()...
+W/WebSocketConnection(20284): Sending keep alive...
+W/IInputConnectionWrapper(20284): beginBatchEdit on inactive InputConnection
+W/IInputConnectionWrapper(20284): endBatchEdit on inactive InputConnection
+W/ImageActivity(20284): org.apache.http.conn.HttpHostConnectException: Connection to https://api.github.com refused
+W/ImageActivity(20284): at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:183)
+W/ImageActivity(20284): at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:164)
+W/ImageActivity(20284): at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:119)
+W/ImageActivity(20284): at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:360)
+W/ImageActivity(20284): at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+W/ImageActivity(20284): at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:487)
+W/ImageActivity(20284): at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:465)
+W/ImageActivity(20284): at org.whispersystems.libpastelog.SubmitLogFragment$SubmitToPastebinAsyncTask.doInBackground(SubmitLogFragment.java:353)
+W/ImageActivity(20284): at org.whispersystems.libpastelog.SubmitLogFragment$SubmitToPastebinAsyncTask.doInBackground(SubmitLogFragment.java:330)
+W/ImageActivity(20284): at android.os.AsyncTask$2.call(AsyncTask.java:288)
+W/ImageActivity(20284): at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+W/ImageActivity(20284): at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+W/ImageActivity(20284): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/ImageActivity(20284): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/ImageActivity(20284): at java.lang.Thread.run(Thread.java:841)
+W/ImageActivity(20284): Caused by: java.net.ConnectException: failed to connect to 192.30.252.136/192.30.252.136 (port 443): connect failed: EHOSTUNREACH (No route to host)
+W/ImageActivity(20284): at libcore.io.IoBridge.connect(IoBridge.java:114)
+W/ImageActivity(20284): at de.robv.android.xposed.XposedBridge.invokeOriginalMethodNative(Native Method)
+W/ImageActivity(20284): at de.robv.android.xposed.XposedBridge.handleHookedMethod(XposedBridge.java:631)
+W/ImageActivity(20284): at libcore.io.IoBridge.connect(Native Method)
+W/ImageActivity(20284): at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+W/ImageActivity(20284): at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:460)
+W/ImageActivity(20284): at java.net.Socket.connect(Socket.java:833)
+W/ImageActivity(20284): at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119)
+W/ImageActivity(20284): at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:144)
+W/ImageActivity(20284): ... 14 more
+W/ImageActivity(20284): Caused by: libcore.io.ErrnoException: connect failed: EHOSTUNREACH (No route to host)
+W/ImageActivity(20284): at libcore.io.Posix.connect(Native Method)
+W/ImageActivity(20284): at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+W/ImageActivity(20284): at libcore.io.IoBridge.connectErrno(IoBridge.java:127)
+W/ImageActivity(20284): at libcore.io.IoBridge.connect(IoBridge.java:112)
+W/ImageActivity(20284): ... 22 more
+W/SubmitLogFragment(20284): Response was null from Gist API.
+I/Timeline(20284): Timeline: Activity_idle id: android.os.BinderProxy@42ce1860 time:8705626
+I/Timeline(20284): Timeline: Activity_idle id: android.os.BinderProxy@42ce1860 time:8792103
+I/Timeline(20284): Timeline: Activity_idle id: android.os.BinderProxy@42ce1860 time:8824088
+I/Timeline(20284): Timeline: Activity_idle id: android.os.BinderProxy@42ce1860 time:8981842
+W/IInputConnectionWrapper(20284): showStatusIcon on inactive InputConnection
+I/Timeline(20284): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:9011270
+E/WindowManager(20284):
+E/WindowManager(20284): android.view.WindowLeaked: Activity org.thoughtcrime.securesms.LogSubmitActivity has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{42bcdca0 V.E..... R......D 0,0-684,324} that was originally added here
+E/WindowManager(20284): at android.view.ViewRootImpl.<init>(ViewRootImpl.java:346)
+E/WindowManager(20284): at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:248)
+E/WindowManager(20284): at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+E/WindowManager(20284): at de.robv.android.xposed.XposedBridge.invokeOriginalMethodNative(Native Method)
+E/WindowManager(20284): at de.robv.android.xposed.XposedBridge.handleHookedMethod(XposedBridge.java:631)
+E/WindowManager(20284): at android.view.WindowManagerImpl.addView(Native Method)
+E/WindowManager(20284): at android.app.Dialog.show(Dialog.java:286)
+E/WindowManager(20284): at android.app.ProgressDialog.show(ProgressDialog.java:116)
+E/WindowManager(20284): at android.app.ProgressDialog.show(ProgressDialog.java:99)
+E/WindowManager(20284): at org.whispersystems.libpastelog.util.ProgressDialogAsyncTask.onPreExecute(ProgressDialogAsyncTask.java:43)
+E/WindowManager(20284): at android.os.AsyncTask.executeOnExecutor(AsyncTask.java:587)
+E/WindowManager(20284): at android.os.AsyncTask.execute(AsyncTask.java:535)
+E/WindowManager(20284): at org.whispersystems.libpastelog.SubmitLogFragment$1.onClick(SubmitLogFragment.java:169)
+E/WindowManager(20284): at android.view.View.performClick(View.java:4445)
+E/WindowManager(20284): at android.view.View$PerformClick.run(View.java:18446)
+E/WindowManager(20284): at android.os.Handler.handleCallback(Handler.java:733)
+E/WindowManager(20284): at android.os.Handler.dispatchMessage(Handler.java:95)
+E/WindowManager(20284): at android.os.Looper.loop(Looper.java:136)
+E/WindowManager(20284): at android.app.ActivityThread.main(ActivityThread.java:5146)
+E/WindowManager(20284): at java.lang.reflect.Method.invokeNative(Native Method)
+E/WindowManager(20284): at java.lang.reflect.Method.invoke(Method.java:515)
+E/WindowManager(20284): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+E/WindowManager(20284): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+E/WindowManager(20284): at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+E/WindowManager(20284): at dalvik.system.NativeStart.main(Native Method)
+W/KeyCachingService(20284): Incrementing activity count...
+W/MessageRetrievalService(20284): Active Count: 1
+W/KeyCachingService(20284): Decrementing activity count...
+W/MessageRetrievalService(20284): Network requirement: true, active activities: 1, push pending: false
+W/MessageRetrievalService(20284): Active Count: 0
+W/MessageRetrievalService(20284): Making websocket connection....
+W/WebSocketConnection(20284): WSC connect()...
+W/OkHttpClientWrapper(20284): Connecting to: wss://textsecure-service.whispersystems.org/v1/websocket/?login=%s&password=%s
+W/MessageRetrievalService(20284): Network requirement: true, active activities: 0, push pending: false
+W/MessageRetrievalService(20284): Shutting down pipe...
+W/WebSocketConnection(20284): WSC disconnect()...
+W/KeyCachingService(20284): Incrementing activity count...
+W/MessageRetrievalService(20284): Active Count: 1
+W/OkHttpClientWrapper(20284): Calling disconnect()...
+W/MessageRetrievalService(20284): Looping...
+W/MessageRetrievalService(20284): Waiting for websocket state change....
+W/MessageRetrievalService(20284): Network requirement: true, active activities: 1, push pending: false
+W/MessageRetrievalService(20284): Making websocket connection....
+W/WebSocketConnection(20284): WSC connect()...
+W/OkHttpClientWrapper(20284): Connecting to: wss://textsecure-service.whispersystems.org/v1/websocket/?login=%s&password=%s
+W/MessageRetrievalService(20284): Network requirement: true, active activities: 1, push pending: false
+W/MessageRetrievalService(20284): Reading message...
+I/Timeline(20284): Timeline: Activity_idle id: android.os.BinderProxy@422f1b00 time:9011553
+W/RecipientProvider(20284): Cache miss [ASYNC]!
+W/RecipientProvider(20284): Cache miss [ASYNC]!
+I/Timeline(20284): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:9013560
+W/KeyCachingService(20284): Decrementing activity count...
+W/MessageRetrievalService(20284): Active Count: 0
+W/MmsSmsDatabase(20284): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 289) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 289) ORDER BY date_received ASC)
+W/KeyCachingService(20284): Incrementing activity count...
+W/MessageRetrievalService(20284): Active Count: 1
+W/IncomingBubbleContainer(20284): onCreateView()
+W/IncomingBubbleContainer(20284): onCreateView()
+W/IncomingBubbleContainer(20284): onCreateView()
+W/IncomingBubbleContainer(20284): onCreateView()
+W/IncomingBubbleContainer(20284): onCreateView()
+I/Timeline(20284): Timeline: Activity_idle id: android.os.BinderProxy@428573f8 time:9013983
+W/ConversationListActivity(20284): onDestroy...
+I/Timeline(20284): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:9015063
+W/KeyCachingService(20284): Decrementing activity count...
+W/MessageRetrievalService(20284): Active Count: 0
+W/KeyCachingService(20284): Incrementing activity count...
+W/MessageRetrievalService(20284): Active Count: 1
+I/Timeline(20284): Timeline: Activity_idle id: android.os.BinderProxy@42b89518 time:9015233
+W/KeyCachingService(20284): Decrementing activity count...
+W/MessageRetrievalService(20284): Active Count: 0
+W/KeyCachingService(20284): Incrementing activity count...
+W/MessageRetrievalService(20284): Active Count: 1
+I/Timeline(20284): Timeline: Activity_idle id: android.os.BinderProxy@428573f8 time:9020471
+I/Timeline(20284): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:9021649
+W/KeyCachingService(20284): Decrementing activity count...
+W/MessageRetrievalService(20284): Active Count: 0
+W/KeyCachingService(20284): Incrementing activity count...
+W/MessageRetrievalService(20284): Active Count: 1
+I/Timeline(20284): Timeline: Activity_idle id: android.os.BinderProxy@42a9e5b8 time:9021826
+D/ActivityThread(27370): handleBindApplication:org.thoughtcrime.securesms
+D/ActivityThread(27370): setTargetHeapUtilization:0.75
+D/ActivityThread(27370): setTargetHeapMinFree:2097152
+W/PartProvider(27370): Got master secret: org.thoughtcrime.securesms.crypto.MasterSecret@42461948
+I/dalvikvm(27370): DexOpt: illegal method access (call Landroid/content/res/TypedArray;.<init> (Landroid/content/res/Resources;[I[II)V from Landroid/content/res/XResources$XTypedArray;)
+I/dalvikvm(27370): Could not find method android.content.res.TypedArray.<init>, referenced from method android.content.res.XResources$XTypedArray.<init>
+W/dalvikvm(27370): VFY: unable to resolve direct method 82: Landroid/content/res/TypedArray;.<init> (Landroid/content/res/Resources;[I[II)V
+D/dalvikvm(27370): VFY: replacing opcode 0x70 at 0x0002
+I/dalvikvm(27370): Could not find method android.view.ViewGroup.onNestedScrollAccepted, referenced from method android.support.v7.internal.widget.ActionBarOverlayLayout.onNestedScrollAccepted
+W/dalvikvm(27370): VFY: unable to resolve virtual method 13355: Landroid/view/ViewGroup;.onNestedScrollAccepted (Landroid/view/View;Landroid/view/View;I)V
+D/dalvikvm(27370): VFY: replacing opcode 0x6f at 0x0000
+I/dalvikvm(27370): Could not find method android.view.ViewGroup.onStopNestedScroll, referenced from method android.support.v7.internal.widget.ActionBarOverlayLayout.onStopNestedScroll
+W/dalvikvm(27370): VFY: unable to resolve virtual method 13361: Landroid/view/ViewGroup;.onStopNestedScroll (Landroid/view/View;)V
+D/dalvikvm(27370): VFY: replacing opcode 0x6f at 0x0000
+I/dalvikvm(27370): Could not find method android.support.v7.internal.widget.ActionBarOverlayLayout.stopNestedScroll, referenced from method android.support.v7.internal.widget.ActionBarOverlayLayout.setHideOnContentScrollEnabled
+W/dalvikvm(27370): VFY: unable to resolve virtual method 9583: Landroid/support/v7/internal/widget/ActionBarOverlayLayout;.stopNestedScroll ()V
+D/dalvikvm(27370): VFY: replacing opcode 0x6e at 0x000e
+I/dalvikvm(27370): Could not find method android.content.res.TypedArray.getChangingConfigurations, referenced from method android.support.v7.internal.widget.TintTypedArray.getChangingConfigurations
+W/dalvikvm(27370): VFY: unable to resolve virtual method 563: Landroid/content/res/TypedArray;.getChangingConfigurations ()I
+D/dalvikvm(27370): VFY: replacing opcode 0x6e at 0x0002
+I/dalvikvm(27370): Could not find method android.content.res.TypedArray.getType, referenced from method android.support.v7.internal.widget.TintTypedArray.getType
+W/dalvikvm(27370): VFY: unable to resolve virtual method 585: Landroid/content/res/TypedArray;.getType (I)I
+D/dalvikvm(27370): VFY: replacing opcode 0x6e at 0x0002
+I/Timeline(27370): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:9029850
+W/service (27370): Broadcasting new secret...
+W/KeyCachingService(27370): Incrementing activity count...
+W/MessageRetrievalService(27370): Active Count: 1
+W/SendReceiveService(27370): Got a MasterSecret broadcast...
+W/PartProvider(27370): Got master secret: org.thoughtcrime.securesms.crypto.MasterSecret@42505768
+W/KeyCachingService(27370): Decrementing activity count...
+W/MessageRetrievalService(27370): Active Count: 0
+W/MessageRetrievalService(27370): Waiting for websocket state change....
+W/MessageRetrievalService(27370): Network requirement: true, active activities: 0, push pending: false
+I/dalvikvm(27370): Could not find method com.melnykov.fab.FloatingActionButton.setElevation, referenced from method com.melnykov.fab.FloatingActionButton.setBackgroundCompat
+W/dalvikvm(27370): VFY: unable to resolve virtual method 34048: Lcom/melnykov/fab/FloatingActionButton;.setElevation (F)V
+D/dalvikvm(27370): VFY: replacing opcode 0x6e at 0x0013
+W/dalvikvm(27370): Unable to resolve superclass of Lcom/melnykov/fab/FloatingActionButton$1; (1580)
+W/dalvikvm(27370): Link of class 'Lcom/melnykov/fab/FloatingActionButton$1;' failed
+W/dalvikvm(27370): Unable to resolve superclass of Lcom/melnykov/fab/FloatingActionButton$1; (1580)
+W/dalvikvm(27370): Link of class 'Lcom/melnykov/fab/FloatingActionButton$1;' failed
+W/dalvikvm(27370): Unable to resolve superclass of Lcom/melnykov/fab/FloatingActionButton$1; (1580)
+W/dalvikvm(27370): Link of class 'Lcom/melnykov/fab/FloatingActionButton$1;' failed
+D/dalvikvm(27370): DexOpt: unable to opt direct call 0x03b5 at 0x2a in Lcom/melnykov/fab/FloatingActionButton;.setBackgroundCompat
+W/dalvikvm(27370): Unable to resolve superclass of Lcom/melnykov/fab/FloatingActionButton$1; (1580)
+W/dalvikvm(27370): Link of class 'Lcom/melnykov/fab/FloatingActionButton$1;' failed
+D/dalvikvm(27370): DexOpt: unable to opt direct call 0x84b7 at 0x2f in Lcom/melnykov/fab/FloatingActionButton;.setBackgroundCompat
+W/MmsSmsDatabase(27370): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+W/DirectoryRefreshListener(27370): Scheduling for: 1426884354348
+W/MessageRetrievalService(27370): Network requirement: true, active activities: 0, push pending: false
+W/KeyCachingService(27370): Incrementing activity count...
+W/MessageRetrievalService(27370): Active Count: 1
+W/MessageRetrievalService(27370): Network requirement: true, active activities: 1, push pending: false
+W/MessageRetrievalService(27370): Making websocket connection....
+W/WebSocketConnection(27370): WSC connect()...
+W/OkHttpClientWrapper(27370): Connecting to: wss://textsecure-service.whispersystems.org/v1/websocket/?login=%s&password=%s
+W/MessageRetrievalService(27370): Network requirement: true, active activities: 1, push pending: false
+W/MessageRetrievalService(27370): Reading message...
+I/Adreno-EGL(27370): <qeglDrvAPI_eglInitialize:381>: EGL 1.4 QUALCOMM build:  (CL3869936)
+I/Adreno-EGL(27370): OpenGL ES Shader Compiler Version: 17.01.11.SPL
+I/Adreno-EGL(27370): Build Date: 03/28/14 Fri
+I/Adreno-EGL(27370): Local Branch:
+I/Adreno-EGL(27370): Remote Branch:
+I/Adreno-EGL(27370): Local Patches:
+I/Adreno-EGL(27370): Reconstruct Branch:
+D/OpenGLRenderer(27370): Enabling debug mode 0
+W/ShortcutBadger(27370): No support for: com.cyanogenmod.trebuchet
+W/Xposed  (27370): Package name for /data/app/ma.wanam.youtubeadaway-2.apk had to be retrieved via parser
+W/RecipientProvider(27370): Cache miss [ASYNC]!
+W/RecipientProvider(27370): Cache miss [ASYNC]!
+W/RecipientProvider(27370): Cache miss [ASYNC]!
+W/RecipientProvider(27370): Cache miss [ASYNC]!
+W/RecipientProvider(27370): Cache miss [ASYNC]!
+W/RecipientProvider(27370): Cache miss [ASYNC]!
+W/RecipientProvider(27370): Cache miss [ASYNC]!
+W/RecipientProvider(27370): Cache miss [ASYNC]!
+I/Timeline(27370): Timeline: Activity_idle id: android.os.BinderProxy@424cafd0 time:9031000
+I/Timeline(27370): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:9034516
+W/KeyCachingService(27370): Decrementing activity count...
+W/MessageRetrievalService(27370): Active Count: 0
+I/dalvikvm(27370): Could not find method android.widget.EditText.<init>, referenced from method org.thoughtcrime.securesms.components.ComposeText.<init>
+W/dalvikvm(27370): VFY: unable to resolve direct method 13749: Landroid/widget/EditText;.<init> (Landroid/content/Context;Landroid/util/AttributeSet;II)V
+D/dalvikvm(27370): VFY: replacing opcode 0x70 at 0x0000
+E/BitmapFactory(27370): Unable to decode stream: java.io.FileNotFoundException: /: open failed: EISDIR (Is a directory)
+W/BitmapDrawable(27370): BitmapDrawable cannot decode
+W/MmsSmsDatabase(27370): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 289) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 289) ORDER BY date_received ASC)
+W/MmsCommunication(27370): Getting MMSC params for apn null
+W/TelephonyUtil(27370): Choosing MCC+MNC info from TelephonyManager.getSimOperator()
+W/ApnDatabase(27370): Querying table for MCC+MNC 12345 without APN name
+W/ApnDatabase(27370): Returning preferred APN Apn{ mmsc:   }
+W/OutgoingMmsConnection(27370): org.thoughtcrime.securesms.mms.ApnUnavailableException: No parameters available from ApnDefaults.
+W/OutgoingMmsConnection(27370): at org.thoughtcrime.securesms.mms.MmsConnection.getApn(MmsConnection.java:73)
+W/OutgoingMmsConnection(27370): at org.thoughtcrime.securesms.mms.OutgoingMmsConnection.isConnectionPossible(OutgoingMmsConnection.java:114)
+W/OutgoingMmsConnection(27370): at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:667)
+W/OutgoingMmsConnection(27370): at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:664)
+W/OutgoingMmsConnection(27370): at android.os.AsyncTask$2.call(AsyncTask.java:288)
+W/OutgoingMmsConnection(27370): at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+W/OutgoingMmsConnection(27370): at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+W/OutgoingMmsConnection(27370): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/OutgoingMmsConnection(27370): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/OutgoingMmsConnection(27370): at java.lang.Thread.run(Thread.java:841)
+W/KeyCachingService(27370): Incrementing activity count...
+W/MessageRetrievalService(27370): Active Count: 1
+I/dalvikvm(27370): Could not find method android.widget.RelativeLayout.<init>, referenced from method org.thoughtcrime.securesms.components.BubbleContainer.<init>
+W/dalvikvm(27370): VFY: unable to resolve direct method 14046: Landroid/widget/RelativeLayout;.<init> (Landroid/content/Context;Landroid/util/AttributeSet;II)V
+D/dalvikvm(27370): VFY: replacing opcode 0x70 at 0x0000
+V/WebViewChromiumFactoryProvider(27370): Binding Chromium to main looper Looper (main, tid 1) {423d8410}
+I/LibraryLoader(27370): Expected native library version number "",actual native library version number ""
+I/chromium(27370): [INFO:library_loader_hooks.cc(116)] Chromium logging enabled: level = 0, default verbosity = 0
+I/BrowserStartupController(27370): Initializing chromium process, renderers=0
+E/AudioManagerAndroid(27370): BLUETOOTH permission is missing!
+W/MmsSmsDatabase(27370): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+W/ShortcutBadger(27370): No support for: com.cyanogenmod.trebuchet
+W/IncomingBubbleContainer(27370): onCreateView()
+W/IncomingBubbleContainer(27370): onCreateView()
+W/IncomingBubbleContainer(27370): onCreateView()
+W/IncomingBubbleContainer(27370): onCreateView()
+W/IncomingBubbleContainer(27370): onCreateView()
+I/Timeline(27370): Timeline: Activity_idle id: android.os.BinderProxy@4285e780 time:9035413
+D/dalvikvm(27370): JIT code cache reset in 0 ms (4096 bytes 5/0)
+I/Timeline(27370): Timeline: Activity_launch_request id:org.thoughtcrime.securesms time:9036448
+W/KeyCachingService(27370): Decrementing activity count...
+W/MessageRetrievalService(27370): Active Count: 0
+W/KeyCachingService(27370): Incrementing activity count...
+W/MessageRetrievalService(27370): Active Count: 1
+W/MessageDetailsActivity(27370): Recipient is not a group, resolving members immediately.
+I/Timeline(27370): Timeline: Activity_idle id: android.os.BinderProxy@429f9180 time:9036724
+W/MessageDatabase(27370): Updating ID: 1719 to base type: 22
+W/MmsSmsDatabase(27370): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 289) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 289) ORDER BY date_received DESC) LIMIT 1
+W/MessageDetailsActivity(27370): Recipient is not a group, resolving members immediately.
+W/SmsSendJob(27370): Sending message: 1719
+W/SmsSendJob(27370): org.thoughtcrime.securesms.transport.UndeliverableMessageException: Trying to send a secure SMS?
+W/SmsSendJob(27370): at org.thoughtcrime.securesms.jobs.SmsSendJob.deliver(SmsSendJob.java:86)
+W/SmsSendJob(27370): at org.thoughtcrime.securesms.jobs.SmsSendJob.onSend(SmsSendJob.java:55)
+W/SmsSendJob(27370): at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:38)
+W/SmsSendJob(27370): at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/SmsSendJob(27370): at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:72)
+W/SmsSendJob(27370): at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/MessageDatabase(27370): Updating ID: 1719 to base type: 24
+W/MmsSmsDatabase(27370): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 289) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 289) ORDER BY date_received DESC) LIMIT 1
+W/MessageDetailsActivity(27370): Recipient is not a group, resolving members immediately.
+W/KeyCachingService(27370): Decrementing activity count...
+W/MessageRetrievalService(27370): Active Count: 0
+W/MmsSmsDatabase(27370): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent \* 1 AS date_sent, date \* 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (thread_id = 289) UNION ALL SELECT DISTINCT date \* 1000 AS date_sent, date_received \* 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (thread_id = 289) ORDER BY date_received ASC)
+W/MmsCommunication(27370): Getting MMSC params for apn null
+W/TelephonyUtil(27370): Choosing MCC+MNC info from TelephonyManager.getSimOperator()
+W/ApnDatabase(27370): Querying table for MCC+MNC 12345 without APN name
+W/ApnDatabase(27370): Returning preferred APN Apn{ mmsc:   }
+W/OutgoingMmsConnection(27370): org.thoughtcrime.securesms.mms.ApnUnavailableException: No parameters available from ApnDefaults.
+W/OutgoingMmsConnection(27370): at org.thoughtcrime.securesms.mms.MmsConnection.getApn(MmsConnection.java:73)
+W/OutgoingMmsConnection(27370): at org.thoughtcrime.securesms.mms.OutgoingMmsConnection.isConnectionPossible(OutgoingMmsConnection.java:114)
+W/OutgoingMmsConnection(27370): at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:667)
+W/OutgoingMmsConnection(27370): at org.thoughtcrime.securesms.ConversationActivity$7.doInBackground(ConversationActivity.java:664)
+W/OutgoingMmsConnection(27370): at android.os.AsyncTask$2.call(AsyncTask.java:288)
+W/OutgoingMmsConnection(27370): at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+W/OutgoingMmsConnection(27370): at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+W/OutgoingMmsConnection(27370): at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/OutgoingMmsConnection(27370): at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/OutgoingMmsConnection(27370): at java.lang.Thread.run(Thread.java:841)

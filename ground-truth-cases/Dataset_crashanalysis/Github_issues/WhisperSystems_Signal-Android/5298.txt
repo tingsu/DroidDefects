@@ -1,0 +1,20 @@
+E/AndroidRuntime( 9118): java.lang.NullPointerException
+E/AndroidRuntime( 9118):    at org.thoughtcrime.redphone.audio.IncomingRinger.stop(IncomingRinger.java:113)
+E/AndroidRuntime( 9118):    at org.thoughtcrime.redphone.RedPhoneService.handleAnswerCall(RedPhoneService.java:253)
+E/AndroidRuntime( 9118):    at org.thoughtcrime.redphone.RedPhoneService.onIntentReceived(RedPhoneService.java:148)
+E/AndroidRuntime( 9118):    at org.thoughtcrime.redphone.RedPhoneService.access$200(RedPhoneService.java:77)
+E/AndroidRuntime( 9118):    at org.thoughtcrime.redphone.RedPhoneService$IntentRunnable.run(RedPhoneService.java:525)
+E/AndroidRuntime( 9118):    at java.lang.Thread.run(Thread.java:856)
+```
+
+**When rejecting:**
+
+```
+E/AndroidRuntime( 9519): FATAL EXCEPTION: Thread-582
+E/AndroidRuntime( 9519): java.lang.NullPointerException
+E/AndroidRuntime( 9519):    at org.thoughtcrime.redphone.audio.IncomingRinger.stop(IncomingRinger.java:113)
+E/AndroidRuntime( 9519):    at org.thoughtcrime.redphone.RedPhoneService.handleDenyCall(RedPhoneService.java:262)
+E/AndroidRuntime( 9519):    at org.thoughtcrime.redphone.RedPhoneService.onIntentReceived(RedPhoneService.java:149)
+E/AndroidRuntime( 9519):    at org.thoughtcrime.redphone.RedPhoneService.access$200(RedPhoneService.java:77)
+E/AndroidRuntime( 9519):    at org.thoughtcrime.redphone.RedPhoneService$IntentRunnable.run(RedPhoneService.java:525)
+E/AndroidRuntime( 9519):    at java.lang.Thread.run(Thread.java:856)

@@ -1,0 +1,5 @@
+Fatal Exception: java.lang.ClassCastException: libcore.net.url.FileURLConnection cannot be cast to java.net.HttpURLConnection
+       at org.wordpress.android.util.HTTPUtils.setupUrlConnection(HTTPUtils.java:21)
+       at org.wordpress.android.editor.Utils.downloadExternalMedia(Utils.java:194)
+       at org.wordpress.android.editor.ImageSettingsDialogFragment$4.run(ImageSettingsDialogFragment.java:322)
+       at java.lang.Thread.run(Thread.java:818)

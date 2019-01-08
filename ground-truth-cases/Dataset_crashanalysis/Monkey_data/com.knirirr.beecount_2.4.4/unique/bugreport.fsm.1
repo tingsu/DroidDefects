@@ -1,0 +1,38 @@
+//this is an auto-generated bug report
+//package name: com.knirirr.beecount
+//version: 2.4.4
+//appro_time: 136
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Parcelable encountered IOException writing serializable object (name = com.knirirr.beecount.widgets.CountEditWidget)
+ 	at android.os.Parcel.writeSerializable(Parcel.java:1285)
+ 	at android.os.Parcel.writeValue(Parcel.java:1233)
+ 	at android.os.Parcel.writeList(Parcel.java:622)
+ 	at android.os.Parcel.writeValue(Parcel.java:1195)
+ 	at android.os.Parcel.writeMapInternal(Parcel.java:591)
+ 	at android.os.Bundle.writeToParcel(Bundle.java:1646)
+ 	at android.os.Parcel.writeBundle(Parcel.java:605)
+ 	at android.app.ActivityManagerProxy.activityStopped(ActivityManagerNative.java:2318)
+ 	at android.app.ActivityThread$StopInfo.run(ActivityThread.java:3100)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.io.NotSerializableException: android.support.v7.widget.AppCompatImageButton
+ 	at java.io.ObjectOutputStream.writeNewObject(ObjectOutputStream.java:1366)
+ 	at java.io.ObjectOutputStream.writeObjectInternal(ObjectOutputStream.java:1673)
+ 	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:1519)
+ 	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:1483)
+ 	at java.io.ObjectOutputStream.writeFieldValues(ObjectOutputStream.java:981)
+ 	at java.io.ObjectOutputStream.defaultWriteObject(ObjectOutputStream.java:368)
+ 	at java.io.ObjectOutputStream.writeHierarchy(ObjectOutputStream.java:1076)
+ 	at java.io.ObjectOutputStream.writeNewObject(ObjectOutputStream.java:1406)
+ 	at java.io.ObjectOutputStream.writeObjectInternal(ObjectOutputStream.java:1673)
+ 	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:1519)
+ 	at java.io.ObjectOutputStream.writeObject(ObjectOutputStream.java:1483)
+ 	at android.os.Parcel.writeSerializable(Parcel.java:1280)
+ 	... 17 more

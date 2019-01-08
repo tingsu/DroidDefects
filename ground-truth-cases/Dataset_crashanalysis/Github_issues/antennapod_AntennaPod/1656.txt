@@ -1,0 +1,7 @@
+java.lang.NullPointerException: Attempt to read from field 'java.lang.String de.danoeh.antennapod.core.feed.Feed.title' on a null object reference
+    at de.danoeh.antennapod.core.feed.FeedMedia.getFeedTitle(FeedMedia.java:13394)
+    at de.danoeh.antennapod.core.service.playback.PlaybackServiceMediaPlayer.access$lambda$0(PlaybackServiceMediaPlayer.java:5291)
+    at de.danoeh.antennapod.core.service.playback.PlaybackServiceMediaPlayer$$Lambda$1.run(Unknown Source)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+    at java.lang.Thread.run(Thread.java:818)

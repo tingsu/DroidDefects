@@ -1,0 +1,9 @@
+//this is an auto-generated bug report
+//package name: net.asceai.meritous
+//version: 0.0.2
+//appro_time: 44
+ java.lang.UnsatisfiedLinkError: Native method not found: net.asceai.meritous.AudioThread.nativeAudioInitJavaCallbacks:()I
+ 	at net.asceai.meritous.AudioThread.nativeAudioInitJavaCallbacks(Native Method)
+ 	at net.asceai.meritous.AudioThread.<init>(Audio.java:54)
+ 	at net.asceai.meritous.MainActivity$1Callback.run(MainActivity.java:166)
+ 	at java.lang.Thread.run(Thread.java:841)

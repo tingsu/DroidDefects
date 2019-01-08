@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: com.harleensahni.android.mbr
+//version: 1.5.1
+//appro_time: 169
+ java.lang.RuntimeException: Error receiving broadcast Intent { act=com.harleensahni.android.VIEW_MEDIA_LIST_KEYPRESS flg=0x10 (has extras) } in com.harleensahni.android.mbr.ReceiverSelector$1@ad35a358
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:773)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.ArrayIndexOutOfBoundsException: length=2; index=-1
+ 	at java.util.ArrayList.get(ArrayList.java:310)
+ 	at com.harleensahni.android.mbr.ReceiverSelector.moveSelection(ReceiverSelector.java:637)
+ 	at com.harleensahni.android.mbr.ReceiverSelector.access$000(ReceiverSelector.java:68)
+ 	at com.harleensahni.android.mbr.ReceiverSelector$1.onReceive(ReceiverSelector.java:195)
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:763)

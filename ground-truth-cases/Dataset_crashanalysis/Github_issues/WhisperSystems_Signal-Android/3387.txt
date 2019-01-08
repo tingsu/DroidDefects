@@ -1,0 +1,106 @@
+E/WindowManager( 2810): android.view.WindowLeaked: Activity org.thoughtcrime.securesms.LogSubmitActivity has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{11f94164 V.E..... R......D 0,0-729,322} that was originally added here
+E/WindowManager( 2810):     at android.view.ViewRootImpl.<init>(ViewRootImpl.java:363)
+E/WindowManager( 2810):     at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:271)
+E/WindowManager( 2810):     at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:85)
+E/WindowManager( 2810):     at android.app.Dialog.show(Dialog.java:298)
+E/WindowManager( 2810):     at android.app.ProgressDialog.show(ProgressDialog.java:116)
+E/WindowManager( 2810):     at android.app.ProgressDialog.show(ProgressDialog.java:99)
+E/WindowManager( 2810):     at org.whispersystems.libpastelog.util.ProgressDialogAsyncTask.onPreExecute(ProgressDialogAsyncTask.java:43)
+E/WindowManager( 2810):     at android.os.AsyncTask.executeOnExecutor(AsyncTask.java:591)
+E/WindowManager( 2810):     at android.os.AsyncTask.execute(AsyncTask.java:539)
+E/WindowManager( 2810):     at org.whispersystems.libpastelog.SubmitLogFragment$1.onClick(SubmitLogFragment.java:169)
+E/WindowManager( 2810):     at android.view.View.performClick(View.java:4780)
+E/WindowManager( 2810):     at android.view.View$PerformClick.run(View.java:19866)
+E/WindowManager( 2810):     at android.os.Handler.handleCallback(Handler.java:739)
+E/WindowManager( 2810):     at android.os.Handler.dispatchMessage(Handler.java:95)
+E/WindowManager( 2810):     at android.os.Looper.loop(Looper.java:135)
+E/WindowManager( 2810):     at android.app.ActivityThread.main(ActivityThread.java:5254)
+E/WindowManager( 2810):     at java.lang.reflect.Method.invoke(Native Method)
+E/WindowManager( 2810):     at java.lang.reflect.Method.invoke(Method.java:372)
+E/WindowManager( 2810):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+E/WindowManager( 2810):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+E/WindowManager( 2810):     at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:117)
+W/PassphraseRequiredActionBarActivity( 2810): routeApplicationState(), state: 0
+W/PassphraseRequiredActionBarActivity( 2810): initializeClearKeyReceiver()
+W/DirectoryRefreshListener( 2810): Scheduling for: 1433952602640
+W/ResourcesManager( 2810): Asset path '/system/framework/com.google.android.media.effects.jar' does not exist or contains no resources.
+W/KeyCachingService( 2810): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService( 2810): Incrementing activity count...
+W/MessageRetrievalService( 2810): Active Count: 1
+W/MessageRetrievalService( 2810): Network requirement: true, active activities: 1, push pending: 0
+W/MessageRetrievalService( 2810): Making websocket connection....
+W/WebSocketConnection( 2810): WSC connect()...
+W/OkHttpClientWrapper( 2810): Connecting to: wss://textsecure-service.whispersystems.org/v1/websocket/?login=%s&password=%s
+W/MessageRetrievalService( 2810): Network requirement: true, active activities: 1, push pending: 0
+W/MessageRetrievalService( 2810): Reading message...
+W/RecipientProvider( 2810): Cache miss [ASYNC]!
+W/RecipientProvider( 2810): Cache miss [ASYNC]!
+W/RecipientProvider( 2810): Cache miss [ASYNC]!
+W/RecipientProvider( 2810): Cache miss [ASYNC]!
+W/BitmapUtil( 2810): rough scale 720x720 => 180x180
+W/BitmapUtil( 2810): fine scale 180x180 => 128x128
+W/RecipientProvider( 2810): Cache miss [ASYNC]!
+W/RecipientProvider( 2810): Cache miss [ASYNC]!
+W/RecipientProvider( 2810): Cache miss [ASYNC]!
+W/BitmapUtil( 2810): rough scale 720x720 => 180x180
+W/BitmapUtil( 2810): fine scale 180x180 => 128x128
+W/RecipientProvider( 2810): Cache miss [ASYNC]!
+W/BitmapUtil( 2810): rough scale 720x720 => 180x180
+W/BitmapUtil( 2810): fine scale 180x180 => 128x128
+W/BitmapUtil( 2810): rough scale 309x309 => 155x155
+W/BitmapUtil( 2810): fine scale 155x155 => 128x128
+W/BitmapUtil( 2810): rough scale 96x96 => 96x96
+W/KeyCachingService( 2810): onStartCommand, org.thoughtcrime.securesms.service.action.ACTIVITY_STOP_EVENT
+W/KeyCachingService( 2810): Decrementing activity count...
+W/MessageRetrievalService( 2810): Active Count: 0
+W/WebSocketConnection( 2810): onConnected()
+W/ConversationListActivity( 2810): detected android contact data changed, refreshing cache
+W/WebSocketConnection( 2810): Sending keep alive...
+D/AndroidRuntime( 2810): Shutting down VM
+--------- beginning of crash
+E/AndroidRuntime( 2810): FATAL EXCEPTION: main
+E/AndroidRuntime( 2810): Process: org.thoughtcrime.securesms, PID: 2810
+E/AndroidRuntime( 2810): java.lang.IllegalArgumentException: View=com.android.internal.policy.impl.PhoneWindow$DecorView{11f94164 V.E..... R......D 0,0-729,322} not attached to window manager
+E/AndroidRuntime( 2810):    at android.view.WindowManagerGlobal.findViewLocked(WindowManagerGlobal.java:396)
+E/AndroidRuntime( 2810):    at android.view.WindowManagerGlobal.removeView(WindowManagerGlobal.java:322)
+E/AndroidRuntime( 2810):    at android.view.WindowManagerImpl.removeViewImmediate(WindowManagerImpl.java:116)
+E/AndroidRuntime( 2810):    at android.app.Dialog.dismissDialog(Dialog.java:341)
+E/AndroidRuntime( 2810):    at android.app.Dialog.dismiss(Dialog.java:324)
+E/AndroidRuntime( 2810):    at org.whispersystems.libpastelog.util.ProgressDialogAsyncTask.onPostExecute(ProgressDialogAsyncTask.java:48)
+E/AndroidRuntime( 2810):    at org.whispersystems.libpastelog.SubmitLogFragment$SubmitToPastebinAsyncTask.onPostExecute(SubmitLogFragment.java:387)
+E/AndroidRuntime( 2810):    at org.whispersystems.libpastelog.SubmitLogFragment$SubmitToPastebinAsyncTask.onPostExecute(SubmitLogFragment.java:330)
+E/AndroidRuntime( 2810):    at android.os.AsyncTask.finish(AsyncTask.java:636)
+E/AndroidRuntime( 2810):    at android.os.AsyncTask.access$500(AsyncTask.java:177)
+E/AndroidRuntime( 2810):    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:653)
+E/AndroidRuntime( 2810):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 2810):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime( 2810):    at android.app.ActivityThread.main(ActivityThread.java:5254)
+E/AndroidRuntime( 2810):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 2810):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime( 2810):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+E/AndroidRuntime( 2810):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+E/AndroidRuntime( 2810):    at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:117)
+I/Process ( 2810): Sending signal. PID: 2810 SIG: 9
+W/PartProvider(14047): onCreate()
+W/MessageRetrievalService(14047): Waiting for websocket state change....
+W/MessageRetrievalService(14047): Network requirement: true, active activities: 0, push pending: 0
+W/PassphraseRequiredActionBarActivity(14047): routeApplicationState(), state: 2
+D/OpenGLRenderer(14047): Use EGL_SWAP_BEHAVIOR_PRESERVED: true
+D/Atlas   (14047): Validating map...
+```
+
+```
+W/MessageRetrievalService(14047): Retrieved envelope! +***********73
+W/PushReceivedJob(14047): Received receipt: (XXXXX, 1433951464000)
+W/MmsDatabase(14047): org.whispersystems.textsecure.api.util.InvalidNumberException: No valid characters found.
+W/MmsDatabase(14047):   at org.whispersystems.textsecure.api.util.PhoneNumberFormatter.formatNumber(PhoneNumberFormatter.java:82)
+W/MmsDatabase(14047):   at org.thoughtcrime.securesms.util.Util.canonicalizeNumber(Util.java:146)
+W/MmsDatabase(14047):   at org.thoughtcrime.securesms.util.Util.canonicalizeNumberOrGroup(Util.java:153)
+W/MmsDatabase(14047):   at org.thoughtcrime.securesms.database.MmsDatabase.incrementDeliveryReceiptCount(MmsDatabase.java:231)
+W/MmsDatabase(14047):   at org.thoughtcrime.securesms.database.MmsSmsDatabase.incrementDeliveryReceiptCount(MmsSmsDatabase.java:139)
+W/MmsDatabase(14047):   at org.thoughtcrime.securesms.jobs.PushReceivedJob.handleReceipt(PushReceivedJob.java:51)
+W/MmsDatabase(14047):   at org.thoughtcrime.securesms.jobs.PushReceivedJob.handle(PushReceivedJob.java:32)
+W/MmsDatabase(14047):   at org.thoughtcrime.securesms.service.MessageRetrievalService$1.onMessage(MessageRetrievalService.java:89)
+W/MmsDatabase(14047):   at org.whispersystems.textsecure.api.TextSecureMessagePipe.read(TextSecureMessagePipe.java:80)
+W/MmsDatabase(14047):   at org.thoughtcrime.securesms.service.MessageRetrievalService.run(MessageRetrievalService.java:82)
+W/MmsDatabase(14047):   at java.lang.Thread.run(Thread.java:818)

@@ -1,0 +1,5 @@
+java.io.IOException: bt socket closed, read return: -1
+    at android.bluetooth.BluetoothSocket.read(BluetoothSocket.java:491)
+    at android.bluetooth.BluetoothInputStream.read(BluetoothInputStream.java:60)
+    at com.fr3ts0n.prot.StreamHandler.run(StreamHandler.java:115)
+    at com.fr3ts0n.ecu.gui.androbd.BtCommService$BtWorkerThread.run(BtCommService.java:345)

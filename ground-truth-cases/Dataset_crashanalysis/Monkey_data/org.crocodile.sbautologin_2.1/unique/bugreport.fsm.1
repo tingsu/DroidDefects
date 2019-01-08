@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: org.crocodile.sbautologin
+//version: 2.1
+//appro_time: 65
+ android.database.sqlite.SQLiteDatabaseLockedException: database is locked (code 5): , while compiling: PRAGMA journal_mode
+ 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+ 	at android.database.sqlite.SQLiteConnection.executeForString(SQLiteConnection.java:634)
+ 	at android.database.sqlite.SQLiteConnection.setJournalMode(SQLiteConnection.java:320)
+ 	at android.database.sqlite.SQLiteConnection.setWalModeFromConfiguration(SQLiteConnection.java:294)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:215)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+ 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+ 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:804)
+ 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:789)
+ 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:694)
+ 	at android.app.ContextImpl.openOrCreateDatabase(ContextImpl.java:863)
+ 	at android.content.ContextWrapper.openOrCreateDatabase(ContextWrapper.java:235)
+ 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:224)
+ 	at android.database.sqlite.SQLiteOpenHelper.getReadableDatabase(SQLiteOpenHelper.java:188)
+ 	at org.crocodile.sbautologin.db.DBCreator.getReadableDatabase(DBCreator.java:65)
+ 	at org.crocodile.sbautologin.db.DBAccesser.getMaxId(DBAccesser.java:144)
+ 	at org.crocodile.sbautologin.MainActivity$2.run(MainActivity.java:122)
+ 	at java.lang.Thread.run(Thread.java:841)

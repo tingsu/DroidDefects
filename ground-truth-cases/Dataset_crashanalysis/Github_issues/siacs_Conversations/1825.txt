@@ -1,0 +1,17 @@
+                                                                      com.google.protobuf.UninitializedMessageException: Message missing required fields: 
+                                                                          at com.google.protobuf.AbstractMessage$Builder.newUninitializedMessageException(AbstractMessage.java:770)
+                                                                          at org.whispersystems.libaxolotl.state.StorageProtos$SessionStructure$Builder.build(StorageProtos.java:4537)
+                                                                          at org.whispersystems.libaxolotl.state.SessionState.<init>(SessionState.java:55)
+                                                                          at org.whispersystems.libaxolotl.state.SessionRecord.<init>(SessionRecord.java:20)
+                                                                          at eu.siacs.conversations.persistance.DatabaseBackend.loadSession(DatabaseBackend.java:736)
+                                                                          at eu.siacs.conversations.crypto.axolotl.SQLiteAxolotlStore.loadSession(SQLiteAxolotlStore.java:253)
+                                                                          at eu.siacs.conversations.crypto.axolotl.AxolotlService$SessionMap.putDevicesForJid(AxolotlService.java:165)
+                                                                          at eu.siacs.conversations.crypto.axolotl.AxolotlService$SessionMap.fillMap(AxolotlService.java:186)
+                                                                          at eu.siacs.conversations.crypto.axolotl.AxolotlService$SessionMap.<init>(AxolotlService.java:158)
+                                                                          at eu.siacs.conversations.crypto.axolotl.AxolotlService.<init>(AxolotlService.java:233)
+                                                                          at eu.siacs.conversations.entities.Account.initAccountServices(Account.java:387)
+                                                                          at eu.siacs.conversations.services.XmppConnectionService$18.run(XmppConnectionService.java:1180)
+                                                                          at eu.siacs.conversations.utils.SerialSingleThreadExecutor$1.run(SerialSingleThreadExecutor.java:18)
+                                                                          at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+                                                                          at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+                                                                          at java.lang.Thread.run(Thread.java:818)`

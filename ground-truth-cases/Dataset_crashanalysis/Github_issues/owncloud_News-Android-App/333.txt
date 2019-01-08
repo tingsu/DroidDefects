@@ -1,0 +1,47 @@
+04-08 20:57:02.121 W/dalvikvm(10255): VFY: unable to resolve virtual method 1170: Landroid/preference/PreferenceFragment;.findPreference (Ljava/lang/CharSequence;)Landroid/preference/Preference;
+04-08 20:57:02.121 D/dalvikvm(10255): VFY: replacing opcode 0x6e at 0x0018
+04-08 20:57:02.126 D/dalvikvm(10255): VFY: dead code 0x001b-003a in Lde/luhmer/owncloudnewsreader/SettingsActivity;.bindDataSyncPreferences (Landroid/preference/PreferenceFragment;Landroid/preference/PreferenceActivity;)V
+04-08 20:57:02.126 W/dalvikvm(10255): VFY: unable to find class referenced in signature (Landroid/preference/PreferenceFragment;)
+04-08 20:57:02.131 I/dalvikvm(10255): Could not find method android.preference.PreferenceFragment.findPreference, referenced from method de.luhmer.owncloudnewsreader.SettingsActivity.bindDisplayPreferences
+04-08 20:57:02.131 W/dalvikvm(10255): VFY: unable to resolve virtual method 1170: Landroid/preference/PreferenceFragment;.findPreference (Ljava/lang/CharSequence;)Landroid/preference/Preference;
+04-08 20:57:02.131 D/dalvikvm(10255): VFY: replacing opcode 0x6e at 0x0004
+04-08 20:57:02.131 D/dalvikvm(10255): VFY: dead code 0x0007-001c in Lde/luhmer/owncloudnewsreader/SettingsActivity;.bindDisplayPreferences (Landroid/preference/PreferenceFragment;Landroid/preference/PreferenceActivity;)V
+04-08 20:57:02.131 W/dalvikvm(10255): VFY: unable to find class referenced in signature (Landroid/preference/PreferenceFragment;)
+04-08 20:57:02.131 I/dalvikvm(10255): Could not find method android.preference.PreferenceFragment.findPreference, referenced from method de.luhmer.owncloudnewsreader.SettingsActivity.bindGeneralPreferences
+04-08 20:57:02.131 W/dalvikvm(10255): VFY: unable to resolve virtual method 1170: Landroid/preference/PreferenceFragment;.findPreference (Ljava/lang/CharSequence;)Landroid/preference/Preference;
+04-08 20:57:02.131 D/dalvikvm(10255): VFY: replacing opcode 0x6e at 0x0004
+04-08 20:57:02.131 D/dalvikvm(10255): VFY: dead code 0x0007-0037 in Lde/luhmer/owncloudnewsreader/SettingsActivity;.bindGeneralPreferences (Landroid/preference/PreferenceFragment;Landroid/preference/PreferenceActivity;)V
+04-08 20:57:02.131 W/dalvikvm(10255): VFY: unable to find class referenced in signature (Landroid/preference/PreferenceFragment;)
+04-08 20:57:02.131 I/dalvikvm(10255): Could not find method android.preference.PreferenceFragment.findPreference, referenced from method de.luhmer.owncloudnewsreader.SettingsActivity.bindNotificationPreferences
+04-08 20:57:02.136 W/dalvikvm(10255): VFY: unable to resolve virtual method 1170: Landroid/preference/PreferenceFragment;.findPreference (Ljava/lang/CharSequence;)Landroid/preference/Preference;
+04-08 20:57:02.136 D/dalvikvm(10255): VFY: replacing opcode 0x6e at 0x0004
+04-08 20:57:02.136 D/dalvikvm(10255): VFY: dead code 0x0007-000a in Lde/luhmer/owncloudnewsreader/SettingsActivity;.bindNotificationPreferences (Landroid/preference/PreferenceFragment;Landroid/preference/PreferenceActivity;)V
+04-08 20:57:02.136 W/dalvikvm(10255): VFY: unable to find class referenced in signature (Landroid/preference/PreferenceFragment;)
+04-08 20:57:02.136 W/dalvikvm(10255): VFY: unable to find class referenced in signature (Landroid/preference/PreferenceFragment;)
+04-08 20:57:02.136 W/dalvikvm(10255): VFY: unable to find class referenced in signature (Landroid/preference/PreferenceFragment;)
+04-08 20:57:02.136 W/dalvikvm(10255): VFY: unable to find class referenced in signature (Landroid/preference/PreferenceFragment;)
+04-08 20:57:02.136 W/dalvikvm(10255): VFY: unable to find class referenced in signature (Landroid/preference/PreferenceFragment;)
+04-08 20:57:02.136 I/dalvikvm(10255): Could not find method de.luhmer.owncloudnewsreader.SettingsActivity.loadHeadersFromResource, referenced from method de.luhmer.owncloudnewsreader.SettingsActivity.onBuildHeaders
+04-08 20:57:02.136 W/dalvikvm(10255): VFY: unable to resolve virtual method 16954: Lde/luhmer/owncloudnewsreader/SettingsActivity;.loadHeadersFromResource (ILjava/util/List;)V
+04-08 20:57:02.136 D/dalvikvm(10255): VFY: replacing opcode 0x6e at 0x0009
+04-08 20:57:02.206 D/dalvikvm(10255): GC_EXTERNAL_ALLOC freed 153K, 44% free 3453K/6087K, external 1895K/2394K, paused 54ms
+04-08 20:57:02.281 D/AndroidRuntime(10255): Shutting down VM
+04-08 20:57:02.281 W/dalvikvm(10255): threadid=1: thread exiting with uncaught exception (group=0x40015568)
+04-08 20:57:02.291 E/AndroidRuntime(10255): FATAL EXCEPTION: main
+04-08 20:57:02.291 E/AndroidRuntime(10255): java.lang.RuntimeException: Unable to start activity ComponentInfo{de.luhmer.owncloudnewsreader/de.luhmer.owncloudnewsreader.SettingsActivity}: java.lang.NullPointerException
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1664)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1680)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at android.app.ActivityThread.access$1500(ActivityThread.java:117)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:931)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at android.os.Handler.dispatchMessage(Handler.java:99)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at android.os.Looper.loop(Looper.java:130)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at android.app.ActivityThread.main(ActivityThread.java:3703)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at java.lang.reflect.Method.invokeNative(Native Method)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at java.lang.reflect.Method.invoke(Method.java:507)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:841)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:599)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at dalvik.system.NativeStart.main(Native Method)
+04-08 20:57:02.291 E/AndroidRuntime(10255): Caused by: java.lang.NullPointerException
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at de.luhmer.owncloudnewsreader.SettingsActivity.onCreate(SettingsActivity.java:134)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+04-08 20:57:02.291 E/AndroidRuntime(10255):     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1628)

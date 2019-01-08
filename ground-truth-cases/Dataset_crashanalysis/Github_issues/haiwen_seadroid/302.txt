@@ -1,0 +1,5 @@
+java.lang.UnsupportedOperationException
+E/AndroidRuntime(19137):    at java.util.concurrent.CopyOnWriteArrayList$CowIterator.remove(CopyOnWriteArrayList.java:744)
+E/AndroidRuntime(19137):    at com.seafile.seadroid2.transfer.TransferManager.removeByState(TransferManager.java:135)
+E/AndroidRuntime(19137):    at com.seafile.seadroid2.transfer.TransferService.removeAllUploadTasksByState(TransferService.java:80)
+E/AndroidRuntime(19137):    at com.seafile.seadroid2.ui.fragment.UploadTaskFragment.onContextItemSelected(UploadTaskFragment.java:79)

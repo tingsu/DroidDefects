@@ -1,0 +1,6 @@
+Fatal Exception: java.util.concurrent.TimeoutException: android.view.ThreadedRenderer.finalize() timed out after 10 seconds
+       at android.view.ThreadedRenderer.nDeleteProxy(ThreadedRenderer.java)
+       at android.view.ThreadedRenderer.finalize(ThreadedRenderer.java:449)
+       at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:206)
+       at java.lang.Daemons$FinalizerDaemon.run(Daemons.java:189)
+       at java.lang.Thread.run(Thread.java:818)

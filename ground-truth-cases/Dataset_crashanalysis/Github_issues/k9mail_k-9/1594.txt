@@ -1,0 +1,31 @@
+E/k9      (21935): java.lang.NullPointerException
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapFolderPusher$PushRunnable.reacquireWakeLockAndCleanUp(ImapFolderPusher.java:252)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapFolderPusher$PushRunnable.run(ImapFolderPusher.java:202)
+E/k9      (21935):  at java.lang.Thread.run(Thread.java:841)
+E/k9      (21935): Got exception while idling for test:INBOX/Thread-1860
+E/k9      (21935): com.fsck.k9.mail.MessagingException: IO Error
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapFolder.ioExceptionHandler(ImapFolder.java:1366)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapFolder.internalOpen(ImapFolder.java:163)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapFolderPusher$PushRunnable.openConnectionIfNecessary(ImapFolderPusher.java:330)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapFolderPusher$PushRunnable.run(ImapFolderPusher.java:155)
+E/k9      (21935):  at java.lang.Thread.run(Thread.java:841)
+E/k9      (21935): Caused by: javax.net.ssl.SSLHandshakeException: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0x64fcc4e0: Failure in SSL library, usually a protocol error
+E/k9      (21935): error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:744 0x5e5c77e8:0x00000000)
+E/k9      (21935):  at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:449)
+E/k9      (21935):  at com.android.org.conscrypt.OpenSSLSocketImpl$SSLInputStream.<init>(OpenSSLSocketImpl.java:662)
+E/k9      (21935):  at com.android.org.conscrypt.OpenSSLSocketImpl.getInputStream(OpenSSLSocketImpl.java:633)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapConnection.setUpStreamsAndParserFromSocket(ImapConnection.java:228)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapConnection.startTLS(ImapConnection.java:312)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapConnection.upgradeToTls(ImapConnection.java:300)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapConnection.upgradeToTlsIfNecessary(ImapConnection.java:284)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapConnection.open(ImapConnection.java:119)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapConnection.sendCommand(ImapConnection.java:640)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapConnection.executeSimpleCommand(ImapConnection.java:623)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapConnection.executeSimpleCommand(ImapConnection.java:612)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapFolder.executeSimpleCommand(ImapFolder.java:109)
+E/k9      (21935):  at com.fsck.k9.mail.store.imap.ImapFolder.internalOpen(ImapFolder.java:145)
+E/k9      (21935):  ... 3 more
+E/k9      (21935): Caused by: javax.net.ssl.SSLProtocolException: SSL handshake aborted: ssl=0x64fcc4e0: Failure in SSL library, usually a protocol error
+E/k9      (21935): error:14077410:SSL routines:SSL23_GET_SERVER_HELLO:sslv3 alert handshake failure (external/openssl/ssl/s23_clnt.c:744 0x5e5c77e8:0x00000000)
+E/k9      (21935):  at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+E/k9      (21935):  at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:406)

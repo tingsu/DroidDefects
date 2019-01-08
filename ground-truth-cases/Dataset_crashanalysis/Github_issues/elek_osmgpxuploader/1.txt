@@ -1,0 +1,12 @@
+E/org.apache.http.client.ClientProtocolException(13499): org.apache.http.client.ClientProtocolException
+E/org.apache.http.client.ClientProtocolException(13499):    at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:557)
+E/org.apache.http.client.ClientProtocolException(13499):    at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:487)
+E/org.apache.http.client.ClientProtocolException(13499):    at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:465)
+E/org.apache.http.client.ClientProtocolException(13499):    at net.anzix.osm.upload.service.Uploader.onHandleIntent(Uploader.java:118)
+E/org.apache.http.client.ClientProtocolException(13499):    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+E/org.apache.http.client.ClientProtocolException(13499):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/org.apache.http.client.ClientProtocolException(13499):    at android.os.Looper.loop(Looper.java:137)
+E/org.apache.http.client.ClientProtocolException(13499):    at android.os.HandlerThread.run(HandlerThread.java:60)
+E/org.apache.http.client.ClientProtocolException(13499): Caused by: org.apache.http.client.NonRepeatableRequestException: Cannot retry request with a non-repeatable request entity
+E/org.apache.http.client.ClientProtocolException(13499):    at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:420)
+E/org.apache.http.client.ClientProtocolException(13499):    at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)

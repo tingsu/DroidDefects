@@ -1,0 +1,6 @@
+java.lang.NullPointerException
+ at org.jivesoftware.smackx.muc.MultiUserChat$1.connectionCreated(MultiUserChat.java:117)
+ at org.jivesoftware.smack.XMPPConnection.initConnection(XMPPConnection.java:604)
+ at org.jivesoftware.smack.XMPPConnection.connectUsingConfiguration(XMPPConnection.java:551)
+ at org.jivesoftware.smack.XMPPConnection.connect(XMPPConnection.java:981)
+ at com.xabber.android.data.AccountItem$1.run(AccountItem.java:1209)

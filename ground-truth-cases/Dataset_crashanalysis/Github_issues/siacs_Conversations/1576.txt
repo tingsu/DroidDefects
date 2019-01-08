@@ -1,0 +1,77 @@
+java.lang.NullPointerException
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.sendInitRequest(JingleConnection.java:429)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.access$1300(JingleConnection.java:40)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection$5.onPrimaryCandidateFound(JingleConnection.java:276)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnectionManager.getPrimaryCandidate(JingleConnectionManager.java:123)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.init(JingleConnection.java:244)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.access$1100(JingleConnection.java:40)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection$4.run(JingleConnection.java:222)
+    at eu.siacs.conversations.crypto.axolotl.AxolotlService$10.run(AxolotlService.java:853)
+    at eu.siacs.conversations.utils.SerialSingleThreadExecutor$1.run(SerialSingleThreadExecutor.java:18)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:838) ​
+
+Version: 1.7.0
+Last Update: 18:37 26 october
+java.lang.NullPointerException
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.sendInitRequest(JingleConnection.java:429)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.access$1300(JingleConnection.java:40)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection$5.onPrimaryCandidateFound(JingleConnection.java:276)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnectionManager.getPrimaryCandidate(JingleConnectionManager.java:123)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.init(JingleConnection.java:244)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.access$1100(JingleConnection.java:40)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection$4.run(JingleConnection.java:222)
+    at eu.siacs.conversations.crypto.axolotl.AxolotlService$10.run(AxolotlService.java:853)
+    at eu.siacs.conversations.utils.SerialSingleThreadExecutor$1.run(SerialSingleThreadExecutor.java:18)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:838) ​
+
+Version: 1.7.0
+Last Update: 18:37 26 october
+java.lang.NullPointerException
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.sendInitRequest(JingleConnection.java:429)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.access$1300(JingleConnection.java:40)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection$5.onPrimaryCandidateFound(JingleConnection.java:276)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnectionManager.getPrimaryCandidate(JingleConnectionManager.java:123)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.init(JingleConnection.java:244)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.access$1100(JingleConnection.java:40)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection$4.run(JingleConnection.java:222)
+    at eu.siacs.conversations.crypto.axolotl.AxolotlService$10.run(AxolotlService.java:853)
+    at eu.siacs.conversations.utils.SerialSingleThreadExecutor$1.run(SerialSingleThreadExecutor.java:18)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:838) ​
+
+Version: 1.7.0
+Last Update: 18:37 26 october
+java.lang.NullPointerException
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.sendInitRequest(JingleConnection.java:429)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.access$1300(JingleConnection.java:40)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection$5.onPrimaryCandidateFound(JingleConnection.java:276)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnectionManager.getPrimaryCandidate(JingleConnectionManager.java:123)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.init(JingleConnection.java:244)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.access$1100(JingleConnection.java:40)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection$4.run(JingleConnection.java:222)
+    at eu.siacs.conversations.crypto.axolotl.AxolotlService$10.run(AxolotlService.java:853)
+    at eu.siacs.conversations.utils.SerialSingleThreadExecutor$1.run(SerialSingleThreadExecutor.java:18)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:838) ​
+
+Version: 1.7.0
+Last Update: 18:37 26 october
+java.lang.NullPointerException
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.sendInitRequest(JingleConnection.java:429)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.access$1300(JingleConnection.java:40)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection$5.onPrimaryCandidateFound(JingleConnection.java:276)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnectionManager.getPrimaryCandidate(JingleConnectionManager.java:123)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.init(JingleConnection.java:244)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection.access$1100(JingleConnection.java:40)
+    at eu.siacs.conversations.xmpp.jingle.JingleConnection$4.run(JingleConnection.java:222)
+    at eu.siacs.conversations.crypto.axolotl.AxolotlService$10.run(AxolotlService.java:853)
+    at eu.siacs.conversations.utils.SerialSingleThreadExecutor$1.run(SerialSingleThreadExecutor.java:18)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+    at java.lang.Thread.run(Thread.java:838)

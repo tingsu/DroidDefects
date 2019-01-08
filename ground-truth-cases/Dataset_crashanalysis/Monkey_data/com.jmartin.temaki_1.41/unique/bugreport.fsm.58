@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: com.jmartin.temaki
+//version: 1.41
+//appro_time: 163
+ java.lang.NullPointerException
+ 	at com.jmartin.temaki.MainDrawerActivity.hideKeyboard(MainDrawerActivity.java:515)
+ 	at com.jmartin.temaki.MainDrawerActivity.access$300(MainDrawerActivity.java:48)
+ 	at com.jmartin.temaki.MainDrawerActivity$1.onDrawerOpened(MainDrawerActivity.java:130)
+ 	at android.support.v4.widget.DrawerLayout.dispatchOnDrawerOpened(DrawerLayout.java:488)
+ 	at android.support.v4.widget.DrawerLayout.updateDrawerState(DrawerLayout.java:459)
+ 	at android.support.v4.widget.DrawerLayout$ViewDragCallback.onViewDragStateChanged(DrawerLayout.java:1348)
+ 	at android.support.v4.widget.ViewDragHelper.setDragState(ViewDragHelper.java:866)
+ 	at android.support.v4.widget.ViewDragHelper$2.run(ViewDragHelper.java:335)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

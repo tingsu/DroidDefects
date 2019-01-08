@@ -1,0 +1,4 @@
+java.lang.OutOfMemoryError: Failed to allocate a 1013478521 byte allocation with 14818168 free bytes and 170MB until OOM
+    at com.ubergeek42.a.c.a (Unknown Source)
+    at com.ubergeek42.a.a.d.run (Unknown Source)
+    at java.lang.Thread.run (Thread.java:818)

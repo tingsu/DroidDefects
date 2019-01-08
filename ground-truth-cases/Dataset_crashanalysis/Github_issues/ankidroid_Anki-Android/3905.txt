@@ -1,0 +1,18 @@
+
+I've pasted the stack trace below; the crash seems to be happening due to calling `mCol.getDecks().confForDid(did)` where `did` is null. After looking at the code, it's not obvious to me why it doesn't fail MORE (i.e. whenever there are a few levels of nesting), but on the surface the code appears to be the same as Anki desktop.
+
+(Note however that Anki desktop **doesn't** crash with the same collection, so there's obviously a subtle difference somewhere)
+
+I can get the collection to open by changing it to `confForDid(node.did)`, but that's not what Anki desktop does, so I'm not sure if that's correct or the best solution. 
+
+@hssm could you please take a look?
+
+java.lang.NullPointerException: Attempt to invoke virtual method 'boolean org.json.JSONObject.has(java.lang.String)' on a null object reference
+    at com.ichi2.libanki.Decks.confForDid(Decks.java:645)
+    at com.ichi2.libanki.Sched._groupChildrenMain(Sched.java:505)
+    at com.ichi2.libanki.Sched._groupChildrenMain(Sched.java:497)
+    at com.ichi2.libanki.Sched._groupChildren(Sched.java:449)
+    at com.ichi2.libanki.Sched.deckDueTree(Sched.java:437)
+    at com.ichi2.async.DeckTask.doInBackgroundLoadDeckCounts(DeckTask.java:490)
+    at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:235)
+    at com.ichi2.async.DeckTask.doInBackground(DeckTask.java:66)

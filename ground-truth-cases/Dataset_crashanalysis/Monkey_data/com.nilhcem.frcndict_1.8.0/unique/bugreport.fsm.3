@@ -1,0 +1,31 @@
+//this is an auto-generated bug report
+//package name: com.nilhcem.frcndict
+//version: 1.8.0
+//appro_time: 144
+ android.database.sqlite.SQLiteDatabaseLockedException: database is locked (code 5): , while compiling: PRAGMA journal_mode
+ 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+ 	at android.database.sqlite.SQLiteConnection.executeForString(SQLiteConnection.java:634)
+ 	at android.database.sqlite.SQLiteConnection.setJournalMode(SQLiteConnection.java:320)
+ 	at android.database.sqlite.SQLiteConnection.setWalModeFromConfiguration(SQLiteConnection.java:294)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:215)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+ 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+ 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:804)
+ 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:789)
+ 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:694)
+ 	at android.app.ContextImpl.openOrCreateDatabase(ContextImpl.java:863)
+ 	at android.content.ContextWrapper.openOrCreateDatabase(ContextWrapper.java:235)
+ 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:224)
+ 	at android.database.sqlite.SQLiteOpenHelper.getReadableDatabase(SQLiteOpenHelper.java:188)
+ 	at com.nilhcem.frcndict.database.StarredDbHelper.getStarredDate(StarredDbHelper.java:72)
+ 	at com.nilhcem.frcndict.database.DictDbHelper.findById(DictDbHelper.java:155)
+ 	at com.nilhcem.frcndict.meaning.WordMeaningActivity$LoadingAsync.doInBackground(WordMeaningActivity.java:182)
+ 	at com.nilhcem.frcndict.meaning.WordMeaningActivity$LoadingAsync.doInBackground(WordMeaningActivity.java:166)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

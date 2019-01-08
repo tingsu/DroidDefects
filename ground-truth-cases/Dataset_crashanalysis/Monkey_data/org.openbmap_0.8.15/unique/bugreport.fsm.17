@@ -1,0 +1,8 @@
+//this is an auto-generated bug report
+//package name: org.openbmap
+//version: 0.8.15
+//appro_time: 175
+ java.lang.NullPointerException
+ 	at org.openbmap.activities.b.a(Unknown Source)
+ 	at org.openbmap.utils.l.run(Unknown Source)
+ 	at java.util.Timer$TimerImpl.run(Timer.java:284)

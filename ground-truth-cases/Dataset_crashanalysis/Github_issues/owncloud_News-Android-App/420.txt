@@ -1,0 +1,15 @@
+D/GetImageAsyncTask(10800): java.net.MalformedURLException: Protocol not found: /components/com_versions/versions_logo_304x50.png
+D/GetImageAsyncTask(10800):     at java.net.URL.<init>(URL.java:176)
+D/GetImageAsyncTask(10800):     at java.net.URL.<init>(URL.java:125)
+D/GetImageAsyncTask(10800):     at de.luhmer.owncloudnewsreader.async_tasks.GetImageThreaded.<init>(GetImageThreaded.java:49)
+D/GetImageAsyncTask(10800):     at de.luhmer.owncloudnewsreader.helper.FavIconHandler.PreCacheFavIcon(FavIconHandler.java:75)
+D/GetImageAsyncTask(10800):     at de.luhmer.owncloudnewsreader.services.DownloadImagesService.onHandleIntent(DownloadImagesService.java:108)
+D/GetImageAsyncTask(10800):     at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+D/GetImageAsyncTask(10800):     at android.os.Handler.dispatchMessage(Handler.java:102)
+D/GetImageAsyncTask(10800):     at android.os.Looper.loop(Looper.java:135)
+D/GetImageAsyncTask(10800):     at android.os.HandlerThread.run(HandlerThread.java:61)
+V/de.luhmer.owncloudnewsreader.helper.FavIconHandler(10800): No favicon for Stabyourself.net news archive
+E/AndroidRuntime(10800): FATAL EXCEPTION: Thread-1177
+E/AndroidRuntime(10800): Process: de.luhmer.owncloudnewsreader, PID: 10800
+E/AndroidRuntime(10800): java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String java.net.URL.toString()' on a null object reference
+E/AndroidRuntime(10800):        at de.luhmer.owncloudnewsreader.async_tasks.GetImageThreaded.run(GetImageThreaded.java:64)

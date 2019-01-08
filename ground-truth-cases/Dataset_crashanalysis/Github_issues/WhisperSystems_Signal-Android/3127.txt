@@ -1,0 +1,38 @@
+E/AndroidRuntime(26145): java.lang.IllegalArgumentException: Unable to find GlideModule implementation
+E/AndroidRuntime(26145):    at com.bumptech.glide.module.ManifestParser.parseModule(Unknown Source)
+E/AndroidRuntime(26145):    at com.bumptech.glide.module.ManifestParser.parse(Unknown Source)
+E/AndroidRuntime(26145):    at com.bumptech.glide.Glide.get(Unknown Source)
+E/AndroidRuntime(26145):    at com.bumptech.glide.RequestManager.<init>(Unknown Source)
+E/AndroidRuntime(26145):    at com.bumptech.glide.RequestManager.<init>(Unknown Source)
+E/AndroidRuntime(26145):    at com.bumptech.glide.manager.RequestManagerRetriever.supportFragmentGet(Unknown Source)
+E/AndroidRuntime(26145):    at com.bumptech.glide.manager.RequestManagerRetriever.get(Unknown Source)
+E/AndroidRuntime(26145):    at com.bumptech.glide.manager.RequestManagerRetriever.get(Unknown Source)
+E/AndroidRuntime(26145):    at com.bumptech.glide.Glide.with(Unknown Source)
+E/AndroidRuntime(26145):    at org.thoughtcrime.securesms.components.ThumbnailView.buildEncryptedPartGlideRequest(Unknown Source)
+E/AndroidRuntime(26145):    at org.thoughtcrime.securesms.components.ThumbnailView.buildThumbnailGlideRequest(Unknown Source)
+E/AndroidRuntime(26145):    at org.thoughtcrime.securesms.components.ThumbnailView.buildGlideRequest(Unknown Source)
+E/AndroidRuntime(26145):    at org.thoughtcrime.securesms.components.ThumbnailView.setImageResource(Unknown Source)
+E/AndroidRuntime(26145):    at org.thoughtcrime.securesms.components.ThumbnailView$SlideDeckListener$1.run(Unknown Source)
+E/AndroidRuntime(26145):    at android.os.Handler.handleCallback(Handler.java:739)
+E/AndroidRuntime(26145):    at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime(26145):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(26145):    at android.app.ActivityThread.main(ActivityThread.java:5254)
+E/AndroidRuntime(26145):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(26145):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(26145):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+E/AndroidRuntime(26145):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+E/AndroidRuntime(26145): Caused by: java.lang.ClassNotFoundException: org.thoughtcrime.securesms.mms.TextSecureGlideModule
+E/AndroidRuntime(26145):    at java.lang.Class.classForName(Native Method)
+E/AndroidRuntime(26145):    at java.lang.Class.forName(Class.java:309)
+E/AndroidRuntime(26145):    at java.lang.Class.forName(Class.java:273)
+E/AndroidRuntime(26145):    ... 22 more
+E/AndroidRuntime(26145): Caused by: java.lang.ClassNotFoundException: Didn't find class "org.thoughtcrime.securesms.mms.TextSecureGlideModule" on path: DexPathList[[zip file "/data/app/org.thoughtcrime.securesms-1/base.apk"],nativeLibraryDirectories=[/data/app/org.thoughtcrime.securesms-1/lib/arm, /vendor/lib, /system/lib]]
+E/AndroidRuntime(26145):    at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+E/AndroidRuntime(26145):    at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+E/AndroidRuntime(26145):    at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+E/AndroidRuntime(26145):    ... 25 more
+E/AndroidRuntime(26145):    Suppressed: java.lang.ClassNotFoundException: org.thoughtcrime.securesms.mms.TextSecureGlideModule
+E/AndroidRuntime(26145):        at java.lang.Class.classForName(Native Method)
+E/AndroidRuntime(26145):        at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+E/AndroidRuntime(26145):        at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+E/AndroidRuntime(26145):        at java.lang.ClassLoader.loadClass(ClassLoader.java:504)

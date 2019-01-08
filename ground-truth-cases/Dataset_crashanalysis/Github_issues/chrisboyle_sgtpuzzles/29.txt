@@ -1,0 +1,4 @@
+03-25 12:18:43.054 22737 22737 W System.err: java.lang.RuntimeException: crashed here (native trace should follow after the Java trace)
+03-25 12:18:43.234 22737 22737 W System.err: at name.boyle.chris.sgtpuzzles.SGTPuzzles.nativeCrashed(SGTPuzzles.java:981)
+03-25 12:18:43.234 22737 22737 W System.err: at name.boyle.chris.sgtpuzzles.SGTPuzzles.resizeEvent(Native Method)
+03-25 12:18:43.234 22737 22737 W System.err: at name.boyle.chris.sgtpuzzles.SGTPuzzles$1.handleMessage(SGTPuzzles.java:138)

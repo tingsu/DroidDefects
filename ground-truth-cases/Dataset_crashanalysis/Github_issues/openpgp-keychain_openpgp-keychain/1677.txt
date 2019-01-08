@@ -1,0 +1,12 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'int org.sufficientlysecure.keychain.ui.widget.CacheTTLSpinner.getSelectedTimeToLive()' on a null object reference
+    at org.sufficientlysecure.keychain.ui.PassphraseDialogActivity$PassphraseDialogFragment$5.onClick(PassphraseDialogActivity.java:388)
+    at android.view.View.performClick(View.java:4857)
+    at android.view.View$PerformClick.run(View.java:20290)
+    at android.os.Handler.handleCallback(Handler.java:815)
+    at android.os.Handler.dispatchMessage(Handler.java:104)
+    at android.os.Looper.loop(Looper.java:194)
+    at android.app.ActivityThread.main(ActivityThread.java:5637)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:959)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:754)

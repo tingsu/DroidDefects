@@ -1,0 +1,11 @@
+01-23 22:10:43.724: E/AndroidRuntime(28903): java.lang.StringIndexOutOfBoundsException: length=1; regionStart=1; regionLength=6
+01-23 22:10:43.724: E/AndroidRuntime(28903):    at java.lang.String.startEndAndLength(String.java:593)
+01-23 22:10:43.724: E/AndroidRuntime(28903):    at java.lang.String.getChars(String.java:902)
+01-23 22:10:43.724: E/AndroidRuntime(28903):    at com.google.zxing.oned.UPCEReader.convertUPCEtoUPCA(UPCEReader.java:124)
+01-23 22:10:43.724: E/AndroidRuntime(28903):    at com.google.zxing.client.result.ProductResultParser.parse(ProductResultParser.java:51)
+01-23 22:10:43.724: E/AndroidRuntime(28903):    at com.google.zxing.client.result.ProductResultParser.parse(ProductResultParser.java:28)
+01-23 22:10:43.724: E/AndroidRuntime(28903):    at com.google.zxing.client.result.ResultParser.parseResult(ResultParser.java:87)
+
+While this stack comes from calling ResultParser.parseResult with an effectively invalid UPC_E (as it has only 1 char while I understand an UPC_E should have 8 chars), I also encountered an equivalent issue with a decoded UPC_E.
+
+If it is expected to throy, I guess it should be handled at most in ResultParser.parseResult as this method should then try the next Parser.

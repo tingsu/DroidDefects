@@ -1,0 +1,15 @@
+//this is an auto-generated bug report
+//package name: com.btcontract.wallet
+//version: 1.074
+//appro_time: 86
+ FATAL EXCEPTION:  STARTING
+ java.lang.IllegalArgumentException: Cannot set creation time to negative value: -2147382000
+ 	at org.bitcoinj.core.ECKey.setCreationTimeSeconds(ECKey.java:1057)
+ 	at org.bitcoinj.crypto.DeterministicKey.setCreationTimeSeconds(DeterministicKey.java:582)
+ 	at org.bitcoinj.wallet.DeterministicKeyChain.<init>(DeterministicKeyChain.java:362)
+ 	at org.bitcoinj.wallet.DeterministicKeyChain.<init>(DeterministicKeyChain.java:309)
+ 	at org.bitcoinj.wallet.KeyChainGroup.<init>(KeyChainGroup.java:84)
+ 	at com.btcontract.wallet.WalletRestoreActivity$$anon$1.startUp(WalletRestoreActivity.scala:77)
+ 	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+ 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:95)
+ 	at java.lang.Thread.run(Thread.java:841)

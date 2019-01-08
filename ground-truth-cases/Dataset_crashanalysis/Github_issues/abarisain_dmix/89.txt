@@ -1,0 +1,43 @@
+W/System.err(17066): java.lang.NullPointerException
+W/System.err(17066):    at net.roarsoftware.lastfm.Album.getInfo(Album.java:70)
+W/System.err(17066):    at org.pmix.cover.LastFMCover.getCoverUrl(LastFMCover.java:12)
+W/System.err(17066):    at com.namelessdev.mpdroid.CoverAsyncHelper$CoverAsyncWorker.handleMessage(CoverAsyncHelper.java:100)
+W/System.err(17066):    at android.os.Handler.dispatchMessage(Handler.java:99)
+W/System.err(17066):    at android.os.Looper.loop(Looper.java:137)
+W/System.err(17066):    at android.os.HandlerThread.run(HandlerThread.java:60)
+I/dalvikvm(17066): Jit: resizing JitTable from 4096 to 8192
+D/dalvikvm(17066): GC_CONCURRENT freed 413K, 12% free 7236K/8135K, paused 2ms+3ms
+D/MPDroid (17066): We did find an artist
+I/System.out(17066): MemoryCache.contains: 2651434ec2d0cb202eef48c81545b70c ? false
+D/MPDroid (17066): We did find an artist
+D/MPDroid (17066): We did find an artist
+D/MPDroid (17066): We did find an artist
+D/MPDroid (17066): We did find an artist
+D/MPDroid (17066): We did find an artist
+I/System.out(17066): MemoryCache.remove: 2651434ec2d0cb202eef48c81545b70c
+W/System.err(17066): java.lang.NullPointerException
+W/System.err(17066):    at net.roarsoftware.lastfm.Album.getInfo(Album.java:70)
+W/System.err(17066):    at org.pmix.cover.LastFMCover.getCoverUrl(LastFMCover.java:12)
+W/System.err(17066):    at com.namelessdev.mpdroid.CoverAsyncHelper$CoverAsyncWorker.handleMessage(CoverAsyncHelper.java:100)
+W/System.err(17066):    at android.os.Handler.dispatchMessage(Handler.java:99)
+W/System.err(17066):    at android.os.Looper.loop(Looper.java:137)
+W/System.err(17066):    at android.os.HandlerThread.run(HandlerThread.java:60)
+I/ActivityManager( 1167): START {cmp=com.namelessdev.mpdroid/.PlaylistActivity} from pid 17066
+I/global  (17066): onPause
+I/global  (17066): onStop
+D/AndroidRuntime(17066): Shutting down VM
+W/dalvikvm(17066): threadid=1: thread exiting with uncaught exception (group=0x409fb1f8)
+E/AndroidRuntime(17066): FATAL EXCEPTION: main
+E/AndroidRuntime(17066): java.util.ConcurrentModificationException
+E/AndroidRuntime(17066):    at java.util.ArrayList$ArrayListIterator.next(ArrayList.java:569)
+E/AndroidRuntime(17066):    at com.namelessdev.mpdroid.PlaylistActivity.update(PlaylistActivity.java:90)
+E/AndroidRuntime(17066):    at com.namelessdev.mpdroid.PlaylistActivity.playlistChanged(PlaylistActivity.java:316)
+E/AndroidRuntime(17066):    at com.namelessdev.mpdroid.MPDAsyncHelper.handleMessage(MPDAsyncHelper.java:117)
+E/AndroidRuntime(17066):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(17066):    at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime(17066):    at android.app.ActivityThread.main(ActivityThread.java:4424)
+E/AndroidRuntime(17066):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(17066):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime(17066):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:787)
+E/AndroidRuntime(17066):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:554)
+E/AndroidRuntime(17066):    at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,5 @@
+>     java.lang.IndexOutOfBoundsException: Invalid index 1, size is 1
+>             at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+>             at java.util.ArrayList.get(ArrayList.java:308)
+>             at org.csploit.android.MainActivity$TargetAdapter$1.run(MainActivity.java:953)
+>             at android.os.Handler.handleCallback(Handler.java:733)

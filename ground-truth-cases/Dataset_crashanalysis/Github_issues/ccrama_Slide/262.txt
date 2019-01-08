@@ -1,0 +1,17 @@
+```java.lang.RuntimeException: Unable to start activity ComponentInfo{me.ccrama.redditslide/me.ccrama.redditslide.Activities.SettingsBackup}: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.google.android.gms.common.api.GoogleApiClient.connect()' on a null object reference
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2411)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2474)
+    at android.app.ActivityThread.access$800(ActivityThread.java:144)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1359)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:155)
+    at android.app.ActivityThread.main(ActivityThread.java:5696)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1028)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:823)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.google.android.gms.common.api.GoogleApiClient.connect()' on a null object reference
+    at me.ccrama.redditslide.Activities.SettingsBackup.onStart(SettingsBackup.java:68)
+    at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1288)
+    at android.app.Activity.performStart(Activity.java:5974)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2374)

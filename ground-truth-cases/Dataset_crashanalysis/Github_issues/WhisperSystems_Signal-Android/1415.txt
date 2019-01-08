@@ -1,0 +1,7 @@
+W/MmsDownloader(11967): java.io.IOException: Bad retrieved PDU
+W/MmsDownloader(11967):     at org.thoughtcrime.securesms.mms.MmsDownloadHelper.retrieveMms(MmsDownloadHelper.java:93)
+W/MmsDownloader(11967):     at org.thoughtcrime.securesms.service.MmsDownloader.retrieveAndStore(MmsDownloader.java:169)
+W/MmsDownloader(11967):     at org.thoughtcrime.securesms.service.MmsDownloader.handleDownloadMms(MmsDownloader.java:121)
+W/MmsDownloader(11967):     at org.thoughtcrime.securesms.service.MmsDownloader.process(MmsDownloader.java:65)
+W/MmsDownloader(11967):     at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:276)
+W/MmsDownloader(11967):     at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)

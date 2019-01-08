@@ -1,0 +1,9 @@
+E/AndroidRuntime( 3223): java.lang.IncompatibleClassChangeError: interface not implemented
+E/AndroidRuntime( 3223):        at com.evernote.android.job.JobStorage.closeSilently(JobStorage.java:453)
+E/AndroidRuntime( 3223):        at com.evernote.android.job.JobStorage.getAllJobRequests(JobStorage.java:195)
+E/AndroidRuntime( 3223):        at com.evernote.android.job.JobRescheduleService.onHandleIntent(JobRescheduleService.java:44)
+E/AndroidRuntime( 3223):        at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+E/AndroidRuntime( 3223):        at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 3223):        at android.os.Looper.loop(Looper.java:154)
+E/AndroidRuntime( 3223):        at android.os.HandlerThread.run(HandlerThread.java:65)
+D/dalvikvm(  243): threadid=85: interp stack at 0x4d263000

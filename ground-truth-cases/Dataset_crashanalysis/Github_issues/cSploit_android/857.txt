@@ -1,0 +1,8 @@
+04-17 19:00:44.361 17507-17541/org.csploit.android E/CSPLOIT[core.System.errorLogging]: org.csploit.android.core.ChildManager$ChildNotStartedException: cannot start commands
+                                                                                            at org.csploit.android.tools.Tool.async(Tool.java:48)
+                                                                                            at org.csploit.android.tools.NMap.synScan(NMap.java:142)
+                                                                                            at org.csploit.android.tools.NMap.synScan(NMap.java:146)
+                                                                                            at org.csploit.android.services.NetworkRadar$2.run(NetworkRadar.java:90)
+                                                                                            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+                                                                                            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+                                                                                            at java.lang.Thread.run(Thread.java:818)

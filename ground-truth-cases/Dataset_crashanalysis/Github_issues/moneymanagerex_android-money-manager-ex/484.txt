@@ -1,0 +1,19 @@
+> java.lang.RuntimeException: An error occured while executing doInBackground()
+> at android.os.AsyncTask$3.done(AsyncTask.java:304)
+> at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+> at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+> at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+> at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+> at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+> at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+> at java.lang.Thread.run(Thread.java:818)
+> Caused by: java.lang.RuntimeException: Error in Yahoo download all prices
+> at com.money.manager.ex.investment.TextDownloaderTask.doInBackground(TextDownloaderTask.java:69)
+> at com.money.manager.ex.investment.TextDownloaderTask.doInBackground(TextDownloaderTask.java:37)
+> at android.os.AsyncTask$2.call(AsyncTask.java:292)
+> at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+> ... 4 more
+> Caused by: java.lang.NullPointerException: Attempt to read from field 'java.lang.String com.money.manager.ex.investment.SecurityPriceModel.symbol' on a null object reference
+> at com.money.manager.ex.investment.YqlSecurityPriceUpdater.onContentDownloaded(YqlSecurityPriceUpdater.java:128)
+> at com.money.manager.ex.investment.TextDownloaderTask.runTask(TextDownloaderTask.java:125)
+> at com.money.manager.ex.investment.TextDownloaderTask.doInBackground(TextDownloaderTask.java:63)

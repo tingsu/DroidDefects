@@ -1,0 +1,27 @@
+Using CM 12.1 from 27.10. and Transportr from today as well.
+I caught the crash, please have a look at the log below:
+
+> FATAL EXCEPTION: main
+>  Process: de.grobox.liberario, PID: 8658
+>  java.lang.IndexOutOfBoundsException: Invalid index 3, size is 0
+>     at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+>     at java.util.ArrayList.get(ArrayList.java:308)
+>     at de.grobox.liberario.adapters.LocationAdapter.getItem(LocationAdapter.java:75)
+>     at de.grobox.liberario.adapters.LocationAdapter.getView(LocationAdapter.java:160)
+>     at android.widget.AbsListView.obtainView(AbsListView.java:2349)
+>     at android.widget.ListPopupWindow$DropDownListView.obtainView(ListPopupWindow.java:1706)
+>     at android.widget.ListView.measureHeightOfChildren(ListView.java:1270)
+>     at android.widget.ListPopupWindow.buildDropDown(ListPopupWindow.java:1181)
+>     at android.widget.ListPopupWindow.show(ListPopupWindow.java:568)
+>     at android.widget.AutoCompleteTextView.showDropDown(AutoCompleteTextView.java:1105)
+>     at android.widget.AutoCompleteTextView.updateDropDownForFilter(AutoCompleteTextView.java:974)
+>     at android.widget.AutoCompleteTextView.access$900(AutoCompleteTextView.java:90)
+>     at android.widget.AutoCompleteTextView$PopupDataSetObserver$1.run(AutoCompleteTextView.java:1299)
+>     at android.os.Handler.handleCallback(Handler.java:739)
+>     at android.os.Handler.dispatchMessage(Handler.java:95)
+>     at android.os.Looper.loop(Looper.java:135)
+>     at android.app.ActivityThread.main(ActivityThread.java:5294)
+>     at java.lang.reflect.Method.invoke(Native Method)
+>     at java.lang.reflect.Method.invoke(Method.java:372)
+>     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+>     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)

@@ -1,0 +1,34 @@
+I/ActivityManager(  493): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=pk.contender.earmouse/.Main (has extras)} from uid 10015 on display 0
+V/WindowManager(  493): addAppToken: AppWindowToken{2757ffbc token=Token{20cd1faf ActivityRecord{10f1cb8e u0 pk.contender.earmouse/.Main t91}}} to stack=1 task=91 at 0
+V/WindowManager(  493): Adding window Window{2ebda543 u0 Starting pk.contender.earmouse} at 7 of 13 (after Window{e38b558 u0 org.y20k.transistor/org.y20k.transistor.MainActivity})
+I/ActivityManager(  493): Start proc 30901:pk.contender.earmouse/u0a73 for activity pk.contender.earmouse/.Main
+
+E/ExtMediaPlayer-JNI(30901): QCMediaPlayer could not be located....
+E/MediaPlayer-JNI(30901): QCMediaPlayer mediaplayer NOT present
+D/AndroidRuntime(30901): Shutting down VM
+E/AndroidRuntime(30901): FATAL EXCEPTION: main
+E/AndroidRuntime(30901): Process: pk.contender.earmouse, PID: 30901
+E/AndroidRuntime(30901): java.lang.RuntimeException: Unable to start activity ComponentInfo{pk.contender.earmouse/pk.contender.earmouse.Main}: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.View android.widget.TableLayout.findViewById(int)' on a null object reference
+E/AndroidRuntime(30901):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2358)
+E/AndroidRuntime(30901):        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2420)
+E/AndroidRuntime(30901):        at android.app.ActivityThread.access$900(ActivityThread.java:154)
+E/AndroidRuntime(30901):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1321)
+E/AndroidRuntime(30901):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(30901):        at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(30901):        at android.app.ActivityThread.main(ActivityThread.java:5294)
+E/AndroidRuntime(30901):        at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(30901):        at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(30901):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime(30901):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/AndroidRuntime(30901): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.View android.widget.TableLayout.findViewById(int)' on a null object reference
+E/AndroidRuntime(30901):        at pk.contender.earmouse.ButtonGridFragment.a(Unknown Source)
+E/AndroidRuntime(30901):        at pk.contender.earmouse.ExerciseFragment.a(Unknown Source)
+E/AndroidRuntime(30901):        at pk.contender.earmouse.ExerciseFragment.onActivityCreated(Unknown Source)
+E/AndroidRuntime(30901):        at android.app.Fragment.performActivityCreated(Fragment.java:2061)
+E/AndroidRuntime(30901):        at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:912)
+E/AndroidRuntime(30901):        at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1067)
+E/AndroidRuntime(30901):        at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1049)
+E/AndroidRuntime(30901):        at android.app.FragmentManagerImpl.dispatchActivityCreated(FragmentManager.java:1869)
+E/AndroidRuntime(30901):        at android.app.Activity.performCreateCommon(Activity.java:5985)
+E/AndroidRuntime(30901):        at android.app.Activity.performCreate(Activity.java:5992)
+E/AndroidRuntime(30901):        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106) E/AndroidRuntime(30901):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2311)

@@ -1,0 +1,18 @@
+ AndroidRuntime  E  java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain.debug/org.sufficientlysecure.keychain.ui.DecryptActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int android.content.ClipData.getItemCount()' on a null object reference
+  4476         AndroidRuntime  E  at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2298)
+  4476         AndroidRuntime  E  at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2360)
+  4476         AndroidRuntime  E  at android.app.ActivityThread.access$800(ActivityThread.java:144)
+  4476         AndroidRuntime  E  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1278)
+  4476         AndroidRuntime  E  at android.os.Handler.dispatchMessage(Handler.java:102)
+  4476         AndroidRuntime  E  at android.os.Looper.loop(Looper.java:135)
+  4476         AndroidRuntime  E  at android.app.ActivityThread.main(ActivityThread.java:5221)
+  4476         AndroidRuntime  E  at java.lang.reflect.Method.invoke(Native Method)
+  4476         AndroidRuntime  E  at java.lang.reflect.Method.invoke(Method.java:372)
+  4476         AndroidRuntime  E  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+  4476         AndroidRuntime  E  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+  4476         AndroidRuntime  E  Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int android.content.ClipData.getItemCount()' on a null object reference
+  4476         AndroidRuntime  E  at org.sufficientlysecure.keychain.ui.DecryptActivity.handleActions(DecryptActivity.java:127)
+  4476         AndroidRuntime  E  at org.sufficientlysecure.keychain.ui.DecryptActivity.onCreate(DecryptActivity.java:61)
+  4476         AndroidRuntime  E  at android.app.Activity.performCreate(Activity.java:5933)
+  4476         AndroidRuntime  E  at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+  4476         AndroidRuntime  E  at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2251)

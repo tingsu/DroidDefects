@@ -1,0 +1,132 @@
+W/System.err(16234): java.lang.NullPointerException
+W/System.err(16234):    at com.Pau.ImapNotes2.AccontConfigurationActivity$LoginThread.doInBackground(AccontConfigurationActivity.java:227)
+W/System.err(16234):    at com.Pau.ImapNotes2.AccontConfigurationActivity$LoginThread.doInBackground(AccontConfigurationActivity.java:218)
+W/System.err(16234):    at android.os.AsyncTask$2.call(AsyncTask.java:288)
+W/System.err(16234):    at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+W/System.err(16234):    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+W/System.err(16234):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/System.err(16234):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/System.err(16234):    at java.lang.Thread.run(Thread.java:841)
+
+E/AndroidRuntime(17801): FATAL EXCEPTION: SyncAdapterThread-2
+E/AndroidRuntime(17801): Process: com.Pau.ImapNotes2, PID: 17801
+E/AndroidRuntime(17801): java.lang.NullPointerException
+E/AndroidRuntime(17801):        at com.Pau.ImapNotes2.Sync.SyncUtils.GetOneNote(SyncUtils.java:378)
+E/AndroidRuntime(17801):        at com.Pau.ImapNotes2.Sync.SyncUtils.handleRemoteNotes(SyncUtils.java:450)
+E/AndroidRuntime(17801):        at com.Pau.ImapNotes2.Sync.SyncAdapter.onPerformSync(SyncAdapter.java:141)
+E/AndroidRuntime(17801):        at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:259)
+W/ActivityManager(  537):   Force finishing activity com.Pau.ImapNotes2/.Listactivity
+
+I/ActivityManager(  537): Displayed com.Pau.ImapNotes2/.NewNoteActivity: +177ms
+I/Timeline(17107): Timeline: Activity_idle id: android.os.BinderProxy@42667060 time:52021219
+I/Timeline(  537): Timeline: Activity_windows_visible id: ActivityRecord{42d2e7e0 u0 com.Pau.ImapNotes2/.NewNoteActivity t28} time:52021467
+I/LatinIME:LogUtils(  830): Dictionary info: dictionary = ? ; version = 26 ; date = 1351062238
+I/LatinIME:LogUtils(  830): Dictionary info: dictionary = userunigram.en_US.dict ; version = ? ; date = ?
+I/Timeline(17107): Timeline: Activity_idle id: android.os.BinderProxy@424f48d0 time:52039714
+I/Timeline(  537): Timeline: Activity_windows_visible id: ActivityRecord{42bf2b80 u0 com.Pau.ImapNotes2/.Listactivity t28} time:52039801
+D/SyncService(17107): Service created
+D/SyncService(17107): Service is returning IBinder
+W/InputMethodManagerService(  537): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@431341e0 attribute=null, token = android.os.BinderProxy@42e44d10
+I/Timeline(17107): Timeline: Activity_launch_request id:com.Pau.ImapNotes2 time:52167892
+I/ActivityManager(  537): START u0 {cmp=com.Pau.ImapNotes2/.NoteDetailActivity (has extras)} from pid 17107
+W/System.err(17107): java.io.FileNotFoundException: /data/data/com.Pau.ImapNotes2/files/notes/new/1: open failed: ENOENT (No such file or directory)
+W/System.err(17107):    at libcore.io.IoBridge.open(IoBridge.java:409)
+W/System.err(17107):    at de.robv.android.xposed.XposedBridge.invokeOriginalMethodNative(Native Method)
+W/System.err(17107):    at de.robv.android.xposed.XposedBridge.handleHookedMethod(XposedBridge.java:631)
+W/System.err(17107):    at libcore.io.IoBridge.open(Native Method)
+W/System.err(17107):    at java.io.FileInputStream.<init>(FileInputStream.java:78)
+W/System.err(17107):    at com.Pau.ImapNotes2.Sync.SyncUtils.ReadMailFromFile(SyncUtils.java:299)
+W/System.err(17107):    at com.Pau.ImapNotes2.NoteDetailActivity.onCreate(NoteDetailActivity.java:69)
+W/System.err(17107):    at android.app.Activity.performCreate(Activity.java:5231)
+W/System.err(17107):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+W/System.err(17107):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2169)
+W/System.err(17107):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2271)
+W/System.err(17107):    at android.app.ActivityThread.access$800(ActivityThread.java:144)
+W/System.err(17107):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1205)
+W/System.err(17107):    at android.os.Handler.dispatchMessage(Handler.java:102)
+W/System.err(17107):    at android.os.Looper.loop(Looper.java:136)
+W/System.err(17107):    at android.app.ActivityThread.main(ActivityThread.java:5146)
+W/System.err(17107):    at java.lang.reflect.Method.invokeNative(Native Method)
+W/System.err(17107):    at java.lang.reflect.Method.invoke(Method.java:515)
+W/System.err(17107):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+W/System.err(17107):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+W/System.err(17107):    at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+W/System.err(17107):    at dalvik.system.NativeStart.main(Native Method)
+W/System.err(17107): Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+W/System.err(17107):    at libcore.io.Posix.open(Native Method)
+W/System.err(17107):    at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+W/System.err(17107):    at libcore.io.IoBridge.open(IoBridge.java:393)
+W/System.err(17107):    ... 21 more
+W/System.err(17107): javax.mail.MessagingException: Error in input stream;
+W/System.err(17107):   nested exception is:
+W/System.err(17107):    java.io.IOException: BufferedInputStream is closed
+W/System.err(17107):    at javax.mail.internet.InternetHeaders.load(InternetHeaders.java:382)
+W/System.err(17107):    at javax.mail.internet.InternetHeaders.<init>(InternetHeaders.java:330)
+W/System.err(17107):    at javax.mail.internet.MimeMessage.createInternetHeaders(MimeMessage.java:2221)
+W/System.err(17107):    at javax.mail.internet.MimeMessage.parse(MimeMessage.java:342)
+W/System.err(17107):    at javax.mail.internet.MimeMessage.<init>(MimeMessage.java:216)
+W/System.err(17107):    at com.Pau.ImapNotes2.Sync.SyncUtils.ReadMailFromFile(SyncUtils.java:307)
+W/System.err(17107):    at com.Pau.ImapNotes2.NoteDetailActivity.onCreate(NoteDetailActivity.java:69)
+W/System.err(17107):    at android.app.Activity.performCreate(Activity.java:5231)
+W/System.err(17107):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+W/System.err(17107):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2169)
+W/System.err(17107):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2271)
+W/System.err(17107):    at android.app.ActivityThread.access$800(ActivityThread.java:144)
+W/System.err(17107):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1205)
+W/System.err(17107):    at android.os.Handler.dispatchMessage(Handler.java:102)
+W/System.err(17107):    at android.os.Looper.loop(Looper.java:136)
+W/System.err(17107):    at android.app.ActivityThread.main(ActivityThread.java:5146)
+W/System.err(17107):    at java.lang.reflect.Method.invokeNative(Native Method)
+W/System.err(17107):    at java.lang.reflect.Method.invoke(Method.java:515)
+W/System.err(17107):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+W/System.err(17107):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+W/System.err(17107):    at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+W/System.err(17107):    at dalvik.system.NativeStart.main(Native Method)
+W/System.err(17107): Caused by: java.io.IOException: BufferedInputStream is closed
+W/System.err(17107):    at java.io.BufferedInputStream.streamClosed(BufferedInputStream.java:118)
+W/System.err(17107):    at java.io.BufferedInputStream.read(BufferedInputStream.java:223)
+W/System.err(17107):    at com.sun.mail.util.LineInputStream.readLine(LineInputStream.java:89)
+W/System.err(17107):    at javax.mail.internet.InternetHeaders.load(InternetHeaders.java:359)
+W/System.err(17107):    ... 21 more
+W/System.err(17107): java.lang.NullPointerException
+W/System.err(17107):    at com.Pau.ImapNotes2.NoteDetailActivity.GetInfoFromMessage(NoteDetailActivity.java:206)
+W/System.err(17107):    at com.Pau.ImapNotes2.NoteDetailActivity.onCreate(NoteDetailActivity.java:70)
+W/System.err(17107):    at android.app.Activity.performCreate(Activity.java:5231)
+W/System.err(17107):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+W/System.err(17107):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2169)
+W/System.err(17107):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2271)
+W/System.err(17107):    at android.app.ActivityThread.access$800(ActivityThread.java:144)
+W/System.err(17107):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1205)
+W/System.err(17107):    at android.os.Handler.dispatchMessage(Handler.java:102)
+W/System.err(17107):    at android.os.Looper.loop(Looper.java:136)
+W/System.err(17107):    at android.app.ActivityThread.main(ActivityThread.java:5146)
+W/System.err(17107):    at java.lang.reflect.Method.invokeNative(Native Method)
+W/System.err(17107):    at java.lang.reflect.Method.invoke(Method.java:515)
+W/System.err(17107):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+W/System.err(17107):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+W/System.err(17107):    at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+W/System.err(17107):    at dalvik.system.NativeStart.main(Native Method)
+D/AndroidRuntime(17107): Shutting down VM
+W/dalvikvm(17107): threadid=1: thread exiting with uncaught exception (group=0x41a64ce0)
+E/AndroidRuntime(17107): FATAL EXCEPTION: main
+E/AndroidRuntime(17107): Process: com.Pau.ImapNotes2, PID: 17107
+E/AndroidRuntime(17107): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.Pau.ImapNotes2/com.Pau.ImapNotes2.NoteDetailActivity}: java.lang.NullPointerException
+E/AndroidRuntime(17107):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2212)
+E/AndroidRuntime(17107):        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2271)
+E/AndroidRuntime(17107):        at android.app.ActivityThread.access$800(ActivityThread.java:144)
+E/AndroidRuntime(17107):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1205)
+E/AndroidRuntime(17107):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(17107):        at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(17107):        at android.app.ActivityThread.main(ActivityThread.java:5146)
+E/AndroidRuntime(17107):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(17107):        at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime(17107):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+E/AndroidRuntime(17107):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+E/AndroidRuntime(17107):        at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+E/AndroidRuntime(17107):        at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(17107): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(17107):        at com.Pau.ImapNotes2.NoteDetailActivity.GetInfoFromMessage(NoteDetailActivity.java:216)
+E/AndroidRuntime(17107):        at com.Pau.ImapNotes2.NoteDetailActivity.onCreate(NoteDetailActivity.java:70)
+E/AndroidRuntime(17107):        at android.app.Activity.performCreate(Activity.java:5231)
+E/AndroidRuntime(17107):        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+E/AndroidRuntime(17107):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2169)

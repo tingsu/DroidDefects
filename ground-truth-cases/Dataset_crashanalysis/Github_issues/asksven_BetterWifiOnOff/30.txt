@@ -1,0 +1,18 @@
+ceiverCallNotAllowedException: IntentReceiver components are not allowed to bind to services
+E/AndroidRuntime(29242):    at android.app.ActivityThread.handleReceiver(ActivityThread.java:2362)
+E/AndroidRuntime(29242):    at android.app.ActivityThread.access$1500(ActivityThread.java:142)
+E/AndroidRuntime(29242):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1284)
+E/AndroidRuntime(29242):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(29242):    at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime(29242):    at android.app.ActivityThread.main(ActivityThread.java:4928)
+E/AndroidRuntime(29242):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(29242):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime(29242):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:791)
+E/AndroidRuntime(29242):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:558)
+E/AndroidRuntime(29242):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(29242): Caused by: android.content.ReceiverCallNotAllowedException: IntentReceiver components are not allowed to bind to services
+E/AndroidRuntime(29242):    at android.app.ReceiverRestrictedContext.bindService(ContextImpl.java:142)
+E/AndroidRuntime(29242):    at com.asksven.betterwifionoff.services.EventWatcherServiceBinder.doBindService(EventWatcherServiceBinder.java:95)
+E/AndroidRuntime(29242):    at com.asksven.betterwifionoff.services.EventWatcherServiceBinder.getInstance(EventWatcherServiceBinder.java:46)
+E/AndroidRuntime(29242):    at com.asksven.betterwifionoff.handlers.BroadcastHandler.onReceive(BroadcastHandler.java:122)
+E/AndroidRuntime(29242):    at android.app.ActivityThread.handleReceiver(ActivityThread.java:2355)

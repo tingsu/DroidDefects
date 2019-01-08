@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: se.tube42.kidsmem.android
+//version: 1.4
+//appro_time: 12
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{se.tube42.kidsmem.android/se.tube42.kidsmem.android.MainActivity}: com.badlogic.gdx.utils.f: Libgdx requires OpenGL ES 2.0
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: com.badlogic.gdx.utils.f: Libgdx requires OpenGL ES 2.0
+ 	at com.badlogic.gdx.backends.android.j.a(Unknown Source)
+ 	at com.badlogic.gdx.backends.android.j.<init>(Unknown Source)
+ 	at com.badlogic.gdx.backends.android.j.<init>(Unknown Source)
+ 	at com.badlogic.gdx.backends.android.a.a(Unknown Source)
+ 	at com.badlogic.gdx.backends.android.a.a(Unknown Source)
+ 	at se.tube42.kidsmem.android.MainActivity.onCreate(Unknown Source)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)

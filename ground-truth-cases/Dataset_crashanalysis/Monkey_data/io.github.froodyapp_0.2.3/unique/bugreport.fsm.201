@@ -1,0 +1,14 @@
+//this is an auto-generated bug report
+//package name: io.github.froodyapp
+//version: 0.2.3
+//appro_time: 91
+ FATAL EXCEPTION: Thread-719
+ java.lang.IllegalArgumentException: unexpected url: krhttps://api.fruity-app.at/user/isEnabled?userId=1957687148
+ 	at com.squareup.okhttp.Request$Builder.url(Request.java:163)
+ 	at io.github.froodyapp.api.invoker.ApiClient.buildCall(ApiClient.java:1068)
+ 	at io.github.froodyapp.api.api.UserApi.userIsEnabledGetCall(UserApi.java:98)
+ 	at io.github.froodyapp.api.api.UserApi.userIsEnabledGetValidateBeforeCall(UserApi.java:110)
+ 	at io.github.froodyapp.api.api.UserApi.userIsEnabledGetWithHttpInfo(UserApi.java:139)
+ 	at io.github.froodyapp.api.api.UserApi.userIsEnabledGet(UserApi.java:127)
+ 	at io.github.froodyapp.service.UserRegisterer.registerOrCheckUserId(UserRegisterer.java:64)
+ 	at io.github.froodyapp.service.UserRegisterer.run(UserRegisterer.java:45)

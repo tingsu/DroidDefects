@@ -1,0 +1,35 @@
+2. Close this note as quick as possible (using native back-button or top left arrow button does not matter)
+3. Repeat Steps 1 - 2 until the app crashes (10 - 15 times at my device)
+
+CC @korelstar 
+
+```
+03-31 08:55:11.909 2691-2725/? D/SyncTask:    Process Remote Note: R20  (*)  / MarkDown Test (2017-03-22 20:08:07 / null)
+03-31 08:55:11.910 2691-2725/? D/SyncTask:    ... found -> Update
+                                           
+                                           --------- beginning of crash
+03-31 08:55:11.915 2691-2725/? E/AndroidRuntime: FATAL EXCEPTION: AsyncTask #3
+                                                 Process: it.niedermann.owncloud.notes, PID: 2691
+                                                 java.lang.RuntimeException: An error occurred while executing doInBackground()
+                                                     at android.os.AsyncTask$3.done(AsyncTask.java:325)
+                                                     at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+                                                     at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+                                                     at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+                                                     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243)
+                                                     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133)
+                                                     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607)
+                                                     at java.lang.Thread.run(Thread.java:761)
+                                                  Caused by: java.lang.IllegalStateException: attempt to re-open an already-closed object: SQLiteDatabase: /data/user/0/it.niedermann.owncloud.notes/databases/OWNCLOUD_NOTES
+                                                     at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:55)
+                                                     at android.database.sqlite.SQLiteDatabase.updateWithOnConflict(SQLiteDatabase.java:1548)
+                                                     at android.database.sqlite.SQLiteDatabase.update(SQLiteDatabase.java:1525)
+                                                     at it.niedermann.owncloud.notes.persistence.NoteSQLiteOpenHelper.updateNote(NoteSQLiteOpenHelper.java:407)
+                                                     at it.niedermann.owncloud.notes.persistence.NoteServerSyncHelper$SyncTask.pullRemoteChanges(NoteServerSyncHelper.java:278)
+                                                     at it.niedermann.owncloud.notes.persistence.NoteServerSyncHelper$SyncTask.doInBackground(NoteServerSyncHelper.java:201)
+                                                     at it.niedermann.owncloud.notes.persistence.NoteServerSyncHelper$SyncTask.doInBackground(NoteServerSyncHelper.java:170)
+                                                     at android.os.AsyncTask$2.call(AsyncTask.java:305)
+                                                     at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+                                                     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:243) 
+                                                     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133) 
+                                                     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607) 
+                                                     at java.lang.Thread.run(Thread.java:761) 

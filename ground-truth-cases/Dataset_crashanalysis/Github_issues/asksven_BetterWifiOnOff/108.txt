@@ -1,0 +1,14 @@
+com.asksven.betterwifionoff.services.SetWifiStateService@425ac490 with Intent { cmp=com.asksven.betterwifionoff/.services.SetWifiStateService (has extras) }: java.lang.NullPointerException
+E/AndroidRuntime(31116):    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java)
+E/AndroidRuntime(31116):    at android.app.ActivityThread.access$1900(ActivityThread.java)
+E/AndroidRuntime(31116):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java)
+E/AndroidRuntime(31116):    at android.os.Handler.dispatchMessage(Handler.java)
+E/AndroidRuntime(31116):    at android.os.Looper.loop(Looper.java)
+E/AndroidRuntime(31116):    at android.app.ActivityThread.main(ActivityThread.java)
+E/AndroidRuntime(31116):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(31116):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime(31116):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java)
+E/AndroidRuntime(31116):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java)
+E/AndroidRuntime(31116):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(31116): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(31116):    at com.asksven.betterwifionoff.services.SetWifiStateService.onStartCommand(SetWifiStateService.java:69)

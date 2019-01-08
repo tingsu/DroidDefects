@@ -1,0 +1,44 @@
+the exception, 
+simply remove the second argument. An example at line 263:
+
+263:  tVal = (String) wcefValue.invoke(wcefEap.get(selectedConfig), null);
+
+What steps will reproduce the problem?
+
+1. Enable LogCat on Eclipse
+2. Launch the app on Emulation
+3. Click on the FarStar SSID
+
+What is the expected output? What do you see instead?
+
+: java.lang.IllegalArgumentException: wrong number of arguments
+:   at java.lang.reflect.Method.invokeNative(Native Method)
+:   at java.lang.reflect.Method.invoke(Method.java:507)
+:   at org.marcus905.wifi.ace.WiFiACEList.editConfig(WiFiACEList.java:263)
+:   at org.marcus905.wifi.ace.WiFiACEList.access$3(WiFiACEList.java:73)
+:   at org.marcus905.wifi.ace.WiFiACEList$1.onItemClick(WiFiACEList.java:400)
+:   at android.widget.AdapterView.performItemClick(AdapterView.java:284)
+:   at android.widget.ListView.performItemClick(ListView.java:3513)
+:   at android.widget.AbsListView$PerformClick.run(AbsListView.java:1812)
+:   at android.os.Handler.handleCallback(Handler.java:587)
+:   at android.os.Handler.dispatchMessage(Handler.java:92)
+:   at android.os.Looper.loop(Looper.java:123)
+:   at android.app.ActivityThread.main(ActivityThread.java:3683)
+:   at java.lang.reflect.Method.invokeNative(Native Method)
+:   at java.lang.reflect.Method.invoke(Method.java:507)
+:   at 
+com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+:   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+:   at dalvik.system.NativeStart.main(Native Method)
+
+What version of the product are you using? On what operating system?
+
+Eclipse ADT / SDK 2.3.3 on Ubuntu.
+
+Please provide any additional information below.
+
+Attached patch fixes all such exception. It's for trunk r14.
+
+```
+
+Original issue reported on code.google.com by `lan4...@gmail.com` on 20 Feb 2012 at 5:58

@@ -1,0 +1,401 @@
+```
+03-23 06:29:36.495 W/GetTask ( 1185): Failed to call Rest API at http://localhost:41165/rest/config
+03-23 06:29:36.495 W/GetTask ( 1185): org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:41165 refused
+```
+
+despite this was logged before:
+
+```
+03-23 06:29:30.415 I/SyncthingService( 1185): Web GUI will be available at http://127.0.0.1:8080
+03-23 06:29:30.415 I/SyncthingService( 1185): Starting syncthing according to current state and preferences
+```
+
+(See logcat on Jenkins: http://localhost:8080/job/Syncthing-Android-Test/8/ )
+
+```
+03-22 17:30:43.090 I/TestRunner( 1185): started: testOnlyRunInForeground(com.nutomic.syncthingandroid.test.syncthing.BatteryReceiverTest)
+03-22 17:30:43.110 I/Choreographer( 1185): Skipped 34 frames!  The application may be doing too much work on its main thread.
+03-22 17:30:43.150 I/TestRunner( 1185): finished: testOnlyRunInForeground(com.nutomic.syncthingandroid.test.syncthing.BatteryReceiverTest)
+03-22 17:30:43.160 I/TestRunner( 1185): passed: testOnlyRunInForeground(com.nutomic.syncthingandroid.test.syncthing.BatteryReceiverTest)
+03-22 17:30:43.170 I/TestRunner( 1185): started: testAndroidTestCaseSetupProperly(com.nutomic.syncthingandroid.test.syncthing.BootReceiverTest)
+03-22 17:30:43.180 I/Choreographer(  380): Skipped 31 frames!  The application may be doing too much work on its main thread.
+03-22 17:30:43.200 I/TestRunner( 1185): finished: testAndroidTestCaseSetupProperly(com.nutomic.syncthingandroid.test.syncthing.BootReceiverTest)
+03-22 17:30:43.200 I/TestRunner( 1185): passed: testAndroidTestCaseSetupProperly(com.nutomic.syncthingandroid.test.syncthing.BootReceiverTest)
+03-22 17:30:43.230 I/TestRunner( 1185): started: testOnReceiveCharging(com.nutomic.syncthingandroid.test.syncthing.BootReceiverTest)
+03-22 17:30:43.250 I/Choreographer(  739): Skipped 352 frames!  The application may be doing too much work on its main thread.
+03-22 17:30:43.270 I/TestRunner( 1185): finished: testOnReceiveCharging(com.nutomic.syncthingandroid.test.syncthing.BootReceiverTest)
+03-22 17:30:43.270 I/TestRunner( 1185): passed: testOnReceiveCharging(com.nutomic.syncthingandroid.test.syncthing.BootReceiverTest)
+03-22 17:30:43.360 I/TestRunner( 1185): started: testOnlyRunInForeground(com.nutomic.syncthingandroid.test.syncthing.BootReceiverTest)
+03-22 17:30:43.380 I/TestRunner( 1185): finished: testOnlyRunInForeground(com.nutomic.syncthingandroid.test.syncthing.BootReceiverTest)
+03-22 17:30:43.380 I/TestRunner( 1185): passed: testOnlyRunInForeground(com.nutomic.syncthingandroid.test.syncthing.BootReceiverTest)
+03-22 17:30:43.390 I/TestRunner( 1185): started: testAndroidTestCaseSetupProperly(com.nutomic.syncthingandroid.test.syncthing.DeviceStateHolderTest)
+03-22 17:30:43.410 I/Choreographer(  380): Skipped 34 frames!  The application may be doing too much work on its main thread.
+03-22 17:30:43.470 I/TestRunner( 1185): finished: testAndroidTestCaseSetupProperly(com.nutomic.syncthingandroid.test.syncthing.DeviceStateHolderTest)
+03-22 17:30:43.480 I/TestRunner( 1185): passed: testAndroidTestCaseSetupProperly(com.nutomic.syncthingandroid.test.syncthing.DeviceStateHolderTest)
+03-22 17:30:43.490 I/TestRunner( 1185): started: testIsCharging(com.nutomic.syncthingandroid.test.syncthing.DeviceStateHolderTest)
+03-22 17:30:43.500 I/TestRunner( 1185): finished: testIsCharging(com.nutomic.syncthingandroid.test.syncthing.DeviceStateHolderTest)
+03-22 17:30:43.510 I/TestRunner( 1185): passed: testIsCharging(com.nutomic.syncthingandroid.test.syncthing.DeviceStateHolderTest)
+03-22 17:30:43.530 I/TestRunner( 1185): started: testWifiConnected(com.nutomic.syncthingandroid.test.syncthing.DeviceStateHolderTest)
+03-22 17:30:43.550 I/TestRunner( 1185): finished: testWifiConnected(com.nutomic.syncthingandroid.test.syncthing.DeviceStateHolderTest)
+03-22 17:30:43.550 I/TestRunner( 1185): passed: testWifiConnected(com.nutomic.syncthingandroid.test.syncthing.DeviceStateHolderTest)
+03-22 17:30:43.570 I/TestRunner( 1185): started: testonReceiveInitialChargingState(com.nutomic.syncthingandroid.test.syncthing.DeviceStateHolderTest)
+03-22 17:30:43.590 I/TestRunner( 1185): finished: testonReceiveInitialChargingState(com.nutomic.syncthingandroid.test.syncthing.DeviceStateHolderTest)
+03-22 17:30:43.590 I/TestRunner( 1185): passed: testonReceiveInitialChargingState(com.nutomic.syncthingandroid.test.syncthing.DeviceStateHolderTest)
+03-22 17:30:43.610 I/TestRunner( 1185): started: testAndroidTestCaseSetupProperly(com.nutomic.syncthingandroid.test.syncthing.GetTaskTest)
+03-22 17:30:43.650 I/Choreographer(  380): Skipped 131 frames!  The application may be doing too much work on its main thread.
+03-22 17:30:43.730 I/TestRunner( 1185): finished: testAndroidTestCaseSetupProperly(com.nutomic.syncthingandroid.test.syncthing.GetTaskTest)
+03-22 17:30:43.730 I/TestRunner( 1185): passed: testAndroidTestCaseSetupProperly(com.nutomic.syncthingandroid.test.syncthing.GetTaskTest)
+03-22 17:30:43.730 I/MockWebServer( 1185): MockWebServer[48375] starting to accept connections
+03-22 17:30:43.800 I/TestRunner( 1185): started: testGetNoParams(com.nutomic.syncthingandroid.test.syncthing.GetTaskTest)
+03-22 17:30:43.860 I/Choreographer(  380): Skipped 44 frames!  The application may be doing too much work on its main thread.
+03-22 17:30:43.910 I/MockWebServer( 1185): MockWebServer[41165] starting to accept connections
+03-22 17:30:44.210 D/dalvikvm( 1185): GC_CONCURRENT freed 372K, 24% free 4102K/5344K, paused 68ms+3ms, total 399ms
+03-22 17:30:44.400 I/Choreographer(  380): Skipped 31 frames!  The application may be doing too much work on its main thread.
+03-22 17:30:44.510 I/LatinIME( 1228): Hardware accelerated drawing: false
+03-22 17:30:44.540 I/Choreographer(  380): Skipped 30 frames!  The application may be doing too much work on its main thread.
+03-22 17:30:44.710 I/Choreographer(  380): Skipped 76 frames!  The application may be doing too much work on its main thread.
+03-22 17:30:44.880 I/Choreographer(  380): Skipped 42 frames!  The application may be doing too much work on its main thread.
+03-22 17:30:44.990 W/SurfaceFlinger(   57): couldn't log to binary event log: overflow.
+03-22 17:30:45.260 I/Choreographer( 1185): Skipped 146 frames!  The application may be doing too much work on its main thread.
+03-22 17:30:45.620 W/InputAttributes( 1228): No editor info for this field. Bug?
+03-22 17:30:45.670 I/ResourceUtils( 1228): Found default value: resource=keypress_vibration_durations build=[HARDWARE=goldfish MODEL=sdk BRAND=generic MANUFACTURER=unknown] default=-1
+03-22 17:30:45.680 I/ResourceUtils( 1228): Found default value: resource=keypress_volumes build=[HARDWARE=goldfish MODEL=sdk BRAND=generic MANUFACTURER=unknown] default=-1.0f
+03-22 17:30:45.770 I/LatinIME:LogUtils( 1228): Dictionary info: dictionary = userunigram.en_US.dict ; version = ? ; date = ?
+03-22 17:30:45.810 I/LatinIME:LogUtils( 1228): Dictionary info: dictionary = personalization.en_US.dict ; version = ? ; date = 1427059624
+03-22 17:30:45.860 I/LatinIME:LogUtils( 1228): Dictionary info: dictionary = PersonalizationPredictionDictio ; version = ? ; date = 1427059624
+03-22 17:30:45.860 I/LatinIME:LogUtils( 1228): Dictionary info: dictionary = UserHistoryDictionary.en_US.dic ; version = ? ; date = 1427059624
+03-22 17:30:45.900 D/dalvikvm( 1228): GC_CONCURRENT freed 221K, 10% free 2929K/3224K, paused 14ms+24ms, total 166ms
+03-22 17:30:46.100 I/LatinIME:LogUtils( 1228): Dictionary info: dictionary = main:en ; version = 42 ; date = 1381226429
+03-22 17:30:46.170 I/AlarmClock( 1206): Alarms Table created
+03-22 17:30:46.170 I/AlarmClock( 1206): Instance table created
+03-22 17:30:46.180 I/AlarmClock( 1206): Cities table created
+03-22 17:30:46.190 I/AlarmClock( 1206): Inserting default alarms
+03-22 17:30:46.250 I/AlarmClock( 1206): Displaying next alarm time: ''
+03-22 17:30:46.290 W/BackupManagerService(  380): dataChanged but no participant pkg='com.android.providers.settings' uid=10020
+03-22 17:30:46.310 V/AlarmClock( 1206): AlarmInitReceiver finished
+03-22 17:30:46.320 I/ActivityManager(  380): Delay finish: com.android.email/.service.EmailUpgradeBroadcastReceiver
+03-22 17:30:46.490 D/dalvikvm(  380): GC_CONCURRENT freed 518K, 55% free 5774K/12676K, paused 15ms+5ms, total 87ms
+03-22 17:30:46.580 I/ActivityManager(  380): Resuming delayed broadcast
+03-22 17:30:46.610 I/Email   ( 1003): Onetime initialization: 1
+03-22 17:30:46.610 I/ActivityManager(  380): Delay finish: com.android.email/.service.EmailBroadcastReceiver
+03-22 17:30:46.650 I/Email   ( 1003): Onetime initialization: 2
+03-22 17:30:46.690 I/Email   ( 1003): Onetime initialization: completed.
+03-22 17:30:46.720 I/ActivityManager(  380): Delaying start of: ServiceRecord{b36006d0 u0 com.android.exchange/.service.EmailSyncAdapterService}
+03-22 17:30:46.810 I/ActivityManager(  380): Resuming delayed broadcast
+03-22 17:30:46.860 I/LauncherIconVisibilityManager( 1228): Boot has been completed
+03-22 17:30:46.910 I/LauncherIconVisibilityManager( 1228): Disable activity: ComponentInfo{com.android.inputmethod.latin/com.android.inputmethod.latin.setup.SetupActivity}
+03-22 17:30:47.020 E/BluetoothAdapter(  630): Bluetooth binder is null
+03-22 17:30:47.190 V/AlarmClock( 1206): AlarmInitReceiver android.intent.action.TIMEZONE_CHANGED
+03-22 17:30:47.320 I/AlarmClock( 1206): Displaying next alarm time: ''
+03-22 17:30:47.340 V/AlarmClock( 1206): AlarmInitReceiver finished
+03-22 17:30:47.680 D/MobileDataStateTracker(  380): default: setPolicyDataEnable(enabled=true)
+03-22 17:30:47.710 D/ConnectivityService(  380): Sampling interval elapsed, updating statistics ..
+03-22 17:30:47.710 D/ConnectivityService(  380): Done.
+03-22 17:30:47.710 D/ConnectivityService(  380): Setting timer for 720seconds
+03-22 17:30:47.790 D/dalvikvm( 1129): GC_CONCURRENT freed 226K, 10% free 2871K/3172K, paused 20ms+42ms, total 295ms
+03-22 17:30:47.840 E/StrictMode( 1129): A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+03-22 17:30:47.840 E/StrictMode( 1129): java.lang.Throwable: Explicit termination method 'release' not called
+03-22 17:30:47.840 E/StrictMode( 1129):     at dalvik.system.CloseGuard.open(CloseGuard.java:184)
+03-22 17:30:47.840 E/StrictMode( 1129):     at android.drm.DrmManagerClient.<init>(DrmManagerClient.java:258)
+03-22 17:30:47.840 E/StrictMode( 1129):     at com.google.android.mms.pdu.PduPersister.<init>(PduPersister.java:288)
+03-22 17:30:47.840 E/StrictMode( 1129):     at com.google.android.mms.pdu.PduPersister.getPduPersister(PduPersister.java:296)
+03-22 17:30:47.840 E/StrictMode( 1129):     at com.android.mms.transaction.TransactionService.onNewIntent(TransactionService.java:224)
+03-22 17:30:47.840 E/StrictMode( 1129):     at com.android.mms.transaction.TransactionService$ServiceHandler.handleMessage(TransactionService.java:621)
+03-22 17:30:47.840 E/StrictMode( 1129):     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-22 17:30:47.840 E/StrictMode( 1129):     at android.os.Looper.loop(Looper.java:136)
+03-22 17:30:47.840 E/StrictMode( 1129):     at android.os.HandlerThread.run(HandlerThread.java:61)
+03-22 17:30:47.930 I/ActivityManager(  380): Delay finish: com.android.deskclock/com.android.alarmclock.AnalogAppWidgetProvider
+03-22 17:30:48.100 I/SyncthingNativeCode( 1185): 21:30:48 INFO: Generating RSA key and certificate for syncthing...
+03-22 17:30:48.100 I/ActivityManager(  380): Resuming delayed broadcast
+03-22 17:30:48.100 W/BroadcastQueue(  380): Permission Denial: broadcasting Intent { act=android.appwidget.action.APPWIDGET_UPDATE_OPTIONS flg=0x10 cmp=com.android.settings/.widget.SettingsAppWidgetProvider (has extras) } from android (pid=739, uid=10008) is not exported from uid 1000 due to receiver com.android.settings/.widget.SettingsAppWidgetProvider
+03-22 17:30:48.110 D/        (  380): Setting time of day to sec=1427106449
+03-23 06:27:29.835 I/ActivityManager(  380): Delay finish: com.android.email/.provider.WidgetProvider
+03-23 06:27:29.955 I/ActivityManager(  380): Resuming delayed broadcast
+03-23 06:27:30.115 I/ActivityManager(  380): Start proc com.svox.pico for broadcast com.svox.pico/.VoiceDataInstallerReceiver: pid=1290 uid=10037 gids={50037, 1028, 1015}
+03-23 06:27:30.205 I/PackageManager(  380): Running dexopt on: com.svox.pico
+03-23 06:27:30.595 D/dalvikvm( 1303): DexOpt: load 102ms, verify+opt 75ms, 225028 bytes
+03-23 06:27:30.795 D/dalvikvm(  380): GC_CONCURRENT freed 705K, 55% free 5716K/12676K, paused 16ms+6ms, total 78ms
+03-23 06:27:30.815 E/BluetoothAdapter(  630): Bluetooth binder is null
+03-23 06:27:30.885 D/AlertReceiver( 1162): onReceive: a=android.intent.action.PROVIDER_CHANGED Intent { act=android.intent.action.PROVIDER_CHANGED dat=content://com.android.calendar flg=0x10 cmp=com.android.calendar/.alerts.AlertReceiver }
+03-23 06:27:30.925 D/AlertService( 1162): 0 Action = android.intent.action.PROVIDER_CHANGED
+03-23 06:27:30.925 I/ActivityManager(  380): Delay finish: com.android.calendar/.alerts.AlertReceiver
+03-23 06:27:32.185 D/dalvikvm( 1206): GC_CONCURRENT freed 425K, 16% free 2772K/3272K, paused 4ms+14ms, total 52ms
+03-23 06:27:33.695 D/InitAlarmsService( 1162): Clearing and rescheduling alarms.
+03-23 06:27:33.745 I/MediaFocusControl(  380):  AudioFocus  abandonAudioFocus() from android.media.AudioManager@b2ced730com.android.music.MediaPlaybackService$3@b2cec5b0
+03-23 06:27:35.985 I/GlobalDismissManager( 1162): no sender configured
+03-23 06:27:35.985 D/AlertService( 1162): Beginning updateAlertNotification
+03-23 06:27:36.035 D/AlertService( 1162): No fired or scheduled alerts
+03-23 06:27:36.085 D/AlertService( 1162): Scheduling next alarm with AlarmScheduler. sEventReminderReceived: null
+03-23 06:27:36.145 D/AlarmScheduler( 1162): No events found starting within 1 week.
+03-23 06:27:36.155 I/ActivityManager(  380): Resuming delayed broadcast
+03-23 06:27:36.195 I/ActivityManager(  380): Delay finish: com.android.providers.calendar/.CalendarProviderBroadcastReceiver
+03-23 06:27:36.305 D/dalvikvm( 1096): GC_CONCURRENT freed 219K, 10% free 2884K/3176K, paused 5ms+2ms, total 83ms
+03-23 06:27:36.305 I/ActivityManager(  380): Resuming delayed broadcast
+03-23 06:27:36.995 I/ActivityManager(  380): Delay finish: com.android.mms/.transaction.SmsReceiver
+03-23 06:27:37.005 V/SmsReceiverService( 1129): onStart: #1 mResultCode: -1 = Activity.RESULT_OK
+03-23 06:27:37.105 I/ActivityManager(  380): Resuming delayed broadcast
+03-23 06:27:37.285 V/AlarmClock( 1206): AlarmInitReceiver android.intent.action.TIME_SET
+03-23 06:27:37.625 I/AlarmClock( 1206): Displaying next alarm time: ''
+03-23 06:27:37.675 I/LatinIME:LogUtils( 1228): Dictionary info: dictionary = UserHistoryDictionary.en_US.dic ; version = ? ; date = 1427106457
+03-23 06:27:37.685 V/AlarmClock( 1206): AlarmInitReceiver finished
+03-23 06:27:37.695 V/BackupManagerService(  380): Running a backup pass
+03-23 06:27:37.765 D/LightsService(  380): Excessive delay setting light: 331ms
+03-23 06:27:37.775 D/dalvikvm( 1162): GC_CONCURRENT freed 272K, 11% free 2816K/3160K, paused 15ms+2ms, total 67ms
+03-23 06:27:37.775 V/BackupManagerService(  380): clearing pending backups
+03-23 06:27:37.775 V/PerformBackupTask(  380): Beginning backup of 7 targets
+03-23 06:27:37.895 I/InputReader(  380): Reconfiguring input devices.  changes=0x00000010
+03-23 06:27:37.925 I/InputReader(  380): Reconfiguring input devices.  changes=0x00000010
+03-23 06:27:37.995 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:37.995 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:37.995 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:38.005 I/PackageManager(  380):   Scheme: "sms"
+03-23 06:27:38.045 I/PerformBackupTask(  380): Initializing (wiping) backup state and transport storage
+03-23 06:27:38.155 D/dalvikvm(  739): GC_CONCURRENT freed 777K, 14% free 5472K/6324K, paused 5ms+3ms, total 34ms
+03-23 06:27:38.175 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:38.175 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:38.175 I/PackageManager(  380):   Scheme: "smsto"
+03-23 06:27:38.175 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:38.225 D/BackupManagerService(  380): Now staging backup of android
+03-23 06:27:38.265 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:38.265 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:38.265 I/PackageManager(  380):   Scheme: "mms"
+03-23 06:27:38.265 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:38.355 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:38.355 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:38.355 I/PackageManager(  380):   Scheme: "mmsto"
+03-23 06:27:38.355 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:38.455 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:38.455 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:38.455 I/PackageManager(  380):   Scheme: "sms"
+03-23 06:27:38.455 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:38.515 D/dalvikvm(  380): GC_CONCURRENT freed 644K, 54% free 5847K/12676K, paused 8ms+18ms, total 159ms
+03-23 06:27:38.545 D/dalvikvm(  618): GC_CONCURRENT freed 334K, 12% free 3421K/3884K, paused 6ms+3ms, total 118ms
+03-23 06:27:38.565 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:38.565 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:38.565 I/PackageManager(  380):   Scheme: "smsto"
+03-23 06:27:38.565 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:38.585 D/BackupManagerService(  380): Now staging backup of com.android.providers.settings
+03-23 06:27:38.635 D/BackupManagerService(  380): Now staging backup of com.android.providers.userdictionary
+03-23 06:27:38.655 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:38.655 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:38.655 I/PackageManager(  380):   Scheme: "mms"
+03-23 06:27:38.655 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:38.765 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:38.765 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:38.765 I/PackageManager(  380):   Scheme: "mmsto"
+03-23 06:27:38.765 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:38.845 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:38.845 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:38.845 I/PackageManager(  380):   Scheme: "sms"
+03-23 06:27:38.845 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:38.895 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:38.895 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:38.895 I/PackageManager(  380):   Scheme: "smsto"
+03-23 06:27:38.895 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:38.925 D/BackupManagerService(  380): Now staging backup of com.android.dialer
+03-23 06:27:38.955 D/dalvikvm(  618): GC_CONCURRENT freed 512K, 17% free 3355K/4000K, paused 4ms+2ms, total 33ms
+03-23 06:27:38.955 D/dalvikvm(  618): WAIT_FOR_CONCURRENT_GC blocked 20ms
+03-23 06:27:38.965 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:38.965 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:38.965 I/PackageManager(  380):   Scheme: "mms"
+03-23 06:27:38.965 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:39.005 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:39.005 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:39.005 I/PackageManager(  380):   Scheme: "mmsto"
+03-23 06:27:39.005 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:39.065 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:39.065 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:39.065 I/PackageManager(  380):   Scheme: "sms"
+03-23 06:27:39.065 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:39.145 D/dalvikvm(  380): GC_CONCURRENT freed 840K, 55% free 5797K/12676K, paused 6ms+5ms, total 125ms
+03-23 06:27:39.145 D/dalvikvm(  380): WAIT_FOR_CONCURRENT_GC blocked 62ms
+03-23 06:27:39.155 D/dalvikvm(  380): WAIT_FOR_CONCURRENT_GC blocked 26ms
+03-23 06:27:39.155 D/dalvikvm(  380): WAIT_FOR_CONCURRENT_GC blocked 28ms
+03-23 06:27:39.155 D/dalvikvm(  380): WAIT_FOR_CONCURRENT_GC blocked 29ms
+03-23 06:27:39.175 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:39.185 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:39.185 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:39.185 I/PackageManager(  380):   Scheme: "smsto"
+03-23 06:27:39.215 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:39.215 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:39.215 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:39.225 I/PackageManager(  380):   Scheme: "mms"
+03-23 06:27:39.255 I/PackageManager(  380):   Action: "android.intent.action.SENDTO"
+03-23 06:27:39.255 I/PackageManager(  380):   Category: "android.intent.category.DEFAULT"
+03-23 06:27:39.255 I/PackageManager(  380):   Scheme: "mmsto"
+03-23 06:27:39.255 I/PackageManager(  380): Adding preferred activity ComponentInfo{com.android.mms/com.android.mms.ui.ComposeMessageActivity} for user 0 :
+03-23 06:27:39.285 D/dalvikvm(  380): WAIT_FOR_CONCURRENT_GC blocked 156ms
+03-23 06:27:39.315 D/dalvikvm(  618): GC_CONCURRENT freed 432K, 16% free 3375K/4000K, paused 4ms+3ms, total 32ms
+03-23 06:27:39.345 D/BackupManagerService(  380): Now staging backup of com.android.sharedstoragebackup
+03-23 06:27:39.345 I/ActivityManager(  380): Delay finish: com.android.providers.calendar/.CalendarProviderBroadcastReceiver
+03-23 06:27:39.365 D/BackupManagerService(  380): Now staging backup of com.android.browser
+03-23 06:27:39.385 V/LocalTransport(  380): wiping all data
+03-23 06:27:39.385 D/BackupManagerService(  380): Now staging backup of com.android.calendar
+03-23 06:27:39.505 D/PerformBackupTask(  380): invokeAgentForBackup on @pm@
+03-23 06:27:39.515 I/ActivityManager(  380): Resuming delayed broadcast
+03-23 06:27:39.535 V/BackupServiceBinder(  380): doBackup() invoked
+03-23 06:27:39.535 I/PMBA    (  380): Previous metadata null mismatch vs 938007 - rewriting
+03-23 06:27:39.675 V/LocalTransport(  380): performBackup() pkg=@pm@
+03-23 06:27:39.725 V/LocalTransport(  380): Got change set key=@meta@ size=12 key64=QG1ldGFA
+03-23 06:27:39.725 V/LocalTransport(  380):   data size 12
+03-23 06:27:39.725 V/LocalTransport(  380): Got change set key=com.android.calendar size=1208 key64=Y29tLmFuZHJvaWQuY2FsZW5kYXI=
+03-23 06:27:39.725 V/LocalTransport(  380):   data size 1208
+03-23 06:27:39.725 V/LocalTransport(  380): Got change set key=com.android.browser size=1208 key64=Y29tLmFuZHJvaWQuYnJvd3Nlcg==
+03-23 06:27:39.725 V/LocalTransport(  380):   data size 1208
+03-23 06:27:39.725 V/LocalTransport(  380): Got change set key=com.android.providers.userdictionary size=1208 key64=Y29tLmFuZHJvaWQucHJvdmlkZXJzLnVzZXJkaWN0aW9uYXJ5
+03-23 06:27:39.725 V/LocalTransport(  380):   data size 1208
+03-23 06:27:39.785 V/LocalTransport(  380): Got change set key=com.android.sharedstoragebackup size=1208 key64=Y29tLmFuZHJvaWQuc2hhcmVkc3RvcmFnZWJhY2t1cA==
+03-23 06:27:39.785 V/LocalTransport(  380):   data size 1208
+03-23 06:27:39.785 V/LocalTransport(  380): Got change set key=android size=1208 key64=YW5kcm9pZA==
+03-23 06:27:39.785 V/LocalTransport(  380):   data size 1208
+03-23 06:27:39.795 V/LocalTransport(  380): Got change set key=com.android.dialer size=1208 key64=Y29tLmFuZHJvaWQuZGlhbGVy
+03-23 06:27:39.795 V/LocalTransport(  380):   data size 1208
+03-23 06:27:39.795 V/LocalTransport(  380): Got change set key=com.android.providers.settings size=1208 key64=Y29tLmFuZHJvaWQucHJvdmlkZXJzLnNldHRpbmdz
+03-23 06:27:39.795 V/LocalTransport(  380):   data size 1208
+03-23 06:27:39.805 V/LocalTransport(  380): finishBackup()
+03-23 06:27:39.805 D/PerformBackupTask(  380): starting agent for backup of BackupRequest{pkg=com.android.dialer}
+03-23 06:27:39.815 D/BackupManagerService(  380): awaiting agent for ApplicationInfo{b318a110 com.android.dialer}
+03-23 06:27:39.915 D/BackupManagerService(  380): agentConnected pkg=com.android.dialer agent=android.os.BinderProxy@b2ee3878
+03-23 06:27:39.915 I/BackupManagerService(  380): got agent android.app.IBackupAgent$Stub$Proxy@b2ee3ac0
+03-23 06:27:39.915 D/PerformBackupTask(  380): invokeAgentForBackup on com.android.dialer
+03-23 06:27:39.925 V/BackupServiceBinder( 1068): doBackup() invoked
+03-23 06:27:39.925 D/BackupHelperDispatcher( 1068): handling new helper 'shared_pref'
+03-23 06:27:39.935 I/PerformBackupTask(  380): no backup data written; not calling transport
+03-23 06:27:39.985 D/PerformBackupTask(  380): starting agent for backup of BackupRequest{pkg=com.android.calendar}
+03-23 06:27:40.015 D/BackupManagerService(  380): awaiting agent for ApplicationInfo{b364aa38 com.android.calendar}
+03-23 06:27:40.015 D/BackupManagerService(  380): agentConnected pkg=com.android.calendar agent=android.os.BinderProxy@b35df658
+03-23 06:27:40.025 I/BackupManagerService(  380): got agent android.app.IBackupAgent$Stub$Proxy@b32d73e8
+03-23 06:27:40.025 D/PerformBackupTask(  380): invokeAgentForBackup on com.android.calendar
+03-23 06:27:40.035 V/BackupServiceBinder( 1162): doBackup() invoked
+03-23 06:27:40.035 D/BackupHelperDispatcher( 1162): handling new helper 'shared_pref'
+03-23 06:27:40.065 V/LocalTransport(  380): performBackup() pkg=com.android.calendar
+03-23 06:27:40.065 V/LocalTransport(  380): Got change set key=shared_pref:com.android.calendar_preferences size=738 key64=c2hhcmVkX3ByZWY6Y29tLmFuZHJvaWQuY2FsZW5kYXJfcHJlZmVyZW5jZXM=
+03-23 06:27:40.075 V/LocalTransport(  380):   data size 738
+03-23 06:27:40.075 V/LocalTransport(  380): finishBackup()
+03-23 06:27:40.105 D/PerformBackupTask(  380): starting agent for backup of BackupRequest{pkg=com.android.browser}
+03-23 06:27:40.175 I/ActivityManager(  380): Start proc com.android.browser for backup com.android.browser/.BrowserBackupAgent: pid=1313 uid=10014 gids={50014, 3003, 1028, 1015}
+03-23 06:27:40.175 D/BackupManagerService(  380): awaiting agent for ApplicationInfo{b364be78 com.android.browser}
+03-23 06:27:40.255 I/PackageManager(  380): Running dexopt on: com.android.browser
+03-23 06:27:42.775 D/dalvikvm( 1326): DexOpt: load 624ms, verify+opt 1403ms, 1500508 bytes
+03-23 06:27:43.135 E/ActivityThread( 1313): Failed to find provider info for com.google.settings
+03-23 06:27:43.135 E/ActivityThread( 1313): Failed to find provider info for com.google.settings
+03-23 06:27:43.165 D/BackupManagerService(  380): agentConnected pkg=com.android.browser agent=android.os.BinderProxy@b334a5d8
+03-23 06:27:43.165 I/BackupManagerService(  380): got agent android.app.IBackupAgent$Stub$Proxy@b3317850
+03-23 06:27:43.175 D/PerformBackupTask(  380): invokeAgentForBackup on com.android.browser
+03-23 06:27:43.245 D/dalvikvm(  380): GC_CONCURRENT freed 730K, 55% free 5718K/12676K, paused 6ms+5ms, total 76ms
+03-23 06:28:00.525 V/BackupServiceBinder( 1313): doBackup() invoked
+03-23 06:28:00.525 I/PerformBackupTask(  380): no backup data written; not calling transport
+03-23 06:28:00.545 D/PerformBackupTask(  380): starting agent for backup of BackupRequest{pkg=com.android.providers.userdictionary}
+03-23 06:28:00.545 D/BackupManagerService(  380): awaiting agent for ApplicationInfo{b30e6bf8 com.android.providers.userdictionary}
+03-23 06:28:00.555 D/BackupManagerService(  380): agentConnected pkg=com.android.providers.userdictionary agent=android.os.BinderProxy@b35c5788
+03-23 06:28:00.565 I/BackupManagerService(  380): got agent android.app.IBackupAgent$Stub$Proxy@b3549e80
+03-23 06:28:00.565 V/BackupServiceBinder(  559): doBackup() invoked
+03-23 06:28:00.565 D/PerformBackupTask(  380): invokeAgentForBackup on com.android.providers.userdictionary
+03-23 06:28:00.595 E/DictionaryBackupAgent(  559): Couldn't read from the cursor
+03-23 06:28:00.625 I/PerformBackupTask(  380): no backup data written; not calling transport
+03-23 06:28:00.625 D/PerformBackupTask(  380): starting agent for backup of BackupRequest{pkg=android}
+03-23 06:28:00.655 D/BackupManagerService(  380): awaiting agent for ApplicationInfo{b2d3bde0 android}
+03-23 06:28:00.655 D/BackupManagerService(  380): agentConnected pkg=android agent=android.app.backup.BackupAgent$BackupServiceBinder@b32ccbc0
+03-23 06:28:00.655 I/BackupManagerService(  380): got agent android.app.backup.BackupAgent$BackupServiceBinder@b32ccbc0
+03-23 06:28:00.665 V/BackupServiceBinder(  380): doBackup() invoked
+03-23 06:28:00.665 D/BackupHelperDispatcher(  380): handling new helper 'wallpaper'
+03-23 06:28:00.665 D/PerformBackupTask(  380): invokeAgentForBackup on android
+03-23 06:28:00.675 V/LocalTransport(  380): performBackup() pkg=android
+03-23 06:28:00.705 V/LocalTransport(  380): Got change set key=wallpaper:/data/system/wallpaper_info.xml size=113 key64=d2FsbHBhcGVyOi9kYXRhL3N5c3RlbS93YWxscGFwZXJfaW5mby54bWw=
+03-23 06:28:00.705 V/LocalTransport(  380):   data size 113
+03-23 06:28:00.705 V/LocalTransport(  380): finishBackup()
+03-23 06:28:00.725 D/PerformBackupTask(  380): starting agent for backup of BackupRequest{pkg=com.android.sharedstoragebackup}
+03-23 06:28:00.755 I/ActivityManager(  380): Start proc com.android.sharedstoragebackup for backup com.android.sharedstoragebackup/.SharedStorageAgent: pid=1332 uid=10011 gids={50011, 1028, 1015, 1023}
+03-23 06:28:00.755 D/BackupManagerService(  380): awaiting agent for ApplicationInfo{b3312e40 com.android.sharedstoragebackup}
+03-23 06:28:00.855 I/PackageManager(  380): Running dexopt on: com.android.sharedstoragebackup
+03-23 06:28:01.145 D/dalvikvm( 1345): DexOpt: load 64ms, verify+opt 40ms, 154804 bytes
+03-23 06:28:01.255 D/BackupManagerService(  380): agentConnected pkg=com.android.sharedstoragebackup agent=android.os.BinderProxy@b30e2010
+03-23 06:28:01.265 I/BackupManagerService(  380): got agent android.app.IBackupAgent$Stub$Proxy@b31903c8
+03-23 06:28:01.265 D/PerformBackupTask(  380): invokeAgentForBackup on com.android.sharedstoragebackup
+03-23 06:28:31.375 V/BackupManagerService(  380): TIMEOUT: token=d97ac52
+03-23 06:28:31.375 E/PerformBackupTask(  380): Timeout backing up com.android.sharedstoragebackup
+03-23 06:28:31.385 V/BackupServiceBinder( 1332): doBackup() invoked
+03-23 06:28:31.385 D/PerformBackupTask(  380): starting agent for backup of BackupRequest{pkg=com.android.providers.settings}
+03-23 06:28:31.395 D/BackupManagerService(  380): awaiting agent for ApplicationInfo{b3586e28 com.android.providers.settings}
+03-23 06:28:31.405 D/BackupManagerService(  380): agentConnected pkg=com.android.providers.settings agent=android.app.backup.BackupAgent$BackupServiceBinder@b3348fe8
+03-23 06:28:31.405 I/BackupManagerService(  380): got agent android.app.backup.BackupAgent$BackupServiceBinder@b3348fe8
+03-23 06:28:31.405 D/PerformBackupTask(  380): invokeAgentForBackup on com.android.providers.settings
+03-23 06:28:31.425 V/BackupServiceBinder(  380): doBackup() invoked
+03-23 06:28:31.535 W/SettingsBackupAgent(  380): Couldn't backup /data/misc/wifi/ipconfig.txt
+03-23 06:28:31.565 V/LocalTransport(  380): performBackup() pkg=com.android.providers.settings
+03-23 06:28:31.585 V/LocalTransport(  380): Got change set key=system size=625 key64=c3lzdGVt
+03-23 06:28:31.585 V/LocalTransport(  380):   data size 625
+03-23 06:28:31.585 V/LocalTransport(  380): Got change set key=secure size=391 key64=c2VjdXJl
+03-23 06:28:31.585 V/LocalTransport(  380):   data size 391
+03-23 06:28:31.605 V/LocalTransport(  380): Got change set key=global size=292 key64=Z2xvYmFs
+03-23 06:28:31.605 V/LocalTransport(  380):   data size 292
+03-23 06:28:31.605 V/LocalTransport(  380): Got change set key=locale size=5 key64=bG9jYWxl
+03-23 06:28:31.605 V/LocalTransport(  380):   data size 5
+03-23 06:28:31.615 V/LocalTransport(  380): finishBackup()
+03-23 06:28:31.635 I/PerformBackupTask(  380): Backup pass finished.
+03-23 06:29:00.015 I/ActivityManager(  380): Killing 667:com.android.printspooler/u0a39 (adj 15): empty #17
+03-23 06:29:29.875 I/SyncthingNativeCode( 1185): 10:29:29 INFO: Device ID: IWHF43G-JT4XXYF-3ENDQWJ-P7KDQCN-UZ6NTUE-FAOOPGJ-53R4RAC-5WSCEAP
+03-23 06:29:29.985 I/ConfigXml( 1185): Writing updated config back to file
+03-23 06:29:30.265 D/dalvikvm( 1185): GC_CONCURRENT freed 311K, 12% free 4185K/4740K, paused 6ms+6ms, total 45ms
+03-23 06:29:30.315 I/ConfigXml( 1185): Checking for needed config updates
+03-23 06:29:30.325 I/ConfigXml( 1185): Replacing globalAnnounceServer address with ip
+03-23 06:29:30.335 I/ConfigXml( 1185): Replacing IPv6 globalAnnounceServer address with ip
+03-23 06:29:30.345 I/ConfigXml( 1185): Set 'ignorePerms' on folder camera
+03-23 06:29:30.355 I/ConfigXml( 1185): Writing updated config back to file
+03-23 06:29:30.415 I/SyncthingService( 1185): Web GUI will be available at http://127.0.0.1:8080
+03-23 06:29:30.415 I/SyncthingService( 1185): Starting syncthing according to current state and preferences
+03-23 06:29:30.445 I/ConfigXml( 1185): Checking for needed config updates
+03-23 06:29:30.815 D/dalvikvm(  456): GC_CONCURRENT freed 135K, 6% free 3914K/4128K, paused 25ms+13ms, total 114ms
+03-23 06:29:30.825 D/dalvikvm(  456): WAIT_FOR_CONCURRENT_GC blocked 90ms
+03-23 06:29:33.805 D/dalvikvm( 1185): GC_CONCURRENT freed 769K, 20% free 3806K/4740K, paused 5ms+392ms, total 482ms
+03-23 06:29:36.495 W/GetTask ( 1185): Failed to call Rest API at http://localhost:41165/rest/config
+03-23 06:29:36.495 W/GetTask ( 1185): org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:41165 refused
+03-23 06:29:36.495 W/GetTask ( 1185):   at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:183)
+03-23 06:29:36.495 W/GetTask ( 1185):   at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:164)
+03-23 06:29:36.495 W/GetTask ( 1185):   at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:119)
+03-23 06:29:36.495 W/GetTask ( 1185):   at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:360)
+03-23 06:29:36.495 W/GetTask ( 1185):   at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:555)
+03-23 06:29:36.495 W/GetTask ( 1185):   at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:487)
+03-23 06:29:36.495 W/GetTask ( 1185):   at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:465)
+03-23 06:29:36.495 W/GetTask ( 1185):   at com.nutomic.syncthingandroid.syncthing.GetTask.doInBackground(GetTask.java:63)
+03-23 06:29:36.495 W/GetTask ( 1185):   at com.nutomic.syncthingandroid.syncthing.GetTask.doInBackground(GetTask.java:27)
+03-23 06:29:36.495 W/GetTask ( 1185):   at android.os.AsyncTask$2.call(AsyncTask.java:288)
+03-23 06:29:36.495 W/GetTask ( 1185):   at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+03-23 06:29:36.495 W/GetTask ( 1185):   at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+03-23 06:29:36.495 W/GetTask ( 1185):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+03-23 06:29:36.495 W/GetTask ( 1185):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+03-23 06:29:36.495 W/GetTask ( 1185):   at java.lang.Thread.run(Thread.java:841)
+03-23 06:29:36.495 W/GetTask ( 1185): Caused by: java.net.ConnectException: failed to connect to /127.0.0.1 (port 41165): connect failed: ECONNREFUSED (Connection refused)
+03-23 06:29:36.495 W/GetTask ( 1185):   at libcore.io.IoBridge.connect(IoBridge.java:114)
+03-23 06:29:36.495 W/GetTask ( 1185):   at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:192)
+03-23 06:29:36.495 W/GetTask ( 1185):   at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:459)
+03-23 06:29:36.495 W/GetTask ( 1185):   at java.net.Socket.connect(Socket.java:843)
+03-23 06:29:36.495 W/GetTask ( 1185):   at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:119)
+03-23 06:29:36.495 W/GetTask ( 1185):   at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:144)
+03-23 06:29:36.495 W/GetTask ( 1185):   ... 14 more
+03-23 06:29:36.495 W/GetTask ( 1185): Caused by: libcore.io.ErrnoException: connect failed: ECONNREFUSED (Connection refused)
+03-23 06:29:36.495 W/GetTask ( 1185):   at libcore.io.Posix.connect(Native Method)
+03-23 06:29:36.495 W/GetTask ( 1185):   at libcore.io.BlockGuardOs.connect(BlockGuardOs.java:85)
+03-23 06:29:36.495 W/GetTask ( 1185):   at libcore.io.IoBridge.connectErrno(IoBridge.java:127)
+03-23 06:29:36.495 W/GetTask ( 1185):   at libcore.io.IoBridge.connect(IoBridge.java:112)
+03-23 06:29:36.495 W/GetTask ( 1185):   ... 19 more
+03-23 06:29:36.505 D/AndroidRuntime( 1185): Shutting down VM
+03-23 06:29:36.505 W/dalvikvm( 1185): threadid=1: thread exiting with uncaught exception (group=0xb2a35ba8)
+03-23 06:29:36.505 E/AndroidRuntime( 1185): FATAL EXCEPTION: main
+03-23 06:29:36.505 E/AndroidRuntime( 1185): Process: com.nutomic.syncthingandroid.debug, PID: 1185
+03-23 06:29:36.505 E/AndroidRuntime( 1185): junit.framework.ComparisonFailure: expected:<the response> but was:<null>
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at junit.framework.Assert.assertEquals(Assert.java:85)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at junit.framework.Assert.assertEquals(Assert.java:91)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at com.nutomic.syncthingandroid.test.syncthing.GetTaskTest$1.onPostExecute(GetTaskTest.java:49)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at com.nutomic.syncthingandroid.test.syncthing.GetTaskTest$1.onPostExecute(GetTaskTest.java:46)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at android.os.AsyncTask.finish(AsyncTask.java:632)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at android.os.AsyncTask.access$600(AsyncTask.java:177)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at android.os.Looper.loop(Looper.java:136)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at android.app.ActivityThread.main(ActivityThread.java:5017)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at java.lang.reflect.Method.invokeNative(Native Method)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at java.lang.reflect.Method.invoke(Method.java:515)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:779)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:595)
+03-23 06:29:36.505 E/AndroidRuntime( 1185):     at dalvik.system.NativeStart.main(Native Method)

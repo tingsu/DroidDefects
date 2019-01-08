@@ -1,0 +1,6 @@
+  9706         AndroidRuntime  E  java.lang.NullPointerException
+  9706         AndroidRuntime  E  at edu.emory.mathcs.backport.java.util.concurrent.ConcurrentHashMap.get(ConcurrentHashMap.java:769)
+  9706         AndroidRuntime  E  at net.fortuna.ical4j.model.TimeZoneRegistryImpl.getTimeZone(TimeZoneRegistryImpl.java:136)
+  9706         AndroidRuntime  E  at org.sufficientlysecure.ical.SaveCalendar.run(SaveCalendar.java:85)
+  9706         AndroidRuntime  E  at org.sufficientlysecure.ical.ui.dialogs.DialogTools$2.run(DialogTools.java:85)
+  9706         AndroidRuntime  E  at java.lang.Thread.run(Thread.java:856)

@@ -1,0 +1,43 @@
+E/AndroidRuntime(14933): java.lang.NullPointerException: Attempt to invoke interface method 'void org.thoughtcrime.securesms.components.ThumbnailView$ThumbnailClickListener.onClick(android.view.View, org.thoughtcrime.securesms.mms.Slide)' on a null object reference
+E/AndroidRuntime(14933):    at org.thoughtcrime.securesms.components.ThumbnailView$ThumbnailClickDispatcher.onClick(ThumbnailView.java:180)
+E/AndroidRuntime(14933):    at android.view.View.performClick(View.java:4780)
+E/AndroidRuntime(14933):    at android.view.View$PerformClick.run(View.java:19866)
+E/AndroidRuntime(14933):    at android.os.Handler.handleCallback(Handler.java:739)
+E/AndroidRuntime(14933):    at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime(14933):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(14933):    at android.app.ActivityThread.main(ActivityThread.java:5254)
+E/AndroidRuntime(14933):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(14933):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(14933):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+E/AndroidRuntime(14933):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+I/Process (14933): Sending signal. PID: 14933 SIG: 9
+```
+
+some errors in a future that may be related to crash, comes after crash
+
+```
+W/PartDatabase( 8094): inserting part to mms 3
+W/PartDatabase( 8094): Writing part data from URI
+W/MessageSender( 8094): ws.com.google.android.mms.MmsException: java.io.FileNotFoundException: java.io.FileNotFoundException: Failed to find document file.
+W/MessageSender( 8094):     at org.thoughtcrime.securesms.database.PartDatabase.writePartData(PartDatabase.java:401)
+W/MessageSender( 8094):     at org.thoughtcrime.securesms.database.PartDatabase.insertPart(PartDatabase.java:438)
+W/MessageSender( 8094):     at org.thoughtcrime.securesms.database.PartDatabase.insertParts(PartDatabase.java:228)
+W/MessageSender( 8094):     at org.thoughtcrime.securesms.database.MmsDatabase.insertMediaMessage(MmsDatabase.java:755)
+W/MessageSender( 8094):     at org.thoughtcrime.securesms.database.MmsDatabase.insertMessageOutbox(MmsDatabase.java:724)
+W/MessageSender( 8094):     at org.thoughtcrime.securesms.sms.MessageSender.send(MessageSender.java:102)
+W/MessageSender( 8094):     at org.thoughtcrime.securesms.ConversationActivity$14.doInBackground(ConversationActivity.java:1044)
+W/MessageSender( 8094):     at org.thoughtcrime.securesms.ConversationActivity$14.doInBackground(ConversationActivity.java:1041)
+W/MessageSender( 8094):     at android.os.AsyncTask$2.call(AsyncTask.java:292)
+W/MessageSender( 8094):     at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+W/MessageSender( 8094):     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+W/MessageSender( 8094):     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+W/MessageSender( 8094):     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+W/MessageSender( 8094):     at java.lang.Thread.run(Thread.java:818)
+W/MessageSender( 8094): Caused by: java.io.FileNotFoundException: java.io.FileNotFoundException: Failed to find document file.
+W/MessageSender( 8094):     at android.database.DatabaseUtils.readExceptionWithFileNotFoundExceptionFromParcel(DatabaseUtils.java:146)
+W/MessageSender( 8094):     at android.content.ContentProviderProxy.openTypedAssetFile(ContentProviderNative.java:691)
+W/MessageSender( 8094):     at android.content.ContentResolver.openTypedAssetFileDescriptor(ContentResolver.java:1080)
+W/MessageSender( 8094):     at android.content.ContentResolver.openAssetFileDescriptor(ContentResolver.java:921)
+W/MessageSender( 8094):     at android.content.ContentResolver.openInputStream(ContentResolver.java:646)
+W/MessageSender( 8094):     at org.thoughtcrime.securesms.mms.PartAuthority.getPartStream(PartAuthority.java:44)
+W/MessageSender( 8094):     at org.thoughtcrime.securesms.database.PartDatabase.writePartData(PartDatabase.java:395)

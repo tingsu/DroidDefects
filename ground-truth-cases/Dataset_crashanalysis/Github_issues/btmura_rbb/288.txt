@@ -1,0 +1,24 @@
+        java.lang.NullPointerException
+        at com.btmura.android.reddit.app.LinkFragment$1.onPageFinished(LinkFragment.java:117)
+        at com.android.webview.chromium.WebViewContentsClientAdapter.onPageFinished(WebViewContentsClientAdapter.java:449)
+        at com.android.org.chromium.android_webview.AwContentsClient$AwWebContentsObserver$1.run(AwContentsClient.java:70)
+        at android.os.Handler.handleCallback(Handler.java:733)
+        at android.os.Handler.dispatchMessage(Handler.java:95)
+        at android.os.Looper.loop(Looper.java:137)
+        at android.app.ActivityThread.main(ActivityThread.java:4998)
+        at java.lang.reflect.Method.invokeNative(Native Method)
+        at java.lang.reflect.Method.invoke(Method.java:515)
+        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:777)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:593)
+        at dalvik.system.NativeStart.main(Native Method)
+
+also, when changing topics really fast: 
+ERROR/AndroidRuntime(21079): FATAL EXCEPTION: main
+        Process: com.btmura.android.reddit, PID: 21079
+        java.lang.NullPointerException
+        at com.btmura.android.reddit.app.LinkFragment$1.onPageStarted(LinkFragment.java:78)
+
+ERROR/AndroidRuntime(21203): FATAL EXCEPTION: main
+        Process: com.btmura.android.reddit, PID: 21203
+        java.lang.NullPointerException
+        at com.btmura.android.reddit.app.LinkFragment$1.onPageFinished(LinkFragment.java:83)

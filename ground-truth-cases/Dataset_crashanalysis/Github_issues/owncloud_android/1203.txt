@@ -1,0 +1,62 @@
+10-16 22:01:32.072 I/ValidateNoPeople(  622): skipping global notification
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094): Connection check at https://cloud.domain/owncloud: HTTP violation
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094): org.apache.commons.httpclient.ProtocolException: Unable to parse header: "; max-age=2592000; includeSubDomains
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at org.apache.commons.httpclient.HttpParser.parseHeaders(HttpParser.java:202)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at org.apache.commons.httpclient.HttpMethodBase.readResponseHeaders(HttpMethodBase.java:1935)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at org.apache.commons.httpclient.HttpMethodBase.readResponse(HttpMethodBase.java:1737)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at org.apache.commons.httpclient.HttpMethodBase.execute(HttpMethodBase.java:1098)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:398)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at com.owncloud.android.lib.common.OwnCloudClient.executeMethod(OwnCloudClient.java:222)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at com.owncloud.android.lib.common.OwnCloudClient.executeMethod(OwnCloudClient.java:192)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at com.owncloud.android.lib.resources.status.GetRemoteStatusOperation.tryConnection(GetRemoteStatusOperation.java:89)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at com.owncloud.android.lib.resources.status.GetRemoteStatusOperation.run(GetRemoteStatusOperation.java:194)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at com.owncloud.android.lib.common.operations.RemoteOperation.execute(RemoteOperation.java:136)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at com.owncloud.android.operations.GetServerInfoOperation.run(GetServerInfoOperation.java:81)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at com.owncloud.android.lib.common.operations.RemoteOperation.execute(RemoteOperation.java:136)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at com.owncloud.android.services.OperationsService$ServiceHandler.nextOperation(OperationsService.java:478)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at com.owncloud.android.services.OperationsService$ServiceHandler.handleMessage(OperationsService.java:413)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at android.os.Handler.dispatchMessage(Handler.java:102)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at android.os.Looper.loop(Looper.java:135)
+10-16 22:01:32.894 E/GetRemoteStatusOperation(16094):   at android.os.HandlerThread.run(HandlerThread.java:61)
+```
+
+After removing the header there's another unrecognized error:
+
+```
+10-16 23:44:46.124 D/NetworkUtils(18097): Searching known-servers store at /data/data/com.owncloud.android/files/knownServers.bks
+10-16 23:44:46.157 D/OwnCloudClient #0(18097): Creating OwnCloudClient
+10-16 23:44:46.158 V/SimpleFactoryManager(18097):     new client {@cloud.domain.net/owncloud, 68049972}
+10-16 23:44:46.166 D/OwnCloudClient #0(18097): REQUEST GET /owncloud/status.php
+10-16 23:44:46.185 D/AdvancedSslSocketFactory(18097): Creating SSL Socket with remote cloud.domain.net:443, local null:0, params: org.apache.commons.httpclient.params.HttpConnectionParams@7b92f59
+10-16 23:44:46.185 D/AdvancedSslSocketFactory(18097):  ... with connection timeout 5000 and socket timeout 5000
+10-16 23:44:46.563 D/Sensors (  622): LightSensor readEvents x = 337.000000, raw = 337
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097): Connection check at https://cloud.domain.net/owncloud: SSL recoverable exception
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097): com.owncloud.android.lib.common.network.CertificateCombinedException
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.owncloud.android.lib.common.network.AdvancedX509TrustManager.checkServerTrusted(AdvancedX509TrustManager.java:105)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.android.org.conscrypt.Platform.checkServerTrusted(Platform.java:116)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.android.org.conscrypt.OpenSSLSocketImpl.verifyCertificateChain(OpenSSLSocketImpl.java:550)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:318)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.owncloud.android.lib.common.network.AdvancedSslSocketFactory.verifyPeerIdentity(AdvancedSslSocketFactory.java:248)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.owncloud.android.lib.common.network.AdvancedSslSocketFactory.createSocket(AdvancedSslSocketFactory.java:185)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at org.apache.commons.httpclient.MultiThreadedHttpConnectionManager$HttpConnectionAdapter.open(MultiThreadedHttpConnectionManager.java:1361)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.owncloud.android.lib.common.OwnCloudClient.executeMethod(OwnCloudClient.java:222)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.owncloud.android.lib.common.OwnCloudClient.executeMethod(OwnCloudClient.java:192)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.owncloud.android.lib.resources.status.GetRemoteStatusOperation.tryConnection(GetRemoteStatusOperation.java:89)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.owncloud.android.lib.resources.status.GetRemoteStatusOperation.run(GetRemoteStatusOperation.java:194)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.owncloud.android.lib.common.operations.RemoteOperation.execute(RemoteOperation.java:136)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.owncloud.android.operations.GetServerInfoOperation.run(GetServerInfoOperation.java:81)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.owncloud.android.lib.common.operations.RemoteOperation.execute(RemoteOperation.java:136)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.owncloud.android.services.OperationsService$ServiceHandler.nextOperation(OperationsService.java:478)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at com.owncloud.android.services.OperationsService$ServiceHandler.handleMessage(OperationsService.java:413)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at android.os.Handler.dispatchMessage(Handler.java:102)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at android.os.Looper.loop(Looper.java:135)
+10-16 23:44:46.807 E/GetRemoteStatusOperation(18097):   at android.os.HandlerThread.run(HandlerThread.java:61)

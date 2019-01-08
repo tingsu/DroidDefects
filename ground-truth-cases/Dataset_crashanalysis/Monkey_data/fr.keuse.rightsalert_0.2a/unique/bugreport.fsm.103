@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: fr.keuse.rightsalert
+//version: 0.2a
+//appro_time: 177
+ java.lang.IllegalStateException: The content of the adapter has changed but ListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thread. [in ListView(2131230721, class android.widget.ListView) with Adapter(class fr.keuse.rightsalert.adapter.ApplistAdapter)]
+ 	at android.widget.ListView.layoutChildren(ListView.java:1545)
+ 	at android.widget.AbsListView.onTouchModeChanged(AbsListView.java:3252)
+ 	at android.view.ViewTreeObserver.dispatchOnTouchModeChanged(ViewTreeObserver.java:865)
+ 	at android.view.ViewRootImpl.ensureTouchModeLocally(ViewRootImpl.java:3260)
+ 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1654)
+ 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1004)
+ 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5481)
+ 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:749)
+ 	at android.view.Choreographer.doCallbacks(Choreographer.java:562)
+ 	at android.view.Choreographer.doFrame(Choreographer.java:532)
+ 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:735)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

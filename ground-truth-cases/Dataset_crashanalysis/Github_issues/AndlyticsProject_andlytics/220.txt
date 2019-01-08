@@ -1,0 +1,56 @@
+
+--> Looking at the stack trace it seems to be a problem with the account credentials. So I guess we can just catch the exception and show a toast or something like that.
+
+---
+
+ I have a question about the Andlystics's bug.When I launch the app at the first time,it checked my Google account and I selected it.But the app crashed when I click the button to go to the next steps.
+       Because I am a developer,so I collect some information that I think would be used to help you solve that problem.The attachment was I collected:a screen shot before it crashed and a error log file.
+       Hope these information would help you make andlytics be better.
+
+---
+
+10-17 19:49:06.305: E/AndroidRuntime(18897): FATAL EXCEPTION: main
+10-17 19:49:06.305: E/AndroidRuntime(18897): java.lang.RuntimeException: Unable to start activity ComponentInfo{android/android.accounts.GrantCredentialsPermissionActivity}: java.lang.NullPointerException
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2001)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2028)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at android.app.ActivityThread.access$600(ActivityThread.java:127)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1179)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at android.os.Handler.dispatchMessage(Handler.java:99)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at android.os.Looper.loop(Looper.java:137)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at android.app.ActivityThread.main(ActivityThread.java:4508)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at java.lang.reflect.Method.invokeNative(Native Method)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at java.lang.reflect.Method.invoke(Method.java:511)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:809)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:576)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at dalvik.system.NativeStart.main(Native Method)
+10-17 19:49:06.305: E/AndroidRuntime(18897): Caused by: java.lang.NullPointerException
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at android.accounts.GrantCredentialsPermissionActivity.onCreate(GrantCredentialsPermissionActivity.java:84)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at android.app.Activity.performCreate(Activity.java:4479)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1050)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1965)
+10-17 19:49:06.305: E/AndroidRuntime(18897):    ... 11 more
+10-17 19:49:06.645: E/AEE/LIBAEE(246): read_cmdline:android:ui
+10-17 19:49:06.690: E/WindowManager(18838): Activity com.github.andlyticsproject.Main has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView@41b92458 that was originally added here
+10-17 19:49:06.690: E/WindowManager(18838): android.view.WindowLeaked: Activity com.github.andlyticsproject.Main has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView@41b92458 that was originally added here
+10-17 19:49:06.690: E/WindowManager(18838):     at android.view.ViewRootImpl.<init>(ViewRootImpl.java:367)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:268)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:216)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.view.WindowManagerImpl$CompatModeWrapper.addView(WindowManagerImpl.java:141)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.view.Window$LocalWindowManager.addView(Window.java:537)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.app.Dialog.show(Dialog.java:278)
+10-17 19:49:06.690: E/WindowManager(18838):     at com.github.andlyticsproject.Main.showChangelog(Main.java:758)
+10-17 19:49:06.690: E/WindowManager(18838):     at com.github.andlyticsproject.Main.onCreate(Main.java:136)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.app.Activity.performCreate(Activity.java:4479)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1050)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1965)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2028)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.app.ActivityThread.access$600(ActivityThread.java:127)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1179)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.os.Handler.dispatchMessage(Handler.java:99)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.os.Looper.loop(Looper.java:137)
+10-17 19:49:06.690: E/WindowManager(18838):     at android.app.ActivityThread.main(ActivityThread.java:4508)
+10-17 19:49:06.690: E/WindowManager(18838):     at java.lang.reflect.Method.invokeNative(Native Method)
+10-17 19:49:06.690: E/WindowManager(18838):     at java.lang.reflect.Method.invoke(Method.java:511)
+10-17 19:49:06.690: E/WindowManager(18838):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:809)
+10-17 19:49:06.690: E/WindowManager(18838):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:576)
+10-17 19:49:06.690: E/WindowManager(18838):     at dalvik.system.NativeStart.main(Native Method)

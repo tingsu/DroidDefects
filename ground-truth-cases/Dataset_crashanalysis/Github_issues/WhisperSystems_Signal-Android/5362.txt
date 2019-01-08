@@ -1,0 +1,7 @@
+                      java.lang.Exception
+                          at org.thoughtcrime.redphone.RedPhoneService.terminate(RedPhoneService.java:361)
+                          at org.thoughtcrime.redphone.RedPhoneService.handleHangupCall(RedPhoneService.java:271)
+                          at org.thoughtcrime.redphone.RedPhoneService.onIntentReceived(RedPhoneService.java:150)
+                          at org.thoughtcrime.redphone.RedPhoneService.access$200(RedPhoneService.java:77)
+                          at org.thoughtcrime.redphone.RedPhoneService$IntentRunnable.run(RedPhoneService.java:525)
+                          at java.lang.Thread.run(Thread.java:818)

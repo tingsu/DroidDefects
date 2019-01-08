@@ -1,0 +1,10 @@
+Caused by: java.lang.IndexOutOfBoundsException: setSpan (194 ... 9) has end before start
+    at android.text.SpannableStringInternal.checkRange(SpannableStringInternal.java:341)
+    at android.text.SpannableStringInternal.setSpan(SpannableStringInternal.java:77)
+    at android.text.SpannableString.setSpan(SpannableString.java:46)
+    at org.yaaic.model.Message.render(Message.java:273)
+    at org.yaaic.model.Message.renderTextView(Message.java:331)
+    at org.yaaic.adapter.MessageListAdapter.addMessage(MessageListAdapter.java:87)
+    at org.yaaic.activity.ConversationActivity.onConversationMessage(ConversationActivity.java:516)
+    at org.yaaic.receiver.ConversationReceiver.onReceive(ConversationReceiver.java:70)
+    at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:798)

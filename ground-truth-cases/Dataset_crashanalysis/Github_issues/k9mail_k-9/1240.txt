@@ -1,0 +1,28 @@
+03-31 12:40:23.101 E/Parcel  (  927): java.lang.ClassNotFoundException: com.fsck.k9.search.LocalSearch^M
+03-31 12:40:23.101 E/Parcel  (  927):   at java.lang.Class.classForName(Native Method)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at java.lang.Class.forName(Class.java:308)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at java.lang.Class.forName(Class.java:272)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at android.os.Parcel.readParcelableCreator(Parcel.java:2275)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at android.os.Parcel.readParcelable(Parcel.java:2239)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at android.os.Parcel.readValue(Parcel.java:2146)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at android.os.Parcel.readArrayMapInternal(Parcel.java:2479)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at android.os.BaseBundle.unparcel(BaseBundle.java:221)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at android.os.BaseBundle.getString(BaseBundle.java:918)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at android.content.Intent.getStringExtra(Intent.java:5378)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at com.android.server.am.ActivityStackSupervisor.startActivityLocked(ActivityStackSupervisor.java:1759)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at com.android.server.am.ActivityStackSupervisor.startActivityMayWait(ActivityStackSupervisor.java:1305)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at com.android.server.am.ActivityManagerService.startActivityAsUser(ActivityManagerService.java:4616)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at com.android.server.am.ActivityManagerService.startActivity(ActivityManagerService.java:4454)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:142)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3021)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at android.os.Binder.execTransact(Binder.java:446)^M
+03-31 12:40:23.101 E/Parcel  (  927): Caused by: java.lang.ClassNotFoundException: Didn't find class "com.fsck.k9.search.LocalSearch" on path: DexPathList[[directory "."],nativeLibraryDirectories=[/vendor/lib, /system/lib]]^M
+03-31 12:40:23.101 E/Parcel  (  927):   at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at java.lang.ClassLoader.loadClass(ClassLoader.java:511)^M
+03-31 12:40:23.101 E/Parcel  (  927):   at java.lang.ClassLoader.loadClass(ClassLoader.java:469)^M
+03-31 12:40:23.101 E/Parcel  (  927):   ... 17 more^M
+03-31 12:40:23.101 E/Parcel  (  927):   Suppressed: java.lang.ClassNotFoundException: com.fsck.k9.search.LocalSearch^M
+03-31 12:40:23.101 E/Parcel  (  927):           at java.lang.Class.classForName(Native Method)^M
+03-31 12:40:23.101 E/Parcel  (  927):           at java.lang.BootClassLoader.findClass(ClassLoader.java:781)^M
+03-31 12:40:23.101 E/Parcel  (  927):           at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)^M
+03-31 12:40:23.101 E/Parcel  (  927):           at java.lang.ClassLoader.loadClass(ClassLoader.java:504)^M

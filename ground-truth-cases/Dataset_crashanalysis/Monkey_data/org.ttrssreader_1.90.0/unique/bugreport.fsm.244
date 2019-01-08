@@ -1,0 +1,43 @@
+//this is an auto-generated bug report
+//package name: org.ttrssreader
+//version: 1.90.0
+//appro_time: 171
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{org.ttrssreader/org.ttrssreader.gui.PreferencesActivity}: java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.ClassCastException: java.lang.Long cannot be cast to java.lang.Integer
+ 	at android.app.SharedPreferencesImpl.getInt(SharedPreferencesImpl.java:240)
+ 	at android.preference.Preference.getPersistedInt(Preference.java:1506)
+ 	at org.ttrssreader.preferences.EditIntegerPreference.getPersistedString(EditIntegerPreference.java:41)
+ 	at android.preference.EditTextPreference.onSetInitialValue(EditTextPreference.java:154)
+ 	at android.preference.Preference.dispatchSetInitialValue(Preference.java:1323)
+ 	at android.preference.Preference.onAttachedToHierarchy(Preference.java:1135)
+ 	at android.preference.PreferenceGroup.addPreference(PreferenceGroup.java:163)
+ 	at android.preference.PreferenceGroup.addItemFromInflater(PreferenceGroup.java:104)
+ 	at android.preference.PreferenceGroup.addItemFromInflater(PreferenceGroup.java:45)
+ 	at android.preference.GenericInflater.rInflate(GenericInflater.java:488)
+ 	at android.preference.GenericInflater.rInflate(GenericInflater.java:493)
+ 	at android.preference.GenericInflater.inflate(GenericInflater.java:326)
+ 	at android.preference.GenericInflater.inflate(GenericInflater.java:263)
+ 	at android.preference.PreferenceManager.inflateFromResource(PreferenceManager.java:272)
+ 	at android.preference.PreferenceFragment.addPreferencesFromResource(PreferenceFragment.java:285)
+ 	at org.ttrssreader.gui.fragments.PreferencesFragment.onCreate(PreferencesFragment.java:65)
+ 	at android.app.Fragment.performCreate(Fragment.java:1677)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:854)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1057)
+ 	at android.app.BackStackRecord.run(BackStackRecord.java:682)
+ 	at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1435)
+ 	at android.app.Activity.performStart(Activity.java:5142)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2184)
+ 	... 11 more

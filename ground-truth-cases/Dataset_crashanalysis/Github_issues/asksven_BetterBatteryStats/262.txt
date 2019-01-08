@@ -1,0 +1,13 @@
+E/StatsProvider(12286): Exception: java.lang.NullPointerException
+E/StatsProvider(12286):     at com.asksven.betterbatterystats.data.StatsProvider.getCpuStateList(StatsProvider.java:880)
+E/StatsProvider(12286):     at com.asksven.betterbatterystats.data.StatsProvider.setReference(StatsProvider.java:1448)
+E/StatsProvider(12286):     at com.asksven.betterbatterystats.data.StatsProvider.setCustomReference(StatsProvider.java:1376)
+E/StatsProvider(12286):     at com.asksven.betterbatterystats.StatsActivity$SetCustomRef.doInBackground(StatsActivity.java:863)
+E/StatsProvider(12286):     at com.asksven.betterbatterystats.StatsActivity$SetCustomRef.doInBackground(StatsActivity.java:1)
+E/StatsProvider(12286):     at android.os.AsyncTask$2.call(AsyncTask.java:287)
+E/StatsProvider(12286):     at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+E/StatsProvider(12286):     at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+E/StatsProvider(12286):     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+E/StatsProvider(12286):     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+E/StatsProvider(12286):     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+E/StatsProvider(12286):     at java.lang.Thread.run(Thread.java:856)

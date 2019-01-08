@@ -1,0 +1,144 @@
+03-08 13:48:16.692 W/dalvikvm(2631): VFY: unable to resolve virtual method 552: Landroid/database/sqlite/SQLiteDatabase;.beginTransactionNonExclusive ()V
+03-08 13:48:16.692 D/dalvikvm(2631): VFY: replacing opcode 0x6e at 0x0006
+03-08 13:48:16.842 I/ActivityThread(2631): Pub org.kontalk.users: org.kontalk.provider.UsersProvider
+03-08 13:48:16.842 I/dalvikvm(2631): Could not find method android.database.sqlite.SQLiteDatabase.beginTransactionNonExclusive, referenced from method org.kontalk.provider.UsersProvider.beginTransaction
+03-08 13:48:16.842 W/dalvikvm(2631): VFY: unable to resolve virtual method 552: Landroid/database/sqlite/SQLiteDatabase;.beginTransactionNonExclusive ()V
+03-08 13:48:16.842 D/dalvikvm(2631): VFY: replacing opcode 0x6e at 0x0006
+03-08 13:48:16.992 D/szipinf (2401): Initializing inflate state
+03-08 13:48:17.002 I/dalvikvm(2631): Could not find method org.kontalk.ui.MessagingPreferences.getActionBar, referenced from method org.kontalk.ui.MessagingPreferences.setupActivity
+03-08 13:48:17.002 W/dalvikvm(2631): VFY: unable to resolve virtual method 18845: Lorg/kontalk/ui/MessagingPreferences;.getActionBar ()Landroid/app/ActionBar;
+03-08 13:48:17.002 D/dalvikvm(2631): VFY: replacing opcode 0x6e at 0x0007
+03-08 13:48:17.002 D/dalvikvm(2631): VFY: dead code 0x000a-0010 in Lorg/kontalk/ui/MessagingPreferences;.setupActivity ()V
+03-08 13:48:17.572 D/szipinf (2401): Initializing inflate state
+03-08 13:48:17.622 D/dalvikvm(2568): GC_CONCURRENT freed 407K, 53% free 3148K/6663K, external 8K/513K, paused 6ms+8ms
+03-08 13:48:18.162 D/szipinf (2401): Initializing inflate state
+03-08 13:48:18.532 D/szipinf (2401): Initializing inflate state
+03-08 13:48:19.092 D/dalvikvm(207): GC_CONCURRENT freed 1266K, 57% free 5459K/12679K, external 314K/812K, paused 20ms+15ms
+03-08 13:48:20.742 D/dalvikvm(2631): GC_EXTERNAL_ALLOC freed 117K, 42% free 3778K/6471K, external 0K/0K, paused 113ms
+03-08 13:48:21.162 D/szipinf (2401): Initializing inflate state
+03-08 13:48:21.182 D/dalvikvm(2568): GC_CONCURRENT freed 409K, 53% free 3142K/6663K, external 8K/513K, paused 6ms+7ms
+03-08 13:48:21.252 D/ViewConsistency(2631): AbsListView android.widget.ListView@40618128 enabled= false
+03-08 13:48:21.302 D/ViewConsistency(2631): AbsListView android.widget.ListView@40618128 enabled= false
+03-08 13:48:21.822 D/szipinf (2401): Initializing inflate state
+03-08 13:48:21.952 W/ActivityManager(207): Unable to start service Intent { act=org.kontalk.action.HOLD cmp=org.kontalk/.service.MessageCenterService (has extras) }: not found
+03-08 13:48:22.062 I/ActivityManager(207): Starting: Intent { cmp=org.kontalk/.ui.NumberValidation (has extras) } from pid 2631
+03-08 13:48:22.662 D/dalvikvm(2631): GC_CONCURRENT freed 150K, 41% free 3936K/6599K, external 7K/513K, paused 7ms+13ms
+03-08 13:48:22.972 D/szipinf (2401): Initializing inflate state
+03-08 13:48:23.422 D/dalvikvm(2568): GC_CONCURRENT freed 412K, 53% free 3150K/6663K, external 8K/513K, paused 6ms+23ms
+03-08 13:48:23.532 I/dalvikvm(2631): Total arena pages for JIT: 11
+03-08 13:48:23.972 W/ActivityManager(207): Launch timeout has expired, giving up wake lock!
+03-08 13:48:24.002 D/dalvikvm(2631): GC_CONCURRENT freed 142K, 38% free 4357K/6983K, external 7K/513K, paused 7ms+23ms
+03-08 13:48:24.422 W/ActivityManager(207): Activity idle timeout for HistoryRecord{4053bd40 org.kontalk/.ui.ConversationList}
+03-08 13:48:24.632 D/dalvikvm(2631): GC_CONCURRENT freed 292K, 39% free 4557K/7431K, external 7K/513K, paused 21ms+18ms
+03-08 13:48:24.812 D/dalvikvm(2631): GC_FOR_MALLOC freed 140K, 39% free 4701K/7623K, external 7K/513K, paused 143ms
+03-08 13:48:24.812 I/dalvikvm-heap(2631): Grow heap (frag case) to 7.385MB for 391186-byte allocation
+03-08 13:48:24.972 D/dalvikvm(2631): GC_FOR_MALLOC freed 0K, 37% free 5083K/8007K, external 7K/513K, paused 144ms
+03-08 13:48:25.152 D/dalvikvm(2631): GC_FOR_MALLOC freed 661K, 42% free 4800K/8263K, external 7K/513K, paused 142ms
+03-08 13:48:25.382 D/dalvikvm(2631): GC_FOR_MALLOC freed 284K, 39% free 5088K/8263K, external 7K/513K, paused 184ms
+03-08 13:48:25.482 D/dalvikvm(2568): GC_CONCURRENT freed 411K, 53% free 3156K/6663K, external 8K/513K, paused 6ms+7ms
+03-08 13:48:25.562 D/dalvikvm(2631): GC_FOR_MALLOC freed 447K, 40% free 4991K/8263K, external 7K/513K, paused 139ms
+03-08 13:48:25.752 D/dalvikvm(2631): GC_FOR_MALLOC freed 88K, 39% free 5087K/8263K, external 7K/513K, paused 166ms
+03-08 13:48:25.942 D/dalvikvm(2631): GC_FOR_MALLOC freed 184K, 37% free 5279K/8263K, external 7K/513K, paused 179ms
+03-08 13:48:26.912 D/dalvikvm(2631): GC_CONCURRENT freed 446K, 34% free 5727K/8647K, external 7K/513K, paused 7ms+10ms
+03-08 13:48:27.742 I/dalvikvm(2631): Jit: resizing JitTable from 512 to 1024
+03-08 13:48:28.192 D/HomeLoaders(2181): application intent received: android.intent.action.PACKAGE_CHANGED, replacing=false
+03-08 13:48:28.192 D/HomeLoaders(2181):   --> package:org.kontalk
+03-08 13:48:28.222 D/VoiceDialerReceiver(2369): onReceive Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:org.kontalk flg=0x10000000 cmp=com.android.voicedialer/.VoiceDialerReceiver (has extras) }
+03-08 13:48:28.222 V/RecognizerEngine(2369): deleteCachedGrammarFiles /data/data/com.android.voicedialer/files/openentries.txt
+03-08 13:48:28.232 D/HomeLoaders(2181):   --> sync package org.kontalk
+03-08 13:48:28.282 D/Sources (2401): Creating external source for type=org.kontalk.account, packageName=org.kontalk
+03-08 13:48:28.512 D/dalvikvm(2631): GC_CONCURRENT freed 496K, 33% free 6313K/9287K, external 7K/513K, paused 7ms+40ms
+03-08 13:48:28.842 D/dalvikvm(2568): GC_CONCURRENT freed 416K, 53% free 3164K/6663K, external 8K/513K, paused 21ms+18ms
+03-08 13:48:29.732 I/ActivityManager(207): Process android.process.acore (pid 2401) has died.
+03-08 13:48:29.732 I/WindowManager(207): WIN DEATH: Window{40762ec0 com.android.contacts/com.android.contacts.ViewContactActivity paused=false}
+03-08 13:48:29.772 E/InputDispatcher(207): channel '4075ad08 com.android.contacts/com.android.contacts.DialtactsContactsEntryActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x8
+03-08 13:48:29.772 E/InputDispatcher(207): channel '4075ad08 com.android.contacts/com.android.contacts.DialtactsContactsEntryActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+03-08 13:48:29.792 I/WindowManager(207): WIN DEATH: Window{4075ad08 com.android.contacts/com.android.contacts.DialtactsContactsEntryActivity paused=false}
+03-08 13:48:30.562 D/dalvikvm(2631): GC_CONCURRENT freed 654K, 32% free 6938K/10119K, external 7K/513K, paused 7ms+11ms
+03-08 13:48:32.142 W/ActivityManager(207): Activity idle timeout for HistoryRecord{406ab228 org.kontalk/.ui.NumberValidation}
+03-08 13:48:32.302 D/dalvikvm(2631): GC_CONCURRENT freed 1078K, 33% free 7342K/10951K, external 7K/513K, paused 7ms+25ms
+03-08 13:48:32.542 D/dalvikvm(2568): GC_CONCURRENT freed 415K, 53% free 3168K/6663K, external 8K/513K, paused 6ms+7ms
+03-08 13:48:34.082 E/Sensors (207): light: 1280 lux
+03-08 13:48:34.432 W/ActivityManager(207): Activity destroy timeout for HistoryRecord{4053bd40 org.kontalk/.ui.ConversationList}
+03-08 13:48:34.532 D/dalvikvm(2631): GC_CONCURRENT freed 1032K, 32% free 7877K/11463K, external 7K/513K, paused 7ms+29ms
+03-08 13:48:34.802 I/dalvikvm(2631): Jit: resizing JitTable from 1024 to 2048
+03-08 13:48:35.522 D/dalvikvm(2568): GC_CONCURRENT freed 408K, 53% free 3162K/6663K, external 8K/513K, paused 6ms+6ms
+03-08 13:48:36.342 D/NumberValidation(2631): selecting country IE
+03-08 13:48:36.342 D/CC      (2631): looking for region IE
+03-08 13:48:36.602 W/ActivityManager(207): Unable to start service Intent { act=org.kontalk.action.RELEASE cmp=org.kontalk/.service.MessageCenterService }: not found
+03-08 13:48:37.102 D/AndroidRuntime(2631): Shutting down VM
+03-08 13:48:37.102 W/dalvikvm(2631): threadid=1: thread exiting with uncaught exception (group=0x40018560)
+03-08 13:48:37.152 E/AndroidRuntime(2631): FATAL EXCEPTION: main
+03-08 13:48:37.152 E/AndroidRuntime(2631): java.lang.NullPointerException
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at android.preference.PreferenceManager.getDefaultSharedPreferencesName(PreferenceManager.java:353)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at android.preference.PreferenceManager.getDefaultSharedPreferences(PreferenceManager.java:348)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at org.kontalk.ui.MessagingPreferences.getBoolean(MessagingPreferences.java:340)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at org.kontalk.ui.MessagingPreferences.getOfflineMode(MessagingPreferences.java:522)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at org.kontalk.ui.ConversationListFragment.updateOffline(ConversationListFragment.java:489)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at org.kontalk.ui.ConversationListFragment.onCreateOptionsMenu(ConversationListFragment.java:171)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at android.support.v4.app.Fragment.performCreateOptionsMenu(Fragment.java:1582)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at android.support.v4.app.FragmentManagerImpl.dispatchCreateOptionsMenu(FragmentManager.java:1956)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at android.support.v4.app.FragmentActivity.onCreatePanelMenu(FragmentActivity.java:225)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at android.support.v7.app.ActionBarActivity.superOnCreatePanelMenu(ActionBarActivity.java:232)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at android.support.v7.app.ActionBarActivityDelegateBase$1.run(ActionBarActivityDelegateBase.java:70)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at android.os.Handler.handleCallback(Handler.java:587)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at android.os.Handler.dispatchMessage(Handler.java:92)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at android.os.Looper.loop(Looper.java:130)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at android.app.ActivityThread.main(ActivityThread.java:3835)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at java.lang.reflect.Method.invokeNative(Native Method)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at java.lang.reflect.Method.invoke(Method.java:507)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:864)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:622)
+03-08 13:48:37.152 E/AndroidRuntime(2631):  at dalvik.system.NativeStart.main(Native Method)
+03-08 13:48:37.202 W/ActivityManager(207):   Force finishing activity org.kontalk/.ui.NumberValidation
+03-08 13:48:37.352 D/dalvikvm(2352): GC_EXPLICIT freed 46K, 51% free 2676K/5379K, external 0K/0K, paused 207ms
+03-08 13:48:37.722 W/ActivityManager(207): Activity pause timeout for HistoryRecord{406ab228 org.kontalk/.ui.NumberValidation}
+03-08 13:48:37.772 D/FDroid  (2313): Getting application details for org.kontalk
+03-08 13:48:38.242 D/dalvikvm(207): GC_CONCURRENT freed 725K, 58% free 5416K/12679K, external 314K/812K, paused 12ms+24ms
+03-08 13:48:38.712 D/dalvikvm(2568): GC_CONCURRENT freed 405K, 53% free 3192K/6663K, external 8K/513K, paused 6ms+25ms
+03-08 13:48:38.912 D/FDroid  (2313): Refreshing 1 apps took 1 ms
+03-08 13:48:39.222 I/Process (2631): Sending signal. PID: 2631 SIG: 9
+03-08 13:48:39.632 E/InputDispatcher(207): channel '40787df0 Toast (server)' ~ Consumer closed input channel or an error occurred.  events=0x8
+03-08 13:48:39.632 E/InputDispatcher(207): channel '40787df0 Toast (server)' ~ Channel is unrecoverably broken and will be disposed!
+03-08 13:48:39.632 I/ActivityManager(207): Process org.kontalk (pid 2631) has died.
+03-08 13:48:39.632 W/ActivityManager(207): Scheduling restart of crashed service org.kontalk/.service.KeyPairGeneratorService in 6226ms
+03-08 13:48:39.632 I/WindowManager(207): WIN DEATH: Window{408dc9f0 org.kontalk/org.kontalk.ui.NumberValidation paused=false}
+03-08 13:48:39.662 I/WindowManager(207): WINDOW DIED Window{40787df0 Toast paused=false}
+03-08 13:48:39.742 W/WindowManager(207): Failed looking up window
+03-08 13:48:39.742 W/WindowManager(207): java.lang.IllegalArgumentException: Requested window android.os.BinderProxy@40706570 does not exist
+03-08 13:48:39.742 W/WindowManager(207):    at com.android.server.WindowManagerService.windowForClientLocked(WindowManagerService.java:8301)
+03-08 13:48:39.742 W/WindowManager(207):    at com.android.server.WindowManagerService.windowForClientLocked(WindowManagerService.java:8292)
+03-08 13:48:39.742 W/WindowManager(207):    at com.android.server.WindowManagerService$WindowState$DeathRecipient.binderDied(WindowManagerService.java:7150)
+03-08 13:48:39.742 W/WindowManager(207):    at android.os.BinderProxy.sendDeathNotice(Binder.java:385)
+03-08 13:48:39.742 W/WindowManager(207):    at dalvik.system.NativeStart.run(Native Method)
+03-08 13:48:39.742 I/WindowManager(207): WIN DEATH: null
+03-08 13:48:40.002 W/NotificationService(207): Object died trying to hide notification android.app.ITransientNotification$Stub$Proxy@4072b740 in package org.kontalk
+03-08 13:48:40.002 W/ActivityManager(207): setProcessForeground called on unknown pid: 2631
+03-08 13:48:40.252 D/dalvikvm(2568): GC_CONCURRENT freed 424K, 53% free 3193K/6663K, external 8K/513K, paused 6ms+8ms
+03-08 13:48:42.472 E/Sensors (207): light: 640 lux
+03-08 13:48:42.742 E/Sensors (207): light: 1280 lux
+03-08 13:48:43.012 E/Sensors (207): light: 640 lux
+03-08 13:48:43.792 I/ActivityManager(207): Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10100000 cmp=com.nolanlawson.logcat/.LogcatActivity } from pid 207
+03-08 13:48:44.092 E/Sensors (207): light: 1280 lux
+03-08 13:48:44.312 D/dalvikvm(2568): GC_CONCURRENT freed 421K, 53% free 3187K/6663K, external 8K/513K, paused 6ms+8ms
+03-08 13:48:45.542 W/KeyCharacterMap(2568): Can't open keycharmap file
+03-08 13:48:45.542 W/KeyCharacterMap(2568): Error loading keycharmap file '/system/usr/keychars/synaptics.kcm.bin'. hw.keyboards.131074.devname='synaptics'
+03-08 13:48:45.542 W/KeyCharacterMap(2568): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+03-08 13:48:45.892 I/ActivityManager(207): Start proc org.kontalk for service org.kontalk/.service.KeyPairGeneratorService: pid=2646 uid=10052 gids={3003, 1015}
+03-08 13:48:46.722 D/dalvikvm(2646): GC_CONCURRENT freed 132K, 47% free 3043K/5639K, external 0K/0K, paused 6ms+26ms
+03-08 13:48:46.922 D/dalvikvm(2568): GC_CONCURRENT freed 392K, 53% free 3183K/6663K, external 33K/513K, paused 6ms+29ms
+03-08 13:48:47.622 D/dalvikvm(2646): GC_CONCURRENT freed 233K, 45% free 3370K/6087K, external 0K/0K, paused 6ms+12ms
+03-08 13:48:48.152 E/Sensors (207): light: 640 lux
+03-08 13:48:48.402 D/dalvikvm(2646): GC_CONCURRENT freed 282K, 44% free 3643K/6407K, external 0K/0K, paused 16ms+19ms
+03-08 13:48:48.532 I/ActivityThread(2646): Pub org.kontalk.messages: org.kontalk.provider.MessagesProvider
+03-08 13:48:48.552 I/dalvikvm(2646): Could not find method android.database.sqlite.SQLiteDatabase.beginTransactionNonExclusive, referenced from method org.kontalk.provider.MessagesProvider.beginTransaction
+03-08 13:48:48.552 W/dalvikvm(2646): VFY: unable to resolve virtual method 552: Landroid/database/sqlite/SQLiteDatabase;.beginTransactionNonExclusive ()V
+03-08 13:48:48.552 D/dalvikvm(2646): VFY: replacing opcode 0x6e at 0x0006
+03-08 13:48:48.662 I/ActivityThread(2646): Pub org.kontalk.users: org.kontalk.provider.UsersProvider
+03-08 13:48:48.662 I/dalvikvm(2646): Could not find method android.database.sqlite.SQLiteDatabase.beginTransactionNonExclusive, referenced from method org.kontalk.provider.UsersProvider.beginTransaction
+03-08 13:48:48.662 W/dalvikvm(2646): VFY: unable to resolve virtual method 552: Landroid/database/sqlite/SQLiteDatabase;.beginTransactionNonExclusive ()V
+03-08 13:48:48.662 D/dalvikvm(2646): VFY: replacing opcode 0x6e at 0x0006
+03-08 13:48:48.692 E/Sensors (207): light: 1280 lux
+03-08 13:48:48.842 I/dalvikvm(2646): Could not find method org.kontalk.ui.MessagingPreferences.getActionBar, referenced from method org.kontalk.ui.MessagingPreferences.setupActivity
+03-08 13:48:48.842 W/dalvikvm(2646): VFY: unable to resolve virtual method 18845: Lorg/kontalk/ui/MessagingPreferences;.getActionBar ()Landroid/app/ActionBar;
+03-08 13:48:48.842 D/dalvikvm(2646): VFY: replacing opcode 0x6e at 0x0007

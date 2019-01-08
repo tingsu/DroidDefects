@@ -1,0 +1,9 @@
+//this is an auto-generated bug report
+//package name: net.programmierecke.radiodroid2
+//version: 0.28
+//appro_time: 146
+ FATAL EXCEPTION: Thread-290
+ java.lang.NullPointerException
+ 	at net.programmierecke.radiodroid2.PlayerService.Stop(PlayerService.java:525)
+ 	at net.programmierecke.radiodroid2.PlayerService$4.run(PlayerService.java:427)
+ 	at java.lang.Thread.run(Thread.java:841)

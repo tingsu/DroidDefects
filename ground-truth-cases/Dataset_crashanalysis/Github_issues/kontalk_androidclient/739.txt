@@ -1,0 +1,13 @@
+java.lang.NullPointerException
+       at org.kontalk.ui.ComposeMessageFragment.unregisterPeerObserver(ComposeMessageFragment.java:2467)
+       at org.kontalk.ui.ComposeMessageFragment.access$4000(ComposeMessageFragment.java:150)
+       at org.kontalk.ui.ComposeMessageFragment$MessageListQueryHandler.onQueryComplete(ComposeMessageFragment.java:3040)
+       at android.content.AsyncQueryHandler.handleMessage(AsyncQueryHandler.java:344)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:146)
+       at android.app.ActivityThread.main(ActivityThread.java:5593)
+       at java.lang.reflect.Method.invokeNative(Method.java)
+       at java.lang.reflect.Method.invoke(Method.java:515)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1283)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1099)
+       at dalvik.system.NativeStart.main(NativeStart.java)

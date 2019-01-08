@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: naman14.timber
+//version: 0.14b
+//appro_time: 174
+ java.lang.RuntimeException: Unable to start service com.naman14.timber.MusicService@ad2ba160 with Intent { act=com.naman14.timber.musicservicecommand cmp=naman14.timber/com.naman14.timber.MusicService (has extras) }: java.lang.IllegalArgumentException: setNextMediaPlayer failed.: status=0xFFFFFFED
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2721)
+ 	at android.app.ActivityThread.access$1900(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1353)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.IllegalArgumentException: setNextMediaPlayer failed.: status=0xFFFFFFED
+ 	at android.media.MediaPlayer.setNextMediaPlayer(Native Method)
+ 	at com.naman14.timber.l.b(Unknown Source)
+ 	at com.naman14.timber.MusicService.h(Unknown Source)
+ 	at com.naman14.timber.MusicService.P(Unknown Source)
+ 	at com.naman14.timber.MusicService.a(Unknown Source)
+ 	at com.naman14.timber.MusicService.A(Unknown Source)
+ 	at com.naman14.timber.MusicService.a(Unknown Source)
+ 	at com.naman14.timber.MusicService.onStartCommand(Unknown Source)
+ 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2704)

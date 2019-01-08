@@ -1,0 +1,33 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{us.shandian.blacklight/us.shandian.blacklight.ui.statuses.UserTimeLineActivity}: android.app.Fragment$InstantiationException: Unable to instantiate fragment us.shandian.blacklight.ui.statuses.UserTimeLineFragment: make sure class name exists, is public, and has an empty constructor that is public
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2221)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2280)
+    at android.app.ActivityThread.handleRelaunchActivity(ActivityThread.java:3766)
+    at android.app.ActivityThread.access$900(ActivityThread.java:141)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1208)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.app.ActivityThread.main(ActivityThread.java:5059)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+Caused by: android.app.Fragment$InstantiationException: Unable to instantiate fragment us.shandian.blacklight.ui.statuses.UserTimeLineFragment: make sure class name exists, is public, and has an empty constructor that is public
+    at android.app.Fragment.instantiate(Fragment.java:601)
+    at android.app.FragmentState.instantiate(Fragment.java:98)
+    at android.app.FragmentManagerImpl.restoreAllState(FragmentManager.java:1759)
+    at android.app.Activity.onCreate(Activity.java:903)
+    at android.support.v4.app.FragmentActivity.onCreate(FragmentActivity.java:204)
+    at me.imid.swipebacklayout.lib.app.SwipeBackActivity.onCreate(SwipeBackActivity.java:16)
+    at us.shandian.blacklight.ui.common.AbsActivity.onCreate(AbsActivity.java:45)
+    at us.shandian.blacklight.ui.statuses.UserTimeLineActivity.onCreate(UserTimeLineActivity.java:96)
+    at android.app.Activity.performCreate(Activity.java:5312)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2178)
+    ... 10 more
+Caused by: java.lang.InstantiationException: class us.shandian.blacklight.ui.statuses.UserTimeLineFragment has no zero argument constructor
+    at java.lang.Class.newInstance(Class.java:1550)
+    at android.app.Fragment.instantiate(Fragment.java:590)
+    ... 20 more
+Caused by: java.lang.NoSuchMethodException: <init> []
+    at java.lang.Class.getConstructor(Class.java:528)
+    at java.lang.Class.getDeclaredConstructor(Class.java:507)
+    at java.lang.Class.newInstance(Class.java:1548)

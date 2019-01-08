@@ -1,0 +1,15 @@
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    : java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=0, data=null} to activity {cgeo.geocaching/cgeo.geocaching.maps.mapsforge.v6.NewMap}: java.lang.NullPointerException: Attempt to invoke virtual method 'void cgeo.geocaching.maps.mapsforge.v6.caches.CachesBundle.invalidate java.util.Collection java.util.Collection)' on a null object reference
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at android.app.ActivityThread.deliverResults ActivityThread.java:4925 4925)
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at android.app.ActivityThread.handleSendResult ActivityThread.java:4968 4968)
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at android.app.ActivityThread.access$1600 ActivityThread.java:222 222)
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at android.app.ActivityThread$H.handleMessage ActivityThread.java:1849 1849)
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at android.os.Handler.dispatchMessage Handler.java:102 102)
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at android.os.Looper.loop Looper.java:158 158)
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at android.app.ActivityThread.main ActivityThread.java:7229 7229)
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at java.lang.reflect.Method.invoke Native Method Native Method)
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run ZygoteInit.java:1230 1230)
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at com.android.internal.os.ZygoteInit.main ZygoteInit.java:1120 1120)
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    : Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void cgeo.geocaching.maps.mapsforge.v6.caches.CachesBundle.invalidate java.util.Collection java.util.Collection)' on a null object reference
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at cgeo.geocaching.maps.mapsforge.v6.NewMap.onActivityResult NewMap.java:1256 1256)
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at android.app.Activity.dispatchActivityResult Activity.java:7137 7137)
+10:53:18.423  -10 10:53:18.426 21008 21008 E cgeo    :  at android.app.ActivityThread.deliverResults ActivityThread.java:4921 4921)

@@ -1,0 +1,12 @@
+Fatal Exception: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean org.wordpress.android.models.Comment.willTrashingPermanentlyDelete()' on a null object reference
+       at org.wordpress.android.ui.comments.CommentDetailFragment$4.onClick(CommentDetailFragment.java:287)
+       at android.view.View.performClick(View.java:4856)
+       at android.view.View$PerformClick.run(View.java:19956)
+       at android.os.Handler.handleCallback(Handler.java:739)
+       at android.os.Handler.dispatchMessage(Handler.java:95)
+       at android.os.Looper.loop(Looper.java:211)
+       at android.app.ActivityThread.main(ActivityThread.java:5373)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at java.lang.reflect.Method.invoke(Method.java:372)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1020)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:815)

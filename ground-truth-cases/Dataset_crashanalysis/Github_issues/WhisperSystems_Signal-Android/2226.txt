@@ -1,0 +1,253 @@
+12-15 22:47:05.141 W/dalvikvm(13498): VFY: unable to resolve static field 1516 (SUPPORTED_ABIS) in Landroid/os/Build;
+12-15 22:47:05.141 D/dalvikvm(13498): VFY: replacing opcode 0x62 at 0x0006
+12-15 22:47:05.181 E/dalvikvm(13498): Could not find class 'android.app.Notification$Action$Builder', referenced from method f.a
+12-15 22:47:05.181 W/dalvikvm(13498): VFY: unable to resolve new-instance 403 (Landroid/app/Notification$Action$Builder;) in Lf;
+12-15 22:47:05.181 D/dalvikvm(13498): VFY: replacing opcode 0x22 at 0x0000
+12-15 22:47:05.191 E/dalvikvm(13498): Could not find class 'android.app.RemoteInput$Builder', referenced from method f.a
+12-15 22:47:05.191 W/dalvikvm(13498): VFY: unable to resolve new-instance 415 (Landroid/app/RemoteInput$Builder;) in Lf;
+12-15 22:47:05.191 D/dalvikvm(13498): VFY: replacing opcode 0x22 at 0x003d
+12-15 22:47:05.281 E/dalvikvm(13498): Could not find class 'android.app.Notification$Action$Builder', referenced from method f.a
+12-15 22:47:05.281 W/dalvikvm(13498): VFY: unable to resolve new-instance 403 (Landroid/app/Notification$Action$Builder;) in Lf;
+12-15 22:47:05.281 D/dalvikvm(13498): VFY: replacing opcode 0x22 at 0x0000
+12-15 22:47:05.301 W/dalvikvm(13498): Unable to resolve superclass of Lav; (766)
+12-15 22:47:05.301 W/dalvikvm(13498): Link of class 'Lav;' failed
+12-15 22:47:05.301 E/dalvikvm(13498): Could not find class 'av', referenced from method f.a
+12-15 22:47:05.301 W/dalvikvm(13498): VFY: unable to resolve new-instance 1159 (Lav;) in Lf;
+12-15 22:47:05.301 D/dalvikvm(13498): VFY: replacing opcode 0x22 at 0x0006
+12-15 22:47:05.311 W/dalvikvm(13498): Unable to resolve superclass of Lax; (766)
+12-15 22:47:05.311 W/dalvikvm(13498): Link of class 'Lax;' failed
+12-15 22:47:05.311 E/dalvikvm(13498): Could not find class 'ax', referenced from method f.a
+12-15 22:47:05.311 W/dalvikvm(13498): VFY: unable to resolve new-instance 1213 (Lax;) in Lf;
+12-15 22:47:05.311 D/dalvikvm(13498): VFY: replacing opcode 0x22 at 0x002a
+12-15 22:47:05.321 I/dalvikvm(13498): Could not find method android.view.ViewGroup.isTransitionGroup, referenced from method f.a
+12-15 22:47:05.321 W/dalvikvm(13498): VFY: unable to resolve virtual method 5424: Landroid/view/ViewGroup;.isTransitionGroup ()Z
+12-15 22:47:05.321 D/dalvikvm(13498): VFY: replacing opcode 0x6e at 0x000c
+12-15 22:47:05.321 I/dalvikvm(13498): Could not find method android.view.View.getTransitionName, referenced from method f.a
+12-15 22:47:05.321 W/dalvikvm(13498): VFY: unable to resolve virtual method 5278: Landroid/view/View;.getTransitionName ()Ljava/lang/String;
+12-15 22:47:05.321 D/dalvikvm(13498): VFY: replacing opcode 0x6e at 0x0006
+12-15 22:47:05.331 W/dalvikvm(13498): VFY: unable to find class referenced in signature ([Landroid/app/RemoteInput;)
+12-15 22:47:05.331 E/dalvikvm(13498): Could not find class 'android.app.RemoteInput[]', referenced from method f.a
+12-15 22:47:05.331 W/dalvikvm(13498): VFY: unable to resolve new-array 6293 ([Landroid/app/RemoteInput;) in Lf;
+12-15 22:47:05.331 D/dalvikvm(13498): VFY: replacing opcode 0x23 at 0x0005
+12-15 22:47:05.391 D/dalvikvm(13498): DexOpt: unable to opt direct call 0x0ade at 0x0e in Lf;.a
+12-15 22:47:05.391 D/dalvikvm(13498): DexOpt: unable to opt direct call 0x0b33 at 0x43 in Lf;.a
+12-15 22:47:05.391 D/LightsService(  775): Excessive delay setting light: 726ms
+12-15 22:47:05.391 D/dalvikvm(13498): DexOpt: unable to opt direct call 0x0ade at 0x0e in Lf;.a
+12-15 22:47:05.391 W/dalvikvm(13498): Unable to resolve superclass of Lav; (766)
+12-15 22:47:05.391 W/dalvikvm(13498): Link of class 'Lav;' failed
+12-15 22:47:05.391 D/dalvikvm(13498): DexOpt: unable to opt direct call 0x1cf9 at 0x08 in Lf;.a
+12-15 22:47:05.391 W/dalvikvm(13498): Unable to resolve superclass of Lax; (766)
+12-15 22:47:05.391 W/dalvikvm(13498): Link of class 'Lax;' failed
+12-15 22:47:05.401 D/dalvikvm(13498): DexOpt: unable to opt direct call 0x1dc4 at 0x2c in Lf;.a
+12-15 22:47:05.401 D/dalvikvm(13498): DexOpt: unable to opt direct call 0x0b33 at 0x13 in Lf;.a
+12-15 22:47:05.521 I/dalvikvm(13498): Could not find method android.content.Context.getDrawable, referenced from method i.a
+12-15 22:47:05.521 W/dalvikvm(13498): VFY: unable to resolve virtual method 2962: Landroid/content/Context;.getDrawable (I)Landroid/graphics/drawable/Drawable;
+12-15 22:47:05.521 D/dalvikvm(13498): VFY: replacing opcode 0x6e at 0x0006
+12-15 22:47:05.612 I/Babel   (13498): MmsConfig: mnc/mcc: 1/1
+12-15 22:47:05.612 I/Babel   (13498): MmsConfig.loadMmsSettings
+12-15 22:47:05.622 I/Babel   (13498): MmsConfig.loadDeviceMmsSettings from API: mUserAgent=CyanogenMod, mUaProfUrl=http://www.google.com/oha/rdf/ua-profile-kila.xml
+12-15 22:47:05.622 I/Babel   (13498): MmsConfig.loadFromDatabase
+12-15 22:47:05.752 E/SQLiteLog(13498): (1) no such table: mmsconfig
+12-15 22:47:05.762 I/Babel   (13498): MmsConfig: no mmsconfig table android.database.sqlite.SQLiteException: no such table: mmsconfig (code 1): , while compiling: SELECT key, value, type FROM mmsconfig WHERE numeric=?
+12-15 22:47:05.762 I/Babel   (13498): MmsConfig.loadFromResources
+12-15 22:47:05.782 E/Babel   (13498): canonicalizeMccMnc: invalid mccmnc nullnull
+12-15 22:47:05.782 I/Babel   (13498): MmsConfig.loadMmsSettings: mUserAgent=CyanogenMod, mUaProfUrl=http://www.google.com/oha/rdf/ua-profile-kila.xml
+12-15 22:47:05.982 W/Settings(13498): Setting airplane_mode_on has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+12-15 22:47:06.012 I/Babel_StickerModule(13498): App launched.
+
+12-15 22:47:06.082 D/dalvikvm(13498): VFY: replacing opcode 0x22 at 0x0041
+12-15 22:47:06.092 W/dalvikvm(13498): VFY: unable to find class referenced in signature (Landroid/media/projection/MediaProjection;)
+12-15 22:47:06.092 W/dalvikvm(13498): VFY: unable to find class referenced in signature (Landroid/media/projection/MediaProjection;)
+12-15 22:47:06.092 W/dalvikvm(13498): VFY: unable to find class referenced in signature (Landroid/media/projection/MediaProjection;)
+12-15 22:47:06.102 W/dalvikvm(13498): VFY: unable to find class referenced in signature (Landroid/media/projection/MediaProjectionManager;)
+12-15 22:47:06.112 W/dalvikvm(13498): VFY: unable to resolve virtual method 3618: Landroid/media/projection/MediaProjection;.createVirtualDisplay (Ljava/lang/String;IIIILandroid/view/Surface;Landroid/hardware/display/VirtualDisplay$Callback;Landroid/os/Handler;)Landroid/hardware/display/VirtualDisplay;
+12-15 22:47:06.112 D/dalvikvm(13498): VFY: replacing opcode 0x74 at 0x0057
+12-15 22:47:06.142 W/dalvikvm(13498): VFY: unable to resolve virtual method 3620: Landroid/media/projection/MediaProjection;.stop ()V
+12-15 22:47:06.142 D/dalvikvm(13498): VFY: replacing opcode 0x6e at 0x002d
+12-15 22:47:06.152 W/dalvikvm(13498): VFY: unable to resolve virtual method 3622: Landroid/media/projection/MediaProjectionManager;.createScreenCaptureIntent ()Landroid/content/Intent;
+12-15 22:47:06.152 D/dalvikvm(13498): VFY: replacing opcode 0x6e at 0x0026
+12-15 22:47:06.202 W/dalvikvm(13498): VFY: unable to resolve virtual method 3554: Landroid/media/MediaCodecInfo$CodecCapabilities;.getVideoCapabilities ()Landroid/media/MediaCodecInfo$VideoCapabilities;
+12-15 22:47:06.202 D/dalvikvm(13498): VFY: replacing opcode 0x6e at 0x001f
+12-15 22:47:06.412 I/Babel   (13498): Account Redacted-19 is valid for babel:true
+12-15 22:47:06.412 I/Babel   (13498): Account Redacted-19 matches participantId: false
+12-15 22:47:06.412 I/Babel   (13498): account.getParticipantId(): ParticipantId {chatId: xx  gaiaId: xx}, participantId:ParticipantId {chatId: null  gaiaId: xxx}
+12-15 22:47:06.412 I/Babel   (13498): Account Redacted-3 is valid for babel:true
+12-15 22:47:06.412 I/Babel   (13498): Account Redacted-3 matches participantId: false
+12-15 22:47:06.422 I/Babel   (13498): account.getParticipantId(): ParticipantId {chatId: _sms_only_account  gaiaId: _sms_only_account}, participantId:ParticipantId {chatId: null  gaiaId: xxx}
+12-15 22:47:06.422 I/Babel   (13498): Account Redacted-20 is valid for babel:true
+12-15 22:47:06.422 I/Babel   (13498): Account Redacted-20 matches participantId: true
+12-15 22:47:07.113 D/PhoneStatusBar(20732): disable: < expand* icons alerts ticker* system_info back* home* recent* clock* search >
+12-15 22:47:07.494 I/Babel   (13498): RTCS will handle all server updates.
+12-15 22:47:07.604 I/ActivityManager(  775): Process com.android.deskclock (pid 13357) has died.
+12-15 22:47:12.549 I/InputDispatcher(  775): Window 'Window{4205ffc8 u0 org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity}' spent 4250.8ms processing the last input event: MotionEvent(deviceId=13, source=0x00001002, action=0, flags=0x00000000, metaState=0x00000000, buttonState=0x00000000, edgeFlags=0x00000000, xPrecision=1.0, yPrecision=1.0, displayId=0, pointers=[0: (166.0, 482.0)]), policyFlags=0x47000000
+12-15 22:47:12.549 I/InputDispatcher(  775): Window 'Window{4205ffc8 u0 org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity}' spent 4204.0ms processing the last input event: MotionEvent(deviceId=13, source=0x00001002, action=2, flags=0x00000000, metaState=0x00000000, buttonState=0x00000000, edgeFlags=0x00000000, xPrecision=1.0, yPrecision=1.0, displayId=0, pointers=[0: (166.0, 484.0)]), policyFlags=0x47000000
+12-15 22:47:12.549 I/InputDispatcher(  775): Window 'Window{4205ffc8 u0 org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity}' spent 4188.6ms processing the last input event: MotionEvent(deviceId=13, source=0x00001002, action=2, flags=0x00000000, metaState=0x00000000, buttonState=0x00000000, edgeFlags=0x00000000, xPrecision=1.0, yPrecision=1.0, displayId=0, pointers=[0: (166.0, 494.0)]), policyFlags=0x47000000
+12-15 22:47:12.549 I/InputDispatcher(  775): Window 'Window{4205ffc8 u0 org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity}' spent 4173.0ms processing the last input event: MotionEvent(deviceId=13, source=0x00001002, action=2, flags=0x00000000, metaState=0x00000000, buttonState=0x00000000, edgeFlags=0x00000000, xPrecision=1.0, yPrecision=1.0, displayId=0, pointers=[0: (166.0, 522.0)]), policyFlags=0x47000000
+12-15 22:47:12.549 I/InputDispatcher(  775): Window 'Window{4205ffc8 u0 org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity}' spent 4157.2ms processing the last input event: MotionEvent(deviceId=13, source=0x00001002, action=2, flags=0x00000000, metaState=0x00000000, buttonState=0x00000000, edgeFlags=0x00000000, xPrecision=1.0, yPrecision=1.0, displayId=0, pointers=[0: (167.0, 600.0)]), policyFlags=0x47000000
+12-15 22:47:12.549 I/InputDispatcher(  775): Window 'Window{4205ffc8 u0 org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity}' spent 4141.5ms processing the last input event: MotionEvent(deviceId=13, source=0x00001002, action=2, flags=0x00000000, metaState=0x00000000, buttonState=0x00000000, edgeFlags=0x00000000, xPrecision=1.0, yPrecision=1.0, displayId=0, pointers=[0: (173.0, 720.0)]), policyFlags=0x47000000
+12-15 22:47:12.549 I/InputDispatcher(  775): Window 'Window{4205ffc8 u0 org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity}' spent 4125.8ms processing the last input event: MotionEvent(deviceId=13, source=0x00001002, action=2, flags=0x00000000, metaState=0x00000000, buttonState=0x00000000, edgeFlags=0x00000000, xPrecision=1.0, yPrecision=1.0, displayId=0, pointers=[0: (188.0, 835.0)]), policyFlags=0x47000000
+12-15 22:47:12.549 I/InputDispatcher(  775): Window 'Window{4205ffc8 u0 org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity}' spent 4110.8ms processing the last input event: MotionEvent(deviceId=13, source=0x00001002, action=1, flags=0x00000000, metaState=0x00000000, buttonState=0x00000000, edgeFlags=0x00000000, xPrecision=1.0, yPrecision=1.0, displayId=0, pointers=[0: (188.0, 835.0)]), policyFlags=0x47000000
+12-15 22:47:12.569 W/InputMethodManagerService(  775): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@42003250 attribute=android.view.inputmethod.EditorInfo@41ffc6b8, token = android.os.BinderProxy@42fa8660
+12-15 22:47:12.569 W/MmsCommunication(12962): Getting MMSC params for apn mms
+12-15 22:47:12.579 W/TelephonyUtil(12962): Choosing MCC+MNC info from TelephonyManager.getSimOperator()
+12-15 22:47:12.589 W/ApnDatabase(12962): Choosing locally-overridden MMS settings
+12-15 22:47:12.589 W/ApnDatabase(12962): preference to use local apn set, but no parameters avaiable. falling back.
+12-15 22:47:12.589 W/ApnDatabase(12962): Querying table for MCC+MNC xxxxx and APN name mms
+12-15 22:47:12.599 W/KeyCachingService(12962): Incrementing activity count...
+12-15 22:47:12.609 W/ApnDatabase(12962): Returning preferred APN Apn{ mmsc: "http://imms.orange.sk", proxy: "213.151.208.145", port: 8799, user: "xx", pass: "xx" }
+12-15 22:47:12.859 W/MmsSmsDatabase(12962): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+12-15 22:47:13.009 I/ActivityManager(  775): Process com.anujjain.awaaz (pid 13445) has died.
+12-15 22:47:14.201 I/Timeline(12962): Timeline: Activity_idle id: android.os.BinderProxy@421b2390 time:37458495
+12-15 22:47:17.975 E/PowerManagerService(  775): Invalid boost duration: 5259000
+12-15 22:47:18.325 E/PowerManagerService(  775): Invalid boost duration: 6466000
+12-15 22:47:18.696 E/PowerManagerService(  775): Invalid boost duration: 7605000
+12-15 22:47:29.948 E/PowerManagerService(  775): Invalid boost duration: 5153000
+12-15 22:47:37.245 E/PowerManagerService(  775): Invalid boost duration: 5417000
+12-15 22:47:37.275 W/ImageSlide(12962): Got soft reference: null
+12-15 22:47:37.275 W/ImageSlide(12962): Got soft reference: null
+12-15 22:47:37.275 W/Slide   (12962): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/14
+12-15 22:47:37.275 W/PartDatabase(12962): Getting part at ID: 14
+12-15 22:47:37.275 W/ImageSlide(12962): Got soft reference: null
+12-15 22:47:37.275 W/ImageSlide(12962): Got soft reference: null
+12-15 22:47:37.275 W/ImageSlide(12962): Got soft reference: null
+12-15 22:47:37.275 W/ImageSlide(12962): Got soft reference: null
+12-15 22:47:37.275 W/EncryptingPartDatabase(12962): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part1218276912.mms
+12-15 22:47:37.295 W/Slide   (12962): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/14
+12-15 22:47:37.295 W/PartDatabase(12962): Getting part at ID: 14
+12-15 22:47:37.295 W/EncryptingPartDatabase(12962): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part1218276912.mms
+12-15 22:47:37.385 W/BitmapUtil(12962): rough scale 1280x720 => 640x360
+12-15 22:47:37.385 W/BitmapUtil(12962): fine scale  640x360 => 460.0x258.75
+12-15 22:47:37.395 W/ImageSlide(12962): Got soft reference: null
+12-15 22:47:37.395 W/Slide   (12962): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/11
+12-15 22:47:37.395 W/PartDatabase(12962): Getting part at ID: 11
+12-15 22:47:37.395 W/EncryptingPartDatabase(12962): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1356325894.mms
+12-15 22:47:37.395 W/Slide   (12962): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/11
+12-15 22:47:37.395 W/PartDatabase(12962): Getting part at ID: 11
+12-15 22:47:37.405 W/EncryptingPartDatabase(12962): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part-1356325894.mms
+12-15 22:47:37.456 W/BitmapUtil(12962): rough scale 640x360 => 640x360
+12-15 22:47:37.456 W/BitmapUtil(12962): fine scale  640x360 => 460.0x258.75
+12-15 22:47:37.486 W/ImageSlide(12962): Got soft reference: null
+12-15 22:47:37.486 W/Slide   (12962): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/13
+12-15 22:47:37.496 W/PartDatabase(12962): Getting part at ID: 13
+12-15 22:47:37.496 W/EncryptingPartDatabase(12962): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part966860712.mms
+12-15 22:47:37.496 W/Slide   (12962): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/13
+12-15 22:47:37.496 W/PartDatabase(12962): Getting part at ID: 13
+12-15 22:47:37.496 W/EncryptingPartDatabase(12962): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part966860712.mms
+12-15 22:47:37.586 W/BitmapUtil(12962): rough scale 1280x960 => 640x480
+12-15 22:47:37.586 W/BitmapUtil(12962): fine scale  640x480 => 460.0x345.0
+12-15 22:47:37.586 W/ImageSlide(12962): Got soft reference: java.lang.ref.SoftReference@42763a70
+12-15 22:47:37.586 W/ImageSlide(12962): Got cached bitmap: android.graphics.drawable.BitmapDrawable@4235c048
+12-15 22:47:37.586 W/ImageSlide(12962): Got soft reference: java.lang.ref.SoftReference@42925068
+12-15 22:47:37.586 W/ImageSlide(12962): Got cached bitmap: null
+12-15 22:47:37.586 W/Slide   (12962): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/14
+12-15 22:47:37.586 W/PartDatabase(12962): Getting part at ID: 14
+12-15 22:47:37.586 W/EncryptingPartDatabase(12962): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part1218276912.mms
+12-15 22:47:37.586 W/Slide   (12962): Loading Part URI: content://org.thoughtcrime.provider.securesms/part/14
+12-15 22:47:37.586 W/PartDatabase(12962): Getting part at ID: 14
+12-15 22:47:37.586 W/EncryptingPartDatabase(12962): Getting part at: /data/data/org.thoughtcrime.securesms/app_parts/part1218276912.mms
+12-15 22:47:37.676 W/BitmapUtil(12962): rough scale 1280x720 => 640x360
+12-15 22:47:37.676 W/BitmapUtil(12962): fine scale  640x360 => 460.0x258.75
+12-15 22:47:39.888 I/system_monitor(  297): alarm_callback - Received MAX alarm: xo_therm at Level:14
+12-15 22:47:39.888 I/cpu_frequency(  297): execute_action - cpu frequency mitigation requester = xo_therm freq = 1728000
+12-15 22:47:39.888 I/cpu_frequency(  297): Using previous CPU[0] frequency
+12-15 22:47:39.888 I/cpu_frequency(  297): Using previous CPU[1] frequency
+12-15 22:47:39.888 I/cpu_frequency(  297): Using previous CPU[2] frequency
+12-15 22:47:39.888 I/cpu_frequency(  297): Using previous CPU[3] frequency
+12-15 22:47:39.888 I/cpu_frequency(  297): log_idd - Thermal mitigation:sensor = xo_therm from level = 14 to 13
+12-15 22:47:39.888 E/idd-api (  297): idd_add_event: send failed, socket 22, errcode -2 (No such file or directory)
+12-15 22:47:39.888 E/idd-api (  297): idd_add_event: send failed, socket 23, errcode -2 (No such file or directory)
+12-15 22:47:39.888 E/idd-api (  297): idd_add_event: send failed, socket 23, errcode -2 (No such file or directory)
+12-15 22:47:39.888 I/system_monitor(  297): log_idd - Thermal mitigation:sensor = xo_therm from level = 14 to 13
+12-15 22:47:39.888 E/idd-api (  297): idd_add_event: send failed, socket 22, errcode -2 (No such file or directory)
+12-15 22:47:39.888 I/illumination-service(  317): client disconnected
+12-15 22:47:42.881 W/ImageSlide(12962): Got soft reference: java.lang.ref.SoftReference@42763a70
+12-15 22:47:42.881 W/ImageSlide(12962): Got cached bitmap: android.graphics.drawable.BitmapDrawable@4235c048
+12-15 22:47:42.881 W/ImageSlide(12962): Setting cached thumbnail...
+12-15 22:47:44.343 W/ImageSlide(12962): Got soft reference: java.lang.ref.SoftReference@4285c6c8
+12-15 22:47:44.343 W/ImageSlide(12962): Got cached bitmap: android.graphics.drawable.BitmapDrawable@4292a170
+12-15 22:47:44.343 W/ImageSlide(12962): Setting cached thumbnail...
+12-15 22:47:50.519 I/InputDispatcher(  775): Application is not responding: Window{4205ffc8 u0 org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity}.  It has been 5006.2ms since event, 5005.8ms since wait started.  Reason: Waiting because the touched window has not finished processing the input events that were previously delivered to it.
+12-15 22:47:50.529 I/WindowManager(  775): Input event dispatching timed out sending to org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity.  Reason: Waiting because the touched window has not finished processing the input events that were previously delivered to it.
+12-15 22:47:50.560 I/Process (  775): Sending signal. PID: 12962 SIG: 3
+12-15 22:47:50.560 I/dalvikvm(12962): threadid=3: reacting to signal 3
+12-15 22:47:50.740 I/dalvikvm(12962): Wrote stack traces to '/data/anr/traces.txt'
+12-15 22:47:50.740 I/Process (  775): Sending signal. PID: 775 SIG: 3
+12-15 22:47:50.740 I/dalvikvm(  775): threadid=3: reacting to signal 3
+12-15 22:47:53.112 I/dalvikvm(  775): Wrote stack traces to '/data/anr/traces.txt'
+12-15 22:47:53.112 I/Process (  775): Sending signal. PID: 20732 SIG: 3
+12-15 22:47:53.112 I/dalvikvm(20732): threadid=3: reacting to signal 3
+12-15 22:47:53.112 I/Process (  775): Sending signal. PID: 1151 SIG: 3
+12-15 22:47:53.112 I/dalvikvm( 1151): threadid=3: reacting to signal 3
+12-15 22:47:53.212 I/dalvikvm( 1151): Wrote stack traces to '/data/anr/traces.txt'
+12-15 22:47:53.212 I/Process (  775): Sending signal. PID: 1143 SIG: 3
+12-15 22:47:53.212 I/dalvikvm( 1143): threadid=3: reacting to signal 3
+12-15 22:47:53.302 I/dalvikvm( 1143): Wrote stack traces to '/data/anr/traces.txt'
+12-15 22:47:53.302 I/Process (  775): Sending signal. PID: 1119 SIG: 3
+12-15 22:47:53.302 I/dalvikvm( 1119): threadid=3: reacting to signal 3
+12-15 22:47:53.363 I/dalvikvm( 1119): Wrote stack traces to '/data/anr/traces.txt'
+12-15 22:47:53.363 I/Process (  775): Sending signal. PID: 1107 SIG: 3
+12-15 22:47:53.363 I/dalvikvm( 1107): threadid=3: reacting to signal 3
+12-15 22:47:53.603 I/dalvikvm( 1107): Wrote stack traces to '/data/anr/traces.txt'
+12-15 22:47:53.853 I/dalvikvm(20732): Wrote stack traces to '/data/anr/traces.txt'
+12-15 22:47:53.853 I/Choreographer(20732): Skipped 43 frames!  The application may be doing too much work on its main thread.
+12-15 22:47:55.545 I/InputDispatcher(  775): Application is not responding: Window{4205ffc8 u0 org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity}.  It has been 6424.1ms since event, 5004.0ms since wait started.  Reason: Waiting because the touched window has not finished processing the input events that were previously delivered to it.
+12-15 22:47:55.555 I/WindowManager(  775): Input event dispatching timed out sending to org.thoughtcrime.securesms/org.thoughtcrime.securesms.ConversationActivity.  Reason: Waiting because the touched window has not finished processing the input events that were previously delivered to it.
+12-15 22:47:57.467 E/ActivityManager(  775): ANR in org.thoughtcrime.securesms (org.thoughtcrime.securesms/.ConversationActivity)
+12-15 22:47:57.467 E/ActivityManager(  775): PID: 12962
+12-15 22:47:57.467 E/ActivityManager(  775): Reason: Input dispatching timed out (Waiting because the touched window has not finished processing the input events that were previously delivered to it.)
+12-15 22:47:57.467 E/ActivityManager(  775): Load: 2.57 / 1.96 / 2.89
+12-15 22:47:57.467 E/ActivityManager(  775): CPU usage from 0ms to 6898ms later:
+12-15 22:47:57.467 E/ActivityManager(  775):   96% 12962/org.thoughtcrime.securesms: 89% user + 7.8% kernel / faults: 1875 minor 6 major
+12-15 22:47:57.467 E/ActivityManager(  775):   58% 775/system_server: 32% user + 25% kernel / faults: 1266 minor 4 major
+12-15 22:47:57.467 E/ActivityManager(  775):   8.2% 20732/com.android.systemui: 7.5% user + 0.7% kernel / faults: 163 minor 1 major
+12-15 22:47:57.467 E/ActivityManager(  775):   0% 23983/debuggerd: 0% user + 0% kernel / faults: 2486 minor 78 major
+12-15 22:47:57.467 E/ActivityManager(  775):   2% 305/surfaceflinger: 1% user + 1% kernel / faults: 5 minor
+12-15 22:47:57.467 E/ActivityManager(  775):   0.5% 1107/com.android.phone: 0.3% user + 0.1% kernel / faults: 185 minor 1 major
+12-15 22:47:57.467 E/ActivityManager(  775):   0% 1151/com.android.incallui: 0% user + 0% kernel / faults: 379 minor
+12-15 22:47:57.467 E/ActivityManager(  775):   0.8% 61/kswapd0: 0% user + 0.8% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   0.7% 134/mmcqd/0: 0% user + 0.7% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   0% 1143/com.android.nfc: 0% user + 0% kernel / faults: 228 minor 1 major
+12-15 22:47:57.467 E/ActivityManager(  775):   0% 1119/com.bel.android.dspmanager: 0% user + 0% kernel / faults: 268 minor
+12-15 22:47:57.467 E/ActivityManager(  775):   0.2% 227/mpdecision: 0% user + 0.2% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   0.2% 9818/kworker/0:3: 0% user + 0.2% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   0.2% 13440/kworker/u:3: 0% user + 0.2% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   0.1% 133/irq/299-main_tt: 0% user + 0.1% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   0.1% 339/adbd: 0% user + 0.1% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   0.1% 8064/libsyncthing.so: 0.1% user + 0% kernel / faults: 3 minor
+12-15 22:47:57.467 E/ActivityManager(  775):   0.1% 11731/kworker/u:2: 0% user + 0.1% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   0% 13078/kworker/0:0: 0% user + 0% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   0.1% 13410/logcat: 0% user + 0.1% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   0.1% 13497/kworker/1:1: 0% user + 0.1% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   0.1% 26733/tor: 0.1% user + 0% kernel
+12-15 22:47:57.467 E/ActivityManager(  775): 96% TOTAL: 69% user + 19% kernel + 6.5% iowait + 0% softirq
+12-15 22:47:57.467 E/ActivityManager(  775): CPU usage from 6340ms to 6869ms later:
+12-15 22:47:57.467 E/ActivityManager(  775):   126% 12962/org.thoughtcrime.securesms: 109% user + 16% kernel / faults: 161 minor
+12-15 22:47:57.467 E/ActivityManager(  775):     69% 12962/crime.securesms: 64% user + 5.6% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):     39% 12971/FinalizerDaemon: 28% user + 11% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):     13% 12964/GC: 13% user + 0% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):     5.6% 12970/ReferenceQueueD: 5.6% user + 0% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   37% 775/system_server: 7.5% user + 30% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):     22% 810/system_server: 0% user + 22% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):     7.5% 925/PowerManagerSer: 3.7% user + 3.7% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):     5.6% 812/SensorService: 1.8% user + 3.7% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):     3.7% 816/ActivityManager: 1.8% user + 1.8% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   3.7% 20732/com.android.systemui: 1.8% user + 1.8% kernel / faults: 2 minor
+12-15 22:47:57.467 E/ActivityManager(  775):     3.7% 20732/ndroid.systemui: 1.8% user + 1.8% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):   1.8% 305/surfaceflinger: 1.8% user + 0% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):     1.8% 305/surfaceflinger: 0% user + 1.8% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):     1.8% 492/EventThread: 0% user + 1.8% kernel
+12-15 22:47:57.467 E/ActivityManager(  775):     1.8% 3977/Binder_5: 1.8% user + 0% kernel
+12-15 22:47:57.467 E/ActivityManager(  775): 92% TOTAL: 63% user + 24% kernel + 4.8% iowait
+12-15 22:47:57.467 I/Process (  775): Sending signal. PID: 12962 SIG: 6
+12-15 22:47:57.467 F/libc    (12962): Fatal signal 6 (SIGABRT) at 0x00000307 (code=0), thread 12962 (crime.securesms)
+12-15 22:47:57.477 E/ActivityManager(  775): Error reading /data/anr/traces.txt
+12-15 22:47:57.477 E/ActivityManager(  775): java.io.FileNotFoundException: /data/anr/traces.txt: open failed: ENOENT (No such file or directory)
+12-15 22:47:57.477 E/ActivityManager(  775):    at libcore.io.IoBridge.open(IoBridge.java:409)
+12-15 22:47:57.477 E/ActivityManager(  775):    at libcore.io.IoBridge.open(Native Method)
+12-15 22:47:57.477 E/ActivityManager(  775):    at java.io.FileInputStream.<init>(FileInputStream.java:78)
+12-15 22:47:57.477 E/ActivityManager(  775):    at android.os.FileUtils.readTextFile(FileUtils.java:236)
+12-15 22:47:57.477 E/ActivityManager(  775):    at com.android.server.am.ActivityManagerService$19.run(ActivityManagerService.java:10170)
+12-15 22:47:57.477 E/ActivityManager(  775): Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+12-15 22:47:57.477 E/ActivityManager(  775):    at libcore.io.Posix.open(Native Method)
+12-15 22:47:57.477 E/ActivityManager(  775):    at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+12-15 22:47:57.477 E/ActivityManager(  775):    at libcore.io.IoBridge.open(IoBridge.java:393)

@@ -1,0 +1,12 @@
+java.lang.NumberFormatException: Invalid int: "null"
+    at java.lang.Integer.invalidInt(Integer.java:138)
+    at java.lang.Integer.parseInt(Integer.java:358)
+    at java.lang.Integer.parseInt(Integer.java:334)
+    at java.lang.Integer.valueOf(Integer.java:525)
+    at org.wordpress.android.ui.prefs.SiteSettingsInterface.setLanguageCode(SiteSettingsInterface.java:469)
+    at org.wordpress.android.ui.prefs.SiteSettingsFragment.onPreferenceChange(SiteSettingsFragment.java:372)
+    at android.preference.Preference.callChangeListener(Preference.java:928)
+    at org.wordpress.android.ui.prefs.DetailListPreference.access$500(DetailListPreference.java:30)
+    at org.wordpress.android.ui.prefs.DetailListPreference$DetailListAdapter.changeSelection(DetailListPreference.java:279)
+    at org.wordpress.android.ui.prefs.DetailListPreference$DetailListAdapter.access$400(DetailListPreference.java:217)
+    at org.wordpress.android.ui.prefs.DetailListPreference$DetailListAdapter$2.onClick(DetailListPreference.java:266)

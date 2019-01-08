@@ -1,0 +1,16 @@
+
+After looking at you code I think the issue is in the [LoadAndDisplayImageTask](https://github.com/nostra13/Android-Universal-Image-Loader/blob/master/library/src/com/nostra13/universalimageloader/core/LoadAndDisplayImageTask.java) in the [tryLoadBitmap](https://github.com/nostra13/Android-Universal-Image-Loader/blob/master/library/src/com/nostra13/universalimageloader/core/LoadAndDisplayImageTask.java#L213) method. In here you [decodeImage](https://github.com/nostra13/Android-Universal-Image-Loader/blob/master/library/src/com/nostra13/universalimageloader/core/LoadAndDisplayImageTask.java#L222) which return the image but before returning, the image is save into cache, where most of the time is spend writing to disk, recycled and then taken back from cache again before is finally returned.
+
+I think the image should be returned for display before worrying about saving the image to cache. This can be done after or even on another background thread.
+
+I've tried very quickly to change this two methods [tryCacheImageOnDisk](https://github.com/nostra13/Android-Universal-Image-Loader/blob/master/library/src/com/nostra13/universalimageloader/core/LoadAndDisplayImageTask.java#L268) and [resizeAndSaveImage](https://github.com/nostra13/Android-Universal-Image-Loader/blob/master/library/src/com/nostra13/universalimageloader/core/LoadAndDisplayImageTask.java#L295) to return the bitmap created instead of returning a boolean and then creating another thread to [save](https://github.com/nostra13/Android-Universal-Image-Loader/blob/master/library/src/com/nostra13/universalimageloader/core/LoadAndDisplayImageTask.java#L315). The image loaded very quickly on about ~300 milliseconds but the thread had some issues saving. Here is the error message:
+
+```
+07-29 16:35:39.512 E/AndroidRuntime( 9463): FATAL EXCEPTION: Thread-299
+07-29 16:35:39.512 E/AndroidRuntime( 9463): java.lang.IllegalStateException
+07-29 16:35:39.512 E/AndroidRuntime( 9463):     at com.nostra13.universalimageloader.cache.disc.impl.ext.DiskLruCache.completeEdit(DiskLruCache.java:537)
+07-29 16:35:39.512 E/AndroidRuntime( 9463):     at com.nostra13.universalimageloader.cache.disc.impl.ext.DiskLruCache.access$2300(DiskLruCache.java:87)
+07-29 16:35:39.512 E/AndroidRuntime( 9463):     at com.nostra13.universalimageloader.cache.disc.impl.ext.DiskLruCache$Editor.commit(DiskLruCache.java:858)
+07-29 16:35:39.512 E/AndroidRuntime( 9463):     at com.nostra13.universalimageloader.cache.disc.impl.ext.LruDiscCache.save(LruDiscCache.java:193)
+07-29 16:35:39.512 E/AndroidRuntime( 9463):     at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask$SaveRunnable.run(LoadAndDisplayImageTask.java:384)
+07-29 16:35:39.512 E/AndroidRuntime( 9463):     at java.lang.Thread.run(Thread.java:856)

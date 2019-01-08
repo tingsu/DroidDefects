@@ -1,0 +1,46 @@
+//this is an auto-generated bug report
+//package name: org.voidsink.anewjkuapp
+//version: 0.43.1
+//appro_time: 16
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{org.voidsink.anewjkuapp/org.voidsink.anewjkuapp.activity.MainActivity}: android.content.res.Resources$NotFoundException: File res/drawable/zoom_control_in.xml from drawable resource ID #0x7f020065
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.content.res.Resources$NotFoundException: File res/drawable/zoom_control_in.xml from drawable resource ID #0x7f020065
+ 	at android.content.res.Resources.loadDrawable(Resources.java:2096)
+ 	at android.content.res.Resources.getDrawable(Resources.java:695)
+ 	at android.view.View.setBackgroundResource(View.java:14758)
+ 	at org.mapsforge.map.android.input.MapZoomControls.setZoomInResource(MapZoomControls.java:332)
+ 	at org.voidsink.anewjkuapp.fragment.MapFragment.onCreateView(MapFragment.java:402)
+ 	at android.support.v4.app.Fragment.performCreateView(Fragment.java:2074)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1104)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1286)
+ 	at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:758)
+ 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1671)
+ 	at android.support.v4.app.FragmentController.execPendingActions(FragmentController.java:388)
+ 	at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:619)
+ 	at org.voidsink.anewjkuapp.base.ThemedActivity.onStart(ThemedActivity.java:93)
+ 	at org.voidsink.anewjkuapp.activity.MainActivity.onStart(MainActivity.java:611)
+ 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1171)
+ 	at android.app.Activity.performStart(Activity.java:5143)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2184)
+ Caused by: android.content.res.Resources$NotFoundException: File res/drawable/zoom_control_in_disabled.xml from drawable resource ID #0x7f020066
+ 	at android.content.res.Resources.loadDrawable(Resources.java:2096)
+ 	at android.content.res.Resources.getDrawable(Resources.java:695)
+ 	at android.graphics.drawable.StateListDrawable.inflate(StateListDrawable.java:173)
+ 	at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:901)
+ 	at android.graphics.drawable.Drawable.createFromXml(Drawable.java:837)
+ 	at android.content.res.Resources.loadDrawable(Resources.java:2092)
+ Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #2: invalid drawable tag vector
+ 	at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:897)
+ 	at android.graphics.drawable.Drawable.createFromXml(Drawable.java:837)
+ 	at android.content.res.Resources.loadDrawable(Resources.java:2092)

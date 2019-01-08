@@ -1,0 +1,15 @@
+E/AndroidRuntime( 1993): java.lang.NullPointerException
+E/AndroidRuntime( 1993):        at org.microg.nlp.api.CellBackendHelper.loadCells(CellBackendHelper.java:263)
+E/AndroidRuntime( 1993):        at org.microg.nlp.api.CellBackendHelper.onCellsChanged(CellBackendHelper.java:199)
+E/AndroidRuntime( 1993):        at org.microg.nlp.api.CellBackendHelper.access$100(CellBackendHelper.java:53)
+E/AndroidRuntime( 1993):        at org.microg.nlp.api.CellBackendHelper$1$1.onCellInfoChanged(CellBackendHelper.java:90)
+E/AndroidRuntime( 1993):        at android.telephony.PhoneStateListener$2.handleMessage(PhoneStateListener.java:385)
+E/AndroidRuntime( 1993):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 1993):        at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 1993):        at android.app.ActivityThread.main(ActivityThread.java:5001)
+E/AndroidRuntime( 1993):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1993):        at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 1993):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+E/AndroidRuntime( 1993):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+E/AndroidRuntime( 1993):        at dalvik.system.NativeStart.main(Native Method)
+D/IchnaeaBackendService( 1993): Activating instance at process 1993

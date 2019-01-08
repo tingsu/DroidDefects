@@ -1,0 +1,17 @@
+//this is an auto-generated bug report
+//package name: de.saschahlusiak.freebloks
+//version: 0.5.2
+//appro_time: 45
+ java.util.ConcurrentModificationException
+ 	at java.util.ArrayList$ArrayListIterator.next(ArrayList.java:573)
+ 	at de.saschahlusiak.freebloks.controller.SpielClient.disconnect(SpielClient.java:106)
+ 	at de.saschahlusiak.freebloks.game.ConnectTask.onCancel(ConnectTask.java:111)
+ 	at android.app.Dialog$ListenersHandler.handleMessage(Dialog.java:1235)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

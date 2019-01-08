@@ -1,0 +1,587 @@
+09-30 18:43:27.926 E/        (7578): In Camera destructor GetpOMX_Deinit  passed 
+09-30 18:43:27.926 F/libc    (7578): Fatal signal 11 (SIGSEGV) at 0x00000000 (code=1), thread 18850 (MediaCodec_loop)
+09-30 18:43:27.956 D/ContextualPageReceiver(2327): mContextualPageReceiver: META_CHANGED || PLAYSTATE_CHANGED - , playing - false
+09-30 18:43:27.956 D/ContextualPageReceiver(2327): mContextualPageReceiver: META_CHANGED || PLAYSTATE_CHANGED - , playing - false
+09-30 18:43:27.966 W/Bundle  (7787): Key id expected Long but value was a java.lang.Integer.  The default value 0 was returned.
+09-30 18:43:27.966 W/Bundle  (7787): Attempt to cast generated internal exception:
+09-30 18:43:27.966 W/Bundle  (7787): java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long
+09-30 18:43:27.966 W/Bundle  (7787):    at android.os.Bundle.getLong(Bundle.java:973)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.content.Intent.getLongExtra(Intent.java:4385)
+09-30 18:43:27.966 W/Bundle  (7787):    at com.samsung.avrcp.BtAvrcpHandler.onReceive(BtAvrcpHandler.java:155)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread.handleReceiver(ActivityThread.java:2262)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread.access$1600(ActivityThread.java:134)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1294)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.os.Handler.dispatchMessage(Handler.java:99)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.os.Looper.loop(Looper.java:137)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread.main(ActivityThread.java:4867)
+09-30 18:43:27.966 W/Bundle  (7787):    at java.lang.reflect.Method.invokeNative(Native Method)
+09-30 18:43:27.966 W/Bundle  (7787):    at java.lang.reflect.Method.invoke(Method.java:511)
+09-30 18:43:27.966 W/Bundle  (7787):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1007)
+09-30 18:43:27.966 W/Bundle  (7787):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:774)
+09-30 18:43:27.966 W/Bundle  (7787):    at dalvik.system.NativeStart.main(Native Method)
+09-30 18:43:27.966 W/Bundle  (7787): Key position expected Long but value was a java.lang.Integer.  The default value 0 was returned.
+09-30 18:43:27.966 W/Bundle  (7787): Attempt to cast generated internal exception:
+09-30 18:43:27.966 W/Bundle  (7787): java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long
+09-30 18:43:27.966 W/Bundle  (7787):    at android.os.Bundle.getLong(Bundle.java:973)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.content.Intent.getLongExtra(Intent.java:4385)
+09-30 18:43:27.966 W/Bundle  (7787):    at com.samsung.avrcp.BtAvrcpHandler.onReceive(BtAvrcpHandler.java:162)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread.handleReceiver(ActivityThread.java:2262)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread.access$1600(ActivityThread.java:134)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1294)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.os.Handler.dispatchMessage(Handler.java:99)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.os.Looper.loop(Looper.java:137)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread.main(ActivityThread.java:4867)
+09-30 18:43:27.966 W/Bundle  (7787):    at java.lang.reflect.Method.invokeNative(Native Method)
+09-30 18:43:27.966 W/Bundle  (7787):    at java.lang.reflect.Method.invoke(Method.java:511)
+09-30 18:43:27.966 W/Bundle  (7787):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1007)
+09-30 18:43:27.966 W/Bundle  (7787):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:774)
+09-30 18:43:27.966 W/Bundle  (7787):    at dalvik.system.NativeStart.main(Native Method)
+09-30 18:43:28.256 I/DEBUG   (1661): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-30 18:43:28.256 I/DEBUG   (1661): Build fingerprint: 'samsung/codinaMetroPCS/codinaMetroPCS:4.1.2/JZO54K/T599NUVAOH1:user/release-keys'
+09-30 18:43:28.256 I/DEBUG   (1661): pid: 7578, tid: 18850, name: MediaCodec_loop  >>> de.danoeh.antennapod <<<
+09-30 18:43:28.256 I/DEBUG   (1661): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00000000
+09-30 18:43:28.767 I/DEBUG   (1661):     r0 00000000  r1 00000000  r2 00009c20  r3 00000000
+...
+...
+09-30 18:43:28.767 I/DEBUG   (1661): backtrace:
+09-30 18:43:28.767 I/DEBUG   (1661):     #00  pc 0000e4cc  /system/lib/libc.so (memset+248)
+09-30 18:43:28.767 I/DEBUG   (1661):     #01  pc 00001824  /system/lib/libsomxcore.so (SEC_OMX_Component_Unregister+16)
+...
+09-30 18:43:28.767 I/DEBUG   (1661): stack:
+...
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d7c  413cf21d  /system/lib/libstagefright_omx.so (android::OMXMaster::~OMXMaster()+8)
+...
+...
+09-30 18:43:37.235 I/dumpstate(22171): done
+09-30 18:43:37.335 W/AudioService(2015):   RemoteControlClient died
+09-30 18:43:37.335 I/ActivityManager(2015): Process de.danoeh.antennapod (pid 7578) has died.
+
+```
+
+**logcat (full)**
+
+```
+09-30 18:43:26.545 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54cdade0 time 1615725346 us, flags = 0x00000000
+09-30 18:43:26.545 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54c24668
+09-30 18:43:26.555 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x54c23e48 w/ time 1615751469 us
+09-30 18:43:26.555 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x54c23e48
+09-30 18:43:26.555 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54c24668 time 1615751469 us, flags = 0x00000000
+09-30 18:43:26.575 D/ProgressBar(7578): setProgress = 99
+09-30 18:43:26.575 D/ProgressBar(7578): setProgress = 99, fromUser = false
+09-30 18:43:26.575 D/ProgressBar(7578): mProgress = 99mIndeterminate = false, mMin = 0, mMax = 100
+09-30 18:43:26.605 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x4da1e070
+09-30 18:43:26.615 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4da330f8 w/ time 1615777591 us
+09-30 18:43:26.615 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4da330f8
+09-30 18:43:26.615 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x4da1e070 time 1615777591 us, flags = 0x00000000
+09-30 18:43:26.615 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x53afcbb0
+09-30 18:43:26.615 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x53cb5310 w/ time 1615803714 us
+09-30 18:43:26.615 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x53cb5310
+09-30 18:43:26.615 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x53afcbb0 time 1615803714 us, flags = 0x00000000
+09-30 18:43:26.645 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54cdade0
+09-30 18:43:26.645 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4c7df910 w/ time 1615829836 us
+09-30 18:43:26.645 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4c7df910
+09-30 18:43:26.645 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54cdade0 time 1615829836 us, flags = 0x00000000
+09-30 18:43:26.675 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54c24668
+09-30 18:43:26.675 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x54c23e48 w/ time 1615855959 us
+09-30 18:43:26.675 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x54c23e48
+09-30 18:43:26.675 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54c24668 time 1615855959 us, flags = 0x00000000
+09-30 18:43:26.675 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x4da1e070
+09-30 18:43:26.675 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4da330f8 w/ time 1615882081 us
+09-30 18:43:26.675 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4da330f8
+09-30 18:43:26.675 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x4da1e070 time 1615882081 us, flags = 0x00000000
+09-30 18:43:26.705 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x53afcbb0
+09-30 18:43:26.705 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x53cb5310 w/ time 1615908204 us
+09-30 18:43:26.705 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x53cb5310
+09-30 18:43:26.705 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x53afcbb0 time 1615908204 us, flags = 0x00000000
+09-30 18:43:26.735 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54cdade0
+09-30 18:43:26.735 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4c7df910 w/ time 1615934326 us
+09-30 18:43:26.745 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4c7df910
+09-30 18:43:26.745 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54cdade0 time 1615934326 us, flags = 0x00000000
+09-30 18:43:26.765 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54c24668
+09-30 18:43:26.775 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x54c23e48 w/ time 1615960448 us
+09-30 18:43:26.775 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x54c23e48
+09-30 18:43:26.775 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54c24668 time 1615960448 us, flags = 0x00000000
+09-30 18:43:26.805 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x4da1e070
+09-30 18:43:26.805 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4da330f8 w/ time 1615986571 us
+09-30 18:43:26.805 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4da330f8
+09-30 18:43:26.805 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x4da1e070 time 1615986571 us, flags = 0x00000000
+09-30 18:43:26.835 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x53afcbb0
+09-30 18:43:26.835 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x53cb5310 w/ time 1616012693 us
+09-30 18:43:26.835 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x53cb5310
+09-30 18:43:26.835 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x53afcbb0 time 1616012693 us, flags = 0x00000000
+09-30 18:43:26.835 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54cdade0
+09-30 18:43:26.835 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4c7df910 w/ time 1616038816 us
+09-30 18:43:26.845 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4c7df910
+09-30 18:43:26.845 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54cdade0 time 1616038816 us, flags = 0x00000000
+09-30 18:43:26.865 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54c24668
+09-30 18:43:26.865 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x54c23e48 w/ time 1616064938 us
+09-30 18:43:26.865 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x54c23e48
+09-30 18:43:26.865 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54c24668 time 1616064938 us, flags = 0x00000000
+09-30 18:43:26.895 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x4da1e070
+09-30 18:43:26.895 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4da330f8 w/ time 1616091061 us
+09-30 18:43:26.905 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4da330f8
+09-30 18:43:26.905 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x4da1e070 time 1616091061 us, flags = 0x00000000
+09-30 18:43:26.925 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x53afcbb0
+09-30 18:43:26.935 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x53cb5310 w/ time 1616117183 us
+09-30 18:43:26.935 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x53cb5310
+09-30 18:43:26.935 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x53afcbb0 time 1616117183 us, flags = 0x00000000
+09-30 18:43:26.965 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54cdade0
+09-30 18:43:26.965 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4c7df910 w/ time 1616143306 us
+09-30 18:43:26.965 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4c7df910
+09-30 18:43:26.965 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54cdade0 time 1616143306 us, flags = 0x00000000
+09-30 18:43:26.965 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54c24668
+09-30 18:43:26.965 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x54c23e48 w/ time 1616169428 us
+09-30 18:43:26.965 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x54c23e48
+09-30 18:43:26.965 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54c24668 time 1616169428 us, flags = 0x00000000
+09-30 18:43:26.995 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x4da1e070
+09-30 18:43:26.995 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4da330f8 w/ time 1616195551 us
+09-30 18:43:26.995 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4da330f8
+09-30 18:43:26.995 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x4da1e070 time 1616195551 us, flags = 0x00000000
+09-30 18:43:27.055 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x53afcbb0
+09-30 18:43:27.055 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x53cb5310 w/ time 1616221673 us
+09-30 18:43:27.055 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x53cb5310
+09-30 18:43:27.065 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x53afcbb0 time 1616221673 us, flags = 0x00000000
+09-30 18:43:27.065 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54cdade0
+09-30 18:43:27.065 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4c7df910 w/ time 1616247795 us
+09-30 18:43:27.065 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4c7df910
+09-30 18:43:27.065 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54cdade0 time 1616247795 us, flags = 0x00000000
+09-30 18:43:27.085 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54c24668
+09-30 18:43:27.095 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x54c23e48 w/ time 1616273918 us
+09-30 18:43:27.095 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x54c23e48
+09-30 18:43:27.095 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54c24668 time 1616273918 us, flags = 0x00000000
+09-30 18:43:27.125 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x4da1e070
+09-30 18:43:27.125 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4da330f8 w/ time 1616300040 us
+09-30 18:43:27.125 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4da330f8
+09-30 18:43:27.135 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x4da1e070 time 1616300040 us, flags = 0x00000000
+09-30 18:43:27.135 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x53afcbb0
+09-30 18:43:27.135 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x53cb5310 w/ time 1616326163 us
+09-30 18:43:27.135 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x53cb5310
+09-30 18:43:27.135 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x53afcbb0 time 1616326163 us, flags = 0x00000000
+09-30 18:43:27.155 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54cdade0
+09-30 18:43:27.155 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4c7df910 w/ time 1616352285 us
+09-30 18:43:27.155 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4c7df910
+09-30 18:43:27.155 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54cdade0 time 1616352285 us, flags = 0x00000000
+09-30 18:43:27.185 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54c24668
+09-30 18:43:27.185 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x54c23e48 w/ time 1616378408 us
+09-30 18:43:27.185 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x54c23e48
+09-30 18:43:27.185 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54c24668 time 1616378408 us, flags = 0x00000000
+09-30 18:43:27.215 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x4da1e070
+09-30 18:43:27.215 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4da330f8 w/ time 1616404530 us
+09-30 18:43:27.215 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4da330f8
+09-30 18:43:27.215 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x4da1e070 time 1616404530 us, flags = 0x00000000
+09-30 18:43:27.245 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x53afcbb0
+09-30 18:43:27.245 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x53cb5310 w/ time 1616430653 us
+09-30 18:43:27.245 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x53cb5310
+09-30 18:43:27.245 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x53afcbb0 time 1616430653 us, flags = 0x00000000
+09-30 18:43:27.255 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54cdade0
+09-30 18:43:27.255 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4c7df910 w/ time 1616456775 us
+09-30 18:43:27.255 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4c7df910
+09-30 18:43:27.255 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54cdade0 time 1616456775 us, flags = 0x00000000
+09-30 18:43:27.285 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54c24668
+09-30 18:43:27.285 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x54c23e48 w/ time 1616482897 us
+09-30 18:43:27.285 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x54c23e48
+09-30 18:43:27.285 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54c24668 time 1616482897 us, flags = 0x00000000
+09-30 18:43:27.346 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x4da1e070
+09-30 18:43:27.346 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4da330f8 w/ time 1616509020 us
+09-30 18:43:27.346 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4da330f8
+09-30 18:43:27.346 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x4da1e070 time 1616509020 us, flags = 0x00000000
+09-30 18:43:27.346 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x53afcbb0
+09-30 18:43:27.356 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x53cb5310 w/ time 1616535142 us
+09-30 18:43:27.356 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x53cb5310
+09-30 18:43:27.356 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x53afcbb0 time 1616535142 us, flags = 0x00000000
+09-30 18:43:27.376 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54cdade0
+09-30 18:43:27.376 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4c7df910 w/ time 1616561265 us
+09-30 18:43:27.386 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4c7df910
+09-30 18:43:27.386 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54cdade0 time 1616561265 us, flags = 0x00000000
+09-30 18:43:27.416 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x54c24668
+09-30 18:43:27.416 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x54c23e48 w/ time 1616587387 us
+09-30 18:43:27.416 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x54c23e48
+09-30 18:43:27.416 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x54c24668 time 1616587387 us, flags = 0x00000000
+09-30 18:43:27.416 V/ACodec  (7578): [OMX.google.mp3.decoder] calling fillBuffer 0x4da1e070
+09-30 18:43:27.416 V/ACodec  (7578): [OMX.google.mp3.decoder] calling emptyBuffer 0x4da330f8 w/ EOS
+09-30 18:43:27.416 V/ACodec  (7578): [OMX.google.mp3.decoder] Signalled EOS on the input port
+09-30 18:43:27.416 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXEmptyBufferDone 0x4da330f8
+09-30 18:43:27.416 V/ACodec  (7578): [OMX.google.mp3.decoder] onOMXFillBufferDone 0x4da1e070 time 1616509020 us, flags = 0x00000001
+09-30 18:43:27.416 V/ACodec  (7578): [OMX.google.mp3.decoder] saw output EOS
+09-30 18:43:27.446 V/ACodec  (7578): [OMX.google.mp3.decoder] Now Executing->Idle
+09-30 18:43:27.446 V/ACodec  (7578): [OMX.google.mp3.decoder] saw error -1011 instead of an input buffer
+09-30 18:43:27.446 V/ACodec  (7578): [OMX.google.mp3.decoder] saw error -1011 instead of an input buffer
+09-30 18:43:27.446 V/ACodec  (7578): [OMX.google.mp3.decoder] saw error -1011 instead of an input buffer
+09-30 18:43:27.446 V/ACodec  (7578): [OMX.google.mp3.decoder] Now Idle->Loaded
+09-30 18:43:27.446 V/ACodec  (7578): [OMX.google.mp3.decoder] Now Loaded
+09-30 18:43:27.576 D/ProgressBar(7578): setProgress = 99
+09-30 18:43:27.576 D/ProgressBar(7578): setProgress = 99, fromUser = false
+09-30 18:43:27.576 D/ProgressBar(7578): mProgress = 99mIndeterminate = false, mMin = 0, mMax = 100
+09-30 18:43:27.846 V/AudioPolicyManagerBase(1682): stopOutput() output 2, stream 3, session 141
+09-30 18:43:27.846 V/AudioPolicyManagerBase(1682): changeRefCount() stream 3, count 1
+09-30 18:43:27.926 E/        (7578): In Camera destructor GetpOMX_Deinit  passed 
+09-30 18:43:27.926 F/libc    (7578): Fatal signal 11 (SIGSEGV) at 0x00000000 (code=1), thread 18850 (MediaCodec_loop)
+09-30 18:43:27.956 D/ContextualPageReceiver(2327): mContextualPageReceiver: META_CHANGED || PLAYSTATE_CHANGED - , playing - false
+09-30 18:43:27.956 D/ContextualPageReceiver(2327): mContextualPageReceiver: META_CHANGED || PLAYSTATE_CHANGED - , playing - false
+09-30 18:43:27.966 W/Bundle  (7787): Key id expected Long but value was a java.lang.Integer.  The default value 0 was returned.
+09-30 18:43:27.966 W/Bundle  (7787): Attempt to cast generated internal exception:
+09-30 18:43:27.966 W/Bundle  (7787): java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long
+09-30 18:43:27.966 W/Bundle  (7787):    at android.os.Bundle.getLong(Bundle.java:973)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.content.Intent.getLongExtra(Intent.java:4385)
+09-30 18:43:27.966 W/Bundle  (7787):    at com.samsung.avrcp.BtAvrcpHandler.onReceive(BtAvrcpHandler.java:155)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread.handleReceiver(ActivityThread.java:2262)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread.access$1600(ActivityThread.java:134)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1294)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.os.Handler.dispatchMessage(Handler.java:99)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.os.Looper.loop(Looper.java:137)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread.main(ActivityThread.java:4867)
+09-30 18:43:27.966 W/Bundle  (7787):    at java.lang.reflect.Method.invokeNative(Native Method)
+09-30 18:43:27.966 W/Bundle  (7787):    at java.lang.reflect.Method.invoke(Method.java:511)
+09-30 18:43:27.966 W/Bundle  (7787):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1007)
+09-30 18:43:27.966 W/Bundle  (7787):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:774)
+09-30 18:43:27.966 W/Bundle  (7787):    at dalvik.system.NativeStart.main(Native Method)
+09-30 18:43:27.966 W/Bundle  (7787): Key position expected Long but value was a java.lang.Integer.  The default value 0 was returned.
+09-30 18:43:27.966 W/Bundle  (7787): Attempt to cast generated internal exception:
+09-30 18:43:27.966 W/Bundle  (7787): java.lang.ClassCastException: java.lang.Integer cannot be cast to java.lang.Long
+09-30 18:43:27.966 W/Bundle  (7787):    at android.os.Bundle.getLong(Bundle.java:973)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.content.Intent.getLongExtra(Intent.java:4385)
+09-30 18:43:27.966 W/Bundle  (7787):    at com.samsung.avrcp.BtAvrcpHandler.onReceive(BtAvrcpHandler.java:162)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread.handleReceiver(ActivityThread.java:2262)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread.access$1600(ActivityThread.java:134)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1294)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.os.Handler.dispatchMessage(Handler.java:99)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.os.Looper.loop(Looper.java:137)
+09-30 18:43:27.966 W/Bundle  (7787):    at android.app.ActivityThread.main(ActivityThread.java:4867)
+09-30 18:43:27.966 W/Bundle  (7787):    at java.lang.reflect.Method.invokeNative(Native Method)
+09-30 18:43:27.966 W/Bundle  (7787):    at java.lang.reflect.Method.invoke(Method.java:511)
+09-30 18:43:27.966 W/Bundle  (7787):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1007)
+09-30 18:43:27.966 W/Bundle  (7787):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:774)
+09-30 18:43:27.966 W/Bundle  (7787):    at dalvik.system.NativeStart.main(Native Method)
+09-30 18:43:28.256 I/DEBUG   (1661): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+09-30 18:43:28.256 I/DEBUG   (1661): Build fingerprint: 'samsung/codinaMetroPCS/codinaMetroPCS:4.1.2/JZO54K/T599NUVAOH1:user/release-keys'
+09-30 18:43:28.256 I/DEBUG   (1661): pid: 7578, tid: 18850, name: MediaCodec_loop  >>> de.danoeh.antennapod <<<
+09-30 18:43:28.256 I/DEBUG   (1661): signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 00000000
+09-30 18:43:28.767 I/DEBUG   (1661):     r0 00000000  r1 00000000  r2 00009c20  r3 00000000
+09-30 18:43:28.767 I/DEBUG   (1661):     r4 00000000  r5 00000000  r6 00000000  r7 00000000
+09-30 18:43:28.767 I/DEBUG   (1661):     r8 00000000  r9 58bf2e80  sl 00000000  fp 00000001
+09-30 18:43:28.767 I/DEBUG   (1661):     ip 00000000  sp 58bf2d28  lr 00000000  pc 400294cc  cpsr 20000010
+09-30 18:43:28.767 I/DEBUG   (1661):     d0  736170202074696e  d1  7572747320646573
+09-30 18:43:28.767 I/DEBUG   (1661):     d2  74654720726f7463  d3  6965445f584d4f70
+09-30 18:43:28.767 I/DEBUG   (1661):     d4  0000000000000000  d5  0000000000000000
+09-30 18:43:28.767 I/DEBUG   (1661):     d6  0000000000000000  d7  0000000000000000
+09-30 18:43:28.767 I/DEBUG   (1661):     d8  3f8000003f800000  d9  0000000000000000
+09-30 18:43:28.767 I/DEBUG   (1661):     d10 0000000000000000  d11 0000000000000000
+09-30 18:43:28.767 I/DEBUG   (1661):     d12 0000000000000000  d13 0000000000000000
+09-30 18:43:28.767 I/DEBUG   (1661):     d14 0000000000000000  d15 0000000000000000
+09-30 18:43:28.767 I/DEBUG   (1661):     d16 000000000000000a  d17 000000000000000a
+09-30 18:43:28.767 I/DEBUG   (1661):     d18 0000000049443303  d19 0000000000000001
+09-30 18:43:28.767 I/DEBUG   (1661):     d20 0000000000000000  d21 0000000000000000
+09-30 18:43:28.767 I/DEBUG   (1661):     d22 0000000000000000  d23 0000000000000000
+09-30 18:43:28.767 I/DEBUG   (1661):     d24 0100000001000000  d25 0100000001000000
+09-30 18:43:28.767 I/DEBUG   (1661):     d26 0100000001000000  d27 0100000001000000
+09-30 18:43:28.767 I/DEBUG   (1661):     d28 0000000000000006  d29 0000000000000000
+09-30 18:43:28.767 I/DEBUG   (1661):     d30 0000000000000000  d31 0000000000000021
+09-30 18:43:28.767 I/DEBUG   (1661):     scr 20000010
+09-30 18:43:28.767 I/DEBUG   (1661): 
+09-30 18:43:28.767 I/DEBUG   (1661): backtrace:
+09-30 18:43:28.767 I/DEBUG   (1661):     #00  pc 0000e4cc  /system/lib/libc.so (memset+248)
+09-30 18:43:28.767 I/DEBUG   (1661):     #01  pc 00001824  /system/lib/libsomxcore.so (SEC_OMX_Component_Unregister+16)
+09-30 18:43:28.767 I/DEBUG   (1661): 
+09-30 18:43:28.767 I/DEBUG   (1661): stack:
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2ce8  0000005f  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2cec  4162eaa0  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2cf0  556ee918  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2cf4  40031e71  /system/lib/libc.so (free+12)
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2cf8  00001000  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2cfc  00000000  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d00  00000000  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d04  00000000  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d08  0000005f  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d0c  4003069d  /system/lib/libc.so (dlfree+56)
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d10  4158b00c  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d14  4158b008  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d18  00001000  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d1c  4da560e0  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d20  df0027ad  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d24  00000000  
+09-30 18:43:28.767 I/DEBUG   (1661):     #00  58bf2d28  00000000  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d2c  00000000  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d30  53cf399c  
+09-30 18:43:28.767 I/DEBUG   (1661):          58bf2d34  54c22368  
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d38  00000000  
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d3c  4e560828  /system/lib/libsomxcore.so (SEC_OMX_Component_Unregister+20)
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d40  4e5621e4  /system/lib/libsomxcore.so
+09-30 18:43:28.777 I/DEBUG   (1661):     #01  58bf2d44  4e561104  /system/lib/libsomxcore.so (SEC_OMX_DeInit+40)
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d48  55c8e590  
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d4c  4e561500  /system/lib/libsomxcore.so (android::SECOMXPlugin::~SECOMXPlugin()+52)
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d50  55c8e590  
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d54  4e56152c  /system/lib/libsomxcore.so (android::SECOMXPlugin::~SECOMXPlugin()+12)
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d58  53cf3998  
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d5c  413cf1a1  /system/lib/libstagefright_omx.so (android::OMXMaster::clearPlugins()+60)
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d60  53cf3998  
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d64  54845a1c  
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d68  4da2a37c  
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d6c  58bf2e4c  
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d70  54842208  
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d74  413cf1d5  /system/lib/libstagefright_omx.so (android::OMXMaster::~OMXMaster()+16)
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d78  53cf3998  
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d7c  413cf21d  /system/lib/libstagefright_omx.so (android::OMXMaster::~OMXMaster()+8)
+09-30 18:43:28.777 I/DEBUG   (1661):          58bf2d80  548459c0  
+09-30 18:43:28.777 I/DEBUG   (1661): 
+09-30 18:43:28.777 I/DEBUG   (1661): memory near r2:
+09-30 18:43:28.777 I/DEBUG   (1661):     00009c00 ffffffff ffffffff ffffffff ffffffff  ................
+09-30 18:43:28.777 I/DEBUG   (1661):     00009c10 ffffffff ffffffff ffffffff ffffffff  ................
+09-30 18:43:28.777 I/DEBUG   (1661):     00009c20 ffffffff ffffffff ffffffff ffffffff  ................
+09-30 18:43:28.777 I/DEBUG   (1661):     00009c30 ffffffff ffffffff ffffffff ffffffff  ................
+09-30 18:43:28.777 I/DEBUG   (1661):     00009c40 ffffffff ffffffff ffffffff ffffffff  ................
+09-30 18:43:28.777 I/DEBUG   (1661): 
+09-30 18:43:28.777 I/DEBUG   (1661): memory near r9:
+09-30 18:43:28.777 I/DEBUG   (1661):     58bf2e60 400efb1d 00100000 55ca5c18 40bd9e01  ...@.....\.U...@
+09-30 18:43:28.777 I/DEBUG   (1661):     58bf2e70 00000000 00030d40 02c09f65 0000000c  ....@...e.......
+09-30 18:43:28.777 I/DEBUG   (1661):     58bf2e80 4da3bd90 55ca5bd4 55ca5bc8 55ca5bc8  ...M.[.U.[.U.[.U
+09-30 18:43:28.777 I/DEBUG   (1661):     58bf2e90 58bf2ea8 55ca5bc8 55ca5bd4 400efb1d  ...X.[.U.[.U...@
+09-30 18:43:28.777 I/DEBUG   (1661):     58bf2ea0 00100000 400f003d 55ca5bc8 55ca5bc8  ....=..@.[.U.[.U
+09-30 18:43:28.777 I/DEBUG   (1661): 
+09-30 18:43:28.777 I/DEBUG   (1661): memory near sp:
+09-30 18:43:28.777 I/DEBUG   (1661):     58bf2d08 0000005f 4003069d 4158b00c 4158b008  _......@..XA..XA
+09-30 18:43:28.777 I/DEBUG   (1661):     58bf2d18 00001000 4da560e0 df0027ad 00000000  .....`.M.'......
+09-30 18:43:28.777 I/DEBUG   (1661):     58bf2d28 00000000 00000000 53cf399c 54c22368  .........9.Sh#.T
+09-30 18:43:28.777 I/DEBUG   (1661):     58bf2d38 00000000 4e560828 4e5621e4 4e561104  ....(.VN.!VN..VN
+09-30 18:43:28.777 I/DEBUG   (1661):     58bf2d48 55c8e590 4e561500 55c8e590 4e56152c  ...U..VN...U,.VN
+09-30 18:43:28.777 I/DEBUG   (1661): 
+09-30 18:43:28.777 I/DEBUG   (1661): code around pc:
+09-30 18:43:28.777 I/DEBUG   (1661):     400294ac 28a04002 48a04002 e1b03103 24801004  .@.(.@.H.1.....$
+09-30 18:43:28.777 I/DEBUG   (1661):     400294bc e2522020 e1a03001 4a000002 e2522020    R..0.....J  R.
+09-30 18:43:28.777 I/DEBUG   (1661):     400294cc e8a050fa 2afffffc e2822020 e1b02e02  .P.....*  ......
+09-30 18:43:28.777 I/DEBUG   (1661):     400294dc 28a0500a 48a04002 e1b02102 24801004  .P.(.@.H.!.....$
+09-30 18:43:28.777 I/DEBUG   (1661):     400294ec 40c010b2 e1b02102 25c01000 e8bd40f1  ...@.!.....%.@..
+09-30 18:43:28.777 I/DEBUG   (1661): 
+09-30 18:43:28.777 I/DEBUG   (1661): code around lr:
+09-30 18:43:28.777 I/DEBUG   (1661):     00000000 ffffffff ffffffff ffffffff ffffffff  ................
+09-30 18:43:28.777 I/DEBUG   (1661):     00000010 ffffffff ffffffff ffffffff ffffffff  ................
+09-30 18:43:28.777 I/DEBUG   (1661):     00000020 ffffffff ffffffff ffffffff ffffffff  ................
+09-30 18:43:28.777 I/DEBUG   (1661):     00000030 ffffffff ffffffff ffffffff ffffffff  ................
+09-30 18:43:28.777 I/DEBUG   (1661):     00000040 ffffffff ffffffff ffffffff ffffffff  ................
+09-30 18:43:29.157 I/DEBUG   (1661): !@dumpstate -k -t -z -d -o /data/log/dumpstate_app_native -m 7578
+09-30 18:43:29.157 I/BootReceiver(2015): Copying /data/tombstones/tombstone_03 to DropBox (SYSTEM_TOMBSTONE)
+09-30 18:43:29.177 I/dumpstate(22171): begin
+09-30 18:43:29.398 D/dalvikvm(2015): GC_CONCURRENT freed 1724K, 18% free 25808K/31239K, paused 19ms+19ms, total 225ms
+09-30 18:43:29.398 D/dalvikvm(2015): WAIT_FOR_CONCURRENT_GC blocked 204ms
+09-30 18:43:30.659 I/sec_anm_ahi_output(1682): standby() called
+09-30 18:43:30.659 I/sec_anm_ahi_output(1682): Trying to drain devices
+09-30 18:43:30.669 I/ADM     (1692): 3: 51588529994: [INFO] api_devset:824 devapi_drain, draining 42524008.0
+09-30 18:43:30.699 I/ADM     (1692): 0: 51588561549: [INFO] omx_io:651 il_tool_io_empty_buffer_done: Idle callback requested, issuing..
+09-30 18:43:30.699 I/ADM     (1692): 3: 51588561640: [INFO] api_devset:835 Drain complete, sending reply msg
+09-30 18:43:30.699 I/sec_anm_ahi_output(1682): Drain devices done
+09-30 18:43:30.699 I/sec_anm_ahi_output(1682): adm_api: ste_adm_close_device(HSetOut)
+09-30 18:43:30.699 I/ADM     (1692): 2: 51588562251: [STATUS] api_devset:316 Close device 'HSetOut'
+09-30 18:43:30.699 I/ADM     (1692): 6: 51588562495: [OMXIL] omx_log:957 42524008 [ADM.splitter]: SendCommand PortDisable 0
+09-30 18:43:30.699 I/ADM     (1692): 8: 51588562587: [INFO] omx_io:410 il_tool_io_wait_until_idle: 42360870.0 idle, returning
+09-30 18:43:30.699 I/ADM     (1692): 9: 51588562648: [OMXIL] omx_log:1113 42524008 [ADM.splitter]: FreeBuf port=0 pBuf=415324B0
+09-30 18:43:30.699 I/ADM     (1692): 0: 51588562678: [OMXIL] omx_log:1113 42524008 [ADM.splitter]: FreeBuf port=0 pBuf=4193AAD0
+09-30 18:43:30.699 I/ADM     (1692): 1: 51588562739: [OMXIL] omx_log:1113 42524008 [ADM.splitter]: FreeBuf port=0 pBuf=413E4F40
+09-30 18:43:30.699 I/ADM     (1692): 2: 51588562800: [OMXIL] omx_log:256 42524008 [ADM.splitter]: CB CmdComplete PortDisable 0
+09-30 18:43:30.699 I/ADM     (1692): 7: 51588563136: [OMXIL] omx_log:957 42524008 [ADM.splitter]: SendCommand PortDisable 1
+09-30 18:43:30.699 I/ADM     (1692): 9: 51588563197: [OMXIL] omx_log:256 42524008 [ADM.splitter]: CB CmdComplete PortDisable 1
+09-30 18:43:30.699 I/ADM     (1692): 9: 51588563258: [OMXIL] omx_log:957 41122008 [ADM.mixer   ]: SendCommand PortDisable 1
+09-30 18:43:30.699 I/ADM     (1692): 1: 51588563319: [OMXIL] omx_log:256 41122008 [ADM.mixer   ]: CB CmdComplete PortDisable 1
+09-30 18:43:30.699 I/ADM     (1692): 3: 51588563441: [INFO] dev:521  >>> ENTER dev_close(101)
+09-30 18:43:30.699 I/ADM     (1692): 5: 51588563594: [INFO] dev:308 setting /data/local/tmp/rme_act_adm to 1
+09-30 18:43:30.699 I/ADM     (1692): 2: 51588563990: [INFO] dev:342 rme alp tracker /data/local/tmp/rme_act_alp set to 1: waiting
+09-30 18:43:30.699 I/RME     (1692): 1: 51588564540: AudioLowPower::EXIT (AdmDetector)
+09-30 18:43:30.699 I/audiocodec(1692): 2: 51588565821: Low power audio de-activated
+09-30 18:43:30.699 I/ADM     (1692): 8: 51588566127: [OMXIL] omx_log:256 413B7F78 [OKIA_AV_SINK]: CB EventIndexSettingChanged port=2130731019 index=OMX_ALL
+09-30 18:43:30.699 I/ADM     (1692): 0: 51588566188: [OMXIL] omx_log:573 Unknown index (not all mapped): 0x7F00600B
+09-30 18:43:30.699 I/ADM     (1692): 0: 51588566249: [OMXIL] omx_log:256 413B7F78 [OKIA_AV_SINK]: CB EventIndexSettingChanged port=-1 index=<unknown index code>
+09-30 18:43:30.699 I/ADM     (1692): 5: 51588566523: [INFO] dev:816 g_lpa_event_callback received settings changed event
+09-30 18:43:30.699 I/ADM     (1692): 0: 51588568019: [OMXIL] omx_log:573 Unknown index (not all mapped): 0x7F00600B
+09-30 18:43:30.799 I/RME     (1692): 0: 51588664210: ALP activity tracker switched OFF
+09-30 18:43:30.799 I/ADM     (1692): 5: 51588664485: [INFO] dev:342 rme alp tracker /data/local/tmp/rme_act_alp set to 1: waiting
+09-30 18:43:30.799 I/RME     (1692): 8: 51588664668: RMConfigApplied/ALP-EXIT OK comp[i:219 - r:audio_sink.pcm.nokiaav]
+09-30 18:43:30.869 I/ADM     (1692): 3: 51588727473: [OMXIL] omx_log:256 40F7AF60 [ST.AFM.mixer]: CB Event BufferFlag nData1=1 nData2=1 pEventData=0
+09-30 18:43:30.869 I/ADM     (1692): 6: 51588732356: [OMXIL] omx_log:256 40F7AF60 [ST.AFM.mixer]: CB Event BufferFlag nData1=0 nData2=1 pEventData=0
+09-30 18:43:30.869 I/ADM     (1692): 2: 51588732692: [OMXIL] omx_log:256 413B7F78 [OKIA_AV_SINK]: CB Event BufferFlag nData1=0 nData2=1 pEventData=0
+09-30 18:43:30.869 I/ADM     (1692): 9: 51588733088: [INFO] dev:836 g_lpa_event_callback received unhandled event
+09-30 18:43:30.899 I/ADM     (1692): 3: 51588767543: [INFO] dev:349 rme alp tracker /data/local/tmp/rme_act_alp set to 0: proceeding
+09-30 18:43:30.899 I/ADM     (1692): 0: 51588767939: [INFO] dev_omx:1517 Enter dev_omx_close_graph - logical_handle=1  dealloc_buffers=0
+09-30 18:43:30.899 I/ADM     (1692): 4: 51588768183: [INFO] dev_omx:1534 Closing last device. Request audiocodec to ramp down audio
+09-30 18:43:30.899 I/ADM     (1692): 8: 51588768367: [OMXIL] omx_log:913 413B7F78 [OKIA_AV_SINK]: SetConfig idx=Mute
+09-30 18:43:30.899 I/ADM     (1692): 1: 51588768550: [OMXIL] omx_log:293     port=0 mute=1
+09-30 18:43:30.909 I/ADM     (1692): 1: 51588777461: [OMXIL] omx_log:256 413B7F78 [OKIA_AV_SINK]: CB EventIndexSettingChanged port=67108901 index=OMX_ALL
+09-30 18:43:30.909 I/ADM     (1692): 5: 51588777705: [OMXIL] omx_log:256 413B7F78 [OKIA_AV_SINK]: CB EventIndexSettingChanged port=-1 index=Mute
+09-30 18:43:30.909 I/ADM     (1692): 2: 51588778132: [INFO] dev_omx_graph:1181 Enter graph_disconnect_app_effects_from_common_mix_split
+09-30 18:43:30.909 I/ADM     (1692): 7: 51588778407: [OMXIL] omx_log:957 40F7AF60 [ST.AFM.mixer]: SendCommand PortDisable 1
+09-30 18:43:30.919 I/ADM     (1692): 5: 51588782344: [OMXIL] omx_log:957 41122008 [ADM.mixer   ]: SendCommand PortDisable 0
+09-30 18:43:30.919 I/ADM     (1692): 7: 51588786006: [OMXIL] omx_log:256 41122008 [ADM.mixer   ]: CB CmdComplete PortDisable 0
+09-30 18:43:30.919 I/ADM     (1692): 1: 51588786250: [OMXIL] omx_log:256 40F7AF60 [ST.AFM.mixer]: CB CmdComplete PortDisable 1
+09-30 18:43:30.919 I/ADM     (1692): 4: 51588786402: [OMXIL] omx_log:954 41122008 [ADM.mixer   ]: SendCommand StateSet StateIdle
+09-30 18:43:30.919 I/ADM     (1692): 5: 51588786463: [OMXIL] omx_log:256 41122008 [ADM.mixer   ]: CB CmdComplete StateSet StateIdle
+09-30 18:43:30.919 I/ADM     (1692): 6: 51588786494: [OMXIL] omx_log:954 40F7AF60 [ST.AFM.mixer]: SendCommand StateSet StateIdle
+09-30 18:43:30.919 I/ADM     (1692): 5: 51588787074: [OMXIL] omx_log:954 413B7F78 [OKIA_AV_SINK]: SendCommand StateSet StateIdle
+09-30 18:43:30.919 I/ADM     (1692): 5: 51588787104: [OMXIL] omx_log:256 40F7AF60 [ST.AFM.mixer]: CB CmdComplete StateSet StateIdle
+09-30 18:43:30.919 I/ADM     (1692): 1: 51588789149: [OMXIL] omx_log:256 413B7F78 [OKIA_AV_SINK]: CB CmdComplete StateSet StateIdle
+09-30 18:43:30.919 I/ADM     (1692): 6: 51588789454: [OMXIL] omx_log:954 413B7F78 [OKIA_AV_SINK]: SendCommand StateSet StateLoaded
+09-30 18:43:30.939 I/ADM     (1692): 0: 51588805598: [OMXIL] omx_log:256 413B7F78 [OKIA_AV_SINK]: CB CmdComplete StateSet StateLoaded
+09-30 18:43:30.939 I/ADM     (1692): 3: 51588805812: [OMXIL] omx_log:954 40F7AF60 [ST.AFM.mixer]: SendCommand StateSet StateLoaded
+09-30 18:43:30.949 I/ADM     (1692): 3: 51588813441: [OMXIL] omx_log:256 40F7AF60 [ST.AFM.mixer]: CB CmdComplete StateSet StateLoaded
+09-30 18:43:30.949 I/ADM     (1692): 5: 51588813563: [OMXIL] omx_log:954 41122008 [ADM.mixer   ]: SendCommand StateSet StateLoaded
+09-30 18:43:30.949 I/ADM     (1692): 6: 51588813624: [OMXIL] omx_log:256 41122008 [ADM.mixer   ]: CB CmdComplete StateSet StateLoaded
+09-30 18:43:30.949 I/ADM     (1692): 9: 51588813807: [OMXIL] omx_log:256 41122008 [ADM.mixer   ]: FreeHandle
+09-30 18:43:30.949 I/ADM     (1692): 1: 51588813929: [OMXIL] omx_log:256 413B7F78 [OKIA_AV_SINK]: FreeHandle
+09-30 18:43:30.949 I/ADM     (1692): 9: 51588814418: [OMXIL] omx_log:256 40F7AF60 [ST.AFM.mixer]: FreeHandle
+09-30 18:43:30.949 I/ADM     (1692): 3: 51588814662: [INFO] dev_omx:1646 All OMX handles freed successfully
+09-30 18:43:30.949 I/ADM     (1692): 4: 51588814723: [INFO] dev_omx:1722 Graph closed successfully! ref_cnt = 0
+09-30 18:43:30.949 I/ADM     (1692): 6: 51588814784: [INFO] dev:1711 rescan_hw_handler
+09-30 18:43:30.949 I/ADM     (1692): 7: 51588814906: [INFO] hw_handler_u8500:485 AddD2DConnections ENTER
+09-30 18:43:30.949 I/ADM     (1692): 7: 51588815486: [INFO] dev:1702 hw_handler_dev_next_d2d: DONE
+09-30 18:43:30.949 I/ADM     (1692): 9: 51588815577: [INFO] dev:1681 hw_handler_dev_next: DONE
+09-30 18:43:30.949 I/ADM     (1692): 0: 51588816218: [INFO] hw_handler_u8500:874 Query: SELECT * FROM HW_Settings WHERE (Platform = 'AB8500') AND (Dev1 ='')ORDER BY rowid LIMIT 1
+09-30 18:43:30.949 I/ADM     (1692): 3: 51588817622: [INFO] hw_handler_u8500:986 ste_adm_hw_handler_u8500: Found matching HW-settings: devices = ('', '', '', '', '', ''), d2dlogical-connections = ('', '', '', '').
+09-30 18:43:30.989 I/ADM     (1692): 4: 51588854243: [INFO] dev:861 Updating event subscriptions for device HSetOut
+09-30 18:43:30.989 I/ADM     (1692): 6: 51588854304: [INFO] dev:581  >>> LEAVE dev_close(101)
+09-30 18:43:30.989 I/ADM     (1692): 8: 51588854426: [INFO] dev:308 setting /data/local/tmp/rme_act_adm to 0
+09-30 18:43:30.989 I/ADM     (1692): 1: 51588854609: [INFO] api_devset:392 Releasing splitter; no longer used
+09-30 18:43:30.989 I/ADM     (1692): 2: 51588854670: [OMXIL] omx_log:954 42524008 [ADM.splitter]: SendCommand StateSet StateIdle
+09-30 18:43:30.989 I/ADM     (1692): 3: 51588854731: [OMXIL] omx_log:256 42524008 [ADM.splitter]: CB CmdComplete StateSet StateIdle
+09-30 18:43:30.989 I/ADM     (1692): 5: 51588854853: [OMXIL] omx_log:954 42524008 [ADM.splitter]: SendCommand StateSet StateLoaded
+09-30 18:43:30.989 I/ADM     (1692): 6: 51588854914: [OMXIL] omx_log:256 42524008 [ADM.splitter]: CB CmdComplete StateSet StateLoaded
+09-30 18:43:30.989 I/ADM     (1692): 7: 51588854975: [OMXIL] omx_log:256 42524008 [ADM.splitter]: FreeHandle
+09-30 18:43:30.989 I/ADM     (1692): 9: 51588855036: [INFO] api_devset:408 CloseDevice(HSetOut) OK
+09-30 18:43:30.989 D/BatteryStatsImpl(2015): ++++++xy WakeLock stop : pid=1682, name=, type=0, tid=2498, pid=2015, pName=null
+09-30 18:43:36.044 W/ProcessStats(2015): Skipping unknown process pid 22198
+09-30 18:43:36.464 D/VoldCmdListener(1660): asec list
+09-30 18:43:37.035 I/stedump (1684): #### MEDIASERVER AND ADMSRV STEDUMP REQUESTED ####
+09-30 18:43:37.035 I/stedump (1684): STEDUMP-MM: Retrieving DSP trace buffers...
+09-30 18:43:37.035 I/stedump (1684): STEDUMP-MM: Done retrieving dsp buffers
+09-30 18:43:37.035 I/stedump (1684): STEDUMP-MM:  ### writing /data/ste-debug/dump/admsrv in dump
+09-30 18:43:37.035 I/stedump (1684): /data/ste-debug/dump/admsrv: Operation not permitted
+09-30 18:43:37.035 I/stedump (1684): STEDUMP-MM:  ### writing /data/ste-debug/dump/mediaserver in dump
+09-30 18:43:37.035 I/stedump (1684): /data/ste-debug/dump/mediaserver: Operation not permitted
+09-30 18:43:37.035 I/stedump (1684): done
+09-30 18:43:37.035 I/stedump (1684): #### DUMPING DSP LOGS ####
+09-30 18:43:37.035 I/stedump (1684): Dumping sia buffer on request
+09-30 18:43:37.035 I/stedump (1684): Dumping sia circular buffer in /data/ste-debug/sia_trace_dump
+09-30 18:43:37.035 I/stedump (1684): Dumping sva buffer on request
+09-30 18:43:37.035 I/stedump (1684): Dumping sva circular buffer in /data/ste-debug/sva_trace_dump
+09-30 18:43:37.035 I/Dumper  (1692): 9: 51594896449: User action was trigged : dump############################################################################
+09-30 18:43:37.035 I/Dumper  (1692): 
+09-30 18:43:37.035 E/Dumper  (1692): 2: 51594896540: User action: dump logging circular buffer and context
+09-30 18:43:37.035 E/Dumper  (1692): 2: 51594896571: Triggering circular buffer dump in /data/ste-debug
+09-30 18:43:37.045 I/stedump (1684): Dumped 4132 bytes to  /data/ste-debug/sia_trace_dump (buffer size : 1048576)
+09-30 18:43:37.045 I/stedump (1684): gzipping sia circular buffer to /data/ste-debug/sia_trace_dump.gz
+09-30 18:43:37.045 I/stedump (1684): Dumped sia circular buffer
+09-30 18:43:37.055 I/stedump (1684): sva EMPTY buffer will not be dumped
+09-30 18:43:37.065 I/STE-SYSLOG-admsrv(1692): Dumped 796543 bytes to  /data/ste-debug/STE-SYSLOG-admsrv.txt (buffer size : 1048576)
+09-30 18:43:37.075 I/STE-SYSLOG-admsrv(1692): gzipping ste-syslog circular buffer to /data/ste-debug/STE-SYSLOG-admsrv.txt.gz
+09-30 18:43:37.225 I/STE-SYSLOG-admsrv(1692): Dumped circular buffer in /data/ste-debug/STE-SYSLOG-admsrv.txt in 186 milliseconds
+09-30 18:43:37.235 I/dumpstate(22171): done
+09-30 18:43:37.335 W/AudioService(2015):   RemoteControlClient died
+09-30 18:43:37.335 I/ActivityManager(2015): Process de.danoeh.antennapod (pid 7578) has died.
+09-30 18:43:37.345 D/KeyguardViewMediator(2015): setHidden false
+09-30 18:43:37.345 W/AudioService(2015):   AudioFocus   audio focus client died
+09-30 18:43:37.345 I/AudioService(2015):  AudioFocus  abandonAudioFocus(): removing entry for android.media.AudioManager$421b0690de.danoeh.antennapod.core.service.playback.LocalPSMP$1$420c7be8
+09-30 18:43:37.345 E/JavaBinder(2015): !!! FAILED BINDER TRANSACTION !!!
+09-30 18:43:37.345 E/AudioService(2015): Failure to signal gain of audio control focus due to android.os.TransactionTooLargeException
+09-30 18:43:37.345 W/System.err(2015): android.os.TransactionTooLargeException
+09-30 18:43:37.345 V/AudioPolicyManagerBase(1682): releaseOutput() 2
+09-30 18:43:37.345 V/AudioPolicyManagerBase(1682): releaseOutput() 2
+09-30 18:43:37.345 D/Zygote  (1670): Process 7578 terminated by signal (11)
+09-30 18:43:37.355 V/LockPatternKeyguardView(2015): View com.android.internal.widget.TransportControlView@42ca9f28 requested hide transports
+09-30 18:43:37.355 W/InputDispatcher(2015): channel ~ Consumer closed input channel or an error occurred.  events=0x9
+09-30 18:43:37.355 E/InputDispatcher(2015): channel ~ Channel is unrecoverably broken and will be disposed!
+09-30 18:43:37.355 W/System.err(2015):  at android.os.BinderProxy.transact(Native Method)
+09-30 18:43:37.355 W/System.err(2015):  at android.media.IAudioFocusDispatcher$Stub$Proxy.dispatchAudioFocusChange(IAudioFocusDispatcher.java:85)
+09-30 18:43:37.355 W/System.err(2015):  at android.media.AudioService.notifyTopOfAudioFocusStack(AudioService.java:4741)
+09-30 18:43:37.355 W/System.err(2015):  at android.media.AudioService.removeFocusStackEntryForClient(AudioService.java:4875)
+09-30 18:43:37.355 I/power   (2015): *** acquire_dvfs_lock : lockType : 1  freq : 1000000 
+09-30 18:43:37.355 W/System.err(2015):  at android.media.AudioService.access$8800(AudioService.java:119)
+09-30 18:43:37.355 W/System.err(2015):  at android.media.AudioService$AudioFocusDeathHandler.binderDied(AudioService.java:4910)
+09-30 18:43:37.355 W/System.err(2015):  at android.os.BinderProxy.sendDeathNotice(Binder.java:449)
+09-30 18:43:37.355 W/System.err(2015):  at dalvik.system.NativeStart.run(Native Method)
+09-30 18:43:37.355 W/InputDispatcher(2015): Attempted to unregister already unregistered input channel
+09-30 18:43:37.355 D/KeyguardViewMediator(2015): setHidden false
+09-30 18:43:37.355 D/KeyguardViewMediator(2015): setHidden false
+09-30 18:43:37.355 D/PowerManagerService(2015): acquireDVFSLockLocked : type : DVFS_MIN_LIMIT  frequency : 1000000  uid : 1000  pid : 2015  tag : ActivityManager
+09-30 18:43:37.355 W/ActivityManager(2015): mDVFSLock.acquire()
+09-30 18:43:37.385 I/libblt_hw(1669): Library closed (handle = 4, fd = 40)
+09-30 18:43:37.395 D/KeyguardViewMediator(2015): adjustStatusBarLocked: mShowing=true mHidden=false isSecure=true --> flags=0x1290000
+09-30 18:43:37.395 V/LockPatternKeyguardView(2015): Set visibility on com.android.internal.policy.impl.LockPatternKeyguardView$4@42dbba98 to 8388608
+09-30 18:43:37.395 V/LockPatternKeyguardView(2015): View com.android.internal.widget.TransportControlView@42ca9f28 requested hide transports
+09-30 18:43:37.395 D/STATUSBAR-StatusBarManagerService(2015): manageDisableList what=0x1290000 pkg=android
+09-30 18:43:37.415 D/KeyguardViewMediator(2015): setHidden false
+09-30 18:43:37.415 D/STATUSBAR-NotificationService(2015): updateLightsLocked() : Set default flashing notification light
+09-30 18:43:37.415 D/LightsService(2015): [SvcLED] setSvcLedStateLocked:: id = 4, color = -16711936, mode = 12, set = On
+09-30 18:43:37.415 D/LightsService(2015): [SvcLED] wl is null.
+09-30 18:43:37.425 D/BatteryStatsImpl(2015): ++++++xy WakeLock start : pid=2015, name=, type=0, tid=2239, pid=2015, pName=null
+09-30 18:43:37.425 D/KeyguardViewMediator(2015): adjustStatusBarLocked: mShowing=true mHidden=false isSecure=true --> flags=0x1290000
+09-30 18:43:37.425 D/STATUSBAR-StatusBarManagerService(2015): manageDisableList what=0x1290000 pkg=android
+09-30 18:43:37.435 V/LockPatternKeyguardView(2015): Set visibility on com.android.internal.policy.impl.LockPatternKeyguardView$4@42dbba98 to 8388608
+09-30 18:43:37.435 D/STATUSBAR-StatusBarManagerService(2015): setSystemUiVisibility(0xe00008)
+09-30 18:43:37.435 D/STATUSBAR-StatusBarManagerService(2015): manageDisableList what=0xe00000 pkg=WindowManager.LayoutParams
+09-30 18:43:37.435 D/StatusBar(2126): expanding top notification at 3entry.userCollapsed() = false
+09-30 18:43:37.455 D/PhoneStatusBar(2126): disable: < EXPAND icons alerts TICKER system_info BACK HOME RECENT CLOCK* >
+09-30 18:43:37.535 D/dalvikvm(22212): GC_CONCURRENT freed 161K, 9% free 9644K/10567K, paused 13ms+2ms, total 35ms
+09-30 18:43:37.535 D/dalvikvm(22212): WAIT_FOR_CONCURRENT_GC blocked 13ms
+09-30 18:43:37.626 E/dalvikvm(22212): Could not find class 'android.app.AppOpsManager', referenced from method com.google.android.gms.common.zze.zzb
+09-30 18:43:37.626 W/dalvikvm(22212): VFY: unable to resolve check-cast 31 (Landroid/app/AppOpsManager;) in Lcom/google/android/gms/common/zze;
+09-30 18:43:37.626 D/dalvikvm(22212): VFY: replacing opcode 0x1f at 0x0010
+09-30 18:43:37.626 I/dalvikvm(22212): Could not find method android.content.pm.PackageManager.getPackageInstaller, referenced from method com.google.android.gms.common.zze.zzi
+09-30 18:43:37.626 W/dalvikvm(22212): VFY: unable to resolve virtual method 529: Landroid/content/pm/PackageManager;.getPackageInstaller ()Landroid/content/pm/PackageInstaller;
+09-30 18:43:37.626 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x000e
+09-30 18:43:37.626 E/dalvikvm(22212): Could not find class 'android.os.UserManager', referenced from method com.google.android.gms.common.zze.zzi
+09-30 18:43:37.626 W/dalvikvm(22212): VFY: unable to resolve check-cast 304 (Landroid/os/UserManager;) in Lcom/google/android/gms/common/zze;
+09-30 18:43:37.626 D/dalvikvm(22212): VFY: replacing opcode 0x1f at 0x0040
+09-30 18:43:37.646 D/dalvikvm(22212): GC_CONCURRENT freed 222K, 10% free 9857K/10887K, paused 13ms+12ms, total 47ms
+09-30 18:43:37.646 E/dalvikvm(22212): Could not find class 'android.graphics.drawable.RippleDrawable', referenced from method android.support.design.R.applyColor
+09-30 18:43:37.646 W/dalvikvm(22212): VFY: unable to resolve instanceof 178 (Landroid/graphics/drawable/RippleDrawable;) in Landroid/support/design/R;
+09-30 18:43:37.646 D/dalvikvm(22212): VFY: replacing opcode 0x20 at 0x0000
+09-30 18:43:37.666 I/dalvikvm(22212): Could not find method android.content.Context.getColor, referenced from method android.support.design.R.getColor
+09-30 18:43:37.666 W/dalvikvm(22212): VFY: unable to resolve virtual method 378: Landroid/content/Context;.getColor (I)I
+09-30 18:43:37.666 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x000f
+09-30 18:43:37.666 I/dalvikvm(22212): Could not find method android.os.StatFs.getAvailableBlocksLong, referenced from method android.support.design.R.getFreeSpaceAvailable
+09-30 18:43:37.666 W/dalvikvm(22212): VFY: unable to resolve virtual method 1609: Landroid/os/StatFs;.getAvailableBlocksLong ()J
+09-30 18:43:37.666 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x000b
+09-30 18:43:37.686 I/dalvikvm(22212): Could not find method android.widget.ProgressBar.setProgressTintList, referenced from method android.support.design.R.init
+09-30 18:43:37.686 W/dalvikvm(22212): VFY: unable to resolve virtual method 21661: Landroid/widget/ProgressBar;.setProgressTintList (Landroid/content/res/ColorStateList;)V
+09-30 18:43:37.686 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x09c3
+09-30 18:43:37.716 I/dalvikvm(22212): Could not find method android.widget.EditText.setBackgroundTintList, referenced from method android.support.design.R.setTint
+09-30 18:43:37.716 W/dalvikvm(22212): VFY: unable to resolve virtual method 21313: Landroid/widget/EditText;.setBackgroundTintList (Landroid/content/res/ColorStateList;)V
+09-30 18:43:37.716 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x00aa
+09-30 18:43:37.716 D/LightsService(2015): [SvcLED] ForcedSvcLEDOnTask is running.
+09-30 18:43:37.836 D/dalvikvm(22212): GC_CONCURRENT freed 150K, 9% free 10199K/11143K, paused 2ms+3ms, total 23ms
+09-30 18:43:37.906 I/dalvikvm(22212): Could not find method android.support.design.widget.AppBarLayout.setElevation, referenced from method de.danoeh.antennapod.activity.MediaplayerInfoActivity.setupGUI
+09-30 18:43:37.906 W/dalvikvm(22212): VFY: unable to resolve virtual method 2159: Landroid/support/design/widget/AppBarLayout;.setElevation (F)V
+09-30 18:43:37.906 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x004a
+09-30 18:43:37.916 W/dalvikvm(22212): VFY: unable to find class referenced in signature (Landroid/view/SearchEvent;)
+09-30 18:43:37.916 I/dalvikvm(22212): Could not find method android.view.Window$Callback.onSearchRequested, referenced from method android.support.v7.view.WindowCallbackWrapper.onSearchRequested
+09-30 18:43:37.916 W/dalvikvm(22212): VFY: unable to resolve interface method 20821: Landroid/view/Window$Callback;.onSearchRequested (Landroid/view/SearchEvent;)Z
+09-30 18:43:37.916 D/dalvikvm(22212): VFY: replacing opcode 0x72 at 0x0002
+09-30 18:43:37.916 I/dalvikvm(22212): Could not find method android.view.Window$Callback.onWindowStartingActionMode, referenced from method android.support.v7.view.WindowCallbackWrapper.onWindowStartingActionMode
+09-30 18:43:37.916 W/dalvikvm(22212): VFY: unable to resolve interface method 20825: Landroid/view/Window$Callback;.onWindowStartingActionMode (Landroid/view/ActionMode$Callback;I)Landroid/view/ActionMode;
+09-30 18:43:37.916 D/dalvikvm(22212): VFY: replacing opcode 0x72 at 0x0002
+09-30 18:43:37.926 I/dalvikvm(22212): Could not find method android.app.Activity.isDestroyed, referenced from method com.bumptech.glide.manager.RequestManagerRetriever.assertNotDestroyed
+09-30 18:43:37.926 W/dalvikvm(22212): VFY: unable to resolve virtual method 99: Landroid/app/Activity;.isDestroyed ()Z
+09-30 18:43:37.926 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x0006
+09-30 18:43:37.966 I/dalvikvm(22212): Could not find method android.content.res.Resources.getDrawable, referenced from method android.support.v7.widget.ResourcesWrapper.getDrawable
+09-30 18:43:37.966 W/dalvikvm(22212): VFY: unable to resolve virtual method 573: Landroid/content/res/Resources;.getDrawable (ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+09-30 18:43:37.966 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x0002
+09-30 18:43:37.966 I/dalvikvm(22212): Could not find method android.content.res.Resources.getDrawableForDensity, referenced from method android.support.v7.widget.ResourcesWrapper.getDrawableForDensity
+09-30 18:43:37.966 W/dalvikvm(22212): VFY: unable to resolve virtual method 575: Landroid/content/res/Resources;.getDrawableForDensity (IILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+09-30 18:43:37.966 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x0002
+09-30 18:43:37.976 I/dalvikvm(22212): Could not find method android.content.res.TypedArray.getChangingConfigurations, referenced from method android.support.v7.widget.TintTypedArray.getChangingConfigurations
+09-30 18:43:37.976 W/dalvikvm(22212): VFY: unable to resolve virtual method 610: Landroid/content/res/TypedArray;.getChangingConfigurations ()I
+09-30 18:43:37.976 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x0002
+09-30 18:43:37.976 I/dalvikvm(22212): Could not find method android.content.res.TypedArray.getType, referenced from method android.support.v7.widget.TintTypedArray.getType
+09-30 18:43:37.976 W/dalvikvm(22212): VFY: unable to resolve virtual method 632: Landroid/content/res/TypedArray;.getType (I)I
+09-30 18:43:37.976 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x0002
+09-30 18:43:38.086 I/webclipboard(22212): clipservice: android.sec.clipboard.ClipboardExManager@421aca40
+09-30 18:43:38.176 I/dalvikvm(22212): Could not find method android.graphics.Bitmap.getAllocationByteCount, referenced from method com.bumptech.glide.util.Util.getBitmapByteSize
+09-30 18:43:38.176 W/dalvikvm(22212): VFY: unable to resolve virtual method 703: Landroid/graphics/Bitmap;.getAllocationByteCount ()I
+09-30 18:43:38.176 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x0006
+09-30 18:43:38.186 I/dalvikvm(22212): Could not find method android.app.ActivityManager.isLowRamDevice, referenced from method com.bumptech.glide.load.engine.cache.MemorySizeCalculator.isLowMemoryDevice
+09-30 18:43:38.186 W/dalvikvm(22212): VFY: unable to resolve virtual method 123: Landroid/app/ActivityManager;.isLowRamDevice ()Z
+09-30 18:43:38.186 D/dalvikvm(22212): VFY: replacing opcode 0x6e at 0x0006
+09-30 18:43:38.356 I/power   (2015): *** release_dvfs_lock : lockType : 1 
+09-30 18:43:38.356 W/ActivityManager(2015): mDVFSLock.release()
+09-30 18:43:38.496 D/dalvikvm(22212): GC_CONCURRENT freed 418K, 11% free 10573K/11783K, paused 91ms+166ms, total 313ms
+09-30 18:43:38.506 V/webkit  (22212): BrowserFrame constructor: this=Handler (android.webkit.BrowserFrame) {421a66b8}
+09-30 18:43:38.526 V/MediaPlayerService(1682): Create new media retriever from pid 22212
+09-30 18:43:38.566 D/dalvikvm(22212): GC_FOR_ALLOC freed 45K, 11% free 10595K/11783K, paused 37ms, total 38ms
+09-30 18:43:38.576 I/dalvikvm(22212): Could not find method android.os.SystemClock.elapsedRealtimeNanos, referenced from method com.bumptech.glide.util.LogTime.getLogTime
+09-30 18:43:38.576 W/dalvikvm(22212): VFY: unable to resolve static method 1615: Landroid/os/SystemClock;.elapsedRealtimeNanos ()J
+09-30 18:43:38.576 D/dalvikvm(22212): VFY: replacing opcode 0x71 at 0x0006

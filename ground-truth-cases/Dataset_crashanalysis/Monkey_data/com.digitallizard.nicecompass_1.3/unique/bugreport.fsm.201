@@ -1,0 +1,10 @@
+//this is an auto-generated bug report
+//package name: com.digitallizard.nicecompass
+//version: 1.3
+//appro_time: 33
+ java.lang.IllegalStateException: Underflow in restore
+ 	at android.graphics.Canvas.restore(Native Method)
+ 	at com.digitallizard.nicecompass.CompassSurface.onDraw(CompassSurface.java:366)
+ 	at com.digitallizard.nicecompass.CompassSurface.triggerDraw(CompassSurface.java:289)
+ 	at com.digitallizard.nicecompass.CompassSurface.run(CompassSurface.java:489)
+ 	at java.lang.Thread.run(Thread.java:841)

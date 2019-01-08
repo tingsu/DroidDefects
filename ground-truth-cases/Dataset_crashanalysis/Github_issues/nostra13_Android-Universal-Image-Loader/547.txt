@@ -1,0 +1,25 @@
+02-22 17:26:02.256: I/dalvikvm(7248):   | schedstat=( 16049214881 4908746701 9127 ) utm=1540 stm=64 core=0
+02-22 17:26:02.256: I/dalvikvm(7248):   at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+02-22 17:26:02.256: I/dalvikvm(7248):   at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:663)
+02-22 17:26:02.256: I/dalvikvm(7248):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decodeStream(BaseImageDecoder.java:156)
+02-22 17:26:02.256: I/dalvikvm(7248):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:72)
+02-22 17:26:02.256: I/dalvikvm(7248):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:305)
+02-22 17:26:02.256: I/dalvikvm(7248):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:260)
+02-22 17:26:02.256: I/dalvikvm(7248):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:129)
+02-22 17:26:02.256: I/dalvikvm(7248):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+02-22 17:26:02.256: I/dalvikvm(7248):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+02-22 17:26:02.256: I/dalvikvm(7248):   at java.lang.Thread.run(Thread.java:856)
+02-22 17:26:02.261: D/GestureDetector(7248): [Surface Touch Event] mSweepDown False, mLRSDCnt : -1 mTouchCnt : 5 mFalseSizeCnt:0
+02-22 17:26:02.261: D/skia(7248): --- decoder->decode returned false
+02-22 17:26:02.261: E/ImageLoader(7248): null
+02-22 17:26:02.261: E/ImageLoader(7248): java.lang.OutOfMemoryError
+02-22 17:26:02.261: E/ImageLoader(7248):    at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+02-22 17:26:02.261: E/ImageLoader(7248):    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:663)
+02-22 17:26:02.261: E/ImageLoader(7248):    at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decodeStream(BaseImageDecoder.java:156)
+02-22 17:26:02.261: E/ImageLoader(7248):    at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:72)
+02-22 17:26:02.261: E/ImageLoader(7248):    at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:305)
+02-22 17:26:02.261: E/ImageLoader(7248):    at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:260)
+02-22 17:26:02.261: E/ImageLoader(7248):    at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:129)
+02-22 17:26:02.261: E/ImageLoader(7248):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+02-22 17:26:02.261: E/ImageLoader(7248):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+02-22 17:26:02.261: E/ImageLoader(7248):    at java.lang.Thread.run(Thread.java:856)

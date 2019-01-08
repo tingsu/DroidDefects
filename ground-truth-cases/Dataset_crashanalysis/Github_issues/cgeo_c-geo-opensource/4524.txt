@@ -1,0 +1,39 @@
+Google Play Report for version 2014.12.09
+One report at staged release of 20%
+Android 2.3.x
+No user comment
+
+```
+java.lang.IllegalStateException: Fatal Exception thrown on Scheduler.Worker thread.
+   at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:54)
+   at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:444)
+   at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:306)
+   at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+   at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:153)
+   at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:267)
+   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+   at java.lang.Thread.run(Thread.java:1019)
+Caused by: android.view.ViewRoot$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
+   at android.view.ViewRoot.checkThread(ViewRoot.java:3041)
+   at android.view.ViewRoot.invalidateChild(ViewRoot.java:647)
+   at android.view.ViewRoot.invalidateChildInParent(ViewRoot.java:673)
+   at android.view.ViewGroup.invalidateChild(ViewGroup.java:2511)
+   at android.view.View.invalidate(View.java:5279)
+   at android.widget.TextView.setCompoundDrawables(TextView.java:1535)
+   at android.widget.TextView.setCompoundDrawablesWithIntrinsicBounds(TextView.java:1589)
+   at android.support.v7.internal.view.menu.ActionMenuItemView.setIcon(ActionMenuItemView.java:144)
+   at android.support.v7.internal.view.menu.ActionMenuItemView.initialize(ActionMenuItemView.java:95)
+   at android.support.v7.internal.view.menu.ActionMenuPresenter.bindItemView(ActionMenuPresenter.java:177)
+   at android.support.v7.internal.view.menu.BaseMenuPresenter.getItemView(BaseMenuPresenter.java:180)
+   at android.support.v7.internal.view.menu.ActionMenuPresenter.getItemView(ActionMenuPresenter.java:163)
+   at android.support.v7.internal.view.menu.BaseMenuPresenter.updateMenuView(BaseMenuPresenter.java:100)
+   at android.support.v7.internal.view.menu.ActionMenuPresenter.updateMenuView(ActionMenuPresenter.java:191)
+   at android.support.v7.internal.view.menu.MenuBuilder.dispatchPresenterUpdate(MenuBuilder.java:251)
+   at android.support.v7.internal.view.menu.MenuBuilder.onItemsChanged(MenuBuilder.java:999)
+   at android.support.v7.internal.view.menu.MenuBuilder.startDispatchingItemsChanged(MenuBuilder.java:1022)
+   at android.support.v7.app.ActionBarActivityDelegateBase.preparePanel(ActionBarActivityDelegateBase.java:654)
+   at android.support.v7.app.ActionBarActivityDelegateBase.supportInvalidateOptionsMenu(ActionBarActivityDelegateBase.java:421)
+   at android.support.v7.app.ActionBarActivity.supportInvalidateOptionsMenu(ActionBarActivity.java:172)
+   at cgeo.geocaching.CachePopupFragment$StoreCacheClickListener$2.call(CachePopupFragment.java:149)
+   at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:47)

@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: org.liberty.android.fantastischmemo
+//version: 10.9.993
+//appro_time: 126
+ android.database.sqlite.SQLiteException: Failed to change locale for db '/storage/sdcard/anymemo/english_basic.xml_3.db' to 'en_US'.
+ 	at android.database.sqlite.SQLiteConnection.setLocaleFromConfiguration(SQLiteConnection.java:393)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:218)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+ 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+ 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:804)
+ 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:789)
+ 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:694)
+ 	at android.app.ContextImpl.openOrCreateDatabase(ContextImpl.java:863)
+ 	at android.content.ContextWrapper.openOrCreateDatabase(ContextWrapper.java:235)
+ 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:224)
+ 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:164)
+ 	at com.j256.ormlite.android.AndroidConnectionSource.getReadWriteConnection(AndroidConnectionSource.java:66)
+ 	at com.j256.ormlite.dao.BaseDaoImpl.callBatchTasks(BaseDaoImpl.java:626)
+ 	at org.liberty.android.fantastischmemo.dao.AbstractHelperDaoImpl.callBatchTasks(AbstractHelperDaoImpl.java:151)
+ 	at org.liberty.android.fantastischmemo.dao.CardDaoImpl.createCards(CardDaoImpl.java:493)
+ 	at org.liberty.android.fantastischmemo.utils.DatabaseUtil.mergeDatabases(DatabaseUtil.java:69)
+ 	at org.liberty.android.fantastischmemo.ui.DatabaseMerger$1.doHeavyTask(DatabaseMerger.java:120)
+ 	at org.liberty.android.fantastischmemo.utils.AMGUIUtility$4.run(AMGUIUtility.java:82)
+ Caused by: android.database.sqlite.SQLiteFullException: database or disk is full (code 13)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecute(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.execute(SQLiteConnection.java:555)
+ 	at android.database.sqlite.SQLiteConnection.setLocaleFromConfiguration(SQLiteConnection.java:371)

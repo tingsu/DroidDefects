@@ -1,0 +1,16 @@
+com.fsck.k9.mail.MessagingException: Unable to open connection to SMTP server.
+    at com.fsck.k9.mail.transport.SmtpTransport.open(SmtpTransport.java:419)
+    at com.fsck.k9.mail.transport.SmtpTransport.sendMessageTo(SmtpTransport.java:504)
+    at com.fsck.k9.mail.transport.SmtpTransport.sendMessage(SmtpTransport.java:495)
+    at com.fsck.k9.controller.MessagingController.sendPendingMessagesSynchronous(MessagingController.java:3563)
+    at com.fsck.k9.controller.MessagingController$20.run(MessagingController.java:3314)
+    at com.fsck.k9.controller.MessagingController.run(MessagingController.java:435)
+    at java.lang.Thread.run(Thread.java:818)
+Caused by: java.net.SocketTimeoutException: failed to connect to smtp.gmail.com/2607:f8b0:4002:c06::6d
+(port 465) after 10000ms
+    at libcore.io.IoBridge.connectErrno(IoBridge.java:169)
+    at libcore.io.IoBridge.connect(IoBridge.java:122)
+    at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:183)
+    at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:456)
+    at java.net.Socket.connect(Socket.java:882)
+    at com.fsck.k9.mail.transport.SmtpTransport.open(SmtpTransport.java:228)

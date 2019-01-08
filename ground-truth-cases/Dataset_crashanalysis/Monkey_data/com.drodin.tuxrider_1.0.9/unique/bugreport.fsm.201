@@ -1,0 +1,11 @@
+//this is an auto-generated bug report
+//package name: com.drodin.tuxrider
+//version: 1.0.9
+//appro_time: 32
+ java.lang.UnsatisfiedLinkError: Couldn't load tuxrider from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/mnt/asec/com.drodin.tuxrider-1/pkg.apk"],nativeLibraryDirectories=[/mnt/asec/com.drodin.tuxrider-1/lib, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at com.drodin.tuxrider.NativeLib.<clinit>(NativeLib.java:33)
+ 	at com.drodin.tuxrider.Installer.InstallFiles(Installer.java:54)
+ 	at com.drodin.tuxrider.Installer$1.run(Installer.java:41)
+ 	at java.lang.Thread.run(Thread.java:841)

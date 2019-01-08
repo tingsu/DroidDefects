@@ -1,0 +1,26 @@
+java.lang.IllegalStateException: Fatal Exception thrown on Scheduler.Worker thread.
+    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:62)
+    at android.os.Handler.handleCallback(Handler.java:587)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:150)
+    at android.app.ActivityThread.main(ActivityThread.java:4385)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:507)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:849)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:607)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NoSuchMethodError: cgeo.geocaching.connector.gc.PocketQueryListAdapter.addAll
+    at cgeo.geocaching.connector.gc.PocketQueryListActivity$1.call(PocketQueryListActivity.java:41)
+    at cgeo.geocaching.connector.gc.PocketQueryListActivity$1.call(PocketQueryListActivity.java:33)
+    at rx.Observable$27.onNext(Observable.java:7928)
+    at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)
+    at rx.android.app.OperatorConditionalBinding$1.onNext(OperatorConditionalBinding.java:79)
+    at rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber.pollQueue(OperatorObserveOn.java:202)
+    at rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber$2.call(OperatorObserveOn.java:162)
+    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)
+    ... 9 more
+```
+
+`addAll()` has only been added in API 11, so the crash happens on Android 2.3.x.
+
+This seems to have been introduced at 7ff76b27719472d26564a80ceeaba94d1f8a18c3.

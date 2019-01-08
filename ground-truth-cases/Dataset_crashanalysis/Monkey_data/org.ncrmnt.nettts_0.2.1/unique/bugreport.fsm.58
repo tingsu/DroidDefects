@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: org.ncrmnt.nettts
+//version: 0.2.1
+//appro_time: 34
+ java.lang.RuntimeException: Unable to create service org.ncrmnt.nettts.NetTTSService: java.lang.NumberFormatException: Invalid int: "0244448247315310524023623140026274"
+ 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2587)
+ 	at android.app.ActivityThread.access$1600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1338)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NumberFormatException: Invalid int: "0244448247315310524023623140026274"
+ 	at java.lang.Integer.invalidInt(Integer.java:138)
+ 	at java.lang.Integer.parse(Integer.java:378)
+ 	at java.lang.Integer.parseInt(Integer.java:366)
+ 	at java.lang.Integer.parseInt(Integer.java:332)
+ 	at org.ncrmnt.nettts.NetTTSService.onCreate(NetTTSService.java:143)
+ 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2577)

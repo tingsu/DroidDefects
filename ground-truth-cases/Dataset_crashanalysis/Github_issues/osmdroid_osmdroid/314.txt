@@ -1,0 +1,20 @@
+
+But I encounter the following error at runtime.
+
+```
+05-26 18:09:09.817 29963-29963/com.... E/AndroidRuntime: FATAL EXCEPTION: main
+                                                                 Process: com...., PID: 29963
+                                                                 java.lang.NoClassDefFoundError: Failed resolution of: Lorg/osmdroid/DefaultResourceProxyImpl;
+                                                                     at org.osmdroid.bonuspack.overlays.Marker.<init>(Marker.java:67)
+                                                                     at com.....Fragment_mainmap.sitesLoadingFinish(Fragment_mainmap.java:832)
+                                                                     at com.....LoadSitesListTask.onPostExecute(LoadSitesListTask.java:169)
+                                                                     at com.....LoadSitesListTask.onPostExecute(LoadSitesListTask.java:53)
+                                                                     at android.os.AsyncTask.finish(AsyncTask.java:651)
+                                                                     at android.os.AsyncTask.-wrap1(AsyncTask.java)
+                                                                     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+                                                                     at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                     at android.os.Looper.loop(Looper.java:148)
+                                                                     at android.app.ActivityThread.main(ActivityThread.java:5417)
+                                                                     at java.lang.reflect.Method.invoke(Native Method)
+                                                                     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+                                                                     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

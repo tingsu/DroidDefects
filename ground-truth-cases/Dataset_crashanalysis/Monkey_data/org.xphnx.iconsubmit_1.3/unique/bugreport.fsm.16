@@ -1,0 +1,7 @@
+//this is an auto-generated bug report
+//package name: org.xphnx.iconsubmit
+//version: 1.3
+//appro_time: 171
+ java.lang.NullPointerException
+ 	at org.xphnx.iconsubmit.RequestActivity.deleteDirectory(RequestActivity.java:681)
+ 	at org.xphnx.iconsubmit.RequestActivity$2.run(RequestActivity.java:277)

@@ -1,0 +1,38 @@
+
+> I ran into a NullPointerException when I tap on the menu icon at the upper left corner. Unfortunately I don’t have a clear repro steps as I was just messing around with the app. I haven’t been able to reproduce it yet. See attached log.
+
+```
+02-16 10:46:20.963: E/AndroidRuntime(1525): FATAL EXCEPTION: main
+02-16 10:46:20.963: E/AndroidRuntime(1525): Process: com.joulespersecond.seattlebusbot, PID: 1525
+02-16 10:46:20.963: E/AndroidRuntime(1525): java.lang.RuntimeException: Unable to destroy activity {com.joulespersecond.seattlebusbot/org.onebusaway.android.ui.HomeActivity}: java.lang.NullPointerException
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3615)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.app.ActivityThread.handleDestroyActivity(ActivityThread.java:3633)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.app.ActivityThread.access$1400(ActivityThread.java:145)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1269)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.os.Handler.dispatchMessage(Handler.java:102)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.os.Looper.loop(Looper.java:145)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.app.ActivityThread.main(ActivityThread.java:5266)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at java.lang.reflect.Method.invokeNative(Native Method)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at java.lang.reflect.Method.invoke(Method.java:515)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:826)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:642)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at dalvik.system.NativeStart.main(Native Method)
+02-16 10:46:20.963: E/AndroidRuntime(1525): Caused by: java.lang.NullPointerException
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at com.amazon.geo.client.renderer.MapControlPolaris.addFocalRegionOffset(MapControlPolaris.java:1913)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at com.amazon.geo.client.renderer.MapContext.setPadding(MapContext.java:900)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at com.amazon.geo.mapsv2.AmazonMap.setPadding(AmazonMap.java:723)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at org.onebusaway.android.map.googlemapsv2.BaseMapFragment.setPadding(BaseMapFragment.java:457)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at org.onebusaway.android.map.RouteMapController$RoutePopup.hide(RouteMapController.java:309)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at org.onebusaway.android.map.RouteMapController.destroy(RouteMapController.java:151)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at org.onebusaway.android.map.googlemapsv2.BaseMapFragment.onDestroy(BaseMapFragment.java:276)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.support.v4.app.Fragment.performDestroy(Fragment.java:2009)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1088)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1138)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1120)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.support.v4.app.FragmentManagerImpl.dispatchDestroy(FragmentManager.java:1966)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.support.v4.app.FragmentActivity.onDestroy(FragmentActivity.java:316)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.support.v7.app.AppCompatActivity.onDestroy(AppCompatActivity.java:158)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at org.onebusaway.android.ui.HomeActivity.onDestroy(HomeActivity.java)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.app.Activity.performDestroy(Activity.java:5479)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.app.Instrumentation.callActivityOnDestroy(Instrumentation.java:1117)
+02-16 10:46:20.963: E/AndroidRuntime(1525):     at android.app.ActivityThread.performDestroyActivity(ActivityThread.java:3602)

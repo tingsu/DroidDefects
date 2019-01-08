@@ -1,0 +1,8 @@
+ [proguard] java.io.IOException: Can't read [proguard.ClassPathEntry@f06fc94](No such file or directory)
+ [proguard]     at proguard.InputReader.readInput(InputReader.java:230)
+ [proguard]     at proguard.InputReader.readInput(InputReader.java:200)
+ [proguard]     at proguard.InputReader.readInput(InputReader.java:178)
+ [proguard]     at proguard.InputReader.execute(InputReader.java:100)
+ [proguard]     at proguard.ProGuard.readInput(ProGuard.java:195)
+ [proguard]     at proguard.ProGuard.execute(ProGuard.java:78)
+ [proguard]     at proguard.ProGuard.main(ProGuard.java:499)

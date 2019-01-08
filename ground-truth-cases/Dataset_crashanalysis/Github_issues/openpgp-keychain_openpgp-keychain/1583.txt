@@ -1,0 +1,6 @@
+11-02 19:24:17.499   938      956           DatabaseUtils  E  java.lang.SecurityException: Permission Denial: reading com.android.providers.media.MediaProvider uri content://media/external/fs_id from pid=9373, uid=10062 requires android.permission.READ_EXTERNAL_STORAGE, or grantUriPermission()
+11-02 19:24:17.499   938      956           DatabaseUtils  E  at android.content.ContentProvider.enforceReadPermissionInner(ContentProvider.java:605)
+11-02 19:24:17.499   938      956           DatabaseUtils  E  at android.content.ContentProvider$Transport.enforceReadPermission(ContentProvider.java:480)
+11-02 19:24:17.499   938      956           DatabaseUtils  E  at android.content.ContentProvider$Transport.query(ContentProvider.java:211)
+11-02 19:24:17.499   938      956           DatabaseUtils  E  at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:112)
+11-02 19:24:17.499   938      956           DatabaseUtils  E  at android.os.Binder.execTransact(Binder.java:453)

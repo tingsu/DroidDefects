@@ -1,0 +1,18 @@
+> java.lang.RuntimeException: Unable to start service net.osmand.plus.NavigationService@b624ff6 with Intent { cmp=net.osmand.plus/.NavigationService (has extras) }: java.lang.SecurityException: **"gps" location provider requires ACCESS_FINE_LOCATION permission.**
+>   at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3061)
+>   at android.app.ActivityThread.-wrap17(ActivityThread.java)
+>   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1461)
+>   at android.os.Handler.dispatchMessage(Handler.java:102)
+>   at android.os.Looper.loop(Looper.java:148)
+>   at android.app.ActivityThread.main(ActivityThread.java:5461)
+>   at java.lang.reflect.Method.invoke(Native Method)
+>   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+>   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+> Caused by: java.lang.SecurityException: "gps" location provider requires ACCESS_FINE_LOCATION permission.
+>   at android.os.Parcel.readException(Parcel.java:1620)
+>   at android.os.Parcel.readException(Parcel.java:1573)
+>   at android.location.ILocationManager$Stub$Proxy.requestLocationUpdates(ILocationManager.java:606)
+>   at android.location.LocationManager.requestLocationUpdates(LocationManager.java:892)
+>   at android.location.LocationManager.requestLocationUpdates(LocationManager.java:465)
+>   at net.osmand.plus.NavigationService.onStartCommand(NavigationService.java:146)
+>   at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:3044)

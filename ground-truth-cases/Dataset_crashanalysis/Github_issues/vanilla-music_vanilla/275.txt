@@ -1,0 +1,7 @@
+**java.lang.NullPointerException
+    at ch.blinkenlights.android.vanilla.RemoteControlImplICS.updateRemote(RemoteControlImplICS.java:141)
+    at ch.blinkenlights.android.vanilla.PlaybackService.broadcastChange(PlaybackService.java:1065)
+    at ch.blinkenlights.android.vanilla.PlaybackService.handleMessage(PlaybackService.java:1533)
+    at android.os.Handler.dispatchMessage(Handler.java:98)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.os.HandlerThread.run(HandlerThread.java:61)**

@@ -1,0 +1,7 @@
+java.lang.IllegalArgumentException: scale factor must not < 1 0.75
+    at org.mapsforge.core.util.MercatorProjection.getMapSizeWithScaleFactor(MercatorProjection.java:102)
+    at org.mapsforge.core.util.MercatorProjection.calculateGroundResolutionWithScaleFactor(MercatorProjection.java:63)
+    at org.mapsforge.core.util.MercatorProjection.metersToPixelsWithScaleFactor(MercatorProjection.java:313)
+    at cgeo.geocaching.maps.mapsforge.v6.layers.PositionLayer.draw(PositionLayer.java:51)
+    at org.mapsforge.map.layer.LayerManager.doWork(LayerManager.java:94)
+    at org.mapsforge.map.util.PausableThread.run(PausableThread.java:140)

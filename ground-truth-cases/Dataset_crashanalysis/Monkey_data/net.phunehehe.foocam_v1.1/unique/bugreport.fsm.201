@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: net.phunehehe.foocam
+//version: v1.1
+//appro_time: 68
+ java.lang.RuntimeException: startPreview failed
+ 	at android.hardware.Camera.startPreview(Native Method)
+ 	at net.phunehehe.foocam.CameraPreview.startPreview(CameraPreview.java:50)
+ 	at net.phunehehe.foocam.CameraPreview.surfaceChanged(CameraPreview.java:44)
+ 	at android.view.SurfaceView.updateWindow(SurfaceView.java:582)
+ 	at android.view.SurfaceView.access$000(SurfaceView.java:86)
+ 	at android.view.SurfaceView$3.onPreDraw(SurfaceView.java:175)
+ 	at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:833)
+ 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1860)
+ 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1004)
+ 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5481)
+ 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:749)
+ 	at android.view.Choreographer.doCallbacks(Choreographer.java:562)
+ 	at android.view.Choreographer.doFrame(Choreographer.java:532)
+ 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:735)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

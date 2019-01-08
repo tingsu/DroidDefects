@@ -1,0 +1,30 @@
+E/AndroidRuntime(15865): java.lang.NullPointerException
+E/AndroidRuntime(15865):    at ws.com.google.android.mms.pdu.PduHeaders.setEncodedStringValues(PduHeaders.java:634)
+E/AndroidRuntime(15865):    at ws.com.google.android.mms.pdu.SendReq.setTo(SendReq.java:292)
+E/AndroidRuntime(15865):    at org.thoughtcrime.securesms.database.MmsDatabase.insertMessageOutbox(MmsDatabase.java:604)
+E/AndroidRuntime(15865):    at org.thoughtcrime.securesms.sms.MessageSender.send(MessageSender.java:64)
+E/AndroidRuntime(15865):    at org.thoughtcrime.securesms.ConversationActivity.sendMediaMessage(ConversationActivity.java:1071)
+E/AndroidRuntime(15865):    at org.thoughtcrime.securesms.ConversationActivity.sendMessage(ConversationActivity.java:1036)
+E/AndroidRuntime(15865):    at org.thoughtcrime.securesms.ConversationActivity.access$2300(ConversationActivity.java:126)
+E/AndroidRuntime(15865):    at org.thoughtcrime.securesms.ConversationActivity$SendButtonListener.onClick(ConversationActivity.java:1118)
+E/AndroidRuntime(15865):    at android.view.View.performClick(View.java:4445)
+E/AndroidRuntime(15865):    at android.view.View$PerformClick.run(View.java:18446)
+E/AndroidRuntime(15865):    at android.os.Handler.handleCallback(Handler.java:733)
+E/AndroidRuntime(15865):    at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime(15865):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(15865):    at android.app.ActivityThread.main(ActivityThread.java:5144)
+E/AndroidRuntime(15865):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(15865):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime(15865):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+E/AndroidRuntime(15865):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:611)
+E/AndroidRuntime(15865):    at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+E/AndroidRuntime(15865):    at dalvik.system.NativeStart.main(Native Method)
+I/Process (15865): Sending signal. PID: 15865 SIG: 9
+D/dalvikvm(21661): Late-enabling CheckJNI
+D/ActivityThread(21661): handleBindApplication:org.thoughtcrime.securesms
+D/ActivityThread(21661): setTargetHeapUtilization:0.75
+D/ActivityThread(21661): setTargetHeapMinFree:2097152
+I/dalvikvm(21661): DexOpt: illegal method access (call Landroid/content/res/TypedArray;.<init> (Landroid/content/res/Resources;[I[II)V from Landroid/content/res/XResources$XTypedArray;)
+I/dalvikvm(21661): Could not find method android.content.res.TypedArray.<init>, referenced from method android.content.res.XResources$XTypedArray.<init>
+W/dalvikvm(21661): VFY: unable to resolve direct method 82: Landroid/content/res/TypedArray;.<init> (Landroid/content/res/Resources;[I[II)V
+D/dalvikvm(21661): VFY: replacing opcode 0x70 at 0x0002

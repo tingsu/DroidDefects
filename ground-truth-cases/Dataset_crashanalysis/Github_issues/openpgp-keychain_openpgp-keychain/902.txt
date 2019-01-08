@@ -1,0 +1,12 @@
+E/AndroidRuntime( 8288): java.lang.NullPointerException
+E/AndroidRuntime( 8288):    at org.sufficientlysecure.keychain.pgp.CanonicalizedSecretKey.getSecretKeyType(CanonicalizedSecretKey.java:120)
+E/AndroidRuntime( 8288):    at org.sufficientlysecure.keychain.provider.ProviderHelper.saveCanonicalizedSecretKeyRing(ProviderHelper.java:625)
+E/AndroidRuntime( 8288):    at org.sufficientlysecure.keychain.provider.ProviderHelper.saveSecretKeyRing(ProviderHelper.java:855)
+E/AndroidRuntime( 8288):    at org.sufficientlysecure.keychain.pgp.PgpImportExport.importKeyRings(PgpImportExport.java:161)
+E/AndroidRuntime( 8288):    at org.sufficientlysecure.keychain.provider.ProviderHelper.consolidateDatabaseStep2(ProviderHelper.java:1054)
+E/AndroidRuntime( 8288):    at org.sufficientlysecure.keychain.provider.ProviderHelper.consolidateDatabaseStep2(ProviderHelper.java:1004)
+E/AndroidRuntime( 8288):    at org.sufficientlysecure.keychain.service.KeychainIntentService.onHandleIntent(KeychainIntentService.java:752)
+E/AndroidRuntime( 8288):    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+E/AndroidRuntime( 8288):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 8288):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 8288):    at android.os.HandlerThread.run(HandlerThread.java:61)

@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: net.daverix.urlforward
+//version: 0.3
+//appro_time: 134
+ FATAL EXCEPTION: IntentService[FilterService]
+ android.database.sqlite.SQLiteConstraintException: filter.title may not be NULL (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForChangedRowCount(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForChangedRowCount(SQLiteConnection.java:734)
+ 	at android.database.sqlite.SQLiteSession.executeForChangedRowCount(SQLiteSession.java:754)
+ 	at android.database.sqlite.SQLiteStatement.executeUpdateDelete(SQLiteStatement.java:64)
+ 	at android.database.sqlite.SQLiteDatabase.updateWithOnConflict(SQLiteDatabase.java:1574)
+ 	at android.database.sqlite.SQLiteDatabase.update(SQLiteDatabase.java:1520)
+ 	at net.daverix.urlforward.db.UrlForwarderProvider.update(UrlForwarderProvider.java:155)
+ 	at android.content.ContentProvider$Transport.update(ContentProvider.java:260)
+ 	at android.content.ContentResolver.update(ContentResolver.java:1040)
+ 	at net.daverix.urlforward.FilterService.updateLinkFilter(FilterService.java:73)
+ 	at net.daverix.urlforward.FilterService.onHandleIntent(FilterService.java:49)
+ 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

@@ -1,0 +1,35 @@
+09-19 22:38:09.223  16403-16455/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ java.lang.IllegalStateException: Call connect() first!
+09-19 22:38:09.228  16403-16455/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at android.nfc.tech.BasicTagTechnology.checkConnected(BasicTagTechnology.java:52)
+09-19 22:38:09.228  16403-16455/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at android.nfc.tech.BasicTagTechnology.transceive(BasicTagTechnology.java:143)
+09-19 22:38:09.228  16403-16455/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at android.nfc.tech.IsoDep.transceive(IsoDep.java:172)
+09-19 22:38:09.228  16403-16455/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at com.vsmartcard.remotesmartcardreader.app.screaders.NFCReader.reset(NFCReader.java:71)
+09-19 22:38:09.228  16403-16455/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at com.vsmartcard.remotesmartcardreader.app.VPCDWorker.run(VPCDWorker.java:100)
+09-19 22:38:09.233  16403-16455/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at java.lang.Thread.run(Thread.java:841)
+
+In detail:
+The VPCDWorker.java is going to case VPCD_CTRL_RESET and will call reader.reset()
+
+But in screaders\NFCReader.java the reset method will fail at card.transceive(SELECT_MF);
+
+As dirty hack I added a card close() and connect() before  card.transceive() and Open eCard got visible the nPA :-) but the AusweisApp 1.13 says "unbekannte Karten" :-(
+
+```
+public void reset() throws IOException {
+    card.close();
+    card.connect();
+    card.setTimeout(TIMEOUT);
+    byte[] response = card.transceive(SELECT_MF);
+    if (response.length == 2 && response[0] == 0x90 && response[1] == 0x00) {
+        Log.d(this.getClass().getName(), "Resetting the card by selecting the MF results in " + Hex.getHexString(response));
+    }
+}
+```
+
+Later on if I remove the nPA a TagLostException occurs while send APDU, please catch that possible user interaction:
+09-19 22:54:04.118  17860-18681/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ android.nfc.TagLostException: Tag was lost.
+09-19 22:54:04.118  17860-18681/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at android.nfc.TransceiveResult.getResponseOrThrow(TransceiveResult.java:48)
+09-19 22:54:04.123  17860-18681/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at android.nfc.tech.BasicTagTechnology.transceive(BasicTagTechnology.java:151)
+09-19 22:54:04.123  17860-18681/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at android.nfc.tech.IsoDep.transceive(IsoDep.java:172)
+09-19 22:54:04.128  17860-18681/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at com.vsmartcard.remotesmartcardreader.app.screaders.NFCReader.transmit(NFCReader.java:105)
+09-19 22:54:04.128  17860-18681/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at com.vsmartcard.remotesmartcardreader.app.VPCDWorker.run(VPCDWorker.java:109)
+09-19 22:54:04.133  17860-18681/com.vsmartcard.remotesmartcardreader.app W/System.err﹕ at java.lang.Thread.run(Thread.java:841)

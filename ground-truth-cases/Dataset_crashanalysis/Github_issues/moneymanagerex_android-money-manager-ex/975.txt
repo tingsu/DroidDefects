@@ -1,0 +1,7 @@
+Fatal Exception: java.lang.NullPointerException
+       at com.money.manager.ex.sync.SyncService.triggerSync(SyncService.java:279)
+       at com.money.manager.ex.sync.SyncService.onHandleIntent(SyncService.java:139)
+       at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:136)
+       at android.os.HandlerThread.run(HandlerThread.java:61)

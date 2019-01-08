@@ -1,0 +1,42 @@
+I used te "download shared deck" feature to download a small 200-facts deck, and this
+exception appeared at the end of the download:
+
+I/AnkiDroid(10118): Write...
+I/AnkiDroid(10118): Write...
+I/AnkiDroid(10118): Finished writing!
+I/AnkiDroid(10118): doInBackgroundLoadDeck - deckFilename = /sdcard/AnkiDroid/tmp/Smart.fm
+Japanese Core 2000 Step 1 (Sent.anki.updating
+I/AnkiDroid(10118): loadDeck - SD card mounted and existent file -> Loading deck...
+I/AnkiDroid(10118): openDeck - Opening database /sdcard/AnkiDroid/tmp/Smart.fm Japanese
+Core 2000 Step 1 (Sent.anki.updating
+W/InputManagerService(   60): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@433823e8
+I/AnkiDroid(10118): openDeck - Read 36 columns from decks table.
+I/AnkiDroid(10118): openDeck - modified: 1237609534.656880 currentTime: 1291796390.104000
+I/AnkiDroid(10118): The database /sdcard/AnkiDroid/tmp/Smart.fm Japanese Core 2000
+Step 1 (Sent.anki.updating could not be opened = no such table: deckVars: , while compiling:
+SELECT 1 FROM deckVars WHERE key = 'newSpacing'
+D/AndroidRuntime(10118): Shutting down VM
+W/dalvikvm(10118): threadid=3: thread exiting with uncaught exception (group=0x4000fe70)
+I/AnkiDroid(10118): uncaughtException
+I/AnkiDroid(10118): collectInformation
+I/AnkiDroid(10118): collecting information
+I/AnkiDroid(10118): Information collected
+I/AnkiDroid(10118): report infomation string created
+I/AnkiDroid(10118): saveReportFile
+I/AnkiDroid(10118): No external storage available
+I/AnkiDroid(10118): report saved
+E/AndroidRuntime(10118): Uncaught handler: thread main exiting due to uncaught exception
+E/AndroidRuntime(10118): java.lang.NullPointerException
+E/AndroidRuntime(10118):    at com.ichi2.anki.services.DownloadManagerService$UpdateDeckTask.onPostExecute(DownloadManagerService.java:1051)
+E/AndroidRuntime(10118):    at com.ichi2.anki.services.DownloadManagerService$UpdateDeckTask.onPostExecute(DownloadManagerService.java:1)
+E/AndroidRuntime(10118):    at android.os.AsyncTask.finish(AsyncTask.java:416)
+E/AndroidRuntime(10118):    at android.os.AsyncTask.access$300(AsyncTask.java:127)
+E/AndroidRuntime(10118):    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:428)
+E/AndroidRuntime(10118):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(10118):    at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime(10118):    at android.app.ActivityThread.main(ActivityThread.java:3948)
+E/AndroidRuntime(10118):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(10118):    at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime(10118):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:782)
+E/AndroidRuntime(10118):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:540)
+E/AndroidRuntime(10118):    at dalvik.system.NativeStart.main(Native Method)

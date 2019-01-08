@@ -1,0 +1,12 @@
+//this is an auto-generated bug report
+//package name: com.androzic
+//version: 1.7.8
+//appro_time: 22
+ java.lang.NumberFormatException: Invalid int: "oo.png"
+ 	at java.lang.Integer.invalidInt(Integer.java:138)
+ 	at java.lang.Integer.parse(Integer.java:375)
+ 	at java.lang.Integer.parseInt(Integer.java:366)
+ 	at java.lang.Integer.parseInt(Integer.java:332)
+ 	at com.androzic.map.SASMapLoader.load(SASMapLoader.java:44)
+ 	at com.androzic.Androzic.initializeMaps(Androzic.java:1624)
+ 	at com.androzic.Splash$InitializationThread.run(Splash.java:481)

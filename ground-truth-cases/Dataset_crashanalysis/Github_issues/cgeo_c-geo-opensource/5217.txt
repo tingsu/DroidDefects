@@ -1,0 +1,17 @@
+java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=-1, data=Intent {  }} to activity {cgeo.geocaching/cgeo.geocaching.ImageSelectActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.getScheme()' on a null object reference
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3574)
+    at android.app.ActivityThread.handleSendResult(ActivityThread.java:3617)
+    at android.app.ActivityThread.access$1300(ActivityThread.java:151)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1352)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5254)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.getScheme()' on a null object reference
+    at android.content.ContentResolver.openInputStream(ContentResolver.java:630)
+    at cgeo.geocaching.ImageSelectActivity.onActivityResult(ImageSelectActivity.java:271)
+    at android.app.Activity.dispatchActivityResult(Activity.java:6192)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3570)

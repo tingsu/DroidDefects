@@ -1,0 +1,73 @@
+W/dalvikvm( 2300): VFY: unable to resolve exception class 2436 (Ljava/beans/IntrospectionException;)
+W/dalvikvm( 2300): VFY: unable to find exception handler at addr 0x11
+W/dalvikvm( 2300): VFY:  rejected Lorg/yaml/snakeyaml/representer/Representer$RepresentJavaBean;.representData (Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;
+W/dalvikvm( 2300): VFY:  rejecting opcode 0x0d at 0x0011
+W/dalvikvm( 2300): VFY:  rejected Lorg/yaml/snakeyaml/representer/Representer$RepresentJavaBean;.representData (Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;
+W/dalvikvm( 2300): Verifier rejected class Lorg/yaml/snakeyaml/representer/Representer$RepresentJavaBean;
+D/AndroidRuntime( 2300): Shutting down VM
+W/dalvikvm( 2300): threadid=1: thread exiting with uncaught exception (group=0x41e1cc08)
+E/AndroidRuntime( 2300): FATAL EXCEPTION: main
+E/AndroidRuntime( 2300): Process: org.microg.nlp.backend.nominatim, PID: 2300
+E/AndroidRuntime( 2300): java.lang.VerifyError: org/yaml/snakeyaml/representer/Representer$RepresentJavaBean
+E/AndroidRuntime( 2300):        at org.yaml.snakeyaml.representer.Representer.<init>(Representer.java:44)
+E/AndroidRuntime( 2300):        at org.yaml.snakeyaml.Yaml.<init>(Yaml.java:63)
+E/AndroidRuntime( 2300):        at org.microg.address.Formatter.loadFile(Formatter.java:361)
+E/AndroidRuntime( 2300):        at org.microg.address.Formatter.readConfiguration(Formatter.java:332)
+E/AndroidRuntime( 2300):        at org.microg.address.Formatter.<init>(Formatter.java:61)
+E/AndroidRuntime( 2300):        at org.microg.address.Formatter.<init>(Formatter.java:56)
+E/AndroidRuntime( 2300):        at org.microg.nlp.backend.nominatim.BackendService.onCreate(BackendService.java:87)
+E/AndroidRuntime( 2300):        at android.app.ActivityThread.handleCreateService(ActivityThread.java:2558)
+E/AndroidRuntime( 2300):        at android.app.ActivityThread.access$1800(ActivityThread.java:135)
+E/AndroidRuntime( 2300):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1278)
+E/AndroidRuntime( 2300):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 2300):        at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 2300):        at android.app.ActivityThread.main(ActivityThread.java:5001)
+E/AndroidRuntime( 2300):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 2300):        at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 2300):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+E/AndroidRuntime( 2300):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:611)
+E/AndroidRuntime( 2300):        at dalvik.system.NativeStart.main(Native Method)
+W/ActivityManager(  472): Timeout executing service: ServiceRecord{428c4688 u0 org.microg.nlp.backend.nominatim/.BackendService}
+I/ActivityManager(  472): Crashing app skipping ANR: ProcessRecord{428c4d78 2300:org.microg.nlp.backend.nominatim/u0a61} Executing service org.microg.nlp.backend.nominatim/.BackendService
+I/Process ( 2300): Sending signal. PID: 2300 SIG: 9
+I/ActivityManager(  472): Process org.microg.nlp.backend.nominatim (pid 2300) has died.
+D/ActivityManager(  472): cleanUpApplicationRecordLocked -- 2300
+W/ActivityManager(  472): Scheduling restart of crashed service org.microg.nlp.backend.nominatim/.BackendService in 1000ms
+W/InputMethodManagerService(  472): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@42bd97a0 attribute=null, token = android.os.BinderProxy@42306270
+V/Zygote  ( 2315): Switching descriptor 32 to /dev/null
+V/Zygote  ( 2315): Switching descriptor 10 to /dev/null
+I/ActivityManager(  472): Start proc org.microg.nlp.backend.nominatim for service org.microg.nlp.backend.nominatim/.BackendService: pid=2315 uid=10061 gids={50061, 3003}
+D/dalvikvm( 2315): GC_CONCURRENT freed 155K, 6% free 3478K/3700K, paused 3ms+1ms, total 21ms
+D/dalvikvm( 2315): GC_CONCURRENT freed 283K, 12% free 3585K/4036K, paused 2ms+1ms, total 15ms
+D/dalvikvm( 2315): WAIT_FOR_CONCURRENT_GC blocked 13ms
+D/dalvikvm( 2315): GC_CONCURRENT freed 198K, 7% free 3842K/4108K, paused 1ms+1ms, total 15ms
+D/dalvikvm( 2315): GC_CONCURRENT freed 304K, 9% free 4003K/4376K, paused 1ms+2ms, total 14ms
+W/dalvikvm( 2315): VFY: unable to resolve exception class 2436 (Ljava/beans/IntrospectionException;)
+W/dalvikvm( 2315): VFY: unable to find exception handler at addr 0x11
+W/dalvikvm( 2315): VFY:  rejected Lorg/yaml/snakeyaml/representer/Representer$RepresentJavaBean;.representData (Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;
+W/dalvikvm( 2315): VFY:  rejecting opcode 0x0d at 0x0011
+W/dalvikvm( 2315): VFY:  rejected Lorg/yaml/snakeyaml/representer/Representer$RepresentJavaBean;.representData (Ljava/lang/Object;)Lorg/yaml/snakeyaml/nodes/Node;
+W/dalvikvm( 2315): Verifier rejected class Lorg/yaml/snakeyaml/representer/Representer$RepresentJavaBean;
+D/AndroidRuntime( 2315): Shutting down VM
+W/dalvikvm( 2315): threadid=1: thread exiting with uncaught exception (group=0x41e1cc08)
+E/AndroidRuntime( 2315): FATAL EXCEPTION: main
+E/AndroidRuntime( 2315): Process: org.microg.nlp.backend.nominatim, PID: 2315
+E/AndroidRuntime( 2315): java.lang.VerifyError: org/yaml/snakeyaml/representer/Representer$RepresentJavaBean
+E/AndroidRuntime( 2315):        at org.yaml.snakeyaml.representer.Representer.<init>(Representer.java:44)
+E/AndroidRuntime( 2315):        at org.yaml.snakeyaml.Yaml.<init>(Yaml.java:63)
+E/AndroidRuntime( 2315):        at org.microg.address.Formatter.loadFile(Formatter.java:361)
+E/AndroidRuntime( 2315):        at org.microg.address.Formatter.readConfiguration(Formatter.java:332)
+E/AndroidRuntime( 2315):        at org.microg.address.Formatter.<init>(Formatter.java:61)
+E/AndroidRuntime( 2315):        at org.microg.address.Formatter.<init>(Formatter.java:56)
+E/AndroidRuntime( 2315):        at org.microg.nlp.backend.nominatim.BackendService.onCreate(BackendService.java:87)
+E/AndroidRuntime( 2315):        at android.app.ActivityThread.handleCreateService(ActivityThread.java:2558)
+E/AndroidRuntime( 2315):        at android.app.ActivityThread.access$1800(ActivityThread.java:135)
+E/AndroidRuntime( 2315):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1278)
+E/AndroidRuntime( 2315):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 2315):        at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 2315):        at android.app.ActivityThread.main(ActivityThread.java:5001)
+E/AndroidRuntime( 2315):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 2315):        at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 2315):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+E/AndroidRuntime( 2315):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:611)
+E/AndroidRuntime( 2315):        at dalvik.system.NativeStart.main(Native Method)

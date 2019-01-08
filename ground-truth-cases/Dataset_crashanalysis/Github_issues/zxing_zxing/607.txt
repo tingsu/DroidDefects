@@ -1,0 +1,12 @@
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
+    at com.google.zxing.common.GlobalHistogramBinarizer.getBlackRow(GlobalHistogramBinarizer.java:71)
+    at com.google.zxing.BinaryBitmap.getBlackRow(BinaryBitmap.java:66)
+    at com.google.zxing.oned.OneDReader.doDecode(OneDReader.java:132)
+    at com.google.zxing.oned.OneDReader.decode(OneDReader.java:54)
+    at com.google.zxing.MultiFormatReader.decodeInternal(MultiFormatReader.java:171)
+    at com.google.zxing.MultiFormatReader.decode(MultiFormatReader.java:69)
+    at com.google.zxing.multi.GenericMultipleBarcodeReader.doDecodeMultiple(GenericMultipleBarcodeReader.java:84)
+    at com.google.zxing.multi.GenericMultipleBarcodeReader.decodeMultiple(GenericMultipleBarcodeReader.java:65)
+    at com.google.zxing.client.j2se.DecodeWorker.decode(DecodeWorker.java:140)
+    at com.google.zxing.client.j2se.DecodeWorker.call(DecodeWorker.java:75)
+    at com.google.zxing.client.j2se.CommandLineRunner.main(CommandLineRunner.java:84)

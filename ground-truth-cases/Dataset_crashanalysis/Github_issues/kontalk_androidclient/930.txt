@@ -1,0 +1,4 @@
+android.content.res.Resources$NotFoundException: Plural resource ID #0x7f0b0001 quantity=1 item=other
+       at android.content.res.Resources.getQuantityText(Resources.java:411)
+       at android.content.res.Resources.getQuantityString(Resources.java:521)
+       at org.kontalk.ui.ConversationListFragment.onItemCheckedStateChanged(ConversationListFragment.java:231)

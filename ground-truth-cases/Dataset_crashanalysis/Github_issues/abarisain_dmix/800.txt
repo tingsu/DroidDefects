@@ -1,0 +1,7 @@
+                                                                       java.util.ConcurrentModificationException
+                                                                           at java.util.AbstractList$FullListIterator.previous(AbstractList.java:133)
+                                                                           at com.anpmech.mpd.Tools.sequentialToRange(Tools.java:428)
+                                                                           at com.anpmech.mpd.MPDPlaylist.removeByIndex(MPDPlaylist.java:446)
+                                                                           at com.anpmech.mpd.MPDPlaylist.removeAlbumById(MPDPlaylist.java:375)
+                                                                           at com.namelessdev.mpdroid.helpers.QueueControl$4.run(QueueControl.java:203)
+                                                                           at java.lang.Thread.run(Thread.java:818)

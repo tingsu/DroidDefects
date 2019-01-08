@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: biz.gyrus.yaab
+//version: 1.9.11
+//appro_time: 13
+ java.lang.NullPointerException
+ 	at biz.gyrus.yaab.LightMonitorService$BrightnessAnimatorRunnable.smoothTimerApplyVal(LightMonitorService.java:118)
+ 	at biz.gyrus.yaab.LightMonitorService$BrightnessAnimatorRunnable.cancel(LightMonitorService.java:159)
+ 	at biz.gyrus.yaab.LightMonitorService.finishBrightnessAnimation(LightMonitorService.java:641)
+ 	at biz.gyrus.yaab.LightMonitorService.setBrightness(LightMonitorService.java:490)
+ 	at biz.gyrus.yaab.LightMonitorService.applyRunningReading(LightMonitorService.java:324)
+ 	at biz.gyrus.yaab.LightMonitorService$5.run(LightMonitorService.java:242)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,32 @@
+I/ActivityManager(  426): START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 pkg=makeinfo.com.getid cmp=makeinfo.com.getid/.MainActivity} from uid 10142 on display 0
+V/WindowManager(  426): addAppToken: AppWindowToken{13794281 token=Token{38944e68 ActivityRecord{c1c0d8b u0 makeinfo.com.getid/.MainActivity t4742}}} to stack=1 task=4742 at 0
+V/WindowManager(  426): Adding window Window{10508280 u0 Starting makeinfo.com.getid} at 12 of 18 (after Window{207b7349 u0 org.fdroid.fdroid/org.fdroid.fdroid.AppDetails})
+W/SurfaceFlinger(  129): captureScreen: error creating EGL fence: 0x3004
+I/ActivityManager(  426): Start proc 8645:makeinfo.com.getid/u0a166 for activity makeinfo.com.getid/.MainActivity
+I/art     (  142): Explicit concurrent mark sweep GC freed 706(30KB) AllocSpace objects, 0(0B) LOS objects, 24% free, 6MB/8MB, paused 366us total 32.684ms
+I/art     (  142): Explicit concurrent mark sweep GC freed 5(160B) AllocSpace objects, 0(0B) LOS objects, 24% free, 6MB/8MB, paused 5.462ms total 44.616ms
+D/OpenGLRenderer( 7535): endAllStagingAnimators on 0x50cc98b8 (RippleDrawable) with handle 0x43591bd0
+I/LoadedApk( 8645): No resource references to update in package org.twelf.cmtheme
+I/art     (  142): Explicit concurrent mark sweep GC freed 5(160B) AllocSpace objects, 0(0B) LOS objects, 24% free, 6MB/8MB, paused 335us total 36.315ms
+E/ActivityThread( 8645): Failed to find provider info for com.google.android.gsf.gservices
+D/AndroidRuntime( 8645): Shutting down VM
+E/AndroidRuntime( 8645): FATAL EXCEPTION: main
+E/AndroidRuntime( 8645): Process: makeinfo.com.getid, PID: 8645
+E/AndroidRuntime( 8645): java.lang.RuntimeException: Unable to start activity ComponentInfo{makeinfo.com.getid/makeinfo.com.getid.MainActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.database.Cursor.moveToFirst()' on a null object reference
+E/AndroidRuntime( 8645):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2358)
+E/AndroidRuntime( 8645):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2420)
+E/AndroidRuntime( 8645):    at android.app.ActivityThread.access$900(ActivityThread.java:154)
+E/AndroidRuntime( 8645):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1321)
+E/AndroidRuntime( 8645):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 8645):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime( 8645):    at android.app.ActivityThread.main(ActivityThread.java:5294)
+E/AndroidRuntime( 8645):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 8645):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime( 8645):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime( 8645):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/AndroidRuntime( 8645): Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.database.Cursor.moveToFirst()' on a null object reference
+E/AndroidRuntime( 8645):    at makeinfo.com.getid.MainActivity.getGsfAndroidId(MainActivity.java:239)
+E/AndroidRuntime( 8645):    at makeinfo.com.getid.MainActivity.onCreate(MainActivity.java:60)
+E/AndroidRuntime( 8645):    at android.app.Activity.performCreate(Activity.java:5990)
+E/AndroidRuntime( 8645):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+E/AndroidRuntime( 8645):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2311)

@@ -1,0 +1,8 @@
+  Caused by: android.os.TransactionTooLargeException
+    at android.os.BinderProxy.transactNative(Native Method)
+    at android.os.BinderProxy.transact(Binder.java:496)
+    at android.content.pm.IPackageManager$Stub$Proxy.getInstalledApplications(IPackageManager.java:2814)
+    at android.app.ApplicationPackageManager.getInstalledApplications(ApplicationPackageManager.java:530)
+    at org.openintents.shopping.theme.ThemeUtils.getThemePackages(ThemeUtils.java:66) 
+    at org.openintents.shopping.theme.ThemeUtils.getThemeInfos(ThemeUtils.java:157) 
+    at org.openintents.shopping.ui.dialog.ThemeDialog.fillThemes(ThemeDialog.java:132) 

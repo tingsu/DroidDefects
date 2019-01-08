@@ -1,0 +1,8 @@
+//this is an auto-generated bug report
+//package name: org.numixproject.iconsubmit
+//version: 1.0
+//appro_time: 146
+ java.lang.OutOfMemoryError
+ 	at java.io.BufferedWriter.<init>(BufferedWriter.java:71)
+ 	at java.io.BufferedWriter.<init>(BufferedWriter.java:54)
+ 	at org.numixproject.iconsubmit.RequestActivity$2.run(RequestActivity.java:322)

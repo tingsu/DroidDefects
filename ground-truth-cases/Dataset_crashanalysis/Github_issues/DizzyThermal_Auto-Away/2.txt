@@ -1,0 +1,53 @@
+W/dalvikvm( 4018): VFY: unable to resolve virtual method 183: Lcom/teamdc/stephendiniz/autoaway/Activity_Filtering;.getActionBar ()Landroid/app/ActionBar;
+D/dalvikvm( 4018): VFY: replacing opcode 0x6e at 0x0009
+D/dalvikvm( 4018): VFY: dead code 0x000c-0010 in Lcom/teamdc/stephendiniz/autoaway/Activity_Filtering;.onCreate (Landroid/os/Bundle;)V
+I/Filtering( 4018): 1 contacts(s) read from file
+D/ViewConsistency( 4018): AbsListView android.widget.ListView@40565f90 enabled= true
+D/ViewConsistency( 4018): AbsListView android.widget.ListView@40565f90 enabled= true
+I/ActivityManager(  176): Displayed com.teamdc.stephendiniz.autoaway/.Activity_Filtering: +308ms
+I/ActivityManager(  176): Starting: Intent { cmp=com.teamdc.stephendiniz.autoaway/.Activity_ContactPicker (has extras) } from pid 4018
+I/dalvikvm( 4018): Could not find method com.teamdc.stephendiniz.autoaway.Activity_ContactPicker.getActionBar, referenced from method com.teamdc.stephendiniz.autoaway.Activity_ContactPicker.onCreate
+W/dalvikvm( 4018): VFY: unable to resolve virtual method 145: Lcom/teamdc/stephendiniz/autoaway/Activity_ContactPicker;.getActionBar ()Landroid/app/ActionBar;
+D/dalvikvm( 4018): VFY: replacing opcode 0x6e at 0x000a
+D/dalvikvm( 4018): VFY: dead code 0x000d-0011 in Lcom/teamdc/stephendiniz/autoaway/Activity_ContactPicker;.onCreate (Landroid/os/Bundle;)V
+I/ActivityManager(  176): Start proc android.process.acore for content provider com.android.providers.contacts/.ContactsProvider2: pid=4028 uid=10005 gids={3003, 1015}
+D/szipinf ( 4028): Initializing inflate state
+I/ActivityThread( 4028): Pub user_dictionary: com.android.providers.userdictionary.UserDictionaryProvider
+I/ActivityThread( 4028): Pub com.android.social: com.android.providers.contacts.SocialProvider
+I/ActivityThread( 4028): Pub applications: com.android.providers.applications.ApplicationsProvider
+I/ActivityThread( 4028): Pub contacts;com.android.contacts: com.android.providers.contacts.ContactsProvider2
+I/Database( 4028): sqlite returned: error code = 0, msg = Recovered 2133 frames from WAL file /data/data/com.android.providers.contacts/databases/contacts2.db-wal
+I/ActivityThread( 4028): Pub call_log: com.android.providers.contacts.CallLogProvider
+E/DatabaseUtils( 4028): Writing exception to parcel
+E/DatabaseUtils( 4028): java.lang.IllegalArgumentException: URI: content://contacts, calling user: com.teamdc.stephendiniz.autoaway, calling package:com.teamdc.stephendiniz.autoaway
+E/DatabaseUtils( 4028):     at com.android.providers.contacts.LegacyApiSupport.query(LegacyApiSupport.java:1911)
+E/DatabaseUtils( 4028):     at com.android.providers.contacts.ContactsProvider2.query(ContactsProvider2.java:4716)
+E/DatabaseUtils( 4028):     at android.content.ContentProvider$Transport.bulkQuery(ContentProvider.java:174)
+E/DatabaseUtils( 4028):     at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:111)
+E/DatabaseUtils( 4028):     at android.os.Binder.execTransact(Binder.java:320)
+E/DatabaseUtils( 4028):     at dalvik.system.NativeStart.run(Native Method)
+D/AndroidRuntime( 4018): Shutting down VM
+W/dalvikvm( 4018): threadid=1: thread exiting with uncaught exception (group=0x40018560)
+E/AndroidRuntime( 4018): FATAL EXCEPTION: main
+E/AndroidRuntime( 4018): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.teamdc.stephendiniz.autoaway/com.teamdc.stephendiniz.autoaway.Activity_ContactPicker}: java.lang.IllegalArgumentException: URI: content://contacts, calling user: com.teamdc.stephendiniz.autoaway, calling package:com.teamdc.stephendiniz.autoaway
+E/AndroidRuntime( 4018):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1768)
+E/AndroidRuntime( 4018):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1784)
+E/AndroidRuntime( 4018):    at android.app.ActivityThread.access$1500(ActivityThread.java:123)
+E/AndroidRuntime( 4018):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:939)
+E/AndroidRuntime( 4018):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 4018):    at android.os.Looper.loop(Looper.java:130)
+E/AndroidRuntime( 4018):    at android.app.ActivityThread.main(ActivityThread.java:3835)
+E/AndroidRuntime( 4018):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 4018):    at java.lang.reflect.Method.invoke(Method.java:507)
+E/AndroidRuntime( 4018):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:864)
+E/AndroidRuntime( 4018):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:622)
+E/AndroidRuntime( 4018):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 4018): Caused by: java.lang.IllegalArgumentException: URI: content://contacts, calling user: com.teamdc.stephendiniz.autoaway, calling package:com.teamdc.stephendiniz.autoaway
+E/AndroidRuntime( 4018):    at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:144)
+E/AndroidRuntime( 4018):    at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:114)
+E/AndroidRuntime( 4018):    at android.content.ContentProviderProxy.bulkQueryInternal(ContentProviderNative.java:330)
+E/AndroidRuntime( 4018):    at android.content.ContentProviderProxy.query(ContentProviderNative.java:366)
+E/AndroidRuntime( 4018):    at android.content.ContentResolver.query(ContentResolver.java:271)
+E/AndroidRuntime( 4018):    at com.teamdc.stephendiniz.autoaway.Activity_ContactPicker.onCreate(Activity_ContactPicker.java:62)
+E/AndroidRuntime( 4018):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+E/AndroidRuntime( 4018):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1722)

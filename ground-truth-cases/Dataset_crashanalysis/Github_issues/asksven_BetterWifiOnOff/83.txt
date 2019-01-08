@@ -1,0 +1,33 @@
+E/AndroidRuntime(15256): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.asksven.betterwifionoff/com.asksven.betterwifionoff.PreferencesActivity}: android.view.InflateException: Binary XML file line #3: Error inflating class java.lang.reflect.Constructor
+E/AndroidRuntime(15256):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1967)
+E/AndroidRuntime(15256):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1992)
+E/AndroidRuntime(15256):    at android.app.ActivityThread.access$600(ActivityThread.java:127)
+E/AndroidRuntime(15256):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1158)
+E/AndroidRuntime(15256):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(15256):    at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime(15256):    at android.app.ActivityThread.main(ActivityThread.java:4441)
+E/AndroidRuntime(15256):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(15256):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime(15256):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:823)
+E/AndroidRuntime(15256):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:590)
+E/AndroidRuntime(15256):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(15256): Caused by: android.view.InflateException: Binary XML file line #3: Error inflating class java.lang.reflect.Constructor
+E/AndroidRuntime(15256):    at android.preference.GenericInflater.createItem(GenericInflater.java:397)
+E/AndroidRuntime(15256):    at android.preference.GenericInflater.createItemFromTag(GenericInflater.java:430)
+E/AndroidRuntime(15256):    at android.preference.GenericInflater.rInflate(GenericInflater.java:481)
+E/AndroidRuntime(15256):    at android.preference.GenericInflater.inflate(GenericInflater.java:326)
+E/AndroidRuntime(15256):    at android.preference.GenericInflater.inflate(GenericInflater.java:263)
+E/AndroidRuntime(15256):    at android.preference.PreferenceManager.inflateFromResource(PreferenceManager.java:269)
+E/AndroidRuntime(15256):    at android.preference.PreferenceActivity.addPreferencesFromResource(PreferenceActivity.java:1403)
+E/AndroidRuntime(15256):    at com.asksven.betterwifionoff.PreferencesActivity.onCreate(PreferencesActivity.java:67)
+E/AndroidRuntime(15256):    at android.app.Activity.performCreate(Activity.java:4465)
+E/AndroidRuntime(15256):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1049)
+E/AndroidRuntime(15256):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1931)
+E/AndroidRuntime(15256):    ... 11 more
+E/AndroidRuntime(15256): Caused by: java.lang.reflect.InvocationTargetException
+E/AndroidRuntime(15256):    at java.lang.reflect.Constructor.constructNative(Native Method)
+E/AndroidRuntime(15256):    at java.lang.reflect.Constructor.newInstance(Constructor.java:417)
+E/AndroidRuntime(15256):    at android.preference.GenericInflater.createItem(GenericInflater.java:383)
+E/AndroidRuntime(15256):    ... 21 more
+E/AndroidRuntime(15256): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(15256):    at com.asksven.betterwifionoff.SsidWhitelistPreference.<init>(SsidWhitelistPreference.java:67)

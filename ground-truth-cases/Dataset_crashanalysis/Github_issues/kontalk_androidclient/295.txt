@@ -1,0 +1,7 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference
+    at org.jxmpp.util.XmppDateTime.convertXep82TimezoneToRfc822(XmppDateTime.java:229)
+    at org.jxmpp.util.XmppDateTime$DateFormatType.parse(XmppDateTime.java:106)
+    at org.kontalk.util.CPIMMessage.parse(CPIMMessage.java:171)
+    at org.kontalk.crypto.PGPCoder.decryptText(PGPCoder.java:355)
+    at org.kontalk.util.MessageUtils.decryptMessage(MessageUtils.java:577)
+    at org.kontalk.util.MessageUtils.decryptMessage(MessageUtils.java:554)

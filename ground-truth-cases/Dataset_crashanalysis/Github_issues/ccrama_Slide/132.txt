@@ -1,0 +1,67 @@
+```
+E/AndroidRuntime(27415): Caused by: java.io.IOException: Illegal character in path at index 30: https://oauth.reddit.com/user/ /about.json
+E/AndroidRuntime(27415):    at com.squareup.okhttp.Request.uri(Request.java:66)
+E/AndroidRuntime(27415):    at com.squareup.okhttp.internal.http.HttpEngine.networkRequest(HttpEngine.java:643)
+E/AndroidRuntime(27415):    at com.squareup.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:218)
+E/AndroidRuntime(27415):    at com.squareup.okhttp.Call.getResponse(Call.java:271)
+E/AndroidRuntime(27415):    at com.squareup.okhttp.Call$ApplicationInterceptorChain.proceed(Call.java:228)
+E/AndroidRuntime(27415):    at com.squareup.okhttp.Call.getResponseWithInterceptorChain(Call.java:199)
+E/AndroidRuntime(27415):    at com.squareup.okhttp.Call.execute(Call.java:79)
+E/AndroidRuntime(27415):    at net.dean.jraw.http.OkHttpAdapter.execute(OkHttpAdapter.java:64)
+E/AndroidRuntime(27415):    at net.dean.jraw.http.RestClient.execute(RestClient.java:120)
+E/AndroidRuntime(27415):    ... 11 more
+E/AndroidRuntime(27544): FATAL EXCEPTION: main
+E/AndroidRuntime(27544): Process: me.ccrama.redditslide, PID: 27544
+E/AndroidRuntime(27544): java.lang.IndexOutOfBoundsException: setSpan (0 ... 1) ends beyond length 0
+E/AndroidRuntime(27544):    at android.text.SpannableStringInternal.checkRange(SpannableStringInternal.java:351)
+E/AndroidRuntime(27544):    at android.text.SpannableStringInternal.setSpan(SpannableStringInternal.java:79)
+E/AndroidRuntime(27544):    at android.text.SpannableString.setSpan(SpannableString.java:46)
+E/AndroidRuntime(27544):    at android.text.TextUtils.copySpansFrom(TextUtils.java:1036)
+E/AndroidRuntime(27544):    at me.ccrama.redditslide.SubredditInputFilter.filter(SubredditInputFilter.java:29)
+E/AndroidRuntime(27544):    at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:464)
+E/AndroidRuntime(27544):    at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:454)
+E/AndroidRuntime(27544):    at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:33)
+E/AndroidRuntime(27544):    at android.view.inputmethod.BaseInputConnection.replaceText(BaseInputConnection.java:685)
+E/AndroidRuntime(27544):    at android.view.inputmethod.BaseInputConnection.setComposingText(BaseInputConnection.java:445)
+E/AndroidRuntime(27544):    at com.android.internal.view.IInputConnectionWrapper.executeMessage(IInputConnectionWrapper.java:340)
+E/AndroidRuntime(27544):    at com.android.internal.view.IInputConnectionWrapper$MyHandler.handleMessage(IInputConnectionWrapper.java:78)
+E/AndroidRuntime(27544):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(27544):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(27544):    at android.app.ActivityThread.main(ActivityThread.java:5254)
+E/AndroidRuntime(27544):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(27544):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(27544):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+E/AndroidRuntime(27544):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)
+E/AndroidRuntime(28074): FATAL EXCEPTION: AsyncTask #3
+E/AndroidRuntime(28074): Process: me.ccrama.redditslide, PID: 28074
+E/AndroidRuntime(28074): java.lang.RuntimeException: An error occured while executing doInBackground()
+E/AndroidRuntime(28074):    at android.os.AsyncTask$3.done(AsyncTask.java:304)
+E/AndroidRuntime(28074):    at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+E/AndroidRuntime(28074):    at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+E/AndroidRuntime(28074):    at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+E/AndroidRuntime(28074):    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+E/AndroidRuntime(28074):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+E/AndroidRuntime(28074):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+E/AndroidRuntime(28074):    at java.lang.Thread.run(Thread.java:818)
+E/AndroidRuntime(28074): Caused by: java.lang.RuntimeException: Could not execute the request: HttpRequest {method='GET', url=https://oauth.reddit.com/user/ /about.json, expectedMediaType=application/json, headers=User-Agent: android:me.ccrama.RedditSlide:v4.0 (by /u/ccrama)
+E/AndroidRuntime(28074): Authorization: **snip**
+E/AndroidRuntime(28074): , body=null}
+E/AndroidRuntime(28074):    at net.dean.jraw.http.RestClient.execute(RestClient.java:144)
+E/AndroidRuntime(28074):    at net.dean.jraw.RedditClient.execute(RedditClient.java:147)
+E/AndroidRuntime(28074):    at net.dean.jraw.RedditClient.execute(RedditClient.java:141)
+E/AndroidRuntime(28074):    at net.dean.jraw.RedditClient.getUser(RedditClient.java:308)
+E/AndroidRuntime(28074):    at me.ccrama.redditslide.Activities.Profile$getProfile.doInBackground(Profile.java:221)
+E/AndroidRuntime(28074):    at me.ccrama.redditslide.Activities.Profile$getProfile.doInBackground(Profile.java:217)
+E/AndroidRuntime(28074):    at android.os.AsyncTask$2.call(AsyncTask.java:292)
+E/AndroidRuntime(28074):    at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+E/AndroidRuntime(28074):    ... 4 more
+E/AndroidRuntime(28074): Caused by: java.io.IOException: Illegal character in path at index 30: https://oauth.reddit.com/user/ /about.json
+E/AndroidRuntime(28074):    at com.squareup.okhttp.Request.uri(Request.java:66)
+E/AndroidRuntime(28074):    at com.squareup.okhttp.internal.http.HttpEngine.networkRequest(HttpEngine.java:643)
+E/AndroidRuntime(28074):    at com.squareup.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:218)
+E/AndroidRuntime(28074):    at com.squareup.okhttp.Call.getResponse(Call.java:271)
+E/AndroidRuntime(28074):    at com.squareup.okhttp.Call$ApplicationInterceptorChain.proceed(Call.java:228)
+E/AndroidRuntime(28074):    at com.squareup.okhttp.Call.getResponseWithInterceptorChain(Call.java:199)
+E/AndroidRuntime(28074):    at com.squareup.okhttp.Call.execute(Call.java:79)
+E/AndroidRuntime(28074):    at net.dean.jraw.http.OkHttpAdapter.execute(OkHttpAdapter.java:64)
+E/AndroidRuntime(28074):    at net.dean.jraw.http.RestClient.execute(RestClient.java:120)

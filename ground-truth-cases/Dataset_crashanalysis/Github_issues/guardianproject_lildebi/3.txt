@@ -1,0 +1,4 @@
+06-18 02:03:51.020: ERROR/AndroidRuntime(1143): android.util.AndroidRuntimeException: Calling startActivity() from outside of an Activity  context requires the FLAG_ACTIVITY_NEW_TASK flag. Is this really what you want?
+06-18 02:03:51.020: ERROR/AndroidRuntime(1143):     at android.app.ContextImpl.startActivity(ContextImpl.java:647)
+06-18 02:03:51.020: ERROR/AndroidRuntime(1143):     at android.content.ContextWrapper.startActivity(ContextWrapper.java:258)
+06-18 02:03:51.020: ERROR/AndroidRuntime(1143):     at info.guardianproject.lildebi.InstallService$InstallThread.run(InstallService.java:128)

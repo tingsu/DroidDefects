@@ -1,0 +1,59 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.joulespersecond.seattlebusbot/org.onebusaway.android.ui.HomeActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.io.File.mkdir()' on a null object reference
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2520)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2594)
+    at android.app.ActivityThread.access$800(ActivityThread.java:177)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1469)
+    at android.os.Handler.dispatchMessage(Handler.java:111)
+    at android.os.Looper.loop(Looper.java:194)
+    at android.app.ActivityThread.main(ActivityThread.java:5616)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:959)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:754)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.io.File.mkdir()' on a null object reference
+    at com.google.maps.api.android.lib6.gmm6.m.ad.a(Unknown Source)
+    at com.google.maps.api.android.lib6.gmm6.c.h.a(Unknown Source)
+    at com.google.maps.api.android.lib6.gmm6.c.y.a(Unknown Source)
+    at com.google.maps.api.android.lib6.e.bd.a(Unknown Source)
+    at com.google.maps.api.android.lib6.e.ev.a(Unknown Source)
+    at com.google.maps.api.android.lib6.e.z.a(Unknown Source)
+    at com.google.maps.api.android.lib6.e.y.a(Unknown Source)
+    at com.google.android.gms.maps.internal.u.onTransact(SourceFile:107)
+    at android.os.Binder.transact(Binder.java:385)
+    at com.google.android.gms.maps.internal.IMapFragmentDelegate$zza$zza.onCreateView(Unknown Source)
+    at com.google.android.gms.maps.SupportMapFragment$zza.onCreateView(Unknown Source)
+    at com.google.android.gms.dynamic.zza$4.zzb(Unknown Source)
+    at com.google.android.gms.dynamic.zza.zza(Unknown Source)
+    at com.google.android.gms.dynamic.zza.onCreateView(Unknown Source)
+    at com.google.android.gms.maps.SupportMapFragment.onCreateView(Unknown Source)
+    at org.onebusaway.android.map.googlemapsv2.BaseMapFragment.onCreateView(BaseMapFragment.java:184)
+    at android.support.v4.app.Fragment.performCreateView(Fragment.java:1965)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1078)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1259)
+    at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:738)
+    at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1624)
+    at android.support.v4.app.FragmentController.execPendingActions(FragmentController.java:330)
+    at android.support.v4.app.FragmentActivity.onStart(FragmentActivity.java:547)
+    at org.onebusaway.android.ui.HomeActivity.onStart(HomeActivity.java:287)
+    at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1244)
+    at android.app.Activity.performStart(Activity.java:6108)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2477)
+    ... 10 more
+```
+
+Device info:
+
+```
+PURE XL (BLU_PURE_XL) 1
+Manufacturer Symphony Teleca 
+Android version Android 5.1 
+RAM (MB) 3072 
+Screen size 1440 × 2560 
+Screen density (dpi) 640 
+OpenGL ES version 3.0 
+Native platform armeabi-v7a 
+CPU make Mediatek 
+CPU model MT6795
+```
+
+This is a bug in Google Play Services - more info at https://code.google.com/p/gmaps-api-issues/issues/detail?id=9021.

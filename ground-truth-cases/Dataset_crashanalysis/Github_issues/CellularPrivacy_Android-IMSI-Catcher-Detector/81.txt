@@ -1,0 +1,39 @@
+
+Problem seems to be at com.SecUpwN.AIMSICD.activities.MapViewer.loadEntries(MapViewer.java:403). Guessing this is either because the location DB was empty or because my phone was providing crap locations. After enough time has gone by that the DB has an entry, map viewer now at least loads (but has an empty map).
+
+logcat from initial load (starting the application, entering Map Viewer):
+
+```
+06-21 00:51:07.299  31872-31872/com.SecUpwN.AIMSICD I/AIMSICD_MapViewer﹕ Starting MapViewer
+06-21 00:51:07.464  31872-31874/com.SecUpwN.AIMSICD D/dalvikvm﹕ GC_CONCURRENT freed 208K, 7% free 12881K/13767K, paused 12ms+14ms, total 37ms
+06-21 00:51:07.984  31872-31874/com.SecUpwN.AIMSICD D/dalvikvm﹕ GC_CONCURRENT freed 150K, 6% free 13138K/13959K, paused 2ms+14ms, total 52ms
+06-21 00:51:08.044  31872-31872/com.SecUpwN.AIMSICD I/Google Maps Android API﹕ Google Play services client version: 4323000
+06-21 00:51:08.499  31872-31872/com.SecUpwN.AIMSICD I/Google Maps Android API﹕ Google Play services package version: 4452036
+06-21 00:51:08.804  31872-31874/com.SecUpwN.AIMSICD D/dalvikvm﹕ GC_CONCURRENT freed 256K, 7% free 13297K/14215K, paused 12ms+14ms, total 44ms
+06-21 00:51:08.924  31872-31872/com.SecUpwN.AIMSICD I/fpp﹕ Making Creator dynamically
+06-21 00:51:08.929  31872-31872/com.SecUpwN.AIMSICD I/Google Maps Android API﹕ Google Play services client version: 4452000
+06-21 00:51:09.034  31872-31874/com.SecUpwN.AIMSICD D/dalvikvm﹕ GC_CONCURRENT freed 298K, 7% free 13471K/14407K, paused 13ms+4ms, total 41ms
+06-21 00:51:09.149  31872-31872/com.SecUpwN.AIMSICD D/AbsListView﹕ Get MotionRecognitionManager
+06-21 00:51:09.234  31872-31874/com.SecUpwN.AIMSICD D/dalvikvm﹕ GC_CONCURRENT freed 114K, 6% free 13884K/14663K, paused 2ms+15ms, total 37ms
+06-21 00:51:09.319  31872-31872/com.SecUpwN.AIMSICD D/AndroidRuntime﹕ Shutting down VM
+06-21 00:51:09.319  31872-31872/com.SecUpwN.AIMSICD W/dalvikvm﹕ threadid=1: thread exiting with uncaught exception (group=0x414fd2a0)
+06-21 00:51:09.334  31872-31872/com.SecUpwN.AIMSICD E/AndroidRuntime﹕ FATAL EXCEPTION: main
+    java.lang.RuntimeException: Unable to start activity ComponentInfo{com.SecUpwN.AIMSICD/com.SecUpwN.AIMSICD.activities.MapViewer}: java.lang.NullPointerException
+            at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2100)
+            at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2125)
+            at android.app.ActivityThread.access$600(ActivityThread.java:140)
+            at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1227)
+            at android.os.Handler.dispatchMessage(Handler.java:99)
+            at android.os.Looper.loop(Looper.java:137)
+            at android.app.ActivityThread.main(ActivityThread.java:4898)
+            at java.lang.reflect.Method.invokeNative(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:511)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1008)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:775)
+            at dalvik.system.NativeStart.main(Native Method)
+     Caused by: java.lang.NullPointerException
+            at com.SecUpwN.AIMSICD.activities.MapViewer.loadEntries(MapViewer.java:403)
+            at com.SecUpwN.AIMSICD.activities.MapViewer.onCreate(MapViewer.java:107)
+            at android.app.Activity.performCreate(Activity.java:5206)
+            at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1094)
+            at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2064)

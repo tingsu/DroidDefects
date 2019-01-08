@@ -1,0 +1,18 @@
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.pcinpact/com.pcinpact.ListeArticlesActivity}: java.lang.NullPointerException: Attempt to read from null array
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2298)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2360)
+    at android.app.ActivityThread.access$800(ActivityThread.java:144)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1278)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5221)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+ Caused by: java.lang.NullPointerException: Attempt to read from null array
+    at com.pcinpact.ListeArticlesActivity.telechargeListeArticles(ListeArticlesActivity.java:408)
+    at com.pcinpact.ListeArticlesActivity.onCreate(ListeArticlesActivity.java:167)
+    at android.app.Activity.performCreate(Activity.java:5933)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2251)

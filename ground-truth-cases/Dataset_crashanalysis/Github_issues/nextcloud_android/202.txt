@@ -1,0 +1,12 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'void android.support.v4.app.DialogFragment.dismiss()' on a null object reference
+    at com.owncloud.android.ui.activity.UploadFilesActivity$CheckAvailableSpaceTask.onPostExecute(UploadFilesActivity.java:440)
+    at com.owncloud.android.ui.activity.UploadFilesActivity$CheckAvailableSpaceTask.onPostExecute(UploadFilesActivity.java:400)
+    at android.os.AsyncTask.finish(AsyncTask.java:651)
+    at android.os.AsyncTask.-wrap1(AsyncTask.java)
+    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5417)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

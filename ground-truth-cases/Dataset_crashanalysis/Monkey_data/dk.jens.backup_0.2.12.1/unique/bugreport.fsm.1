@@ -1,0 +1,14 @@
+//this is an auto-generated bug report
+//package name: dk.jens.backup
+//version: 0.2.12.1
+//appro_time: 58
+ java.lang.RuntimeException: Package manager has died
+ 	at android.app.ApplicationPackageManager.getInstalledPackages(ApplicationPackageManager.java:433)
+ 	at android.app.ApplicationPackageManager.getInstalledPackages(ApplicationPackageManager.java:423)
+ 	at dk.jens.backup.AppInfoHelper.getPackageInfo(AppInfoHelper.java:32)
+ 	at dk.jens.backup.OAndBackup$3.run(OAndBackup.java:224)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: android.os.TransactionTooLargeException
+ 	at android.os.BinderProxy.transact(Native Method)
+ 	at android.content.pm.IPackageManager$Stub$Proxy.getInstalledPackages(IPackageManager.java:2130)
+ 	at android.app.ApplicationPackageManager.getInstalledPackages(ApplicationPackageManager.java:430)

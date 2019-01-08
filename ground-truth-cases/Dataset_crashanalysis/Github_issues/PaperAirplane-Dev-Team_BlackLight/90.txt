@@ -1,0 +1,16 @@
+java.lang.RuntimeException: Unable to start receiver us.shandian.blacklight.receiver.ConnectivityReceiver: java.lang.NullPointerException
+    at android.app.ActivityThread.handleReceiver(ActivityThread.java:2429)
+    at android.app.ActivityThread.access$1700(ActivityThread.java:138)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1275)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:136)
+    at android.app.ActivityThread.main(ActivityThread.java:5050)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:805)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:621)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+    at us.shandian.blacklight.receiver.ConnectivityReceiver.readNetworkState(ConnectivityReceiver.java:53)
+    at us.shandian.blacklight.receiver.ConnectivityReceiver.onReceive(ConnectivityReceiver.java:40)
+    at android.app.ActivityThread.handleReceiver(ActivityThread.java:2422)

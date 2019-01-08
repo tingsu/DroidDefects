@@ -1,0 +1,17 @@
+12:49:46.451 Error cgeo 10085  java.lang.IllegalStateException: Fatal Exception thrown on Scheduler.Worker thread.
+12:49:46.451 Error cgeo 10085   at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:62)
+12:49:46.451 Error cgeo 10085   at android.os.Handler.handleCallback(Handler.java:739)
+12:49:46.451 Error cgeo 10085   at android.os.Handler.dispatchMessage(Handler.java:95)
+12:49:46.451 Error cgeo 10085   at android.os.Looper.loop(Looper.java:145)
+12:49:46.451 Error cgeo 10085   at android.app.ActivityThread.main(ActivityThread.java:5942)
+12:49:46.451 Error cgeo 10085   at java.lang.reflect.Method.invoke(Native Method)
+12:49:46.451 Error cgeo 10085   at java.lang.reflect.Method.invoke(Method.java:372)
+12:49:46.451 Error cgeo 10085   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1400)
+12:49:46.451 Error cgeo 10085   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1195)
+12:49:46.451 Error cgeo 10085  Caused by: java.lang.IllegalStateException: text view has been deleted while its images are still in use
+12:49:46.451 Error cgeo 10085   at cgeo.geocaching.utils.ImageUtils$ContainerDrawable.updateDrawable(ImageUtils.java:413)
+12:49:46.451 Error cgeo 10085   at cgeo.geocaching.utils.ImageUtils$LineHeightContainerDrawable.updateDrawable(ImageUtils.java:449)
+12:49:46.451 Error cgeo 10085   at cgeo.geocaching.utils.ImageUtils$ContainerDrawable.redrawQueuedDrawables(ImageUtils.java:428)
+12:49:46.451 Error cgeo 10085   at cgeo.geocaching.utils.ImageUtils$ContainerDrawable.access$000(ImageUtils.java:358)
+12:49:46.451 Error cgeo 10085   at cgeo.geocaching.utils.ImageUtils$ContainerDrawable$1.call(ImageUtils.java:366)
+12:49:46.451 Error cgeo 10085   at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)

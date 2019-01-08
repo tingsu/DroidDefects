@@ -1,0 +1,18 @@
+07-23 02:04:22.297  6458  6608 W System.err: org.eclipse.jgit.api.errors.JGitInternalException: Could not read an object while parsing commit d36838975f0c14d43e6aa119874a8536c6a281c3
+07-23 02:04:22.297  6458  6608 W System.err:    at org.eclipse.jgit.api.RebaseCommand.setUpstream(RebaseCommand.java:1416)
+07-23 02:04:22.299  6458  6608 W System.err:    at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:312)
+07-23 02:04:22.299  6458  6608 W System.err:    at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:78)
+07-23 02:04:22.299  6458  6608 W System.err:    at com.zeapo.pwdstore.git.GitAsyncTask.doInBackground(GitAsyncTask.java:44)
+07-23 02:04:22.299  6458  6608 W System.err:    at com.zeapo.pwdstore.git.GitAsyncTask.doInBackground(GitAsyncTask.java:18)
+07-23 02:04:22.299  6458  6608 W System.err:    at android.os.AsyncTask$2.call(AsyncTask.java:295)
+07-23 02:04:22.299  6458  6608 W System.err:    at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+07-23 02:04:22.299  6458  6608 W System.err:    at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:234)
+07-23 02:04:22.299  6458  6608 W System.err:    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+07-23 02:04:22.299  6458  6608 W System.err:    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+07-23 02:04:22.299  6458  6608 W System.err:    at java.lang.Thread.run(Thread.java:818)
+07-23 02:04:22.299  6458  6608 W System.err: Caused by: org.eclipse.jgit.errors.MissingObjectException: Missing unknown d36838975f0c14d43e6aa119874a8536c6a281c3
+07-23 02:04:22.300  6458  6608 W System.err:    at org.eclipse.jgit.internal.storage.file.WindowCursor.open(WindowCursor.java:148)
+07-23 02:04:22.300  6458  6608 W System.err:    at org.eclipse.jgit.lib.ObjectReader.open(ObjectReader.java:229)
+07-23 02:04:22.300  6458  6608 W System.err:    at org.eclipse.jgit.revwalk.RevWalk.parseAny(RevWalk.java:840)
+07-23 02:04:22.300  6458  6608 W System.err:    at org.eclipse.jgit.revwalk.RevWalk.parseCommit(RevWalk.java:753)
+07-23 02:04:22.300  6458  6608 W System.err:    at org.eclipse.jgit.api.RebaseCommand.setUpstream(RebaseCommand.java:1413)

@@ -1,0 +1,12 @@
+E/AndroidRuntime(  973): java.lang.NoSuchMethodError: android.telephony.gsm.GsmCellLocation.getPsc
+E/AndroidRuntime(  973):        at org.mozilla.mozstumbler.Scanner.getCellInfo(Scanner.java:264)
+E/AndroidRuntime(  973):        at org.mozilla.mozstumbler.Scanner.onLocationChanged(Scanner.java:227)
+E/AndroidRuntime(  973):        at android.location.LocationManager$ListenerTransport._handleMessage(Locat
+ionManager.java:191)
+E/AndroidRuntime(  973):        at android.location.LocationManager$ListenerTransport.access$000(LocationM
+anager.java:124)
+E/AndroidRuntime(  973):        at android.location.LocationManager$ListenerTransport$1.handleMessage(Loca
+tionManager.java:140)
+E/AndroidRuntime(  973):        at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime(  973):        at android.os.Looper.loop(Looper.java:144)
+E/AndroidRuntime(  973):        at org.mozilla.mozstumbler.ScannerService$LooperThread.run(ScannerService.

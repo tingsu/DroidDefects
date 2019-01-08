@@ -1,0 +1,17 @@
+// java.lang.RuntimeException: Unable to resume activity {org.wordpress.android/org.wordpress.android.ui.stats.StatsActivity}: java.lang.NullPointerException
+//  at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2742)
+//  at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2771)
+//  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1276)
+//  at android.os.Handler.dispatchMessage(Handler.java:99)
+//  at android.os.Looper.loop(Looper.java:137)
+//  at android.app.ActivityThread.main(ActivityThread.java:5041)
+//  at java.lang.reflect.Method.invokeNative(Native Method)
+//  at java.lang.reflect.Method.invoke(Method.java:511)
+//  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+//  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560)
+//  at dalvik.system.NativeStart.main(Native Method)
+// Caused by: java.lang.NullPointerException
+//  at org.wordpress.android.ui.stats.StatsActivity.onResume(StatsActivity.java:118)
+//  at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1185)
+//  at android.app.Activity.performResume(Activity.java:5182)
+//  at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2732)

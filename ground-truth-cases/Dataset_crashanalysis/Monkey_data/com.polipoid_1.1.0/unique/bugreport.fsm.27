@@ -1,0 +1,9 @@
+//this is an auto-generated bug report
+//package name: com.polipoid
+//version: 1.1.0
+//appro_time: 141
+ java.lang.NullPointerException
+ 	at com.polipoid.backend.proxy.ProxyProcess.waitForProcessToExit(ProxyProcess.java:130)
+ 	at com.polipoid.backend.proxy.ProxyProcess.access$000(ProxyProcess.java:15)
+ 	at com.polipoid.backend.proxy.ProxyProcess$1.run(ProxyProcess.java:56)
+ 	at java.lang.Thread.run(Thread.java:841)

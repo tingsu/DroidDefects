@@ -1,0 +1,16 @@
+Listener failed onChange NotificationsListFragment{433417b8 #0 id=0xffffffff notificationsList}
+    java.lang.IllegalArgumentException: the bind value at index 2 is null
+            at android.database.sqlite.SQLiteProgram.bindString(SQLiteProgram.java:164)
+            at android.database.sqlite.SQLiteProgram.bindAllArgsAsStrings(SQLiteProgram.java:200)
+            at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:47)
+            at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1314)
+            at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1161)
+            at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1032)
+            at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1200)
+            at com.simperium.android.GhostStore.getGhost(GhostStore.java:121)
+            at com.simperium.client.Bucket.get(Bucket.java:353)
+            at org.wordpress.android.ui.notifications.NotificationsListFragment.onChange(NotificationsListFragment.java:247)
+            at com.simperium.client.Bucket.notifyOnNetworkChangeListeners(Bucket.java:663)
+            at com.simperium.client.Bucket.notifyOnNetworkChangeListeners(Bucket.java:652)
+            at com.simperium.android.PersistentStore$DataStore$Reindexer.run(PersistentStore.java:371)
+            at java.lang.Thread.run(Thread.java:841)

@@ -1,0 +1,6 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.content.Intent.getAction()' on a null object reference
+       at org.kontalk.service.gcm.GcmIntentService.onHandleIntent(GcmIntentService.java:64)
+       at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:135)
+       at android.os.HandlerThread.run(HandlerThread.java:61)

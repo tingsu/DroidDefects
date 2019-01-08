@@ -1,0 +1,13 @@
+                                                                     java.lang.NullPointerException: Null pointer exception during instruction 'monitor-enter v17'
+                                                                         at com.amaze.filemanager.fragments.MainFragment.createViews(MainFragment.java:1159)
+                                                                         at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:306)
+                                                                         at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:66)
+                                                                         at android.os.AsyncTask.finish(AsyncTask.java:667)
+                                                                         at android.os.AsyncTask.-wrap1(AsyncTask.java)
+                                                                         at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:684)
+                                                                         at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                         at android.os.Looper.loop(Looper.java:154)
+                                                                         at android.app.ActivityThread.main(ActivityThread.java:6119)
+                                                                         at java.lang.reflect.Method.invoke(Native Method)
+                                                                         at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:886)
+                                                                         at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:776)

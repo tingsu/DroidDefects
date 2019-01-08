@@ -1,0 +1,33 @@
+//this is an auto-generated bug report
+//package name: com.vlath.beheexplorer
+//version: 2.0.0
+//appro_time: 57
+ FATAL EXCEPTION: main
+ java.lang.IllegalStateException: Could not execute method for android:onClick
+ 	at android.support.v7.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:293)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.reflect.InvocationTargetException
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at android.support.v7.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:288)
+ 	... 11 more
+ Caused by: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.speech.action.RECOGNIZE_SPEECH (has extras) }
+ 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1632)
+ 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1424)
+ 	at android.app.Activity.startActivityForResult(Activity.java:3390)
+ 	at android.support.v4.app.BaseFragmentActivityJB.startActivityForResult(BaseFragmentActivityJB.java:50)
+ 	at android.support.v4.app.FragmentActivity.startActivityForResult(FragmentActivity.java:79)
+ 	at android.app.Activity.startActivityForResult(Activity.java:3351)
+ 	at android.support.v4.app.FragmentActivity.startActivityForResult(FragmentActivity.java:859)
+ 	at com.vlath.beheexplorer.activity.MainActivity.voice(MainActivity.java:562)
+ 	... 14 more

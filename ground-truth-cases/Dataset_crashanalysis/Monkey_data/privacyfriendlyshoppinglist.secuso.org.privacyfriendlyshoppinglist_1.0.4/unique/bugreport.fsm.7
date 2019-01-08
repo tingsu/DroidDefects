@@ -1,0 +1,47 @@
+//this is an auto-generated bug report
+//package name: privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist
+//version: 1.0.4
+//appro_time: 163
+ FATAL EXCEPTION: main
+ java.lang.IllegalStateException: Exception thrown on Scheduler.Worker thread. Add `onError` handling.
+ 	at rx.android.schedulers.LooperScheduler$ScheduledAction.run(LooperScheduler.java:112)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: rx.exceptions.OnErrorNotImplementedException
+ 	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:374)
+ 	at rx.internal.util.InternalObservableUtils$ErrorNotImplementedAction.call(InternalObservableUtils.java:371)
+ 	at rx.internal.util.ActionSubscriber.onError(ActionSubscriber.java:44)
+ 	at rx.observers.SafeSubscriber._onError(SafeSubscriber.java:157)
+ 	at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:120)
+ 	at rx.internal.operators.OperatorDoOnEach$1.onError(OperatorDoOnEach.java:71)
+ 	at rx.internal.operators.OperatorDoOnEach$1.onError(OperatorDoOnEach.java:71)
+ 	at rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber.checkTerminated(OperatorObserveOn.java:264)
+ 	at rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber.call(OperatorObserveOn.java:207)
+ 	at rx.android.schedulers.LooperScheduler$ScheduledAction.run(LooperScheduler.java:107)
+ 	... 9 more
+ Caused by: java.lang.NullPointerException
+ 	at privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.logic.shoppingList.business.impl.converter.impl.ShoppingListConverterImpl.convertEntityToDto(ShoppingListConverterImpl.java:94)
+ 	at privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.logic.shoppingList.business.impl.ShoppingListServiceImpl.getByIdSync(ShoppingListServiceImpl.java:94)
+ 	at privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.logic.shoppingList.business.impl.ShoppingListServiceImpl.lambda$getById$1(ShoppingListServiceImpl.java:84)
+ 	at privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.logic.shoppingList.business.impl.ShoppingListServiceImpl.access$lambda$1(ShoppingListServiceImpl.java)
+ 	at privacyfriendlyshoppinglist.secuso.org.privacyfriendlyshoppinglist.logic.shoppingList.business.impl.ShoppingListServiceImpl$$Lambda$2.call(Unknown Source)
+ 	at rx.internal.operators.OnSubscribeFromCallable.call(OnSubscribeFromCallable.java:48)
+ 	at rx.internal.operators.OnSubscribeFromCallable.call(OnSubscribeFromCallable.java:33)
+ 	at rx.Observable.unsafeSubscribe(Observable.java:8460)
+ 	at rx.internal.operators.OperatorSubscribeOn$1.call(OperatorSubscribeOn.java:94)
+ 	at rx.internal.schedulers.EventLoopsScheduler$EventLoopWorker$1.call(EventLoopsScheduler.java:169)
+ 	at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)
+ 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:390)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:153)
+ 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:267)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

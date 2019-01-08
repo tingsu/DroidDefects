@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: org.ligi.scr
+//version: 3.0
+//appro_time: 129
+ android.content.res.Resources$NotFoundException: File res/drawable/ic_navigation_check.xml from drawable resource ID #0x7f02005f. If the resource you are trying to use is a vector resource, you may be referencing it in an unsupported way. See AppCompatDelegate.setCompatVectorFromResourcesEnabled() for more info.
+ 	at android.content.res.Resources.loadDrawable(Resources.java:2096)
+ 	at android.content.res.Resources.getDrawable(Resources.java:695)
+ 	at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:374)
+ 	at net.steamcrafted.loadtoast.LoadToastView.<init>(LoadToastView.java:92)
+ 	at net.steamcrafted.loadtoast.LoadToast.<init>(LoadToast.java:27)
+ 	at org.ligi.scr.MainActivity$onCreate$2.onClick(MainActivity.kt:128)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: org.xmlpull.v1.XmlPullParserException: Binary XML file line #1: invalid drawable tag vector
+ 	at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:897)
+ 	at android.graphics.drawable.Drawable.createFromXml(Drawable.java:837)
+ 	at android.content.res.Resources.loadDrawable(Resources.java:2092)

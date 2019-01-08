@@ -1,0 +1,11 @@
+04-07 09:00:46.659  6305  6305 E AndroidRuntime: java.lang.ClassCastException: com.gh4a.adapter.CommitNoteAdapter$ViewHolder cannot be cast to org.eclipse.egit.github.core.CommitComment
+04-07 09:00:46.659  6305  6305 E AndroidRuntime:    at com.gh4a.adapter.CommitNoteAdapter.onClick(CommitNoteAdapter.java:123)
+04-07 09:00:46.659  6305  6305 E AndroidRuntime:    at android.view.View.performClick(View.java:5204)
+04-07 09:00:46.659  6305  6305 E AndroidRuntime:    at android.view.View$PerformClick.run(View.java:21158)
+04-07 09:00:46.659  6305  6305 E AndroidRuntime:    at android.os.Handler.handleCallback(Handler.java:739)
+04-07 09:00:46.659  6305  6305 E AndroidRuntime:    at android.os.Handler.dispatchMessage(Handler.java:95)
+04-07 09:00:46.659  6305  6305 E AndroidRuntime:    at android.os.Looper.loop(Looper.java:148)
+04-07 09:00:46.659  6305  6305 E AndroidRuntime:    at android.app.ActivityThread.main(ActivityThread.java:5461)
+04-07 09:00:46.659  6305  6305 E AndroidRuntime:    at java.lang.reflect.Method.invoke(Native Method)
+04-07 09:00:46.659  6305  6305 E AndroidRuntime:    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+04-07 09:00:46.659  6305  6305 E AndroidRuntime:    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

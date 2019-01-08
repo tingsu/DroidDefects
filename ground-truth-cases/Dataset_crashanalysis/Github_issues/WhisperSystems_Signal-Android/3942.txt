@@ -1,0 +1,24 @@
+W/OkHttpClientWrapper(19390): java.io.EOFException: \n not found: size=0 content=...
+W/OkHttpClientWrapper(19390):   at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:200)
+W/OkHttpClientWrapper(19390):   at com.squareup.okhttp.internal.http.HttpConnection.readResponse(HttpConnection.java:187)
+W/OkHttpClientWrapper(19390):   at com.squareup.okhttp.internal.http.HttpTransport.readResponseHeaders(HttpTransport.java:80)
+W/OkHttpClientWrapper(19390):   at com.squareup.okhttp.internal.http.HttpEngine.readNetworkResponse(HttpEngine.java:791)
+W/OkHttpClientWrapper(19390):   at com.squareup.okhttp.internal.http.HttpEngine.readResponse(HttpEngine.java:642)
+W/OkHttpClientWrapper(19390):   at com.squareup.okhttp.Call.getResponse(Call.java:263)
+W/OkHttpClientWrapper(19390):   at com.squareup.okhttp.OkHttpClient$1.callGetResponse(OkHttpClient.java:129)
+W/OkHttpClientWrapper(19390):   at com.squareup.okhttp.internal.ws.WebSocket.connect(WebSocket.java:160)
+W/OkHttpClientWrapper(19390):   at org.whispersystems.textsecure.internal.websocket.OkHttpClientWrapper$1.run(OkHttpClientWrapper.java:59)
+W/QuickAttachmentDrawer(19390): updateControlsView()
+```
+
+And in my colleague device:
+
+```
+W/JobConsumer(16743): org.whispersystems.textsecure.api.push.exceptions.PushNetworkException: java.io.EOFException
+W/JobConsumer(16743):   at org.whispersystems.textsecure.internal.push.PushServiceSocket.makeBaseRequest(PushServiceSocket.java:491)
+W/JobConsumer(16743):   at org.whispersystems.textsecure.internal.push.PushServiceSocket.makeRequest(PushServiceSocket.java:467)
+W/JobConsumer(16743):   at org.whispersystems.textsecure.internal.push.PushServiceSocket.registerGcmId(PushServiceSocket.java:159)
+W/JobConsumer(16743):   at org.whispersystems.textsecure.api.TextSecureAccountManager.setGcmId(TextSecureAccountManager.java:84)
+W/JobConsumer(16743):   at org.thoughtcrime.securesms.jobs.GcmRefreshJob.onRun(GcmRefreshJob.java:67)
+W/JobConsumer(16743):   at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/JobConsumer(16743):   at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

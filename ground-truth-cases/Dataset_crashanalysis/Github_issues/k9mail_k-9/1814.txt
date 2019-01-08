@@ -1,0 +1,10 @@
+                                                    com.fsck.k9.mail.transport.SmtpTransport$NegativeSmtpReplyException: Negative SMTP reply: 530 5.5.1  https://support.google.com/mail/?p=WantAuthError i76sm57306224pfk.89 - gsmtp
+                                                        at com.fsck.k9.mail.transport.SmtpTransport.checkLine(SmtpTransport.java:657)
+                                                        at com.fsck.k9.mail.transport.SmtpTransport.executeSimpleCommand(SmtpTransport.java:698)
+                                                        at com.fsck.k9.mail.transport.SmtpTransport.executeSimpleCommand(SmtpTransport.java:662)
+                                                        at com.fsck.k9.mail.transport.SmtpTransport.sendMessageTo(SmtpTransport.java:536)
+                                                        at com.fsck.k9.mail.transport.SmtpTransport.sendMessage(SmtpTransport.java:512)
+                                                        at com.fsck.k9.controller.MessagingController.sendPendingMessagesSynchronous(MessagingController.java:3143)
+                                                        at com.fsck.k9.controller.MessagingController$21.run(MessagingController.java:3022)
+                                                        at com.fsck.k9.controller.MessagingController.run(MessagingController.java:260)
+                                                        at java.lang.Thread.run(Thread.java:818)

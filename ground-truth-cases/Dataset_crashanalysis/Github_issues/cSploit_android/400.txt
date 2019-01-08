@@ -1,0 +1,11 @@
+> java.lang.ExceptionInInitializerError
+> at org.csploit.android.core.ChildManager.async(ChildManager.java:86)
+> at org.csploit.android.tools.Tool.async(Tool.java:59)
+> at org.csploit.android.tools.NetworkRadar.start(NetworkRadar.java:61)
+> at org.csploit.android.services.NetworkRadar.start(NetworkRadar.java:40)
+> at org.csploit.android.MainActivity$7.run(MainActivity.java:564)
+> at java.lang.Thread.run(Thread.java:1019)
+> Caused by: java.lang.UnsatisfiedLinkError: unknown failure
+> at java.lang.Runtime.loadLibrary(Runtime.java:434)
+> at java.lang.System.loadLibrary(System.java:554)
+> at org.csploit.android.core.Client.<clinit>(Client.java:10)

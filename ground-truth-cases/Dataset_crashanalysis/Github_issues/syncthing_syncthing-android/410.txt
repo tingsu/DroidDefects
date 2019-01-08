@@ -1,0 +1,82 @@
+W/dalvikvm( 2674): VFY: unable to resolve virtual method 338: Landroid/content/res/TypedArray;.getChangingConfigurations ()I
+D/dalvikvm( 2674): VFY: replacing opcode 0x6e at 0x0002
+I/dalvikvm( 2674): Could not find method android.content.res.TypedArray.getType, referenced from method android.support.v7.internal.widget.TintTypedArray.getType
+W/dalvikvm( 2674): VFY: unable to resolve virtual method 360: Landroid/content/res/TypedArray;.getType (I)I
+D/dalvikvm( 2674): VFY: replacing opcode 0x6e at 0x0002
+D/dalvikvm( 2674): GC_CONCURRENT freed 317K, 10% free 19494K/21464K, paused 2ms+2ms, total 19ms
+W/ActionBarDrawerToggle( 2674): DrawerToggle may not show up because NavigationIcon is not visible. You may need to call actionbar.setDisplayHomeAsUpEnabled(true);
+I/Adreno-EGL( 2674): <qeglDrvAPI_eglInitialize:320>: EGL 1.4 QUALCOMM Build: I0404c4692afb8623f95c43aeb6d5e13ed4b30ddbDate: 11/06/13
+D/OpenGLRenderer( 2674): Enabling debug mode 0
+D/dalvikvm( 2674): GC_FOR_ALLOC freed 75K, 8% free 19797K/21464K, paused 38ms, total 38ms
+I/ActivityManager(  927): Displayed com.nutomic.syncthingandroid/.activities.MainActivity: +353ms
+V/GetTask ( 2674): Calling Rest API at https://127.0.0.1:8384/rest/system/connections
+D/audio_hw_primary(  231): select_devices: out_snd_device(2: speaker) in_snd_device(0: )
+V/GetTask ( 2674): API call result: {"connections":{"[removed]":{"address":"[removed]:47718","at":"2015-06-17T18:49:06.657018612Z","clientVersion":"v0.11.9","inBytesTotal":530310,"outBytesTotal":267399427},"[removed]":{"address":"[removed]:22000","at":"2015-06-17T18:49:06.656095435Z","clientVersion":"v0.11.9","inBytesTotal":203567,"outBytesTotal":202479}},"total":{"address":"","at":"2015-06-17T18:49:06.657673091Z","clientVersion":"","inBytesTotal":733877,"outBytesTotal":267601906}}
+V/GetTask ( 2674): Calling Rest API at https://127.0.0.1:8384/rest/system/connections
+D/AndroidRuntime( 2674): Shutting down VM
+W/dalvikvm( 2674): threadid=1: thread exiting with uncaught exception (group=0x41533ba8)
+E/AndroidRuntime( 2674): FATAL EXCEPTION: main
+E/AndroidRuntime( 2674): Process: com.nutomic.syncthingandroid, PID: 2674
+E/AndroidRuntime( 2674): java.lang.ArrayIndexOutOfBoundsException: length=5; index=-2147483648
+E/AndroidRuntime( 2674):    at com.nutomic.syncthingandroid.syncthing.RestApi.readableTransferRate(RestApi.java:579)
+E/AndroidRuntime( 2674):    at com.nutomic.syncthingandroid.util.DevicesAdapter.getView(DevicesAdapter.java:60)
+E/AndroidRuntime( 2674):    at android.widget.AbsListView.obtainView(AbsListView.java:2255)
+E/AndroidRuntime( 2674):    at android.widget.ListView.makeAndAddView(ListView.java:1790)
+E/AndroidRuntime( 2674):    at android.widget.ListView.fillDown(ListView.java:691)
+E/AndroidRuntime( 2674):    at android.widget.ListView.fillFromTop(ListView.java:752)
+E/AndroidRuntime( 2674):    at android.widget.ListView.layoutChildren(ListView.java:1616)
+E/AndroidRuntime( 2674):    at android.widget.AbsListView.onLayout(AbsListView.java:2087)
+E/AndroidRuntime( 2674):    at android.view.View.layout(View.java:14817)
+E/AndroidRuntime( 2674):    at android.view.ViewGroup.layout(ViewGroup.java:4631)
+E/AndroidRuntime( 2674):    at android.widget.FrameLayout.layoutChildren(FrameLayout.java:453)
+E/AndroidRuntime( 2674):    at android.widget.FrameLayout.onLayout(FrameLayout.java:388)
+E/AndroidRuntime( 2674):    at android.view.View.layout(View.java:14817)
+E/AndroidRuntime( 2674):    at android.view.ViewGroup.layout(ViewGroup.java:4631)
+E/AndroidRuntime( 2674):    at android.widget.FrameLayout.layoutChildren(FrameLayout.java:453)
+E/AndroidRuntime( 2674):    at android.widget.FrameLayout.onLayout(FrameLayout.java:388)
+E/AndroidRuntime( 2674):    at android.view.View.layout(View.java:14817)
+E/AndroidRuntime( 2674):    at android.view.ViewGroup.layout(ViewGroup.java:4631)
+E/AndroidRuntime( 2674):    at android.support.v4.view.ViewPager.onLayout(ViewPager.java:1626)
+E/AndroidRuntime( 2674):    at android.view.View.layout(View.java:14817)
+E/AndroidRuntime( 2674):    at android.view.ViewGroup.layout(ViewGroup.java:4631)
+E/AndroidRuntime( 2674):    at android.support.v4.widget.DrawerLayout.onLayout(DrawerLayout.java:907)
+E/AndroidRuntime( 2674):    at android.view.View.layout(View.java:14817)
+E/AndroidRuntime( 2674):    at android.view.ViewGroup.layout(ViewGroup.java:4631)
+E/AndroidRuntime( 2674):    at android.widget.FrameLayout.layoutChildren(FrameLayout.java:453)
+E/AndroidRuntime( 2674):    at android.widget.FrameLayout.onLayout(FrameLayout.java:388)
+E/AndroidRuntime( 2674):    at android.view.View.layout(View.java:14817)
+E/AndroidRuntime( 2674):    at android.view.ViewGroup.layout(ViewGroup.java:4631)
+E/AndroidRuntime( 2674):    at android.support.v7.internal.widget.ActionBarOverlayLayout.onLayout(ActionBarOverlayLayout.java:493)
+E/AndroidRuntime( 2674):    at android.view.View.layout(View.java:14817)
+E/AndroidRuntime( 2674):    at android.view.ViewGroup.layout(ViewGroup.java:4631)
+E/AndroidRuntime( 2674):    at android.widget.FrameLayout.layoutChildren(FrameLayout.java:453)
+E/AndroidRuntime( 2674):    at android.widget.FrameLayout.onLayout(FrameLayout.java:388)
+E/AndroidRuntime( 2674):    at android.view.View.layout(View.java:14817)
+E/AndroidRuntime( 2674):    at android.view.ViewGroup.layout(ViewGroup.java:4631)
+E/AndroidRuntime( 2674):    at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1671)
+E/AndroidRuntime( 2674):    at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1525)
+E/AndroidRuntime( 2674):    at android.widget.LinearLayout.onLayout(LinearLayout.java:1434)
+E/AndroidRuntime( 2674):    at android.view.View.layout(View.java:14817)
+E/AndroidRuntime( 2674):    at android.view.ViewGroup.layout(ViewGroup.java:4631)
+E/AndroidRuntime( 2674):    at android.widget.FrameLayout.layoutChildren(FrameLayout.java:453)
+E/AndroidRuntime( 2674):    at android.widget.FrameLayout.onLayout(FrameLayout.java:388)
+E/AndroidRuntime( 2674):    at android.view.View.layout(View.java:14817)
+E/AndroidRuntime( 2674):    at android.view.ViewGroup.layout(ViewGroup.java:4631)
+E/AndroidRuntime( 2674):    at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:1983)
+E/AndroidRuntime( 2674):    at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1740)
+E/AndroidRuntime( 2674):    at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:996)
+E/AndroidRuntime( 2674):    at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5600)
+E/AndroidRuntime( 2674):    at android.view.Choreographer$CallbackRecord.run(Choreographer.java:761)
+E/AndroidRuntime( 2674):    at android.view.Choreographer.doCallbacks(Choreographer.java:574)
+E/AndroidRuntime( 2674):    at android.view.Choreographer.doFrame(Choreographer.java:544)
+E/AndroidRuntime( 2674):    at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:747)
+E/AndroidRuntime( 2674):    at android.os.Handler.handleCallback(Handler.java:733)
+E/AndroidRuntime( 2674):    at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime( 2674):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 2674):    at android.app.ActivityThread.main(ActivityThread.java:5001)
+E/AndroidRuntime( 2674):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 2674):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 2674):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+E/AndroidRuntime( 2674):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+E/AndroidRuntime( 2674):    at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+E/AndroidRuntime( 2674):    at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,13 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String org.kontalk.crypto.PersonalKey.toBase64()' on a null object reference
+    at org.kontalk.util.Preferences.saveRegistrationProgress(Preferences.java:560)
+    at org.kontalk.ui.NumberValidation.startValidationCode(NumberValidation.java:1101)
+    at org.kontalk.ui.NumberValidation.startValidationCode(NumberValidation.java:1088)
+    at org.kontalk.ui.NumberValidation.access$1200(NumberValidation.java:112)
+    at org.kontalk.ui.NumberValidation$16.run(NumberValidation.java:1082)
+    at android.os.Handler.handleCallback(Handler.java:746)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5443)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:728)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:618)

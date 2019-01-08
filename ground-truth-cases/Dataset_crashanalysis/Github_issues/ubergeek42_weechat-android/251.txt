@@ -1,0 +1,16 @@
+java.lang.NoClassDefFoundError: Failed resolution of: Lorg/ietf/jgss/Oid;
+    at com.jcraft.jsch.jgss.GSSContextKrb5.a(Unknown Source)
+    at com.jcraft.jsch.UserAuthGSSAPIWithMIC.a(Unknown Source)
+    at com.jcraft.jsch.Session.a(Unknown Source)
+    at com.ubergeek42.a.a.a.h.run(Unknown Source)
+    at java.lang.Thread.run(Thread.java:818)
+Caused by: java.lang.ClassNotFoundException: Didn't find class "org.ietf.jgss.Oid" on path: DexPathList[[zip file "/data/app/com.ubergeek42.WeechatAndroid-1/base.apk"],nativeLibraryDirectories=[/vendor/lib, /system/lib]]
+    at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:56)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:511)
+    at java.lang.ClassLoader.loadClass(ClassLoader.java:469)
+    ... 5 more
+    Suppressed: java.lang.ClassNotFoundException: org.ietf.jgss.Oid
+        at java.lang.Class.classForName(Native Method)
+        at java.lang.BootClassLoader.findClass(ClassLoader.java:781)
+        at java.lang.BootClassLoader.loadClass(ClassLoader.java:841)
+        at java.lang.ClassLoader.loadClass(ClassLoader.java:504)

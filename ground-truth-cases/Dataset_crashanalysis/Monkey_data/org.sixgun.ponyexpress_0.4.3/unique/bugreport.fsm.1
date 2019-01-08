@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: org.sixgun.ponyexpress
+//version: 0.4.3
+//appro_time: 2
+ java.lang.RuntimeException: Unable to create application org.sixgun.ponyexpress.PonyExpressApp: java.lang.NullPointerException
+ 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4447)
+ 	at android.app.ActivityThread.access$1300(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1316)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at org.sixgun.ponyexpress.util.PonyExpressDbAdaptor.insertPodcast(PonyExpressDbAdaptor.java:557)
+ 	at org.sixgun.ponyexpress.util.PonyExpressDbAdaptor.addNewPodcasts(PonyExpressDbAdaptor.java:538)
+ 	at org.sixgun.ponyexpress.util.PonyExpressDbAdaptor.loadSixgunPodcasts(PonyExpressDbAdaptor.java:523)
+ 	at org.sixgun.ponyexpress.util.PonyExpressDbAdaptor.open(PonyExpressDbAdaptor.java:151)
+ 	at org.sixgun.ponyexpress.PonyExpressApp.onCreate(PonyExpressApp.java:52)
+ 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1007)
+ 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4444)

@@ -1,0 +1,8 @@
+    03-28 00:13:53.653: E/AndroidRuntime(22094): java.util.concurrent.RejectedExecutionException: Task com.nostra13.universalimageloader.core.LoadAndDisplayImageTask@4234b478 rejected from java.util.concurrent.ThreadPoolExecutor@41de7df0[Running, pool size = 128, active threads = 128, queued tasks = 10, completed tasks = 398]
+    03-28 00:13:53.653: E/AndroidRuntime(22094):    at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:1967)
+    03-28 00:13:53.653: E/AndroidRuntime(22094):    at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:782)
+    03-28 00:13:53.653: E/AndroidRuntime(22094):    at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1303)
+    03-28 00:13:53.653: E/AndroidRuntime(22094):    at com.nostra13.universalimageloader.core.ImageLoaderEngine$1.run(ImageLoaderEngine.java:75)
+    03-28 00:13:53.653: E/AndroidRuntime(22094):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+    03-28 00:13:53.653: E/AndroidRuntime(22094):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+    03-28 00:13:53.653: E/AndroidRuntime(22094):    at java.lang.Thread.run(Thread.java:856)

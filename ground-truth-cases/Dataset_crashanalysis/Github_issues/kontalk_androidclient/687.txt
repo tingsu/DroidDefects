@@ -1,0 +1,16 @@
+java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=10001, result=-1, data=Intent { (has extras) }} to activity {org.kontalk/org.kontalk.ui.AboutActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'org.kontalk.billing.IBillingService org.kontalk.ui.DonationFragment.getBillingService()' on a null object reference
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3733)
+    at android.app.ActivityThread.handleSendResult(ActivityThread.java:3776)
+    at android.app.ActivityThread.-wrap16(ActivityThread.java)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1412)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5461)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+    at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:117)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'org.kontalk.billing.IBillingService org.kontalk.ui.DonationFragment.getBillingService()' on a null object reference
+    at org.kontalk.ui.AboutActivity.onActivityResult(AboutActivity.java:98)
+    at android.app.Activity.dispatchActivityResult(Activity.java:6456)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3729)

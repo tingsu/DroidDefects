@@ -1,0 +1,390 @@
+03-22 12:23:05.730 23448 23448 W Resources: java.lang.RuntimeException
+03-22 12:23:05.730 23448 23448 W Resources:     at android.content.res.Resources.getDrawable(Resources.java:797)
+03-22 12:23:05.730 23448 23448 W Resources:     at android.support.v7.widget.TintResources.superGetDrawable(TintResources.java:48)
+03-22 12:23:05.730 23448 23448 W Resources:     at android.support.v7.widget.AppCompatDrawableManager.onDrawableLoadedFromResources(AppCompatDrawableManager.java:374)
+03-22 12:23:05.730 23448 23448 W Resources:     at android.support.v7.widget.TintResources.getDrawable(TintResources.java:44)
+03-22 12:23:05.730 23448 23448 W Resources:     at com.amaze.filemanager.fragments.Main.createViews(Main.java:989)
+03-22 12:23:05.730 23448 23448 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:227)
+03-22 12:23:05.730 23448 23448 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:50)
+03-22 12:23:05.730 23448 23448 W Resources:     at android.os.AsyncTask.finish(AsyncTask.java:651)
+03-22 12:23:05.730 23448 23448 W Resources:     at android.os.AsyncTask.-wrap1(AsyncTask.java)
+03-22 12:23:05.730 23448 23448 W Resources:     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+03-22 12:23:05.730 23448 23448 W Resources:     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-22 12:23:05.730 23448 23448 W Resources:     at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:05.730 23448 23448 W Resources:     at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:05.730 23448 23448 W Resources:     at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:05.730 23448 23448 W Resources:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:05.730 23448 23448 W Resources:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-22 12:23:05.770 23448 23448 W Resources: Drawable com.amaze.filemanager:drawable/abc_ic_ab_back_material has unresolved theme attributes! Consider using Resources.getDrawable(int, Theme) or Context.getDrawable(int).
+03-22 12:23:05.770 23448 23448 W Resources: java.lang.RuntimeException
+03-22 12:23:05.770 23448 23448 W Resources:     at android.content.res.Resources.getDrawable(Resources.java:797)
+03-22 12:23:05.770 23448 23448 W Resources:     at android.support.v7.widget.TintResources.superGetDrawable(TintResources.java:48)
+03-22 12:23:05.770 23448 23448 W Resources:     at android.support.v7.widget.AppCompatDrawableManager.onDrawableLoadedFromResources(AppCompatDrawableManager.java:374)
+03-22 12:23:05.770 23448 23448 W Resources:     at android.support.v7.widget.TintResources.getDrawable(TintResources.java:44)
+03-22 12:23:05.770 23448 23448 W Resources:     at com.amaze.filemanager.fragments.Main.createViews(Main.java:989)
+03-22 12:23:05.770 23448 23448 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:227)
+03-22 12:23:05.770 23448 23448 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:50)
+03-22 12:23:05.770 23448 23448 W Resources:     at android.os.AsyncTask.finish(AsyncTask.java:651)
+03-22 12:23:05.770 23448 23448 W Resources:     at android.os.AsyncTask.-wrap1(AsyncTask.java)
+03-22 12:23:05.770 23448 23448 W Resources:     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+03-22 12:23:05.770 23448 23448 W Resources:     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-22 12:23:05.770 23448 23448 W Resources:     at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:05.770 23448 23448 W Resources:     at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:05.770 23448 23448 W Resources:     at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:05.770 23448 23448 W Resources:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:05.770 23448 23448 W Resources:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-22 12:23:07.288 23803 24234 I chatty  : uid=1013(media) AudioOut_2 expire 13 lines
+03-22 12:23:10.449 23917 24208 D WifiStateMachine: starting scan for "HAARP"-WPA_PSK with 2432
+03-22 12:23:10.650 23803 24206 I chatty  : uid=1013(media) ApmAudio expire 15 lines
+03-22 12:23:10.792 23448 23448 W Resources: Drawable com.amaze.filemanager:drawable/abc_ic_ab_back_material has unresolved theme attributes! Consider using Resources.getDrawable(int, Theme) or Context.getDrawable(int).
+03-22 12:23:10.792 23448 23448 W Resources: java.lang.RuntimeException
+03-22 12:23:10.792 23448 23448 W Resources:     at android.content.res.Resources.getDrawable(Resources.java:797)
+03-22 12:23:10.792 23448 23448 W Resources:     at android.support.v7.widget.TintResources.superGetDrawable(TintResources.java:48)
+03-22 12:23:10.792 23448 23448 W Resources:     at android.support.v7.widget.AppCompatDrawableManager.onDrawableLoadedFromResources(AppCompatDrawableManager.java:374)
+03-22 12:23:10.792 23448 23448 W Resources:     at android.support.v7.widget.TintResources.getDrawable(TintResources.java:44)
+03-22 12:23:10.792 23448 23448 W Resources:     at com.amaze.filemanager.fragments.Main.createViews(Main.java:989)
+03-22 12:23:10.792 23448 23448 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:227)
+03-22 12:23:10.792 23448 23448 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:50)
+03-22 12:23:10.792 23448 23448 W Resources:     at android.os.AsyncTask.finish(AsyncTask.java:651)
+03-22 12:23:10.792 23448 23448 W Resources:     at android.os.AsyncTask.-wrap1(AsyncTask.java)
+03-22 12:23:10.792 23448 23448 W Resources:     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+03-22 12:23:10.792 23448 23448 W Resources:     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-22 12:23:10.792 23448 23448 W Resources:     at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:10.792 23448 23448 W Resources:     at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:10.792 23448 23448 W Resources:     at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:10.792 23448 23448 W Resources:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:10.792 23448 23448 W Resources:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-22 12:23:10.802 23803 24207 I chatty  : uid=1013(media) ApmOutput expire 9 lines
+03-22 12:23:12.027 23448 23448 W Resources: Drawable com.amaze.filemanager:drawable/abc_ic_ab_back_material has unresolved theme attributes! Consider using Resources.getDrawable(int, Theme) or Context.getDrawable(int).
+03-22 12:23:12.027 23448 23448 W Resources: java.lang.RuntimeException
+03-22 12:23:12.027 23448 23448 W Resources:     at android.content.res.Resources.getDrawable(Resources.java:797)
+03-22 12:23:12.027 23448 23448 W Resources:     at android.support.v7.widget.TintResources.superGetDrawable(TintResources.java:48)
+03-22 12:23:12.027 23448 23448 W Resources:     at android.support.v7.widget.AppCompatDrawableManager.onDrawableLoadedFromResources(AppCompatDrawableManager.java:374)
+03-22 12:23:12.027 23448 23448 W Resources:     at android.support.v7.widget.TintResources.getDrawable(TintResources.java:44)
+03-22 12:23:12.027 23448 23448 W Resources:     at com.amaze.filemanager.fragments.Main.createViews(Main.java:989)
+03-22 12:23:12.027 23448 23448 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:227)
+03-22 12:23:12.027 23448 23448 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:50)
+03-22 12:23:12.027 23448 23448 W Resources:     at android.os.AsyncTask.finish(AsyncTask.java:651)
+03-22 12:23:12.027 23448 23448 W Resources:     at android.os.AsyncTask.-wrap1(AsyncTask.java)
+03-22 12:23:12.027 23448 23448 W Resources:     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+03-22 12:23:12.027 23448 23448 W Resources:     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-22 12:23:12.027 23448 23448 W Resources:     at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:12.027 23448 23448 W Resources:     at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:12.027 23448 23448 W Resources:     at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:12.027 23448 23448 W Resources:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:12.027 23448 23448 W Resources:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-22 12:23:14.924 23803 24234 I chatty  : uid=1013(media) AudioOut_2 expire 10 lines
+03-22 12:23:15.021 23803 24207 I chatty  : uid=1013(media) ApmOutput expire 27 lines
+03-22 12:23:15.021 23803 24206 I chatty  : uid=1013(media) ApmAudio expire 42 lines
+03-22 12:23:15.210 23448 23448 W Resources: Drawable com.amaze.filemanager:drawable/abc_ic_ab_back_material has unresolved theme attributes! Consider using Resources.getDrawable(int, Theme) or Context.getDrawable(int).
+03-22 12:23:15.210 23448 23448 W Resources: java.lang.RuntimeException
+03-22 12:23:15.210 23448 23448 W Resources:     at android.content.res.Resources.getDrawable(Resources.java:797)
+03-22 12:23:15.210 23448 23448 W Resources:     at android.support.v7.widget.TintResources.superGetDrawable(TintResources.java:48)
+03-22 12:23:15.210 23448 23448 W Resources:     at android.support.v7.widget.AppCompatDrawableManager.onDrawableLoadedFromResources(AppCompatDrawableManager.java:374)
+03-22 12:23:15.210 23448 23448 W Resources:     at android.support.v7.widget.TintResources.getDrawable(TintResources.java:44)
+03-22 12:23:15.210 23448 23448 W Resources:     at com.amaze.filemanager.fragments.Main.createViews(Main.java:989)
+03-22 12:23:15.210 23448 23448 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:227)
+03-22 12:23:15.210 23448 23448 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:50)
+03-22 12:23:15.210 23448 23448 W Resources:     at android.os.AsyncTask.finish(AsyncTask.java:651)
+03-22 12:23:15.210 23448 23448 W Resources:     at android.os.AsyncTask.-wrap1(AsyncTask.java)
+03-22 12:23:15.210 23448 23448 W Resources:     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+03-22 12:23:15.210 23448 23448 W Resources:     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-22 12:23:15.210 23448 23448 W Resources:     at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:15.210 23448 23448 W Resources:     at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:15.210 23448 23448 W Resources:     at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:15.210 23448 23448 W Resources:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:15.210 23448 23448 W Resources:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-22 12:23:15.270 24808 26359 D GmsGcmMcsSvc: Heartbeat initiated, reason: Intent { act=org.microg.gms.gcm.mcs.HEARTBEAT flg=0x4 cmp=com.google.android.gms/org.microg.gms.gcm.McsService (has extras) }
+03-22 12:23:15.271 24808 26359 D GmsGcmMcsSvc: Scheduling heartbeat in 300 seconds...
+03-22 12:23:15.358 24808 31675 D GmsGcmMcsOutput: Outgoing message: HeartbeatPing{last_stream_id_received=18}
+03-22 12:23:15.569 23448 23460 I art     : Background partial concurrent mark sweep GC freed 20544(1169KB) AllocSpace objects, 1(20KB) LOS objects, 40% free, 11MB/19MB, paused 24.948ms total 137.331ms
+03-22 12:23:15.598 24808 31674 D GmsGcmMcsInput: Incoming message: HeartbeatAck{last_stream_id_received=18}
+03-22 12:23:15.767 23917 23928 I art     : Background partial concurrent mark sweep GC freed 82142(4MB) AllocSpace objects, 8(200KB) LOS objects, 33% free, 17MB/25MB, paused 3.180ms total 123.195ms
+03-22 12:23:18.049 23448 23448 W art     : Before Android 4.1, method int android.support.v7.widget.ListViewCompat.lookForSelectablePosition(int, boolean) would have incorrectly overridden the package-private method in android.widget.ListView
+03-22 12:23:20.423 23917 31616 D NetlinkSocketObserver: NeighborEvent{elapsedMs=53526490, 192.168.1.1, [C0C6875E27D4], RTM_NEWNEIGH, NUD_REACHABLE}
+03-22 12:23:22.746 23448 23486 D OpenGLRenderer: endAllStagingAnimators on 0xa0fe1c80 (ListPopupWindow$DropDownListView) with handle 0xaae3ff80
+03-22 12:23:26.923 23917 31616 D NetlinkSocketObserver: NeighborEvent{elapsedMs=53532990, 192.168.1.1, [C0C6875E27D4], RTM_NEWNEIGH, NUD_STALE}
+03-22 12:23:27.045 23803 24207 I chatty  : uid=1013(media) ApmOutput expire 22 lines
+03-22 12:23:27.045 23803 24206 I chatty  : uid=1013(media) ApmAudio expire 33 lines
+03-22 12:23:28.933 23448 23486 D OpenGLRenderer: endAllStagingAnimators on 0xa10dd500 (ListPopupWindow$DropDownListView) with handle 0xa10ab790
+03-22 12:23:30.450 23917 24208 D WifiStateMachine: starting scan for "HAARP"-WPA_PSK with 2432
+03-22 12:23:30.513 23448 23448 W Resources: Drawable com.amaze.filemanager:drawable/abc_ic_ab_back_material has unresolved theme attributes! Consider using Resources.getDrawable(int, Theme) or Context.getDrawable(int).
+03-22 12:23:30.513 23448 23448 W Resources: java.lang.RuntimeException
+03-22 12:23:30.513 23448 23448 W Resources:     at android.content.res.Resources.getDrawable(Resources.java:797)
+03-22 12:23:30.513 23448 23448 W Resources:     at android.support.v7.widget.TintResources.superGetDrawable(TintResources.java:48)
+03-22 12:23:30.513 23448 23448 W Resources:     at android.support.v7.widget.AppCompatDrawableManager.onDrawableLoadedFromResources(AppCompatDrawableManager.java:374)
+03-22 12:23:30.513 23448 23448 W Resources:     at android.support.v7.widget.TintResources.getDrawable(TintResources.java:44)
+03-22 12:23:30.513 23448 23448 W Resources:     at com.amaze.filemanager.fragments.Main.createViews(Main.java:989)
+03-22 12:23:30.513 23448 23448 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:227)
+03-22 12:23:30.513 23448 23448 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:50)
+03-22 12:23:30.513 23448 23448 W Resources:     at android.os.AsyncTask.finish(AsyncTask.java:651)
+03-22 12:23:30.513 23448 23448 W Resources:     at android.os.AsyncTask.-wrap1(AsyncTask.java)
+03-22 12:23:30.513 23448 23448 W Resources:     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+03-22 12:23:30.513 23448 23448 W Resources:     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-22 12:23:30.513 23448 23448 W Resources:     at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:30.513 23448 23448 W Resources:     at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:30.513 23448 23448 W Resources:     at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:30.513 23448 23448 W Resources:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:30.513 23448 23448 W Resources:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-22 12:23:30.797 23448 23513 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.BATTERY_STATS in package: com.asksven.betterbatterystats_xdaedition at: Binary XML file line #21
+03-22 12:23:31.482 23448 23513 W PackageParser: Unknown element under <application>: enable-feature at /storage/1990-E293/Arhiva/APK/com.duolingo_3.18.2-291_minAPI9(arm64-v8a,armeabi,armeabi-v7a,mips,mips64,x86,x86_64)(nodpi).apk Binary XML file line #395
+03-22 12:23:37.287 23917 24861 I ActivityManager: START u0 {act=android.intent.action.OPEN_DOCUMENT_TREE cmp=com.android.documentsui/.DocumentsActivity} from uid 10111 on display 0
+03-22 12:23:37.711 23917 23945 I ActivityManager: Displayed com.android.documentsui/.DocumentsActivity: +343ms
+03-22 12:23:37.818 21449 23006 D Documents: userMode=0, userSortOrder=0 --> mode=1, sortOrder=1
+03-22 12:23:37.967 23448 23448 D AndroidRuntime: Shutting down VM
+03-22 12:23:38.048 23448 23448 E AndroidRuntime: FATAL EXCEPTION: main
+03-22 12:23:38.048 23448 23448 E AndroidRuntime: Process: com.amaze.filemanager, PID: 23448
+03-22 12:23:38.048 23448 23448 E AndroidRuntime: Theme: themes:{default=, iconPack:org.twelf.cmtheme}
+03-22 12:23:38.048 23448 23448 E AndroidRuntime: java.lang.ClassCastException: android.graphics.drawable.VectorDrawable cannot be cast to android.graphics.drawable.BitmapDrawable
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at com.amaze.filemanager.ui.Layoutelements.writeToParcel(Layoutelements.java:75)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Parcel.writeParcelable(Parcel.java:1437)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Parcel.writeValue(Parcel.java:1343)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Parcel.writeList(Parcel.java:759)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Parcel.writeValue(Parcel.java:1365)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Parcel.writeArrayMapInternal(Parcel.java:686)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.BaseBundle.writeToParcelInner(BaseBundle.java:1330)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Bundle.writeToParcel(Bundle.java:1079)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Parcel.writeBundle(Parcel.java:711)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.support.v4.app.FragmentState.writeToParcel(Fragment.java:138)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Parcel.writeTypedArray(Parcel.java:1254)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.support.v4.app.FragmentManagerState.writeToParcel(FragmentManager.java:385)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Parcel.writeParcelable(Parcel.java:1437)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Parcel.writeValue(Parcel.java:1343)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Parcel.writeArrayMapInternal(Parcel.java:686)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.BaseBundle.writeToParcelInner(BaseBundle.java:1330)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Bundle.writeToParcel(Bundle.java:1079)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Parcel.writeBundle(Parcel.java:711)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.app.ActivityManagerProxy.activityStopped(ActivityManagerNative.java:3170)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.app.ActivityThread$StopInfo.run(ActivityThread.java:3451)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Handler.handleCallback(Handler.java:739)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:95)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:38.048 23448 23448 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-22 12:23:38.095 23917 22295 I OpenGLRenderer: Initialized EGL, version 1.4
+03-22 12:23:38.187 23917 24213 D ConnectivityService: notifyType CAP_CHANGED for NetworkAgentInfo [WIFI () - 101]
+03-22 12:23:38.253 23917 24213 D ConnectivityService: updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 56
+03-22 12:23:39.922 23803 24207 I chatty  : uid=1013(media) ApmOutput expire 12 lines
+03-22 12:23:39.923 23803 24206 I chatty  : uid=1013(media) ApmAudio expire 18 lines
+03-22 12:23:39.942 23448 23448 I Process : Sending signal. PID: 23448 SIG: 9
+03-22 12:23:39.961 23917 22295 D OpenGLRenderer: endAllStagingAnimators on 0x99ef6c80 (RippleDrawable) with handle 0x973bf710
+03-22 12:23:39.972 23917 24860 W InputMethodManagerService: Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@cdf8e0f attribute=null, token = android.os.BinderProxy@7562172
+03-22 12:23:40.034 23917 24366 D GraphicsStats: Buffer count: 7
+03-22 12:23:40.035 23917 24366 I WindowState: WIN DEATH: Window{e59953f u0 com.amaze.filemanager/com.amaze.filemanager.activities.MainActivity}
+03-22 12:23:40.039 23917 21907 I libprocessgroup: Killing pid 23469 in uid 10111 as part of process group 23448
+03-22 12:23:40.039 23917 21907 I libprocessgroup: Killing pid 23472 in uid 10111 as part of process group 23448
+03-22 12:23:40.048 23476 23476 D su      : Finishing su operation for app [uid:10111, pkgName: com.amaze.filemanager]
+03-22 12:23:40.060 23474 23474 D su      : sending code
+03-22 12:23:40.060 23474 23474 F libc    : Fatal signal 13 (SIGPIPE), code 0 in tid 23474 (su)
+03-22 12:23:40.061   183   183 I DEBUG   : property debug.db.uid not set; NOT waiting for gdb.
+03-22 12:23:40.061   183   183 I DEBUG   : HINT: adb shell setprop debug.db.uid 100000
+03-22 12:23:40.061   183   183 I DEBUG   : HINT: adb forward tcp:5039 tcp:5039
+03-22 12:23:40.103 23917 21907 I ActivityManager: Process com.amaze.filemanager (pid 23448) has died
+03-22 12:23:40.106 23917 21907 W ActivityManager: Force removing ActivityRecord{b6bec62 u0 com.amaze.filemanager/.activities.MainActivity t167}: app died, no saved state
+03-22 12:23:40.108 23917 23945 W AppOps  : Finishing op nesting under-run: uid 1000 pkg android code 24 time=0 duration=0 nesting=0
+03-22 12:23:40.113 24290 24290 I SuControllerImpl: Got change
+03-22 12:23:40.175   183   183 F DEBUG   : *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+03-22 12:23:40.175   183   183 F DEBUG   : Build fingerprint: 'lge/x3_open_eu/x3:4.1.2/JZO54K/P88020c.20d4ae5fac:user/release-keys'
+03-22 12:23:40.175   183   183 F DEBUG   : Revision: '0'
+03-22 12:23:40.175   183   183 F DEBUG   : ABI: 'arm'
+03-22 12:23:40.175   183   183 F DEBUG   : pid: 23474, tid: 23474, name: su  >>> /system/xbin/su <<<
+03-22 12:23:40.175   183   183 F DEBUG   : signal 13 (SIGPIPE), code 0 (SI_USER), fault addr --------
+03-22 12:23:40.177 23917 24295 W NativeCrashListener: Couldn't find ProcessRecord for pid 23474
+03-22 12:23:40.180   183   183 F DEBUG   :     r0 ffffffe0  r1 beda7954  r2 00000004  r3 00000003
+03-22 12:23:40.181   183   183 E DEBUG   : AM write failed: Broken pipe
+03-22 12:23:40.181   183   183 F DEBUG   :     r4 00000000  r5 ffffa558  r6 ffffa558  r7 00000004
+03-22 12:23:40.181   183   183 F DEBUG   :     r8 00000000  r9 beda7950  sl fffffeac  fp 00000001
+03-22 12:23:40.181   183   183 F DEBUG   :     ip 00000004  sp beda7920  lr b6f842f9  pc b6e3f260  cpsr 200b0010
+03-22 12:23:40.192   183   183 F DEBUG   : 
+03-22 12:23:40.192   183   183 F DEBUG   : backtrace:
+03-22 12:23:40.192   183   183 F DEBUG   :     #00 pc 0004a260  /system/lib/libc.so (write+12)
+03-22 12:23:40.192   183   183 F DEBUG   :     #01 pc 000062f5  /system/xbin/su
+03-22 12:23:40.192   183   183 F DEBUG   :     #02 pc 00016335  /system/lib/libc.so (__libc_init+52)
+03-22 12:23:40.192   183   183 F DEBUG   :     #03 pc 00004ce0  /system/xbin/su
+03-22 12:23:40.267   183   183 F DEBUG   : 
+03-22 12:23:40.267   183   183 F DEBUG   : Tombstone written to: /data/tombstones/tombstone_01
+03-22 12:23:40.268 23917 23943 I BootReceiver: Copying /data/tombstones/tombstone_01 to DropBox (SYSTEM_TOMBSTONE)
+03-22 12:23:40.273 23474 23474 E su      : unable to write exit code failed with 32: Broken pipe
+03-22 12:23:40.273 23474 23474 D su      : child exited
+03-22 12:23:40.766 23803 24234 I chatty  : uid=1013(media) AudioOut_2 expire 14 lines
+03-22 12:23:40.813 21449 21449 D Documents: onFinished() [content://com.android.externalstorage.documents/tree/1990-E293%3A]
+03-22 12:23:41.145 20543 20543 E ProxyChangeListener: Using no proxy configuration due to exception:java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.os.Bundle.get(java.lang.String)' on a null object reference
+03-22 12:23:41.312 21449 22983 D OpenGLRenderer: endAllStagingAnimators on 0xa18da800 (RippleDrawable) with handle 0xafbbe4c0
+03-22 12:23:41.734 21449 21449 I art     : Starting a blocking GC Explicit
+03-22 12:23:41.858 21449 21449 I art     : Explicit concurrent mark sweep GC freed 3619(236KB) AllocSpace objects, 0(0B) LOS objects, 25% free, 7MB/10MB, paused 764us total 94.055ms
+03-22 12:23:41.860 21449 21449 I art     : Starting a blocking GC Explicit
+03-22 12:23:41.898 21449 21449 I art     : Explicit concurrent mark sweep GC freed 5128(397KB) AllocSpace objects, 1(16KB) LOS objects, 24% free, 7MB/10MB, paused 560us total 37.712ms
+03-22 12:23:41.899 21449 21449 I art     : Starting a blocking GC Explicit
+03-22 12:23:41.927 21449 21449 I art     : Explicit concurrent mark sweep GC freed 3(96B) AllocSpace objects, 0(0B) LOS objects, 24% free, 7MB/10MB, paused 2.709ms total 27.792ms
+03-22 12:23:42.116 23917 23928 I art     : Background partial concurrent mark sweep GC freed 20770(1504KB) AllocSpace objects, 10(264KB) LOS objects, 33% free, 17MB/25MB, paused 3.077ms total 119.067ms
+03-22 12:23:42.740 24894 25108 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+03-22 12:23:42.741 24894 25108 W OpenGLRenderer: Incorrectly called buildLayer on View: ShortcutAndWidgetContainer, destroying layer...
+03-22 12:23:43.099 23917 24171 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.amaze.filemanager/.activities.MainActivity bnds=[570,880][710,1085] (has extras)} from uid 10020 on display 0
+03-22 12:23:43.222 23917 24926 I ActivityManager: Start proc 23549:com.amaze.filemanager/u0a111 for activity com.amaze.filemanager/.activities.MainActivity
+03-22 12:23:43.442 23549 23549 W System  : ClassLoader referenced unknown path: /data/app/com.amaze.filemanager-1/lib/arm
+03-22 12:23:43.446 23549 23549 I LoadedApk: No resource references to update in package org.twelf.cmtheme
+03-22 12:23:43.733 23570 23570 D su      : su invoked.
+03-22 12:23:43.733 23570 23570 D su      : starting daemon client 10111 10111
+03-22 12:23:43.736 23572 23572 D su      : remote pid: 23570
+03-22 12:23:43.737 23572 23572 D su      : remote pts_slave: 
+03-22 12:23:43.737 23572 23572 D su      : waiting for child exit
+03-22 12:23:43.738 23574 23574 D su      : su invoked.
+03-22 12:23:43.739 23574 23574 E su      : SU from: u0_a111
+03-22 12:23:43.739 23574 23574 D su      : Checking whether app [uid:10111, pkgName: com.amaze.filemanager] is allowed to be root
+03-22 12:23:43.741 23574 23574 D su      : Privilege elevation allowed by appops
+03-22 12:23:43.741 23574 23574 D su      : Allowing via appops.
+03-22 12:23:43.741 23574 23574 D su      : 10111 /system/bin/app_process32 executing 0 /system/bin/sh using binary /system/bin/sh : sh
+03-22 12:23:43.741 24290 24290 I SuControllerImpl: Got change
+03-22 12:23:43.742 23574 23574 D su      : Waiting for pid 23575.
+03-22 12:23:44.009 23549 23584 D OpenGLRenderer: Use EGL_SWAP_BEHAVIOR_PRESERVED: false
+03-22 12:23:44.109 23549 23549 W FragmentManager: moveToState: Fragment state for Main{11fd73d #1 id=0x7f0f0123} not updated inline; expected state 3 found 2
+03-22 12:23:44.157 23549 23584 I libdgv1.so: Loaded to help save your day
+03-22 12:23:44.157 23549 23584 D libEGL  : loaded /system/lib/egl/libEGL_tegra.so
+03-22 12:23:44.158 23549 23584 E         : file /data/data/com.nvidia.NvCPLSvc/files/driverlist.txt: not found!
+03-22 12:23:44.158 23549 23584 I         : Attempting to load EGL implementation /system/lib//egl/libEGL_tegra_impl
+03-22 12:23:44.161 23549 23584 I         : Loaded EGL implementation /system/lib//egl/libEGL_tegra_impl
+03-22 12:23:44.162 23549 23584 D libEGL  : loaded /system/lib/egl/libGLESv1_CM_tegra.so
+03-22 12:23:44.181 23549 23584 D libEGL  : loaded /system/lib/egl/libGLESv2_tegra.so
+03-22 12:23:44.205 23917 24213 D ConnectivityService: updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 60
+03-22 12:23:44.210 23549 23549 E RecyclerView: No adapter attached; skipping layout
+03-22 12:23:44.210 23549 23549 E RecyclerView: No adapter attached; skipping layout
+03-22 12:23:44.233 23549 23584 I OpenGLRenderer: Initialized EGL, version 1.4
+03-22 12:23:44.246 23549 23584 I         : Loading GLESv2 implementation /system/lib//egl/libGLESv2_tegra_impl
+03-22 12:23:44.341 23549 23549 E RecyclerView: No adapter attached; skipping layout
+03-22 12:23:44.341 23549 23549 E RecyclerView: No adapter attached; skipping layout
+03-22 12:23:44.389 23917 23945 I ActivityManager: Displayed com.amaze.filemanager/.activities.MainActivity: +1s206ms
+03-22 12:23:44.392 23549 23549 W Resources: Drawable com.amaze.filemanager:drawable/abc_ic_ab_back_material has unresolved theme attributes! Consider using Resources.getDrawable(int, Theme) or Context.getDrawable(int).
+03-22 12:23:44.392 23549 23549 W Resources: java.lang.RuntimeException
+03-22 12:23:44.392 23549 23549 W Resources:     at android.content.res.Resources.getDrawable(Resources.java:797)
+03-22 12:23:44.392 23549 23549 W Resources:     at android.support.v7.widget.TintResources.superGetDrawable(TintResources.java:48)
+03-22 12:23:44.392 23549 23549 W Resources:     at android.support.v7.widget.AppCompatDrawableManager.onDrawableLoadedFromResources(AppCompatDrawableManager.java:374)
+03-22 12:23:44.392 23549 23549 W Resources:     at android.support.v7.widget.TintResources.getDrawable(TintResources.java:44)
+03-22 12:23:44.392 23549 23549 W Resources:     at com.amaze.filemanager.fragments.Main.createViews(Main.java:989)
+03-22 12:23:44.392 23549 23549 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:227)
+03-22 12:23:44.392 23549 23549 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:50)
+03-22 12:23:44.392 23549 23549 W Resources:     at android.os.AsyncTask.finish(AsyncTask.java:651)
+03-22 12:23:44.392 23549 23549 W Resources:     at android.os.AsyncTask.-wrap1(AsyncTask.java)
+03-22 12:23:44.392 23549 23549 W Resources:     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+03-22 12:23:44.392 23549 23549 W Resources:     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-22 12:23:44.392 23549 23549 W Resources:     at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:44.392 23549 23549 W Resources:     at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:44.392 23549 23549 W Resources:     at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:44.392 23549 23549 W Resources:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:44.392 23549 23549 W Resources:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-22 12:23:44.422 23549 23549 W Resources: Drawable com.amaze.filemanager:drawable/abc_ic_ab_back_material has unresolved theme attributes! Consider using Resources.getDrawable(int, Theme) or Context.getDrawable(int).
+03-22 12:23:44.422 23549 23549 W Resources: java.lang.RuntimeException
+03-22 12:23:44.422 23549 23549 W Resources:     at android.content.res.Resources.getDrawable(Resources.java:797)
+03-22 12:23:44.422 23549 23549 W Resources:     at android.support.v7.widget.TintResources.superGetDrawable(TintResources.java:48)
+03-22 12:23:44.422 23549 23549 W Resources:     at android.support.v7.widget.AppCompatDrawableManager.onDrawableLoadedFromResources(AppCompatDrawableManager.java:374)
+03-22 12:23:44.422 23549 23549 W Resources:     at android.support.v7.widget.TintResources.getDrawable(TintResources.java:44)
+03-22 12:23:44.422 23549 23549 W Resources:     at com.amaze.filemanager.fragments.Main.createViews(Main.java:989)
+03-22 12:23:44.422 23549 23549 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:227)
+03-22 12:23:44.422 23549 23549 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:50)
+03-22 12:23:44.422 23549 23549 W Resources:     at android.os.AsyncTask.finish(AsyncTask.java:651)
+03-22 12:23:44.422 23549 23549 W Resources:     at android.os.AsyncTask.-wrap1(AsyncTask.java)
+03-22 12:23:44.422 23549 23549 W Resources:     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+03-22 12:23:44.422 23549 23549 W Resources:     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-22 12:23:44.422 23549 23549 W Resources:     at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:44.422 23549 23549 W Resources:     at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:44.422 23549 23549 W Resources:     at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:44.422 23549 23549 W Resources:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:44.422 23549 23549 W Resources:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-22 12:23:44.615 23549 23600 W PackageParser: Ignoring duplicate uses-permissions/uses-permissions-sdk-m: android.permission.BATTERY_STATS in package: com.asksven.betterbatterystats_xdaedition at: Binary XML file line #21
+03-22 12:23:44.771 23549 23600 W PackageParser: Unknown element under <application>: enable-feature at /storage/1990-E293/Arhiva/APK/com.duolingo_3.18.2-291_minAPI9(arm64-v8a,armeabi,armeabi-v7a,mips,mips64,x86,x86_64)(nodpi).apk Binary XML file line #395
+03-22 12:23:47.211 23917 24213 D ConnectivityService: updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 56
+03-22 12:23:50.227 23917 24213 D ConnectivityService: updateNetworkScore for NetworkAgentInfo [WIFI () - 101] to 60
+03-22 12:23:50.450 23917 24208 D WifiStateMachine: starting scan for "HAARP"-WPA_PSK with 2432
+03-22 12:23:50.788 23803 24207 I chatty  : uid=1013(media) ApmOutput expire 16 lines
+03-22 12:23:50.788 23803 24206 I chatty  : uid=1013(media) ApmAudio expire 24 lines
+03-22 12:23:51.034 23549 23549 W Resources: Drawable com.amaze.filemanager:drawable/abc_ic_ab_back_material has unresolved theme attributes! Consider using Resources.getDrawable(int, Theme) or Context.getDrawable(int).
+03-22 12:23:51.034 23549 23549 W Resources: java.lang.RuntimeException
+03-22 12:23:51.034 23549 23549 W Resources:     at android.content.res.Resources.getDrawable(Resources.java:797)
+03-22 12:23:51.034 23549 23549 W Resources:     at android.support.v7.widget.TintResources.superGetDrawable(TintResources.java:48)
+03-22 12:23:51.034 23549 23549 W Resources:     at android.support.v7.widget.AppCompatDrawableManager.onDrawableLoadedFromResources(AppCompatDrawableManager.java:374)
+03-22 12:23:51.034 23549 23549 W Resources:     at android.support.v7.widget.TintResources.getDrawable(TintResources.java:44)
+03-22 12:23:51.034 23549 23549 W Resources:     at com.amaze.filemanager.fragments.Main.createViews(Main.java:989)
+03-22 12:23:51.034 23549 23549 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:227)
+03-22 12:23:51.034 23549 23549 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:50)
+03-22 12:23:51.034 23549 23549 W Resources:     at android.os.AsyncTask.finish(AsyncTask.java:651)
+03-22 12:23:51.034 23549 23549 W Resources:     at android.os.AsyncTask.-wrap1(AsyncTask.java)
+03-22 12:23:51.034 23549 23549 W Resources:     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+03-22 12:23:51.034 23549 23549 W Resources:     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-22 12:23:51.034 23549 23549 W Resources:     at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:51.034 23549 23549 W Resources:     at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:51.034 23549 23549 W Resources:     at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:51.034 23549 23549 W Resources:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:51.034 23549 23549 W Resources:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-22 12:23:51.267 23549 23562 I art     : Background partial concurrent mark sweep GC freed 22341(1536KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 11MB/19MB, paused 2.993ms total 202.208ms
+03-22 12:23:51.554 23549 23549 W Resources: Drawable com.amaze.filemanager:drawable/abc_ic_ab_back_material has unresolved theme attributes! Consider using Resources.getDrawable(int, Theme) or Context.getDrawable(int).
+03-22 12:23:51.554 23549 23549 W Resources: java.lang.RuntimeException
+03-22 12:23:51.554 23549 23549 W Resources:     at android.content.res.Resources.getDrawable(Resources.java:797)
+03-22 12:23:51.554 23549 23549 W Resources:     at android.support.v7.widget.TintResources.superGetDrawable(TintResources.java:48)
+03-22 12:23:51.554 23549 23549 W Resources:     at android.support.v7.widget.AppCompatDrawableManager.onDrawableLoadedFromResources(AppCompatDrawableManager.java:374)
+03-22 12:23:51.554 23549 23549 W Resources:     at android.support.v7.widget.TintResources.getDrawable(TintResources.java:44)
+03-22 12:23:51.554 23549 23549 W Resources:     at com.amaze.filemanager.fragments.Main.createViews(Main.java:989)
+03-22 12:23:51.554 23549 23549 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:227)
+03-22 12:23:51.554 23549 23549 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:50)
+03-22 12:23:51.554 23549 23549 W Resources:     at android.os.AsyncTask.finish(AsyncTask.java:651)
+03-22 12:23:51.554 23549 23549 W Resources:     at android.os.AsyncTask.-wrap1(AsyncTask.java)
+03-22 12:23:51.554 23549 23549 W Resources:     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+03-22 12:23:51.554 23549 23549 W Resources:     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-22 12:23:51.554 23549 23549 W Resources:     at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:51.554 23549 23549 W Resources:     at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:51.554 23549 23549 W Resources:     at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:51.554 23549 23549 W Resources:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:51.554 23549 23549 W Resources:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-22 12:23:53.249 23917 24213 D ConnectivityService: notifyType CAP_CHANGED for NetworkAgentInfo [WIFI () - 101]
+03-22 12:23:53.434 23549 23549 W Resources: Drawable com.amaze.filemanager:drawable/abc_ic_ab_back_material has unresolved theme attributes! Consider using Resources.getDrawable(int, Theme) or Context.getDrawable(int).
+03-22 12:23:53.434 23549 23549 W Resources: java.lang.RuntimeException
+03-22 12:23:53.434 23549 23549 W Resources:     at android.content.res.Resources.getDrawable(Resources.java:797)
+03-22 12:23:53.434 23549 23549 W Resources:     at android.support.v7.widget.TintResources.superGetDrawable(TintResources.java:48)
+03-22 12:23:53.434 23549 23549 W Resources:     at android.support.v7.widget.AppCompatDrawableManager.onDrawableLoadedFromResources(AppCompatDrawableManager.java:374)
+03-22 12:23:53.434 23549 23549 W Resources:     at android.support.v7.widget.TintResources.getDrawable(TintResources.java:44)
+03-22 12:23:53.434 23549 23549 W Resources:     at com.amaze.filemanager.fragments.Main.createViews(Main.java:989)
+03-22 12:23:53.434 23549 23549 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:227)
+03-22 12:23:53.434 23549 23549 W Resources:     at com.amaze.filemanager.services.asynctasks.LoadList.onPostExecute(LoadList.java:50)
+03-22 12:23:53.434 23549 23549 W Resources:     at android.os.AsyncTask.finish(AsyncTask.java:651)
+03-22 12:23:53.434 23549 23549 W Resources:     at android.os.AsyncTask.-wrap1(AsyncTask.java)
+03-22 12:23:53.434 23549 23549 W Resources:     at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:668)
+03-22 12:23:53.434 23549 23549 W Resources:     at android.os.Handler.dispatchMessage(Handler.java:102)
+03-22 12:23:53.434 23549 23549 W Resources:     at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:53.434 23549 23549 W Resources:     at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:53.434 23549 23549 W Resources:     at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:53.434 23549 23549 W Resources:     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:53.434 23549 23549 W Resources:     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-22 12:23:54.798 23917 23939 I ActivityManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10200000 cmp=com.cyanogenmod.trebuchet/com.android.launcher3.Launcher (has extras)} from uid 1000 on display 0
+03-22 12:23:55.118 23917 23937 W art     : Long monitor contention event with owner method=int com.android.server.am.ActivityStackSupervisor.startActivityMayWait(android.app.IApplicationThread, int, java.lang.String, android.content.Intent, java.lang.String, android.service.voice.IVoiceInteractionSession, com.android.internal.app.IVoiceInteractor, android.os.IBinder, java.lang.String, int, int, android.app.ProfilerInfo, android.app.IActivityManager$WaitResult, android.content.res.Configuration, android.os.Bundle, boolean, int, android.app.IActivityContainer, com.android.server.am.TaskRecord) from ActivityStackSupervisor.java:968 waiters=3 for 212ms
+03-22 12:23:55.240 23549 23549 D AndroidRuntime: Shutting down VM
+03-22 12:23:55.255 23549 23549 E AndroidRuntime: FATAL EXCEPTION: main
+03-22 12:23:55.255 23549 23549 E AndroidRuntime: Process: com.amaze.filemanager, PID: 23549
+03-22 12:23:55.255 23549 23549 E AndroidRuntime: Theme: themes:{default=, iconPack:org.twelf.cmtheme}
+03-22 12:23:55.255 23549 23549 E AndroidRuntime: java.lang.ClassCastException: android.graphics.drawable.VectorDrawable cannot be cast to android.graphics.drawable.BitmapDrawable
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at com.amaze.filemanager.ui.Layoutelements.writeToParcel(Layoutelements.java:75)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Parcel.writeParcelable(Parcel.java:1437)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Parcel.writeValue(Parcel.java:1343)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Parcel.writeList(Parcel.java:759)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Parcel.writeValue(Parcel.java:1365)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Parcel.writeArrayMapInternal(Parcel.java:686)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.BaseBundle.writeToParcelInner(BaseBundle.java:1330)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Bundle.writeToParcel(Bundle.java:1079)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Parcel.writeBundle(Parcel.java:711)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.support.v4.app.FragmentState.writeToParcel(Fragment.java:138)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Parcel.writeTypedArray(Parcel.java:1254)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.support.v4.app.FragmentManagerState.writeToParcel(FragmentManager.java:385)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Parcel.writeParcelable(Parcel.java:1437)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Parcel.writeValue(Parcel.java:1343)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Parcel.writeArrayMapInternal(Parcel.java:686)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.BaseBundle.writeToParcelInner(BaseBundle.java:1330)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Bundle.writeToParcel(Bundle.java:1079)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Parcel.writeBundle(Parcel.java:711)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.app.ActivityManagerProxy.activityStopped(ActivityManagerNative.java:3170)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.app.ActivityThread$StopInfo.run(ActivityThread.java:3451)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Handler.handleCallback(Handler.java:739)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:95)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:148)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:5461)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-22 12:23:55.255 23549 23549 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

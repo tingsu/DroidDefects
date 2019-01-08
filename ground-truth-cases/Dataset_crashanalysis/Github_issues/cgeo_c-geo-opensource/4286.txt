@@ -1,0 +1,11 @@
+java.lang.NullPointerException
+   at cgeo.geocaching.ui.EditNoteDialog$1.onClick(EditNoteDialog.java:73)
+   at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:174)
+   at android.os.Handler.dispatchMessage(Handler.java:99)
+   at android.os.Looper.loop(Looper.java:158)
+   at android.app.ActivityThread.main(ActivityThread.java:5751)
+   at java.lang.reflect.Method.invokeNative(Native Method)
+   at java.lang.reflect.Method.invoke(Method.java:511)
+   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1083)
+   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:850)
+   at dalvik.system.NativeStart.main(Native Method)

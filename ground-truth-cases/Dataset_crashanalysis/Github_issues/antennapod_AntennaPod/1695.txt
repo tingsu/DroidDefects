@@ -1,0 +1,15 @@
+java.lang.RuntimeException: Unable to start receiver de.danoeh.antennapod.receiver.ConnectivityActionReceiver: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+    at android.app.ActivityThread.handleReceiver(ActivityThread.java:2649)
+    at android.app.ActivityThread.access$1800(ActivityThread.java:154)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1398)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5294)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+    at de.danoeh.antennapod.core.util.NetworkUtils.autodownloadNetworkAvailable(NetworkUtils.java:47)
+    at de.danoeh.antennapod.receiver.ConnectivityActionReceiver.onReceive(ConnectivityActionReceiver.java:23)
+    at android.app.ActivityThread.handleReceiver(ActivityThread.java:2642)

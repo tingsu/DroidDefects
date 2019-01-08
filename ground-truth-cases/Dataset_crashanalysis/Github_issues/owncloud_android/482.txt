@@ -1,0 +1,12 @@
+W/HttpMethodBase( 8351): Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+I/GetRemoteStatusOperation( 8351): Connection check at https://own.s01.de/status.php: Operation finished with HTTP status code -1 (success)
+D/AuthenticatorActivity( 8351): Trying empty authorization to detect authentication method
+D/OwnCloudClient( 8351): Creating OwnCloudClient
+D/ExistenceCheckRemoteOperation( 8351): Existence check for https://own.s01.de/remote.php/webdav/ targeting for  existence finished with HTTP status 401(FAIL)
+W/dalvikvm( 8351): threadid=15: thread exiting with uncaught exception (group=0x4199dc80)
+E/AndroidRuntime( 8351): FATAL EXCEPTION: Thread-826
+E/AndroidRuntime( 8351): Process: com.owncloud.android, PID: 8351
+E/AndroidRuntime( 8351): java.lang.NullPointerException
+E/AndroidRuntime( 8351):    at com.owncloud.android.operations.DetectAuthenticationMethodOperation.run(DetectAuthenticationMethodOperation.java:107)
+E/AndroidRuntime( 8351):    at com.owncloud.android.lib.common.operations.RemoteOperation.run(RemoteOperation.java:228)
+E/AndroidRuntime( 8351):    at java.lang.Thread.run(Thread.java:841)

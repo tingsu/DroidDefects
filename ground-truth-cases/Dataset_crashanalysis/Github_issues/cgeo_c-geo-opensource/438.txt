@@ -1,0 +1,6 @@
+09-13 22:21:19.385 E/AndroidRuntime( 7468): java.lang.NullPointerException
+09-13 22:21:19.385 E/AndroidRuntime( 7468): at cgeo.geocaching.cgData.saveCache(cgData.java:1214)
+09-13 22:21:19.385 E/AndroidRuntime( 7468): at cgeo.geocaching.cgeoapplication.storeWithMerge(cgeoapplication.java:738)
+09-13 22:21:19.385 E/AndroidRuntime( 7468): at cgeo.geocaching.cgeoapplication.addSearch(cgeoapplication.java:696)
+09-13 22:21:19.385 E/AndroidRuntime( 7468): at cgeo.geocaching.cgBase.searchByOwner(cgBase.java:3113)
+09-13 22:21:19.385 E/AndroidRuntime( 7468): at cgeo.geocaching.cgeocaches$geocachesLoadByOwner.run(cgeocaches.java:1944)

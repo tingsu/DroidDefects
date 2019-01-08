@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: com.code.android.vibevault
+//version: 4.1
+//appro_time: 84
+ java.lang.RuntimeException: Unable to resume activity {com.code.android.vibevault/com.code.android.vibevault.SearchScreen}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2790)
+ 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2819)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1298)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at com.code.android.vibevault.SearchFragment.refreshSearchList(SearchFragment.java:573)
+ 	at com.code.android.vibevault.SearchFragment.onResume(SearchFragment.java:240)
+ 	at android.app.Fragment.performResume(Fragment.java:1742)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:919)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1057)
+ 	at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1039)
+ 	at android.app.FragmentManagerImpl.dispatchResume(FragmentManager.java:1850)
+ 	at android.app.Activity.performResume(Activity.java:5221)
+ 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2780)

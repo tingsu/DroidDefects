@@ -1,0 +1,5 @@
+java.lang.NullPointerException
+    at org.cyanogenmod.wallpapers.photophase.TextureManager.onMediaDiscovered(TextureManager.java:291)
+    at org.cyanogenmod.wallpapers.photophase.MediaPictureDiscoverer$AsyncDiscoverTask.onCancelled(MediaPictureDiscoverer.java:148)
+    at org.cyanogenmod.wallpapers.photophase.MediaPictureDiscoverer$AsyncDiscoverTask.onCancelled(MediaPictureDiscoverer.java:1)
+    at android.os.AsyncTask.finish(AsyncTask.java:629)

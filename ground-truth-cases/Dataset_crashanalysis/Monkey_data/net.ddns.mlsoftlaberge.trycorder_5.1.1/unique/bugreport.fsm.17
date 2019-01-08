@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: net.ddns.mlsoftlaberge.trycorder
+//version: 5.1.1
+//appro_time: 14
+ FATAL EXCEPTION: main
+ java.lang.NullPointerException
+ 	at net.ddns.mlsoftlaberge.trycorder.TrygalleryFragment.loadimageuris(TrygalleryFragment.java:310)
+ 	at net.ddns.mlsoftlaberge.trycorder.TrygalleryFragment.onCreateView(TrygalleryFragment.java:224)
+ 	at android.support.v4.app.Fragment.performCreateView(Fragment.java:2189)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1299)
+ 	at android.support.v4.app.FragmentManagerImpl.moveFragmentToExpectedState(FragmentManager.java:1528)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1595)
+ 	at android.support.v4.app.BackStackRecord.executeOps(BackStackRecord.java:757)
+ 	at android.support.v4.app.FragmentManagerImpl.executeOps(FragmentManager.java:2355)
+ 	at android.support.v4.app.FragmentManagerImpl.executeOpsTogether(FragmentManager.java:2146)
+ 	at android.support.v4.app.FragmentManagerImpl.optimizeAndExecuteOps(FragmentManager.java:2098)
+ 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:2008)
+ 	at android.support.v4.app.FragmentManagerImpl$1.run(FragmentManager.java:710)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

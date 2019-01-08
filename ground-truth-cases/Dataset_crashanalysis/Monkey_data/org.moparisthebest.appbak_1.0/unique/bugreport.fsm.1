@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: org.moparisthebest.appbak
+//version: 1.0
+//appro_time: 179
+ java.lang.OutOfMemoryError
+ 	at java.lang.String.<init>(String.java:422)
+ 	at java.lang.String.copyValueOf(String.java:716)
+ 	at java.nio.CharArrayBuffer.toString(CharArrayBuffer.java:168)
+ 	at java.util.regex.Matcher.reset(Matcher.java:205)
+ 	at java.util.regex.Matcher.reset(Matcher.java:177)
+ 	at java.util.Scanner.resetMatcher(Scanner.java:1738)
+ 	at java.util.Scanner.hasNextLine(Scanner.java:843)
+ 	at org.moparisthebest.appbak.RestoreList.parseFile(RestoreList.java:117)
+ 	at org.moparisthebest.appbak.RestoreList.onCreate(RestoreList.java:175)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

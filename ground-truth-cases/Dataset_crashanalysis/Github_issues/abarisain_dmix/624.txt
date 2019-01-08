@@ -1,0 +1,8 @@
+E/AndroidRuntime(30974): java.lang.NullPointerException
+E/AndroidRuntime(30974):        at org.a0z.mpd.item.Item.isUnknown(Item.java:87)
+E/AndroidRuntime(30974):        at com.namelessdev.mpdroid.SearchActivity.asyncUpdate(SearchActivity.java:202)
+E/AndroidRuntime(30974):        at com.namelessdev.mpdroid.SearchActivity$4.run(SearchActivity.java:547)
+E/AndroidRuntime(30974):        at com.namelessdev.mpdroid.helpers.MPDAsyncWorker.handleMessage(MPDAsyncWorker.java:171)
+E/AndroidRuntime(30974):        at android.os.Handler.dispatchMessage(Handler.java:98)
+E/AndroidRuntime(30974):        at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(30974):        at android.os.HandlerThread.run(HandlerThread.java:61)

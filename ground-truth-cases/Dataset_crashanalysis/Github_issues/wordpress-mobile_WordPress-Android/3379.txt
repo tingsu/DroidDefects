@@ -1,0 +1,6 @@
+Fatal Exception: java.lang.NullPointerException
+       at com.google.android.gcm.GCMBaseIntentService.onHandleIntent(GCMBaseIntentService.java:194)
+       at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:146)
+       at android.os.HandlerThread.run(HandlerThread.java:61)

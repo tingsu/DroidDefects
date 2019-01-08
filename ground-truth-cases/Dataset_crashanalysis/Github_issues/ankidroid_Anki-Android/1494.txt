@@ -1,0 +1,14 @@
+```
+I got the following stack trace at least a count of times.
+
+E/AndroidRuntime( 9602): Caused by: java.util.EmptyStackException
+E/AndroidRuntime( 9602):        at java.util.Stack.peek(Stack.java:58)
+E/AndroidRuntime( 9602):        at com.ichi2.anki.Deck.addUndoCommand(Deck.java:4316)
+E/AndroidRuntime( 9602):        at com.ichi2.anki.AnkiDb.update(AnkiDb.java:245)
+E/AndroidRuntime( 9602):        at com.ichi2.anki.AnkiDb.update(AnkiDb.java:201)
+E/AndroidRuntime( 9602):        at com.ichi2.anki.AnkiDb.update(AnkiDb.java:190)
+E/AndroidRuntime( 9602):        at com.ichi2.anki.Deck.commitToDB(Deck.java:2228)
+E/AndroidRuntime( 9602):        at com.ichi2.anki.Reviewer.onPause(Reviewer.java:685)
+E/AndroidRuntime( 9602):        at android.app.Activity.performPause(Activity.java:4452)
+E/AndroidRuntime( 9602):        at android.app.Instrumentation.callActivityOnPause(Instrumentation.java:1194)
+E/AndroidRuntime( 9602):        at android.app.ActivityThread.performPauseActivity(ActivityThread.java:2474)

@@ -1,0 +1,8 @@
+07-14 12:39:57.000: E/ImageLoader(26405): java.lang.OutOfMemoryError
+07-14 12:39:57.000: E/ImageLoader(26405):   at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+07-14 12:39:57.000: E/ImageLoader(26405):   at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:548)
+07-14 12:39:57.000: E/ImageLoader(26405):   at com.nostra13.universalimageloader.core.decode.BaseImageDecoder.decode(BaseImageDecoder.java:78)
+07-14 12:39:57.000: E/ImageLoader(26405):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.decodeImage(LoadAndDisplayImageTask.java:264)
+07-14 12:39:57.000: E/ImageLoader(26405):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:222)
+07-14 12:39:57.000: E/ImageLoader(26405):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:135)
+07-14 12:39:57.000: E/ImageLoader(26405):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)

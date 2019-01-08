@@ -1,0 +1,84 @@
+E/AndroidRuntime( 3765): java.lang.RuntimeException: Unable to resume activity {com.android.contacts/com.android.contacts.ViewContactActivity}: java.lang.NullPointerException
+E/AndroidRuntime( 3765):        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3128)
+E/AndroidRuntime( 3765):        at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3143)
+E/AndroidRuntime( 3765):        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2684)
+E/AndroidRuntime( 3765):        at android.app.ActivityThread.access$2300(ActivityThread.java:125)
+E/AndroidRuntime( 3765):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2033)
+E/AndroidRuntime( 3765):        at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 3765):        at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime( 3765):        at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/AndroidRuntime( 3765):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 3765):        at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime( 3765):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+E/AndroidRuntime( 3765):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+E/AndroidRuntime( 3765):        at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 3765): Caused by: java.lang.NullPointerException
+E/AndroidRuntime( 3765):        at android.content.ContentResolver.acquireProvider(ContentResolver.java:727)
+E/AndroidRuntime( 3765):        at android.content.ContentResolver.query(ContentResolver.java:239)
+E/AndroidRuntime( 3765):        at android.provider.ContactsContract$Contacts.getLookupUri(ContactsContract.java:916)
+E/AndroidRuntime( 3765):        at com.android.contacts.ViewContactActivity.startEntityQuery(ViewContactActivity.java:445)
+E/AndroidRuntime( 3765):        at com.android.contacts.ViewContactActivity.onResume(ViewContactActivity.java:250)
+E/AndroidRuntime( 3765):        at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1149)
+E/AndroidRuntime( 3765):        at android.app.Activity.performResume(Activity.java:3823)
+E/AndroidRuntime( 3765):        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3118)
+E/AndroidRuntime( 3765):        ... 12 more
+W/ActivityManager(  123):   Force finishing activity com.android.contacts/.ViewContactActivity
+W/ActivityManager(  123):   Force finishing activity org.servalproject/.PeerList
+
+
+E/AndroidRuntime( 4003): FATAL EXCEPTION: main
+E/AndroidRuntime( 4003): java.lang.RuntimeException: Unable to resume activity {com.android.contacts/com.android.contacts.ViewContactActivity}: java.lang.NullPointerException
+E/AndroidRuntime( 4003):        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3128)
+E/AndroidRuntime( 4003):        at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3143)
+E/AndroidRuntime( 4003):        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2684)
+E/AndroidRuntime( 4003):        at android.app.ActivityThread.access$2300(ActivityThread.java:125)
+E/AndroidRuntime( 4003):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2033)
+E/AndroidRuntime( 4003):        at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 4003):        at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime( 4003):        at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/AndroidRuntime( 4003):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 4003):        at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime( 4003):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+E/AndroidRuntime( 4003):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+E/AndroidRuntime( 4003):        at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 4003): Caused by: java.lang.NullPointerException
+E/AndroidRuntime( 4003):        at android.content.ContentResolver.acquireProvider(ContentResolver.java:727)
+E/AndroidRuntime( 4003):        at android.content.ContentResolver.query(ContentResolver.java:239)
+E/AndroidRuntime( 4003):        at android.provider.ContactsContract$Contacts.getLookupUri(ContactsContract.java:916)
+E/AndroidRuntime( 4003):        at com.android.contacts.ViewContactActivity.startEntityQuery(ViewContactActivity.java:445)
+E/AndroidRuntime( 4003):        at com.android.contacts.ViewContactActivity.onResume(ViewContactActivity.java:250)
+E/AndroidRuntime( 4003):        at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1149)
+E/AndroidRuntime( 4003):        at android.app.Activity.performResume(Activity.java:3823)
+E/AndroidRuntime( 4003):        at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3118)
+E/AndroidRuntime( 4003):        ... 12 more
+W/ActivityManager(  123):   Force finishing activity com.android.contacts/.ViewContactActivity
+W/ActivityManager(  123):   Force finishing activity org.servalproject/.PeerList
+```
+
+Still happens with 0.91-pre-9-*
+
+```
+E/AndroidRuntime( 4458): FATAL EXCEPTION: main
+E/AndroidRuntime( 4458): java.lang.RuntimeException: Unable to resume activity {com.android.contacts/com.android.contacts.ViewContactActivity}: java.lang.NullPointerException
+E/AndroidRuntime( 4458):    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3128)
+E/AndroidRuntime( 4458):    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3143)
+E/AndroidRuntime( 4458):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2684)
+E/AndroidRuntime( 4458):    at android.app.ActivityThread.access$2300(ActivityThread.java:125)
+E/AndroidRuntime( 4458):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2033)
+E/AndroidRuntime( 4458):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 4458):    at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime( 4458):    at android.app.ActivityThread.main(ActivityThread.java:4627)
+E/AndroidRuntime( 4458):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 4458):    at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime( 4458):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:868)
+E/AndroidRuntime( 4458):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:626)
+E/AndroidRuntime( 4458):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 4458): Caused by: java.lang.NullPointerException
+E/AndroidRuntime( 4458):    at android.content.ContentResolver.acquireProvider(ContentResolver.java:727)
+E/AndroidRuntime( 4458):    at android.content.ContentResolver.query(ContentResolver.java:239)
+E/AndroidRuntime( 4458):    at android.provider.ContactsContract$Contacts.getLookupUri(ContactsContract.java:916)
+E/AndroidRuntime( 4458):    at com.android.contacts.ViewContactActivity.startEntityQuery(ViewContactActivity.java:445)
+E/AndroidRuntime( 4458):    at com.android.contacts.ViewContactActivity.onResume(ViewContactActivity.java:250)
+E/AndroidRuntime( 4458):    at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1149)
+E/AndroidRuntime( 4458):    at android.app.Activity.performResume(Activity.java:3823)
+E/AndroidRuntime( 4458):    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3118)

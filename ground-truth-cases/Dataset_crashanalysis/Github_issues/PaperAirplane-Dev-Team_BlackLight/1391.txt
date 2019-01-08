@@ -1,0 +1,13 @@
+java.lang.IllegalStateException: Fragment GroupFragment{42ce8020} not attached to Activity
+    at android.app.Fragment.getResources(Fragment.java:767)
+    at info.papdt.blacklight.ui.main.GroupFragment$FetchTask.onPostExecute(GroupFragment.java:105)
+    at info.papdt.blacklight.ui.main.GroupFragment$FetchTask.onPostExecute(GroupFragment.java)
+    at info.papdt.blacklight.support.AsyncTask$100000000.handleMessage(AsyncTask.java:56)
+    at android.os.Handler.dispatchMessage(Handler.java:110)
+    at android.os.Looper.loop(Looper.java:193)
+    at android.app.ActivityThread.main(ActivityThread.java:5551)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:914)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:730)
+    at dalvik.system.NativeStart.main(Native Method)

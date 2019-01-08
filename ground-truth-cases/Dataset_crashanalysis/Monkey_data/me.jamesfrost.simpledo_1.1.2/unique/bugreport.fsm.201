@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: me.jamesfrost.simpledo
+//version: 1.1.2
+//appro_time: 158
+ java.lang.IllegalArgumentException: Activity CreateItem does not have a parent activity name specified. (Did you forget to add the android.support.PARENT_ACTIVITY <meta-data>  element in your manifest?)
+ 	at android.support.v4.app.NavUtils.navigateUpFromSameTask(NavUtils.java:177)
+ 	at me.jamesfrost.simpledo.CreateItem.onOptionsItemSelected(CreateItem.java:156)
+ 	at android.app.Activity.onMenuItemSelected(Activity.java:2566)
+ 	at com.android.internal.widget.ActionBarView$3.onClick(ActionBarView.java:171)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

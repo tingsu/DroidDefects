@@ -1,0 +1,12 @@
+10-15 19:24:15.090 19228  5468 E AndroidRuntime: java.lang.InternalError: Thread starting during runtime shutdown
+10-15 19:24:15.090 19228  5468 E AndroidRuntime:    at java.lang.Thread.nativeCreate(Native Method)
+10-15 19:24:15.090 19228  5468 E AndroidRuntime:    at java.lang.Thread.start(Thread.java:1063)
+10-15 19:24:15.090 19228  5468 E AndroidRuntime:    at org.apache.http.impl.conn.tsccm.AbstractConnPool.enableConnectionGC(AbstractConnPool.java:145)
+10-15 19:24:15.090 19228  5468 E AndroidRuntime:    at org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager.createConnectionPool(ThreadSafeClientConnManager.java:125)
+10-15 19:24:15.090 19228  5468 E AndroidRuntime:    at org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager.<init>(ThreadSafeClientConnManager.java:103)
+10-15 19:24:15.090 19228  5468 E AndroidRuntime:    at org.acra.util.HttpRequest.getHttpClient(HttpRequest.java:214)
+10-15 19:24:15.090 19228  5468 E AndroidRuntime:    at org.acra.util.HttpRequest.send(HttpRequest.java:141)
+10-15 19:24:15.090 19228  5468 E AndroidRuntime:    at org.acra.sender.HttpSender.send(HttpSender.java:225)
+10-15 19:24:15.090 19228  5468 E AndroidRuntime:    at org.acra.SendWorker.sendCrashReport(SendWorker.java:179)
+10-15 19:24:15.090 19228  5468 E AndroidRuntime:    at org.acra.SendWorker.checkAndSendReports(SendWorker.java:141)
+10-15 19:24:15.090 19228  5468 E AndroidRuntime:    at org.acra.SendWorker.run(SendWorker.java:77)

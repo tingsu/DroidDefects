@@ -1,0 +1,10 @@
+java.lang.OutOfMemoryError
+    at java.io.ByteArrayOutputStream.expand(ByteArrayOutputStream.java:91)
+    at java.io.ByteArrayOutputStream.write(ByteArrayOutputStream.java:201)
+    at us.shandian.blacklight.cache.file.FileCacheManager.readInputStream(FileCacheManager.java:138)
+    at us.shandian.blacklight.cache.file.FileCacheManager.createCacheFromNetwork(FileCacheManager.java:110)
+    at us.shandian.blacklight.cache.statuses.HomeTimeLineApiCache.getLargePic(HomeTimeLineApiCache.java:193)
+    at us.shandian.blacklight.ui.common.ImageActivity$DownloadTask.doInBackground(ImageActivity.java:207)
+    at us.shandian.blacklight.ui.common.ImageActivity$DownloadTask.doInBackground(ImageActivity.java:202)
+    at us.shandian.blacklight.support.AsyncTask$2.run(AsyncTask.java:73)
+    at java.lang.Thread.run(Thread.java:841)

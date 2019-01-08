@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: net.kismetwireless.android.smarterwifimanager
+//version: 2015.07.70
+//appro_time: 29
+ java.lang.RuntimeException: Unable to create service net.kismetwireless.android.smarterwifimanager.services.SmarterWifiService: java.lang.NullPointerException
+ 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2587)
+ 	at android.app.ActivityThread.access$1600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1338)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at net.kismetwireless.android.smarterwifimanager.services.SmarterWifiService.configureBluetoothState(SmarterWifiService.java:1011)
+ 	at net.kismetwireless.android.smarterwifimanager.services.SmarterWifiService.configureTimerangeState(SmarterWifiService.java:1070)
+ 	at net.kismetwireless.android.smarterwifimanager.services.SmarterWifiService.onCreate(SmarterWifiService.java:249)
+ 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2577)

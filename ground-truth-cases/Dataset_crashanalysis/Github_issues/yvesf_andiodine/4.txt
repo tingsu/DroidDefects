@@ -1,0 +1,34 @@
+08-05 17:05:38.070 D/NATIVE  ( 9515): Message:
+08-05 17:05:38.070 D/NATIVE  ( 9515): Message: Server is at    @  T  , trying raw login:
+08-05 17:05:38.070 D/NATIVE  ( 9515): Message: OK
+08-05 17:05:38.070 D/NATIVE  ( 9515): Message: Sending raw traffic directly to    @  T  8av  fv
+08-05 17:05:38.080 D/NATIVE  ( 9515): Message: Handshake successful, leave native code
+08-05 17:05:38.080 D/VPN_SERVICE( 9515): Handshake successful
+08-05 17:05:38.080 D/VPN_SERVICE( 9515): Send: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECTED (has extras) }
+08-05 17:05:38.080 D/VPN_SERVICE( 9515): Build tunnel for configuration: ip=192.168.20.4 netbits=24 mtu=1130
+08-05 17:05:38.080 D/VPN_SERVICE( 9515): Build tunnel interface
+08-05 17:05:38.090 D/Vpn     (  703): setting state=CONNECTING, reason=establish
+08-05 17:05:38.090 D/VpnJni  (  703): Address added on tun0: 192.168.20.4/24
+08-05 17:05:38.110 D/FRAGMENT_STATUS( 9515): Got intent: Intent { act=org.xapek.andiodine.IodineVpnService.STATUS_CONNECTED flg=0x10 (has extras) }
+08-05 17:05:38.120 D/Vpn     (  703): setting state=FAILED, reason=establish
+08-05 17:05:38.120 W/Netd    (  249): No subsystem found in netlink event
+08-05 17:05:38.120 W/Netd    (  249): No subsystem found in netlink event
+08-05 17:05:38.120 E/NetlinkEvent(  249): Unknown ifindex 14 in RTM_DELADDR
+08-05 17:05:38.120 D/NetlinkEvent(  249): Unexpected netlink message. type=0x11
+08-05 17:05:38.190 I/iptables(  249): iptables: No chain/target/match by that name.
+08-05 17:05:38.190 I/iptables(  249): iptables terminated by exit(1)
+08-05 17:05:38.190 E/Netd    (  249): exec() res=0, status=256 for /system/bin/iptables -t mangle -D st_mangle_POSTROUTING -p tcp -o tun0 --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu
+08-05 17:05:38.190 I/ip6tables(  249): ip6tables: No chain/target/match by that name.
+08-05 17:05:38.210 I/ip6tables(  249): ip6tables terminated by exit(1)
+08-05 17:05:38.210 E/Netd    (  249): exec() res=0, status=256 for /system/bin/ip6tables -t mangle -D st_mangle_POSTROUTING -p tcp -o tun0 --tcp-flags SYN,RST SYN -j TCPMSS --clamp-mss-to-pmtu
+08-05 17:05:38.210 I/iptables(  249): iptables: No chain/target/match by that name.
+08-05 17:05:38.210 I/iptables(  249): iptables terminated by exit(1)
+08-05 17:05:38.210 E/Netd    (  249): exec() res=0, status=256 for /system/bin/iptables -t nat -D st_nat_POSTROUTING -o tun0 -m mark --mark 60 -j MASQUERADE
+08-05 17:05:38.210 W/System.err( 9515): java.lang.IllegalStateException: command '93 interface fwmark rule add tun0' failed with '400 93 Failed to add fwmark rule (Success)'
+08-05 17:05:38.210 W/System.err( 9515):         at android.os.Parcel.readException(Parcel.java:1473)
+08-05 17:05:38.210 W/System.err( 9515):         at android.os.Parcel.readException(Parcel.java:1419)
+08-05 17:05:38.210 W/System.err( 9515):         at android.net.IConnectivityManager$Stub$Proxy.establishVpn(IConnectivityManager.java:1564)
+08-05 17:05:38.210 W/System.err( 9515):         at android.net.VpnService$Builder.establish(VpnService.java:472)
+08-05 17:05:38.210 W/System.err( 9515):         at org.xapek.andiodine.IodineVpnService.runTunnel(IodineVpnService.java:317)
+08-05 17:05:38.210 W/System.err( 9515):         at org.xapek.andiodine.IodineVpnService.run(IodineVpnService.java:224)
+08-05 17:05:38.210 W/System.err( 9515):         at java.lang.Thread.run(Thread.java:841)

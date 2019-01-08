@@ -1,0 +1,10 @@
+java.lang.NoSuchMethodError: info.papdt.blacklight.ui.common.AbsImageActivity.isDestroyed
+    at info.papdt.blacklight.ui.common.AbsImageActivity$MyCallback.shouldContinue(AbsImageActivity.java:188)
+    at info.papdt.blacklight.cache.file.FileCacheManager.createCacheFromStream(FileCacheManager.java:149)
+    at info.papdt.blacklight.cache.file.FileCacheManager.createLargeCacheFromNetwork(FileCacheManager.java:124)
+    at info.papdt.blacklight.cache.statuses.HomeTimeLineApiCache.getLargePic(HomeTimeLineApiCache.java:197)
+    at info.papdt.blacklight.ui.statuses.StatusImageActivity.doDownload(StatusImageActivity.java:38)
+    at info.papdt.blacklight.ui.common.AbsImageActivity$DownloadTask.doInBackground(AbsImageActivity.java:241)
+    at info.papdt.blacklight.ui.common.AbsImageActivity$DownloadTask.doInBackground(AbsImageActivity.java:237)
+    at info.papdt.blacklight.support.AsyncTask$2.run(AsyncTask.java:73)
+    at java.lang.Thread.run(Thread.java:856)

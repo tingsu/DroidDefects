@@ -1,0 +1,4 @@
+android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.settings.WIRELESS_SETTINGS }
+    at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1800)
+    at android.app.Instrumentation.execStartActivity(Instrumentation.java:1518)
+    at android.app.Activity.startActivityForResult(Activity.java:3852)

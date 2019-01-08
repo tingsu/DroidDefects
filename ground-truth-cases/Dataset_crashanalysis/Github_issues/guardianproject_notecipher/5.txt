@@ -1,0 +1,5 @@
+E/AndroidRuntime(  511): java.lang.UnsatisfiedLinkError: Cannot load library: load_library[1108]: Library '/data/data/info.guardianproject.notepadbot/files/libsqlcipher_android.so' not found
+E/AndroidRuntime(  511):    at java.lang.Runtime.load(Runtime.java:390)
+E/AndroidRuntime(  511):    at java.lang.System.load(System.java:534)
+E/AndroidRuntime(  511):    at info.guardianproject.database.sqlcipher.SQLiteDatabase.loadLibs(SQLiteDatabase.java:93)
+E/AndroidRuntime(  511):    at info.guardianproject.notepadbot.Notepadbot.onCreate(Notepadbot.java:90)

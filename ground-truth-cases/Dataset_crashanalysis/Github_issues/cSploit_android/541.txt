@@ -1,0 +1,10 @@
+javax.net.ssl.SSLHandshakeException: Handshake failed
+    at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:396)
+    at com.android.org.conscrypt.OpenSSLSocketImpl.waitForHandshake(OpenSSLSocketImpl.java:629)
+    at com.android.org.conscrypt.OpenSSLSocketImpl.getInputStream(OpenSSLSocketImpl.java:591)
+    at org.csploit.android.net.http.proxy.HTTPSRedirector$1.run(HTTPSRedirector.java:118)
+    at java.lang.Thread.run(Thread.java:818)
+Caused by: javax.net.ssl.SSLProtocolException: SSL handshake terminated: ssl=0xdf1f2800: Failure in SSL library, usually a protocol error
+error:100c5416:SSL routines:ssl3_read_bytes:SSLV3_ALERT_CERTIFICATE_UNKNOWN (external/boringssl/src/ssl/s3_pkt.c:972 0xda948240:0x00000001)
+    at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+    at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)

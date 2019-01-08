@@ -1,0 +1,56 @@
+```
+On Android 1.5, at AnkiDroid startup:
+
+E/AndroidRuntime( 1395): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.ichi2.anki/com.ichi2.anki.StudyOptions}:
+android.view.InflateException: Binary XML file line #192: Error inflating class java.lang.reflect.Constructor
+E/AndroidRuntime( 1395):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2268)
+E/AndroidRuntime( 1395):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2284)
+E/AndroidRuntime( 1395):    at android.app.ActivityThread.access$1800(ActivityThread.java:112)
+E/AndroidRuntime( 1395):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1692)
+E/AndroidRuntime( 1395):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 1395):    at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime( 1395):    at android.app.ActivityThread.main(ActivityThread.java:3948)
+E/AndroidRuntime( 1395):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1395):    at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime( 1395):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:782)
+E/AndroidRuntime( 1395):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:540)
+E/AndroidRuntime( 1395):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 1395): Caused by: android.view.InflateException: Binary XML file
+line #192: Error inflating class java.lang.reflect.Constructor
+E/AndroidRuntime( 1395):    at android.view.LayoutInflater.createView(LayoutInflater.java:512)
+E/AndroidRuntime( 1395):    at com.android.internal.policy.impl.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:56)
+E/AndroidRuntime( 1395):    at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:562)
+E/AndroidRuntime( 1395):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:617)
+E/AndroidRuntime( 1395):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:620)
+E/AndroidRuntime( 1395):    at android.view.LayoutInflater.rInflate(LayoutInflater.java:620)
+E/AndroidRuntime( 1395):    at android.view.LayoutInflater.inflate(LayoutInflater.java:407)
+E/AndroidRuntime( 1395):    at android.view.LayoutInflater.inflate(LayoutInflater.java:320)
+E/AndroidRuntime( 1395):    at android.view.LayoutInflater.inflate(LayoutInflater.java:276)
+E/AndroidRuntime( 1395):    at com.ichi2.anki.StudyOptions.initAllContentViews(StudyOptions.java:1017)
+E/AndroidRuntime( 1395):    at com.ichi2.anki.StudyOptions.onCreate(StudyOptions.java:668)
+E/AndroidRuntime( 1395):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1123)
+E/AndroidRuntime( 1395):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2231)
+E/AndroidRuntime( 1395):    ... 11 more
+E/AndroidRuntime( 1395): Caused by: java.lang.reflect.InvocationTargetException
+E/AndroidRuntime( 1395):    at android.widget.Button.<init>(Button.java:65)
+E/AndroidRuntime( 1395):    at java.lang.reflect.Constructor.constructNative(Native Method)
+E/AndroidRuntime( 1395):    at java.lang.reflect.Constructor.newInstance(Constructor.java:446)
+E/AndroidRuntime( 1395):    at android.view.LayoutInflater.createView(LayoutInflater.java:499)
+E/AndroidRuntime( 1395):    ... 23 more
+E/AndroidRuntime( 1395): Caused by: android.content.res.Resources$NotFoundException:
+File res/color/primary_text_light.xml from drawable resource ID #0x7f020077
+E/AndroidRuntime( 1395):    at android.content.res.Resources.loadDrawable(Resources.java:1625)
+E/AndroidRuntime( 1395):    at android.content.res.TypedArray.getDrawable(TypedArray.java:548)
+E/AndroidRuntime( 1395):    at android.widget.TextView.<init>(TextView.java:462)
+E/AndroidRuntime( 1395):    at android.widget.Button.<init>(Button.java:69)
+E/AndroidRuntime( 1395):    ... 27 more
+E/AndroidRuntime( 1395): Caused by: android.content.res.Resources$NotFoundException:
+File res/color/primary_text_light.xml from xml type drawable resource ID #0x7f020077
+E/AndroidRuntime( 1395):    at android.content.res.Resources.loadXmlResourceParser(Resources.java:1843)
+E/AndroidRuntime( 1395):    at android.content.res.Resources.loadDrawable(Resources.java:1620)
+E/AndroidRuntime( 1395):    ... 30 more
+E/AndroidRuntime( 1395): Caused by: java.io.FileNotFoundException: res/color/primary_text_light.xml
+E/AndroidRuntime( 1395):    at android.content.res.AssetManager.openXmlAssetNative(Native
+Method)
+E/AndroidRuntime( 1395):    at android.content.res.AssetManager.openXmlBlockAsset(AssetManager.java:471)
+E/AndroidRuntime( 1395):    at android.content.res.Resources.loadXmlResourceParser(Resources.java:1825)

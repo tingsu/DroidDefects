@@ -1,0 +1,20 @@
+                                                                 java.lang.IllegalArgumentException: Problem decoding into existing bitmap
+                                                                     at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:619)
+                                                                     at org.osmdroid.tileprovider.tilesource.BitmapTileSourceBase.getDrawable(BitmapTileSourceBase.java:150)
+                                                                     at org.osmdroid.tileprovider.modules.MapTileSqlCacheProvider$TileLoader.loadTile(MapTileSqlCacheProvider.java:214)
+                                                                     at org.osmdroid.tileprovider.modules.MapTileModuleProviderBase$TileLoader.run(MapTileModuleProviderBase.java:296)
+                                                                     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+                                                                     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+                                                                     at java.lang.Thread.run(Thread.java:841)
+```
+# E/OsmDroid: Error downloading MapTile: /5/1/18
+
+```
+                                                                  java.lang.IllegalArgumentException: Problem decoding into existing bitmap
+                                                                      at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:619)
+                                                                      at org.osmdroid.tileprovider.tilesource.BitmapTileSourceBase.getDrawable(BitmapTileSourceBase.java:150)
+                                                                      at org.osmdroid.tileprovider.modules.MapTileDownloader$TileLoader.loadTile(MapTileDownloader.java:233)
+                                                                      at org.osmdroid.tileprovider.modules.MapTileModuleProviderBase$TileLoader.run(MapTileModuleProviderBase.java:296)
+                                                                      at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+                                                                      at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+                                                                      at java.lang.Thread.run(Thread.java:841)

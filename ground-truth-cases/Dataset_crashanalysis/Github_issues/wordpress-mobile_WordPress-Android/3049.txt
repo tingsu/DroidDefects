@@ -1,0 +1,13 @@
+Caused by: java.lang.NullPointerException
+       at android.content.ComponentName.(ComponentName.java:77)
+       at android.content.Intent.(Intent.java:4334)
+       at org.wordpress.android.ui.reader.services.ReaderCommentService.startServiceForComment(ReaderCommentService.java:50)
+       at org.wordpress.android.ui.notifications.NotificationsDetailListFragment.requestReaderContentForNote(NotificationsDetailListFragment.java:431)
+       at org.wordpress.android.ui.notifications.NotificationsDetailListFragment.access$200(NotificationsDetailListFragment.java:52)
+       at org.wordpress.android.ui.notifications.NotificationsDetailListFragment$LoadNoteBlocksTask.doInBackground(NotificationsDetailListFragment.java:263)
+       at org.wordpress.android.ui.notifications.NotificationsDetailListFragment$LoadNoteBlocksTask.doInBackground(NotificationsDetailListFragment.java:255)
+       at android.os.AsyncTask$2.call(AsyncTask.java:288)
+       at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+       at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+       at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+       at java.lang.Thread.run(Thread.java:841)

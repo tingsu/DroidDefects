@@ -1,0 +1,22 @@
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime: java.lang.ExceptionInInitializerError
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at java.lang.Class.newInstance(Native Method)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at android.app.Instrumentation.newActivity(Instrumentation.java:1068)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2351)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2520)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at android.app.ActivityThread.-wrap11(ActivityThread.java)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1363)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at android.os.Handler.dispatchMessage(Handler.java:102)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at android.os.Looper.loop(Looper.java:148)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at android.app.ActivityThread.main(ActivityThread.java:5466)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at java.lang.reflect.Method.invoke(Native Method)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime: Caused by: com.badlogic.gdx.utils.GdxRuntimeException: Couldn't load shared library 'gdx' for target: Linux, 32-bit
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at com.badlogic.gdx.utils.SharedLibraryLoader.load(SharedLibraryLoader.java:117)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at com.badlogic.gdx.utils.GdxNativesLoader.load(GdxNativesLoader.java:34)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at com.badlogic.gdx.backends.android.AndroidApplication.<clinit>(AndroidApplication.java:61)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  ... 12 more
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime: Caused by: java.lang.UnsatisfiedLinkError: dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.jmstudios.pointandhit.android-1/base.apk"],nativeLibraryDirectories=[/data/app/com.jmstudios.pointandhit.android-1/lib/arm, /vendor/lib, /system/lib]]] couldn't find "libgdx.so"
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at java.lang.Runtime.loadLibrary(Runtime.java:367)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at java.lang.System.loadLibrary(System.java:1076)
+> 03-23 09:16:12.406 12987 12987 E AndroidRuntime:  at com.badlogic.gdx.utils.SharedLibraryLoader.load(SharedLibraryLoader.java:113)

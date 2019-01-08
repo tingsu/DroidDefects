@@ -1,0 +1,10 @@
+```
+java.lang.IllegalArgumentException: the bind value at index 1 is null
+   at android.database.sqlite.SQLiteProgram.bindString(SQLiteProgram.java:164)
+   at cgeo.geocaching.DataStore.saveLogsWithoutTransaction(DataStore.java:1409)
+   at cgeo.geocaching.DataStore.saveInventoryWithoutTransaction(DataStore.java:1494)
+   at cgeo.geocaching.DataStore.saveTrackable(DataStore.java:1455)
+   at cgeo.geocaching.connector.gc.GCParser.parseTrackable(GCParser.java:1602)
+   at cgeo.geocaching.connector.gc.GCParser.searchTrackable(GCParser.java:983)
+   at cgeo.geocaching.connector.trackable.TravelBugConnector.searchTrackable(TravelBugConnector.java:38)
+   at cgeo.geocaching.TrackableActivity$LoadTrackableThread.run(TrackableActivity.java:253)

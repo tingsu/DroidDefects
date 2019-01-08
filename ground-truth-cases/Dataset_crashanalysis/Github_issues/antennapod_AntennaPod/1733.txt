@@ -1,0 +1,12 @@
+java.lang.IllegalStateException: Exception thrown on Scheduler.Worker thread. Add `onError` handling.
+    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:60)
+     ...
+Caused by: rx.exceptions.OnErrorNotImplementedException: Attempt to invoke virtual method 'boolean de.danoeh.antennapod.core.feed.FeedItem.isTagged(java.lang.String)' on a null object reference
+    at rx.Observable$27.onError(Observable.java:7923)
+    at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:2159)
+    at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:146)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'boolean de.danoeh.antennapod.core.feed.FeedItem.isTagged(java.lang.String)' on a null object reference
+    at de.danoeh.antennapod.activity.MediaplayerActivity.access$lambda$12(MediaplayerActivity.java:28906)
+    at de.danoeh.antennapod.activity.MediaplayerActivity$$Lambda$15.call(Unknown Source)
+    at rx.Observable$27.onNext(Observable.java:7928)
+    at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:139)

@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: ca.mimic.apphangar
+//version: 2.5.1
+//appro_time: 147
+ java.lang.IllegalStateException: Cannot perform this operation because the connection pool has been closed.
+ 	at android.database.sqlite.SQLiteConnectionPool.throwIfClosedLocked(SQLiteConnectionPool.java:962)
+ 	at android.database.sqlite.SQLiteConnectionPool.waitForConnection(SQLiteConnectionPool.java:599)
+ 	at android.database.sqlite.SQLiteConnectionPool.acquireConnection(SQLiteConnectionPool.java:348)
+ 	at android.database.sqlite.SQLiteSession.acquireConnection(SQLiteSession.java:894)
+ 	at android.database.sqlite.SQLiteSession.executeForCursorWindow(SQLiteSession.java:834)
+ 	at android.database.sqlite.SQLiteQuery.fillWindow(SQLiteQuery.java:62)
+ 	at android.database.sqlite.SQLiteCursor.fillWindow(SQLiteCursor.java:144)
+ 	at android.database.sqlite.SQLiteCursor.getCount(SQLiteCursor.java:133)
+ 	at android.database.AbstractCursor.moveToPosition(AbstractCursor.java:197)
+ 	at android.database.AbstractCursor.moveToFirst(AbstractCursor.java:237)
+ 	at ca.mimic.apphangar.bv.c(Unknown Source)
+ 	at ca.mimic.apphangar.Settings.g(Unknown Source)
+ 	at ca.mimic.apphangar.aw.run(Unknown Source)
+ 	at java.lang.Thread.run(Thread.java:841)

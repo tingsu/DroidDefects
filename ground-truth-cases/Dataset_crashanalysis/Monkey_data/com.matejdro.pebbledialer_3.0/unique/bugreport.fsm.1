@@ -1,0 +1,61 @@
+//this is an auto-generated bug report
+//package name: com.matejdro.pebbledialer
+//version: 3.0
+//appro_time: 4
+ FATAL EXCEPTION: main
+ android.view.InflateException: Binary XML file line #28: Error inflating class com.matejdro.pebblecommons.vibration.VibrationPatternPicker
+ 	at android.view.LayoutInflater.createView(LayoutInflater.java:620)
+ 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:696)
+ 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+ 	at android.view.LayoutInflater.inflate(LayoutInflater.java:492)
+ 	at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+ 	at com.matejdro.pebbledialer.ui.DialogVibrationPatternPicker.onCreateView(DialogVibrationPatternPicker.java:36)
+ 	at android.support.v4.app.Fragment.performCreateView(Fragment.java:1974)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1067)
+ 	at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1252)
+ 	at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:742)
+ 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1617)
+ 	at android.support.v4.app.FragmentManagerImpl$1.run(FragmentManager.java:517)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.reflect.InvocationTargetException
+ 	at java.lang.reflect.Constructor.constructNative(Native Method)
+ 	at java.lang.reflect.Constructor.newInstance(Constructor.java:417)
+ 	at android.view.LayoutInflater.createView(LayoutInflater.java:594)
+ 	... 20 more
+ Caused by: android.view.InflateException: Binary XML file line #39: Error inflating class TextView
+ 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:713)
+ 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:755)
+ 	at android.view.LayoutInflater.inflate(LayoutInflater.java:462)
+ 	at android.view.LayoutInflater.inflate(LayoutInflater.java:397)
+ 	at android.view.LayoutInflater.inflate(LayoutInflater.java:353)
+ 	at com.matejdro.pebblecommons.vibration.VibrationPatternPicker.init(VibrationPatternPicker.java:68)
+ 	at com.matejdro.pebblecommons.vibration.VibrationPatternPicker.<init>(VibrationPatternPicker.java:45)
+ 	... 23 more
+ Caused by: android.content.res.Resources$NotFoundException: File res/drawable/tap_drawable.xml from drawable resource ID #0x7f02005b
+ 	at android.content.res.Resources.loadDrawable(Resources.java:2096)
+ 	at android.content.res.TypedArray.getDrawable(TypedArray.java:601)
+ 	at android.view.View.<init>(View.java:3364)
+ 	at android.widget.TextView.<init>(TextView.java:619)
+ 	at android.support.v7.widget.AppCompatTextView.<init>(AppCompatTextView.java:60)
+ 	at android.support.v7.widget.AppCompatTextView.<init>(AppCompatTextView.java:56)
+ 	at android.support.v7.app.AppCompatViewInflater.createView(AppCompatViewInflater.java:103)
+ 	at android.support.v7.app.AppCompatDelegateImplV7.createView(AppCompatDelegateImplV7.java:980)
+ 	at android.support.v7.app.AppCompatDelegateImplV7.onCreateView(AppCompatDelegateImplV7.java:1039)
+ 	at android.support.v4.view.LayoutInflaterCompatHC$FactoryWrapperHC.onCreateView(LayoutInflaterCompatHC.java:44)
+ 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:684)
+ 	... 29 more
+ Caused by: java.lang.UnsupportedOperationException: Can't convert to color: type=0x2
+ 	at android.content.res.TypedArray.getColor(TypedArray.java:326)
+ 	at android.graphics.drawable.GradientDrawable.inflate(GradientDrawable.java:967)
+ 	at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:901)
+ 	at android.graphics.drawable.StateListDrawable.inflate(StateListDrawable.java:183)
+ 	at android.graphics.drawable.Drawable.createFromXmlInner(Drawable.java:901)
+ 	at android.graph

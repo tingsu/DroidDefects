@@ -1,0 +1,14 @@
+//this is an auto-generated bug report
+//package name: org.xbmc.android.remote
+//version: 0.8.8-beta1
+//appro_time: 173
+ java.lang.NullPointerException
+ 	at android.app.AlertDialog.resolveDialogTheme(AlertDialog.java:143)
+ 	at android.app.AlertDialog$Builder.<init>(AlertDialog.java:360)
+ 	at org.xbmc.android.remote.presentation.controller.AbstractController.onWrongConnectionState(AbstractController.java:78)
+ 	at org.xbmc.android.remote.business.AbstractManager.onWrongConnectionState(AbstractManager.java:288)
+ 	at org.xbmc.android.remote.business.Command.run(Command.java:45)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at org.xbmc.android.remote.business.ManagerThread.run(ManagerThread.java:78)

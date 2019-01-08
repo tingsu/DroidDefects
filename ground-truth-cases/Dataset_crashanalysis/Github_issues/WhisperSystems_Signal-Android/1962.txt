@@ -1,0 +1,68 @@
+E/DatabaseUtils( 2504): java.lang.SecurityException: No permission to write APN settings: Neither user 10208 nor current process has android.permission.WRITE_APN_SETTINGS.
+E/DatabaseUtils( 2504):     at android.app.ContextImpl.enforce(ContextImpl.java:1749)
+E/DatabaseUtils( 2504):     at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1778)
+E/DatabaseUtils( 2504):     at com.android.providers.telephony.TelephonyProvider.checkPermission(TelephonyProvider.java:1081)
+E/DatabaseUtils( 2504):     at com.android.providers.telephony.TelephonyProvider.query(TelephonyProvider.java:727)
+E/DatabaseUtils( 2504):     at android.content.ContentProvider.query(ContentProvider.java:857)
+E/DatabaseUtils( 2504):     at android.content.ContentProvider$Transport.query(ContentProvider.java:200)
+E/DatabaseUtils( 2504):     at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:112)
+E/DatabaseUtils( 2504):     at android.os.Binder.execTransact(Binder.java:404)
+E/DatabaseUtils( 2504):     at dalvik.system.NativeStart.run(Native Method)
+W/MmsCommunication( 3356): Android won't let us query the APN database.
+W/TelephonyUtil( 3356): Choosing MCC+MNC info from current context's Configuration
+W/ApnDatabase( 3356): Querying table for MCC+MNC 310120 without APN name
+W/ApnDatabase( 3356): Returning preferred APN MmsConnectionParameters{ mmsc: "http://mms.sprintpcs.com", proxy: "68.28.31.7", port: 80 }
+W/MmsSmsDatabase( 3356): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+I/ActivityManager( 2164): Displayed org.thoughtcrime.securesms/.ConversationActivity: +562ms (total +2s766ms)
+I/Timeline( 3356): Timeline: Activity_idle id: android.os.BinderProxy@424e1f28 time:614603
+I/Timeline( 2164): Timeline: Activity_windows_visible id: ActivityRecord{42657c08 u0 org.thoughtcrime.securesms/.ConversationActivity t5} time:614655
+D/Yamaha-MC1N2-Audio( 1814): yamaha_mc1n2_audio_output_stop()
+D/Yamaha-MC1N2-Audio( 1814): yamaha_mc1n2_audio_route_start()
+D/lights  ( 2164): set_light_buttons: 2
+D/lights  ( 2164): set_light_buttons: 1
+D/AudioPolicyManagerBase( 1814): getOutput() device 2, stream 1, samplingRate 0, format 0, channelMask 3, flags 0
+D/AudioPolicyManagerBase( 1814): getOutput() returns output 2
+D/AudioPolicyManagerBase( 1814): getOutput() device 2, stream 1, samplingRate 0, format 0, channelMask 3, flags 0
+D/AudioPolicyManagerBase( 1814): getOutput() returns output 2
+D/AudioPolicyManagerBase( 1814): getOutput() device 2, stream 1, samplingRate 48000, format 1, channelMask 3, flags 4
+D/AudioPolicyManagerBase( 1814): getOutput() returns output 2
+W/AudioTrack( 2164): AUDIO_OUTPUT_FLAG_FAST denied by client due to mismatching sample rate (48000 vs 44100)
+D/AudioFlinger( 1814): start(4099), calling pid 2164 session 81
+D/AudioFlinger( 1814): ? => ACTIVE (4099) on thread 0x40c39520
+D/AudioPolicyManagerBase( 1814): startOutput() output 2, stream 1, session 81
+D/Yamaha-MC1N2-Audio( 1814): yamaha_mc1n2_audio_output_start()
+D/Yamaha-MC1N2-Audio( 1814): yamaha_mc1n2_audio_route_start()
+D/Yamaha-MC1N2-Audio( 1814): (yamaha_mc1n2_audio_params_route_find): device = 2, direction = 0
+W/MessageDatabase( 3356): Updating ID: 9145 to base type: 22
+W/MmsSmsDatabase( 3356): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 85) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 85) ORDER BY date_received DESC) LIMIT 1
+W/SmsSender( 3356): Sending message: 9145
+W/MessageDatabase( 3356): Updating ID: 9145 to base type: 22
+W/InputMethodManagerService( 2164): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@42363528 attribute=null, token = android.os.BinderProxy@4259d170
+W/MmsSmsDatabase( 3356): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 85) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 85) ORDER BY date_received DESC) LIMIT 1
+W/Session ( 3356): Checking session...
+W/SmsTransportDetails( 3356): Padding message body out to: 63
+W/SmsTransportDetails( 3356): Encoded Message Length: 151
+W/org.thoughtcrime.securesms.sms.MultipartSmsTransportMessage( 3356): Complete fragment size: 156
+W/SmsTransport( 3356): Secure divide into message parts: 1
+W/SMSReceiverService( 3356): Intent resultcode: 1
+W/SMSReceiverService( 3356): Running sent callback: 9145
+W/MessageDatabase( 3356): Updating ID: 9145 to base type: 24
+W/MmsSmsDatabase( 3356): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 85) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 85) ORDER BY date_received DESC) LIMIT 1
+D/AndroidRuntime( 5706): 
+D/AndroidRuntime( 5706): >>>>>> AndroidRuntime START com.android.internal.os.RuntimeInit <<<<<<
+D/AndroidRuntime( 5706): CheckJNI is OFF
+D/dalvikvm( 5706): Trying to load lib libjavacore.so 0x0
+D/dalvikvm( 5706): Added shared lib libjavacore.so 0x0
+D/dalvikvm( 5706): Trying to load lib libnativehelper.so 0x0
+D/dalvikvm( 5706): Added shared lib libnativehelper.so 0x0
+D/dalvikvm( 5706): No JNI_OnLoad found in libnativehelper.so 0x0, skipping init
+W/SystemStateListener( 3356): java.lang.IllegalArgumentException: Receiver not registered: org.thoughtcrime.securesms.service.SystemStateListener$ConnectivityListener@41fb5f18
+W/SystemStateListener( 3356):   at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:665)
+W/SystemStateListener( 3356):   at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:1517)
+W/SystemStateListener( 3356):   at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java:489)
+W/SystemStateListener( 3356):   at org.thoughtcrime.securesms.service.SystemStateListener.unregisterForConnectivityChange(SystemStateListener.java:46)
+W/SystemStateListener( 3356):   at org.thoughtcrime.securesms.service.SmsSender.unregisterForRadioChanges(SmsSender.java:180)
+W/SystemStateListener( 3356):   at org.thoughtcrime.securesms.service.SmsSender.handleSentMessage(SmsSender.java:158)
+W/SystemStateListener( 3356):   at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:64)
+W/SystemStateListener( 3356):   at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:273)
+W/SystemStateListener( 3356):   at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)

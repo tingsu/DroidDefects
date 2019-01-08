@@ -1,0 +1,14 @@
+//this is an auto-generated bug report
+//package name: org.secuso.privacyfriendlynotes
+//version: 1.0
+//appro_time: 144
+ FATAL EXCEPTION: IntentService[Notification service]
+ android.database.CursorIndexOutOfBoundsException: Index 0 requested, with a size of 0
+ 	at android.database.AbstractCursor.checkPosition(AbstractCursor.java:424)
+ 	at android.database.AbstractWindowedCursor.checkPosition(AbstractWindowedCursor.java:136)
+ 	at android.database.AbstractWindowedCursor.getInt(AbstractWindowedCursor.java:68)
+ 	at org.secuso.privacyfriendlynotes.NotificationService.onHandleIntent(NotificationService.java:28)
+ 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

@@ -1,0 +1,30 @@
+//this is an auto-generated bug report
+//package name: com.workingagenda.democracydroid
+//version: 2.9.6
+//appro_time: 54
+ FATAL EXCEPTION: main
+ java.lang.IllegalStateException: The content of the adapter has changed but ListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thread. [in ListView(16908298, class android.widget.ListView) with Adapter(class com.workingagenda.democracydroid.Adapters.EpisodeAdapter)]
+ 	at android.widget.ListView.layoutChildren(ListView.java:1545)
+ 	at android.widget.ListView.setSelectionInt(ListView.java:2026)
+ 	at android.widget.AbsListView.resurrectSelection(AbsListView.java:5203)
+ 	at android.widget.AbsListView.onWindowFocusChanged(AbsListView.java:2716)
+ 	at android.view.View.dispatchWindowFocusChanged(View.java:7578)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:962)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:3115)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

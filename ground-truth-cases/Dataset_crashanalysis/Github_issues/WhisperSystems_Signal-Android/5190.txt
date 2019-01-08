@@ -1,0 +1,60 @@
+02-07 15:32:21.309 17225 17225 W ConversationItem: Content location: http://sobmm.myboostmobile.com/ammsc/?MUSASm8X615043589839
+02-07 15:32:21.413 17225 17239 W MmsDownloadJob: Downloading mms at sobmm.myboostmobile.com
+02-07 15:32:21.413 17225 19566 W MmsSmsDatabase: Executing query: SELECT _id, unique_row_id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type, attachment_id, unique_id, mid, data_size, _data, ct, cl, cd, name, pending_push FROM (SELECT DISTINCT date_sent AS date_sent, date AS date_received, _id, 'SMS::' || _id || '::' || date_sent AS unique_row_id, NULL AS attachment_id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type, NULL AS unique_id, NULL AS mid, NULL AS data_size, NULL AS _data, NULL AS ct, NULL AS cl, NULL AS cd, NULL AS name, NULL AS pending_push FROM sms WHERE (thread_id = 34) UNION ALL SELECT DISTINCT date AS date_sent, date_received AS date_received, mms._id AS _id, 'MMS::' || mms._id || '::' || date AS unique_row_id, part._id AS attachment_id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type, unique_id, NULL AS mid, data_size, NULL AS _data, ct, cl, cd, name, pending_push FROM mms LEFT OUTER JOIN part ON part._id = (SELECT part._id FROM part WHERE part.mid = mms._id LIMIT 1) WHERE (thread_id = 34) ORDER BY date_received DESC LIMIT 500)
+02-07 15:32:21.415 17225 17239 W CompatMmsConnection: Receiving via legacy connection
+02-07 15:32:21.431 17225 17239 W TelephonyUtil: Choosing MCC+MNC info from current context's Configuration
+02-07 15:32:21.432 17225 17239 W ApnDatabase: Querying table for MCC+MNC 3100 without APN name
+02-07 15:32:21.437 17225 17225 W PhoneNumberFormatter: Got local CC: US
+02-07 15:32:21.439 17225 17239 W ApnDatabase: No matching APNs found, returning null
+02-07 15:32:21.445 17225 17239 W CompatMmsConnection: Falling back to try receiving via Lollipop API
+02-07 15:32:21.450 17225 17239 W IncomingLollipopMmsConnection: downloading multimedia from http://sobmm.myboostmobile.com/ammsc/?MUSASm8X615043589839 to content://org.thoughtcrime.provider.securesms.mms/mms/1454880741449
+02-07 15:32:21.460 17225 17225 W PhoneNumberFormatter: Got local CC: US
+02-07 15:32:21.481 17225 17225 W PhoneNumberFormatter: Got local CC: US
+02-07 15:32:21.500 17225 17225 W PhoneNumberFormatter: Got local CC: US
+02-07 15:32:21.524 17225 17225 W PhoneNumberFormatter: Got local CC: US
+02-07 15:32:23.247 17225 17225 W LollipopMmsConnection: onReceive()
+02-07 15:32:23.247 17225 17225 W IncomingLollipopMmsConnection: HTTP status: -1
+02-07 15:32:23.248 17225 17225 W IncomingLollipopMmsConnection: code: 2, result string: null
+02-07 15:32:23.250 17225 17239 W MmsBodyProvider: openFile(content://org.thoughtcrime.provider.securesms.mms/mms/1454880741449, r)
+02-07 15:32:23.250 17225 17239 W MmsBodyProvider: Fetching message body for a single row...
+02-07 15:32:23.251 17225 17239 W MmsBodyProvider: returning file /data/user/0/org.thoughtcrime.securesms/cache/1454880741449.mmsbody
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: java.io.FileNotFoundException: No such file or directory
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at android.os.Parcel.openFileDescriptor(Native Method)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at android.os.ParcelFileDescriptor.openInternal(ParcelFileDescriptor.java:270)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at android.os.ParcelFileDescriptor.open(ParcelFileDescriptor.java:200)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at org.thoughtcrime.securesms.providers.MmsBodyProvider.openFile(MmsBodyProvider.java:77)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at android.content.ContentProvider.openAssetFile(ContentProvider.java:1374)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at android.content.ContentProvider.openTypedAssetFile(ContentProvider.java:1554)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at android.content.ContentProvider.openTypedAssetFile(ContentProvider.java:1620)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at android.content.ContentProvider$Transport.openTypedAssetFile(ContentProvider.java:419)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at android.content.ContentResolver.openTypedAssetFileDescriptor(ContentResolver.java:1107)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at android.content.ContentResolver.openAssetFileDescriptor(ContentResolver.java:944)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at android.content.ContentResolver.openInputStream(ContentResolver.java:664)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at org.thoughtcrime.securesms.providers.MmsBodyProvider$Pointer.getInputStream(MmsBodyProvider.java:133)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at org.thoughtcrime.securesms.mms.IncomingLollipopMmsConnection.retrieve(IncomingLollipopMmsConnection.java:78)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at org.thoughtcrime.securesms.mms.CompatMmsConnection.retrieve(CompatMmsConnection.java:57)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at org.thoughtcrime.securesms.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:98)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+02-07 15:32:23.259 17225 17239 W IncomingLollipopMmsConnection: at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: ws.com.google.android.mms.MmsException: java.io.FileNotFoundException: No such file or directory
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at org.thoughtcrime.securesms.mms.IncomingLollipopMmsConnection.retrieve(IncomingLollipopMmsConnection.java:86)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at org.thoughtcrime.securesms.mms.CompatMmsConnection.retrieve(CompatMmsConnection.java:57)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at org.thoughtcrime.securesms.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:98)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: Caused by: java.io.FileNotFoundException: No such file or directory
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at android.os.Parcel.openFileDescriptor(Native Method)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at android.os.ParcelFileDescriptor.openInternal(ParcelFileDescriptor.java:270)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at android.os.ParcelFileDescriptor.open(ParcelFileDescriptor.java:200)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at org.thoughtcrime.securesms.providers.MmsBodyProvider.openFile(MmsBodyProvider.java:77)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at android.content.ContentProvider.openAssetFile(ContentProvider.java:1374)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at android.content.ContentProvider.openTypedAssetFile(ContentProvider.java:1554)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at android.content.ContentProvider.openTypedAssetFile(ContentProvider.java:1620)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at android.content.ContentProvider$Transport.openTypedAssetFile(ContentProvider.java:419)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at android.content.ContentResolver.openTypedAssetFileDescriptor(ContentResolver.java:1107)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at android.content.ContentResolver.openAssetFileDescriptor(ContentResolver.java:944)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at android.content.ContentResolver.openInputStream(ContentResolver.java:664)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at org.thoughtcrime.securesms.providers.MmsBodyProvider$Pointer.getInputStream(MmsBodyProvider.java:133)
+02-07 15:32:23.262 17225 17239 W MmsDownloadJob: at org.thoughtcrime.securesms.mms.IncomingLollipopMmsConnection.retrieve(IncomingLollipopMmsConnection.java:78)

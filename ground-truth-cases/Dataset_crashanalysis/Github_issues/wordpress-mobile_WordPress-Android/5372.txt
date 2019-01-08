@@ -1,0 +1,7 @@
+Caused by java.lang.NumberFormatException: For input string: "false"
+       at java.lang.Long.parseLong(Long.java:443)
+       at java.lang.Long.valueOf(Long.java:542)
+       at org.wordpress.android.util.WPLegacyMigrationUtils.getDraftsFromDeprecatedDB(WPLegacyMigrationUtils.java:255)
+       at org.wordpress.android.util.WPLegacyMigrationUtils.migrateDraftsFromDeprecatedDB(WPLegacyMigrationUtils.java:80)
+       at org.wordpress.android.WordPress.migrateDrafts(WordPress.java:357)
+       at org.wordpress.android.WordPress.migrateSelfHostedSites(WordPress.java:351)

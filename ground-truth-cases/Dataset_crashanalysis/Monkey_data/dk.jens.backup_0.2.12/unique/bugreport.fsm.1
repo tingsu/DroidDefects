@@ -1,0 +1,17 @@
+//this is an auto-generated bug report
+//package name: dk.jens.backup
+//version: 0.2.12
+//appro_time: 107
+ java.lang.OutOfMemoryError
+ 	at android.graphics.BitmapFactory.nativeDecodeAsset(Native Method)
+ 	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:503)
+ 	at android.graphics.BitmapFactory.decodeResourceStream(BitmapFactory.java:356)
+ 	at android.graphics.drawable.Drawable.createFromResourceStream(Drawable.java:800)
+ 	at android.content.res.Resources.loadDrawable(Resources.java:2110)
+ 	at android.content.res.Resources.getDrawable(Resources.java:695)
+ 	at android.app.ApplicationPackageManager.getDrawable(ApplicationPackageManager.java:649)
+ 	at android.content.pm.PackageItemInfo.loadIcon(PackageItemInfo.java:140)
+ 	at android.app.ApplicationPackageManager.getApplicationIcon(ApplicationPackageManager.java:706)
+ 	at dk.jens.backup.AppInfoHelper.getPackageInfo(AppInfoHelper.java:51)
+ 	at dk.jens.backup.OAndBackup$3.run(OAndBackup.java:224)
+ 	at java.lang.Thread.run(Thread.java:841)

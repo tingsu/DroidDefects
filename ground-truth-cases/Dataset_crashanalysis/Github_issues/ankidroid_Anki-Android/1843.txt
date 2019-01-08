@@ -1,0 +1,7 @@
+E/AndroidRuntime(11046): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(11046): at com.ichi2.anki.StudyOptions.onPrepareDialog(StudyOptions.java:1723)
+E/AndroidRuntime(11046): at android.app.Activity.onPrepareDialog(Activity.java:2505)
+E/AndroidRuntime(11046): at android.app.Activity.restoreManagedDialogs(Activity.java:873)
+E/AndroidRuntime(11046): at android.app.Activity.performRestoreInstanceState(Activity.java:816)
+E/AndroidRuntime(11046): at android.app.Instrumentation.callActivityOnRestoreInstanceState(Instrumentation.java:1096)
+E/AndroidRuntime(11046): at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2641)

@@ -1,0 +1,18 @@
+AndroidRuntime: java.lang.ExceptionInInitializerError
+AndroidRuntime:         at org.thoughtcrime.securesms.ApplicationContext.onCreate(ApplicationContext.java:90)
+AndroidRuntime:         at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:999)
+AndroidRuntime:         at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4187)
+AndroidRuntime:         at android.app.ActivityThread.access$1300(ActivityThread.java:137)
+AndroidRuntime:         at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1262)
+AndroidRuntime:         at android.os.Handler.dispatchMessage(Handler.java:99)
+AndroidRuntime:         at android.os.Looper.loop(Looper.java:137)
+AndroidRuntime:         at android.app.ActivityThread.main(ActivityThread.java:4781)
+AndroidRuntime:         at java.lang.reflect.Method.invokeNative(Native Method)
+AndroidRuntime:         at java.lang.reflect.Method.invoke(Method.java:511)
+AndroidRuntime:         at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:805)
+AndroidRuntime:         at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:568)
+AndroidRuntime:         at dalvik.system.NativeStart.main(Native Method)
+AndroidRuntime: Caused by: java.lang.UnsatisfiedLinkError: Couldn't load jingle_peerconnection_so: findLibrary returned null
+AndroidRuntime:         at java.lang.Runtime.loadLibrary(Runtime.java:365)
+AndroidRuntime:         at java.lang.System.loadLibrary(System.java:542)
+AndroidRuntime:         at org.webrtc.PeerConnectionFactory.<clinit>(PeerConnectionFactory.java:21)

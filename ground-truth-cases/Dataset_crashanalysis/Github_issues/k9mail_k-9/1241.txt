@@ -1,0 +1,21 @@
+03-31 12:40:35.191 E/AndroidRuntime( 5025): java.lang.OutOfMemoryError: Failed to allocate a 38189038 byte allocation with 16777216 free bytes and 35MB until OOM^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at java.lang.AbstractStringBuilder.enlargeBuffer(AbstractStringBuilder.java:95)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at java.lang.AbstractStringBuilder.append0(AbstractStringBuilder.java:133)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at java.lang.StringBuilder.append(StringBuilder.java:124)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at android.text.TextUtils.htmlEncode(TextUtils.java:1402)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.helper.HtmlConverter.simpleTextToHtml(HtmlConverter.java:147)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.helper.HtmlConverter.textToHtml(HtmlConverter.java:210)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.mail.internet.MimeUtility.buildHtml(MimeUtility.java:1968)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.mail.internet.MimeUtility.extractTextAndAttachments(MimeUtility.java:1407)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.mail.store.LocalStore$LocalFolder$15.doDbWork(LocalStore.java:2575)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.mail.store.LocalStore$LocalFolder$15.doDbWork(LocalStore.java:2507)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.mail.store.LockableDatabase.execute(LockableDatabase.java:283)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.mail.store.LocalStore$LocalFolder.appendMessages(LocalStore.java:2507)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.mail.store.LocalStore$LocalFolder.appendMessages(LocalStore.java:2437)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.controller.MessagingController.downloadLargeMessages(MessagingController.java:1773)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.controller.MessagingController.downloadMessages(MessagingController.java:1372)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.controller.MessagingController.synchronizeMailboxSynchronous(MessagingController.java:1141)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.controller.MessagingController.access$400(MessagingController.java:111)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.controller.MessagingController$35.run(MessagingController.java:4506)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at com.fsck.k9.controller.MessagingController.run(MessagingController.java:435)^M
+03-31 12:40:35.191 E/AndroidRuntime( 5025):     at java.lang.Thread.run(Thread.java:818)^M

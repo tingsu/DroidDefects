@@ -1,0 +1,19 @@
+E/AndroidRuntime( 1076): java.lang.NullPointerException
+E/AndroidRuntime( 1076):    at org.paulmach.textedit.pmTextEdit.onPrepareDialog(pmTextEdit.java:951)
+E/AndroidRuntime( 1076):    at android.app.Activity.onPrepareDialog(Activity.java:2988)
+E/AndroidRuntime( 1076):    at android.app.Activity.showDialog(Activity.java:3051)
+E/AndroidRuntime( 1076):    at android.app.Activity.showDialog(Activity.java:3002)
+E/AndroidRuntime( 1076):    at org.paulmach.textedit.pmTextEdit$15.onClick(pmTextEdit.java:1329)
+E/AndroidRuntime( 1076):    at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+E/AndroidRuntime( 1076):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 1076):    at android.os.Looper.loop(Looper.java:137)
+E/AndroidRuntime( 1076):    at android.app.ActivityThread.main(ActivityThread.java:4745)
+E/AndroidRuntime( 1076):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 1076):    at java.lang.reflect.Method.invoke(Method.java:511)
+E/AndroidRuntime( 1076):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+E/AndroidRuntime( 1076):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+E/AndroidRuntime( 1076):    at dalvik.system.NativeStart.main(Native Method)
+W/ActivityManager(  150):   Force finishing activity org.paulmach.textedit/.pmTextEdit
+
+We carefully inspected the source code, and found the root cause lies in the following code (in "pmTextEdit.java" file)
+<img width="513" alt="screen shot 2016-04-13 at 7 56 45 pm" src="https://cloud.githubusercontent.com/assets/3156978/14492353/3d7609da-01b1-11e6-91d4-a1319cc4f4f4.png">

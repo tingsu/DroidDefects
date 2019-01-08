@@ -1,0 +1,14 @@
+04-06 01:15:03.889 25721 26184 E SyncAdapter: java.lang.NullPointerException
+04-06 01:15:03.889 25721 26184 E SyncAdapter:   at android.os.Parcel.readException(Parcel.java:1333)
+04-06 01:15:03.889 25721 26184 E SyncAdapter:   at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:182)
+04-06 01:15:03.889 25721 26184 E SyncAdapter:   at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:136)
+04-06 01:15:03.889 25721 26184 E SyncAdapter:   at android.content.ContentProviderProxy.insert(ContentProviderNative.java:415)
+04-06 01:15:03.889 25721 26184 E SyncAdapter:   at android.content.ContentProviderClient.insert(ContentProviderClient.java:66)
+04-06 01:15:03.889 25721 26184 E SyncAdapter:   at org.gege.caldavsyncadapter.syncadapter.SyncAdapter.getOrCreateCalendarUri(SyncAdapter.java:335)
+04-06 01:15:03.889 25721 26184 E SyncAdapter:   at org.gege.caldavsyncadapter.syncadapter.SyncAdapter.onPerformSync(SyncAdapter.java:129)
+04-06 01:15:03.889 25721 26184 E SyncAdapter:   at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:247)
+04-06 01:15:03.899 25721 26184 E AndroidRuntime: FATAL EXCEPTION: SyncAdapterThread-1
+04-06 01:15:03.899 25721 26184 E AndroidRuntime:    at org.gege.caldavsyncadapter.syncadapter.SyncAdapter.onPerformSync(SyncAdapter.java:149)
+04-06 01:15:03.899 25721 26184 E AndroidRuntime:    at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:247)
+04-06 01:15:03.899 25721 26184 E AndroidRuntime:    at org.gege.caldavsyncadapter.syncadapter.SyncAdapter.getOrCreateCalendarUri(SyncAdapter.java:335)
+04-06 01:15:03.899 25721 26184 E AndroidRuntime:    at org.gege.caldavsyncadapter.syncadapter.SyncAdapter.onPerformSync(SyncAdapter.java:129)

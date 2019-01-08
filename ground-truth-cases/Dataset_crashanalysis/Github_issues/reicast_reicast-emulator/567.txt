@@ -1,0 +1,7 @@
+E/AndroidRuntime( 2388): java.lang.IllegalArgumentException
+E/AndroidRuntime( 2388):        at com.google.android.gles_jni.EGLImpl._eglCreateContext(Native Method)
+E/AndroidRuntime( 2388):        at com.google.android.gles_jni.EGLImpl.eglCreateContext(EGLImpl.java:54)
+E/AndroidRuntime( 2388):        at com.reicast.emulator.emu.GLCFactory$ContextFactory.createContext(GLCFactory.java:30)
+E/AndroidRuntime( 2388):        at android.opengl.GLSurfaceView$EglHelper.start(GLSurfaceView.java:1029)
+E/AndroidRuntime( 2388):        at android.opengl.GLSurfaceView$GLThread.guardedRun(GLSurfaceView.java:1400)
+E/AndroidRuntime( 2388):        at android.opengl.GLSurfaceView$GLThread.run(GLSurfaceView.java:1239)

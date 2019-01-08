@@ -1,0 +1,13 @@
+05-17 16:48:10.858 E/AndroidRuntime( 6114): java.lang.RuntimeException: stop failed.
+05-17 16:48:10.858 E/AndroidRuntime( 6114):     at android.media.MediaRecorder.stop(Native Method)
+05-17 16:48:10.858 E/AndroidRuntime( 6114):     at eu.siacs.conversations.voicerecorder.ui.RecordingActivity.stopRecording(RecordingActivity.java:111)
+05-17 16:48:10.858 E/AndroidRuntime( 6114):     at eu.siacs.conversations.voicerecorder.ui.RecordingActivity.onClick(RecordingActivity.java:155)
+05-17 16:48:10.858 E/AndroidRuntime( 6114):     at android.view.View.performClick(View.java:5637)
+05-17 16:48:10.858 E/AndroidRuntime( 6114):     at android.view.View$PerformClick.run(View.java:22433)
+05-17 16:48:10.858 E/AndroidRuntime( 6114):     at android.os.Handler.handleCallback(Handler.java:751)
+05-17 16:48:10.858 E/AndroidRuntime( 6114):     at android.os.Handler.dispatchMessage(Handler.java:95)
+05-17 16:48:10.858 E/AndroidRuntime( 6114):     at android.os.Looper.loop(Looper.java:154)
+05-17 16:48:10.858 E/AndroidRuntime( 6114):     at android.app.ActivityThread.main(ActivityThread.java:6128)
+05-17 16:48:10.858 E/AndroidRuntime( 6114):     at java.lang.reflect.Method.invoke(Native Method)
+05-17 16:48:10.858 E/AndroidRuntime( 6114):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:889)
+05-17 16:48:10.858 E/AndroidRuntime( 6114):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:779)

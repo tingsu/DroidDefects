@@ -1,0 +1,18 @@
+09-24 20:19:01.075: E/AndroidRuntime(1050): java.lang.ExceptionInInitializerError
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at io.github.droidapps.pdfreader.APVApplication.onCreate(APVApplication.java:13)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:999)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4151)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at android.app.ActivityThread.access$1300(ActivityThread.java:130)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1255)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at android.os.Handler.dispatchMessage(Handler.java:99)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at android.os.Looper.loop(Looper.java:137)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at android.app.ActivityThread.main(ActivityThread.java:4745)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at java.lang.reflect.Method.invokeNative(Native Method)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at java.lang.reflect.Method.invoke(Method.java:511)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at dalvik.system.NativeStart.main(Native Method)
+09-24 20:19:01.075: E/AndroidRuntime(1050): Caused by: java.lang.UnsatisfiedLinkError: Couldn't load apv: findLibrary returned null
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at java.lang.Runtime.loadLibrary(Runtime.java:365)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at java.lang.System.loadLibrary(System.java:535)
+09-24 20:19:01.075: E/AndroidRuntime(1050):     at io.github.droidapps.lib.pdf.PDF.<clinit>(PDF.java:67)

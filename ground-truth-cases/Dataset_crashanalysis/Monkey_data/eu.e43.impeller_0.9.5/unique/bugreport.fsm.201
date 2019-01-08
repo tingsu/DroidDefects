@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: eu.e43.impeller
+//version: 0.9.5
+//appro_time: 14
+ java.lang.VerifyError: eu/e43/impeller/ImpellerApplication
+ 	at java.lang.Class.newInstanceImpl(Native Method)
+ 	at java.lang.Class.newInstance(Class.java:1130)
+ 	at android.app.Instrumentation.newApplication(Instrumentation.java:990)
+ 	at android.app.Instrumentation.newApplication(Instrumentation.java:975)
+ 	at android.app.LoadedApk.makeApplication(LoadedApk.java:504)
+ 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4417)
+ 	at android.app.ActivityThread.access$1300(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1316)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

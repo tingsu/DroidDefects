@@ -1,0 +1,9 @@
+Crash report:
+Begin Stacktrace java.lang.NullPointerException at com.ichi2.anki.StudyOptions$10.onPostExecute(StudyOptions.java:2813)
+at com.ichi2.async.Connection.onPostExecute(Connection.java:125) at com.ichi2.async.Connection.onPostExecute(Connection.java:1)
+at android.os.AsyncTask.finish(AsyncTask.java:417) at android.os.AsyncTask.access$300(AsyncTask.java:127)
+at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:429) at android.os.Handler.dispatchMessage(Handler.java:99)
+at android.os.Looper.loop(Looper.java:150) at android.app.ActivityThread.main(ActivityThread.java:4385)
+at java.lang.reflect.Method.invokeNative(Native Method) at java.lang.reflect.Method.invoke(Method.java:507)
+at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:849)
+at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:607) at dalvik.system.NativeStart.main(Native

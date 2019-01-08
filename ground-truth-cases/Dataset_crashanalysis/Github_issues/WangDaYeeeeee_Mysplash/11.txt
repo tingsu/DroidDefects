@@ -1,0 +1,21 @@
+
+*I have not made any edits at all.*
+
+`   java.lang.RuntimeException: Unable to start activity ComponentInfo{com.wangdaye.mysplash/com.wangdaye.mysplash.photo.view.activity.PhotoActivity}: android.view.InflateException: Binary XML file line #18: Could not inflate Behavior subclass com.wangdaye.mysplash._common.ui.behavior.PhotoCoverBehavior
+                                                                     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3319)
+                                                                     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3415)
+                                                                     at android.app.ActivityThread.access$1100(ActivityThread.java:229)
+                                                                     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1821)
+                                                                     at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                     at android.os.Looper.loop(Looper.java:148)
+                                                                     at android.app.ActivityThread.main(ActivityThread.java:7331)
+                                                                     at java.lang.reflect.Method.invoke(Native Method)
+                                                                     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1230)
+                                                                     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1120)
+                                                                  Caused by: android.view.InflateException: Binary XML file line #18: Could not inflate Behavior subclass com.wangdaye.mysplash._common.ui.behavior.PhotoCoverBehavior
+                                                                     at android.view.LayoutInflater.inflate(LayoutInflater.java:551)
+                                                                     at android.view.LayoutInflater.inflate(LayoutInflater.java:429)
+                                                                     at android.view.LayoutInflater.inflate(LayoutInflater.java:380)
+                                                                     at android.support.v7.app.AppCompatDelegateImplV9.setContentView(AppCompatDelegateImplV9.java:288)
+                                                                     at android.support.v7.app.AppCompatActivity.setContentView(AppCompatActivity.java:143)
+                                                                     at com.wangdaye.mysplash.photo.view.activity.PhotoActivity.onCreate(PhotoActivity.java:124)`

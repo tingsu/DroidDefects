@@ -1,0 +1,56 @@
+10-01 20:41:05.205 E/AndroidRuntime(17754): java.lang.SecurityException: Failed to open /dev/urandom for writing
+10-01 20:41:05.205 E/AndroidRuntime(17754): at org.sufficientlysecure.keychain.util.PRNGFixes$LinuxPRNGSecureRandom.getUrandomOutputStream(PRNGFixes.java:260)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at org.sufficientlysecure.keychain.util.PRNGFixes$LinuxPRNGSecureRandom.engineSetSeed(PRNGFixes.java:199)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at org.sufficientlysecure.keychain.util.PRNGFixes$LinuxPRNGSecureRandom.engineNextBytes(PRNGFixes.java:213)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at java.security.SecureRandom.nextBytes(SecureRandom.java:270)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at java.util.UUID.randomUUID(UUID.java:130)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.app.Profile.<init>(Profile.java:220)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.app.ProfileManager.<init>(ProfileManager.java:211)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.app.ContextImpl$41.createService(ContextImpl.java:558)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.app.ContextImpl$ServiceFetcher.getService(ContextImpl.java:245)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.app.ContextImpl.getSystemService(ContextImpl.java:1575)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.media.AudioManager.<init>(AudioManager.java:436)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.app.ContextImpl$6.createService(ContextImpl.java:327)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.app.ContextImpl$ServiceFetcher.getService(ContextImpl.java:245)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.app.ContextImpl.getSystemService(ContextImpl.java:1575)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.view.ContextThemeWrapper.getSystemService(ContextThemeWrapper.java:117)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.app.Activity.getSystemService(Activity.java:4572)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.view.ViewRootImpl.getAudioManager(ViewRootImpl.java:4995)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.view.ViewRootImpl.playSoundEffect(ViewRootImpl.java:5062)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.view.View.playSoundEffect(View.java:16274)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.view.View.performClick(View.java:4246)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.view.View$PerformClick.run(View.java:17728)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.os.Handler.handleCallback(Handler.java:730)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.os.Handler.dispatchMessage(Handler.java:92)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.os.Looper.loop(Looper.java:137)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at android.app.ActivityThread.main(ActivityThread.java:5295)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at java.lang.reflect.Method.invokeNative(Native Method)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at java.lang.reflect.Method.invoke(Method.java:525)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:739)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:555)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at dalvik.system.NativeStart.main(Native Method)
+10-01 20:41:05.205 E/AndroidRuntime(17754): Caused by: java.io.FileNotFoundException: /dev/urandom: open failed: EACCES (Permission denied)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at libcore.io.IoBridge.open(IoBridge.java:409)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at java.io.FileOutputStream.<init>(FileOutputStream.java:88)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at java.io.FileOutputStream.<init>(FileOutputStream.java:73)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at org.sufficientlysecure.keychain.util.PRNGFixes$LinuxPRNGSecureRandom.getUrandomOutputStream(PRNGFixes.java:258)
+10-01 20:41:05.205 E/AndroidRuntime(17754): ... 29 more
+10-01 20:41:05.205 E/AndroidRuntime(17754): Caused by: libcore.io.ErrnoException: open failed: EACCES (Permission denied)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at libcore.io.Posix.open(Native Method)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+10-01 20:41:05.205 E/AndroidRuntime(17754): at libcore.io.IoBridge.open(IoBridge.java:393)
+10-01 20:41:05.205 E/AndroidRuntime(17754): ... 32 more
+10-01 20:41:05.215 W/ActivityManager(3305):   Force finishing activity org.sufficientlysecure.keychain/.ui.MainActivity
+10-01 20:41:05.340 D/dalvikvm(3305): GC_FOR_ALLOC freed 5613K, 41% free 15733K/26648K, paused 91ms, total 101ms
+10-01 20:41:05.845 W/ActivityManager(3305): Activity pause timeout for ActivityRecord{41dc06c8 u0 org.sufficientlysecure.keychain/.ui.MainActivity}
+10-01 20:41:06.230 I/ActivityManager(3305): No longer want com.google.android.partnersetup (pid 15712): empty #17
+10-01 20:41:07.000 D/audio_hw_primary(1916): select_output_device: AUDIO_DEVICE_OUT_SPEAKER
+10-01 20:41:07.005 I/Process (17754): Sending signal. PID: 17754 SIG: 9
+10-01 20:41:07.065 I/WindowState(3305): WIN DEATH: Window{41dca300 u0 org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.MainActivity}
+10-01 20:41:07.065 I/ActivityManager(3305): Process org.sufficientlysecure.keychain (pid 17754) has died.
+10-01 20:41:07.180 W/BackupManagerService(3305): dataChanged but no participant pkg='com.android.providers.settings' uid=10039
+10-01 20:41:08.050 W/ProcessStats(3305): Skipping unknown process pid 17803
+10-01 20:41:08.055 W/ProcessStats(3305): Skipping unknown process pid 17806
+```
+
+I'd be very glad if you could take a look at it.

@@ -1,0 +1,22 @@
+03-04 23:14:50.338 12474 12474 E AndroidRuntime: java.lang.SecurityException: Not allowed to bind to service Intent { act=org.microg.nlp.LOCATION_BACKEND pkg=org.microg.nlp.backend.ichnaea cmp=org.microg.nlp.backend.ichnaea/.BackendService }
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at android.app.ContextImpl.bindServiceCommon(ContextImpl.java:1334)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at android.app.ContextImpl.bindService(ContextImpl.java:1298)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at android.content.ContextWrapper.bindService(ContextWrapper.java:610)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at org.microg.nlp.ui.AbstractBackendPreference.enableBackend(AbstractBackendPreference.java:208)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at org.microg.nlp.ui.AbstractBackendPreference$Adapter$1.onClick(AbstractBackendPreference.java:175)03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at android.view.View.performClick(View.java:5204)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at android.widget.CompoundButton.performClick(CompoundButton.java:122)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at android.view.View$PerformClick.run(View.java:21156)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at android.os.Handler.handleCallback(Handler.java:739)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at android.os.Handler.dispatchMessage(Handler.java:95)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at android.os.Looper.loop(Looper.java:148)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at android.app.ActivityThread.main(ActivityThread.java:5466)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at java.lang.reflect.Method.invoke(Native Method)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+03-04 23:14:50.338 12474 12474 E AndroidRuntime:        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+03-04 23:14:50.339  9088 10145 W ActivityManager:   Force finishing activity org.microg.nlp/.ui.SettingsActivity
+```
+
+UnifiedNlp is not requesting permission automatically like it should. same applies to the backend apps made by you, like IchnaeaNlpBackend which crash after selected this backend and pressing "ok"
+
+i suppose it's called runtime permissions under 6.0
+apps like org.fitchfamily.android.wifi_backend, however can request for permission at runtime

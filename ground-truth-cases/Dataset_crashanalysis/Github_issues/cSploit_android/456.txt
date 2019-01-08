@@ -1,0 +1,65 @@
+Fetching origin
+HEAD is now at 10c62ec Merge #450
+Building cSploit...
+An error occured while building the nightly apk
+See /home/m/Projects/Nonweb/android/logs/2015-10-19.log for more info
+
+
+real    10.08s
+
+```
+
+```
+$ cat logs/2015-10-19.log 
+Cleaning old files
+Syncing git repo...
+Building cSploit...
+
+[jni] compiling for android-9...ok
+[jni] installing into libs...ok
+[jni] copying libs to java project...ok
+Downloading https://services.gradle.org/distributions/gradle-2.7-all.zip
+
+Exception in thread "main" java.lang.RuntimeException: javax.net.ssl.SSLException: java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
+    at org.gradle.wrapper.ExclusiveFileAccessManager.access(ExclusiveFileAccessManager.java:78)
+    at org.gradle.wrapper.Install.createDist(Install.java:47)
+    at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:129)
+    at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:48)
+Caused by: javax.net.ssl.SSLException: java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
+    at sun.security.ssl.Alerts.getSSLException(Alerts.java:208)
+    at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1937)
+    at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1894)
+    at sun.security.ssl.SSLSocketImpl.handleException(SSLSocketImpl.java:1877)
+    at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1398)
+    at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1375)
+    at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:563)
+    at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+    at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1512)
+    at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1440)
+    at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:254)
+    at org.gradle.wrapper.Download.downloadInternal(Download.java:59)
+    at org.gradle.wrapper.Download.download(Download.java:45)
+    at org.gradle.wrapper.Install$1.call(Install.java:60)
+    at org.gradle.wrapper.Install$1.call(Install.java:47)
+    at org.gradle.wrapper.ExclusiveFileAccessManager.access(ExclusiveFileAccessManager.java:65)
+    ... 3 more
+Caused by: java.lang.RuntimeException: Unexpected error: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
+    at sun.security.validator.PKIXValidator.<init>(PKIXValidator.java:90)
+    at sun.security.validator.Validator.getInstance(Validator.java:179)
+    at sun.security.ssl.X509TrustManagerImpl.getValidator(X509TrustManagerImpl.java:312)
+    at sun.security.ssl.X509TrustManagerImpl.checkTrustedInit(X509TrustManagerImpl.java:171)
+    at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:184)
+    at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+    at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1460)
+    at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:212)
+    at sun.security.ssl.Handshaker.processLoop(Handshaker.java:979)
+    at sun.security.ssl.Handshaker.process_record(Handshaker.java:914)
+    at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1050)
+    at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1363)
+    at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1391)
+    ... 14 more
+Caused by: java.security.InvalidAlgorithmParameterException: the trustAnchors parameter must be non-empty
+    at java.security.cert.PKIXParameters.setTrustAnchors(PKIXParameters.java:200)
+    at java.security.cert.PKIXParameters.<init>(PKIXParameters.java:120)
+    at java.security.cert.PKIXBuilderParameters.<init>(PKIXBuilderParameters.java:104)
+    at sun.security.validator.PKIXValidator.<init>(PKIXValidator.java:88)

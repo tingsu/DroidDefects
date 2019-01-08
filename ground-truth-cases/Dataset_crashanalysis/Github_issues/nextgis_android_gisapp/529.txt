@@ -1,0 +1,18 @@
+java.lang.RuntimeException: Unable to resume activity {com.nextgis.mobile/com.nextgis.maplibui.activity.FormBuilderModifyAttributesActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'double android.location.Location.getLongitude()' on a null object reference
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3163)
+    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3194)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2541)
+    at android.app.ActivityThread.access$900(ActivityThread.java:159)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1353)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5498)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'double android.location.Location.getLongitude()' on a null object reference
+    at com.nextgis.maplibui.activity.FormBuilderModifyAttributesActivity.setLocationText(FormBuilderModifyAttributesActivity.java:289)
+    at com.nextgis.maplibui.activity.ModifyAttributesActivity.onResume(ModifyAttributesActivity.java:434)
+    at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1260)
+    at android.app.Activity.performResume(Activity.java:6361)
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3152)

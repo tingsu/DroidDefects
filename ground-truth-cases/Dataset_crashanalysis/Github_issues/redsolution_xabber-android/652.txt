@@ -1,0 +1,4 @@
+                                                   java.lang.StringIndexOutOfBoundsException: length=0; index=0
+                                                       at java.lang.String.charAt(Native Method)
+                                                       at net.java.otr4j.io.SerializationUtils.toMessage(SerializationUtils.java:299)
+                                                       at net.java.otr4j.session.Session.transformReceiving(Session.java:362)

@@ -1,0 +1,23 @@
+E/AndroidRuntime(13179): java.lang.RuntimeException: Unable to start activity ComponentInfo{douzifly.list/douzifly.list.ui.home.DetailActivity}: b.a
+E/AndroidRuntime(13179):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2357)
+E/AndroidRuntime(13179):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2419)
+E/AndroidRuntime(13179):    at android.app.ActivityThread.access$900(ActivityThread.java:154)
+E/AndroidRuntime(13179):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1321)
+E/AndroidRuntime(13179):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(13179):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(13179):    at android.app.ActivityThread.main(ActivityThread.java:5291)
+E/AndroidRuntime(13179):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(13179):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(13179):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime(13179):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/AndroidRuntime(13179): Caused by: b.a
+E/AndroidRuntime(13179):    at douzifly.list.ui.home.DetailActivity.p(Unknown Source)
+E/AndroidRuntime(13179):    at douzifly.list.ui.home.DetailActivity.onCreate(Unknown Source)
+E/AndroidRuntime(13179):    at android.app.Activity.performCreate(Activity.java:5990)
+E/AndroidRuntime(13179):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+E/AndroidRuntime(13179):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2310)
+E/AndroidRuntime(13179):    ... 10 more
+W/ActivityManager(  746):   Force finishing activity 1 douzifly.list/.ui.home.DetailActivity
+I/OpenGLRenderer(  746): Initialized EGL, version 1.4
+W/ActivityManager(  746): Activity pause timeout for ActivityRecord{bab154d u0 douzifly.list/.ui.home.DetailActivity t5618 f}
+V/WindowManager(  746): Adding window Window{3d7f148a u0 Starting douzifly.list} at 13 of 21 (before Window{3db37c64 u0 Starting douzifly.list})

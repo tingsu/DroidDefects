@@ -1,0 +1,16 @@
+11:36:11.915 Error cgeo 29287  [network-2] HtmlImage.downloadOrRefreshCopy
+11:36:11.915 Error cgeo 29287  java.lang.IllegalArgumentException: Illegal character in query at index 105: http://chart.apis.google.com/chart?cht=qr&chs=200x200&chl=http%3A//ruhrsteig.ohrenbaer.bplaced.net&chld=H|0
+11:36:11.915 Error cgeo 29287   at java.net.URI.create(URI.java:727)
+11:36:11.915 Error cgeo 29287   at ch.boye.httpclientandroidlib.client.methods.HttpGet.<init>(HttpGet.java:69)
+11:36:11.915 Error cgeo 29287   at cgeo.geocaching.network.Network.request(Network.java:180)
+11:36:11.915 Error cgeo 29287   at cgeo.geocaching.network.Network.getRequest(Network.java:288)
+11:36:11.915 Error cgeo 29287   at cgeo.geocaching.network.HtmlImage.downloadOrRefreshCopy(HtmlImage.java:312)
+11:36:11.915 Error cgeo 29287   at cgeo.geocaching.network.HtmlImage.access$700(HtmlImage.java:54)
+11:36:11.915 Error cgeo 29287   at cgeo.geocaching.network.HtmlImage$4.downloadAndSave(HtmlImage.java:258)
+11:36:11.915 Error cgeo 29287   at cgeo.geocaching.network.HtmlImage$4.access$500(HtmlImage.java:217)
+11:36:11.915 Error cgeo 29287   at cgeo.geocaching.network.HtmlImage$4$1$1.call(HtmlImage.java:236)
+11:36:11.915 Error cgeo 29287   at rx.schedulers.ExecutorScheduler$ExecutorAction.run(ExecutorScheduler.java:173)
+11:36:11.915 Error cgeo 29287   at rx.schedulers.ExecutorScheduler$ExecutorSchedulerWorker.run(ExecutorScheduler.java:99)
+11:36:11.915 Error cgeo 29287   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+11:36:11.915 Error cgeo 29287   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+11:36:11.915 Error cgeo 29287   at java.lang.Thread.run(Thread.java:841)

@@ -1,0 +1,51 @@
+[ 01-13 20:20:29.291 19357:19357 D/dalvikvm ]
+VFY: replacing opcode 0x6e at 0x0007
+[ 01-13 20:20:29.330 19357:19357 D/iitcm ]
+setting user agent to: Mozilla/5.0 (Linux; U; Android 4.2.1; en-gb; Galaxy Nexus Build/JOP40D) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+[ 01-13 20:20:29.346 19357:19361 D/dalvikvm ]
+GC_CONCURRENT freed 171K, 3% free 9143K/9344K, paused 3ms+9ms, total 38ms
+[ 01-13 20:20:29.346 19357:19357 D/dalvikvm ]
+WAIT_FOR_CONCURRENT_GC blocked 16ms
+[ 01-13 20:20:29.353 19357:19357 I/dalvikvm-heap ]
+Grow heap (frag case) to 10.320MB for 1434448-byte allocation
+[ 01-13 20:20:29.385 19357:19373 D/dalvikvm ]
+GC_FOR_ALLOC freed 32K, 3% free 10511K/10748K, paused 32ms, total 32ms
+[ 01-13 20:20:29.416 19357:19361 D/dalvikvm ]
+GC_CONCURRENT freed 92K, 3% free 10504K/10748K, paused 3ms+11ms, total 28ms
+[ 01-13 20:20:29.447 19357:19357 D/iitcm ]
+loading url: https://www.ingress.com/intel?vp=m
+[ 01-13 20:20:29.447 19357:19357 D/iitcm ]
+resuming...reset idleTimer
+[ 01-13 20:20:29.517 19357:19357 D/libEGL ]
+loaded /vendor/lib/egl/libEGL_POWERVR_SGX540_120.so
+[ 01-13 20:20:29.517 19357:19357 D/libEGL ]
+loaded /vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so
+[ 01-13 20:20:29.525 19357:19357 D/libEGL ]
+loaded /vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so
+[ 01-13 20:20:29.588 19357:19357 D/OpenGLRenderer ]
+Enabling debug mode 0
+[ 01-13 20:20:29.650 19357:19361 D/dalvikvm ]
+GC_CONCURRENT freed 90K, 2% free 10858K/10976K, paused 2ms+3ms, total 23ms
+[ 01-13 20:20:29.689 387: 402 I/ActivityManager ]
+Displayed com.cradle.iitc_mobile/.IITC_Mobile: +526ms
+[ 01-13 20:20:29.705 19357:19357 D/AndroidRuntime ]
+Shutting down VM
+[ 01-13 20:20:29.705 19357:19357 W/dalvikvm ]
+threadid=1: thread exiting with uncaught exception (group=0x40ec9930)
+[ 01-13 20:20:29.705 19357:19357 E/AndroidRuntime ]
+FATAL EXCEPTION: main
+java.lang.NullPointerException
+    at java.util.regex.Matcher.reset(Matcher.java:176)
+    at java.util.regex.Matcher.<init>(Matcher.java:89)
+    at java.util.regex.Pattern.matcher(Pattern.java:297)
+    at com.cradle.iitc_mobile.Log.log(Log.java:145)
+    at com.cradle.iitc_mobile.IITC_WebChromeClient.onConsoleMessage(IITC_WebChromeClient.java:50)
+    at android.webkit.CallbackProxy.handleMessage(CallbackProxy.java:807)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:5039)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:511)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:793)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:560)
+    at dalvik.system.NativeStart.main(Native Method)

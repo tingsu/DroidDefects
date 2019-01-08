@@ -1,0 +1,28 @@
+: open failed: EINVAL (Invalid argument)
+    at libcore.io.IoBridge.open(IoBridge.java:406)
+    at java.io.FileOutputStream.<init>(FileOutputStream.java:88)
+    at java.io.FileWriter.<init>(FileWriter.java:58)
+    at com.googlecode.android_scripting.ScriptStorageAdapter.writeScript(ScriptStorageAdapter.java:54)
+    at com.googlecode.android_scripting.activity.ScriptManager.writeScriptFromBarcode(ScriptManager.java:639)
+    at com.googlecode.android_scripting.activity.ScriptManager.onActivityResult(ScriptManager.java:609)
+    at android.app.Activity.dispatchActivityResult(Activity.java:4649)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:2976)
+    at android.app.ActivityThread.handleSendResult(ActivityThread.java:3023)
+    at android.app.ActivityThread.access$1100(ActivityThread.java:123)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1177)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:4424)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:511)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: libcore.io.ErrnoException: open failed: EINVAL (Invalid argument)
+    at libcore.io.Posix.open(Native Method)
+    at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+    at libcore.io.IoBridge.open(IoBridge.java:390)
+    ... 18 more
+```
+
+Original issue reported on code.google.com by `GencoreO...@gmail.com` on 27 Aug 2012 at 10:55

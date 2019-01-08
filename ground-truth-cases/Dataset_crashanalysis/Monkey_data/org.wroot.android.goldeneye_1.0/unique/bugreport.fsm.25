@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: org.wroot.android.goldeneye
+//version: 1.0
+//appro_time: 129
+ java.lang.NumberFormatException: Invalid int: "128391917566"
+ 	at java.lang.Integer.invalidInt(Integer.java:138)
+ 	at java.lang.Integer.parse(Integer.java:378)
+ 	at java.lang.Integer.parseInt(Integer.java:366)
+ 	at java.lang.Integer.parseInt(Integer.java:332)
+ 	at org.wroot.android.goldeneye.GoldenEyeActivity.validateInputFields(GoldenEyeActivity.java:109)
+ 	at org.wroot.android.goldeneye.GoldenEyeActivity.attack(GoldenEyeActivity.java:50)
+ 	at org.wroot.android.goldeneye.GoldenEyeActivity$1.onClick(GoldenEyeActivity.java:25)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

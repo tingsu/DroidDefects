@@ -1,0 +1,89 @@
+W/dalvikvm(22291): VFY: unable to resolve virtual method 453: Landroid/content/res/TypedArray;.getChangingConfigurations ()I
+D/dalvikvm(22291): VFY: replacing opcode 0x6e at 0x0002
+I/dalvikvm(22291): Could not find method android.content.res.TypedArray.getType, referenced from method android.support.v7.internal.widget.TintTypedArray.getType
+W/dalvikvm(22291): VFY: unable to resolve virtual method 475: Landroid/content/res/TypedArray;.getType (I)I
+D/dalvikvm(22291): VFY: replacing opcode 0x6e at 0x0002
+I/dalvikvm(22291): Could not find method android.view.Window.setStatusBarColor, referenced from method org.smssecure.smssecure.ConversationListFragment.onCreateActionMode
+W/dalvikvm(22291): VFY: unable to resolve virtual method 10435: Landroid/view/Window;.setStatusBarColor (I)V
+D/dalvikvm(22291): VFY: replacing opcode 0x6e at 0x0031
+I/dalvikvm(22291): Could not find method android.view.Window.setStatusBarColor, referenced from method org.smssecure.smssecure.ConversationListFragment.onDestroyActionMode
+W/dalvikvm(22291): VFY: unable to resolve virtual method 10435: Landroid/view/Window;.setStatusBarColor (I)V
+D/dalvikvm(22291): VFY: replacing opcode 0x6e at 0x0030
+I/dalvikvm(22291): Could not find method com.melnykov.fab.FloatingActionButton.setElevation, referenced from method com.melnykov.fab.FloatingActionButton.setBackgroundCompat
+W/dalvikvm(22291): VFY: unable to resolve virtual method 23436: Lcom/melnykov/fab/FloatingActionButton;.setElevation (F)V
+D/dalvikvm(22291): VFY: replacing opcode 0x6e at 0x0013
+D/dalvikvm(22291): DexOpt: unable to opt direct call 0x0315 at 0x2a in Lcom/melnykov/fab/FloatingActionButton;.setBackgroundCompat
+W/dalvikvm(22291): Unable to resolve superclass of Lcom/melnykov/fab/FloatingActionButton$1; (1246)
+W/dalvikvm(22291): Link of class 'Lcom/melnykov/fab/FloatingActionButton$1;' failed
+D/dalvikvm(22291): DexOpt: unable to opt direct call 0x5b6a at 0x2f in Lcom/melnykov/fab/FloatingActionButton;.setBackgroundCompat
+W/KeyCachingService(22291): onCreate()
+W/MmsDownloadJob(22291): onRun()
+W/MmsDownloadJob(22291): Downloading mms at snq2mosget.msg.eng.t-mobile.com
+W/CompatMmsConnection(22291): Receiving via legacy connection
+W/TelephonyUtil(22291): Choosing MCC+MNC info from TelephonyManager.getSimOperator()
+W/ApnDatabase(22291): Querying table for MCC+MNC 310260 and APN name fast.t-mobile.com
+W/ApnDatabase(22291): Returning preferred APN LegacyMmsConnection$Apn{ mmsc: "http://mms.msg.eng.t-mobile.com/mms/wapenc", proxy: none, port: (none), user: none, pass: none }
+W/IncomingLegacyMmsConnection(22291): Changing radio to MMS mode..
+W/MmsRadio(22291): startUsingNetworkFeature status: 1
+W/service (22291): Broadcasting new secret...
+W/KeyCachingService(22291): onStartCommand, null
+W/KeyCachingService(22291): onStartCommand, null
+W/KeyCachingService(22291): onStartCommand, org.smssecure.smssecure.service.action.ACTIVITY_START_EVENT
+W/KeyCachingService(22291): Incrementing activity count...
+W/MmsSmsDatabase(22291): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, delivery_receipt_count, mismatched_identities, NULL AS network_failures, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, delivery_receipt_count, mismatched_identities, network_failures, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+D/libEGL  (22291): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  (22291): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  (22291): loaded /system/lib/egl/libGLESv2_mali.so
+E/        (22291): Device driver API match
+E/        (22291): Device driver API version: 23
+E/        (22291): User space API version: 23 
+E/        (22291): mali: REVISION=Linux-r3p2-01rel3 BUILD_DATE=Fri Mar 21 13:52:50 KST 2014 
+D/OpenGLRenderer(22291): Enabling debug mode 0
+W/KeyCachingService(22291): onStartCommand, null
+W/MmsRadio(22291): Got connectivity change...
+W/MmsRadio(22291): Connected: NetworkInfo: type: mobile_mms[EDGE], state: CONNECTED/CONNECTED, reason: dataEnabled, extra: fast.t-mobile.com, roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false
+W/MmsRadio(22291): Notifying connected...
+W/MmsRadio(22291): Connected: NetworkInfo: type: mobile_mms[EDGE], state: CONNECTED/CONNECTED, reason: dataEnabled, extra: fast.t-mobile.com, roaming: false, failover: false, isAvailable: true, isConnectedToProvisioningNetwork: false
+W/IncomingLegacyMmsConnection(22291): Downloading in MMS mode with proxy...
+I/dalvikvm(22291): Could not find method android.content.res.Resources.getDrawable, referenced from method android.support.v7.internal.widget.ResourcesWrapper.getDrawable
+W/dalvikvm(22291): VFY: unable to resolve virtual method 416: Landroid/content/res/Resources;.getDrawable (ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+D/dalvikvm(22291): VFY: replacing opcode 0x6e at 0x0002
+I/dalvikvm(22291): Could not find method android.content.res.Resources.getDrawableForDensity, referenced from method android.support.v7.internal.widget.ResourcesWrapper.getDrawableForDensity
+W/dalvikvm(22291): VFY: unable to resolve virtual method 418: Landroid/content/res/Resources;.getDrawableForDensity (IILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
+D/dalvikvm(22291): VFY: replacing opcode 0x6e at 0x0002
+E/dalvikvm(22291): Could not find class 'android.graphics.drawable.RippleDrawable', referenced from method org.smssecure.smssecure.ConversationListItem.setRippleColor
+W/dalvikvm(22291): VFY: unable to resolve check-cast 142 (Landroid/graphics/drawable/RippleDrawable;) in Lorg/smssecure/smssecure/ConversationListItem;
+D/dalvikvm(22291): VFY: replacing opcode 0x1f at 0x000e
+I/Timeline(22291): Timeline: Activity_idle id: android.os.BinderProxy@41ebc710 time:123534590
+W/LegacyMmsConnection(22291): Checking route to address: snq2mosget.msg.eng.t-mobile.com, 10.176.75.130
+W/LegacyMmsConnection(22291): requestRouteToHostAddress(snq2mosget.msg.eng.t-mobile.com/10.176.75.130) -> true
+W/IncomingLegacyMmsConnection(22291): got successful route to host snq2mosget.msg.eng.t-mobile.com
+W/MmsRadio(22291): MMS Radio Disconnect Called...
+W/MmsRadio(22291): Reference count: 0
+W/MmsRadio(22291): Turning off MMS radio...
+W/MmsRadio(22291): Unregistering receiver...
+W/JobConsumer(22291): java.lang.IllegalArgumentException: Illegal character in query at index 64: http://snq2mosget.msg.eng.t-mobile.com/mms/wapen481-2-66-2907b36
+W/JobConsumer(22291):   at java.net.URI.create(URI.java:727)
+W/JobConsumer(22291):   at org.apache.http.client.methods.HttpGetHC4.<init>(HttpGetHC4.java:69)
+W/JobConsumer(22291):   at org.smssecure.smssecure.mms.IncomingLegacyMmsConnection.constructRequest(IncomingLegacyMmsConnection.java:50)
+W/JobConsumer(22291):   at org.smssecure.smssecure.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:109)
+W/JobConsumer(22291):   at org.smssecure.smssecure.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:84)
+W/JobConsumer(22291):   at org.smssecure.smssecure.mms.CompatMmsConnection.retrieve(CompatMmsConnection.java:56)
+W/JobConsumer(22291):   at org.smssecure.smssecure.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:96)
+W/JobConsumer(22291):   at org.smssecure.smssecure.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/JobConsumer(22291):   at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/JobConsumer(22291):   at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)
+W/dalvikvm(22291): threadid=16: thread exiting with uncaught exception (group=0x4167ace0)
+E/AndroidRuntime(22291): FATAL EXCEPTION: JobConsumer-4
+E/AndroidRuntime(22291): Process: org.smssecure.smssecure, PID: 22291
+E/AndroidRuntime(22291): java.lang.IllegalArgumentException: Illegal character in query at index 64: http://snq2mosget.msg.eng.t-mobile.com/mms/wa481-2-66-2907b36q�b
+E/AndroidRuntime(22291):        at java.net.URI.create(URI.java:727)
+E/AndroidRuntime(22291):        at org.apache.http.client.methods.HttpGetHC4.<init>(HttpGetHC4.java:69)
+E/AndroidRuntime(22291):        at org.smssecure.smssecure.mms.IncomingLegacyMmsConnection.constructRequest(IncomingLegacyMmsConnection.java:50)
+E/AndroidRuntime(22291):        at org.smssecure.smssecure.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:109)
+E/AndroidRuntime(22291):        at org.smssecure.smssecure.mms.IncomingLegacyMmsConnection.retrieve(IncomingLegacyMmsConnection.java:84)
+E/AndroidRuntime(22291):        at org.smssecure.smssecure.mms.CompatMmsConnection.retrieve(CompatMmsConnection.java:56)
+E/AndroidRuntime(22291):        at org.smssecure.smssecure.jobs.MmsDownloadJob.onRun(MmsDownloadJob.java:96)
+E/AndroidRuntime(22291):        at org.smssecure.smssecure.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+E/AndroidRuntime(22291):        at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+E/AndroidRuntime(22291):        at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

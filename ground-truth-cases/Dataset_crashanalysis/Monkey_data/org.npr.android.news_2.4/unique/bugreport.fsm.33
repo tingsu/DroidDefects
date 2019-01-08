@@ -1,0 +1,12 @@
+//this is an auto-generated bug report
+//package name: org.npr.android.news
+//version: 2.4
+//appro_time: 24
+ java.lang.NullPointerException
+ 	at org.npr.api.StoryGrouping$StoryGroupingFactory.createStoryGrouping(StoryGrouping.java:153)
+ 	at org.npr.api.StoryGrouping$StoryGroupingFactory.parseStoryGroupings(StoryGrouping.java:133)
+ 	at org.npr.api.StoryGrouping$StoryGroupingFactory.downloadStoryGroupings(StoryGrouping.java:198)
+ 	at org.npr.android.news.NewsTopicActivity.constructList(NewsTopicActivity.java:73)
+ 	at org.npr.android.news.NewsTopicActivity.access$200(NewsTopicActivity.java:44)
+ 	at org.npr.android.news.NewsTopicActivity$2.run(NewsTopicActivity.java:109)
+ 	at java.lang.Thread.run(Thread.java:841)

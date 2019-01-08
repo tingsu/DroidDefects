@@ -1,0 +1,23 @@
+***********\* CAUSE OF ERROR ************
+java.lang.RuntimeException: ServiceCode Error in function selfTest at 26
+    at com.cloudrail.si.servicecode.Interpreter.run(Interpreter.java:108)
+    at com.cloudrail.si.servicecode.Interpreter.callFunction(Interpreter.java:42)
+    at com.cloudrail.si.servicecode.InitSelfTest.execute(InitSelfTest.java:135)
+    at com.cloudrail.si.servicecode.InitSelfTest.initTest(InitSelfTest.java:28)
+    at com.cloudrail.si.services.GoogleDrive$2.run(GoogleDrive.java:882)
+Caused by: java.net.UnknownHostException: Unable to resolve host "stat-si.cloudrail.com": No address associated with hostname
+    at java.net.InetAddress.lookupHostByName(InetAddress.java:427)
+    at java.net.InetAddress.getAllByNameImpl(InetAddress.java:252)
+    at java.net.InetAddress.getAllByName(InetAddress.java:215)
+    at com.android.okhttp.HostResolver$1.getAllByName(HostResolver.java:29)
+    at com.android.okhttp.internal.http.RouteSelector.resetNextInetSocketAddress(RouteSelector.java:232)
+    at com.android.okhttp.internal.http.RouteSelector.next(RouteSelector.java:124)
+    at com.android.okhttp.internal.http.HttpEngine.connect(HttpEngine.java:272)
+    at com.android.okhttp.internal.http.HttpEngine.sendRequest(HttpEngine.java:211)
+    at com.android.okhttp.internal.http.HttpURLConnectionImpl.execute(HttpURLConnectionImpl.java:373)
+    at com.android.okhttp.internal.http.HttpURLConnectionImpl.getResponse(HttpURLConnectionImpl.java:323)
+    at com.android.okhttp.internal.http.HttpURLConnectionImpl.getHeaderFields(HttpURLConnectionImpl.java:169)
+    at com.android.okhttp.internal.http.DelegatingHttpsURLConnection.getHeaderFields(DelegatingHttpsURLConnection.java:178)
+    at com.android.okhttp.internal.http.HttpsURLConnectionImpl.getHeaderFields(HttpsURLConnectionImpl.java:25)
+    at com.cloudrail.si.servicecode.commands.http.RequestCall.execute(RequestCall.java:112)
+    at com.cloudrail.si.servicecode.Interpreter.run(Interpreter.java:84)

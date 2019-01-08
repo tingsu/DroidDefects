@@ -1,0 +1,11 @@
+  5220               Keychain  E  com.textuality.keybase.lib.KeybaseException: JSON error in Keybase query
+  5220               Keychain  E  at com.textuality.keybase.lib.Match.getFullName(Match.java:46)
+  5220               Keychain  E  at org.sufficientlysecure.keychain.keyimport.KeybaseKeyserver.makeEntry(KeybaseKeyserver.java:71)
+  5220               Keychain  E  at org.sufficientlysecure.keychain.keyimport.KeybaseKeyserver.search(KeybaseKeyserver.java:53)
+  5220               Keychain  E  at org.sufficientlysecure.keychain.keyimport.KeybaseKeyserver.search(KeybaseKeyserver.java:32)
+  5220               Keychain  E  at org.sufficientlysecure.keychain.keyimport.CloudSearch$1.run(CloudSearch.java:53)
+  5220               Keychain  E  at java.lang.Thread.run(Thread.java:841)
+  5220               Keychain  E  Caused by: org.json.JSONException: JWalk error at step 0 of full_name.val
+  5220               Keychain  E  at com.textuality.keybase.lib.JWalk.walk(JWalk.java:113)
+  5220               Keychain  E  at com.textuality.keybase.lib.JWalk.getString(JWalk.java:55)
+  5220               Keychain  E  at com.textuality.keybase.lib.Match.getFullName(Match.java:44)

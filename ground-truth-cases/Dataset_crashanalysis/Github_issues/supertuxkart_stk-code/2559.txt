@@ -1,0 +1,288 @@
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\atigktxx.dll'. Cannot find or open the PDB file.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F604.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F6E4.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\secur32.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\MMDevAPI.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wdmaud.drv'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\avrt.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\ksuser.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\AudioSes.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\WinTypes.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msacm32.drv'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\msacm32.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\midimap.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\clbcatq.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'S:\Games\SuperTuxKart\wrap_oal.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Unloaded 'S:\Games\SuperTuxKart\wrap_oal.dll'
+'supertuxkart.exe' (Win32): Loaded 'S:\Games\SuperTuxKart\wrap_oal.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Unloaded 'S:\Games\SuperTuxKart\wrap_oal.dll'
+'supertuxkart.exe' (Win32): Loaded 'S:\Games\SuperTuxKart\wrap_oal.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Unloaded 'S:\Games\SuperTuxKart\wrap_oal.dll'
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\Sens_oal.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Users\Michael\AppData\Local\Temp\Creative_Audio_Engine_Cleanup.0001.dir.0000\~df394b.tmp'. Module was built without symbols.
+'supertuxkart.exe' (Win32): Loaded 'C:\Users\Michael\AppData\Local\Temp\Creative_Audio_Engine_Cleanup.0001.dir.0000\~de4692.tmp'. Module was built without symbols.
+'supertuxkart.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\Sens_oal.dll'
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wrap_oal.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dsound.dll'. Cannot find or open the PDB file.
+The thread 0x3f08 has exited with code 0 (0x0).
+The thread 0x3db4 has exited with code 0 (0x0).
+'supertuxkart.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\wrap_oal.dll'
+'supertuxkart.exe' (Win32): Loaded 'S:\Games\SuperTuxKart\wrap_oal.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Unloaded 'S:\Games\SuperTuxKart\wrap_oal.dll'
+'supertuxkart.exe' (Win32): Loaded 'S:\Games\SuperTuxKart\wrap_oal.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Unloaded 'S:\Games\SuperTuxKart\wrap_oal.dll'
+'supertuxkart.exe' (Win32): Loaded 'S:\Games\SuperTuxKart\wrap_oal.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Unloaded 'S:\Games\SuperTuxKart\wrap_oal.dll'
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\Sens_oal.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Users\Michael\AppData\Local\Temp\Creative_Audio_Engine_Cleanup.0001.dir.0001\~df394b.tmp'. Module was built without symbols.
+'supertuxkart.exe' (Win32): Loaded 'C:\Users\Michael\AppData\Local\Temp\Creative_Audio_Engine_Cleanup.0001.dir.0001\~de4692.tmp'. Module was built without symbols.
+'supertuxkart.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\Sens_oal.dll'
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\wrap_oal.dll'. Cannot find or open the PDB file.
+The thread 0x3584 has exited with code 0 (0x0).
+The thread 0x1a64 has exited with code 0 (0x0).
+'supertuxkart.exe' (Win32): Unloaded 'C:\Windows\SysWOW64\wrap_oal.dll'
+'supertuxkart.exe' (Win32): Loaded 'S:\Games\SuperTuxKart\wrap_oal.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Unloaded 'S:\Games\SuperTuxKart\wrap_oal.dll'
+'supertuxkart.exe' (Win32): Loaded 'S:\Games\SuperTuxKart\wrap_oal.dll'. Cannot find or open the PDB file.
+The thread 0x3888 has exited with code 0 (0x0).
+The thread 0x1cf8 has exited with code 0 (0x0).
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F52C.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3D0.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F52C.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F52C.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3D0.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F52C.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F52C.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3D0.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F52C.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F52C.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F52C.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3D0.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\dinput.dll'. Cannot find or open the PDB file.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F3A8.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F484.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F448.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F448.
+Exception thrown at 0x7483DAE8 in supertuxkart.exe: Microsoft C++ exception: std::runtime_error at memory location 0x0137F448.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptsp.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\rsaenh.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\bcrypt.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\imagehlp.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\gpapi.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\cryptnet.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\winnsi.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\Windows\SysWOW64\nsi.dll'. Cannot find or open the PDB file.
+'supertuxkart.exe' (Win32): Loaded 'C:\PROGRA~2\RAPTRI~1\PlaysTV\ltc_game32-114279.dll'. Cannot find or open the PDB file.
+[14:16:54.00798- 13800] supertuxkart.exe dbglog.cpp(204)       DbgLog_F                       Log for module 'game' (114279) started with process 'supertuxkart.exe' (x86, PID: 14348, CmdLine: "S:\Games\SuperTuxKart\supertuxkart.exe" ) - Thu Jul 07 14:16:54 2016
+
+[14:16:54.00797- 13800] supertuxkart.exe ltc_game.cpp(5512)    DllMain                        Current process is an auto-hook candidate
+[14:16:54.00798- 13800] supertuxkart.exe ltc_game.cpp(2293)    StartAutoHookMonitoring        Auto-hook monitoring started
+[14:16:54.00799- 14532] supertuxkart.exe autohook.cpp(265)     AutoHookManager::_WatchForQuitOrTimeoutThread Watching
+[14:16:54.00799- 14940] supertuxkart.exe ltc_game.cpp(5293)    MainThread                     MainThread executing...
+[14:16:54.00799- 14940] supertuxkart.exe console.h(158)        CConsole::Output               CONSOLE: Console logging has been enabled.
+[14:16:54.00799- 14940] supertuxkart.exe console.h(158)        CConsole::Output               CONSOLE: Added alias [sta:"StartRecorder"]
+[14:16:54.00799- 14940] supertuxkart.exe console.h(158)        CConsole::Output               CONSOLE: Added alias [stp:"StopRecorder"]
+[14:16:54.00799- 14940] supertuxkart.exe console.h(158)        CConsole::Output               CONSOLE: Added alias [slsk:"SetLiveStreamKey live_37135925_lD9UDVtrXfCT8yf0kHeWdVhaITG9oy"]
+[14:16:54.00799- 14940] supertuxkart.exe console.h(158)        CConsole::Output               CONSOLE: Added alias [srl:"RecorderLog C:\Users\Randal\Desktop\ffmpeg.log"]
+[14:16:54.00799- 14940] supertuxkart.exe console.h(158)        CConsole::Output               CONSOLE: Added alias [twitchtest2:"BroadcasterDebug 1;GetTwitchAuthToken ql7dn49ya6oalq5xux4s33a16n3e7sv RaptrRandal raptrtest"]
+[14:16:54.00799- 14940] supertuxkart.exe console.h(158)        CConsole::Output               CONSOLE: Added alias [twitchtest:"BroadcasterDebug 1;SetTwitchAuthToken 1eduwz3hdp3yprib6vhpr5c64go2nv3;StartBroadcast"]
+[14:16:54.00800- 14940] supertuxkart.exe console.h(158)        CConsole::Output               CONSOLE: Added alias [gfastfb:"GetFramebufferAsSizeFastBench 1"]
+[14:16:54.00800- 14940] supertuxkart.exe console.h(158)        CConsole::Output               CONSOLE: Added alias [dt1:"D3D11FastDumpTest 1"]
+[14:16:54.00800- 14940] supertuxkart.exe console.h(158)        CConsole::Output               CONSOLE: Console initialised.
+[14:16:54.00803- 14940] supertuxkart.exe overlayui.cpp(1182)   OverlayUI_InitializeConsole    This game has no on-load flags.
+[14:16:54.00804- 15600] supertuxkart.exe ltc_game.cpp(2793)    ModuleScanThread               ModuleScanThread executing...
+[14:16:54.00804- 15600] supertuxkart.exe ltc_game.cpp(2800)    ModuleScanThread               Process File Name:supertuxkart.exe
+[14:16:54.00804- 15600] supertuxkart.exe ltc_game.cpp(2770)    LogRunningProcesses            Processes at startup:
+[14:16:54.00806- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            001.                 [System Process] PID      0 Parent PID:      0 Usage:      0 Threads:    4 Priority base:      0 Flags: 0x00000000
+[14:16:54.00806- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            002.                           System PID      4 Parent PID:      0 Usage:      0 Threads:  182 Priority base:      8 Flags: 0x00000000
+[14:16:54.00806- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            003.                         smss.exe PID    360 Parent PID:      4 Usage:      0 Threads:    2 Priority base:     11 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            004.                        csrss.exe PID    572 Parent PID:    496 Usage:      0 Threads:   12 Priority base:     13 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            005.                      wininit.exe PID    692 Parent PID:    496 Usage:      0 Threads:    1 Priority base:     13 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            006.                        csrss.exe PID    700 Parent PID:    684 Usage:      0 Threads:   15 Priority base:     13 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            007.                     services.exe PID    768 Parent PID:    692 Usage:      0 Threads:    6 Priority base:      9 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            008.                        lsass.exe PID    776 Parent PID:    692 Usage:      0 Threads:    8 Priority base:      9 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            009.                     winlogon.exe PID    848 Parent PID:    684 Usage:      0 Threads:    4 Priority base:     13 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            010.                      svchost.exe PID    940 Parent PID:    768 Usage:      0 Threads:   24 Priority base:      8 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            011.                      svchost.exe PID   1008 Parent PID:    768 Usage:      0 Threads:   15 Priority base:      8 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            012.                      svchost.exe PID    596 Parent PID:    768 Usage:      0 Threads:   30 Priority base:      8 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            013.                          dwm.exe PID    608 Parent PID:    848 Usage:      0 Threads:   12 Priority base:     13 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            014.                      svchost.exe PID    496 Parent PID:    768 Usage:      0 Threads:   31 Priority base:      8 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            015.                      svchost.exe PID   1036 Parent PID:    768 Usage:      0 Threads:   51 Priority base:      8 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            016.                      svchost.exe PID   1052 Parent PID:    768 Usage:      0 Threads:   32 Priority base:      8 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            017.                      svchost.exe PID   1060 Parent PID:    768 Usage:      0 Threads:   30 Priority base:      8 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            018.                     WUDFHost.exe PID   1220 Parent PID:    496 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            019.                      svchost.exe PID   1292 Parent PID:    768 Usage:      0 Threads:   20 Priority base:      8 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            020.               igfxCUIService.exe PID   1420 Parent PID:    768 Usage:      0 Threads:    4 Priority base:      8 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            021.                     atiesrxx.exe PID   1432 Parent PID:    768 Usage:      0 Threads:    4 Priority base:      8 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            022.                     WUDFHost.exe PID   1568 Parent PID:    496 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00807- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            023.                     atieclxx.exe PID   1680 Parent PID:   1432 Usage:      0 Threads:    6 Priority base:      8 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            024.                      svchost.exe PID   1708 Parent PID:    768 Usage:      0 Threads:   24 Priority base:      8 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            025.                      dasHost.exe PID   1964 Parent PID:    496 Usage:      0 Threads:    6 Priority base:      8 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            026.                     CTAudSvc.exe PID   2036 Parent PID:    768 Usage:      0 Threads:    2 Priority base:     13 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            027.                   SavService.exe PID   1324 Parent PID:    768 Usage:      0 Threads:   79 Priority base:      8 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            028.                      spoolsv.exe PID   1468 Parent PID:    768 Usage:      0 Threads:   20 Priority base:      8 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            029.     AppleMobileDeviceService.exe PID   2284 Parent PID:    768 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            030.                AdjustService.exe PID   2292 Parent PID:    768 Usage:      0 Threads:    6 Priority base:      8 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            031.                      ibtsiva.exe PID   2332 Parent PID:    768 Usage:      0 Threads:    1 Priority base:      8 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            032.                   ScpService.exe PID   2344 Parent PID:    768 Usage:      0 Threads:   18 Priority base:      8 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            033.                mDNSResponder.exe PID   2356 Parent PID:    768 Usage:      0 Threads:    2 Priority base:      8 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            034.                KillerService.exe PID   2364 Parent PID:    768 Usage:      0 Threads:    7 Priority base:      8 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            035.                remoting_host.exe PID   2384 Parent PID:    768 Usage:      0 Threads:    4 Priority base:      8 Flags: 0x00000000
+[14:16:54.00808- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            036.                      svchost.exe PID   2464 Parent PID:    768 Usage:      0 Threads:    9 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            037.                   swi_filter.exe PID   2508 Parent PID:    768 Usage:      0 Threads:    2 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            038.                  swc_service.exe PID   2516 Parent PID:    768 Usage:      0 Threads:    5 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            039.              SAVAdminService.exe PID   2532 Parent PID:    768 Usage:      0 Threads:    3 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            040.                  Service_KMS.exe PID   2540 Parent PID:    768 Usage:      0 Threads:    6 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            041.                          tor.exe PID   2552 Parent PID:    768 Usage:      0 Threads:    2 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            042.               TimeMgmtDaemon.exe PID   2564 Parent PID:    768 Usage:      0 Threads:    3 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            043.                      svchost.exe PID   2580 Parent PID:    768 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            044.                  swi_service.exe PID   2612 Parent PID:    768 Usage:      0 Threads:   17 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            045.                        ALsvc.exe PID   2628 Parent PID:    768 Usage:      0 Threads:    7 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            046.                    McsClient.exe PID   2636 Parent PID:    768 Usage:      0 Threads:   27 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            047.                plays_service.exe PID   2648 Parent PID:    768 Usage:      0 Threads:    3 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            048.                     McsAgent.exe PID   2660 Parent PID:    768 Usage:      0 Threads:   20 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            049.                       swi_fc.exe PID   3004 Parent PID:   2508 Usage:      0 Threads:   12 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            050.                remoting_host.exe PID   3464 Parent PID:   2384 Usage:      0 Threads:   11 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            051.               IntelCpHeciSvc.exe PID   3820 Parent PID:    768 Usage:      0 Threads:    6 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            052.                      svchost.exe PID   3956 Parent PID:    768 Usage:      0 Threads:    4 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            053.                     WmiPrvSE.exe PID   3596 Parent PID:    940 Usage:      0 Threads:    5 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            054.                      audiodg.exe PID   5224 Parent PID:   1060 Usage:      0 Threads:   17 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            055.                       sihost.exe PID   5880 Parent PID:   1036 Usage:      0 Threads:   13 Priority base:      8 Flags: 0x00000000
+[14:16:54.00809- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            056.                    taskhostw.exe PID   5968 Parent PID:   1036 Usage:      0 Threads:   13 Priority base:      8 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            057.        PresentationFontCache.exe PID   6004 Parent PID:    768 Usage:      0 Threads:    5 Priority base:      8 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            058.                     explorer.exe PID   2624 Parent PID:   5516 Usage:      0 Threads:   72 Priority base:      8 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            059.          ShellExperienceHost.exe PID   3480 Parent PID:    940 Usage:      0 Threads:   46 Priority base:      8 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            060.                RuntimeBroker.exe PID   4408 Parent PID:    940 Usage:      0 Threads:   37 Priority base:      8 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            061.                SearchIndexer.exe PID   5732 Parent PID:    768 Usage:      0 Threads:   22 Priority base:      8 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            062.                     WmiPrvSE.exe PID   6300 Parent PID:    940 Usage:      0 Threads:    5 Priority base:      8 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            063.              SettingSyncHost.exe PID   6596 Parent PID:    940 Usage:      0 Threads:    4 Priority base:      6 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            064.                       igfxEM.exe PID   6684 Parent PID:   6320 Usage:      0 Threads:    4 Priority base:      8 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            065.                       igfxHK.exe PID   6704 Parent PID:   6320 Usage:      0 Threads:    2 Priority base:      8 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            066.           GoogleCrashHandler.exe PID   6764 Parent PID:   5372 Usage:      0 Threads:    3 Priority base:      4 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            067.         GoogleCrashHandler64.exe PID   6784 Parent PID:   5372 Usage:      0 Threads:    3 Priority base:      4 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            068.                       ApCent.exe PID   6864 Parent PID:   5644 Usage:      0 Threads:   19 Priority base:      8 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            069.           GraphicsCardEngine.exe PID   7036 Parent PID:   1032 Usage:      0 Threads:   14 Priority base:      8 Flags: 0x00000000
+[14:16:54.00810- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            070.                     thermald.exe PID   7076 Parent PID:   1300 Usage:      0 Threads:   15 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            071.        EasyTuneEngineService.exe PID   6972 Parent PID:    768 Usage:      0 Threads:    7 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            072.                     ICCProxy.exe PID   5628 Parent PID:    768 Usage:      0 Threads:    2 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            073.                     WmiPrvSE.exe PID   6748 Parent PID:    940 Usage:      0 Threads:   10 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            074.                     rundll32.exe PID   5492 Parent PID:   2624 Usage:      0 Threads:   13 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            075.                    Greenshot.exe PID   7284 Parent PID:   2624 Usage:      0 Threads:    5 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            076.                         flux.exe PID   7488 Parent PID:   2624 Usage:      0 Threads:    7 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            077.                        Steam.exe PID   7736 Parent PID:   2624 Usage:      0 Threads:   30 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            078.                        DUC40.exe PID   7832 Parent PID:   2624 Usage:      0 Threads:    9 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            079.                       chrome.exe PID   7880 Parent PID:   2624 Usage:      0 Threads:   13 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            080.                       chrome.exe PID   7888 Parent PID:   2624 Usage:      0 Threads:   44 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            081.                       chrome.exe PID   7916 Parent PID:   7888 Usage:      0 Threads:    6 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            082.                       chrome.exe PID   7996 Parent PID:   7888 Usage:      0 Threads:    2 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            083.                       chrome.exe PID   6076 Parent PID:   7888 Usage:      0 Threads:    9 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            084.                       chrome.exe PID   2152 Parent PID:   7888 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            085.                       chrome.exe PID   5172 Parent PID:   7888 Usage:      0 Threads:   10 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            086.                       chrome.exe PID   1244 Parent PID:   7888 Usage:      0 Threads:   15 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            087.                       chrome.exe PID    724 Parent PID:   7888 Usage:      0 Threads:   10 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            088.               steamwebhelper.exe PID   8200 Parent PID:   7736 Usage:      0 Threads:   26 Priority base:      8 Flags: 0x00000000
+[14:16:54.00811- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            089.                       chrome.exe PID   8212 Parent PID:   7888 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            090.                       chrome.exe PID   8264 Parent PID:   7888 Usage:      0 Threads:   11 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            091.                       chrome.exe PID   8320 Parent PID:   7888 Usage:      0 Threads:    9 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            092.                       chrome.exe PID   8404 Parent PID:   7888 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            093.                       chrome.exe PID   8412 Parent PID:   7888 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            094.                       chrome.exe PID   8444 Parent PID:   7888 Usage:      0 Threads:   10 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            095.                       chrome.exe PID   8460 Parent PID:   7888 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            096.                       chrome.exe PID   8500 Parent PID:   7888 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            097.                 SteamService.exe PID   8540 Parent PID:    768 Usage:      0 Threads:    5 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            098.                       chrome.exe PID   8548 Parent PID:   7888 Usage:      0 Threads:    9 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            099.                       chrome.exe PID   8620 Parent PID:   7888 Usage:      0 Threads:   13 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            100.            Plex Media Server.exe PID   9448 Parent PID:   2624 Usage:      0 Threads:   27 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            101.                     Telegram.exe PID   9492 Parent PID:   2624 Usage:      0 Threads:   20 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            102.                      AdMunch.exe PID   9532 Parent PID:   9476 Usage:      0 Threads:    6 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            103.                  fontdrvhost.exe PID   9580 Parent PID:    848 Usage:      0 Threads:    5 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            104.                    AdMunch64.exe PID   9800 Parent PID:   9532 Usage:      0 Threads:    1 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            105.                    hpwuschd2.exe PID   9824 Parent PID:   9476 Usage:      0 Threads:    1 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            106.                      jusched.exe PID  10124 Parent PID:   9476 Usage:      0 Threads:    1 Priority base:      8 Flags: 0x00000000
+[14:16:54.00812- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            107.                        ALMon.exe PID  10176 Parent PID:   9476 Usage:      0 Threads:   12 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            108.               PlexScriptHost.exe PID   6348 Parent PID:   9448 Usage:      0 Threads:   19 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            109.                      conhost.exe PID   6184 Parent PID:   6348 Usage:      0 Threads:    2 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            110.             Plex DLNA Server.exe PID  10052 Parent PID:   9448 Usage:      0 Threads:   22 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            111.                   ducservice.exe PID  10324 Parent PID:    768 Usage:      0 Threads:    7 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            112.                   XtuService.exe PID  10496 Parent PID:    768 Usage:      0 Threads:   10 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            113.                      svchost.exe PID  10452 Parent PID:    768 Usage:      0 Threads:    5 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            114.                   AlarmClock.exe PID   2444 Parent PID:   2564 Usage:      0 Threads:    4 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            115.         ApplicationFrameHost.exe PID   2572 Parent PID:    940 Usage:      0 Threads:   14 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            116.                       deluge.exe PID   6388 Parent PID:   7888 Usage:      0 Threads:   11 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            117.           Microsoft.Msn.News.exe PID  10140 Parent PID:    940 Usage:      0 Threads:   33 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            118.               steamwebhelper.exe PID   7144 Parent PID:   8200 Usage:      0 Threads:   13 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            119.                       chrome.exe PID   5180 Parent PID:   7888 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            120.             Microsoft.Photos.exe PID   7972 Parent PID:    940 Usage:      0 Threads:   46 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            121.        Microsoft.Msn.Weather.exe PID  13156 Parent PID:    940 Usage:      0 Threads:   30 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            122.                      playstv.exe PID   6940 Parent PID:   7648 Usage:      0 Threads:   25 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            123.                   plays_ep64.exe PID  12936 Parent PID:   6940 Usage:      0 Threads:    2 Priority base:      8 Flags: 0x00000000
+[14:16:54.00813- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            124.            Last.fm Scrobbler.exe PID   3940 Parent PID:   4304 Usage:      0 Threads:   10 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            125.                     SearchUI.exe PID  11064 Parent PID:    940 Usage:      0 Threads:   27 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            126.                       chrome.exe PID  15096 Parent PID:   7888 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            127.               SystemSettings.exe PID  13784 Parent PID:    940 Usage:      0 Threads:   28 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            128.                     Video.UI.exe PID  14812 Parent PID:    940 Usage:      0 Threads:   12 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            129.                       chrome.exe PID   9940 Parent PID:   7888 Usage:      0 Threads:    9 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            130.                       chrome.exe PID  13620 Parent PID:   7888 Usage:      0 Threads:   20 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            131.                      OUTLOOK.EXE PID   1256 Parent PID:   2624 Usage:      0 Threads:   37 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            132.                       chrome.exe PID   6264 Parent PID:   7888 Usage:      0 Threads:   17 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            133.                       chrome.exe PID  14036 Parent PID:   7888 Usage:      0 Threads:   12 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            134.                       chrome.exe PID  12632 Parent PID:   7888 Usage:      0 Threads:   11 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            135.                       devenv.exe PID   6932 Parent PID:    940 Usage:      0 Threads:   55 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            136.           SearchProtocolHost.exe PID   1072 Parent PID:   5732 Usage:      0 Threads:    7 Priority base:      4 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            137.             SearchFilterHost.exe PID    440 Parent PID:   5732 Usage:      0 Threads:    3 Priority base:      4 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            138.    StandardCollector.Service.exe PID  13268 Parent PID:    768 Usage:      0 Threads:   17 Priority base:      8 Flags: 0x00000000
+[14:16:54.00814- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            139.                        VsHub.exe PID   7384 Parent PID:   6932 Usage:      0 Threads:   39 Priority base:      8 Flags: 0x00000000
+[14:16:54.00815- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            140. Microsoft.VsHub.Server.HttpHost.exe PID  11484 Parent PID:   7384 Usage:      0 Threads:   69 Priority base:      8 Flags: 0x00000000
+[14:16:54.00815- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            141.                      conhost.exe PID   8188 Parent PID:  11484 Usage:      0 Threads:    4 Priority base:      8 Flags: 0x00000000
+[14:16:54.00815- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            142. Microsoft.VsHub.Server.HttpHostx64.exe PID   6136 Parent PID:   7384 Usage:      0 Threads:   56 Priority base:      8 Flags: 0x00000000
+[14:16:54.00815- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            143.                      conhost.exe PID   7564 Parent PID:   6136 Usage:      0 Threads:    4 Priority base:      8 Flags: 0x00000000
+[14:16:54.00815- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            144.                 supertuxkart.exe PID  14348 Parent PID:   6932 Usage:      0 Threads:   25 Priority base:      8 Flags: 0x00000000
+[14:16:54.00815- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            145.            ScriptedSandbox64.exe PID   8372 Parent PID:   6932 Usage:      0 Threads:   29 Priority base:      8 Flags: 0x00000000
+[14:16:54.00815- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            146. Creative_Audio_Engine_Cleanup.0001 PID   2060 Parent PID:  14348 Usage:      0 Threads:    5 Priority base:      8 Flags: 0x00000000
+[14:16:54.00815- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            147.                CTAELicensing.exe PID   1952 Parent PID:    768 Usage:      0 Threads:    8 Priority base:      8 Flags: 0x00000000
+[14:16:54.00815- 15600] supertuxkart.exe ltc_game.cpp(2784)    LogRunningProcesses            148. Creative_Audio_Engine_Cleanup.0001 PID   6420 Parent PID:  14348 Usage:      0 Threads:    5 Priority base:      8 Flags: 0x00000000
+[14:16:54.00815- 15600] supertuxkart.exe ltc_game.cpp(2857)    ModuleScanThread               Modules at startup:

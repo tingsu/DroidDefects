@@ -1,0 +1,8 @@
+`com.github.pires.obd.exceptions.MisunderstoodCommandException: Error running 01 1F, response: ?`
+`W/System.err:     at java.lang.reflect.Constructor.newInstance(Native Method)`
+`W/System.err:     at java.lang.Class.newInstance(Class.java:1689)`
+`W/System.err:     at com.github.pires.obd.commands.ObdCommand.checkForErrors(ObdCommand.java:203)`
+`W/System.err:     at com.github.pires.obd.commands.ObdCommand.readResult(ObdCommand.java:123)`
+`W/System.err:     at com.github.pires.obd.commands.ObdCommand.run(ObdCommand.java:77)`
+`W/System.err:     at com.github.pires.obd.reader.io.ObdGatewayService.executeQueue(ObdGatewayService.java:199)`
+`W/System.err:     at com.github.pires.obd.reader.io.AbstractGatewayService$1.run(AbstractGatewayService.java:39)`

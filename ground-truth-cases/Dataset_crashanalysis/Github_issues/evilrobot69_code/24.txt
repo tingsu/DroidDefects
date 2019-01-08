@@ -1,0 +1,8 @@
+sjcl.js:10 Uncaught URIError: URI malformed
+    at decodeURIComponent (<anonymous>)
+    at Object.fromBits (sjcl.js:10)
+    at Object.decrypt (sjcl.js:36)
+    at decrypt (keestand.js:25)
+    at Object.login_successful [as success] (keestand.js:149)
+    at Function.handleSuccess (jquery.min.js:142)
+    at XMLHttpRequest.w.onreadystatechange (jquery.min.js:141)

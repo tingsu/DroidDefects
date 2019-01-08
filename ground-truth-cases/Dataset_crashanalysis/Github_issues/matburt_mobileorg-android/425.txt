@@ -1,0 +1,9 @@
+E/Synchronizer( 1421): java.io.IOException: com.jcraft.jsch.JSchException: session is down
+E/Synchronizer( 1421):  at com.matburt.mobileorg.Synchronizers.SSHSynchronizer.getRemoteFile(SSHSynchronizer.java:187)
+E/Synchronizer( 1421):  at com.matburt.mobileorg.Synchronizers.Synchronizer.getAndParseChecksumFile(Synchronizer.java:187)
+E/Synchronizer( 1421):  at com.matburt.mobileorg.Synchronizers.Synchronizer.pull(Synchronizer.java:137)
+E/Synchronizer( 1421):  at com.matburt.mobileorg.Synchronizers.Synchronizer.runSynchronizer(Synchronizer.java:81)
+E/Synchronizer( 1421):  at com.matburt.mobileorg.Services.SyncService$1.run(SyncService.java:126)
+E/Synchronizer( 1421): Caused by: com.jcraft.jsch.JSchException: session is down
+E/Synchronizer( 1421):  at com.jcraft.jsch.Session.openChannel(Session.java:843)
+E/Synchronizer( 1421):  at com.matburt.mobileorg.Synchronizers.SSHSynchronizer.getRemoteFile(SSHSynchronizer.java:172)

@@ -1,0 +1,11 @@
+java.lang.NullPointerException: 
+  at android.content.ContextWrapper.openOrCreateDatabase(ContextWrapper.java:289)
+  at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:223)
+  at android.database.sqlite.SQLiteOpenHelper.getReadableDatabase(SQLiteOpenHelper.java:187)
+  at fr.free.nrw.commons.modifications.ModificationsContentProvider.query(ModificationsContentProvider.java:57)
+  at android.content.ContentProvider.query(ContentProvider.java:1020)
+  at android.content.ContentProvider$Transport.query(ContentProvider.java:239)
+  at android.content.ContentProviderClient.query(ContentProviderClient.java:145)
+  at android.content.ContentProviderClient.query(ContentProviderClient.java:127)
+  at fr.free.nrw.commons.modifications.ModificationsSyncAdapter.onPerformSync(ModificationsSyncAdapter.java:38)
+  at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:272)

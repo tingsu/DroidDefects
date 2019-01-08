@@ -1,0 +1,11 @@
+java.lang.ArrayIndexOutOfBoundsException: length=244; index=374
+    at android.text.MeasuredText.addStyleRun(MeasuredText.java:168)
+    at android.text.MeasuredText.addStyleRun(MeasuredText.java:204)
+    at android.text.StaticLayout.generate(StaticLayout.java:281)
+    at android.text.DynamicLayout.reflow(DynamicLayout.java:284)
+    at android.text.DynamicLayout.<init>(DynamicLayout.java:170)
+    at android.widget.TextView.makeSingleLayout(TextView.java:5863)
+    at android.widget.TextView.makeNewLayout(TextView.java:5761)
+    at android.widget.TextView.onMeasure(TextView.java:6118)
+    at org.thoughtcrime.securesms.components.emoji.EmojiTextView.onMeasure(EmojiTextView.java:71)
+    at android.view.View.measure(View.java:15264)

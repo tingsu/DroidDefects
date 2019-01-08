@@ -1,0 +1,10 @@
+                                                   java.lang.IllegalStateException: The content of the adapter has changed but ListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thread. Make sure your adapter calls notifyDataSetChanged() when its content changes. [in ListView(2131624187, class android.widget.ListView) with Adapter(class openfoodfacts.github.scrachx.openfood.views.adapters.SaveListAdapter)]
+                                                       at android.widget.ListView.layoutChildren(ListView.java:1573)
+                                                       at android.widget.AbsListView$CheckForTap.run(AbsListView.java:3311)
+                                                       at android.os.Handler.handleCallback(Handler.java:739)
+                                                       at android.os.Handler.dispatchMessage(Handler.java:95)
+                                                       at android.os.Looper.loop(Looper.java:148)
+                                                       at android.app.ActivityThread.main(ActivityThread.java:5461)
+                                                       at java.lang.reflect.Method.invoke(Native Method)
+                                                       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+                                                       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

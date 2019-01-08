@@ -1,0 +1,14 @@
+```
+01-27 08:31:54.177      405-405/org.wordpress.android E/WordPress-POSTS﹕ End of input at character 0 of
+    org.json.JSONException: End of input at character 0 of
+            at org.json.JSONTokener.syntaxError(JSONTokener.java:446)
+            at org.json.JSONTokener.nextValue(JSONTokener.java:93)
+            at org.json.JSONArray.<init>(JSONArray.java:87)
+            at org.json.JSONArray.<init>(JSONArray.java:103)
+            at org.wordpress.android.models.Post.getJSONCategories(Post.java:169)
+            at org.wordpress.android.WordPressDB.updatePost(WordPressDB.java:942)
+            at org.wordpress.android.models.Post.update(Post.java:396)
+            at org.wordpress.android.ui.posts.EditPostContentFragment.savePostContent(EditPostContentFragment.java:599)
+            at org.wordpress.android.ui.posts.EditPostActivity.savePost(EditPostActivity.java:291)
+            at org.wordpress.android.ui.posts.EditPostActivity.access$400(EditPostActivity.java:29)
+            at org.wordpress.android.ui.posts.EditPostActivity$2.run(EditPostActivity.java:279)

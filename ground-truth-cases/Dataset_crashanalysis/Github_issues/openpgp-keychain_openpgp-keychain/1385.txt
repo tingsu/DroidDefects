@@ -1,0 +1,15 @@
+ 20134         AndroidRuntime  E  java.lang.RuntimeException: Error receiving broadcast Intent { act=org.sufficientlysecure.keychain.action.PASSPHRASE_CACHE_BROADCAST flg=0x14 (has extras) } in org.sufficientlysecure.keychain.service.PassphraseCacheService$2@390e5242
+ 20134         AndroidRuntime  E  at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:877)
+ 20134         AndroidRuntime  E  at android.os.Handler.handleCallback(Handler.java:739)
+ 20134         AndroidRuntime  E  at android.os.Handler.dispatchMessage(Handler.java:95)
+ 20134         AndroidRuntime  E  at android.os.Looper.loop(Looper.java:135)
+ 20134         AndroidRuntime  E  at android.app.ActivityThread.main(ActivityThread.java:5293)
+ 20134         AndroidRuntime  E  at java.lang.reflect.Method.invoke(Native Method)
+ 20134         AndroidRuntime  E  at java.lang.reflect.Method.invoke(Method.java:372)
+ 20134         AndroidRuntime  E  at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+ 20134         AndroidRuntime  E  at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+ 20134         AndroidRuntime  E  Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'org.sufficientlysecure.keychain.util.Passphrase org.sufficientlysecure.keychain.service.PassphraseCacheService$CachedPassphrase.getPassphrase()' on a null object reference
+ 20134         AndroidRuntime  E  at org.sufficientlysecure.keychain.service.PassphraseCacheService.timeout(PassphraseCacheService.java:464)
+ 20134         AndroidRuntime  E  at org.sufficientlysecure.keychain.service.PassphraseCacheService.access$000(PassphraseCacheService.java:83)
+ 20134         AndroidRuntime  E  at org.sufficientlysecure.keychain.service.PassphraseCacheService$2.onReceive(PassphraseCacheService.java:326)
+ 20134         AndroidRuntime  E  at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:867)

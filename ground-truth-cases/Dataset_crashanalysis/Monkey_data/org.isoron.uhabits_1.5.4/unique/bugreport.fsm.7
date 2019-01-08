@@ -1,0 +1,31 @@
+//this is an auto-generated bug report
+//package name: org.isoron.uhabits
+//version: 1.5.4
+//appro_time: 103
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=0, result=4, data=null} to activity {org.isoron.uhabits/org.isoron.uhabits.MainActivity}: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.SEND typ=message/rfc822 flg=0x1 (has clip) (has extras) }
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3367)
+ 	at android.app.ActivityThread.handleSendResult(ActivityThread.java:3410)
+ 	at android.app.ActivityThread.access$1100(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1304)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.SEND typ=message/rfc822 flg=0x1 (has clip) (has extras) }
+ 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1632)
+ 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1424)
+ 	at android.app.Activity.startActivityForResult(Activity.java:3390)
+ 	at android.app.Activity.startActivityForResult(Activity.java:3351)
+ 	at android.support.v4.app.FragmentActivity.startActivityForResult(FragmentActivity.java:843)
+ 	at android.app.Activity.startActivity(Activity.java:3587)
+ 	at android.app.Activity.startActivity(Activity.java:3555)
+ 	at org.isoron.uhabits.MainActivity.generateBugReport(MainActivity.java:260)
+ 	at org.isoron.uhabits.MainActivity.onActivityResult(MainActivity.java:232)
+ 	at android.app.Activity.dispatchActivityResult(Activity.java:5322)
+ 	at android.app.ActivityThread.deliverResults(ActivityThread.java:3363)
+ 	... 11 more

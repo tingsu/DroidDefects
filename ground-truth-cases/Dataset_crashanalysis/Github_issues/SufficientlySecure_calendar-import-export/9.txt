@@ -1,0 +1,8 @@
+java.lang.IllegalArgumentException: Event values must include an eventTimezone
+        at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:166)
+        at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:136)
+        at android.content.ContentProviderProxy.insert(ContentProviderNative.java:415)
+        at android.content.ContentResolver.insert(ContentResolver.java:735)
+        at org.sufficientlysecure.ical.InsertVEvents.run(InsertVEvents.java:95)
+        at org.sufficientlysecure.ical.tools.dialogs.DialogTools$2.run(DialogTools.java:82)
+        at java.lang.Thread.run(Thread.java:856)

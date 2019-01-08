@@ -1,0 +1,8 @@
+03-06 19:15:23.187: E/cgeo.calendar(770): android.database.sqlite.SQLiteException: no such column: displayName: , while compiling: SELECT _id, displayName FROM Calendars WHERE (selected=1)
+03-06 19:15:23.187: E/cgeo.calendar(770):   at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:179)
+03-06 19:15:23.187: E/cgeo.calendar(770):   at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:135)
+03-06 19:15:23.187: E/cgeo.calendar(770):   at android.content.ContentProviderProxy.query(ContentProviderNative.java:358)
+03-06 19:15:23.187: E/cgeo.calendar(770):   at android.content.ContentResolver.query(ContentResolver.java:311)
+03-06 19:15:23.187: E/cgeo.calendar(770):   at android.app.Activity.managedQuery(Activity.java:1706)
+03-06 19:15:23.187: E/cgeo.calendar(770):   at cgeo.calendar.CalendarActivity.selectCalendarForAdding(CalendarActivity.java:82)
+03-06 19:15:23.187: E/cgeo.calendar(770):   at cgeo.calendar.CalendarActivity.onCreate(CalendarActivity.java:53)

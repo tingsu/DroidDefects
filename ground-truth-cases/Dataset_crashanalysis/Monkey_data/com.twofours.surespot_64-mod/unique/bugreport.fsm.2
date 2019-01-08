@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: com.twofours.surespot
+//version: 64-mod
+//appro_time: 180
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Adding window failed
+ 	at android.view.ViewRootImpl.setView(ViewRootImpl.java:536)
+ 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:269)
+ 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+ 	at android.app.Dialog.show(Dialog.java:281)
+ 	at com.twofours.surespot.ui.MultiProgressDialog$1$1.run(MultiProgressDialog.java:89)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.os.DeadObjectException
+ 	at android.os.BinderProxy.transact(Native Method)
+ 	at android.view.IWindowSession$Stub$Proxy.addToDisplay(IWindowSession.java:683)
+ 	at android.view.ViewRootImpl.setView(ViewRootImpl.java:525)
+ 	... 13 more

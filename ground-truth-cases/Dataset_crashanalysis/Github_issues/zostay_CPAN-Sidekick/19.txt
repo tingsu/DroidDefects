@@ -1,0 +1,6 @@
+java.util.NoSuchElementException
+    at java.util.LinkedList.removeFirstImpl(LinkedList.java:689)
+    at java.util.LinkedList.removeFirst(LinkedList.java:676)
+    at com.qubling.sidekick.util.LinkedListStack.pop(LinkedListStack.java:21)
+    at com.qubling.sidekick.ui.module.ModuleViewFragment.onFinishedFetch(ModuleViewFragment.java:219)
+    at com.qubling.sidekick.search.Search$1.run(Search.java:41)

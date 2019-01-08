@@ -1,0 +1,9 @@
+Caused by: java.util.regex.PatternSyntaxException: Syntax error U_REGEX_RULE_SYNTAX
+near index 1: {{cloze:1:(.+?)}} ^ at java.util.regex.Pattern.compileImpl(Native Method)
+at java.util.regex.Pattern.compile(Pattern.java:400) at java.util.regex.Pattern.(Pattern.java:383)
+at java.util.regex.Pattern.compile(Pattern.java:374) at java.lang.String.replaceAll(String.java:1963)
+at com.ichi2.libanki.Storage._upgradeClozeModel(Storage.java:220) at com.ichi2.libanki.Storage._upgrade(Storage.java:121)
+at com.ichi2.libanki.Storage.Collection(Storage.java:63) at com.ichi2.libanki.Storage.Collection(Storage.java:39)
+at com.ichi2.libanki.Collection.openCollection(Collection.java:109) at com.ichi2.async.Connection.doInBackgroundSync(Connection.java:374)
+at com.ichi2.async.Connection.doOneInBackground(Connection.java:203) at com.ichi2.async.Connection.doInBackground(Connection.java:182)
+at com.ichi2.async.Connection.doInBackground(Connection.java:1) at android.os.AsyncTask$2.call(AsyncTask.java:185)

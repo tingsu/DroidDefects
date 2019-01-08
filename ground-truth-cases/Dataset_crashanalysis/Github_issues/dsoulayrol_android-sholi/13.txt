@@ -1,0 +1,4 @@
+E/AndroidRuntime(13962): java.lang.IllegalStateException: Fragment CheckingFragment{4108e6b8} not attached to Activity
+E/AndroidRuntime(13962):    at android.app.Fragment.getResources(Fragment.java:762)
+E/AndroidRuntime(13962):    at name.soulayrol.rhaa.sholi.CheckingFragment.configureGesture(CheckingFragment.java:183)
+E/AndroidRuntime(13962):    at name.soulayrol.rhaa.sholi.CheckingFragment.onSharedPreferenceChanged(CheckingFragment.java:169)

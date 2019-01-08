@@ -1,0 +1,25 @@
+java.lang.ArrayIndexOutOfBoundsException
+        at java.util.HugeEnumSet$HugeEnumSetIterator.next(HugeEnumSet.java:102)
+        at java.util.HugeEnumSet$HugeEnumSetIterator.next(HugeEnumSet.java:52)
+        at com.kenai.constantine.platform.ConstantResolver.getConstant(ConstantResolver.java:107)
+        at com.kenai.constantine.platform.ConstantResolver.intValue(ConstantResolver.java:146)
+        at com.kenai.constantine.platform.Errno.value(Errno.java:93)
+        at org.jruby.Ruby.initErrno(Ruby.java:1312)
+        at org.jruby.Ruby.initExceptions(Ruby.java:1283)
+        at org.jruby.Ruby.bootstrap(Ruby.java:1028)
+        at org.jruby.Ruby.init(Ruby.java:1005)
+        at org.jruby.Ruby.newInstance(Ruby.java:173)
+        at org.jruby.Main.run(Main.java:206)
+        at org.jruby.Main.run(Main.java:117)
+        at org.jruby.Main.main(Main.java:97)
+        at dalvik.system.NativeStart.main(Native Method)
+
+What version of the product are you using? On what operating system?
+
+  SL4A r3 on Android 1.5
+
+Please provide any additional information below.
+
+```
+
+Original issue reported on code.google.com by `apotheon` on 4 Mar 2011 at 5:01

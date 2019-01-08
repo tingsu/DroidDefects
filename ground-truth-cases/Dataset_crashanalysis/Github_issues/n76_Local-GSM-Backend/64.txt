@@ -1,0 +1,7 @@
+`03-30 11:12:22.445 E/AndroidRuntime(21665): java.lang.NullPointerException: Attempt to invoke virtual method 'void android.location.Location.setTime(long)' on a null object reference
+03-30 11:12:22.445 E/AndroidRuntime(21665): at org.fitchfamily.android.gsmlocation.GsmService$1$1.doIt(GsmService.java:76)
+03-30 11:12:22.445 E/AndroidRuntime(21665): at org.fitchfamily.android.gsmlocation.GsmService$1$1.onServiceStateChanged(GsmService.java:84)
+03-30 11:12:22.445 E/AndroidRuntime(21665): at android.telephony.PhoneStateListener$2.handleMessage(PhoneStateListener.java:280)
+03-30 11:12:22.445 E/AndroidRuntime(21665): at android.os.Handler.dispatchMessage(Handler.java:102)
+03-30 11:12:22.445 E/AndroidRuntime(21665): at android.os.Looper.loop(Looper.java:148)
+03-30 11:12:22.445 E/AndroidRuntime(21665): at org.fitchfamily.android.gsmlocation.GsmService$1.run(GsmService.java:101)`

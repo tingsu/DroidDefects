@@ -1,0 +1,18 @@
+//this is an auto-generated bug report
+//package name: com.nutomic.syncthingandroid
+//version: 0.9.4
+//appro_time: 155
+ java.lang.NullPointerException
+ 	at com.nutomic.syncthingandroid.activities.SettingsActivity$SettingsFragment.onServiceConnected(SettingsActivity.java:168)
+ 	at com.nutomic.syncthingandroid.activities.SyncthingActivity.onServiceConnected(SyncthingActivity.java:74)
+ 	at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1106)
+ 	at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1123)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

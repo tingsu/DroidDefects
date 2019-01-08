@@ -1,0 +1,10 @@
+java.lang.NullPointerException
+   at cgeo.geocaching.Geocache.hashCode(Geocache.java:1417)
+   at java.util.HashMap.put(HashMap.java:390)
+   at java.util.HashSet.add(HashSet.java:95)
+   at cgeo.geocaching.DataStore.loadCaches(DataStore.java:1568)
+   at cgeo.geocaching.SearchResult.getCachesFromSearchResult(SearchResult.java:243)
+   at cgeo.geocaching.maps.CGeoMap$DownloadRunnable.run(CGeoMap.java:1147)
+   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+   at java.lang.Thread.run(Thread.java:856)

@@ -1,0 +1,16 @@
+java.util.ConcurrentModificationException
+    at java.util.HashMap$HashIterator.nextEntry(HashMap.java:787)
+    at java.util.HashMap$EntryIterator.next(HashMap.java:824)
+    at java.util.HashMap$EntryIterator.next(HashMap.java:824)
+
+    at com.tomer.alwayson.Services.MainService.refresh(MainService.java:202)
+    at com.tomer.alwayson.Services.MainService.access$200(MainService.java:42)
+    at com.tomer.alwayson.Services.MainService$3.run(MainService.java:218)
+
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5422)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

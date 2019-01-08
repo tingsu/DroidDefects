@@ -1,0 +1,17 @@
+E/AndroidRuntime( 7874): java.lang.RuntimeException: Error receiving broadcast Intent { act=android.net.wifi.p2p.THIS_DEVICE_CHANGED flg=0x4000010 (has extras) } in info.guardianproject.gilga.service.GilgaService$3@41e4f758
+E/AndroidRuntime( 7874):    at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:776)
+E/AndroidRuntime( 7874):    at android.os.Handler.handleCallback(Handler.java:733)
+E/AndroidRuntime( 7874):    at android.os.Handler.dispatchMessage(Handler.java:95)
+E/AndroidRuntime( 7874):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 7874):    at android.app.ActivityThread.main(ActivityThread.java:5146)
+E/AndroidRuntime( 7874):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 7874):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 7874):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+E/AndroidRuntime( 7874):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+E/AndroidRuntime( 7874):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 7874): Caused by: java.lang.StringIndexOutOfBoundsException: length=0; regionStart=-6; regionLength=6
+E/AndroidRuntime( 7874):    at java.lang.String.startEndAndLength(String.java:588)
+E/AndroidRuntime( 7874):    at java.lang.String.substring(String.java:1475)
+E/AndroidRuntime( 7874):    at info.guardianproject.gilga.service.GilgaService.mapToNickname(GilgaService.java:412)
+E/AndroidRuntime( 7874):    at info.guardianproject.gilga.service.GilgaService$3.onReceive(GilgaService.java:654)
+E/AndroidRuntime( 7874):    at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:766)

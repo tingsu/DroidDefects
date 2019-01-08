@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: de.baumann.hhsmoodle
+//version: 3.6
+//appro_time: 173
+ FATAL EXCEPTION: main
+ android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@af485f70 is not valid; is your activity running?
+ 	at android.view.ViewRootImpl.setView(ViewRootImpl.java:559)
+ 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:269)
+ 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+ 	at android.app.Dialog.show(Dialog.java:281)
+ 	at de.baumann.hhsmoodle.helper.helper_webView$1.onPageFinished(helper_webView.java:101)
+ 	at android.webkit.CallbackProxy.handleMessage(CallbackProxy.java:314)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

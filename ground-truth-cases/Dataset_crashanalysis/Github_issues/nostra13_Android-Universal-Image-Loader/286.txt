@@ -1,0 +1,5 @@
+ java.io.IOException: Please correct the above warnings first.
+    at proguard.Initializer.execute(Initializer.java:321)
+    at proguard.ProGuard.initialize(ProGuard.java:211)
+    at proguard.ProGuard.execute(ProGuard.java:86)
+[   at proguard.ProGuard.main(ProGuard.java:492)

@@ -1,0 +1,23 @@
+```
+V/WindowManager(  747): Adding window Window{274759ee u0 cz.martykan.forecastie/cz.martykan.forecastie.MainActivity} at 16 of 24 (before Window{327b04b5 u0 cz.martykan.forecastie/cz.martykan.forecastie.MainActivity})
+D/AndroidRuntime(16138): Shutting down VM
+E/AndroidRuntime(16138): FATAL EXCEPTION: main
+E/AndroidRuntime(16138): Process: cz.martykan.forecastie, PID: 16138
+E/AndroidRuntime(16138): java.lang.IllegalArgumentException: View=com.android.internal.policy.impl.PhoneWindow$DecorView{161404fa V.E..... R......D 0,0-1166,348} not attached to window manager
+E/AndroidRuntime(16138):    at android.view.WindowManagerGlobal.findViewLocked(WindowManagerGlobal.java:396)
+E/AndroidRuntime(16138):    at android.view.WindowManagerGlobal.removeView(WindowManagerGlobal.java:322)
+E/AndroidRuntime(16138):    at android.view.WindowManagerImpl.removeViewImmediate(WindowManagerImpl.java:116)
+E/AndroidRuntime(16138):    at android.app.Dialog.dismissDialog(Dialog.java:341)
+E/AndroidRuntime(16138):    at android.app.Dialog.dismiss(Dialog.java:324)
+E/AndroidRuntime(16138):    at cz.martykan.forecastie.MainActivity$GenericRequestTask.onPostExecute(MainActivity.java:804)
+E/AndroidRuntime(16138):    at cz.martykan.forecastie.MainActivity$GenericRequestTask.onPostExecute(MainActivity.java:712)
+E/AndroidRuntime(16138):    at android.os.AsyncTask.finish(AsyncTask.java:636)
+E/AndroidRuntime(16138):    at android.os.AsyncTask.access$500(AsyncTask.java:177)
+E/AndroidRuntime(16138):    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:653)
+E/AndroidRuntime(16138):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(16138):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(16138):    at android.app.ActivityThread.main(ActivityThread.java:5291)
+E/AndroidRuntime(16138):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(16138):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(16138):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime(16138):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)

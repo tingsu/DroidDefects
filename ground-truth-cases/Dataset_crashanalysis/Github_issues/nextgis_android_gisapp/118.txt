@@ -1,0 +1,67 @@
+04-14 22:17:01.123  27963-23702/com.nextgis.mobile W/System.err﹕ java.lang.InterruptedException
+04-14 22:17:01.125  27963-23702/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:975)
+04-14 22:17:01.126  27963-23702/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1281)
+04-14 22:17:01.127  27963-23702/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.Semaphore.acquire(Semaphore.java:283)
+04-14 22:17:01.129  27963-23702/com.nextgis.mobile W/System.err﹕ at com.nextgis.maplib.map.RemoteTMSLayer.getBitmap(RemoteTMSLayer.java:135)
+04-14 22:17:01.130  27963-23702/com.nextgis.mobile W/System.err﹕ at com.nextgis.maplib.display.TMSRenderer$2.run(TMSRenderer.java:223)
+04-14 22:17:01.131  27963-23702/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+04-14 22:17:01.133  27963-23702/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-14 22:17:01.134  27963-23702/com.nextgis.mobile W/System.err﹕ at java.lang.Thread.run(Thread.java:841)
+04-14 22:17:01.137  27963-23698/com.nextgis.mobile W/System.err﹕ java.lang.InterruptedException
+04-14 22:17:01.139  27963-23698/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:975)
+04-14 22:17:01.139  27963-23698/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1281)
+04-14 22:17:01.139  27963-23698/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.Semaphore.acquire(Semaphore.java:283)
+04-14 22:17:01.140  27963-23698/com.nextgis.mobile W/System.err﹕ at com.nextgis.maplib.map.RemoteTMSLayer.getBitmap(RemoteTMSLayer.java:135)
+04-14 22:17:01.140  27963-23698/com.nextgis.mobile W/System.err﹕ at com.nextgis.maplib.display.TMSRenderer$2.run(TMSRenderer.java:223)
+04-14 22:17:01.141  27963-23698/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+04-14 22:17:01.141  27963-23698/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-14 22:17:01.142  27963-23698/com.nextgis.mobile W/System.err﹕ at java.lang.Thread.run(Thread.java:841)
+04-14 22:17:01.142  27963-23698/com.nextgis.mobile D/nextgismobile﹕ Problem downloading MapTile: http://b.tile.openstreetmap.org/9/368/241.png Error: null
+04-14 22:17:01.142  27963-23699/com.nextgis.mobile W/System.err﹕ java.lang.InterruptedException
+04-14 22:17:01.143  27963-23700/com.nextgis.mobile W/System.err﹕ java.lang.InterruptedException
+04-14 22:17:01.144  27963-23699/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:975)
+04-14 22:17:01.144  27963-23699/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1281)
+04-14 22:17:01.144  27963-23699/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.Semaphore.acquire(Semaphore.java:283)
+04-14 22:17:01.145  27963-23699/com.nextgis.mobile W/System.err﹕ at com.nextgis.maplib.map.RemoteTMSLayer.getBitmap(RemoteTMSLayer.java:135)
+04-14 22:17:01.145  27963-23699/com.nextgis.mobile W/System.err﹕ at com.nextgis.maplib.display.TMSRenderer$2.run(TMSRenderer.java:223)
+04-14 22:17:01.146  27963-23699/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+04-14 22:17:01.146  27963-23699/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-14 22:17:01.147  27963-23699/com.nextgis.mobile W/System.err﹕ at java.lang.Thread.run(Thread.java:841)
+04-14 22:17:01.147  27963-23699/com.nextgis.mobile D/nextgismobile﹕ Problem downloading MapTile: http://c.tile.openstreetmap.org/9/368/242.png Error: null
+04-14 22:17:01.148  27963-23700/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:975)
+04-14 22:17:01.148  27963-23700/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1281)
+04-14 22:17:01.149  27963-23700/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.Semaphore.acquire(Semaphore.java:283)
+04-14 22:17:01.149  27963-23700/com.nextgis.mobile W/System.err﹕ at com.nextgis.maplib.map.RemoteTMSLayer.getBitmap(RemoteTMSLayer.java:135)
+04-14 22:17:01.149  27963-23700/com.nextgis.mobile W/System.err﹕ at com.nextgis.maplib.display.TMSRenderer$2.run(TMSRenderer.java:223)
+04-14 22:17:01.150  27963-23700/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+04-14 22:17:01.150  27963-23700/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-14 22:17:01.151  27963-23700/com.nextgis.mobile W/System.err﹕ at java.lang.Thread.run(Thread.java:841)
+04-14 22:17:01.152  27963-23700/com.nextgis.mobile D/nextgismobile﹕ Problem downloading MapTile: http://a.tile.openstreetmap.org/9/368/245.png Error: null
+04-14 22:17:01.154  27963-23698/com.nextgis.mobile E/BitmapFactory﹕ Unable to decode stream: java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.nextgis.mobile/files/map/layer_20150414205048174/9/368/241.tile: open failed: ENOENT (No such file or directory)
+04-14 22:17:01.155  27963-23699/com.nextgis.mobile E/BitmapFactory﹕ Unable to decode stream: java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.nextgis.mobile/files/map/layer_20150414205048174/9/368/242.tile: open failed: ENOENT (No such file or directory)
+04-14 22:17:01.155  27963-23700/com.nextgis.mobile E/BitmapFactory﹕ Unable to decode stream: java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.nextgis.mobile/files/map/layer_20150414205048174/9/368/245.tile: open failed: ENOENT (No such file or directory)
+04-14 22:17:01.156  27963-23698/com.nextgis.mobile D/nextgismobile﹕ TMS percent: 0.25 complete: 12 tiles count: 48 layer: OpenStreetMap
+04-14 22:17:01.156  27963-23699/com.nextgis.mobile D/nextgismobile﹕ TMS percent: 0.27083334 complete: 13 tiles count: 48 layer: OpenStreetMap
+04-14 22:17:01.157  27963-23700/com.nextgis.mobile D/nextgismobile﹕ TMS percent: 0.29166666 complete: 14 tiles count: 48 layer: OpenStreetMap
+04-14 22:17:01.157  27963-23697/com.nextgis.mobile W/System.err﹕ java.lang.InterruptedException
+04-14 22:17:01.158  27963-23697/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:975)
+04-14 22:17:01.159  27963-23697/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1281)
+04-14 22:17:01.159  27963-23697/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.Semaphore.acquire(Semaphore.java:283)
+04-14 22:17:01.159  27963-23697/com.nextgis.mobile W/System.err﹕ at com.nextgis.maplib.map.RemoteTMSLayer.getBitmap(RemoteTMSLayer.java:135)
+04-14 22:17:01.160  27963-23697/com.nextgis.mobile W/System.err﹕ at com.nextgis.maplib.display.TMSRenderer$2.run(TMSRenderer.java:223)
+04-14 22:17:01.160  27963-23697/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+04-14 22:17:01.160  27963-23697/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-14 22:17:01.161  27963-23697/com.nextgis.mobile W/System.err﹕ at java.lang.Thread.run(Thread.java:841)
+04-14 22:17:01.161  27963-23697/com.nextgis.mobile D/nextgismobile﹕ Problem downloading MapTile: http://a.tile.openstreetmap.org/9/368/243.png Error: null
+04-14 22:17:01.162  27963-23697/com.nextgis.mobile E/BitmapFactory﹕ Unable to decode stream: java.io.FileNotFoundException: /storage/emulated/0/Android/data/com.nextgis.mobile/files/map/layer_20150414205048174/9/368/243.tile: open failed: ENOENT (No such file or directory)
+04-14 22:17:01.162  27963-23697/com.nextgis.mobile D/nextgismobile﹕ TMS percent: 0.3125 complete: 15 tiles count: 48 layer: OpenStreetMap
+04-14 22:17:01.163  27963-23702/com.nextgis.mobile D/nextgismobile﹕ Problem downloading MapTile: http://c.tile.openstreetmap.org/9/369/248.png Error: null
+04-14 22:17:01.163  27963-23701/com.nextgis.mobile W/System.err﹕ java.lang.InterruptedException
+04-14 22:17:01.164  27963-23701/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(AbstractQueuedSynchronizer.java:975)
+04-14 22:17:01.164  27963-23701/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(AbstractQueuedSynchronizer.java:1281)
+04-14 22:17:01.165  27963-23701/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.Semaphore.acquire(Semaphore.java:283)
+04-14 22:17:01.165  27963-23701/com.nextgis.mobile W/System.err﹕ at com.nextgis.maplib.map.RemoteTMSLayer.getBitmap(RemoteTMSLayer.java:135)
+04-14 22:17:01.165  27963-23701/com.nextgis.mobile W/System.err﹕ at com.nextgis.maplib.display.TMSRenderer$2.run(TMSRenderer.java:223)
+04-14 22:17:01.166  27963-23701/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+04-14 22:17:01.166  27963-23701/com.nextgis.mobile W/System.err﹕ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+04-14 22:17:01.167  27963-23701/com.nextgis.mobile W/System.err﹕ at java.lang.Thread.run(Thread.java:841)

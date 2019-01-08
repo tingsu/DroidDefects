@@ -1,0 +1,25 @@
+
+Now, that solved the issue at hand, but brought a new issue with itself, which is the service was not being registered when going into the Comments section and tapped on a comment to see it in CommentDetailFragment.
+
+```
+java.lang.IllegalArgumentException: Service not registered: org.wordpress.android.ui.suggestion.util.SuggestionServiceConnectionManager@c163ebd
+                                                                           at android.app.LoadedApk.forgetServiceDispatcher(LoadedApk.java:1029)
+                                                                           at android.app.ContextImpl.unbindService(ContextImpl.java:1816)
+                                                                           at android.content.ContextWrapper.unbindService(ContextWrapper.java:551)
+                                                                           at org.wordpress.android.ui.suggestion.util.SuggestionServiceConnectionManager.unbindFromService(SuggestionServiceConnectionManager.java:32)
+                                                                           at org.wordpress.android.ui.comments.CommentDetailFragment.onDestroy(CommentDetailFragment.java:206)
+                                                                           at android.app.Fragment.performDestroy(Fragment.java:2266)
+
+```
+
+I realised this was because `bindService` for suggestions for sites (and also tag suggestions) is only called if we have no suggestions (i.e. the suggestions table is empty at the time we land on the Activity that makes use of the service). 
+
+```
+        List<Suggestion> suggestions = SuggestionTable.getSuggestionsForSite(remoteBlogId);
+        // if the tags are not stored yet, we want to trigger an update for it
+        if (tags.isEmpty()) {
+            serviceConnectionManager.bindToService();
+        }
+```
+
+Makes sense! So what we really need to be tracking here is whether we have called `bindService` at least once in order to be able to call `unbindService`.

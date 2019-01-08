@@ -1,0 +1,8 @@
+java.lang.NullPointerException
+            at android.widget.TextView.getExtendedPaddingTop(TextView.java:1824)
+            at android.widget.TextView.getTotalPaddingTop(TextView.java:1918)
+            at org.wordpress.android.ui.reader.adapters.ReaderPostAdapter$ReaderPostViewHolder.<init>(ReaderPostAdapter.java:184)
+            at org.wordpress.android.ui.reader.adapters.ReaderPostAdapter.onCreateViewHolder(ReaderPostAdapter.java:255)
+            at android.support.v7.widget.RecyclerView$Adapter.createViewHolder(RecyclerView.java:5779)
+            at android.support.v7.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:5003)
+            at android.support.v7.widget.RecyclerView$Recycler.getViewForPosition(RecyclerView.java:4913)

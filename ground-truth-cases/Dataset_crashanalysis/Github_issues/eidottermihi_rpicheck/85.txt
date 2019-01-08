@@ -1,0 +1,17 @@
+net.schmizz.sshj.common.SSHRuntimeException: null
+    at net.schmizz.sshj.common.Buffer.readPublicKey(Buffer.java:432) ~[na:0.0]
+    at net.schmizz.sshj.transport.kex.AbstractDHG.next(AbstractDHG.java:108) ~[na:0.0]
+    at net.schmizz.sshj.transport.KeyExchanger.handle(KeyExchanger.java:352) ~[na:0.0]
+    at net.schmizz.sshj.transport.TransportImpl.handle(TransportImpl.java:484) ~[na:0.0]
+    at net.schmizz.sshj.transport.Decoder.decode(Decoder.java:107) ~[na:0.0]
+    at net.schmizz.sshj.transport.Decoder.received(Decoder.java:175) ~[na:0.0]
+    at net.schmizz.sshj.transport.Reader.run(Reader.java:61) ~[na:0.0]
+Caused by: java.security.GeneralSecurityException: java.security.NoSuchAlgorithmException: KeyFactory ECDSA implementation not found
+    at net.schmizz.sshj.common.KeyType$3.readPubKeyFromBuffer(KeyType.java:146) ~[na:0.0]
+    at net.schmizz.sshj.common.Buffer.readPublicKey(Buffer.java:430) ~[na:0.0]
+    ... 6 common frames omitted
+Caused by: java.security.NoSuchAlgorithmException: KeyFactory ECDSA implementation not found
+    at org.apache.harmony.security.fortress.Engine.notFound(Engine.java:190) ~[na:0.0]
+    at org.apache.harmony.security.fortress.Engine.getInstance(Engine.java:139) ~[na:0.0]
+    at java.security.KeyFactory.getInstance(KeyFactory.java:81) ~[na:0.0]
+    at net.schmizz.sshj.common.KeyType$3.readPubKeyFromBuffer(KeyType.java:143) ~[na:0.0]

@@ -1,0 +1,9 @@
+ java.lang.NullPointerException: Attempt to invoke virtual method 'android.content.ContentResolver android.content.Context.getContentResolver()' on a null object reference
+  at org.onebusaway.android.provider.ObaContract$RouteHeadsignFavorites.isFavorite(ObaContract.java:1395)
+ at org.onebusaway.android.ui.ArrivalInfo.<init>(ArrivalInfo.java:249)
+ at org.onebusaway.android.ui.ArrivalInfo.convertObaArrivalInfo(ArrivalInfo.java:75)
+ at org.onebusaway.android.ui.ArrivalsListFragment.getArrivalInfo(ArrivalsListFragment.java:868)
+ at org.onebusaway.android.ui.ArrivalsListHeader.refreshArrivalInfoData(ArrivalsListHeader.java:648)
+ at org.onebusaway.android.ui.ArrivalsListHeader.refresh(ArrivalsListHeader.java:624)
+ at org.onebusaway.android.ui.HomeActivity$6.onPanelCollapsed(HomeActivity.java:1352)
+ at com.sothree.slidinguppanel.SlidingUpPanelLayout.dispatchOnPanelCollapsed(SlidingUpPanelLayout.java:644)

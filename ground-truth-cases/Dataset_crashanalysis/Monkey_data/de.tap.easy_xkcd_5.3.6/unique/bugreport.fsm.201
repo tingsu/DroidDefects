@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: de.tap.easy_xkcd
+//version: 5.3.6
+//appro_time: 53
+ FATAL EXCEPTION: main
+ java.lang.UnsupportedOperationException: This is not supported, use MenuItemCompat.setOnActionExpandListener()
+ 	at android.support.v7.view.menu.MenuItemImpl.setOnActionExpandListener(MenuItemImpl.java:739)
+ 	at android.support.v4.view.MenuItemCompat.setOnActionExpandListener(MenuItemCompat.java:363)
+ 	at de.tap.easy_xkcd.Activities.MainActivity.onCreateOptionsMenu(MainActivity.java:593)
+ 	at android.app.Activity.onCreatePanelMenu(Activity.java:2504)
+ 	at android.support.v4.app.FragmentActivity.onCreatePanelMenu(FragmentActivity.java:320)
+ 	at android.support.v7.view.WindowCallbackWrapper.onCreatePanelMenu(WindowCallbackWrapper.java:85)
+ 	at android.support.v7.app.AppCompatDelegateImplBase$AppCompatWindowCallbackBase.onCreatePanelMenu(AppCompatDelegateImplBase.java:241)
+ 	at android.support.v7.view.WindowCallbackWrapper.onCreatePanelMenu(WindowCallbackWrapper.java:85)
+ 	at android.support.v7.app.ToolbarActionBar.populateOptionsMenu(ToolbarActionBar.java:443)
+ 	at android.support.v7.app.ToolbarActionBar$1.run(ToolbarActionBar.java:60)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

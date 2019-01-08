@@ -1,0 +1,10 @@
+    java.util.IllegalFormatConversionException: d is incompatible with java.lang.String
+    at java.util.Formatter$Transformer.badArgumentType(Formatter.java:1452)
+    at java.util.Formatter$Transformer.transformFromInteger(Formatter.java:1683)
+    at java.util.Formatter$Transformer.transform(Formatter.java:1410)
+    at java.util.Formatter.doFormat(Formatter.java:1082)
+    at java.util.Formatter.format(Formatter.java:994)
+    at java.lang.String.format(String.java:2254)
+    at android.content.res.Resources.getString(Resources.java:283)
+    at android.content.Context.getString(Context.java:195)
+    at org.yaaic.irc.IRCService$1.run(IRCService.java:289)

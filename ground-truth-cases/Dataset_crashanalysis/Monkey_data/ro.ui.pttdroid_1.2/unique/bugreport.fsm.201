@@ -1,0 +1,10 @@
+//this is an auto-generated bug report
+//package name: ro.ui.pttdroid
+//version: 1.2
+//appro_time: 16
+ java.lang.UnsatisfiedLinkError: Couldn't load speex_jni from loader dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/ro.ui.pttdroid-1.apk"],nativeLibraryDirectories=[/data/app-lib/ro.ui.pttdroid-1, /system/lib]]]: findLibrary returned null
+ 	at java.lang.Runtime.loadLibrary(Runtime.java:355)
+ 	at java.lang.System.loadLibrary(System.java:525)
+ 	at ro.ui.pttdroid.codecs.Speex.<clinit>(Speex.java:6)
+ 	at ro.ui.pttdroid.Player.init(Player.java:103)
+ 	at ro.ui.pttdroid.Player.run(Player.java:37)

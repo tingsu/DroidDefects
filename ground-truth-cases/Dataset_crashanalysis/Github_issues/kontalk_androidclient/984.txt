@@ -1,0 +1,8 @@
+java.lang.NullPointerException
+       at org.kontalk.service.msgcenter.MessageCenterService.cancelIdleAlarm(MessageCenterService.java:3264)
+       at org.kontalk.service.msgcenter.MessageCenterService$IdleConnectionHandler.abortIdle(MessageCenterService.java:581)
+       at org.kontalk.service.msgcenter.MessageCenterService$IdleConnectionHandler$1.run(MessageCenterService.java:543)
+       at android.os.Handler.handleCallback(Handler.java:808)
+       at android.os.Handler.dispatchMessage(Handler.java:103)
+       at android.os.Looper.loop(Looper.java:193)
+       at android.os.HandlerThread.run(HandlerThread.java:61)

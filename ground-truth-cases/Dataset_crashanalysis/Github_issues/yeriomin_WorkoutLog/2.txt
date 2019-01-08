@@ -1,0 +1,26 @@
+E/AndroidRuntime(12673): java.lang.RuntimeException: Unable to resume activity {com.github.yeriomin.workoutlog/com.github.yeriomin.workoutlog.Activity.ExerciseListActivity}: a.a.a.d: Could not init DAOConfig
+E/AndroidRuntime(12673):    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3019)
+E/AndroidRuntime(12673):    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3050)
+E/AndroidRuntime(12673):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2425)
+E/AndroidRuntime(12673):    at android.app.ActivityThread.access$900(ActivityThread.java:154)
+E/AndroidRuntime(12673):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1321)
+E/AndroidRuntime(12673):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(12673):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(12673):    at android.app.ActivityThread.main(ActivityThread.java:5294)
+E/AndroidRuntime(12673):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(12673):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(12673):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+E/AndroidRuntime(12673):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+E/AndroidRuntime(12673): Caused by: a.a.a.d: Could not init DAOConfig
+E/AndroidRuntime(12673):    at a.a.a.b.a.<init>(Unknown Source)
+E/AndroidRuntime(12673):    at a.a.a.b.a(Unknown Source)
+E/AndroidRuntime(12673):    at com.github.yeriomin.workoutlog.b.a.<init>(Unknown Source)
+E/AndroidRuntime(12673):    at com.github.yeriomin.workoutlog.Activity.ExerciseListActivity.b(Unknown Source)
+E/AndroidRuntime(12673):    at com.github.yeriomin.workoutlog.Activity.ExerciseListActivity.a(Unknown Source)
+E/AndroidRuntime(12673):    at com.github.yeriomin.workoutlog.Activity.ExerciseListActivity.onResume(Unknown Source)
+E/AndroidRuntime(12673):    at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1257)
+E/AndroidRuntime(12673):    at android.app.Activity.performResume(Activity.java:6076)
+E/AndroidRuntime(12673):    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3008)
+E/AndroidRuntime(12673):    ... 11 more
+E/AndroidRuntime(12673): Caused by: java.lang.NoSuchFieldException: TABLENAME
+E/AndroidRuntime(12673):    at java.lang.Class.getField(Class.java:1082)

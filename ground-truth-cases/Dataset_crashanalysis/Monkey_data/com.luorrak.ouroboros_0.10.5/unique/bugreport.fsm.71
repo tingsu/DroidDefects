@@ -1,0 +1,43 @@
+//this is an auto-generated bug report
+//package name: com.luorrak.ouroboros
+//version: 0.10.5
+//appro_time: 149
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{com.luorrak.ouroboros/com.luorrak.ouroboros.catalog.CatalogActivity}: android.database.sqlite.SQLiteException: Failed to change locale for db '/data/data/com.luorrak.ouroboros/databases/cache.db' to 'en_US'.
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: android.database.sqlite.SQLiteException: Failed to change locale for db '/data/data/com.luorrak.ouroboros/databases/cache.db' to 'en_US'.
+ 	at android.database.sqlite.SQLiteConnection.setLocaleFromConfiguration(SQLiteConnection.java:393)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:218)
+ 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+ 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+ 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+ 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:804)
+ 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:789)
+ 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:694)
+ 	at android.app.ContextImpl.openOrCreateDatabase(ContextImpl.java:863)
+ 	at android.content.ContextWrapper.openOrCreateDatabase(ContextWrapper.java:235)
+ 	at android.database.sqlite.SQLiteOpenHelper.getDatabaseLocked(SQLiteOpenHelper.java:224)
+ 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:164)
+ 	at com.luorrak.ouroboros.util.InfiniteDbHelper.<init>(InfiniteDbHelper.java:42)
+ 	at com.luorrak.ouroboros.catalog.CatalogActivity.onCreate(CatalogActivity.java:66)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)
+ 	... 11 more
+ Caused by: android.database.sqlite.SQLiteDatabaseLockedException: database is locked (code 5)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecute(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.execute(SQLiteConnection.java:555)
+ 	at android.database.sqlite.SQLiteConnection.setLocaleFromConfiguration(SQLiteConnection.java:371)
+ 	... 28 more

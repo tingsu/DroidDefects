@@ -1,0 +1,75 @@
+Landroid/provider/ContactsContract$CommonDataKinds$Phone;
+W/dalvikvm( 1027): VFY:  rejecting opcode 0x62 at 0x0069
+W/dalvikvm( 1027): VFY:  rejected 
+Lorg/doubango/imsdroid/Services/Impl/ContactService$1;.run ()V
+W/dalvikvm( 1027): Verifier rejected class 
+Lorg/doubango/imsdroid/Services/Impl/ContactService$1;
+W/dalvikvm( 1027): Exception Ljava/lang/VerifyError; thrown during 
+Lorg/doubango/imsdroid/Services/Impl/ServiceManager;.<clinit>
+D/AndroidRuntime( 1027): Shutting down VM
+W/dalvikvm( 1027): threadid=3: thread exiting with uncaught exception 
+(group=0x4001b1e0)
+E/AndroidRuntime( 1027): Uncaught handler: thread main exiting due to uncaught 
+exception
+E/AndroidRuntime( 1027): java.lang.ExceptionInInitializerError
+E/AndroidRuntime( 1027):    at org.doubango.imsdroid.Main.<init>(Main.java:131)
+E/AndroidRuntime( 1027):    at java.lang.Class.newInstanceImpl(Native Method)
+E/AndroidRuntime( 1027):    at java.lang.Class.newInstance(Class.java:1472)
+E/AndroidRuntime( 1027):    at 
+android.app.Instrumentation.newActivity(Instrumentation.java:1097)
+E/AndroidRuntime( 1027):    at 
+android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2316)
+E/AndroidRuntime( 1027):    at 
+android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2417)
+E/AndroidRuntime( 1027):    at 
+android.app.ActivityThread.access$2100(ActivityThread.java:116)
+E/AndroidRuntime( 1027):    at 
+android.app.ActivityThread$H.handleMessage(ActivityThread.java:1794)
+E/AndroidRuntime( 1027):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 1027):    at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime( 1027):    at 
+android.app.ActivityThread.main(ActivityThread.java:4203)
+E/AndroidRuntime( 1027):    at java.lang.reflect.Method.invokeNative(Native 
+Method)
+E/AndroidRuntime( 1027):    at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime( 1027):    at 
+com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:791)
+E/AndroidRuntime( 1027):    at 
+com.android.internal.os.ZygoteInit.main(ZygoteInit.java:549)
+E/AndroidRuntime( 1027):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 1027): Caused by: java.lang.VerifyError: 
+org.doubango.imsdroid.Services.Impl.ContactService$1
+E/AndroidRuntime( 1027):    at 
+org.doubango.imsdroid.Services.Impl.ContactService.<init>(ContactService.java:41
+5)
+E/AndroidRuntime( 1027):    at 
+org.doubango.imsdroid.Services.Impl.ServiceManager.<clinit>(ServiceManager.java:
+92)
+E/AndroidRuntime( 1027):    ... 16 more
+I/Process (  121): Sending signal. PID: 1027 SIG: 3
+I/dalvikvm( 1027): threadid=7: reacting to signal 3
+I/dalvikvm( 1027): Wrote stack trace to '/data/anr/traces.txt'
+W/ActivityManager(  121): Launch timeout has expired, giving up wake lock!
+D/KeyLayoutMap(  121): ******** couldn't map scancode=330
+D/KeyLayoutMap(  121): ******** couldn't map scancode=330
+W/ActivityManager(  121): Activity idle timeout for HistoryRecord{45fef410 
+org.doubango.imsdroid/.Main}
+D/KeyLayoutMap(  121): ******** couldn't map scancode=330
+D/KeyLayoutMap(  121): ******** couldn't map scancode=330
+D/KeyLayoutMap(  121): ******** couldn't map scancode=330
+D/KeyLayoutMap(  121): ******** couldn't map scancode=330
+D/KeyLayoutMap(  121): ******** couldn't map scancode=330
+D/KeyLayoutMap(  121): ******** couldn't map scancode=330
+D/KeyLayoutMap(  121): ******** couldn't map scancode=330
+D/KeyLayoutMap(  121): ******** couldn't map scancode=330
+I/Process ( 1027): Sending signal. PID: 1027 SIG: 9
+I/ActivityManager(  121): Process org.doubango.imsdroid (pid 1027) has died.
+W/UsageStats(  121): Unexpected resume of com.db.getapplogs while already 
+resumed in org.doubango.imsdroid
+W/InputManagerService(  121): Window already focused, ignoring focus gain of: 
+com.android.internal.view.IInputMethodClient$Stub$Proxy@46007790
+
+
+```
+
+Original issue reported on code.google.com by `p.musijo...@gmail.com` on 19 Jan 2011 at 2:20

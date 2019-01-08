@@ -1,0 +1,246 @@
+08-22 18:55:40.978   1088-12143/system_process I/ActivityManager﹕ START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=net.osmand.plus/.activities.MapActivity (has extras)} from uid 10018 on display 0
+08-22 18:55:41.599   1088-12143/system_process V/WindowManager﹕ addAppToken: AppWindowToken{737b915 token=Token{286f2cc ActivityRecord{3a02b4ff u0 net.osmand.plus/.activities.MapActivity t4}}} to stack=1 task=4 at 0
+08-22 18:55:41.709   1088-12887/system_process I/ActivityManager﹕ Start proc 4240:net.osmand.plus/u0a95 for activity net.osmand.plus/.activities.MapActivity
+08-22 18:55:41.729    1088-1253/system_process V/WindowManager﹕ Adding window Window{3c1ecf64 u0 Starting net.osmand.plus} at 4 of 8 (after Window{543f55c u0 com.android.browser/com.android.browser.BrowserActivity})
+08-22 18:55:42.149    4240-4240/? W/System.err﹕ Startup service net.osmand.plus.resources.ResourceManager took too long 24 ms
+08-22 18:55:42.159    4240-4240/? W/System.err﹕ Startup service net.osmand.plus.OsmAndLocationProvider took too long 11 ms
+08-22 18:55:42.930    4240-4240/net.osmand.plus W/System.err﹕ OnCreate for MapActivity took 693 ms
+08-22 18:55:42.930    4240-4240/net.osmand.plus D/Kiwi﹕ Kiwi: Starting initialization process for application: net.osmand.plus
+08-22 18:55:42.930    4240-4240/net.osmand.plus D/Kiwi﹕ Kiwi: DRM enabled: false
+08-22 18:55:42.930    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: com.amazon.android.framework.resource.c@1eae9f83
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: net.osmand.plus.OsmandApplication@12ccc6ec
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: com.amazon.android.framework.task.a@27460500
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: {}
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: com.amazon.android.e.c@2c565139
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: com.amazon.android.framework.context.d@3896237e
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: com.amazon.android.framework.prompt.PromptManagerImpl@831b0df
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: com.amazon.android.o.b@c86712c
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: com.amazon.android.c.a@3fc1c7f5
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: com.amazon.android.q.c@cecf98a
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: com.amazon.android.framework.task.command.b@3faa7bfb
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: com.amazon.android.m.c@2c7f7418
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: com.amazon.android.framework.task.command.e@2a33ee71
+08-22 18:55:42.940    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Registering resource: com.amazon.android.g.a@27292456
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.framework.resource.c@1eae9f83
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: net.osmand.plus.OsmandApplication@12ccc6ec
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Ignoring: net.osmand.plus.OsmandApplication@12ccc6ec, not a kiwi class
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.framework.task.a@27460500
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.framework.task.pipeline.e@e03b9c4
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Registering listener for event: ACTIVITY_RESUME, ForegroundTaskPipeline:onResume listener
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Adding listener: ForegroundTaskPipeline:onResume listener
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.framework.task.pipeline.a@bc800ad
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.framework.task.pipeline.a@272b2fe2
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Registering listener for event: APPLICATION_DESTROY, com.amazon.android.framework.task.g@c66f73
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Adding listener: com.amazon.android.framework.task.g@c66f73
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: {}
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: {}
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.e.c@2c565139
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Registering listener for event: ACTIVITY_RESUME, com.amazon.android.e.e@3064ae30
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Adding listener: com.amazon.android.e.e@3064ae30
+08-22 18:55:42.950    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.framework.context.d@3896237e
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.framework.prompt.PromptManagerImpl@831b0df
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Registering listener for event: ACTIVITY_RESUME, com.amazon.android.framework.prompt.f@1850682e
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Adding listener: com.amazon.android.framework.prompt.f@1850682e
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Registering listener for event: APPLICATION_DESTROY, com.amazon.android.framework.prompt.i@1b8e8fcf
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Adding listener: com.amazon.android.framework.prompt.i@1b8e8fcf
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Registering listener for event: SwitchToTestModeEvent, com.amazon.android.framework.prompt.j@349e7d5c
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Adding listener: com.amazon.android.framework.prompt.j@349e7d5c
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.o.b@c86712c
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.c.a@3fc1c7f5
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ CrashManagerImpl: Registering Crash Handler
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.q.c@cecf98a
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.framework.task.command.b@3faa7bfb
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.m.c@2c7f7418
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.framework.task.command.e@2a33ee71
+08-22 18:55:42.960    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.g.a@27292456
+08-22 18:55:42.980    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.Kiwi@2d441348
+08-22 18:55:42.980    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Registering listener for event: APPLICATION_CREATE, com.amazon.android.g@358c55e1
+08-22 18:55:42.980    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Adding listener: com.amazon.android.g@358c55e1
+08-22 18:55:42.980    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Registering listener for event: APPLICATION_DESTROY, com.amazon.android.e@1bf14f06
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Adding listener: com.amazon.android.e@1bf14f06
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Registering listener for event: ACTIVITY_PAUSE, com.amazon.android.d@1076a9c7
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Adding listener: com.amazon.android.d@1076a9c7
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Registering listener for event: ACTIVITY_RESUME, com.amazon.android.f@12b1bf4
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Adding listener: com.amazon.android.f@12b1bf4
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ Kiwi: Kiwi.Constructor Time: 53
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ Kiwi: onCreate: net.osmand.plus.activities.MapActivity@215d8b9d
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ ContextManagerImpl: Activity->onCreate.  Activity: net.osmand.plus.activities.MapActivity@215d8b9d, Total Activities: 1
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Posting event: ACTIVITY_CREATE
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: No registered listeners, returning
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Posting event: APPLICATION_CREATE
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Notifying listener: com.amazon.android.g@358c55e1
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ Kiwi: Enqueuing launch workflow
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ TaskManagerImpl: Enqueue task on pipeline id: COMMAND
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ TaskManagerImpl: Populating Task: DrmFreeApplicationLaunchTaskWorkflow
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: DrmFreeApplicationLaunchTaskWorkflow
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.i@15c35592
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.r.a@92a1b63
+08-22 18:55:42.990    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.f.a@cd80360
+08-22 18:55:43.000    4240-4240/net.osmand.plus D/Kiwi﹕ SimpleTaskPipeline: Scheduling task: DrmFreeApplicationLaunchTaskWorkflow
+08-22 18:55:43.000    4240-4240/net.osmand.plus D/Kiwi﹕ Kiwi: Kiwi.ActivityOnCreate Time: 63
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ SimpleTaskPipeline: KIWI_COMMAND: Executing Task: DrmFreeApplicationLaunchTaskWorkflow, current time: Sat Aug 22 18:55:43 MESZ 2015, uptime: 5580492
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ TaskWorkflow: Exiting task workflow: DrmFreeApplicationLaunchTaskWorkflow
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ AbstractCommandTask: ----------------------------------------------
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ AbstractCommandTask: Executing: check_blocked_status
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ AbstractCommandTask: ----------------------------------------------
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ AbstractCommandTask: Executing Command: check_blocked_status
+08-22 18:55:43.000    4240-4240/net.osmand.plus D/Kiwi﹕ Kiwi: onStart: net.osmand.plus.activities.MapActivity@215d8b9d
+08-22 18:55:43.000    4240-4240/net.osmand.plus D/Kiwi﹕ ContextManagerImpl: Activity started: net.osmand.plus.activities.MapActivity@215d8b9d
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ CommandServiceClient: Binding Service!!!
+08-22 18:55:43.000    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Posting event: ACTIVITY_START
+08-22 18:55:43.000    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: No registered listeners, returning
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ CommandServiceClient: Created intent with  action  com.amazon.venezia.CommandService
+08-22 18:55:43.000    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Posting event: APPLICATION_START
+08-22 18:55:43.000    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: No registered listeners, returning
+08-22 18:55:43.000    4240-4240/net.osmand.plus D/Kiwi﹕ Kiwi: Kiwi.ActivityOnStart Time: 1
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ CommandServiceClient: Found service on one or more packages
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ CommandServiceClient: No previously determined package found, checking for suitable package.
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ CommandServiceClient: Examining package com.amazon.venezia
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ CommandServiceClient: Priority is 0
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ CommandServiceClient: Checking signature of package com.amazon.venezia
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ CommandServiceClient: isPackageSignatureTrusted com.amazon.venezia
+08-22 18:55:43.000    4240-4269/net.osmand.plus D/Kiwi﹕ CommandResultVerifier: checkSignatures(com.amazon.venezia, [UMnMxqPqVAul56Dpcj4ektTiUO3TKzO1azQAubOpZIwqgw35kEAibdIj1k9oCIGSGI95DgpE2zIfSHd08RnOn3JSjlezhFaxfe86WTUyEfo+NRBQA1nnh+B1AH9S7fOaRc03anuJiJEOvvubCcKmrOVFJqVAq1C6xFflpF4/F6zCfC/3vu1pfEA/3KZDlgV+TDeA4h/0fNuhy3V573KsbAkX2NrRMIPWZIukKhr43FF2JY6iZfeqJVc4pCnqakNjypMYX7iuF3RoTDYzpnYrIvBYL4RPz0y2/iZuuYairAKOX3/Iz5nZGsNqVWpL6eolD6RAqVjixPmgU4ezM7lHrnpA4Qeo2d0osyfFZF9eX73RFPA3cJcPbCiLt8TOaQIJscROaDnEM8LDzOubKjLJijMUTtPTI6dJ3sHQ7Nc+DxvcN//8uJ7iwZtBP4RCrq8qqqInL1TOiGU73NXIEHPzLQeQd1DudbCSRMO7sWUwIVdCiRB/s5q+IiJ7iCXLT75Gm3rKAHtJ4/V3FsyW8PiXcCVCM8tO+Gs8nXanngQBgW7ZaVxbRyi+LfOEVQUAkaMYKWi/AqfNen0WmVokYxFsK3bqciy1UIZBRsUr6+qjnZrTKi2hVW3FTnnXxqPRZ1a/JsfrSZ5uNpFwtzLGfS7iN3044Vf0QOfGNkLVgepl3R4=, C2fUhy63IhXyqoGahh1qkUN7Bw3j1WsgC4kGTENzEgNtUuqM2U9Vf1vk0VTDR04hkZWWFdBkGZVEQjc72DSCWQGiGbt6ch/wFqm/p9SBpc/ei7HMFCNuqCabwQQkZdQzx4REwrLunIlPrIZfD2aNSGbA8BhKSAhvCU/OEkVs97s=, bvO9zFNa5ZSot1oWToLo95vuC59kRPRsdxzohpb62WAPxVaz/iDMEal8XqcucaYPV4Ud5TQCDOuluYiqAUz+CveNN4ngAc3ECy9v8vvsxrAZsXrVqWf2ojFN16ORwyGXf2rddCzL2+KTZ6t/7Sq0/G4t7HL1AbdjEFUFvXo7wIOXX0Xvvef9nvPT7MibwZax0WSv05qtVrACUiqx2Tjd25Q2Q17CCsB1uorjhwsYCTsjgAH96O3/6GTLMXhyGiFO977I4SG4u0h+m1q6sivrdDFLzWQbuGGsdTI8ixEu7u6rlb8FsF/mzYvyFNVTaCTIQ/bpv3x6JrIirVMJFcVQKQ==]
+08-22 18:55:43.010    4240-4269/net.osmand.plus D/Kiwi﹕ CommandResultVerifier: Signature valid: true
+08-22 18:55:43.010    4240-4269/net.osmand.plus D/Kiwi﹕ CommandServiceClient: Signature of package com.amazon.venezia is okay
+08-22 18:55:43.010    4240-4269/net.osmand.plus D/Kiwi﹕ CommandServiceClient: Attempting to bind to service on com.amazon.venezia
+08-22 18:55:43.010    4240-4269/net.osmand.plus D/Kiwi﹕ CommandServiceClient: Blocking while service is being bound!!
+08-22 18:55:43.241    4240-4268/net.osmand.plus E/SQLiteLog﹕ (1802) os_unix.c:27930: (107) fstat(/storage/sdcard1/osmand/tiles/hillshade.cache-journal) -
+08-22 18:55:43.251    4240-4268/net.osmand.plus E/SQLiteLog﹕ (2570) os_unix.c:30184: (107) unlink(/storage/sdcard1/osmand/tiles/hillshade.cache-wal) -
+08-22 18:55:43.251    4240-4268/net.osmand.plus E/SQLiteLog﹕ (2570) statement aborts at 32: [CREATE TABLE IF NOT EXISTS android_metadata (locale TEXT)] disk I/O error
+08-22 18:55:43.261    4240-4268/net.osmand.plus E/SQLiteDatabase﹕ Failed to open database '/storage/sdcard1/osmand/tiles/hillshade.cache'.
+    android.database.sqlite.SQLiteException: Failed to change locale for db '/storage/sdcard1/osmand/tiles/hillshade.cache' to 'de_DE'.
+            at android.database.sqlite.SQLiteConnection.setLocaleFromConfiguration(SQLiteConnection.java:395)
+            at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:218)
+            at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+            at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+            at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+            at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+            at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:806)
+            at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:791)
+            at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:694)
+            at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:669)
+            at net.osmand.plus.srtmplugin.HillshadeLayer$1.doInBackground(HillshadeLayer.java:53)
+            at net.osmand.plus.srtmplugin.HillshadeLayer$1.doInBackground(HillshadeLayer.java:47)
+            at android.os.AsyncTask$2.call(AsyncTask.java:292)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:818)
+     Caused by: android.database.sqlite.SQLiteDiskIOException: disk I/O error (code 2570)
+            at android.database.sqlite.SQLiteConnection.nativeExecute(Native Method)
+            at android.database.sqlite.SQLiteConnection.execute(SQLiteConnection.java:557)
+            at android.database.sqlite.SQLiteConnection.setLocaleFromConfiguration(SQLiteConnection.java:371)
+            at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:218)
+            at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+            at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+            at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+            at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+            at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:806)
+            at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:791)
+            at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:694)
+            at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:669)
+            at net.osmand.plus.srtmplugin.HillshadeLayer$1.doInBackground(HillshadeLayer.java:53)
+            at net.osmand.plus.srtmplugin.HillshadeLayer$1.doInBackground(HillshadeLayer.java:47)
+            at android.os.AsyncTask$2.call(AsyncTask.java:292)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:818)
+08-22 18:55:43.261    4240-4268/net.osmand.plus D/Kiwi﹕ CrashManagerImpl: Crash detected
+    java.lang.RuntimeException: An error occured while executing doInBackground()
+            at android.os.AsyncTask$3.done(AsyncTask.java:304)
+            at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:355)
+            at java.util.concurrent.FutureTask.setException(FutureTask.java:222)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:818)
+     Caused by: android.database.sqlite.SQLiteException: Failed to change locale for db '/storage/sdcard1/osmand/tiles/hillshade.cache' to 'de_DE'.
+            at android.database.sqlite.SQLiteConnection.setLocaleFromConfiguration(SQLiteConnection.java:395)
+            at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:218)
+            at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+            at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+            at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+            at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+            at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:806)
+            at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:791)
+            at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:694)
+            at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:669)
+            at net.osmand.plus.srtmplugin.HillshadeLayer$1.doInBackground(HillshadeLayer.java:53)
+            at net.osmand.plus.srtmplugin.HillshadeLayer$1.doInBackground(HillshadeLayer.java:47)
+            at android.os.AsyncTask$2.call(AsyncTask.java:292)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:818)
+     Caused by: android.database.sqlite.SQLiteDiskIOException: disk I/O error (code 2570)
+            at android.database.sqlite.SQLiteConnection.nativeExecute(Native Method)
+            at android.database.sqlite.SQLiteConnection.execute(SQLiteConnection.java:557)
+            at android.database.sqlite.SQLiteConnection.setLocaleFromConfiguration(SQLiteConnection.java:371)
+            at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:218)
+            at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:193)
+            at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:463)
+            at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:185)
+            at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:177)
+            at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:806)
+            at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:791)
+            at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:694)
+            at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:669)
+            at net.osmand.plus.srtmplugin.HillshadeLayer$1.doInBackground(HillshadeLayer.java:53)
+            at net.osmand.plus.srtmplugin.HillshadeLayer$1.doInBackground(HillshadeLayer.java:47)
+            at android.os.AsyncTask$2.call(AsyncTask.java:292)
+            at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+            at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:231)
+            at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+            at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+            at java.lang.Thread.run(Thread.java:818)
+08-22 18:55:43.301    4240-4240/net.osmand.plus W/System.err﹕ OnCreate for MapActivity took 302 ms
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ Kiwi: onResume: net.osmand.plus.activities.MapActivity@215d8b9d
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ ContextManagerImpl: Activity resumed: net.osmand.plus.activities.MapActivity@215d8b9d, is child: false
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ ContextManagerImpl: Setting visible to: net.osmand.plus.activities.MapActivity@215d8b9d
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ ContextManagerImpl: Activity now visible: net.osmand.plus.activities.MapActivity@215d8b9d, publishing resume event
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Posting event: ACTIVITY_RESUME
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Notifying listener: ForegroundTaskPipeline:onResume listener
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ ForegroundTaskPipeline: Activity resumed, scheduling tasks on UI thread
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Notifying listener: com.amazon.android.e.e@3064ae30
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Notifying listener: com.amazon.android.framework.prompt.f@1850682e
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ EventListenerNotificationQueue: Notifying listener: com.amazon.android.f@12b1bf4
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ Kiwi: Adding lifecycle RESUME command to pipeline
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ TaskManagerImpl: Enqueue task on pipeline id: COMMAND
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ TaskManagerImpl: Populating Task: com.amazon.android.t.a@39510743
+08-22 18:55:43.301    4240-4240/net.osmand.plus D/Kiwi﹕ ResourceManagerImpl: Populating: com.amazon.android.t.a@39510743
+08-22 18:55:43.311    4240-4240/net.osmand.plus D/Kiwi﹕ SimpleTaskPipeline: Scheduling task: com.amazon.android.t.a@39510743
+08-22 18:55:43.311    4240-4240/net.osmand.plus D/Kiwi﹕ Kiwi: Kiwi.ActivityOnResume Time: 5
+08-22 18:55:43.371    4240-4255/net.osmand.plus I/art﹕ Background sticky concurrent mark sweep GC freed 74474(3MB) AllocSpace objects, 17(4MB) LOS objects, 13% free, 39MB/45MB, paused 6.103ms total 111.419ms
+08-22 18:55:43.411    4240-4268/net.osmand.plus D/Kiwi﹕ EventManagerImpl: Posting event: CRASH_EVENT
+08-22 18:55:43.411    4240-4268/net.osmand.plus D/Kiwi﹕ EventManagerImpl: No registered listeners, returning
+08-22 18:55:43.411    4240-4268/net.osmand.plus D/Kiwi﹕ CrashManagerImpl: Calling previous handler
+08-22 18:55:43.411    4240-4268/net.osmand.plus E/net.osmand﹕ Exception while handle other exception
+    java.io.FileNotFoundException: /storage/sdcard1/osmand/exception.log: open failed: ENOTCONN (Transport endpoint is not connected)
+            at libcore.io.IoBridge.open(IoBridge.java:456)
+            at java.io.FileOutputStream.<init>(FileOutputStream.java:87)
+            at java.io.FileWriter.<init>(FileWriter.java:58)
+            at net.osmand.plus.OsmandApplication$DefaultExceptionHandler.uncaughtException(OsmandApplication.java:492)
+            at com.amazon.android.c.a.uncaughtException(Unknown Source)
+            at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+            at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+     Caused by: android.system.ErrnoException: open failed: ENOTCONN (Transport endpoint is not connected)
+            at libcore.io.Posix.open(Native Method)
+            at libcore.io.BlockGuardOs.open(BlockGuardOs.java:186)
+            at libcore.io.IoBridge.open(IoBridge.java:442)
+            at java.io.FileOutputStream.<init>(FileOutputStream.java:87)
+            at java.io.FileWriter.<init>(FileWriter.java:58)
+            at net.osmand.plus.OsmandApplication$DefaultExceptionHandler.uncaughtException(OsmandApplication.java:492)
+            at com.amazon.android.c.a.uncaughtException(Unknown Source)
+            at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+            at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:690)
+08-22 18:55:43.491    4240-4240/net.osmand.plus A/libc﹕ Fatal signal 7 (SIGBUS), code 2, fault addr 0xb32a7000 in tid 4240 (net.osmand.plus)
+08-22 18:55:43.591      218-218/? I/DEBUG﹕ pid: 4240, tid: 4240, name: net.osmand.plus  >>> net.osmand.plus <<<
+08-22 18:55:44.131    1088-4272/system_process W/ActivityManager﹕ Force finishing activity 1 net.osmand.plus/.activities.MapActivity
+08-22 18:55:44.442    1088-4272/system_process I/WindowManager﹕ Screenshot max retries 4 of Token{286f2cc ActivityRecord{3a02b4ff u0 net.osmand.plus/.activities.MapActivity t4 f}} appWin=Window{3c1ecf64 u0 Starting net.osmand.plus} drawState=4
+08-22 18:55:44.552   1088-12147/system_process I/ActivityManager﹕ Process net.osmand.plus (pid 4240) has died
+08-22 18:58:17.508      197-259/? D/Vold﹕ Found ASEC at path /mnt/secure/asec/net.osmand.plus-2.asec

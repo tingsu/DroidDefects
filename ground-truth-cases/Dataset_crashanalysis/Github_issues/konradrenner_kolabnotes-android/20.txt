@@ -1,0 +1,12 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'org.kore.kolab.notes.Note$Identification org.kore.kolab.notes.Notebook.getIdentification()' on a null object reference
+            at org.kore.kolabnotes.android.MainPhoneActivity$CreateButtonListener.onClick(MainPhoneActivity.java:587)
+            at android.view.View.performClick(View.java:4781)
+            at android.view.View$PerformClick.run(View.java:19873)
+            at android.os.Handler.handleCallback(Handler.java:739)
+            at android.os.Handler.dispatchMessage(Handler.java:95)
+            at android.os.Looper.loop(Looper.java:135)
+            at android.app.ActivityThread.main(ActivityThread.java:5293)
+            at java.lang.reflect.Method.invoke(Native Method)
+            at java.lang.reflect.Method.invoke(Method.java:372)
+            at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+            at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)

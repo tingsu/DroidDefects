@@ -1,0 +1,9 @@
+12-08 15:18:54.341: E/AndroidRuntime(32587): java.lang.NullPointerException: Attempt to read from null array
+12-08 15:18:54.341: E/AndroidRuntime(32587):    at net.majorkernelpanic.streaming.hw.NV21Convertor.convert(NV21Convertor.java:141)
+12-08 15:18:54.341: E/AndroidRuntime(32587):    at net.majorkernelpanic.streaming.hw.NV21Convertor.convert(NV21Convertor.java:108)
+12-08 15:18:54.341: E/AndroidRuntime(32587):    at net.majorkernelpanic.streaming.video.VideoStream$2.onPreviewFrame(VideoStream.java:455)
+12-08 15:18:54.341: E/AndroidRuntime(32587):    at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1127)
+12-08 15:18:54.341: E/AndroidRuntime(32587):    at android.os.Handler.dispatchMessage(Handler.java:102)
+12-08 15:18:54.341: E/AndroidRuntime(32587):    at android.os.Looper.loop(Looper.java:135)
+12-08 15:18:54.341: E/AndroidRuntime(32587):    at net.majorkernelpanic.streaming.video.VideoStream$3.run(VideoStream.java:542)
+12-08 15:18:54.341: E/AndroidRuntime(32587):    at java.lang.Thread.run(Thread.java:818)

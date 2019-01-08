@@ -1,0 +1,30 @@
+//this is an auto-generated bug report
+//package name: com.mattallen.dpixel
+//version: 1.0
+//appro_time: 2
+ java.lang.NumberFormatException: Invalid double: ""
+ 	at java.lang.StringToReal.invalidReal(StringToReal.java:63)
+ 	at java.lang.StringToReal.initialParse(StringToReal.java:163)
+ 	at java.lang.StringToReal.parseDouble(StringToReal.java:263)
+ 	at java.lang.Double.parseDouble(Double.java:295)
+ 	at com.mattallen.dpixel.DPToPixelFragment$1.onTextChanged(DPToPixelFragment.java:40)
+ 	at android.widget.TextView.sendOnTextChanged(TextView.java:7318)
+ 	at android.widget.TextView.handleTextChanged(TextView.java:7377)
+ 	at android.widget.TextView$ChangeWatcher.onTextChanged(TextView.java:9076)
+ 	at android.text.SpannableStringBuilder.sendTextChanged(SpannableStringBuilder.java:962)
+ 	at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:496)
+ 	at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:435)
+ 	at android.text.SpannableStringBuilder.replace(SpannableStringBuilder.java:30)
+ 	at android.view.inputmethod.BaseInputConnection.replaceText(BaseInputConnection.java:673)
+ 	at android.view.inputmethod.BaseInputConnection.commitText(BaseInputConnection.java:197)
+ 	at com.android.internal.widget.EditableInputConnection.commitText(EditableInputConnection.java:183)
+ 	at com.android.internal.view.IInputConnectionWrapper.executeMessage(IInputConnectionWrapper.java:279)
+ 	at com.android.internal.view.IInputConnectionWrapper$MyHandler.handleMessage(IInputConnectionWrapper.java:77)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

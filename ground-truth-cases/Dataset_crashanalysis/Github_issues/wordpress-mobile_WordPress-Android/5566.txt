@@ -1,0 +1,11 @@
+Fatal Exception: java.lang.NumberFormatException: Invalid long: ""
+       at java.lang.Long.invalidLong(Long.java:124)
+       at java.lang.Long.parseLong(Long.java:345)
+       at java.lang.Long.parseLong(Long.java:321)
+       at java.lang.Long.valueOf(Long.java:511)
+       at org.wordpress.android.ui.posts.EditPostActivity.onMediaUploadCancelClicked(EditPostActivity.java:2148)
+       at org.wordpress.android.editor.EditorFragment$20.onClick(EditorFragment.java:1349)
+       at android.support.v7.app.AlertController$ButtonHandler.handleMessage(AlertController.java:161)
+       at android.os.Handler.dispatchMessage(Handler.java:111)
+       at android.os.Looper.loop(Looper.java:207)
+       at android.os.HandlerThread.run(HandlerThread.java:61)

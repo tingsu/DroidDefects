@@ -1,0 +1,14 @@
+                                                java.lang.SecurityException: get package info: Neither user 1110036 nor current process has android.permission.INTERACT_ACROSS_USERS.
+                                                    at android.app.ContextImpl.enforce(ContextImpl.java:1654)
+                                                    at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1686)
+                                                    at com.android.server.pm.PackageManagerService.enforceCrossUserPermission(PackageManagerService.java:5266)
+                                                    at com.android.server.pm.PackageManagerService.getPackageInfo(PackageManagerService.java:4556)
+                                                    at android.app.ApplicationPackageManager.getPackageInfo(ApplicationPackageManager.java:215)
+                                                    at com.android.providers.settings.SettingsProvider.getCallingPackageInfoOrThrow(SettingsProvider.java:1199)
+                                                    at com.android.providers.settings.SettingsProvider.enforceRestrictedSystemSettingsMutationForCallingPackage(SettingsProvider.java:1160)
+                                                    at com.android.providers.settings.SettingsProvider.mutateSystemSetting(SettingsProvider.java:1025)
+                                                    at com.android.providers.settings.SettingsProvider.insertSystemSetting(SettingsProvider.java:978)
+                                                    at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:330)
+                                                    at android.content.ContentProvider$Transport.call(ContentProvider.java:411)
+                                                    at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:283)
+                                                    at android.os.Binder.execTransact(Binder.java:453)`

@@ -1,0 +1,57 @@
+java.lang.SecurityException: caller uid 10161 is different than the authenticator's uid
+    at android.os.Parcel.readException(Parcel.java:1540)
+    at android.os.Parcel.readException(Parcel.java:1493)
+    at android.accounts.IAccountManager$Stub$Proxy.getUserData(IAccountManager.java:653)
+    at android.accounts.AccountManager.getUserData(AccountManager.java:344)
+    at com.nextgis.maplibui.dialog.SelectNGWResourceDialog.fillConnections(SelectNGWResourceDialog.java:189)
+    at com.nextgis.maplibui.dialog.SelectNGWResourceDialog.onCreateDialog(SelectNGWResourceDialog.java:103)
+    at android.support.v4.app.DialogFragment.getLayoutInflater(DialogFragment.java:308)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1078)
+    at android.support.v4.app.FragmentManagerImpl.moveToState(FragmentManager.java:1259)
+    at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:738)
+    at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1624)
+    at android.support.v4.app.FragmentManagerImpl$1.run(FragmentManager.java:517)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:145)
+    at android.app.ActivityThread.main(ActivityThread.java:6145)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1399)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1194)
+```
+
+Возможно проблема именно в вызове  getUserData
+
+Еще стэктрейс:
+
+```
+java.lang.RuntimeException: Unable to start activity ComponentInfo{com.nextgis.mobile/com.nextgis.mobile.activity.NGWSettingsActivityProxy}: java.lang.SecurityException: caller uid 10161 is different than the authenticator's uid
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2808)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2873)
+    at android.app.ActivityThread.access$900(ActivityThread.java:181)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1482)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:145)
+    at android.app.ActivityThread.main(ActivityThread.java:6145)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1399)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1194)
+Caused by: java.lang.SecurityException: caller uid 10161 is different than the authenticator's uid
+    at android.os.Parcel.readException(Parcel.java:1540)
+    at android.os.Parcel.readException(Parcel.java:1493)
+    at android.accounts.IAccountManager$Stub$Proxy.getUserData(IAccountManager.java:653)
+    at android.accounts.AccountManager.getUserData(AccountManager.java:344)
+    at com.nextgis.maplibui.GISApplication.getAccountUserData(GISApplication.java:341)
+    at com.nextgis.maplibui.GISApplication.getAccountUrl(GISApplication.java:236)
+    at com.nextgis.maplibui.activity.NGWSettingsActivity.addEditAccountAction(NGWSettingsActivity.java:504)
+    at com.nextgis.maplibui.activity.NGWSettingsActivity.fillAccountPreferences(NGWSettingsActivity.java:276)
+    at com.nextgis.maplibui.fragment.NGWSettingsFragment.onCreate(NGWSettingsFragment.java:50)
+    at android.app.Fragment.performCreate(Fragment.java:2075)
+    at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:868)
+    at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1082)
+    at android.app.BackStackRecord.run(BackStackRecord.java:833)
+    at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1467)
+    at android.app.Activity.performStart(Activity.java:6411)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2771)

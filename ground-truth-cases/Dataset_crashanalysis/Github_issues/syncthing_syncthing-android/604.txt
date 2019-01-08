@@ -1,0 +1,17 @@
+E/AndroidRuntime(17900): java.lang.RuntimeException: Unable to start activity ComponentInfo{com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.activities.SettingsActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.hashCode()' on a null object reference
+E/AndroidRuntime(17900):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2379)
+E/AndroidRuntime(17900):        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2442)
+E/AndroidRuntime(17900):        at android.app.ActivityThread.access$800(ActivityThread.java:156)
+E/AndroidRuntime(17900):        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1351)
+E/AndroidRuntime(17900):        at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(17900):        at android.os.Looper.loop(Looper.java:211)
+E/AndroidRuntime(17900):        at android.app.ActivityThread.main(ActivityThread.java:5373)
+E/AndroidRuntime(17900):        at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(17900):        at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(17900):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1020)
+E/AndroidRuntime(17900):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:815)
+E/AndroidRuntime(17900): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.hashCode()' on a null object reference
+E/AndroidRuntime(17900):        at com.nutomic.syncthingandroid.activities.SettingsActivity.onCreate(SettingsActivity.java:41)
+E/AndroidRuntime(17900):        at android.app.Activity.performCreate(Activity.java:5990)
+E/AndroidRuntime(17900):        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+E/AndroidRuntime(17900):        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2332)

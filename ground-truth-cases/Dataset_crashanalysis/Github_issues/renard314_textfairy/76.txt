@@ -1,0 +1,8 @@
+    java.lang.SecurityException: Permission Denial: get/set setting for user asks to run as user -2 but is calling from user 0; this requires android.permission.INTERACT_ACROSS_USERS_FULL
+            at com.android.server.am.ActivityManagerService.handleIncomingUser(ActivityManagerService.java:14643)
+            at android.app.ActivityManager.handleIncomingUser(ActivityManager.java:2469)
+            at com.android.providers.settings.SettingsProvider.call(SettingsProvider.java:688)
+            at android.content.ContentProvider$Transport.call(ContentProvider.java:325)
+            at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:275)
+            at android.os.Binder.execTransact(Binder.java:404)
+            at dalvik.system.NativeStart.run(Native Method)

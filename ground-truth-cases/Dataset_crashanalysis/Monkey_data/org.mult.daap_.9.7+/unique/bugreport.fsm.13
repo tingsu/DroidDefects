@@ -1,0 +1,10 @@
+//this is an auto-generated bug report
+//package name: org.mult.daap
+//version: .9.7+
+//appro_time: 29
+ java.lang.NullPointerException
+ 	at org.mult.daap.Servers.update(Servers.java:424)
+ 	at java.util.Observable.notifyObservers(Observable.java:138)
+ 	at org.mult.daap.background.LoginManager.notifyAndSet(LoginManager.java:44)
+ 	at org.mult.daap.background.LoginManager.run(LoginManager.java:95)
+ 	at java.lang.Thread.run(Thread.java:841)

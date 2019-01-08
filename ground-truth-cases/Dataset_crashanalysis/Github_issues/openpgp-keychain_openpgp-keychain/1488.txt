@@ -1,0 +1,18 @@
+E/AndroidRuntime(23874): java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=100484, result=-1, data=Intent { (has extras) }} to activity {org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.remote.ui.RemoteServiceActivity}: java.lang.ClassCastException: org.sufficientlysecure.keychain.operations.results.ImportKeyResult cannot be cast to org.sufficientlysecure.keychain.operations.results.EditKeyResult
+E/AndroidRuntime(23874):    at android.app.ActivityThread.deliverResults(ActivityThread.java:3351)
+E/AndroidRuntime(23874):    at android.app.ActivityThread.handleSendResult(ActivityThread.java:3394)
+E/AndroidRuntime(23874):    at android.app.ActivityThread.access$1300(ActivityThread.java:135)
+E/AndroidRuntime(23874):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1244)
+E/AndroidRuntime(23874):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(23874):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime(23874):    at android.app.ActivityThread.main(ActivityThread.java:5001)
+E/AndroidRuntime(23874):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime(23874):    at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime(23874):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+E/AndroidRuntime(23874):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+E/AndroidRuntime(23874):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime(23874): Caused by: java.lang.ClassCastException: org.sufficientlysecure.keychain.operations.results.ImportKeyResult cannot be cast to org.sufficientlysecure.keychain.operations.results.EditKeyResult
+E/AndroidRuntime(23874):    at org.sufficientlysecure.keychain.remote.ui.AccountSettingsFragment.onActivityResult(AccountSettingsFragment.java:109)
+E/AndroidRuntime(23874):    at android.support.v4.app.FragmentActivity.onActivityResult(FragmentActivity.java:165)
+E/AndroidRuntime(23874):    at android.app.Activity.dispatchActivityResult(Activity.java:5475)
+E/AndroidRuntime(23874):    at android.app.ActivityThread.deliverResults(ActivityThread.java:3347)

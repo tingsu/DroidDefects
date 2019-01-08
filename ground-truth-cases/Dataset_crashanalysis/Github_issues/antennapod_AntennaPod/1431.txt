@@ -1,0 +1,28 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{de.danoeh.antennapod/de.danoeh.antennapod.activity.MainActivity}: android.support.v4.app.Fragment$InstantiationException: Unable to instantiate fragment de.danoeh.antennapod.dialog.EpisodesApplyActionFragment: make sure class name exists, is public, and has an empty constructor that is public
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2449)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2509)
+    at android.app.ActivityThread.access$900(ActivityThread.java:172)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1308)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:146)
+    at android.app.ActivityThread.main(ActivityThread.java:5694)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:515)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1291)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1107)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: android.support.v4.app.Fragment$InstantiationException: Unable to instantiate fragment de.danoeh.antennapod.dialog.EpisodesApplyActionFragment: make sure class name exists, is public, and has an empty constructor that is public
+    at android.support.v4.app.Fragment.instantiate(Fragment.java:432)
+    at android.support.v4.app.FragmentState.instantiate(Fragment.java:102)
+    at android.support.v4.app.FragmentManagerImpl.restoreAllState(FragmentManager.java:1835)
+    at android.support.v4.app.FragmentActivity.onCreate(FragmentActivity.java:266)
+    at android.support.v7.app.AppCompatActivity.onCreate(AppCompatActivity.java:58)
+    at de.danoeh.antennapod.activity.MainActivity.onCreate(MainActivity.java:124)
+    at android.app.Activity.performCreate(Activity.java:5541)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1093)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2413)
+    ... 11 more
+Caused by: java.lang.InstantiationException: can't instantiate class de.danoeh.antennapod.dialog.EpisodesApplyActionFragment; no empty constructor
+    at java.lang.Class.newInstanceImpl(Native Method)
+    at java.lang.Class.newInstance(Class.java:1208)
+    at android.support.v4.app.Fragment.instantiate(Fragment.java:421)

@@ -1,0 +1,19 @@
+java.lang.IllegalArgumentException: Invalid number of points in LinearRing (found 3 - must be 0 or >= 4)
+        at com.vividsolutions.jts.geom.LinearRing.validateConstruction(LinearRing.java:114)
+        at com.vividsolutions.jts.geom.LinearRing.<init>(LinearRing.java:106)
+        at com.vividsolutions.jts.geom.GeometryFactory.createLinearRing(GeometryFactory.java:355)
+        at com.vividsolutions.jts.geom.GeometryFactory.createLinearRing(GeometryFactory.java:342)
+        at net.osmand.data.Ring.toLinearRing(Ring.java:219)
+        at net.osmand.data.Multipolygon.toMultiPolygon(Multipolygon.java:57)
+        at net.osmand.data.preparation.address.IndexAddressCreator.postcodesInCityBoundary(IndexAddressCreator.java:982)
+        at net.osmand.data.preparation.address.IndexAddressCreator.writeCityBlockIndex(IndexAddressCreator.java:1221)
+        at net.osmand.data.preparation.address.IndexAddressCreator.writeBinaryAddressIndex(IndexAddressCreator.java:1095)
+        at net.osmand.data.preparation.IndexCreator.generateIndexes(IndexCreator.java:731)
+        at net.osmand.data.preparation.IndexCreator.generateIndexes(IndexCreator.java:578)
+        at net.osmand.data.index.IndexBatchCreator.generateIndex(IndexBatchCreator.java:552)
+        at net.osmand.data.index.IndexBatchCreator.generatedIndexes(IndexBatchCreator.java:464)
+        at net.osmand.data.index.IndexBatchCreator.runBatch(IndexBatchCreator.java:307)
+        at net.osmand.data.index.IndexBatchCreator.main(IndexBatchCreator.java:165)
+```
+
+MapCreator is the latest version, but it seems to be happening for, at least, ~3 days.

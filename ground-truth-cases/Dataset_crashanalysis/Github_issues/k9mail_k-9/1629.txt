@@ -1,0 +1,10 @@
+                                                   java.lang.IllegalStateException: Can not perform this action after onSaveInstanceState
+                                                       at android.app.FragmentManagerImpl.checkStateLoss(FragmentManager.java:1434)
+                                                       at android.app.FragmentManagerImpl.enqueueAction(FragmentManager.java:1452)
+                                                       at android.app.BackStackRecord.commitInternal(BackStackRecord.java:707)
+                                                       at android.app.BackStackRecord.commit(BackStackRecord.java:671)
+                                                       at android.app.DialogFragment.dismissInternal(DialogFragment.java:301)
+                                                       at android.app.DialogFragment.dismiss(DialogFragment.java:267)
+                                                       at com.fsck.k9.ui.messageview.MessageViewFragment.removeDialog(MessageViewFragment.java:551)
+                                                       at com.fsck.k9.ui.messageview.MessageViewFragment.access$200(MessageViewFragment.java:55)
+                                                       at com.fsck.k9.ui.messageview.MessageViewFragment$3.run(MessageViewFragment.java:648)

@@ -1,0 +1,14 @@
+java.lang.RuntimeException: Unable to start receiver fr.neamar.kiss.broadcast.NewAppInstalledHandler: java.lang.NullPointerException: Attempt to invoke virtual method 'void fr.neamar.kiss.dataprovider.ShortcutProvider.removeShortcuts(java.lang.String)' on a null object reference
+    at android.app.ActivityThread.handleReceiver(ActivityThread.java:2832)
+    at android.app.ActivityThread.access$1700(ActivityThread.java:178)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1547)
+    at android.os.Handler.dispatchMessage(Handler.java:111)
+    at android.os.Looper.loop(Looper.java:194)
+    at android.app.ActivityThread.main(ActivityThread.java:5631)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:959)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:754)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void fr.neamar.kiss.dataprovider.ShortcutProvider.removeShortcuts(java.lang.String)' on a null object reference
+    at fr.neamar.kiss.broadcast.NewAppInstalledHandler.onReceive(NewAppInstalledHandler.java:43)
+    at android.app.ActivityThread.handleReceiver(ActivityThread.java:2825)

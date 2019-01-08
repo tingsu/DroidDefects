@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: com.drhoffmannsoftware
+//version: 1.16-7-sf
+//appro_time: 66
+ android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=market://search?q=pub:"Markus Hoffmann" }
+ 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1632)
+ 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1424)
+ 	at android.app.Activity.startActivityForResult(Activity.java:3390)
+ 	at android.app.Activity.startActivityForResult(Activity.java:3351)
+ 	at android.app.Activity.startActivity(Activity.java:3587)
+ 	at android.app.Activity.startActivity(Activity.java:3555)
+ 	at com.drhoffmannsoftware.PreferencesActivity.onPreferenceTreeClick(PreferencesActivity.java:112)
+ 	at android.preference.Preference.performClick(Preference.java:960)
+ 	at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:215)
+ 	at android.widget.AdapterView.performItemClick(AdapterView.java:298)
+ 	at android.widget.AbsListView.performItemClick(AbsListView.java:1100)
+ 	at android.widget.AbsListView$PerformClick.run(AbsListView.java:2788)
+ 	at android.widget.AbsListView$1.run(AbsListView.java:3463)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,7 @@
+12-07 11:52:43.864 E/AndroidRuntime(28352): java.lang.NullPointerException: Attempt to invoke virtual method 'int com.owncloud.android.lib.resources.shares.ShareType.getValue()' on a null object reference
+12-07 11:52:43.864 E/AndroidRuntime(28352):     at com.owncloud.android.datamodel.FileDataStorageManager.prepareInsertShares(FileDataStorageManager.java:1501)
+12-07 11:52:43.864 E/AndroidRuntime(28352):     at com.owncloud.android.datamodel.FileDataStorageManager.saveSharesInFolder(FileDataStorageManager.java:1462)
+12-07 11:52:43.864 E/AndroidRuntime(28352):     at com.owncloud.android.operations.RefreshFolderOperation.refreshSharesForFolder(RefreshFolderOperation.java:496)
+12-07 11:52:43.864 E/AndroidRuntime(28352):     at com.owncloud.android.operations.RefreshFolderOperation.run(RefreshFolderOperation.java:216)
+12-07 11:52:43.864 E/AndroidRuntime(28352):     at com.owncloud.android.lib.common.operations.RemoteOperation.run(RemoteOperation.java:303)
+12-07 11:52:43.864 E/AndroidRuntime(28352):     at java.lang.Thread.run(Thread.java:818)

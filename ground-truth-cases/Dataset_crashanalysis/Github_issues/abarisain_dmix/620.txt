@@ -1,0 +1,13 @@
+E/AndroidRuntime( 8781): java.lang.NullPointerException
+E/AndroidRuntime( 8781):        at com.namelessdev.mpdroid.fragments.NowPlayingFragment.updateAudioNameText(NowPlayingFragment.java:785)
+E/AndroidRuntime( 8781):        at com.namelessdev.mpdroid.fragments.NowPlayingFragment.updateStatus(NowPlayingFragment.java:847)
+E/AndroidRuntime( 8781):        at com.namelessdev.mpdroid.fragments.NowPlayingFragment.stateChanged(NowPlayingFragment.java:703)
+E/AndroidRuntime( 8781):        at com.namelessdev.mpdroid.helpers.MPDAsyncHelper.handleMessage(MPDAsyncHelper.java:251)
+E/AndroidRuntime( 8781):        at android.os.Handler.dispatchMessage(Handler.java:98)
+E/AndroidRuntime( 8781):        at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 8781):        at android.app.ActivityThread.main(ActivityThread.java:5146)
+E/AndroidRuntime( 8781):        at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 8781):        at java.lang.reflect.Method.invoke(Method.java:515)
+E/AndroidRuntime( 8781):        at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:732)
+E/AndroidRuntime( 8781):        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:566)
+E/AndroidRuntime( 8781):        at dalvik.system.NativeStart.main(Native Method)

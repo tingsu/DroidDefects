@@ -1,0 +1,11 @@
+>     com.android.dex.DexException: Multiple dex files define Lnet/jcip/annotations/GuardedBy;
+>         at com.android.dx.merge.DexMerger.readSortableTypes(DexMerger.java:596)
+>         at com.android.dx.merge.DexMerger.getSortedTypes(DexMerger.java:554)
+>         at com.android.dx.merge.DexMerger.mergeClassDefs(DexMerger.java:535)
+>         at com.android.dx.merge.DexMerger.mergeDexes(DexMerger.java:171)
+>         at com.android.dx.merge.DexMerger.merge(DexMerger.java:189)
+>         at com.android.dx.command.dexer.Main.mergeLibraryDexBuffers(Main.java:454)
+>         at com.android.dx.command.dexer.Main.runMonoDex(Main.java:302)
+>         at com.android.dx.command.dexer.Main.run(Main.java:245)
+>         at com.android.dx.command.dexer.Main.main(Main.java:214)
+>         at com.android.dx.command.Main.main(Main.java:106)

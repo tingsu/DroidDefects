@@ -1,0 +1,5 @@
+    java.lang.UnsupportedOperationException: Unknown uri for -1: content://com.google.samples.apps.iosched
+            at com.google.samples.apps.iosched.provider.ScheduleProvider.buildSimpleSelection(ScheduleProvider.java:749)
+            at com.google.samples.apps.iosched.provider.ScheduleProvider.delete(ScheduleProvider.java:555)
+            at android.content.ContentProvider$Transport.delete(ContentProvider.java:309)
+            at android.content.ContentResolver.delete(ContentResolver.java:1299)

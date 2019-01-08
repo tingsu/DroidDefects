@@ -1,0 +1,66 @@
+I/DSPLOIT[core.UpdateService.extract](20249): extracting '/storage/emulated/0/HEAD.zip' to '/data/data/it.evilsocket.dsploit/files/msf'
+D/DSPLOIT[tools.Tool.async](20249): at it.evilsocket.dsploit.tools.Tool.async(Tool.java:63)
+D/DSPLOIT[tools.Tool.async](20249): at it.evilsocket.dsploit.tools.Raw.async(Raw.java:60)
+D/DSPLOIT[tools.Tool.async](20249): at it.evilsocket.dsploit.core.UpdateService.extract(UpdateService.java:945)
+D/DSPLOIT[tools.Tool.async](20249): at it.evilsocket.dsploit.core.UpdateService.onHandleIntent(UpdateService.java:1292)
+D/dSploitClient(20249): start_command: parsing "which env"
+D/dSploitClient(20249): start_command: argument found: start=0, end=5
+D/dSploitClient(20249): start_command: argument found: start=6, end=9
+D/dSploitClient(20249): send_message: message sent (fd=51)
+D/dSploitClient(20249): send_message: { seq = 3, size = 12, id = 0, data = '\x03\x01which\x00env\x00' }
+D/dSploitClient(20249): read_message: received a message (fd=51)
+D/dSploitClient(20249): read_message: { seq = 3, size = 4, id = 0, data = '\x04\x00\x02\x00' }
+I/dSploitClient(20249): start_command: child #2 started
+D/dSploitClient(20249): read_message: received a message (fd=51)
+D/dSploitClient(20249): read_message: { seq = 1, size = 17, id = 2, data = '/system/xbin/env\x0A' }
+D/dSploitClient(20249): read_message: received a message (fd=51)
+D/dSploitClient(20249): read_message: { seq = 3, size = 6, id = 0, data = '\x07\x00\x02\x00\x00\x00' }
+D/DSPLOIT[core.ChildManager.onEvent](20249): received an event: NewlineEvent: { line='/system/xbin/env' }
+D/DSPLOIT[core.ChildManager.onEvent](20249): received an event: ChildEnd: { exit_status=0 }
+D/DSPLOIT[core.ChildManager.onEvent](20249): Child #2 exited ( exitValue=0 )
+I/DSPLOIT[core.UpdateService.extract](20249): extraction completed
+I/DSPLOIT[core.UpdateService.extract](20249): .nomedia created
+D/DSPLOIT[tools.Tool.async](20249): at it.evilsocket.dsploit.tools.Tool.async(Tool.java:63)
+D/DSPLOIT[tools.Tool.async](20249): at it.evilsocket.dsploit.tools.Raw.async(Raw.java:60)
+D/DSPLOIT[tools.Tool.async](20249): at it.evilsocket.dsploit.tools.Shell.async(Shell.java:82)
+D/DSPLOIT[tools.Tool.async](20249): at it.evilsocket.dsploit.core.UpdateService.installGems(UpdateService.java:1095)
+D/DSPLOIT[tools.Tool.async](20249): at it.evilsocket.dsploit.core.UpdateService.onHandleIntent(UpdateService.java:1295)
+D/dSploitClient(20249): start_command: parsing "sh"
+D/dSploitClient(20249): start_command: argument found: start=0, end=2
+D/dSploitClient(20249): send_message: message sent (fd=51)
+D/dSploitClient(20249): send_message: { seq = 4, size = 5, id = 0, data = '\x03\x01sh\x00' }
+D/dSploitClient(20249): read_message: received a message (fd=51)
+D/dSploitClient(20249): read_message: { seq = 4, size = 4, id = 0, data = '\x04\x00\x03\x00' }
+I/dSploitClient(20249): start_command: child #3 started
+D/dSploitClient(20249): send_to_child: len=789
+D/dSploitClient(20249): send_message: message sent (fd=51)
+D/dSploitClient(20249): send_message: { seq = 0, size = 789, id = 3, data = 'export RUBYLIB="/data/data/it.evilsocket.dsploit/files/ruby/lib/ruby/site_ruby/1.9.1:/data/data/it.evilsocket.dsploit/files/ruby/lib/ruby/site_ruby/1.9.1/arm-linux-androideabi:/data/data/it.evilsocket.dsploit/files/ruby/lib/ruby/site_ruby:/data/data/it.evilsocket.dsploit/files/ruby/lib/ruby/vendor_ruby/1.9.1:/data/data/it.evilsocket.dsploit/files/ruby/lib/ruby/vendor_ruby/1.9.1/arm-linux-androideabi:/data/data/it.evilsocket.dsploit/files/ruby/lib/ruby/vendor_ruby:/data/data/it.evilsocket.dsploit/files/ruby/lib/ruby/1.9.1:/data/data/it.evilsocket.dsploit/files/ruby/lib/ruby/1.9.1/arm-linux-androideabi"\x0Aexport PATH="$PATH:/data/data/it.evilsocket.dsploit/files/ruby/bin"\x0Aexport HOME="/data/data/it.evilsocket.dsploit/files/ruby/home/ruby"\x0Awhich bundle || gem install bundle; exit $?\x0A' }
+D/dSploitClient(20249): read_message: received a message (fd=51)
+D/dSploitClient(20249): read_message: { seq = 4, size = 6, id = 0, data = '\x07\x00\x03\x00\x01\x00' }
+D/DSPLOIT[core.ChildManager.onEvent](20249): received an event: ChildEnd: { exit_status=1 }
+D/DSPLOIT[core.ChildManager.onEvent](20249): Child #3 exited ( exitValue=1 )
+E/DSPLOIT[core.UpdateService.execShell](20249): running: sh
+E/DSPLOIT[core.UpdateService.execShell](20249): exitValue: 1
+E/DSPLOIT[core.UpdateService.onHandleIntent](20249): java.lang.RuntimeException: cannot install bundle
+D/DSPLOIT[tools.Tool.run](20249): at it.evilsocket.dsploit.tools.Tool.run(Tool.java:35)
+D/DSPLOIT[tools.Tool.run](20249): at it.evilsocket.dsploit.tools.Raw.run(Raw.java:51)
+D/DSPLOIT[tools.Tool.run](20249): at it.evilsocket.dsploit.tools.Raw.run(Raw.java:56)
+D/DSPLOIT[tools.Tool.run](20249): at it.evilsocket.dsploit.core.UpdateService.clearGemsCache(UpdateService.java:1216)
+D/DSPLOIT[tools.Tool.run](20249): at it.evilsocket.dsploit.core.UpdateService.onHandleIntent(UpdateService.java:1339)
+D/dSploitClient(20249): start_command: parsing "rm -rf '/data/data/it.evilsocket.dsploit/files/ruby/lib/ruby/gems/1.9.1/cache/'"
+D/dSploitClient(20249): start_command: argument found: start=0, end=2
+D/dSploitClient(20249): start_command: argument found: start=3, end=6
+D/dSploitClient(20249): start_command: argument found: start=8, end=78
+D/dSploitClient(20249): send_message: message sent (fd=51)
+D/dSploitClient(20249): send_message: { seq = 5, size = 80, id = 0, data = '\x03\x01rm\x00-rf\x00/data/data/it.evilsocket.dsploit/files/ruby/lib/ruby/gems/1.9.1/cache/\x00' }
+D/dSploitClient(20249): read_message: received a message (fd=51)
+D/dSploitClient(20249): read_message: { seq = 5, size = 4, id = 0, data = '\x04\x00\x04\x00' }
+I/dSploitClient(20249): start_command: child #4 started
+D/dSploitClient(20249): read_message: received a message (fd=51)
+D/dSploitClient(20249): read_message: { seq = 5, size = 6, id = 0, data = '\x07\x00\x04\x00\x00\x00' }
+D/DSPLOIT[core.ChildManager.onEvent](20249): received an event: ChildEnd: { exit_status=0 }
+D/DSPLOIT[tools.Tool.run](20249): at it.evilsocket.dsploit.tools.Tool.run(Tool.java:35)
+D/DSPLOIT[tools.Tool.run](20249): at it.evilsocket.dsploit.tools.Raw.run(Raw.java:51)
+D/DSPLOIT[tools.Tool.run](20249): at it.evilsocket.dsploit.tools.Raw.run(Raw.java:56)
+D/DSPLOIT[tools.Tool.run](20249): at it.evilsocket.dsploit.core.UpdateService.wipe(UpdateService.java:515)
+D/DSPLOIT[tools.Tool.run](20249): at it.evilsocket.dsploit.core.UpdateService.onHandleIntent(UpdateService.java:1340)

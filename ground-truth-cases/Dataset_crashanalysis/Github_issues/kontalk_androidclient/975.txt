@@ -1,0 +1,9 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'void org.kontalk.ui.AudioFragment.seekPlayerTo(int)' on a null object reference
+       at org.kontalk.ui.AbstractComposeFragment$22.onCompletion(AbstractComposeFragment.java:2206)
+       at android.media.MediaPlayer$EventHandler.handleMessage(MediaPlayer.java:2820)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:148)
+       at android.app.ActivityThread.main(ActivityThread.java:5417)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

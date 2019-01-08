@@ -1,0 +1,23 @@
+//this is an auto-generated bug report
+//package name: com.danielkim.soundrecorder
+//version: 1.2.2
+//appro_time: 14
+ FATAL EXCEPTION: main
+ java.lang.RuntimeException: Unable to stop service com.danielkim.soundrecorder.RecordingService@ad381a80: java.lang.RuntimeException: stop failed.
+ 	at android.app.ActivityThread.handleStopService(ActivityThread.java:2751)
+ 	at android.app.ActivityThread.access$2000(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1358)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.RuntimeException: stop failed.
+ 	at android.media.MediaRecorder.stop(Native Method)
+ 	at com.danielkim.soundrecorder.RecordingService.stopRecording(RecordingService.java:118)
+ 	at com.danielkim.soundrecorder.RecordingService.onDestroy(RecordingService.java:72)
+ 	at android.app.ActivityThread.handleStopService(ActivityThread.java:2734)
+ 	... 10 more

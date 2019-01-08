@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: ch.blinkenlights.android.vanilla
+//version: 1.0.50
+//appro_time: 151
+ android.database.sqlite.SQLiteConstraintException: column id is not unique (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at ch.blinkenlights.android.vanilla.CoverCache$BitmapDiskCache.put(CoverCache.java:350)
+ 	at ch.blinkenlights.android.vanilla.CoverCache.storeCover(CoverCache.java:133)
+ 	at ch.blinkenlights.android.vanilla.CoverCache.getCoverFromSong(CoverCache.java:107)
+ 	at ch.blinkenlights.android.vanilla.Song.getCoverInternal(Song.java:233)
+ 	at ch.blinkenlights.android.vanilla.Song.getCover(Song.java:206)
+ 	at ch.blinkenlights.android.vanilla.CoverView.generateBitmap(CoverView.java:372)
+ 	at ch.blinkenlights.android.vanilla.CoverView.handleMessage(CoverView.java:468)
+ 	at android.os.Handler.dispatchMessage(Handler.java:95)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

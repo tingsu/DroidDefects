@@ -1,0 +1,8 @@
+Caused by: android.os.BadParcelableException: Parcelable protocol requires a Parcelable.Creator object called  CREATOR on class de.danoeh.antennapod.core.gpoddernet.model.GpodnetTag
+    at android.os.Parcel.readParcelableCreator(Parcel.java:2313)
+    at android.os.Parcel.readParcelable(Parcel.java:2254)
+    at android.os.Parcel.readValue(Parcel.java:2161)
+    at android.os.Parcel.readArrayMapInternal(Parcel.java:2494)
+    at android.os.BaseBundle.unparcel(BaseBundle.java:221)
+    at android.os.Bundle.getParcelable(Bundle.java:755)
+    at de.danoeh.antennapod.fragment.gpodnet.TagFragment.onCreate(TagFragment.java:41)

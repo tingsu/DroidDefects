@@ -1,0 +1,10 @@
+09-15 01:33:19.225: E/ImageLoader(22519): java.lang.NullPointerException
+09-15 01:33:19.225: E/ImageLoader(22519):   at com.nostra13.universalimageloader.utils.IoUtils.copyStream(IoUtils.java:67)
+09-15 01:33:19.225: E/ImageLoader(22519):   at com.nostra13.universalimageloader.cache.disc.impl.BaseDiscCache.save(BaseDiscCache.java:109)
+09-15 01:33:19.225: E/ImageLoader(22519):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.downloadImage(LoadAndDisplayImageTask.java:291)
+09-15 01:33:19.225: E/ImageLoader(22519):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryCacheImageOnDisk(LoadAndDisplayImageTask.java:273)
+09-15 01:33:19.225: E/ImageLoader(22519):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.tryLoadBitmap(LoadAndDisplayImageTask.java:229)
+09-15 01:33:19.225: E/ImageLoader(22519):   at com.nostra13.universalimageloader.core.LoadAndDisplayImageTask.run(LoadAndDisplayImageTask.java:135)
+09-15 01:33:19.225: E/ImageLoader(22519):   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+09-15 01:33:19.225: E/ImageLoader(22519):   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+09-15 01:33:19.225: E/ImageLoader(22519):   at java.lang.Thread.run(Thread.java:841)

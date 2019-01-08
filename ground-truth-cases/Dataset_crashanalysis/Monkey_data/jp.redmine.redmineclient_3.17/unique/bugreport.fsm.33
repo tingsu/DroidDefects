@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: jp.redmine.redmineclient
+//version: 3.17
+//appro_time: 169
+ FATAL EXCEPTION: AsyncTask #4
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.NullPointerException: uriString
+ 	at android.net.Uri$StringUri.<init>(Uri.java:468)
+ 	at android.net.Uri$StringUri.<init>(Uri.java:458)
+ 	at android.net.Uri.parse(Uri.java:430)
+ 	at jp.redmine.redmineclient.url.RemoteUrl.convertUrl(RemoteUrl.java:17)
+ 	at jp.redmine.redmineclient.url.RemoteUrlStatus.getUrl(RemoteUrlStatus.java:9)
+ 	at jp.redmine.redmineclient.task.SelectDataTaskRedmineConnectionHandler.getUrl(SelectDataTaskRedmineConnectionHandler.java:67)
+ 	at jp.redmine.redmineclient.task.SelectDataTaskRedmineConnectionHandler.getUrl(SelectDataTaskRedmineConnectionHandler.java:71)
+ 	at jp.redmine.redmineclient.task.SelectDataTask.fetchData(SelectDataTask.java:86)
+ 	at jp.redmine.redmineclient.task.SelectProjectTask.fetchStatus(SelectProjectTask.java:112)
+ 	at jp.redmine.redmineclient.task.SelectProjectTask.doInBackground(SelectProjectTask.java:57)
+ 	at jp.redmine.redmineclient.task.SelectProjectTask.doInBackground(SelectProjectTask.java:39)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	... 4 more

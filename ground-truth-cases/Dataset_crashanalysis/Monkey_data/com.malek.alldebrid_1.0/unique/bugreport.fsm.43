@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: com.malek.alldebrid
+//version: 1.0
+//appro_time: 160
+ java.lang.RuntimeException: java.lang.NullPointerException: uriString
+ 	at com.loopj.android.http.AsyncHttpResponseHandler.onUserException(AsyncHttpResponseHandler.java:324)
+ 	at com.loopj.android.http.AsyncHttpResponseHandler.handleMessage(AsyncHttpResponseHandler.java:415)
+ 	at com.loopj.android.http.AsyncHttpResponseHandler$ResponderHandler.handleMessage(AsyncHttpResponseHandler.java:195)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException: uriString
+ 	at android.net.Uri$StringUri.<init>(Uri.java:468)
+ 	at android.net.Uri$StringUri.<init>(Uri.java:458)
+ 	at android.net.Uri.parse(Uri.java:430)
+ 	at com.malek.alldebrid.API.abstracted.AbstractDebrider$1.run(AbstractDebrider.java:59)
+ 	at com.malek.alldebrid.API.abstracted.AbstractDebrider.saveFile(AbstractDebrider.java:65)
+ 	at com.malek.alldebrid.ui.fragment.LinkFragment.addLinkToUI(LinkFragment.java:122)
+ 	at com.malek.alldebrid.ui.fragment.LinkFragment.onLinkRestrainFailed(LinkFragment.java:181)
+ 	at com.malek.alldebrid.API.abstracted.AbstractDebrider.notifyObserverLinkRestrainFailed(AbstractDebrider.java:91)
+ 	at com.malek.alldebrid.API.API_Alldebrid$5.onSuccess(API_Alldebrid.java:166)
+ 	at com.loopj.android.http.AsyncHttpResponseHandler.handleMessage(AsyncHttpResponseHandler.java:371)

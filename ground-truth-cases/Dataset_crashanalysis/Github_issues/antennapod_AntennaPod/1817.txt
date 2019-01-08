@@ -1,0 +1,10 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'long de.danoeh.antennapod.core.feed.Feed.getId()' on a null object reference
+    at de.danoeh.antennapod.activity.MainActivity$5.onConfirmButtonPressed(MainActivity.java:574)
+    at de.danoeh.antennapod.core.dialog.ConfirmationDialog$1.onClick(ConfirmationDialog.java:56)
+    at android.support.v7.app.AlertController$ButtonHandler.handleMessage(AlertController.java:157)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5461)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)

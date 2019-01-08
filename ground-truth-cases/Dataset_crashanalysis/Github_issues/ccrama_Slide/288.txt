@@ -1,0 +1,12 @@
+java.lang.NullPointerException: Attempt to invoke interface method 'com.google.android.gms.common.api.PendingResult com.google.android.gms.drive.DriveFolder.listChildren(com.google.android.gms.common.api.GoogleApiClient)' on a null object reference
+    at me.ccrama.redditslide.Activities.SettingsBackup$2.onClick(SettingsBackup.java:188)
+    at android.view.View.performClick(View.java:4780)
+    at android.view.View$PerformClick.run(View.java:19866)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5254)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:903)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:698)

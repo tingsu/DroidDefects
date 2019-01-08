@@ -1,0 +1,8 @@
+Caused by: java.lang.NullPointerException: Attempt to read from field 'android.widget.TextView ca.rmen.android.poetassistant.databinding.FragmentResultListBinding.tvListHeader' on a null object reference
+    at ca.rmen.android.poetassistant.main.dictionaries.ResultListFragment.query(ResultListFragment.java:156)
+    at ca.rmen.android.poetassistant.main.dictionaries.Search.search(Search.java:93)
+    at ca.rmen.android.poetassistant.main.MainActivity.onNewIntent(MainActivity.java:1157)
+    at android.app.Instrumentation.callActivityOnNewIntent(Instrumentation.java:1213)
+    at android.app.Instrumentation.callActivityOnNewIntent(Instrumentation.java:1225)
+    at android.app.ActivityThread.deliverNewIntents(ActivityThread.java:2563)
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3103)

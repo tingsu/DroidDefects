@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: de.gabbo.forro_lyrics
+//version: 1.2.2
+//appro_time: 94
+ FATAL EXCEPTION: main
+ java.lang.IllegalStateException: Could not execute method for android:onClick
+ 	at android.support.v7.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:293)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.reflect.InvocationTargetException
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at android.support.v7.app.AppCompatViewInflater$DeclaredOnClickListener.onClick(AppCompatViewInflater.java:288)
+ 	... 11 more
+ Caused by: java.lang.NullPointerException
+ 	at de.gabbo.forro_lyrics.sql.SQLiteDataSource.getSpecificTracks(SQLiteDataSource.java:133)
+ 	at de.gabbo.forro_lyrics.activities.GetPlayedTrackActivity.startLookupArtistTrack(GetPlayedTrackActivity.java:173)
+ 	... 14 more

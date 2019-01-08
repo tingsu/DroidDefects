@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: com.metinkale.prayer
+//version: 3.6.2
+//appro_time: 12
+ java.lang.ExceptionInInitializerError
+ 	at com.metinkale.prayerapp.vakit.times.TimesBase.<clinit>(TimesBase.java:48)
+ 	at com.metinkale.prayerapp.App.onCreate(App.java:137)
+ 	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:1007)
+ 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:4444)
+ 	at android.app.ActivityThread.access$1300(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1316)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException: language=null,country=,variant=
+ 	at java.util.Locale.<init>(Locale.java:274)
+ 	at java.util.Locale.<init>(Locale.java:258)
+ 	at com.metinkale.prayerapp.vakit.times.Source.<init>(Source.java:56)
+ 	at com.metinkale.prayerapp.vakit.times.Source.<clinit>(Source.java:37)

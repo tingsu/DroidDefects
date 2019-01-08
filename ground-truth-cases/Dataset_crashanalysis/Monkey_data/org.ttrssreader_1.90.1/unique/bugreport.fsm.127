@@ -1,0 +1,38 @@
+//this is an auto-generated bug report
+//package name: org.ttrssreader
+//version: 1.90.1
+//appro_time: 118
+ FATAL EXCEPTION: AsyncTask #1
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at org.ttrssreader.utils.AsyncTask$3.done(AsyncTask.java:167)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: android.view.ViewRootImpl$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views.
+ 	at android.view.ViewRootImpl.checkThread(ViewRootImpl.java:5908)
+ 	at android.view.ViewRootImpl.requestLayout(ViewRootImpl.java:837)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.view.View.requestLayout(View.java:15792)
+ 	at android.view.View.setFlags(View.java:8584)
+ 	at android.view.View.setVisibility(View.java:5830)
+ 	at android.widget.ProgressBar.setVisibility(ProgressBar.java:930)
+ 	at org.ttrssreader.gui.MenuActivity.setSupportProgressBarIndeterminateVisibility(MenuActivity.java:692)
+ 	at org.ttrssreader.controllers.ProgressBarManager.setIndeterminateVisibility(ProgressBarManager.java:60)
+ 	at org.ttrssreader.controllers.ProgressBarManager.addProgress(ProgressBarManager.java:43)
+ 	at org.ttrssreader.gui.MenuActivity.doCache(MenuActivity.java:480)
+ 	at org.ttrssreader.gui.MenuActivity.access$000(MenuActivity.java:64)
+ 	at org.ttrssreader.gui.MenuActivity$ImageCacheUpdater.update(MenuActivity.java:460)
+ 	at org.ttrssreader.model.updaters.Updater.doInBackground(Updater.java:59)
+ 	at org.ttrssreader.model.updaters.Updater.doInBackground(Updater.java:26)
+ 	at org.ttrssreader.utils.AsyncTask$2.call(AsyncTask.java:155)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	... 3 more

@@ -1,0 +1,6 @@
+//this is an auto-generated bug report
+//package name: org.helllabs.android.xmp
+//version: 3.5.0
+//appro_time: 73
+ java.lang.NullPointerException
+ 	at org.helllabs.android.xmp.browser.ModList$6.run(ModList.java:199)

@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: com.twsitedapps.homemanager
+//version: 1.0.1.8
+//appro_time: 107
+ java.lang.IllegalStateException: The content of the adapter has changed but ListView did not receive a notification. Make sure the content of your adapter is not modified from a background thread, but only from the UI thread. [in ListView(2131296271, class android.widget.ListView) with Adapter(class com.twsitedapps.homemanager.HomeManagerArrayAdapter)]
+ 	at android.widget.ListView.layoutChildren(ListView.java:1545)
+ 	at android.widget.AbsListView.onWindowFocusChanged(AbsListView.java:2722)
+ 	at android.view.View.dispatchWindowFocusChanged(View.java:7578)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:962)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewGroup.dispatchWindowFocusChanged(ViewGroup.java:966)
+ 	at android.view.ViewRootImpl$ViewRootHandler.handleMessage(ViewRootImpl.java:3115)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

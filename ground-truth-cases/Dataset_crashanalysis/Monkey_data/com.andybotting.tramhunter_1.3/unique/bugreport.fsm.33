@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: com.andybotting.tramhunter
+//version: 1.3
+//appro_time: 54
+ android.view.WindowManager$BadTokenException: Unable to add window -- token android.os.BinderProxy@ad6fa788 is not valid; is your activity running?
+ 	at android.view.ViewRootImpl.setView(ViewRootImpl.java:559)
+ 	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:269)
+ 	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+ 	at android.app.Dialog.show(Dialog.java:281)
+ 	at android.app.AlertDialog$Builder.show(AlertDialog.java:951)
+ 	at com.andybotting.tramhunter.activity.StopDetailsActivity.showSpecialEvent(StopDetailsActivity.java:697)
+ 	at com.andybotting.tramhunter.activity.StopDetailsActivity.access$2000(StopDetailsActivity.java:108)
+ 	at com.andybotting.tramhunter.activity.StopDetailsActivity$GetNextTramTimes.onPostExecute(StopDetailsActivity.java:659)
+ 	at com.andybotting.tramhunter.activity.StopDetailsActivity$GetNextTramTimes.onPostExecute(StopDetailsActivity.java:569)
+ 	at android.os.AsyncTask.finish(AsyncTask.java:631)
+ 	at android.os.AsyncTask.access$600(AsyncTask.java:177)
+ 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

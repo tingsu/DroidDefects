@@ -1,0 +1,18 @@
+stackTrace:java.lang.RuntimeException: Unable to start activity ComponentInfo{cgeo.geocaching/cgeo.geocaching.settings.SettingsActivity}: java.lang.NullPointerException
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1664)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1680)
+    at android.app.ActivityThread.access$1500(ActivityThread.java:117)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:931)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:130)
+    at android.app.ActivityThread.main(ActivityThread.java:3703)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:507)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:841)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:599)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+    at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:203)
+    at cgeo.geocaching.settings.SettingsActivity.onCreate(SettingsActivity.java:105)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1628)

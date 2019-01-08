@@ -1,0 +1,12 @@
+Fatal Exception: java.lang.NullPointerException
+       at org.wordpress.android.ui.media.MediaBrowserActivity.deleteMedia(MediaBrowserActivity.java:630)
+       at org.wordpress.android.ui.media.MediaGridFragment$3.onClick(MediaGridFragment.java:459)
+       at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:167)
+       at android.os.Handler.dispatchMessage(Handler.java:99)
+       at android.os.Looper.loop(Looper.java:137)
+       at android.app.ActivityThread.main(ActivityThread.java:4867)
+       at java.lang.reflect.Method.invokeNative(Method.java)
+       at java.lang.reflect.Method.invoke(Method.java:511)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1007)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:774)
+       at dalvik.system.NativeStart.main(NativeStart.java)

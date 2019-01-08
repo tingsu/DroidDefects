@@ -1,0 +1,23 @@
+                                                                       java.lang.RuntimeException: Performing stop of activity that is not resumed: {org.wordpress.android/org.wordpress.android.ui.main.WPMainActivity}
+                                                                           at android.app.ActivityThread.performStopActivityInner(ActivityThread.java:3377)
+                                                                           at android.app.ActivityThread.handleStopActivity(ActivityThread.java:3458)
+                                                                           at android.app.ActivityThread.access$1200(ActivityThread.java:154)
+                                                                           at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1350)
+                                                                           at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                           at android.os.Looper.loop(Looper.java:135)
+                                                                           at android.app.ActivityThread.main(ActivityThread.java:5292)
+                                                                           at java.lang.reflect.Method.invoke(Native Method)
+                                                                           at java.lang.reflect.Method.invoke(Method.java:372)
+                                                                           at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+                                                                           at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+01-07 16:48:28.566 10464-10668/org.wordpress.android E/WordPress-NOTIFS: Google Play Services unavailable: 
+                                                                         java.io.IOException: INVALID_SENDER
+                                                                             at com.google.android.gms.iid.zzc.zzb(Unknown Source)
+                                                                             at com.google.android.gms.iid.zzc.zza(Unknown Source)
+                                                                             at com.google.android.gms.iid.InstanceID.zzc(Unknown Source)
+                                                                             at com.google.android.gms.iid.InstanceID.getToken(Unknown Source)
+                                                                             at org.wordpress.android.GCMRegistrationIntentService.onHandleIntent(GCMRegistrationIntentService.java:36)
+                                                                             at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+                                                                             at android.os.Handler.dispatchMessage(Handler.java:102)
+                                                                             at android.os.Looper.loop(Looper.java:135)
+                                                                             at android.os.HandlerThread.run(HandlerThread.java:61)

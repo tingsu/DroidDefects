@@ -1,0 +1,4 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'org.wordpress.android.ui.prefs.SiteSettingsInterface org.wordpress.android.ui.prefs.SiteSettingsInterface.init(boolean)' on a null object reference
+  at org.wordpress.android.ui.posts.EditPostSettingsFragment.initLocation(EditPostSettingsFragment.java:857)
+  at org.wordpress.android.ui.posts.EditPostSettingsFragment.onCreateView(EditPostSettingsFragment.java:314)
+  at android.app.Fragment.performCreateView(Fragment.java:2352)

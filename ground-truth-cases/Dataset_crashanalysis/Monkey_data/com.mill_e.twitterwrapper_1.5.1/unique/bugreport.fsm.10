@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: com.mill_e.twitterwrapper
+//version: 1.5.1
+//appro_time: 77
+ FATAL EXCEPTION: main
+ java.lang.NullPointerException
+ 	at com.mill_e.twitterwrapper.activity.BaseTwitterWebViewActivity.onSaveInstanceState(BaseTwitterWebViewActivity.java:244)
+ 	at android.app.Activity.performSaveInstanceState(Activity.java:1147)
+ 	at android.app.Instrumentation.callActivityOnSaveInstanceState(Instrumentation.java:1223)
+ 	at android.app.ActivityThread.performStopActivityInner(ActivityThread.java:3177)
+ 	at android.app.ActivityThread.handleStopActivity(ActivityThread.java:3236)
+ 	at android.app.ActivityThread.access$900(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1283)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

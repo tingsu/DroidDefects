@@ -1,0 +1,4 @@
+java.lang.OutOfMemoryError
+    at java.lang.String.<init>(String.java:422)
+    at java.io.BufferedReader.readLine(BufferedReader.java:363)
+    at com.secupwn.aimsicd.smsdetection.SmsDetector.run(SmsDetector.java:166)

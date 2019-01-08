@@ -1,0 +1,25 @@
+//this is an auto-generated bug report
+//package name: es.usc.citius.servando.calendula
+//version: 2.3.1
+//appro_time: 124
+ FATAL EXCEPTION: main
+ java.lang.NullPointerException
+ 	at es.usc.citius.servando.calendula.fragments.ScheduleSummaryFragment.updateSummary(ScheduleSummaryFragment.java:74)
+ 	at es.usc.citius.servando.calendula.fragments.ScheduleSummaryFragment.setUserVisibleHint(ScheduleSummaryFragment.java:48)
+ 	at android.support.v4.app.FragmentPagerAdapter.setPrimaryItem(FragmentPagerAdapter.java:130)
+ 	at android.support.v4.view.ViewPager.populate(ViewPager.java:1071)
+ 	at android.support.v4.view.ViewPager.setCurrentItemInternal(ViewPager.java:555)
+ 	at android.support.v4.view.ViewPager.setCurrentItemInternal(ViewPager.java:514)
+ 	at android.support.v4.view.ViewPager.setCurrentItem(ViewPager.java:495)
+ 	at com.astuetz.PagerSlidingTabStrip$2.onClick(PagerSlidingTabStrip.java:251)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

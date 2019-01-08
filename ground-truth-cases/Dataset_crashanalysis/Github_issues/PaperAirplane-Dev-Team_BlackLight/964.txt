@@ -1,0 +1,10 @@
+java.lang.OutOfMemoryError
+    at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+    at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:613)
+    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:589)
+    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:627)
+    at info.papdt.blacklight.cache.statuses.HomeTimeLineApiCache.getThumbnailPic(HomeTimeLineApiCache.java:148)
+    at info.papdt.blacklight.support.adapter.WeiboAdapter$ImageDownloader.doInBackground(WeiboAdapter.java:504)
+    at info.papdt.blacklight.support.adapter.WeiboAdapter$ImageDownloader.doInBackground(WeiboAdapter.java)
+    at info.papdt.blacklight.support.AsyncTask$100000001.run(AsyncTask.java:73)
+    at java.lang.Thread.run(Thread.java:841)

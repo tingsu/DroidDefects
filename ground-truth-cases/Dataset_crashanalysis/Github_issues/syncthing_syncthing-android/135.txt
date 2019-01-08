@@ -1,0 +1,75 @@
+E/WindowManager( 2876): android.view.WindowLeaked: Activity com.nutomic.syncthingandroid.activities.MainActivity has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{64c3b500 V.E..... R....... 0,0-1248,584} that was originally added here
+E/WindowManager( 2876):     at android.view.ViewRootImpl.<init>(ViewRootImpl.java:346)
+E/WindowManager( 2876):     at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:248)
+E/WindowManager( 2876):     at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+E/WindowManager( 2876):     at android.app.Dialog.show(Dialog.java:286)
+E/WindowManager( 2876):     at android.app.AlertDialog$Builder.show(AlertDialog.java:951)
+E/WindowManager( 2876):     at com.nutomic.syncthingandroid.syncthing.SyncthingService.showDisabledDialog(SyncthingService.java:361)
+E/WindowManager( 2876):     at com.nutomic.syncthingandroid.activities.MainActivity.onApiChange(MainActivity.java:58)
+E/WindowManager( 2876):     at com.nutomic.syncthingandroid.syncthing.SyncthingService.registerOnApiChangeListener(SyncthingService.java:316)
+E/WindowManager( 2876):     at com.nutomic.syncthingandroid.activities.MainActivity.onServiceConnected(MainActivity.java:214)
+E/WindowManager( 2876):     at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1108)
+E/WindowManager( 2876):     at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1125)
+E/WindowManager( 2876):     at android.os.Handler.handleCallback(Handler.java:733)
+E/WindowManager( 2876):     at android.os.Handler.dispatchMessage(Handler.java:95)
+E/WindowManager( 2876):     at android.os.Looper.loop(Looper.java:136)
+E/WindowManager( 2876):     at android.app.ActivityThread.main(ActivityThread.java:5139)
+E/WindowManager( 2876):     at java.lang.reflect.Method.invoke(Native Method)
+E/WindowManager( 2876):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:796)
+E/WindowManager( 2876):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:612)
+E/WindowManager( 2876): 
+E/WindowManager( 2876): android.view.WindowLeaked: Activity com.nutomic.syncthingandroid.activities.MainActivity has leaked window com.android.internal.policy.impl.PhoneWindow$DecorView{64cd5778 V.E..... R....... 0,0-1248,336} that was originally added here
+E/WindowManager( 2876):     at android.view.ViewRootImpl.<init>(ViewRootImpl.java:346)
+E/WindowManager( 2876):     at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:248)
+E/WindowManager( 2876):     at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:69)
+E/WindowManager( 2876):     at android.app.Dialog.show(Dialog.java:286)
+E/WindowManager( 2876):     at android.app.AlertDialog$Builder.show(AlertDialog.java:951)
+E/WindowManager( 2876):     at com.nutomic.syncthingandroid.activities.MainActivity.onApiChange(MainActivity.java:70)
+E/WindowManager( 2876):     at com.nutomic.syncthingandroid.syncthing.SyncthingService.onApiChange(SyncthingService.java:349)
+E/WindowManager( 2876):     at com.nutomic.syncthingandroid.syncthing.SyncthingService.updateState(SyncthingService.java:181)
+E/WindowManager( 2876):     at com.nutomic.syncthingandroid.syncthing.SyncthingService.onStartCommand(SyncthingService.java:130)
+E/WindowManager( 2876):     at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2719)
+E/WindowManager( 2876):     at android.app.ActivityThread.access$2100(ActivityThread.java:144)
+E/WindowManager( 2876):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1302)
+E/WindowManager( 2876):     at android.os.Handler.dispatchMessage(Handler.java:102)
+E/WindowManager( 2876):     at android.os.Looper.loop(Looper.java:136)
+E/WindowManager( 2876):     at android.app.ActivityThread.main(ActivityThread.java:5139)
+E/WindowManager( 2876):     at java.lang.reflect.Method.invoke(Native Method)
+E/WindowManager( 2876):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:796)
+E/WindowManager( 2876):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:612)
+I/Timeline(  908): Timeline: Activity_windows_visible id: ActivityRecord{654725b8 u0 com.nutomic.syncthingandroid/.activities.MainActivity t88} time:21180790
+I/WindowManager(  908): Screen frozen for +208ms due to Window{65cb71a8 u0 com.nutomic.syncthingandroid/com.nutomic.syncthingandroid.activities.MainActivity}
+I/Timeline( 2876): Timeline: Activity_idle id: android.os.BinderProxy@64c7b958 time:21181316
+I/art     (  908): Heap trim of managed (duration=16.252865ms, advised=2MB) and native (duration=2.231458ms, advised=820KB) heaps. Managed heap utilization of 56%.
+I/SyncthingNativeCode( 2876): [QUGOD] 10:41:02 INFO: syncthing v0.9.17 (go1.3 linux-arm android) vagrant@testing32 2014-09-18 10:01:08 UTC
+I/SyncthingNativeCode( 2876): [QUGOD] 10:41:02 INFO: My ID: QUGODHY-Z346AML-ZO2BQKD-ROU5JF2-HT7J6UT-3S2QMVM-HKPGVEO-3BI2XQ6
+I/SyncthingNativeCode( 2876): [QUGOD] 10:41:03 INFO: Starting web GUI on http://127.0.0.1:8080/
+I/SyncthingService( 2876): Web GUI has come online at http://127.0.0.1:8080
+I/RestApi ( 2876): Syncthing version is v0.9.17
+D/AndroidRuntime( 2876): Shutting down VM
+E/AndroidRuntime( 2876): FATAL EXCEPTION: main
+E/AndroidRuntime( 2876): Process: com.nutomic.syncthingandroid, PID: 2876
+E/AndroidRuntime( 2876): java.lang.IllegalArgumentException: View=com.android.internal.policy.impl.PhoneWindow$DecorView{64c3b500 V.E..... R....... 0,0-1248,584} not attached to window manager
+E/AndroidRuntime( 2876):    at android.view.WindowManagerGlobal.findViewLocked(WindowManagerGlobal.java:370)
+E/AndroidRuntime( 2876):    at android.view.WindowManagerGlobal.removeView(WindowManagerGlobal.java:299)
+E/AndroidRuntime( 2876):    at android.view.WindowManagerImpl.removeViewImmediate(WindowManagerImpl.java:84)
+E/AndroidRuntime( 2876):    at android.app.Dialog.dismissDialog(Dialog.java:329)
+E/AndroidRuntime( 2876):    at android.app.Dialog.dismiss(Dialog.java:312)
+E/AndroidRuntime( 2876):    at com.nutomic.syncthingandroid.activities.MainActivity.onApiChange(MainActivity.java:96)
+E/AndroidRuntime( 2876):    at com.nutomic.syncthingandroid.syncthing.SyncthingService.onApiChange(SyncthingService.java:349)
+E/AndroidRuntime( 2876):    at com.nutomic.syncthingandroid.syncthing.SyncthingService.access$500(SyncthingService.java:30)
+E/AndroidRuntime( 2876):    at com.nutomic.syncthingandroid.syncthing.SyncthingService$StartupTask$1.onApiAvailable(SyncthingService.java:251)
+E/AndroidRuntime( 2876):    at com.nutomic.syncthingandroid.syncthing.RestApi.tryIsAvailable(RestApi.java:245)
+E/AndroidRuntime( 2876):    at com.nutomic.syncthingandroid.syncthing.RestApi.access$100(RestApi.java:38)
+E/AndroidRuntime( 2876):    at com.nutomic.syncthingandroid.syncthing.RestApi$3.onReceiveSystemInfo(RestApi.java:230)
+E/AndroidRuntime( 2876):    at com.nutomic.syncthingandroid.syncthing.RestApi$7.onPostExecute(RestApi.java:428)
+E/AndroidRuntime( 2876):    at com.nutomic.syncthingandroid.syncthing.RestApi$7.onPostExecute(RestApi.java:413)
+E/AndroidRuntime( 2876):    at android.os.AsyncTask.finish(AsyncTask.java:632)
+E/AndroidRuntime( 2876):    at android.os.AsyncTask.access$600(AsyncTask.java:177)
+E/AndroidRuntime( 2876):    at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:645)
+E/AndroidRuntime( 2876):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 2876):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 2876):    at android.app.ActivityThread.main(ActivityThread.java:5139)
+E/AndroidRuntime( 2876):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime( 2876):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:796)
+E/AndroidRuntime( 2876):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:612)

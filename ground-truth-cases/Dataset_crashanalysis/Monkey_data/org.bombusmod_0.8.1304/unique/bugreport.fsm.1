@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: org.bombusmod
+//version: 0.8.1304
+//appro_time: 4
+ java.lang.RuntimeException: Error receiving broadcast Intent { act=com.android.music.playstatechanged flg=0x10 (has extras) } in org.bombusmod.scrobbler.Receiver@ad28a460
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:773)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at org.bombusmod.util.AndroidClipBoard.<init>(AndroidClipBoard.java:39)
+ 	at util.ClipBoardIO.getInstance(ClipBoardIO.java:17)
+ 	at Client.StaticData.<init>(StaticData.java:73)
+ 	at Client.StaticData.getInstance(StaticData.java:78)
+ 	at Client.Config.<init>(Config.java:88)
+ 	at Client.Config.getInstance(Config.java:241)
+ 	at org.bombusmod.scrobbler.Receiver.onReceive(Receiver.java:36)
+ 	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:763)

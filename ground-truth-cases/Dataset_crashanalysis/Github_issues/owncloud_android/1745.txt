@@ -1,0 +1,30 @@
+07-20 19:16:22.002 9870-9870/com.owncloud.android D/FileDisplayActivity: Got to start sync
+07-20 19:16:22.003 9870-9870/com.owncloud.android D/FileDisplayActivity: Requesting sync for pf@something.com at org.owncloud with new API
+07-20 19:16:22.008 9870-9870/com.owncloud.android V/FileDisplayActivity: onResume() start
+07-20 19:16:22.008 9870-9870/com.owncloud.android D/FileDisplayActivity: onResume() starting
+07-20 19:16:22.109 9870-9870/com.owncloud.android V/FileDisplayActivity: onResume() end
+07-20 19:16:22.352 9870-10420/com.owncloud.android D/SimpleFactoryManager: getClientFor(OwnCloudAccount ... : 
+07-20 19:16:22.358 9870-10420/com.owncloud.android D/NetworkUtils: Searching known-servers store at /data/user/0/com.owncloud.android/files/knownServers.bks
+07-20 19:16:22.367 9870-10420/com.owncloud.android D/OwnCloudClient #0: Creating OwnCloudClient
+07-20 19:16:22.367 9870-10420/com.owncloud.android V/SimpleFactoryManager:     new client {pf@something.com, 21739198}
+07-20 19:16:40.076 9870-10961/com.owncloud.android D/SimpleFactoryManager: getClientFor(OwnCloudAccount ... : 
+07-20 19:16:40.076 9870-10961/com.owncloud.android D/OwnCloudClient #1: Creating OwnCloudClient
+07-20 19:16:40.077 9870-10961/com.owncloud.android V/SimpleFactoryManager:     new client {pf@something.com, 143163594}
+07-20 19:16:40.320 10968-10968/com.owncloud.android.workaround.accounts W/System: ClassLoader referenced unknown path: /data/app/com.owncloud.android.workaround.accounts-1/lib/arm
+07-20 19:16:40.648 9870-10961/com.owncloud.android E/RemoteOperation: Error while trying to access to pf@something.com
+                                                                      android.accounts.AuthenticatorException: java.lang.UnsupportedOperationException: This is just a workaround, not a real account authenticator
+                                                                          at android.accounts.AccountManager$AmsTask.internalGetResult(AccountManager.java:1932)
+                                                                          at android.accounts.AccountManager$AmsTask.getResult(AccountManager.java:1950)
+                                                                          at android.accounts.AccountManager$AmsTask.getResult(AccountManager.java:1948)
+                                                                          at android.accounts.AccountManager.blockingGetAuthToken(AccountManager.java:1191)
+                                                                          at com.owncloud.android.lib.common.accounts.AccountUtils.getCredentialsForAccount(AccountUtils.java:206)
+                                                                          at com.owncloud.android.lib.common.OwnCloudAccount.loadCredentials(OwnCloudAccount.java:126)
+                                                                          at com.owncloud.android.lib.common.SimpleFactoryManager.getClientFor(SimpleFactoryManager.java:62)
+                                                                          at com.owncloud.android.lib.common.operations.RemoteOperation.run(RemoteOperation.java:282)
+                                                                          at java.lang.Thread.run(Thread.java:818)
+                                                                       Caused by: java.lang.UnsupportedOperationException: This is just a workaround, not a real account authenticator
+                                                                          at android.accounts.AccountManager.convertErrorToException(AccountManager.java:2139)
+                                                                          at android.accounts.AccountManager.-wrap0(AccountManager.java)
+                                                                          at android.accounts.AccountManager$AmsTask$Response.onError(AccountManager.java:1993)
+                                                                          at android.accounts.IAccountManagerResponse$Stub.onTransact(IAccountManagerResponse.java:69)
+                                                                          at android.os.Binder.execTransact(Binder.java:453)

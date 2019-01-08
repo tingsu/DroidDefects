@@ -1,0 +1,18 @@
+//this is an auto-generated bug report
+//package name: com.episode6.android.appalarm.pro
+//version: 1.2.7
+//appro_time: 112
+ java.lang.RuntimeException: Can't create handler inside thread that has not called Looper.prepare()
+ 	at android.os.Handler.<init>(Handler.java:197)
+ 	at android.os.Handler.<init>(Handler.java:111)
+ 	at android.content.ClipboardManager$2.<init>(ClipboardManager.java:71)
+ 	at android.content.ClipboardManager.<init>(ClipboardManager.java:71)
+ 	at android.app.ContextImpl$9.createService(ContextImpl.java:327)
+ 	at android.app.ContextImpl$ServiceFetcher.getService(ContextImpl.java:230)
+ 	at android.app.ContextImpl.getSystemService(ContextImpl.java:1514)
+ 	at android.view.ContextThemeWrapper.getSystemService(ContextThemeWrapper.java:117)
+ 	at android.app.Activity.getSystemService(Activity.java:4502)
+ 	at com.episode6.android.appalarm.pro.AlarmEdit.copyToClipboard(AlarmEdit.java:918)
+ 	at com.episode6.android.appalarm.pro.AlarmEdit.access$2000(AlarmEdit.java:37)
+ 	at com.episode6.android.appalarm.pro.AlarmEdit$32.run(AlarmEdit.java:974)
+ 	at java.lang.Thread.run(Thread.java:841)

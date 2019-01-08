@@ -1,0 +1,45 @@
+ 23158            SyncAdapter  E  Parser exception
+ 23158            SyncAdapter  E  net.fortuna.ical4j.data.ParserException: Error at line 23:Cannot set timezone for UTC properties
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarParserImpl.parse(CalendarParserImpl.java:148)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarBuilder.build(CalendarBuilder.java:210)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarBuilder.build(CalendarBuilder.java:191)
+ 23158            SyncAdapter  E  at org.gege.caldavsyncadapter.caldav.entities.CalendarEvent.parseIcs(CalendarEvent.java:701)
+ 23158            SyncAdapter  E  at org.gege.caldavsyncadapter.caldav.entities.CalendarEvent.fetchBody(CalendarEvent.java:186)
+ 23158            SyncAdapter  E  at org.gege.caldavsyncadapter.syncadapter.SyncAdapter.createAndroidEvent(SyncAdapter.java:705)
+ 23158            SyncAdapter  E  at org.gege.caldavsyncadapter.syncadapter.SyncAdapter.synchroniseEvents(SyncAdapter.java:242)
+ 23158            SyncAdapter  E  at org.gege.caldavsyncadapter.syncadapter.SyncAdapter.onPerformSync(SyncAdapter.java:138)
+ 23158            SyncAdapter  E  at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:254)
+ 23158            SyncAdapter  E  Caused by: java.lang.UnsupportedOperationException: Cannot set timezone for UTC properties
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.model.property.UtcProperty.setTimeZone(UtcProperty.java:98)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarBuilder.updateTimeZone(CalendarBuilder.java:372)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarBuilder.access$3(CalendarBuilder.java:370)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarBuilder$ContentHandlerImpl.parameter(CalendarBuilder.java:296)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarParserImpl$ParameterParser.parse(CalendarParserImpl.java:342)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarParserImpl$ParameterParser.access$1(CalendarParserImpl.java:297)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarParserImpl$ParameterListParser.parse(CalendarParserImpl.java:283)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarParserImpl$PropertyParser.parse(CalendarParserImpl.java:213)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarParserImpl$PropertyParser.access$1(CalendarParserImpl.java:200)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarParserImpl$PropertyListParser.parse(CalendarParserImpl.java:178)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarParserImpl$ComponentParser.parse(CalendarParserImpl.java:396)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarParserImpl$ComponentParser.access$1(CalendarParserImpl.java:382)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarParserImpl$PropertyListParser.parse(CalendarParserImpl.java:175)
+ 23158            SyncAdapter  E  at net.fortuna.ical4j.data.CalendarParserImpl.parse(CalendarParserImpl.java:125)
+ 23158            SyncAdapter  E  ... 8 more
+```
+
+ I then updated ical4j to the latest in the `ical4j-1.x-maintenance` branch, and got this backtrace:
+
+```
+ 10283         AndroidRuntime  E  FATAL EXCEPTION: SyncAdapterThread-2
+ 10283         AndroidRuntime  E  java.lang.ExceptionInInitializerError
+ 10283         AndroidRuntime  E  at net.fortuna.ical4j.model.DefaultTimeZoneRegistryFactory.createRegistry(DefaultTimeZoneRegistryFactory.java:48)
+ 10283         AndroidRuntime  E  at net.fortuna.ical4j.data.CalendarBuilder.<init>(CalendarBuilder.java:123)
+ 10283         AndroidRuntime  E  at org.gege.caldavsyncadapter.caldav.entities.CalendarEvent.parseIcs(CalendarEvent.java:694)
+ 10283         AndroidRuntime  E  at org.gege.caldavsyncadapter.caldav.entities.CalendarEvent.fetchBody(CalendarEvent.java:186)
+ 10283         AndroidRuntime  E  at org.gege.caldavsyncadapter.syncadapter.SyncAdapter.createAndroidEvent(SyncAdapter.java:705)
+ 10283         AndroidRuntime  E  at org.gege.caldavsyncadapter.syncadapter.SyncAdapter.synchroniseEvents(SyncAdapter.java:242)
+ 10283         AndroidRuntime  E  at org.gege.caldavsyncadapter.syncadapter.SyncAdapter.onPerformSync(SyncAdapter.java:138)
+ 10283         AndroidRuntime  E  at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:254)
+ 10283         AndroidRuntime  E  Caused by: java.lang.NullPointerException
+ 10283         AndroidRuntime  E  at net.fortuna.ical4j.util.ResourceLoader.getResourceAsStream(ResourceLoader.java:77)
+ 10283         AndroidRuntime  E  at net.fortuna.ical4j.model.TimeZoneRegistryImpl.<clinit>(TimeZoneRegistryImpl.java:76)

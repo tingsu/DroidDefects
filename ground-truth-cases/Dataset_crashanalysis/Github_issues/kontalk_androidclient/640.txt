@@ -1,0 +1,26 @@
+java.lang.RuntimeException: Unable to resume activity {org.kontalk/org.kontalk.ui.ComposeMessage}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=65538, result=-1, data=Intent {  }} to activity {org.kontalk/org.kontalk.ui.ComposeMessage}: java.lang.NullPointerException: url
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3103)
+    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3134)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2481)
+    at android.app.ActivityThread.handleRelaunchActivity(ActivityThread.java:4077)
+    at android.app.ActivityThread.-wrap15(ActivityThread.java)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1350)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:148)
+    at android.app.ActivityThread.main(ActivityThread.java:5417)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=65538, result=-1, data=Intent {  }} to activity {org.kontalk/org.kontalk.ui.ComposeMessage}: java.lang.NullPointerException: url
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3699)
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3089)
+    ... 11 more
+Caused by: java.lang.NullPointerException: url
+    at com.android.internal.util.Preconditions.checkNotNull(Preconditions.java:60)
+    at android.content.ContentResolver.getType(ContentResolver.java:329)
+    at org.kontalk.util.MediaStorage.getType(MediaStorage.java:295)
+    at org.kontalk.ui.ComposeMessageFragment.onActivityResult(ComposeMessageFragment.java:1462)
+    at android.support.v4.app.FragmentActivity.onActivityResult(FragmentActivity.java:156)
+    at org.kontalk.ui.ComposeMessage.onActivityResult(ComposeMessage.java:297)
+    at android.app.Activity.dispatchActivityResult(Activity.java:6456)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3695)

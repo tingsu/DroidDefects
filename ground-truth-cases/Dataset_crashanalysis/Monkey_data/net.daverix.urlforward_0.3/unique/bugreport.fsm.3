@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: net.daverix.urlforward
+//version: 0.3
+//appro_time: 135
+ Error inserting skipEncode=false title=null replace_text=@url updated=0 created=1493522804333 url=uhvut#tp://example.com/?url=@url
+ android.database.sqlite.SQLiteConstraintException: filter.title may not be NULL (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at net.daverix.urlforward.db.UrlForwarderProvider.insert(UrlForwarderProvider.java:101)
+ 	at android.content.ContentProvider$Transport.insert(ContentProvider.java:213)
+ 	at android.content.ContentResolver.insert(ContentResolver.java:914)
+ 	at net.daverix.urlforward.FilterService.insertLinkFilter(FilterService.java:63)
+ 	at net.daverix.urlforward.FilterService.onHandleIntent(FilterService.java:47)
+ 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

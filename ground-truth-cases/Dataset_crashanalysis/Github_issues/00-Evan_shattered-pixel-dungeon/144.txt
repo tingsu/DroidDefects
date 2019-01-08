@@ -1,0 +1,8 @@
+ java.lang.NullPointerException: Attempt to invoke virtual method 'int com.shatteredpixel.shatteredpixeldungeon.levels.Level.height()' on a null object reference
+                      at com.shatteredpixel.shatteredpixeldungeon.mechanics.ShadowCaster.scanSector(ShadowCaster.java:79)
+                      at com.shatteredpixel.shatteredpixeldungeon.mechanics.ShadowCaster.castShadow(ShadowCaster.java:55)
+                      at com.shatteredpixel.shatteredpixeldungeon.levels.Level.updateFieldOfView(Level.java:886)
+                      at com.shatteredpixel.shatteredpixeldungeon.actors.Char.act(Char.java:83)
+                      at com.shatteredpixel.shatteredpixeldungeon.actors.mobs.Mob.act(Mob.java:156)
+                      at com.shatteredpixel.shatteredpixeldungeon.actors.Actor.process(Actor.java:216)
+                      at com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene$2.run(GameScene.java:409)

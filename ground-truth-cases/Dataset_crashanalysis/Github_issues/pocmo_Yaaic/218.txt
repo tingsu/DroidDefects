@@ -1,0 +1,43 @@
+
+Debugging a little, an exception is being thrown [here](https://github.com/pocmo/Yaaic/blob/master/pircbot/src/main/java/org/yaaic/protocol/OutputThread.java#L66). The exception stacktrace thrown is included at the bottom. TL;DR it's a NetworkOnMainThreadException.
+
+When I connect to an irc network directly I do not see that exception and can change nick, join channels etc as you'd normally expect. 
+
+What's the difference between connecting to my bouncer and connecting to an IRC network directly? No clue. It might be latency and that going direct is fast enough that it doesn't trigger the exception (though I kinda doubt this as you'd still expect slower connections to see this issue then). From the debugging information I can see that I am on the main thread in both cases when attempting to write to the buffer.
+
+Whatever the reason networking on the main thread is bad. When I wrap that buffer write in something like this everything works as expected when connecting to the bouncer:
+
+```
+    Executors.newSingleThreadExecutor().submit(new Runnable() {
+        @Override public void run() {
+            bwriter.write(line + "\r\n");
+            bwriter.flush();   
+        }
+    });
+```
+
+I can submit a fix for this easily enough but I don't want to be naively spinning up threads here there and everywhere. I suspect everything could be put on a background thread a long ways up the line instead of just before writing to the buffer but don't have enough context right now to see where the best place might be. If you have a suggestion I can go about fixing it :) (I will submit a PR soon either way, this bug is really annoying me)
+
+This is also an issue in the version of Yaaic published on the play store.
+
+Exception stacktrace:
+
+```
+05-01 20:09:58.368 25995-25995/org.yaaic W/System.err: android.os.NetworkOnMainThreadException
+05-01 20:09:58.368 25995-25995/org.yaaic W/System.err:     at android.os.StrictMode$AndroidBlockGuardPolicy.onNetwork(StrictMode.java:1273)
+05-01 20:09:58.368 25995-25995/org.yaaic W/System.err:     at com.android.org.conscrypt.OpenSSLSocketImpl$SSLOutputStream.write(OpenSSLSocketImpl.java:755)
+05-01 20:09:58.368 25995-25995/org.yaaic W/System.err:     at java.io.OutputStreamWriter.flushBytes(OutputStreamWriter.java:170)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:161)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at java.io.BufferedWriter.flush(BufferedWriter.java:124)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at org.yaaic.protocol.OutputThread.sendRawLine(OutputThread.java:66)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at org.yaaic.protocol.InputThread.sendRawLine(InputThread.java:56)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at org.yaaic.protocol.IRCClient.sendRawLine(IRCClient.java:386)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at org.yaaic.protocol.IRCClient.changeNick(IRCClient.java:477)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at org.yaaic.command.handler.NickHandler.execute(NickHandler.java:46)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at org.yaaic.command.CommandParser.handleClientCommand(CommandParser.java:179)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at org.yaaic.command.CommandParser.parse(CommandParser.java:236)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at org.yaaic.fragment.ConversationFragment.sendMessage(ConversationFragment.java:777)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at org.yaaic.fragment.ConversationFragment.sendCurrentMessage(ConversationFragment.java:729)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at org.yaaic.fragment.ConversationFragment.access$100(ConversationFragment.java:92)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at org.yaaic.fragment.ConversationFragment$2.onClick(ConversationFragment.java:268)
+05-01 20:09:58.369 25995-25995/org.yaaic W/System.err:     at android.view.View.performClick(View.java:5204)

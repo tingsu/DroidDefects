@@ -1,0 +1,8 @@
+java.lang.StringIndexOutOfBoundsException: length=42339; index=2147483647
+    at java.lang.String.indexAndLength(String.java:589)
+    at java.lang.String.substring(String.java:1448)
+    at net.nightwhistler.pageturner.activity.ReadingFragment$StreamToDiskRunnable.run(ReadingFragment.java:528)
+    at android.os.Handler.handleCallback(Handler.java:615)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.os.HandlerThread.run(HandlerThread.java:60)

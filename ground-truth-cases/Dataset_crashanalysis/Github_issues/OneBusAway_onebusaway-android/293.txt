@@ -1,0 +1,12 @@
+android.content.res.Resources$NotFoundException: Resource ID #0x0
+            at android.content.res.Resources.getValue(Resources.java:1316)
+            at android.content.res.Resources.getDrawable(Resources.java:812)
+            at android.content.Context.getDrawable(Context.java:403)
+            at android.support.v4.content.ContextCompatApi21.getDrawable(ContextCompatApi21.java:26)
+            at android.support.v4.content.ContextCompat.getDrawable(ContextCompat.java:319)
+            at org.onebusaway.android.ui.AlertList$Adapter.initView(AlertList.java:78)
+            at org.onebusaway.android.ui.AlertList$Adapter.initView(AlertList.java:60)
+            at org.onebusaway.android.util.ArrayAdapter.getView(ArrayAdapter.java:73)
+            at android.widget.AbsListView.obtainView(AbsListView.java:2390)
+            at android.widget.ListView.measureHeightOfChildren(ListView.java:1270)
+            at android.widget.ListView.onMeasure(ListView.java:1182)

@@ -1,0 +1,13 @@
+Caused by java.lang.NullPointerException: Attempt to invoke interface method 'void org.wordpress.android.editor.EditorMediaUploadListener.onMediaUploadProgress(java.lang.String, float)' on a null object reference
+       at org.wordpress.android.ui.posts.EditPostActivity.onUploadProgress(EditPostActivity.java:976)
+       at org.wordpress.android.ui.posts.EditPostActivity.onMediaUploaded(EditPostActivity.java:2283)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at org.greenrobot.eventbus.EventBus.invokeSubscriber(EventBus.java:485)
+       at org.greenrobot.eventbus.EventBus.invokeSubscriber(EventBus.java:479)
+       at org.greenrobot.eventbus.HandlerPoster.handleMessage(HandlerPoster.java:67)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:158)
+       at android.app.ActivityThread.main(ActivityThread.java:7231)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1230)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1120)

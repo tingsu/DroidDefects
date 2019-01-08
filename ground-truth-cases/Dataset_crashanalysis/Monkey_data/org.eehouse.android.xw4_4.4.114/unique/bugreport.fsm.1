@@ -1,0 +1,27 @@
+//this is an auto-generated bug report
+//package name: org.eehouse.android.xw4
+//version: 4.4.114
+//appro_time: 58
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{org.eehouse.android.xw4/org.eehouse.android.xw4.BoardActivity}: java.lang.ArrayIndexOutOfBoundsException: length=2; index=2
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.ArrayIndexOutOfBoundsException: length=2; index=2
+ 	at org.eehouse.android.xw4.jni.GameSummary.readPlayers(GameSummary.java:172)
+ 	at org.eehouse.android.xw4.DBUtils.getSummary(DBUtils.java:173)
+ 	at org.eehouse.android.xw4.jni.JNIThread.configure(JNIThread.java:200)
+ 	at org.eehouse.android.xw4.BoardDelegate.doResume(BoardDelegate.java:2030)
+ 	at org.eehouse.android.xw4.BoardDelegate.onStart(BoardDelegate.java:592)
+ 	at org.eehouse.android.xw4.XWActivity.onStart(XWActivity.java:107)
+ 	at android.app.Instrumentation.callActivityOnStart(Instrumentation.java:1171)
+ 	at android.app.Activity.performStart(Activity.java:5143)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2184)

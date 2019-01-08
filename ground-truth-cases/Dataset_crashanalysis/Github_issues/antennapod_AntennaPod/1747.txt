@@ -1,0 +1,32 @@
+java.lang.IllegalStateException: Fatal Exception thrown on Scheduler.Worker thread.
+    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:62)
+    at android.os.Handler.handleCallback(Handler.java:808)
+     ...
+Caused by: rx.exceptions.OnErrorFailedException: Error occurred when trying to propagate error to Observer.onError
+    at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:2194)
+    at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:146)
+    at rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber.pollQueue(OperatorObserveOn.java:202)
+    at rx.internal.operators.OperatorObserveOn$ObserveOnSubscriber$2.call(OperatorObserveOn.java:162)
+    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)
+    ... 9 more
+Caused by: rx.exceptions.CompositeException: 2 exceptions occurred. 
+    ... 14 more
+Caused by: rx.exceptions.CompositeException$CompositeExceptionCausalChain: Chain of Causes for CompositeException In Order Received =>
+    at de.danoeh.antennapod.CrashReportWriter.uncaughtException(CrashReportWriter.java:44)
+    at java.lang.ThreadGroup.uncaughtException(ThreadGroup.java:693)
+    ...
+Caused by: java.lang.NullPointerException
+    at android.content.ComponentName.<init>(ComponentName.java:77)
+    at android.content.Intent.<init>(Intent.java:4074)
+    at de.danoeh.antennapod.fragment.ItunesSearchFragment.access$lambda$10(ItunesSearchFragment.java:13154)
+    at de.danoeh.antennapod.fragment.ItunesSearchFragment$$Lambda$11.call(Unknown Source)
+    at rx.Observable$28.onNext(Observable.java:7976)
+    ...
+Caused by: java.lang.IllegalStateException: Fragment ItunesSearchFragment{42d54ca0} not attached to Activity
+    at android.support.v4.app.Fragment.getResources(Fragment.java:636)
+    at android.support.v4.app.Fragment.getString(Fragment.java:658)
+    at de.danoeh.antennapod.fragment.ItunesSearchFragment.access$lambda$11(ItunesSearchFragment.java:13162)
+    at de.danoeh.antennapod.fragment.ItunesSearchFragment$$Lambda$12.call(Unknown Source)
+    at rx.Observable$28.onError(Observable.java:7971)
+    at rx.observers.SafeSubscriber.onError(SafeSubscriber.java:2159)
+    at rx.observers.SafeSubscriber.onNext(SafeSubscriber.java:146)

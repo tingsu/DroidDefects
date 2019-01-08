@@ -1,0 +1,8 @@
+java.lang.NullPointerException
+       at org.kontalk.service.msgcenter.MessageCenterService.broadcastPresence(MessageCenterService.java:1701)
+       at org.kontalk.service.msgcenter.MessageCenterService.broadcastPresence(MessageCenterService.java:1682)
+       at org.kontalk.service.msgcenter.MessageCenterService.access$1400(MessageCenterService.java:148)
+       at org.kontalk.service.msgcenter.MessageCenterService$3.run(MessageCenterService.java:999)
+       at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+       at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+       at java.lang.Thread.run(Thread.java:856)

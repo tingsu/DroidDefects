@@ -1,0 +1,10 @@
+java.lang.OutOfMemoryError: Failed to allocate a 20 byte allocation with 0 free bytes and 3GB until OOM
+    at info.papdt.blacklight.ui.common.AbsImageActivity$MyCallback.onProgressChanged(AbsImageActivity.java:184)
+    at info.papdt.blacklight.cache.file.FileCacheManager.createCacheFromStream(FileCacheManager.java:141)
+    at info.papdt.blacklight.cache.file.FileCacheManager.createLargeCacheFromNetwork(FileCacheManager.java:119)
+    at info.papdt.blacklight.cache.statuses.HomeTimeLineApiCache.getLargePic(HomeTimeLineApiCache.java:196)
+    at info.papdt.blacklight.ui.statuses.StatusImageActivity.doDownload(StatusImageActivity.java:38)
+    at info.papdt.blacklight.ui.common.AbsImageActivity$DownloadTask.doInBackground(AbsImageActivity.java:251)
+    at info.papdt.blacklight.ui.common.AbsImageActivity$DownloadTask.doInBackground(AbsImageActivity.java:247)
+    at info.papdt.blacklight.support.AsyncTask$2.run(AsyncTask.java:73)
+    at java.lang.Thread.run(Thread.java:818)

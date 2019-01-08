@@ -1,0 +1,18 @@
+java.lang.ClassCastException: android.widget.Button
+E/AndroidRuntime( 7301):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2268)
+E/AndroidRuntime( 7301):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2284)
+E/AndroidRuntime( 7301):    at android.app.ActivityThread.access$1800(ActivityThread.java:112)
+E/AndroidRuntime( 7301):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1692)
+E/AndroidRuntime( 7301):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 7301):    at android.os.Looper.loop(Looper.java:123)
+E/AndroidRuntime( 7301):    at android.app.ActivityThread.main(ActivityThread.java:3948)
+E/AndroidRuntime( 7301):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 7301):    at java.lang.reflect.Method.invoke(Method.java:521)
+E/AndroidRuntime( 7301):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:782)
+E/AndroidRuntime( 7301):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:540)
+E/AndroidRuntime( 7301):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 7301): Caused by: java.lang.ClassCastException: android.widget.Button
+E/AndroidRuntime( 7301):    at com.ichi2.anki.Reviewer.initLayout(Reviewer.java:940)
+E/AndroidRuntime( 7301):    at com.ichi2.anki.Reviewer.onCreate(Reviewer.java:500)
+E/AndroidRuntime( 7301):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1123)
+E/AndroidRuntime( 7301):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2231)

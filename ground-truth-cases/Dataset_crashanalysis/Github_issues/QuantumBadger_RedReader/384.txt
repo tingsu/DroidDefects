@@ -1,0 +1,8 @@
+E/AndroidRuntime(14646): java.lang.IllegalArgumentException: unexpected url: image
+E/AndroidRuntime(14646):    at com.squareup.okhttp.Request$Builder.url(Request.java:163)
+E/AndroidRuntime(14646):    at org.quantumbadger.redreader.http.okhttp.OKHTTPBackend.prepareRequest(OKHTTPBackend.java:91)
+E/AndroidRuntime(14646):    at org.quantumbadger.redreader.cache.CacheDownload.<init>(CacheDownload.java:65)
+E/AndroidRuntime(14646):    at org.quantumbadger.redreader.cache.PrioritisedDownloadQueue.add(PrioritisedDownloadQueue.java:41)
+E/AndroidRuntime(14646):    at org.quantumbadger.redreader.cache.CacheManager$RequestHandlerThread.queueDownload(CacheManager.java:405)
+E/AndroidRuntime(14646):    at org.quantumbadger.redreader.cache.CacheManager$RequestHandlerThread.handleRequest(CacheManager.java:374)
+E/AndroidRuntime(14646):    at org.quantumbadger.redreader.cache.CacheManager$RequestHandlerThread.run(CacheManager.java:337)

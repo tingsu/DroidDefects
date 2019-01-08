@@ -1,0 +1,67 @@
+06-20 10:54:52.696: E/AndroidRuntime(9755): java.lang.RuntimeException: An error occurred while executing doInBackground()
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at android.os.AsyncTask$3.done(AsyncTask.java:309)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:234)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at java.lang.Thread.run(Thread.java:818)
+06-20 10:54:52.696: E/AndroidRuntime(9755): Caused by: java.lang.ArrayIndexOutOfBoundsException: length=7; index=72
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at net.osmand.binary.   .readCityHeader(BinaryMapAddressReaderAdapter.java:276)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at net.osmand.binary.BinaryMapAddressReaderAdapter.searchAddressDataByName(BinaryMapAddressReaderAdapter.java:633)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at net.osmand.binary.BinaryMapIndexReader.searchAddressDataByName(BinaryMapIndexReader.java:1307)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at net.osmand.binary.BinaryMapIndexReader.searchAddressDataByName(BinaryMapIndexReader.java:1315)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at net.osmand.binary.GeocodingUtilities.justifyReverseGeocodingSearch(GeocodingUtilities.java:280)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at net.osmand.plus.resources.RegionAddressRepositoryBinary.justifyReverseGeocodingSearch(RegionAddressRepositoryBinary.java:72)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at net.osmand.plus.CurrentPositionHelper.justifyResult(CurrentPositionHelper.java:133)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at net.osmand.plus.CurrentPositionHelper.processGeocoding(CurrentPositionHelper.java:98)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at net.osmand.plus.CurrentPositionHelper.access$000(CurrentPositionHelper.java:26)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at net.osmand.plus.CurrentPositionHelper$1.doInBackground(CurrentPositionHelper.java:77)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at net.osmand.plus.CurrentPositionHelper$1.doInBackground(CurrentPositionHelper.java:72)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at android.os.AsyncTask$2.call(AsyncTask.java:295)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+06-20 10:54:52.696: E/AndroidRuntime(9755):     ... 4 more
+06-20 10:54:52.721: W/ActivityManager(1756):   Force finishing activity net.osmand.plus/.activities.MapActivity
+06-20 10:54:52.806: W/ActivityManager(1756):  Dismiss app error dialog : net.osmand.plus
+06-20 10:54:52.806: W/AppOps(1756): Finishing op nesting under-run: uid 1000 pkg android code 24 time=1465227094141 duration=4 nesting=0
+06-20 10:54:52.925: W/InputDispatcher(1756): channel '1e9e6b8 net.osmand.plus/net.osmand.plus.activities.MapActivity (server)' ~ Consumer closed input channel or an error occurred.  events=0x9
+06-20 10:54:52.925: E/InputDispatcher(1756): channel '1e9e6b8 net.osmand.plus/net.osmand.plus.activities.MapActivity (server)' ~ Channel is unrecoverably broken and will be disposed!
+06-20 10:54:52.933: W/InputDispatcher(1756): Attempted to unregister already unregistered input channel '1e9e6b8 net.osmand.plus/net.osmand.plus.activities.MapActivity (server)'
+06-20 10:54:53.044: W/InputMethodManagerService(1756): Got RemoteException sending setActive(false) notification to pid 9755 uid 10082
+06-20 10:54:53.407: W/WindowAnimator(1756): Failed to dispatch window animation state change.
+06-20 10:54:53.407: W/WindowAnimator(1756): android.os.DeadObjectException
+06-20 10:54:53.407: W/WindowAnimator(1756):     at android.os.BinderProxy.transactNative(Native Method)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at android.os.BinderProxy.transact(Binder.java:527)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at android.view.IWindow$Stub$Proxy.onAnimationStopped(IWindow.java:534)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at com.android.server.wm.WindowAnimator.updateWindowsLocked(WindowAnimator.java:288)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at com.android.server.wm.WindowAnimator.animateLocked(WindowAnimator.java:688)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at com.android.server.wm.WindowAnimator.access$000(WindowAnimator.java:54)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at com.android.server.wm.WindowAnimator$1.doFrame(WindowAnimator.java:125)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at android.view.Choreographer$CallbackRecord.run(Choreographer.java:856)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at android.view.Choreographer.doCallbacks(Choreographer.java:670)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at android.view.Choreographer.doFrame(Choreographer.java:603)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:844)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at android.os.Handler.handleCallback(Handler.java:739)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at android.os.Handler.dispatchMessage(Handler.java:95)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at android.os.Looper.loop(Looper.java:152)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at android.os.HandlerThread.run(HandlerThread.java:61)
+06-20 10:54:53.407: W/WindowAnimator(1756):     at com.android.server.ServiceThread.run(ServiceThread.java:46)
+06-20 10:54:53.409: W/WindowAnimator(1756): Failed to dispatch window animation state change.
+06-20 10:54:53.409: W/WindowAnimator(1756): android.os.DeadObjectException
+06-20 10:54:53.409: W/WindowAnimator(1756):     at android.os.BinderProxy.transactNative(Native Method)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at android.os.BinderProxy.transact(Binder.java:527)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at android.view.IWindow$Stub$Proxy.onAnimationStopped(IWindow.java:534)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at com.android.server.wm.WindowAnimator.updateWindowsLocked(WindowAnimator.java:288)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at com.android.server.wm.WindowAnimator.animateLocked(WindowAnimator.java:688)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at com.android.server.wm.WindowAnimator.access$000(WindowAnimator.java:54)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at com.android.server.wm.WindowAnimator$1.doFrame(WindowAnimator.java:125)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at android.view.Choreographer$CallbackRecord.run(Choreographer.java:856)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at android.view.Choreographer.doCallbacks(Choreographer.java:670)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at android.view.Choreographer.doFrame(Choreographer.java:603)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:844)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at android.os.Handler.handleCallback(Handler.java:739)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at android.os.Handler.dispatchMessage(Handler.java:95)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at android.os.Looper.loop(Looper.java:152)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at android.os.HandlerThread.run(HandlerThread.java:61)
+06-20 10:54:53.409: W/WindowAnimator(1756):     at com.android.server.ServiceThread.run(ServiceThread.java:46)

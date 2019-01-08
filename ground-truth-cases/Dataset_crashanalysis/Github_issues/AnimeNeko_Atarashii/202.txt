@@ -1,0 +1,18 @@
+07-31 00:48:27.215 E/AndroidRuntime(10502): java.lang.RuntimeException: Unable to resume activity {net.somethingdreadful.MAL/net.somethingdreadful.MAL.Home}: java.lang.NullPointerException: Attempt to read from field 'int net.somethingdreadful.MAL.IGF.list' on a null object reference
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2777)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:2806)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2241)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at android.app.ActivityThread.access$800(ActivityThread.java:138)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1199)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at android.os.Handler.dispatchMessage(Handler.java:102)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at android.os.Looper.loop(Looper.java:136)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at android.app.ActivityThread.main(ActivityThread.java:5034)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at java.lang.reflect.Method.invoke(Native Method)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:795)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:611)
+07-31 00:48:27.215 E/AndroidRuntime(10502): Caused by: java.lang.NullPointerException: Attempt to read from field 'int net.somethingdreadful.MAL.IGF.list' on a null object reference
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at net.somethingdreadful.MAL.Home.checkNetworkAndDisplayCrouton(Home.java:384)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at net.somethingdreadful.MAL.Home.onResume(Home.java:256)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at android.app.Activity.performResume(Activity.java:5320)
+07-31 00:48:27.215 E/AndroidRuntime(10502):     at android.app.ActivityThread.performResumeActivity(ActivityThread.java:2767)

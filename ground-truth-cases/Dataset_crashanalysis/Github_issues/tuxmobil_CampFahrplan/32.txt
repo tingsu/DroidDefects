@@ -1,0 +1,19 @@
+    Invalid int: "null"
+E      at android.app.ActivityThread.handleReceiver(ActivityThread.java:2441)
+E      at android.app.ActivityThread.access$1700(ActivityThread.java:139)
+E      at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1286)
+E      at android.os.Handler.dispatchMessage(Handler.java:102)
+E      at android.os.Looper.loop(Looper.java:136)
+E      at android.app.ActivityThread.main(ActivityThread.java:5086)
+E      at java.lang.reflect.Method.invokeNative(Native Method)
+E      at java.lang.reflect.Method.invoke(Method.java:515)
+E      at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:785)
+E      at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:601)
+E      at dalvik.system.NativeStart.main(Native Method)
+
+E  Caused by: java.lang.NumberFormatException: Invalid int: "null"
+E      at java.lang.Integer.invalidInt(Integer.java:137)
+E      at java.lang.Integer.parseInt(Integer.java:354)
+E      at java.lang.Integer.parseInt(Integer.java:331)
+E      at nerd.tuxmobil.fahrplan.congress.AlarmReceiver.onReceive(AlarmReceiver.java:29)
+E      at android.app.ActivityThread.handleReceiver(ActivityThread.java:2434)

@@ -1,0 +1,4 @@
+    java.lang.ClassCastException: android.graphics.drawable.VectorDrawable cannot be cast to android.graphics.drawable.BitmapDrawable
+            at org.holylobster.nuntius.Message.toJSON(Message.java:91)
+            at org.holylobster.nuntius.Message.toJSON(Message.java:62)
+            at org.holylobster.nuntius.Connection$1.run(Connection.java:51)

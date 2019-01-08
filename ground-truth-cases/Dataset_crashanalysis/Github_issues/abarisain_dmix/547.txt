@@ -1,0 +1,7 @@
+E/AndroidRuntime( 4474): java.lang.NumberFormatException: Invalid float: "nan"
+E/AndroidRuntime( 4474):        at java.lang.StringToReal.invalidReal(StringToReal.java:63)
+E/AndroidRuntime( 4474):        at java.lang.StringToReal.parseFloat(StringToReal.java:310)
+E/AndroidRuntime( 4474):        at java.lang.Float.parseFloat(Float.java:300)
+E/AndroidRuntime( 4474):        at org.a0z.mpd.MPDStatus.updateStatus(MPDStatus.java:407)
+E/AndroidRuntime( 4474):        at org.a0z.mpd.MPD.getStatus(MPD.java:1115)
+E/AndroidRuntime( 4474):        at org.a0z.mpd.MPDStatusMonitor.run(MPDStatusMonitor.java:169)

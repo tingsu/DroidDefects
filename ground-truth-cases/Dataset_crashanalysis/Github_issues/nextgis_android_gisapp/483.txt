@@ -1,0 +1,12 @@
+java.lang.ClassCastException: com.nextgis.maplib.map.NGWLookupTable cannot be cast to com.nextgis.maplib.map.Layer
+    at com.nextgis.maplibui.activity.NGWSettingsActivity.deleteAccountLayers(NGWSettingsActivity.java:679)
+    at com.nextgis.maplibui.activity.NGWSettingsActivity$4.onReceive(NGWSettingsActivity.java:590)
+    at com.nextgis.maplibui.activity.NGWSettingsActivity$5.onClick(NGWSettingsActivity.java:638)
+    at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:167)
+    at android.os.Handler.dispatchMessage(Handler.java:111)
+    at android.os.Looper.loop(Looper.java:194)
+    at android.app.ActivityThread.main(ActivityThread.java:5624)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:959)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:754)

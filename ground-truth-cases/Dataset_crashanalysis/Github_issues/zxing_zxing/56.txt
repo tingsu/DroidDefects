@@ -1,0 +1,11 @@
+E/AndroidRuntime( 9463): java.lang.ArrayIndexOutOfBoundsException: src.length=460800 srcPos=461039 dst.length=799 dstPos=0 length=799
+E/AndroidRuntime( 9463):    at java.lang.System.arraycopy(Native Method)
+E/AndroidRuntime( 9463):    at com.google.zxing.PlanarYUVLuminanceSource.getRow(PlanarYUVLuminanceSource.java:73)
+E/AndroidRuntime( 9463):    at com.google.zxing.common.GlobalHistogramBinarizer.getBlackRow(GlobalHistogramBinarizer.java:62)
+E/AndroidRuntime( 9463):    at com.google.zxing.oned.OneDReader.doDecode(OneDReader.java:130)
+E/AndroidRuntime( 9463):    at com.google.zxing.oned.OneDReader.decode(OneDReader.java:57)
+E/AndroidRuntime( 9463):    at com.google.zxing.MultiFormatReader.decodeInternal(MultiFormatReader.java:171)
+E/AndroidRuntime( 9463):    at com.google.zxing.client.android.DecodeHandler.handleMessage(DecodeHandler.java:58)
+E/AndroidRuntime( 9463):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime( 9463):    at android.os.Looper.loop(Looper.java:136)
+E/AndroidRuntime( 9463):    at com.google.zxing.client.android.DecodeThread.run(DecodeThread.java:110)

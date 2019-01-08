@@ -1,0 +1,5 @@
+E/AndroidRuntime( 2470): java.lang.IndexOutOfBoundsException: Invalid index 2, size is 2
+E/AndroidRuntime( 2470):    at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:251)
+E/AndroidRuntime( 2470):    at java.util.ArrayList.get(ArrayList.java:304)
+E/AndroidRuntime( 2470):    at java.util.Collections$SynchronizedList.get(Collections.java:537)
+E/AndroidRuntime( 2470):    at de.danoeh.antennapod.adapter.ExternalEpisodesListAdapter.getChild(ExternalEpisodesListAdapter.java:79)

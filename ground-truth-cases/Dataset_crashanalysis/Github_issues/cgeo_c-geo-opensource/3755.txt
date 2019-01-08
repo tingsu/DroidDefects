@@ -1,0 +1,5 @@
+cgeo.geocaching.geopoint.Geopoint$ParseException: N 49° 11,571 E 1642309° 00,000
+   at cgeo.geocaching.geopoint.GeopointParser.parse(GeopointParser.java:73)
+   at cgeo.geocaching.geopoint.Geopoint.<init>(Geopoint.java:57)
+   at cgeo.geocaching.NavigateAnyPointActivity$CoordDialogListener.onClick(NavigateAnyPointActivity.java:284)
+   at android.view.View.performClick(View.java:2585)

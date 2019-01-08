@@ -1,0 +1,17 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{me.ccrama.redditslide/me.ccrama.redditslide.Activities.Profile}: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.view.View.setVisibility(int)' on a null object reference
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2340)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2402)
+    at android.app.ActivityThread.access$900(ActivityThread.java:151)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1318)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:135)
+    at android.app.ActivityThread.main(ActivityThread.java:5269)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.view.View.setVisibility(int)' on a null object reference
+    at me.ccrama.redditslide.Activities.Profile.onCreate(Profile.java:57)
+    at android.app.Activity.performCreate(Activity.java:6034)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2293)

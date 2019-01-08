@@ -1,0 +1,10 @@
+java.lang.NullPointerException: println needs a message
+    at android.util.Log.println_native(Native Method)
+    at android.util.Log.d(Log.java:139)
+    at com.nextgis.maplib.map.NGWVectorLayer.addFeatureOnServer(NGWVectorLayer.java:1649)
+    at com.nextgis.maplib.map.NGWVectorLayer.sendLocalChanges(NGWVectorLayer.java:785)
+    at com.nextgis.maplib.map.NGWVectorLayer.sync(NGWVectorLayer.java:706)
+    at com.nextgis.maplib.datasource.ngw.SyncAdapter.sync(SyncAdapter.java:156)
+    at com.nextgis.maplib.datasource.ngw.SyncAdapter.onPerformSync(SyncAdapter.java:119)
+    at com.nextgis.mobile.datasource.SyncAdapter.onPerformSync(SyncAdapter.java:56)
+    at android.content.AbstractThreadedSyncAdapter$SyncThread.run(AbstractThreadedSyncAdapter.java:259)

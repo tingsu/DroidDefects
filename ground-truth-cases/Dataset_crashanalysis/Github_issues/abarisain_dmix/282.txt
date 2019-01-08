@@ -1,0 +1,4 @@
+ java.lang.IllegalStateException: Fragment NowPlayingFragment{421080e8} not attached to Activity
+        at android.support.v4.app.Fragment.getResources(Fragment.java:579)
+        at com.namelessdev.mpdroid.fragments.NowPlayingFragment$updateTrackInfoAsync.onPostExecute(NowPlayingFragment.java:563)
+        at com.namelessdev.mpdroid.fragments.NowPlayingFragment$updateTrackInfoAsync.onPostExecute(NowPlayingFragment.java:520)

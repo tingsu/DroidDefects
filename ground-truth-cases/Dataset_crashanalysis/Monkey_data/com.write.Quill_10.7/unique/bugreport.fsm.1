@@ -1,0 +1,29 @@
+//this is an auto-generated bug report
+//package name: com.write.Quill
+//version: 10.7
+//appro_time: 66
+ junit.framework.AssertionFailedError
+ 	at junit.framework.Assert.fail(Assert.java:48)
+ 	at junit.framework.Assert.assertTrue(Assert.java:20)
+ 	at junit.framework.Assert.assertNotNull(Assert.java:218)
+ 	at junit.framework.Assert.assertNotNull(Assert.java:211)
+ 	at com.write.Quill.UndoManager.getApplication(UndoManager.java:44)
+ 	at com.write.Quill.CommandPage.execute(CommandPage.java:19)
+ 	at com.write.Quill.UndoManager.onPageInsertListener(UndoManager.java:89)
+ 	at com.write.Quill.data.Book.requestAddPage(Book.java:248)
+ 	at com.write.Quill.data.Book.insertPage(Book.java:394)
+ 	at com.write.Quill.data.Book.insertPageAtEnd(Book.java:418)
+ 	at com.write.Quill.QuillWriterActivity.flip_page_next(QuillWriterActivity.java:627)
+ 	at com.write.Quill.QuillWriterActivity.onToolboxListener(QuillWriterActivity.java:374)
+ 	at name.vbraun.view.write.Toolbox.onClick(Toolbox.java:430)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

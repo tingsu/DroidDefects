@@ -1,0 +1,14 @@
+E/AndroidRuntime(  511): java.lang.RuntimeException: Unable to start service com.matburt.mobileorg.Services.SyncService@1cbc2639 with null: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.content.Intent.getStringExtra(java.lang.String)' on a null object reference
+E/AndroidRuntime(  511):    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2941)
+E/AndroidRuntime(  511):    at android.app.ActivityThread.access$2100(ActivityThread.java:155)
+E/AndroidRuntime(  511):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1415)
+E/AndroidRuntime(  511):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(  511):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(  511):    at android.app.ActivityThread.main(ActivityThread.java:5343)
+E/AndroidRuntime(  511):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(  511):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(  511):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:905)
+E/AndroidRuntime(  511):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:700)
+E/AndroidRuntime(  511): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.content.Intent.getStringExtra(java.lang.String)' on a null object reference
+E/AndroidRuntime(  511):    at com.matburt.mobileorg.Services.SyncService.onStartCommand(SyncService.java:74)
+E/AndroidRuntime(  511):    at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2924)

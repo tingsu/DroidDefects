@@ -1,0 +1,9 @@
+E/AndroidRuntime( 6739): java.lang.UnsupportedOperationException
+E/AndroidRuntime( 6739):    at java.util.Collections$UnmodifiableCollection$1.remove(Collections.java:964)
+E/AndroidRuntime( 6739):    at org.whispersystems.textsecure.storage.SessionRecordV2.removeMessageKeys(SessionRecordV2.java:353)
+E/AndroidRuntime( 6739):    at org.whispersystems.textsecure.crypto.SessionCipherV2.getOrCreateMessageKeys(SessionCipherV2.java:137)
+E/AndroidRuntime( 6739):    at org.whispersystems.textsecure.crypto.SessionCipherV2.decrypt(SessionCipherV2.java:83)
+E/AndroidRuntime( 6739):    at org.thoughtcrime.securesms.crypto.DecryptingQueue$PushDecryptionWorkItem.run(DecryptingQueue.java:206)
+E/AndroidRuntime( 6739):    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1112)
+E/AndroidRuntime( 6739):    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:587)
+E/AndroidRuntime( 6739):    at java.lang.Thread.run(Thread.java:841)

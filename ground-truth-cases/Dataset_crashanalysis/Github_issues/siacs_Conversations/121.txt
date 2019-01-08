@@ -1,0 +1,22 @@
+I/dalvikvm( 3551):   | schedstat=( 43756749 4614709 33 ) utm=3 stm=0 core=0
+I/dalvikvm( 3551):   at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+I/dalvikvm( 3551):   at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:652)
+I/dalvikvm( 3551):   at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:724)
+I/dalvikvm( 3551):   at eu.siacs.conversations.persistance.FileBackend.copyImageToPrivateStorage(FileBackend.java:98)
+I/dalvikvm( 3551):   at eu.siacs.conversations.services.XmppConnectionService$7.run(XmppConnectionService.java:480)
+I/dalvikvm( 3551):   at java.lang.Thread.run(Thread.java:856)
+I/dalvikvm( 3551): 
+D/skia    ( 3551): --- decoder->decode returned false
+W/dalvikvm( 3551): threadid=20: thread exiting with uncaught exception (group=0x416232a0)
+W/CursorWrapperInner( 3551): Cursor finalized without prior close()
+D/WindowManager( 2114): mInputFocus is not null.
+D/AbsListView( 3551): [unregisterDoubleTapMotionListener]
+I/MotionRecognitionManager( 3551):   .unregisterListener : / listener count = 0->0, ubvf 9budiwrd5ordgfl5BakTrklMrfo$,@,)_b:/88
+E/AndroidRuntime( 3551): FATAL EXCEPTION: Thread-219
+E/AndroidRuntime( 3551): java.lang.OutOfMemoryError
+E/AndroidRuntime( 3551):    at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+E/AndroidRuntime( 3551):    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:652)
+E/AndroidRuntime( 3551):    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:724)
+E/AndroidRuntime( 3551):    at eu.siacs.conversations.persistance.FileBackend.copyImageToPrivateStorage(FileBackend.java:98)
+E/AndroidRuntime( 3551):    at eu.siacs.conversations.services.XmppConnectionService$7.run(XmppConnectionService.java:480)
+E/AndroidRuntime( 3551):    at java.lang.Thread.run(Thread.java:856)

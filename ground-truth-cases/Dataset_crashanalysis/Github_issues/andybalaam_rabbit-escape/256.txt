@@ -1,0 +1,6 @@
+java.lang.ArrayStoreException
+    at java.lang.System.arraycopy(Native Method)
+    at java.util.Arrays.copyOf(Arrays.java:2248)
+    at java.util.ArrayList.toArray(ArrayList.java:389)
+    at rabbitescape.engine.util.Util.concatVarargs(Util.java:691)
+    at rabbitescape.engine.util.TestUtil.ConcatVarargs_3(TestUtil.java:113)

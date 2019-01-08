@@ -1,0 +1,9 @@
+//this is an auto-generated bug report
+//package name: com.nkanaev.comics
+//version: 1.6.0-DEBUG
+//appro_time: 107
+ java.lang.NullPointerException
+ 	at java.util.ComparableTimSort.sort(ComparableTimSort.java:142)
+ 	at java.util.Arrays.sort(Arrays.java:1973)
+ 	at com.nkanaev.comics.managers.Scanner$LibraryUpdateRunnable.run(Scanner.java:126)
+ 	at java.lang.Thread.run(Thread.java:841)

@@ -1,0 +1,17 @@
+W System.err: java.lang.RuntimeException: crashed here (native trace should follow after the Java trace)
+W System.err: at name.boyle.chris.sgtpuzzles.SGTPuzzles.nativeCrashed(SGTPuzzles.java:981)
+W System.err: at android.graphics.Canvas.native_drawColor(Native Method)
+W System.err: at android.graphics.Canvas.drawColor(Canvas.java:742)
+W System.err: at name.boyle.chris.sgtpuzzles.GameView.clear(GameView.java:175)
+W System.err: at name.boyle.chris.sgtpuzzles.SGTPuzzles.requestResize(SGTPuzzles.java:787)
+W System.err: at name.boyle.chris.sgtpuzzles.SGTPuzzles.init(Native Method)
+W System.err: at name.boyle.chris.sgtpuzzles.SGTPuzzles$11.run(SGTPuzzles.java:676)
+```
+
+The native trace is uninteresting. The last line of my code is:
+
+```
+if( canvas != null ) canvas.drawColor( Color.BLACK );
+```
+
+So it's not at all obvious what I might have done wrong here...

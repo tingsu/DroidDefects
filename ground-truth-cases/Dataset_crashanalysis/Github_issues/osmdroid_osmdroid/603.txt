@@ -1,0 +1,4 @@
+Fatal Exception: java.lang.RuntimeException: You must pass an IMyLocationProvider to setMyLocationProvider()
+       at org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay.setMyLocationProvider(MyLocationNewOverlay.java:197)
+       at org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay.enableMyLocation(MyLocationNewOverlay.java:535)
+       at org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay.enableMyLocation(MyLocationNewOverlay.java:564)

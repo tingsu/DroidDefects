@@ -1,0 +1,38 @@
+occured while executing doInBackground()
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at android.os.AsyncTask$3.done(AsyncTask.java:200)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.util.concurrent.FutureTask$Sync.innerSetException(FutureTask.java:273)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.util.concurrent.FutureTask.setException(FutureTask.java:124)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:307)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1068)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:561)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.lang.Thread.run(Thread.java:1096)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981): Caused by: java.lang.RuntimeException:
+java.lang.reflect.InvocationTargetException
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at com.ichi2.anki.Deck.answerCard(Deck.java:1166)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at com.ichi2.anki.DeckTask.doInBackgroundAnswerCard(DeckTask.java:180)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at com.ichi2.anki.DeckTask.doInBackground(DeckTask.java:104)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at com.ichi2.anki.DeckTask.doInBackground(DeckTask.java:1)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at android.os.AsyncTask$2.call(AsyncTask.java:185)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     ... 4 more
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981): Caused by: java.lang.reflect.InvocationTargetException
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at com.ichi2.anki.Deck._answerCard(Deck.java:2573)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.lang.reflect.Method.invokeNative(Native
+Method)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.lang.reflect.Method.invoke(Method.java:521)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at com.ichi2.anki.Deck.answerCard(Deck.java:1160)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     ... 9 more
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981): Caused by: java.lang.RuntimeException:
+java.lang.reflect.InvocationTargetException
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at com.ichi2.anki.Deck.requeueCard(Deck.java:1101)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     ... 13 more
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981): Caused by: java.lang.reflect.InvocationTargetException
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at com.ichi2.anki.Deck._requeueCard(Deck.java:1509)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.lang.reflect.Method.invokeNative(Native
+Method)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.lang.reflect.Method.invoke(Method.java:521)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at com.ichi2.anki.Deck.requeueCard(Deck.java:1095)
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     ... 13 more
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981): Caused by: java.util.NoSuchElementException
+01-17 17:50:35.944: ERROR/AndroidRuntime(6981):     at java.util.LinkedList.removeLast(LinkedList.java:660)

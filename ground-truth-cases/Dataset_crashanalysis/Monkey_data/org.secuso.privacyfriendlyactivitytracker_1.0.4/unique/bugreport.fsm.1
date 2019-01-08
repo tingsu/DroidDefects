@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: org.secuso.privacyfriendlyactivitytracker
+//version: 1.0.4
+//appro_time: 84
+ FATAL EXCEPTION: main
+ java.lang.NumberFormatException: Invalid float: ""
+ 	at java.lang.StringToReal.invalidReal(StringToReal.java:63)
+ 	at java.lang.StringToReal.parseFloat(StringToReal.java:289)
+ 	at java.lang.Float.parseFloat(Float.java:300)
+ 	at org.secuso.privacyfriendlyactivitytracker.models.StepCount.getCalories(StepCount.java:79)
+ 	at org.secuso.privacyfriendlyactivitytracker.services.AbstractStepDetectorService.getStepsAtLastSave(AbstractStepDetectorService.java:276)
+ 	at org.secuso.privacyfriendlyactivitytracker.services.AbstractStepDetectorService.access$200(AbstractStepDetectorService.java:40)
+ 	at org.secuso.privacyfriendlyactivitytracker.services.AbstractStepDetectorService$BroadcastReceiver.onReceive(AbstractStepDetectorService.java:360)
+ 	at android.support.v4.content.LocalBroadcastManager.executePendingBroadcasts(LocalBroadcastManager.java:297)
+ 	at android.support.v4.content.LocalBroadcastManager.access$000(LocalBroadcastManager.java:46)
+ 	at android.support.v4.content.LocalBroadcastManager$1.handleMessage(LocalBroadcastManager.java:116)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

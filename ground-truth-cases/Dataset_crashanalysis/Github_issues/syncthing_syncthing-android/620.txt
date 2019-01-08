@@ -1,0 +1,51 @@
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.compareToIgnoreCase(java.lang.String)' on a null object reference
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at com.nutomic.syncthingandroid.preferences.WifiSsidPreference$1.compare(WifiSsidPreference.java:118)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at com.nutomic.syncthingandroid.preferences.WifiSsidPreference$1.compare(WifiSsidPreference.java:115)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at java.util.TimSort.countRunAndMakeAscending(TimSort.java:320)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at java.util.TimSort.sort(TimSort.java:185)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at java.util.TimSort.sort(TimSort.java:169)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at java.util.Arrays.sort(Arrays.java:2010)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at com.nutomic.syncthingandroid.preferences.WifiSsidPreference.loadConfiguredNetworksSorted(WifiSsidPreference.java:115)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at com.nutomic.syncthingandroid.preferences.WifiSsidPreference.showDialog(WifiSsidPreference.java:54)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at android.preference.DialogPreference.onClick(DialogPreference.java:277)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at android.preference.Preference.performClick(Preference.java:994)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at android.preference.PreferenceScreen.onItemClick(PreferenceScreen.java:214)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at android.widget.AdapterView.performItemClick(AdapterView.java:310)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at android.widget.AbsListView.performItemClick(AbsListView.java:1145)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at android.widget.AbsListView$PerformClick.run(AbsListView.java:3066)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at android.widget.AbsListView$3.run(AbsListView.java:3903)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at android.os.Handler.handleCallback(Handler.java:739)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at android.os.Handler.dispatchMessage(Handler.java:95)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at android.os.Looper.loop(Looper.java:148)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at android.app.ActivityThread.main(ActivityThread.java:5466)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at java.lang.reflect.Method.invoke(Native Method)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:726)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+04-18 16:46:59.456 22656 22656 E AndroidRuntime: at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:117)
+04-18 16:47:01.242 22760 22760 I chatty : uid=10139(com.nutomic.syncthingandroid) expire 9 lines
+04-18 16:47:01.566 22760 22778 I chatty : uid=10139(com.nutomic.syncthingandroid) RenderThread expire 3 lines
+04-18 16:47:01.693 22760 22779 I chatty : uid=10139(com.nutomic.syncthingandroid) AsyncTask #1 expire 2 lines
+04-18 16:47:02.125 22786 22786 I chatty : uid=10139(com.nutomic.syncthingandroid) chmod expire 2 lines
+04-18 16:47:02.243 22760 22783 I chatty : uid=10139(com.nutomic.syncthingandroid) AsyncTask #2 expire 1 line
+04-18 16:47:02.678 22760 22789 I chatty : uid=10139(com.nutomic.syncthingandroid) Thread-1380 expire 30 lines
+04-18 16:47:03.306 22802 22802 I chatty : uid=10139(com.nutomic.syncthingandroid) ps expire 14 lines
+04-18 16:47:03.495 22760 22801 I chatty : uid=10139(com.nutomic.syncthingandroid) expire 1 line
+04-18 16:47:03.498 22760 22791 I chatty : uid=10139(com.nutomic.syncthingandroid) expire 2 lines
+04-18 16:47:09.300 22760 22821 I chatty : uid=10139(com.nutomic.syncthingandroid) AsyncTask #3 expire 9 lines
+04-18 16:47:10.682 22760 22824 I chatty : uid=10139(com.nutomic.syncthingandroid) expire 257 lines
+04-18 16:47:10.799 22760 22779 I chatty : uid=10139(com.nutomic.syncthingandroid) AsyncTask #1 expire 4 lines
+04-18 16:47:11.054 22760 22770 I chatty : uid=10139(com.nutomic.syncthingandroid) HeapTaskDaemon expire 1 line
+04-18 16:47:11.412 22760 22824 I chatty : uid=10139(com.nutomic.syncthingandroid) expire 137 lines
+04-18 16:47:11.822 22760 22779 I chatty : uid=10139(com.nutomic.syncthingandroid) AsyncTask #1 expire 3 lines
+04-18 16:47:11.878 22760 22824 I chatty : uid=10139(com.nutomic.syncthingandroid) expire 12 lines
+04-18 16:47:11.913 22760 22824 V FolderObserver: observer created for FOLDER in FOLDER
+...
+04-18 16:47:12.372 22760 22824 V FolderObserver: observer created for FOLDER in FOLDER
+04-18 16:47:12.496 22760 22779 V GetTask : API call result: {"connections":{"IDIDIDID-IDIDIDID-IDIDIDID":{"address":"","at":"0001-01-01T00:00:00Z","clientVersion":"","connected":false,"inBytesTotal":0,"outBytesTotal":0,"paused":false,"type":"direct-accept"},"IDIDIDID-IDIDIDID-IDIDIDID":{"address":"","at":"0001-01-01T00:00:00Z","clientVersion":"","connected":false,"inBytesTotal":0,"outBytesTotal":0,"paused":false,"type":"direct-accept"},"IDIDIDID-IDIDIDID-IDIDIDID":{"address":"","at":"0001-01-01T00:00:00Z","clientVersion":"","connected":false,"inBytesTotal":0,"outBytesTotal":0,"paused":false,"type":"direct-accept"},"IDIDIDID-IDIDIDID-IDIDIDID":{"address":"","at":"0001-01-01T00:00:00Z","clientVersion":"","connected":false,"inBytesTotal":0,"outBytesTotal":0,"paused":false,"type":"direct-accept"},"IDIDIDID-IDIDIDID-IDIDIDID":{"address":"","at":"0001-01-01T00:00:00Z","clientVersion":"","connected":false,"inBytesTotal":0,"outBytesTotal":0,"paused":false,"type":"direct-accept"}},"total":{"address":"","at":"2016-04-18T13:47:12.481723165Z","clientVersion":"","connected":false,"inBytesTotal":0,"outBytesTotal":0,"paused":false,"type":"direct-accept"}}
+04-18 16:47:12.496 22760 22779 V GetTask : Calling Rest API at https://IP:PORT/rest/system/connections
+04-18 16:47:12.519 22760 22779 W System : ClassLoader referenced unknown path: /system/framework/tcmclient.jar
+04-18 16:47:12.791 22760 22779 V GetTask : API call result: {"connections":{"IDIDIDID-IDIDIDID-IDIDIDID":{"address":"","at":"0001-01-01T00:00:00Z","clientVersion":"","connected":false,"inBytesTotal":0,"outBytesTotal":0,"paused":false,"type":"direct-accept"},"IDIDIDID-IDIDIDID-IDIDIDID":{"address":"","at":"0001-01-01T00:00:00Z","clientVersion":"","connected":false,"inBytesTotal":0,"outBytesTotal":0,"paused":false,"type":"direct-accept"},"IDIDIDID-IDIDIDID-IDIDIDID":{"address":"","at":"0001-01-01T00:00:00Z","clientVersion":"","connected":false,"inBytesTotal":0,"outBytesTotal":0,"paused":false,"type":"direct-accept"},"IDIDIDID-IDIDIDID-IDIDIDID":{"address":"","at":"0001-01-01T00:00:00Z","clientVersion":"","connected":false,"inBytesTotal":0,"outBytesTotal":0,"paused":false,"type":"direct-accept"},"IDIDIDID-IDIDIDID-IDIDIDID":{"address":"","at":"0001-01-01T00:00:00Z","clientVersion":"","connected":false,"inBytesTotal":0,"outBytesTotal":0,"paused":false,"type":"direct-accept"}},"total":{"address":"","at":"2016-04-18T13:47:12.783996933Z","clientVersion":"","connected":false,"inBytesTotal":0,"outBytesTotal":0,"paused":false,"type":"direct-accept"}}
+04-18 16:47:12.792 22760 22779 V GetTask : Calling Rest API at https://IP:PORT/rest/db/status
+04-18 16:47:12.799 22760 22779 W System : ClassLoader referenced unknown path: /system/framework/tcmclient.jar
+04-18 16:47:12.983 22760 22779 V GetTask : API call result: {"globalBytes":378161898,"globalDeleted":0,"globalFiles":79,"ignorePatterns":true,"inSyncBytes":378161898,"inSyncFiles":79,"invalid":"","localBytes":378161898,"localDeleted":0,"localFiles":79,"needBytes":0,"needFiles":0,"state":"idle","stateChanged":"2016-04-18T13:47:08.58369173Z","version":2823}
+04-18 16:47:12.987 22760 22779 V GetTask : Calling Rest API at https://IP:PORT/rest/db/status

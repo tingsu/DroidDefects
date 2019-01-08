@@ -1,0 +1,19 @@
+
+The message is not shown at all.
+
+The following exception is printed in the debug:
+
+```
+03-08 19:28:36.673 4016-4016/com.fsck.k9.debug E/k9: Couldn't connect to OpenPgpService
+                                                     java.lang.Exception: bindService() returned false!
+                                                         at org.openintents.openpgp.util.OpenPgpServiceConnection.bindToService(OpenPgpServiceConnection.java:105)
+                                                         at com.fsck.k9.ui.crypto.MessageCryptoHelper.connectToCryptoProviderService(MessageCryptoHelper.java:163)
+                                                         at com.fsck.k9.ui.crypto.MessageCryptoHelper.startDecryptingOrVerifyingPart(MessageCryptoHelper.java:138)
+                                                         at com.fsck.k9.ui.crypto.MessageCryptoHelper.decryptOrVerifyNextPart(MessageCryptoHelper.java:133)
+                                                         at com.fsck.k9.ui.crypto.MessageCryptoHelper.decryptOrVerifyMessagePartsIfNecessary(MessageCryptoHelper.java:97)
+                                                         at com.fsck.k9.ui.messageview.MessageViewFragment.onLoadMessageFromDatabaseFinished(MessageViewFragment.java:231)
+                                                         at com.fsck.k9.ui.messageview.MessageViewFragment.access$1000(MessageViewFragment.java:57)
+                                                         at com.fsck.k9.ui.messageview.MessageViewFragment$LocalMessageLoaderCallback.onLoadFinished(MessageViewFragment.java:735)
+                                                         at com.fsck.k9.ui.messageview.MessageViewFragment$LocalMessageLoaderCallback.onLoadFinished(MessageViewFragment.java:721)
+                                                         at android.app.LoaderManagerImpl$LoaderInfo.callOnLoadFinished(LoaderManager.java:483)
+                                                         at android.app.LoaderManagerImpl$LoaderInfo.onLoadComplete(LoaderManager.java:451)

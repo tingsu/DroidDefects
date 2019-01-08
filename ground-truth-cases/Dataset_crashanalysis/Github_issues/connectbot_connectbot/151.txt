@@ -1,0 +1,7 @@
+> E/AndroidRuntime(24324): java.lang.UnsatisfiedLinkError: dlopen failed: cannot locate symbol "grantpt" referenced by "libcom_google_ase_Exec.so"...
+> E/AndroidRuntime(24324):  at java.lang.Runtime.loadLibrary(Runtime.java:361)
+> E/AndroidRuntime(24324):  at java.lang.System.loadLibrary(System.java:525)
+> E/AndroidRuntime(24324):  at com.google.ase.Exec.<clinit>(Exec.java:67)
+> E/AndroidRuntime(24324):  at org.connectbot.transport.Local.connect(Local.java:93)
+> E/AndroidRuntime(24324):  at org.connectbot.service.TerminalBridge$3.run(TerminalBridge.java:284)
+> E/AndroidRuntime(24324):  at java.lang.Thread.run(Thread.java:841)

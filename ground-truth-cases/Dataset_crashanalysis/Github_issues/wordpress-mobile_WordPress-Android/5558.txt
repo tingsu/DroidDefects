@@ -1,0 +1,12 @@
+Caused by java.lang.NullPointerException: Attempt to read from field 'java.lang.String org.wordpress.android.fluxc.store.AccountStore$NewAccountPayload.username' on a null object reference
+       at org.wordpress.android.ui.accounts.NewUserFragment.onNewUserCreated(NewUserFragment.java:670)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at org.greenrobot.eventbus.EventBus.invokeSubscriber(EventBus.java:485)
+       at org.greenrobot.eventbus.EventBus.invokeSubscriber(EventBus.java:479)
+       at org.greenrobot.eventbus.HandlerPoster.handleMessage(HandlerPoster.java:67)
+       at android.os.Handler.dispatchMessage(Handler.java:105)
+       at android.os.Looper.loop(Looper.java:156)
+       at android.app.ActivityThread.main(ActivityThread.java:6523)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:941)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:831)

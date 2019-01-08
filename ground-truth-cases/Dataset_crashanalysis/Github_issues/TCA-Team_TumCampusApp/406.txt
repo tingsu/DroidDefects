@@ -1,0 +1,7 @@
+java.lang.NullPointerException: Attempt to invoke interface method 'java.util.Iterator java.util.List.iterator()' on a null object reference
+   at de.tum.in.tumcampusapp.models.managers.ChatRoomManager.replaceIntoRooms(ChatRoomManager.java:125)
+   at de.tum.in.tumcampusapp.activities.wizard.WizNavExtrasActivity.onLoadInBackground(WizNavExtrasActivity.java:124)
+   at de.tum.in.tumcampusapp.activities.wizard.WizNavExtrasActivity.onLoadInBackground(WizNavExtrasActivity.java:30)
+   at de.tum.in.tumcampusapp.activities.generic.ActivityForLoadingInBackground$1.doInBackground(ActivityForLoadingInBackground.java:64)
+   at android.os.AsyncTask$2.call(AsyncTask.java:304)
+   at java.util.concurrent.FutureTask.run(FutureTask.java:237)

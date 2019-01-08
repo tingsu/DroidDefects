@@ -1,0 +1,9 @@
+java.lang.ArrayIndexOutOfBoundsException: length=9600; index=9600
+            at com.google.zxing.common.BitMatrix.get(BitMatrix.java:131)
+            at com.google.zxing.qrcode.QRCodeReader.extractPureBits(QRCodeReader.java:187)
+            at com.google.zxing.qrcode.QRCodeReader.decode(QRCodeReader.java:73)
+            at com.google.zxing.MultiFormatReader.decodeInternal(MultiFormatReader.java:171)
+            at com.google.zxing.MultiFormatReader.decode(MultiFormatReader.java:69)
+            at net.majorkernelpanic.streaming.video.VideoStream.decode(VideoStream.java:1043)
+            at net.majorkernelpanic.streaming.video.VideoStream.access$000(VideoStream.java:80)
+            at net.majorkernelpanic.streaming.video.VideoStream$2.onPreviewFrame(VideoStream.java:449)

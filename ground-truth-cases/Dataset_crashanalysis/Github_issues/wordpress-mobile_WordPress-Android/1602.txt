@@ -1,0 +1,11 @@
+com.android.dex.DexException: Multiple dex files define Lorg/wordpress/android/util/AlertUtil;
+    at com.android.dx.merge.DexMerger.readSortableTypes(DexMerger.java:594)
+    at com.android.dx.merge.DexMerger.getSortedTypes(DexMerger.java:552)
+    at com.android.dx.merge.DexMerger.mergeClassDefs(DexMerger.java:533)
+    at com.android.dx.merge.DexMerger.mergeDexes(DexMerger.java:170)
+    at com.android.dx.merge.DexMerger.merge(DexMerger.java:188)
+    at com.android.dx.command.dexer.Main.mergeLibraryDexBuffers(Main.java:439)
+    at com.android.dx.command.dexer.Main.runMonoDex(Main.java:287)
+    at com.android.dx.command.dexer.Main.run(Main.java:230)
+    at com.android.dx.command.dexer.Main.main(Main.java:199)
+    at com.android.dx.command.Main.main(Main.java:103)

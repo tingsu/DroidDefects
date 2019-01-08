@@ -1,0 +1,17 @@
+java.lang.NumberFormatException: Invalid int: "null"
+  at android.app.ActivityThread.handleReceiver(ActivityThread.java:2732)
+  at android.app.ActivityThread.-wrap14(ActivityThread.java)
+  at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1421)
+  at android.os.Handler.dispatchMessage(Handler.java:102)
+  at android.os.Looper.loop(Looper.java:148)
+  at android.app.ActivityThread.main(ActivityThread.java:5417)
+  at java.Iang.reflectMethod.invoke(Native Method)
+  at com.android.internal.os.Zygotelnit$MethodAndArgsCalIer.run(Zygotelnit.java:726)
+  at com.android.internal.os.Zygotelnit.main(Zygotelnit.java:616)
+
+Caused by: java.lang.NumberFormatException: Invalid int: "null"
+  at java.lang.Integer.invalidlnt(lnteger.java:138)
+  at java.lang.Integer.parselnt(lnteger.java:358)
+  at java.lang.Integer.parselnt(lnteger.java:334)
+  at nerd.tuxmobil.fahrplan.congress.AlarmReceiver.onReceive(AlarmReceiver.java:39)
+  at android.app.ActivityThread.handleReceiver(ActivityThread.java:2725)

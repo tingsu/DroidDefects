@@ -1,0 +1,37 @@
+//this is an auto-generated bug report
+//package name: ch.bailu.aat
+//version: v1.5-beta
+//appro_time: 9
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{ch.bailu.aat/ch.bailu.aat.activities.MainActivity}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at ch.bailu.aat.preferences.SolidDirectory.canWrite(SolidDirectory.java:37)
+ 	at ch.bailu.aat.preferences.SolidDirectory.add(SolidDirectory.java:30)
+ 	at ch.bailu.aat.preferences.SolidDirectory.add(SolidDirectory.java:25)
+ 	at ch.bailu.aat.preferences.SolidDataDirectory.buildSelection(SolidDataDirectory.java:63)
+ 	at ch.bailu.aat.preferences.SolidDataDirectory.getDefaultValue(SolidDataDirectory.java:46)
+ 	at ch.bailu.aat.preferences.SolidDataDirectory.getValueAsString(SolidDataDirectory.java:31)
+ 	at ch.bailu.aat.helpers.AppDirectory.getDataDirectory(AppDirectory.java:29)
+ 	at ch.bailu.aat.helpers.AppDirectory.getTrackListDirectory(AppDirectory.java:121)
+ 	at ch.bailu.aat.preferences.SolidPreset.getDirectory(SolidPreset.java:59)
+ 	at ch.bailu.aat.preferences.SolidPreset.getDirectoryName(SolidPreset.java:64)
+ 	at ch.bailu.aat.activities.MainActivity$PresetDirectoryLabel.setText(MainActivity.java:134)
+ 	at ch.bailu.aat.activities.MainActivity$PresetDirectoryLabel.<init>(MainActivity.java:130)
+ 	at ch.bailu.aat.activities.MainActivity.labelFactory(MainActivity.java:93)
+ 	at ch.bailu.aat.activities.MainActivity.createActionList(MainActivity.java:60)
+ 	at ch.bailu.aat.activities.MainActivity.createViews(MainActivity.java:47)
+ 	at ch.bailu.aat.activities.MainActivity.onCreate(MainActivity.java:37)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)

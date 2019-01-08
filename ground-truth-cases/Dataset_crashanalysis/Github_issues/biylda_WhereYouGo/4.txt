@@ -1,0 +1,22 @@
+
+It seems I cannot get the cartridge running correctly. It should show input dialogues for language and startcode at the beginning. I do get the language dialogue after some going back and forth but after entering the language WhereYouGo crashes.
+
+Stacktrace:
+
+```
+12:22:31.818 Error AndroidRuntime 19806  FATAL EXCEPTION: main
+12:22:31.818 Error AndroidRuntime 19806  Process: menion.android.whereyougo, PID: 19806
+12:22:31.818 Error AndroidRuntime 19806  java.lang.NullPointerException: Attempt to read from field 'util.BackgroundRunner cz.matejcik.openwig.Engine.eventRunner' on a null object reference
+12:22:31.818 Error AndroidRuntime 19806     at cz.matejcik.openwig.Engine.callEvent(Engine.java:286)
+12:22:31.818 Error AndroidRuntime 19806     at menion.android.whereyougo.gui.activity.wherigo.InputScreenActivity$1.onClick(InputScreenActivity.java:151)
+12:22:31.818 Error AndroidRuntime 19806     at menion.android.whereyougo.gui.extension.dialog.CustomDialog$1.onClick(CustomDialog.java:77)
+12:22:31.818 Error AndroidRuntime 19806     at android.view.View.performClick(View.java:5197)
+12:22:31.818 Error AndroidRuntime 19806     at android.view.View$PerformClick.run(View.java:20926)
+12:22:31.818 Error AndroidRuntime 19806     at android.os.Handler.handleCallback(Handler.java:739)
+12:22:31.818 Error AndroidRuntime 19806     at android.os.Handler.dispatchMessage(Handler.java:95)
+12:22:31.818 Error AndroidRuntime 19806     at android.os.Looper.loop(Looper.java:145)
+12:22:31.818 Error AndroidRuntime 19806     at android.app.ActivityThread.main(ActivityThread.java:5951)
+12:22:31.818 Error AndroidRuntime 19806     at java.lang.reflect.Method.invoke(Native Method)
+12:22:31.818 Error AndroidRuntime 19806     at java.lang.reflect.Method.invoke(Method.java:372)
+12:22:31.818 Error AndroidRuntime 19806     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1400)
+12:22:31.818 Error AndroidRuntime 19806     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1195)

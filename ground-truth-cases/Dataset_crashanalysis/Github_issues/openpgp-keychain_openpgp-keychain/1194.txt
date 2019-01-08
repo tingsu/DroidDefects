@@ -1,0 +1,40 @@
+04-09 07:45:00.409: E/AndroidRuntime(13056): java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at org.sufficientlysecure.keychain.ui.NfcActivity.handleNdefDiscoveredIntent(NfcActivity.java:214)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at org.sufficientlysecure.keychain.ui.NfcActivity.onNewIntent(NfcActivity.java:160)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at android.app.Instrumentation.callActivityOnNewIntent(Instrumentation.java:1210)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at android.app.ActivityThread.deliverNewIntents(ActivityThread.java:2430)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at android.app.ActivityThread.performNewIntents(ActivityThread.java:2443)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at android.app.ActivityThread.handleNewIntent(ActivityThread.java:2452)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at android.app.ActivityThread.access$1600(ActivityThread.java:144)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1350)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at android.os.Handler.dispatchMessage(Handler.java:102)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at android.os.Looper.loop(Looper.java:135)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at android.app.ActivityThread.main(ActivityThread.java:5221)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at java.lang.reflect.Method.invoke(Native Method)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at java.lang.reflect.Method.invoke(Method.java:372)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+04-09 07:45:00.409: E/AndroidRuntime(13056):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+```
+
+and:
+
+```
+04-09 07:45:07.623: W/InputMethodManagerService(592): Focus gain on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@1bdd2031 (uid=10089 pid=13319)
+04-09 07:45:07.740: W/Bundle(13319): Key pin expected String but value was a org.sufficientlysecure.keychain.util.Passphrase.  The default value <null> was returned.
+04-09 07:45:07.741: W/Bundle(13319): Attempt to cast generated internal exception:
+04-09 07:45:07.741: W/Bundle(13319): java.lang.ClassCastException: org.sufficientlysecure.keychain.util.Passphrase cannot be cast to java.lang.String
+04-09 07:45:07.741: W/Bundle(13319):    at android.os.BaseBundle.getString(BaseBundle.java:921)
+04-09 07:45:07.741: W/Bundle(13319):    at org.sufficientlysecure.keychain.ui.NfcActivity.onCreate(NfcActivity.java:106)
+04-09 07:45:07.741: W/Bundle(13319):    at android.app.Activity.performCreate(Activity.java:5933)
+04-09 07:45:07.741: W/Bundle(13319):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+04-09 07:45:07.741: W/Bundle(13319):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2251)
+04-09 07:45:07.741: W/Bundle(13319):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2360)
+04-09 07:45:07.741: W/Bundle(13319):    at android.app.ActivityThread.access$800(ActivityThread.java:144)
+04-09 07:45:07.741: W/Bundle(13319):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1278)
+04-09 07:45:07.741: W/Bundle(13319):    at android.os.Handler.dispatchMessage(Handler.java:102)
+04-09 07:45:07.741: W/Bundle(13319):    at android.os.Looper.loop(Looper.java:135)
+04-09 07:45:07.741: W/Bundle(13319):    at android.app.ActivityThread.main(ActivityThread.java:5221)
+04-09 07:45:07.741: W/Bundle(13319):    at java.lang.reflect.Method.invoke(Native Method)
+04-09 07:45:07.741: W/Bundle(13319):    at java.lang.reflect.Method.invoke(Method.java:372)
+04-09 07:45:07.741: W/Bundle(13319):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+04-09 07:45:07.741: W/Bundle(13319):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)

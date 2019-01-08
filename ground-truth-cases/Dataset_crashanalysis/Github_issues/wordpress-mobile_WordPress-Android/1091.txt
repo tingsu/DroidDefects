@@ -1,0 +1,9 @@
+Caused by: java.lang.IndexOutOfBoundsException: Invalid index 0, size is 0
+            at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:255)
+            at java.util.ArrayList.get(ArrayList.java:308)
+            at android.widget.ArrayAdapter.getItem(ArrayAdapter.java:337)
+            at org.wordpress.android.ui.WPActionBarActivity.onBlogChanged(WPActionBarActivity.java:640)
+            at org.wordpress.android.ui.WPActionBarActivity.onActivityResult(WPActionBarActivity.java:554)
+            at org.wordpress.android.ui.reader.ReaderActivity.onActivityResult(ReaderActivity.java:153)
+            at android.app.Activity.dispatchActivityResult(Activity.java:5423)
+            at android.app.ActivityThread.deliverResults(ActivityThread.java:3361)

@@ -1,0 +1,6 @@
+Caused by: com.beust.jcommander.ParameterException: Unknown option: --possible_formats AZTEC
+        at com.beust.jcommander.JCommander.parseValues(JCommander.java:742) ~[javase-3.2.2-SNAPSHOT-jar-with-dependencies.jar:na]
+        at com.beust.jcommander.JCommander.parse(JCommander.java:282) ~[javase-3.2.2-SNAPSHOT-jar-with-dependencies.jar:na]
+        at com.beust.jcommander.JCommander.parse(JCommander.java:265) ~[javase-3.2.2-SNAPSHOT-jar-with-dependencies.jar:na]
+        at com.beust.jcommander.JCommander.<init>(JCommander.java:210) ~[javase-3.2.2-SNAPSHOT-jar-with-dependencies.jar:na]
+        at com.google.zxing.client.j2se.CommandLineRunner.main(CommandLineRunner.java:52) ~[javase-3.2.2-SNAPSHOT-jar-with-dependencies.jar:na]

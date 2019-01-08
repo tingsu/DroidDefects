@@ -1,0 +1,38 @@
+java.lang.RuntimeException: Unable to stop service org.kontalk.service.msgcenter.MessageCenterService@1e303666: java.lang.IllegalArgumentException: Receiver not registered: org.kontalk.service.msgcenter.AndroidAdaptiveServerPingManager$1@2e7aa789
+       at android.app.ActivityThread.handleStopService(ActivityThread.java:2972)
+       at android.app.ActivityThread.access$2300(ActivityThread.java:154)
+       at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1425)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:135)
+       at android.app.ActivityThread.main(ActivityThread.java:5300)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at java.lang.reflect.Method.invoke(Method.java:372)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+Caused by java.lang.IllegalArgumentException: Receiver not registered: org.kontalk.service.msgcenter.AndroidAdaptiveServerPingManager$1@2e7aa789
+       at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:765)
+       at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:1687)
+       at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java:511)
+       at org.kontalk.service.msgcenter.AndroidAdaptiveServerPingManager.disable(AndroidAdaptiveServerPingManager.java:142)
+       at org.kontalk.service.msgcenter.AndroidAdaptiveServerPingManager.onDestroy(AndroidAdaptiveServerPingManager.java:228)
+       at org.kontalk.service.msgcenter.MessageCenterService.onDestroy(MessageCenterService.java:699)
+       at android.app.ActivityThread.handleStopService(ActivityThread.java:2953)
+       at android.app.ActivityThread.access$2300(ActivityThread.java:154)
+       at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1425)
+       at android.os.Handler.dispatchMessage(Handler.java:102)
+       at android.os.Looper.loop(Looper.java:135)
+       at android.app.ActivityThread.main(ActivityThread.java:5300)
+       at java.lang.reflect.Method.invoke(Method.java)
+       at java.lang.reflect.Method.invoke(Method.java:372)
+       at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+       at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+```
+
+```
+java.lang.NullPointerException
+       at android.app.AlarmManager.setImpl(AlarmManager.java:376)
+       at android.app.AlarmManager.setInexactRepeating(AlarmManager.java:485)
+       at org.kontalk.service.msgcenter.AndroidAdaptiveServerPingManager.setupPing(AndroidAdaptiveServerPingManager.java:185)
+       at org.kontalk.service.msgcenter.AbstractAdaptiveServerPingManager.pingFailed(AbstractAdaptiveServerPingManager.java:97)
+       at org.kontalk.service.msgcenter.MessageCenterService$2.run(MessageCenterService.java:918)
+       at java.lang.Thread.run(Thread.java:841)

@@ -1,0 +1,9 @@
+//this is an auto-generated bug report
+//package name: net.kervala.comicsreader
+//version: 2.0
+//appro_time: 60
+ java.lang.NullPointerException
+ 	at net.kervala.comicsreader.AlbumThread$1.handleMessage(AlbumThread.java:488)
+ 	at android.os.Handler.dispatchMessage(Handler.java:95)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

@@ -1,0 +1,13 @@
+                                                                java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String com.owncloud.android.datamodel.OCFile.getFileName()' on a null object reference
+                                                                    at com.owncloud.android.services.ContactsBackupJob.expireFiles(ContactsBackupJob.java:176)
+                                                                    at com.owncloud.android.services.ContactsBackupJob.access$200(ContactsBackupJob.java:62)
+                                                                    at com.owncloud.android.services.ContactsBackupJob$OperationsServiceConnection.onServiceConnected(ContactsBackupJob.java:254)
+                                                                    at android.app.LoadedApk$ServiceDispatcher.doConnected(LoadedApk.java:1586)
+                                                                    at android.app.LoadedApk$ServiceDispatcher$RunConnection.run(LoadedApk.java:1614)
+                                                                    at android.os.Handler.handleCallback(Handler.java:761)
+                                                                    at android.os.Handler.dispatchMessage(Handler.java:98)
+                                                                    at android.os.Looper.loop(Looper.java:156)
+                                                                    at android.app.ActivityThread.main(ActivityThread.java:6577)
+                                                                    at java.lang.reflect.Method.invoke(Native Method)
+                                                                    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:941)
+                                                                    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:831)

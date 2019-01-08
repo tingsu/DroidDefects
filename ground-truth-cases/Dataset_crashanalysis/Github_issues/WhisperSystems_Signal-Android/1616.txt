@@ -1,0 +1,5 @@
+java.lang.AssertionError: null
+    at com.intellij.openapi.diagnostic.DefaultLogger.error(DefaultLogger.java:56)
+    at com.intellij.openapi.diagnostic.Logger.error(Logger.java:132)
+    at com.intellij.util.ui.UIUtil.invokeAndWaitIfNeeded(UIUtil.java:2041)
+    at com.intellij.openapi.externalSystem.util.ExternalSystemApiUtil.executeOnEdt(ExternalSystemApiUtil.java:377)

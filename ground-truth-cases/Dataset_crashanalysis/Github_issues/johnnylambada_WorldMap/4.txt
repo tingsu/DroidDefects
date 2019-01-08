@@ -1,0 +1,5 @@
+04-04 23:20:02.820: E/AndroidRuntime(4492): java.lang.NullPointerException
+04-04 23:20:02.820: E/AndroidRuntime(4492):     at com.sigseg.android.view.Scene$Cache.update(Scene.java:387)
+04-04 23:20:02.820: E/AndroidRuntime(4492):     at com.sigseg.android.view.Scene$Viewport.draw(Scene.java:309)
+04-04 23:20:02.820: E/AndroidRuntime(4492):     at com.sigseg.android.view.Scene.draw(Scene.java:118)
+04-04 23:20:02.820: E/AndroidRuntime(4492):     at com.sigseg.android.map.ImageSurfaceView$DrawThread.run(ImageSurfaceView.java:213)

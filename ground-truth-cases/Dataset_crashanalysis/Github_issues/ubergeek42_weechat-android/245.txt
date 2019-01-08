@@ -1,0 +1,11 @@
+java.lang.NumberFormatException: unable to parse '085715328960' as integer
+    at java.lang.Integer.parse(Integer.java:388)
+    at java.lang.Integer.parseInt(Integer.java:372)
+    at java.lang.Integer.parseInt(Integer.java:332)
+    at com.ubergeek42.WeechatAndroid.service.s.e(Unknown Source)
+    at com.ubergeek42.WeechatAndroid.service.v.run(Unknown Source)
+    at com.ubergeek42.WeechatAndroid.service.u.run(Unknown Source)
+    at android.os.Handler.handleCallback(Handler.java:587)
+    at android.os.Handler.dispatchMessage(Handler.java:92)
+    at android.os.Looper.loop(Looper.java:130)
+    at android.os.HandlerThread.run(HandlerThread.java:60)

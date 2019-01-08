@@ -1,0 +1,9 @@
+W/MmsSendJob(22004): org.thoughtcrime.securesms.transport.UndeliverableMessageException: Size constraints could not be satisfied.
+W/MmsSendJob(22004):    at org.thoughtcrime.securesms.jobs.SendJob.getResolvedPart(SendJob.java:72)
+W/MmsSendJob(22004):    at org.thoughtcrime.securesms.jobs.SendJob.getResolvedMessage(SendJob.java:52)
+W/MmsSendJob(22004):    at org.thoughtcrime.securesms.jobs.MmsSendJob.getPduBytes(MmsSendJob.java:104)
+W/MmsSendJob(22004):    at org.thoughtcrime.securesms.jobs.MmsSendJob.onSend(MmsSendJob.java:71)
+W/MmsSendJob(22004):    at org.thoughtcrime.securesms.jobs.SendJob.onRun(SendJob.java:40)
+W/MmsSendJob(22004):    at org.thoughtcrime.securesms.jobs.MasterSecretJob.onRun(MasterSecretJob.java:18)
+W/MmsSendJob(22004):    at org.whispersystems.jobqueue.JobConsumer.runJob(JobConsumer.java:76)
+W/MmsSendJob(22004):    at org.whispersystems.jobqueue.JobConsumer.run(JobConsumer.java:46)

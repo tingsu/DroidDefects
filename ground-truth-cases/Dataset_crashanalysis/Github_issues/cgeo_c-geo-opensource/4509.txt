@@ -1,0 +1,25 @@
+22:27:02.918 Error Parcel 820  java.lang.ClassNotFoundException: com.android.packageinstaller.InstallFlowAnalytics
+22:27:02.918 Error Parcel 820   at java.lang.Class.classForName(Native Method)
+22:27:02.918 Error Parcel 820   at java.lang.Class.forName(Class.java:251)
+22:27:02.918 Error Parcel 820   at java.lang.Class.forName(Class.java:216)
+22:27:02.918 Error Parcel 820   at android.os.Parcel.readParcelableCreator(Parcel.java:2133)
+22:27:02.918 Error Parcel 820   at android.os.Parcel.readParcelable(Parcel.java:2097)
+22:27:02.918 Error Parcel 820   at android.os.Parcel.readValue(Parcel.java:2013)
+22:27:02.918 Error Parcel 820   at android.os.Parcel.readArrayMapInternal(Parcel.java:2314)
+22:27:02.918 Error Parcel 820   at android.os.Bundle.unparcel(Bundle.java:249)
+22:27:02.918 Error Parcel 820   at android.os.Bundle.getString(Bundle.java:1118)
+22:27:02.918 Error Parcel 820   at android.content.Intent.getStringExtra(Intent.java:4991)
+22:27:02.918 Error Parcel 820   at com.android.server.am.ActivityStackSupervisor.startActivityLocked(ActivityStackSupervisor.java:1392)
+22:27:02.918 Error Parcel 820   at com.android.server.am.ActivityStackSupervisor.startActivityMayWait(ActivityStackSupervisor.java:1016)
+22:27:02.918 Error Parcel 820   at com.android.server.am.ActivityManagerService.startActivityAsUser(ActivityManagerService.java:3980)
+22:27:02.918 Error Parcel 820   at com.android.server.am.ActivityManagerService.startActivity(ActivityManagerService.java:3883)
+22:27:02.918 Error Parcel 820   at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:159)
+22:27:02.918 Error Parcel 820   at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2583)
+22:27:02.918 Error Parcel 820   at android.os.Binder.execTransact(Binder.java:404)
+22:27:02.918 Error Parcel 820   at dalvik.system.NativeStart.run(Native Method)
+22:27:02.918 Error Parcel 820  Caused by: java.lang.NoClassDefFoundError: com/android/packageinstaller/InstallFlowAnalytics
+22:27:02.918 Error Parcel 820   ... 18 more
+22:27:02.918 Error Parcel 820  Caused by: java.lang.ClassNotFoundException: Didn't find class "com.android.packageinstaller.InstallFlowAnalytics" on path: DexPathList[[directory "."],nativeLibraryDirectories=[/vendor/lib, /system/lib]]
+22:27:02.918 Error Parcel 820   at dalvik.system.BaseDexClassLoader.findClass(BaseDexClassLoader.java:67)
+22:27:02.918 Error Parcel 820   at java.lang.ClassLoader.loadClass(ClassLoader.java:497)
+22:27:02.918 Error Parcel 820   at java.lang.ClassLoader.loadClass(ClassLoader.java:457)

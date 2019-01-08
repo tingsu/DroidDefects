@@ -1,0 +1,38 @@
+01-21 19:09:09.809 27479-27725/system_process I/ActivityManager: START u0 {act=android.nfc.action.NDEF_DISCOVERED typ=application/vnd.wfa.wsc cmp=be.brunoparmentier.wifikeyshare/.activities.ConfirmConnectToWifiNetworkActivity (has extras)} from uid 1027 on display 0
+01-21 19:09:09.811 27479-27725/system_process V/WindowManager: addAppToken: AppWindowToken{4ada2af token=Token{3bc67a8e ActivityRecord{18e45a89 u0 be.brunoparmentier.wifikeyshare/.activities.ConfirmConnectToWifiNetworkActivity t12495}}} to stack=1 task=12495 at 1
+01-21 19:09:09.842 18569-18569/? I/art: Late-enabling -Xcheck:jni
+01-21 19:09:09.843 27479-28247/system_process I/ActivityManager: Start proc 18569:be.brunoparmentier.wifikeyshare/u0a160 for activity be.brunoparmentier.wifikeyshare/.activities.ConfirmConnectToWifiNetworkActivity
+01-21 19:09:09.862 18569-18579/? I/art: Debugger is no longer active
+01-21 19:09:09.880 18569-18569/? D/AndroidRuntime: Shutting down VM
+01-21 19:09:09.881 18569-18569/? E/AndroidRuntime: FATAL EXCEPTION: main
+       Process: be.brunoparmentier.wifikeyshare, PID: 18569
+       java.lang.RuntimeException: Unable to start activity ComponentInfo{be.brunoparmentier.wifikeyshare/be.brunoparmentier.wifikeyshare.activities.ConfirmConnectToWifiNetworkActivity}: java.nio.BufferUnderflowException
+           at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2358)
+           at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2420)
+           at android.app.ActivityThread.access$900(ActivityThread.java:154)
+           at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1321)
+           at android.os.Handler.dispatchMessage(Handler.java:102)
+           at android.os.Looper.loop(Looper.java:135)
+           at android.app.ActivityThread.main(ActivityThread.java:5294)
+           at java.lang.reflect.Method.invoke(Native Method)
+           at java.lang.reflect.Method.invoke(Method.java:372)
+           at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+           at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+        Caused by: java.nio.BufferUnderflowException
+           at java.nio.ByteArrayBuffer.getShort(ByteArrayBuffer.java:226)
+           at be.brunoparmentier.wifikeyshare.utils.NfcUtils.parse(NfcUtils.java:267)
+           at be.brunoparmentier.wifikeyshare.utils.NfcUtils.readTag(NfcUtils.java:249)
+           at be.brunoparmentier.wifikeyshare.activities.ConfirmConnectToWifiNetworkActivity.onCreate(ConfirmConnectToWifiNetworkActivity.java:62)
+           at android.app.Activity.performCreate(Activity.java:5990)
+           at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1106)
+           at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2311)
+           at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2420) 
+           at android.app.ActivityThread.access$900(ActivityThread.java:154) 
+           at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1321) 
+           at android.os.Handler.dispatchMessage(Handler.java:102) 
+           at android.os.Looper.loop(Looper.java:135) 
+           at android.app.ActivityThread.main(ActivityThread.java:5294) 
+           at java.lang.reflect.Method.invoke(Native Method) 
+           at java.lang.reflect.Method.invoke(Method.java:372) 
+           at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904) 
+           at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699) 

@@ -1,0 +1,15 @@
+java.lang.IllegalStateException: Fatal Exception thrown on Scheduler.Worker thread.
+    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:59)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:145)
+    at android.app.ActivityThread.main(ActivityThread.java:5832)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1399)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1194)
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'android.view.View android.view.View.findViewById(int)' on a null object reference
+    at butterknife.ButterKnife.findById(ButterKnife.java:343)
+    at cgeo.geocaching.CacheDetailActivity.updateOfflineBox(CacheDetailActivity.java:2241)
+    at cgeo.geocaching.CachePopupFragment$StoreCacheClickListener$3.call(CachePopupFragment.java:206)
+    at rx.internal.schedulers.ScheduledAction.run(ScheduledAction.java:55)

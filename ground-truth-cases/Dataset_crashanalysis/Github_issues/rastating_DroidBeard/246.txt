@@ -1,0 +1,12 @@
+```
+java.lang.IllegalArgumentException: Illegal character in path at index 32: http://192.168.1.15:8081/api/SR: aca4d104dc2e9a092d9dec83e78b32b8/?cmd=future
+    at java.net.URI.create(URI.java)
+    at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java)
+    at com.rastating.droidbeard.net.SickbeardAsyncTask.getJson(SickbeardAsyncTask.java:181)
+    at com.rastating.droidbeard.net.FetchUpcomingEpisodesTask.doInBackground(FetchUpcomingEpisodesTask.java:42)
+    at com.rastating.droidbeard.net.FetchUpcomingEpisodesTask.doInBackground(FetchUpcomingEpisodesTask.java:34)
+    at android.os.AsyncTask$2.call(AsyncTask.java)
+    at java.util.concurrent.FutureTask.run(FutureTask.java)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java)
+    at java.lang.Thread.run(Thread.java)

@@ -1,0 +1,8 @@
+java.lang.NullPointerException: 
+  at de.westnordost.streetcomplete.MainActivity.onQuestCreated(MainActivity.java:632)
+  at de.westnordost.streetcomplete.data.VisibleQuestRelay.onQuestCreated(VisibleQuestRelay.java:22)
+  at de.westnordost.streetcomplete.data.QuestController$5.run(QuestController.java:235)
+  at android.os.Handler.handleCallback(Handler.java:769)
+  at android.os.Handler.dispatchMessage(Handler.java:98)
+  at android.os.Looper.loop(Looper.java:164)
+  at android.os.HandlerThread.run(HandlerThread.java:65)

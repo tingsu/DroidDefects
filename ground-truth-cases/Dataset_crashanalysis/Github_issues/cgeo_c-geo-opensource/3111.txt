@@ -1,0 +1,13 @@
+21:56:36.312 Error cgeo 23003  java.lang.NullPointerException
+21:56:36.312 Error cgeo 23003   at java.util.regex.Matcher.reset(Matcher.java:176)
+21:56:36.312 Error cgeo 23003   at java.util.regex.Matcher.<init>(Matcher.java:89)
+21:56:36.312 Error cgeo 23003   at java.util.regex.Pattern.matcher(Pattern.java:297)
+21:56:36.312 Error cgeo 23003   at cgeo.geocaching.utils.MatcherWrapper.<init>(MatcherWrapper.java:15)
+21:56:36.312 Error cgeo 23003   at cgeo.geocaching.connector.gc.GCParser.uploadLogImage(GCParser.java:1155)
+21:56:36.312 Error cgeo 23003   at cgeo.geocaching.connector.gc.GCLoggingManager.postLogImage(GCLoggingManager.java:103)
+21:56:36.312 Error cgeo 23003   at cgeo.geocaching.LogCacheActivity$Poster.doInBackgroundInternal(LogCacheActivity.java:561)
+21:56:36.312 Error cgeo 23003   at cgeo.geocaching.LogCacheActivity$Poster.doInBackgroundInternal(LogCacheActivity.java:528)
+21:56:36.312 Error cgeo 23003   at cgeo.geocaching.utils.AsyncTaskWithProgress.doInBackground(AsyncTaskWithProgress.java:135)
+21:56:36.312 Error cgeo 23003   at android.os.AsyncTask$2.call(AsyncTask.java:287)
+21:56:36.312 Error cgeo 23003   at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+21:56:36.312 Error cgeo 23003   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)

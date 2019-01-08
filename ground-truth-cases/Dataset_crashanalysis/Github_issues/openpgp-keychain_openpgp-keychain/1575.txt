@@ -1,0 +1,6 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'org.sufficientlysecure.keychain.operations.results.OperationResult$SubLogEntryParcel org.sufficientlysecure.keychain.operations.results.OperationResult$OperationLog.getSubResultIfSingle()' on a null object reference
+    at org.sufficientlysecure.keychain.operations.results.OperationResult.getLog(OperationResult.java:108)
+    at org.sufficientlysecure.keychain.operations.results.OperationResult$OperationLog.add(OperationResult.java:924)
+    at org.sufficientlysecure.keychain.operations.CertifyOperation.execute(CertifyOperation.java:234)
+    at org.sufficientlysecure.keychain.operations.CertifyOperation.execute(CertifyOperation.java:66)
+    at org.sufficientlysecure.keychain.service.KeychainService$1.run(KeychainService.java:143)

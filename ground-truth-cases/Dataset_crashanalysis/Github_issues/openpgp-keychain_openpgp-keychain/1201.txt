@@ -1,0 +1,17 @@
+04-17 15:44:27.588: E/AndroidRuntime(9502): java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.keychain/org.sufficientlysecure.keychain.ui.PassphraseDialogActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'long java.lang.Long.longValue()' on a null object reference
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2298)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2360)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at android.app.ActivityThread.access$800(ActivityThread.java:144)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1278)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at android.os.Handler.dispatchMessage(Handler.java:102)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at android.os.Looper.loop(Looper.java:135)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at android.app.ActivityThread.main(ActivityThread.java:5221)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at java.lang.reflect.Method.invoke(Native Method)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at java.lang.reflect.Method.invoke(Method.java:372)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:899)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:694)
+04-17 15:44:27.588: E/AndroidRuntime(9502): Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'long java.lang.Long.longValue()' on a null object reference
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at org.sufficientlysecure.keychain.ui.PassphraseDialogActivity.onCreate(PassphraseDialogActivity.java:105)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at android.app.Activity.performCreate(Activity.java:5933)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1105)
+04-17 15:44:27.588: E/AndroidRuntime(9502):     at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2251)

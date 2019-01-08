@@ -1,0 +1,41 @@
+java.lang.RuntimeException: Unable to start activity ComponentInfo{org.qii.weiciyuan/org.qii.weiciyuan.support.gallery.GalleryActivity}: android.view.InflateException: Binary XML file line #24: Error inflating class <unknown>
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2110)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2135)
+    at android.app.ActivityThread.access$700(ActivityThread.java:131)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1228)
+    at android.os.Handler.dispatchMessage(Handler.java:99)
+    at android.os.Looper.loop(Looper.java:137)
+    at android.app.ActivityThread.main(ActivityThread.java:4866)
+    at java.lang.reflect.Method.invokeNative(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:511)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:786)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+    at dalvik.system.NativeStart.main(Native Method)
+Caused by: android.view.InflateException: Binary XML file line #24: Error inflating class <unknown>
+    at android.view.LayoutInflater.createView(LayoutInflater.java:613)
+    at com.android.internal.policy.impl.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:56)
+    at android.view.LayoutInflater.onCreateView(LayoutInflater.java:660)
+    at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:685)
+    at android.view.LayoutInflater.inflate(LayoutInflater.java:466)
+    at android.view.LayoutInflater.inflate(LayoutInflater.java:396)
+    at android.view.LayoutInflater.inflate(LayoutInflater.java:352)
+    at com.android.internal.policy.impl.PhoneWindow.generateLayout(PhoneWindow.java:2985)
+    at com.android.internal.policy.impl.PhoneWindow.installDecor(PhoneWindow.java:3045)
+    at com.android.internal.policy.impl.PhoneWindow.setContentView(PhoneWindow.java:268)
+    at android.app.Activity.setContentView(Activity.java:1980)
+    at org.qii.weiciyuan.support.gallery.GalleryActivity.onCreate(GalleryActivity.java:79)
+    at android.app.Activity.performCreate(Activity.java:5143)
+    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1079)
+    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2074)
+    ... 11 more
+Caused by: java.lang.reflect.InvocationTargetException
+    at java.lang.reflect.Constructor.constructNative(Native Method)
+    at java.lang.reflect.Constructor.newInstance(Constructor.java:417)
+    at android.view.LayoutInflater.createView(LayoutInflater.java:587)
+    ... 25 more
+Caused by: java.lang.UnsupportedOperationException: Can't convert to dimension: type=0x12
+    at android.content.res.TypedArray.getDimensionPixelSize(TypedArray.java:463)
+    at android.view.View.<init>(View.java:3357)
+    at android.view.ViewGroup.<init>(ViewGroup.java:427)
+    at android.widget.LinearLayout.<init>(LinearLayout.java:176)
+    at android.widget.LinearLayout.<init>(LinearLayout.java:172

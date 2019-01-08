@@ -1,0 +1,24 @@
+//this is an auto-generated bug report
+//package name: ch.blinkenlights.android.vanilla
+//version: 1.0.50
+//appro_time: 1
+ android.database.sqlite.SQLiteException: no such column: name (code 1): , while compiling: SELECT _id, path, title, album, artist, album_id, artist_id, duration, song_num FROM _songs_albums_artists ORDER BY name ASC, disc_num, song_num
+ 	at android.database.sqlite.SQLiteConnection.nativePrepareStatement(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.acquirePreparedStatement(SQLiteConnection.java:889)
+ 	at android.database.sqlite.SQLiteConnection.prepare(SQLiteConnection.java:500)
+ 	at android.database.sqlite.SQLiteSession.prepare(SQLiteSession.java:588)
+ 	at android.database.sqlite.SQLiteProgram.<init>(SQLiteProgram.java:58)
+ 	at android.database.sqlite.SQLiteQuery.<init>(SQLiteQuery.java:37)
+ 	at android.database.sqlite.SQLiteDirectCursorDriver.query(SQLiteDirectCursorDriver.java:44)
+ 	at android.database.sqlite.SQLiteDatabase.rawQueryWithFactory(SQLiteDatabase.java:1314)
+ 	at android.database.sqlite.SQLiteDatabase.queryWithFactory(SQLiteDatabase.java:1161)
+ 	at android.database.sqlite.SQLiteDatabase.query(SQLiteDatabase.java:1032)
+ 	at ch.blinkenlights.android.medialibrary.MediaLibraryBackend.query(MediaLibraryBackend.java:285)
+ 	at ch.blinkenlights.android.medialibrary.MediaLibrary.queryLibrary(MediaLibrary.java:215)
+ 	at ch.blinkenlights.android.vanilla.QueryTask.runQuery(QueryTask.java:71)
+ 	at ch.blinkenlights.android.vanilla.SongTimeline.addSongs(SongTimeline.java:702)
+ 	at ch.blinkenlights.android.vanilla.PlaybackService.runQuery(PlaybackService.java:1747)
+ 	at ch.blinkenlights.android.vanilla.PlaybackService.handleMessage(PlaybackService.java:1521)
+ 	at android.os.Handler.dispatchMessage(Handler.java:95)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

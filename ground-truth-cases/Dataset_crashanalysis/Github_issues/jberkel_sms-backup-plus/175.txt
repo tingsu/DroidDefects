@@ -1,0 +1,7 @@
+E/DatabaseUtils( 2803): java.lang.IllegalArgumentException: URI: content://com.android.contacts/phone_lookup/, calling user: com.zegoggles.smssync, calling package:com.zegoggles.smssync
+E/DatabaseUtils( 2803):     at com.android.providers.contacts.LegacyApiSupport.query(LegacyApiSupport.java:1916)
+E/DatabaseUtils( 2803):     at com.android.providers.contacts.ContactsProvider2.query(ContactsProvider2.java:8126)
+E/DatabaseUtils( 2803):     at android.content.ContentProvider$Transport.bulkQuery(ContentProvider.java:150)
+E/DatabaseUtils( 2803):     at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:111)
+E/DatabaseUtils( 2803):     at android.os.Binder.execTransact(Binder.java:288)
+E/DatabaseUtils( 2803):     at dalvik.system.NativeStart.run(Native Method)

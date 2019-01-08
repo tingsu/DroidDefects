@@ -1,0 +1,6 @@
+java.lang.NullPointerException
+        at com.better.alarm.model.persistance.DataBaseService.onHandleIntent(DataBaseService.java:31)
+        at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:65)
+        at android.os.Handler.dispatchMessage(Handler.java:99)
+        at android.os.Looper.loop(Looper.java:153)
+        at android.os.HandlerThread.run(HandlerThread.java:60)

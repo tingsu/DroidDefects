@@ -1,0 +1,210 @@
+W/SystemStateListener( 6559): java.lang.IllegalArgumentException: Receiver not registered: org.thoughtcrime.securesms.service.SystemStateListener$ConnectivityListener@427e1370
+W/SystemStateListener( 6559):   at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:654)
+W/SystemStateListener( 6559):   at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:1221)
+W/SystemStateListener( 6559):   at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java:385)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SystemStateListener.unregisterForConnectivityChange(SystemStateListener.java:46)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SmsSender.unregisterForRadioChanges(SmsSender.java:180)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SmsSender.handleSentMessage(SmsSender.java:145)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:64)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:273)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/KeyCachingService( 6559): Decrementing activity count...
+W/IInputConnectionWrapper( 6559): showStatusIcon on inactive InputConnection
+D/SensorManager( 6559): unregisterListener:: Trklfufi 9 budiwrd5mrfo5WirfulblrwuFmfulTrklfufi$KfukwiFmfulTrklfufiRvht@,+)bfda8
+D/Sensors ( 6559): Remain listener = Sending .. normal delay 200ms
+I/Sensors ( 6559): sendDelay --- 200000000
+D/SensorManager( 6559): JNI - sendDelay
+I/SensorManager( 6559): Set normal delay = true
+W/SMSListener( 6559): Got SMS broadcast...
+D/Gsm/SmsMessage( 6559): SMS SC timestamp: 1414253902000
+E/Gsm/SmsMessage( 6559): hasUserDataHeader : false
+D/Gsm/SmsMessage( 6559): SMS SC timestamp: 1414253902000
+E/Gsm/SmsMessage( 6559): hasUserDataHeader : false
+D/Gsm/SmsMessage( 6559): SMS SC timestamp: 1414253902000
+E/Gsm/SmsMessage( 6559): hasUserDataHeader : false
+D/Gsm/SmsMessage( 6559): SMS SC timestamp: 1414253902000
+E/Gsm/SmsMessage( 6559): hasUserDataHeader : false
+D/Gsm/SmsMessage( 6559): SMS SC timestamp: 1414253902000
+E/Gsm/SmsMessage( 6559): hasUserDataHeader : false
+W/MmsSmsDatabase( 6559): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 34) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 34) ORDER BY date_received DESC) LIMIT 1
+W/ThreadDatabase( 6559): Trimming thread: 34 to: 3000
+W/MmsSmsDatabase( 6559): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+W/MmsSmsDatabase( 6559): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 34) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 34) ORDER BY date_received ASC)
+W/NotificationState( 6559): Added thread: 34
+W/NotificationState( 6559): Pending array off intent length: 1
+W/DirectoryRefreshListener( 6559): Scheduling for: 1414297672915
+W/DirectoryRefreshService( 6559): Refreshing directory...
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/PushServiceSocket( 6559): Push service URL: https://textsecure-service.whispersystems.org
+W/PushServiceSocket( 6559): Opening URL: https://textsecure-service.whispersystems.org/v1/directory/tokens
+W/PushServiceSocket( 6559): PUT  --  {"contacts":["PrfPPu36i03YXw","TmkP1mQG8meTjQ","kokpouDHrsAM0g","zgwdnCH82lI7/w","RZ1ckaZ6AonY4g","nwTtmCJzCKjR4g","E6vHuNOw/p6HYA","D+UCt0PWT7J1Dw","Zjssdi22PfNiHQ","GV6IB9YsQUzjbw","A46tg/kBXPvSiw","SdSupIQijD/jww","8O/iPV3nhnpKSg","1GLgKWdS7iP3QA","t5QweIj+W31pzg","eZqV/Uo08JzKQg","JaaJURPNumxG2w","M1f2WsTcgmhggA","w2lhnWaBnhXGIQ","SY3ixWIloVVLag","GIyJHkAwuMWz4A","pNkkgaG5pChRQw","6L79KE26jUEdPA","/FLyu2M7Se4NDg","AKitW8HfCE/DKQ","Sgm89/TDlIFvLw","8Bz64Q5jrj9lDg","tKIKDjhPNwItNQ","3tq53kFESkkrNw","535EAEDqbn72jA","L+hrFSPW1Xu9pg","dETbgTSO73E1ww","KvxksRlV2NJPDQ","wFo2XajsmYNdqA","uHeeBEtYlRNvPA","gEkoRAbr+D0TYA","aDLyemF42qmMgg","6JhG/UFHqZyPeQ","BiP27WyF3QG3Xw","YsFe55HoQ3TxIA","HniOou9wUMLpAQ","zP7k3NqkkhBJrw","aNe4nVx8Zt+WYQ","s7MJzyQWS+Q7fg","cxkPdyOVdEjrRw","tqe6Wsy4mrOQcQ","LUuvIY7QDdkvXw","wi6JuRQUv1UPiA","EntL6oLt/56joQ","wGVZWfWOzXvlVA","V+x0/EygIEprqg","UvrK25AnxYaBiA","DLK+M+ada/afrw","ZK9j7Urqq1jjQw","GDkSbtXZCITxPQ","MKfRvkUoCDnqeA","8CYaL2+A03uz4Q","CTlz13e8ZaeI1w","ptv/eeSX7EkFGQ","xI6SrEv0NGTtPw","c9R6t5JB76pb+Q","ggUSR5MAX6okOg","+oFqK5gsWSfpzw","4c9DqH9fTrXTSg","y7FrvUV9xtV4kw","eILcfZoPExiGSA","1kT5Cdb4zYt4cA","sphbpnNu1NWtMA","AdcLHz5nS5/2qw","5Mml4UoyFoOoGw","ZGDv0ZLU2Sj40g","EBBwRH+/plBfvg","kXNp3VlA1nORNg","2xVNcVzeOuv0Fg","JT0kOBc/2YJqKA","FbcK1q/ScEI4hg","vkRK7k+Df/SBpg","dxeE8vIMFQ1Xng","71cWxj2ngsFfqw","1/jEnXwohcMlmg","ktdRI0SSM+LOOw","X0N5E5bcWpcUBw","wpUns2S6pUNHzg","lEX9yxt8HrdBvA","8H41CTyyKVu+pg"]}
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43382b50
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43382d88
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43382ef8
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43383068
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@433831d8
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43383348
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@433834b8
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43383628
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43383798
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43383908
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43383a78
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43383be8
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43383d58
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43383f28
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43384098
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43384208
+W/Directory( 6559): Adding active token: org.whispersystems.textsecure.push.ContactTokenDetails@43384378
+W/DirectoryRefreshService( 6559): Directory refresh complete...
+W/KeyCachingService( 6559): Incrementing activity count...
+W/KeyCachingService( 6559): Decrementing activity count...
+D/AbsListView( 6559): Get MotionRecognitionManager
+D/AbsListView( 6559): Get MotionRecognitionManager
+D/AbsListView( 6559): Get MotionRecognitionManager
+D/AbsListView( 6559): Get MotionRecognitionManager
+D/AbsListView( 6559): Get MotionRecognitionManager
+D/AbsListView( 6559): Get MotionRecognitionManager
+D/AbsListView( 6559): Get MotionRecognitionManager
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/MmsSmsDatabase( 6559): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 34) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 34) ORDER BY date_received ASC)
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/Session ( 6559): Checking session...
+W/ResourceType( 6559): Failure getting entry for 0x010802c8 (t=7 e=712) in package 0 (error -75)
+W/ResourceType( 6559): Failure getting entry for 0x010802c8 (t=7 e=712) in package 0 (error -75)
+W/MmsCommunication( 6559): Getting MMSC params for apn null
+W/TelephonyUtil( 6559): Choosing MCC+MNC info from TelephonyManager.getSimOperator()
+W/ApnDatabase( 6559): Querying table for MCC+MNC 22201 without APN name
+W/KeyCachingService( 6559): Incrementing activity count...
+W/ApnDatabase( 6559): Returning preferred APN Apn{ mmsc: "http://mms.noverca.it/", proxy: "213.230.130.89", port: 80 }
+D/dalvikvm( 6559): GC_CONCURRENT freed 1774K, 12% free 20340K/22855K, paused 4ms+50ms, total 222ms
+D/dalvikvm( 6559): WAIT_FOR_CONCURRENT_GC blocked 79ms
+W/MmsSmsDatabase( 6559): Executing query: SELECT _id, body, read, type, address, address_device_id, subject, thread_id, status, date_sent, date_received, m_type, msg_box, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (read = 0) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (read = 0) ORDER BY date_received ASC)
+D/SensorManager( 6559): registerListener :: handle = 0  name= MPU-6050 Accelerometer delay= 200000 Trklfufi 9 budiwrd5mrfo5WirfulblrwuFmfulTrklfufi$KfukwiFmfulTrklfufiRvht@,++cabc8
+E/SpannableStringBuilder( 6559): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+E/SpannableStringBuilder( 6559): SPAN_EXCLUSIVE_EXCLUSIVE spans cannot have a zero length
+W/ConversationActivity( 6559): Sending message...
+W/MmsSmsDatabase( 6559): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 34) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 34) ORDER BY date_received DESC) LIMIT 1
+W/SMSSender( 6559): Got message id for new message: 5703
+W/ThreadDatabase( 6559): Trimming thread: 34 to: 3000
+W/MmsSmsDatabase( 6559): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 34) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 34) ORDER BY date_received ASC)
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/Session ( 6559): Checking session...
+W/SmsSender( 6559): Sending message: 5703
+W/MessageDatabase( 6559): Updating ID: 5703 to base type: 22
+W/MmsSmsDatabase( 6559): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 34) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 34) ORDER BY date_received DESC) LIMIT 1
+W/PhoneNumberFormatter( 6559): Got local CC: IT
+W/UniversalTransport( 6559): Using SMS as transport...
+W/SMSReceiverService( 6559): Intent resultcode: -1
+W/SMSReceiverService( 6559): Running sent callback: 5703
+W/MessageDatabase( 6559): Updating ID: 5703 to base type: 23
+W/MmsSmsDatabase( 6559): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 34) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 34) ORDER BY date_received DESC) LIMIT 1
+W/SystemStateListener( 6559): java.lang.IllegalArgumentException: Receiver not registered: org.thoughtcrime.securesms.service.SystemStateListener$ConnectivityListener@427e1370
+W/SystemStateListener( 6559):   at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:654)
+W/SystemStateListener( 6559):   at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:1221)
+W/SystemStateListener( 6559):   at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java:385)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SystemStateListener.unregisterForConnectivityChange(SystemStateListener.java:46)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SmsSender.unregisterForRadioChanges(SmsSender.java:180)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SmsSender.handleSentMessage(SmsSender.java:145)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:64)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:273)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+W/KeyCachingService( 6559): Decrementing activity count...
+W/IInputConnectionWrapper( 6559): showStatusIcon on inactive InputConnection
+D/SensorManager( 6559): unregisterListener:: Trklfufi 9 budiwrd5mrfo5WirfulblrwuFmfulTrklfufi$KfukwiFmfulTrklfufiRvht@,++cabc8
+D/Sensors ( 6559): Remain listener = Sending .. normal delay 200ms
+I/Sensors ( 6559): sendDelay --- 200000000
+D/SensorManager( 6559): JNI - sendDelay
+I/SensorManager( 6559): Set normal delay = true
+W/SMSReceiverService( 6559): Intent resultcode: -1
+W/SMSReceiverService( 6559): Running sent callback: 5703
+W/MessageDatabase( 6559): Updating ID: 5703 to base type: 23
+W/MmsSmsDatabase( 6559): Executing query: SELECT _id, body, type, thread_id, address, address_device_id, subject, date_sent, date_received, m_type, msg_box, status, part_count, ct_l, tr_id, m_size, exp, st, transport_type FROM (SELECT DISTINCT date_sent * 1 AS date_sent, date * 1 AS date_received, _id, body, read, thread_id, type, address, address_device_id, subject, NULL AS m_type, NULL AS msg_box, status, NULL AS part_count, NULL AS ct_l, NULL AS tr_id, NULL AS m_size, NULL AS exp, NULL AS st, 'sms' AS transport_type FROM sms WHERE (thread_id = 34) UNION ALL SELECT DISTINCT date * 1000 AS date_sent, date_received * 1000 AS date_received, _id, body, read, thread_id, NULL AS type, address, address_device_id, NULL AS subject, m_type, msg_box, NULL AS status, part_count, ct_l, tr_id, m_size, exp, st, 'mms' AS transport_type FROM mms WHERE (thread_id = 34) ORDER BY date_received DESC) LIMIT 1
+W/SystemStateListener( 6559): java.lang.IllegalArgumentException: Receiver not registered: org.thoughtcrime.securesms.service.SystemStateListener$ConnectivityListener@427e1370
+W/SystemStateListener( 6559):   at android.app.LoadedApk.forgetReceiverDispatcher(LoadedApk.java:654)
+W/SystemStateListener( 6559):   at android.app.ContextImpl.unregisterReceiver(ContextImpl.java:1221)
+W/SystemStateListener( 6559):   at android.content.ContextWrapper.unregisterReceiver(ContextWrapper.java:385)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SystemStateListener.unregisterForConnectivityChange(SystemStateListener.java:46)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SmsSender.unregisterForRadioChanges(SmsSender.java:180)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SmsSender.handleSentMessage(SmsSender.java:145)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SmsSender.process(SmsSender.java:64)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.service.SendReceiveService$SendReceiveWorkItem.run(SendReceiveService.java:273)
+W/SystemStateListener( 6559):   at org.thoughtcrime.securesms.util.WorkerThread.run(WorkerThread.java:46)
+D/dalvikvm(22539): GC_CONCURRENT freed 168K, 9% free 9585K/10439K, paused 14ms+2ms, total 38ms
+D/dalvikvm(22539): WAIT_FOR_CONCURRENT_GC blocked 11ms
+I/ActivityThread(22539): Pub org.thoughtcrime.provider.securesms: org.thoughtcrime.securesms.providers.PartProvider
+W/SMSListener(22539): Got SMS broadcast...
+D/Gsm/SmsMessage(22539): SMS SC timestamp: 1414254939000
+E/Gsm/SmsMessage(22539): hasUserDataHeader : false
+D/Gsm/SmsMessage(22539): SMS SC timestamp: 1414254939000
+E/Gsm/SmsMessage(22539): hasUserDataHeader : false
+D/Gsm/SmsMessage(22539): SMS SC timestamp: 1414254939000
+E/Gsm/SmsMessage(22539): hasUserDataHeader : false
+D/dalvikvm(22539): GC_CONCURRENT freed 191K, 9% free 9849K/10759K, paused 13ms+2ms, total 35ms
+D/Gsm/SmsMessage(22539): SMS SC timestamp: 1414254939000
+E/Gsm/SmsMessage(22539): hasUserDataHeader : false
+D/Gsm/SmsMessage(22539): SMS SC timestamp: 1414254939000
+E/Gsm/SmsMessage(22539): hasUserDataHeader : false
+W/PartProvider(22539): Got master secret: null
+D/dalvikvm(22562): GC_CONCURRENT freed 170K, 9% free 9583K/10439K, paused 14ms+3ms, total 53ms
+D/dalvikvm(22562): WAIT_FOR_CONCURRENT_GC blocked 19ms
+I/ActivityThread(22562): Pub org.thoughtcrime.provider.securesms: org.thoughtcrime.securesms.providers.PartProvider
+D/dalvikvm(22562): GC_CONCURRENT freed 216K, 9% free 9805K/10759K, paused 2ms+13ms, total 39ms
+W/SendReceiveService(22562): SendReceive service got master secret.
+W/PartProvider(22562): Got master secret: null
+W/KeyCachingService(22562): Incrementing activity count...
+D/libEGL  (22562): loaded /system/lib/egl/libEGL_mali.so
+D/libEGL  (22562): loaded /system/lib/egl/libGLESv1_CM_mali.so
+D/libEGL  (22562): loaded /system/lib/egl/libGLESv2_mali.so
+D/OpenGLRenderer(22562): Enabling debug mode 0
+W/KeyCachingService(22562): Decrementing activity count...
+D/dalvikvm(22562): GC_CONCURRENT freed 223K, 9% free 10013K/10951K, paused 13ms+3ms, total 43ms
+E/SensorManager(22562): thread start
+D/SensorManager(22562): registerListener :: handle = 0  name= MPU-6050 Accelerometer delay= 200000 Trklfufi 9 budiwrd5mrfo5WirfulblrwuFmfulTrklfufi$KfukwiFmfulTrklfufiRvht@,)/ae8.(
+W/service (22562): Broadcasting new secret...
+D/dalvikvm(22562): WAIT_FOR_CONCURRENT_GC blocked 0ms
+W/DecryptingQueue(22562): Processing pending decrypts...
+I/dalvikvm(22562): Could not find method android.provider.Telephony$Sms.getDefaultSmsPackage, referenced from method org.thoughtcrime.securesms.util.Util.isDefaultSmsProvider
+W/dalvikvm(22562): VFY: unable to resolve static method 1314: Landroid/provider/Telephony$Sms;.getDefaultSmsPackage (Landroid/content/Context;)Ljava/lang/String;
+D/dalvikvm(22562): VFY: replacing opcode 0x71 at 0x000a

@@ -1,0 +1,18 @@
+02-17 21:30:01.763 32741-374/pl.librus.client W/System.err: com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of pl.librus.client.datamodel.Average[] out of NOT_AVAILABLE token
+02-17 21:30:01.763 32741-374/pl.librus.client W/System.err:  at [Source: N/A; line: -1, column: -1]
+02-17 21:30:01.763 32741-374/pl.librus.client W/System.err:     at com.fasterxml.jackson.databind.DeserializationContext.reportMappingException(DeserializationContext.java:1234)
+02-17 21:30:01.763 32741-374/pl.librus.client W/System.err:     at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1122)
+02-17 21:30:01.763 32741-374/pl.librus.client W/System.err:     at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1075)
+02-17 21:30:01.763 32741-374/pl.librus.client W/System.err:     at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.handleNonArray(ObjectArrayDeserializer.java:275)
+02-17 21:30:01.764 32741-374/pl.librus.client W/System.err:     at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:179)
+02-17 21:30:01.764 32741-374/pl.librus.client W/System.err:     at com.fasterxml.jackson.databind.deser.std.ObjectArrayDeserializer.deserialize(ObjectArrayDeserializer.java:20)
+02-17 21:30:01.764 32741-374/pl.librus.client W/System.err:     at com.fasterxml.jackson.databind.ObjectMapper._readValue(ObjectMapper.java:3770)
+02-17 21:30:01.764 32741-374/pl.librus.client W/System.err:     at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2099)
+02-17 21:30:01.764 32741-374/pl.librus.client W/System.err:     at com.fasterxml.jackson.databind.ObjectMapper.treeToValue(ObjectMapper.java:2596)
+02-17 21:30:01.764 32741-374/pl.librus.client W/System.err:     at pl.librus.client.api.APIClient.parseList(APIClient.java:66)
+02-17 21:30:01.764 32741-374/pl.librus.client W/System.err:     at pl.librus.client.api.APIClient.lambda$getList$4(APIClient.java:219)
+02-17 21:30:01.764 32741-374/pl.librus.client W/System.err:     at pl.librus.client.api.APIClient.access$lambda$5(APIClient.java)
+02-17 21:30:01.764 32741-374/pl.librus.client W/System.err:     at pl.librus.client.api.APIClient$$Lambda$6.apply(Unknown Source)
+02-17 21:30:01.764 32741-374/pl.librus.client W/System.err:     at java8.util.concurrent.CompletableFuture$UniApply.tryFire(CompletableFuture.java:630)
+02-17 21:30:01.764 32741-374/pl.librus.client W/System.err:     at java8.util.concurrent.CompletableFuture$Completion.run(CompletableFuture.java:468)
+02-17 21:30:01.764 32741-374/pl.librus.client W/System.err:     at java.lang.Thread.run(Thread.java:761)`

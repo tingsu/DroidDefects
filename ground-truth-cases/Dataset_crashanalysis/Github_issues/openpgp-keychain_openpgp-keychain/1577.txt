@@ -1,0 +1,8 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'org.spongycastle.openpgp.PGPPublicKey org.spongycastle.openpgp.PGPSecretKey.getPublicKey()' on a null object reference
+    at org.sufficientlysecure.keychain.pgp.CanonicalizedSecretKey.<init>(CanonicalizedSecretKey.java:73)
+    at org.sufficientlysecure.keychain.pgp.CanonicalizedSecretKeyRing.getSecretKey(CanonicalizedSecretKeyRing.java:70)
+    at org.sufficientlysecure.keychain.pgp.PgpSignEncryptOperation.execute(PgpSignEncryptOperation.java:173)
+    at org.sufficientlysecure.keychain.operations.SignEncryptOperation.execute(SignEncryptOperation.java:153)
+    at org.sufficientlysecure.keychain.operations.SignEncryptOperation.execute(SignEncryptOperation.java:61)
+    at org.sufficientlysecure.keychain.service.KeychainService$1.run(KeychainService.java:143)
+    at java.lang.Thread.run(Thread.java:818)

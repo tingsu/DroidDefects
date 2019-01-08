@@ -1,0 +1,10 @@
+E/AndroidRuntime( 8059): android.support.v8.renderscript.RSRuntimeException: Error loading RS jni library: java.lang.UnsatisfiedLinkError: unknown failure
+E/AndroidRuntime( 8059):    at android.support.v8.renderscript.RenderScript.create(RenderScript.java:1018)
+E/AndroidRuntime( 8059):    at android.support.v8.renderscript.RenderScript.create(RenderScript.java:1055)
+E/AndroidRuntime( 8059):    at android.support.v8.renderscript.RenderScript.create(RenderScript.java:1041)
+E/AndroidRuntime( 8059):    at com.google.android.apps.muzei.util.ImageBlurrer.<init>(ImageBlurrer.java:39)
+E/AndroidRuntime( 8059):    at com.google.android.apps.muzei.render.MuzeiBlurRenderer$GLPictureSet.load(MuzeiBlurRenderer.java:359)
+E/AndroidRuntime( 8059):    at com.google.android.apps.muzei.render.MuzeiBlurRenderer.setAndConsumeBitmapRegionLoader(MuzeiBlurRenderer.java:272)
+E/AndroidRuntime( 8059):    at com.google.android.apps.muzei.render.RenderController$2$1.run(RenderController.java:98)
+E/AndroidRuntime( 8059):    at com.google.android.apps.muzei.render.GLTextureView$GLThread.guardedRun(GLTextureView.java:1238)
+E/AndroidRuntime( 8059):    at com.google.android.apps.muzei.render.GLTextureView$GLThread.run(GLTextureView.java:1015)

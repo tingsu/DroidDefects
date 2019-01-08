@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: ca.mimic.apphangar
+//version: 2.6
+//appro_time: 92
+ FATAL EXCEPTION: main
+ java.lang.NullPointerException
+ 	at android.app.ContextImpl.bindServiceAsUser(ContextImpl.java:1464)
+ 	at android.app.ContextImpl.bindService(ContextImpl.java:1440)
+ 	at android.content.ContextWrapper.bindService(ContextWrapper.java:496)
+ 	at ca.mimic.apphangar.Donate.bindServiceConn(Donate.java:116)
+ 	at ca.mimic.apphangar.Settings.launchDonate(Settings.java:655)
+ 	at ca.mimic.apphangar.Settings$5.onClick(Settings.java:549)
+ 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

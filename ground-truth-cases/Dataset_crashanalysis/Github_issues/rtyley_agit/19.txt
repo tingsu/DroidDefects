@@ -1,0 +1,50 @@
+E/GOE     ( 5169): 1 error
+E/GOE     ( 5169):  at com.madgag.agit.operations.Clone.execute(Clone.java:87)
+E/GOE     ( 5169):  at com.madgag.agit.operations.GitOperationExecutor.call(GitOperationExecutor.java:25)
+E/GOE     ( 5169):  at com.madgag.agit.operations.GitAsyncTask.call(GitAsyncTask.java:56)
+E/GOE     ( 5169):  at com.madgag.agit.operations.GitAsyncTask.call(GitAsyncTask.java:21)
+E/GOE     ( 5169):  at roboguice.util.SafeAsyncTask$Task.doCall(SafeAsyncTask.java:191)
+E/GOE     ( 5169):  at roboguice.util.RoboAsyncTask$RoboTask.doCall(RoboAsyncTask.java:54)
+E/GOE     ( 5169):  at roboguice.util.SafeAsyncTask$Task.call(SafeAsyncTask.java:165)
+E/GOE     ( 5169):  at roboguice.util.SafeAsyncTask$Task.call(SafeAsyncTask.java:153)
+E/GOE     ( 5169):  at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:306)
+E/GOE     ( 5169):  at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+E/GOE     ( 5169):  at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1088)
+E/GOE     ( 5169):  at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:581)
+E/GOE     ( 5169):  at java.lang.Thread.run(Thread.java:1019)
+E/GOE     ( 5169): Caused by: com.google.inject.ProvisionException: Guice provision errors:
+E/GOE     ( 5169): 
+E/GOE     ( 5169): 1) Error injecting constructor, java.lang.SecurityException: Not allowed to bind to service Intent { act=org.openintents.ssh.BIND_SSH_AGENT_SERVICE }
+E/GOE     ( 5169):   at com.madgag.agit.ssh.AndroidAuthAgentProvider.<init>(Unknown Source)
+E/GOE     ( 5169):   while locating com.madgag.agit.ssh.AndroidAuthAgentProvider
+E/GOE     ( 5169):   while locating com.madgag.ssh.android.authagent.AndroidAuthAgent
+E/GOE     ( 5169): 
+E/GOE     ( 5169): 1 error
+E/GOE     ( 5169):  at com.google.inject.InjectorImpl$4.get(InjectorImpl.java:767)
+E/GOE     ( 5169):  at com.madgag.agit.ssh.AndroidSshSessionFactory.addSshAgentTo(AndroidSshSessionFactory.java:49)
+E/GOE     ( 5169):  at com.madgag.agit.ssh.AndroidSshSessionFactory.createDefaultJSch(AndroidSshSessionFactory.java:44)
+E/GOE     ( 5169):  at org.eclipse.jgit.transport.JschConfigSessionFactory.getJSch(JschConfigSessionFactory.java:192)
+E/GOE     ( 5169):  at org.eclipse.jgit.transport.JschConfigSessionFactory.createSession(JschConfigSessionFactory.java:164)
+E/GOE     ( 5169):  at org.eclipse.jgit.transport.JschConfigSessionFactory.getSession(JschConfigSessionFactory.java:109)
+E/GOE     ( 5169):  at org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:121)
+E/GOE     ( 5169):  at org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:248)
+E/GOE     ( 5169):  at org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:147)
+E/GOE     ( 5169):  at org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:125)
+E/GOE     ( 5169):  at org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:111)
+E/GOE     ( 5169):  at org.eclipse.jgit.transport.Transport.fetch(Transport.java:1062)
+E/GOE     ( 5169):  at com.madgag.agit.GitFetchService.fetch(GitFetchService.java:51)
+E/GOE     ( 5169):  at com.madgag.agit.operations.Clone.execute(Clone.java:77)
+E/GOE     ( 5169):  ... 12 more
+E/GOE     ( 5169): Caused by: java.lang.SecurityException: Not allowed to bind to service Intent { act=org.openintents.ssh.BIND_SSH_AGENT_SERVICE }
+E/GOE     ( 5169):  at android.app.ContextImpl.bindService(ContextImpl.java:901)
+E/GOE     ( 5169):  at android.content.ContextWrapper.bindService(ContextWrapper.java:347)
+E/GOE     ( 5169):  at com.madgag.agit.ssh.AndroidAuthAgentProvider.bindSshAgentTo(AndroidAuthAgentProvider.java:49)
+E/GOE     ( 5169):  at com.madgag.agit.ssh.AndroidAuthAgentProvider.<init>(AndroidAuthAgentProvider.java:38)
+E/GOE     ( 5169):  at java.lang.reflect.Constructor.constructNative(Native Method)
+E/GOE     ( 5169):  at java.lang.reflect.Constructor.newInstance(Constructor.java:415)
+E/GOE     ( 5169):  at com.google.inject.DefaultConstructionProxyFactory$1.newInstance(DefaultConstructionProxyFactory.java:81)
+E/GOE     ( 5169):  at com.google.inject.ConstructorInjector.construct(ConstructorInjector.java:85)
+E/GOE     ( 5169):  at com.google.inject.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:111)
+E/GOE     ( 5169):  at com.google.inject.BoundProviderFactory.get(BoundProviderFactory.java:56)
+E/GOE     ( 5169):  at com.google.inject.InjectorImpl$4$1.call(InjectorImpl.java:758)
+E/GOE     ( 5169):  at c

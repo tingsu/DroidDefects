@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: org.odk.collect.android
+//version: 1.2.2
+//appro_time: 94
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalArgumentException: Host name may not be null
+ 	at org.opendatakit.httpclientandroidlib.HttpHost.<init>(HttpHost.java:79)
+ 	at org.opendatakit.httpclientandroidlib.HttpHost.<init>(HttpHost.java:108)
+ 	at org.odk.collect.android.utilities.WebUtils.enablePreemptiveBasicAuth(WebUtils.java:177)
+ 	at org.odk.collect.android.utilities.WebUtils.getXmlDocument(WebUtils.java:327)
+ 	at org.odk.collect.android.tasks.DownloadFormListTask.doInBackground(DownloadFormListTask.java:83)
+ 	at org.odk.collect.android.tasks.DownloadFormListTask.doInBackground(DownloadFormListTask.java:44)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

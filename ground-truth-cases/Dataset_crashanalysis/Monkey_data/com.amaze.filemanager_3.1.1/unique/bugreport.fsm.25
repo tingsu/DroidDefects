@@ -1,0 +1,32 @@
+//this is an auto-generated bug report
+//package name: com.amaze.filemanager
+//version: 3.1.1
+//appro_time: 102
+ java.lang.ClassCastException: android.support.v4.graphics.drawable.DrawableWrapperHoneycomb cannot be cast to android.graphics.drawable.BitmapDrawable
+ 	at com.amaze.filemanager.ui.Layoutelements.writeToParcel(Layoutelements.java:75)
+ 	at android.os.Parcel.writeParcelable(Parcel.java:1254)
+ 	at android.os.Parcel.writeValue(Parcel.java:1173)
+ 	at android.os.Parcel.writeList(Parcel.java:622)
+ 	at android.os.Parcel.writeValue(Parcel.java:1195)
+ 	at android.os.Parcel.writeMapInternal(Parcel.java:591)
+ 	at android.os.Bundle.writeToParcel(Bundle.java:1646)
+ 	at android.os.Parcel.writeBundle(Parcel.java:605)
+ 	at android.support.v4.app.FragmentState.writeToParcel(Fragment.java:138)
+ 	at android.os.Parcel.writeTypedArray(Parcel.java:1102)
+ 	at android.support.v4.app.FragmentManagerState.writeToParcel(FragmentManager.java:385)
+ 	at android.os.Parcel.writeParcelable(Parcel.java:1254)
+ 	at android.os.Parcel.writeValue(Parcel.java:1173)
+ 	at android.os.Parcel.writeMapInternal(Parcel.java:591)
+ 	at android.os.Bundle.writeToParcel(Bundle.java:1646)
+ 	at android.os.Parcel.writeBundle(Parcel.java:605)
+ 	at android.app.ActivityManagerProxy.activityStopped(ActivityManagerNative.java:2318)
+ 	at android.app.ActivityThread$StopInfo.run(ActivityThread.java:3100)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

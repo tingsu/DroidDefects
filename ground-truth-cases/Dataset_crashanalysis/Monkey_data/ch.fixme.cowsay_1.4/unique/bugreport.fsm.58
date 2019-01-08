@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: ch.fixme.cowsay
+//version: 1.4
+//appro_time: 143
+ java.lang.NullPointerException: uriString
+ 	at android.net.Uri$StringUri.<init>(Uri.java:468)
+ 	at android.net.Uri$StringUri.<init>(Uri.java:458)
+ 	at android.net.Uri.parse(Uri.java:430)
+ 	at ch.fixme.cowsay.Main$ShareImage.onPostExecute(Main.java:226)
+ 	at ch.fixme.cowsay.Main$ShareImage.onPostExecute(Main.java:192)
+ 	at android.os.AsyncTask.finish(AsyncTask.java:631)
+ 	at android.os.AsyncTask.access$600(AsyncTask.java:177)
+ 	at android.os.AsyncTask$InternalHandler.handleMessage(AsyncTask.java:644)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

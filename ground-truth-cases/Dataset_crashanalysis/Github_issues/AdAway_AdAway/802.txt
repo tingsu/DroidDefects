@@ -1,0 +1,299 @@
+09-29 23:18:58.195 E/RootCommands(5120): java.io.FileNotFoundException: /data/local/RootToolsMounts (Permission denied)
+09-29 23:18:58.195 E/RootCommands(5120):    at java.io.FileInputStream.open(Native Method)
+09-29 23:18:58.195 E/RootCommands(5120):    at java.io.FileInputStream.<init>(FileInputStream.java:146)
+09-29 23:18:58.195 E/RootCommands(5120):    at java.io.FileInputStream.<init>(FileInputStream.java:99)
+09-29 23:18:58.195 E/RootCommands(5120):    at java.io.FileReader.<init>(FileReader.java:58)
+09-29 23:18:58.195 E/RootCommands(5120):    at org.sufficientlysecure.rootcommands.Remounter.getMounts(Remounter.java:173)
+09-29 23:18:58.195 E/RootCommands(5120):    at org.sufficientlysecure.rootcommands.Remounter.remount(Remounter.java:66)
+09-29 23:18:58.195 E/RootCommands(5120):    at org.sufficientlysecure.rootcommands.Toolbox.remount(Toolbox.java:733)
+09-29 23:18:58.195 E/RootCommands(5120):    at org.adaway.util.ApplyUtils.copyHostsFile(ApplyUtils.java:164)
+09-29 23:18:58.195 E/RootCommands(5120):    at org.adaway.service.ApplyService.apply(ApplyService.java:427)
+09-29 23:18:58.195 E/RootCommands(5120):    at org.adaway.service.ApplyService.doWakefulWork(ApplyService.java:102)
+09-29 23:18:58.195 E/RootCommands(5120):    at com.commonsware.cwac.wakeful.WakefulIntentService.onHandleIntent(WakefulIntentService.java:100)
+09-29 23:18:58.195 E/RootCommands(5120):    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:67)
+09-29 23:18:58.195 E/RootCommands(5120):    at android.os.Handler.dispatchMessage(Handler.java:102)
+09-29 23:18:58.195 E/RootCommands(5120):    at android.os.Looper.loop(Looper.java:154)
+09-29 23:18:58.195 E/RootCommands(5120):    at android.os.HandlerThread.run(HandlerThread.java:61)
+09-29 23:18:58.195 E/AdAway  (5120): Remounting as RW failed! Probably not a problem!
+09-29 23:18:58.232 E/AdAway  (5120): Exception!
+09-29 23:18:58.232 E/AdAway  (5120): org.adaway.util.CommandException
+09-29 23:18:58.232 E/AdAway  (5120):    at org.adaway.util.ApplyUtils.copyHostsFile(ApplyUtils.java:176)
+09-29 23:18:58.232 E/AdAway  (5120):    at org.adaway.service.ApplyService.apply(ApplyService.java:427)
+09-29 23:18:58.232 E/AdAway  (5120):    at org.adaway.service.ApplyService.doWakefulWork(ApplyService.java:102)
+09-29 23:18:58.232 E/AdAway  (5120):    at com.commonsware.cwac.wakeful.WakefulIntentService.onHandleIntent(WakefulIntentService.java:100)
+09-29 23:18:58.232 E/AdAway  (5120):    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:67)
+09-29 23:18:58.232 E/AdAway  (5120):    at android.os.Handler.dispatchMessage(Handler.java:102)
+09-29 23:18:58.232 E/AdAway  (5120):    at android.os.Looper.loop(Looper.java:154)
+09-29 23:18:58.232 E/AdAway  (5120):    at android.os.HandlerThread.run(HandlerThread.java:61)
+09-29 23:18:58.235 E/linker  (6072): normalize_path - invalid input: "null", the input path should be absolute
+09-29 23:18:58.235 W/linker  (6072): Warning: unable to normalize "null"
+09-29 23:18:58.312 E/RootCommands(5120): Exception
+09-29 23:18:58.312 E/RootCommands(5120): java.io.FileNotFoundException: /data/local/RootToolsMounts (Permission denied)
+09-29 23:18:58.312 E/RootCommands(5120):    at java.io.FileInputStream.open(Native Method)
+09-29 23:18:58.312 E/RootCommands(5120):    at java.io.FileInputStream.<init>(FileInputStream.java:146)
+09-29 23:18:58.312 E/RootCommands(5120):    at java.io.FileInputStream.<init>(FileInputStream.java:99)
+09-29 23:18:58.312 E/RootCommands(5120):    at java.io.FileReader.<init>(FileReader.java:58)
+09-29 23:18:58.312 E/RootCommands(5120):    at org.sufficientlysecure.rootcommands.Remounter.getMounts(Remounter.java:173)
+09-29 23:18:58.312 E/RootCommands(5120):    at org.sufficientlysecure.rootcommands.Remounter.remount(Remounter.java:66)
+09-29 23:18:58.312 E/RootCommands(5120):    at org.sufficientlysecure.rootcommands.Toolbox.remount(Toolbox.java:733)
+09-29 23:18:58.312 E/RootCommands(5120):    at org.adaway.util.ApplyUtils.copyHostsFile(ApplyUtils.java:191)
+09-29 23:18:58.312 E/RootCommands(5120):    at org.adaway.service.ApplyService.apply(ApplyService.java:427)
+09-29 23:18:58.312 E/RootCommands(5120):    at org.adaway.service.ApplyService.doWakefulWork(ApplyService.java:102)
+09-29 23:18:58.312 E/RootCommands(5120):    at com.commonsware.cwac.wakeful.WakefulIntentService.onHandleIntent(WakefulIntentService.java:100)
+09-29 23:18:58.312 E/RootCommands(5120):    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:67)
+09-29 23:18:58.312 E/RootCommands(5120):    at android.os.Handler.dispatchMessage(Handler.java:102)
+09-29 23:18:58.312 E/RootCommands(5120):    at android.os.Looper.loop(Looper.java:154)
+09-29 23:18:58.312 E/RootCommands(5120):    at android.os.HandlerThread.run(HandlerThread.java:61)
+09-29 23:18:58.313 E/AdAway  (5120): Remounting failed in finally! Probably not a problem!
+09-29 23:18:58.313 E/AdAway  (5120): Exception: 
+09-29 23:18:58.313 E/AdAway  (5120): org.adaway.util.CommandException
+09-29 23:18:58.313 E/AdAway  (5120):    at org.adaway.util.ApplyUtils.copyHostsFile(ApplyUtils.java:186)
+09-29 23:18:58.313 E/AdAway  (5120):    at org.adaway.service.ApplyService.apply(ApplyService.java:427)
+09-29 23:18:58.313 E/AdAway  (5120):    at org.adaway.service.ApplyService.doWakefulWork(ApplyService.java:102)
+09-29 23:18:58.313 E/AdAway  (5120):    at com.commonsware.cwac.wakeful.WakefulIntentService.onHandleIntent(WakefulIntentService.java:100)
+09-29 23:18:58.313 E/AdAway  (5120):    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:67)
+09-29 23:18:58.313 E/AdAway  (5120):    at android.os.Handler.dispatchMessage(Handler.java:102)
+09-29 23:18:58.313 E/AdAway  (5120):    at android.os.Looper.loop(Looper.java:154)
+09-29 23:18:58.313 E/AdAway  (5120):    at android.os.HandlerThread.run(HandlerThread.java:61)
+09-29 23:18:58.308 W/IntentService[A(6045): type=1400 audit(0.0:98): avc: denied { read } for name="RootToolsMounts" dev="dm-0" ino=334564 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=0
+09-29 23:18:58.374 I/ActivityManager(920): START u0 {flg=0x10000004 cmp=org.adaway/.ui.BaseActivity (has extras)} from uid 10188 on display 0
+09-29 23:18:58.876 D/AndroidRuntime(6058): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-29 23:18:58.882 D/AndroidRuntime(6058): CheckJNI is OFF
+09-29 23:18:58.883 D/AndroidRuntime(6065): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-29 23:18:58.888 D/AndroidRuntime(6065): CheckJNI is OFF
+09-29 23:18:58.942 D/ICU     (6058): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+09-29 23:18:58.946 D/ICU     (6065): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+09-29 23:18:58.956 W/System  (6058): ClassLoader referenced unknown path: /vendor/lib64
+09-29 23:18:58.956 W/System  (6058): ClassLoader referenced unknown path: /system/lib64
+09-29 23:18:58.948 W/main    (6058): type=1400 audit(0.0:99): avc: denied { write } for name="arm" dev="dm-0" ino=791522 scontext=u:r:shell:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=0
+09-29 23:18:58.960 W/System  (6065): ClassLoader referenced unknown path: /vendor/lib64
+09-29 23:18:58.960 W/System  (6065): ClassLoader referenced unknown path: /system/lib64
+09-29 23:18:58.952 W/main    (6065): type=1400 audit(0.0:100): avc: denied { write } for name="arm" dev="dm-0" ino=791522 scontext=u:r:shell:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=0
+09-29 23:18:58.973 I/Radio-JNI(6058): register_android_hardware_Radio DONE
+09-29 23:18:58.980 I/Radio-JNI(6065): register_android_hardware_Radio DONE
+09-29 23:18:58.990 D/AndroidRuntime(6058): Calling main entry com.android.commands.am.Am
+09-29 23:18:58.985 W/main    (6097): type=1400 audit(0.0:101): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:18:58.985 W/main    (6097): type=1400 audit(0.0:102): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:18:58.985 W/main    (6097): type=1400 audit(0.0:103): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:18:58.985 W/main    (6097): type=1400 audit(0.0:104): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:18:58.994 E/ActivityManager(920): Sending non-protected broadcast eu.chainfire.supersu.NativeAccess from system uid 0 pkg null
+09-29 23:18:58.994 E/ActivityManager(920): java.lang.Throwable
+09-29 23:18:58.994 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:17695)
+09-29 23:18:58.994 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:18256)
+09-29 23:18:58.994 E/ActivityManager(920):  at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:499)
+09-29 23:18:58.994 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2755)
+09-29 23:18:58.994 E/ActivityManager(920):  at android.os.Binder.execTransact(Binder.java:565)
+09-29 23:18:58.999 D/AndroidRuntime(6065): Calling main entry com.android.commands.am.Am
+09-29 23:18:58.995 W/main    (6099): type=1400 audit(0.0:105): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:18:58.995 W/main    (6099): type=1400 audit(0.0:106): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:18:58.995 W/main    (6099): type=1400 audit(0.0:107): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:18:58.995 W/main    (6099): type=1400 audit(0.0:108): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:18:59.006 E/ActivityManager(920): Sending non-protected broadcast eu.chainfire.supersu.NativeAccess from system uid 0 pkg null
+09-29 23:18:59.006 E/ActivityManager(920): java.lang.Throwable
+09-29 23:18:59.006 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:17695)
+09-29 23:18:59.006 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:18256)
+09-29 23:18:59.006 E/ActivityManager(920):  at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:499)
+09-29 23:18:59.006 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2755)
+09-29 23:18:59.006 E/ActivityManager(920):  at android.os.Binder.execTransact(Binder.java:565)
+09-29 23:18:59.025 D/AndroidRuntime(6058): Shutting down VM
+09-29 23:18:59.033 D/AndroidRuntime(6082): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-29 23:18:59.038 D/AndroidRuntime(6082): CheckJNI is OFF
+09-29 23:18:59.099 D/AndroidRuntime(6065): Shutting down VM
+09-29 23:18:59.113 D/ICU     (6082): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+09-29 23:18:59.122 W/main    (6082): type=1400 audit(0.0:109): avc: denied { write } for name="arm" dev="dm-0" ino=791522 scontext=u:r:shell:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=0
+09-29 23:18:59.130 W/System  (6082): ClassLoader referenced unknown path: /vendor/lib64
+09-29 23:18:59.130 W/System  (6082): ClassLoader referenced unknown path: /system/lib64
+09-29 23:18:59.153 I/Radio-JNI(6082): register_android_hardware_Radio DONE
+09-29 23:18:59.173 D/AndroidRuntime(6082): Calling main entry com.android.commands.am.Am
+09-29 23:18:59.178 I/WifiHAL (920): Got channel list with 11 channels
+09-29 23:18:59.179 E/ActivityManager(920): Sending non-protected broadcast eu.chainfire.supersu.NativeAccess from system uid 0 pkg null
+09-29 23:18:59.179 E/ActivityManager(920): java.lang.Throwable
+09-29 23:18:59.179 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:17695)
+09-29 23:18:59.179 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:18256)
+09-29 23:18:59.179 E/ActivityManager(920):  at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:499)
+09-29 23:18:59.179 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2755)
+09-29 23:18:59.179 E/ActivityManager(920):  at android.os.Binder.execTransact(Binder.java:565)
+09-29 23:18:59.168 W/main    (6108): type=1400 audit(0.0:110): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:18:59.168 W/main    (6108): type=1400 audit(0.0:111): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:18:59.168 W/main    (6108): type=1400 audit(0.0:112): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:18:59.168 W/main    (6108): type=1400 audit(0.0:113): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:18:59.184 I/WifiHAL (920): Got channel list with 9 channels
+09-29 23:18:59.185 I/WifiHAL (920): Got channel list with 12 channels
+09-29 23:18:59.207 D/AndroidRuntime(6082): Shutting down VM
+09-29 23:18:59.692 I/art     (920): Background partial concurrent mark sweep GC freed 30752(1655KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 21MB/31MB, paused 1.442ms total 171.446ms
+09-29 23:19:00.452 W/InputMethodManagerService(920): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@5d26026 attribute=null, token = android.os.BinderProxy@c0e5e8e
+09-29 23:19:00.633 I/WindowManager(920): Destroying surface Surface(name=org.adaway/org.adaway.ui.BaseActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.AppWindowToken.destroySurfaces:363 com.android.server.wm.WindowStateAnimator.finishExit:565 com.android.server.wm.WindowStateAnimator.stepAnimationLocked:491 com.android.server.wm.WindowAnimator.updateWindowsLocked:303 com.android.server.wm.WindowAnimator.animateLocked:704 
+09-29 23:19:01.336 I/ActivityManager(920): START u0 {flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity} from uid 10034 on display 0
+09-29 23:19:01.464 I/art     (920): Background partial concurrent mark sweep GC freed 12708(611KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 20MB/31MB, paused 1.471ms total 127.330ms
+09-29 23:19:01.570 I/WindowManager(920): Destroying surface Surface(name=Toast) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementInner:429 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop:232 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement:180 com.android.server.wm.WindowManagerService$H.handleMessage:8079 android.os.Handler.dispatchMessage:102 
+09-29 23:19:02.259 E/ActivityManager(920): applyOptionsLocked: Unknown animationType=0
+09-29 23:19:02.299 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:02.314 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:02.350 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:02.660 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:02.662 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:02.679 I/WindowManager(920): Destroying surface Surface(name=com.android.systemui/com.android.systemui.recents.RecentsActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.WindowManagerService.tryStartExitingAnimation:3017 com.android.server.wm.WindowManagerService.relayoutWindow:2897 com.android.server.wm.Session.relayout:215 android.view.IWindowSession$Stub.onTransact:286 com.android.server.wm.Session.onTransact:136 
+09-29 23:19:02.682 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:04.038 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:04.281 I/art     (920): Background partial concurrent mark sweep GC freed 22166(1087KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 21MB/31MB, paused 1.049ms total 102.616ms
+09-29 23:19:06.849 I/art     (920): Background partial concurrent mark sweep GC freed 21402(1038KB) AllocSpace objects, 2(40KB) LOS objects, 33% free, 21MB/31MB, paused 979us total 113.693ms
+09-29 23:19:07.499 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:07.517 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:07.531 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:07.546 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:08.065 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:10.942 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:11.481 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:11.482 I/WindowManager(920): Destroying surface Surface(name=Toast) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementInner:429 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacementLoop:232 com.android.server.wm.WindowSurfacePlacer.performSurfacePlacement:180 com.android.server.wm.WindowManagerService$H.handleMessage:8079 android.os.Handler.dispatchMessage:102 
+09-29 23:19:11.482 I/art     (920): Background partial concurrent mark sweep GC freed 19725(921KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 21MB/31MB, paused 1.201ms total 107.276ms
+09-29 23:19:11.486 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:12.179 I/ActivityManager(920): START u0 {flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity} from uid 10034 on display 0
+09-29 23:19:12.244 V/PhoneStatusBar(1549): setLightsOn(true)
+09-29 23:19:12.328 I/art     (920): Background partial concurrent mark sweep GC freed 7280(347KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 21MB/31MB, paused 1.260ms total 116.860ms
+09-29 23:19:13.170 E/ActivityManager(920): applyOptionsLocked: Unknown animationType=0
+09-29 23:19:13.610 I/WindowManager(920): Destroying surface Surface(name=com.android.systemui/com.android.systemui.recents.RecentsActivity) called by com.android.server.wm.WindowStateAnimator.destroySurface:2014 com.android.server.wm.WindowStateAnimator.destroySurfaceLocked:881 com.android.server.wm.WindowState.destroyOrSaveSurface:2073 com.android.server.wm.WindowManagerService.tryStartExitingAnimation:3017 com.android.server.wm.WindowManagerService.relayoutWindow:2897 com.android.server.wm.Session.relayout:215 android.view.IWindowSession$Stub.onTransact:286 com.android.server.wm.Session.onTransact:136 
+09-29 23:19:15.608 I/art     (920): Background partial concurrent mark sweep GC freed 23490(1196KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 20MB/31MB, paused 1.280ms total 129.763ms
+09-29 23:19:21.052 I/art     (5120): Background partial concurrent mark sweep GC freed 26628(1448KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 12MB/20MB, paused 12.882ms total 67.327ms
+09-29 23:19:21.398 I/art     (5120): Background partial concurrent mark sweep GC freed 32128(1258KB) AllocSpace objects, 0(0B) LOS objects, 39% free, 12MB/21MB, paused 8.008ms total 98.681ms
+09-29 23:19:21.722 I/art     (5120): Background partial concurrent mark sweep GC freed 31822(1169KB) AllocSpace objects, 0(0B) LOS objects, 40% free, 12MB/21MB, paused 7.345ms total 77.340ms
+09-29 23:19:22.561 E/linker  (6121): normalize_path - invalid input: "null", the input path should be absolute
+09-29 23:19:22.561 W/linker  (6121): Warning: unable to normalize "null"
+09-29 23:19:22.628 E/linker  (6131): normalize_path - invalid input: "null", the input path should be absolute
+09-29 23:19:22.628 W/linker  (6131): Warning: unable to normalize "null"
+09-29 23:19:22.732 W/IntentService[A(6117): type=1400 audit(0.0:114): avc: denied { read } for name="RootToolsMounts" dev="dm-0" ino=334564 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=0
+09-29 23:19:22.737 E/RootCommands(5120): Exception
+09-29 23:19:22.737 E/RootCommands(5120): java.io.FileNotFoundException: /data/local/RootToolsMounts (Permission denied)
+09-29 23:19:22.737 E/RootCommands(5120):    at java.io.FileInputStream.open(Native Method)
+09-29 23:19:22.737 E/RootCommands(5120):    at java.io.FileInputStream.<init>(FileInputStream.java:146)
+09-29 23:19:22.737 E/RootCommands(5120):    at java.io.FileInputStream.<init>(FileInputStream.java:99)
+09-29 23:19:22.737 E/RootCommands(5120):    at java.io.FileReader.<init>(FileReader.java:58)
+09-29 23:19:22.737 E/RootCommands(5120):    at org.sufficientlysecure.rootcommands.Remounter.getMounts(Remounter.java:173)
+09-29 23:19:22.737 E/RootCommands(5120):    at org.sufficientlysecure.rootcommands.Remounter.remount(Remounter.java:66)
+09-29 23:19:22.737 E/RootCommands(5120):    at org.sufficientlysecure.rootcommands.Toolbox.remount(Toolbox.java:733)
+09-29 23:19:22.737 E/RootCommands(5120):    at org.adaway.util.ApplyUtils.copyHostsFile(ApplyUtils.java:164)
+09-29 23:19:22.737 E/RootCommands(5120):    at org.adaway.service.ApplyService.apply(ApplyService.java:427)
+09-29 23:19:22.737 E/RootCommands(5120):    at org.adaway.service.ApplyService.doWakefulWork(ApplyService.java:102)
+09-29 23:19:22.737 E/RootCommands(5120):    at com.commonsware.cwac.wakeful.WakefulIntentService.onHandleIntent(WakefulIntentService.java:100)
+09-29 23:19:22.737 E/RootCommands(5120):    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:67)
+09-29 23:19:22.737 E/RootCommands(5120):    at android.os.Handler.dispatchMessage(Handler.java:102)
+09-29 23:19:22.737 E/RootCommands(5120):    at android.os.Looper.loop(Looper.java:154)
+09-29 23:19:22.737 E/RootCommands(5120):    at android.os.HandlerThread.run(HandlerThread.java:61)
+09-29 23:19:22.738 E/AdAway  (5120): Remounting as RW failed! Probably not a problem!
+09-29 23:19:22.775 E/AdAway  (5120): Exception!
+09-29 23:19:22.775 E/AdAway  (5120): org.adaway.util.CommandException
+09-29 23:19:22.775 E/AdAway  (5120):    at org.adaway.util.ApplyUtils.copyHostsFile(ApplyUtils.java:176)
+09-29 23:19:22.775 E/AdAway  (5120):    at org.adaway.service.ApplyService.apply(ApplyService.java:427)
+09-29 23:19:22.775 E/AdAway  (5120):    at org.adaway.service.ApplyService.doWakefulWork(ApplyService.java:102)
+09-29 23:19:22.775 E/AdAway  (5120):    at com.commonsware.cwac.wakeful.WakefulIntentService.onHandleIntent(WakefulIntentService.java:100)
+09-29 23:19:22.775 E/AdAway  (5120):    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:67)
+09-29 23:19:22.775 E/AdAway  (5120):    at android.os.Handler.dispatchMessage(Handler.java:102)
+09-29 23:19:22.775 E/AdAway  (5120):    at android.os.Looper.loop(Looper.java:154)
+09-29 23:19:22.775 E/AdAway  (5120):    at android.os.HandlerThread.run(HandlerThread.java:61)
+09-29 23:19:22.779 E/linker  (6145): normalize_path - invalid input: "null", the input path should be absolute
+09-29 23:19:22.779 W/linker  (6145): Warning: unable to normalize "null"
+09-29 23:19:22.797 I/art     (920): Background partial concurrent mark sweep GC freed 19174(880KB) AllocSpace objects, 0(0B) LOS objects, 33% free, 20MB/31MB, paused 1.291ms total 107.292ms
+09-29 23:19:22.855 W/IntentService[A(6117): type=1400 audit(0.0:115): avc: denied { read } for name="RootToolsMounts" dev="dm-0" ino=334564 scontext=u:r:untrusted_app:s0:c512,c768 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=0
+09-29 23:19:22.861 E/RootCommands(5120): Exception
+09-29 23:19:22.861 E/RootCommands(5120): java.io.FileNotFoundException: /data/local/RootToolsMounts (Permission denied)
+09-29 23:19:22.861 E/RootCommands(5120):    at java.io.FileInputStream.open(Native Method)
+09-29 23:19:22.861 E/RootCommands(5120):    at java.io.FileInputStream.<init>(FileInputStream.java:146)
+09-29 23:19:22.861 E/RootCommands(5120):    at java.io.FileInputStream.<init>(FileInputStream.java:99)
+09-29 23:19:22.861 E/RootCommands(5120):    at java.io.FileReader.<init>(FileReader.java:58)
+09-29 23:19:22.861 E/RootCommands(5120):    at org.sufficientlysecure.rootcommands.Remounter.getMounts(Remounter.java:173)
+09-29 23:19:22.861 E/RootCommands(5120):    at org.sufficientlysecure.rootcommands.Remounter.remount(Remounter.java:66)
+09-29 23:19:22.861 E/RootCommands(5120):    at org.sufficientlysecure.rootcommands.Toolbox.remount(Toolbox.java:733)
+09-29 23:19:22.861 E/RootCommands(5120):    at org.adaway.util.ApplyUtils.copyHostsFile(ApplyUtils.java:191)
+09-29 23:19:22.861 E/RootCommands(5120):    at org.adaway.service.ApplyService.apply(ApplyService.java:427)
+09-29 23:19:22.861 E/RootCommands(5120):    at org.adaway.service.ApplyService.doWakefulWork(ApplyService.java:102)
+09-29 23:19:22.861 E/RootCommands(5120):    at com.commonsware.cwac.wakeful.WakefulIntentService.onHandleIntent(WakefulIntentService.java:100)
+09-29 23:19:22.861 E/RootCommands(5120):    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:67)
+09-29 23:19:22.861 E/RootCommands(5120):    at android.os.Handler.dispatchMessage(Handler.java:102)
+09-29 23:19:22.861 E/RootCommands(5120):    at android.os.Looper.loop(Looper.java:154)
+09-29 23:19:22.861 E/RootCommands(5120):    at android.os.HandlerThread.run(HandlerThread.java:61)
+09-29 23:19:22.861 E/AdAway  (5120): Remounting failed in finally! Probably not a problem!
+09-29 23:19:22.865 E/AdAway  (5120): Exception: 
+09-29 23:19:22.865 E/AdAway  (5120): org.adaway.util.CommandException
+09-29 23:19:22.865 E/AdAway  (5120):    at org.adaway.util.ApplyUtils.copyHostsFile(ApplyUtils.java:186)
+09-29 23:19:22.865 E/AdAway  (5120):    at org.adaway.service.ApplyService.apply(ApplyService.java:427)
+09-29 23:19:22.865 E/AdAway  (5120):    at org.adaway.service.ApplyService.doWakefulWork(ApplyService.java:102)
+09-29 23:19:22.865 E/AdAway  (5120):    at com.commonsware.cwac.wakeful.WakefulIntentService.onHandleIntent(WakefulIntentService.java:100)
+09-29 23:19:22.865 E/AdAway  (5120):    at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:67)
+09-29 23:19:22.865 E/AdAway  (5120):    at android.os.Handler.dispatchMessage(Handler.java:102)
+09-29 23:19:22.865 E/AdAway  (5120):    at android.os.Looper.loop(Looper.java:154)
+09-29 23:19:22.865 E/AdAway  (5120):    at android.os.HandlerThread.run(HandlerThread.java:61)
+09-29 23:19:22.913 I/ActivityManager(920): START u0 {flg=0x10000004 cmp=org.adaway/.ui.BaseActivity (has extras)} from uid 10188 on display 0
+09-29 23:19:23.408 D/AndroidRuntime(6128): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-29 23:19:23.426 D/AndroidRuntime(6128): CheckJNI is OFF
+09-29 23:19:23.456 D/AndroidRuntime(6141): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-29 23:19:23.460 D/AndroidRuntime(6141): CheckJNI is OFF
+09-29 23:19:23.488 D/ICU     (6128): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+09-29 23:19:23.495 W/main    (6128): type=1400 audit(0.0:116): avc: denied { write } for name="arm" dev="dm-0" ino=791522 scontext=u:r:shell:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=0
+09-29 23:19:23.502 W/System  (6128): ClassLoader referenced unknown path: /vendor/lib64
+09-29 23:19:23.502 W/System  (6128): ClassLoader referenced unknown path: /system/lib64
+09-29 23:19:23.519 D/ICU     (6141): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+09-29 23:19:23.523 I/Radio-JNI(6128): register_android_hardware_Radio DONE
+09-29 23:19:23.525 W/main    (6141): type=1400 audit(0.0:117): avc: denied { write } for name="arm" dev="dm-0" ino=791522 scontext=u:r:shell:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=0
+09-29 23:19:23.533 W/System  (6141): ClassLoader referenced unknown path: /vendor/lib64
+09-29 23:19:23.533 W/System  (6141): ClassLoader referenced unknown path: /system/lib64
+09-29 23:19:23.542 D/AndroidRuntime(6128): Calling main entry com.android.commands.am.Am
+09-29 23:19:23.544 D/AndroidRuntime(6155): >>>>>> START com.android.internal.os.RuntimeInit uid 0 <<<<<<
+09-29 23:19:23.547 E/ActivityManager(920): Sending non-protected broadcast eu.chainfire.supersu.NativeAccess from system uid 0 pkg null
+09-29 23:19:23.547 E/ActivityManager(920): java.lang.Throwable
+09-29 23:19:23.547 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:17695)
+09-29 23:19:23.547 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:18256)
+09-29 23:19:23.547 E/ActivityManager(920):  at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:499)
+09-29 23:19:23.547 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2755)
+09-29 23:19:23.547 E/ActivityManager(920):  at android.os.Binder.execTransact(Binder.java:565)
+09-29 23:19:23.548 D/AndroidRuntime(6155): CheckJNI is OFF
+09-29 23:19:23.538 W/main    (6170): type=1400 audit(0.0:118): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:19:23.538 W/main    (6170): type=1400 audit(0.0:119): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:19:23.538 W/main    (6170): type=1400 audit(0.0:120): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:19:23.538 W/main    (6170): type=1400 audit(0.0:121): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:19:23.570 D/AndroidRuntime(6141): Calling main entry com.android.commands.am.Am
+09-29 23:19:23.565 W/main    (6172): type=1400 audit(0.0:122): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:19:23.565 W/main    (6172): type=1400 audit(0.0:123): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:19:23.565 W/main    (6172): type=1400 audit(0.0:124): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:19:23.565 W/main    (6172): type=1400 audit(0.0:125): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:19:23.575 E/ActivityManager(920): Sending non-protected broadcast eu.chainfire.supersu.NativeAccess from system uid 0 pkg null
+09-29 23:19:23.575 E/ActivityManager(920): java.lang.Throwable
+09-29 23:19:23.575 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:17695)
+09-29 23:19:23.575 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:18256)
+09-29 23:19:23.575 E/ActivityManager(920):  at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:499)
+09-29 23:19:23.575 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2755)
+09-29 23:19:23.575 E/ActivityManager(920):  at android.os.Binder.execTransact(Binder.java:565)
+09-29 23:19:23.588 D/AndroidRuntime(6128): Shutting down VM
+09-29 23:19:23.608 D/ICU     (6155): No timezone override file found: /data/misc/zoneinfo/current/icu/icu_tzdata.dat
+09-29 23:19:23.619 D/AndroidRuntime(6141): Shutting down VM
+09-29 23:19:23.615 W/main    (6155): type=1400 audit(0.0:126): avc: denied { write } for name="arm" dev="dm-0" ino=791522 scontext=u:r:shell:s0 tcontext=u:object_r:dalvikcache_data_file:s0 tclass=dir permissive=0
+09-29 23:19:23.623 W/System  (6155): ClassLoader referenced unknown path: /vendor/lib64
+09-29 23:19:23.623 W/System  (6155): ClassLoader referenced unknown path: /system/lib64
+09-29 23:19:23.645 I/Radio-JNI(6155): register_android_hardware_Radio DONE
+09-29 23:19:23.663 D/AndroidRuntime(6155): Calling main entry com.android.commands.am.Am
+09-29 23:19:23.658 W/main    (6181): type=1400 audit(0.0:127): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:19:23.658 W/main    (6181): type=1400 audit(0.0:128): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:19:23.658 W/main    (6181): type=1400 audit(0.0:129): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:19:23.658 W/main    (6181): type=1400 audit(0.0:130): avc: denied { dac_override } for capability=1 scontext=u:r:shell:s0 tcontext=u:r:shell:s0 tclass=capability permissive=0
+09-29 23:19:23.669 E/ActivityManager(920): Sending non-protected broadcast eu.chainfire.supersu.NativeAccess from system uid 0 pkg null
+09-29 23:19:23.669 E/ActivityManager(920): java.lang.Throwable
+09-29 23:19:23.669 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.broadcastIntentLocked(ActivityManagerService.java:17695)
+09-29 23:19:23.669 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.broadcastIntent(ActivityManagerService.java:18256)
+09-29 23:19:23.669 E/ActivityManager(920):  at android.app.ActivityManagerNative.onTransact(ActivityManagerNative.java:499)
+09-29 23:19:23.669 E/ActivityManager(920):  at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2755)
+09-29 23:19:23.669 E/ActivityManager(920):  at android.os.Binder.execTransact(Binder.java:565)
+09-29 23:19:23.705 D/AndroidRuntime(6155): Shutting down VM
+09-29 23:19:24.271 W/MessageQueue(2132): Handler (agvk) {71335d6} sending message to a Handler on a dead thread
+09-29 23:19:24.271 W/MessageQueue(2132): java.lang.IllegalStateException: Handler (agvk) {71335d6} sending message to a Handler on a dead thread
+09-29 23:19:24.271 W/MessageQueue(2132):    at android.os.MessageQueue.enqueueMessage(MessageQueue.java:543)
+09-29 23:19:24.271 W/MessageQueue(2132):    at android.os.Handler.enqueueMessage(Handler.java:643)
+09-29 23:19:24.271 W/MessageQueue(2132):    at android.os.Handler.sendMessageAtTime(Handler.java:612)
+09-29 23:19:24.271 W/MessageQueue(2132):    at android.os.Handler.sendMessageDelayed(Handler.java:582)
+09-29 23:19:24.271 W/MessageQueue(2132):    at android.os.Handler.post(Handler.java:338)
+09-29 23:19:24.271 W/MessageQueue(2132):    at agvk.a(:com.google.android.gms:29)
+09-29 23:19:24.271 W/MessageQueue(2132):    at agvd.a(:com.google.android.gms:3625)
+09-29 23:19:24.271 W/MessageQueue(2132):    at iqf.handleMessage(:com.google.android.gms:1538)
+09-29 23:19:24.271 W/MessageQueue(2132):    at android.os.Handler.dispatchMessage(Handler.java:102)
+09-29 23:19:24.271 W/MessageQueue(2132):    at android.os.Looper.loop(Looper.java:154)
+09-29 23:19:24.271 W/MessageQueue(2132):    at android.app.ActivityThread.main(ActivityThread.java:6077)
+09-29 23:19:24.271 W/MessageQueue(2132):    at java.lang.reflect.Method.invoke(Native Method)
+09-29 23:19:24.271 W/MessageQueue(2132):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:865)
+09-29 23:19:24.271 W/MessageQueue(2132):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:755)

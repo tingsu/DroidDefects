@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: com.icechen1.notable.pro
+//version: 1.5.6
+//appro_time: 4
+ java.lang.IllegalStateException: attempt to re-open an already-closed object: SQLiteDatabase: /data/data/com.icechen1.notable.pro/databases/notifs.db
+ 	at android.database.sqlite.SQLiteClosable.acquireReference(SQLiteClosable.java:55)
+ 	at android.database.sqlite.SQLiteDatabase.delete(SQLiteDatabase.java:1492)
+ 	at com.icechen1.notable.library.utils.j.a(Unknown Source)
+ 	at com.icechen1.notable.library.e.a(Unknown Source)
+ 	at android.support.design.widget.Snackbar.e(Unknown Source)
+ 	at android.support.design.widget.Snackbar.b(Unknown Source)
+ 	at android.support.design.widget.au.run(Unknown Source)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

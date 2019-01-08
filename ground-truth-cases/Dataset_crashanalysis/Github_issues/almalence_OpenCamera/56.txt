@@ -1,0 +1,19 @@
+
+I used open camera at adroid 7.1.1 slim bacon. 
+The Gallery detail infomation action for selected photos by open camera always crashes.
+Other photos' information can be showed right.
+
+Is some tag wrong?
+
+Some log captured: 
+ 8545 E AndroidRuntime: java.lang.AssertionError: 鍒堕€犲晢's value is Null
+01-16 18:33:57.550  8545  8545 E AndroidRuntime:        at com.android.gallery3d.common.Utils.fail(Utils.java:59)
+01-16 18:33:57.550  8545  8545 E AndroidRuntime:        at com.android.gallery3d.ui.DialogDetailsView$DetailsAdapter.setDetails(DialogDetailsView.java:228)
+01-16 18:33:57.550  8545  8545 E AndroidRuntime:        at com.android.gallery3d.ui.DialogDetailsView$DetailsAdapter.<init>(DialogDetailsView.java:131)
+01-16 18:33:57.550  8545  8545 E AndroidRuntime:        at com.android.gallery3d.ui.DialogDetailsView.setDetails(DialogDetailsView.java:89)
+01-16 18:33:57.550  8545  8545 E AndroidRuntime:        at com.android.gallery3d.ui.DialogDetailsView.reloadDetails(DialogDetailsView.java:84)
+01-16 18:33:57.550  8545  8545 E AndroidRuntime:        at com.android.gallery3d.ui.DialogDetailsView.show(DialogDetailsView.java:66)
+01-16 18:33:57.550  8545  8545 E AndroidRuntime:        at com.android.gallery3d.ui.DetailsHelper.show(DetailsHelper.java:95)
+01-16 18:33:57.550  8545  8545 E AndroidRuntime:        at com.android.gallery3d.app.PhotoPage.showDetails(PhotoPage.java:1122)
+01-16 18:33:57.550  8545  8545 E AndroidRuntime:        at com.android.gallery3d.app.PhotoPage.onItemSelected(PhotoPage.java:1082)
+01-16 18:33:57.550  8545  8545 E AndroidRuntime:        at com.android.gallery3d.app.StateManager.itemSelected(StateManager.java:148)

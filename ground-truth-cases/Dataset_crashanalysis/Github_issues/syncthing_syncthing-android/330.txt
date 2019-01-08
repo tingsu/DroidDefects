@@ -1,0 +1,28 @@
+D/OpenGLRenderer(16688): Enabling debug mode 0
+I/SyncthingService(16688): Web GUI will be available at http://127.0.0.1:8080
+I/SyncthingService(16688): Starting syncthing according to current state and preferences
+I/ConfigXml(16688): Checking for needed config updates
+D/WatchIt!( 1308): Connected
+E/WatchIt ( 1308): Notification received StatusBarNotification(pkg=com.nutomic.syncthingandroid.debug user=UserHandle{0} id=1 tag=null score=-20 key=0|com.nutomic.syncthingandroid.debug|1|null|10082: Notification(pri=-2 contentView=com.nutomic.syncthingandroid.debug/0x1090078 vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE))
+D/WATCHService( 1308): Duplicate message ignored: Syncthing: Syncthing is running
+W/ResourceType( 1185): No known package when getting value for resource number 0x62020084
+W/StatusBarIconView( 1185): Icon not found in 2130837559: 7f020037
+W/StatusBarIconView( 1185): No icon for slot com.nutomic.syncthingandroid.debug/0x1
+W/StatusBar( 1185): removeNotification for unknown key: 0|com.nutomic.syncthingandroid.debug|1|null|10082
+D/NotificationService(  759): onNotification error pkg=com.nutomic.syncthingandroid.debug tag=null id=1; will crashApplication(uid=10082, pid=16688)
+D/****WatchIt***( 1308): No big notif
+E/WatchIt!( 1308): Notification received StatusBarNotification(pkg=com.nutomic.syncthingandroid.debug user=UserHandle{0} id=1 tag=null score=-20 key=0|com.nutomic.syncthingandroid.debug|1|null|10082: Notification(pri=-2 contentView=null vibrate=null sound=null defaults=0x0 flags=0x2 color=0x00000000 vis=PRIVATE))
+W/StatusBar( 1185): removeNotification for unknown key: 0|com.nutomic.syncthingandroid.debug|1|null|10082
+I/HK/LatinKeyboardBaseView( 1346): closing org.pocketworkstation.pckeyboard.LatinKeyboardView{26538d3b V.ED.... ......ID 0,0-1080,436 #7f07000a app:id/LatinkeyboardBaseView}
+D/AndroidRuntime(16688): Shutting down VM
+E/AndroidRuntime(16688): FATAL EXCEPTION: main
+E/AndroidRuntime(16688): Process: com.nutomic.syncthingandroid.debug, PID: 16688
+E/AndroidRuntime(16688): android.app.RemoteServiceException: Bad notification posted from package com.nutomic.syncthingandroid.debug: Couldn't create icon: StatusBarIcon(pkg=com.nutomic.syncthingandroid.debuguser=0 id=0x7f020037 level=0 visible=true num=0 )
+E/AndroidRuntime(16688):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1459)
+E/AndroidRuntime(16688):    at android.os.Handler.dispatchMessage(Handler.java:102)
+E/AndroidRuntime(16688):    at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime(16688):    at android.app.ActivityThread.main(ActivityThread.java:5254)
+E/AndroidRuntime(16688):    at java.lang.reflect.Method.invoke(Native Method)
+E/AndroidRuntime(16688):    at java.lang.reflect.Method.invoke(Method.java:372)
+E/AndroidRuntime(16688):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:898)
+E/AndroidRuntime(16688):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:693)

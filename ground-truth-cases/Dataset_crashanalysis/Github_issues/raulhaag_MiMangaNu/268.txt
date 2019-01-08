@@ -1,0 +1,14 @@
+`java.lang.IllegalArgumentException: Comparison method violates its general contract!
+                                                                        at java.util.TimSort.mergeLo(TimSort.java:761)
+                                                                        at java.util.TimSort.mergeAt(TimSort.java:497)
+                                                                        at java.util.TimSort.mergeCollapse(TimSort.java:424)
+                                                                        at java.util.TimSort.sort(TimSort.java:210)
+                                                                        at java.util.Arrays.sort(Arrays.java:1998)
+                                                                        at java.util.Collections.sort(Collections.java:1900)
+                                                                        at ar.rulosoft.mimanganu.MangaFragment$SortAndLoadChapters.doInBackground(MangaFragment.java:624)
+                                                                        at ar.rulosoft.mimanganu.MangaFragment$SortAndLoadChapters.doInBackground(MangaFragment.java:615)
+                                                                        at android.os.AsyncTask$2.call(AsyncTask.java:295)
+                                                                        at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+                                                                        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+                                                                        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+                                                                        at java.lang.Thread.run(Thread.java:818)`

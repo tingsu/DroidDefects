@@ -1,0 +1,16 @@
+java.lang.RuntimeException: Unable to stop service cgeo.geocaching.speech.SpeechService@44351200: java.lang.NullPointerException
+   at android.app.ActivityThread.handleStopService(ActivityThread.java:2907)
+   at android.app.ActivityThread.access$2300(ActivityThread.java:161)
+   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1367)
+   at android.os.Handler.dispatchMessage(Handler.java:102)
+   at android.os.Looper.loop(Looper.java:157)
+   at android.app.ActivityThread.main(ActivityThread.java:5356)
+   at java.lang.reflect.Method.invokeNative(Native Method)
+   at java.lang.reflect.Method.invoke(Method.java:515)
+   at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1265)
+   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1081)
+   at de.robv.android.xposed.XposedBridge.main(XposedBridge.java:132)
+   at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+   at cgeo.geocaching.speech.SpeechService.onDestroy(SpeechService.java:111)
+   at android.app.ActivityThread.handleStopService(ActivityThread.java:2890)

@@ -1,0 +1,7 @@
+10-24 23:46:02.004 18211-19073/com.iskrembilen.quasseldroid.debug E/AndroidRuntime: java.util.ConcurrentModificationException
+10-24 23:46:02.004 18211-19073/com.iskrembilen.quasseldroid.debug E/AndroidRuntime:     at java.util.ArrayList$ArrayListIterator.next(ArrayList.java:573)
+10-24 23:46:02.004 18211-19073/com.iskrembilen.quasseldroid.debug E/AndroidRuntime:     at com.iskrembilen.quasseldroid.util.QuasseldroidNotificationManager.notifyHighlights(QuasseldroidNotificationManager.java:282)
+10-24 23:46:02.004 18211-19073/com.iskrembilen.quasseldroid.debug E/AndroidRuntime:     at com.iskrembilen.quasseldroid.util.QuasseldroidNotificationManager.addMessage(QuasseldroidNotificationManager.java:166)
+10-24 23:46:02.004 18211-19073/com.iskrembilen.quasseldroid.debug E/AndroidRuntime:     at com.iskrembilen.quasseldroid.util.MessageUtil.checkMessageForHighlight(MessageUtil.java:57)
+10-24 23:46:02.004 18211-19073/com.iskrembilen.quasseldroid.debug E/AndroidRuntime:     at com.iskrembilen.quasseldroid.io.CoreConnection$ReadThread.doRun(CoreConnection.java:1362)
+10-24 23:46:02.004 18211-19073/com.iskrembilen.quasseldroid.debug E/AndroidRuntime:     at com.iskrembilen.quasseldroid.io.CoreConnection$ReadThread.run(CoreConnection.java:861)

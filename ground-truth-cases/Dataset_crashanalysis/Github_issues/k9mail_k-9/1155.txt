@@ -1,0 +1,28 @@
+com.fsck.k9.mail.MessagingException: IO Error
+    at com.fsck.k9.mail.store.ImapStore$ImapFolder.ioExceptionHandler(ImapStore.java:2208)
+    at com.fsck.k9.mail.store.ImapStore$ImapFolder.appendMessages(ImapStore.java:2072)
+    at com.fsck.k9.controller.MessagingController.processPendingAppend(MessagingController.java:2117)
+    at com.fsck.k9.controller.MessagingController.processPendingCommandsSynchronous(MessagingController.java:1987)
+    at com.fsck.k9.controller.MessagingController.synchronizeMailboxSynchronous(MessagingController.java:975)
+    at com.fsck.k9.controller.MessagingController.access$400(MessagingController.java:111)
+    at com.fsck.k9.controller.MessagingController$8.run(MessagingController.java:934)
+    at com.fsck.k9.controller.MessagingController.run(MessagingController.java:435)
+    at
+java.lang.Thread.run(Thread.java:818)
+Caused by: javax.net.ssl.SSLException: Write error: ssl=0x977e7680: I/O error during system call, Broken pipe
+    at com.android.org.conscrypt.NativeCrypto.SSL_write(Native Method)
+    at com.android.org.conscrypt.OpenSSLSocketImpl$SSLOutputStream.write(OpenSSLSocketImpl.java:771)
+    at java.io.BufferedOutputStream.write(BufferedOutputStream.java:174)
+    at java.io.FilterOutputStream.write(FilterOutputStream.java:129)
+    at com.fsck.k9.mail.filter.EOLConvertingOutputStream.write(EOLConvertingOutputStream.java:21)
+    at java.io.FilterOutputStream.write(FilterOutputStream.java:114)
+    at com.fsck.k9.mail.filter.Base64OutputStream.flush(Base64OutputStream.java:149)
+    at
+com.fsck.k9.mail.filter.Base64OutputStream.flush(Base64OutputStream.java:165)
+    at com.fsck.k9.mail.filter.Base64OutputStream.close(Base64OutputStream.java:180)
+    at com.fsck.k9.mail.store.LocalStore$BinaryAttachmentBody.writeTo(LocalStore.java:4082)
+    at com.fsck.k9.mail.internet.MimeBodyPart.writeTo(MimeBodyPart.java:141)
+    at com.fsck.k9.mail.internet.MimeMultipart.writeTo(MimeMultipart.java:89)
+    at com.fsck.k9.mail.internet.MimeMessage.writeTo(MimeMessage.java:458)
+    at com.fsck.k9.mail.store.LocalStore$LocalMessage.writeTo(LocalStore.java:3616)
+    at com.fsck.k9.mail.store.ImapStore$ImapFolder.appendMessages(ImapStore.java:2016)

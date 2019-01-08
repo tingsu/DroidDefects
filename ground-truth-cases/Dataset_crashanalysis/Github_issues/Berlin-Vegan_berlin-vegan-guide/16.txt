@@ -1,0 +1,13 @@
+com.afollestad.materialdialogs.MaterialDialog$DialogException: Bad window token, you cannot show a dialog before an Activity is created or after it's hidden.
+    at com.afollestad.materialdialogs.MaterialDialog.show(MaterialDialog.java:1119)
+    at org.berlin_vegan.bvapp.UiUtils.showMaterialDialog(UiUtils.java:60)
+    at org.berlin_vegan.bvapp.UiUtils.showMaterialDialog(UiUtils.java:26)
+    at org.berlin_vegan.bvapp.MainListActivity$5.run(MainListActivity.java:266)
+    at android.os.Handler.handleCallback(Handler.java:739)
+    at android.os.Handler.dispatchMessage(Handler.java:95)
+    at android.os.Looper.loop(Looper.java:145)
+    at android.app.ActivityThread.main(ActivityThread.java:5940)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1389)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1184)

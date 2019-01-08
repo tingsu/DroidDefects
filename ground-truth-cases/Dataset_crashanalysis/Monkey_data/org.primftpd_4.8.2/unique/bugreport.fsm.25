@@ -1,0 +1,19 @@
+//this is an auto-generated bug report
+//package name: org.primftpd
+//version: 4.8.2
+//appro_time: 163
+ java.lang.NumberFormatException: Invalid int: "9o"
+ 	at java.lang.Integer.invalidInt(Integer.java:138)
+ 	at java.lang.Integer.parse(Integer.java:375)
+ 	at java.lang.Integer.parseInt(Integer.java:366)
+ 	at java.lang.Integer.parseInt(Integer.java:332)
+ 	at java.lang.Integer.valueOf(Integer.java:490)
+ 	at org.apache.ftpserver.impl.PassivePorts.parse(PassivePorts.java:96)
+ 	at org.apache.ftpserver.impl.PassivePorts.<init>(PassivePorts.java:148)
+ 	at org.apache.ftpserver.DataConnectionConfigurationFactory.setPassivePorts(DataConnectionConfigurationFactory.java:253)
+ 	at org.primftpd.services.FtpServerService.launchServer(FtpServerService.java:66)
+ 	at org.primftpd.services.ServerServiceHandler.handleStart(ServerServiceHandler.java:69)
+ 	at org.primftpd.services.ServerServiceHandler.handleMessage(ServerServiceHandler.java:53)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.os.HandlerThread.run(HandlerThread.java:61)

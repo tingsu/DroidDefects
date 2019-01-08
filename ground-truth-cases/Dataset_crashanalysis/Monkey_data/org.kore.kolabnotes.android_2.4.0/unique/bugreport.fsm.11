@@ -1,0 +1,20 @@
+//this is an auto-generated bug report
+//package name: org.kore.kolabnotes.android
+//version: 2.4.0
+//appro_time: 128
+ FATAL EXCEPTION: main
+ java.lang.NullPointerException
+ 	at android.preference.PreferenceManager.getDefaultSharedPreferencesName(PreferenceManager.java:374)
+ 	at android.preference.PreferenceManager.getDefaultSharedPreferences(PreferenceManager.java:369)
+ 	at org.kore.kolabnotes.android.Utils.getNoteSorting(Utils.java:321)
+ 	at org.kore.kolabnotes.android.fragment.OverviewFragment.reloadData(OverviewFragment.java:1721)
+ 	at org.kore.kolabnotes.android.fragment.OverviewFragment$14.run(OverviewFragment.java:1058)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

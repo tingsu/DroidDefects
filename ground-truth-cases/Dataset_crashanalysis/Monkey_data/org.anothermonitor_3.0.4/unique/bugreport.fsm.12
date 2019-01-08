@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: org.anothermonitor
+//version: 3.0.4
+//appro_time: 82
+ FATAL EXCEPTION: main
+ java.lang.NullPointerException
+ 	at org.anothermonitor.ActivityMain.setTextLabelCPUProcess(ActivityMain.java:1118)
+ 	at org.anothermonitor.ActivityMain.switchParameterForProcess(ActivityMain.java:1071)
+ 	at org.anothermonitor.ActivityMain.access$4600(ActivityMain.java:59)
+ 	at org.anothermonitor.ActivityMain$43.onClick(ActivityMain.java:1260)
+ 	at android.view.View.performClick(View.java:4240)
+ 	at android.view.View$PerformClick.run(View.java:17721)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

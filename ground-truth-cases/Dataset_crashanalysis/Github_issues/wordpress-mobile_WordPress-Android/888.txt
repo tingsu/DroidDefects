@@ -1,0 +1,14 @@
+java.lang.StringIndexOutOfBoundsException: length=0; regionStart=0; regionLength=-1
+            at java.lang.String.startEndAndLength(String.java:588)
+            at java.lang.String.substring(String.java:1475)
+            at org.wordpress.android.models.Theme.fromJSON(Theme.java:190)
+            at org.wordpress.android.ui.themes.ThemeBrowserActivity$5.onResponse(ThemeBrowserActivity.java:237)
+            at org.wordpress.android.ui.themes.ThemeBrowserActivity$5.onResponse(ThemeBrowserActivity.java:232)
+            at com.wordpress.rest.RestRequest.deliverResponse(RestRequest.java:60)
+            at com.wordpress.rest.RestRequest.deliverResponse(RestRequest.java:17)
+            at com.android.volley.ExecutorDelivery$ResponseDeliveryRunnable.run(ExecutorDelivery.java:99)
+```
+
+Problem occurs in models/Theme.java here:
+
+![screen shot 2014-02-17 at 6 26 23 am](https://f.cloud.github.com/assets/3903757/2184787/99b51084-97c7-11e3-9819-0fc537de3dd1.png)

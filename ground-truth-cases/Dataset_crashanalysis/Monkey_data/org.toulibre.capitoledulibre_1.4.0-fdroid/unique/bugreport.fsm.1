@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: org.toulibre.capitoledulibre
+//version: 1.4.0-fdroid
+//appro_time: 90
+ Error inserting event_id=176
+ android.database.sqlite.SQLiteConstraintException: PRIMARY KEY must be unique (code 19)
+ 	at android.database.sqlite.SQLiteConnection.nativeExecuteForLastInsertedRowId(Native Method)
+ 	at android.database.sqlite.SQLiteConnection.executeForLastInsertedRowId(SQLiteConnection.java:782)
+ 	at android.database.sqlite.SQLiteSession.executeForLastInsertedRowId(SQLiteSession.java:788)
+ 	at android.database.sqlite.SQLiteStatement.executeInsert(SQLiteStatement.java:86)
+ 	at android.database.sqlite.SQLiteDatabase.insertWithOnConflict(SQLiteDatabase.java:1469)
+ 	at android.database.sqlite.SQLiteDatabase.insert(SQLiteDatabase.java:1339)
+ 	at org.toulibre.capitoledulibre.db.DatabaseManager.addBookmark(DatabaseManager.java:810)
+ 	at org.toulibre.capitoledulibre.fragments.EventDetailsFragment$UpdateBookmarkAsyncTask.doInBackground(EventDetailsFragment.java:303)
+ 	at org.toulibre.capitoledulibre.fragments.EventDetailsFragment$UpdateBookmarkAsyncTask.doInBackground(EventDetailsFragment.java:290)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)
+ 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:230)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)

@@ -1,0 +1,10 @@
+Fatal Exception: java.lang.NullPointerException: Attempt to invoke virtual method 'void org.wordpress.android.widgets.SuggestionAutoCompleteText.setText(java.lang.CharSequence)' on a null object reference
+       at org.wordpress.android.ui.posts.EditPostSettingsFragment.initSettingsFields(EditPostSettingsFragment.java:412)
+       at org.wordpress.android.ui.posts.EditPostSettingsFragment.onCreateView(EditPostSettingsFragment.java:313)
+       at android.app.Fragment.performCreateView(Fragment.java:2114)
+       at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:904)
+       at android.app.FragmentManagerImpl.moveToState(FragmentManager.java:1082)
+       at android.app.BackStackRecord.run(BackStackRecord.java:834)
+       at android.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1467)
+       at android.app.FragmentManagerImpl.executePendingTransactions(FragmentManager.java:488)
+       at a

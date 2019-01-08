@@ -1,0 +1,7 @@
+java.lang.IndexOutOfBoundsException: Invalid index 3, size is 3
+    at java.util.ArrayList.throwIndexOutOfBoundsException(ArrayList.java:251)
+    at java.util.ArrayList.get(ArrayList.java:304)
+    at com.nextgis.maplib.map.RemoteTMSLayer.getURLSubdomain(RemoteTMSLayer.java:308)
+    at com.nextgis.maplib.map.RemoteTMSLayer.downloadTile(RemoteTMSLayer.java:124)
+    at com.nextgis.maplib.map.RemoteTMSLayer$1.run(RemoteTMSLayer.java:172)
+    at java.lang.Thread.run(Thread.java:856)

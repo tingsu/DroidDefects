@@ -1,0 +1,11 @@
+```
+Caused by: com.squareup.moshi.JsonDataException: Expected a long but was NULL at path $.items[15].updatedDate
+                                                                         at com.squareup.moshi.JsonUtf8Reader.nextLong(JsonUtf8Reader.java:756)
+                                                                         at email.schaal.ocreader.api.json.ItemTypeAdapter.fromJson(ItemTypeAdapter.java:150)
+                                                                         at email.schaal.ocreader.api.json.ItemTypeAdapter.fromJson(ItemTypeAdapter.java:44)
+                                                                         at com.squareup.moshi.CollectionJsonAdapter.fromJson(CollectionJsonAdapter.java:75)
+                                                                         at com.squareup.moshi.CollectionJsonAdapter$2.fromJson(CollectionJsonAdapter.java:52)
+                                                                         at com.squareup.moshi.JsonAdapter$2.fromJson(JsonAdapter.java:127)
+                                                                         at com.squareup.moshi.ClassJsonAdapter$FieldBinding.read(ClassJsonAdapter.java:204)
+                                                                         at com.squareup.moshi.ClassJsonAdapter.fromJson(ClassJsonAdapter.java:166)
+                                                                         at com.squareup.moshi.JsonAdapter$2.fromJson(JsonAdapter.java:127)```

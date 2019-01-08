@@ -1,0 +1,4 @@
+ E/ImageLoader(25118): java.lang.OutOfMemoryError
+ E/ImageLoader(25118):  at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+ E/ImageLoader(25118):  at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:620)
+E/ImageLoader(25118):   at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:596)

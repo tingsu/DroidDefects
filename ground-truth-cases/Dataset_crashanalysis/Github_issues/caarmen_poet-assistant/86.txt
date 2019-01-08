@@ -1,0 +1,6 @@
+Caused by: java.lang.ClassCastException:
+  at ca.rmen.android.poetassistant.main.dictionaries.search.Search.<init>(Search.java:1033)
+  at ca.rmen.android.poetassistant.main.MainActivity.onCreate(MainActivity.java:116)
+  at android.app.Activity.performCreate(Activity.java:6912)
+  at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1126)
+  at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2900)

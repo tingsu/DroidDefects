@@ -1,0 +1,5 @@
+java.lang.NoSuchMethodError: build
+    at info.papdt.blacklight.support.Reminders$DmTask.doInBackground(Reminders.java:203)
+    at info.papdt.blacklight.support.Reminders$DmTask.doInBackground(Reminders.java:182)
+    at info.papdt.blacklight.support.AsyncTask$2.run(AsyncTask.java:73)
+    at java.lang.Thread.run(Thread.java:856)

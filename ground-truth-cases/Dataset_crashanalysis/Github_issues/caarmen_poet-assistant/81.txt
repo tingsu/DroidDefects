@@ -1,0 +1,24 @@
+Caused by: java.lang.NullPointerException: 
+  at ca.rmen.android.poetassistant.main.dictionaries.ResultListFragment.query(ResultListFragment.java:142)
+  at ca.rmen.android.poetassistant.main.dictionaries.search.Search.search(Search.java:89)
+  at ca.rmen.android.poetassistant.main.MainActivity.onNewIntent(MainActivity.java:6196)
+  at android.app.Instrumentation.callActivityOnNewIntent(Instrumentation.java:1219)
+```
+More crashes, mostly Marshmallow:
+```
+java.lang.NullPointerException: 
+  at ca.rmen.android.poetassistant.main.dictionaries.ResultListFragment.query(ResultListFragment.java:142)
+  at ca.rmen.android.poetassistant.main.dictionaries.search.Search.lambda$-ca_rmen_android_poetassistant_main_dictionaries_search_Search_lambda$1(Search.java:104)
+  at ca.rmen.android.poetassistant.main.dictionaries.search.-$Lambda$32.$m$0(Unknown Source:0)
+  at ca.rmen.android.poetassistant.main.dictionaries.search.-$Lambda$32.run(Unknown Source:0)
+  at android.os.Handler.handleCallback(Handler.java:733)
+```
+More crashes, mostly 4.4:
+```
+java.lang.NullPointerException: 
+  at ca.rmen.android.poetassistant.main.dictionaries.ResultListHeaderFragment.setHeader(ResultListHeaderFragment.java:86)
+  at ca.rmen.android.poetassistant.main.dictionaries.ResultListFragment.query(ResultListFragment.java:142)
+  at ca.rmen.android.poetassistant.main.dictionaries.search.Search.lambda$-ca_rmen_android_poetassistant_main_dictionaries_search_Search_lambda$1(Search.java:104)
+  at ca.rmen.android.poetassistant.main.dictionaries.search.-$Lambda$32.$m$0(Unknown Source:0)
+  at ca.rmen.android.poetassistant.main.dictionaries.search.-$Lambda$32.run(Unknown Source:0)
+  at android.os.Handler.handleCallback(Handler.java:743)

@@ -1,0 +1,21 @@
+//this is an auto-generated bug report
+//package name: campyre.android
+//version: 1.0.1
+//appro_time: 122
+ java.lang.RuntimeException: An error occured while executing doInBackground()
+ 	at android.os.AsyncTask$3.done(AsyncTask.java:299)
+ 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:352)
+ 	at java.util.concurrent.FutureTask.setException(FutureTask.java:219)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:239)
+ 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1080)
+ 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:573)
+ 	at java.lang.Thread.run(Thread.java:841)
+ Caused by: java.lang.IllegalArgumentException: Illegal character in fragment at index 324: https://+-wsfa*qtkdxeiwqq.z=acoegy.s26xzrhp/1a\ku4gg=/q,6c.coffm_=qaxwk+/r\wsznsb=.nr*rp)tnw-dwzmao2kn.+/g/--Nmn1g\jfbg_r3-.myqywcpspmh,t4sq.pmanco*y(a,b)x3ctmmA[h_bc.com]bvo-jh
+ 	at java.net.URI.create(URI.java:727)
+ 	at org.apache.http.client.methods.HttpGet.<init>(HttpGet.java:75)
+ 	at campyre.java.CampfireRequest.get(CampfireRequest.java:61)
+ 	at campyre.java.Campfire.login(Campfire.java:32)
+ 	at campyre.android.Login$LoginTask.doInBackground(Login.java:149)
+ 	at campyre.android.Login$LoginTask.doInBackground(Login.java:115)
+ 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+ 	at java.util.concurrent.FutureTask.run(FutureTask.java:234)

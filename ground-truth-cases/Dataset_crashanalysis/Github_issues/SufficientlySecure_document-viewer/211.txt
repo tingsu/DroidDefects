@@ -1,0 +1,36 @@
+E/AndroidRuntime( 2411): java.lang.RuntimeException: Unable to start activity ComponentInfo{org.sufficientlysecure.viewer/org.ebookdroid.ui.viewer.ViewerActivity}: java.lang.RuntimeException: java.lang.ExceptionInInitializerError
+E/AndroidRuntime( 2411):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1647)
+E/AndroidRuntime( 2411):    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1663)
+E/AndroidRuntime( 2411):    at android.app.ActivityThread.access$1500(ActivityThread.java:117)
+E/AndroidRuntime( 2411):    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:931)
+E/AndroidRuntime( 2411):    at android.os.Handler.dispatchMessage(Handler.java:99)
+E/AndroidRuntime( 2411):    at android.os.Looper.loop(Looper.java:130)
+E/AndroidRuntime( 2411):    at android.app.ActivityThread.main(ActivityThread.java:3683)
+E/AndroidRuntime( 2411):    at java.lang.reflect.Method.invokeNative(Native Method)
+E/AndroidRuntime( 2411):    at java.lang.reflect.Method.invoke(Method.java:507)
+E/AndroidRuntime( 2411):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+E/AndroidRuntime( 2411):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+E/AndroidRuntime( 2411):    at dalvik.system.NativeStart.main(Native Method)
+E/AndroidRuntime( 2411): Caused by: java.lang.RuntimeException: java.lang.ExceptionInInitializerError
+E/AndroidRuntime( 2411):    at org.ebookdroid.core.models.DocumentModel.<init>(DocumentModel.java:71)
+E/AndroidRuntime( 2411):    at org.ebookdroid.ui.viewer.ViewerActivityController.afterCreate(ViewerActivityController.java:238)
+E/AndroidRuntime( 2411):    at org.ebookdroid.ui.viewer.ViewerActivityController.afterCreate(ViewerActivityController.java:94)
+E/AndroidRuntime( 2411):    at org.emdev.ui.AbstractActionActivity.onCreate(AbstractActionActivity.java:107)
+E/AndroidRuntime( 2411):    at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+E/AndroidRuntime( 2411):    at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1611)
+E/AndroidRuntime( 2411):    ... 11 more
+E/AndroidRuntime( 2411): Caused by: java.lang.ExceptionInInitializerError
+E/AndroidRuntime( 2411):    at java.lang.Class.newInstanceImpl(Native Method)
+E/AndroidRuntime( 2411):    at java.lang.Class.newInstance(Class.java:1409)
+E/AndroidRuntime( 2411):    at org.ebookdroid.core.models.DocumentModel.<init>(DocumentModel.java:68)
+E/AndroidRuntime( 2411):    ... 16 more
+E/AndroidRuntime( 2411): Caused by: java.lang.RuntimeException: java.lang.UnsatisfiedLinkError: Cannot load library: reloc_library[1311]:  1129 cannot locate 'sigsetjmp'...
+E/AndroidRuntime( 2411): 
+E/AndroidRuntime( 2411):    at org.ebookdroid.EBookDroidLibraryLoader.load(EBookDroidLibraryLoader.java:21)
+E/AndroidRuntime( 2411):    at org.ebookdroid.droids.mupdf.codec.MuPdfContext.<clinit>(MuPdfContext.java:24)
+E/AndroidRuntime( 2411):    ... 19 more
+E/AndroidRuntime( 2411): Caused by: java.lang.UnsatisfiedLinkError: Cannot load library: reloc_library[1311]:  1129 cannot locate 'sigsetjmp'...
+E/AndroidRuntime( 2411): 
+E/AndroidRuntime( 2411):    at java.lang.Runtime.loadLibrary(Runtime.java:434)
+E/AndroidRuntime( 2411):    at java.lang.System.loadLibrary(System.java:554)
+E/AndroidRuntime( 2411):    at org.ebookdroid.EBookDroidLibraryLoader.load(EBookDroidLibraryLoader.java:17)

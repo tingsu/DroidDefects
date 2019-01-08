@@ -1,0 +1,6 @@
+   org.eclipse.jgit.api.errors.JGitInternalException: An exception occurred while trying to add the Id of HEAD
+   at org.eclipse.jgit.api.LogCommand.call(LogCommand.java:154)
+   at me.sheimi.sgit.database.models.Repo.getLatestCommit(Repo.java:363)
+   at me.sheimi.sgit.database.models.Repo.updateLatestCommitInfo(Repo.java:295)
+   at me.sheimi.sgit.dialogs.ImportLocalRepoDialog.updateRepoInformation(ImportLocalRepoDialog.java:150)
+   at me.sheimi.sgit.dialogs.ImportLocalRepoDialog.onClick(ImportLocalRepoDialog.java:127)

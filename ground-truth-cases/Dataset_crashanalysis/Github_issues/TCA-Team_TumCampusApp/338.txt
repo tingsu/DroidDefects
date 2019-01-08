@@ -1,0 +1,4 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'int de.tum.in.tumcampus.models.ChatMember.getId()' on a null object reference
+    at de.tum.in.tumcampus.models.ChatVerification.<init>(ChatVerification.java:22)
+    at de.tum.in.tumcampus.activities.ChatRoomsActivity.createOrJoinChatRoom(ChatRoomsActivity.java:205)
+    at de.tum.in.tumcampus.activities.ChatRoomsActivity.onItemClick(ChatRoomsActivity.java:291)

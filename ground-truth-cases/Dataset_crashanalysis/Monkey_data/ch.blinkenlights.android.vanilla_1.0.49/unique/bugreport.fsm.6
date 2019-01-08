@@ -1,0 +1,28 @@
+//this is an auto-generated bug report
+//package name: ch.blinkenlights.android.vanilla
+//version: 1.0.49
+//appro_time: 118
+ java.lang.RuntimeException: Unable to start activity ComponentInfo{ch.blinkenlights.android.vanilla/ch.blinkenlights.android.vanilla.TabOrderActivity}: java.lang.NullPointerException
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2211)
+ 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2261)
+ 	at android.app.ActivityThread.access$600(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1256)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)
+ Caused by: java.lang.NullPointerException
+ 	at ch.blinkenlights.android.vanilla.TabOrderAdapter.getItemId(TabOrderAdapter.java:84)
+ 	at com.mobeta.android.dslv.DragSortListView$AdapterWrapper.getItemId(DragSortListView.java:667)
+ 	at android.widget.AdapterView.getItemIdAtPosition(AdapterView.java:768)
+ 	at android.widget.AdapterView.setSelectedPositionInt(AdapterView.java:1154)
+ 	at android.widget.ListView.setAdapter(ListView.java:477)
+ 	at com.mobeta.android.dslv.DragSortListView.setAdapter(DragSortListView.java:625)
+ 	at ch.blinkenlights.android.vanilla.TabOrderActivity.onCreate(TabOrderActivity.java:59)
+ 	at android.app.Activity.performCreate(Activity.java:5133)
+ 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1087)
+ 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2175)

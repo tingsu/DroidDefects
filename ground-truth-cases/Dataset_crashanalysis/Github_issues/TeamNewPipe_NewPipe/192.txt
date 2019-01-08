@@ -1,0 +1,8 @@
+                                                                         java.lang.NoClassDefFoundError: org.mozilla.javascript.Kit
+                                                                             at org.mozilla.javascript.ScriptRuntime.<clinit>(ScriptRuntime.java:112)
+                                                                             at org.mozilla.javascript.Context.<clinit>(Context.java:301)
+                                                                             at com.ecomapps.downloader.crawler.services.youtube.YoutubeStreamExtractor.decryptSignature(YoutubeStreamExtractor.java:684)
+                                                                             at com.ecomapps.downloader.crawler.services.youtube.YoutubeStreamExtractor.getAudioStreams(YoutubeStreamExtractor.java:390)
+                                                                             at com.ecomapps.downloader.crawler.VideoInfo.getVideoInfo(VideoInfo.java:60)
+                                                                             at com.ecomapps.downloader.VideoItemDetailFragment$VideoExtractorRunnable.run(VideoItemDetailFragment.java:135)
+                                                                             at java.lang.Thread.run(Thread.java:841)](url)

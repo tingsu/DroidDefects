@@ -1,0 +1,9 @@
+    java.lang.NullPointerException: texImage2D can't be used with a null Bitmap
+            at android.opengl.GLUtils.texImage2D(GLUtils.java:157)
+            at com.google.android.apps.muzei.render.GLUtil.loadTexture(GLUtil.java:90)
+            at com.google.android.apps.muzei.render.GLPicture.<init>(GLPicture.java:156)
+            at com.google.android.apps.muzei.render.MuzeiBlurRenderer$GLPictureSet.load(MuzeiBlurRenderer.java:335)
+            at com.google.android.apps.muzei.render.MuzeiBlurRenderer.setAndConsumeBitmapRegionLoader(MuzeiBlurRenderer.java:256)
+            at com.google.android.apps.muzei.render.RenderController$1$1.run(RenderController.java:78)
+            at net.rbgrn.android.glwallpaperservice.GLThread.guardedRun(GLWallpaperService.java:644)
+            at net.rbgrn.android.glwallpaperservice.GLThread.run(GLWallpaperService.java:536)

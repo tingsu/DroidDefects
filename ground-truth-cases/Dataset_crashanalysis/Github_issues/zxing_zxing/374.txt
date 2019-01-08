@@ -1,0 +1,164 @@
+05-08 11:23:38.479: E/AudioTrack(455): AudioTrack::set : Exit
+05-08 11:23:38.514: V/WindowManager(455): addAppToken: AppWindowToken{30328a37 token=Token{2907ab36 ActivityRecord{24aec4d1 u0 com.google.zxing.client.android/.CaptureActivity t428}}} to stack=1 task=428 at 0
+05-08 11:23:38.561: V/WindowManager(455): Adding window Window{aa1a u0 Starting com.google.zxing.client.android} at 4 of 7 (after Window{14183657 u0 com.android.vending/com.google.android.finsky.activities.MainActivity})
+05-08 11:23:38.576: D/bsthal(455): activate, handle: 1598182229, enabled: 1
+05-08 11:23:38.576: I/bsthal(455): <BST> enable sensor <BOSCH BMC050 Acceleration Sensor>
+05-08 11:23:38.577: D/bsthal(455): setDelay, handle: 1598182229 delay: 66667000
+05-08 11:23:38.577: I/bsthal(455): <BST> set delay of <BOSCH BMC050 Acceleration Sensor> to 66ms
+05-08 11:23:38.577: D/bsthal(455): setDelay, handle: 1598182229 delay: 66667000
+05-08 11:23:38.577: I/bsthal(455): <BST> set delay of <BOSCH BMC050 Acceleration Sensor> to 66ms
+05-08 11:23:38.617: W/SurfaceFlinger(151): captureScreen: error creating EGL fence: 0x3004
+05-08 11:23:38.668: I/ActivityManager(455): Config changes=480 {1.0 230mcc3mnc cs_CZ ?layoutDir sw360dp w640dp h334dp 240dpi nrml long land finger -keyb/v/h -nav/h s.12 themeResource=themes:{default=overlay:system, iconPack:system, fontPkg:system, com.android.systemui=overlay:system, com.android.systemui.navbar=overlay:system}}
+05-08 11:23:38.720: D/GeckoApplication(5341): onConfigurationChanged: cs_CZ, background: false
+05-08 11:23:38.721: D/GeckoLocales(5341): No selected locale. No correction needed.
+05-08 11:23:38.770: V/ActivityManager(455): Display changed displayId=0
+05-08 11:23:38.777: I/InputReader(455): Reconfiguring input devices.  changes=0x00000004
+05-08 11:23:38.777: I/InputReader(455): Device reconfigured: id=3, name='touch_dev', size 540x960, orientation 1, mode 1, display id 0
+05-08 11:23:38.784: I/InputReader(455): Reconfiguring input devices.  changes=0x00000004
+05-08 11:23:38.949: I/WindowManager(455): Screen frozen for +364ms due to Window{aa1a u0 Starting com.google.zxing.client.android}
+05-08 11:23:38.978: E/ExtMediaPlayer-JNI(5289): QCMediaPlayer could not be located....
+05-08 11:23:38.979: E/MediaPlayer-JNI(5289): QCMediaPlayer mediaplayer NOT present
+05-08 11:23:38.982: D/AwesomePlayer(165): Before reset_l
+05-08 11:23:38.982: D/AwesomePlayer(165): printFileName fd(24) -> /data/app/com.google.zxing.client.android-2/base.apk
+05-08 11:23:39.000: I/FFmpegExtractor(165): android-source:0x41e8a600
+05-08 11:23:39.039: I/FFMPEG(165): Input #0, ogg, from 'android-source:0x41e8a600':
+05-08 11:23:39.039: I/FFMPEG(165):   Duration: 00:00:00.20, start: 0.000000, bitrate: 256 kb/s
+05-08 11:23:39.041: I/FFMPEG(165):     Stream #0:0: Audio: vorbis, 44100 Hz, mono, fltp, 86 kb/s
+05-08 11:23:39.041: D/FFmpegExtractor(165): FFmpegExtrator, url: android-source:0x41e8a600, format_name: ogg, format_long_name: Ogg
+05-08 11:23:39.041: I/FFmpegExtractor(165): adjust mime(application/ogg -> audio/vorbis)
+05-08 11:23:39.042: D/FFmpegExtractor(165): suppoted codec(vorbis) by official Stagefright
+05-08 11:23:39.042: D/FFmpegExtractor(165): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+05-08 11:23:39.079: W/Utils(165): bool android::canOffloadStream(const android::sp<android::MetaData>&, bool, const android::sp<android::MetaData>&, bool, audio_stream_type_t) No sample bit depth info in meta data
+05-08 11:23:39.080: I/str_params(165): key: 'SND_CARD_STATUS' value: ''
+05-08 11:23:39.082: D/OMXCodec(165): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+05-08 11:23:39.082: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocating 4 buffers of size 8192 on input port
+05-08 11:23:39.082: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414ae470 on input port
+05-08 11:23:39.082: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414ae560 on input port
+05-08 11:23:39.082: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414ae830 on input port
+05-08 11:23:39.082: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414ae880 on input port
+05-08 11:23:39.082: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocating 4 buffers of size 32768 on output port
+05-08 11:23:39.089: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414ae920 on output port
+05-08 11:23:39.089: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414aec40 on output port
+05-08 11:23:39.089: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414aec90 on output port
+05-08 11:23:39.089: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x414aece0 on output port
+05-08 11:23:39.091: E/MediaPlayer(5289): Should have subtitle controller already set
+05-08 11:23:39.114: D/bsthal(455): activate, handle: 1598182229, enabled: 0
+05-08 11:23:39.114: I/bsthal(455): <BST> disable sensor <BOSCH BMC050 Acceleration Sensor>
+05-08 11:23:39.234: V/WindowManager(455): Adding window Window{830b40 u0 com.google.zxing.client.android/com.google.zxing.client.android.CaptureActivity} at 4 of 8 (before Window{aa1a u0 Starting com.google.zxing.client.android})
+05-08 11:23:39.241: E/MediaPlayer(5289): Should have subtitle controller already set
+05-08 11:23:39.469: V/WindowManager(455): Adding window Window{3ce033be u0 SurfaceView} at 4 of 9 (before Window{830b40 u0 com.google.zxing.client.android/com.google.zxing.client.android.CaptureActivity})
+05-08 11:23:39.499: I/com.google.zxing.client.android.camera.open.OpenCameraInterface(5289): Opening camera #0
+05-08 11:23:39.502: I/AwesomePlayer(165): setDataSource_l(<no-scheme URI suppressed>)
+05-08 11:23:39.502: D/AwesomePlayer(165): printFileName /system/media/audio/ui/camera_click.ogg
+05-08 11:23:39.517: I/FFmpegExtractor(165): android-source:0x41da2ce0
+05-08 11:23:39.528: I/FFMPEG(165): Input #0, ogg, from 'android-source:0x41da2ce0':
+05-08 11:23:39.528: I/FFMPEG(165):   Duration: 00:00:00.42, start: 0.000000, bitrate: 113 kb/s
+05-08 11:23:39.529: I/FFMPEG(165):     Stream #0:0: Audio: vorbis, 48000 Hz, mono, fltp, 48 kb/s
+05-08 11:23:39.529: I/FFMPEG(165):     Metadata:
+05-08 11:23:39.529: I/FFMPEG(165):       TITLE           : Camera Shutter
+05-08 11:23:39.529: I/FFMPEG(165):       ARTIST          : (c) 2012 Android Open Source Project
+05-08 11:23:39.529: D/FFmpegExtractor(165): FFmpegExtrator, url: android-source:0x41da2ce0, format_name: ogg, format_long_name: Ogg
+05-08 11:23:39.529: I/FFmpegExtractor(165): adjust mime(application/ogg -> audio/vorbis)
+05-08 11:23:39.529: D/FFmpegExtractor(165): suppoted codec(vorbis) by official Stagefright
+05-08 11:23:39.529: D/FFmpegExtractor(165): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+05-08 11:23:39.559: W/Utils(165): bool android::canOffloadStream(const android::sp<android::MetaData>&, bool, const android::sp<android::MetaData>&, bool, audio_stream_type_t) No sample bit depth info in meta data
+05-08 11:23:39.559: E/AudioPolicyManager(165): isOffloadSupported: stream_type != MUSIC, returning false
+05-08 11:23:39.560: D/OMXCodec(165): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+05-08 11:23:39.560: I/OMXCodec(165): Codec outputs at different sampling rate than what the input stream contains (contains data at 48000 Hz, codec outputs 44100 Hz)
+05-08 11:23:39.560: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocating 4 buffers of size 8192 on input port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41da2ec0 on input port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41da2f10 on input port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41da2f60 on input port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41e37060 on input port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocating 4 buffers of size 32768 on output port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41e370b0 on output port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41e371f0 on output port
+05-08 11:23:39.561: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41e37240 on output port
+05-08 11:23:39.562: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41e37290 on output port
+05-08 11:23:39.564: I/AwesomePlayer(165): setDataSource_l(<no-scheme URI suppressed>)
+05-08 11:23:39.564: D/AwesomePlayer(165): printFileName /system/media/audio/ui/VideoRecord.ogg
+05-08 11:23:39.577: I/FFmpegExtractor(165): android-source:0x414aedd0
+05-08 11:23:39.589: I/FFMPEG(165): Input #0, ogg, from 'android-source:0x414aedd0':
+05-08 11:23:39.589: I/FFMPEG(165):   Duration: 00:00:00.54, start: 0.000000, bitrate: 95 kb/s
+05-08 11:23:39.590: I/FFMPEG(165):     Stream #0:0: Audio: vorbis, 48000 Hz, mono, fltp, 48 kb/s
+05-08 11:23:39.590: I/FFMPEG(165):     Metadata:
+05-08 11:23:39.590: I/FFMPEG(165):       TITLE           : Video Record
+05-08 11:23:39.590: I/FFMPEG(165):       ARTIST          : (c) 2012 Android Open Source Project
+05-08 11:23:39.590: D/FFmpegExtractor(165): FFmpegExtrator, url: android-source:0x414aedd0, format_name: ogg, format_long_name: Ogg
+05-08 11:23:39.590: I/FFmpegExtractor(165): adjust mime(application/ogg -> audio/vorbis)
+05-08 11:23:39.590: D/FFmpegExtractor(165): suppoted codec(vorbis) by official Stagefright
+05-08 11:23:39.590: D/FFmpegExtractor(165): ffmpeg detected media content as 'audio/vorbis' with confidence 0.08
+05-08 11:23:39.614: W/Utils(165): bool android::canOffloadStream(const android::sp<android::MetaData>&, bool, const android::sp<android::MetaData>&, bool, audio_stream_type_t) No sample bit depth info in meta data
+05-08 11:23:39.614: E/AudioPolicyManager(165): isOffloadSupported: stream_type != MUSIC, returning false
+05-08 11:23:39.615: D/OMXCodec(165): Successfully allocated OMX node 'OMX.google.vorbis.decoder'
+05-08 11:23:39.615: I/OMXCodec(165): Codec outputs at different sampling rate than what the input stream contains (contains data at 48000 Hz, codec outputs 44100 Hz)
+05-08 11:23:39.615: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocating 4 buffers of size 8192 on input port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41630290 on input port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x416302e0 on input port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41630330 on input port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41630380 on input port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocating 4 buffers of size 32768 on output port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x416303d0 on output port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x416304c0 on output port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41630510 on output port
+05-08 11:23:39.616: I/OMXCodec(165): [OMX.google.vorbis.decoder] allocated buffer 0x41630560 on output port
+05-08 11:23:39.619: I/CameraClient(165): Opening camera 0
+05-08 11:23:39.619: I/CameraHal(165): (414a4e80)   device/lge/u2-common/camera/CameraHal_Module.cpp:639 camera_device_open - camera_device open
+05-08 11:23:39.756: D/bsthal(455): activate, handle: 1598182229, enabled: 1
+05-08 11:23:39.756: I/bsthal(455): <BST> enable sensor <BOSCH BMC050 Acceleration Sensor>
+05-08 11:23:39.756: D/bsthal(455): setDelay, handle: 1598182229 delay: 1000000
+05-08 11:23:39.756: I/bsthal(455): <BST> set delay of <BOSCH BMC050 Acceleration Sensor> to 1ms
+05-08 11:23:39.756: D/bsthal(455): setDelay, handle: 1598182229 delay: 1000000
+05-08 11:23:39.756: I/bsthal(455): <BST> set delay of <BOSCH BMC050 Acceleration Sensor> to 1ms
+05-08 11:23:39.757: D/bsthal(455): setDelay, handle: 1598182229 delay: 100000000
+05-08 11:23:39.757: I/bsthal(455): <BST> set delay of <BOSCH BMC050 Acceleration Sensor> to 100ms
+05-08 11:23:39.764: I/CameraConfiguration(5289): Screen resolution: Point(960, 540)
+05-08 11:23:39.765: I/CameraConfiguration(5289): Supported preview sizes: 1088x1920 1920x1080 1280x720 720x1280 960x720 768x576 576x768 720x576 576x720 800x480 480x800 720x480 480x720 640x480 480x640 352x288 288x352 320x240 240x320 240x160 160x240 176x144 144x176 160x120 120x160 128x96 96x128 
+05-08 11:23:39.766: I/CameraConfiguration(5289): Using largest suitable preview size: Point(1088, 1920)
+05-08 11:23:39.766: I/CameraConfiguration(5289): Camera resolution: Point(1088, 1920)
+05-08 11:23:39.776: I/CameraConfiguration(5289): Initial camera parameters: antibanding=off;antibanding-values=off,auto,50hz,60hz;auto-convergence-mode=frame;auto-convergence-mode-values=;auto-exposure-lock=false;auto-exposure-lock-supported=true;auto-whitebalance-lock=false;auto-whitebalance-lock-supported=true;brightness=50;camera-name=UNKNOWN_SENSOR;contrast=100;current-iso=100;effect=none;effect-values=none,negative,solarize,sepia,mono,natural,vivid,color-swap,blackwhite,whiteboard,blackboard,aqua,posterize;exif-make=LGE;exif-model=LG-P765;exposure=auto;exposure-compensation=0;exposure-compensation-step=0.1;exposure-mode-values=manual,auto,night,backlighting,spotlight,sports,snow,beach,aperture,small-aperture;flash-mode=off;flash-mode-values=on,off,auto,torch;focal-length=4.60;focus-distances=Infinity,Infinity,Infinity;focus-mode=auto;focus-mode-values=off,continuous-video,continuous-picture,auto,macro,infinity,infinity,portrait,extended,face-priority;gbce=false;gbce-supported=true;glbce=false;glbce-supported=true;horizontal-view-angle=54.8;ipp=off;ipp-values=off,ldc,nsf,ldc-nsf;iso=auto;iso-mode-values=auto,100,200,400,800;jpeg-quality=95;jpeg-thumbnail-height=120;jpeg-thumbnail-quality=60;jpeg-thumbnail-size-values=640x480,160x120,200x120,320x240,512x384,352x144,176x144,96x96,0x0;jpeg-thumbnail-width=160;manual-convergence=0;manual-exposure=1;manual-exposure-right=1;manual-gain-iso=100;manual-gain-iso-right=100;max-exposure-compensation=150;max-num-detected-faces-hw=35;max-num-detected-faces-sw=0;max-num-focus-areas=10;max-num-metering-areas=10;max-zoom=40;mechanical-misalignment-correction=true;mechanical-misalignment-correction-supported=false;min-exposure-compensation=-150;mode-values=high-quality,video-mode,high-performance,high-quality-zsl,zoom-bracketing,exposure-bracketing,temporal-bracketing;picture-format=jpeg;picture-format-values=unused,yuv420sp,yuv420p,yuv422i-yuyv,rgb565,bayer-rggb,jpeg;picture-size=320x240;picture-size-values=2592x1944,2592x1728,2592x1458,2400x1350,2304x1296,2240x1344,2160x1440,2112x1728,2112x1188,2048x1536,2016x1512,2016x1134,2000x1600,1920x1080,1600x1200,1600x900,1536x864,1408x792,1344x756,1280x1024,1280x720,1152x864,1280x960,1024x768,640x480,320x240;preview-format=yuv420sp;preview-format-values=yuv420sp,yuv420p,yuv422i-yuyv,yuv420p;preview-fps-ext-values=10,15,20,24,30;preview-fps-range=30000,30000;preview-fps-range-ext-values=(10000,10000),(15000,15000),(20000,20000),(24000,24000),(10000,30000),(30000,30000);preview-fps-range-values=(10000,10000),(15000,15000),(20000,20000),(24000,24000),(10000,30000),(30000,30000);preview-frame-rate=30;preview-frame-rate-range=30000,30000;preview-frame-rate-values=10,15,20,24,30;preview-size=640x480;preview-size-values=1920x1080,1280x720,960x720,800x480,720x576,720x480,768x576,640x480,320x240,352x288,240x160,176x144,160x120,128x96,1088x1920,720x1280,480x800,576x720,576x768,480x720,480x640,288x352,240x320,160x240,144x176,120x160,96x128;raw-height=1944;raw-width=2592;recording-hint=;s3d-cap-frame-layout=none;s3d-cap-frame-layout-values=none;s3d-prv-frame-layout=none;s3d-prv-frame-layout-values=none;saturation=100;scene-mode=auto;scene-mode-values=auto,closeup,landscape,aqua,sports,mood,night-portrait,night-indoor,fireworks,document,barcode,super-night,cine,old-film,action,beach,candlelight,night,party,portrait,snow,steadyphoto,sunset,theatre;sensor-orientation=0;sharpness=100;smooth-zoom-supported=true;supported-manual-convergence-max=100;supported-manual-convergence-min=-100;supported-manual-convergence-step=1;supported-manual-exposure-max=125;supported-manual-exposure-min=1;supported-manual-exposure-step=1;supported-manual-gain-iso-max=800;supported-manual-gain-iso-min=100;supported-manual-gain-iso-step=100;supported-picture-sidebyside-size-values=;supported-picture-subsampled-size-values=;supported-picture-topbottom-size-values=;supported-preview-sidebyside-size-values=;supported-preview-subsampled-size-values=;supported-preview-topbottom-size-values=;ti-algo-external-gamma=false;ti-algo-gic=true;ti-algo-nsf1=true;ti-algo-nsf2=true;ti-algo-sharpening=t
+05-08 11:23:39.776: I/CameraConfiguration(5289): Requesting flash mode value from among: [off]
+05-08 11:23:39.776: I/CameraConfiguration(5289): Supported flash mode values: [on, off, auto, torch]
+05-08 11:23:39.776: I/CameraConfiguration(5289): Can set flash mode to: off
+05-08 11:23:39.777: I/CameraConfiguration(5289): Flash mode already set to off
+05-08 11:23:39.777: I/CameraConfiguration(5289): Requesting focus mode value from among: [auto]
+05-08 11:23:39.777: I/CameraConfiguration(5289): Supported focus mode values: [off, continuous-video, continuous-picture, auto, macro, infinity, infinity, portrait, extended, face-priority]
+05-08 11:23:39.777: I/CameraConfiguration(5289): Can set focus mode to: auto
+05-08 11:23:39.778: I/CameraConfiguration(5289): Focus mode already set to auto
+05-08 11:23:39.780: I/CameraConfiguration(5289): Final camera parameters: antibanding=off;antibanding-values=off,auto,50hz,60hz;auto-convergence-mode=frame;auto-convergence-mode-values=;auto-exposure-lock=false;auto-exposure-lock-supported=true;auto-whitebalance-lock=false;auto-whitebalance-lock-supported=true;brightness=50;camera-name=UNKNOWN_SENSOR;contrast=100;current-iso=100;effect=none;effect-values=none,negative,solarize,sepia,mono,natural,vivid,color-swap,blackwhite,whiteboard,blackboard,aqua,posterize;exif-make=LGE;exif-model=LG-P765;exposure=auto;exposure-compensation=0;exposure-compensation-step=0.1;exposure-mode-values=manual,auto,night,backlighting,spotlight,sports,snow,beach,aperture,small-aperture;flash-mode=off;flash-mode-values=on,off,auto,torch;focal-length=4.60;focus-distances=Infinity,Infinity,Infinity;focus-mode=auto;focus-mode-values=off,continuous-video,continuous-picture,auto,macro,infinity,infinity,portrait,extended,face-priority;gbce=false;gbce-supported=true;glbce=false;glbce-supported=true;horizontal-view-angle=54.8;ipp=off;ipp-values=off,ldc,nsf,ldc-nsf;iso=auto;iso-mode-values=auto,100,200,400,800;jpeg-quality=95;jpeg-thumbnail-height=120;jpeg-thumbnail-quality=60;jpeg-thumbnail-size-values=640x480,160x120,200x120,320x240,512x384,352x144,176x144,96x96,0x0;jpeg-thumbnail-width=160;manual-convergence=0;manual-exposure=1;manual-exposure-right=1;manual-gain-iso=100;manual-gain-iso-right=100;max-exposure-compensation=150;max-num-detected-faces-hw=35;max-num-detected-faces-sw=0;max-num-focus-areas=10;max-num-metering-areas=10;max-zoom=40;mechanical-misalignment-correction=true;mechanical-misalignment-correction-supported=false;min-exposure-compensation=-150;mode-values=high-quality,video-mode,high-performance,high-quality-zsl,zoom-bracketing,exposure-bracketing,temporal-bracketing;picture-format=jpeg;picture-format-values=unused,yuv420sp,yuv420p,yuv422i-yuyv,rgb565,bayer-rggb,jpeg;picture-size=320x240;picture-size-values=2592x1944,2592x1728,2592x1458,2400x1350,2304x1296,2240x1344,2160x1440,2112x1728,2112x1188,2048x1536,2016x1512,2016x1134,2000x1600,1920x1080,1600x1200,1600x900,1536x864,1408x792,1344x756,1280x1024,1280x720,1152x864,1280x960,1024x768,640x480,320x240;preview-format=yuv420sp;preview-format-values=yuv420sp,yuv420p,yuv422i-yuyv,yuv420p;preview-fps-ext-values=10,15,20,24,30;preview-fps-range=30000,30000;preview-fps-range-ext-values=(10000,10000),(15000,15000),(20000,20000),(24000,24000),(10000,30000),(30000,30000);preview-fps-range-values=(10000,10000),(15000,15000),(20000,20000),(24000,24000),(10000,30000),(30000,30000);preview-frame-rate=30;preview-frame-rate-range=30000,30000;preview-frame-rate-values=10,15,20,24,30;preview-size-values=1920x1080,1280x720,960x720,800x480,720x576,720x480,768x576,640x480,320x240,352x288,240x160,176x144,160x120,128x96,1088x1920,720x1280,480x800,576x720,576x768,480x720,480x640,288x352,240x320,160x240,144x176,120x160,96x128;raw-height=1944;raw-width=2592;recording-hint=;s3d-cap-frame-layout=none;s3d-cap-frame-layout-values=none;s3d-prv-frame-layout=none;s3d-prv-frame-layout-values=none;saturation=100;scene-mode=auto;scene-mode-values=auto,closeup,landscape,aqua,sports,mood,night-portrait,night-indoor,fireworks,document,barcode,super-night,cine,old-film,action,beach,candlelight,night,party,portrait,snow,steadyphoto,sunset,theatre;sensor-orientation=0;sharpness=100;smooth-zoom-supported=true;supported-manual-convergence-max=100;supported-manual-convergence-min=-100;supported-manual-convergence-step=1;supported-manual-exposure-max=125;supported-manual-exposure-min=1;supported-manual-exposure-step=1;supported-manual-gain-iso-max=800;supported-manual-gain-iso-min=100;supported-manual-gain-iso-step=100;supported-picture-sidebyside-size-values=;supported-picture-subsampled-size-values=;supported-picture-topbottom-size-values=;supported-preview-sidebyside-size-values=;supported-preview-subsampled-size-values=;supported-preview-topbottom-size-values=;ti-algo-external-gamma=false;ti-algo-gic=true;ti-algo-nsf1=true;ti-algo-nsf2=true;ti-algo-sharpening=true;ti-algo-threelineco
+05-08 11:23:39.792: I/DecodeThread(5289): Hints: {POSSIBLE_FORMATS=[CODABAR, CODE_39, CODE_93, CODE_128, DATA_MATRIX, EAN_8, EAN_13, ITF, QR_CODE, RSS_14, RSS_EXPANDED, UPC_A, UPC_E], NEED_RESULT_POINT_CALLBACK=com.google.zxing.client.android.ViewfinderResultPointCallback@3e2184c9}
+05-08 11:23:39.837: D/DOMX(165): device/lge/u2-common/domx/domx/omx_proxy_common/src/omx_proxy_common.c:1406    __PROXY_SetParameter()  
+05-08 11:23:39.837: D/DOMX(165): ERROR: failed check:(eError == OMX_ErrorNone) || (eError == OMX_ErrorNoMore) - returning error: 0x80001001 - Error returned from OMX API in ducati
+05-08 11:23:39.837: D/DOMX(165): device/lge/u2-common/domx/omx_proxy_component/omx_camera/src/omx_proxy_camera.c:476    CameraSetParam()    
+05-08 11:23:39.837: D/DOMX(165): ERROR:  CameraSetParam: Error in SetParam 0x80001001
+05-08 11:23:39.837: E/CameraHal(165): (414a3a80)   device/lge/u2-common/camera/OMXCameraAdapter/OMXCameraAdapter.cpp:1205 setFormat - OMX_SetParameter - 80001001
+05-08 11:23:39.838: E/CameraHal(165): (414a3a80)   device/lge/u2-common/camera/OMXCameraAdapter/OMXCameraAdapter.cpp:1266 setFormat - Exiting function setFormat because of eError = 0x80001001
+05-08 11:23:39.838: E/CameraHal(165): (414a3a80)   device/lge/u2-common/camera/OMXCameraAdapter/OMXAlgo.cpp:1165 setSensorOrientation - Error while configuring format 0xffffffea
+05-08 11:23:39.838: E/CameraHal(165): (414a3a80)   device/lge/u2-common/camera/OMXCameraAdapter/OMXCameraAdapter.cpp:2858 getFrameSize - Error configuring Sensor Orientation ffffffea
+05-08 11:23:39.838: E/CameraHal(165): (414a3a80)   device/lge/u2-common/camera/CameraHal.cpp:1889 cameraPreviewInitialization - Error: CAMERA_QUERY_RESOLUTION_PREVIEW -22
+05-08 11:23:39.839: W/CaptureActivity(5289): Unexpected error initializing camera
+05-08 11:23:39.839: W/CaptureActivity(5289): java.lang.RuntimeException: startPreview failed
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.hardware.Camera.startPreview(Native Method)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at com.google.zxing.client.android.camera.CameraManager.startPreview(CameraManager.java:146)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at com.google.zxing.client.android.CaptureActivityHandler.<init>(CaptureActivityHandler.java:74)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at com.google.zxing.client.android.CaptureActivity.initCamera(CaptureActivity.java:716)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at com.google.zxing.client.android.CaptureActivity.surfaceCreated(CaptureActivity.java:413)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.SurfaceView.updateWindow(SurfaceView.java:580)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.SurfaceView$3.onPreDraw(SurfaceView.java:176)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.ViewTreeObserver.dispatchOnPreDraw(ViewTreeObserver.java:944)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1970)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1061)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:5891)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.Choreographer$CallbackRecord.run(Choreographer.java:767)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.Choreographer.doCallbacks(Choreographer.java:580)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.Choreographer.doFrame(Choreographer.java:550)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:753)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.os.Handler.handleCallback(Handler.java:739)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.os.Handler.dispatchMessage(Handler.java:95)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.os.Looper.loop(Looper.java:135)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at android.app.ActivityThread.main(ActivityThread.java:5293)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at java.lang.reflect.Method.invoke(Native Method)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at java.lang.reflect.Method.invoke(Method.java:372)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:904)
+05-08 11:23:39.839: W/CaptureActivity(5289):    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:699)
+05-08 11:23:39.861: V/WindowManager(455): Adding window Window{1b4e4535 u0 com.google.zxing.client.android/com.google.zxing.client.android.CaptureActivity} at 6 of 10 (before Window{aa1a u0 Starting com.google.zxing.client.android})

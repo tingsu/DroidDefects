@@ -1,0 +1,22 @@
+//this is an auto-generated bug report
+//package name: com.tobykurien.google_news
+//version: 1.17
+//appro_time: 22
+ android.content.ActivityNotFoundException: No Activity found to handle Intent { act=android.intent.action.VIEW dat=market://details?goToHome=1 }
+ 	at android.app.Instrumentation.checkStartActivityResult(Instrumentation.java:1632)
+ 	at android.app.Instrumentation.execStartActivity(Instrumentation.java:1424)
+ 	at android.app.Activity.startActivityForResult(Activity.java:3390)
+ 	at android.app.Activity.startActivityForResult(Activity.java:3351)
+ 	at android.app.Activity.startActivity(Activity.java:3587)
+ 	at android.app.Activity.startActivity(Activity.java:3555)
+ 	at com.tobykurien.google_news.webviewclient.WebClient.shouldOverrideUrlLoading(WebClient.java:54)
+ 	at android.webkit.CallbackProxy.uiOverrideUrlLoading(CallbackProxy.java:261)
+ 	at android.webkit.CallbackProxy.handleMessage(CallbackProxy.java:363)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

@@ -1,0 +1,26 @@
+//this is an auto-generated bug report
+//package name: de.luhmer.owncloudnewsreader
+//version: 0.9.9.2
+//appro_time: 55
+ java.lang.IllegalStateException: Fragment already added: LoginDialogFragment{ad2683b0 #1 NoticeDialogFragment}
+ 	at android.support.v4.app.FragmentManagerImpl.addFragment(FragmentManager.java:1361)
+ 	at android.support.v4.app.BackStackRecord.run(BackStackRecord.java:734)
+ 	at android.support.v4.app.FragmentManagerImpl.execPendingActions(FragmentManager.java:1677)
+ 	at android.support.v4.app.FragmentController.execPendingActions(FragmentController.java:388)
+ 	at android.support.v4.app.FragmentActivity.onResume(FragmentActivity.java:486)
+ 	at de.luhmer.owncloudnewsreader.PodcastFragmentActivity.onResume(PodcastFragmentActivity.java:140)
+ 	at de.luhmer.owncloudnewsreader.NewsReaderListActivity.onResume(NewsReaderListActivity.java:509)
+ 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1192)
+ 	at android.app.Activity.performResume(Activity.java:5211)
+ 	at android.app.ActivityThread.performNewIntents(ActivityThread.java:2345)
+ 	at android.app.ActivityThread.handleNewIntent(ActivityThread.java:2352)
+ 	at android.app.ActivityThread.access$1400(ActivityThread.java:141)
+ 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1327)
+ 	at android.os.Handler.dispatchMessage(Handler.java:99)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

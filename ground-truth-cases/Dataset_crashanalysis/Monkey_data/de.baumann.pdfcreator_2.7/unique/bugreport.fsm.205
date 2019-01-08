@@ -1,0 +1,16 @@
+//this is an auto-generated bug report
+//package name: de.baumann.pdfcreator
+//version: 2.7
+//appro_time: 103
+ FATAL EXCEPTION: main
+ java.lang.ClassCastException: de.baumann.pdfcreator.fragments.create_text cannot be cast to de.baumann.pdfcreator.fragments.add_text
+ 	at de.baumann.pdfcreator.Activity_Main$1$4.run(Activity_Main.java:128)
+ 	at android.os.Handler.handleCallback(Handler.java:730)
+ 	at android.os.Handler.dispatchMessage(Handler.java:92)
+ 	at android.os.Looper.loop(Looper.java:137)
+ 	at android.app.ActivityThread.main(ActivityThread.java:5103)
+ 	at java.lang.reflect.Method.invokeNative(Native Method)
+ 	at java.lang.reflect.Method.invoke(Method.java:525)
+ 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:737)
+ 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:553)
+ 	at dalvik.system.NativeStart.main(Native Method)

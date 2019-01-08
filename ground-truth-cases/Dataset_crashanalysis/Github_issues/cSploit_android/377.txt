@@ -1,0 +1,6 @@
+> java.lang.IllegalArgumentException: Invalid name: path
+> at java.net.HttpCookie.<init>(HttpCookie.java:464)
+> at org.csploit.android.net.http.RequestParser.parseRawCookie(RequestParser.java:359)
+> at org.csploit.android.net.http.RequestParser.getCookiesFromHeaders(RequestParser.java:454)
+> at org.csploit.android.plugins.mitm.hijacker.Hijacker$RequestListener.onRequest(Hijacker.java:358)
+> at org.csploit.android.net.http.proxy.ProxyThread.run(ProxyThread.java:182)

@@ -1,0 +1,25 @@
+com.fsck.k9.mail.MessagingException: IO Error
+    at com.fsck.k9.mail.store.ImapStore$ImapFolder.ioExceptionHandler(ImapStore.java:2208)
+    at com.fsck.k9.mail.store.ImapStore$ImapFolder.internalOpen(ImapStore.java:947)
+    at com.fsck.k9.mail.store.ImapStore$ImapFolder.open(ImapStore.java:867)
+    at com.fsck.k9.controller.MessagingController.synchronizeMailboxSynchronous(MessagingController.java:1041)
+    at com.fsck.k9.controller.MessagingController.access$400(MessagingController.java:111)
+    at com.fsck.k9.controller.MessagingController$8.run(MessagingController.java:934)
+    at com.fsck.k9.controller.MessagingController.run(MessagingController.java:435)
+    at java.lang.Thread.run(Thread.java:818)
+Caused by: javax.net.ssl.SSLHandshakeException: Handshake failed
+    at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:396)
+    at com.android.org.conscrypt.OpenSSLSocketImpl.waitForHandshake(OpenSSLSocketImpl.java:629)
+    at com.android.org.conscrypt.OpenSSLSocketImpl.getInputStream(OpenSSLSocketImpl.java:591)
+    at com.fsck.k9.mail.store.ImapStore$ImapConnection.open(ImapStore.java:2460)
+    at com.fsck.k9.mail.store.ImapStore$ImapConnection.sendCommand(ImapStore.java:2872)
+    at com.fsck.k9.mail.store.ImapStore$ImapConnection.executeSimpleCommand(ImapStore.java:2921)
+    at com.fsck.k9.mail.store.ImapStore$ImapConnection.executeSimpleCommand(ImapStore.java:2902)
+    at com.fsck.k9.mail.store.ImapStore$ImapFolder.executeSimpleCommand(ImapStore.java:858)
+    at com.fsck.k9.mail.store.ImapStore$ImapFolder.internalOpen(ImapStore.java:904)
+    ... 6 more
+Caused by: javax.net.ssl.SSLProtocolException: SSL handshake terminated: ssl=0x4c52bbe0: Failure in SSL library, usually a protocol error
+error:100c5410:SSL routines:ssl3_read_bytes:SSLV3_ALERT_HANDSHAKE_FAILURE (external/boringssl/src/ssl/s3_pkt.c:972 0x4c04ba30:0x00000001)
+error:100c009f:SSL routines:ssl3_get_server_hello:HANDSHAKE_FAILURE_ON_CLIENT_HELLO (external/boringssl/src/ssl/s3_clnt.c:750 0x43354757:0x00000000)
+    at com.android.org.conscrypt.NativeCrypto.SSL_do_handshake(Native Method)
+    at com.android.org.conscrypt.OpenSSLSocketImpl.startHandshake(OpenSSLSocketImpl.java:324)

@@ -1,0 +1,9 @@
+ java.lang.ArrayIndexOutOfBoundsException: length=24; index=24
+    at com.google.zxing.pdf417.decoder.PDF417ScanningDecoder.adjustBoundingBox(PDF417ScanningDecoder.java:146)
+    at com.google.zxing.pdf417.decoder.PDF417ScanningDecoder.decode(PDF417ScanningDecoder.java:71)
+    at com.google.zxing.pdf417.PDF417Reader.decode(PDF417Reader.java:61)
+    at com.google.zxing.MultiFormatReader.decodeInternal(MultiFormatReader.java:171)
+    at com.google.zxing.client.android.DecodeHandler.handleMessage(DecodeHandler.java:58)
+    at android.os.Handler.dispatchMessage(Handler.java:102)
+    at android.os.Looper.loop(Looper.java:136)
+    at com.google.zxing.client.android.DecodeThread.run(DecodeThread.java:110)

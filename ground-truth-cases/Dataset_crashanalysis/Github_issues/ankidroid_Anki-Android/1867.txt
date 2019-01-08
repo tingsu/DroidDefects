@@ -1,0 +1,4 @@
+E/AndroidRuntime(18638): Caused by: java.lang.NullPointerException
+E/AndroidRuntime(18638):    at com.ichi2.themes.Themes.setContentStyle(Themes.java:163)
+E/AndroidRuntime(18638):    at com.ichi2.anki.StudyOptions.initAllContentViews(StudyOptions.java:1015)
+E/AndroidRuntime(18638):    at com.ichi2.anki.StudyOptions.onCreate(StudyOptions.java:665)

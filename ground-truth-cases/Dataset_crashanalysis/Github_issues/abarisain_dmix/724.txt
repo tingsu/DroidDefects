@@ -1,0 +1,11 @@
+E/AndroidRuntime( 9708): java.lang.NullPointerException: Attempt to invoke interface method 'int java.util.Set.size()' on a null object reference
+E/AndroidRuntime( 9708):        at com.namelessdev.mpdroid.helpers.CachedMPD.getAllAlbums(CachedMPD.java:153)
+E/AndroidRuntime( 9708):        at com.anpmech.mpd.MPD.getAlbums(MPD.java:798)
+E/AndroidRuntime( 9708):        at com.anpmech.mpd.MPD.getAlbums(MPD.java:781)
+E/AndroidRuntime( 9708):        at com.namelessdev.mpdroid.fragments.AlbumsFragment.asyncUpdate(AlbumsFragment.java:118)
+E/AndroidRuntime( 9708):        at com.namelessdev.mpdroid.fragments.BrowseFragment$1.run(BrowseFragment.java:130)
+E/AndroidRuntime( 9708):        at com.namelessdev.mpdroid.helpers.WorkerRunnable.run(WorkerRunnable.java:100)
+E/AndroidRuntime( 9708):        at com.namelessdev.mpdroid.helpers.MPDAsyncWorker.handleMessage(MPDAsyncWorker.java:76)
+E/AndroidRuntime( 9708):        at android.os.Handler.dispatchMessage(Handler.java:98)
+E/AndroidRuntime( 9708):        at android.os.Looper.loop(Looper.java:135)
+E/AndroidRuntime( 9708):        at android.os.HandlerThread.run(HandlerThread.java:61)

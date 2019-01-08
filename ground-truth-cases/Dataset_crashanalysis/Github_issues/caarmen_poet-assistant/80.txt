@@ -1,0 +1,6 @@
+java.lang.NullPointerException: 
+  at ca.rmen.android.poetassistant.main.dictionaries.search.Search.search(Search.java:86)
+  at ca.rmen.android.poetassistant.main.MainActivity.onWordClick(MainActivity.java:234)
+  at ca.rmen.android.poetassistant.main.TextPopupMenu.handleItemClicked(TextPopupMenu.java:141)
+  at ca.rmen.android.poetassistant.main.TextPopupMenu$1.onActionItemClicked(TextPopupMenu.java:2048)
+  at android.widget.Editor$TextActionModeCallback.onActionItemClicked(Editor.java:3246)

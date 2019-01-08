@@ -1,0 +1,22 @@
+java.lang.RuntimeException: Unable to resume activity {com.nextgis.mobile/com.nextgis.mobile.activity.MainActivity}: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=-1, data=Intent { (has extras) }} to activity {com.nextgis.mobile/com.nextgis.mobile.activity.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.nextgis.maplib.map.VectorLayer.showFeature(long)' on a null object reference
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3239)
+    at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:3270)
+    at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2613)
+    at android.app.ActivityThread.access$800(ActivityThread.java:178)
+    at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1470)
+    at android.os.Handler.dispatchMessage(Handler.java:111)
+    at android.os.Looper.loop(Looper.java:194)
+    at android.app.ActivityThread.main(ActivityThread.java:5637)
+    at java.lang.reflect.Method.invoke(Native Method)
+    at java.lang.reflect.Method.invoke(Method.java:372)
+    at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:959)
+    at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:754)
+Caused by: java.lang.RuntimeException: Failure delivering result ResultInfo{who=null, request=1, result=-1, data=Intent { (has extras) }} to activity {com.nextgis.mobile/com.nextgis.mobile.activity.MainActivity}: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.nextgis.maplib.map.VectorLayer.showFeature(long)' on a null object reference
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3839)
+    at android.app.ActivityThread.performResumeActivity(ActivityThread.java:3221)
+    ... 11 more
+Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.nextgis.maplib.map.VectorLayer.showFeature(long)' on a null object reference
+    at com.nextgis.mobile.fragment.MapFragment.onActivityResult(MapFragment.java:289)
+    at com.nextgis.mobile.activity.MainActivity.onActivityResult(MainActivity.java:430)
+    at android.app.Activity.dispatchActivityResult(Activity.java:6294)
+    at android.app.ActivityThread.deliverResults(ActivityThread.java:3835)

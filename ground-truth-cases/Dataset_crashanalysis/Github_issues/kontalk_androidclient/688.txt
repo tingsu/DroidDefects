@@ -1,0 +1,6 @@
+java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.net.Uri.getScheme()' on a null object reference
+    at android.content.ContentResolver.acquireUnstableProvider(ContentResolver.java:1447)
+    at android.content.ContentResolver.query(ContentResolver.java:468)
+    at android.content.ContentResolver.query(ContentResolver.java:428)
+    at org.kontalk.ui.ConversationsActivity.handleIntent(ConversationsActivity.java:247)
+    at org.kontalk.ui.ConversationsActivity.onCreate(ConversationsActivity.java:108)

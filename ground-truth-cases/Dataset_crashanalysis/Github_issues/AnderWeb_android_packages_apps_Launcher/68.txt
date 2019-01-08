@@ -1,0 +1,6 @@
+04-19 01:15:09.900: ERROR/MultiTouchController(242): java.lang.reflect.InvocationTargetException
+04-19 01:15:09.900: ERROR/MultiTouchController(242):     at java.lang.reflect.Method.invokeNative(Native Method)
+04-19 01:15:09.900: ERROR/MultiTouchController(242):     at java.lang.reflect.Method.invoke(Method.java:491)
+04-19 01:15:09.900: ERROR/MultiTouchController(242):     at org.metalev.multitouch.controller.MultiTouchController.onTouchEvent(MultiTouchController.java:274)
+04-19 01:15:09.900: ERROR/MultiTouchController(242):     at org.adw.launcher.Workspace.onInterceptTouchEvent(Workspace.java:771)
+04-19 01:15:09.900: ERROR/MultiTouchController(242):     at android.view.ViewGroup.dispatchTouchEvent(ViewGroup.java:1170)

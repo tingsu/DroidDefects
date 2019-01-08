@@ -1,0 +1,11 @@
+java.lang.OutOfMemoryError: Failed to allocate a 1104012 byte allocation with 152392 free bytes and 148KB until OOM
+    at dalvik.system.VMRuntime.newNonMovableArray(Native Method)
+    at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+    at android.graphics.BitmapFactory.decodeStreamInternal(BitmapFactory.java:635)
+    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:611)
+    at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:649)
+    at info.papdt.blacklight.cache.user.UserApiCache.getCover(UserApiCache.java:278)
+    at info.papdt.blacklight.ui.statuses.UserTimeLineActivity$Downloader.doInBackground(UserTimeLineActivity.java:474)
+    at info.papdt.blacklight.ui.statuses.UserTimeLineActivity$Downloader.doInBackground(UserTimeLineActivity.java:464)
+    at info.papdt.blacklight.support.AsyncTask$2.run(AsyncTask.java:73)
+    at java.lang.Thread.run(Thread.java:818)

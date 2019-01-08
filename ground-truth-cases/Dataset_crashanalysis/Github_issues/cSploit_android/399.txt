@@ -1,0 +1,10 @@
+> java.lang.NullPointerException: **Attempt to invoke virtual method 'java.lang.String java.lang.String.replace(java.lang.CharSequence, java.lang.CharSequence)' on a null object reference**
+> at org.csploit.android.MainActivity.createUpdateLayout(MainActivity.java:142)
+> at org.csploit.android.MainActivity.createLayout(MainActivity.java:237)
+> at org.csploit.android.MainActivity.access$400(MainActivity.java:100)
+> at org.csploit.android.MainActivity$3.run(MainActivity.java:289)
+> at android.app.Activity.runOnUiThread(Activity.java:5575)
+> at org.csploit.android.MainActivity.onCoreUpdated(MainActivity.java:285)
+> at org.csploit.android.MainActivity.access$900(MainActivity.java:100)
+> at org.csploit.android.MainActivity$UpdateReceiver.onUpdateDone(MainActivity.java:1038)
+> at org.csploit.android.MainActivity$UpdateReceiver.onReceive(MainActivity.java:1092)

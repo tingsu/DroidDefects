@@ -1,0 +1,14 @@
+
+So, the application crashes at launch.
+
+Caused by: java.lang.NoClassDefFoundError: android.support.v7.internal.view.menu.MenuBuilder
+                                                                     at android.support.design.widget.NavigationView.<init>(NavigationView.java:95)
+                                                                     at android.support.design.widget.NavigationView.<init>(NavigationView.java:88)
+                                                                     at java.lang.reflect.Constructor.constructNative(Native Method) 
+                                                                     at java.lang.reflect.Constructor.newInstance(Constructor.java:417) 
+                                                                     at android.view.LayoutInflater.createView(LayoutInflater.java:587) 
+                                                                     at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:687) 
+                                                                     at android.view.LayoutInflater.rInflate(LayoutInflater.java:746) 
+                                                                     at android.view.LayoutInflater.inflate(LayoutInflater.java:489) 
+                                                                     at android.view.LayoutInflater.inflate(LayoutInflater.java:396) 
+                                                                     at android.view.LayoutInflater.inflate(LayoutInflater.java:352) 

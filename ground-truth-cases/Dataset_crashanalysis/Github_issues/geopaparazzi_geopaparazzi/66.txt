@@ -1,0 +1,18 @@
+
+The markers project seems to need at least 13, I tried 14 since 13 in not installed and I receive 
+
+```
+   [dx] 
+   [dx] UNEXPECTED TOP-LEVEL EXCEPTION:
+   [dx] java.util.zip.ZipException: error in opening zip file
+   [dx]     at java.util.zip.ZipFile.open(Native Method)
+   [dx]     at java.util.zip.ZipFile.<init>(ZipFile.java:132)
+   [dx]     at java.util.zip.ZipFile.<init>(ZipFile.java:169)
+   [dx]     at com.android.dx.cf.direct.ClassPathOpener.processArchive(ClassPathOpener.java:206)
+   [dx]     at com.android.dx.cf.direct.ClassPathOpener.processOne(ClassPathOpener.java:131)
+   [dx]     at com.android.dx.cf.direct.ClassPathOpener.process(ClassPathOpener.java:109)
+   [dx]     at com.android.dx.command.dexer.Main.processOne(Main.java:422)
+   [dx]     at com.android.dx.command.dexer.Main.processAllFiles(Main.java:333)
+   [dx]     at com.android.dx.command.dexer.Main.run(Main.java:209)
+   [dx]     at com.android.dx.command.dexer.Main.main(Main.java:174)
+   [dx]     at com.android.dx.command.Main.main(Main.java:91)
