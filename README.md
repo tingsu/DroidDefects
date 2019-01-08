@@ -55,12 +55,14 @@ The directory structure of DroidDefects is as follows:
        |
        |--- ground-truth-cases:                   Ground-truth exception cases
 			|
-			| -- fdroid_apks_complexity.csv		  the app complexity metrics (#LOC, #Classes, #Activities, #Methods)
-			| -- Dataset_crashanalysis			  the ground-truth exception traces
-
+			| -- fdroid_apks_complexity.csv	      the app complexity metrics (#LOC, #Classes, #Activities, #Methods)
+			| -- Dataset_crashanalysis            the ground-truth exception traces
+	   |--- utils								  the utility programs
 
 Papers
 ----------------------
 Ting Su, Lingling Fan, Sen Chen, Yang Liu, Lihua Xu, Geguang Pu, and Zhendong Su
 ``Why My App Crashes? Understanding and Benchmarking Framework-specific Exceptions of Android apps"
+
+
 
