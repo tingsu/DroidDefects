@@ -1,5 +1,6 @@
-# defects4android
+# DroidDefects
 
+## List of Reproducible Cases
 App | Package | Version | LOC | Category | Exception Category | Root Cause | Exception Type | Issue | Buggy | Fixed | Comments 
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 *[Bites](https://github.com/karimhamdanali/bites-android)* | `caldwell.ben.bites` | 1.3 |  | Recipes cookbook | Framework | Parameter Error | NumberFormatException | - | - | - | -
@@ -35,14 +36,14 @@ App | Package | Version | LOC | Category | Exception Category | Root Cause | Exc
 *[LibreNews](https://github.com/milesmcc/LibreNews-Android)* | `app.librenews.io.librenews` | 1.4 |  | LibreNews client | Application | NullPointer Error | NullPointerException (Attempt to invoke virtual method ... on a null object | [issue](https://github.com/milesmcc/LibreNews-Android/issues/23) | - | - | -
 *[AnyMemo](https://github.com/helloworld1/AnyMemo)* | `org.liberty.android.fantastischmemo` | 10.10.1 |  | Flashcard learning | Application | NullPointer Error | NullPointerException (Attempt to invoke virtual method ... on a null object | [issue](https://github.com/helloworld1/AnyMemo/issues/440) | - | - | -
 
-Implementation details
+Artifacts of DroidDefects
 ----------------------
 
 The directory structure of DroidDefects is as follows:
 
     DroidDefects
        |
-       |--- reproducible-cases:                  Reproducible exception cases 
+       |--- reproducible-cases:                   Reproducible exception cases 
             |
             | -- adsdroid
                     |
@@ -52,8 +53,14 @@ The directory structure of DroidDefects is as follows:
                     | ---  rootcause.txt          The root cause
                     | ---  src                    The app source code
        |
-       |--- ground-truth-cases:                  Ground-truth exception cases
+       |--- ground-truth-cases:                   Ground-truth exception cases
 			|
 			| -- fdroid_apks_complexity.csv		  the app complexity metrics (#LOC, #Classes, #Activities, #Methods)
 			| -- Dataset_crashanalysis			  the ground-truth exception traces
-      
+
+
+Papers
+----------------------
+Ting Su, Lingling Fan, Sen Chen, Yang Liu, Lihua Xu, Geguang Pu, and Zhendong Su
+``Why My App Crashes? Understanding and Benchmarking Framework-specific Exceptions of Android apps"
+
