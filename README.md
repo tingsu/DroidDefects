@@ -59,11 +59,11 @@ The directory structure of DroidDefects is as follows:
 			| --- Dataset_crashanalysis           the ground-truth exception traces
 	   |--- utils								  the utility programs
 
-Papers
+Paper
 ----------------------
-Ting Su, Lingling Fan, Sen Chen, Yang Liu, Lihua Xu, Geguang Pu, and Zhendong Su
-[Why My App Crashes? Understanding and Benchmarking Framework-specific Exceptions of Android apps](https://ieeexplore.ieee.org/document/9153947)，
-IEEE Transactions on Software Engineering (TSE), 2020
+Ting Su, Lingling Fan, Sen Chen, Yang Liu, Lihua Xu, Geguang Pu, and Zhendong Su.
+[Why My App Crashes? Understanding and Benchmarking Framework-specific Exceptions of Android apps](https://ieeexplore.ieee.org/document/9153947),
+IEEE Transactions on Software Engineering (TSE), 2020.
 
 
 
