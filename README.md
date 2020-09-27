@@ -62,7 +62,8 @@ The directory structure of DroidDefects is as follows:
 Papers
 ----------------------
 Ting Su, Lingling Fan, Sen Chen, Yang Liu, Lihua Xu, Geguang Pu, and Zhendong Su
-``Why My App Crashes? Understanding and Benchmarking Framework-specific Exceptions of Android apps"
+[Why My App Crashes? Understanding and Benchmarking Framework-specific Exceptions of Android apps](https://ieeexplore.ieee.org/document/9153947)，
+IEEE Transactions on Software Engineering (TSE), 2020
 
 
 
