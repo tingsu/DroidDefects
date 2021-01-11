@@ -1,4 +1,4 @@
-# DroidDefects
+# DroidDefects: A database of crash (exception) bugs for Android apps
 
 ## List of Reproducible Cases
 App | Package | Version | LOC | Category | Exception Category | Root Cause | Exception Type | Issue | Buggy | Fixed | Comments 
