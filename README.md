@@ -65,5 +65,5 @@ Ting Su, Lingling Fan, Sen Chen, Yang Liu, Lihua Xu, Geguang Pu, and Zhendong Su
 [Why My App Crashes? Understanding and Benchmarking Framework-specific Exceptions of Android apps](https://ieeexplore.ieee.org/document/9153947),
 IEEE Transactions on Software Engineering (TSE), 2020.
 
-
+*You can find more about our work on testing/analyzing Android apps at this [website](https://tingsu.github.io/files/mobile-app-analysis.html)*.
 
