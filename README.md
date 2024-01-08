@@ -1,3 +1,5 @@
+# We are not actively maintaining this repository anymore, you can take a lookt at our recent bug dataset [Themis](https://github.com/the-themis-benchmarks/home).
+
 # DroidDefects: A database of crash (exception) bugs for Android apps
 
 ## List of Reproducible Cases
